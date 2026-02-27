@@ -116,7 +116,7 @@
         <p class="text-cyan-500 font-mono tracking-[0.5em] text-xs uppercase animate-pulse">Yükleniyor...</p>
     </div>
 
-    <div id="warp-flash" class="fixed inset-0 bg-cyan-400 pointer-events-none opacity-0 z-[999]"></div>
+    <div id="warp-flash" style="position:fixed;inset:0;pointer-events:none;opacity:0;z-index:999;background:radial-gradient(circle,rgba(255,255,255,0.9) 0%,rgba(0,242,255,0.6) 30%,rgba(0,0,30,0.8) 70%,transparent 100%);transition:opacity 0.1s;"></div>
     <div id="tooltip"></div>
 
     <div class="fixed top-0 w-full z-50 p-3 md:p-6 flex flex-col md:flex-row justify-between items-center bg-gradient-to-b from-black to-transparent gap-2 md:gap-4">
@@ -164,8 +164,8 @@
 
     <script>
         /** GLOBAL VARIABLES **/
-        let scene, camera, renderer, ayahMesh, starField, lineSegments, controls;
-        let nodes = []; let surahGroups = []; let ayahNodes = []; let rootMap = new Map(); let labelSprites = [];
+        let scene, camera, renderer, ayahMesh, starField, lineSegments, controls, warpStreaks, highlightLines;
+        let nodes = []; let surahGroups = []; let ayahNodes = []; let rootMap = new Map(); let labelSprites = []; let lineNodePairs = [];
         let raycaster = new THREE.Raycaster(); let mouse = new THREE.Vector2();
         let currentAudio = null; let audioCache = new Map(); let hoverTimeout = null; let lastHoveredId = null;
         let warpActive = false; let warpProgress = 0; let warpStart = new THREE.Vector3(); let warpEnd = new THREE.Vector3(); let warpTarget = new THREE.Vector3();
@@ -289,10 +289,30 @@
             controls = new THREE.OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
             scene.add(new THREE.AmbientLight(0xffffff, 1.4));
             const starGeom = new THREE.BufferGeometry(); const starPos = [];
-            for(let i=0; i<60000; i++) starPos.push((Math.random()-0.5)*10000000, (Math.random()-0.5)*10000000, (Math.random()-0.5)*10000000);
+            for(let i=0; i<60000; i++) starPos.push((Math.random()-0.5)*60000000, (Math.random()-0.5)*60000000, (Math.random()-0.5)*60000000);
             starGeom.setAttribute('position', new THREE.Float32BufferAttribute(starPos, 3));
             starField = new THREE.Points(starGeom, new THREE.PointsMaterial({ color: 0x888888, size: 1600, transparent: true, opacity: 0.5 }));
-            scene.add(starField); camera.position.set(0, 100000, 350000);
+            scene.add(starField); camera.position.set(0, 10000000, 20000000);
+
+            // Warp streak lines (Star Wars hyperspace)
+            const streakCount = 400;
+            const streakPos = new Float32Array(streakCount * 6);
+            for (let i = 0; i < streakCount; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const radius = 1500 + Math.random() * 20000;
+                const x = Math.cos(angle) * radius;
+                const y = Math.sin(angle) * radius;
+                const z = -(Math.random() * 80000 + 5000);
+                const idx = i * 6;
+                streakPos[idx] = x; streakPos[idx+1] = y; streakPos[idx+2] = z;
+                streakPos[idx+3] = x; streakPos[idx+4] = y; streakPos[idx+5] = z - 500;
+            }
+            const streakGeom = new THREE.BufferGeometry();
+            streakGeom.setAttribute('position', new THREE.Float32BufferAttribute(streakPos, 3));
+            streakGeom.userData.basePositions = new Float32Array(streakPos);
+            warpStreaks = new THREE.LineSegments(streakGeom, new THREE.LineBasicMaterial({ color: 0xaaddff, transparent: true, opacity: 0 }));
+            camera.add(warpStreaks);
+            scene.add(camera);
             renderer.domElement.addEventListener('click', onMouseClick); 
             window.addEventListener('mousemove', onMouseMove); 
             animate();
@@ -330,7 +350,7 @@
             const texture = new THREE.CanvasTexture(canvas);
             const mat = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false });
             const sprite = new THREE.Sprite(mat);
-            const s = isSurah ? 20000 : 10000;
+            const s = isSurah ? 5000 : 3000;
             sprite.scale.set(s, s * (canvas.height / canvas.width), 1);
             return sprite;
         };
@@ -338,30 +358,71 @@
         const processData = (data) => {
             if (!data || !data.nodes) return;
             surahGroups.forEach(g => scene.remove(g)); if(ayahMesh) scene.remove(ayahMesh); if(lineSegments) scene.remove(lineSegments);
-            labelSprites.forEach(s => scene.remove(s));
-            surahGroups = []; ayahNodes = []; rootMap.clear(); labelSprites = [];
+             labelSprites.forEach(s => scene.remove(s));
+             surahGroups = []; ayahNodes = []; rootMap.clear(); labelSprites = []; lineNodePairs = [];
             nodes = data.nodes.map(n => ({ ...n, roots: Array.isArray(n.roots) ? n.roots : [] }));
             const surahIds = [...new Set(nodes.map(n => n.id.split(':')[0]))].sort((a,b) => parseInt(a)-parseInt(b));
-            const dim = Math.ceil(Math.sqrt(surahIds.length)); const gridS = 280000; const ayahYS = 22000;
+
+            // Samanyolu Galaksisi spiral parametreleri
+            const totalTurns = 4;
+            const maxRadius = 25000000;
+            const ayahScatterR = 60000;
+            const diskThickness = 300000;
+
+            // Surah başına ayet sayısı
+            const surahAyahCounts = {};
+            surahIds.forEach(sid => {
+                surahAyahCounts[sid] = nodes.filter(n => n.id.split(':')[0] === sid).length;
+            });
+
+            // Surah pozisyonları: Arşimed spiralı (Fatiha merkezde)
+            const surahPosMap = {};
+            surahIds.forEach((sid, sIdx) => {
+                const t = sIdx / Math.max(surahIds.length - 1, 1);
+                const theta = t * totalTurns * Math.PI * 2;
+                const r = t * maxRadius;
+                surahPosMap[sid] = { x: Math.cos(theta) * r, z: Math.sin(theta) * r };
+            });
+
             const lineV = []; const lineC = [];
+
             nodes.forEach((node, idx) => {
-                const parts = node.id.split(':'); const sIdx = surahIds.indexOf(parts[0]);
-                node.x = (sIdx % dim) * gridS - (dim * gridS / 2);
-                node.z = Math.floor(sIdx / dim) * gridS - (dim * gridS / 2);
-                node.y = - (parseInt(parts[1]) * ayahYS);
-                if (parseInt(parts[1]) === 1) {
-                    const g = new THREE.Group(); g.position.set(node.x, node.y, node.z); g.userData = { nodeData: node };
-                    const c = new THREE.Color(getRootCSSColor(parts[0]));
-                    const p = new THREE.Mesh(new THREE.SphereGeometry(7500, 32, 32), new THREE.MeshStandardMaterial({ color: c, emissive: c, emissiveIntensity: 2 }));
-                    g.add(p);
-                    const sLabel = createTextSprite(`${surahNamesTR[parts[0]]} ${parts[0]}:${parts[1]}`, true);
-                    sLabel.position.set(0, 12000, 0);
+                const parts = node.id.split(':');
+                const surahNum = parts[0];
+                const ayahNum = parseInt(parts[1]);
+                const sp = surahPosMap[surahNum];
+
+                if (ayahNum === 1) {
+                    // Sure merkez node: galaktik düzlemde
+                    node.x = sp.x; node.y = 0; node.z = sp.z;
+                    const g = new THREE.Group();
+                    g.position.set(node.x, node.y, node.z);
+                    g.userData = { nodeData: node };
+                    const c = new THREE.Color(getRootCSSColor(surahNum));
+                    const mesh = new THREE.Mesh(
+                        new THREE.SphereGeometry(1500, 32, 32),
+                        new THREE.MeshStandardMaterial({ color: c, emissive: c, emissiveIntensity: 2 })
+                    );
+                    g.add(mesh);
+                    const sLabel = createTextSprite(`${surahNamesTR[surahNum]} ${surahNum}:1`, true);
+                    sLabel.position.set(0, 3500, 0);
                     g.add(sLabel);
                     surahGroups.push(g); scene.add(g);
-                } else { ayahNodes.push(node); }
+                } else {
+                    // Ayetler: surenin etrafında dağılım
+                    const totalAyahs = surahAyahCounts[surahNum];
+                    const isUpper = ayahNum <= Math.ceil(totalAyahs / 2);
+                    const angle = Math.random() * Math.PI * 2;
+                    const dist = (Math.random() * 0.7 + 0.3) * ayahScatterR;
+                    node.x = sp.x + Math.cos(angle) * dist;
+                    node.z = sp.z + Math.sin(angle) * dist;
+                    node.y = (isUpper ? 1 : -1) * (Math.random() * 0.8 + 0.2) * diskThickness;
+                    ayahNodes.push(node);
+                }
                 (node.roots || []).forEach(r => { if(!rootMap.has(r)) rootMap.set(r, []); rootMap.get(r).push(idx); });
             });
 
+            // Kök bağlantı çizgileri
             rootMap.forEach((ids, root) => {
                 if (ids.length < 2) return;
                 const color = new THREE.Color(getRootCSSColor(root));
@@ -369,20 +430,23 @@
                     const n1 = nodes[ids[i]]; const n2 = nodes[ids[i+1]];
                     lineV.push(n1.x, n1.y, n1.z, n2.x, n2.y, n2.z);
                     lineC.push(color.r, color.g, color.b, color.r, color.g, color.b);
+                    lineNodePairs.push({ n1: n1.id, n2: n2.id, root: root });
                 }
             });
-            const lG = new THREE.BufferGeometry(); lG.setAttribute('position', new THREE.Float32BufferAttribute(lineV, 3));
+            const lG = new THREE.BufferGeometry();
+            lG.setAttribute('position', new THREE.Float32BufferAttribute(lineV, 3));
             lG.setAttribute('color', new THREE.Float32BufferAttribute(lineC, 3));
-            lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.8 }));
+            lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.04 }));
             lineSegments.renderOrder = 1; scene.add(lineSegments);
 
-            ayahMesh = new THREE.InstancedMesh(new THREE.SphereGeometry(1400, 16, 16), new THREE.MeshStandardMaterial({ color: 0x00f2ff, transparent: true, opacity: 0.85 }), ayahNodes.length);
+            // Ayet küreleri
+            ayahMesh = new THREE.InstancedMesh(new THREE.SphereGeometry(400, 16, 16), new THREE.MeshStandardMaterial({ color: 0x00f2ff, transparent: true, opacity: 0.85 }), ayahNodes.length);
             const dum = new THREE.Object3D(); ayahNodes.forEach((a, i) => { dum.position.set(a.x, a.y, a.z); dum.updateMatrix(); ayahMesh.setMatrixAt(i, dum.matrix); });
             scene.add(ayahMesh);
             ayahNodes.forEach(a => {
                 const ap = a.id.split(':');
                 const lbl = createTextSprite(`${surahNamesTR[ap[0]]} ${ap[0]}:${ap[1]}`, false);
-                lbl.position.set(a.x, a.y + 3500, a.z);
+                lbl.position.set(a.x, a.y + 1200, a.z);
                 lbl.visible = false;
                 labelSprites.push(lbl);
                 scene.add(lbl);
@@ -391,6 +455,7 @@
         };
 
         const onMouseMove = (event) => {
+            if (event.target.closest('#tooltip')) return;
             const hTarget = event.target.closest('.ref-hover');
             if (hTarget) {
                 const n = nodes.find(x => x.id === hTarget.dataset.id);
@@ -409,6 +474,15 @@
                 const intA = raycaster.intersectObject(ayahMesh);
                 if (intA.length > 0) { const n = ayahNodes[intA[0].instanceId]; if(n) { showTooltip(n, event.clientX, event.clientY); return; } }
             }
+            if (lineSegments && lineNodePairs.length > 0) {
+                raycaster.params.Line.threshold = 800;
+                const intL = raycaster.intersectObject(lineSegments);
+                if (intL.length > 0) {
+                    const segIdx = Math.floor(intL[0].index / 2);
+                    const pair = lineNodePairs[segIdx];
+                    if (pair) { showLineTooltip(pair, event.clientX, event.clientY); return; }
+                }
+            }
             hideTooltip();
         };
 
@@ -423,7 +497,7 @@
                 let o = intS[0].object; while(o && !o.userData?.nodeData) o = o.parent;
                 if(o && o.userData.nodeData) { warpTo(o.userData.nodeData); return; }
             }
-            let closestNode = null; let minDistance = 9000; 
+            let closestNode = null; let minDistance = 2500;
             nodes.forEach(n => {
                 const nodePos = new THREE.Vector3(n.x, n.y, n.z);
                 const distance = raycaster.ray.distanceToPoint(nodePos);
@@ -469,7 +543,31 @@
             tooltip.style.display = 'block';
             clampTooltip(tooltip, x, y);
         };
-        const hideTooltip = () => { document.getElementById('tooltip').style.display = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); stopAudio(); };
+        const showLineTooltip = (pair, x, y) => {
+            const tooltip = document.getElementById('tooltip');
+            const rootColor = getRootCSSColor(pair.root);
+            const rootPron = getRootPron(pair.root);
+            const s1 = pair.n1.split(':'); const s2 = pair.n2.split(':');
+            const name1 = `${surahNamesTR[s1[0]]} ${s1[0]}:${s1[1]}`;
+            const name2 = `${surahNamesTR[s2[0]]} ${s2[0]}:${s2[1]}`;
+            lastHoveredId = 'line_' + pair.n1 + '_' + pair.n2;
+            tooltip.innerHTML = `
+                <div style="font-size:11px;font-weight:900;color:#00f2ff;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px;">Kök Bağlantısı</div>
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+                    <span style="color:${rootColor};font-size:20px;font-weight:bold;">${pair.root}</span>
+                    <span style="color:${rootColor};font-size:12px;opacity:0.7;">${rootPron}</span>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:6px;">
+                    <div onclick="hideTooltip();warpToId('${pair.n1}')" style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(0,242,255,0.08);border:1px solid rgba(0,242,255,0.2);border-radius:8px;cursor:pointer;transition:background 0.2s;" onmouseenter="this.style.background='rgba(0,242,255,0.2)'" onmouseleave="this.style.background='rgba(0,242,255,0.08)'"><span style="color:#00f2ff;font-size:8px;">⬤</span><span style="color:#e2e8f0;font-size:13px;font-weight:600;">${name1}</span><span style="color:#00f2ff;font-size:16px;margin-left:auto;">→</span></div>
+                    <div onclick="hideTooltip();warpToId('${pair.n2}')" style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(0,242,255,0.08);border:1px solid rgba(0,242,255,0.2);border-radius:8px;cursor:pointer;transition:background 0.2s;" onmouseenter="this.style.background='rgba(0,242,255,0.2)'" onmouseleave="this.style.background='rgba(0,242,255,0.08)'"><span style="color:#00f2ff;font-size:8px;">⬤</span><span style="color:#e2e8f0;font-size:13px;font-weight:600;">${name2}</span><span style="color:#00f2ff;font-size:16px;margin-left:auto;">→</span></div>
+                </div>`;
+            tooltip.style.display = 'block';
+            tooltip.style.pointerEvents = 'auto';
+            clampTooltip(tooltip, x, y);
+        };
+
+        const hideTooltip = () => { const t = document.getElementById('tooltip'); t.style.display = 'none'; t.style.pointerEvents = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); stopAudio(); };
+        window.hideTooltip = hideTooltip;
 
         let currentHudNode = null;
         let activeSpeakBtn = null;
@@ -516,9 +614,36 @@
             }
         };
 
+        const updateHighlightLines = (n) => {
+            if (highlightLines) { scene.remove(highlightLines); highlightLines = null; }
+            if (!n) return;
+            const hV = []; const hC = [];
+            (n.roots || []).forEach(root => {
+                const ids = rootMap.get(root);
+                if (!ids) return;
+                const color = new THREE.Color(getRootCSSColor(root));
+                const nodeIdx = nodes.findIndex(nd => nd.id === n.id);
+                for (let i = 0; i < ids.length - 1; i++) {
+                    if (ids[i] === nodeIdx || ids[i+1] === nodeIdx) {
+                        const a = nodes[ids[i]]; const b = nodes[ids[i+1]];
+                        hV.push(a.x, a.y, a.z, b.x, b.y, b.z);
+                        hC.push(color.r, color.g, color.b, color.r, color.g, color.b);
+                    }
+                }
+            });
+            if (hV.length === 0) return;
+            const hG = new THREE.BufferGeometry();
+            hG.setAttribute('position', new THREE.Float32BufferAttribute(hV, 3));
+            hG.setAttribute('color', new THREE.Float32BufferAttribute(hC, 3));
+            highlightLines = new THREE.LineSegments(hG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.9, linewidth: 2 }));
+            highlightLines.renderOrder = 2;
+            scene.add(highlightLines);
+        };
+
         const showHUD = (n) => {
             if (!n) return;
             currentHudNode = n;
+            updateHighlightLines(n);
             const panel = document.getElementById('hud-panel');
             panel.classList.remove('hidden');
             const arabicHighlighted = highlightArabicText(n.text, n.roots);
@@ -573,22 +698,72 @@
             hideTooltip();
             warpActive = true; warpProgress = 0; controls.enabled = false; 
             warpStart.copy(camera.position); warpTarget.set(node.x, node.y, node.z); 
-            warpEnd.set(node.x + 8000, node.y + 4000, node.z + 15000); 
+            warpEnd.set(node.x + 4000, node.y + 8000, node.z + 12000);
             showHUD(node); 
         };
         window.warpToId = (id) => { const t = nodes.find(n => n.id === id); if(t) warpTo(t); };
         const animate = () => {
             requestAnimationFrame(animate);
             if (warpActive) {
-                warpProgress += 0.025; const p = Math.min(warpProgress, 1);
-                camera.fov = 65 + (Math.sin(p * Math.PI) * 55); camera.updateProjectionMatrix();
-                document.getElementById('warp-flash').style.opacity = Math.sin(p * Math.PI) * 0.4;
-                camera.position.lerpVectors(warpStart, warpEnd, p); controls.target.lerp(warpTarget, p);
-                if(p >= 1) { warpActive = false; controls.enabled = true; camera.fov = 65; camera.updateProjectionMatrix(); }
+                warpProgress += 0.018; const p = Math.min(warpProgress, 1);
+                const flash = document.getElementById('warp-flash');
+
+                // Easing: slow start, fast middle, slow end
+                const ease = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+
+                // Phase 1: Hızlanma (0-0.25)
+                if (p < 0.25) {
+                    const t = p / 0.25;
+                    camera.fov = 65 + t * 60;
+                    flash.style.opacity = t * 0.15;
+                    warpStreaks.material.opacity = t * 0.6;
+                    starField.material.size = 1600 + t * 8000;
+                }
+                // Phase 2: Hyperspace (0.25-0.75)
+                else if (p < 0.75) {
+                    const t = (p - 0.25) / 0.5;
+                    camera.fov = 125;
+                    flash.style.opacity = 0.15 + t * 0.25;
+                    warpStreaks.material.opacity = 0.6 + t * 0.4;
+                    warpStreaks.material.color.setHSL(0.55 + t * 0.05, 1, 0.7 + t * 0.3);
+                    starField.material.size = 9600;
+                }
+                // Phase 3: Varış (0.75-1.0)
+                else {
+                    const t = (p - 0.75) / 0.25;
+                    camera.fov = 125 - t * 60;
+                    flash.style.opacity = 0.4 * (1 - t);
+                    warpStreaks.material.opacity = 1.0 * (1 - t);
+                    starField.material.size = 9600 - t * 8000;
+                }
+
+                camera.updateProjectionMatrix();
+
+                // Star streaks uzama efekti
+                const positions = warpStreaks.geometry.attributes.position.array;
+                const base = warpStreaks.geometry.userData.basePositions;
+                const streakLength = Math.sin(p * Math.PI) * 40000;
+                for (let i = 0; i < positions.length; i += 6) {
+                    positions[i+5] = base[i+2] - streakLength;
+                }
+                warpStreaks.geometry.attributes.position.needsUpdate = true;
+
+                // Kamera hareketi (eased)
+                camera.position.lerpVectors(warpStart, warpEnd, ease);
+                controls.target.lerp(warpTarget, ease);
+
+                if (p >= 1) {
+                    warpActive = false; controls.enabled = true;
+                    camera.fov = 65; camera.updateProjectionMatrix();
+                    flash.style.opacity = 0;
+                    warpStreaks.material.opacity = 0;
+                    starField.material.size = 1600;
+                    warpStreaks.material.color.set(0xaaddff);
+                }
             }
             if (controls) controls.update();
             const camP = camera.position;
-            labelSprites.forEach(s => { s.visible = camP.distanceTo(s.position) < 80000; });
+            labelSprites.forEach(s => { s.visible = camP.distanceTo(s.position) < 25000; });
             if (renderer) renderer.render(scene, camera);
         };
         
@@ -631,7 +806,7 @@
         };
 
         document.getElementById('file-input').onchange = (e) => { const r = new FileReader(); r.onload = (ev) => processData(JSON.parse(ev.target.result)); r.readAsText(e.target.files[0]); };
-        document.getElementById('close-hud').onclick = () => { document.getElementById('hud-panel').classList.add('hidden'); stopAudio(); };
+        document.getElementById('close-hud').onclick = () => { document.getElementById('hud-panel').classList.add('hidden'); stopAudio(); updateHighlightLines(null); };
         window.onresize = () => { camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight); };
         
         window.onload = init;
