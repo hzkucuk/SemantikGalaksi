@@ -54,12 +54,12 @@
         }
 
         .root-badge {
-            padding: 10px; border-radius: 12px; min-width: 75px;
+            padding: 14px 16px; border-radius: 14px; min-width: 90px;
             background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
             display: flex; flex-direction: column; align-items: center; 
             box-shadow: 0 0 15px currentColor;
         }
-        .root-pron { font-size: 8px; font-weight: 900; letter-spacing: 1.5px; margin-top: 4px; opacity: 0.8; text-transform: uppercase; color: white; }
+        .root-pron { font-size: 10px; font-weight: 900; letter-spacing: 1.5px; margin-top: 6px; opacity: 0.8; text-transform: uppercase; color: white; }
 
         .arabic-text { font-family: 'Amiri', serif; line-height: 1.8; word-spacing: 4px; }
         .root-highlight { 
@@ -89,14 +89,15 @@
         .ayah-list-item:hover { background: rgba(0, 242, 255, 0.1); border-color: #00f2ff; transform: translateX(10px); }
         
         .mini-root-tag { 
-            font-size: 11px; padding: 4px 8px; border-radius: 6px; border: 1px solid; 
+            font-size: 16px; padding: 6px 12px; border-radius: 8px; border: 1px solid; 
             margin-right: 5px; margin-top: 6px; display: inline-flex; 
             flex-direction: column; align-items: center; font-weight: 900; 
-            background: rgba(0,0,0,0.4); line-height: 1.1;
+            background: rgba(0,0,0,0.4); line-height: 1.2;
+            text-shadow: 0 0 6px currentColor;
         }
         .mini-root-pron { 
-            font-size: 7px; letter-spacing: 0.5px; opacity: 0.8; 
-            margin-top: 2px; color: #fff; text-transform: uppercase; font-family: 'Inter', sans-serif;
+            font-size: 9px; letter-spacing: 0.8px; opacity: 0.8; 
+            margin-top: 3px; color: #fff; text-transform: uppercase; font-family: 'Inter', sans-serif;
         }
 
         ::-webkit-scrollbar { width: 4px; }
@@ -436,7 +437,7 @@
             const lG = new THREE.BufferGeometry();
             lG.setAttribute('position', new THREE.Float32BufferAttribute(lineV, 3));
             lG.setAttribute('color', new THREE.Float32BufferAttribute(lineC, 3));
-            lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.04 }));
+            lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.02 }));
             lineSegments.renderOrder = 1; scene.add(lineSegments);
 
             // Ayet küreleri
@@ -474,7 +475,17 @@
                 const intA = raycaster.intersectObject(ayahMesh);
                 if (intA.length > 0) { const n = ayahNodes[intA[0].instanceId]; if(n) { showTooltip(n, event.clientX, event.clientY); return; } }
             }
-            if (lineSegments && lineNodePairs.length > 0) {
+            // Önce neon tube'lara bak (görünen kalın çizgiler)
+            if (highlightLines && highlightLines.length > 0) {
+                const tubes = highlightLines.filter(m => m.userData.pair);
+                const intT = raycaster.intersectObjects(tubes);
+                if (intT.length > 0) {
+                    const pair = intT[0].object.userData.pair;
+                    if (pair) { showLineTooltip(pair, event.clientX, event.clientY); return; }
+                }
+            }
+            // Neon yoksa arka plan çizgilerine bak
+            if ((!highlightLines || highlightLines.length === 0) && lineSegments && lineNodePairs.length > 0) {
                 raycaster.params.Line.threshold = 800;
                 const intL = raycaster.intersectObject(lineSegments);
                 if (intL.length > 0) {
@@ -487,7 +498,7 @@
         };
 
         const onMouseClick = (event) => {
-            if (warpActive || event.target.closest('.hud-panel') || event.target.closest('.search-results')) return;
+            if (warpActive || event.target.closest('.hud-panel') || event.target.closest('.search-results') || event.target.closest('#tooltip')) return;
             const rect = renderer.domElement.getBoundingClientRect();
             mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
             mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
@@ -496,6 +507,45 @@
             if (intS.length > 0) {
                 let o = intS[0].object; while(o && !o.userData?.nodeData) o = o.parent;
                 if(o && o.userData.nodeData) { warpTo(o.userData.nodeData); return; }
+            }
+            // Önce neon tube'lara bak
+            if (highlightLines && highlightLines.length > 0) {
+                const tubes = highlightLines.filter(m => m.userData.pair);
+                const intT = raycaster.intersectObjects(tubes);
+                if (intT.length > 0) {
+                    const pair = intT[0].object.userData.pair;
+                    if (pair) {
+                        const nd1 = nodes.find(nd => nd.id === pair.n1);
+                        const nd2 = nodes.find(nd => nd.id === pair.n2);
+                        if (nd1 && nd2) {
+                            const d1 = camera.position.distanceToSquared(new THREE.Vector3(nd1.x, nd1.y, nd1.z));
+                            const d2 = camera.position.distanceToSquared(new THREE.Vector3(nd2.x, nd2.y, nd2.z));
+                            hideTooltip();
+                            warpTo(d1 <= d2 ? nd2 : nd1);
+                            return;
+                        }
+                    }
+                }
+            }
+            // Neon yoksa arka plan çizgilerine bak
+            if ((!highlightLines || highlightLines.length === 0) && lineSegments && lineNodePairs.length > 0) {
+                raycaster.params.Line.threshold = 800;
+                const intL = raycaster.intersectObject(lineSegments);
+                if (intL.length > 0) {
+                    const segIdx = Math.floor(intL[0].index / 2);
+                    const pair = lineNodePairs[segIdx];
+                    if (pair) {
+                        const nd1 = nodes.find(nd => nd.id === pair.n1);
+                        const nd2 = nodes.find(nd => nd.id === pair.n2);
+                        if (nd1 && nd2) {
+                            const d1 = camera.position.distanceToSquared(new THREE.Vector3(nd1.x, nd1.y, nd1.z));
+                            const d2 = camera.position.distanceToSquared(new THREE.Vector3(nd2.x, nd2.y, nd2.z));
+                            hideTooltip();
+                            warpTo(d1 <= d2 ? nd2 : nd1);
+                            return;
+                        }
+                    }
+                }
             }
             let closestNode = null; let minDistance = 2500;
             nodes.forEach(n => {
@@ -526,7 +576,7 @@
                 const color = getRootCSSColor(r);
                 return `
                     <div class="mini-root-tag" style="color: ${color}; border-color: ${color.replace('hsl', 'hsla').replace(')', ', 0.4)')}">
-                        <span class="text-[11px] font-bold">${r}</span>
+                        <span class="text-[18px] font-bold">${r}</span>
                         <span class="mini-root-pron">${getRootPron(r)}</span>
                     </div>`;
             }).join('');
@@ -550,6 +600,16 @@
             const s1 = pair.n1.split(':'); const s2 = pair.n2.split(':');
             const name1 = `${surahNamesTR[s1[0]]} ${s1[0]}:${s1[1]}`;
             const name2 = `${surahNamesTR[s2[0]]} ${s2[0]}:${s2[1]}`;
+            // Kameraya yakın olan node = bulunduğun yer, uzak olan = gidilecek yer
+            const nd1 = nodes.find(nd => nd.id === pair.n1);
+            const nd2 = nodes.find(nd => nd.id === pair.n2);
+            let farId, farName, nearName;
+            if (nd1 && nd2) {
+                const d1 = camera.position.distanceToSquared(new THREE.Vector3(nd1.x, nd1.y, nd1.z));
+                const d2 = camera.position.distanceToSquared(new THREE.Vector3(nd2.x, nd2.y, nd2.z));
+                if (d1 <= d2) { farId = pair.n2; farName = name2; nearName = name1; }
+                else { farId = pair.n1; farName = name1; nearName = name2; }
+            } else { farId = pair.n2; farName = name2; nearName = name1; }
             lastHoveredId = 'line_' + pair.n1 + '_' + pair.n2;
             tooltip.innerHTML = `
                 <div style="font-size:11px;font-weight:900;color:#00f2ff;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px;">Kök Bağlantısı</div>
@@ -557,10 +617,8 @@
                     <span style="color:${rootColor};font-size:20px;font-weight:bold;">${pair.root}</span>
                     <span style="color:${rootColor};font-size:12px;opacity:0.7;">${rootPron}</span>
                 </div>
-                <div style="display:flex;flex-direction:column;gap:6px;">
-                    <div onclick="hideTooltip();warpToId('${pair.n1}')" style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(0,242,255,0.08);border:1px solid rgba(0,242,255,0.2);border-radius:8px;cursor:pointer;transition:background 0.2s;" onmouseenter="this.style.background='rgba(0,242,255,0.2)'" onmouseleave="this.style.background='rgba(0,242,255,0.08)'"><span style="color:#00f2ff;font-size:8px;">⬤</span><span style="color:#e2e8f0;font-size:13px;font-weight:600;">${name1}</span><span style="color:#00f2ff;font-size:16px;margin-left:auto;">→</span></div>
-                    <div onclick="hideTooltip();warpToId('${pair.n2}')" style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(0,242,255,0.08);border:1px solid rgba(0,242,255,0.2);border-radius:8px;cursor:pointer;transition:background 0.2s;" onmouseenter="this.style.background='rgba(0,242,255,0.2)'" onmouseleave="this.style.background='rgba(0,242,255,0.08)'"><span style="color:#00f2ff;font-size:8px;">⬤</span><span style="color:#e2e8f0;font-size:13px;font-weight:600;">${name2}</span><span style="color:#00f2ff;font-size:16px;margin-left:auto;">→</span></div>
-                </div>`;
+                <div style="font-size:10px;color:#64748b;margin-bottom:6px;">📍 ${nearName}</div>
+                <div onclick="hideTooltip();warpToId('${farId}')" style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:rgba(0,242,255,0.08);border:1px solid rgba(0,242,255,0.2);border-radius:8px;cursor:pointer;transition:background 0.2s;" onmouseenter="this.style.background='rgba(0,242,255,0.2)'" onmouseleave="this.style.background='rgba(0,242,255,0.08)'"><span style="color:#00f2ff;font-size:8px;">⬤</span><span style="color:#e2e8f0;font-size:13px;font-weight:600;">→ ${farName}</span></div>`;
             tooltip.style.display = 'block';
             tooltip.style.pointerEvents = 'auto';
             clampTooltip(tooltip, x, y);
@@ -615,29 +673,35 @@
         };
 
         const updateHighlightLines = (n) => {
-            if (highlightLines) { scene.remove(highlightLines); highlightLines = null; }
+            if (highlightLines) { highlightLines.forEach(m => scene.remove(m)); highlightLines = null; }
             if (!n) return;
-            const hV = []; const hC = [];
+            highlightLines = [];
+            const nodeIdx = nodes.findIndex(nd => nd.id === n.id);
             (n.roots || []).forEach(root => {
                 const ids = rootMap.get(root);
                 if (!ids) return;
                 const color = new THREE.Color(getRootCSSColor(root));
-                const nodeIdx = nodes.findIndex(nd => nd.id === n.id);
                 for (let i = 0; i < ids.length - 1; i++) {
                     if (ids[i] === nodeIdx || ids[i+1] === nodeIdx) {
                         const a = nodes[ids[i]]; const b = nodes[ids[i+1]];
-                        hV.push(a.x, a.y, a.z, b.x, b.y, b.z);
-                        hC.push(color.r, color.g, color.b, color.r, color.g, color.b);
+                        const p1 = new THREE.Vector3(a.x, a.y, a.z);
+                        const p2 = new THREE.Vector3(b.x, b.y, b.z);
+                        const path = new THREE.LineCurve3(p1, p2);
+                        const pairData = { n1: a.id, n2: b.id, root: root };
+                        const tubeG = new THREE.TubeGeometry(path, 1, 40, 6, false);
+                        const tubeM = new THREE.Mesh(tubeG, new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.85 }));
+                        tubeM.renderOrder = 2;
+                        tubeM.userData.pair = pairData;
+                        scene.add(tubeM);
+                        highlightLines.push(tubeM);
+                        const glowM = new THREE.Mesh(tubeG, new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.15 }));
+                        glowM.scale.set(2.5, 2.5, 1);
+                        glowM.renderOrder = 1;
+                        scene.add(glowM);
+                        highlightLines.push(glowM);
                     }
                 }
             });
-            if (hV.length === 0) return;
-            const hG = new THREE.BufferGeometry();
-            hG.setAttribute('position', new THREE.Float32BufferAttribute(hV, 3));
-            hG.setAttribute('color', new THREE.Float32BufferAttribute(hC, 3));
-            highlightLines = new THREE.LineSegments(hG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.9, linewidth: 2 }));
-            highlightLines.renderOrder = 2;
-            scene.add(highlightLines);
         };
 
         const showHUD = (n) => {
@@ -657,7 +721,7 @@
                 const c = getRootCSSColor(r); const badge = document.createElement('div'); badge.className = "root-badge";
                 badge.style.color = c; badge.style.borderColor = c.replace('hsl', 'hsla').replace(')', ', 0.4)');
                 badge.style.backgroundColor = c.replace('hsl', 'hsla').replace(')', ', 0.1)');
-                badge.innerHTML = `<span dir="rtl" class="text-xl font-bold">${r}</span><span class="root-pron">${getRootPron(r)}</span>`;
+                badge.innerHTML = `<span dir="rtl" class="text-2xl font-bold">${r}</span><span class="root-pron">${getRootPron(r)}</span>`;
                 rootsCont.appendChild(badge);
             });
 
@@ -806,7 +870,7 @@
         };
 
         document.getElementById('file-input').onchange = (e) => { const r = new FileReader(); r.onload = (ev) => processData(JSON.parse(ev.target.result)); r.readAsText(e.target.files[0]); };
-        document.getElementById('close-hud').onclick = () => { document.getElementById('hud-panel').classList.add('hidden'); stopAudio(); updateHighlightLines(null); };
+        document.getElementById('close-hud').onclick = () => { document.getElementById('hud-panel').classList.add('hidden'); stopAudio(); };
         window.onresize = () => { camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight); };
         
         window.onload = init;
