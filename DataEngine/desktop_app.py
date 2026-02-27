@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
     try:
         window = webview.create_window(
-            title='Semantik Galaksi Projesi', 
+            title="Kur'an-ı Kerim Kelime Kök Uzayı",
             url=f'http://127.0.0.1:{PORT}/index.html',
             width=1280, 
             height=800,
