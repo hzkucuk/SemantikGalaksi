@@ -19,12 +19,21 @@
             border-left: 3px solid #00f2ff;
             box-shadow: -25px 0 100px rgba(0,0,0,1);
             pointer-events: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        @media (max-width: 767px) {
+            .hud-panel { border-left: none; border-top: 3px solid #00f2ff; }
+            .root-badge { min-width: 60px; padding: 8px; }
+            .root-pron { font-size: 7px; }
+            .ayah-list-item { padding: 10px; }
+            .ayah-list-item:hover { transform: none; }
         }
 
         .search-results {
             position: absolute; top: 100%; left: 0; right: 0;
             background: rgba(0, 8, 15, 0.98); border: 1px solid rgba(0, 242, 255, 0.3);
-            border-radius: 20px; margin-top: 10px; max-height: 480px; overflow-y: auto;
+            border-radius: 20px; margin-top: 10px; max-height: min(480px, 60vh); overflow-y: auto;
             display: none; z-index: 100; backdrop-filter: blur(20px);
         }
         .search-stats-bar {
@@ -61,7 +70,7 @@
         #tooltip {
             position: fixed; display: none; pointer-events: none;
             background: rgba(0, 5, 12, 0.98); border: 1px solid rgba(0, 242, 255, 0.4);
-            padding: 24px; max-width: 400px; z-index: 1000;
+            padding: 24px; max-width: min(400px, calc(100vw - 32px)); z-index: 1000;
             box-shadow: 0 25px 80px rgba(0,0,0,1); backdrop-filter: blur(25px);
             border-radius: 1.5rem;
         }
@@ -104,40 +113,43 @@
     <div id="warp-flash" class="fixed inset-0 bg-cyan-400 pointer-events-none opacity-0 z-[999]"></div>
     <div id="tooltip"></div>
 
-    <div class="fixed top-0 w-full z-50 p-6 flex flex-col md:flex-row justify-between items-center bg-gradient-to-b from-black to-transparent gap-4">
+    <div class="fixed top-0 w-full z-50 p-3 md:p-6 flex flex-col md:flex-row justify-between items-center bg-gradient-to-b from-black to-transparent gap-2 md:gap-4">
         <div class="text-center md:text-left">
-            <h1 class="text-3xl neon-title">Semantik Galaksi v8.21</h1>
-            <p class="text-[9px] text-cyan-800 font-mono tracking-[0.4em] uppercase">Auto-Load Engine | Production Build</p>
+            <h1 class="text-xl md:text-3xl neon-title">Semantik Galaksi v8.21</h1>
+            <p class="text-[8px] md:text-[9px] text-cyan-800 font-mono tracking-[0.4em] uppercase">Auto-Load Engine | Production Build</p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto relative">
+        <div class="flex flex-col sm:flex-row gap-2 md:gap-3 w-full md:w-auto relative">
             <div class="w-full md:w-[32rem] relative">
-                <input type="text" id="search-input" placeholder="Sure, Koordinat veya Meal Ara..." class="bg-black/90 border border-white/10 rounded-full px-7 py-3 w-full outline-none focus:border-cyan-400 text-sm font-bold text-white shadow-2xl transition-all">
+                <input type="text" id="search-input" placeholder="Sure, Koordinat veya Meal Ara..." class="bg-black/90 border border-white/10 rounded-full px-4 md:px-7 py-2.5 md:py-3 w-full outline-none focus:border-cyan-400 text-xs md:text-sm font-bold text-white shadow-2xl transition-all">
                 <div id="search-results" class="search-results"></div>
             </div>
-            <label id="upload-label" class="bg-cyan-950 hover:bg-cyan-600 border border-cyan-400/30 px-8 py-3 rounded-full font-black text-[11px] cursor-pointer shadow-xl transition-all uppercase text-white tracking-widest text-center">
+            <label id="upload-label" class="bg-cyan-950 hover:bg-cyan-600 border border-cyan-400/30 px-4 md:px-8 py-2.5 md:py-3 rounded-full font-black text-[10px] md:text-[11px] cursor-pointer shadow-xl transition-all uppercase text-white tracking-widest text-center">
                 VERİ YÜKLE
                 <input type="file" id="file-input" class="hidden" accept=".json">
             </label>
         </div>
     </div>
 
-    <div id="hud-panel" class="fixed inset-4 md:inset-auto md:top-28 md:bottom-8 md:left-8 md:w-[28rem] hud-panel rounded-3xl md:rounded-[3.5rem] p-6 md:p-10 hidden z-40 overflow-y-auto border border-white/5 transition-all duration-300">
-        <button id="close-hud" class="absolute top-6 right-6 md:top-10 md:right-10 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all z-50">✕</button>
+    <div id="hud-panel" class="fixed inset-2 top-20 md:inset-auto md:top-28 md:bottom-8 md:left-8 md:w-[28rem] hud-panel rounded-2xl md:rounded-[3.5rem] p-4 md:p-10 hidden z-40 overflow-y-auto border border-white/5 transition-all duration-300">
+        <button id="close-hud" class="absolute top-3 right-3 md:top-10 md:right-10 w-9 h-9 md:w-10 md:h-10 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all z-50">✕</button>
         <div id="hud-content">
             <div class="mb-6 md:mb-8 border-b border-white/10 pb-6 md:pb-8">
                 <h2 id="hud-title" class="text-3xl md:text-4xl neon-title">SURE</h2>
                 <p id="hud-coord" class="text-[9px] md:text-[10px] text-slate-500 font-mono tracking-[0.4em] mt-2 uppercase opacity-60">KOORDİNAT: 0:0</p>
             </div>
 
-            <div class="bg-slate-900/60 p-6 md:p-8 rounded-2xl md:rounded-[2.5rem] mb-6 md:mb-8 border border-white/5 shadow-inner">
-                <p id="hud-arabic" class="text-right text-2xl md:text-3xl arabic-text text-white leading-relaxed" dir="rtl"></p>
-                <div class="h-px w-full bg-cyan-400/20 my-4 md:my-6"></div>
-                <p id="hud-translation" class="text-base md:text-lg text-slate-200 italic font-light leading-relaxed"></p>
+            <div class="bg-slate-900/60 p-4 md:p-8 rounded-xl md:rounded-[2.5rem] mb-4 md:mb-8 border border-white/5 shadow-inner">
+                <p id="hud-arabic" class="text-right text-xl md:text-3xl arabic-text text-white leading-relaxed" dir="rtl"></p>
+                <div class="h-px w-full bg-cyan-400/20 my-3 md:my-6"></div>
+                <p id="hud-translation" class="text-sm md:text-lg text-slate-200 italic font-light leading-relaxed"></p>
+                <button id="speak-btn" onclick="window.speakCurrentAyah()" class="mt-4 md:mt-5 w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/25 border-2 border-cyan-400 text-cyan-300 text-sm font-black uppercase tracking-widest transition-all" style="box-shadow: 0 0 15px rgba(0,242,255,0.3);">
+                    <span id="speak-icon" class="text-lg">🔊</span> Seslendir
+                </button>
             </div>
 
-            <div class="mb-8">
-                <h3 class="text-[9px] font-black text-slate-600 uppercase tracking-[0.4em] mb-6 italic text-center">Sülâsi Kök Analizi</h3>
-                <div id="hud-roots" class="flex flex-wrap justify-center gap-4"></div>
+            <div class="mb-6 md:mb-8">
+                <h3 class="text-[8px] md:text-[9px] font-black text-slate-600 uppercase tracking-[0.4em] mb-4 md:mb-6 italic text-center">Sülâsi Kök Analizi</h3>
+                <div id="hud-roots" class="flex flex-wrap justify-center gap-2 md:gap-4"></div>
             </div>
 
             <div class="pb-8">
@@ -161,10 +173,10 @@
 
         const arabicToLatinMap = {
             'ا': 'E', 'أ': 'E', 'إ': 'E', 'آ': 'E', 'ب': 'B', 'ت': 'T', 'ث': 'TH', 'ج': 'C', 'ح': 'H', 'خ': 'KH', 
-            'د': 'D', 'ذ': 'DH', 'ر': 'R', 'ز': 'Z', 'س': 'S', 'ş': 'Ş', 'ص': 'S', 
-            'ض': 'D', 'ط': 'T', 'ظ': 'Z', 'ع': 'A', 'غ': 'GH', 'f': 'F', 'ق': 'K', 
-            'ك': 'K', 'ل': 'L', 'م': 'M', 'n': 'N', 'ه': 'H', 'و': 'V', 'y': 'Y', 
-            'ء': 'E', 'ؤ': 'W', 'ئ': 'Y', 'ы': 'E', 'ة': 'T', ' ' : '-'
+            'د': 'D', 'ذ': 'DH', 'ر': 'R', 'ز': 'Z', 'س': 'S', 'ش': 'Ş', 'ص': 'S', 
+            'ض': 'D', 'ط': 'T', 'ظ': 'Z', 'ع': 'A', 'غ': 'GH', 'ف': 'F', 'ق': 'K', 
+            'ك': 'K', 'ل': 'L', 'م': 'M', 'ن': 'N', 'ه': 'H', 'و': 'V', 'ي': 'Y', 
+            'ء': 'E', 'ؤ': 'W', 'ئ': 'Y', 'ة': 'T', ' ' : '-'
         };
 
         const surahNamesTR = {
@@ -189,7 +201,7 @@
         };
         const getRootPron = (root) => {
             if(!root) return "";
-            return root.split('').map(char => arabicToLatinMap[char] || char).join('-');
+            return root.split('').filter(c => c !== ' ').map(char => arabicToLatinMap[char] || char).join('-');
         };
 
         const highlightArabicText = (text, roots) => {
@@ -204,7 +216,7 @@
             roots.forEach(root => {
                 if(!root) return;
                 const color = getRootCSSColor(root);
-                const cleanRoot = root.trim().replace(diacritics, '').replace(alifV, 'ا');
+                const cleanRoot = root.trim().replace(diacritics, '').replace(alifV, 'ا').replace(/\s/g, '');
                 if (!cleanRoot) return;
                 let src = clean.replace(alifV, 'ا');
                 let start = 0;
@@ -227,10 +239,10 @@
         const playAudio = (url) => { if (currentAudio) stopAudio(); currentAudio = new Audio(url); currentAudio.play().catch(e => {}); };
 
         const speakAyah = async (text) => {
-            if (!apiKey) return;
+            if (!apiKey) { console.warn('TTS: API key tanımlanmamış'); return false; }
             stopAudio();
-            if (audioCache.has(text)) { playAudio(audioCache.get(text)); return; }
-            if (isAudioLoading) return;
+            if (audioCache.has(text)) { playAudio(audioCache.get(text)); return true; }
+            if (isAudioLoading) return false;
             isAudioLoading = true;
             try {
                 const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`, {
@@ -241,6 +253,7 @@
                         model: "gemini-2.5-flash-preview-tts"
                     })
                 });
+                if (!response.ok) { console.error('TTS API hata:', response.status, response.statusText); return false; }
                 const result = await response.json();
                 const part = result.candidates?.[0]?.content?.parts?.[0];
                 if (part?.inlineData?.data) {
@@ -250,8 +263,11 @@
                     const url = URL.createObjectURL(new Blob([pcmToWav(pcm, 24000)], { type: 'audio/wav' }));
                     audioCache.set(text, url);
                     playAudio(url);
+                    return true;
                 }
-            } catch (err) {} finally { isAudioLoading = false; }
+                console.warn('TTS: Ses verisi alınamadı', result);
+                return false;
+            } catch (err) { console.error('TTS hata:', err); return false; } finally { isAudioLoading = false; }
         };
 
         const pcmToWav = (pcm, rate) => {
@@ -375,7 +391,7 @@
             const hTarget = event.target.closest('.ref-hover');
             if (hTarget) {
                 const n = nodes.find(x => x.id === hTarget.dataset.id);
-                if (n) { showTooltip(n, event.clientX, event.clientY); clearTimeout(hoverTimeout); hoverTimeout = setTimeout(() => speakAyah(n.translation), 800); return; }
+                if (n) { showTooltip(n, event.clientX, event.clientY); return; }
             }
             const rect = renderer.domElement.getBoundingClientRect();
             mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
@@ -441,8 +457,30 @@
         };
         const hideTooltip = () => { document.getElementById('tooltip').style.display = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); stopAudio(); };
 
+        let currentHudNode = null;
+
+        const speakCurrentAyah = async () => {
+            if (!currentHudNode) return;
+            const btn = document.getElementById('speak-btn');
+            const icon = document.getElementById('speak-icon');
+            if (currentAudio) { stopAudio(); icon.textContent = '🔊'; return; }
+            icon.textContent = '⏳';
+            btn.classList.add('opacity-60');
+            const success = await speakAyah(currentHudNode.translation);
+            btn.classList.remove('opacity-60');
+            if (success && currentAudio) {
+                icon.textContent = '🔈';
+                currentAudio.onended = () => { icon.textContent = '🔊'; currentAudio = null; };
+            } else {
+                icon.textContent = '❌';
+                setTimeout(() => { icon.textContent = '🔊'; }, 2000);
+            }
+        };
+        window.speakCurrentAyah = speakCurrentAyah;
+
         const showHUD = (n) => {
             if (!n) return;
+            currentHudNode = n;
             const panel = document.getElementById('hud-panel');
             panel.classList.remove('hidden');
             const arabicHighlighted = highlightArabicText(n.text, n.roots);
@@ -491,6 +529,7 @@
 
         const warpTo = (node) => { 
             if(!node) return;
+            hideTooltip();
             warpActive = true; warpProgress = 0; controls.enabled = false; 
             warpStart.copy(camera.position); warpTarget.set(node.x, node.y, node.z); 
             warpEnd.set(node.x + 8000, node.y + 4000, node.z + 15000); 
