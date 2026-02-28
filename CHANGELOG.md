@@ -9,6 +9,10 @@
   - Kullanıcı verileri (notes, keys, config) EXE yanına yazılır; bundle edilen dosyalar salt-okunur kalır
 - Etkilenen dosyalar: `DataEngine/desktop_app.py`, `DataEngine/requirements.txt`, `SemantikGalaksi.spec`, `build_exe.bat`, `.gitignore`
 
+### Düzeltilen
+- **Neon Kök Vurgulama Bozulması**: Arapça RTL metinde `display: inline-block` kullanımı kelimelerin üst üste binmesine neden oluyordu; `display: inline` olarak düzeltildi, `text-shadow` yoğunluğu azaltıldı, gereksiz `background` ve `border-radius` kaldırıldı
+- Etkilenen dosyalar: `Frontend/index.html`
+
 ## [0.14.0] - 2025-01-XX
 ### Düzeltilen
 - **Ayet Küre Kalitesi**: Ayet küreleri artık surah rengine göre prosedürel texture alıyor (eskisi: tek cyan texture, 16 segment → yeni: surah bazlı renkli texture, 48 segment, 512px çözünürlük)

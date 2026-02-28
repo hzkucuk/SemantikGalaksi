@@ -19,7 +19,8 @@ def _get_base_dir():
     if getattr(sys, 'frozen', False):
         # PyInstaller ile paketlenmiş EXE: bundle edilen dosyalar _MEIPASS altında
         return sys._MEIPASS
-    return os.path.dirname(os.path.abspath(__file__))
+    # Geliştirme modu: DataEngine klasörünün üst dizini (proje kökü)
+    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def _get_user_data_dir():
