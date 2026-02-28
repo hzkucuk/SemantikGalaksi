@@ -2796,11 +2796,10 @@ Türkçe yaz, kısa ve öz tut.`;
         });
 
         const _loadStart = Date.now();
-        let _besmeleCtx = null;
-        let _besmeleSource = null;
-        let _besmeleGain = null;
         let _besmelePlaying = false;
         let _besmeleMinTime = 3000;
+        let _dataReady = false;
+        let _autoplayBlocked = false;
 
         (function() {
             const a = document.getElementById('besmele-audio');
@@ -2814,73 +2813,64 @@ Türkçe yaz, kısa ve öz tut.`;
             if (a.readyState >= 1) setDur();
         })();
 
+        const _dismissLoading = () => {
+            const ls = document.getElementById('loading-screen');
+            if (!ls || ls.style.display === 'none') return;
+            if (!_dataReady) return;
+            if (_autoplayBlocked && !_besmelePlaying) return;
+            const audio = document.getElementById('besmele-audio');
+            if (audio && _besmelePlaying && !audio.paused && !audio.ended) return;
+            fadeBesmeleAudio();
+            ls.style.opacity = '0';
+            setTimeout(() => { ls.style.display = 'none'; }, 1200);
+        };
+
         const playBesmeleAudio = () => {
             if (_besmelePlaying) return;
             const audio = document.getElementById('besmele-audio');
             if (!audio) return;
             audio.volume = 0.7;
+            audio.addEventListener('ended', _dismissLoading, { once: true });
 
-            const onPlay = () => { _besmelePlaying = true; };
-            audio.addEventListener('playing', onPlay, { once: true });
-
-            const showTapHint = () => {
+            audio.play().then(() => {
+                _besmelePlaying = true;
+            }).catch(() => {
+                _autoplayBlocked = true;
                 const hint = document.getElementById('loading-tap-hint');
                 const spinner = document.getElementById('loading-spinner');
                 const loadText = document.getElementById('loading-text');
                 if (hint) hint.style.display = 'block';
                 if (spinner) spinner.style.display = 'none';
                 if (loadText) loadText.style.display = 'none';
-            };
-
-            const hideTapHint = () => {
-                const hint = document.getElementById('loading-tap-hint');
-                const spinner = document.getElementById('loading-spinner');
-                const loadText = document.getElementById('loading-text');
-                if (hint) hint.style.display = 'none';
-                if (spinner) spinner.style.display = 'block';
-                if (loadText) loadText.style.display = 'block';
-            };
-
-            audio.play().then(() => {
-                _besmelePlaying = true;
-            }).catch(() => {
-                // Autoplay engellendi — kullanıcı etkileşimi bekle
-                showTapHint();
 
                 const unlock = () => {
                     if (_besmelePlaying) return;
-                    hideTapHint();
+                    if (hint) hint.style.display = 'none';
+                    if (spinner) spinner.style.display = 'block';
+                    if (loadText) loadText.style.display = 'block';
                     audio.currentTime = 0;
-                    audio.play().then(() => { _besmelePlaying = true; }).catch(() => {});
+                    audio.play().then(() => {
+                        _besmelePlaying = true;
+                    }).catch(() => {
+                        _autoplayBlocked = false;
+                        _dismissLoading();
+                    });
                     document.removeEventListener('click', unlock);
                     document.removeEventListener('keydown', unlock);
                     document.removeEventListener('touchstart', unlock);
                 };
-                document.addEventListener('click', unlock, { once: true });
-                document.addEventListener('keydown', unlock, { once: true });
-                document.addEventListener('touchstart', unlock, { once: true });
+                document.addEventListener('click', unlock);
+                document.addEventListener('keydown', unlock);
+                document.addEventListener('touchstart', unlock);
             });
         };
 
         const fadeBesmeleAudio = () => {
             _besmelePlaying = true;
-            // Desktop: Python winsound ile çalınan sesi durdur
             if (window.pywebview && window.pywebview.api) {
                 try { window.pywebview.api.stop_besmele(); } catch(e) {}
             }
-            // Web: HTML audio veya Web Audio API fade-out
             const audio = document.getElementById('besmele-audio');
-            if (_besmeleGain && _besmeleCtx && _besmeleSource) {
-                try {
-                    const now = _besmeleCtx.currentTime;
-                    _besmeleGain.gain.setValueAtTime(_besmeleGain.gain.value, now);
-                    _besmeleGain.gain.linearRampToValueAtTime(0, now + 1.2);
-                    setTimeout(() => {
-                        try { _besmeleSource.stop(); } catch(e) {}
-                    }, 1300);
-                } catch(e) {}
-                return;
-            }
             if (!audio || audio.paused) return;
             let vol = audio.volume;
             const fade = setInterval(() => {
@@ -2891,41 +2881,8 @@ Türkçe yaz, kısa ve öz tut.`;
         };
 
         const hideLoadingScreen = () => {
-            const ls = document.getElementById('loading-screen');
-            if (!ls || ls.style.display === 'none') return;
-
-            const doHide = () => {
-                const elapsed = Date.now() - _loadStart;
-                const remaining = Math.max(0, _besmeleMinTime - elapsed);
-                setTimeout(() => {
-                    fadeBesmeleAudio();
-                    ls.style.opacity = '0';
-                    setTimeout(() => { ls.style.display = 'none'; }, 1200);
-                }, remaining);
-            };
-
-            if (_besmelePlaying) {
-                doHide();
-            } else {
-                // Besmele henüz çalmadı — kullanıcı dokunmasını bekle, sonra kapat
-                const waitForPlay = () => {
-                    const audio = document.getElementById('besmele-audio');
-                    if (audio) {
-                        audio.addEventListener('playing', () => {
-                            _loadStart = Date.now();
-                            const setDur = () => {
-                                if (audio.duration && isFinite(audio.duration)) {
-                                    _besmeleMinTime = Math.ceil(audio.duration * 1000) + 800;
-                                }
-                                doHide();
-                            };
-                            if (audio.duration && isFinite(audio.duration)) setDur();
-                            else audio.addEventListener('loadedmetadata', setDur, { once: true });
-                        }, { once: true });
-                    }
-                };
-                waitForPlay();
-            }
+            _dataReady = true;
+            _dismissLoading();
         };
 
         window.onload = async () => {
