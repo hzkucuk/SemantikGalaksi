@@ -375,10 +375,13 @@
         </p>
 
         <!-- Spinner -->
-        <div style="width:36px;height:36px;border:2px solid rgba(0,242,255,0.1);border-top-color:rgba(0,242,255,0.7);border-radius:50%;box-shadow:0 0 12px rgba(0,242,255,0.2);animation:loadSpin 1.2s linear infinite, loadFadeUp 1s ease 2.0s both;margin-bottom:18px;"></div>
+        <div id="loading-spinner" style="width:36px;height:36px;border:2px solid rgba(0,242,255,0.1);border-top-color:rgba(0,242,255,0.7);border-radius:50%;box-shadow:0 0 12px rgba(0,242,255,0.2);animation:loadSpin 1.2s linear infinite, loadFadeUp 1s ease 2.0s both;margin-bottom:18px;"></div>
+
+        <!-- Dokunarak başlat (web modu) -->
+        <p id="loading-tap-hint" style="display:none;font-size:11px;color:rgba(0,242,255,0.6);font-family:'Inter',sans-serif;letter-spacing:0.3em;text-transform:uppercase;animation:loadPulse 2s ease-in-out infinite, loadFadeUp 1s ease 2.0s both;cursor:pointer;">▶ Dokunarak Başlat</p>
 
         <!-- Yükleniyor -->
-        <p style="font-size:9px;color:rgba(0,242,255,0.35);font-family:'Inter',monospace;letter-spacing:0.6em;text-transform:uppercase;animation:loadPulse 2.5s ease-in-out infinite, loadFadeUp 1s ease 2.0s both;">Yükleniyor</p>
+        <p id="loading-text" style="font-size:9px;color:rgba(0,242,255,0.35);font-family:'Inter',monospace;letter-spacing:0.6em;text-transform:uppercase;animation:loadPulse 2.5s ease-in-out infinite, loadFadeUp 1s ease 2.0s both;">Yükleniyor</p>
     </div>
 
     <canvas id="warp-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:998;display:none;"></canvas>
@@ -2816,38 +2819,42 @@ Türkçe yaz, kısa ve öz tut.`;
             const onPlay = () => { _besmelePlaying = true; };
             audio.addEventListener('playing', onPlay, { once: true });
 
+            const showTapHint = () => {
+                const hint = document.getElementById('loading-tap-hint');
+                const spinner = document.getElementById('loading-spinner');
+                const loadText = document.getElementById('loading-text');
+                if (hint) hint.style.display = 'block';
+                if (spinner) spinner.style.display = 'none';
+                if (loadText) loadText.style.display = 'none';
+            };
+
+            const hideTapHint = () => {
+                const hint = document.getElementById('loading-tap-hint');
+                const spinner = document.getElementById('loading-spinner');
+                const loadText = document.getElementById('loading-text');
+                if (hint) hint.style.display = 'none';
+                if (spinner) spinner.style.display = 'block';
+                if (loadText) loadText.style.display = 'block';
+            };
+
             audio.play().then(() => {
                 _besmelePlaying = true;
             }).catch(() => {
-                try {
-                    _besmeleCtx = new (window.AudioContext || window.webkitAudioContext)();
-                    _besmeleGain = _besmeleCtx.createGain();
-                    _besmeleGain.gain.value = 0.7;
-                    _besmeleGain.connect(_besmeleCtx.destination);
-                    fetch('besmele.wav')
-                        .then(r => r.arrayBuffer())
-                        .then(buf => _besmeleCtx.decodeAudioData(buf))
-                        .then(decoded => {
-                            if (_besmelePlaying) return;
-                            _besmeleSource = _besmeleCtx.createBufferSource();
-                            _besmeleSource.buffer = decoded;
-                            _besmeleSource.connect(_besmeleGain);
-                            _besmeleSource.start(0);
-                            _besmelePlaying = true;
-                        }).catch(() => {});
-                } catch(e) {}
+                // Autoplay engellendi — kullanıcı etkileşimi bekle
+                showTapHint();
 
                 const unlock = () => {
                     if (_besmelePlaying) return;
-                    if (_besmeleCtx && _besmeleCtx.state === 'suspended') {
-                        _besmeleCtx.resume().catch(() => {});
-                    }
+                    hideTapHint();
+                    audio.currentTime = 0;
                     audio.play().then(() => { _besmelePlaying = true; }).catch(() => {});
                     document.removeEventListener('click', unlock);
                     document.removeEventListener('keydown', unlock);
+                    document.removeEventListener('touchstart', unlock);
                 };
                 document.addEventListener('click', unlock, { once: true });
                 document.addEventListener('keydown', unlock, { once: true });
+                document.addEventListener('touchstart', unlock, { once: true });
             });
         };
 
@@ -2882,13 +2889,39 @@ Türkçe yaz, kısa ve öz tut.`;
         const hideLoadingScreen = () => {
             const ls = document.getElementById('loading-screen');
             if (!ls || ls.style.display === 'none') return;
-            const elapsed = Date.now() - _loadStart;
-            const remaining = Math.max(0, _besmeleMinTime - elapsed);
-            setTimeout(() => {
-                fadeBesmeleAudio();
-                ls.style.opacity = '0';
-                setTimeout(() => { ls.style.display = 'none'; }, 1200);
-            }, remaining);
+
+            const doHide = () => {
+                const elapsed = Date.now() - _loadStart;
+                const remaining = Math.max(0, _besmeleMinTime - elapsed);
+                setTimeout(() => {
+                    fadeBesmeleAudio();
+                    ls.style.opacity = '0';
+                    setTimeout(() => { ls.style.display = 'none'; }, 1200);
+                }, remaining);
+            };
+
+            if (_besmelePlaying) {
+                doHide();
+            } else {
+                // Besmele henüz çalmadı — kullanıcı dokunmasını bekle, sonra kapat
+                const waitForPlay = () => {
+                    const audio = document.getElementById('besmele-audio');
+                    if (audio) {
+                        audio.addEventListener('playing', () => {
+                            _loadStart = Date.now();
+                            const setDur = () => {
+                                if (audio.duration && isFinite(audio.duration)) {
+                                    _besmeleMinTime = Math.ceil(audio.duration * 1000) + 800;
+                                }
+                                doHide();
+                            };
+                            if (audio.duration && isFinite(audio.duration)) setDur();
+                            else audio.addEventListener('loadedmetadata', setDur, { once: true });
+                        }, { once: true });
+                    }
+                };
+                waitForPlay();
+            }
         };
 
         window.onload = async () => {

@@ -11,6 +11,7 @@
 
 ### Düzeltilen
 - **Neon Kök Vurgulama Bozulması**: Arapça RTL metinde `display: inline-block` kullanımı kelimelerin üst üste binmesine neden oluyordu; `display: inline` olarak düzeltildi, `text-shadow` yoğunluğu azaltıldı, gereksiz `background` ve `border-radius` kaldırıldı
+- **Web Besmele Sesi Çalmıyor**: Tarayıcı autoplay politikası nedeniyle besmele sesi çalmıyordu; loading ekranında "▶ Dokunarak Başlat" butonu eklendi, kullanıcı etkileşimi sonrası ses başlatılıp loading ekranı besmele süresince bekliyor
 - Etkilenen dosyalar: `Frontend/index.html`
 
 ## [0.14.0] - 2025-01-XX
