@@ -14,13 +14,31 @@ import secrets
 import struct
 
 # --- AYARLAR ---
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT_DIR = os.path.join(CURRENT_DIR, '..', 'Frontend')
-WEBVIEW_DATA_DIR = os.path.join(CURRENT_DIR, 'webview_data')
-KEYS_FILE = os.path.join(CURRENT_DIR, 'webview_data', '.api_keys')
+def _get_base_dir():
+    """PyInstaller ile paketlenmiş veya normal çalışmaya göre kök dizini belirler."""
+    if getattr(sys, 'frozen', False):
+        # PyInstaller ile paketlenmiş EXE: bundle edilen dosyalar _MEIPASS altında
+        return sys._MEIPASS
+    return os.path.dirname(os.path.abspath(__file__))
+
+
+def _get_user_data_dir():
+    """Kullanıcı verilerinin (notes, keys, config) saklanacağı yazılabilir dizin."""
+    if getattr(sys, 'frozen', False):
+        return os.path.dirname(os.path.abspath(sys.executable))
+    return os.path.dirname(os.path.abspath(__file__))
+
+
+BASE_DIR = _get_base_dir()
+USER_DATA_DIR = _get_user_data_dir()
+
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__)) if not getattr(sys, 'frozen', False) else USER_DATA_DIR
+ROOT_DIR = os.path.join(BASE_DIR, 'Frontend')
+WEBVIEW_DATA_DIR = os.path.join(USER_DATA_DIR, 'webview_data')
+KEYS_FILE = os.path.join(USER_DATA_DIR, 'webview_data', '.api_keys')
 DATASETS_DIR = os.path.join(ROOT_DIR, 'datasets')
-NOTES_DIR = os.path.join(CURRENT_DIR, 'notes')
-CONFIG_FILE = os.path.join(CURRENT_DIR, 'config.json')
+NOTES_DIR = os.path.join(USER_DATA_DIR, 'notes')
+CONFIG_FILE = os.path.join(USER_DATA_DIR, 'config.json')
 
 
 def _load_config():

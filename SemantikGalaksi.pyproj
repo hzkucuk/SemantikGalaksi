@@ -26,6 +26,8 @@
     <Compile Include="DataEngine\quran_api_enricher.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".github\workflows\deploy.yml" />
+    <Content Include="build_exe.bat" />
     <Content Include="CHANGELOG.md" />
     <Content Include="DataEngine\config.json" />
     <Content Include="FEATURES.md" />
@@ -34,8 +36,12 @@
     <Content Include="DataEngine\requirements.txt" />
     <Content Include="DataEngine\.env" />
     <Content Include="Frontend\warp.html" />
+    <Content Include="index.html" />
+    <Content Include="SemantikGalaksi.spec" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include=".github\" />
+    <Folder Include=".github\workflows\" />
     <Folder Include="DataEngine\" />
     <Folder Include="Frontend\" />
   </ItemGroup>

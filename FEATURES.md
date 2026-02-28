@@ -1,5 +1,19 @@
 # FEATURES - Kur'an-ı Kerim Kelime Kök Uzayı
 
+## EXE Olarak Dağıtım (PyInstaller)
+Uygulama PyInstaller ile tek klasör (one-folder) EXE olarak paketlenebilir.
+
+| Bileşen | Açıklama |
+|---------|----------|
+| `SemantikGalaksi.spec` | PyInstaller build tanımı — Frontend, config.json otomatik dahil |
+| `build_exe.bat` | Tek çift tıkla EXE oluşturma |
+| Frozen Mode | `sys._MEIPASS` ile bundle dosyaları, `sys.executable` ile yazılabilir kullanıcı verileri ayrılır |
+
+- **Bundle edilen dosyalar** (salt-okunur): `Frontend/` klasörü, `config.json`
+- **Yazılabilir dosyalar** (EXE yanında oluşur): `webview_data/`, `notes/`, `config.json` (kullanıcı kopyası)
+- **Build**: Proje kök dizininde `build_exe.bat` çalıştırın → `dist\SemantikGalaksi\SemantikGalaksi.exe`
+- **Dağıtım**: `dist\SemantikGalaksi` klasörünü ZIP olarak paketleyin
+
 ## Uzay Yerleşim Modelleri
 Sureler ve ayetler 4 farklı 3D yerleşim modeliyle uzayda konumlandırılabilir. Tüm modellerde **Dünya-Ay ölçeği** kullanılır:
 - Sure (Dünya) yarıçapı: 1500 birim

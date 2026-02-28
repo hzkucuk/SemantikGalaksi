@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [0.15.0] - 2025-07-23
+### Eklenen
+- **EXE Dağıtım Desteği**: PyInstaller ile tek klasör (one-folder) EXE paketleme altyapısı eklendi
+  - `SemantikGalaksi.spec`: PyInstaller spec dosyası — Frontend dosyaları ve config.json otomatik bundle edilir
+  - `build_exe.bat`: Tek komutla EXE oluşturan build script'i
+  - `desktop_app.py`: Frozen mode (`sys._MEIPASS`) desteği eklendi — EXE ve geliştirme ortamı ayrı yol çözümlemesi
+  - Kullanıcı verileri (notes, keys, config) EXE yanına yazılır; bundle edilen dosyalar salt-okunur kalır
+- Etkilenen dosyalar: `DataEngine/desktop_app.py`, `DataEngine/requirements.txt`, `SemantikGalaksi.spec`, `build_exe.bat`, `.gitignore`
+
 ## [0.14.0] - 2025-01-XX
 ### Düzeltilen
 - **Ayet Küre Kalitesi**: Ayet küreleri artık surah rengine göre prosedürel texture alıyor (eskisi: tek cyan texture, 16 segment → yeni: surah bazlı renkli texture, 48 segment, 512px çözünürlük)
