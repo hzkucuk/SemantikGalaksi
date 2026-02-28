@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.14.0] - 2025-01-XX
+### Düzeltilen
+- **Ayet Küre Kalitesi**: Ayet küreleri artık surah rengine göre prosedürel texture alıyor (eskisi: tek cyan texture, 16 segment → yeni: surah bazlı renkli texture, 48 segment, 512px çözünürlük)
+- **Tooltip Taşma**: Uzun ayet metinleri tooltip dışına taşmıyordu; `max-width` daraltıldı (520→420px), `max-height: 60vh`, `overflow-x:hidden`, `word-break:break-word` eklendi
+- **HUD Panel Scroll Taşma**: Sol panelde içerik scroll dışına çıkıyordu; `overflow-x-hidden`, `contain:paint`, `scrollbar-width:thin` eklendi, metin kutuları `word-break`/`overflow-wrap` ile sarılıyor
+- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`, `FEATURES.md`
+
 ## [0.13.0] - 2025-01-XX
 ### Eklenen
 - **Uzay Yerleşim Modelleri**: 4 farklı 3D yerleşim modeli eklendi — kullanıcı üst toolbar'dan seçebilir

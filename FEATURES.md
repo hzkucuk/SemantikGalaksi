@@ -14,11 +14,12 @@ Sureler ve ayetler 4 farklı 3D yerleşim modeliyle uzayda konumlandırılabilir
 | Küre | 🔮 | Fibonacci Küre | Altın oran açısı (φ), eşit alan dağılımı |
 
 - **Ayah Saçılma**: Galaksi modelinde disk (yukarı/aşağı), diğerlerinde küresel 3B saçılma
+- **Ayah Küre Kalitesi**: Her ayet küresi kendi surahının rengine uygun prosedürel texture alır (48 segment, 512px)
 - **Anlık Geçiş**: `switchLayout()` ile veri yeniden işlenir, warp ile geçiş
 - **UI**: Toolbar'da 🌌 butonu → açılır menü, her seçenek açıklama alt-metni içerir
 
 ## WYSIWYG Not Editörü
-Kullanıcılar zengin metin formatında not tutabilir. Notlar localStorage'da kullanıcı bazlı saklanır.
+Kullanıcılar zengin metin formatında not tutabilir. Notlar sunucu tarafında kullanıcı bazlı JSON dosyalarına kaydedilir.
 
 | Biçimlendirme | Açıklama |
 |---------------|----------|
