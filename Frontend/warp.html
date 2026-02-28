@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Hyperspace - HD Cinematic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            cursor: crosshair;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .jump-button {
+            pointer-events: auto;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            padding: 16px 45px;
+            font-size: 0.9rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            backdrop-filter: blur(8px);
+        }
+
+            .jump-button:hover {
+                border-color: #ffffff;
+                letter-spacing: 7px;
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            .jump-button:active {
+                background: #ffffff;
+                color: #000;
+                transform: scale(0.92);
+            }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <button id="jumpBtn" class="jump-button">Hyperdrive Engage</button>
+    </div>
+
+    <canvas id="hyperspace"></canvas>
+
+    <script>
+        const canvas = document.getElementById('hyperspace');
+        const ctx = canvas.getContext('2d');
+        const jumpBtn = document.getElementById('jumpBtn');
+
+        let width, height, centerX, centerY;
+        let currentCenterX, currentCenterY;
+        let mouseX = 0, mouseY = 0;
+        let stars = [];
+        let vortexLines = [];
+
+        let speed = 1;
+        let targetSpeed = 1;
+        const BASE_SPEED = 1;
+        const MAX_SPEED = 50;
+        const LERP_FACTOR = 0.05;
+
+        // Tünel şeritleri için yapı
+        const VORTEX_LINE_COUNT = 70;
+
+        function resize() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            centerX = width / 2;
+            centerY = height / 2;
+
+            // High-DPI Scaling (Pikselleşmeyi önleyen kritik kısım)
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = width * dpr;
+            canvas.height = height * dpr;
+            canvas.style.width = width + 'px';
+            canvas.style.height = height + 'px';
+            ctx.scale(dpr, dpr);
+
+            currentCenterX = centerX;
+            currentCenterY = centerY;
+        }
+
+        function init() {
+            resize();
+
+            // Yıldızları oluştur
+            stars = [];
+            for (let i = 0; i < 800; i++) {
+                stars.push({
+                    x: Math.random() * width * 4 - width * 2,
+                    y: Math.random() * height * 4 - height * 2,
+                    z: Math.random() * width,
+                    pz: 0,
+                    size: Math.random() * 1.5 + 0.5
+                });
+            }
+
+            // Tünel enerji şeritlerini oluştur
+            vortexLines = [];
+            for (let i = 0; i < VORTEX_LINE_COUNT; i++) {
+                vortexLines.push({
+                    angle: (i / VORTEX_LINE_COUNT) * Math.PI * 2,
+                    radius: 200 + Math.random() * 500,
+                    z: Math.random() * 2000,
+                    color: Math.random() > 0.5 ? '#00ccff' : '#0066ff'
+                });
+            }
+        }
+
+        function drawVortex(intensity) {
+            if (intensity <= 0.01) return;
+
+            ctx.save();
+            ctx.lineCap = "round";
+            ctx.lineJoin = "round";
+
+            for (let i = 0; i < vortexLines.length; i++) {
+                let v = vortexLines[i];
+
+                v.z -= speed * 1.5;
+                v.angle += 0.005 * intensity;
+
+                if (v.z < 1) {
+                    v.z = 2000;
+                    v.angle = Math.random() * Math.PI * 2;
+                }
+
+                const k = 800 / v.z;
+                const x = Math.cos(v.angle) * v.radius;
+                const y = Math.sin(v.angle) * v.radius;
+
+                const sx = x * k + currentCenterX;
+                const sy = y * k + currentCenterY;
+
+                const pz = v.z + 150;
+                const pk = 800 / pz;
+                const px = x * pk + currentCenterX;
+                const py = y * pk + currentCenterY;
+
+                const opacity = Math.min(1, (1 - v.z / 2000)) * intensity;
+
+                ctx.beginPath();
+                ctx.strokeStyle = v.color;
+                ctx.globalAlpha = opacity * 0.4;
+                ctx.lineWidth = Math.max(0.5, 12 * k * 0.04 * intensity);
+
+                ctx.moveTo(px, py);
+                ctx.lineTo(sx, sy);
+                ctx.stroke();
+            }
+
+            ctx.restore();
+            ctx.globalAlpha = 1;
+        }
+
+        function draw() {
+            // Arka planı temizle - İz bırakma miktarını hıza göre optimize et
+            const clearOpacity = speed > 20 ? 0.25 : 0.4;
+            ctx.fillStyle = `rgba(0, 0, 0, ${clearOpacity})`;
+            ctx.fillRect(0, 0, width, height);
+
+            speed += (targetSpeed - speed) * LERP_FACTOR;
+
+            const targetCX = centerX + (mouseX * 250);
+            const targetCY = centerY + (mouseY * 200);
+            currentCenterX += (targetCX - currentCenterX) * 0.08;
+            currentCenterY += (targetCY - currentCenterY) * 0.08;
+
+            const vortexIntensity = Math.max(0, (speed - 10) / (MAX_SPEED - 10));
+            drawVortex(vortexIntensity);
+
+            ctx.lineCap = "round";
+            ctx.lineJoin = "round";
+
+            for (let i = 0; i < stars.length; i++) {
+                let s = stars[i];
+
+                s.pz = s.z;
+                s.z -= speed;
+
+                if (s.z < 1) {
+                    s.z = width;
+                    s.x = Math.random() * width * 4 - width * 2;
+                    s.y = Math.random() * height * 4 - height * 2;
+                    s.pz = s.z;
+                }
+
+                const sx = (s.x / s.z) * width + currentCenterX;
+                const sy = (s.y / s.z) * height + currentCenterY;
+                const px = (s.x / s.pz) * width + currentCenterX;
+                const py = (s.y / s.pz) * height + currentCenterY;
+
+                const distanceRatio = (1 - s.z / width);
+
+                // Kalınlığı mesafeye ve hıza göre yumuşat
+                ctx.lineWidth = Math.max(0.3, s.size * (1 + distanceRatio * 1.5));
+                ctx.strokeStyle = `rgba(255, 255, 255, ${Math.min(1, distanceRatio * 0.8 + 0.2)})`;
+
+                ctx.beginPath();
+                ctx.moveTo(px, py);
+                ctx.lineTo(sx, sy);
+                ctx.stroke();
+            }
+
+            requestAnimationFrame(draw);
+        }
+
+        window.addEventListener('mousemove', (e) => {
+            mouseX = (e.clientX - centerX) / centerX;
+            mouseY = (e.clientY - centerY) / centerY;
+        });
+
+        const engage = () => targetSpeed = MAX_SPEED;
+        const disengage = () => targetSpeed = BASE_SPEED;
+
+        jumpBtn.addEventListener('mousedown', engage);
+        window.addEventListener('mouseup', disengage);
+        jumpBtn.addEventListener('touchstart', (e) => { e.preventDefault(); engage(); });
+        window.addEventListener('touchend', disengage);
+
+        window.addEventListener('resize', resize);
+
+        init();
+        draw();
+    </script>
+</body>
+</html>

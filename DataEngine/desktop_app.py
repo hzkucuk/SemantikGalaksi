@@ -68,11 +68,10 @@ if __name__ == '__main__':
         window = webview.create_window(
             title="Kur'an-ı Kerim Kelime Kök Uzayı",
             url=f'http://127.0.0.1:{PORT}/index.html',
-            width=1280, 
-            height=800,
-            background_color='#000000', # Siyah arka plan
+            maximized=True,
+            background_color='#000000',
             resizable=True,
-            text_select=False # Uygulama hissi
+            text_select=False
         )
         window.events.closing += on_closing
         webview.start(debug=True, storage_path=WEBVIEW_DATA_DIR) # F12 ile konsol açılabilir

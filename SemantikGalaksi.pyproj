@@ -29,6 +29,7 @@
     <Content Include="Frontend\quran_data.json" />
     <Content Include="DataEngine\requirements.txt" />
     <Content Include="DataEngine\.env" />
+    <Content Include="Frontend\warp.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataEngine\" />
