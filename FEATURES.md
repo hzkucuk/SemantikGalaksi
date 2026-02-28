@@ -30,9 +30,11 @@ Kullanıcılar zengin metin formatında not tutabilir. Notlar localStorage'da ku
 | ⌨ | Satır içi kod |
 
 - **Otomatik Kayıt**: Her değişiklik 500ms debounce ile otomatik kaydedilir
+- **Sunucu Desteği**: Desktop modda `DataEngine/notes/{username}.json` dosyasına kaydedilir (taşınabilir)
+- **Web Fallback**: Sunucu yoksa localStorage'a kaydedilir
+- **REST API**: `GET/POST /api/notes` (tüm notlar), `DELETE /api/note/{id}` (tekil silme)
 - **Not Listesi**: Sol sidebar'da tüm notlar tarihe göre listelenir
-- **Kullanıcı Bazlı**: Her kullanıcı kendi notlarını görür (`sgx_notes_{username}`)
-- **📓 Buton**: Header'da tek tıkla açılır, overlay modal formatında
+- **Kullanıcı Bazlı**: Her kullanıcı kendi notlarını görür
 
 ## Modern Header
 - Glassmorphism tasarım: `backdrop-filter: blur(24px) saturate(1.4)`

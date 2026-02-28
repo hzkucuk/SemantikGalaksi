@@ -1626,8 +1626,8 @@
                         tubeM.userData.pair = pairData;
                         scene.add(tubeM);
                         highlightLines.push(tubeM);
-                        const glowM = new THREE.Mesh(tubeG, new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.15 }));
-                        glowM.scale.set(2.5, 2.5, 1);
+                        const glowG = new THREE.TubeGeometry(path, 1, tubeR * 1.8, 6, false);
+                        const glowM = new THREE.Mesh(glowG, new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.06, blending: THREE.AdditiveBlending, depthWrite: false }));
                         glowM.renderOrder = 1;
                         scene.add(glowM);
                         highlightLines.push(glowM);
@@ -2583,14 +2583,29 @@ Türkçe yaz, kısa ve öz tut.`;
 
         const _notesKey = () => 'sgx_notes_' + (authUser || 'guest');
 
-        const loadNotes = () => {
+        const loadNotes = async () => {
+            if (isDesktopMode && authToken) {
+                try {
+                    const r = await authFetch('/api/notes');
+                    if (r.ok) { _notes = await r.json(); return; }
+                } catch {}
+            }
             try {
                 const raw = localStorage.getItem(_notesKey());
                 _notes = raw ? JSON.parse(raw) : [];
             } catch { _notes = []; }
         };
 
-        const saveNotesToStorage = () => {
+        const saveNotesToStorage = async () => {
+            if (isDesktopMode && authToken) {
+                try {
+                    await authFetch('/api/notes', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(_notes)
+                    });
+                } catch {}
+            }
             localStorage.setItem(_notesKey(), JSON.stringify(_notes));
         };
 
@@ -2623,11 +2638,15 @@ Türkçe yaz, kısa ve öz tut.`;
             selectNote(id);
         };
 
-        const deleteCurrentNote = () => {
+        const deleteCurrentNote = async () => {
             if (!_activeNoteId) return;
             if (!confirm('Bu notu silmek istediğinize emin misiniz?')) return;
-            _notes = _notes.filter(n => n.id !== _activeNoteId);
-            saveNotesToStorage();
+            const delId = _activeNoteId;
+            _notes = _notes.filter(n => n.id !== delId);
+            if (isDesktopMode && authToken) {
+                try { await authFetch('/api/note/' + encodeURIComponent(delId), { method: 'DELETE' }); } catch {}
+            }
+            await saveNotesToStorage();
             _activeNoteId = _notes.length > 0 ? _notes[0].id : null;
             if (_activeNoteId) selectNote(_activeNoteId);
             else {
@@ -2651,8 +2670,8 @@ Türkçe yaz, kısa ve öz tut.`;
             }, 500);
         };
 
-        const openNotes = () => {
-            loadNotes();
+        const openNotes = async () => {
+            await loadNotes();
             if (_notes.length === 0) addNewNote();
             else if (!_activeNoteId) selectNote(_notes[0].id);
             else selectNote(_activeNoteId);

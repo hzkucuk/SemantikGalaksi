@@ -19,6 +19,7 @@ ROOT_DIR = os.path.join(CURRENT_DIR, '..', 'Frontend')
 WEBVIEW_DATA_DIR = os.path.join(CURRENT_DIR, 'webview_data')
 KEYS_FILE = os.path.join(CURRENT_DIR, 'webview_data', '.api_keys')
 DATASETS_DIR = os.path.join(ROOT_DIR, 'datasets')
+NOTES_DIR = os.path.join(CURRENT_DIR, 'notes')
 CONFIG_FILE = os.path.join(CURRENT_DIR, 'config.json')
 
 
@@ -389,6 +390,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._get_dataset()
         elif path == '/api/online-users':
             self._online_users()
+        elif path == '/api/notes':
+            self._get_notes()
         elif path == '/api/info':
             self._server_info()
         else:
@@ -409,6 +412,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._duplicate_dataset()
         elif self.path.startswith('/api/dataset/'):
             self._save_dataset()
+        elif self.path == '/api/notes':
+            self._save_notes()
 
     def do_PUT(self):
         if self.path.startswith('/api/auth/user/'):
@@ -417,6 +422,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
     def do_DELETE(self):
         if self.path.startswith('/api/auth/user/'):
             self._delete_user()
+        elif self.path.startswith('/api/note/'):
+            self._delete_note()
         elif self.path.startswith('/api/dataset/'):
             self._delete_dataset()
 
@@ -566,6 +573,65 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         user['password'] = h
         _save_users(users)
         self._json_response({'ok': True})
+
+    # --- Notes Endpoints ---
+    def _get_notes(self):
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        username = session['username']
+        os.makedirs(NOTES_DIR, exist_ok=True)
+        notes_file = os.path.join(NOTES_DIR, f'{username}.json')
+        if not os.path.exists(notes_file):
+            self._json_response([])
+            return
+        try:
+            with open(notes_file, 'r', encoding='utf-8') as f:
+                notes = json.load(f)
+            self._json_response(notes)
+        except Exception:
+            self._json_response([])
+
+    def _save_notes(self):
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        body = self._read_body()
+        if body is None:
+            self._json_response({'error': 'Geçersiz veri'}, 400)
+            return
+        username = session['username']
+        os.makedirs(NOTES_DIR, exist_ok=True)
+        notes_file = os.path.join(NOTES_DIR, f'{username}.json')
+        try:
+            with open(notes_file, 'w', encoding='utf-8') as f:
+                json.dump(body, f, ensure_ascii=False, indent=2)
+            self._json_response({'ok': True})
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _delete_note(self):
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        note_id = urllib.parse.unquote(self.path[len('/api/note/'):])
+        username = session['username']
+        notes_file = os.path.join(NOTES_DIR, f'{username}.json')
+        if not os.path.exists(notes_file):
+            self._json_response({'ok': True})
+            return
+        try:
+            with open(notes_file, 'r', encoding='utf-8') as f:
+                notes = json.load(f)
+            notes = [n for n in notes if n.get('id') != note_id]
+            with open(notes_file, 'w', encoding='utf-8') as f:
+                json.dump(notes, f, ensure_ascii=False, indent=2)
+            self._json_response({'ok': True})
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
 
     # --- Dataset Endpoints ---
     def _list_datasets(self):

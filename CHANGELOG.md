@@ -9,8 +9,9 @@
   - 🔮 **Küre**: Fibonacci küre — altın oran dağılımı
 - **WYSIWYG Not Editörü**: Zengin metin editörü ile not tutma (📓 butonu)
   - Bold, İtalik, Underline, Strikethrough, Başlıklar (H1-H3), Listeler, Alıntı, Bağlantı, Kod
-  - Otomatik kayıt (500ms debounce), localStorage'da kullanıcı bazlı saklama
+  - Sunucu taraflı saklama (`DataEngine/notes/{username}.json`) + localStorage fallback
   - Not listesi sidebar, oluşturma/silme/düzenleme, tarih takibi
+  - REST API: `GET/POST /api/notes`, `DELETE /api/note/{id}`
 - **Modern Header**: Glassmorphism tasarım, backdrop-blur, kompakt buton grid, responsive
 - `calcLayoutPositions()` fonksiyonu: Modüler yerleşim hesaplama sistemi
 - `switchLayout()` fonksiyonu: Anlık model değiştirme, veri yeniden işleme
@@ -18,7 +19,8 @@
 ### Düzeltilen
 - **Ses Tekrarlama**: `_besmelePlaying` flag artık fade sonrası sıfırlanmıyor — login tıklamasında ses tekrarlanmaz
 - **Kök Çizgi Görünürlüğü**: 3D modellerde ayah scatter yarıçapı artırıldı (60K→300-400K), tube kalınlığı artırıldı (40→150), arka plan çizgi opacity artırıldı (0.02→0.05)
-- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`, `FEATURES.md`
+- **Kök Çizgi Glow Gölgesi**: Glow mesh `AdditiveBlending` + `depthWrite:false` ile gerçek ışıma efektine dönüştürüldü (eski: normal blending ile koyu gölge görünümü)
+- Etkilenen dosyalar: `Frontend/index.html`, `DataEngine/desktop_app.py`, `CHANGELOG.md`, `FEATURES.md`
 
 ## [0.12.0] - 2025-01-XX
 ### Eklenen
