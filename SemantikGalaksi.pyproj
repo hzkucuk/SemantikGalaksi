@@ -22,8 +22,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DataEngine\desktop_app.py" />
+    <Compile Include="DataEngine\generate_besmele_audio.py" />
+    <Compile Include="DataEngine\quran_api_enricher.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CHANGELOG.md" />
+    <Content Include="DataEngine\config.json" />
+    <Content Include="FEATURES.md" />
     <Content Include="Frontend\index.html" />
     <Content Include="Frontend\quran_data.json" />
     <Content Include="DataEngine\requirements.txt" />

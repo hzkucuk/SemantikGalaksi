@@ -106,7 +106,47 @@
         .loading-screen {
             position: fixed; inset: 0; background: #000; z-index: 9999;
             display: flex; flex-direction: column; align-items: center; justify-content: center;
-            transition: opacity 0.8s;
+            transition: opacity 1.2s ease;
+            overflow: hidden;
+        }
+        .loading-screen::before {
+            content: ''; position: absolute; inset: 0;
+            background:
+                radial-gradient(ellipse at 50% 30%, rgba(0,242,255,0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 70%, rgba(212,175,55,0.04) 0%, transparent 50%);
+            animation: loadBgPulse 6s ease-in-out infinite;
+        }
+        @keyframes loadBgPulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        @keyframes loadFadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes loadGlow {
+            0%, 100% { text-shadow: 0 0 20px rgba(212,175,55,0.6), 0 0 60px rgba(212,175,55,0.2), 0 0 100px rgba(0,242,255,0.08); }
+            50% { text-shadow: 0 0 40px rgba(212,175,55,0.9), 0 0 80px rgba(212,175,55,0.5), 0 0 140px rgba(0,242,255,0.15), 0 0 200px rgba(212,175,55,0.1); }
+        }
+        @keyframes loadNeonFlicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { text-shadow: 0 0 10px rgba(0,242,255,0.5), 0 0 30px rgba(0,242,255,0.3), 0 0 60px rgba(0,242,255,0.15); opacity: 1; }
+            20%, 24%, 55% { text-shadow: none; opacity: 0.7; }
+        }
+        @keyframes loadSpin {
+            to { transform: rotate(360deg); }
+        }
+        @keyframes loadPulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+        @keyframes loadOrnament {
+            0%, 100% { opacity: 0.3; letter-spacing: 20px; }
+            50% { opacity: 0.7; letter-spacing: 28px; }
+        }
+        @keyframes loadNeonRing {
+            0% { box-shadow: 0 0 5px rgba(0,242,255,0.3), inset 0 0 5px rgba(0,242,255,0.1); }
+            50% { box-shadow: 0 0 20px rgba(0,242,255,0.6), 0 0 60px rgba(0,242,255,0.2), inset 0 0 15px rgba(0,242,255,0.15); }
+            100% { box-shadow: 0 0 5px rgba(0,242,255,0.3), inset 0 0 5px rgba(0,242,255,0.1); }
         }
         .settings-overlay {
             position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9000;
@@ -132,17 +172,227 @@
         .key-item .key-status.pending { color: #f59e0b; background: rgba(245,158,11,0.1); }
         .key-btn { background: none; border: 1px solid rgba(255,255,255,0.15); color: #94a3b8; width: 28px; height: 28px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; transition: all 0.2s; flex-shrink: 0; }
         .key-btn:hover { border-color: #ef4444; color: #ef4444; }
+
+        /* Dataset Manager & JSON Editor */
+        .ds-modal { position: fixed; inset: 0; z-index: 9999; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); }
+        .ds-panel { background: #0a0e14; border: 1px solid rgba(0,242,255,0.2); border-radius: 1.5rem; padding: 2rem; width: min(560px, 92vw); max-height: 80vh; overflow-y: auto; }
+        .ds-item { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.06); margin-bottom: 6px; transition: all 0.2s; cursor: pointer; }
+        .ds-item:hover { background: rgba(0,242,255,0.06); border-color: rgba(0,242,255,0.2); }
+        .ds-item.active { background: rgba(0,242,255,0.08); border-color: #00f2ff; }
+        .editor-overlay { position: fixed; inset: 0; z-index: 10000; display: none; flex-direction: column; background: #0a0e14; }
+        .editor-toolbar { display: flex; align-items: center; gap: 8px; padding: 10px 16px; background: #0d1117; border-bottom: 1px solid rgba(0,242,255,0.15); flex-wrap: wrap; }
+        .editor-btn { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); color: #e2e8f0; padding: 7px 14px; border-radius: 8px; font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.08em; }
+        .editor-btn:hover { background: rgba(0,242,255,0.12); border-color: #00f2ff; color: #00f2ff; }
+        .editor-btn.save { background: rgba(34,197,94,0.15); border-color: rgba(34,197,94,0.4); color: #22c55e; }
+        .editor-btn.save:hover { background: rgba(34,197,94,0.3); }
+        .editor-btn.danger { background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.3); color: #ef4444; }
+        .editor-main { display: flex; flex: 1; overflow: hidden; position: relative; }
+        .editor-lines { width: 54px; background: #0d1117; border-right: 1px solid rgba(255,255,255,0.06); padding: 12px 0; overflow: hidden; user-select: none; text-align: right; font-family: 'Consolas','Monaco',monospace; font-size: 13px; line-height: 1.6; color: #3b4252; flex-shrink: 0; }
+        .editor-textarea { flex: 1; background: transparent; color: #e2e8f0; border: none; outline: none; resize: none; padding: 12px 16px; font-family: 'Consolas','Monaco',monospace; font-size: 13px; line-height: 1.6; tab-size: 2; white-space: pre; overflow: auto; }
+        .editor-status { display: flex; align-items: center; justify-content: space-between; padding: 6px 16px; background: #0d1117; border-top: 1px solid rgba(255,255,255,0.06); font-size: 11px; }
+        .editor-status.valid { color: #22c55e; }
+        .editor-status.invalid { color: #ef4444; }
+        .arabic-kb { display: none; background: #0d1117; border-top: 1px solid rgba(255,255,255,0.1); padding: 10px; flex-shrink: 0; }
+        .arabic-kb.show { display: block; }
+        .kb-row { display: flex; gap: 4px; justify-content: center; margin-bottom: 4px; }
+        .kb-key { min-width: 36px; height: 36px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: #e2e8f0; font-size: 16px; font-family: 'Amiri',serif; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+        .kb-key:hover { background: rgba(0,242,255,0.15); border-color: #00f2ff; color: #00f2ff; }
+        .kb-key.haraka { font-size: 20px; color: #f59e0b; min-width: 32px; }
+        .kb-key.special { font-size: 11px; min-width: 56px; font-family: 'Inter',sans-serif; color: #94a3b8; }
+        .layout-option { display:block; width:100%; text-align:left; padding:10px 16px; border:none; background:transparent; color:#94a3b8; font-size:12px; font-weight:700; cursor:pointer; border-radius:12px; transition:all 0.2s; font-family:Inter,sans-serif; letter-spacing:0.05em; }
+        .layout-option:hover { background:rgba(0,242,255,0.1); color:#00f2ff; }
+        .layout-option.active { background:rgba(0,242,255,0.15); color:#00f2ff; border:1px solid rgba(0,242,255,0.3); }
+        .layout-option .layout-desc { display:block; font-size:9px; font-weight:400; color:#475569; margin-top:2px; letter-spacing:0.02em; }
+        .layout-option.active .layout-desc { color:#0e7490; }
+
+        /* Modern Header */
+        .app-header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+            background: rgba(0,3,8,0.75);
+            backdrop-filter: blur(24px) saturate(1.4);
+            -webkit-backdrop-filter: blur(24px) saturate(1.4);
+            border-bottom: 1px solid rgba(0,242,255,0.08);
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        .app-header:hover { background: rgba(0,3,8,0.88); border-bottom-color: rgba(0,242,255,0.15); }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; max-width: 100%; gap: 16px; }
+        .header-brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+        .header-logo { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, rgba(0,242,255,0.15), rgba(0,242,255,0.05)); border: 1px solid rgba(0,242,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+        .header-title { font-size: 15px; font-weight: 900; color: #00f2ff; letter-spacing: -0.5px; line-height: 1.2; }
+        .header-sub { font-size: 8px; color: rgba(0,242,255,0.35); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .header-actions { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+        .hdr-btn {
+            display: flex; align-items: center; justify-content: center;
+            width: 36px; height: 36px; border-radius: 10px;
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+            color: #94a3b8; font-size: 15px; cursor: pointer;
+            transition: all 0.2s ease; position: relative;
+        }
+        .hdr-btn:hover { background: rgba(0,242,255,0.1); border-color: rgba(0,242,255,0.3); color: #00f2ff; transform: translateY(-1px); }
+        .hdr-btn.active { background: rgba(0,242,255,0.12); border-color: rgba(0,242,255,0.25); color: #00f2ff; }
+        .hdr-btn-label { display: none; }
+        @media (min-width: 768px) {
+            .hdr-btn-label { display: inline; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; margin-left: 6px; }
+            .hdr-btn.with-label { width: auto; padding: 0 14px; gap: 4px; }
+        }
+        .hdr-search {
+            width: 100%;
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px; padding: 8px 16px;
+            color: #fff; font-size: 12px; font-weight: 600;
+            outline: none; transition: all 0.2s;
+        }
+        .hdr-search:focus { border-color: rgba(0,242,255,0.4); background: rgba(0,242,255,0.06); box-shadow: 0 0 20px rgba(0,242,255,0.08); }
+        .hdr-search::placeholder { color: rgba(255,255,255,0.2); font-weight: 500; }
+        .hdr-divider { width: 1px; height: 24px; background: rgba(255,255,255,0.06); margin: 0 4px; flex-shrink: 0; }
+
+        /* WYSIWYG Notes Editor */
+        .notes-overlay {
+            position: fixed; inset: 0; z-index: 9000; display: none;
+            background: rgba(0,0,0,0.6); backdrop-filter: blur(8px);
+            align-items: center; justify-content: center;
+        }
+        .notes-overlay.show { display: flex; }
+        .notes-panel {
+            width: 90vw; max-width: 720px; height: 80vh; max-height: 700px;
+            background: rgba(8,12,20,0.98); border: 1px solid rgba(0,242,255,0.12);
+            border-radius: 20px; display: flex; flex-direction: column;
+            box-shadow: 0 40px 120px rgba(0,0,0,0.9);
+            overflow: hidden;
+        }
+        .notes-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.06);
+            background: rgba(0,242,255,0.03);
+        }
+        .notes-header h3 { font-size: 14px; font-weight: 800; color: #00f2ff; letter-spacing: 0.5px; }
+        .notes-body { display: flex; flex: 1; overflow: hidden; }
+        .notes-sidebar {
+            width: 200px; border-right: 1px solid rgba(255,255,255,0.06);
+            overflow-y: auto; padding: 8px; flex-shrink: 0;
+            background: rgba(0,0,0,0.3);
+        }
+        @media (max-width: 640px) { .notes-sidebar { width: 60px; } .notes-sidebar .note-title-text { display: none; } }
+        .note-item {
+            padding: 10px 12px; border-radius: 10px; cursor: pointer;
+            margin-bottom: 4px; transition: all 0.15s;
+            border: 1px solid transparent;
+        }
+        .note-item:hover { background: rgba(0,242,255,0.06); }
+        .note-item.active { background: rgba(0,242,255,0.1); border-color: rgba(0,242,255,0.2); }
+        .note-item .note-title-text { font-size: 11px; font-weight: 700; color: #e2e8f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .note-item .note-date { font-size: 8px; color: #475569; margin-top: 2px; }
+        .notes-editor-area { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+        .notes-toolbar {
+            display: flex; align-items: center; gap: 2px; padding: 8px 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.06); flex-wrap: wrap;
+        }
+        .notes-toolbar button {
+            width: 32px; height: 32px; border: none; border-radius: 6px;
+            background: transparent; color: #94a3b8; font-size: 13px;
+            cursor: pointer; display: flex; align-items: center; justify-content: center;
+            transition: all 0.15s; font-weight: 700;
+        }
+        .notes-toolbar button:hover { background: rgba(0,242,255,0.1); color: #00f2ff; }
+        .notes-toolbar .tb-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.06); margin: 0 4px; }
+        .notes-title-input {
+            width: 100%; padding: 10px 16px; background: transparent;
+            border: none; border-bottom: 1px solid rgba(255,255,255,0.06);
+            color: #fff; font-size: 16px; font-weight: 800; outline: none;
+        }
+        .notes-title-input::placeholder { color: rgba(255,255,255,0.15); }
+        .notes-content {
+            flex: 1; padding: 16px; overflow-y: auto;
+            color: #e2e8f0; font-size: 14px; line-height: 1.7;
+            outline: none; min-height: 100px;
+        }
+        .notes-content:empty::before {
+            content: 'Notunuzu buraya yazın...';
+            color: rgba(255,255,255,0.15); font-style: italic;
+        }
+        .notes-content h1 { font-size: 22px; font-weight: 900; color: #00f2ff; margin: 16px 0 8px; }
+        .notes-content h2 { font-size: 18px; font-weight: 800; color: #38bdf8; margin: 14px 0 6px; }
+        .notes-content h3 { font-size: 15px; font-weight: 700; color: #7dd3fc; margin: 12px 0 4px; }
+        .notes-content ul, .notes-content ol { padding-left: 24px; margin: 8px 0; }
+        .notes-content li { margin-bottom: 4px; }
+        .notes-content blockquote { border-left: 3px solid #00f2ff; padding: 8px 16px; margin: 12px 0; background: rgba(0,242,255,0.04); border-radius: 0 8px 8px 0; color: #94a3b8; font-style: italic; }
+        .notes-content a { color: #00f2ff; text-decoration: underline; }
+        .notes-content code { background: rgba(0,242,255,0.08); padding: 2px 6px; border-radius: 4px; font-family: Consolas, monospace; font-size: 13px; color: #7dd3fc; }
     </style>
 </head>
 <body>
 
     <div id="loading-screen" class="loading-screen">
-        <div class="w-16 h-16 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin mb-6 shadow-[0_0_20px_rgba(6,182,212,0.5)]"></div>
-        <p class="text-cyan-500 font-mono tracking-[0.5em] text-xs uppercase animate-pulse">Yükleniyor...</p>
+        <!-- Besmele Ses -->
+        <audio id="besmele-audio" src="besmele.wav" preload="auto"></audio>
+
+        <!-- Neon arka plan katmanları -->
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 35%, rgba(0,242,255,0.06) 0%, rgba(0,242,255,0.02) 25%, transparent 60%);"></div>
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 65%, rgba(212,175,55,0.05) 0%, transparent 50%);"></div>
+        <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 20%, rgba(168,85,247,0.03) 0%, transparent 40%);"></div>
+        <div style="position:absolute;inset:0;background:radial-gradient(circle at 70% 80%, rgba(168,85,247,0.03) 0%, transparent 40%);"></div>
+
+        <!-- Neon halka -->
+        <div style="position:absolute;width:min(500px,80vw);height:min(500px,80vw);border-radius:50%;border:1px solid rgba(0,242,255,0.06);animation:loadNeonRing 4s ease-in-out infinite, loadFadeUp 2s ease 0.2s both;pointer-events:none;"></div>
+
+        <!-- Üst süsleme -->
+        <div style="font-size:14px;color:rgba(0,242,255,0.35);margin-bottom:36px;animation:loadOrnament 5s ease-in-out infinite, loadFadeUp 1.2s ease 0.2s both;">✦ ✧ ✦ ✧ ✦</div>
+
+        <!-- Eûzü -->
+        <p dir="rtl" style="font-family:'Amiri',serif;font-size:clamp(20px,4.5vw,36px);color:rgba(212,175,55,0.6);line-height:1.8;text-align:center;padding:0 24px;text-shadow:0 0 15px rgba(212,175,55,0.3), 0 0 40px rgba(212,175,55,0.1);animation:loadFadeUp 1.2s ease 0.4s both;">
+            أَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيمِ
+        </p>
+
+        <!-- Besmele -->
+        <p dir="rtl" style="font-family:'Amiri',serif;font-size:clamp(30px,7vw,56px);color:#d4af37;line-height:1.8;text-align:center;padding:0 24px;animation:loadFadeUp 1.2s ease 0.7s both, loadGlow 4s ease-in-out 1.9s infinite;">
+            بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ
+        </p>
+
+        <!-- Neon dekoratif ayırıcı -->
+        <div style="display:flex;align-items:center;gap:16px;margin:24px 0;animation:loadFadeUp 1.2s ease 1.0s both;">
+            <div style="width:80px;height:1px;background:linear-gradient(to right,transparent,rgba(0,242,255,0.4));"></div>
+            <span style="color:rgba(0,242,255,0.5);font-size:16px;text-shadow:0 0 8px rgba(0,242,255,0.4);">❨❋❩</span>
+            <div style="width:80px;height:1px;background:linear-gradient(to left,transparent,rgba(0,242,255,0.4));"></div>
+        </div>
+
+        <!-- Türkçe meal -->
+        <p style="font-size:clamp(14px,3vw,22px);color:rgba(255,255,255,0.85);font-weight:400;font-style:italic;letter-spacing:0.08em;margin-bottom:6px;text-align:center;padding:0 24px;text-shadow:0 0 12px rgba(0,242,255,0.4), 0 0 30px rgba(0,242,255,0.15);animation:loadFadeUp 1.2s ease 1.3s both;">
+            Kovulmuş şeytandan Allah'a sığınırım
+        </p>
+        <p style="font-size:clamp(16px,3.5vw,26px);color:rgba(255,255,255,0.9);font-weight:500;font-style:italic;letter-spacing:0.08em;margin-bottom:16px;text-align:center;padding:0 24px;text-shadow:0 0 15px rgba(0,242,255,0.5), 0 0 40px rgba(0,242,255,0.2);animation:loadFadeUp 1.2s ease 1.5s both;">
+            Rahman ve Rahim olan Allah'ın adıyla
+        </p>
+
+        <!-- Latin transliterasyon -->
+        <p style="font-size:clamp(10px,2vw,15px);color:rgba(0,242,255,0.6);font-family:'Inter',monospace;letter-spacing:0.3em;text-transform:uppercase;margin-bottom:56px;text-align:center;text-shadow:0 0 8px rgba(0,242,255,0.3), 0 0 20px rgba(0,242,255,0.1);animation:loadFadeUp 1.2s ease 1.7s both, loadNeonFlicker 8s ease-in-out 3s infinite;">
+            Eûzü billâhi mineş-şeytânir-racîm · Bismillâhirrahmânirrahîm
+        </p>
+
+        <!-- Spinner -->
+        <div style="width:36px;height:36px;border:2px solid rgba(0,242,255,0.1);border-top-color:rgba(0,242,255,0.7);border-radius:50%;box-shadow:0 0 12px rgba(0,242,255,0.2);animation:loadSpin 1.2s linear infinite, loadFadeUp 1s ease 2.0s both;margin-bottom:18px;"></div>
+
+        <!-- Yükleniyor -->
+        <p style="font-size:9px;color:rgba(0,242,255,0.35);font-family:'Inter',monospace;letter-spacing:0.6em;text-transform:uppercase;animation:loadPulse 2.5s ease-in-out infinite, loadFadeUp 1s ease 2.0s both;">Yükleniyor</p>
     </div>
 
     <canvas id="warp-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:998;display:none;"></canvas>
     <div id="tooltip"></div>
+
+    <!-- Giriş Ekranı -->
+    <div id="login-overlay" style="display:none;position:fixed;inset:0;background:#000;z-index:10000;align-items:center;justify-content:center;">
+        <div style="max-width:380px;width:90%;padding:40px;background:rgba(0,5,12,0.98);border:1px solid rgba(0,242,255,0.2);border-radius:24px;box-shadow:0 0 80px rgba(0,242,255,0.1);">
+            <div style="text-align:center;margin-bottom:24px;">
+                <div style="font-size:32px;margin-bottom:12px;">🔐</div>
+                <h2 style="color:#00f2ff;font-size:16px;font-weight:900;letter-spacing:6px;text-transform:uppercase;">Giriş Yap</h2>
+            </div>
+            <div id="login-error" style="display:none;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:10px;color:#ef4444;font-size:12px;text-align:center;margin-bottom:16px;"></div>
+            <input type="text" id="login-username" placeholder="Kullanıcı adı" style="width:100%;background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 16px;outline:none;color:white;font-size:13px;margin-bottom:12px;box-sizing:border-box;font-family:Inter,sans-serif;" onkeydown="if(event.key==='Enter')document.getElementById('login-password').focus()">
+            <input type="password" id="login-password" placeholder="Şifre" style="width:100%;background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 16px;outline:none;color:white;font-size:13px;margin-bottom:20px;box-sizing:border-box;font-family:Inter,sans-serif;" onkeydown="if(event.key==='Enter')doLogin()">
+            <button onclick="doLogin()" style="width:100%;background:linear-gradient(135deg,#0e7490,#06b6d4);border:none;border-radius:12px;padding:12px;color:white;font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase;cursor:pointer;font-family:Inter,sans-serif;">Giriş</button>
+            <p style="text-align:center;color:rgba(148,163,184,0.4);font-size:10px;margin-top:16px;">İlk kurulum: admin / admin123</p>
+        </div>
+    </div>
 
     <!-- Ayarlar Modalı -->
     <div id="settings-overlay" class="settings-overlay" style="display:none" onclick="if(event.target===this)closeSettings()">
@@ -150,6 +400,20 @@
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-black text-cyan-400 uppercase tracking-widest">⚙️ Ayarlar</h2>
                 <button onclick="closeSettings()" class="w-9 h-9 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all">✕</button>
+            </div>
+            <div class="mb-6" id="auth-info-section">
+                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3">👤 Kullanıcı Bilgileri</h3>
+                <div id="auth-user-info"></div>
+                <div id="server-status" class="mt-3 text-[10px] text-slate-600"></div>
+            </div>
+            <div class="mb-6" id="change-pw-section" style="display:none">
+                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3">🔑 Şifre Değiştir</h3>
+                <div class="flex flex-col gap-2">
+                    <input type="password" id="old-pw-input" placeholder="Mevcut şifre" class="bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-700">
+                    <input type="password" id="new-pw-input" placeholder="Yeni şifre" class="bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-700">
+                    <button onclick="changePassword()" class="bg-cyan-950 hover:bg-cyan-800 border border-cyan-400/30 px-5 py-2.5 rounded-xl font-black text-[10px] text-white uppercase tracking-widest transition-all">Şifreyi Güncelle</button>
+                </div>
+                <div id="pw-change-msg" class="mt-2 text-[10px]"></div>
             </div>
             <div class="mb-6">
                 <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3">Gemini API Anahtarları</h3>
@@ -178,28 +442,184 @@
         </div>
     </div>
 
-    <div class="fixed top-0 w-full z-50 p-3 md:p-6 flex flex-col md:flex-row justify-between items-center bg-gradient-to-b from-black to-transparent gap-2 md:gap-4">
-        <div class="text-center md:text-left">
-            <h1 class="text-xl md:text-3xl neon-title">Kur'an-ı Kerim Kelime Kök Uzayı</h1>
-            <p class="text-[8px] md:text-[9px] text-cyan-800 font-mono tracking-[0.4em] uppercase">3D Semantik Analiz</p>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-2 md:gap-3 w-full md:w-auto relative">
-            <div class="w-full md:w-[32rem] relative">
-                <input type="text" id="search-input" placeholder="Sure, Koordinat veya Meal Ara..." class="bg-black/90 border border-white/10 rounded-full px-4 md:px-7 py-2.5 md:py-3 w-full outline-none focus:border-cyan-400 text-xs md:text-sm font-bold text-white shadow-2xl transition-all">
-                <div id="search-results" class="search-results"></div>
+    <!-- Kullanıcı Yönetimi -->
+    <div id="admin-overlay" class="settings-overlay" style="display:none" onclick="if(event.target===this)closeAdmin()">
+        <div class="settings-modal" style="max-width:500px;">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-black text-cyan-400 uppercase tracking-widest">👥 Kullanıcılar</h2>
+                <button onclick="closeAdmin()" class="w-9 h-9 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all">✕</button>
             </div>
-            <label id="upload-label" class="bg-cyan-950 hover:bg-cyan-600 border border-cyan-400/30 px-4 md:px-8 py-2.5 md:py-3 rounded-full font-black text-[10px] md:text-[11px] cursor-pointer shadow-xl transition-all uppercase text-white tracking-widest text-center">
-                VERİ OKU
-                <input type="file" id="file-input" class="hidden" accept=".json">
-            </label>
-            <button id="reset-data-btn" onclick="resetToOriginal()" class="hidden bg-red-950 hover:bg-red-700 border border-red-400/30 px-4 md:px-8 py-2.5 md:py-3 rounded-full font-black text-[10px] md:text-[11px] cursor-pointer shadow-xl transition-all uppercase text-white tracking-widest text-center">
-                ORJİNAL VERİ
-            </button>
-            <button onclick="openSettings()" class="bg-white/5 hover:bg-white/10 border border-white/10 w-10 h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-lg transition-all" title="Ayarlar">⚙️</button>
+            <div id="admin-user-list" class="mb-6"></div>
+            <div class="border-t border-white/5 pt-4">
+                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3">Yeni Kullanıcı</h3>
+                <div class="flex flex-col gap-2">
+                    <input type="text" id="new-user-name" placeholder="Kullanıcı adı" class="bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-700">
+                    <input type="password" id="new-user-pass" placeholder="Şifre" class="bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-700">
+                    <div class="flex gap-2">
+                        <select id="new-user-role" class="flex-1 bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none text-xs text-white">
+                            <option value="viewer">👁 Viewer</option>
+                            <option value="editor">✏️ Editor</option>
+                            <option value="admin">👑 Admin</option>
+                        </select>
+                        <button onclick="createUser()" class="bg-cyan-950 hover:bg-cyan-800 border border-cyan-400/30 px-5 py-2.5 rounded-xl font-black text-[10px] text-white uppercase tracking-widest transition-all">Ekle</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="hud-panel" class="fixed inset-2 top-20 md:inset-auto md:top-28 md:bottom-8 md:left-8 md:w-[28rem] hud-panel rounded-2xl md:rounded-[3.5rem] p-4 md:p-10 hidden z-40 overflow-y-auto border border-white/5 transition-all duration-300">
+    <!-- Veri Seti Yöneticisi -->
+    <div id="dataset-overlay" class="ds-modal" onclick="if(event.target===this)closeDatasets()">
+        <div class="ds-panel">
+            <div class="flex justify-between items-center mb-5">
+                <h2 class="text-lg font-black text-cyan-400 uppercase tracking-widest">📂 Veri Setleri</h2>
+                <button onclick="closeDatasets()" class="w-9 h-9 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all">✕</button>
+            </div>
+            <div id="dataset-list"></div>
+        </div>
+    </div>
+
+    <!-- JSON Editör -->
+    <div id="json-editor" class="editor-overlay">
+        <div class="editor-toolbar">
+            <span class="text-cyan-400 font-black text-xs uppercase tracking-widest mr-auto" id="editor-title">📝 JSON Editör</span>
+            <button class="editor-btn save" onclick="editorSave()">💾 Kaydet</button>
+            <button class="editor-btn" onclick="editorExport()" style="color:#38bdf8;">⬇ Dışa Aktar</button>
+            <button class="editor-btn" onclick="editorFormat()">{ } Format</button>
+            <button class="editor-btn" onclick="editorValidate()">✓ Doğrula</button>
+            <button class="editor-btn" onclick="editorAddDipnot()">📌 Dipnot Ekle</button>
+            <button class="editor-btn" id="kb-toggle" onclick="toggleArabicKb()">⌨ Arapça</button>
+            <button class="editor-btn danger" onclick="closeEditor()">✕ Kapat</button>
+        </div>
+        <div class="editor-main">
+            <div class="editor-lines" id="editor-lines"></div>
+            <textarea class="editor-textarea" id="editor-textarea" spellcheck="false"></textarea>
+        </div>
+        <div class="arabic-kb" id="arabic-kb">
+            <div class="kb-row">
+                <button class="kb-key" onclick="kbInsert('ض')">ض</button><button class="kb-key" onclick="kbInsert('ص')">ص</button>
+                <button class="kb-key" onclick="kbInsert('ث')">ث</button><button class="kb-key" onclick="kbInsert('ق')">ق</button>
+                <button class="kb-key" onclick="kbInsert('ف')">ف</button><button class="kb-key" onclick="kbInsert('غ')">غ</button>
+                <button class="kb-key" onclick="kbInsert('ع')">ع</button><button class="kb-key" onclick="kbInsert('ه')">ه</button>
+                <button class="kb-key" onclick="kbInsert('خ')">خ</button><button class="kb-key" onclick="kbInsert('ح')">ح</button>
+                <button class="kb-key" onclick="kbInsert('ج')">ج</button><button class="kb-key" onclick="kbInsert('د')">د</button>
+            </div>
+            <div class="kb-row">
+                <button class="kb-key" onclick="kbInsert('ش')">ش</button><button class="kb-key" onclick="kbInsert('س')">س</button>
+                <button class="kb-key" onclick="kbInsert('ي')">ي</button><button class="kb-key" onclick="kbInsert('ب')">ب</button>
+                <button class="kb-key" onclick="kbInsert('ل')">ل</button><button class="kb-key" onclick="kbInsert('ا')">ا</button>
+                <button class="kb-key" onclick="kbInsert('ت')">ت</button><button class="kb-key" onclick="kbInsert('ن')">ن</button>
+                <button class="kb-key" onclick="kbInsert('م')">م</button><button class="kb-key" onclick="kbInsert('ك')">ك</button>
+                <button class="kb-key" onclick="kbInsert('ط')">ط</button>
+            </div>
+            <div class="kb-row">
+                <button class="kb-key" onclick="kbInsert('ئ')">ئ</button><button class="kb-key" onclick="kbInsert('ء')">ء</button>
+                <button class="kb-key" onclick="kbInsert('ؤ')">ؤ</button><button class="kb-key" onclick="kbInsert('ر')">ر</button>
+                <button class="kb-key" onclick="kbInsert('ى')">ى</button><button class="kb-key" onclick="kbInsert('ة')">ة</button>
+                <button class="kb-key" onclick="kbInsert('و')">و</button><button class="kb-key" onclick="kbInsert('ز')">ز</button>
+                <button class="kb-key" onclick="kbInsert('ظ')">ظ</button><button class="kb-key" onclick="kbInsert('ذ')">ذ</button>
+                <button class="kb-key" onclick="kbInsert('أ')">أ</button><button class="kb-key" onclick="kbInsert('إ')">إ</button>
+                <button class="kb-key" onclick="kbInsert('آ')">آ</button>
+            </div>
+            <div class="kb-row">
+                <button class="kb-key haraka" onclick="kbInsert('\u064E')">&#x64E;</button>
+                <button class="kb-key haraka" onclick="kbInsert('\u064B')">&#x64B;</button>
+                <button class="kb-key haraka" onclick="kbInsert('\u064F')">&#x64F;</button>
+                <button class="kb-key haraka" onclick="kbInsert('\u064C')">&#x64C;</button>
+                <button class="kb-key haraka" onclick="kbInsert('\u0650')">&#x650;</button>
+                <button class="kb-key haraka" onclick="kbInsert('\u064D')">&#x64D;</button>
+                <button class="kb-key haraka" onclick="kbInsert('\u0651')">&#x651;</button>
+                <button class="kb-key haraka" onclick="kbInsert('\u0652')">&#x652;</button>
+                <button class="kb-key haraka" onclick="kbInsert('\u0670')">&#x670;</button>
+                <button class="kb-key special" onclick="kbInsert(' ')">Boşluk</button>
+                <button class="kb-key special" onclick="kbBackspace()">⌫ Sil</button>
+            </div>
+        </div>
+        <div class="editor-status valid" id="editor-status">
+            <span id="editor-msg">✓ Geçerli JSON</span>
+            <span id="editor-info"></span>
+        </div>
+    </div>
+
+    <!-- Modern Header -->
+    <div class="app-header" id="app-header">
+        <div class="header-inner">
+            <div class="header-brand">
+                <div class="header-logo">🕋</div>
+                <div>
+                    <div class="header-title">Kur'an-ı Kerim Kelime Kök Uzayı</div>
+                    <div class="header-sub">3D Semantik Analiz</div>
+                </div>
+            </div>
+            <div style="position:relative;flex:1;max-width:420px;min-width:180px;">
+                <input type="text" id="search-input" placeholder="Sure, koordinat veya meal ara..." class="hdr-search" style="width:100%;">
+                <div id="search-results" class="search-results"></div>
+            </div>
+            <div class="header-actions">
+                <label id="file-input-label" class="hdr-btn with-label" title="Veri Oku" style="cursor:pointer">
+                    <span>📄</span><span class="hdr-btn-label">VERİ OKU</span>
+                    <input type="file" id="file-input" class="hidden" accept=".json">
+                </label>
+                <button onclick="openDatasets()" class="hdr-btn" title="Veri Setleri">📂</button>
+                <button id="editor-btn-header" onclick="openEditor()" class="hdr-btn" title="JSON Editör">📝</button>
+                <button onclick="openNotes()" class="hdr-btn" title="Notlarım">📓</button>
+                <div class="hdr-divider"></div>
+                <button id="admin-btn" onclick="openAdmin()" class="hdr-btn" title="Kullanıcı Yönetimi" style="display:none">👥</button>
+                <div class="relative" id="layout-menu-wrap">
+                    <button onclick="toggleLayoutMenu()" class="hdr-btn" title="Uzay Yerleşim Modeli" id="layout-btn">🌌</button>
+                    <div id="layout-menu" class="hidden absolute right-0 top-full mt-2 bg-black/95 backdrop-blur-xl border border-white/10 rounded-2xl p-2 min-w-[220px] shadow-2xl z-[100]">
+                        <button onclick="switchLayout('galaxy')" class="layout-option active" data-layout="galaxy">🌌 Galaksi <span class="layout-desc">Arşimed spirali — Samanyolu modeli</span></button>
+                        <button onclick="switchLayout('nebula')" class="layout-option" data-layout="nebula">🌫️ Bulutsu <span class="layout-desc">Gauss bulut kümeleri — Organik dağılım</span></button>
+                        <button onclick="switchLayout('cube')" class="layout-option" data-layout="cube">📦 Küp <span class="layout-desc">3B ızgara — Kristal yapı</span></button>
+                        <button onclick="switchLayout('sphere')" class="layout-option" data-layout="sphere">🔮 Küre <span class="layout-desc">Fibonacci küre — Altın oran dağılımı</span></button>
+                    </div>
+                </div>
+                <button onclick="openSettings()" class="hdr-btn" title="Ayarlar">⚙️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WYSIWYG Notes Editor -->
+    <div class="notes-overlay" id="notes-overlay">
+        <div class="notes-panel">
+            <div class="notes-header">
+                <h3>📓 Notlarım</h3>
+                <div style="display:flex;gap:6px;align-items:center;">
+                    <button onclick="addNewNote()" class="hdr-btn" title="Yeni Not" style="width:32px;height:32px;font-size:16px;">✚</button>
+                    <button onclick="deleteCurrentNote()" class="hdr-btn" title="Notu Sil" style="width:32px;height:32px;font-size:14px;color:#ef4444;">🗑</button>
+                    <button onclick="closeNotes()" class="hdr-btn" title="Kapat" style="width:32px;height:32px;">✕</button>
+                </div>
+            </div>
+            <div class="notes-body">
+                <div class="notes-sidebar" id="notes-sidebar"></div>
+                <div class="notes-editor-area">
+                    <input type="text" class="notes-title-input" id="note-title" placeholder="Not başlığı..." oninput="autoSaveNote()">
+                    <div class="notes-toolbar">
+                        <button onclick="nCmd('bold')" title="Kalın"><b>B</b></button>
+                        <button onclick="nCmd('italic')" title="İtalik"><i>I</i></button>
+                        <button onclick="nCmd('underline')" title="Altı Çizili"><u>U</u></button>
+                        <button onclick="nCmd('strikeThrough')" title="Üstü Çizili"><s>S</s></button>
+                        <div class="tb-sep"></div>
+                        <button onclick="nCmd('formatBlock','H1')" title="Başlık 1" style="font-size:14px;font-weight:900;">H1</button>
+                        <button onclick="nCmd('formatBlock','H2')" title="Başlık 2" style="font-size:12px;font-weight:800;">H2</button>
+                        <button onclick="nCmd('formatBlock','H3')" title="Başlık 3" style="font-size:11px;font-weight:700;">H3</button>
+                        <button onclick="nCmd('formatBlock','P')" title="Paragraf" style="font-size:11px;">¶</button>
+                        <div class="tb-sep"></div>
+                        <button onclick="nCmd('insertUnorderedList')" title="Madde İşareti">☰</button>
+                        <button onclick="nCmd('insertOrderedList')" title="Numaralı Liste">☷</button>
+                        <button onclick="nCmd('formatBlock','BLOCKQUOTE')" title="Alıntı">❝</button>
+                        <div class="tb-sep"></div>
+                        <button onclick="insertNoteLink()" title="Bağlantı">🔗</button>
+                        <button onclick="nCmd('insertHTML','<code>kod</code>')" title="Kod">⌨</button>
+                        <button onclick="nCmd('removeFormat')" title="Biçimlendirmeyi Kaldır">🚫</button>
+                    </div>
+                    <div class="notes-content" id="note-content" contenteditable="true" oninput="autoSaveNote()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hud-panel" class="fixed inset-2 top-16 md:inset-auto md:top-20 md:bottom-8 md:left-8 md:w-[28rem] hud-panel rounded-2xl md:rounded-[3.5rem] p-4 md:p-10 hidden z-40 overflow-y-auto border border-white/5 transition-all duration-300">
         <button id="close-hud" class="absolute top-3 right-3 md:top-10 md:right-10 w-9 h-9 md:w-10 md:h-10 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all z-50">✕</button>
         <div id="hud-content">
             <div class="mb-6 md:mb-8 border-b border-white/10 pb-6 md:pb-8">
@@ -211,11 +631,17 @@
                 <p id="hud-arabic" class="text-right text-xl md:text-3xl arabic-text text-white leading-relaxed" dir="rtl"></p>
                 <div class="h-px w-full bg-cyan-400/20 my-3 md:my-6"></div>
                 <p id="hud-translation" class="text-sm md:text-lg text-slate-200 italic font-light leading-relaxed"></p>
+                <div class="flex items-center gap-2 mt-3">
+                    <button id="dipnot-toggle" onclick="toggleDipnot()" style="width:28px;height:28px;border-radius:50%;border:1px solid #f59e0b;background:rgba(245,158,11,0.1);color:#f59e0b;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;transition:all 0.2s;" title="Dipnot">📌</button>
+                    <span id="dipnot-label" class="text-[10px] text-amber-600 font-bold uppercase tracking-widest">Dipnot</span>
+                </div>
+                <div id="hud-dipnot" class="hidden mt-3 bg-amber-950/30 border border-amber-400/20 rounded-xl p-4 text-sm text-amber-200/80 italic leading-relaxed"></div>
             </div>
 
             <div class="mb-6 md:mb-8">
                 <h3 class="text-[8px] md:text-[9px] font-black text-slate-600 uppercase tracking-[0.4em] mb-4 md:mb-6 italic text-center">Sülâsi Kök Analizi</h3>
                 <div id="hud-roots" class="flex flex-wrap justify-center gap-2 md:gap-4"></div>
+                <div id="hud-root-stats" class="mt-4"></div>
             </div>
 
             <div class="mb-6 md:mb-8">
@@ -233,11 +659,20 @@
         </div>
     </div>
 
+    <!-- Toast Bildirimleri -->
+    <div id="toast-container" style="position:fixed;top:80px;right:16px;z-index:9999;display:flex;flex-direction:column;gap:8px;pointer-events:none;"></div>
+    <!-- Çevrimiçi Kullanıcılar -->
+    <div id="online-indicator" style="position:fixed;bottom:16px;left:16px;z-index:50;display:none;background:rgba(0,0,0,0.7);backdrop-filter:blur(12px);border:1px solid rgba(52,211,153,0.2);border-radius:20px;padding:6px 14px;font-size:10px;color:#34d399;font-weight:700;letter-spacing:0.1em;cursor:pointer;" onclick="showOnlineList()" title="Çevrimiçi kullanıcılar">
+        <span id="online-dot" style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#34d399;margin-right:6px;animation:pulse 2s infinite;"></span>
+        <span id="online-count">0</span> çevrimiçi
+    </div>
+
     <script>
         /** GLOBAL VARIABLES **/
         let scene, camera, renderer, ayahMesh, starField, lineSegments, controls, highlightLines;
         let nodes = []; let surahGroups = []; let ayahNodes = []; let rootMap = new Map(); let labelSprites = []; let lineNodePairs = [];
         let originalData = null; let hasCustomData = false;
+        let currentLayout = 'galaxy';
 
         // Glow shader (fresnel atmosfer efekti)
         const glowVertexShader = `
@@ -410,6 +845,107 @@
         };
         let apiKey = null;
 
+        // --- Kimlik Doğrulama ---
+        let authToken = localStorage.getItem('sgx_auth_token') || '';
+        let authUser = '', authRole = '', isDesktopMode = false;
+        const authFetch = (url, opts = {}) => {
+            if (!opts.headers) opts.headers = {};
+            if (authToken) opts.headers['Authorization'] = 'Bearer ' + authToken;
+            return fetch(url, opts);
+        };
+
+        // --- Veri Seti Yönetimi (Sunucu API + IndexedDB fallback) ---
+        let currentUser = localStorage.getItem('sgx_username') || '';
+        const DatasetStore = {
+            _DB: 'sgx_ds', _STORE: 'ds', _db: null, _serverOk: null, _wsPort: null,
+            async _checkServer() {
+                if (this._serverOk !== null) return this._serverOk;
+                try {
+                    const r = await fetch('/api/info', { signal: AbortSignal.timeout(2000) });
+                    this._serverOk = r.ok;
+                    if (r.ok) {
+                        try {
+                            const info = await r.json();
+                            this._wsPort = info.wsPort;
+                        } catch {}
+                    }
+                } catch { this._serverOk = false; }
+                return this._serverOk;
+            },
+            async _openDB() {
+                if (this._db) return this._db;
+                return new Promise((res, rej) => {
+                    const r = indexedDB.open(this._DB, 1);
+                    r.onupgradeneeded = e => e.target.result.createObjectStore(this._STORE, { keyPath: 'name' });
+                    r.onsuccess = e => { this._db = e.target.result; res(this._db); };
+                    r.onerror = e => rej(e);
+                });
+            },
+            async save(name, data) {
+                if (currentUser) {
+                    if (!data._meta) data._meta = {};
+                    data._meta.modifiedBy = currentUser;
+                    data._meta.modifiedAt = new Date().toISOString();
+                }
+                if (await this._checkServer()) {
+                    await authFetch('/api/dataset/' + encodeURIComponent(name), {
+                        method: 'POST', headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    });
+                } else {
+                    const db = await this._openDB();
+                    await new Promise((res, rej) => {
+                        const tx = db.transaction(this._STORE, 'readwrite');
+                        tx.objectStore(this._STORE).put({ name, data, date: new Date().toLocaleDateString('tr-TR') });
+                        tx.oncomplete = () => res(); tx.onerror = e => rej(e);
+                    });
+                }
+            },
+            async get(name) {
+                if (await this._checkServer()) {
+                    try {
+                        const r = await authFetch('/api/dataset/' + encodeURIComponent(name));
+                        if (r.ok) { const data = await r.json(); return { name, data }; }
+                    } catch {}
+                }
+                const db = await this._openDB();
+                return new Promise((res, rej) => {
+                    const r = db.transaction(this._STORE).objectStore(this._STORE).get(name);
+                    r.onsuccess = () => res(r.result); r.onerror = e => rej(e);
+                });
+            },
+            async getAll() {
+                if (await this._checkServer()) {
+                    try {
+                        const r = await authFetch('/api/datasets');
+                        if (r.ok) {
+                            const list = await r.json();
+                            return list.map(d => ({ name: d.name, data: { nodes: [] }, date: d.date, nodeCount: d.nodeCount, modifiedBy: d.modifiedBy, sizeKB: d.sizeKB }));
+                        }
+                    } catch {}
+                }
+                const db = await this._openDB();
+                return new Promise((res, rej) => {
+                    const r = db.transaction(this._STORE).objectStore(this._STORE).getAll();
+                    r.onsuccess = () => res(r.result); r.onerror = e => rej(e);
+                });
+            },
+            async remove(name) {
+                if (await this._checkServer()) {
+                    await authFetch('/api/dataset/' + encodeURIComponent(name), { method: 'DELETE' });
+                } else {
+                    const db = await this._openDB();
+                    await new Promise((res, rej) => {
+                        const tx = db.transaction(this._STORE, 'readwrite');
+                        tx.objectStore(this._STORE).delete(name);
+                        tx.oncomplete = () => res(); tx.onerror = e => rej(e);
+                    });
+                }
+            },
+            async isServer() { return this._checkServer(); }
+        };
+        let activeDatasetName = 'quran_data.json';
+
         const arabicToLatinMap = {
             'ا': 'E', 'أ': 'E', 'إ': 'E', 'آ': 'E', 'ب': 'B', 'ت': 'T', 'ث': 'TH', 'ج': 'C', 'ح': 'H', 'خ': 'KH', 
             'د': 'D', 'ذ': 'DH', 'ر': 'R', 'ز': 'Z', 'س': 'S', 'ش': 'Ş', 'ص': 'S', 
@@ -574,10 +1110,7 @@
             } catch (e) {
                 console.log("JSON bulunamadı, manuel yükleme bekleniyor.");
             } finally {
-                setTimeout(() => {
-                    document.getElementById('loading-screen').style.opacity = '0';
-                    setTimeout(() => document.getElementById('loading-screen').style.display = 'none', 800);
-                }, 1000);
+                hideLoadingScreen();
             }
         };
 
@@ -597,19 +1130,128 @@
             return sprite;
         };
 
+        // Dünya-Ay ölçeği: Dünya r=6371km, Ay r=1737km (0.27×), mesafe=384400km (60×Dünya r)
+        // Sure (Dünya) = 1500, Ayet (Ay) = 400, yörünge mesafesi = 45000 (30×sure r)
+        const calcLayoutPositions = (surahIds, layoutType) => {
+            const surahPosMap = {};
+            let ayahScatterR, scatterThickness;
+
+            switch(layoutType) {
+                case 'galaxy': {
+                    const totalTurns = 4;
+                    const maxRadius = 25000000;
+                    ayahScatterR = 60000;
+                    scatterThickness = 300000;
+                    surahIds.forEach((sid, sIdx) => {
+                        const t = sIdx / Math.max(surahIds.length - 1, 1);
+                        const theta = t * totalTurns * Math.PI * 2;
+                        const r = t * maxRadius;
+                        surahPosMap[sid] = { x: Math.cos(theta) * r, y: 0, z: Math.sin(theta) * r };
+                    });
+                    break;
+                }
+                case 'nebula': {
+                    const clusterCount = 7;
+                    const clusterSpread = 12000000;
+                    const clusterRadius = 4000000;
+                    ayahScatterR = 400000;
+                    scatterThickness = 400000;
+                    const clusters = [];
+                    for (let i = 0; i < clusterCount; i++) {
+                        const phi = Math.acos(1 - 2 * (i + 0.5) / clusterCount);
+                        const theta = Math.PI * (1 + Math.sqrt(5)) * i;
+                        clusters.push({
+                            x: Math.sin(phi) * Math.cos(theta) * clusterSpread,
+                            y: Math.sin(phi) * Math.sin(theta) * clusterSpread * 0.4,
+                            z: Math.cos(phi) * clusterSpread
+                        });
+                    }
+                    const gaussRand = () => {
+                        let u = 0, v = 0;
+                        while (u === 0) u = Math.random();
+                        while (v === 0) v = Math.random();
+                        return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+                    };
+                    surahIds.forEach((sid, sIdx) => {
+                        const ci = sIdx % clusterCount;
+                        const cc = clusters[ci];
+                        surahPosMap[sid] = {
+                            x: cc.x + gaussRand() * clusterRadius,
+                            y: cc.y + gaussRand() * clusterRadius * 0.3,
+                            z: cc.z + gaussRand() * clusterRadius
+                        };
+                    });
+                    break;
+                }
+                case 'cube': {
+                    const dim = 5;
+                    const spacing = 5000000;
+                    ayahScatterR = 300000;
+                    scatterThickness = 300000;
+                    const offset = (dim - 1) / 2 * spacing;
+                    surahIds.forEach((sid, sIdx) => {
+                        const ix = sIdx % dim;
+                        const iy = Math.floor(sIdx / dim) % dim;
+                        const iz = Math.floor(sIdx / (dim * dim));
+                        surahPosMap[sid] = {
+                            x: ix * spacing - offset,
+                            y: iy * spacing - offset,
+                            z: iz * spacing - offset
+                        };
+                    });
+                    break;
+                }
+                case 'sphere': {
+                    const sphereRadius = 20000000;
+                    ayahScatterR = 350000;
+                    scatterThickness = 350000;
+                    const golden = Math.PI * (3 - Math.sqrt(5));
+                    surahIds.forEach((sid, sIdx) => {
+                        const yNorm = 1 - (sIdx / Math.max(surahIds.length - 1, 1)) * 2;
+                        const radH = Math.sqrt(1 - yNorm * yNorm);
+                        const theta = golden * sIdx;
+                        surahPosMap[sid] = {
+                            x: Math.cos(theta) * radH * sphereRadius,
+                            y: yNorm * sphereRadius,
+                            z: Math.sin(theta) * radH * sphereRadius
+                        };
+                    });
+                    break;
+                }
+            }
+            return { surahPosMap, ayahScatterR, scatterThickness };
+        };
+
+        const toggleLayoutMenu = () => {
+            const menu = document.getElementById('layout-menu');
+            menu.classList.toggle('hidden');
+            const close = (e) => {
+                if (!document.getElementById('layout-menu-wrap').contains(e.target)) {
+                    menu.classList.add('hidden');
+                    document.removeEventListener('click', close);
+                }
+            };
+            if (!menu.classList.contains('hidden')) setTimeout(() => document.addEventListener('click', close), 0);
+        };
+
+        const switchLayout = (type) => {
+            currentLayout = type;
+            document.querySelectorAll('.layout-option').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.layout === type);
+            });
+            document.getElementById('layout-menu').classList.add('hidden');
+            if (originalData) processData(originalData);
+            else if (nodes.length > 0) processData({ nodes });
+        };
+
         const processData = (data) => {
             if (!data || !data.nodes) return;
             surahGroups.forEach(g => scene.remove(g)); if(ayahMesh) scene.remove(ayahMesh); if(lineSegments) scene.remove(lineSegments);
              labelSprites.forEach(s => scene.remove(s));
+             if (highlightLines) { highlightLines.forEach(l => scene.remove(l)); highlightLines = []; }
              surahGroups = []; ayahNodes = []; rootMap.clear(); labelSprites = []; lineNodePairs = [];
-            nodes = data.nodes.map(n => ({ ...n, roots: Array.isArray(n.roots) ? n.roots : [] }));
+            nodes = data.nodes.map(n => ({ ...n, roots: Array.isArray(n.roots) ? n.roots : [], dipnot: n.dipnot || '' }));
             const surahIds = [...new Set(nodes.map(n => n.id.split(':')[0]))].sort((a,b) => parseInt(a)-parseInt(b));
-
-            // Samanyolu Galaksisi spiral parametreleri
-            const totalTurns = 4;
-            const maxRadius = 25000000;
-            const ayahScatterR = 60000;
-            const diskThickness = 300000;
 
             // Surah başına ayet sayısı
             const surahAyahCounts = {};
@@ -617,14 +1259,11 @@
                 surahAyahCounts[sid] = nodes.filter(n => n.id.split(':')[0] === sid).length;
             });
 
-            // Surah pozisyonları: Arşimed spiralı (Fatiha merkezde)
-            const surahPosMap = {};
-            surahIds.forEach((sid, sIdx) => {
-                const t = sIdx / Math.max(surahIds.length - 1, 1);
-                const theta = t * totalTurns * Math.PI * 2;
-                const r = t * maxRadius;
-                surahPosMap[sid] = { x: Math.cos(theta) * r, z: Math.sin(theta) * r };
-            });
+            // Yerleşim modeline göre pozisyon hesapla
+            const layout = calcLayoutPositions(surahIds, currentLayout);
+            const surahPosMap = layout.surahPosMap;
+            const ayahScatterR = layout.ayahScatterR;
+            const scatterThickness = layout.scatterThickness;
 
             const lineV = []; const lineC = [];
 
@@ -635,8 +1274,7 @@
                 const sp = surahPosMap[surahNum];
 
                 if (ayahNum === 1) {
-                    // Sure merkez node: galaktik düzlemde
-                    node.x = sp.x; node.y = 0; node.z = sp.z;
+                    node.x = sp.x; node.y = sp.y; node.z = sp.z;
                     const g = new THREE.Group();
                     g.position.set(node.x, node.y, node.z);
                     g.userData = { nodeData: node };
@@ -690,14 +1328,21 @@
                     g.add(sLabel);
                     surahGroups.push(g); scene.add(g);
                 } else {
-                    // Ayetler: surenin etrafında dağılım
-                    const totalAyahs = surahAyahCounts[surahNum];
-                    const isUpper = ayahNum <= Math.ceil(totalAyahs / 2);
+                    // Ayetler: surenin etrafında dağılım (Dünya-Ay oranı)
                     const angle = Math.random() * Math.PI * 2;
                     const dist = (Math.random() * 0.7 + 0.3) * ayahScatterR;
-                    node.x = sp.x + Math.cos(angle) * dist;
-                    node.z = sp.z + Math.sin(angle) * dist;
-                    node.y = (isUpper ? 1 : -1) * (Math.random() * 0.8 + 0.2) * diskThickness;
+                    if (currentLayout === 'galaxy') {
+                        const totalAyahs = surahAyahCounts[surahNum];
+                        const isUpper = ayahNum <= Math.ceil(totalAyahs / 2);
+                        node.x = sp.x + Math.cos(angle) * dist;
+                        node.z = sp.z + Math.sin(angle) * dist;
+                        node.y = sp.y + (isUpper ? 1 : -1) * (Math.random() * 0.8 + 0.2) * scatterThickness;
+                    } else {
+                        const phi = Math.acos(2 * Math.random() - 1);
+                        node.x = sp.x + Math.sin(phi) * Math.cos(angle) * dist;
+                        node.y = sp.y + Math.sin(phi) * Math.sin(angle) * dist;
+                        node.z = sp.z + Math.cos(phi) * dist;
+                    }
                     ayahNodes.push(node);
                 }
                 (node.roots || []).forEach(r => { if(!rootMap.has(r)) rootMap.set(r, []); rootMap.get(r).push(idx); });
@@ -717,7 +1362,8 @@
             const lG = new THREE.BufferGeometry();
             lG.setAttribute('position', new THREE.Float32BufferAttribute(lineV, 3));
             lG.setAttribute('color', new THREE.Float32BufferAttribute(lineC, 3));
-            lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.02 }));
+            const lineOpacity = currentLayout === 'galaxy' ? 0.02 : 0.05;
+            lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: lineOpacity }));
             lineSegments.renderOrder = 1; scene.add(lineSegments);
 
             // Ayet küreleri (texture'lı)
@@ -973,7 +1619,8 @@
                         const p2 = new THREE.Vector3(b.x, b.y, b.z);
                         const path = new THREE.LineCurve3(p1, p2);
                         const pairData = { n1: a.id, n2: b.id, root: root };
-                        const tubeG = new THREE.TubeGeometry(path, 1, 40, 6, false);
+                        const tubeR = currentLayout === 'galaxy' ? 40 : 150;
+                        const tubeG = new THREE.TubeGeometry(path, 1, tubeR, 6, false);
                         const tubeM = new THREE.Mesh(tubeG, new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.85 }));
                         tubeM.renderOrder = 2;
                         tubeM.userData.pair = pairData;
@@ -1005,6 +1652,18 @@
             document.getElementById('hud-translation').innerText = n.translation;
             document.getElementById('hud-arabic').innerHTML = arabicHighlighted;
 
+            // Dipnot alanını güncelle
+            const dipnotDiv = document.getElementById('hud-dipnot');
+            const dipnotLabel = document.getElementById('dipnot-label');
+            dipnotDiv.classList.add('hidden');
+            if (n.dipnot) {
+                dipnotDiv.textContent = n.dipnot;
+                dipnotLabel.textContent = 'Dipnot';
+            } else {
+                dipnotDiv.textContent = 'Bu ayet için dipnot bulunmuyor.';
+                dipnotLabel.textContent = 'Dipnot';
+            }
+
             // Önceki AI sonucunu temizle
             const aiResult = document.getElementById('ai-result');
             aiResult.classList.add('hidden');
@@ -1018,6 +1677,54 @@
                 badge.innerHTML = `<span dir="rtl" class="text-2xl font-bold">${r}</span><span class="root-pron">${getRootPron(r)}</span>`;
                 rootsCont.appendChild(badge);
             });
+
+            // Kök istatistikleri
+            const statsDiv = document.getElementById('hud-root-stats');
+            let statsHtml = '';
+            (n.roots || []).forEach(r => {
+                const ids = rootMap.get(r) || [];
+                const totalAyah = ids.length;
+                const surahSet = new Set(ids.map(i => nodes[i].id.split(':')[0]));
+                const totalSurah = surahSet.size;
+                const c = getRootCSSColor(r);
+                // Sure bazlı dağılım (en çok geçen 5)
+                const surahCounts = {};
+                ids.forEach(i => { const sid = nodes[i].id.split(':')[0]; surahCounts[sid] = (surahCounts[sid] || 0) + 1; });
+                const topSurahs = Object.entries(surahCounts).sort((a, b) => b[1] - a[1]).slice(0, 5);
+                const barMax = topSurahs[0]?.[1] || 1;
+                statsHtml += `
+                    <div style="margin-bottom:12px;padding:12px;background:rgba(255,255,255,0.02);border:1px solid ${c.replace('hsl', 'hsla').replace(')', ',0.15)')};border-radius:12px;">
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+                            <span dir="rtl" style="color:${c};font-size:18px;font-weight:bold;">${r}</span>
+                            <span style="color:${c};font-size:10px;opacity:0.7;">${getRootPron(r)}</span>
+                            <span style="margin-left:auto;font-size:9px;color:#64748b;">Kur'an geneli</span>
+                        </div>
+                        <div style="display:flex;gap:16px;margin-bottom:8px;">
+                            <div style="text-align:center;">
+                                <div style="font-size:20px;font-weight:900;color:${c};">${totalAyah}</div>
+                                <div style="font-size:8px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Ayet</div>
+                            </div>
+                            <div style="text-align:center;">
+                                <div style="font-size:20px;font-weight:900;color:${c};">${totalSurah}</div>
+                                <div style="font-size:8px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Sure</div>
+                            </div>
+                            <div style="text-align:center;">
+                                <div style="font-size:20px;font-weight:900;color:${c};">${(totalAyah / 6236 * 100).toFixed(1)}%</div>
+                                <div style="font-size:8px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Oran</div>
+                            </div>
+                        </div>
+                        <div style="font-size:8px;color:#475569;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:4px;">En Çok Geçtiği Sureler</div>
+                        ${topSurahs.map(([sid, cnt]) => `
+                            <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
+                                <span style="font-size:10px;color:#94a3b8;min-width:80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${surahNamesTR[sid]}</span>
+                                <div style="flex:1;height:6px;background:rgba(255,255,255,0.04);border-radius:3px;overflow:hidden;">
+                                    <div style="width:${cnt / barMax * 100}%;height:100%;background:${c};border-radius:3px;opacity:0.6;"></div>
+                                </div>
+                                <span style="font-size:9px;color:${c};font-weight:700;min-width:20px;text-align:right;">${cnt}</span>
+                            </div>`).join('')}
+                    </div>`;
+            });
+            statsDiv.innerHTML = statsHtml;
 
             const list = document.getElementById('related-list'); list.innerHTML = '';
             const related = []; const seen = new Set([n.id]);
@@ -1034,6 +1741,7 @@
                             <div class="flex justify-between items-center mb-1">
                                 <span class="text-[11px] font-bold text-slate-100 uppercase tracking-tight">${getSurahTR(rn.id)} ${rn.id.split(':')[1]}. Ayet</span>
                                 <div style="display:flex;align-items:center;gap:6px;">
+                                    <button onclick="event.stopPropagation(); window.showDipnotPopup(this, '${rn.id}')" style="width:28px;height:28px;border-radius:50%;border:1px solid #f59e0b;background:rgba(245,158,11,0.1);color:#f59e0b;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;" title="Dipnot">📌</button>
                                     <button onclick="event.stopPropagation(); window.speakThis(this, '${rn.id}')" style="width:28px;height:28px;border-radius:50%;border:1px solid #00f2ff;background:rgba(0,242,255,0.1);color:#00f2ff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;" title="Seslendir">▶</button>
                                     <span class="text-[10px] text-cyan-500 font-mono">${rn.id}</span>
                                 </div>
@@ -1199,20 +1907,27 @@
         };
 
         document.getElementById('file-input').onchange = (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            const fname = file.name;
             const r = new FileReader();
-            r.onload = (ev) => {
-                processData(JSON.parse(ev.target.result));
-                hasCustomData = true;
-                document.getElementById('reset-data-btn').classList.remove('hidden');
+            r.onload = async (ev) => {
+                try {
+                    const data = JSON.parse(ev.target.result);
+                    await DatasetStore.save(fname, data);
+                    activeDatasetName = fname;
+                    processData(data);
+                    hasCustomData = true;
+                } catch(err) { alert('Geçersiz JSON: ' + err.message); }
             };
-            r.readAsText(e.target.files[0]);
+            r.readAsText(file);
             e.target.value = '';
         };
         window.resetToOriginal = () => {
             if (!originalData) return;
+            activeDatasetName = 'quran_data.json';
             processData(originalData);
             hasCustomData = false;
-            document.getElementById('reset-data-btn').classList.add('hidden');
         };
         window.analyzeWithAI = async () => {
             if (!currentHudNode) return;
@@ -1282,13 +1997,162 @@ Türkçe yaz, kısa ve öz tut.`;
         };
 
         // --- Ayarlar Modal Fonksiyonları ---
-        window.openSettings = () => {
+        window.openSettings = async () => {
             document.getElementById('settings-overlay').style.display = 'flex';
             renderKeyList();
+            const infoDiv = document.getElementById('auth-user-info');
+            const statusDiv = document.getElementById('server-status');
+            const pwSection = document.getElementById('change-pw-section');
+            if (isDesktopMode && authUser) {
+                const roleLabels = { admin: '👑 Admin', editor: '✏️ Editor', viewer: '👁 Viewer' };
+                infoDiv.innerHTML = `
+                    <div style="display:flex;align-items:center;gap:12px;padding:10px 14px;background:rgba(0,242,255,0.05);border:1px solid rgba(0,242,255,0.15);border-radius:12px;margin-bottom:8px;">
+                        <span style="font-size:24px;">👤</span>
+                        <div style="flex:1;"><div class="text-sm font-bold text-white">${authUser}</div><div class="text-[10px] text-cyan-500">${roleLabels[authRole] || authRole}</div></div>
+                        <button onclick="doLogout()" class="bg-red-950/50 hover:bg-red-900/50 border border-red-400/20 px-4 py-2 rounded-xl font-black text-[10px] text-red-400 uppercase tracking-widest transition-all">Çıkış</button>
+                    </div>`;
+                pwSection.style.display = '';
+            } else {
+                infoDiv.innerHTML = '<p class="text-[11px] text-slate-600">Bireysel mod — giriş gerekmez.</p>';
+                pwSection.style.display = 'none';
+            }
+            if (isDesktopMode) {
+                try {
+                    const r = await fetch('/api/info');
+                    const info = await r.json();
+                    statusDiv.innerHTML = `<span class="text-green-400">● Sunucu aktif</span> · Ağ: <code class="bg-black/40 px-2 py-0.5 rounded text-cyan-300">${info.url}</code>`;
+                } catch { statusDiv.innerHTML = '<span class="text-green-400">● Sunucu aktif</span>'; }
+            } else {
+                statusDiv.innerHTML = '<span class="text-slate-500">○ Çevrimdışı mod (IndexedDB)</span>';
+            }
         };
+        window.saveUsername = () => {};
         window.closeSettings = () => {
             document.getElementById('settings-overlay').style.display = 'none';
             document.getElementById('api-key-guide').classList.add('hidden');
+        };
+
+        // --- Kimlik Doğrulama Fonksiyonları ---
+        const applyRoleUI = () => {
+            const adminBtn = document.getElementById('admin-btn');
+            if (adminBtn) adminBtn.style.display = authRole === 'admin' ? '' : 'none';
+            const isViewer = authRole === 'viewer';
+            const fileLabel = document.getElementById('file-input-label');
+            const editorBtn = document.getElementById('editor-btn-header');
+            if (isDesktopMode && fileLabel) fileLabel.style.display = isViewer ? 'none' : '';
+            if (isDesktopMode && editorBtn) editorBtn.style.display = isViewer ? 'none' : '';
+        };
+        window.doLogin = async () => {
+            const username = document.getElementById('login-username').value.trim();
+            const password = document.getElementById('login-password').value;
+            const err = document.getElementById('login-error');
+            err.style.display = 'none';
+            if (!username || !password) { err.textContent = 'Kullanıcı adı ve şifre gerekli'; err.style.display = 'block'; return; }
+            try {
+                const r = await fetch('/api/auth/login', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password })
+                });
+                const data = await r.json();
+                if (!r.ok) { err.textContent = data.error; err.style.display = 'block'; return; }
+                authToken = data.token;
+                authUser = data.username;
+                authRole = data.role;
+                currentUser = data.username;
+                localStorage.setItem('sgx_auth_token', authToken);
+                localStorage.setItem('sgx_username', currentUser);
+                document.getElementById('login-overlay').style.display = 'none';
+                applyRoleUI();
+                init();
+                connectWS();
+            } catch (e) {
+                err.textContent = 'Sunucuya bağlanılamadı';
+                err.style.display = 'block';
+            }
+        };
+        window.doLogout = async () => {
+            try { await authFetch('/api/auth/logout', { method: 'POST' }); } catch {}
+            authToken = ''; authUser = ''; authRole = '';
+            localStorage.removeItem('sgx_auth_token');
+            location.reload();
+        };
+        window.openAdmin = async () => {
+            document.getElementById('admin-overlay').style.display = 'flex';
+            await renderUserList();
+        };
+        window.closeAdmin = () => { document.getElementById('admin-overlay').style.display = 'none'; };
+        const renderUserList = async () => {
+            const list = document.getElementById('admin-user-list');
+            try {
+                const r = await authFetch('/api/auth/users');
+                if (!r.ok) { list.innerHTML = '<p class="text-xs text-red-400">Yetkisiz</p>'; return; }
+                const users = await r.json();
+                const roleLabels = { admin: '👑 Admin', editor: '✏️ Editor', viewer: '👁 Viewer' };
+                const roleColors = { admin: '#f59e0b', editor: '#06b6d4', viewer: '#64748b' };
+                list.innerHTML = users.map(u => `
+                    <div style="display:flex;align-items:center;gap:12px;padding:12px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:12px;margin-bottom:8px;">
+                        <span style="font-size:20px;">👤</span>
+                        <div style="flex:1;"><div class="text-sm font-bold text-white">${u.username}</div><div class="text-[10px]" style="color:${roleColors[u.role]}">${roleLabels[u.role]}</div></div>
+                        ${u.username !== authUser ? `
+                        <select onchange="changeUserRole('${u.username}',this.value)" style="background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:4px 8px;color:white;font-size:10px;outline:none;">
+                            <option value="viewer" ${u.role==='viewer'?'selected':''}>Viewer</option>
+                            <option value="editor" ${u.role==='editor'?'selected':''}>Editor</option>
+                            <option value="admin" ${u.role==='admin'?'selected':''}>Admin</option>
+                        </select>
+                        <button onclick="deleteUser('${u.username}')" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(239,68,68,0.3);background:rgba(239,68,68,0.1);color:#ef4444;cursor:pointer;font-size:12px;">🗑</button>
+                        ` : '<span class="text-[10px] text-slate-600">(Siz)</span>'}
+                    </div>
+                `).join('');
+            } catch { list.innerHTML = '<p class="text-xs text-red-400">Hata oluştu</p>'; }
+        };
+        window.createUser = async () => {
+            const username = document.getElementById('new-user-name').value.trim();
+            const password = document.getElementById('new-user-pass').value.trim();
+            const role = document.getElementById('new-user-role').value;
+            if (!username || !password) return;
+            const r = await authFetch('/api/auth/users', {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password, role })
+            });
+            if (r.ok) {
+                document.getElementById('new-user-name').value = '';
+                document.getElementById('new-user-pass').value = '';
+                await renderUserList();
+            } else {
+                const data = await r.json();
+                alert(data.error || 'Hata');
+            }
+        };
+        window.deleteUser = async (username) => {
+            if (!confirm(username + ' silinsin mi?')) return;
+            await authFetch('/api/auth/user/' + encodeURIComponent(username), { method: 'DELETE' });
+            await renderUserList();
+        };
+        window.changeUserRole = async (username, role) => {
+            await authFetch('/api/auth/user/' + encodeURIComponent(username), {
+                method: 'PUT', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ role })
+            });
+            await renderUserList();
+        };
+        window.changePassword = async () => {
+            const oldPw = document.getElementById('old-pw-input').value;
+            const newPw = document.getElementById('new-pw-input').value;
+            const msg = document.getElementById('pw-change-msg');
+            if (!oldPw || !newPw) { msg.innerHTML = '<span class="text-red-400">Tüm alanları doldurun</span>'; return; }
+            const r = await authFetch('/api/auth/change-password', {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ oldPassword: oldPw, newPassword: newPw })
+            });
+            const data = await r.json();
+            if (r.ok) {
+                msg.innerHTML = '<span class="text-green-400">✓ Şifre güncellendi</span>';
+                document.getElementById('old-pw-input').value = '';
+                document.getElementById('new-pw-input').value = '';
+            } else {
+                msg.innerHTML = `<span class="text-red-400">${data.error}</span>`;
+            }
+            setTimeout(() => { msg.innerHTML = ''; }, 3000);
         };
         window.showApiKeyGuide = () => {
             document.getElementById('settings-overlay').style.display = 'flex';
@@ -1344,7 +2208,629 @@ Türkçe yaz, kısa ve öz tut.`;
             }
         };
 
-        window.onload = init;
+        // --- Veri Seti Yöneticisi ---
+        window.toggleDipnot = () => {
+            const div = document.getElementById('hud-dipnot');
+            div.classList.toggle('hidden');
+        };
+        window.showDipnotPopup = (btn, nodeId) => {
+            const item = btn.closest('.ayah-list-item');
+            const existing = item.querySelector('.dipnot-inline');
+            if (existing) { existing.remove(); return; }
+            // Diğer açık dipnotları kapat
+            document.querySelectorAll('.dipnot-inline').forEach(el => el.remove());
+            const node = nodes.find(n => n.id === nodeId);
+            const text = node?.dipnot || 'Bu ayet için dipnot bulunmuyor.';
+            const div = document.createElement('div');
+            div.className = 'dipnot-inline';
+            div.style.cssText = 'margin-top:8px;padding:10px 14px;background:rgba(120,53,15,0.3);border:1px solid rgba(245,158,11,0.2);border-radius:10px;font-size:12px;color:rgba(253,230,138,0.8);font-style:italic;line-height:1.6;';
+            div.textContent = text;
+            item.appendChild(div);
+        };
+        window.openDatasets = async () => {
+            document.getElementById('dataset-overlay').style.display = 'flex';
+            await renderDatasetList();
+        };
+        window.closeDatasets = () => { document.getElementById('dataset-overlay').style.display = 'none'; };
+        const renderDatasetList = async () => {
+            const list = document.getElementById('dataset-list');
+            const datasets = await DatasetStore.getAll();
+            const isViewer = authRole === 'viewer';
+            let html = `<div class="ds-item ${activeDatasetName === 'quran_data.json' ? 'active' : ''}" onclick="switchDataset('__original__')">
+                <span style="font-size:20px">📄</span>
+                <div class="flex-1">
+                    <div class="text-sm font-bold text-white">quran_data.json</div>
+                    <div class="text-[10px] text-slate-500">Orijinal veri seti</div>
+                </div>
+                ${activeDatasetName === 'quran_data.json' ? '<span class="text-[10px] text-cyan-400 font-bold uppercase tracking-widest">● Aktif</span>' : ''}
+                <button onclick="event.stopPropagation();downloadJSON(originalData,'quran_data.json')" class="key-btn" title="İndir" style="color:#38bdf8;border-color:rgba(56,189,248,0.3);">⬇</button>
+            </div>`;
+            datasets.forEach(d => {
+                const esc = d.name.replace(/'/g, "\\'");
+                const nc = d.nodeCount || d.data?.nodes?.length || 0;
+                const who = d.modifiedBy ? ` · ✏️ ${d.modifiedBy}` : '';
+                const sizeStr = d.sizeKB ? ` · ${d.sizeKB >= 1024 ? (d.sizeKB / 1024).toFixed(1) + ' MB' : d.sizeKB + ' KB'}` : '';
+                html += `<div class="ds-item ${activeDatasetName === d.name ? 'active' : ''}" onclick="switchDataset('${esc}')">
+                    <span style="font-size:20px">📁</span>
+                    <div class="flex-1">
+                        <div class="text-sm font-bold text-white">${d.name}</div>
+                        <div class="text-[10px] text-slate-500">${d.date || ''} · ${nc} ayet${sizeStr}${who}</div>
+                    </div>
+                    <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
+                        ${activeDatasetName === d.name ? '<span class="text-[10px] text-cyan-400 font-bold uppercase tracking-widest">● Aktif</span>' : ''}
+                        <button onclick="event.stopPropagation();downloadDataset('${esc}')" class="key-btn" title="İndir" style="color:#38bdf8;border-color:rgba(56,189,248,0.3);font-size:11px;padding:4px 7px;">⬇</button>
+                        ${!isViewer ? `<button onclick="event.stopPropagation();renameDataset('${esc}')" class="key-btn" title="Yeniden Adlandır" style="color:#a78bfa;border-color:rgba(167,139,250,0.3);font-size:11px;padding:4px 7px;">✏️</button>` : ''}
+                        ${!isViewer ? `<button onclick="event.stopPropagation();duplicateDataset('${esc}')" class="key-btn" title="Çoğalt" style="color:#34d399;border-color:rgba(52,211,153,0.3);font-size:11px;padding:4px 7px;">📋</button>` : ''}
+                        ${!isViewer ? `<button onclick="event.stopPropagation();deleteDataset('${esc}')" class="key-btn" title="Sil" style="font-size:11px;padding:4px 7px;">🗑</button>` : ''}
+                    </div>
+                </div>`;
+            });
+            if (datasets.length === 0) html += '<p class="text-xs text-slate-600 italic text-center py-4 mt-2">Henüz harici veri seti yüklenmedi.<br>Üst menüden "VERİ OKU" ile JSON yükleyin.</p>';
+            list.innerHTML = html;
+        };
+        window.switchDataset = async (name) => {
+            if (name === '__original__') {
+                resetToOriginal();
+            } else {
+                const ds = await DatasetStore.get(name);
+                if (ds) { activeDatasetName = name; processData(ds.data); hasCustomData = true; }
+            }
+            await renderDatasetList();
+        };
+        window.deleteDataset = async (name) => {
+            if (!confirm('"' + name + '" silinsin mi?')) return;
+            await DatasetStore.remove(name);
+            if (activeDatasetName === name) resetToOriginal();
+            await renderDatasetList();
+        };
+        window.renameDataset = async (oldName) => {
+            const newName = prompt('Yeni dosya adı:', oldName.replace('.json', ''));
+            if (!newName || newName.trim() === '' || newName.trim() + '.json' === oldName) return;
+            const finalName = newName.trim().endsWith('.json') ? newName.trim() : newName.trim() + '.json';
+            if (isDesktopMode) {
+                const r = await authFetch('/api/dataset-rename', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ oldName, newName: finalName })
+                });
+                const data = await r.json();
+                if (!r.ok) { alert(data.error || 'Hata'); return; }
+                if (activeDatasetName === oldName) activeDatasetName = finalName;
+            } else {
+                const ds = await DatasetStore.get(oldName);
+                if (ds) {
+                    await DatasetStore.save(finalName, ds.data);
+                    await DatasetStore.remove(oldName);
+                    if (activeDatasetName === oldName) activeDatasetName = finalName;
+                }
+            }
+            await renderDatasetList();
+        };
+        window.duplicateDataset = async (sourceName) => {
+            const base = sourceName.replace('.json', '');
+            const newName = prompt('Kopya dosya adı:', base + '_kopya');
+            if (!newName || newName.trim() === '') return;
+            const finalName = newName.trim().endsWith('.json') ? newName.trim() : newName.trim() + '.json';
+            if (isDesktopMode) {
+                const r = await authFetch('/api/dataset-duplicate', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ sourceName, newName: finalName })
+                });
+                const data = await r.json();
+                if (!r.ok) { alert(data.error || 'Hata'); return; }
+            } else {
+                const ds = await DatasetStore.get(sourceName);
+                if (ds) await DatasetStore.save(finalName, ds.data);
+            }
+            await renderDatasetList();
+        };
+
+        // --- JSON Editör ---
+        window.openEditor = async () => {
+            let data;
+            if (activeDatasetName === 'quran_data.json') {
+                data = originalData;
+            } else {
+                const ds = await DatasetStore.get(activeDatasetName);
+                data = ds ? ds.data : originalData;
+            }
+            if (!data) return;
+            const ta = document.getElementById('editor-textarea');
+            ta.value = JSON.stringify(data, null, 2);
+            document.getElementById('editor-title').textContent = '📝 ' + activeDatasetName;
+            document.getElementById('json-editor').style.display = 'flex';
+            updateEditorLines();
+            editorValidate();
+            ta.oninput = () => { updateEditorLines(); editorValidate(); };
+            ta.onscroll = () => { document.getElementById('editor-lines').scrollTop = ta.scrollTop; };
+        };
+        window.closeEditor = () => { document.getElementById('json-editor').style.display = 'none'; };
+        const updateEditorLines = () => {
+            const ta = document.getElementById('editor-textarea');
+            const count = ta.value.split('\n').length;
+            const div = document.getElementById('editor-lines');
+            let h = '';
+            for (let i = 1; i <= count; i++) h += '<div style="padding:0 8px;">' + i + '</div>';
+            div.innerHTML = h;
+            div.scrollTop = ta.scrollTop;
+        };
+        window.editorValidate = () => {
+            const ta = document.getElementById('editor-textarea');
+            const bar = document.getElementById('editor-status');
+            const msg = document.getElementById('editor-msg');
+            const info = document.getElementById('editor-info');
+            try {
+                const data = JSON.parse(ta.value);
+                const nc = data.nodes ? data.nodes.length : 0;
+                bar.className = 'editor-status valid';
+                msg.textContent = '✓ Geçerli JSON';
+                info.textContent = nc + ' ayet · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+                return true;
+            } catch(e) {
+                bar.className = 'editor-status invalid';
+                const m = e.message.match(/position (\d+)/);
+                if (m) {
+                    const line = ta.value.substring(0, parseInt(m[1])).split('\n').length;
+                    msg.textContent = '✗ Hata satır ' + line + ': ' + e.message;
+                } else {
+                    msg.textContent = '✗ ' + e.message;
+                }
+                info.textContent = '';
+                return false;
+            }
+        };
+        window.editorFormat = () => {
+            const ta = document.getElementById('editor-textarea');
+            try {
+                ta.value = JSON.stringify(JSON.parse(ta.value), null, 2);
+                updateEditorLines();
+                editorValidate();
+            } catch(e) { editorValidate(); }
+        };
+        window.editorSave = async () => {
+            if (!editorValidate()) return;
+            const data = JSON.parse(document.getElementById('editor-textarea').value);
+            let saveName = activeDatasetName;
+            if (activeDatasetName === 'quran_data.json') {
+                saveName = 'quran_data_düzenlenmiş.json';
+                activeDatasetName = saveName;
+                document.getElementById('editor-title').textContent = '📝 ' + saveName;
+            }
+            await DatasetStore.save(saveName, data);
+            processData(data);
+            hasCustomData = true;
+            const btn = document.querySelector('.editor-btn.save');
+            btn.textContent = '✓ Kaydedildi';
+            setTimeout(() => { btn.textContent = '💾 Kaydet'; }, 1500);
+        };
+        window.editorAddDipnot = () => {
+            const ta = document.getElementById('editor-textarea');
+            try {
+                const data = JSON.parse(ta.value);
+                if (!data.nodes) return;
+                let count = 0;
+                data.nodes.forEach(n => { if (!n.hasOwnProperty('dipnot')) { n.dipnot = ''; count++; } });
+                ta.value = JSON.stringify(data, null, 2);
+                updateEditorLines();
+                editorValidate();
+                const btn = document.querySelector('[onclick="editorAddDipnot()"]');
+                btn.textContent = '✓ ' + count + ' ayete eklendi';
+                setTimeout(() => { btn.textContent = '📌 Dipnot Ekle'; }, 2000);
+            } catch(e) { editorValidate(); }
+        };
+
+        // --- Dışa Aktarma ---
+        const downloadJSON = async (data, filename) => {
+            const content = JSON.stringify(data, null, 2);
+            if (isDesktopMode && window.pywebview && window.pywebview.api && window.pywebview.api.save_file) {
+                try {
+                    const ok = await window.pywebview.api.save_file(content, filename);
+                    if (ok) return;
+                } catch(e) {}
+            }
+            const blob = new Blob([content], { type: 'application/json' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(a.href);
+        };
+        window.editorExport = async () => {
+            const ta = document.getElementById('editor-textarea');
+            try {
+                const data = JSON.parse(ta.value);
+                await downloadJSON(data, activeDatasetName);
+            } catch(e) { editorValidate(); }
+        };
+        window.downloadDataset = async (name) => {
+            const ds = await DatasetStore.get(name);
+            if (ds) await downloadJSON(ds.data, name);
+        };
+
+        // --- Arapça Sanal Klavye ---
+        window.toggleArabicKb = () => {
+            const kb = document.getElementById('arabic-kb');
+            kb.classList.toggle('show');
+            document.getElementById('kb-toggle').style.borderColor = kb.classList.contains('show') ? '#00f2ff' : '';
+        };
+        window.kbInsert = (ch) => {
+            const ta = document.getElementById('editor-textarea');
+            const s = ta.selectionStart, e = ta.selectionEnd;
+            ta.value = ta.value.substring(0, s) + ch + ta.value.substring(e);
+            ta.selectionStart = ta.selectionEnd = s + ch.length;
+            ta.focus();
+            updateEditorLines();
+            editorValidate();
+        };
+        window.kbBackspace = () => {
+            const ta = document.getElementById('editor-textarea');
+            const s = ta.selectionStart, e = ta.selectionEnd;
+            if (s !== e) {
+                ta.value = ta.value.substring(0, s) + ta.value.substring(e);
+                ta.selectionStart = ta.selectionEnd = s;
+            } else if (s > 0) {
+                ta.value = ta.value.substring(0, s - 1) + ta.value.substring(s);
+                ta.selectionStart = ta.selectionEnd = s - 1;
+            }
+            ta.focus();
+            updateEditorLines();
+            editorValidate();
+        };
+
+        // --- WebSocket Gerçek Zamanlı Senkronizasyon ---
+        let _ws = null, _wsReconnectTimer = null, _onlineUsers = [];
+        const connectWS = () => {
+            if (!isDesktopMode || !authToken) return;
+            const wsPort = DatasetStore._wsPort || (parseInt(location.port) + 1);
+            const wsUrl = `ws://${location.hostname}:${wsPort}/ws?token=${authToken}`;
+            try {
+                _ws = new WebSocket(wsUrl);
+                _ws.onopen = () => {
+                    updateOnlineIndicator();
+                };
+                _ws.onmessage = (e) => {
+                    try {
+                        const msg = JSON.parse(e.data);
+                        handleWSMessage(msg);
+                    } catch {}
+                };
+                _ws.onclose = () => {
+                    _ws = null;
+                    if (isDesktopMode && authToken) {
+                        _wsReconnectTimer = setTimeout(connectWS, 3000);
+                    }
+                };
+                _ws.onerror = () => {};
+            } catch {}
+        };
+        const handleWSMessage = (msg) => {
+            const isDatasetPanel = document.getElementById('dataset-overlay')?.style.display === 'flex';
+            switch (msg.type) {
+                case 'dataset_saved':
+                    showToast(`💾 ${msg.username} "${msg.name}" kaydetti`, 'info');
+                    if (isDatasetPanel) renderDatasetList();
+                    break;
+                case 'dataset_deleted':
+                    showToast(`🗑 ${msg.username} "${msg.name}" sildi`, 'warn');
+                    if (isDatasetPanel) renderDatasetList();
+                    if (activeDatasetName === msg.name) { resetToOriginal(); showToast('Aktif veri seti silindi, orijinale dönüldü', 'warn'); }
+                    break;
+                case 'dataset_renamed':
+                    showToast(`✏️ ${msg.username} "${msg.oldName}" → "${msg.newName}"`, 'info');
+                    if (isDatasetPanel) renderDatasetList();
+                    if (activeDatasetName === msg.oldName) activeDatasetName = msg.newName;
+                    break;
+                case 'dataset_duplicated':
+                    showToast(`📋 ${msg.username} "${msg.sourceName}" çoğalttı`, 'info');
+                    if (isDatasetPanel) renderDatasetList();
+                    break;
+                case 'user_joined':
+                    showToast(`🟢 ${msg.username} bağlandı`, 'success');
+                    _onlineUsers = msg.online || [];
+                    updateOnlineIndicator();
+                    break;
+                case 'user_left':
+                    showToast(`🔴 ${msg.username} ayrıldı`, 'muted');
+                    _onlineUsers = msg.online || [];
+                    updateOnlineIndicator();
+                    break;
+            }
+        };
+        const showToast = (text, type = 'info') => {
+            const container = document.getElementById('toast-container');
+            if (!container) return;
+            const colors = { info: '#06b6d4', warn: '#f59e0b', success: '#34d399', muted: '#64748b' };
+            const toast = document.createElement('div');
+            toast.style.cssText = `background:rgba(0,0,0,0.85);backdrop-filter:blur(16px);border:1px solid ${colors[type] || colors.info}40;border-left:3px solid ${colors[type] || colors.info};border-radius:12px;padding:10px 18px;color:#e2e8f0;font-size:11px;font-weight:600;pointer-events:auto;transform:translateX(120%);transition:transform 0.3s ease;max-width:340px;`;
+            toast.textContent = text;
+            container.appendChild(toast);
+            requestAnimationFrame(() => { toast.style.transform = 'translateX(0)'; });
+            setTimeout(() => {
+                toast.style.transform = 'translateX(120%)';
+                setTimeout(() => toast.remove(), 300);
+            }, 4000);
+        };
+        const updateOnlineIndicator = () => {
+            const el = document.getElementById('online-indicator');
+            const countEl = document.getElementById('online-count');
+            if (!el) return;
+            if (isDesktopMode) {
+                el.style.display = '';
+                const count = _onlineUsers.length + (authUser && !_onlineUsers.includes(authUser) ? 1 : 0);
+                countEl.textContent = count;
+            } else {
+                el.style.display = 'none';
+            }
+        };
+        window.showOnlineList = async () => {
+            try {
+                const r = await authFetch('/api/online-users');
+                if (r.ok) {
+                    const data = await r.json();
+                    _onlineUsers = data.users || [];
+                    updateOnlineIndicator();
+                    const names = [...new Set([..._onlineUsers, authUser].filter(Boolean))];
+                    alert('Çevrimiçi: ' + names.join(', '));
+                }
+            } catch {}
+        };
+
+        // ======== WYSIWYG Notes System ========
+        let _notes = [];
+        let _activeNoteId = null;
+        let _noteSaveTimer = null;
+
+        const _notesKey = () => 'sgx_notes_' + (authUser || 'guest');
+
+        const loadNotes = () => {
+            try {
+                const raw = localStorage.getItem(_notesKey());
+                _notes = raw ? JSON.parse(raw) : [];
+            } catch { _notes = []; }
+        };
+
+        const saveNotesToStorage = () => {
+            localStorage.setItem(_notesKey(), JSON.stringify(_notes));
+        };
+
+        const renderNotesList = () => {
+            const sb = document.getElementById('notes-sidebar');
+            if (!sb) return;
+            sb.innerHTML = _notes.map(n => `
+                <div class="note-item ${n.id === _activeNoteId ? 'active' : ''}" onclick="selectNote('${n.id}')">
+                    <div class="note-title-text">${n.title || 'Başlıksız Not'}</div>
+                    <div class="note-date">${new Date(n.updated).toLocaleDateString('tr-TR')}</div>
+                </div>
+            `).join('') || '<div style="padding:16px;font-size:10px;color:#475569;text-align:center;">Henüz not yok.<br>✚ ile yeni ekleyin.</div>';
+        };
+
+        const selectNote = (id) => {
+            _activeNoteId = id;
+            const note = _notes.find(n => n.id === id);
+            if (note) {
+                document.getElementById('note-title').value = note.title || '';
+                document.getElementById('note-content').innerHTML = note.content || '';
+            }
+            renderNotesList();
+        };
+
+        const addNewNote = () => {
+            const id = Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
+            const note = { id, title: '', content: '', created: new Date().toISOString(), updated: new Date().toISOString() };
+            _notes.unshift(note);
+            saveNotesToStorage();
+            selectNote(id);
+        };
+
+        const deleteCurrentNote = () => {
+            if (!_activeNoteId) return;
+            if (!confirm('Bu notu silmek istediğinize emin misiniz?')) return;
+            _notes = _notes.filter(n => n.id !== _activeNoteId);
+            saveNotesToStorage();
+            _activeNoteId = _notes.length > 0 ? _notes[0].id : null;
+            if (_activeNoteId) selectNote(_activeNoteId);
+            else {
+                document.getElementById('note-title').value = '';
+                document.getElementById('note-content').innerHTML = '';
+            }
+            renderNotesList();
+        };
+
+        const autoSaveNote = () => {
+            if (!_activeNoteId) return;
+            clearTimeout(_noteSaveTimer);
+            _noteSaveTimer = setTimeout(() => {
+                const note = _notes.find(n => n.id === _activeNoteId);
+                if (!note) return;
+                note.title = document.getElementById('note-title').value;
+                note.content = document.getElementById('note-content').innerHTML;
+                note.updated = new Date().toISOString();
+                saveNotesToStorage();
+                renderNotesList();
+            }, 500);
+        };
+
+        const openNotes = () => {
+            loadNotes();
+            if (_notes.length === 0) addNewNote();
+            else if (!_activeNoteId) selectNote(_notes[0].id);
+            else selectNote(_activeNoteId);
+            document.getElementById('notes-overlay').classList.add('show');
+        };
+
+        const closeNotes = () => {
+            document.getElementById('notes-overlay').classList.remove('show');
+        };
+
+        const nCmd = (cmd, val) => {
+            if (cmd === 'formatBlock') {
+                document.execCommand('formatBlock', false, '<' + val + '>');
+            } else if (cmd === 'insertHTML') {
+                document.execCommand('insertHTML', false, val);
+            } else {
+                document.execCommand(cmd, false, null);
+            }
+            document.getElementById('note-content').focus();
+            autoSaveNote();
+        };
+
+        const insertNoteLink = () => {
+            const url = prompt('Bağlantı URL\'si:');
+            if (url) document.execCommand('createLink', false, url);
+            autoSaveNote();
+        };
+
+        // Notes overlay close on background click
+        document.addEventListener('click', (e) => {
+            if (e.target.id === 'notes-overlay') closeNotes();
+        });
+
+        const _loadStart = Date.now();
+        let _besmeleCtx = null;
+        let _besmeleSource = null;
+        let _besmeleGain = null;
+        let _besmelePlaying = false;
+        let _besmeleMinTime = 3000;
+
+        (function() {
+            const a = document.getElementById('besmele-audio');
+            if (!a) return;
+            const setDur = () => {
+                if (a.duration && isFinite(a.duration)) {
+                    _besmeleMinTime = Math.ceil(a.duration * 1000) + 800;
+                }
+            };
+            a.addEventListener('loadedmetadata', setDur);
+            if (a.readyState >= 1) setDur();
+        })();
+
+        const playBesmeleAudio = () => {
+            if (_besmelePlaying) return;
+            const audio = document.getElementById('besmele-audio');
+            if (!audio) return;
+            audio.volume = 0.7;
+
+            const onPlay = () => { _besmelePlaying = true; };
+            audio.addEventListener('playing', onPlay, { once: true });
+
+            audio.play().then(() => {
+                _besmelePlaying = true;
+            }).catch(() => {
+                try {
+                    _besmeleCtx = new (window.AudioContext || window.webkitAudioContext)();
+                    _besmeleGain = _besmeleCtx.createGain();
+                    _besmeleGain.gain.value = 0.7;
+                    _besmeleGain.connect(_besmeleCtx.destination);
+                    fetch('besmele.wav')
+                        .then(r => r.arrayBuffer())
+                        .then(buf => _besmeleCtx.decodeAudioData(buf))
+                        .then(decoded => {
+                            if (_besmelePlaying) return;
+                            _besmeleSource = _besmeleCtx.createBufferSource();
+                            _besmeleSource.buffer = decoded;
+                            _besmeleSource.connect(_besmeleGain);
+                            _besmeleSource.start(0);
+                            _besmelePlaying = true;
+                        }).catch(() => {});
+                } catch(e) {}
+
+                const unlock = () => {
+                    if (_besmelePlaying) return;
+                    if (_besmeleCtx && _besmeleCtx.state === 'suspended') {
+                        _besmeleCtx.resume().catch(() => {});
+                    }
+                    audio.play().then(() => { _besmelePlaying = true; }).catch(() => {});
+                    document.removeEventListener('click', unlock);
+                    document.removeEventListener('keydown', unlock);
+                };
+                document.addEventListener('click', unlock, { once: true });
+                document.addEventListener('keydown', unlock, { once: true });
+            });
+        };
+
+        const fadeBesmeleAudio = () => {
+            _besmelePlaying = true;
+            // Desktop: Python winsound ile çalınan sesi durdur
+            if (window.pywebview && window.pywebview.api) {
+                try { window.pywebview.api.stop_besmele(); } catch(e) {}
+            }
+            // Web: HTML audio veya Web Audio API fade-out
+            const audio = document.getElementById('besmele-audio');
+            if (_besmeleGain && _besmeleCtx && _besmeleSource) {
+                try {
+                    const now = _besmeleCtx.currentTime;
+                    _besmeleGain.gain.setValueAtTime(_besmeleGain.gain.value, now);
+                    _besmeleGain.gain.linearRampToValueAtTime(0, now + 1.2);
+                    setTimeout(() => {
+                        try { _besmeleSource.stop(); } catch(e) {}
+                    }, 1300);
+                } catch(e) {}
+                return;
+            }
+            if (!audio || audio.paused) return;
+            let vol = audio.volume;
+            const fade = setInterval(() => {
+                vol -= 0.05;
+                if (vol <= 0) { clearInterval(fade); audio.pause(); audio.currentTime = 0; }
+                else { audio.volume = vol; }
+            }, 80);
+        };
+
+        const hideLoadingScreen = () => {
+            const ls = document.getElementById('loading-screen');
+            if (!ls || ls.style.display === 'none') return;
+            const elapsed = Date.now() - _loadStart;
+            const remaining = Math.max(0, _besmeleMinTime - elapsed);
+            setTimeout(() => {
+                fadeBesmeleAudio();
+                ls.style.opacity = '0';
+                setTimeout(() => { ls.style.display = 'none'; }, 1200);
+            }, remaining);
+        };
+
+        window.onload = async () => {
+            playBesmeleAudio();
+            isDesktopMode = await DatasetStore._checkServer();
+            let authValid = false;
+
+            if (isDesktopMode && authToken) {
+                try {
+                    const r = await fetch('/api/auth/me', { headers: { 'Authorization': 'Bearer ' + authToken } });
+                    if (r.ok) {
+                        const data = await r.json();
+                        authUser = data.username;
+                        authRole = data.role;
+                        currentUser = data.username;
+                        authValid = true;
+                    }
+                } catch {}
+                if (!authValid) {
+                    authToken = '';
+                    localStorage.removeItem('sgx_auth_token');
+                }
+            }
+
+            if (isDesktopMode && !authValid) {
+                const elapsed = Date.now() - _loadStart;
+                const wait = Math.max(0, _besmeleMinTime - elapsed);
+                setTimeout(() => {
+                    fadeBesmeleAudio();
+                    const ls = document.getElementById('loading-screen');
+                    ls.style.opacity = '0';
+                    setTimeout(() => {
+                        ls.style.display = 'none';
+                        document.getElementById('login-overlay').style.display = 'flex';
+                    }, 1200);
+                }, wait);
+            } else {
+                if (isDesktopMode) {
+                    applyRoleUI();
+                    connectWS();
+                }
+                init();
+            }
+        };
     </script>
 </body>
 </html>
