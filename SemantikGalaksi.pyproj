@@ -21,7 +21,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DataEngine\quran_api_enricher.py" />
     <Compile Include="DataEngine\desktop_app.py" />
   </ItemGroup>
   <ItemGroup>

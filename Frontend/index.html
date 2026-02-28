@@ -108,6 +108,30 @@
             display: flex; flex-direction: column; align-items: center; justify-content: center;
             transition: opacity 0.8s;
         }
+        .settings-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9000;
+            display: flex; align-items: center; justify-content: center;
+            backdrop-filter: blur(12px);
+        }
+        .settings-modal {
+            background: rgba(0,5,15,0.98); border: 1px solid rgba(0,242,255,0.3);
+            border-radius: 2rem; padding: 2.5rem; width: min(520px, calc(100vw - 2rem));
+            max-height: calc(100vh - 4rem); overflow-y: auto;
+            box-shadow: 0 30px 100px rgba(0,0,0,1);
+        }
+        .key-item {
+            display: flex; align-items: center; gap: 8px; padding: 10px 14px;
+            background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px; margin-bottom: 8px; font-family: monospace; font-size: 12px;
+        }
+        .key-item.active { border-color: rgba(0,242,255,0.4); background: rgba(0,242,255,0.05); }
+        .key-item .key-text { flex: 1; color: #94a3b8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .key-item .key-status { font-size: 10px; font-weight: 900; padding: 3px 8px; border-radius: 6px; text-transform: uppercase; letter-spacing: 1px; flex-shrink: 0; }
+        .key-item .key-status.ok { color: #22c55e; background: rgba(34,197,94,0.1); }
+        .key-item .key-status.fail { color: #ef4444; background: rgba(239,68,68,0.1); }
+        .key-item .key-status.pending { color: #f59e0b; background: rgba(245,158,11,0.1); }
+        .key-btn { background: none; border: 1px solid rgba(255,255,255,0.15); color: #94a3b8; width: 28px; height: 28px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; transition: all 0.2s; flex-shrink: 0; }
+        .key-btn:hover { border-color: #ef4444; color: #ef4444; }
     </style>
 </head>
 <body>
@@ -120,6 +144,40 @@
     <canvas id="warp-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:998;display:none;"></canvas>
     <div id="tooltip"></div>
 
+    <!-- Ayarlar Modalı -->
+    <div id="settings-overlay" class="settings-overlay" style="display:none" onclick="if(event.target===this)closeSettings()">
+        <div class="settings-modal">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-black text-cyan-400 uppercase tracking-widest">⚙️ Ayarlar</h2>
+                <button onclick="closeSettings()" class="w-9 h-9 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all">✕</button>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3">Gemini API Anahtarları</h3>
+                <p class="text-[11px] text-slate-600 mb-4">Birden fazla anahtar ekleyebilirsiniz. Çalışan ilk anahtar otomatik kullanılır.</p>
+                <div id="api-key-list"></div>
+                <div class="flex gap-2 mt-3">
+                    <input type="password" id="new-key-input" placeholder="AIza..." class="flex-1 bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white font-mono placeholder-slate-700">
+                    <button onclick="addApiKey()" class="bg-cyan-950 hover:bg-cyan-800 border border-cyan-400/30 px-5 py-2.5 rounded-xl font-black text-[10px] text-white uppercase tracking-widest transition-all">Ekle</button>
+                </div>
+                <button onclick="testAllKeys()" class="w-full mt-3 bg-purple-950/50 hover:bg-purple-900/50 border border-purple-400/20 px-4 py-2.5 rounded-xl font-black text-[10px] text-purple-300 uppercase tracking-widest transition-all">🔍 Tüm Anahtarları Test Et</button>
+            </div>
+            <div id="api-key-guide" class="hidden mb-4 bg-amber-950/30 border border-amber-400/20 rounded-2xl p-5">
+                <h4 class="text-amber-400 font-black text-xs uppercase tracking-widest mb-3">🔑 API Anahtarı Nasıl Alınır?</h4>
+                <ol class="text-[12px] text-slate-300 leading-relaxed space-y-2">
+                    <li><span class="text-cyan-400 font-bold">1.</span> <a href="https://aistudio.google.com/apikey" target="_blank" class="text-cyan-400 underline hover:text-cyan-300">Google AI Studio</a> sayfasına gidin</li>
+                    <li><span class="text-cyan-400 font-bold">2.</span> Google hesabınızla giriş yapın</li>
+                    <li><span class="text-cyan-400 font-bold">3.</span> <strong class="text-white">"Create API Key"</strong> butonuna tıklayın</li>
+                    <li><span class="text-cyan-400 font-bold">4.</span> Oluşan <code class="bg-black/40 px-2 py-0.5 rounded text-cyan-300">AIza...</code> anahtarını kopyalayın</li>
+                    <li><span class="text-cyan-400 font-bold">5.</span> Yukarıdaki kutuya yapıştırıp <strong class="text-white">Ekle</strong>'ye basın</li>
+                </ol>
+                <p class="text-[10px] text-amber-600 mt-3">💡 Ücretsiz plan günlük kullanım için yeterlidir. Birden fazla anahtar ekleyebilirsiniz.</p>
+            </div>
+            <div class="border-t border-white/5 pt-4">
+                <p class="text-[10px] text-slate-700 leading-relaxed">🔒 Anahtarlarınız tarayıcınızda şifrelenmiş olarak saklanır. Sunucuya gönderilmez.</p>
+            </div>
+        </div>
+    </div>
+
     <div class="fixed top-0 w-full z-50 p-3 md:p-6 flex flex-col md:flex-row justify-between items-center bg-gradient-to-b from-black to-transparent gap-2 md:gap-4">
         <div class="text-center md:text-left">
             <h1 class="text-xl md:text-3xl neon-title">Kur'an-ı Kerim Kelime Kök Uzayı</h1>
@@ -131,9 +189,13 @@
                 <div id="search-results" class="search-results"></div>
             </div>
             <label id="upload-label" class="bg-cyan-950 hover:bg-cyan-600 border border-cyan-400/30 px-4 md:px-8 py-2.5 md:py-3 rounded-full font-black text-[10px] md:text-[11px] cursor-pointer shadow-xl transition-all uppercase text-white tracking-widest text-center">
-                VERİ YÜKLE
+                VERİ OKU
                 <input type="file" id="file-input" class="hidden" accept=".json">
             </label>
+            <button id="reset-data-btn" onclick="resetToOriginal()" class="hidden bg-red-950 hover:bg-red-700 border border-red-400/30 px-4 md:px-8 py-2.5 md:py-3 rounded-full font-black text-[10px] md:text-[11px] cursor-pointer shadow-xl transition-all uppercase text-white tracking-widest text-center">
+                ORJİNAL VERİ
+            </button>
+            <button onclick="openSettings()" class="bg-white/5 hover:bg-white/10 border border-white/10 w-10 h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-lg transition-all" title="Ayarlar">⚙️</button>
         </div>
     </div>
 
@@ -156,6 +218,13 @@
                 <div id="hud-roots" class="flex flex-wrap justify-center gap-2 md:gap-4"></div>
             </div>
 
+            <div class="mb-6 md:mb-8">
+                <button id="ai-analyze-btn" onclick="analyzeWithAI()" class="w-full bg-gradient-to-r from-purple-950 to-cyan-950 hover:from-purple-800 hover:to-cyan-800 border border-purple-400/30 px-6 py-3 rounded-2xl font-black text-[11px] cursor-pointer shadow-xl transition-all uppercase text-white tracking-widest flex items-center justify-center gap-3">
+                    <span class="text-lg">🤖</span> Yapay Zekâ Analizi
+                </button>
+                <div id="ai-result" class="hidden mt-4 bg-purple-950/30 border border-purple-400/20 rounded-2xl p-5 text-sm text-slate-200 leading-relaxed"></div>
+            </div>
+
             <div class="pb-8">
                 <h3 class="text-[9px] font-black text-cyan-950 uppercase tracking-[0.4em] mb-4 italic text-center">Semantik Bağlantılar</h3>
                 <input type="text" id="hud-search" placeholder="Ayet, sure veya kök ara..." class="w-full bg-black/60 border border-white/10 rounded-full px-5 py-2 mb-4 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-600 font-mono">
@@ -168,6 +237,7 @@
         /** GLOBAL VARIABLES **/
         let scene, camera, renderer, ayahMesh, starField, lineSegments, controls, highlightLines;
         let nodes = []; let surahGroups = []; let ayahNodes = []; let rootMap = new Map(); let labelSprites = []; let lineNodePairs = [];
+        let originalData = null; let hasCustomData = false;
 
         // Glow shader (fresnel atmosfer efekti)
         const glowVertexShader = `
@@ -286,9 +356,59 @@
         let warpActive = false; let warpProgress = 0; let warpStart = new THREE.Vector3(); let warpEnd = new THREE.Vector3(); let warpTarget = new THREE.Vector3();
         let warpCanvas, warpCtx, warpStars = [], warpSpeed = 1, warpCenterX = 0, warpCenterY = 0;
         let isAudioLoading = false;
-        
-        // --- ⚠️ API KEY BURAYA GELECEK ---
-        const apiKey = "AIzaSyABgS_0iV7VnlZY5MwqxpM5sksMmqh9LFA"; 
+
+        // --- API Key Yönetimi (localStorage) ---
+        const KeyManager = {
+            _STORAGE_KEY: 'sgx_api_keys',
+            _encode: (s) => btoa(unescape(encodeURIComponent(s))),
+            _decode: (s) => { try { return decodeURIComponent(escape(atob(s))); } catch(e) { return ''; } },
+            getKeys() {
+                try {
+                    const raw = localStorage.getItem(this._STORAGE_KEY);
+                    if (!raw) return [];
+                    return JSON.parse(this._decode(raw));
+                } catch(e) { return []; }
+            },
+            saveKeys(keys) {
+                localStorage.setItem(this._STORAGE_KEY, this._encode(JSON.stringify(keys)));
+            },
+            addKey(key) {
+                const keys = this.getKeys();
+                if (keys.find(k => k.key === key)) return false;
+                keys.push({ key, status: 'pending' });
+                this.saveKeys(keys);
+                return true;
+            },
+            removeKey(key) {
+                const keys = this.getKeys().filter(k => k.key !== key);
+                this.saveKeys(keys);
+            },
+            updateStatus(key, status) {
+                const keys = this.getKeys();
+                const k = keys.find(x => x.key === key);
+                if (k) { k.status = status; this.saveKeys(keys); }
+            },
+            async testKey(key) {
+                try {
+                    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`, {
+                        method: 'POST', headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ contents: [{ parts: [{ text: 'test' }] }] })
+                    });
+                    return r.ok;
+                } catch(e) { return false; }
+            },
+            async getWorkingKey() {
+                const keys = this.getKeys();
+                const sorted = [...keys].sort((a,b) => (a.status === 'ok' ? -1 : 1) - (b.status === 'ok' ? -1 : 1));
+                for (const k of sorted) {
+                    const ok = await this.testKey(k.key);
+                    this.updateStatus(k.key, ok ? 'ok' : 'fail');
+                    if (ok) return k.key;
+                }
+                return null;
+            }
+        };
+        let apiKey = null;
 
         const arabicToLatinMap = {
             'ا': 'E', 'أ': 'E', 'إ': 'E', 'آ': 'E', 'ب': 'B', 'ت': 'T', 'ث': 'TH', 'ج': 'C', 'ح': 'H', 'خ': 'KH', 
@@ -358,7 +478,8 @@
         const playAudio = (url) => { if (currentAudio) stopAudio(); currentAudio = new Audio(url); currentAudio.play().catch(e => {}); };
 
         const speakAyah = async (text) => {
-            if (!apiKey) { console.warn('TTS: API key tanımlanmamış'); return false; }
+            if (!apiKey) { apiKey = await KeyManager.getWorkingKey(); }
+            if (!apiKey) return false;
             stopAudio();
             if (audioCache.has(text)) { playAudio(audioCache.get(text)); return true; }
             if (isAudioLoading) return false;
@@ -372,7 +493,11 @@
                         model: "gemini-2.5-flash-preview-tts"
                     })
                 });
-                if (!response.ok) { console.error('TTS API hata:', response.status, response.statusText); return false; }
+                if (!response.ok) {
+                    KeyManager.updateStatus(apiKey, 'fail');
+                    apiKey = await KeyManager.getWorkingKey();
+                    return false;
+                }
                 const result = await response.json();
                 const part = result.candidates?.[0]?.content?.parts?.[0];
                 if (part?.inlineData?.data) {
@@ -443,8 +568,8 @@
                 const response = await fetch('quran_data.json');
                 if (response.ok) {
                     const data = await response.json();
+                    originalData = data;
                     processData(data);
-                    document.getElementById('upload-label').style.display = 'none';
                 }
             } catch (e) {
                 console.log("JSON bulunamadı, manuel yükleme bekleniyor.");
@@ -799,6 +924,8 @@
         window.speakThis = async (btn, nodeId) => {
             const node = nodes.find(n => n.id === nodeId);
             if (!node) return;
+            if (!apiKey) { apiKey = await KeyManager.getWorkingKey(); }
+            if (!apiKey) { showApiKeyGuide(); return; }
             const text = node.translation;
             if (activeSpeakBtn && activeSpeakBtn !== btn) { activeSpeakBtn.textContent = '▶'; }
             if (currentAudio || window.speechSynthesis?.speaking) {
@@ -814,7 +941,9 @@
             if (success && currentAudio) {
                 btn.textContent = '⏹';
                 currentAudio.onended = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
+                currentAudio.onerror = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
             } else {
+                // Gemini TTS başarısız (ücretsiz key) → tarayıcı TTS
                 const utter = speakWithBrowser(text);
                 if (utter) {
                     btn.textContent = '⏹';
@@ -863,6 +992,10 @@
         const showHUD = (n) => {
             if (!n) return;
             currentHudNode = n;
+            // Önceki ses/audio state'ini temizle
+            stopAudio();
+            isAudioLoading = false;
+            activeSpeakBtn = null;
             updateHighlightLines(n);
             const panel = document.getElementById('hud-panel');
             panel.classList.remove('hidden');
@@ -871,6 +1004,11 @@
             document.getElementById('hud-coord').innerText = `KOORDİNAT: ${n.id}`;
             document.getElementById('hud-translation').innerText = n.translation;
             document.getElementById('hud-arabic').innerHTML = arabicHighlighted;
+
+            // Önceki AI sonucunu temizle
+            const aiResult = document.getElementById('ai-result');
+            aiResult.classList.add('hidden');
+            aiResult.innerHTML = '';
 
             const rootsCont = document.getElementById('hud-roots'); rootsCont.innerHTML = '';
             (n.roots || []).forEach(r => {
@@ -1059,7 +1197,72 @@
             if (t) { warpTo(t); document.getElementById('search-results').style.display = 'none'; }
         };
 
-        document.getElementById('file-input').onchange = (e) => { const r = new FileReader(); r.onload = (ev) => processData(JSON.parse(ev.target.result)); r.readAsText(e.target.files[0]); };
+        document.getElementById('file-input').onchange = (e) => {
+            const r = new FileReader();
+            r.onload = (ev) => {
+                processData(JSON.parse(ev.target.result));
+                hasCustomData = true;
+                document.getElementById('reset-data-btn').classList.remove('hidden');
+            };
+            r.readAsText(e.target.files[0]);
+            e.target.value = '';
+        };
+        window.resetToOriginal = () => {
+            if (!originalData) return;
+            processData(originalData);
+            hasCustomData = false;
+            document.getElementById('reset-data-btn').classList.add('hidden');
+        };
+        window.analyzeWithAI = async () => {
+            if (!currentHudNode) return;
+            if (!apiKey) { apiKey = await KeyManager.getWorkingKey(); }
+            if (!apiKey) { showApiKeyGuide(); return; }
+            const btn = document.getElementById('ai-analyze-btn');
+            const result = document.getElementById('ai-result');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="animate-pulse">⏳</span> Analiz ediliyor...';
+            result.classList.remove('hidden');
+            result.innerHTML = '<p class="text-purple-400 animate-pulse text-center">Yapay zekâ düşünüyor...</p>';
+            const n = currentHudNode;
+            const roots = (n.roots || []).map(r => `${r} (${getRootPron(r)})`).join(', ');
+            const prompt = `Sen bir Kur'an-ı Kerim semantik analiz uzmanısın. Aşağıdaki ayeti analiz et.
+
+Sure: ${getSurahTR(n.id)}
+Ayet: ${n.id}
+Arapça: ${n.text}
+Meal: ${n.translation}
+Kökler: ${roots}
+
+Lütfen şunları yap:
+1. Ayetin kısa tefsir özeti (2-3 cümle)
+2. Köklerin semantik bağlantıları ve anlam katmanları
+3. Bu köklerin Kur'an genelindeki kullanım kalıpları
+4. Ayetin mesajının günümüze yansıması (1-2 cümle)
+
+Türkçe yaz, kısa ve öz tut.`;
+            try {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+                });
+                if (!response.ok) throw new Error(response.statusText);
+                const data = await response.json();
+                const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (text) {
+                    result.innerHTML = text
+                        .replace(/\*\*(.+?)\*\*/g, '<strong class="text-purple-300">$1</strong>')
+                        .replace(/\n/g, '<br>')
+                        .replace(/^(\d+\.)/gm, '<span class="text-cyan-400 font-bold">$1</span>');
+                } else {
+                    result.innerHTML = '<p class="text-red-400">Analiz sonucu alınamadı.</p>';
+                }
+            } catch (err) {
+                result.innerHTML = `<p class="text-red-400">Hata: ${err.message}</p>`;
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<span class="text-lg">🤖</span> Yapay Zekâ Analizi';
+            }
+        };
         document.getElementById('close-hud').onclick = () => { document.getElementById('hud-panel').classList.add('hidden'); stopAudio(); };
         window.onresize = () => {
             camera.aspect = window.innerWidth / window.innerHeight;
@@ -1076,7 +1279,70 @@
                 warpCenterY = window.innerHeight / 2;
             }
         };
-        
+
+        // --- Ayarlar Modal Fonksiyonları ---
+        window.openSettings = () => {
+            document.getElementById('settings-overlay').style.display = 'flex';
+            renderKeyList();
+        };
+        window.closeSettings = () => {
+            document.getElementById('settings-overlay').style.display = 'none';
+            document.getElementById('api-key-guide').classList.add('hidden');
+        };
+        window.showApiKeyGuide = () => {
+            document.getElementById('settings-overlay').style.display = 'flex';
+            document.getElementById('api-key-guide').classList.remove('hidden');
+            renderKeyList();
+        };
+        const renderKeyList = () => {
+            const list = document.getElementById('api-key-list');
+            const keys = KeyManager.getKeys();
+            if (keys.length === 0) {
+                list.innerHTML = '<p class="text-[11px] text-slate-700 italic text-center py-4">Henüz API anahtarı eklenmedi.</p>';
+                return;
+            }
+            list.innerHTML = keys.map(k => {
+                const masked = k.key.substring(0, 8) + '••••••••' + k.key.slice(-4);
+                const statusCls = k.status === 'ok' ? 'ok' : k.status === 'fail' ? 'fail' : 'pending';
+                const statusText = k.status === 'ok' ? '✓ Aktif' : k.status === 'fail' ? '✗ Hata' : '? Bekliyor';
+                return `
+                    <div class="key-item ${k.status === 'ok' ? 'active' : ''}">
+                        <span class="key-text">${masked}</span>
+                        <span class="key-status ${statusCls}">${statusText}</span>
+                        <button class="key-btn" onclick="removeApiKey('${k.key}')" title="Sil">🗑</button>
+                    </div>`;
+            }).join('');
+        };
+        window.addApiKey = () => {
+            const input = document.getElementById('new-key-input');
+            const key = input.value.trim();
+            if (!key) return;
+            if (!key.startsWith('AIza')) {
+                input.style.borderColor = '#ef4444';
+                setTimeout(() => input.style.borderColor = '', 2000);
+                return;
+            }
+            KeyManager.addKey(key);
+            input.value = '';
+            renderKeyList();
+        };
+        window.removeApiKey = (key) => {
+            KeyManager.removeKey(key);
+            if (apiKey === key) apiKey = null;
+            renderKeyList();
+        };
+        window.testAllKeys = async () => {
+            const keys = KeyManager.getKeys();
+            for (const k of keys) {
+                KeyManager.updateStatus(k.key, 'pending');
+                renderKeyList();
+                const ok = await KeyManager.testKey(k.key);
+                KeyManager.updateStatus(k.key, ok ? 'ok' : 'fail');
+                if (ok && !apiKey) apiKey = k.key;
+                renderKeyList();
+            }
+        };
+
         window.onload = init;
     </script>
 </body>

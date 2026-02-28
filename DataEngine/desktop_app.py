@@ -4,6 +4,8 @@ import os
 import http.server
 import socketserver
 import time
+import json
+import base64
 
 # --- AYARLAR ---
 PORT = 8080
@@ -11,6 +13,60 @@ PORT = 8080
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.join(CURRENT_DIR, '..', 'Frontend')
 WEBVIEW_DATA_DIR = os.path.join(CURRENT_DIR, 'webview_data')
+KEYS_FILE = os.path.join(CURRENT_DIR, 'webview_data', '.api_keys')
+
+
+def _ensure_dir():
+    os.makedirs(os.path.dirname(KEYS_FILE), exist_ok=True)
+
+
+def _load_keys():
+    _ensure_dir()
+    if not os.path.exists(KEYS_FILE):
+        return []
+    try:
+        with open(KEYS_FILE, 'r', encoding='utf-8') as f:
+            return json.loads(base64.b64decode(f.read()).decode('utf-8'))
+    except Exception:
+        return []
+
+
+def _save_keys(keys):
+    _ensure_dir()
+    with open(KEYS_FILE, 'w', encoding='utf-8') as f:
+        f.write(base64.b64encode(json.dumps(keys).encode('utf-8')).decode('utf-8'))
+
+
+class ApiKeyBridge:
+    """pywebview JS-Python köprüsü: API anahtarlarını güvenli dosyada saklar."""
+
+    def get_keys(self):
+        keys = _load_keys()
+        return [{"key": k["key"][:8] + "••••" + k["key"][-4:], "full": k["key"],
+                 "status": k.get("status", "pending")} for k in keys]
+
+    def add_key(self, key):
+        keys = _load_keys()
+        if any(k["key"] == key for k in keys):
+            return False
+        keys.append({"key": key, "status": "pending"})
+        _save_keys(keys)
+        return True
+
+    def remove_key(self, key):
+        keys = [k for k in _load_keys() if k["key"] != key]
+        _save_keys(keys)
+
+    def update_status(self, key, status):
+        keys = _load_keys()
+        for k in keys:
+            if k["key"] == key:
+                k["status"] = status
+        _save_keys(keys)
+
+    def get_raw_keys(self):
+        """Tam anahtarları döndürür (sadece JS tarafından API çağrısı için)."""
+        return [k["key"] for k in _load_keys()]
 
 class ProjeHandler(http.server.SimpleHTTPRequestHandler):
     """
@@ -53,27 +109,21 @@ if __name__ == '__main__':
     
     # 2. Masaüstü Penceresini Aç
     def on_closing():
-        """Pencere kapanırken tarayıcı sürecini güvenli şekilde temizle"""
-        try:
-            window = webview.windows[0] if webview.windows else None
-            if window and hasattr(window, 'gui') and window.gui:
-                browser = getattr(window.gui, '_browser', None)
-                if browser is not None:
-                    browser.Dispose()
-        except Exception:
-            pass
+        """Pencere kapanırken temizlik"""
         return True
 
     try:
+        api_bridge = ApiKeyBridge()
         window = webview.create_window(
             title="Kur'an-ı Kerim Kelime Kök Uzayı",
             url=f'http://127.0.0.1:{PORT}/index.html',
             maximized=True,
             background_color='#000000',
             resizable=True,
-            text_select=False
+            text_select=False,
+            js_api=api_bridge
         )
         window.events.closing += on_closing
-        webview.start(debug=True, storage_path=WEBVIEW_DATA_DIR) # F12 ile konsol açılabilir
+        webview.start(debug=True, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
     except Exception as e:
         print(f"Pencere açılırken hata oluştu: {e}")
