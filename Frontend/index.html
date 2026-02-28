@@ -1163,14 +1163,15 @@
             const qRaw = e.target.value.trim();
             const results = document.getElementById('search-results');
             if (qRaw.length < 1) { results.style.display = 'none'; return; }
-            const qNorm = qRaw.toLowerCase();
+            const normalize = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[\u00e2\u00e0\u00e1]/g, 'a').replace(/[\u00ee\u00ef\u00ec\u00ed]/g, 'i').replace(/[\u00fb\u00fc\u00f9\u00fa]/g, 'u').replace(/[\u00f4\u00f6\u00f2\u00f3]/g, 'o').replace(/[\u00ea\u00eb\u00e8\u00e9]/g, 'e');
+            const qNorm = normalize(qRaw);
             const parts = qRaw.split(/[\s:]+/);
             const searchSurah = parts[0]; const searchAyah = parts[1] || "";
             let finalResults = [];
             let matchCounts = { total: 0, surahs: new Set() };
-            
+
             Object.keys(surahNamesTR).forEach(id => {
-                const sNameNorm = surahNamesTR[id].toLowerCase();
+                const sNameNorm = normalize(surahNamesTR[id]);
                 if (id === searchSurah || sNameNorm.includes(qNorm)) {
                     if (searchAyah) {
                         const fullId = `${id}:${searchAyah}`;
@@ -1179,7 +1180,7 @@
                     } else finalResults.push({ id: id, label: `${surahNamesTR[id]}`, sub: "SURE", type: 'surah' });
                 }
             });
-            nodes.filter(n => n.translation.toLowerCase().includes(qNorm)).forEach(n => {
+            nodes.filter(n => normalize(n.translation).includes(qNorm)).forEach(n => {
                 if (!finalResults.find(r => r.id === n.id)) finalResults.push({ id: n.id, label: `${getSurahTR(n.id)} ${n.id.split(':')[1]}`, sub: n.translation.substring(0, 50) + "...", type: 'ayah' });
                 matchCounts.total++; matchCounts.surahs.add(n.id.split(':')[0]);
             });

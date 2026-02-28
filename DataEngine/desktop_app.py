@@ -124,6 +124,6 @@ if __name__ == '__main__':
             js_api=api_bridge
         )
         window.events.closing += on_closing
-        webview.start(debug=True, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
+        webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
     except Exception as e:
         print(f"Pencere açılırken hata oluştu: {e}")
