@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.16.6] - 2025-07-23
+### İyileştirme
+- **LICENSE**: MIT Lisansı Türkçe olarak genişletildi — madde madde haklar, koşullar, garanti reddi ve sorumluluk sınırlaması açıklamaları eklendi
+- **README.md**: Lisans badge'i "Özel" → "MIT" olarak güncellendi, lisans bölümü MIT bilgisiyle yenilendi
+- Etkilenen dosyalar: `LICENSE`, `README.md`, `CHANGELOG.md`
+
 ## [0.16.5] - 2025-07-23
 ### Eklenen
 - **README.md**: Kapsamlı proje tanıtım dosyası oluşturuldu — proje açıklaması, özellik listesi, mimari diyagram, proje yapısı, hızlı başlangıç, EXE dağıtım, server-client kurulum, yapılandırma, API referansı, teknoloji yığını, kullanım kılavuzu, teknik detaylar, sürüm geçmişi, katkıda bulunma rehberi

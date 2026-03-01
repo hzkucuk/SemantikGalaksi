@@ -3,8 +3,8 @@
   <img src="https://img.shields.io/badge/Three.js-r152-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/Sürüm-0.16.4-34d399?style=for-the-badge" alt="Sürüm">
-  <img src="https://img.shields.io/badge/Lisans-Özel-f59e0b?style=for-the-badge" alt="Lisans">
+  <img src="https://img.shields.io/badge/Sürüm-0.16.6-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
 </p>
 
 <h1 align="center">🕋 Kur'an-ı Kerim Kelime Kök Uzayı</h1>
@@ -494,7 +494,9 @@ Tam sürüm geçmişi için bkz. [CHANGELOG.md](CHANGELOG.md)
 
 ## ⚖️ Lisans
 
-Bu proje özel lisans altındadır. Ticari kullanım için iletişime geçin.
+Bu proje **MIT Lisansı** altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakınız.
+
+Kısaca: Yazılımı özgürce kullanabilir, kopyalayabilir, değiştirebilir, dağıtabilir ve ticari amaçla kullanabilirsiniz. Tek koşul, telif hakkı bildirimini ve lisans metnini korumanızdır.
 
 ---
 

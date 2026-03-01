@@ -38,6 +38,7 @@
     <Content Include="Frontend\warp.html" />
     <Content Include="index.html" />
     <Content Include="INSTALL.md" />
+    <Content Include="LICENSE" />
     <Content Include="README.md" />
     <Content Include="SemantikGalaksi.spec" />
   </ItemGroup>
