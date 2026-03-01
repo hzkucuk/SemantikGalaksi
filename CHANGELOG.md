@@ -1,5 +1,45 @@
 # CHANGELOG
 
+## [0.16.5] - 2025-07-23
+### Eklenen
+- **README.md**: Kapsamlı proje tanıtım dosyası oluşturuldu — proje açıklaması, özellik listesi, mimari diyagram, proje yapısı, hızlı başlangıç, EXE dağıtım, server-client kurulum, yapılandırma, API referansı, teknoloji yığını, kullanım kılavuzu, teknik detaylar, sürüm geçmişi, katkıda bulunma rehberi
+- Etkilenen dosyalar: `README.md`, `CHANGELOG.md`
+
+## [0.16.4] - 2025-07-23
+### İyileştirme
+- **Uzay Gemisi Navigasyon Görünümü**: Yıldız alanı vakum ortamına uygun olarak yeniden tasarlandı
+  - Titreşim kaldırıldı: atmosfer yok → yıldızlar sabit iğne ucu noktalar (%1.2 sensör gürültüsü hariç)
+  - Çekirdek keskinliği 5× artırıldı (exp -60 → -320): kırınımsız nokta ışık kaynağı
+  - Halo %66 azaltıldı ve sadece parlak yıldızlarda görünür (teleskop lens etkisi)
+  - Boyutlar %65 küçültüldü (500-6000 → 180-2400), maks 40px → 10px
+  - Sönük yıldızlar desatüre beyaz, sadece parlak yıldızlar renkli (göz adaptasyonu)
+  - Dönüş animasyonu kaldırıldı: yıldız alanı sabit inertial referans çerçevesi
+  - 120.000 yıldız: Samanyolu bandı yoğunluk farkından doğal olarak belirir
+- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`
+
+## [0.16.3] - 2025-07-23
+### İyileştirme
+- **Gerçek Samanyolu Yıldız Haritası**: Yıldız alanı astronomi verilerine dayalı olarak yeniden yazıldı
+  - Galaktik düzlem (J2000 GNP: RA=192.86°, Dec=+27.13°) boyunca yoğunlaşan Samanyolu bandı (%45)
+  - Galaktik şişkinlik (bulge) — Sagittarius A* yönünde kümelenme (%10)
+  - Macellan Bulutları — Büyük/Küçük uydu galaksi kümeleri (%5)
+  - Alan yıldızları — düzgün küresel dağılım (%40)
+  - Planck sıcaklığı tabanlı B-V → RGB renk dönüşümü
+  - Twinkling %65 azaltıldı (0.35→0.10 sönük, 0.05→0.02 parlak yıldızlar)
+  - Halo yoğunluğu azaltıldı (0.25→0.18), çekirdek sertliği artırıldı (50→60)
+- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`
+
+## [0.16.2] - 2025-07-23
+### İyileştirme
+- **Gerçekçi Yıldız Alanı**: Arka plan yıldızları tamamen yeniden yazıldı
+  - Custom ShaderMaterial: yumuşak glow çekirdeği + halo (additive blending)
+  - 6 spektral tip (O/B mavi → M kırmızı cüce), güç-yasası boyut dağılımı (çok sönük, az parlak)
+  - Twinkling animasyonu: sönük yıldızlar daha fazla, parlak yıldızlar daha az titreşir
+  - 80.000 yıldız, hafif galaktik düzlem yassılması
+  - Yavaş kozmik dönüş animasyonu (`0.002 rad/s`)
+  - Pencere yeniden boyutlandırmada shader uniform otomatik güncellenir
+- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`
+
 ## [0.16.1] - 2025-07-23
 ### İyileştirme
 - **Çevrimiçi Kullanıcılar Paneli**: Windows `alert()` yerine modern glassmorphism modal eklendi
