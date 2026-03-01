@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.15.1] - 2025-07-23
+### Eklenen
+- **INSTALL.md**: Profesyonel kurulum ve kullanım kılavuzu oluşturuldu — ön gereksinimler, adım adım kurulum, `.env` ve `config.json` yapılandırması, masaüstü/web/EXE çalıştırma modları, kullanım senaryoları, API referansı, hata çözümleri, güncelleme ve kaldırma talimatları
+- Etkilenen dosyalar: `INSTALL.md`, `CHANGELOG.md`
+
 ## [0.15.0] - 2025-07-23
 ### Eklenen
 - **EXE Dağıtım Desteği**: PyInstaller ile tek klasör (one-folder) EXE paketleme altyapısı eklendi

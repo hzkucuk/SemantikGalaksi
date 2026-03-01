@@ -37,6 +37,7 @@
     <Content Include="DataEngine\.env" />
     <Content Include="Frontend\warp.html" />
     <Content Include="index.html" />
+    <Content Include="INSTALL.md" />
     <Content Include="SemantikGalaksi.spec" />
   </ItemGroup>
   <ItemGroup>
