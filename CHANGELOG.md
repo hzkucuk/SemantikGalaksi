@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [0.16.1] - 2025-07-23
+### İyileştirme
+- **Çevrimiçi Kullanıcılar Paneli**: Windows `alert()` yerine modern glassmorphism modal eklendi
+  - Kullanıcı adı, IP adresi, makine adı (hostname), bağlantı süresi bilgileri gösterilir
+  - Aktif kullanıcı "SEN" etiketi ile vurgulanır
+  - Renkli avatar, hover efektleri, animasyonlu açılış
+  - Sunucu/WebSocket port bilgisi footer'da gösterilir
+- **Backend**: WebSocket client bilgileri genişletildi (IP, hostname, bağlanma zamanı)
+- **Backend**: `/api/online-users` endpoint'i `details` dizisi döndürür
+- Etkilenen dosyalar: `DataEngine/desktop_app.py`, `Frontend/index.html`, `CHANGELOG.md`
+
 ## [0.16.0] - 2025-07-23
 ### Eklenen
 - **Server-Client Modu**: `config.json` üzerinden `"mode": "server"` / `"mode": "client"` desteği eklendi

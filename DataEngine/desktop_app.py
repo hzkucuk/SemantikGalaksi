@@ -12,6 +12,7 @@ import socket
 import hashlib
 import secrets
 import struct
+import datetime
 
 # --- AYARLAR ---
 def _get_base_dir():
@@ -247,8 +248,8 @@ class WebSocketServer:
             self._running = True
             print(f"WebSocket sunucusu: ws://{host}:{port}")
             while True:
-                conn, _ = srv.accept()
-                threading.Thread(target=self._handle, args=(conn,), daemon=True).start()
+                conn, addr = srv.accept()
+                threading.Thread(target=self._handle, args=(conn, addr), daemon=True).start()
         except OSError:
             print(f"Uyar\u0131: WebSocket portu {port} kullan\u0131lamad\u0131.")
 
@@ -261,8 +262,9 @@ class WebSocketServer:
             buf += chunk
         return buf
 
-    def _handle(self, conn):
+    def _handle(self, conn, addr=None):
         session = None
+        client_ip = addr[0] if addr else 'bilinmiyor'
         try:
             data = conn.recv(4096).decode('utf-8', errors='ignore')
             if 'upgrade: websocket' not in data.lower():
@@ -278,6 +280,11 @@ class WebSocketServer:
                 conn.send(b'HTTP/1.1 401 Unauthorized\r\n\r\n')
                 conn.close()
                 return
+            hostname = client_ip
+            try:
+                hostname = socket.getfqdn(client_ip)
+            except Exception:
+                pass
             ws_key = None
             for line in data.split('\r\n'):
                 if line.lower().startswith('sec-websocket-key:'):
@@ -297,7 +304,13 @@ class WebSocketServer:
             )
             conn.send(handshake.encode())
             with self._lock:
-                self._clients.append({'sock': conn, 'session': session})
+                self._clients.append({
+                    'sock': conn,
+                    'session': session,
+                    'ip': client_ip,
+                    'hostname': hostname,
+                    'connected_at': datetime.datetime.now().isoformat()
+                })
             self.broadcast(json.dumps({
                 'type': 'user_joined',
                 'username': session['username'],
@@ -383,6 +396,23 @@ class WebSocketServer:
                 c['session'].get('username', '')
                 for c in self._clients if c.get('session')
             ))
+
+    def online_users_detail(self):
+        with self._lock:
+            seen = {}
+            for c in self._clients:
+                s = c.get('session')
+                if not s:
+                    continue
+                uname = s.get('username', '')
+                if uname not in seen:
+                    seen[uname] = {
+                        'username': uname,
+                        'ip': c.get('ip', 'bilinmiyor'),
+                        'hostname': c.get('hostname', 'bilinmiyor'),
+                        'connected_at': c.get('connected_at', '')
+                    }
+            return list(seen.values())
 
 
 ws_server = WebSocketServer()
@@ -844,7 +874,21 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         if not session:
             self._json_response({'error': 'Yetkisiz'}, 401)
             return
-        self._json_response({'users': ws_server.online_users()})
+        current_user = session.get('username', '')
+        current_ip = self.client_address[0] if self.client_address else 'bilinmiyor'
+        details = ws_server.online_users_detail()
+        usernames = [d['username'] for d in details]
+        if current_user and current_user not in usernames:
+            details.append({
+                'username': current_user,
+                'ip': current_ip,
+                'hostname': current_ip,
+                'connected_at': datetime.datetime.now().isoformat()
+            })
+        self._json_response({
+            'users': [d['username'] for d in details],
+            'details': details
+        })
 
     def _server_info(self):
         self._json_response({
