@@ -1,6 +1,10 @@
 {
+  "mode": "server",
   "port": 8080,
   "host": "0.0.0.0",
-  "auto_port": true,
-  "ws_port": 8081
+  "auto_port": false,
+  "ws_port": 8081,
+  "server_ip": "192.168.2.5",
+  "server_port": 8080,
+  "server_ws_port": 8081
 }

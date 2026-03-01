@@ -80,12 +80,25 @@ Port ve host ayarları 3 katmanlı öncelikle yapılandırılabilir:
 
 1. **config.json** (varsayılan): `DataEngine/config.json`
    ```json
-   { "port": 8080, "host": "0.0.0.0", "auto_port": true }
+   { "port": 8080, "host": "0.0.0.0", "auto_port": false, "mode": "server" }
    ```
 2. **Environment Variable**: `SGX_PORT=9090 SGX_HOST=192.168.1.5`
-3. **CLI Argümanları**: `python desktop_app.py --port 9090 --host 0.0.0.0`
+3. **CLI Argümanları**: `python desktop_app.py --port 9090 --host 0.0.0.0 --mode client`
 
 `auto_port: true` → belirtilen port meşgulse otomatik olarak sonraki boş port bulunur.
+
+### Server-Client Ağ Modu
+Birden fazla makineyle çalışma desteği (örn. 1 sunucu + N terminal):
+
+| Ayar | Açıklama |
+|------|----------|
+| `mode` | `"server"` (sunucu başlatır) veya `"client"` (uzak sunucuya bağlanır) |
+| `server_ip` | Client modunda bağlanılacak sunucu IP adresi |
+| `server_port` | Client modunda sunucunun HTTP portu |
+| `server_ws_port` | Client modunda sunucunun WebSocket portu |
+
+- **Server**: `host: "0.0.0.0"` ile tüm ağ arayüzlerini dinler, `auto_port: false` sabit port sağlar
+- **Client**: Sunucu başlatmaz, sadece pywebview penceresi ile `http://{server_ip}:{server_port}` adresine bağlanır
 
 ## Dosya İndirme (Dışa Aktarma)
 - **Masaüstü modu**: OS native "Farklı Kaydet" diyaloğu (pywebview bridge)

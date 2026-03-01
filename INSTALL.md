@@ -169,12 +169,16 @@ GEMINI_MODEL=gemini-2.5-flash
 | `host` | `0.0.0.0` | Dinleme adresi (`0.0.0.0` = tüm ağ arayüzleri) |
 | `auto_port` | `true` | Port meşgulse otomatik boş port bul |
 | `ws_port` | `8081` | WebSocket sunucu portu |
+| `mode` | `"server"` | Çalışma modu: `"server"` veya `"client"` |
+| `server_ip` | `"127.0.0.1"` | Client modunda bağlanılacak sunucu IP |
+| `server_port` | `8080` | Client modunda sunucunun HTTP portu |
+| `server_ws_port` | `8081` | Client modunda sunucunun WebSocket portu |
 
 ### Yapılandırma Öncelik Sırası (düşükten yükseğe)
 
 1. **`config.json`** — varsayılan değerler
 2. **Ortam değişkenleri** — `SGX_PORT`, `SGX_HOST`
-3. **CLI argümanları** — `--port`, `--host`
+3. **CLI argümanları** — `--port`, `--host`, `--mode`
 
 ```bash
 # Ortam değişkeni ile port değiştirme
@@ -183,15 +187,49 @@ python DataEngine/desktop_app.py
 
 # CLI argümanı ile port değiştirme
 python DataEngine/desktop_app.py --port 9090 --host 192.168.1.5
+
+# Client modunda çalıştırma (sunucuya bağlanma)
+python DataEngine/desktop_app.py --mode client
 ```
+
+### Server-Client Ağ Kurulumu
+
+Birden fazla makineyle çalışırken (örn. 1 ana makine + 1 terminal):
+
+**Ana Makine (Server) — config.json:**
+```json
+{
+  "mode": "server",
+  "port": 8080,
+  "host": "0.0.0.0",
+  "auto_port": false,
+  "ws_port": 8081,
+  "server_ip": "192.168.2.5",
+  "server_port": 8080,
+  "server_ws_port": 8081
+}
+```
+
+**Terminal (Client) — config.json:**
+```json
+{
+  "mode": "client",
+  "server_ip": "192.168.2.5",
+  "server_port": 8080,
+  "server_ws_port": 8081
+}
+```
+
+> ⚠️ Ana makinede Windows Firewall'dan `8080` ve `8081` portlarını gelen bağlantılara açın.
+> ⚠️ `auto_port` sunucuda `false` olmalı; aksi halde port kayar ve terminal bağlanamaz.
 
 ---
 
 ## 5 · Uygulamayı Çalıştırma
 
-### 5.1 — Masaüstü Modu (Önerilen)
+### 5.1 — Server Modu (Önerilen — Ana Makine)
 
-Masaüstü modu, pywebview ile native bir pencere açar:
+Server modu, HTTP/WebSocket sunucusunu başlatır ve pywebview ile native bir pencere açar:
 
 ```bash
 cd KuranKokUzayi
@@ -204,7 +242,17 @@ Uygulama başlatıldığında:
 - Masaüstü penceresi tam ekran açılır
 - Besmele sesi çalar (Windows)
 
-### 5.2 — Web Modu (Tarayıcıdan Erişim)
+### 5.2 — Client Modu (Terminal Makine)
+
+Client modu, sunucu başlatmadan uzak sunucuya bağlanan bir masaüstü penceresi açar:
+
+```bash
+python DataEngine/desktop_app.py --mode client
+```
+
+Veya `config.json` içinde `"mode": "client"` ayarlayarak doğrudan EXE'yi çalıştırın.
+
+### 5.3 — Web Modu (Tarayıcıdan Erişim)
 
 Aynı komutu çalıştırdıktan sonra, aynı ağdaki herhangi bir cihazdan tarayıcı ile erişebilirsiniz:
 

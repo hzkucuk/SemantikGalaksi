@@ -44,7 +44,11 @@ CONFIG_FILE = os.path.join(USER_DATA_DIR, 'config.json')
 
 def _load_config():
     """config.json > env var > CLI arg > otomatik port bulma"""
-    cfg = {'port': 8080, 'host': '0.0.0.0', 'auto_port': True}
+    cfg = {
+        'port': 8080, 'host': '0.0.0.0', 'auto_port': True,
+        'mode': 'server',
+        'server_ip': '127.0.0.1', 'server_port': 8080, 'server_ws_port': 8081
+    }
     if os.path.exists(CONFIG_FILE):
         try:
             with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
@@ -69,6 +73,8 @@ def _load_config():
                 pass
         elif a == '--host' and i + 1 < len(args):
             cfg['host'] = args[i + 1]
+        elif a == '--mode' and i + 1 < len(args):
+            cfg['mode'] = args[i + 1]
     return cfg
 
 
@@ -90,6 +96,10 @@ PORT = _config['port']
 HOST = _config['host']
 AUTO_PORT = _config.get('auto_port', True)
 WS_PORT = _config.get('ws_port', PORT + 1)
+RUN_MODE = _config.get('mode', 'server')
+SERVER_IP = _config.get('server_ip', '127.0.0.1')
+SERVER_PORT = _config.get('server_port', 8080)
+SERVER_WS_PORT = _config.get('server_ws_port', 8081)
 
 
 def _ensure_dir():
@@ -875,48 +885,86 @@ def sunucuyu_baslat():
         print(f"Uyarı: {PORT} portu zaten kullanımda olabilir.")
 
 if __name__ == '__main__':
-    # 1. Sunucuyu ayrı bir iş parçacığında başlat
-    t = threading.Thread(target=sunucuyu_baslat)
-    t.daemon = True
-    t.start()
-    
-    # Sunucunun başlamasını bekle (kısa bir süre)
-    time.sleep(1)
-    
-    # 2. Masaüstü Penceresini Aç
-    def on_closing():
-        """Pencere kapanırken temizlik"""
-        return True
+    if RUN_MODE == 'client':
+        # --- CLIENT MODU: Sunucu başlatılmaz, uzak sunucuya bağlanılır ---
+        _target_url = f'http://{SERVER_IP}:{SERVER_PORT}/index.html'
+        print(f"Client modu: {_target_url} adresine bağlanılıyor...")
 
-    try:
-        api_bridge = ApiKeyBridge()
-        window = webview.create_window(
-            title="Kur'an-ı Kerim Kelime Kök Uzayı",
-            url=f'http://127.0.0.1:{PORT}/index.html',
-            maximized=True,
-            background_color='#000000',
-            resizable=True,
-            text_select=False,
-            js_api=api_bridge
-        )
-        api_bridge._window = window
-        window.events.closing += on_closing
+        def on_closing():
+            return True
 
-        _besmele_wav = os.path.join(ROOT_DIR, 'besmele.wav')
+        try:
+            api_bridge = ApiKeyBridge()
+            window = webview.create_window(
+                title="Kur'an-ı Kerim Kelime Kök Uzayı (Terminal)",
+                url=_target_url,
+                maximized=True,
+                background_color='#000000',
+                resizable=True,
+                text_select=False,
+                js_api=api_bridge
+            )
+            api_bridge._window = window
+            window.events.closing += on_closing
 
-        def on_loaded():
-            """Pencere yüklendikten sonra besmele sesini tetikle"""
-            if os.path.exists(_besmele_wav):
-                try:
-                    import winsound
-                    winsound.PlaySound(
-                        _besmele_wav,
-                        winsound.SND_FILENAME | winsound.SND_ASYNC
-                    )
-                except Exception:
-                    pass
+            _besmele_wav = os.path.join(ROOT_DIR, 'besmele.wav')
 
-        window.events.loaded += on_loaded
-        webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
-    except Exception as e:
-        print(f"Pencere açılırken hata oluştu: {e}")
+            def on_loaded():
+                if os.path.exists(_besmele_wav):
+                    try:
+                        import winsound
+                        winsound.PlaySound(
+                            _besmele_wav,
+                            winsound.SND_FILENAME | winsound.SND_ASYNC
+                        )
+                    except Exception:
+                        pass
+
+            window.events.loaded += on_loaded
+            webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
+        except Exception as e:
+            print(f"Pencere açılırken hata oluştu: {e}")
+    else:
+        # --- SERVER MODU: Sunucuyu başlat ve yerel pencereyi aç ---
+        t = threading.Thread(target=sunucuyu_baslat)
+        t.daemon = True
+        t.start()
+
+        time.sleep(1)
+
+        def on_closing():
+            """Pencere kapanırken temizlik"""
+            return True
+
+        try:
+            api_bridge = ApiKeyBridge()
+            window = webview.create_window(
+                title="Kur'an-ı Kerim Kelime Kök Uzayı",
+                url=f'http://127.0.0.1:{PORT}/index.html',
+                maximized=True,
+                background_color='#000000',
+                resizable=True,
+                text_select=False,
+                js_api=api_bridge
+            )
+            api_bridge._window = window
+            window.events.closing += on_closing
+
+            _besmele_wav = os.path.join(ROOT_DIR, 'besmele.wav')
+
+            def on_loaded():
+                """Pencere yüklendikten sonra besmele sesini tetikle"""
+                if os.path.exists(_besmele_wav):
+                    try:
+                        import winsound
+                        winsound.PlaySound(
+                            _besmele_wav,
+                            winsound.SND_FILENAME | winsound.SND_ASYNC
+                        )
+                    except Exception:
+                        pass
+
+            window.events.loaded += on_loaded
+            webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
+        except Exception as e:
+            print(f"Pencere açılırken hata oluştu: {e}")

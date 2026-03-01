@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [0.16.0] - 2025-07-23
+### Eklenen
+- **Server-Client Modu**: `config.json` üzerinden `"mode": "server"` / `"mode": "client"` desteği eklendi
+  - Server modu: Mevcut davranış — HTTP/WebSocket sunucusu başlatır + masaüstü penceresi açar
+  - Client modu: Sunucu başlatmadan uzak sunucuya bağlanan masaüstü penceresi açar (terminal makineler için)
+  - `server_ip`, `server_port`, `server_ws_port` ayarlarıyla uzak sunucu hedefi belirlenir
+  - CLI desteği: `--mode client` argümanı
+- Etkilenen dosyalar: `DataEngine/desktop_app.py`, `DataEngine/config.json`, `INSTALL.md`, `FEATURES.md`, `CHANGELOG.md`
+
 ## [0.15.1] - 2025-07-23
 ### Eklenen
 - **INSTALL.md**: Profesyonel kurulum ve kullanım kılavuzu oluşturuldu — ön gereksinimler, adım adım kurulum, `.env` ve `config.json` yapılandırması, masaüstü/web/EXE çalıştırma modları, kullanım senaryoları, API referansı, hata çözümleri, güncelleme ve kaldırma talimatları
