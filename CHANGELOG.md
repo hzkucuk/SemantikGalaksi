@@ -2,7 +2,12 @@
 
 ## [0.16.6] - 2025-07-23
 ### İyileştirme
-- **LICENSE**: MIT Lisansı Türkçe olarak genişletildi — madde madde haklar, koşullar, garanti reddi ve sorumluluk sınırlaması açıklamaları eklendi
+- **LICENSE**: Detaylı Türkçe çeviri ile düzenlendi — İngilizce orijinal metin + 4 bölümlü Türkçe çeviri (lisans verilmesi, koşullar, garanti reddi, sorumluluk sınırlaması)
+- **LICENSE.txt**: Mükerrer dosya silindi (eski placeholder şablon)
+- **.gitignore**: Projeye uygun olarak sadeleştirildi — gereksiz .NET/C#/NuGet kuralları kaldırıldı, Python/PyInstaller/güvenlik/VS IDE bölümleri düzenlendi
+- **.gitattributes**: Projeye uygun olarak yeniden yazıldı — Python/JS/HTML/JSON dosya tipleri eklendi
+- **README.md**: Lisans badge'i "Özel" → "MIT" olarak güncellendi
+- Etkilenen dosyalar: `LICENSE`, `LICENSE.txt` (silindi), `.gitignore`, `.gitattributes`, `README.md`, `CHANGELOG.md`
 - **README.md**: Lisans badge'i "Özel" → "MIT" olarak güncellendi, lisans bölümü MIT bilgisiyle yenilendi
 - Etkilenen dosyalar: `LICENSE`, `README.md`, `CHANGELOG.md`
 
