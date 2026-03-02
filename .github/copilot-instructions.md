@@ -33,6 +33,7 @@ Her değişiklik sonrası:
 - **CHANGELOG.md:** `[vX.Y.Z] — YYYY-MM-DD — [Özet] — [Etkilenen dosya]`
 - **FEATURES.md:** Yeni yetenek veya mantık değişikliğinde güncelle.
 - **INSTALL.md:** NuGet / config / env değişikliğinde senkronize et.
+- **README.md:** Yeni özellik, mimari değişiklik veya kullanım akışı değiştiğinde ilgili bölümleri güncelle (özellik listesi, teknik detaylar, versiyon tablosu, ekran görüntüsü referansları vb.).
 - Semantic versioning: breaking=MAJOR, yeni özellik=MINOR, düzeltme=PATCH.
 
 ## Git İşlemleri

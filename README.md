@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r152-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/Sürüm-0.16.6-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/Sürüm-0.17.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
 </p>
 
@@ -96,6 +96,13 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - Zengin metin: Bold, İtalik, Başlıklar, Listeler, Alıntı, Kod, Bağlantı
 - 500ms debounce ile otomatik kayıt
 - Kullanıcı bazlı sunucu depolama + localStorage fallback
+
+### 🔍 Arapça Arama
+- Üst arama çubuğunda ve HUD panelinde **Arapça metin** ve **kök** arama
+- **Hareke normalizasyonu**: Fethâ, damma, kesra, şedde vb. otomatik kaldırılır
+- **Elif normalizasyonu**: أ إ آ ٱ → ا birleştirmesi
+- **ع butonu** ile Arapça sanal klavye (3 konumda: arama, HUD, editör)
+- RTL mod: Klavye aktifken input yönü sağdan sola + Amiri fontu
 
 ### 🔐 Kimlik Doğrulama ve Yetkilendirme
 - Token tabanlı oturum, SHA-256 + salt şifreleme
@@ -457,6 +464,7 @@ Arka plan yıldız alanı, uzay gemisi navigasyon ekranı estetiğiyle tasarlanm
 | **0.10.0** | 2025-01-XX | Esnek yapılandırma, native dosya indirme |
 | **0.9.0** | — | Kimlik doğrulama, rol sistemi |
 | **0.8.0** | — | Çok kullanıcılı sunucu, REST API |
+| **0.17.0** | 2025-07-24 | Arapça arama desteği, HUD Arapça klavye, versiyon etiketi |
 | **0.7.0** | — | Kök istatistikleri, JSON editör, veri seti yöneticisi |
 
 Tam sürüm geçmişi için bkz. [CHANGELOG.md](CHANGELOG.md)
