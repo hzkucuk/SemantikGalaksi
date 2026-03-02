@@ -923,6 +923,7 @@
         let currentAudio = null; let audioCache = new Map(); let hoverTimeout = null; let lastHoveredId = null;
         let warpActive = false; let warpProgress = 0; let warpStart = new THREE.Vector3(); let warpEnd = new THREE.Vector3(); let warpTarget = new THREE.Vector3();
         let warpMesh = null; let warpBg = null; let warpSpeed = 1;
+        let warpDrift = false; let warpDriftTime = 0; let warpDriftDir = new THREE.Vector3();
         let isAudioLoading = false;
 
         // --- API Key Yönetimi (localStorage) ---
@@ -2216,7 +2217,7 @@
         const warpTo = (node) => { 
             if(!node) return;
             hideTooltip();
-            warpActive = true; warpProgress = 0; controls.enabled = false; 
+            warpActive = true; warpProgress = 0; warpDrift = false; controls.enabled = false; 
             warpStart.copy(camera.position); warpTarget.set(node.x, node.y, node.z); 
             warpEnd.set(node.x + 4000, node.y + 8000, node.z + 12000);
             showHUD(node); 
@@ -2276,7 +2277,9 @@
                 controls.target.copy(warpTarget);
 
                 if (p >= 1) {
-                    warpActive = false; controls.enabled = true;
+                    warpActive = false;
+                    warpDrift = true; warpDriftTime = 0;
+                    warpDriftDir.copy(warpEnd).sub(warpStart).normalize();
                     camera.fov = 65; camera.updateProjectionMatrix();
                     if (warpMesh) {
                         warpMesh.visible = false;
@@ -2287,6 +2290,23 @@
                         warpBg.visible = false;
                         warpBg.material.uniforms.uFlash.value = 0;
                     }
+                }
+            }
+            // Warp sonrası sürüklenme — uzay gemisi momentum sönümleme
+            if (warpDrift) {
+                warpDriftTime += dt;
+                const driftDur = 1.4;
+                const dp = Math.min(warpDriftTime / driftDur, 1);
+                const overshoot = 2500;
+                const drift = overshoot * Math.sin(dp * Math.PI) * (1 - dp);
+                camera.position.copy(warpEnd).addScaledVector(warpDriftDir, drift);
+                controls.target.copy(warpTarget);
+                camera.fov = 65 - 3 * Math.sin(dp * Math.PI) * (1 - dp);
+                camera.updateProjectionMatrix();
+                if (dp >= 1) {
+                    warpDrift = false; controls.enabled = true;
+                    camera.position.copy(warpEnd);
+                    camera.fov = 65; camera.updateProjectionMatrix();
                 }
             }
             if (controls) controls.update();
