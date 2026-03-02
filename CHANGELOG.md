@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.18.0] - 2025-07-25
+### İyileştirme
+- **WebGL Warp Efekti**: Hyperspace warp geçiş efekti Canvas2D'den Three.js WebGL ShaderMaterial'e taşındı
+  - 8000 yıldızlı GPU-hızlandırmalı tünel efekti (BufferGeometry + custom GLSL)
+  - Vertex shader: silindirik dağılım, perspektif projeksiyon, hıza bağlı streak uzaması
+  - Fragment shader: çekirdek parlama, yumuşak kenar, mavi-beyaz renk gradyanı, additive blending
+  - Canvas2D overlay (`warp-canvas`) tamamen kaldırıldı — tek WebGL context üzerinde render
+  - Warp mesh kamerayı takip eder, FOV zoom + kamera lerp korundu
+- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`, `FEATURES.md`, `README.md`
+
 ## [0.17.0] - 2025-07-24
 ### Eklenen
 - **Arapça Arama Desteği**: Arama çubuğunda Arapça metin ve kök arama özelliği

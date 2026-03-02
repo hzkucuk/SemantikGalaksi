@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r152-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/Sürüm-0.17.0-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/Sürüm-0.18.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
 </p>
 
@@ -65,7 +65,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **6236+ ayet** = her sure etrafında yörüngede dönen uydu küreleri
 - **Kök bağlantıları** = ayetler arası neon ışık çizgileri (AdditiveBlending glow)
 - **4 yerleşim modeli**: Galaksi (Arşimed spirali), Bulutsu (Gauss kümeleri), Küp (3B ızgara), Küre (Fibonacci)
-- **Hyperspace warp**: Sureler arası hızlı geçiş animasyonu (Canvas2D streak efekti)
+- **Hyperspace warp**: Sureler arası GPU-hızlandırmalı geçiş (Three.js ShaderMaterial, 8000 yıldız, GLSL streak efekti)
 
 ### ⭐ Uzay Gemisi Navigasyon Yıldız Haritası
 - **120.000 yıldız**, J2000 galaktik koordinatlara dayalı dağılım
@@ -355,9 +355,8 @@ Tüm endpoint'ler `Authorization: Bearer <token>` header'ı gerektirir (login ha
 | Teknoloji | Kullanım |
 |-----------|----------|
 | **Three.js** | 3D sahne, kamera, mesh, partikül sistemi |
-| **Custom GLSL** | Yıldız alanı shader, Fresnel atmosfer glow |
+| **Custom GLSL** | Yıldız alanı shader, Fresnel atmosfer glow, hyperspace warp streak efekti |
 | **Tailwind CSS** | UI bileşenleri, responsive tasarım |
-| **Canvas2D** | Hyperspace warp streak efekti |
 | **WebSocket API** | Gerçek zamanlı senkronizasyon |
 
 ### Backend
@@ -454,6 +453,8 @@ Arka plan yıldız alanı, uzay gemisi navigasyon ekranı estetiğiyle tasarlanm
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.18.0** | 2025-07-25 | WebGL warp efekti (Canvas2D → Three.js ShaderMaterial) |
+| **0.17.0** | 2025-07-24 | Arapça arama desteği, HUD Arapça klavye, versiyon etiketi |
 | **0.16.4** | 2025-07-23 | Uzay gemisi navigasyon yıldız görünümü |
 | **0.16.0** | 2025-07-23 | Server-Client ağ modu, çevrimiçi kullanıcı paneli |
 | **0.15.0** | 2025-07-23 | EXE dağıtım, PyInstaller, INSTALL.md |
@@ -464,7 +465,6 @@ Arka plan yıldız alanı, uzay gemisi navigasyon ekranı estetiğiyle tasarlanm
 | **0.10.0** | 2025-01-XX | Esnek yapılandırma, native dosya indirme |
 | **0.9.0** | — | Kimlik doğrulama, rol sistemi |
 | **0.8.0** | — | Çok kullanıcılı sunucu, REST API |
-| **0.17.0** | 2025-07-24 | Arapça arama desteği, HUD Arapça klavye, versiyon etiketi |
 | **0.7.0** | — | Kök istatistikleri, JSON editör, veri seti yöneticisi |
 
 Tam sürüm geçmişi için bkz. [CHANGELOG.md](CHANGELOG.md)

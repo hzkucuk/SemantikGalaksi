@@ -84,6 +84,23 @@ Hem üst arama çubuğu hem HUD panelindeki semantik bağlantı araması Arapça
 - **4 satır düzen**: Harfler (3 satır) + Harekeler & kontrol tuşları (1 satır)
 - **Sonuç gösterimi**: Arapça aramada sonuçlarda ayet metni ve eşleşen kökler (🔤) gösterilir
 
+## WebGL Hyperspace Warp Efekti
+Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Canvas2D yerine Three.js ShaderMaterial ile render edilir.
+
+| Bileşen | Detay |
+|---------|-------|
+| Geometri | 8000 noktalı `BufferGeometry` — silindirik dağılım, merkeze yakın yoğunluk |
+| Vertex Shader | Perspektif tünel projeksiyon, hıza bağlı streak uzaması, DPR uyumlu point size |
+| Fragment Shader | Çekirdek parlama (`exp(-d²×80)`), yumuşak kenar glow, mavi→beyaz renk gradyanı |
+| Blending | `THREE.AdditiveBlending` — yıldız izleri üst üste parlak birikiyor |
+| Kamera | Warp mesh kamerayı takip eder, FOV 65°→125°→65° zoom, cubic ease lerp |
+| Performans | Tek WebGL context, ayrı Canvas2D overlay yok, tüm hesaplama GPU'da |
+
+- **Başlatma**: Bir sureye tıklama veya `warpToId()` çağrısı ile tetiklenir
+- **Süre**: ~0.67 saniye (progress × 1.5 dt)
+- **Streak efekti**: Hız arttıkça yıldızlar dikey çizgilere dönüşür (vStreak uniform)
+- **Renk**: Düşük hızda mavi-beyaz, yüksek hızda saf beyaz
+
 ## WebSocket Gerçek Zamanlı Senkronizasyon
 Birden fazla kullanıcı aynı anda çalışırken değişiklikler anlık olarak tüm istemcilere iletilir.
 
