@@ -85,21 +85,23 @@ Hem üst arama çubuğu hem HUD panelindeki semantik bağlantı araması Arapça
 - **Sonuç gösterimi**: Arapça aramada sonuçlarda ayet metni ve eşleşen kökler (🔤) gösterilir
 
 ## WebGL Hyperspace Warp Efekti
-Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Canvas2D yerine Three.js ShaderMaterial ile render edilir.
+Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Star Wars Lightspeed Jump referansıyla tasarlandı.
 
 | Bileşen | Detay |
 |---------|-------|
-| Geometri | 8000 noktalı `BufferGeometry` — silindirik dağılım, merkeze yakın yoğunluk |
-| Vertex Shader | Perspektif tünel projeksiyon, hıza bağlı streak uzaması, DPR uyumlu point size |
-| Fragment Shader | Çekirdek parlama (`exp(-d²×80)`), yumuşak kenar glow, mavi→beyaz renk gradyanı |
-| Blending | `THREE.AdditiveBlending` — yıldız izleri üst üste parlak birikiyor |
-| Kamera | Warp mesh kamerayı takip eder, FOV 65°→125°→65° zoom, cubic ease lerp |
-| Performans | Tek WebGL context, ayrı Canvas2D overlay yok, tüm hesaplama GPU'da |
+| Geometri | 10000 instance × 6 vertex `InstancedBufferGeometry` — radyal streak quad'ları |
+| Vertex Shader | Clip-space output, `smoothstep` ile noktadan çizgiye kademeli uzama, perspektif tünel |
+| Fragment Shader | Mavi-indigo + beyaz karışım (`vBright` per-star renk), baş→kuyruk gradyan |
+| Background | Siyah overlay (renderOrder 9998) + warp çıkış beyaz flash |
+| Blending | `THREE.AdditiveBlending` — streak glow birikimi |
+| Kamera | FOV 65°→125°→65° zoom, cubic ease lerp |
+| Performans | Tek draw call, tüm hesaplama GPU GLSL shader'larında |
 
 - **Başlatma**: Bir sureye tıklama veya `warpToId()` çağrısı ile tetiklenir
-- **Süre**: ~0.67 saniye (progress × 1.5 dt)
-- **Streak efekti**: Hız arttıkça yıldızlar dikey çizgilere dönüşür (vStreak uniform)
-- **Renk**: Düşük hızda mavi-beyaz, yüksek hızda saf beyaz
+- **Süre**: ~1.25 saniye (`dt × 0.8` ilerleme)
+- **Giriş fazı**: %0-25 küpsel rampa — yıldızlar noktalardan çizgilere kademeli uzar
+- **Hyperspace**: %25-85 tam hız — uzun mavi-indigo/beyaz streak'ler
+- **Çıkış efekti**: %85-100 — streak'ler kısalır, beyaz flash (%83-95), hedefe varış
 
 ## WebSocket Gerçek Zamanlı Senkronizasyon
 Birden fazla kullanıcı aynı anda çalışırken değişiklikler anlık olarak tüm istemcilere iletilir.

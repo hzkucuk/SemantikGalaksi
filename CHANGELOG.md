@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.18.1] - 2025-07-25
+### İyileştirme
+- **Star Wars Lightspeed Referans Güncellemesi**: Warp efekti Star Wars Lightspeed Supercut referansına uygun hale getirildi
+  - Yıldızlar noktadan çizgiye kademeli uzama (smoothstep ile hız bazlı)
+  - Mavi-indigo + beyaz renk karışımı (vBright varying ile per-star renk)
+  - Merkez karanlık tünel (glow kaldırıldı)
+  - Warp çıkış efekti: çizgiler kısalır + beyaz flash (%83-95 aralığı)
+  - Yavaş giriş rampa (%0-25 küpsel) → tam hyperspace (%25-85) → hızlı çıkış (%85-100)
+- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`, `FEATURES.md`
+
 ## [0.18.0] - 2025-07-25
 ### İyileştirme
 - **WebGL Warp Efekti**: Hyperspace warp geçiş efekti Canvas2D'den Three.js WebGL ShaderMaterial'e taşındı
