@@ -1372,9 +1372,9 @@
             starField = new THREE.Points(starGeom, starMat);
             scene.add(starField); camera.position.set(0, 10000000, 20000000);
 
-            // WebGL Hyperspace warp sistemi (InstancedBufferGeometry — gerçek streak çizgileri)
+            // WebGL Hyperspace warp — Star Wars Lightspeed Jump
             {
-                const WARP_COUNT = 6000;
+                const WARP_COUNT = 10000;
                 const baseGeom = new THREE.InstancedBufferGeometry();
                 baseGeom.setAttribute('position', new THREE.BufferAttribute(new Float32Array([
                     0.0,-0.5,0.0,  1.0,-0.5,0.0,  1.0,0.5,0.0,
@@ -1383,9 +1383,9 @@
                 const iData = new Float32Array(WARP_COUNT * 4);
                 for (let i = 0; i < WARP_COUNT; i++) {
                     iData[i*4]   = Math.random() * Math.PI * 2;
-                    iData[i*4+1] = 0.02 + Math.pow(Math.random(), 0.55) * 0.98;
+                    iData[i*4+1] = 0.01 + Math.pow(Math.random(), 0.4) * 0.99;
                     iData[i*4+2] = Math.random();
-                    iData[i*4+3] = 0.15 + Math.random() * 0.85;
+                    iData[i*4+3] = 0.1 + Math.random() * 0.9;
                 }
                 baseGeom.setAttribute('aInst', new THREE.InstancedBufferAttribute(iData, 4));
 
@@ -1407,24 +1407,25 @@
                     '  float z = mod(zBase - uTime * 0.5, 1.0);',
                     '  float depth = 1.0 - z;',
                     '',
-                    '  float ps = 1.0 / (z * 1.8 + 0.06);',
+                    '  // Güçlü perspektif — derin tünel',
+                    '  float ps = 1.0 / (z * 1.2 + 0.015);',
                     '  float cx = cos(angle) * radius * ps;',
                     '  float cy = sin(angle) * radius * ps;',
                     '',
                     '  vec2 ctr = vec2(cx, cy);',
-                    '  vec2 dir = length(ctr) > 0.001 ? normalize(ctr) : vec2(0.0,1.0);',
+                    '  float cLen = length(ctr);',
+                    '  vec2 dir = cLen > 0.001 ? ctr / cLen : vec2(0.0,1.0);',
                     '  vec2 perp = vec2(-dir.y, dir.x);',
                     '',
-                    '  float sLen = max(0.004, uSpeed * 0.005 * depth * ps);',
-                    '  float sWid = 0.0012 * (0.5 + depth * 2.0);',
+                    '  // Star Wars: ÇOK UZUN çizgi, çok ince',
+                    '  float sLen = max(0.002, uSpeed * 0.008 * depth * ps);',
+                    '  float sWid = 0.0005 * (0.2 + depth * 1.0);',
                     '',
                     '  vec2 off = dir * position.x * sLen + perp * position.y * sWid;',
                     '  vec2 ndc = ctr + off;',
                     '  ndc.x /= aspect;',
                     '',
-                    '  vAlpha = bright * depth * depth',
-                    '    * smoothstep(0.0, 0.08, z)',
-                    '    * smoothstep(0.0, 0.15, sLen);',
+                    '  vAlpha = bright * depth * depth * smoothstep(0.0, 0.03, z);',
                     '  vT = position.x;',
                     '',
                     '  gl_Position = vec4(ndc, 0.0, 1.0);',
@@ -1436,22 +1437,36 @@
                     'varying float vT;',
                     '',
                     'void main() {',
-                    '  float fade = 1.0 - vT * 0.75;',
+                    '  float fade = 1.0 - vT * 0.65;',
                     '  float a = vAlpha * fade;',
-                    '  vec3 col = mix(vec3(0.65, 0.88, 1.0), vec3(1.0), a);',
+                    '  vec3 headCol = vec3(1.0);',
+                    '  vec3 tailCol = vec3(0.55, 0.75, 1.0);',
+                    '  vec3 col = mix(headCol, tailCol, vT);',
                     '  gl_FragColor = vec4(col, a);',
                     '}'
                 ].join('\n');
 
-                // Siyah arka plan overlay (sahneyi gizler)
+                // Arka plan: siyah zemin + merkez mavi-beyaz glow
                 const bgGeom = new THREE.BufferGeometry();
                 bgGeom.setAttribute('position', new THREE.BufferAttribute(new Float32Array([
                     -1,-1,0, 1,-1,0, 1,1,0, -1,-1,0, 1,1,0, -1,1,0
                 ]), 3));
+                const bgVS = 'varying vec2 vP;void main(){vP=position.xy;gl_Position=vec4(position.xy,0.0,1.0);}';
+                const bgFS = [
+                    'uniform float uAlpha;',
+                    'uniform float uFlash;',
+                    'varying vec2 vP;',
+                    'void main() {',
+                    '  float d = length(vP);',
+                    '  float glow = exp(-d * d * 3.0) * uFlash;',
+                    '  vec3 col = vec3(0.35, 0.55, 1.0) * glow + vec3(1.0) * uFlash * 0.12 * exp(-d * d * 1.2);',
+                    '  float a = max(uAlpha, glow * 0.7);',
+                    '  gl_FragColor = vec4(col, a);',
+                    '}'
+                ].join('\n');
                 const bgMat = new THREE.ShaderMaterial({
-                    uniforms: { uAlpha: { value: 0.0 } },
-                    vertexShader: 'void main(){gl_Position=vec4(position.xy,0.0,1.0);}',
-                    fragmentShader: 'uniform float uAlpha;void main(){gl_FragColor=vec4(0.0,0.0,0.0,uAlpha);}',
+                    uniforms: { uAlpha: { value: 0.0 }, uFlash: { value: 0.0 } },
+                    vertexShader: bgVS, fragmentShader: bgFS,
                     transparent: true, depthTest: false, depthWrite: false
                 });
                 warpBg = new THREE.Mesh(bgGeom, bgMat);
@@ -1466,13 +1481,9 @@
                         uTime: { value: 0.0 },
                         uRes: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) }
                     },
-                    vertexShader: warpVS,
-                    fragmentShader: warpFS,
-                    transparent: true,
-                    depthWrite: false,
-                    depthTest: false,
-                    blending: THREE.AdditiveBlending,
-                    side: THREE.DoubleSide
+                    vertexShader: warpVS, fragmentShader: warpFS,
+                    transparent: true, depthWrite: false, depthTest: false,
+                    blending: THREE.AdditiveBlending, side: THREE.DoubleSide
                 });
                 warpMesh = new THREE.Mesh(baseGeom, warpMat);
                 warpMesh.frustumCulled = false;
@@ -2215,20 +2226,23 @@
             const dt = _lastFrameTime ? Math.min((now - _lastFrameTime) * 0.001, 0.05) : 0.016;
             _lastFrameTime = now;
             if (warpActive) {
-                warpProgress += dt * 1.5; const p = Math.min(warpProgress, 1);
+                warpProgress += dt * 1.0; const p = Math.min(warpProgress, 1);
                 const ease = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
-                // WebGL hyperspace (InstancedBufferGeometry streak quads)
+                // Star Wars Lightspeed Jump
                 if (p < 1) {
-                    warpSpeed = 1 + Math.sin(p * Math.PI) * 120;
+                    // Hız eğrisi: hızlı ivmelenme (0-12%), sürdürülen hyperspace (12-88%), ani çıkış (88-100%)
+                    const sp = p < 0.12 ? Math.pow(p / 0.12, 2) : p > 0.88 ? Math.pow((1 - p) / 0.12, 2) : 1.0;
+                    warpSpeed = 1 + sp * 160;
                     if (warpMesh) {
                         warpMesh.visible = true;
                         warpMesh.material.uniforms.uSpeed.value = warpSpeed;
-                        warpMesh.material.uniforms.uTime.value += dt * warpSpeed * 0.15;
+                        warpMesh.material.uniforms.uTime.value += dt * warpSpeed * 0.1;
                     }
                     if (warpBg) {
                         warpBg.visible = true;
-                        warpBg.material.uniforms.uAlpha.value = Math.min(p * 5, 0.97);
+                        warpBg.material.uniforms.uAlpha.value = Math.min(p * 8, 0.98);
+                        warpBg.material.uniforms.uFlash.value = Math.pow(sp, 2) * 0.9;
                     }
                 }
 
@@ -2254,7 +2268,10 @@
                         warpMesh.material.uniforms.uSpeed.value = 0;
                         warpMesh.material.uniforms.uTime.value = 0;
                     }
-                    if (warpBg) { warpBg.visible = false; }
+                    if (warpBg) {
+                        warpBg.visible = false;
+                        warpBg.material.uniforms.uFlash.value = 0;
+                    }
                 }
             }
             if (controls) controls.update();
