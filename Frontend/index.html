@@ -1395,39 +1395,39 @@
                 const warpVertexShader = [
                     'uniform float uSpeed;',
                     'uniform float uTime;',
-                    'uniform float uProgress;',
                     'uniform vec2 uResolution;',
                     'attribute vec3 aRand;',
                     'varying float vAlpha;',
                     'varying float vStreak;',
                     '',
                     'void main() {',
-                    '  float seed = aRand.x;',
                     '  float size = aRand.y;',
                     '  float bright = aRand.z;',
+                    '  float aspect = uResolution.x / uResolution.y;',
                     '',
-                    '  // Z pozisyonunu speed ile anime et (mod ile döngü)',
+                    '  // Z animasyonu: speed ile ileri hareket, mod ile sonsuz döngü',
                     '  float z = mod(position.z - uTime * 0.5, 1.0);',
-                    '  float depth = 1.0 - z;', // 0=uzak, 1=yakın
+                    '  float depth = 1.0 - z;',
                     '',
-                    '  // Perspektif projeksiyon — tünel etkisi',
-                    '  float scale = 1.0 / (z * 2.0 + 0.1);',
-                    '  vec2 screenPos = position.xy * scale;',
+                    '  // Perspektif tünel: yakın yıldızlar ekranın dışına doğru genişler',
+                    '  float scale = 1.0 / (z * 2.0 + 0.05);',
+                    '  vec2 ndc = position.xy * scale;',
+                    '  ndc.x /= aspect;',
                     '',
                     '  // Streak uzunluğu hıza bağlı',
-                    '  float streakLen = uSpeed * 0.01 * depth;',
+                    '  float streakLen = uSpeed * 0.008 * depth;',
                     '  vStreak = streakLen;',
                     '',
-                    '  // Parlaklık: yakın yıldızlar daha parlak',
-                    '  vAlpha = bright * depth * depth * smoothstep(0.0, 0.15, z);',
+                    '  // Parlaklık: yakın yıldızlar daha parlak, çok uzaklar soluk',
+                    '  vAlpha = bright * depth * depth * smoothstep(0.0, 0.1, z);',
                     '',
-                    '  // Point size: perspektif + streak',
-                    '  float pSize = size * (3.0 + depth * 12.0 + streakLen * 60.0);',
-                    '  pSize *= uResolution.y / 800.0;', // DPR uyumu
+                    '  // Point size: yakınlık + streak etkisi',
+                    '  float pSize = size * (2.0 + depth * 16.0 + streakLen * 50.0);',
+                    '  pSize *= uResolution.y / 700.0;',
                     '',
-                    '  vec4 mvPos = modelViewMatrix * vec4(screenPos.x, screenPos.y, 0.0, 1.0);',
-                    '  gl_Position = projectionMatrix * mvPos;',
-                    '  gl_PointSize = pSize;',
+                    '  // Doğrudan clip-space çıkış (kamera/sahne bağımsız, tam ekran)',
+                    '  gl_Position = vec4(ndc, 0.0, 1.0);',
+                    '  gl_PointSize = clamp(pSize, 1.0, 64.0);',
                     '}'
                 ].join('\n');
 
@@ -1462,7 +1462,6 @@
                     uniforms: {
                         uSpeed: { value: 0.0 },
                         uTime: { value: 0.0 },
-                        uProgress: { value: 0.0 },
                         uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) }
                     },
                     vertexShader: warpVertexShader,
@@ -2224,12 +2223,6 @@
                         warpMesh.visible = true;
                         warpMesh.material.uniforms.uSpeed.value = warpSpeed;
                         warpMesh.material.uniforms.uTime.value += dt * warpSpeed * 0.15;
-                        warpMesh.material.uniforms.uProgress.value = p;
-                        // Warp mesh'i kameranın önüne yerleştir
-                        const camDir = new THREE.Vector3();
-                        camera.getWorldDirection(camDir);
-                        warpMesh.position.copy(camera.position).add(camDir.multiplyScalar(100));
-                        warpMesh.quaternion.copy(camera.quaternion);
                     }
                 }
 
