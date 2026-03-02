@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.17.0] - 2025-07-24
+### Eklenen
+- **Arapça Arama Desteği**: Arama çubuğunda Arapça metin ve kök arama özelliği
+  - Arapça metin normalizasyonu: harekeler (tashkeel) otomatik kaldırılır, elif varyantları birleştirilir
+  - Ayet metinlerinde (`text`) ve köklerde (`roots`) Arapça arama
+  - Arama çubuğunda ع butonu ile Arapça sanal klavye popup
+  - Arapça modda RTL yön ve Amiri fontu
+  - Sonuçlarda Arapça ayet metni ve eşleşen kökler gösterilir
+- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`
+
 ## [0.16.6] - 2025-07-23
 ### İyileştirme
 - **LICENSE**: Detaylı Türkçe çeviri ile düzenlendi — İngilizce orijinal metin + 4 bölümlü Türkçe çeviri (lisans verilmesi, koşullar, garanti reddi, sorumluluk sınırlaması)
