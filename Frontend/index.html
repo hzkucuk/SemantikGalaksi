@@ -1420,7 +1420,7 @@
                     '  // Yıldızlar noktadan çizgiye — hız arttıkça kademeli uzama',
                     '  float sf = smoothstep(0.0, 30.0, uSpeed);',
                     '  float sLen = max(0.001, sf * uSpeed * 0.006 * depth * ps);',
-                    '  float sWid = mix(0.0018, 0.0004, sf) * (0.3 + depth * 0.8);',
+                    '  float sWid = mix(0.0012, 0.00018, sf) * (0.3 + depth * 0.8);',
                     '',
                     '  vec2 off = dir * position.x * sLen + perp * position.y * sWid;',
                     '  vec2 ndc = ctr + off;',
@@ -2255,7 +2255,7 @@
                         // Warp çıkış flash: %83-95 aralığında beyaz flash
                         let exitFlash = 0;
                         if (p > 0.83 && p < 0.95) {
-                            exitFlash = Math.sin(((p - 0.83) / 0.12) * Math.PI) * 1.8;
+                            exitFlash = Math.sin(((p - 0.83) / 0.12) * Math.PI) * 0.5;
                         }
                         warpBg.material.uniforms.uFlash.value = exitFlash;
                     }
@@ -2318,7 +2318,22 @@
                 }
 
                 const camP = camera.position;
-                labelSprites.forEach(s => { s.visible = camP.distanceTo(s.position) < 25000; });
+                const _proj = new THREE.Vector3();
+                const _shown = [];
+                const _minSep = 55;
+                labelSprites.forEach(s => {
+                    if (camP.distanceTo(s.position) > 25000) { s.visible = false; return; }
+                    _proj.copy(s.position).project(camera);
+                    if (_proj.z > 1) { s.visible = false; return; }
+                    const sx = (_proj.x * 0.5 + 0.5) * window.innerWidth;
+                    const sy = (-_proj.y * 0.5 + 0.5) * window.innerHeight;
+                    const tooClose = _shown.some(p => {
+                        const dx = sx - p[0], dy = sy - p[1];
+                        return dx * dx + dy * dy < _minSep * _minSep;
+                    });
+                    if (tooClose) { s.visible = false; }
+                    else { s.visible = true; _shown.push([sx, sy]); }
+                });
             }
             if (renderer) renderer.render(scene, camera);
         };
