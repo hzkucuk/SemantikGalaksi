@@ -734,7 +734,58 @@
 
             <div class="pb-8">
                 <h3 class="text-[9px] font-black text-cyan-950 uppercase tracking-[0.4em] mb-4 italic text-center">Semantik Bağlantılar</h3>
-                <input type="text" id="hud-search" placeholder="Ayet, sure veya kök ara..." class="w-full bg-black/60 border border-white/10 rounded-full px-5 py-2 mb-4 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-600 font-mono">
+                <div style="position:relative;margin-bottom:16px;">
+                    <input type="text" id="hud-search" placeholder="Ayet, sure veya kök ara..." class="w-full bg-black/60 border border-white/10 rounded-full px-5 py-2 pr-10 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-600 font-mono">
+                    <button id="hud-kb-btn" onclick="toggleHudKb()" style="position:absolute;right:6px;top:50%;transform:translateY(-50%);width:24px;height:24px;border-radius:6px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.35);font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;font-family:'Amiri',serif;">ع</button>
+                    <div id="hud-arabic-kb" style="display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;background:rgba(0,8,15,0.98);border:1px solid rgba(0,242,255,0.15);border-radius:12px;padding:8px;z-index:120;backdrop-filter:blur(20px);box-shadow:0 16px 48px rgba(0,0,0,0.8);">
+                        <div style="display:flex;gap:2px;justify-content:center;margin-bottom:2px;">
+                            <button class="skb-key" onclick="hudKbInsert('ض')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ض</button>
+                            <button class="skb-key" onclick="hudKbInsert('ص')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ص</button>
+                            <button class="skb-key" onclick="hudKbInsert('ث')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ث</button>
+                            <button class="skb-key" onclick="hudKbInsert('ق')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ق</button>
+                            <button class="skb-key" onclick="hudKbInsert('ف')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ف</button>
+                            <button class="skb-key" onclick="hudKbInsert('غ')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">غ</button>
+                            <button class="skb-key" onclick="hudKbInsert('ع')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ع</button>
+                            <button class="skb-key" onclick="hudKbInsert('ه')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ه</button>
+                            <button class="skb-key" onclick="hudKbInsert('خ')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">خ</button>
+                            <button class="skb-key" onclick="hudKbInsert('ح')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ح</button>
+                            <button class="skb-key" onclick="hudKbInsert('ج')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ج</button>
+                            <button class="skb-key" onclick="hudKbInsert('د')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">د</button>
+                        </div>
+                        <div style="display:flex;gap:2px;justify-content:center;margin-bottom:2px;">
+                            <button class="skb-key" onclick="hudKbInsert('ش')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ش</button>
+                            <button class="skb-key" onclick="hudKbInsert('س')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">س</button>
+                            <button class="skb-key" onclick="hudKbInsert('ي')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ي</button>
+                            <button class="skb-key" onclick="hudKbInsert('ب')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ب</button>
+                            <button class="skb-key" onclick="hudKbInsert('ل')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ل</button>
+                            <button class="skb-key" onclick="hudKbInsert('ا')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ا</button>
+                            <button class="skb-key" onclick="hudKbInsert('ت')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ت</button>
+                            <button class="skb-key" onclick="hudKbInsert('ن')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ن</button>
+                            <button class="skb-key" onclick="hudKbInsert('م')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">م</button>
+                            <button class="skb-key" onclick="hudKbInsert('ك')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ك</button>
+                            <button class="skb-key" onclick="hudKbInsert('ط')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ط</button>
+                        </div>
+                        <div style="display:flex;gap:2px;justify-content:center;margin-bottom:2px;">
+                            <button class="skb-key" onclick="hudKbInsert('ئ')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ئ</button>
+                            <button class="skb-key" onclick="hudKbInsert('ء')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ء</button>
+                            <button class="skb-key" onclick="hudKbInsert('ؤ')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ؤ</button>
+                            <button class="skb-key" onclick="hudKbInsert('ر')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ر</button>
+                            <button class="skb-key" onclick="hudKbInsert('ى')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ى</button>
+                            <button class="skb-key" onclick="hudKbInsert('ة')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ة</button>
+                            <button class="skb-key" onclick="hudKbInsert('و')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">و</button>
+                            <button class="skb-key" onclick="hudKbInsert('ز')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ز</button>
+                            <button class="skb-key" onclick="hudKbInsert('ظ')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ظ</button>
+                            <button class="skb-key" onclick="hudKbInsert('ذ')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">ذ</button>
+                            <button class="skb-key" onclick="hudKbInsert('أ')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">أ</button>
+                            <button class="skb-key" onclick="hudKbInsert('إ')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">إ</button>
+                            <button class="skb-key" onclick="hudKbInsert('آ')" style="min-width:22px;height:26px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e8f0;font-family:'Amiri',serif;font-size:14px;cursor:pointer;">آ</button>
+                        </div>
+                        <div style="display:flex;gap:3px;justify-content:center;">
+                            <button onclick="hudKbInsert(' ')" style="min-width:40px;height:24px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#94a3b8;font-size:9px;font-weight:700;cursor:pointer;">Boşluk</button>
+                            <button onclick="hudKbBackspace()" style="min-width:40px;height:24px;border-radius:5px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#94a3b8;font-size:11px;cursor:pointer;">⌫</button>
+                        </div>
+                    </div>
+                </div>
                 <div id="related-list"></div>
             </div>
         </div>
@@ -742,6 +793,8 @@
 
     <!-- Toast Bildirimleri -->
     <div id="toast-container" style="position:fixed;top:80px;right:16px;z-index:9999;display:flex;flex-direction:column;gap:8px;pointer-events:none;"></div>
+    <!-- Versiyon Bilgisi -->
+    <div style="position:fixed;bottom:12px;right:16px;z-index:40;font-size:9px;font-weight:600;letter-spacing:0.15em;color:rgba(148,163,184,0.25);pointer-events:none;font-family:monospace;">v0.17.0</div>
     <!-- Çevrimiçi Kullanıcılar -->
     <div id="online-indicator" style="position:fixed;bottom:16px;left:16px;z-index:50;display:none;background:rgba(0,0,0,0.7);backdrop-filter:blur(12px);border:1px solid rgba(52,211,153,0.2);border-radius:20px;padding:6px 14px;font-size:10px;color:#34d399;font-weight:700;letter-spacing:0.1em;cursor:pointer;" onclick="showOnlineList()" title="Çevrimiçi kullanıcılar">
         <span id="online-dot" style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#34d399;margin-right:6px;animation:pulse 2s infinite;"></span>
@@ -2031,18 +2084,21 @@
             }
             list.innerHTML = html || '<p class="text-xs text-slate-600 italic text-center">Bağlantı bulunamadı.</p>';
 
-            // HUD arama filtreleme
+            // HUD arama filtreleme (Arapça destekli)
             const hudSearch = document.getElementById('hud-search');
             hudSearch.value = '';
             hudSearch.oninput = () => {
-                const q = hudSearch.value.toLowerCase().trim();
+                const q = hudSearch.value.trim();
+                if (!q) { list.querySelectorAll('.ayah-list-item, .surah-group-header').forEach(el => el.style.display = ''); return; }
+                const isAr = isArabic(q);
+                const qMatch = isAr ? normalizeArabic(q) : q.toLowerCase();
                 const items = list.querySelectorAll('.ayah-list-item');
                 const headers = list.querySelectorAll('.surah-group-header');
                 items.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    item.style.display = text.includes(q) ? '' : 'none';
+                    const text = item.textContent;
+                    const match = isAr ? normalizeArabic(text).includes(qMatch) : text.toLowerCase().includes(qMatch);
+                    item.style.display = match ? '' : 'none';
                 });
-                // Sure başlıklarını, altındaki tüm ayetler gizliyse gizle
                 headers.forEach(h => {
                     let next = h.nextElementSibling;
                     let anyVisible = false;
@@ -2187,6 +2243,37 @@
         };
         window.skbBackspace = () => {
             const input = document.getElementById('search-input');
+            const s = input.selectionStart, e = input.selectionEnd;
+            if (s !== e) { input.value = input.value.substring(0, s) + input.value.substring(e); input.selectionStart = input.selectionEnd = s; }
+            else if (s > 0) { input.value = input.value.substring(0, s - 1) + input.value.substring(s); input.selectionStart = input.selectionEnd = s - 1; }
+            input.focus();
+            input.dispatchEvent(new Event('input'));
+        };
+
+        // HUD Arapça klavye fonksiyonları
+        window.toggleHudKb = () => {
+            const kb = document.getElementById('hud-arabic-kb');
+            const btn = document.getElementById('hud-kb-btn');
+            const input = document.getElementById('hud-search');
+            kb.style.display = kb.style.display === 'block' ? 'none' : 'block';
+            const active = kb.style.display === 'block';
+            btn.style.background = active ? 'rgba(0,242,255,0.1)' : 'rgba(255,255,255,0.04)';
+            btn.style.borderColor = active ? 'rgba(0,242,255,0.3)' : 'rgba(255,255,255,0.1)';
+            btn.style.color = active ? '#00f2ff' : 'rgba(255,255,255,0.35)';
+            if (active) { input.setAttribute('dir', 'rtl'); input.style.fontFamily = "'Amiri', serif"; input.style.fontSize = '14px'; }
+            else { input.setAttribute('dir', 'ltr'); input.style.fontFamily = ''; input.style.fontSize = ''; }
+            input.focus();
+        };
+        window.hudKbInsert = (ch) => {
+            const input = document.getElementById('hud-search');
+            const s = input.selectionStart, e = input.selectionEnd;
+            input.value = input.value.substring(0, s) + ch + input.value.substring(e);
+            input.selectionStart = input.selectionEnd = s + ch.length;
+            input.focus();
+            input.dispatchEvent(new Event('input'));
+        };
+        window.hudKbBackspace = () => {
+            const input = document.getElementById('hud-search');
             const s = input.selectionStart, e = input.selectionEnd;
             if (s !== e) { input.value = input.value.substring(0, s) + input.value.substring(e); input.selectionStart = input.selectionEnd = s; }
             else if (s > 0) { input.value = input.value.substring(0, s - 1) + input.value.substring(s); input.selectionStart = input.selectionEnd = s - 1; }

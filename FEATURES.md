@@ -57,6 +57,33 @@ Kullanıcılar zengin metin formatında not tutabilir. Notlar sunucu tarafında 
 - Responsive: mobilde sadece ikon, desktop'ta ikon + etiket
 - Logo alanı: 🕋 ikonu + başlık + alt başlık
 
+## Arapça Arama Desteği
+Hem üst arama çubuğu hem HUD panelindeki semantik bağlantı araması Arapça girişi destekler.
+
+### Arama Motoru
+| Özellik | Açıklama |
+|---------|----------|
+| Otomatik dil algılama | Unicode `\u0600-\u06FF` aralığı ile Arapça girdi tespiti |
+| Hareke normalizasyonu | Fethâ, damma, kesra, şedde, sükûn vb. tashkeel otomatik kaldırılır |
+| Elif normalizasyonu | أ إ آ ٱ → ا birleştirmesi |
+| Tâ marbûta | ة → ه normalizasyonu |
+| Elif maksûra | ى → ي normalizasyonu |
+| Metin arama | Ayet metinleri (`text` alanı) içinde Arapça arama |
+| Kök arama | Ayet kökleri (`roots` alanı) içinde Arapça arama |
+
+### Arapça Sanal Klavye
+Üç ayrı konumda Arapça sanal klavye bulunur:
+
+| Konum | Buton | Kullanım |
+|-------|-------|----------|
+| Üst arama çubuğu | ع | Ayet metni ve kök arama |
+| HUD semantik bağlantılar | ع | Bağlantılı ayetleri filtreleme |
+| JSON Editör | ⌨ Arapça | Veri seti düzenleme |
+
+- **RTL modu**: Klavye aktifken input yönü sağdan sola döner, Amiri fontu aktif olur
+- **4 satır düzen**: Harfler (3 satır) + Harekeler & kontrol tuşları (1 satır)
+- **Sonuç gösterimi**: Arapça aramada sonuçlarda ayet metni ve eşleşen kökler (🔤) gösterilir
+
 ## WebSocket Gerçek Zamanlı Senkronizasyon
 Birden fazla kullanıcı aynı anda çalışırken değişiklikler anlık olarak tüm istemcilere iletilir.
 
