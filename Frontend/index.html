@@ -907,7 +907,6 @@
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
                 color += uColor * rim * 2.2;
-                color *= 1.05;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
@@ -1005,7 +1004,6 @@
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
                 color += vColor * rim * 2.2;
-                color *= 1.05;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
@@ -1344,9 +1342,9 @@
 
             const bloomPass = new THREE.UnrealBloomPass(
                 new THREE.Vector2(window.innerWidth, window.innerHeight),
-                1.5,  // strength
+                0.7,  // strength
                 0.6,  // radius
-                0.3   // threshold — tüm renkler bloom'a girsin (mor/mavi dahil)
+                0.3   // threshold
             );
             composer.addPass(bloomPass);
 
@@ -1354,7 +1352,7 @@
             const acesPass = new THREE.ShaderPass({
                 uniforms: {
                     tDiffuse: { value: null },
-                    exposure: { value: 1.35 }
+                    exposure: { value: 0.9 }
                 },
                 vertexShader: `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
                 fragmentShader: `
