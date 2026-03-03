@@ -907,7 +907,7 @@
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
                 color += uColor * rim * 2.2;
-                color *= 1.2;
+                color *= 1.05;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
@@ -1005,7 +1005,7 @@
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
                 color += vColor * rim * 2.2;
-                color *= 1.2;
+                color *= 1.05;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
