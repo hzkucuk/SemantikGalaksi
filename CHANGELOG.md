@@ -1,12 +1,27 @@
 # CHANGELOG
 
+## [0.20.5] - 2025-07-27
+### Düzeltme
+- **Shader Parlaklık Dengesi**: Sure ve ayet shader yoğunlukları doğru katmana göre ayarlandı
+  - Sure gövdesi (sunBodyFS): `whiteHot=0.3`, `rim=1.2` — korona+glow katmanları bloom sağladığı için gövde incelikli
+  - Ayet gövdesi (ayahSunFS): `whiteHot=0.7`, `rim=2.2` — ekstra katman olmadığı için parlak tutuldu
+- Etkilenen dosyalar: `Frontend/index.html`
+
+## [0.20.3] - 2025-07-27
+### Düzeltme
+- **HDR Bloom Pipeline**: ACES tone mapping bloom'dan ÖNCE uygulanınca renkler soluyordu — düzeltildi
+  - `renderer.toneMapping = NoToneMapping` (kaldırıldı)
+  - `HalfFloatType` WebGLRenderTarget ile HDR değerler korunuyor
+  - Bloom: threshold=0.9 (i.html), strength=1.5, radius=0.6
+  - Custom ACES ShaderPass bloom'dan SONRA eklendi (renkler korunur, tone mapping en son)
+  - Korona/glow i.html orijinal değerlerine döndürüldü (0.08, 0.06)
+- Etkilenen dosyalar: `Frontend/index.html`
+
 ## [0.20.0] - 2025-07-27
 ### İyileştirme
 - **UnrealBloomPass Post-Processing**: i.html'deki sıcak atmosferik parıltıyı tam olarak yakalamak için Three.js UnrealBloomPass eklendi
   - CDN'den EffectComposer, RenderPass, ShaderPass, CopyShader, LuminosityHighPassShader, UnrealBloomPass yükleniyor
-  - `ACESFilmicToneMapping` + `toneMappingExposure: 1.35` (i.html ile aynı)
-  - Bloom ayarları: strength=1.8, radius=0.6, threshold=0.9 (i.html ile aynı)
-  - Korona/dış halo yoğunlukları i.html orijinal değerlerine döndürüldü (bloom amplifikasyonu sağlıyor)
+  - Bloom pipeline: RenderPass → UnrealBloomPass → ACES ShaderPass
   - `composer.render()` ile post-processing pipeline aktif, resize handler güncellendi
 - Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`
 
