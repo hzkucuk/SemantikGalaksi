@@ -3713,7 +3713,7 @@ Türkçe yaz, kısa ve öz tut.`;
             if (_besmelePlaying) return;
 
             // Desktop: Python winsound zaten çalıyor, HTML audio'yu atla
-            if (window.pywebview) {
+            if (isDesktopMode) {
                 _besmelePlaying = true;
                 return;
             }
@@ -3777,8 +3777,8 @@ Türkçe yaz, kısa ve öz tut.`;
         };
 
         window.onload = async () => {
-            playBesmeleAudio();
             isDesktopMode = await DatasetStore._checkServer();
+            playBesmeleAudio();
             let authValid = false;
 
             if (isDesktopMode && authToken) {
