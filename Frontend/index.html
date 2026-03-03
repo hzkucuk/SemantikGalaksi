@@ -1852,16 +1852,13 @@
             lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: lineOpacity }));
             lineSegments.renderOrder = 1; scene.add(lineSegments);
 
-            // Ayet küreleri (surah rengine göre renk + yüksek kalite)
-            const ayahGeo = new THREE.SphereGeometry(400, 48, 48);
-            const _ac = document.createElement('canvas'); _ac.width = 128; _ac.height = 128;
-            const _ax = _ac.getContext('2d');
-            const _ag = _ax.createRadialGradient(64, 64, 0, 64, 64, 64);
-            _ag.addColorStop(0, '#ffffff'); _ag.addColorStop(0.5, '#fff4e0'); _ag.addColorStop(1, '#ffcc66');
-            _ax.fillStyle = _ag; _ax.fillRect(0, 0, 128, 128);
-            const ayahBaseTex = new THREE.CanvasTexture(_ac);
-            ayahBaseTex.wrapS = ayahBaseTex.wrapT = THREE.RepeatWrapping;
-            const ayahMat = new THREE.MeshBasicMaterial({ map: ayahBaseTex });
+            // Ayet küreleri (surah rengine göre renk + GLSL animasyon)
+            const ayahGeo = new THREE.SphereGeometry(400, 24, 24);
+            const ayahMat = new THREE.ShaderMaterial({
+                uniforms: { time: { value: 0.0 } },
+                vertexShader: ayahSunVS,
+                fragmentShader: ayahSunFS
+            });
             ayahMesh = new THREE.InstancedMesh(ayahGeo, ayahMat, ayahNodes.length);
             ayahMesh.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(ayahNodes.length * 3), 3);
             const dum = new THREE.Object3D();
@@ -2412,10 +2409,9 @@
                     });
                 });
 
-                // Ayet node'larını döndür (UV offset ile)
-                if (ayahMesh && ayahMesh.material.map) {
-                    ayahMesh.material.map.offset.x = elapsed * 0.05;
-                    ayahMesh.material.map.offset.y = Math.sin(elapsed * 0.08) * 0.1;
+                // Ayet shader time güncelle
+                if (ayahMesh && ayahMesh.material.uniforms && ayahMesh.material.uniforms.time) {
+                    ayahMesh.material.uniforms.time.value = elapsed;
                 }
 
                 // Yıldız alanı: sensör zamanı güncelle (dönüş yok — uzayda sabit referans)
