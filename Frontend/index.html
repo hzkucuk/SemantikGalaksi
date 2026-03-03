@@ -938,7 +938,7 @@
                 float n = fbm(vWorldPos * 8.0 - vec3(time * 0.35));
                 float detail = ridge(snoise(vWorldPos * 18.0 + vec3(time * 0.5)));
                 float intensity = falloff * (0.3 + n * 0.4 + detail * 0.3);
-                gl_FragColor = vec4(uColor * 3.5, intensity * 0.12);
+                gl_FragColor = vec4(uColor * 3.5, intensity * 0.08);
             }
         `;
 
@@ -959,8 +959,8 @@
             varying vec3 vViewDir;
             void main() {
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
-                float intensity = pow(1.0 - dotNV, 3.5);
-                gl_FragColor = vec4(uColor * 1.2, intensity * 0.08);
+                float intensity = pow(1.0 - dotNV, 4.0);
+                gl_FragColor = vec4(uColor, intensity * 0.06);
             }
         `;
 
@@ -1327,22 +1327,53 @@
             camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 1, 100000000);
             renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); renderer.setSize(window.innerWidth, window.innerHeight);
             renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-            renderer.toneMapping = THREE.ACESFilmicToneMapping;
-            renderer.toneMappingExposure = 1.0;
             document.body.appendChild(renderer.domElement);
             controls = new THREE.OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
 
-            // Post-processing: UnrealBloomPass (i.html ile aynı ayarlar)
+            // Post-processing: HDR Bloom Pipeline
+            // 1) Sahne HDR olarak render edilir (tone mapping yok → renkler canlı kalır)
+            // 2) Bloom yalnızca HDR parlak noktaları yakalar (rim, filament > 1.0)
+            // 3) Son adımda ACES tone mapping uygulanır (renkler korunur)
+            const hdrRT = new THREE.WebGLRenderTarget(
+                window.innerWidth, window.innerHeight,
+                { type: THREE.HalfFloatType }
+            );
+            composer = new THREE.EffectComposer(renderer, hdrRT);
+
             const renderScene = new THREE.RenderPass(scene, camera);
+            composer.addPass(renderScene);
+
             const bloomPass = new THREE.UnrealBloomPass(
                 new THREE.Vector2(window.innerWidth, window.innerHeight),
-                1.0,  // strength
-                0.5,  // radius
-                0.65  // threshold
+                1.5,  // strength
+                0.6,  // radius
+                0.9   // threshold (i.html ile aynı — HDR > 1.0 değerler yakalanır)
             );
-            composer = new THREE.EffectComposer(renderer);
-            composer.addPass(renderScene);
             composer.addPass(bloomPass);
+
+            // ACES Filmic Tone Mapping — bloom'dan SONRA uygulanır
+            const acesPass = new THREE.ShaderPass({
+                uniforms: {
+                    tDiffuse: { value: null },
+                    exposure: { value: 1.35 }
+                },
+                vertexShader: `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+                fragmentShader: `
+                    uniform sampler2D tDiffuse;
+                    uniform float exposure;
+                    varying vec2 vUv;
+                    vec3 ACESFilm(vec3 x) {
+                        float a = 2.51; float b = 0.03;
+                        float c = 2.43; float d = 0.59; float e = 0.14;
+                        return clamp((x*(a*x+b))/(x*(c*x+d)+e), 0.0, 1.0);
+                    }
+                    void main() {
+                        vec4 t = texture2D(tDiffuse, vUv);
+                        gl_FragColor = vec4(ACESFilm(t.rgb * exposure), t.a);
+                    }
+                `
+            });
+            composer.addPass(acesPass);
             scene.add(new THREE.AmbientLight(0xffffff, 1.4));
             // --- Uzay Gemisi Navigasyon Yıldız Haritası ---
             // Atmosfer yok → yıldızlar iğne ucu kadar keskin, titreşimsiz.
