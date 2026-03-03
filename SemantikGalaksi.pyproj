@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DataEngine\desktop_app.py" />
+    <Compile Include="DataEngine\fix_empty_roots.py" />
     <Compile Include="DataEngine\gemini_client.py" />
     <Compile Include="DataEngine\generate_besmele_audio.py" />
     <Compile Include="DataEngine\run_pipeline.py" />

@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [0.21.4] - 2025-07-28
+### Düzeltme
+- **Desktop Çift Ses Sorunu**: Python winsound + HTML `<audio>` aynı anda çalıyordu → Desktop'ta HTML audio atlanıyor, sadece winsound kullanılıyor
+  - `playBesmeleAudio()`: `window.pywebview` kontrolü ile desktop tespit edilip HTML audio devre dışı bırakılıyor
+  - `on_loaded()` (desktop_app.py): `_besmele_played` guard eklendi — tekrar tetiklenirse çalmaz
+  - Web tarafı aynen korunuyor (autoplay unlock flow)
+- **Besmele Erken Kesilme**: `_dismissLoading()`'e minimum süre guard'ı eklendi — veri hızlı yüklense bile besmele bitene kadar loading screen kalıyor
+- Etkilenen dosyalar: `Frontend/index.html`, `DataEngine/desktop_app.py`
+
 ## [0.21.3] - 2025-07-28
 ### Düzeltme
 - **Boş Kök Anlamları Tamamlandı**: quran_roots.json'daki 45 boş kök (اله, ربب, علم, كفر, كتب vb.) Gemini AI ile dolduruldu

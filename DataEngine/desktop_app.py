@@ -952,8 +952,13 @@ if __name__ == '__main__':
             window.events.closing += on_closing
 
             _besmele_wav = os.path.join(ROOT_DIR, 'besmele.wav')
+            _besmele_played = False
 
             def on_loaded():
+                nonlocal _besmele_played
+                if _besmele_played:
+                    return
+                _besmele_played = True
                 if os.path.exists(_besmele_wav):
                     try:
                         import winsound
@@ -995,9 +1000,14 @@ if __name__ == '__main__':
             window.events.closing += on_closing
 
             _besmele_wav = os.path.join(ROOT_DIR, 'besmele.wav')
+            _besmele_played = False
 
             def on_loaded():
-                """Pencere yüklendikten sonra besmele sesini tetikle"""
+                """Pencere yüklendikten sonra besmele sesini tetikle (tek sefer)"""
+                nonlocal _besmele_played
+                if _besmele_played:
+                    return
+                _besmele_played = True
                 if os.path.exists(_besmele_wav):
                     try:
                         import winsound

@@ -3695,6 +3695,12 @@ Türkçe yaz, kısa ve öz tut.`;
             if (!ls || ls.style.display === 'none') return;
             if (!_dataReady) return;
             if (_autoplayBlocked && !_besmelePlaying) return;
+            // Besmele minimum süresini bekle (desktop+web)
+            const elapsed = Date.now() - _loadStart;
+            if (elapsed < _besmeleMinTime) {
+                setTimeout(_dismissLoading, _besmeleMinTime - elapsed);
+                return;
+            }
             const audio = document.getElementById('besmele-audio');
             if (audio && _besmelePlaying && !audio.paused && !audio.ended) return;
             fadeBesmeleAudio();
@@ -3705,6 +3711,13 @@ Türkçe yaz, kısa ve öz tut.`;
 
         const playBesmeleAudio = () => {
             if (_besmelePlaying) return;
+
+            // Desktop: Python winsound zaten çalıyor, HTML audio'yu atla
+            if (window.pywebview) {
+                _besmelePlaying = true;
+                return;
+            }
+
             const audio = document.getElementById('besmele-audio');
             if (!audio) return;
             audio.volume = 0.7;
