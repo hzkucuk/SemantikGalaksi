@@ -891,8 +891,8 @@
             void main() {
                 vec3 p = normalize(vPosition) * 0.9;
                 float t = time * 0.12;
-                float n = fbm(p * 5.0 + vec3(t));
-                float filaments = solarFilaments(p * 11.0 - vec3(t * 1.5));
+                float n = fbm(p + vec3(t));
+                float filaments = solarFilaments(p * 2.2 - vec3(t * 1.5));
                 vec3 darkCore = uColor * 0.25;
                 vec3 plasma = uColor;
                 vec3 whiteHot = mix(uColor, vec3(1.0), 0.7);
@@ -914,9 +914,9 @@
             ` + noiseShaderCode + `
             void main() {
                 vNormal = normalize(normalMatrix * normal);
-                float d = fbm(normal * 3.5 + vec3(time * 0.12)) * 150.0;
+                float d = fbm(normal * 3.5 + vec3(time * 0.12)) * 385.0;
                 vec3 pos = position + normal * d;
-                vWorldPos = normalize(pos) * 0.208;
+                vWorldPos = pos * 0.000104;
                 gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
             }
         `;
@@ -1745,7 +1745,7 @@
                         transparent: true,
                         depthWrite: false
                     });
-                    const coronaMesh = new THREE.Mesh(new THREE.SphereGeometry(2000, 64, 64), coronaMat);
+                    const coronaMesh = new THREE.Mesh(new THREE.SphereGeometry(2000, 32, 32), coronaMat);
                     coronaMesh.renderOrder = 0;
                     g.add(coronaMesh);
 
