@@ -2154,15 +2154,22 @@
         window.toggleRootDetail = toggleRootDetail;
 
         const toggleHudRootDetail = (root, el) => {
-            const existing = el.parentElement.querySelector('.hud-root-detail-panel');
+            // Aynı köke tekrar tıklandıysa kapat
+            const activePanel = document.querySelector('.hud-root-detail-panel');
+            if (activePanel && activePanel.dataset.root === root) {
+                activePanel.remove();
+                return;
+            }
             // Önceki açık panelleri kapat
             document.querySelectorAll('.hud-root-detail-panel').forEach(p => p.remove());
-            if (existing) return; // Aynı köke tekrar tıklandıysa kapat
+
             const info = getRootInfo(root);
             const color = getRootCSSColor(root);
             const panel = document.createElement('div');
             panel.className = 'hud-root-detail-panel';
+            panel.dataset.root = root;
             panel.style.borderColor = color.replace('hsl','hsla').replace(')',', 0.2)');
+
             if (!info) {
                 panel.innerHTML = `<span style="color:#64748b;font-size:11px;">Bu kök için detay bilgisi henüz yüklenmedi.</span>`;
             } else {
@@ -2177,12 +2184,18 @@
                     ${info.count ? `<div style="font-size:10px;color:#64748b;margin-bottom:8px;">Kur'anda ${info.count} yerde geçiyor</div>` : ''}
                     ${derivedHtml ? `<div style="font-size:10px;font-weight:700;color:#00f2ff;margin-bottom:4px;letter-spacing:0.08em;">TÜREMİŞ KELİMELER</div>${derivedHtml}` : ''}`;
             }
-            // Paneli tıklanan elementin ebeveynine ekle (kartın veya root container'ın altına)
-            const container = el.closest('.ayah-list-item') || el.closest('#hud-roots')?.parentElement;
-            if (container) {
-                container.insertAdjacentElement('afterend', panel);
+
+            // Kartın içine ekle (liste) veya kök istatistiklerinin üstüne (ana badge)
+            const card = el.closest('.ayah-list-item');
+            if (card) {
+                card.appendChild(panel);
             } else {
-                el.parentElement.appendChild(panel);
+                const statsDiv = document.getElementById('hud-root-stats');
+                if (statsDiv) {
+                    statsDiv.parentElement.insertBefore(panel, statsDiv);
+                } else {
+                    el.closest('#hud-roots')?.after(panel);
+                }
             }
         };
         window.toggleHudRootDetail = toggleHudRootDetail;
