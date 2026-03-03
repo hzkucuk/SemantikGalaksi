@@ -36,6 +36,7 @@
     <Content Include="DataEngine\requirements.txt" />
     <Content Include="DataEngine\.env" />
     <Content Include="Frontend\warp.html" />
+    <Content Include="i.html" />
     <Content Include="index.html" />
     <Content Include="INSTALL.md" />
     <Content Include="LICENSE" />

@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.19.0] - 2025-07-26
+### İyileştirme
+- **GLSL Güneş Simülasyonu**: Surah node'larındaki canvas tabanlı güneş çizimi (`createSunTexture`) kaldırıldı, yerine i.html'den alınan prosedürel GLSL shader animasyonu eklendi
+  - Güneş gövdesi: Simplex noise FBM + ridge filament + rim lighting (sunBodyVS/FS)
+  - Korona: Vertex deformasyon (noise tabanlı) + BackSide additive blending (coronaVS/FS)
+  - Dış halo: Fresnel tabanlı yumuşak glow (outerGlowVS/FS)
+  - Her sure kendi renginde (`uColor` uniform) prosedürel plazma animasyonu gösterir
+  - Ayet küreleri basit MeshBasicMaterial'e geçirildi (instanceColor ile renklendirme)
+- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`
+
 ## [0.18.1] - 2025-07-25
 ### İyileştirme
 - **Star Wars Lightspeed Referans Güncellemesi**: Warp efekti Star Wars Lightspeed Supercut referansına uygun hale getirildi
