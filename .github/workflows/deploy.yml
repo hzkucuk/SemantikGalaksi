@@ -23,6 +23,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Remove non-public files
+        run: rm -rf .github i.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
