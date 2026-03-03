@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.20.0] - 2025-07-27
+### İyileştirme
+- **UnrealBloomPass Post-Processing**: i.html'deki sıcak atmosferik parıltıyı tam olarak yakalamak için Three.js UnrealBloomPass eklendi
+  - CDN'den EffectComposer, RenderPass, ShaderPass, CopyShader, LuminosityHighPassShader, UnrealBloomPass yükleniyor
+  - `ACESFilmicToneMapping` + `toneMappingExposure: 1.35` (i.html ile aynı)
+  - Bloom ayarları: strength=1.8, radius=0.6, threshold=0.9 (i.html ile aynı)
+  - Korona/dış halo yoğunlukları i.html orijinal değerlerine döndürüldü (bloom amplifikasyonu sağlıyor)
+  - `composer.render()` ile post-processing pipeline aktif, resize handler güncellendi
+- Etkilenen dosyalar: `Frontend/index.html`, `CHANGELOG.md`
+
 ## [0.19.0] - 2025-07-26
 ### İyileştirme
 - **GLSL Güneş Simülasyonu**: Surah node'larındaki canvas tabanlı güneş çizimi (`createSunTexture`) kaldırıldı, yerine i.html'den alınan prosedürel GLSL shader animasyonu eklendi
