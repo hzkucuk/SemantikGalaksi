@@ -2408,14 +2408,14 @@
                                 </div>
                             </div>
                             <div class="flex flex-wrap gap-1">
-                                ${shared.map(sr => {
-                                    const _c = getRootCSSColor(sr);
-                                    const _info = getRootInfo(sr);
+                                ${(rn.roots || []).map(r => {
+                                    const _c = getRootCSSColor(r);
+                                    const _info = getRootInfo(r);
                                     const _m = _info ? _info.meaning : '';
                                     return `
-                                    <div class="mini-root-tag" onclick="event.stopPropagation(); toggleHudRootDetail('${sr}', this)" style="color: ${_c}; border-color: ${_c.replace('hsl', 'hsla').replace(')', ', 0.4)')}">
-                                        <span>${sr}</span>
-                                        <span class="mini-root-pron">${getRootPron(sr)}</span>
+                                    <div class="mini-root-tag" onclick="event.stopPropagation(); toggleHudRootDetail('${r}', this)" style="color: ${_c}; border-color: ${_c.replace('hsl', 'hsla').replace(')', ', 0.4)')}">
+                                        <span class="text-[18px] font-bold">${r}</span>
+                                        <span class="mini-root-pron">${getRootPron(r)}</span>
                                         ${_m ? `<span class="mini-root-meaning">${_m}</span>` : ''}
                                     </div>`;
                                 }).join('')}

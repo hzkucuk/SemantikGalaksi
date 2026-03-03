@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [0.21.1] - 2025-07-28
+### Düzeltme
+- **HUD Liste Kök Tag Template**: HUD içindeki ilişkili ayet kartlarındaki kök etiketleri, tooltip'teki template ile aynı hale getirildi
+  - Sadece ortak kökler (`shared`) yerine ayetin tüm kökleri (`rn.roots`) gösteriliyor
+  - Kök harfleri büyük ve kalın (`text-[18px] font-bold`) — tooltip ile birebir aynı
+  - Tıklanınca türemiş kelimeler, anlam, Arapça anlam ve geçiş sayısı detay panelinde açılıyor (mevcut `toggleHudRootDetail`)
+- Etkilenen dosyalar: `Frontend/index.html`
+
 ## [0.20.5] - 2025-07-27
 ### Düzeltme
 - **Shader Parlaklık Dengesi**: Sure ve ayet shader yoğunlukları doğru katmana göre ayarlandı
