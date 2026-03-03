@@ -907,8 +907,7 @@
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
                 color += uColor * rim * 2.2;
-                float alpha = smoothstep(0.0, 0.15, dotNV);
-                gl_FragColor = vec4(color, alpha);
+                gl_FragColor = vec4(color, 1.0);
             }
         `;
 
