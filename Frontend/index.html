@@ -117,7 +117,7 @@
         ::-webkit-scrollbar-thumb { background: #00f2ff; border-radius: 10px; }
 
         .loading-screen {
-            position: fixed; inset: 0; background: #000; z-index: 9999;
+            position: fixed; inset: 0; background: rgba(0,0,0,0.82); z-index: 9999;
             display: flex; flex-direction: column; align-items: center; justify-content: center;
             transition: opacity 1.2s ease;
             overflow: hidden;
@@ -1556,7 +1556,7 @@
                     '',
                     '  // Yıldızlar noktadan çizgiye — hız arttıkça kademeli uzama',
                     '  float sf = smoothstep(0.0, 30.0, uSpeed);',
-                    '  float sLen = max(0.001, sf * uSpeed * 0.006 * depth * ps);',
+                    '  float sLen = min(max(0.001, sf * uSpeed * 0.006 * depth * ps), 3.0);',
                     '  float sWid = mix(0.0012, 0.00018, sf) * (0.3 + depth * 0.8);',
                     '',
                     '  vec2 off = dir * position.x * sLen + perp * position.y * sWid;',
@@ -1613,6 +1613,7 @@
                 warpBg.renderOrder = 9998;
                 warpBg.frustumCulled = false;
                 warpBg.visible = false;
+                warpBg.layers.set(1);
                 scene.add(warpBg);
 
                 const warpMat = new THREE.ShaderMaterial({
@@ -1629,6 +1630,7 @@
                 warpMesh.frustumCulled = false;
                 warpMesh.renderOrder = 9999;
                 warpMesh.visible = false;
+                warpMesh.layers.set(1);
                 scene.add(warpMesh);
             }
             scene.add(camera);
@@ -2335,6 +2337,35 @@
             if (!now) now = performance.now();
             const dt = _lastFrameTime ? Math.min((now - _lastFrameTime) * 0.001, 0.05) : 0.016;
             _lastFrameTime = now;
+            if (introWarp) {
+                introWarpTime += dt;
+                const dur = 2.0;
+                const p = Math.min(introWarpTime / dur, 1);
+                let sp;
+                if (p < 0.3) sp = Math.pow(p / 0.3, 3);
+                else if (p < 0.7) sp = 1.0;
+                else sp = Math.pow((1 - p) / 0.3, 2);
+                const spd = 1 + sp * 120;
+                if (warpMesh) {
+                    warpMesh.visible = true;
+                    warpMesh.material.uniforms.uSpeed.value = spd;
+                    warpMesh.material.uniforms.uTime.value += dt * spd * 0.1;
+                }
+                if (warpBg) {
+                    warpBg.visible = true;
+                    warpBg.material.uniforms.uAlpha.value = sp * 0.6;
+                    let exitFlash = 0;
+                    if (p > 0.8 && p < 0.95) {
+                        exitFlash = Math.sin(((p - 0.8) / 0.15) * Math.PI) * 0.4;
+                    }
+                    warpBg.material.uniforms.uFlash.value = exitFlash;
+                }
+                if (p >= 1) {
+                    introWarp = false;
+                    if (warpMesh) { warpMesh.visible = false; warpMesh.material.uniforms.uSpeed.value = 0; warpMesh.material.uniforms.uTime.value = 0; }
+                    if (warpBg) { warpBg.visible = false; warpBg.material.uniforms.uAlpha.value = 0; warpBg.material.uniforms.uFlash.value = 0; }
+                }
+            }
             if (warpActive) {
                 warpProgress += dt * 0.8; const p = Math.min(warpProgress, 1);
                 const ease = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
@@ -2459,7 +2490,26 @@
                     else { s.visible = true; _shown.push([sx, sy]); }
                 });
             }
-            if (composer) composer.render();
+            if (composer) {
+                // Warp mesh'lerini bloom'dan hariç tut
+                const _wV = warpMesh && warpMesh.visible;
+                const _bV = warpBg && warpBg.visible;
+                if (warpMesh) warpMesh.visible = false;
+                if (warpBg) warpBg.visible = false;
+                composer.render();
+                // Warp'ı bloom'suz ayrı render et
+                if (_wV || _bV) {
+                    if (warpBg) warpBg.visible = !!_bV;
+                    if (warpMesh) warpMesh.visible = !!_wV;
+                    renderer.autoClear = false;
+                    renderer.clearDepth();
+                    // Sadece warp layer'ını render et
+                    camera.layers.disableAll(); camera.layers.enable(1);
+                    renderer.render(scene, camera);
+                    camera.layers.enableAll();
+                    renderer.autoClear = true;
+                }
+            }
         };
         
         // Arapça klavye fonksiyonları (arama çubuğu)
@@ -3454,6 +3504,8 @@ Türkçe yaz, kısa ve öz tut.`;
         let _besmeleMinTime = 3000;
         let _dataReady = false;
         let _autoplayBlocked = false;
+        let introWarp = false;
+        let introWarpTime = 0;
 
         (function() {
             const a = document.getElementById('besmele-audio');
@@ -3475,6 +3527,7 @@ Türkçe yaz, kısa ve öz tut.`;
             const audio = document.getElementById('besmele-audio');
             if (audio && _besmelePlaying && !audio.paused && !audio.ended) return;
             fadeBesmeleAudio();
+            introWarp = true; introWarpTime = 0;
             ls.style.opacity = '0';
             setTimeout(() => { ls.style.display = 'none'; }, 1200);
         };
