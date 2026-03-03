@@ -907,12 +907,10 @@
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
                 color += uColor * rim * 2.2;
-                color *= 2.0;
+                color *= 1.5;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
-
-        // Korona shader (i.html — iç halka, vertex deformasyon + noise)
         const coronaVS = `
             varying vec3 vNormal;
             varying vec3 vWorldPos;
@@ -1007,12 +1005,10 @@
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
                 color += vColor * rim * 2.2;
-                color *= 2.0;
+                color *= 1.5;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
-
-        let raycaster = new THREE.Raycaster(); let mouse = new THREE.Vector2();
         let currentAudio = null; let audioCache = new Map(); let hoverTimeout = null; let lastHoveredId = null;
         let warpActive = false; let warpProgress = 0; let warpStart = new THREE.Vector3(); let warpEnd = new THREE.Vector3(); let warpTarget = new THREE.Vector3();
         let warpMesh = null; let warpBg = null; let warpSpeed = 1;
