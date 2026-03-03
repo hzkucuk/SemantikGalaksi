@@ -811,6 +811,7 @@
         let nodes = []; let surahGroups = []; let ayahNodes = []; let rootMap = new Map(); let labelSprites = []; let lineNodePairs = []; let ayahIndexMap = [];
         let originalData = null; let hasCustomData = false;
         let currentLayout = 'galaxy';
+        let rootDictionary = {};
 
         // --- GLSL Noise Kütüphanesi (i.html güneş simülasyonundan) ---
         const noiseShaderCode = `
@@ -1644,11 +1645,17 @@
 
         const fetchDataAutomatically = async () => {
             try {
-                const response = await fetch('quran_data.json');
-                if (response.ok) {
-                    const data = await response.json();
+                const [dataRes, rootsRes] = await Promise.all([
+                    fetch('quran_data.json'),
+                    fetch('quran_roots.json').catch(() => null)
+                ]);
+                if (dataRes.ok) {
+                    const data = await dataRes.json();
                     originalData = data;
                     processData(data);
+                }
+                if (rootsRes && rootsRes.ok) {
+                    rootDictionary = await rootsRes.json();
                 }
             } catch (e) {
                 console.log("JSON bulunamadı, manuel yükleme bekleniyor.");
