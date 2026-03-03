@@ -1,9 +1,34 @@
 {
   "سمو": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "yükselme, yücelik, ululuk",
+    "meaning_ar": "العلو والارتفاع والمجد",
+    "pronunciation": "s-m-w",
+    "derived": [
+      {
+        "word": "السَّمَاءَ",
+        "meaning": "Göğü, semayı"
+      },
+      {
+        "word": "السَّمَاءِ",
+        "meaning": "Göğün, semanın"
+      },
+      {
+        "word": "السَّمَاوَاتِ",
+        "meaning": "Gökleri, semaları"
+      },
+      {
+        "word": "السَّمَاوَاتُ",
+        "meaning": "Gökler, semalar"
+      },
+      {
+        "word": "سَمَاءً",
+        "meaning": "Bir göğü"
+      },
+      {
+        "word": "سَمَاءٍ",
+        "meaning": "Bir gök"
+      }
+    ],
     "ayahs": [
       "1:1",
       "2:1",
@@ -453,10 +478,43 @@
     "count": 444
   },
   "اله": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "İlahlık, tapınma",
+    "meaning_ar": "العبادة والتأليه",
+    "pronunciation": "'a-l-h",
+    "derived": [
+      {
+        "word": "اللَّهُ",
+        "meaning": "Allah"
+      },
+      {
+        "word": "إِلَٰهٌ",
+        "meaning": "İlah, Tanrı"
+      },
+      {
+        "word": "آلِهَةٌ",
+        "meaning": "İlahlar, Tanrılar"
+      },
+      {
+        "word": "إِلَٰهَكُمْ",
+        "meaning": "İlahınız"
+      },
+      {
+        "word": "إِلَٰهَكَ",
+        "meaning": "İlahın"
+      },
+      {
+        "word": "إِلَٰهَنَا",
+        "meaning": "İlahımız"
+      },
+      {
+        "word": "تَأْلَهُونَ",
+        "meaning": "Taparsınız"
+      },
+      {
+        "word": "إِلَٰهَيْنِ",
+        "meaning": "İki ilah"
+      }
+    ],
     "ayahs": [
       "1:1",
       "1:2",
@@ -1725,10 +1783,43 @@
     "count": 1263
   },
   "رحم": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Merhamet, şefkat, acıma",
+    "meaning_ar": "الرأفة والعطف والشفقة",
+    "pronunciation": "r-ḥ-m",
+    "derived": [
+      {
+        "word": "الرَّحْمَٰنِ",
+        "meaning": "Rahman (çok merhametli)"
+      },
+      {
+        "word": "الرَّحِيمِ",
+        "meaning": "Rahim (merhametli)"
+      },
+      {
+        "word": "رَحْمَةً",
+        "meaning": "Rahmet, merhamet"
+      },
+      {
+        "word": "أَرْحَمُ",
+        "meaning": "En merhametli"
+      },
+      {
+        "word": "أَرْحَامِ",
+        "meaning": "Rahimler, akrabalık"
+      },
+      {
+        "word": "تَرْحَمْنَا",
+        "meaning": "Bize merhamet et"
+      },
+      {
+        "word": "يَرْحَمُ",
+        "meaning": "Merhamet eder"
+      },
+      {
+        "word": "مَرْحُومِينَ",
+        "meaning": "Merhamet edilmişler"
+      }
+    ],
     "ayahs": [
       "1:1",
       "1:3",
@@ -2164,10 +2255,39 @@
     "count": 430
   },
   "حمد": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Hamdetmek, övmek, şükretmek",
+    "meaning_ar": "الثناء والمدح والشكر",
+    "pronunciation": "ḥ-m-d",
+    "derived": [
+      {
+        "word": "الْحَمْدُ",
+        "meaning": "Hamd (övgü, şükür)"
+      },
+      {
+        "word": "حَمِيدًا",
+        "meaning": "Hamîd (övülmüş)"
+      },
+      {
+        "word": "مَحْمُودًا",
+        "meaning": "Övülmüş"
+      },
+      {
+        "word": "أَحْمَدَ",
+        "meaning": "Ahmed (Peygamber ismi)"
+      },
+      {
+        "word": "يَحْمَدُونَ",
+        "meaning": "Överler"
+      },
+      {
+        "word": "نَحْمَدُ",
+        "meaning": "Överiz"
+      },
+      {
+        "word": "حَامِدُونَ",
+        "meaning": "Övenler"
+      }
+    ],
     "ayahs": [
       "1:2",
       "2:30",
@@ -2239,10 +2359,39 @@
     "count": 66
   },
   "ربب": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Sahiplik, terbiye etmek, beslemek",
+    "meaning_ar": "السيادة، التربية، الملكية",
+    "pronunciation": "r-b-b",
+    "derived": [
+      {
+        "word": "رَبُّكَ",
+        "meaning": "Senin Rabbin"
+      },
+      {
+        "word": "رَبِّي",
+        "meaning": "Benim Rabbim"
+      },
+      {
+        "word": "الرَّبُّ",
+        "meaning": "Rab (Allah)"
+      },
+      {
+        "word": "رَبَّنَا",
+        "meaning": "Rabbimiz"
+      },
+      {
+        "word": "رَبَّانِيِّينَ",
+        "meaning": "Rabbanîler"
+      },
+      {
+        "word": "رَبَّيَانِي",
+        "meaning": "Beni büyüttüler"
+      },
+      {
+        "word": "نُرَبِّكَ",
+        "meaning": "Seni büyüttük"
+      }
+    ],
     "ayahs": [
       "1:2",
       "2:5",
@@ -3105,10 +3254,51 @@
     "count": 857
   },
   "علم": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Bilmek, bilgi, öğrenmek",
+    "meaning_ar": "المعرفة والإدراك",
+    "pronunciation": "'a-l-m",
+    "derived": [
+      {
+        "word": "عَلِيمٌ",
+        "meaning": "Her şeyi bilen"
+      },
+      {
+        "word": "عِلْمٍ",
+        "meaning": "Bilgi, ilim"
+      },
+      {
+        "word": "يَعْلَمُونَ",
+        "meaning": "Biliyorlar"
+      },
+      {
+        "word": "تَعْلَمُونَ",
+        "meaning": "Biliyorsunuz"
+      },
+      {
+        "word": "اعْلَمُوا",
+        "meaning": "Bilin!"
+      },
+      {
+        "word": "عَالِمُ",
+        "meaning": "Bilen"
+      },
+      {
+        "word": "مَعْلُومٍ",
+        "meaning": "Bilinen"
+      },
+      {
+        "word": "أَعْلَمُ",
+        "meaning": "Daha iyi bilen"
+      },
+      {
+        "word": "يُعَلِّمُكُمْ",
+        "meaning": "Size öğretir"
+      },
+      {
+        "word": "تَعْلَمُوا",
+        "meaning": "Bilin ki"
+      }
+    ],
     "ayahs": [
       "1:2",
       "2:13",
@@ -3840,10 +4030,51 @@
     "count": 726
   },
   "ملك": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Sahip olmak, hükmetmek",
+    "meaning_ar": "امتلاك، سيادة، حكم",
+    "pronunciation": "m-l-k",
+    "derived": [
+      {
+        "word": "مَلِكٍ",
+        "meaning": "kral, hükümdar"
+      },
+      {
+        "word": "مَالِكِ",
+        "meaning": "sahip olan, hükmeden"
+      },
+      {
+        "word": "الْمُلْكُ",
+        "meaning": "mülk, krallık"
+      },
+      {
+        "word": "مَلَكُوتُ",
+        "meaning": "egemenlik, melekût"
+      },
+      {
+        "word": "يَمْلِكُ",
+        "meaning": "sahip olur"
+      },
+      {
+        "word": "تَمْلِكُونَ",
+        "meaning": "sahip olursunuz"
+      },
+      {
+        "word": "أَمْلِكُ",
+        "meaning": "sahip olurum"
+      },
+      {
+        "word": "مَلِيكًا",
+        "meaning": "egemen, kudretli"
+      },
+      {
+        "word": "مَلَكَتْ",
+        "meaning": "sahip oldu"
+      },
+      {
+        "word": "نَمْلِكُ",
+        "meaning": "sahip oluruz"
+      }
+    ],
     "ayahs": [
       "1:4",
       "2:30",
@@ -4006,10 +4237,43 @@
     "count": 157
   },
   "يوم": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "gün, zaman, gündüz",
+    "meaning_ar": "الزمن، النهار",
+    "pronunciation": "y-w-m",
+    "derived": [
+      {
+        "word": "يَوْمَ",
+        "meaning": "gün"
+      },
+      {
+        "word": "الْيَوْمَ",
+        "meaning": "bugün"
+      },
+      {
+        "word": "يَوْمًا",
+        "meaning": "bir gün"
+      },
+      {
+        "word": "أَيَّامًا",
+        "meaning": "günler"
+      },
+      {
+        "word": "يَوْمَئِذٍ",
+        "meaning": "o gün"
+      },
+      {
+        "word": "يَوْمُكُمْ",
+        "meaning": "gününüz"
+      },
+      {
+        "word": "أَيَّامِكُمْ",
+        "meaning": "günleriniz"
+      },
+      {
+        "word": "يَوْمِهِمْ",
+        "meaning": "günleri"
+      }
+    ],
     "ayahs": [
       "1:4",
       "2:8",
@@ -4450,10 +4714,39 @@
     "count": 435
   },
   "دين": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "din, borç, yargı, itaat",
+    "meaning_ar": "الدين، الطاعة، الحساب، الجزاء",
+    "pronunciation": "d-i-n",
+    "derived": [
+      {
+        "word": "الدِّينِ",
+        "meaning": "din, hesap günü"
+      },
+      {
+        "word": "دِينُكُمْ",
+        "meaning": "dininiz"
+      },
+      {
+        "word": "دِينًا",
+        "meaning": "bir din olarak"
+      },
+      {
+        "word": "يَدِينُونَ",
+        "meaning": "din edinmezler"
+      },
+      {
+        "word": "لَمَدِينُونَ",
+        "meaning": "cezalandırılacaklar mı"
+      },
+      {
+        "word": "بِدَيْنٍ",
+        "meaning": "bir borçla"
+      },
+      {
+        "word": "تَدَايَنتُمْ",
+        "meaning": "borçlandığınızda"
+      }
+    ],
     "ayahs": [
       "1:4",
       "2:132",
@@ -4556,10 +4849,51 @@
     "count": 97
   },
   "عبد": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Kulluk etmek, ibadet etmek",
+    "meaning_ar": "الطاعة والعبادة والخضوع",
+    "pronunciation": "ʿ-b-d",
+    "derived": [
+      {
+        "word": "عَبْدٌ",
+        "meaning": "Kul"
+      },
+      {
+        "word": "عِبَادٌ",
+        "meaning": "Kullar"
+      },
+      {
+        "word": "عِبَادَةً",
+        "meaning": "İbadet"
+      },
+      {
+        "word": "يَعْبُدُونَ",
+        "meaning": "İbadet ederler"
+      },
+      {
+        "word": "نَعْبُدُ",
+        "meaning": "İbadet ederiz"
+      },
+      {
+        "word": "اعْبُدُوا",
+        "meaning": "İbadet edin"
+      },
+      {
+        "word": "أَعْبُدُ",
+        "meaning": "İbadet ederim"
+      },
+      {
+        "word": "عَابِدُونَ",
+        "meaning": "İbadet edenler"
+      },
+      {
+        "word": "تَعْبُدُونَ",
+        "meaning": "İbadet edersiniz"
+      },
+      {
+        "word": "عَبَدْتُمْ",
+        "meaning": "İbadet ettiniz"
+      }
+    ],
     "ayahs": [
       "1:5",
       "2:21",
@@ -4817,10 +5151,43 @@
     "count": 252
   },
   "عون": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Yardım, destek, himaye",
+    "meaning_ar": "المساعدة والعون",
+    "pronunciation": "ʿ-w-n",
+    "derived": [
+      {
+        "word": "نَسْتَعِينُ",
+        "meaning": "Yardım dileriz"
+      },
+      {
+        "word": "اِسْتَعِينُوا",
+        "meaning": "Yardım isteyin"
+      },
+      {
+        "word": "تَعَاوَنُوا",
+        "meaning": "Yardımlaşın"
+      },
+      {
+        "word": "أَعَانَ",
+        "meaning": "Yardım etti"
+      },
+      {
+        "word": "يُعِينُ",
+        "meaning": "Yardım eder"
+      },
+      {
+        "word": "عَوْنًا",
+        "meaning": "Yardımcı, destek"
+      },
+      {
+        "word": "الْمَاعُونَ",
+        "meaning": "Küçük iyilik, yardım"
+      },
+      {
+        "word": "عَوَانٌ",
+        "meaning": "Orta yaşlı"
+      }
+    ],
     "ayahs": [
       "1:5",
       "2:45",
@@ -4836,10 +5203,51 @@
     "count": 10
   },
   "هدي": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Yol gösterme, rehberlik, hidayet",
+    "meaning_ar": "الإرشاد والدلالة إلى الصراط المستقيم",
+    "pronunciation": "h-d-y",
+    "derived": [
+      {
+        "word": "هُدًى",
+        "meaning": "Hidayet, rehber"
+      },
+      {
+        "word": "يَهْدِي",
+        "meaning": "Yol gösterir"
+      },
+      {
+        "word": "الْهَادِي",
+        "meaning": "Yol gösteren"
+      },
+      {
+        "word": "اهْدِنَا",
+        "meaning": "Bize yol göster"
+      },
+      {
+        "word": "اهْتَدَىٰ",
+        "meaning": "Hidayet buldu"
+      },
+      {
+        "word": "هَدَيْنَا",
+        "meaning": "Yol gösterdik"
+      },
+      {
+        "word": "الْهُدَىٰ",
+        "meaning": "Doğru yol"
+      },
+      {
+        "word": "مُهْتَدُونَ",
+        "meaning": "Hidayette olanlar"
+      },
+      {
+        "word": "هَدَىٰ",
+        "meaning": "Yol gösterdi"
+      },
+      {
+        "word": "نَهْتَدِيَ",
+        "meaning": "Hidayet bulalım"
+      }
+    ],
     "ayahs": [
       "1:6",
       "2:2",
@@ -5071,10 +5479,19 @@
     "count": 226
   },
   "صرط": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Doğru yol, patika",
+    "meaning_ar": "الطريق المستقيم",
+    "pronunciation": "ṣ-r-ṭ",
+    "derived": [
+      {
+        "word": "صِرَاط",
+        "meaning": "yol, patika"
+      },
+      {
+        "word": "الصِّرَاطَ الْمُسْتَقِيمَ",
+        "meaning": "dosdoğru yol"
+      }
+    ],
     "ayahs": [
       "1:6",
       "1:7",
@@ -5113,10 +5530,51 @@
     "count": 33
   },
   "قوم": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Ayakta durmak, kalkmak, tesis etmek",
+    "meaning_ar": "الوقوف، النهوض، إقامة",
+    "pronunciation": "q-w-m",
+    "derived": [
+      {
+        "word": "قَوْمٌ",
+        "meaning": "kavim, halk"
+      },
+      {
+        "word": "أَقِيمُوا",
+        "meaning": "kurun, kılın"
+      },
+      {
+        "word": "يَقُومُونَ",
+        "meaning": "kalkarlar, dururlar"
+      },
+      {
+        "word": "الْقِيَامَةِ",
+        "meaning": "kıyamet"
+      },
+      {
+        "word": "قَيِّمًا",
+        "meaning": "dosdoğru, sağlam"
+      },
+      {
+        "word": "قَوَّامُونَ",
+        "meaning": "adaleti ayakta tutanlar"
+      },
+      {
+        "word": "مَقَامِ",
+        "meaning": "makam, durulan yer"
+      },
+      {
+        "word": "اسْتَقِمْ",
+        "meaning": "dosdoğru ol"
+      },
+      {
+        "word": "قَائِمٌ",
+        "meaning": "ayakta duran"
+      },
+      {
+        "word": "قَامَ",
+        "meaning": "kalktı, durdu"
+      }
+    ],
     "ayahs": [
       "1:6",
       "2:3",
@@ -5715,10 +6173,35 @@
     "count": 593
   },
   "نعم": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Nimet, refah, evet",
+    "meaning_ar": "الخير، الرخاء، الإيجاب",
+    "pronunciation": "n-'-m",
+    "derived": [
+      {
+        "word": "نِعْمَةٍ",
+        "meaning": "nimet, lütuf"
+      },
+      {
+        "word": "أَنْعَمَ",
+        "meaning": "nimet verdi"
+      },
+      {
+        "word": "نَاعِمَةٌ",
+        "meaning": "keyifli, rahat"
+      },
+      {
+        "word": "نِعَمٍ",
+        "meaning": "nimetler"
+      },
+      {
+        "word": "نَعَمْ",
+        "meaning": "evet"
+      },
+      {
+        "word": "نِعْمَ",
+        "meaning": "ne güzel!"
+      }
+    ],
     "ayahs": [
       "1:7",
       "2:40",
@@ -5853,10 +6336,31 @@
     "count": 129
   },
   "غير": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Başka olmak, değişmek",
+    "meaning_ar": "الاختلاف والتغيير",
+    "pronunciation": "gh-y-r",
+    "derived": [
+      {
+        "word": "غَيْرِ",
+        "meaning": "Dışında, başka"
+      },
+      {
+        "word": "غَيْرَ",
+        "meaning": "Dışında, başka"
+      },
+      {
+        "word": "يُغَيِّرُ",
+        "meaning": "Değiştirir"
+      },
+      {
+        "word": "يُغَيِّرُوا",
+        "meaning": "Değiştirmeleri"
+      },
+      {
+        "word": "تَغْيِيرًا",
+        "meaning": "Değiştirme, değişim"
+      }
+    ],
     "ayahs": [
       "1:7",
       "2:59",
@@ -5997,10 +6501,35 @@
     "count": 135
   },
   "غضب": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "öfke, kızgınlık, gazap",
+    "meaning_ar": "السخط الشديد، الضيق",
+    "pronunciation": "ġ-ḍ-b",
+    "derived": [
+      {
+        "word": "غَضَبٌ",
+        "meaning": "öfke, gazap"
+      },
+      {
+        "word": "مَغْضُوبِ",
+        "meaning": "gazaba uğramış"
+      },
+      {
+        "word": "يَغْضَبُونَ",
+        "meaning": "öfkelenirler"
+      },
+      {
+        "word": "غَاضِبًا",
+        "meaning": "öfkeli (halde)"
+      },
+      {
+        "word": "غَضِبَ",
+        "meaning": "öfkelendi"
+      },
+      {
+        "word": "تَغْضَبُ",
+        "meaning": "öfkelenirsin"
+      }
+    ],
     "ayahs": [
       "1:7",
       "2:61",
@@ -6027,10 +6556,51 @@
     "count": 21
   },
   "ضلل": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Yolunu şaşırmak, sapmak",
+    "meaning_ar": "الضلال والانحراف عن الحق",
+    "pronunciation": "ḍ-l-l",
+    "derived": [
+      {
+        "word": "ضَلَّ",
+        "meaning": "Saptı"
+      },
+      {
+        "word": "ضَلَال",
+        "meaning": "Sapıklık"
+      },
+      {
+        "word": "الضَّالِّينَ",
+        "meaning": "Sapanlar"
+      },
+      {
+        "word": "أَضَلَّ",
+        "meaning": "Saptırdı"
+      },
+      {
+        "word": "تَضِلُّوا",
+        "meaning": "Sapasınız"
+      },
+      {
+        "word": "ضَلَالَةً",
+        "meaning": "Sapıklık"
+      },
+      {
+        "word": "يُضِلُّ",
+        "meaning": "Saptırır"
+      },
+      {
+        "word": "ضَلُّوا",
+        "meaning": "Saptılar"
+      },
+      {
+        "word": "مُضِلًّا",
+        "meaning": "Saptıran"
+      },
+      {
+        "word": "أَضَلَّهُمْ",
+        "meaning": "Onları saptırdı"
+      }
+    ],
     "ayahs": [
       "1:7",
       "2:16",
@@ -6206,10 +6776,51 @@
     "count": 170
   },
   "كتب": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Yazmak, kaydetmek, emretmek",
+    "meaning_ar": "الكتابة والتدوين والفرض",
+    "pronunciation": "k-t-b",
+    "derived": [
+      {
+        "word": "كَتَبَ",
+        "meaning": "Yazdı, emretti"
+      },
+      {
+        "word": "كُتِبَ",
+        "meaning": "Yazıldı, farz kılındı"
+      },
+      {
+        "word": "كِتَابٌ",
+        "meaning": "Kitap, yazı"
+      },
+      {
+        "word": "الْكِتَابِ",
+        "meaning": "Kitap (Kur'an)"
+      },
+      {
+        "word": "كُتُبٍ",
+        "meaning": "Kitaplar"
+      },
+      {
+        "word": "تَكْتُبُونَ",
+        "meaning": "Yazıyorsunuz"
+      },
+      {
+        "word": "يَكْتُبُونَ",
+        "meaning": "Yazıyorlar"
+      },
+      {
+        "word": "مَكْتُوبًا",
+        "meaning": "Yazılmış, yazılı"
+      },
+      {
+        "word": "كَاتِبِينَ",
+        "meaning": "Yazıcılar"
+      },
+      {
+        "word": "اكْتَتَبَ",
+        "meaning": "Kaydetti, yazdırdı"
+      }
+    ],
     "ayahs": [
       "2:2",
       "2:44",
@@ -6492,10 +7103,35 @@
     "count": 277
   },
   "ريب": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "şüphe, kuşku duymak",
+    "meaning_ar": "الشك، التردد، الارتياب",
+    "pronunciation": "r-y-b",
+    "derived": [
+      {
+        "word": "رَيْبَ",
+        "meaning": "şüphe"
+      },
+      {
+        "word": "مُرِيبٍ",
+        "meaning": "şüpheli, kuşku veren"
+      },
+      {
+        "word": "يَرْتَابُ",
+        "meaning": "şüphe eder"
+      },
+      {
+        "word": "تَرْتَابُوا",
+        "meaning": "şüphe etmeyin"
+      },
+      {
+        "word": "ارْتَابُوا",
+        "meaning": "şüphe ettiler"
+      },
+      {
+        "word": "الْمُرْتَابِينَ",
+        "meaning": "şüphe edenler"
+      }
+    ],
     "ayahs": [
       "2:2",
       "2:23",
@@ -6539,10 +7175,47 @@
     "count": 38
   },
   "وقي": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Koruma, sakınma, muhafaza",
+    "meaning_ar": "حفظ وحماية وصيانة",
+    "pronunciation": "w-q-y",
+    "derived": [
+      {
+        "word": "وَقَىٰ",
+        "meaning": "Korudu"
+      },
+      {
+        "word": "يَقِي",
+        "meaning": "Korur"
+      },
+      {
+        "word": "اتَّقُوا",
+        "meaning": "Sakının"
+      },
+      {
+        "word": "التَّقْوَىٰ",
+        "meaning": "Takvâ, sakınma"
+      },
+      {
+        "word": "الْمُتَّقِينَ",
+        "meaning": "Takvâ sahipleri"
+      },
+      {
+        "word": "تَتَّقُونَ",
+        "meaning": "Sakınırsınız"
+      },
+      {
+        "word": "تُقَاةً",
+        "meaning": "Sakınma"
+      },
+      {
+        "word": "أَتْقَاكُمْ",
+        "meaning": "En takvâlı olanınız"
+      },
+      {
+        "word": "وَاقٍ",
+        "meaning": "Koruyucu"
+      }
+    ],
     "ayahs": [
       "2:2",
       "2:21",
@@ -6759,10 +7432,51 @@
     "count": 211
   },
   "امن": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "güven, emniyet, inanmak",
+    "meaning_ar": "الثقة، الأمان، الإيمان",
+    "pronunciation": "e-m-n",
+    "derived": [
+      {
+        "word": "آمَنَ",
+        "meaning": "İnandı"
+      },
+      {
+        "word": "يُؤْمِنُونَ",
+        "meaning": "İnanırlar"
+      },
+      {
+        "word": "أَمِينٌ",
+        "meaning": "Güvenilir"
+      },
+      {
+        "word": "إِيمَانٍ",
+        "meaning": "İman, inanç"
+      },
+      {
+        "word": "أَمْنٌ",
+        "meaning": "Emniyet, güvenlik"
+      },
+      {
+        "word": "مُؤْمِنُونَ",
+        "meaning": "Müminler"
+      },
+      {
+        "word": "الأَمَانَةَ",
+        "meaning": "Emanet"
+      },
+      {
+        "word": "آمِنِينَ",
+        "meaning": "Güven içinde"
+      },
+      {
+        "word": "أَمِنُوا",
+        "meaning": "Güvendiler"
+      },
+      {
+        "word": "يَأْمَنُ",
+        "meaning": "Güvenir"
+      }
+    ],
     "ayahs": [
       "2:3",
       "2:6",
@@ -6977,10 +7691,27 @@
     "count": 209
   },
   "غيب": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Gizli, bilinmeyen, yokluk",
+    "meaning_ar": "الخفاء، ما لا يدرك بالحواس",
+    "pronunciation": "gh-y-b",
+    "derived": [
+      {
+        "word": "الْغَيْبُ",
+        "meaning": "Gayb, görünmeyen"
+      },
+      {
+        "word": "الْغَيْبِ",
+        "meaning": "Gayb, görünmeyen"
+      },
+      {
+        "word": "الْغَيْبَ",
+        "meaning": "Gaybı, görünmeyeni"
+      },
+      {
+        "word": "غَيَابَتِ",
+        "meaning": "Derinlik, kuyu dibi"
+      }
+    ],
     "ayahs": [
       "2:3",
       "2:33",
@@ -7045,10 +7776,51 @@
     "count": 59
   },
   "صلو": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "namaz kılmak, dua etmek",
+    "meaning_ar": "الصلاة والدعاء والعبادة",
+    "pronunciation": "ṣ-l-w",
+    "derived": [
+      {
+        "word": "الصَّلَاةَ",
+        "meaning": "namaz, dua"
+      },
+      {
+        "word": "يُصَلُّونَ",
+        "meaning": "namaz kılarlar"
+      },
+      {
+        "word": "صَلِّ",
+        "meaning": "dua et, salavat getir"
+      },
+      {
+        "word": "صَلَاتَهُمْ",
+        "meaning": "namazları"
+      },
+      {
+        "word": "تُصَلِّي",
+        "meaning": "namaz kılarsın"
+      },
+      {
+        "word": "صَلَوَاتٌ",
+        "meaning": "salavatlar, dualar"
+      },
+      {
+        "word": "فَصَلِّ",
+        "meaning": "öyleyse namaz kıl"
+      },
+      {
+        "word": "أَصْلَىٰ",
+        "meaning": "yakar, sokar"
+      },
+      {
+        "word": "يَصْلَوْنَ",
+        "meaning": "girerler, yanarlar"
+      },
+      {
+        "word": "صَلِيًّا",
+        "meaning": "ateşe girme"
+      }
+    ],
     "ayahs": [
       "2:3",
       "2:43",
@@ -7146,10 +7918,43 @@
     "count": 92
   },
   "رزق": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "rızık, geçim, nasip",
+    "meaning_ar": "العطاء، النصيب، الرزق",
+    "pronunciation": "r-z-q",
+    "derived": [
+      {
+        "word": "رِزْقًا",
+        "meaning": "rızık"
+      },
+      {
+        "word": "يَرْزُقُ",
+        "meaning": "rızık verir"
+      },
+      {
+        "word": "الرَّازِقِينَ",
+        "meaning": "rızık verenler"
+      },
+      {
+        "word": "نَرْزُقُكُمْ",
+        "meaning": "sizi rızıklandırırız"
+      },
+      {
+        "word": "الرَّزَّاقُ",
+        "meaning": "Rezzak (rızık veren)"
+      },
+      {
+        "word": "تَرْزُقُ",
+        "meaning": "rızıklandırırsın"
+      },
+      {
+        "word": "أَرْزَقْنَاكُم",
+        "meaning": "sizi rızıklandırdık"
+      },
+      {
+        "word": "ارْزُقْنَا",
+        "meaning": "bize rızık ver"
+      }
+    ],
     "ayahs": [
       "2:3",
       "2:22",
@@ -7264,10 +8069,51 @@
     "count": 109
   },
   "نفق": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Tünel açmak, harcamak, tükenmek",
+    "meaning_ar": "شقّ طريق، أنفق، نفد",
+    "pronunciation": "n-f-q",
+    "derived": [
+      {
+        "word": "يُنْفِقُونَ",
+        "meaning": "Harcıyorlar, infak ediyorlar"
+      },
+      {
+        "word": "مُنَافِقِينَ",
+        "meaning": "Münafıklar, ikiyüzlüler"
+      },
+      {
+        "word": "نِفَاق",
+        "meaning": "İkiyüzlülük, münafıklık"
+      },
+      {
+        "word": "أَنْفَقَ",
+        "meaning": "Harcadı, infak etti"
+      },
+      {
+        "word": "الْإِنْفَاق",
+        "meaning": "Harcama, infak"
+      },
+      {
+        "word": "النَّفَق",
+        "meaning": "Tünel, geçit"
+      },
+      {
+        "word": "أَنْفِقُوا",
+        "meaning": "Harcayın, infak edin"
+      },
+      {
+        "word": "لِيُنْفِقْ",
+        "meaning": "Harcasın, infak etsin"
+      },
+      {
+        "word": "مُنْفِقًا",
+        "meaning": "Harcayan, infak eden"
+      },
+      {
+        "word": "أَنْفَقْتُم",
+        "meaning": "Harcadınız, infak ettiniz"
+      }
+    ],
     "ayahs": [
       "2:3",
       "2:195",
@@ -7359,10 +8205,51 @@
     "count": 86
   },
   "أمن": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "güven, emin olma, iman",
+    "meaning_ar": "الثقة والطمأنينة والإيمان",
+    "pronunciation": "a-m-n",
+    "derived": [
+      {
+        "word": "آمَنُواْ",
+        "meaning": "İman ettiler"
+      },
+      {
+        "word": "اَلْإِيمَانُ",
+        "meaning": "İman"
+      },
+      {
+        "word": "أَمِينٌ",
+        "meaning": "Güvenilir, emin"
+      },
+      {
+        "word": "اَلْأَمْنُ",
+        "meaning": "Güvenlik, emniyet"
+      },
+      {
+        "word": "مُؤْمِنُونَ",
+        "meaning": "Müminler, inananlar"
+      },
+      {
+        "word": "تُؤْمِنُونَ",
+        "meaning": "İnanırsınız"
+      },
+      {
+        "word": "يُؤْمِنُ",
+        "meaning": "İnanır"
+      },
+      {
+        "word": "أَمَانَةٍ",
+        "meaning": "Emanet"
+      },
+      {
+        "word": "آمِنِينَ",
+        "meaning": "Güvende olanlar"
+      },
+      {
+        "word": "آمَنَ",
+        "meaning": "İman etti"
+      }
+    ],
     "ayahs": [
       "2:4",
       "2:8",
@@ -7868,10 +8755,43 @@
     "count": 500
   },
   "نزل": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "İnmek, indirmek, konaklamak",
+    "meaning_ar": "الهبوط، الإنـزال، الإقامة",
+    "pronunciation": "n-z-l",
+    "derived": [
+      {
+        "word": "نَزَلَ",
+        "meaning": "İndi"
+      },
+      {
+        "word": "أَنزَلَ",
+        "meaning": "İndirdi"
+      },
+      {
+        "word": "تَنزِيلٌ",
+        "meaning": "İndirme"
+      },
+      {
+        "word": "مُنَزَّلٌ",
+        "meaning": "İndirilmiş"
+      },
+      {
+        "word": "يَنزِلُ",
+        "meaning": "İner"
+      },
+      {
+        "word": "نُزُلٌ",
+        "meaning": "Konaklama, rızık"
+      },
+      {
+        "word": "مَنزِلٌ",
+        "meaning": "Konak, mesken"
+      },
+      {
+        "word": "يُنَزِّلُ",
+        "meaning": "İndirir"
+      }
+    ],
     "ayahs": [
       "2:4",
       "2:22",
@@ -8134,10 +9054,51 @@
     "count": 257
   },
   "قبل": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "kabul etmek, yönelmek, önce olmak",
+    "meaning_ar": "استقبال، مواجهة، سبْق",
+    "pronunciation": "q-b-l",
+    "derived": [
+      {
+        "word": "قَبْلُ",
+        "meaning": "önce, evvel"
+      },
+      {
+        "word": "يَقْبَلُ",
+        "meaning": "kabul eder"
+      },
+      {
+        "word": "أَقْبَلَ",
+        "meaning": "yöneldi, geldi"
+      },
+      {
+        "word": "قِبْلَةٌ",
+        "meaning": "kıble, yön"
+      },
+      {
+        "word": "مُقْبِلُونَ",
+        "meaning": "yönelenler, gelenler"
+      },
+      {
+        "word": "تَقَبَّلَ",
+        "meaning": "kabul etti"
+      },
+      {
+        "word": "مَقْبُولاً",
+        "meaning": "kabul edilmiş"
+      },
+      {
+        "word": "قَابِلٌ",
+        "meaning": "kabul eden"
+      },
+      {
+        "word": "قَبِيلٌ",
+        "meaning": "benzer, aynı"
+      },
+      {
+        "word": "اسْتَقْبَلَ",
+        "meaning": "karşıladı, yöneldi"
+      }
+    ],
     "ayahs": [
       "2:4",
       "2:21",
@@ -8416,10 +9377,51 @@
     "count": 273
   },
   "أخر": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Geciktirmek, sona ermek",
+    "meaning_ar": "تأخير، إرجاء، نهاية",
+    "pronunciation": "a-kh-r",
+    "derived": [
+      {
+        "word": "الْآخِرَةُ",
+        "meaning": "Ahiret, son"
+      },
+      {
+        "word": "آخَرُ",
+        "meaning": "Başka, diğer"
+      },
+      {
+        "word": "أُخْرَىٰ",
+        "meaning": "Diğer (dişil)"
+      },
+      {
+        "word": "يُؤَخِّرُ",
+        "meaning": "Geciktirir"
+      },
+      {
+        "word": "تَأْخِيرٍ",
+        "meaning": "Geciktirme"
+      },
+      {
+        "word": "أَخَّرْتَنِي",
+        "meaning": "Beni geciktirdin"
+      },
+      {
+        "word": "الْآخِرِ",
+        "meaning": "Sonuncu"
+      },
+      {
+        "word": "الْآخَرُونَ",
+        "meaning": "Diğerleri"
+      },
+      {
+        "word": "أَخِّرْنَا",
+        "meaning": "Bizi geciktir"
+      },
+      {
+        "word": "وَالْأُخْرَىٰ",
+        "meaning": "Diğeri"
+      }
+    ],
     "ayahs": [
       "2:4",
       "2:8",
@@ -8584,10 +9586,43 @@
     "count": 159
   },
   "يقن": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "kesin bilmek, emin olmak",
+    "meaning_ar": "العلم اليقيني، الإحاطة",
+    "pronunciation": "y-q-n",
+    "derived": [
+      {
+        "word": "يَقِين",
+        "meaning": "kesin bilgi"
+      },
+      {
+        "word": "الْيَقِينِ",
+        "meaning": "kesin bilgi"
+      },
+      {
+        "word": "يُوقِنُونَ",
+        "meaning": "kesin inanırlar"
+      },
+      {
+        "word": "الْمُوقِنِينَ",
+        "meaning": "kesin inananlar"
+      },
+      {
+        "word": "تُوقِنُونَ",
+        "meaning": "kesin bilirsiniz"
+      },
+      {
+        "word": "أَيْقَنَ",
+        "meaning": "kesin bildi"
+      },
+      {
+        "word": "مُوقِنِينَ",
+        "meaning": "kesin inananlar"
+      },
+      {
+        "word": "الْيَقِينُ",
+        "meaning": "kesinlik"
+      }
+    ],
     "ayahs": [
       "2:4",
       "2:118",
@@ -8621,10 +9656,35 @@
     "count": 28
   },
   "فلح": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "başarı, kurtuluş, çiftçilik",
+    "meaning_ar": "الفوز والنجاة والزراعة",
+    "pronunciation": "f-l-ḥ",
+    "derived": [
+      {
+        "word": "أَفْلَحَ",
+        "meaning": "Başardı, kurtuldu"
+      },
+      {
+        "word": "يُفْلِحُ",
+        "meaning": "Başarır, kurtulur"
+      },
+      {
+        "word": "الْمُفْلِحُونَ",
+        "meaning": "Kurtuluşa erenler"
+      },
+      {
+        "word": "الْفَلَاحُ",
+        "meaning": "Kurtuluş, başarı"
+      },
+      {
+        "word": "تُفْلِحُونَ",
+        "meaning": "Kurtulursunuz"
+      },
+      {
+        "word": "لَا تُفْلِحُوا",
+        "meaning": "Başarılı olmazsınız"
+      }
+    ],
     "ayahs": [
       "2:5",
       "2:189",
@@ -8670,10 +9730,51 @@
     "count": 40
   },
   "كفر": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "İnkar etmek, nankörlük",
+    "meaning_ar": "الستر، الجحود",
+    "pronunciation": "k-f-r",
+    "derived": [
+      {
+        "word": "كَفَرَ",
+        "meaning": "İnkar etti"
+      },
+      {
+        "word": "كُفْر",
+        "meaning": "İnkar"
+      },
+      {
+        "word": "كَافِر",
+        "meaning": "İnkar eden"
+      },
+      {
+        "word": "الْكَافِرُونَ",
+        "meaning": "İnkar edenler"
+      },
+      {
+        "word": "يَكْفُرُونَ",
+        "meaning": "İnkar ederler"
+      },
+      {
+        "word": "تَكْفُرُونَ",
+        "meaning": "İnkar edersiniz"
+      },
+      {
+        "word": "كَفَّار",
+        "meaning": "Çok nankör"
+      },
+      {
+        "word": "كَفُور",
+        "meaning": "Nankör"
+      },
+      {
+        "word": "كُفْرَان",
+        "meaning": "Nankörlük"
+      },
+      {
+        "word": "فَيَكْفُرُوا",
+        "meaning": "İnkar etsinler"
+      }
+    ],
     "ayahs": [
       "2:6",
       "2:19",
@@ -9141,10 +10242,51 @@
     "count": 462
   },
   "سوي": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Düzeltmek, tamamlamak, dengelemek",
+    "meaning_ar": "تسوية، إكمال، تحقيق التوازن",
+    "pronunciation": "s-w-y",
+    "derived": [
+      {
+        "word": "سَوَّىٰ",
+        "meaning": "Düzeltti"
+      },
+      {
+        "word": "يُسَوِّيَ",
+        "meaning": "Eşitlesin"
+      },
+      {
+        "word": "اِسْتَوٰى",
+        "meaning": "Kuruldu"
+      },
+      {
+        "word": "سَوِيًّا",
+        "meaning": "Düzgün"
+      },
+      {
+        "word": "سَوَآءً",
+        "meaning": "Eşit"
+      },
+      {
+        "word": "سَوَآءٌ",
+        "meaning": "Aynıdır"
+      },
+      {
+        "word": "مُسْتَوًى",
+        "meaning": "Karar yeri"
+      },
+      {
+        "word": "السَّوَاءِ",
+        "meaning": "Orta yol"
+      },
+      {
+        "word": "فَسَوّٰى",
+        "meaning": "Sonra düzeltti"
+      },
+      {
+        "word": "سَوَّاكَ",
+        "meaning": "Seni düzeltti"
+      }
+    ],
     "ayahs": [
       "2:6",
       "2:29",
@@ -9216,10 +10358,51 @@
     "count": 66
   },
   "نذر": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Nezretmek, uyarmak, korkutmak",
+    "meaning_ar": "وعد، تحذير، إعلام بالخطر",
+    "pronunciation": "n-dh-r",
+    "derived": [
+      {
+        "word": "نَذِيرٌ",
+        "meaning": "Uyarıcı, korkutucu"
+      },
+      {
+        "word": "نُذُرٌ",
+        "meaning": "Uyarılar"
+      },
+      {
+        "word": "أَنذَرْنَا",
+        "meaning": "Uyardık"
+      },
+      {
+        "word": "لِتُنذِرَ",
+        "meaning": "Uyarasın diye"
+      },
+      {
+        "word": "الْمُنذَرِينَ",
+        "meaning": "Uyarılanlar"
+      },
+      {
+        "word": "نَذْرًا",
+        "meaning": "Adak, nezir"
+      },
+      {
+        "word": "نُذُورًا",
+        "meaning": "Adaklar"
+      },
+      {
+        "word": "مُنذِرٌ",
+        "meaning": "Uyarıcı"
+      },
+      {
+        "word": "تُنذِرُهُمْ",
+        "meaning": "Onları uyarırsın"
+      },
+      {
+        "word": "وَأَنذِرِ",
+        "meaning": "Ve uyar!"
+      }
+    ],
     "ayahs": [
       "2:6",
       "2:119",
@@ -9340,10 +10523,27 @@
     "count": 115
   },
   "ختم": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "mühürlemek, sona erdirmek",
+    "meaning_ar": "الختم، الإتمام، النهاية",
+    "pronunciation": "ḫ-t-m",
+    "derived": [
+      {
+        "word": "خَتَمَ",
+        "meaning": "mühürledi, kapattı"
+      },
+      {
+        "word": "خِتَامٌ",
+        "meaning": "mühür, son"
+      },
+      {
+        "word": "خَاتَمَ",
+        "meaning": "mühür, sonuncu"
+      },
+      {
+        "word": "مَخْتُومٌ",
+        "meaning": "mühürlü"
+      }
+    ],
     "ayahs": [
       "2:7",
       "6:46",
@@ -9357,10 +10557,51 @@
     "count": 8
   },
   "قلب": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "kalp, döndürmek, değiştirmek",
+    "meaning_ar": "القلب، تحويل، تغيير",
+    "pronunciation": "q-l-b",
+    "derived": [
+      {
+        "word": "قَلْب",
+        "meaning": "kalp"
+      },
+      {
+        "word": "قُلُوب",
+        "meaning": "kalpler"
+      },
+      {
+        "word": "يَقْلِبُ",
+        "meaning": "çevirir"
+      },
+      {
+        "word": "تَقْلِيب",
+        "meaning": "döndürme"
+      },
+      {
+        "word": "انْقَلَبُوا",
+        "meaning": "döndüler"
+      },
+      {
+        "word": "مُنْقَلَب",
+        "meaning": "dönüş yeri"
+      },
+      {
+        "word": "قَلَّبَ",
+        "meaning": "çevirdi"
+      },
+      {
+        "word": "يُقَلِّبُ",
+        "meaning": "değiştirir"
+      },
+      {
+        "word": "تَتَقَلَّبُ",
+        "meaning": "döner"
+      },
+      {
+        "word": "يَنْقَلِبُونَ",
+        "meaning": "dönecekler"
+      }
+    ],
     "ayahs": [
       "2:7",
       "2:10",
@@ -9520,10 +10761,51 @@
     "count": 154
   },
   "سمع": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "duymak, işitmek, dinlemek",
+    "meaning_ar": "الإصغاء والإدراك بالسمع",
+    "pronunciation": "s-m-ʿ",
+    "derived": [
+      {
+        "word": "سَمِيعٌ",
+        "meaning": "İşiten (Allah)"
+      },
+      {
+        "word": "السَّمْعِ",
+        "meaning": "İşitme"
+      },
+      {
+        "word": "سَمِعَ",
+        "meaning": "İşitti"
+      },
+      {
+        "word": "يَسْمَعُ",
+        "meaning": "İşitir"
+      },
+      {
+        "word": "تَسْمَعُونَ",
+        "meaning": "İşitiyorsunuz"
+      },
+      {
+        "word": "اسْمَعُواْ",
+        "meaning": "Dinleyin!"
+      },
+      {
+        "word": "لِيُسْمِعَكَ",
+        "meaning": "Sana işittirsin"
+      },
+      {
+        "word": "نَسْمَعُ",
+        "meaning": "İşitiriz"
+      },
+      {
+        "word": "سَمِعُوا",
+        "meaning": "İşittiler"
+      },
+      {
+        "word": "يُسْمِعُ",
+        "meaning": "İşittirir"
+      }
+    ],
     "ayahs": [
       "2:7",
       "2:20",
@@ -9692,10 +10974,51 @@
     "count": 163
   },
   "بصر": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Görmek, algılamak, basiret",
+    "meaning_ar": "الرؤية، الإدراك، البصيرة",
+    "pronunciation": "b-ṣ-r",
+    "derived": [
+      {
+        "word": "بَصَرٌ",
+        "meaning": "Görme, göz"
+      },
+      {
+        "word": "بَصِيرٌ",
+        "meaning": "Gören, her şeyi gören"
+      },
+      {
+        "word": "أَبْصَرَ",
+        "meaning": "Gördü, idrak etti"
+      },
+      {
+        "word": "أَبْصَارٌ",
+        "meaning": "Gözler"
+      },
+      {
+        "word": "بَصَائِرُ",
+        "meaning": "Deliller, basiretler"
+      },
+      {
+        "word": "تَبْصِرَةً",
+        "meaning": "İbret, aydınlatma"
+      },
+      {
+        "word": "مُبْصِرَةٌ",
+        "meaning": "Aydınlatıcı, gösterici"
+      },
+      {
+        "word": "يُبْصِرُونَ",
+        "meaning": "Görürler, idrak ederler"
+      },
+      {
+        "word": "لا يُبْصِرُونَ",
+        "meaning": "Görmezler"
+      },
+      {
+        "word": "بَصِيرَةٌ",
+        "meaning": "Basiret, anlayış"
+      }
+    ],
     "ayahs": [
       "2:7",
       "2:17",
@@ -9840,10 +11163,35 @@
     "count": 139
   },
   "غشو": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Örtmek, kaplamak, bürümek",
+    "meaning_ar": "الستر والتغطية والإحاطة",
+    "pronunciation": "gh-sh-w",
+    "derived": [
+      {
+        "word": "غِشَاوَةٌ",
+        "meaning": "Örtü, perde"
+      },
+      {
+        "word": "يَغْشَىٰ",
+        "meaning": "Örter, kaplar"
+      },
+      {
+        "word": "تَغْشَىٰ",
+        "meaning": "Kaplar, bürür"
+      },
+      {
+        "word": "الْغَاشِيَةُ",
+        "meaning": "Kuşatıcı felaket (Kıyamet)"
+      },
+      {
+        "word": "أَغْشَاهُمْ",
+        "meaning": "Onları örttük"
+      },
+      {
+        "word": "فَغَشَّاهَا",
+        "meaning": "Onu kapladı"
+      }
+    ],
     "ayahs": [
       "2:7",
       "7:41",
@@ -9859,10 +11207,43 @@
     "count": 10
   },
   "عذب": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Azap, işkence; tatlı su",
+    "meaning_ar": "العذاب، العقاب؛ الماء العذب",
+    "pronunciation": "'a-dh-b",
+    "derived": [
+      {
+        "word": "عَذَابٌ",
+        "meaning": "Azap, ceza"
+      },
+      {
+        "word": "الْعَذَابِ",
+        "meaning": "Azabın"
+      },
+      {
+        "word": "يُعَذِّبُ",
+        "meaning": "Azap eder"
+      },
+      {
+        "word": "نُعَذِّبُ",
+        "meaning": "Azap ederiz"
+      },
+      {
+        "word": "عَذَّبْنَا",
+        "meaning": "Azap ettik"
+      },
+      {
+        "word": "مُعَذِّبٌ",
+        "meaning": "Azap eden"
+      },
+      {
+        "word": "عَذْبٌ",
+        "meaning": "Tatlı, taze"
+      },
+      {
+        "word": "عَذَابَكَ",
+        "meaning": "Azabın"
+      }
+    ],
     "ayahs": [
       "2:7",
       "2:10",
@@ -10202,10 +11583,35 @@
     "count": 334
   },
   "عظم": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Büyüklük, yücelik, kemik",
+    "meaning_ar": "الكبر، الجلال، العظم",
+    "pronunciation": "'-z-m",
+    "derived": [
+      {
+        "word": "عَظِيمٌ",
+        "meaning": "Büyük, yüce"
+      },
+      {
+        "word": "عِظَامٌ",
+        "meaning": "Kemikler"
+      },
+      {
+        "word": "أَعْظَمُ",
+        "meaning": "En büyük"
+      },
+      {
+        "word": "عَظُمَ",
+        "meaning": "Büyüdü, yüceldi"
+      },
+      {
+        "word": "عَظْمًا",
+        "meaning": "Kemik (bir)"
+      },
+      {
+        "word": "تُعَظِّمُونَ",
+        "meaning": "Yüceltirsiniz"
+      }
+    ],
     "ayahs": [
       "2:7",
       "2:49",
@@ -10337,10 +11743,31 @@
     "count": 126
   },
   "أنس": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "yakınlık, ünsiyet, insanlık",
+    "meaning_ar": "الألفة والقرب والبشر",
+    "pronunciation": "ʾ-n-s",
+    "derived": [
+      {
+        "word": "الإِنسَانُ",
+        "meaning": "İnsan"
+      },
+      {
+        "word": "النَّاسُ",
+        "meaning": "İnsanlar"
+      },
+      {
+        "word": "إِنسٍ",
+        "meaning": "İnsan (topluluğu)"
+      },
+      {
+        "word": "آنَسْتُ",
+        "meaning": "Fark ettim, gördüm"
+      },
+      {
+        "word": "تَأْنَسُوا",
+        "meaning": "Ünsiyet kurasınız"
+      }
+    ],
     "ayahs": [
       "2:8",
       "2:24",
@@ -10571,10 +11998,51 @@
     "count": 225
   },
   "قول": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "söylemek, demek, söz",
+    "meaning_ar": "الكلام والقول",
+    "pronunciation": "ḳ-v-l",
+    "derived": [
+      {
+        "word": "قَالَ",
+        "meaning": "Dedi"
+      },
+      {
+        "word": "قُلْ",
+        "meaning": "De!"
+      },
+      {
+        "word": "يَقُولُ",
+        "meaning": "Diyor"
+      },
+      {
+        "word": "قَوْلٌ",
+        "meaning": "Söz"
+      },
+      {
+        "word": "قَالُوا",
+        "meaning": "Dediler"
+      },
+      {
+        "word": "قِيلَ",
+        "meaning": "Denildi"
+      },
+      {
+        "word": "قَائِلُونَ",
+        "meaning": "Söyleyenler"
+      },
+      {
+        "word": "تَقُولُونَ",
+        "meaning": "Diyorsunuz"
+      },
+      {
+        "word": "أَقْوَالَهُمْ",
+        "meaning": "Sözleri (onların)"
+      },
+      {
+        "word": "الْقَوْلَ",
+        "meaning": "Sözü"
+      }
+    ],
     "ayahs": [
       "2:8",
       "2:11",
@@ -11967,10 +13435,39 @@
     "count": 1387
   },
   "أله": {
-    "meaning": "",
-    "meaning_ar": "",
-    "pronunciation": "",
-    "derived": [],
+    "meaning": "Tapmak, ibadet etmek, hayran olmak",
+    "meaning_ar": "العبادة، الحيرة، التعظيم",
+    "pronunciation": "ʾ-l-h",
+    "derived": [
+      {
+        "word": "اللَّهُ",
+        "meaning": "Allah (Yüce Tanrı)"
+      },
+      {
+        "word": "إِلَٰهٌ",
+        "meaning": "İlâh (Tanrı, mabut)"
+      },
+      {
+        "word": "الْإِلَٰهِ",
+        "meaning": "O İlâh (Tanrı)"
+      },
+      {
+        "word": "إِلَٰهَكُمْ",
+        "meaning": "İlâhınız (Sizin Tanrınız)"
+      },
+      {
+        "word": "إِلَٰهِي",
+        "meaning": "İlâhım (Benim Tanrım)"
+      },
+      {
+        "word": "لَا إِلَٰهَ",
+        "meaning": "Hiçbir ilâh (yoktur)"
+      },
+      {
+        "word": "إِلَٰهِ النَّاسِ",
+        "meaning": "İnsanların ilâhı"
+      }
+    ],
     "ayahs": [
       "2:8",
       "2:19",

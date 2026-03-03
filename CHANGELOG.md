@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [0.21.3] - 2025-07-28
+### Düzeltme
+- **Boş Kök Anlamları Tamamlandı**: quran_roots.json'daki 45 boş kök (اله, ربب, علم, كفر, كتب vb.) Gemini AI ile dolduruldu
+  - Tüm meaning, meaning_ar, pronunciation ve derived alanları tamamlandı
+  - En sık geçen kökler dahil (اله=1263, ربب=857, علم=726 geçiş)
+  - `fix_empty_roots.py` scripti oluşturuldu (tekrar kullanılabilir)
+- Etkilenen dosyalar: `Frontend/quran_roots.json`, `DataEngine/quran_roots.json`, `DataEngine/fix_empty_roots.py`
+
 ## [0.21.2] - 2025-07-28
 ### Yeni Özellik
 - **HUD Pinned Tooltip**: HUD listesindeki ayet kartlarına hover yapılınca tooltip HUD'un hemen yanında (sağında) sabit konumda açılıyor
