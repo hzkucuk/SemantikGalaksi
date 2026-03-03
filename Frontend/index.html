@@ -1041,7 +1041,7 @@
         `;
 
         let raycaster = new THREE.Raycaster(); let mouse = new THREE.Vector2();
-        let currentAudio = null; let audioCache = new Map(); let hoverTimeout = null; let lastHoveredId = null;
+        let currentAudio = null; let audioCache = new Map(); let hoverTimeout = null; let lastHoveredId = null; let hudTooltipPinned = false;
         let warpActive = false; let warpProgress = 0; let warpStart = new THREE.Vector3(); let warpEnd = new THREE.Vector3(); let warpTarget = new THREE.Vector3();
         let warpMesh = null; let warpBg = null; let warpSpeed = 1;
         let warpDrift = false; let warpDriftTime = 0; let warpDriftDir = new THREE.Vector3();
@@ -1954,7 +1954,11 @@
             const hTarget = event.target.closest('.ref-hover');
             if (hTarget) {
                 const n = nodes.find(x => x.id === hTarget.dataset.id);
-                if (n) { showTooltip(n, event.clientX, event.clientY); return; }
+                if (n) {
+                    if (hTarget.closest('#hud-panel')) { showHudItemTooltip(n); }
+                    else { showTooltip(n, event.clientX, event.clientY); }
+                    return;
+                }
             }
             const rect = renderer.domElement.getBoundingClientRect();
             mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
@@ -2060,17 +2064,12 @@
             tooltip.style.left = tx + 'px'; tooltip.style.top = ty + 'px';
         };
 
-        const showTooltip = (n, x, y) => {
-            const tooltip = document.getElementById('tooltip');
-            if (lastHoveredId === n.id) { if (!tooltip.matches(':hover')) clampTooltip(tooltip, x, y); return; }
-            lastHoveredId = n.id;
+        const buildTooltipContent = (n, showCloseBtn) => {
             const highlightedText = highlightArabicText(n.text, n.roots);
-            
             const rootsHtml = (n.roots || []).map(r => {
                 const color = getRootCSSColor(r);
                 const info = getRootInfo(r);
                 const meaning = info ? info.meaning : '';
-                const count = info ? info.count : '';
                 return `
                     <div class="mini-root-tag" onclick="toggleRootDetail('${r}', this)" style="color: ${color}; border-color: ${color.replace('hsl', 'hsla').replace(')', ', 0.4)')}">
                         <span class="text-[18px] font-bold">${r}</span>
@@ -2078,8 +2077,9 @@
                         ${meaning ? `<span class="mini-root-meaning">${meaning}</span>` : ''}
                     </div>`;
             }).join('');
-
-            tooltip.innerHTML = `
+            const closeBtn = showCloseBtn ? `<button onclick="event.stopPropagation(); closeHudTooltip()" style="position:absolute;top:10px;right:10px;width:28px;height:28px;border-radius:50%;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:#94a3b8;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:all 0.2s;z-index:10;" onmouseenter="this.style.color='#fff';this.style.borderColor='#00f2ff';this.style.background='rgba(0,242,255,0.15)'" onmouseleave="this.style.color='#94a3b8';this.style.borderColor='rgba(255,255,255,0.15)';this.style.background='rgba(255,255,255,0.05)'">✕</button>` : '';
+            return `
+                ${closeBtn}
                 <div class='tooltip-header'><span class='text-[10px] font-black text-cyan-400 uppercase tracking-widest italic'>${getSurahTR(n.id)} ${n.id.split(':')[1]}</span></div>
                 <p class='text-right arabic-text text-xl text-white mb-2' dir='rtl' style='word-break:break-word;overflow-wrap:break-word;'>${highlightedText}</p>
                 <div class="flex flex-wrap gap-1 mb-1">
@@ -2089,10 +2089,48 @@
                 <div class='h-px w-full bg-cyan-400/20 my-3'></div>
                 <p class='text-[13px] leading-relaxed text-slate-300 italic' style='word-break:break-word;overflow-wrap:break-word;'>${n.translation}</p>
             `;
+        };
+
+        const showTooltip = (n, x, y) => {
+            const tooltip = document.getElementById('tooltip');
+            if (lastHoveredId === n.id) { if (!tooltip.matches(':hover')) clampTooltip(tooltip, x, y); return; }
+            hudTooltipPinned = false;
+            lastHoveredId = n.id;
+            tooltip.innerHTML = buildTooltipContent(n, false);
             tooltip.style.display = 'block';
             tooltip.style.pointerEvents = 'auto';
             clampTooltip(tooltip, x, y);
         };
+
+        const showHudItemTooltip = (n) => {
+            const tooltip = document.getElementById('tooltip');
+            const hudPanel = document.getElementById('hud-panel');
+            if (lastHoveredId === n.id && hudTooltipPinned) return;
+            hudTooltipPinned = true;
+            lastHoveredId = n.id;
+            tooltip.innerHTML = buildTooltipContent(n, true);
+            tooltip.style.display = 'block';
+            tooltip.style.pointerEvents = 'auto';
+            const hr = hudPanel.getBoundingClientRect();
+            const vw = window.innerWidth;
+            const vh = window.innerHeight;
+            let tx, ty;
+            if (hr.right + 440 < vw) {
+                tx = hr.right + 12;
+            } else if (hr.left > 440) {
+                tx = hr.left - tooltip.offsetWidth - 12;
+            } else {
+                tx = Math.max(16, (vw - 420) / 2);
+            }
+            ty = hr.top + 60;
+            const th = tooltip.offsetHeight;
+            if (ty + th > vh - 16) ty = vh - th - 16;
+            if (ty < 16) ty = 16;
+            if (tx < 16) tx = 16;
+            tooltip.style.left = tx + 'px';
+            tooltip.style.top = ty + 'px';
+        };
+        window.showHudItemTooltip = showHudItemTooltip;
         const showLineTooltip = (pair, x, y) => {
             const tooltip = document.getElementById('tooltip');
             const rootColor = getRootCSSColor(pair.root);
@@ -2127,8 +2165,11 @@
             clampTooltip(tooltip, x, y);
         };
 
-        const hideTooltip = () => { const t = document.getElementById('tooltip'); t.style.display = 'none'; t.style.pointerEvents = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); stopAudio(); };
+        const hideTooltip = () => { if (hudTooltipPinned) return; const t = document.getElementById('tooltip'); t.style.display = 'none'; t.style.pointerEvents = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); stopAudio(); };
         window.hideTooltip = hideTooltip;
+
+        const closeHudTooltip = () => { hudTooltipPinned = false; const t = document.getElementById('tooltip'); t.style.display = 'none'; t.style.pointerEvents = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); stopAudio(); };
+        window.closeHudTooltip = closeHudTooltip;
 
         const toggleRootDetail = (root, el) => {
             const container = document.getElementById('root-detail-container');
@@ -2846,7 +2887,7 @@ Türkçe yaz, kısa ve öz tut.`;
                 btn.innerHTML = '<span class="text-lg">🤖</span> Yapay Zekâ Analizi';
             }
         };
-        document.getElementById('close-hud').onclick = () => { document.getElementById('hud-panel').classList.add('hidden'); stopAudio(); };
+        document.getElementById('close-hud').onclick = () => { document.getElementById('hud-panel').classList.add('hidden'); stopAudio(); closeHudTooltip(); };
         window.onresize = () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();

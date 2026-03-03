@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [0.21.2] - 2025-07-28
+### Yeni Özellik
+- **HUD Pinned Tooltip**: HUD listesindeki ayet kartlarına hover yapılınca tooltip HUD'un hemen yanında (sağında) sabit konumda açılıyor
+  - Tooltip ekranda sabit kalıyor, fare ayrılınca kapanmıyor
+  - ✕ kapatma butonu eklendi (hover efektli)
+  - Fare başka bir ayet kartına geçince tooltip içeriği otomatik güncelleniyor
+  - HUD kapatıldığında pinned tooltip da otomatik kapanıyor
+  - 3D sahne üzerindeki normal tooltip davranışı aynen korunuyor
+  - `buildTooltipContent()` helper ile DRY refactor: tooltip HTML tek noktadan üretiliyor
+- Etkilenen dosyalar: `Frontend/index.html`
+
 ## [0.21.1] - 2025-07-28
 ### Düzeltme
 - **HUD Liste Kök Tag Template**: HUD içindeki ilişkili ayet kartlarındaki kök etiketleri, tooltip'teki template ile aynı hale getirildi
