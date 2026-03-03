@@ -907,6 +907,7 @@
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
                 color += uColor * rim * 2.2;
+                color *= 2.0;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
@@ -1006,6 +1007,7 @@
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
                 color += vColor * rim * 2.2;
+                color *= 2.0;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
@@ -1346,7 +1348,7 @@
                 new THREE.Vector2(window.innerWidth, window.innerHeight),
                 1.5,  // strength
                 0.6,  // radius
-                0.9   // threshold (i.html ile aynı — HDR > 1.0 değerler yakalanır)
+                0.3   // threshold — tüm renkler bloom'a girsin (mor/mavi dahil)
             );
             composer.addPass(bloomPass);
 
