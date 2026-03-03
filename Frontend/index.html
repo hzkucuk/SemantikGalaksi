@@ -1001,12 +1001,12 @@
                 float filaments = solarFilaments(p * 2.2 - vec3(t * 1.5));
                 vec3 darkCore = vColor * 0.25;
                 vec3 plasma = vColor;
-                vec3 whiteHot = mix(vColor, vec3(1.0), 0.7);
+                vec3 whiteHot = mix(vColor, vec3(1.0), 0.3);
                 vec3 color = mix(darkCore, plasma, n * 0.6 + 0.4);
                 color = mix(color, whiteHot, pow(filaments, 3.8) * 1.1);
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
                 float rim = pow(1.0 - dotNV, 2.5);
-                color += vColor * rim * 2.2;
+                color += vColor * rim * 1.2;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
