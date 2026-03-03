@@ -932,7 +932,7 @@
                 float n = fbm(vWorldPos * 8.0 - vec3(time * 0.35));
                 float detail = ridge(snoise(vWorldPos * 18.0 + vec3(time * 0.5)));
                 float intensity = falloff * (0.3 + n * 0.4 + detail * 0.3);
-                gl_FragColor = vec4(uColor * 3.5, intensity * 0.08);
+                gl_FragColor = vec4(uColor * 2.5, intensity * 0.5);
             }
         `;
 
@@ -953,8 +953,8 @@
             varying vec3 vViewDir;
             void main() {
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
-                float intensity = pow(1.0 - dotNV, 4.0);
-                gl_FragColor = vec4(uColor, intensity * 0.06);
+                float intensity = pow(1.0 - dotNV, 2.5);
+                gl_FragColor = vec4(uColor * 1.2, intensity * 0.35);
             }
         `;
 
@@ -1805,7 +1805,7 @@
                         transparent: true,
                         depthWrite: false
                     });
-                    const outerMesh = new THREE.Mesh(new THREE.SphereGeometry(2800, 32, 32), outerMat);
+                    const outerMesh = new THREE.Mesh(new THREE.SphereGeometry(4000, 32, 32), outerMat);
                     outerMesh.renderOrder = 0;
                     g.add(outerMesh);
 
