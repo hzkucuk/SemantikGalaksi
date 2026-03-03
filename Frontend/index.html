@@ -958,6 +958,53 @@
             }
         `;
 
+        // Ayah güneş shader (InstancedMesh desteği, hafifletilmiş 3-octave noise)
+        const ayahSunVS = `
+            varying vec3 vNormal;
+            varying vec3 vPosition;
+            varying vec3 vViewDir;
+            varying vec3 vColor;
+            void main() {
+                #ifdef USE_INSTANCING_COLOR
+                    vColor = instanceColor;
+                #else
+                    vColor = vec3(1.0);
+                #endif
+                vPosition = position;
+                #ifdef USE_INSTANCING
+                    vec4 mvPosition = modelViewMatrix * instanceMatrix * vec4(position, 1.0);
+                #else
+                    vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                #endif
+                vNormal = normalize(normalMatrix * normal);
+                vViewDir = normalize(-mvPosition.xyz);
+                gl_Position = projectionMatrix * mvPosition;
+            }
+        `;
+        const ayahSunFS = `
+            uniform float time;
+            varying vec3 vNormal;
+            varying vec3 vPosition;
+            varying vec3 vViewDir;
+            varying vec3 vColor;
+            ` + noiseShaderCode + `
+            float fbm3(vec3 p) {
+                float v = 0.0; float a = 0.5;
+                for (int i = 0; i < 3; i++) { v += a * snoise(p); p *= 2.1; a *= 0.5; }
+                return v;
+            }
+            void main() {
+                vec3 p = normalize(vPosition) * 0.9;
+                float t = time * 0.15;
+                float n = fbm3(p + vec3(t));
+                vec3 color = mix(vColor * 0.3, vColor, n * 0.5 + 0.55);
+                float dotNV = max(dot(vNormal, vViewDir), 0.0);
+                float rim = pow(1.0 - dotNV, 2.0);
+                color += vColor * rim * 1.5;
+                gl_FragColor = vec4(color, 1.0);
+            }
+        `;
+
         let raycaster = new THREE.Raycaster(); let mouse = new THREE.Vector2();
         let currentAudio = null; let audioCache = new Map(); let hoverTimeout = null; let lastHoveredId = null;
         let warpActive = false; let warpProgress = 0; let warpStart = new THREE.Vector3(); let warpEnd = new THREE.Vector3(); let warpTarget = new THREE.Vector3();
@@ -1805,16 +1852,13 @@
             lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: lineOpacity }));
             lineSegments.renderOrder = 1; scene.add(lineSegments);
 
-            // Ayet küreleri (surah rengine göre renk + yüksek kalite)
-            const ayahGeo = new THREE.SphereGeometry(400, 48, 48);
-            const _ac = document.createElement('canvas'); _ac.width = 128; _ac.height = 128;
-            const _ax = _ac.getContext('2d');
-            const _ag = _ax.createRadialGradient(64, 64, 0, 64, 64, 64);
-            _ag.addColorStop(0, '#ffffff'); _ag.addColorStop(0.5, '#fff4e0'); _ag.addColorStop(1, '#ffcc66');
-            _ax.fillStyle = _ag; _ax.fillRect(0, 0, 128, 128);
-            const ayahBaseTex = new THREE.CanvasTexture(_ac);
-            ayahBaseTex.wrapS = ayahBaseTex.wrapT = THREE.RepeatWrapping;
-            const ayahMat = new THREE.MeshBasicMaterial({ map: ayahBaseTex });
+            // Ayet küreleri (surah rengine göre renk + GLSL animasyon)
+            const ayahGeo = new THREE.SphereGeometry(400, 24, 24);
+            const ayahMat = new THREE.ShaderMaterial({
+                uniforms: { time: { value: 0.0 } },
+                vertexShader: ayahSunVS,
+                fragmentShader: ayahSunFS
+            });
             ayahMesh = new THREE.InstancedMesh(ayahGeo, ayahMat, ayahNodes.length);
             ayahMesh.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(ayahNodes.length * 3), 3);
             const dum = new THREE.Object3D();
@@ -2365,10 +2409,9 @@
                     });
                 });
 
-                // Ayet node'larını döndür (UV offset ile)
-                if (ayahMesh && ayahMesh.material.map) {
-                    ayahMesh.material.map.offset.x = elapsed * 0.05;
-                    ayahMesh.material.map.offset.y = Math.sin(elapsed * 0.08) * 0.1;
+                // Ayet shader time güncelle
+                if (ayahMesh && ayahMesh.material.uniforms && ayahMesh.material.uniforms.time) {
+                    ayahMesh.material.uniforms.time.value = elapsed;
                 }
 
                 // Yıldız alanı: sensör zamanı güncelle (dönüş yok — uzayda sabit referans)
