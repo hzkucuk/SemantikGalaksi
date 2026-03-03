@@ -136,6 +136,13 @@
         .root-derived-item:last-child { border-bottom: none; }
         .root-derived-word { font-size: 16px; font-weight: 700; direction: rtl; }
         .root-derived-meaning { color: #94a3b8; font-size: 11px; font-family: 'Inter', sans-serif; }
+        .hud-root-detail-panel {
+            margin-top: 8px; padding: 12px; border-radius: 12px;
+            background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.08);
+            animation: rootDetailIn 0.2s ease-out;
+        }
+        .hud-root-detail-panel .root-derived-item { padding: 5px 0; }
+        .hud-root-detail-panel .root-derived-word { font-size: 18px; }
 
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-thumb { background: #00f2ff; border-radius: 10px; }
@@ -2142,6 +2149,40 @@
         };
         window.toggleRootDetail = toggleRootDetail;
 
+        const toggleHudRootDetail = (root, el) => {
+            const existing = el.parentElement.querySelector('.hud-root-detail-panel');
+            // Önceki açık panelleri kapat
+            document.querySelectorAll('.hud-root-detail-panel').forEach(p => p.remove());
+            if (existing) return; // Aynı köke tekrar tıklandıysa kapat
+            const info = rootDictionary[root];
+            const color = getRootCSSColor(root);
+            const panel = document.createElement('div');
+            panel.className = 'hud-root-detail-panel';
+            panel.style.borderColor = color.replace('hsl','hsla').replace(')',', 0.2)');
+            if (!info) {
+                panel.innerHTML = `<span style="color:#64748b;font-size:11px;">Bu kök için detay bilgisi henüz yüklenmedi.</span>`;
+            } else {
+                const derivedHtml = (info.derived || []).map(d => `
+                    <div class="root-derived-item">
+                        <span class="root-derived-word" style="color:${color}">${d.word}</span>
+                        <span class="root-derived-meaning">${d.meaning}</span>
+                    </div>`).join('');
+                panel.innerHTML = `
+                    <div class="root-detail-title" style="color:${color}">${root} · ${info.meaning || ''}</div>
+                    ${info.meaning_ar ? `<div style="font-size:14px;color:#e2e8f0;direction:rtl;margin-bottom:6px;">${info.meaning_ar}</div>` : ''}
+                    ${info.count ? `<div style="font-size:10px;color:#64748b;margin-bottom:8px;">Kur'anda ${info.count} yerde geçiyor</div>` : ''}
+                    ${derivedHtml ? `<div style="font-size:10px;font-weight:700;color:#00f2ff;margin-bottom:4px;letter-spacing:0.08em;">TÜREMİŞ KELİMELER</div>${derivedHtml}` : ''}`;
+            }
+            // Paneli tıklanan elementin ebeveynine ekle (kartın veya root container'ın altına)
+            const container = el.closest('.ayah-list-item') || el.closest('#hud-roots')?.parentElement;
+            if (container) {
+                container.insertAdjacentElement('afterend', panel);
+            } else {
+                el.parentElement.appendChild(panel);
+            }
+        };
+        window.toggleHudRootDetail = toggleHudRootDetail;
+
         let currentHudNode = null;
         let activeSpeakBtn = null;
 
@@ -2262,7 +2303,11 @@
                 const c = getRootCSSColor(r); const badge = document.createElement('div'); badge.className = "root-badge";
                 badge.style.color = c; badge.style.borderColor = c.replace('hsl', 'hsla').replace(')', ', 0.4)');
                 badge.style.backgroundColor = c.replace('hsl', 'hsla').replace(')', ', 0.1)');
-                badge.innerHTML = `<span dir="rtl" class="text-2xl font-bold">${r}</span><span class="root-pron">${getRootPron(r)}</span>`;
+                badge.style.cursor = 'pointer';
+                const info = rootDictionary[r];
+                const meaning = info ? info.meaning : '';
+                badge.innerHTML = `<span dir="rtl" class="text-2xl font-bold">${r}</span><span class="root-pron">${getRootPron(r)}</span>${meaning ? `<span class="mini-root-meaning" style="font-size:10px;margin-top:2px;">${meaning}</span>` : ''}`;
+                badge.addEventListener('click', function() { toggleHudRootDetail(r, this); });
                 rootsCont.appendChild(badge);
             });
 
@@ -2346,11 +2391,17 @@
                                 </div>
                             </div>
                             <div class="flex flex-wrap gap-1">
-                                ${shared.map(sr => `
-                                    <div class="mini-root-tag" style="color: ${getRootCSSColor(sr)}; border-color: ${getRootCSSColor(sr).replace('hsl', 'hsla').replace(')', ', 0.4)')}">
+                                ${shared.map(sr => {
+                                    const _c = getRootCSSColor(sr);
+                                    const _info = rootDictionary[sr];
+                                    const _m = _info ? _info.meaning : '';
+                                    return `
+                                    <div class="mini-root-tag" onclick="event.stopPropagation(); toggleHudRootDetail('${sr}', this)" style="color: ${_c}; border-color: ${_c.replace('hsl', 'hsla').replace(')', ', 0.4)')}">
                                         <span>${sr}</span>
                                         <span class="mini-root-pron">${getRootPron(sr)}</span>
-                                    </div>`).join('')}
+                                        ${_m ? `<span class="mini-root-meaning">${_m}</span>` : ''}
+                                    </div>`;
+                                }).join('')}
                             </div>
                         </div>`;
                 });

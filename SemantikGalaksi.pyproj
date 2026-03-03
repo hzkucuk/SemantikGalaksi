@@ -22,19 +22,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DataEngine\desktop_app.py" />
+    <Compile Include="DataEngine\gemini_client.py" />
     <Compile Include="DataEngine\generate_besmele_audio.py" />
-    <Compile Include="DataEngine\quran_api_enricher.py" />
+    <Compile Include="DataEngine\run_pipeline.py" />
+    <Compile Include="DataEngine\step1_fetch_quran.py" />
+    <Compile Include="DataEngine\step2_extract_roots.py" />
+    <Compile Include="DataEngine\step3_build_root_dict.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".github\workflows\deploy.yml" />
     <Content Include="build_exe.bat" />
     <Content Include="CHANGELOG.md" />
     <Content Include="DataEngine\config.json" />
+    <Content Include="DataEngine\README.md" />
     <Content Include="FEATURES.md" />
     <Content Include="Frontend\index.html" />
     <Content Include="Frontend\quran_data.json" />
     <Content Include="DataEngine\requirements.txt" />
     <Content Include="DataEngine\.env" />
+    <Content Include="Frontend\quran_roots.json" />
     <Content Include="Frontend\warp.html" />
     <Content Include="i.html" />
     <Content Include="index.html" />
