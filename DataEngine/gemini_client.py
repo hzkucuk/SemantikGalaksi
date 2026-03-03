@@ -24,9 +24,13 @@ load_dotenv()
 
 API_KEY    = os.getenv("API_KEY")
 MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
-API_URL    = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={API_KEY}"
 
 RETRY_DELAYS = [1, 2, 4, 8, 16]
+
+
+def _api_url():
+    """Her çağrıda güncel API URL'sini döner."""
+    return f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={API_KEY}"
 
 
 # ── Yardımcı Fonksiyonlar ──────────────────────────────────
@@ -76,7 +80,7 @@ async def call_gemini(session, prompt, semaphore, response_mime="application/jso
     async with semaphore:
         for delay in RETRY_DELAYS:
             try:
-                async with session.post(API_URL, json=payload, timeout=30) as response:
+                async with session.post(_api_url(), json=payload, timeout=30) as response:
                     if response.status == 200:
                         result = await response.json()
                         return parse_gemini_result(result)

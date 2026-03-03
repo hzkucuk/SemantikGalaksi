@@ -31,6 +31,9 @@ import aiohttp
 import json
 import sys
 
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 import gemini_client as gemini
 
 # ── Dosya Yolları ───────────────────────────────────────────
