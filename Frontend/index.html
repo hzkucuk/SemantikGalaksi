@@ -988,19 +988,19 @@
             varying vec3 vViewDir;
             varying vec3 vColor;
             ` + noiseShaderCode + `
-            float fbm3(vec3 p) {
-                float v = 0.0; float a = 0.5;
-                for (int i = 0; i < 3; i++) { v += a * snoise(p); p *= 2.1; a *= 0.5; }
-                return v;
-            }
             void main() {
                 vec3 p = normalize(vPosition) * 0.9;
-                float t = time * 0.15;
-                float n = fbm3(p + vec3(t));
-                vec3 color = mix(vColor * 0.3, vColor, n * 0.5 + 0.55);
+                float t = time * 0.12;
+                float n = fbm(p + vec3(t));
+                float filaments = solarFilaments(p * 2.2 - vec3(t * 1.5));
+                vec3 darkCore = vColor * 0.25;
+                vec3 plasma = vColor;
+                vec3 whiteHot = mix(vColor, vec3(1.0), 0.7);
+                vec3 color = mix(darkCore, plasma, n * 0.6 + 0.4);
+                color = mix(color, whiteHot, pow(filaments, 3.8) * 1.1);
                 float dotNV = max(dot(vNormal, vViewDir), 0.0);
-                float rim = pow(1.0 - dotNV, 2.0);
-                color += vColor * rim * 1.5;
+                float rim = pow(1.0 - dotNV, 2.5);
+                color += vColor * rim * 2.2;
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
