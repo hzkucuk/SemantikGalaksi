@@ -1233,6 +1233,10 @@
             if(!root) return "";
             return root.split('').filter(c => c !== ' ').map(char => arabicToLatinMap[char] || char).join('-');
         };
+        const getRootInfo = (root) => {
+            if (!root) return null;
+            return rootDictionary[root] || rootDictionary[root.replace(/\s/g, '')] || null;
+        };
 
         const highlightArabicText = (text, roots) => {
             if (!roots || roots.length === 0) return text;
@@ -2064,7 +2068,7 @@
             
             const rootsHtml = (n.roots || []).map(r => {
                 const color = getRootCSSColor(r);
-                const info = rootDictionary[r];
+                const info = getRootInfo(r);
                 const meaning = info ? info.meaning : '';
                 const count = info ? info.count : '';
                 return `
@@ -2107,7 +2111,7 @@
                 else { farId = pair.n1; farName = name1; nearName = name2; }
             } else { farId = pair.n2; farName = name2; nearName = name1; }
             lastHoveredId = 'line_' + pair.n1 + '_' + pair.n2;
-            const rootInfo = rootDictionary[pair.root];
+            const rootInfo = getRootInfo(pair.root);
             const rootMeaning = rootInfo ? rootInfo.meaning : '';
             tooltip.innerHTML = `
                 <div style="font-size:11px;font-weight:900;color:#00f2ff;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px;">Kök Bağlantısı</div>
@@ -2131,7 +2135,7 @@
             if (!container) return;
             if (container.dataset.activeRoot === root) { container.innerHTML = ''; container.dataset.activeRoot = ''; return; }
             container.dataset.activeRoot = root;
-            const info = rootDictionary[root];
+            const info = getRootInfo(root);
             if (!info) { container.innerHTML = `<div class="root-detail-panel"><span style="color:#64748b;font-size:11px;">Bu kök için detay bilgisi henüz yüklenmedi.</span></div>`; return; }
             const color = getRootCSSColor(root);
             const derivedHtml = (info.derived || []).map(d => `
@@ -2154,7 +2158,7 @@
             // Önceki açık panelleri kapat
             document.querySelectorAll('.hud-root-detail-panel').forEach(p => p.remove());
             if (existing) return; // Aynı köke tekrar tıklandıysa kapat
-            const info = rootDictionary[root];
+            const info = getRootInfo(root);
             const color = getRootCSSColor(root);
             const panel = document.createElement('div');
             panel.className = 'hud-root-detail-panel';
@@ -2304,7 +2308,7 @@
                 badge.style.color = c; badge.style.borderColor = c.replace('hsl', 'hsla').replace(')', ', 0.4)');
                 badge.style.backgroundColor = c.replace('hsl', 'hsla').replace(')', ', 0.1)');
                 badge.style.cursor = 'pointer';
-                const info = rootDictionary[r];
+                const info = getRootInfo(r);
                 const meaning = info ? info.meaning : '';
                 badge.innerHTML = `<span dir="rtl" class="text-2xl font-bold">${r}</span><span class="root-pron">${getRootPron(r)}</span>${meaning ? `<span class="mini-root-meaning" style="font-size:10px;margin-top:2px;">${meaning}</span>` : ''}`;
                 badge.addEventListener('click', function() { toggleHudRootDetail(r, this); });
@@ -2393,7 +2397,7 @@
                             <div class="flex flex-wrap gap-1">
                                 ${shared.map(sr => {
                                     const _c = getRootCSSColor(sr);
-                                    const _info = rootDictionary[sr];
+                                    const _info = getRootInfo(sr);
                                     const _m = _info ? _info.meaning : '';
                                     return `
                                     <div class="mini-root-tag" onclick="event.stopPropagation(); toggleHudRootDetail('${sr}', this)" style="color: ${_c}; border-color: ${_c.replace('hsl', 'hsla').replace(')', ', 0.4)')}">
