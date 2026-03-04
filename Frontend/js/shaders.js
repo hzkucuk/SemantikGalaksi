@@ -79,10 +79,9 @@ var turkishFlagCode = `
         float h = clamp(dot(p, ba) / dot(ba, ba), 0.0, r);
         return length(p - ba * h) * sign(p.y * ba.x - p.x * ba.y);
     }
-    float turkishFlag(vec3 pos, float t) {
-        vec3 n = normalize(pos);
-        vec2 uv = n.xy * 0.55;
-        float facing = smoothstep(0.0, 0.25, n.z);
+    float turkishFlag(vec3 viewNorm) {
+        vec2 uv = viewNorm.xy * 0.55;
+        float facing = smoothstep(0.0, 0.25, viewNorm.z);
         float outer = sdCircle2D(uv - vec2(-0.04, 0.0), 0.28);
         float inner = sdCircle2D(uv - vec2(0.07, 0.0), 0.22);
         float crescent = max(outer, -inner);
@@ -126,7 +125,7 @@ var sunBodyFS = `
         float dotNV = max(dot(vNormal, vViewDir), 0.0);
         float rim = pow(1.0 - dotNV, 2.5);
         color += uColor * rim * 2.2;
-        float flag = turkishFlag(vPosition, time);
+        float flag = turkishFlag(vNormal);
         float pulse = 0.9 + 0.1 * sin(time * 0.4);
         vec3 flagGlow = mix(uColor * 1.5, vec3(1.0, 0.98, 0.95), 0.5);
         color = mix(color, flagGlow, flag * 0.55 * pulse);
@@ -177,7 +176,7 @@ var ayahSunFS = `
         float dotNV = max(dot(vNormal, vViewDir), 0.0);
         float rim = pow(1.0 - dotNV, 2.5);
         color += vColor * rim * 2.2;
-        float flag = turkishFlag(vPosition, time);
+        float flag = turkishFlag(vNormal);
         float pulse = 0.9 + 0.1 * sin(time * 0.4);
         vec3 flagGlow = mix(vColor * 1.5, vec3(1.0, 0.98, 0.95), 0.5);
         color = mix(color, flagGlow, flag * 0.55 * pulse);
