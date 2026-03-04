@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.21.5] - 2025-07-28
+### Düzeltme
+- **GPU Bellek Sızıntısı**: `processData()` ve `updateHighlightLines()` — layout/dataset değiştirildiğinde eski Three.js geometry, material ve texture'lar dispose edilmiyordu → artık düzgün temizleniyor
+### Temizlik
+- **Kullanılmayan değişken kaldırıldı**: `ayahIndexMap` (tanımlı ama hiç referans edilmiyordu)
+- **Kullanılmayan shader'lar kaldırıldı**: `coronaVS/FS`, `outerGlowVS/FS` (sahneden daha önce çıkarılmıştı ama 50 satırlık tanımları duruyordu)
+
 ## [0.21.4] - 2025-07-28
 ### Düzeltme
 - **Desktop Çift Ses Sorunu**: Python winsound + HTML `<audio>` aynı anda çalıyordu → Desktop'ta HTML audio atlanıyor, sadece winsound kullanılıyor
