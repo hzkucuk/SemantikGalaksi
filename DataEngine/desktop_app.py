@@ -16,10 +16,13 @@ import datetime
 
 # --- AYARLAR ---
 def _get_base_dir():
-    """PyInstaller ile paketlenmiş veya normal çalışmaya göre kök dizini belirler."""
+    """PyInstaller veya cx_Freeze ile paketlenmiş ya da normal çalışmaya göre kök dizini belirler."""
     if getattr(sys, 'frozen', False):
-        # PyInstaller ile paketlenmiş EXE: bundle edilen dosyalar _MEIPASS altında
-        return sys._MEIPASS
+        if hasattr(sys, '_MEIPASS'):
+            # PyInstaller: bundle edilen dosyalar _MEIPASS altında
+            return sys._MEIPASS
+        # cx_Freeze: dosyalar EXE'nin yanında
+        return os.path.dirname(os.path.abspath(sys.executable))
     # Geliştirme modu: DataEngine klasörünün üst dizini (proje kökü)
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
