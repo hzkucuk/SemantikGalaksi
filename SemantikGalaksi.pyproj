@@ -38,6 +38,26 @@
     <Content Include="DataEngine\README.md" />
     <Content Include="FEATURES.md" />
     <Content Include="Frontend\index.html" />
+    <Content Include="Frontend\js\audio.js" />
+    <Content Include="Frontend\js\auth.js" />
+    <Content Include="Frontend\js\constants.js" />
+    <Content Include="Frontend\js\data-loader.js" />
+    <Content Include="Frontend\js\data-store.js" />
+    <Content Include="Frontend\js\datasets.js" />
+    <Content Include="Frontend\js\highlight.js" />
+    <Content Include="Frontend\js\hud.js" />
+    <Content Include="Frontend\js\interaction.js" />
+    <Content Include="Frontend\js\key-manager.js" />
+    <Content Include="Frontend\js\loading.js" />
+    <Content Include="Frontend\js\notes.js" />
+    <Content Include="Frontend\js\scene-init.js" />
+    <Content Include="Frontend\js\search.js" />
+    <Content Include="Frontend\js\settings.js" />
+    <Content Include="Frontend\js\shaders.js" />
+    <Content Include="Frontend\js\state.js" />
+    <Content Include="Frontend\js\tooltip.js" />
+    <Content Include="Frontend\js\warp.js" />
+    <Content Include="Frontend\js\websocket.js" />
     <Content Include="Frontend\quran_data.json" />
     <Content Include="DataEngine\requirements.txt" />
     <Content Include="DataEngine\.env" />
@@ -55,6 +75,7 @@
     <Folder Include=".github\workflows\" />
     <Folder Include="DataEngine\" />
     <Folder Include="Frontend\" />
+    <Folder Include="Frontend\js\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

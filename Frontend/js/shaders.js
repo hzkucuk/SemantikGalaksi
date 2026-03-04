@@ -62,6 +62,40 @@ var noiseShaderCode = `
     }
 `;
 
+// Türk Bayrağı Ay-Yıldız SDF kodu
+var turkishFlagCode = `
+    float sdCircle2D(vec2 p, float r) {
+        return length(p) - r;
+    }
+    float sdStar5(vec2 p, float r, float rf) {
+        const vec2 k1 = vec2(0.809016994, -0.587785252);
+        const vec2 k2 = vec2(-0.809016994, -0.587785252);
+        p.x = abs(p.x);
+        p -= 2.0 * max(dot(k1, p), 0.0) * k1;
+        p -= 2.0 * max(dot(k2, p), 0.0) * k2;
+        p.x = abs(p.x);
+        p.y -= r;
+        vec2 ba = rf * vec2(-k1.y, k1.x) - vec2(0.0, 1.0);
+        float h = clamp(dot(p, ba) / dot(ba, ba), 0.0, r);
+        return length(p - ba * h) * sign(p.y * ba.x - p.x * ba.y);
+    }
+    float turkishFlag(vec3 pos, float t) {
+        vec3 n = normalize(pos);
+        float ra = t * 0.08;
+        float ca = cos(ra); float sa = sin(ra);
+        vec3 rn = vec3(ca * n.x + sa * n.z, n.y, -sa * n.x + ca * n.z);
+        vec2 uv = rn.xy;
+        float facing = smoothstep(0.0, 0.25, rn.z);
+        float outer = sdCircle2D(uv - vec2(-0.04, 0.0), 0.28);
+        float inner = sdCircle2D(uv - vec2(0.07, 0.0), 0.22);
+        float crescent = max(outer, -inner);
+        float star = sdStar5(uv - vec2(0.20, 0.0), 0.09, 0.42);
+        float d = min(crescent, star);
+        float shape = 1.0 - smoothstep(-0.01, 0.035, d);
+        return shape * facing;
+    }
+`;
+
 // Güneş gövdesi shader (prosedürel plazma + filament)
 var sunBodyVS = `
     varying vec3 vNormal;
@@ -81,7 +115,7 @@ var sunBodyFS = `
     varying vec3 vNormal;
     varying vec3 vPosition;
     varying vec3 vViewDir;
-    ` + noiseShaderCode + `
+    ` + noiseShaderCode + turkishFlagCode + `
     void main() {
         vec3 p = normalize(vPosition) * 0.9;
         float t = time * 0.12;
@@ -95,6 +129,10 @@ var sunBodyFS = `
         float dotNV = max(dot(vNormal, vViewDir), 0.0);
         float rim = pow(1.0 - dotNV, 2.5);
         color += uColor * rim * 2.2;
+        float flag = turkishFlag(vPosition, time);
+        float pulse = 0.9 + 0.1 * sin(time * 0.4);
+        vec3 flagGlow = mix(uColor * 1.5, vec3(1.0, 0.98, 0.95), 0.5);
+        color = mix(color, flagGlow, flag * 0.55 * pulse);
         gl_FragColor = vec4(color, 1.0);
     }
 `;
@@ -128,7 +166,7 @@ var ayahSunFS = `
     varying vec3 vPosition;
     varying vec3 vViewDir;
     varying vec3 vColor;
-    ` + noiseShaderCode + `
+    ` + noiseShaderCode + turkishFlagCode + `
     void main() {
         vec3 p = normalize(vPosition) * 0.9;
         float t = time * 0.12;
@@ -142,6 +180,10 @@ var ayahSunFS = `
         float dotNV = max(dot(vNormal, vViewDir), 0.0);
         float rim = pow(1.0 - dotNV, 2.5);
         color += vColor * rim * 2.2;
+        float flag = turkishFlag(vPosition, time);
+        float pulse = 0.9 + 0.1 * sin(time * 0.4);
+        vec3 flagGlow = mix(vColor * 1.5, vec3(1.0, 0.98, 0.95), 0.5);
+        color = mix(color, flagGlow, flag * 0.55 * pulse);
         gl_FragColor = vec4(color, 1.0);
     }
 `;

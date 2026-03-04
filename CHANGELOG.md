@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [0.22.1] - 2025-07-28
+### Görsel
+- **Türk Bayrağı Ay-Yıldız SDF**: Tüm node (sure/ayet) küre shader'larına SDF tabanlı hilal ve 5 köşeli yıldız gömüldü
+- Hilal: iki ofsetli daire farkı (max/negate), Yıldız: Inigo Quilez sdStar5 algoritması
+- Y ekseni etrafında yavaş dönüş (`time * 0.08`), ön yarıküre `facing` maskesi
+- Plazma üzerine sıcak beyaz parıltı olarak `mix()` ile harmanlama, hafif `pulse` animasyonu
+- Etkilenen shader'lar: `sunBodyFS` (sure küreleri), `ayahSunFS` (ayet instanced mesh)
+- **Etkilenen dosya:** `Frontend/js/shaders.js`
+
 ## [0.22.0] - 2025-07-28
 ### Mimari
 - **Modülarizasyon**: Monolitik `index.html` (~3774 satır script) 20 ayrı JS dosyasına bölündü (`Frontend/js/`)
