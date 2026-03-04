@@ -1,9 +1,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Three.js-r152-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
+  <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/Sürüm-0.18.0-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/Sürüm-0.23.1-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
 </p>
 
@@ -61,24 +61,51 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ## ✨ Öne Çıkan Özellikler
 
 ### 🌌 3D Uzay Görselleştirmesi
-- **114 sure** = 114 gezegen küresi (prosedürel texture, Fresnel atmosfer glow)
+- **114 sure** = 114 gezegen küresi (prosedürel GLSL güneş simülasyonu, Simplex noise FBM + rim lighting)
 - **6236+ ayet** = her sure etrafında yörüngede dönen uydu küreleri
 - **Kök bağlantıları** = ayetler arası neon ışık çizgileri (AdditiveBlending glow)
 - **4 yerleşim modeli**: Galaksi (Arşimed spirali), Bulutsu (Gauss kümeleri), Küp (3B ızgara), Küre (Fibonacci)
 - **Hyperspace warp**: Sureler arası GPU-hızlandırmalı geçiş (Three.js ShaderMaterial, 8000 yıldız, GLSL streak efekti)
+- **HDR Bloom Pipeline**: UnrealBloomPass + custom ACES tone mapping ShaderPass (strength=0.7, radius=0.6, threshold=0.3)
+- **Fatiha Suresi**: Kırmızı renk vurgusu (ilk sure özel olarak işaretli)
+
+### 🇹🇷 Türk Bayrağı SDF Shader
+- **Hilal + 5 köşeli yıldız**: Tüm küre shader'larına SDF (Signed Distance Field) olarak gömülü
+- Hilal: İki ofsetli daire farkı, Yıldız: Inigo Quilez `sdStar5` algoritması
+- **Kameraya dönük projeksiyon**: View-space `vNormal` ile her açıdan görünür
+- Plazma üzerine sıcak beyaz parıltı olarak `mix()` ile harmanlama, hafif `pulse` animasyonu
+
+### 🌠 Milky Way Panorama Skybox
+- **Gerçek Samanyolu panoraması**: `milkyway.jpg` equirectangular projeksiyon
+- Ters çevrilmiş küre (50M yarıçap, `BackSide`, `depthWrite: false`) ile sonsuz uzay illüzyonu
+- Kamerayı takip eder — her yöne bakıldığında gerçekçi 360° uzay arka planı
+- Mevcut 120K prosedürel yıldızlarla birlikte katmanlı derinlik
 
 ### ⭐ Uzay Gemisi Navigasyon Yıldız Haritası
-- **120.000 yıldız**, J2000 galaktik koordinatlara dayalı dağılım
+- **120.000 prosedürel yıldız**, J2000 galaktik koordinatlara dayalı dağılım
 - **Samanyolu bandı**: Galaktik düzlem (GNP: RA=192.86°, Dec=+27.13°) boyunca yoğunlaşma
 - **Galaktik şişkinlik**: Sagittarius A* yönünde kümelenme
 - **Macellan Bulutları**: Büyük/Küçük uydu galaksi kümeleri
 - **Planck B-V → RGB**: Gerçek yıldız renkleri (O/B mavi → M kırmızı cüce)
 - **Vakum fiziği**: Atmosfer yok → titreşimsiz, iğne ucu kadar keskin noktalar
+- **Milky Way panorama** ile birlikte katmanlı derinlik efekti
 
 ### 🤖 Yapay Zekâ Analizi
 - **Google Gemini 2.5 Flash** entegrasyonu
 - Seçilen ayetin semantik, morfolojik ve tematik AI analizi
 - Uygulama içi API anahtar yönetimi (güvenli Base64 depolama)
+
+### 📝 İki Sekmeli JSON Editör
+- **quran_data.json** ve **quran_roots.json** için ayrı sekmeler
+- Sekmeler arası geçişte içerik korunuyor (cache mekanizması)
+- Sekmeye göre akıllı doğrulama: data sekmesinde ayet sayısı, roots sekmesinde kök sayısı
+- Dışa aktarım: aktif sekmeye göre doğru dosya adı
+- "Dipnot Ekle" butonu yalnızca data sekmesinde görünür
+
+### 🧩 Modüler Mimari (v0.22.0+)
+- Monolitik `index.html` (~3774 satır) → **20 bağımsız JS modülü** (`Frontend/js/`)
+- Bağımlılık sırasına göre `<script>` etiketleriyle yükleme
+- `index.html` artık sadece **~861 satır** (HTML + CSS + script referansları)
 
 ### 👥 Çok Kullanıcılı Gerçek Zamanlı Çalışma
 - **Raw WebSocket** sunucusu (ek bağımlılık gerektirmez)
@@ -119,13 +146,14 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 │                  (pywebview / WebView2)                  │
 ├─────────────────────────────────────────────────────────┤
 │                                                         │
-│   Frontend (index.html)                                 │
-│   ├── Three.js — 3D sahne, kameralar, küreler, çizgiler │
-│   ├── Custom GLSL Shader — yıldız alanı, atmosfer glow  │
-│   ├── Tailwind CSS — UI bileşenleri                     │
-│   ├── Canvas2D — hyperspace warp efekti                 │
-│   ├── WebSocket Client — gerçek zamanlı senkronizasyon  │
-│   └── REST Client — auth, dataset, notes API            │
+│   Frontend (index.html + 20 JS modülü)                   │
+│   ├── Three.js r128 — 3D sahne, kamera, mesh, bloom      │
+│   ├── GLSL Shaders — güneş simülasyonu, Türk bayrağı SDF │
+│   ├── HDR Bloom — UnrealBloomPass + ACES tone mapping    │
+│   ├── Milky Way Skybox — equirectangular panorama        │
+│   ├── Tailwind CSS — UI bileşenleri                      │
+│   ├── WebSocket Client — gerçek zamanlı senkronizasyon   │
+│   └── REST Client — auth, dataset, notes API             │
 │                                                         │
 ├───────────────────── HTTP / WS ─────────────────────────┤
 │                                                         │
@@ -161,10 +189,20 @@ SemantikGalaksi/
 │   ├── generate_besmele_audio.py # Besmele TTS ses üretici
 │   └── quran_api_enricher.py     # Kur'an veri zenginleştirici
 ├── Frontend/
-│   ├── index.html                # Ana arayüz (3D uzay + tüm UI)
-│   ├── warp.html                 # Warp geçiş sayfası
+│   ├── index.html                # Ana arayüz (HTML + CSS + script ref, ~861 satır)
+│   ├── js/                       # 20 modüler JavaScript dosyası
+│   │   ├── state.js              # Paylaşımlı global state
+│   │   ├── shaders.js            # GLSL shader'lar (güneş, Türk bayrağı SDF)
+│   │   ├── constants.js          # Sabitler, sure adları, renk haritaları
+│   │   ├── scene-init.js         # Three.js sahne, bloom, skybox, yıldızlar
+│   │   ├── data-loader.js        # Veri işleme, küre oluşturma
+│   │   ├── warp.js               # Hyperspace warp + animate loop
+│   │   ├── datasets.js           # Veri seti yöneticisi + iki sekmeli editör
+│   │   └── ... (13 modül daha)   # interaction, tooltip, hud, search, vb.
 │   ├── quran_data.json           # Kur'an verileri (sureler, ayetler, kökler)
-│   ├── three.min.js              # Three.js 3D kütüphanesi
+│   ├── quran_roots.json          # Arapça kök sözlüğü (2139 kök)
+│   ├── milkyway.jpg              # Milky Way panorama (705 KB equirectangular)
+│   ├── three.min.js              # Three.js r128
 │   ├── OrbitControls.js          # 3D kamera kontrolü
 │   ├── tailwind.min.js           # Tailwind CSS
 │   ├── besmele.wav               # Besmele ses dosyası
@@ -354,8 +392,10 @@ Tüm endpoint'ler `Authorization: Bearer <token>` header'ı gerektirir (login ha
 ### Frontend
 | Teknoloji | Kullanım |
 |-----------|----------|
-| **Three.js** | 3D sahne, kamera, mesh, partikül sistemi |
-| **Custom GLSL** | Yıldız alanı shader, Fresnel atmosfer glow, hyperspace warp streak efekti |
+| **Three.js r128** | 3D sahne, kamera, mesh, partikül sistemi, HDR bloom pipeline |
+| **Custom GLSL** | Prosedürel güneş simülasyonu (Simplex FBM), Türk bayrağı SDF (hilal + yıldız), hyperspace warp streak |
+| **UnrealBloomPass** | HDR bloom + custom ACES tone mapping ShaderPass |
+| **Milky Way Skybox** | Equirectangular panorama, ters çevrilmiş küre projeksiyon |
 | **Tailwind CSS** | UI bileşenleri, responsive tasarım |
 | **WebSocket API** | Gerçek zamanlı senkronizasyon |
 
@@ -447,25 +487,59 @@ Arka plan yıldız alanı, uzay gemisi navigasyon ekranı estetiğiyle tasarlanm
 - **Frame format**: Opcode + maskeleme + payload
 - **Mesaj tipleri**: `dataset_saved`, `dataset_deleted`, `dataset_renamed`, `dataset_duplicated`, `user_joined`, `user_left`
 
+### HDR Bloom Pipeline
+
+| Aşama | Detay |
+|-------|-------|
+| Renderer | `NoToneMapping`, `HalfFloatType` render target |
+| Bloom | `UnrealBloomPass` — strength=0.7, radius=0.6, threshold=0.3 |
+| Tone mapping | Custom ACES ShaderPass (bloom'dan **sonra** uygulanır) |
+| Exposure | 0.9 |
+
+### Türk Bayrağı SDF (Signed Distance Field)
+
+| Bileşen | Algoritma |
+|---------|-----------|
+| Hilal | İki ofsetli dairenin `max/negate` farkı |
+| Yıldız | Inigo Quilez `sdStar5` algoritması (`rf=0.42`) |
+| Projeksiyon | View-space `vNormal` — kameraya her zaman dönük |
+| Harmanlama | `mix(color, flagGlow, flag * 0.55 * pulse)` — plazma üzerine sıcak beyaz parıltı |
+| Boyut | UV ölçeği `0.55` — küre çapının ~%55'i |
+
+### Milky Way Skybox
+
+| Parametre | Değer |
+|-----------|-------|
+| Kaynak | `milkyway.jpg` equirectangular panorama (705 KB) |
+| Geometri | `SphereGeometry(50M)`, `side: THREE.BackSide` |
+| Render | `depthWrite: false`, `renderOrder: -1` |
+| Takip | Kamera pozisyonuna her frame kopyalanır (sonsuz uzaklık illüzyonu) |
+
 ---
 
 ## 📋 Sürüm Geçmişi
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.23.1** | 2025-07-28 | Milky Way panorama skybox (equirectangular, ters küre) |
+| **0.23.0** | 2025-07-28 | JSON editör iki sekmeli tasarım (data + roots) |
+| **0.22.2** | 2025-07-28 | Kameraya dönük bayrak (vNormal), Fatiha kırmızı renk |
+| **0.22.1** | 2025-07-28 | Türk Bayrağı hilal + yıldız SDF shader'lara gömüldü |
+| **0.22.0** | 2025-07-28 | Modülarizasyon — monolitik HTML → 20 JS modülü |
+| **0.21.5** | 2025-07-28 | GPU bellek sızıntısı düzeltmesi, ölü kod temizliği |
+| **0.21.4** | 2025-07-28 | Desktop çift ses sorunu düzeltmesi |
+| **0.21.3** | 2025-07-28 | 45 boş kök anlamı Gemini AI ile tamamlandı |
+| **0.21.2** | 2025-07-28 | HUD pinned tooltip |
+| **0.21.1** | 2025-07-28 | HUD liste kök tag template düzeltmesi |
+| **0.20.5** | 2025-07-27 | Shader parlaklık dengesi (sure vs ayet) |
+| **0.20.3** | 2025-07-27 | HDR Bloom pipeline (ACES tone mapping düzeltmesi) |
+| **0.20.0** | 2025-07-27 | UnrealBloomPass post-processing eklendi |
+| **0.19.0** | 2025-07-26 | GLSL prosedürel güneş simülasyonu (Simplex FBM) |
 | **0.18.0** | 2025-07-25 | WebGL warp efekti (Canvas2D → Three.js ShaderMaterial) |
 | **0.17.0** | 2025-07-24 | Arapça arama desteği, HUD Arapça klavye, versiyon etiketi |
 | **0.16.4** | 2025-07-23 | Uzay gemisi navigasyon yıldız görünümü |
 | **0.16.0** | 2025-07-23 | Server-Client ağ modu, çevrimiçi kullanıcı paneli |
 | **0.15.0** | 2025-07-23 | EXE dağıtım, PyInstaller, INSTALL.md |
-| **0.14.0** | 2025-01-XX | Prosedürel ayet texture, tooltip düzeltmeleri |
-| **0.13.0** | 2025-01-XX | 4 yerleşim modeli, WYSIWYG not editörü, modern header |
-| **0.12.0** | 2025-01-XX | Neon yükleme ekranı, Besmele TTS sesi |
-| **0.11.0** | 2025-01-XX | WebSocket senkronizasyon, toast bildirimleri |
-| **0.10.0** | 2025-01-XX | Esnek yapılandırma, native dosya indirme |
-| **0.9.0** | — | Kimlik doğrulama, rol sistemi |
-| **0.8.0** | — | Çok kullanıcılı sunucu, REST API |
-| **0.7.0** | — | Kök istatistikleri, JSON editör, veri seti yöneticisi |
 
 Tam sürüm geçmişi için bkz. [CHANGELOG.md](CHANGELOG.md)
 
