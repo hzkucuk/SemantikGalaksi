@@ -1,7 +1,7 @@
 /** SemantikGalaksi — Paylaşılan Durum Değişkenleri */
 
 // Three.js sahne nesneleri
-var scene, camera, renderer, composer, ayahMesh, starField, lineSegments, controls, highlightLines;
+var scene, camera, renderer, composer, ayahMesh, starField, lineSegments, controls, highlightLines, skyMesh;
 
 // Veri yapıları
 var nodes = [];

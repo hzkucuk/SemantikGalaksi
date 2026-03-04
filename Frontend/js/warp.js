@@ -149,6 +149,9 @@ var animate = (now) => {
             starField.material.uniforms.uTime.value = elapsed;
         }
 
+        // Skybox kamerayı takip etsin (sonsuz uzak görünsün)
+        if (skyMesh) skyMesh.position.copy(camera.position);
+
         var camP = camera.position;
         var _proj = new THREE.Vector3();
         var _shown = [];

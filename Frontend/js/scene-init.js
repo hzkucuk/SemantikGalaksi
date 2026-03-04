@@ -6,11 +6,13 @@ var init = () => {
     document.body.appendChild(renderer.domElement);
     controls = new THREE.OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
 
-    // Milky Way equirectangular panorama skybox
+    // Milky Way panorama skybox — ters-çevrilmiş küre
     new THREE.TextureLoader().load('milkyway.jpg', function(tex) {
-        tex.mapping = THREE.EquirectangularReflectionMapping;
-        tex.encoding = THREE.sRGBEncoding;
-        scene.background = tex;
+        var skyGeo = new THREE.SphereGeometry(50000000, 64, 32);
+        var skyMat = new THREE.MeshBasicMaterial({ map: tex, side: THREE.BackSide, depthWrite: false, fog: false });
+        skyMesh = new THREE.Mesh(skyGeo, skyMat);
+        skyMesh.renderOrder = -1;
+        scene.add(skyMesh);
     });
 
     // Post-processing: HDR Bloom Pipeline
