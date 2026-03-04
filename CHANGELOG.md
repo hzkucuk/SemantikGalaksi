@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## [0.24.0] - 2025-07-28
+### Özellik
+- **MSI Installer Paketi**: cx_Freeze ile profesyonel Windows MSI kurulum paketi oluşturma desteği
+  - `setup.py`: cx_Freeze MSI konfigürasyonu — Python runtime, tüm bağımlılıklar ve Frontend dosyaları gömülü
+  - `build_msi.bat`: Otomatik build orchestration — Python kontrolü, cx_Freeze kurulumu, bağımlılık yükleme, MSI oluşturma
+  - Masaüstü ve Başlat Menüsü kısayolları otomatik oluşturulur
+  - Denetim Masası üzerinden kaldırma desteği (upgrade code ile sürüm yönetimi)
+  - Hedef makinede Python kurulumu gerektirmez (runtime pakete gömülü)
+### Düzeltme
+- **PyInstaller Spec Güncelleme**: `SemantikGalaksi.spec` dosyasına eksik dosyalar eklendi — `quran_roots.json`, `milkyway.jpg`, `Frontend/js/` dizini (20 JS modülü)
+- **Etkilenen dosyalar:** `setup.py` (yeni), `build_msi.bat` (yeni), `SemantikGalaksi.spec`, `README.md`
+
 ## [0.23.1] - 2025-07-28
 ### Görsel
 - **Milky Way Panorama Skybox**: `milkyway.jpg` equirectangular panorama olarak arka plana yüklendi

@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/Sürüm-0.23.1-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/Sürüm-0.24.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
 </p>
 
@@ -312,6 +312,39 @@ build_exe.bat
 
 ---
 
+## 📦 MSI Installer Paketi
+
+Profesyonel Windows kurulum paketi (MSI) oluşturmak için:
+
+```bash
+# Proje kök dizininde
+build_msi.bat
+```
+
+Script otomatik olarak:
+1. ✅ Python varlığını kontrol eder
+2. ✅ `cx_Freeze` yoksa kurar
+3. ✅ Proje bağımlılıklarını yükler
+4. ✅ MSI installer paketini oluşturur
+
+Çıktı: `dist\SemantikGalaksi-0.24.0-win64.msi`
+
+### MSI Paketi İçeriği
+
+| Bileşen | Dahil mi? |
+|---------|-----------|
+| Python runtime | ✅ Gömülü (ayrı kurulum gerektirmez) |
+| Tüm Python bağımlılıkları | ✅ (pywebview, requests, aiohttp, vb.) |
+| Frontend dosyaları | ✅ (HTML, JS modülleri, JSON, ses, panorama) |
+| WebView2 runtime | ⚠️ Windows 10+ ile birlikte gelir |
+| Masaüstü kısayolu | ✅ Otomatik oluşturulur |
+| Başlat Menüsü kısayolu | ✅ Otomatik oluşturulur |
+| Kaldırma desteği | ✅ Denetim Masası → Program Kaldır |
+
+> 💡 **Not:** MSI paketi Python'u içine gömer — hedef makinede Python kurulu olmasına gerek yoktur.
+
+---
+
 ## 🌐 Server-Client Ağ Kurulumu
 
 Birden fazla makineyle çalışırken (örn. 1 sunucu + N terminal):
@@ -578,6 +611,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.24.0** | 2025-07-28 | MSI installer paketi (cx_Freeze, gömülü Python runtime) |
 | **0.23.1** | 2025-07-28 | Milky Way panorama skybox (equirectangular, ters küre) |
 | **0.23.0** | 2025-07-28 | JSON editör iki sekmeli tasarım (data + roots) |
 | **0.22.2** | 2025-07-28 | Kameraya dönük bayrak (vNormal), Fatiha kırmızı renk |

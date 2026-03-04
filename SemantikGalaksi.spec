@@ -15,10 +15,14 @@ a = Analysis(
         (os.path.join('Frontend', 'index.html'),       'Frontend'),
         (os.path.join('Frontend', 'warp.html'),        'Frontend'),
         (os.path.join('Frontend', 'quran_data.json'),  'Frontend'),
+        (os.path.join('Frontend', 'quran_roots.json'), 'Frontend'),
+        (os.path.join('Frontend', 'milkyway.jpg'),     'Frontend'),
         (os.path.join('Frontend', 'three.min.js'),     'Frontend'),
         (os.path.join('Frontend', 'OrbitControls.js'), 'Frontend'),
         (os.path.join('Frontend', 'tailwind.min.js'),  'Frontend'),
         (os.path.join('Frontend', 'besmele.wav'),      'Frontend'),
+        # Frontend JS modülleri (20 dosya)
+        (os.path.join('Frontend', 'js'),               os.path.join('Frontend', 'js')),
         # Config dosyası
         (os.path.join('DataEngine', 'config.json'),    '.'),
     ],
