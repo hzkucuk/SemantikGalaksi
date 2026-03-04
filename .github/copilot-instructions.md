@@ -33,7 +33,13 @@ Her değişiklik sonrası:
 - **CHANGELOG.md:** `[vX.Y.Z] — YYYY-MM-DD — [Özet] — [Etkilenen dosya]`
 - **FEATURES.md:** Yeni yetenek veya mantık değişikliğinde güncelle.
 - **INSTALL.md:** NuGet / config / env değişikliğinde senkronize et.
-- **README.md:** Yeni özellik, mimari değişiklik veya kullanım akışı değiştiğinde ilgili bölümleri güncelle (özellik listesi, teknik detaylar, versiyon tablosu, ekran görüntüsü referansları vb.).
+- **README.md:** Her değişiklik veya güncelleme sonrası README.md'yi kontrol et ve güncelle:
+  - Sürüm badge'ini güncel tut (`Sürüm-X.Y.Z`).
+  - Yeni özellik eklendiğinde "Öne Çıkan Özellikler" bölümüne ekle.
+  - Mimari değişiklikte "Mimari" diyagramını ve "Proje Yapısı" ağacını güncelle.
+  - Teknik değişiklikte "Teknik Detaylar" ve "Teknoloji Yığını" bölümlerini güncelle.
+  - Sürüm tablosuna yeni sürümü ekle.
+  - Bug fix veya iyileştirme varsa "Son Düzeltmeler ve İyileştirmeler" tablosunu güncelle.
 - Semantic versioning: breaking=MAJOR, yeni özellik=MINOR, düzeltme=PATCH.
 
 ## Git İşlemleri

@@ -66,8 +66,10 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **Kök bağlantıları** = ayetler arası neon ışık çizgileri (AdditiveBlending glow)
 - **4 yerleşim modeli**: Galaksi (Arşimed spirali), Bulutsu (Gauss kümeleri), Küp (3B ızgara), Küre (Fibonacci)
 - **Hyperspace warp**: Sureler arası GPU-hızlandırmalı geçiş (Three.js ShaderMaterial, 8000 yıldız, GLSL streak efekti)
-- **HDR Bloom Pipeline**: UnrealBloomPass + custom ACES tone mapping ShaderPass (strength=0.7, radius=0.6, threshold=0.3)
-- **Fatiha Suresi**: Kırmızı renk vurgusu (ilk sure özel olarak işaretli)
+- **GLSL Prosedürel Güneş Simülasyonu** (v0.19.0): Simplex noise FBM + ridge filament + rim lighting — her sure kendi renginde plazma animasyonu
+- **HDR Bloom Pipeline** (v0.20.0): UnrealBloomPass + custom ACES tone mapping ShaderPass (strength=0.7, radius=0.6, threshold=0.3)
+- **Star Wars Lightspeed Warp** (v0.18.1): Noktadan çizgiye kademeli uzama, mavi-indigo renk, merkez karanlık tünel, beyaz flash çıkış
+- **Fatiha Suresi** (v0.22.2): Kırmızı renk vurgusu (`0xff0000`) — ilk sure özel olarak işaretli
 
 ### 🇹🇷 Türk Bayrağı SDF Shader
 - **Hilal + 5 köşeli yıldız**: Tüm küre shader'larına SDF (Signed Distance Field) olarak gömülü
@@ -106,6 +108,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - Monolitik `index.html` (~3774 satır) → **20 bağımsız JS modülü** (`Frontend/js/`)
 - Bağımlılık sırasına göre `<script>` etiketleriyle yükleme
 - `index.html` artık sadece **~861 satır** (HTML + CSS + script referansları)
+- **Modüller**: state, shaders, constants, key-manager, auth, data-store, highlight, audio, scene-init, data-loader, interaction, tooltip, hud, warp, search, settings, datasets, websocket, notes, loading
 
 ### 👥 Çok Kullanıcılı Gerçek Zamanlı Çalışma
 - **Raw WebSocket** sunucusu (ek bağımlılık gerektirmez)
@@ -131,10 +134,41 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **ع butonu** ile Arapça sanal klavye (3 konumda: arama, HUD, editör)
 - RTL mod: Klavye aktifken input yönü sağdan sola + Amiri fontu
 
+### 📌 HUD Pinned Tooltip (v0.21.2)
+- Ayet kartlarına hover yapılınca tooltip HUD'un yanında **sabit konumda** açılır
+- Fare başka karta geçince içerik otomatik güncellenir
+- ✕ kapatma butonu, HUD kapanınca tooltip de otomatik kapanır
+- `buildTooltipContent()` helper ile DRY tooltip HTML üretimi
+
+### 📚 Arapça Kök Sözlüğü (v0.21.3)
+- **2139 Arapça kök** — Gemini AI ile anlam, Arapça anlam, telaffuz ve türemiş kelimeler
+- `quran_roots.json`: Her kök için `meaning`, `meaning_ar`, `pronunciation`, `derived` alanları
+- DataEngine pipeline: `step1_fetch_quran.py` → `step2_extract_roots.py` → `step3_build_root_dict.py`
+- Boş kök anlamları otomatik tamamlama (`fix_empty_roots.py`)
+
+### 🎬 Neon Yükleme Ekranı + Besmele (v0.12.0)
+- **Eûzü Besmele** yükleme ekranı: Arapça + Türkçe + Latin çeviriler, altın tonlu glow animasyonları
+- **Gemini TTS** ile üretilmiş Besmele sesi (`besmele.wav`) — loading sırasında otomatik çalar
+- Neon cyan glow, halka animasyonu, flicker efekti, mor radyal aksan
+- Besmele bitene kadar loading ekranı kalır (minimum süre guard)
+
 ### 🔐 Kimlik Doğrulama ve Yetkilendirme
 - Token tabanlı oturum, SHA-256 + salt şifreleme
 - 3 rol: **admin** (tam yetki), **editor** (CRUD), **viewer** (salt okunur)
 - Admin paneli: kullanıcı oluşturma / silme / rol değiştirme
+
+### 🔧 Son Düzeltmeler ve İyileştirmeler
+| Sürüm | Düzeltme |
+|-------|----------|
+| v0.21.5 | **GPU Bellek Sızıntısı**: Layout/dataset değişiminde eski geometry, material, texture dispose edilmiyor → düzeltildi |
+| v0.21.5 | **Ölü Kod Temizliği**: Kullanılmayan `ayahIndexMap`, `coronaVS/FS`, `outerGlowVS/FS` kaldırıldı |
+| v0.21.4 | **Desktop Çift Ses**: Python winsound + HTML audio aynı anda çalıyordu → Desktop'ta HTML audio devre dışı |
+| v0.21.4 | **Besmele Erken Kesilme**: Veri hızlı yüklense bile besmele bitene kadar loading screen kalıyor |
+| v0.21.1 | **HUD Kök Tag Uyumu**: HUD içindeki kök etiketleri tooltip ile birebir aynı template'e getirildi |
+| v0.20.5 | **Shader Parlaklık Dengesi**: Sure gövdesi (whiteHot=0.3) vs ayet gövdesi (whiteHot=0.7) ayrımı |
+| v0.20.3 | **HDR Bloom Düzeltmesi**: ACES tone mapping bloom'dan sonraya taşındı (renk solması düzeltildi) |
+| v0.15.0 | **Neon Kök Vurgulama**: RTL metinde `inline-block` → `inline` düzeltmesi, text-shadow azaltma |
+| v0.15.0 | **Web Besmele Sesi**: Tarayıcı autoplay politikası → "▶ Dokunarak Başlat" butonu eklendi |
 
 ---
 
@@ -514,6 +548,29 @@ Arka plan yıldız alanı, uzay gemisi navigasyon ekranı estetiğiyle tasarlanm
 | Geometri | `SphereGeometry(50M)`, `side: THREE.BackSide` |
 | Render | `depthWrite: false`, `renderOrder: -1` |
 | Takip | Kamera pozisyonuna her frame kopyalanır (sonsuz uzaklık illüzyonu) |
+
+### Veri Mühendisliği Pipeline (DataEngine)
+
+```
+Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json (ham veri)
+                        │
+                        ▼
+                step2_extract_roots.py ────▶ kök listesi çıkarma
+                        │
+                        ▼
+                step3_build_root_dict.py ──▶ quran_roots.json (2139 kök)
+                        │
+                        ▼
+                fix_empty_roots.py ────────▶ Gemini AI ile boş anlamları doldurma
+```
+
+| Adım | Script | Çıktı |
+|------|--------|-------|
+| 1. Veri çekme | `step1_fetch_quran.py` | Ham Kur'an verileri (sure/ayet/metin) |
+| 2. Kök çıkarma | `step2_extract_roots.py` | Her ayetin Arapça kök analizi |
+| 3. Sözlük oluşturma | `step3_build_root_dict.py` | `quran_roots.json` — 2139 kök kaydı |
+| 4. AI zenginleştirme | `fix_empty_roots.py` | Boş meaning/pronunciation alanlarını Gemini ile doldurma |
+| 5. Veri zenginleştirme | `quran_api_enricher.py` | Ek metadata ile veri zenginleştirme |
 
 ---
 
