@@ -12,8 +12,15 @@ jobs:
   build-msi:
     name: Build MSI & Create Release
     runs-on: windows-latest
+    env:
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: "utf-8"
 
     steps:
+      - name: Set UTF-8 codepage
+        run: chcp 65001
+        shell: cmd
+
       - name: Debug info
         run: echo "Tag=${{ github.ref_name }} Repo=${{ github.repository }}"
 
