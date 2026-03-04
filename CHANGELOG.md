@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.22.2] - 2025-07-28
+### Görsel
+- **Ay-Yıldız boyut küçültme**: UV ölçeği `0.40 → 0.55` — pattern artık küre çapının ~%55'i
+- **Dönüş senkronizasyonu**: Shader'daki bağımsız Y-ekseni rotasyonu kaldırıldı; ay-yıldız artık küre mesh'inin geometrik dönüşüyle (`child.rotation.y`) birlikte dönüyor
+- **Fatiha suresi kırmızı**: Sure küre rengi ve ayet instance renkleri `0xff0000` olarak override edildi
+- **Etkilenen dosyalar:** `Frontend/js/shaders.js`, `Frontend/js/data-loader.js`
+
 ## [0.22.1] - 2025-07-28
 ### Görsel
 - **Türk Bayrağı Ay-Yıldız SDF**: Tüm node (sure/ayet) küre shader'larına SDF tabanlı hilal ve 5 köşeli yıldız gömüldü

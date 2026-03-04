@@ -185,7 +185,7 @@ var processData = (data) => {
             var g = new THREE.Group();
             g.position.set(node.x, node.y, node.z);
             g.userData = { nodeData: node };
-            var c = new THREE.Color(getRootCSSColor(surahNum));
+            var c = surahNum === '1' ? new THREE.Color(0xff0000) : new THREE.Color(getRootCSSColor(surahNum));
 
             // İç çekirdek küre (güneş gövdesi shader)
             var coreMat = new THREE.ShaderMaterial({
@@ -255,7 +255,7 @@ var processData = (data) => {
         dum.updateMatrix();
         ayahMesh.setMatrixAt(i, dum.matrix);
         var sid = a.id.split(':')[0];
-        var c = new THREE.Color(getRootCSSColor(sid));
+        var c = sid === '1' ? new THREE.Color(0xff0000) : new THREE.Color(getRootCSSColor(sid));
         ayahMesh.setColorAt(i, c);
     });
     ayahMesh.instanceColor.needsUpdate = true;
