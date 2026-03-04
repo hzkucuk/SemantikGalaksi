@@ -1,0 +1,78 @@
+name: MSI Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-msi:
+    name: Build MSI & Create Release
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r DataEngine/requirements.txt
+          pip install cx_Freeze
+
+      - name: Extract version from tag
+        id: version
+        shell: bash
+        run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
+
+      - name: Update setup.py version
+        shell: pwsh
+        run: |
+          $content = Get-Content setup.py -Raw -Encoding UTF8
+          $content = $content -replace 'version="[^"]*"', "version=`"${{ steps.version.outputs.VERSION }}`""
+          Set-Content setup.py -Value $content -Encoding UTF8
+
+      - name: Build MSI
+        run: python setup.py bdist_msi
+
+      - name: Find MSI file
+        id: msi
+        shell: pwsh
+        run: |
+          $msi = Get-ChildItem -Path dist -Filter "*.msi" -Recurse | Select-Object -First 1
+          echo "MSI_PATH=$($msi.FullName)" >> $env:GITHUB_OUTPUT
+          echo "MSI_NAME=$($msi.Name)" >> $env:GITHUB_OUTPUT
+          echo "MSI_SIZE=$([math]::Round($msi.Length/1MB, 2)) MB" >> $env:GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "${{ github.ref_name }} — SemantikGalaksi"
+          body: |
+            ## 🕋 SemantikGalaksi ${{ github.ref_name }}
+
+            ### 📦 Kurulum
+            1. Aşağıdan **${{ steps.msi.outputs.MSI_NAME }}** dosyasını indirin (${{ steps.msi.outputs.MSI_SIZE }})
+            2. Çift tıklayarak kurulum sihirbazını başlatın
+            3. Masaüstündeki veya Başlat Menüsündeki kısayoldan çalıştırın
+
+            ### ℹ️ Bilgi
+            - Python runtime **gömülü** — ayrıca Python kurmanıza gerek yok
+            - Masaüstü + Başlat Menüsü kısayolları otomatik oluşturulur
+            - Denetim Masası → Program Kaldır ile temiz kaldırma
+
+            ### 📋 Değişiklikler
+            Detaylı değişiklik listesi için [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/master/CHANGELOG.md) dosyasına bakın.
+          files: ${{ steps.msi.outputs.MSI_PATH }}
+          draft: false
+          prerelease: false
+          generate_release_notes: false

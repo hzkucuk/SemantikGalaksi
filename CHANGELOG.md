@@ -10,7 +10,11 @@
   - Hedef makinede Python kurulumu gerektirmez (runtime pakete gömülü)
 ### Düzeltme
 - **PyInstaller Spec Güncelleme**: `SemantikGalaksi.spec` dosyasına eksik dosyalar eklendi — `quran_roots.json`, `milkyway.jpg`, `Frontend/js/` dizini (20 JS modülü)
-- **Etkilenen dosyalar:** `setup.py` (yeni), `build_msi.bat` (yeni), `SemantikGalaksi.spec`, `README.md`
+### CI/CD
+- **GitHub Actions Otomatik Release**: `v*` tag push'landığında otomatik MSI build + GitHub Release + asset upload
+  - `.github/workflows/release.yml`: Windows runner, Python 3.13, cx_Freeze MSI build, softprops/action-gh-release
+  - README.md'ye CI/CD badge ve Son Sürüm badge eklendi
+- **Etkilenen dosyalar:** `setup.py` (yeni), `build_msi.bat` (yeni), `.github/workflows/release.yml` (yeni), `SemantikGalaksi.spec`, `README.md`
 
 ## [0.23.1] - 2025-07-28
 ### Görsel

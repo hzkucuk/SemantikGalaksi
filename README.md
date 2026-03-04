@@ -5,6 +5,13 @@
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
   <img src="https://img.shields.io/badge/Sürüm-0.24.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
+  <br>
+  <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
+    <img src="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml/badge.svg" alt="MSI Release">
+  </a>
+  <a href="https://github.com/hzkucuk/SemantikGalaksi/releases/latest">
+    <img src="https://img.shields.io/github/v/release/hzkucuk/SemantikGalaksi?style=flat-square&label=Son%20Sürüm&color=34d399" alt="Latest Release">
+  </a>
 </p>
 
 <h1 align="center">🕋 Kur'an-ı Kerim Kelime Kök Uzayı</h1>
@@ -342,6 +349,22 @@ Script otomatik olarak:
 | Kaldırma desteği | ✅ Denetim Masası → Program Kaldır |
 
 > 💡 **Not:** MSI paketi Python'u içine gömer — hedef makinede Python kurulu olmasına gerek yoktur.
+
+### 🚀 Otomatik Release (CI/CD)
+
+`v*` formatında bir Git tag'ı push'landığında **GitHub Actions** otomatik olarak:
+1. Windows runner'da MSI paketini build eder
+2. GitHub Release oluşturur
+3. MSI dosyasını release asset olarak yükler
+
+```bash
+# Örnek: v0.25.0 release oluşturma
+git tag -a v0.25.0 -m "v0.25.0 — Yeni özellik açıklaması"
+git push origin v0.25.0
+# → GitHub Actions tetiklenir → Release + MSI otomatik oluşur
+```
+
+> 📥 **Son sürümü indir:** [GitHub Releases](https://github.com/hzkucuk/SemantikGalaksi/releases/latest)
 
 ---
 
