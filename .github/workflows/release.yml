@@ -14,6 +14,9 @@ jobs:
     runs-on: windows-latest
 
     steps:
+      - name: Debug info
+        run: echo "Tag=${{ github.ref_name }} Repo=${{ github.repository }}"
+
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -21,7 +24,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-          cache: 'pip'
 
       - name: Install dependencies
         run: |
@@ -49,9 +51,11 @@ jobs:
         shell: pwsh
         run: |
           $msi = Get-ChildItem -Path dist -Filter "*.msi" -Recurse | Select-Object -First 1
+          if (-not $msi) { Write-Error "MSI dosyasi bulunamadi!"; exit 1 }
           echo "MSI_PATH=$($msi.FullName)" >> $env:GITHUB_OUTPUT
           echo "MSI_NAME=$($msi.Name)" >> $env:GITHUB_OUTPUT
           echo "MSI_SIZE=$([math]::Round($msi.Length/1MB, 2)) MB" >> $env:GITHUB_OUTPUT
+          Write-Host "MSI: $($msi.FullName) ($([math]::Round($msi.Length/1MB, 2)) MB)"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
