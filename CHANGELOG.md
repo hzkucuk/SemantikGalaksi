@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.23.0] - 2025-07-28
+### Özellik
+- **JSON Editör — İki Sekmeli Tasarım**: Editör artık `quran_data.json` ve `quran_roots.json` için ayrı sekmelere sahip
+- Sekmeler arası geçişte içerik korunuyor (cache)
+- Kaydet: data sekmesinde DatasetStore'a, roots sekmesinde `rootDictionary`'ye günceller
+- Doğrulama: data sekmesinde ayet sayısı, roots sekmesinde kök sayısı gösterir
+- Dışa Aktar: aktif sekmeye göre doğru dosya adını kullanır
+- "Dipnot Ekle" butonu yalnızca data sekmesinde görünür
+- **Etkilenen dosyalar:** `Frontend/index.html`, `Frontend/js/datasets.js`
+
 ## [0.22.2] - 2025-07-28
 ### Görsel
 - **Ay-Yıldız boyut küçültme**: UV ölçeği `0.40 → 0.55` — pattern artık küre çapının ~%55'i

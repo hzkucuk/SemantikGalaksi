@@ -115,6 +115,10 @@ window.duplicateDataset = async (sourceName) => {
 };
 
 // --- JSON Editör ---
+var editorActiveTab = 'data';
+var editorDataContent = '';
+var editorRootsContent = '';
+
 window.openEditor = async () => {
     var data;
     if (activeDatasetName === 'quran_data.json') {
@@ -124,14 +128,45 @@ window.openEditor = async () => {
         data = ds ? ds.data : originalData;
     }
     if (!data) return;
+    editorActiveTab = 'data';
+    editorDataContent = JSON.stringify(data, null, 2);
+    editorRootsContent = JSON.stringify(rootDictionary || {}, null, 2);
     var ta = document.getElementById('editor-textarea');
-    ta.value = JSON.stringify(data, null, 2);
+    ta.value = editorDataContent;
     document.getElementById('editor-title').textContent = '📝 ' + activeDatasetName;
+    document.getElementById('editor-tab-data').textContent = '';
+    document.getElementById('editor-tab-data').innerHTML = '<span class="tab-dot"></span>' + activeDatasetName;
+    document.getElementById('editor-tab-data').classList.add('active');
+    document.getElementById('editor-tab-roots').classList.remove('active');
     document.getElementById('json-editor').style.display = 'flex';
+    editorUpdateTabUI();
     updateEditorLines();
     editorValidate();
     ta.oninput = () => { updateEditorLines(); editorValidate(); };
     ta.onscroll = () => { document.getElementById('editor-lines').scrollTop = ta.scrollTop; };
+};
+
+window.editorSwitchTab = (tab) => {
+    if (tab === editorActiveTab) return;
+    var ta = document.getElementById('editor-textarea');
+    if (editorActiveTab === 'data') editorDataContent = ta.value;
+    else editorRootsContent = ta.value;
+    editorActiveTab = tab;
+    ta.value = tab === 'data' ? editorDataContent : editorRootsContent;
+    var titleText = tab === 'data' ? activeDatasetName : 'quran_roots.json';
+    document.getElementById('editor-title').textContent = '📝 ' + titleText;
+    document.getElementById('editor-tab-data').classList.toggle('active', tab === 'data');
+    document.getElementById('editor-tab-roots').classList.toggle('active', tab === 'roots');
+    editorUpdateTabUI();
+    updateEditorLines();
+    editorValidate();
+    ta.scrollTop = 0;
+    document.getElementById('editor-lines').scrollTop = 0;
+};
+
+var editorUpdateTabUI = () => {
+    var dipnotBtn = document.querySelector('[onclick="editorAddDipnot()"]');
+    if (dipnotBtn) dipnotBtn.style.display = editorActiveTab === 'data' ? '' : 'none';
 };
 window.closeEditor = () => { document.getElementById('json-editor').style.display = 'none'; };
 var updateEditorLines = () => {
@@ -150,10 +185,17 @@ window.editorValidate = () => {
     var info = document.getElementById('editor-info');
     try {
         var data = JSON.parse(ta.value);
-        var nc = data.nodes ? data.nodes.length : 0;
-        bar.className = 'editor-status valid';
-        msg.textContent = '✓ Geçerli JSON';
-        info.textContent = nc + ' ayet · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+        if (editorActiveTab === 'data') {
+            var nc = data.nodes ? data.nodes.length : 0;
+            bar.className = 'editor-status valid';
+            msg.textContent = '✓ Geçerli JSON';
+            info.textContent = nc + ' ayet · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+        } else {
+            var rc = typeof data === 'object' ? Object.keys(data).length : 0;
+            bar.className = 'editor-status valid';
+            msg.textContent = '✓ Geçerli JSON';
+            info.textContent = rc + ' kök · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+        }
         return true;
     } catch(e) {
         bar.className = 'editor-status invalid';
@@ -178,12 +220,21 @@ window.editorFormat = () => {
 };
 window.editorSave = async () => {
     if (!editorValidate()) return;
-    var data = JSON.parse(document.getElementById('editor-textarea').value);
+    var ta = document.getElementById('editor-textarea');
+    var data = JSON.parse(ta.value);
+    if (editorActiveTab === 'roots') {
+        rootDictionary = data;
+        var btn = document.querySelector('.editor-btn.save');
+        btn.textContent = '✓ Kökler Güncellendi';
+        setTimeout(() => { btn.textContent = '💾 Kaydet'; }, 1500);
+        return;
+    }
     var saveName = activeDatasetName;
     if (activeDatasetName === 'quran_data.json') {
         saveName = 'quran_data_düzenlenmiş.json';
         activeDatasetName = saveName;
         document.getElementById('editor-title').textContent = '📝 ' + saveName;
+        document.getElementById('editor-tab-data').innerHTML = '<span class="tab-dot"></span>' + saveName;
     }
     await DatasetStore.save(saveName, data);
     processData(data);
@@ -230,7 +281,8 @@ window.editorExport = async () => {
     var ta = document.getElementById('editor-textarea');
     try {
         var data = JSON.parse(ta.value);
-        await downloadJSON(data, activeDatasetName);
+        var filename = editorActiveTab === 'data' ? activeDatasetName : 'quran_roots.json';
+        await downloadJSON(data, filename);
     } catch(e) { editorValidate(); }
 };
 window.downloadDataset = async (name) => {

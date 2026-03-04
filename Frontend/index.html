@@ -239,6 +239,11 @@
         .editor-status { display: flex; align-items: center; justify-content: space-between; padding: 6px 16px; background: #0d1117; border-top: 1px solid rgba(255,255,255,0.06); font-size: 11px; }
         .editor-status.valid { color: #22c55e; }
         .editor-status.invalid { color: #ef4444; }
+        .editor-tabs { display: flex; background: #0d1117; border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0 12px; gap: 2px; flex-shrink: 0; }
+        .editor-tab { padding: 9px 18px; font-size: 11px; font-weight: 700; color: #64748b; background: transparent; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: all 0.2s; letter-spacing: 0.04em; font-family: 'Inter',sans-serif; display: flex; align-items: center; gap: 6px; }
+        .editor-tab:hover { color: #94a3b8; background: rgba(255,255,255,0.03); }
+        .editor-tab.active { color: #00f2ff; border-bottom-color: #00f2ff; background: rgba(0,242,255,0.05); }
+        .editor-tab .tab-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.5; }
         .arabic-kb { display: none; background: #0d1117; border-top: 1px solid rgba(255,255,255,0.1); padding: 10px; flex-shrink: 0; }
         .arabic-kb.show { display: block; }
         .kb-row { display: flex; gap: 4px; justify-content: center; margin-bottom: 4px; }
@@ -566,6 +571,10 @@
             <button class="editor-btn" onclick="editorAddDipnot()">📌 Dipnot Ekle</button>
             <button class="editor-btn" id="kb-toggle" onclick="toggleArabicKb()">⌨ Arapça</button>
             <button class="editor-btn danger" onclick="closeEditor()">✕ Kapat</button>
+        </div>
+        <div class="editor-tabs" id="editor-tabs">
+            <button class="editor-tab active" id="editor-tab-data" onclick="editorSwitchTab('data')"><span class="tab-dot"></span>quran_data.json</button>
+            <button class="editor-tab" id="editor-tab-roots" onclick="editorSwitchTab('roots')"><span class="tab-dot"></span>quran_roots.json</button>
         </div>
         <div class="editor-main">
             <div class="editor-lines" id="editor-lines"></div>
