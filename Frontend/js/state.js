@@ -1,0 +1,74 @@
+/** SemantikGalaksi — Paylaşılan Durum Değişkenleri */
+
+// Three.js sahne nesneleri
+var scene, camera, renderer, composer, ayahMesh, starField, lineSegments, controls, highlightLines;
+
+// Veri yapıları
+var nodes = [];
+var surahGroups = [];
+var ayahNodes = [];
+var rootMap = new Map();
+var labelSprites = [];
+var lineNodePairs = [];
+var originalData = null;
+var hasCustomData = false;
+var currentLayout = 'galaxy';
+var rootDictionary = {};
+
+// Etkileşim durumu
+var raycaster = new THREE.Raycaster();
+var mouse = new THREE.Vector2();
+var currentAudio = null;
+var audioCache = new Map();
+var hoverTimeout = null;
+var lastHoveredId = null;
+var hudTooltipPinned = false;
+
+// Warp durumu
+var warpActive = false;
+var warpProgress = 0;
+var warpStart = new THREE.Vector3();
+var warpEnd = new THREE.Vector3();
+var warpTarget = new THREE.Vector3();
+var warpMesh = null;
+var warpBg = null;
+var warpSpeed = 1;
+var warpDrift = false;
+var warpDriftTime = 0;
+var warpDriftDir = new THREE.Vector3();
+
+// Ses durumu
+var isAudioLoading = false;
+var apiKey = null;
+
+// Kimlik doğrulama durumu
+var authToken = localStorage.getItem('sgx_auth_token') || '';
+var authUser = '', authRole = '', isDesktopMode = false;
+var currentUser = localStorage.getItem('sgx_username') || '';
+
+// Veri seti durumu
+var activeDatasetName = 'quran_data.json';
+
+// HUD durumu
+var currentHudNode = null;
+var activeSpeakBtn = null;
+
+// Animasyon durumu
+var _lastFrameTime = 0;
+
+// Yükleme ekranı durumu
+var _loadStart = Date.now();
+var _besmelePlaying = false;
+var _besmeleMinTime = 3000;
+var _dataReady = false;
+var _autoplayBlocked = false;
+var introWarp = false;
+var introWarpTime = 0;
+
+// WebSocket durumu
+var _ws = null, _wsReconnectTimer = null, _onlineUsers = [];
+
+// Not sistemi durumu
+var _notes = [];
+var _activeNoteId = null;
+var _noteSaveTimer = null;

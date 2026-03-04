@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [0.22.0] - 2025-07-28
+### Mimari
+- **Modülarizasyon**: Monolitik `index.html` (~3774 satır script) 20 ayrı JS dosyasına bölündü (`Frontend/js/`)
+- Dosyalar: state, shaders, constants, key-manager, auth, data-store, highlight, audio, scene-init, data-loader, interaction, tooltip, hud, warp, search, settings, datasets, websocket, notes, loading
+- Bağımlılık sırasına göre `<script src>` etiketleriyle yükleniyor
+- `var` ile paylaşımlı state (global scope, ES module değil)
+- **index.html 861 satıra düştü** (sadece HTML + CSS + script etiketleri)
+
 ## [0.21.5] - 2025-07-28
 ### Düzeltme
 - **GPU Bellek Sızıntısı**: `processData()` ve `updateHighlightLines()` — layout/dataset değiştirildiğinde eski Three.js geometry, material ve texture'lar dispose edilmiyordu → artık düzgün temizleniyor
