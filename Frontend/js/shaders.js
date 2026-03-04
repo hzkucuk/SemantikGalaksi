@@ -84,7 +84,7 @@ var turkishFlagCode = `
         float ra = t * 0.08;
         float ca = cos(ra); float sa = sin(ra);
         vec3 rn = vec3(ca * n.x + sa * n.z, n.y, -sa * n.x + ca * n.z);
-        vec2 uv = rn.xy;
+        vec2 uv = rn.xy * 0.40;
         float facing = smoothstep(0.0, 0.25, rn.z);
         float outer = sdCircle2D(uv - vec2(-0.04, 0.0), 0.28);
         float inner = sdCircle2D(uv - vec2(0.07, 0.0), 0.22);
