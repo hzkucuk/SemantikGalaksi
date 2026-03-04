@@ -143,7 +143,7 @@ bdist_msi_options = {
 executables = [
     Executable(
         script=os.path.join("DataEngine", "desktop_app.py"),
-        base="Win32GUI",                        # Konsol penceresi gösterme
+        base="gui",                                 # Konsol penceresi gösterme
         target_name="SemantikGalaksi.exe",
         shortcut_name="SemantikGalaksi",
         shortcut_dir="StartMenuFolder",
