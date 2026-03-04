@@ -1,10 +1,17 @@
 var init = () => {
-    scene = new THREE.Scene(); scene.background = new THREE.Color(0x000000);
+    scene = new THREE.Scene(); scene.background = new THREE.Color(0x000308);
     camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 1, 100000000);
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     document.body.appendChild(renderer.domElement);
     controls = new THREE.OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
+
+    // Milky Way equirectangular panorama skybox
+    new THREE.TextureLoader().load('milkyway.jpg', function(tex) {
+        tex.mapping = THREE.EquirectangularReflectionMapping;
+        tex.encoding = THREE.sRGBEncoding;
+        scene.background = tex;
+    });
 
     // Post-processing: HDR Bloom Pipeline
     // 1) Sahne HDR olarak render edilir (tone mapping yok → renkler canlı kalır)

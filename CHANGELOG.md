@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.23.1] - 2025-07-28
+### Görsel
+- **Milky Way Panorama Skybox**: `milkyway.jpg` equirectangular panorama olarak arka plana yüklendi
+- `THREE.EquirectangularReflectionMapping` + sRGB encoding ile gerçekçi 360° uzay arka planı
+- Mevcut 120K prosedürel yıldız korundu (additive blending ile panorama üzerine derinlik katıyor)
+- **Etkilenen dosya:** `Frontend/js/scene-init.js`
+
 ## [0.23.0] - 2025-07-28
 ### Özellik
 - **JSON Editör — İki Sekmeli Tasarım**: Editör artık `quran_data.json` ve `quran_roots.json` için ayrı sekmelere sahip
