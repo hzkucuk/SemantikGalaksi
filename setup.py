@@ -132,6 +132,7 @@ bdist_msi_options = {
     "upgrade_code": "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}",
     "install_icon": None,
     "all_users": True,
+    "initial_target_dir": r"C:\SemantikGalaksi",
     "summary_data": {
         "author": "SemantikGalaksi",
         "comments": "Kur'an-ı Kerim Kelime Kök Uzayı — 3D uzay görselleştirmesi ile Kur'an keşfi",
