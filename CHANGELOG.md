@@ -11,6 +11,11 @@
   - Kızılımsı kenar efekti (yıldız ışığının tozdan geçişi)
 - **Difraksiyon Çizgileri**: Parlak yıldızlarda 4+4 kollu (ortogonal + 45°) çapraz ışık çizgileri
 - **Geliştirilmiş Yıldız Kırpışması**: %1-2'den %5-8'e çıkarıldı, 3 frekans katmanlı sinüsoidal titreşim
+- **Neon Beam Kök Bağlantı Işınları**: TubeGeometry + MeshBasicMaterial → GLSL neon beam shader
+  - Normal-view glow (merkez parlak, kenar yumuşak sönümleme)
+  - Enerji akış animasyonu (ışın boyunca hareket eden parıltı)
+  - Çekirdek beyazlaşma, çift katmanlı glow (iç ışın + dış hale)
+  - Arka plan bağlantı çizgileri: AdditiveBlending + azaltılmış opacity
 
 ## [0.24.1] - 2025-07-28
 ### Düzeltme

@@ -236,8 +236,8 @@ var processData = (data) => {
     var lG = new THREE.BufferGeometry();
     lG.setAttribute('position', new THREE.Float32BufferAttribute(lineV, 3));
     lG.setAttribute('color', new THREE.Float32BufferAttribute(lineC, 3));
-    var lineOpacity = currentLayout === 'galaxy' ? 0.02 : 0.05;
-    lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: lineOpacity }));
+    var lineOpacity = currentLayout === 'galaxy' ? 0.012 : 0.03;
+    lineSegments = new THREE.LineSegments(lG, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: lineOpacity, blending: THREE.AdditiveBlending, depthWrite: false }));
     lineSegments.renderOrder = 1; scene.add(lineSegments);
 
     // Ayet küreleri (surah rengine göre renk + GLSL animasyon)

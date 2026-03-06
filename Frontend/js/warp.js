@@ -171,6 +171,15 @@ var animate = (now) => {
             spaceDust.position.copy(camera.position);
         }
 
+        // Neon beam ışınları: time uniform güncelle (enerji akış animasyonu)
+        if (highlightLines) {
+            highlightLines.forEach(function(m) {
+                if (m.material && m.material.uniforms && m.material.uniforms.uTime) {
+                    m.material.uniforms.uTime.value = elapsed;
+                }
+            });
+        }
+
         var camP = camera.position;
         var _proj = new THREE.Vector3();
         var _shown = [];

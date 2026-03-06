@@ -18,14 +18,40 @@ var updateHighlightLines = (n) => {
                 var path = new THREE.LineCurve3(p1, p2);
                 var pairData = { n1: a.id, n2: b.id, root: root };
                 var tubeR = currentLayout === 'galaxy' ? 40 : 150;
-                var tubeG = new THREE.TubeGeometry(path, 1, tubeR, 6, false);
-                var tubeM = new THREE.Mesh(tubeG, new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.85 }));
+                // Ana ışın — neon beam shader
+                var tubeG = new THREE.TubeGeometry(path, 1, tubeR, 8, false);
+                var tubeM = new THREE.Mesh(tubeG, new THREE.ShaderMaterial({
+                    uniforms: {
+                        uColor: { value: color },
+                        uTime: { value: 0 },
+                        uOpacity: { value: 0.9 }
+                    },
+                    vertexShader: neonBeamVS,
+                    fragmentShader: neonBeamFS,
+                    transparent: true,
+                    depthWrite: false,
+                    blending: THREE.AdditiveBlending,
+                    side: THREE.DoubleSide
+                }));
                 tubeM.renderOrder = 2;
                 tubeM.userData.pair = pairData;
                 scene.add(tubeM);
                 highlightLines.push(tubeM);
-                var glowG = new THREE.TubeGeometry(path, 1, tubeR * 1.8, 6, false);
-                var glowM = new THREE.Mesh(glowG, new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.06, blending: THREE.AdditiveBlending, depthWrite: false }));
+                // Dış glow — daha geniş, daha yumuşak
+                var glowG = new THREE.TubeGeometry(path, 1, tubeR * 2.5, 8, false);
+                var glowM = new THREE.Mesh(glowG, new THREE.ShaderMaterial({
+                    uniforms: {
+                        uColor: { value: color },
+                        uTime: { value: 0 },
+                        uOpacity: { value: 0.12 }
+                    },
+                    vertexShader: neonBeamVS,
+                    fragmentShader: neonBeamFS,
+                    transparent: true,
+                    depthWrite: false,
+                    blending: THREE.AdditiveBlending,
+                    side: THREE.DoubleSide
+                }));
                 glowM.renderOrder = 1;
                 scene.add(glowM);
                 highlightLines.push(glowM);

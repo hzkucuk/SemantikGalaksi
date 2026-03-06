@@ -92,6 +92,45 @@ var turkishFlagCode = `
     }
 `;
 
+// --- Neon Beam Shader (Kök Bağlantı Işınları) ---
+var neonBeamVS = `
+    uniform float uTime;
+    varying vec3 vNormal;
+    varying vec3 vViewDir;
+    varying vec2 vUv;
+    void main() {
+        vNormal = normalize(normalMatrix * normal);
+        vUv = uv;
+        vec4 mv = modelViewMatrix * vec4(position, 1.0);
+        vViewDir = normalize(-mv.xyz);
+        gl_Position = projectionMatrix * mv;
+    }
+`;
+var neonBeamFS = `
+    uniform vec3 uColor;
+    uniform float uTime;
+    uniform float uOpacity;
+    varying vec3 vNormal;
+    varying vec3 vViewDir;
+    varying vec2 vUv;
+    void main() {
+        // Normal-view açısı: merkez parlak, kenar sönük (silindir glow)
+        float nDotV = abs(dot(normalize(vNormal), normalize(vViewDir)));
+        float core = pow(nDotV, 1.5);
+        // Enerji akış animasyonu — ışın boyunca hareket eden parıltı
+        float flow = sin(vUv.y * 12.0 - uTime * 3.0) * 0.15 + 0.85;
+        float pulse = 0.95 + 0.05 * sin(uTime * 2.0);
+        // Kenar glow — yumuşak azalma
+        float edgeGlow = pow(nDotV, 0.4) * 0.3;
+        float intensity = (core * 0.7 + edgeGlow) * flow * pulse;
+        vec3 col = uColor * intensity * 1.5;
+        // Parlak çekirdek beyazlaşma
+        col = mix(col, vec3(1.0), core * core * 0.3);
+        float alpha = intensity * uOpacity;
+        gl_FragColor = vec4(col, alpha);
+    }
+`;
+
 // Güneş gövdesi shader (prosedürel plazma + filament)
 var sunBodyVS = `
     varying vec3 vNormal;
