@@ -58,49 +58,63 @@ var animate = (now) => {
         var ease = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
         // ═══════════════════════════════════════════════════════
-        // MILLENNIUM FALCON LIGHTSPEED — GIF REFERANS
+        // MILLENNIUM FALCON — "yavaşşş... GÜM!"
         // ═══════════════════════════════════════════════════════
-        // Arka plan KARANLIK kalır. Efektin %90'ı YILDIZ ÇİZGİLERİ.
-        // Faz 1: UZAMA   (0-12%)  — Yıldızlar noktadan çizgiye kademeli uzar
-        // Faz 2: PUNCH   (12-85%) — BANG! Tam hız, ekran beyaz çizgilerle dolu
-        // Faz 3: ÇIKIŞ   (85-100%)— Çizgiler kısalır, kısa beyaz flash, snap
+        // Faz 1: YAVAŞ BİRİKİM (0-45%) — yıldızlar yavaşça uzar, gerilim
+        // Faz 2: GÜM!          (45-50%) — ANI patlama, 0.1→1.0 neredeyse step
+        // Faz 3: TAM HIZ       (50-82%) — hyperspace, uzun beyaz çizgiler
+        // Faz 4: ÇIKIŞ         (82-100%)— çizgiler kısalır, beyaz flash, snap
 
         if (p < 1) {
             var sp, swirl, exitFlash, bgAlpha;
 
-            if (p < 0.12) {
-                // ── FAZ 1: UZAMA — yıldızlar yavaşça çizgilere dönüyor ──
+            if (p < 0.45) {
+                // ── YAVAŞ BİRİKİM — yıldızlar yavaşça noktadan kısa çizgilere ──
                 warpPhase = 1;
-                var t = p / 0.12;
-                sp = Math.pow(t, 2) * 0.4;
+                var t = p / 0.45;
+                // Çok yavaş artış: noktalar hafifçe uzamaya başlar
+                sp = Math.pow(t, 3) * 0.08;
                 swirl = 0;
                 exitFlash = 0;
                 bgAlpha = 0;
+                warpShakeX = 0;
+                warpShakeY = 0;
 
-            } else if (p < 0.85) {
-                // ── FAZ 2: PUNCH — tam hız, uzun parlak beyaz çizgiler ──
+            } else if (p < 0.50) {
+                // ── GÜM! — 0.08 → 1.0 çok hızlı, neredeyse anlık ──
                 warpPhase = 2;
-                var t = (p - 0.12) / 0.73;
-                // Hızlı çıkış, sonra sabit tam hız
-                sp = 0.4 + Math.min(Math.pow(t * 3.0, 2), 0.6);
-                swirl = 0.15 + Math.sin(t * Math.PI) * 0.1;
+                var t = (p - 0.45) / 0.05;
+                // Çok dik exponential — step function hissi
+                sp = 0.08 + Math.pow(t, 0.3) * 0.92;
+                swirl = t * 0.2;
                 exitFlash = 0;
                 bgAlpha = 0;
 
-                // Hafif titreşim — hyperspace rumble
-                warpShakeX = Math.sin(t * 37.0) * 15;
-                warpShakeY = Math.cos(t * 29.0) * 10;
+                // Patlama sarsıntısı
+                warpShakeX = (Math.sin(t * 71.0) * 0.6 + Math.sin(t * 130.0) * 0.4) * (1.0 - t) * 200;
+                warpShakeY = (Math.cos(t * 89.0) * 0.5 + Math.cos(t * 110.0) * 0.4) * (1.0 - t) * 130;
 
-            } else {
-                // ── FAZ 3: ÇIKIŞ — çizgiler kısalır, beyaz flash ──
+            } else if (p < 0.82) {
+                // ── TAM HIZ — uzun parlak beyaz çizgiler, karanlık uzay ──
                 warpPhase = 3;
-                var t = (p - 0.85) / 0.15;
-                sp = 1.0 * Math.pow(1.0 - t, 2);
-                swirl = 0.25 * (1.0 - t);
-                // Keskin beyaz flash — t=0.3 civarında pik
-                exitFlash = Math.sin(t * Math.PI) * 1.8;
+                var t = (p - 0.50) / 0.32;
+                sp = 1.0;
+                swirl = 0.2 + Math.sin(t * Math.PI) * 0.08;
+                exitFlash = 0;
                 bgAlpha = 0;
 
+                // Hafif rumble
+                warpShakeX = Math.sin(t * 37.0) * 12;
+                warpShakeY = Math.cos(t * 29.0) * 8;
+
+            } else {
+                // ── ÇIKIŞ — çizgiler kısalır, beyaz flash ──
+                warpPhase = 4;
+                var t = (p - 0.82) / 0.18;
+                sp = 1.0 * Math.pow(1.0 - t, 2);
+                swirl = 0.2 * (1.0 - t);
+                exitFlash = Math.sin(t * Math.PI) * 1.8;
+                bgAlpha = 0;
                 warpShakeX = 0;
                 warpShakeY = 0;
             }
@@ -120,20 +134,21 @@ var animate = (now) => {
             }
         }
 
-        // FOV — Sade ve güçlü
-        if (p < 0.12) {
-            // Uzama: hafif zoom-in (gerilim)
-            camera.fov = 65 - (p / 0.12) * 5;
-        } else if (p < 0.20) {
-            // Punch anı: hızlı FOV genişleme
-            var t = (p - 0.12) / 0.08;
-            camera.fov = 60 + Math.pow(t, 0.5) * 55;
-        } else if (p < 0.85) {
-            // Hyperspace: geniş açı sabit
+        // FOV — yavaş birikim sonra GÜM
+        if (p < 0.45) {
+            // Yavaş birikim: çok hafif zoom-in (gerilim)
+            var t = p / 0.45;
+            camera.fov = 65 - t * 4;
+        } else if (p < 0.50) {
+            // GÜM! Ani FOV patlaması
+            var t = (p - 0.45) / 0.05;
+            camera.fov = 61 + Math.pow(t, 0.3) * 54;
+        } else if (p < 0.82) {
+            // Tam hız: geniş açı sabit
             camera.fov = 115;
         } else {
             // Çıkış: FOV snap back
-            var t = (p - 0.85) / 0.15;
+            var t = (p - 0.82) / 0.18;
             camera.fov = 115 - Math.pow(t, 0.4) * 50;
         }
         camera.updateProjectionMatrix();
