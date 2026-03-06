@@ -58,7 +58,7 @@ var animate = (now) => {
         if (warpProgress < 0.50) {
             warpProgress += dt * 0.35;
         } else if (warpProgress < 0.82) {
-            warpProgress += dt * 0.7;
+            warpProgress += dt * 1.4;
         } else {
             warpProgress += dt * 6.0;
         }
