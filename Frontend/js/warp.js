@@ -54,22 +54,19 @@ var animate = (now) => {
         }
     }
     if (warpActive) {
-        // Değişken ilerleme hızı: yavaş birikim → GÜM sonrası çok hızlı
+        // Değişken ilerleme hızı: yavaş birikim → GÜM sonrası anında bitir
         if (warpProgress < 0.50) {
             warpProgress += dt * 0.35;
         } else {
-            warpProgress += dt * 2.2;
+            warpProgress += dt * 8.0;
         }
         var p = Math.min(warpProgress, 1);
         var ease = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
         // ═══════════════════════════════════════════════════════
-        // MILLENNIUM FALCON — "yavaşşş... GÜM!"
+        // GİRİŞ: yavaşşş... GÜM! → anında hyperspace bitir
+        // ÇIKIŞ: drift fazında ters sıra (GÜM! → yavaşşş söner)
         // ═══════════════════════════════════════════════════════
-        // Faz 1: YAVAŞ BİRİKİM (0-45%) — yıldızlar yavaşça uzar, gerilim
-        // Faz 2: GÜM!          (45-50%) — ANI patlama, 0.1→1.0 neredeyse step
-        // Faz 3: TAM HIZ       (50-82%) — hyperspace, uzun beyaz çizgiler
-        // Faz 4: ÇIKIŞ         (82-100%)— çizgiler kısalır, beyaz flash, snap
 
         if (p < 1) {
             var sp, swirl, exitFlash, bgAlpha;
@@ -78,7 +75,6 @@ var animate = (now) => {
                 // ── YAVAŞ BİRİKİM — yıldızlar yavaşça noktadan kısa çizgilere ──
                 warpPhase = 1;
                 var t = p / 0.45;
-                // Çok yavaş artış: noktalar hafifçe uzamaya başlar
                 sp = Math.pow(t, 3) * 0.08;
                 swirl = 0;
                 exitFlash = 0;
@@ -87,10 +83,9 @@ var animate = (now) => {
                 warpShakeY = 0;
 
             } else if (p < 0.50) {
-                // ── GÜM! — 0.08 → 1.0 çok hızlı, neredeyse anlık ──
+                // ── GÜM! — 0.08 → 1.0 neredeyse anlık ──
                 warpPhase = 2;
                 var t = (p - 0.45) / 0.05;
-                // Çok dik exponential — step function hissi
                 sp = 0.08 + Math.pow(t, 0.3) * 0.92;
                 swirl = t * 0.2;
                 exitFlash = 0;
@@ -100,26 +95,13 @@ var animate = (now) => {
                 warpShakeX = (Math.sin(t * 71.0) * 0.6 + Math.sin(t * 130.0) * 0.4) * (1.0 - t) * 200;
                 warpShakeY = (Math.cos(t * 89.0) * 0.5 + Math.cos(t * 110.0) * 0.4) * (1.0 - t) * 130;
 
-            } else if (p < 0.82) {
-                // ── TAM HIZ — uzun parlak beyaz çizgiler, karanlık uzay ──
-                warpPhase = 3;
-                var t = (p - 0.50) / 0.32;
-                sp = 1.0;
-                swirl = 0.2 + Math.sin(t * Math.PI) * 0.08;
-                exitFlash = 0;
-                bgAlpha = 0;
-
-                // Hafif rumble
-                warpShakeX = Math.sin(t * 37.0) * 12;
-                warpShakeY = Math.cos(t * 29.0) * 8;
-
             } else {
-                // ── ÇIKIŞ — çizgiler kısalır, beyaz flash ──
-                warpPhase = 4;
-                var t = (p - 0.82) / 0.18;
-                sp = 1.0 * Math.pow(1.0 - t, 2);
-                swirl = 0.2 * (1.0 - t);
-                exitFlash = Math.sin(t * Math.PI) * 1.8;
+                // ── ANINDA BİTİR — bir göz kırpması, beyaz flash ──
+                warpPhase = 3;
+                var t = (p - 0.50) / 0.50;
+                sp = 1.0;
+                swirl = 0.2;
+                exitFlash = Math.sin(t * Math.PI) * 2.0;
                 bgAlpha = 0;
                 warpShakeX = 0;
                 warpShakeY = 0;
@@ -142,20 +124,13 @@ var animate = (now) => {
 
         // FOV — yavaş birikim sonra GÜM
         if (p < 0.45) {
-            // Yavaş birikim: çok hafif zoom-in (gerilim)
             var t = p / 0.45;
             camera.fov = 65 - t * 4;
         } else if (p < 0.50) {
-            // GÜM! Ani FOV patlaması
             var t = (p - 0.45) / 0.05;
             camera.fov = 61 + Math.pow(t, 0.3) * 54;
-        } else if (p < 0.82) {
-            // Tam hız: geniş açı sabit
-            camera.fov = 115;
         } else {
-            // Çıkış: FOV snap back
-            var t = (p - 0.82) / 0.18;
-            camera.fov = 115 - Math.pow(t, 0.4) * 50;
+            camera.fov = 115;
         }
         camera.updateProjectionMatrix();
 
@@ -170,13 +145,7 @@ var animate = (now) => {
             warpDrift = true; warpDriftTime = 0;
             warpDriftDir.copy(warpEnd).sub(warpStart).normalize();
             warpPhase = 0; warpShakeX = 0; warpShakeY = 0;
-            camera.fov = 65; camera.updateProjectionMatrix();
-            if (warpMesh) {
-                warpMesh.visible = false;
-                warpMesh.material.uniforms.uSpeed.value = 0;
-                warpMesh.material.uniforms.uTime.value = 0;
-                warpMesh.material.uniforms.uSwirl.value = 0;
-            }
+            // FOV ve streak'leri sıfırlama — drift fazı devam ettirecek
             if (warpBg) {
                 warpBg.visible = false;
                 warpBg.material.uniforms.uFlash.value = 0;
@@ -184,36 +153,61 @@ var animate = (now) => {
             }
         }
     }
-    // Warp sonrası sürüklenme — Millennium Falcon çıkış momentum sönümleme
+    // ═══════════════════════════════════════════════════════
+    // ÇIKIŞ: Girişin TAM TERSİ — GÜM! (ani fren) → yavaşşş (çizgiler söner)
+    // ═══════════════════════════════════════════════════════
     if (warpDrift) {
         warpDriftTime += dt;
-        var driftDur = 2.0;
+        var driftDur = 1.8;
         var dp = Math.min(warpDriftTime / driftDur, 1);
-        var overshoot = 3500;
 
-        // Çift sıçrama: ana momentum + sekme
-        var mainDrift = overshoot * Math.sin(dp * Math.PI) * Math.pow(1 - dp, 1.5);
-        var bounce = 800 * Math.sin(dp * Math.PI * 3) * Math.pow(1 - dp, 3);
-        var drift = mainDrift + bounce;
+        // Ters streak animasyonu: tam hız → GÜM ters → yavaşşş söner
+        var revSpeed;
+        if (dp < 0.05) {
+            // ── GÜM! TERSİ — ani frenleme: 1.0 → 0.08 ──
+            var t = dp / 0.05;
+            revSpeed = 1.0 - Math.pow(t, 0.3) * 0.92;
+        } else {
+            // ── YAVAŞŞŞ SÖNME — girişin ayna simetrisi ──
+            var t = (dp - 0.05) / 0.95;
+            revSpeed = 0.08 * Math.pow(1.0 - t, 3);
+        }
 
+        // Streak'leri göster (ters animasyon)
+        var exitWarpSpeed = 1 + revSpeed * 350;
+        if (warpMesh) {
+            warpMesh.visible = (revSpeed > 0.001);
+            warpMesh.material.uniforms.uSpeed.value = exitWarpSpeed;
+            warpMesh.material.uniforms.uTime.value += dt * exitWarpSpeed * 0.1;
+            warpMesh.material.uniforms.uSwirl.value = revSpeed * 0.2;
+        }
+
+        // Kamera: hafif overshoot + sönümleme
+        var overshoot = 2000;
+        var drift = overshoot * Math.sin(dp * Math.PI * 0.5) * Math.pow(1 - dp, 2);
         camera.position.copy(warpEnd).addScaledVector(warpDriftDir, drift);
-
-        // Çıkış sarsıntısı — hızla sönen titreşim
-        var shakeDamp = Math.pow(1 - dp, 4);
-        camera.position.x += Math.sin(dp * 67) * 40 * shakeDamp;
-        camera.position.y += Math.cos(dp * 53) * 25 * shakeDamp;
-
         controls.target.copy(warpTarget);
 
-        // FOV salınımı — çıkışta "nefes" efekti
-        var fovBounce = Math.sin(dp * Math.PI * 2.5) * 8 * Math.pow(1 - dp, 2);
-        camera.fov = 65 + fovBounce;
+        // FOV: girişin tersi — 115 → hızlı daralma → yavaşça 65'e yerleşme
+        if (dp < 0.05) {
+            var t = dp / 0.05;
+            camera.fov = 115 - Math.pow(t, 0.3) * 54;
+        } else {
+            var t = (dp - 0.05) / 0.95;
+            camera.fov = 61 + t * 4;
+        }
         camera.updateProjectionMatrix();
 
         if (dp >= 1) {
             warpDrift = false; controls.enabled = true;
             camera.position.copy(warpEnd);
             camera.fov = 65; camera.updateProjectionMatrix();
+            if (warpMesh) {
+                warpMesh.visible = false;
+                warpMesh.material.uniforms.uSpeed.value = 0;
+                warpMesh.material.uniforms.uTime.value = 0;
+                warpMesh.material.uniforms.uSwirl.value = 0;
+            }
         }
     }
     if (controls) controls.update();
