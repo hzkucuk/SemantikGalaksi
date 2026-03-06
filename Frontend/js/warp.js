@@ -54,7 +54,13 @@ var animate = (now) => {
         }
     }
     if (warpActive) {
-        warpProgress += dt * 0.45; var p = Math.min(warpProgress, 1);
+        // Değişken ilerleme hızı: yavaş birikim → GÜM sonrası çok hızlı
+        if (warpProgress < 0.50) {
+            warpProgress += dt * 0.35;
+        } else {
+            warpProgress += dt * 2.2;
+        }
+        var p = Math.min(warpProgress, 1);
         var ease = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
         // ═══════════════════════════════════════════════════════
