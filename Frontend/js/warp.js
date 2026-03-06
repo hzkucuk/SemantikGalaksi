@@ -91,8 +91,9 @@ var animate = (now) => {
                 // ── GÜM tamamlandı — anında drift'e geç ──
                 sp = 1.0; swirl = 0.2;
                 warpShakeX = 0; warpShakeY = 0;
-                // Zorla bitir
+                // Zorla bitir — p'yi de güncelle ki aynı frame'de drift başlasın
                 warpProgress = 1.0;
+                p = 1.0;
             }
 
             warpSpeed = 1 + sp * 350;
