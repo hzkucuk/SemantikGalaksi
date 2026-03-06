@@ -84,24 +84,36 @@ Hem üst arama çubuğu hem HUD panelindeki semantik bağlantı araması Arapça
 - **4 satır düzen**: Harfler (3 satır) + Harekeler & kontrol tuşları (1 satır)
 - **Sonuç gösterimi**: Arapça aramada sonuçlarda ayet metni ve eşleşen kökler (🔤) gösterilir
 
-## WebGL Hyperspace Warp Efekti
-Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Star Wars Lightspeed Jump referansıyla tasarlandı.
+## WebGL Hyperspace Warp Efekti (v0.25.1 — Sinematik Güncelleme)
+Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Star Wars Millennium Falcon Lightspeed Jump referansıyla tasarlandı.
 
 | Bileşen | Detay |
 |---------|-------|
 | Geometri | 10000 instance × 6 vertex `InstancedBufferGeometry` — radyal streak quad'ları |
-| Vertex Shader | Clip-space output, `smoothstep` ile noktadan çizgiye kademeli uzama, perspektif tünel |
-| Fragment Shader | Mavi-indigo + beyaz karışım (`vBright` per-star renk), baş→kuyruk gradyan |
-| Background | Siyah overlay (renderOrder 9998) + warp çıkış beyaz flash |
+| Streak VS | Clip-space output, `smoothstep` uzama, spiral `uSwirl` tünel rotasyonu, hızla kalınlaşma |
+| Streak FS | Derin mavi → cyan → beyaz çekirdek renk paleti, enerji çekirdeği glow |
+| Background FS | 5 uniform: `uAlpha`, `uFlash`, `uBlueShift`, `uTunnel`, `uEntryFlash` |
+| Tunnel Vignette | Koyu kenarlar + parlak mavi merkez + ışık halkası (uç nokta) |
+| Entry Flash | Beyaz-mavi merkeze yoğun patlama (fırlatma anı) |
+| Exit Flash | Ekranı beyaza boyayan çıkış patlaması |
+| Blue Shift | Hyperspace sırasında tüm sahneye mavi renk kayması |
 | Blending | `THREE.AdditiveBlending` — streak glow birikimi |
-| Kamera | FOV 65°→125°→65° zoom, cubic ease lerp |
+| Kamera | 5 fazlı FOV eğrisi 65°→58°→145°→133°→90°→65° |
+| Sarsıntı | Fırlatma + hyperspace titreşimi + çıkış dampening |
 | Performans | Tek draw call, tüm hesaplama GPU GLSL shader'larında |
 
+### 5 Sinematik Faz
+| Faz | Aralık | Açıklama |
+|-----|--------|----------|
+| 1. Gerilim | %0-10 | Yıldızlar yavaşça uzar, hafif zoom-in (FOV 65→58) |
+| 2. Fırlatma | %10-18 | ANİ ivme, giriş flash, kamera sarsıntısı, FOV 58→145 |
+| 3. Hyperspace | %18-78 | Tam hız tüneli, spiral rotasyon, mavi shift, titreşim |
+| 4. Yavaşlama | %78-90 | Hız düşer, çizgiler kısalır, FOV normalleşir |
+| 5. Çıkış | %90-100 | Beyaz flash, keskin FOV snap, normal uzaya dönüş |
+
 - **Başlatma**: Bir sureye tıklama veya `warpToId()` çağrısı ile tetiklenir
-- **Süre**: ~1.25 saniye (`dt × 0.8` ilerleme)
-- **Giriş fazı**: %0-25 küpsel rampa — yıldızlar noktalardan çizgilere kademeli uzar
-- **Hyperspace**: %25-85 tam hız — uzun mavi-indigo/beyaz streak'ler
-- **Çıkış efekti**: %85-100 — streak'ler kısalır, beyaz flash (%83-95), hedefe varış
+- **Süre**: ~2.8 saniye (`dt × 0.36` ilerleme)
+- **Post-warp drift**: 2s çift sıçrama (3500 overshoot + sekme) + FOV nefes salınımı
 
 ## WebSocket Gerçek Zamanlı Senkronizasyon
 

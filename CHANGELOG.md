@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## [0.25.1] - 2025-07-28
+### Özellik
+- **Sinematik Warp — Millennium Falcon Hyperspace**: Warp giriş/çıkış efektleri tamamen yeniden yazıldı
+  - 5 sinematik faz: Gerilim → Fırlatma → Hyperspace → Yavaşlama → Çıkış
+  - Hyperspace tunnel vignette (koyu kenarlar, parlak mavi merkez + ışık halkası)
+  - Giriş flash blast (beyaz-mavi merkez patlaması)
+  - Çıkış flash (ekran beyaza boyanma)
+  - Blue shift (hyperspace sırasında mavi renk kayması)
+  - Spiral tunnel rotasyonu (yıldız çizgileri derinliğe göre döner)
+  - Star Wars renk paleti: derin mavi → cyan → beyaz çekirdek
+  - Kalınlaşan yıldız çizgileri + enerji çekirdeği glow
+  - Dramatik FOV eğrisi (65→58→145→133→90→65)
+  - Kamera sarsıntısı (fırlatma + hyperspace titreşimi + çıkış dampening)
+  - Çift sıçramalı post-warp drift (3500 overshoot + sekme + FOV nefes)
+  - Warp süresi 1.25s → 2.8s (daha sinematik)
+
 ## [0.25.0] - 2025-07-28
 ### Özellik
 - **Prosedürel Nebula Bulutsuları**: 7 adet GLSL FBM noise tabanlı renkli gaz bulutsası — mor, turkuaz, turuncu, kırmızı, mavi, fuşya, yeşil tonlarında

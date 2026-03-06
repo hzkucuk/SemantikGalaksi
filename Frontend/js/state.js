@@ -36,6 +36,9 @@ var warpSpeed = 1;
 var warpDrift = false;
 var warpDriftTime = 0;
 var warpDriftDir = new THREE.Vector3();
+var warpPhase = 0;
+var warpShakeX = 0;
+var warpShakeY = 0;
 
 // Cosmos atmosfer nesneleri
 var nebulaMeshes = [];
