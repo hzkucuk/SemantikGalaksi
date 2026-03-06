@@ -104,6 +104,50 @@ Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Star Wa
 - **Çıkış efekti**: %85-100 — streak'ler kısalır, beyaz flash (%83-95), hedefe varış
 
 ## WebSocket Gerçek Zamanlı Senkronizasyon
+
+## Cosmos Atmosferi (v0.25.0)
+Gerçek uzay oyunlarındaki atmosferi yakalamak için sahneye eklenen katmanlı görsel efektler.
+
+### Katman Yapısı
+| Katman | Öğe | Blending | RenderOrder |
+|--------|-----|----------|-------------|
+| 0 | `milkyway.jpg` skybox | Normal | -1 |
+| 1 | 3 Kozmik toz şeridi | Normal | -0.3 |
+| 2 | 7 Prosedürel nebula | Additive | -0.5 |
+| 3 | 120K yıldız + difraksiyon | Additive | 0 |
+| 4 | 3000 uzay tozu partikülü | Additive | 0 |
+| 5 | Quran veri küreleri | Normal | 0+ |
+
+### Prosedürel Nebulalar
+- **7 adet** farklı renkte gaz bulutsası: Mor, Turkuaz, Turuncu, Kırmızı, Mavi, Fuşya, Yeşil
+- **GLSL FBM noise**: Mevcut `snoise` + `fbm` + `ridge` fonksiyonları kullanılarak prosedürel desen
+- **Billboard rotasyonu**: Her frame `lookAt(camera)` ile kameraya dönük
+- **Filament yapıları**: `ridge(snoise(...))` ile ince gaz telleri
+- **Parlak çekirdek**: Gaussian `exp(-d*d*4)` ile merkez parıltı
+- **PlaneGeometry**: 8-14M birim ölçekli düzlem, sahnenin farklı bölgelerinde
+
+### Uzay Tozu Partikülleri
+- **3000 adet** küçük parlak toz tanecik
+- Kamera etrafında küresel dağılım (500K-5M birim yarıçap)
+- **Kamera takibi**: `spaceDust.position.copy(camera.position)` — her yerde süzülen toz hissi
+- Mavi-beyaz (%50), altın (%25), saf beyaz (%25) renk dağılımı
+- Sinüsoidal kırpışma (0.6 + 0.4 × sin)
+
+### Kozmik Toz Şeritleri
+- **3 adet** geniş karanlık nebula — arka planı kısmen kapatan toz desenleri
+- Normal blending (ışığı emer, kapatır)
+- Kızılımsı kenar: Yıldız ışığının tozdan geçişi efekti (Mie saçılımı referansı)
+- PlaneGeometry (yatay dikdörtgen, scale × 0.4 oran)
+
+### Yıldız İyileştirmeleri
+- **Difraksiyon çizgileri**: Parlak yıldızlarda (vSizeNorm > 0.15) 4+4 kollu ışık efekti
+  - 4 ortogonal kol (yatay + dikey): `exp(-ay²×800) × exp(-ax×8)`
+  - 4 çapraz kol (45°): `abs(c.x ± c.y) × 0.7071` rotasyonlu
+- **Çoklu frekans kırpışma**: 3 sinüs katmanı (0.7Hz, 1.3Hz, 2.1Hz) × farklı fazlar
+  - Toplam amplitüd: %5-8 (önceki: %1-2)
+  - `vSizeNorm` ile ağırlıklı — sadece parlak yıldızlar belirgin titrer
+
+## WebSocket Gerçek Zamanlı Senkronizasyon
 Birden fazla kullanıcı aynı anda çalışırken değişiklikler anlık olarak tüm istemcilere iletilir.
 
 | Olay | Tetiklenme | Etki |

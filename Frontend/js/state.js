@@ -37,6 +37,11 @@ var warpDrift = false;
 var warpDriftTime = 0;
 var warpDriftDir = new THREE.Vector3();
 
+// Cosmos atmosfer nesneleri
+var nebulaMeshes = [];
+var spaceDust = null;
+var cosmicDustLanes = [];
+
 // Ses durumu
 var isAudioLoading = false;
 var apiKey = null;

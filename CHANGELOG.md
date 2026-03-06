@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## [0.25.0] - 2025-07-28
+### Özellik
+- **Prosedürel Nebula Bulutsuları**: 7 adet GLSL FBM noise tabanlı renkli gaz bulutsası — mor, turkuaz, turuncu, kırmızı, mavi, fuşya, yeşil tonlarında
+  - Billboard rotasyonu ile her açıdan görünür
+  - Additive blending ile milkyway.jpg skybox üzerine katmanlı render
+- **Uzay Tozu Partikülleri**: 3000 parlak toz tanecik — kamera etrafında süzülerek derinlik hissi verir
+  - Mavi-beyaz ve altın tonlarında, sinüsoidal kırpışma
+- **Kozmik Toz Şeritleri**: 3 adet karanlık nebula — arka planı kısmen kapatan prosedürel toz desenleri
+  - Kızılımsı kenar efekti (yıldız ışığının tozdan geçişi)
+- **Difraksiyon Çizgileri**: Parlak yıldızlarda 4+4 kollu (ortogonal + 45°) çapraz ışık çizgileri
+- **Geliştirilmiş Yıldız Kırpışması**: %1-2'den %5-8'e çıkarıldı, 3 frekans katmanlı sinüsoidal titreşim
+
 ## [0.24.1] - 2025-07-28
 ### Düzeltme
 - **Kök Renk Kontrast İyileştirmesi**: `getRootCSSColor()` fonksiyonu yeniden yazıldı — Arapça karakterlerin dar charCode aralığında kümelenen hue değerleri yerine djb2 hash + 11 ayrık renk paleti (min 30° renk ayrımı) kullanılarak kök etiketleri arasında net görsel ayrım sağlandı

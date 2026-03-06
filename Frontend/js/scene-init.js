@@ -165,13 +165,16 @@ var init = () => {
             'uniform float uScale;',
             'void main(){',
             '  vSizeNorm = clamp((aSize - 180.0) / 2200.0, 0.0, 1.0);',
-            // Sönük yıldızlar beyaza yakın, parlak yıldızlar renkli (uzayda göz adaptasyonu)
+            // Sönük yıldızlar beyaza yakın, parlak yıldızlar renkli
             '  vColor = mix(vec3(0.85, 0.88, 0.92), color, smoothstep(0.0, 0.6, vSizeNorm));',
-            // Sensör gürültüsü: çok hafif, neredeyse fark edilmez (%1-2)
-            '  vBright = 1.0 - 0.012 + 0.012 * sin(uTime * 0.4 + aPhase);',
+            // Geliştirilmiş kırpışma: %5-8 titreşim, çoklu frekans
+            '  float twinkle1 = sin(uTime * 0.7 + aPhase * 6.28) * 0.04;',
+            '  float twinkle2 = sin(uTime * 1.3 + aPhase * 3.14 + 2.0) * 0.025;',
+            '  float twinkle3 = sin(uTime * 2.1 + aPhase * 1.57) * 0.015;',
+            '  vBright = 1.0 + (twinkle1 + twinkle2 + twinkle3) * vSizeNorm;',
             '  vec4 mv = modelViewMatrix * vec4(position, 1.0);',
             '  gl_PointSize = aSize * (uScale / -mv.z);',
-            '  gl_PointSize = clamp(gl_PointSize, 0.3, 10.0);',
+            '  gl_PointSize = clamp(gl_PointSize, 0.3, 14.0);',
             '  gl_Position = projectionMatrix * mv;',
             '}'
         ].join('\n'),
@@ -183,11 +186,26 @@ var init = () => {
             '  vec2 c = gl_PointCoord - 0.5;',
             '  float d = length(c);',
             '  if(d > 0.5) discard;',
-            // Keskin çekirdek: uzayda kırınım yok, iğne ucu nokta
+            // Keskin çekirdek
             '  float core = exp(-d * d * 320.0);',
-            // Sadece parlak yıldızlarda çok hafif optik halo (teleskop lensi)
-            '  float halo = exp(-d * d * 18.0) * 0.06 * vSizeNorm;',
-            '  float a = (core + halo) * vBright;',
+            // Optik halo
+            '  float halo = exp(-d * d * 18.0) * 0.08 * vSizeNorm;',
+            // Difraksiyon çizgileri — parlak yıldızlarda 4-kollu çapraz ışık
+            '  float spike = 0.0;',
+            '  if(vSizeNorm > 0.15) {',
+            '    float ax = abs(c.x);',
+            '    float ay = abs(c.y);',
+            '    float spikeH = exp(-ay * ay * 800.0) * exp(-ax * 8.0);',
+            '    float spikeV = exp(-ax * ax * 800.0) * exp(-ay * 8.0);',
+            // Çapraz çizgiler (45°)
+            '    float d45a = abs(c.x + c.y) * 0.7071;',
+            '    float d45b = abs(c.x - c.y) * 0.7071;',
+            '    float spikeDa = exp(-d45a * d45a * 1200.0) * exp(-(d45b + d) * 6.0);',
+            '    float spikeDb = exp(-d45b * d45b * 1200.0) * exp(-(d45a + d) * 6.0);',
+            '    spike = (spikeH + spikeV) * 0.25 + (spikeDa + spikeDb) * 0.12;',
+            '    spike *= vSizeNorm * vSizeNorm;',
+            '  }',
+            '  float a = (core + halo + spike) * vBright;',
             '  gl_FragColor = vec4(vColor * vBright, a);',
             '}'
         ].join('\n'),
@@ -196,6 +214,114 @@ var init = () => {
     });
     starField = new THREE.Points(starGeom, starMat);
     scene.add(starField); camera.position.set(0, 10000000, 20000000);
+
+    // --- Prosedürel Nebula Bulutsuları ---
+    // Sahnenin farklı bölgelerine yerleştirilmiş renkli gaz bulutsları
+    var nebulaConfigs = [
+        { pos: [-18000000, 8000000, -22000000], scale: 12000000, color1: [0.4, 0.1, 0.8], color2: [0.1, 0.0, 0.3], seed: 1.0, density: 1.2, rotZ: 0.3 },
+        { pos: [22000000, -5000000, -15000000], scale: 10000000, color1: [0.0, 0.7, 0.8], color2: [0.0, 0.15, 0.3], seed: 2.7, density: 1.0, rotZ: -0.5 },
+        { pos: [-8000000, -18000000, 16000000], scale: 14000000, color1: [0.9, 0.3, 0.1], color2: [0.3, 0.05, 0.0], seed: 4.2, density: 0.9, rotZ: 1.2 },
+        { pos: [15000000, 15000000, 10000000], scale: 9000000, color1: [0.8, 0.1, 0.3], color2: [0.2, 0.0, 0.1], seed: 5.8, density: 1.1, rotZ: -0.8 },
+        { pos: [-20000000, -10000000, -8000000], scale: 11000000, color1: [0.2, 0.5, 0.9], color2: [0.05, 0.1, 0.3], seed: 7.1, density: 0.8, rotZ: 0.7 },
+        { pos: [5000000, 22000000, -20000000], scale: 13000000, color1: [0.6, 0.0, 0.7], color2: [0.15, 0.0, 0.2], seed: 9.3, density: 1.0, rotZ: -1.1 },
+        { pos: [-15000000, 5000000, 24000000], scale: 8000000, color1: [0.1, 0.8, 0.4], color2: [0.0, 0.2, 0.1], seed: 3.5, density: 0.7, rotZ: 0.4 }
+    ];
+    nebulaConfigs.forEach(function(cfg) {
+        var geo = new THREE.PlaneGeometry(cfg.scale, cfg.scale);
+        var mat = new THREE.ShaderMaterial({
+            uniforms: {
+                uTime: { value: 0 },
+                uColor1: { value: new THREE.Vector3(cfg.color1[0], cfg.color1[1], cfg.color1[2]) },
+                uColor2: { value: new THREE.Vector3(cfg.color2[0], cfg.color2[1], cfg.color2[2]) },
+                uSeed: { value: cfg.seed },
+                uDensity: { value: cfg.density }
+            },
+            vertexShader: nebulaVS,
+            fragmentShader: nebulaFS,
+            transparent: true,
+            depthWrite: false,
+            side: THREE.DoubleSide,
+            blending: THREE.AdditiveBlending
+        });
+        var mesh = new THREE.Mesh(geo, mat);
+        mesh.position.set(cfg.pos[0], cfg.pos[1], cfg.pos[2]);
+        mesh.rotation.z = cfg.rotZ;
+        mesh.renderOrder = -0.5;
+        scene.add(mesh);
+        nebulaMeshes.push(mesh);
+    });
+
+    // --- Kozmik Toz Şeritleri (Dark Nebula) ---
+    var dustLaneConfigs = [
+        { pos: [10000000, -3000000, -18000000], scale: 16000000, seed: 1.5, rotZ: 0.6 },
+        { pos: [-12000000, 12000000, -5000000], scale: 12000000, seed: 3.8, rotZ: -0.9 },
+        { pos: [0, -20000000, 8000000], scale: 18000000, seed: 6.2, rotZ: 1.5 }
+    ];
+    dustLaneConfigs.forEach(function(cfg) {
+        var geo = new THREE.PlaneGeometry(cfg.scale, cfg.scale * 0.4);
+        var mat = new THREE.ShaderMaterial({
+            uniforms: {
+                uTime: { value: 0 },
+                uSeed: { value: cfg.seed }
+            },
+            vertexShader: cosmicDustVS,
+            fragmentShader: cosmicDustFS,
+            transparent: true,
+            depthWrite: false,
+            side: THREE.DoubleSide,
+            blending: THREE.NormalBlending
+        });
+        var mesh = new THREE.Mesh(geo, mat);
+        mesh.position.set(cfg.pos[0], cfg.pos[1], cfg.pos[2]);
+        mesh.rotation.z = cfg.rotZ;
+        mesh.renderOrder = -0.3;
+        scene.add(mesh);
+        cosmicDustLanes.push(mesh);
+    });
+
+    // --- Uzay Tozu Partikülleri (Space Dust) ---
+    var DUST_COUNT = 3000;
+    var _dPos = new Float32Array(DUST_COUNT * 3);
+    var _dCol = new Float32Array(DUST_COUNT * 3);
+    var _dSiz = new Float32Array(DUST_COUNT);
+    var _dPha = new Float32Array(DUST_COUNT);
+    var _dBri = new Float32Array(DUST_COUNT);
+    for (var di = 0; di < DUST_COUNT; di++) {
+        var di3 = di * 3;
+        // Kamera etrafında küresel dağılım
+        var du = Math.random() * 2 - 1;
+        var dphi = Math.random() * Math.PI * 2;
+        var dsT = Math.sqrt(1 - du * du);
+        var dr = 500000 + Math.random() * 4500000;
+        _dPos[di3] = dsT * Math.cos(dphi) * dr;
+        _dPos[di3 + 1] = dsT * Math.sin(dphi) * dr;
+        _dPos[di3 + 2] = du * dr;
+        // Renk: soğuk mavi-beyaz tonları
+        var cType = Math.random();
+        if (cType < 0.5) { _dCol[di3] = 0.7; _dCol[di3+1] = 0.8; _dCol[di3+2] = 1.0; }
+        else if (cType < 0.75) { _dCol[di3] = 1.0; _dCol[di3+1] = 0.9; _dCol[di3+2] = 0.7; }
+        else { _dCol[di3] = 0.9; _dCol[di3+1] = 0.95; _dCol[di3+2] = 1.0; }
+        _dSiz[di] = 80 + Math.random() * 300;
+        _dPha[di] = Math.random();
+        _dBri[di] = 0.3 + Math.random() * 0.7;
+    }
+    var dustGeom = new THREE.BufferGeometry();
+    dustGeom.setAttribute('position', new THREE.BufferAttribute(_dPos, 3));
+    dustGeom.setAttribute('color', new THREE.BufferAttribute(_dCol, 3));
+    dustGeom.setAttribute('aSize', new THREE.BufferAttribute(_dSiz, 1));
+    dustGeom.setAttribute('aPhase', new THREE.BufferAttribute(_dPha, 1));
+    dustGeom.setAttribute('aBright', new THREE.BufferAttribute(_dBri, 1));
+    var dustMat = new THREE.ShaderMaterial({
+        uniforms: { uTime: { value: 0 }, uScale: { value: window.innerHeight * 0.5 } },
+        vertexShader: spaceDustVS,
+        fragmentShader: spaceDustFS,
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+        vertexColors: true
+    });
+    spaceDust = new THREE.Points(dustGeom, dustMat);
+    scene.add(spaceDust);
 
     // WebGL Hyperspace warp — Star Wars Lightspeed Jump
     {

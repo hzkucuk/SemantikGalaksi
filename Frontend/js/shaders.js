@@ -133,7 +133,101 @@ var sunBodyFS = `
     }
 `;
 
-// Ayah güneş shader (InstancedMesh desteği, hafifletilmiş 3-octave noise)
+// --- Prosedürel Nebula Shader ---
+var nebulaVS = `
+    varying vec2 vUv;
+    void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+`;
+var nebulaFS = `
+    uniform float uTime;
+    uniform vec3 uColor1;
+    uniform vec3 uColor2;
+    uniform float uSeed;
+    uniform float uDensity;
+    varying vec2 vUv;
+    ` + noiseShaderCode + `
+    void main() {
+        vec2 uv = vUv * 2.0 - 1.0;
+        float dist = length(uv);
+        float mask = 1.0 - smoothstep(0.3, 1.0, dist);
+        vec3 p = vec3(uv * 1.8 + uSeed * 10.0, uTime * 0.015 + uSeed);
+        float n1 = fbm(p * 1.2);
+        float n2 = fbm(p * 2.5 + vec3(43.0, 17.0, 31.0));
+        float n3 = fbm(p * 0.6 + vec3(n1 * 0.4, n2 * 0.3, 0.0));
+        float filament = ridge(snoise(p * 3.0 + vec3(uTime * 0.02)));
+        float density = n3 * 0.6 + n1 * 0.3 + filament * 0.15;
+        density = pow(max(density, 0.0), 1.5) * uDensity;
+        vec3 col = mix(uColor2, uColor1, n1 * 0.5 + 0.5);
+        col += vec3(filament * 0.1) * uColor1;
+        float core = exp(-dist * dist * 4.0) * 0.3;
+        col += uColor1 * core;
+        float alpha = density * mask * 0.55;
+        alpha = clamp(alpha, 0.0, 0.7);
+        gl_FragColor = vec4(col, alpha);
+    }
+`;
+
+// --- Uzay Tozu (Space Dust) Shader ---
+var spaceDustVS = `
+    attribute float aSize;
+    attribute float aPhase;
+    attribute float aBright;
+    uniform float uTime;
+    uniform float uScale;
+    varying float vAlpha;
+    varying vec3 vColor;
+    void main() {
+        float twinkle = 0.6 + 0.4 * sin(uTime * 1.5 + aPhase * 6.28);
+        vAlpha = aBright * twinkle;
+        vColor = color;
+        vec4 mv = modelViewMatrix * vec4(position, 1.0);
+        gl_PointSize = aSize * (uScale / -mv.z);
+        gl_PointSize = clamp(gl_PointSize, 0.5, 6.0);
+        gl_Position = projectionMatrix * mv;
+    }
+`;
+var spaceDustFS = `
+    varying float vAlpha;
+    varying vec3 vColor;
+    void main() {
+        vec2 c = gl_PointCoord - 0.5;
+        float d = length(c);
+        if (d > 0.5) discard;
+        float glow = exp(-d * d * 20.0);
+        gl_FragColor = vec4(vColor, glow * vAlpha * 0.6);
+    }
+`;
+
+// --- Kozmik Toz Şeridi (Dark Nebula) Shader ---
+var cosmicDustVS = `
+    varying vec2 vUv;
+    void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+`;
+var cosmicDustFS = `
+    uniform float uTime;
+    uniform float uSeed;
+    varying vec2 vUv;
+    ` + noiseShaderCode + `
+    void main() {
+        vec2 uv = vUv * 2.0 - 1.0;
+        float dist = length(uv);
+        float mask = 1.0 - smoothstep(0.2, 0.95, dist);
+        vec3 p = vec3(uv * 1.5 + uSeed * 10.0, uTime * 0.008 + uSeed);
+        float n = fbm(p * 1.5);
+        float n2 = fbm(p * 3.0 + vec3(7.0, 13.0, 23.0));
+        float density = (n * 0.7 + n2 * 0.3);
+        density = pow(max(density * 0.5 + 0.25, 0.0), 2.0);
+        float alpha = density * mask * 0.45;
+        vec3 col = mix(vec3(0.0), vec3(0.15, 0.03, 0.02), n * mask * 0.3);
+        gl_FragColor = vec4(col, alpha);
+    }
+`;
 var ayahSunVS = `
     varying vec3 vNormal;
     varying vec3 vPosition;

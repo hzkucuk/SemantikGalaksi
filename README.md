@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/Sürüm-0.24.1-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/Sürüm-0.25.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -96,8 +96,19 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **Galaktik şişkinlik**: Sagittarius A* yönünde kümelenme
 - **Macellan Bulutları**: Büyük/Küçük uydu galaksi kümeleri
 - **Planck B-V → RGB**: Gerçek yıldız renkleri (O/B mavi → M kırmızı cüce)
-- **Vakum fiziği**: Atmosfer yok → titreşimsiz, iğne ucu kadar keskin noktalar
+- **Difraksiyon çizgileri** (v0.25.0): Parlak yıldızlarda 4+4 kollu çapraz ışık efekti (ortogonal + 45°)
+- **Çoklu frekans kırpışma** (v0.25.0): 3 katmanlı sinüs dalga titreşimi (%5-8 amplitüd)
 - **Milky Way panorama** ile birlikte katmanlı derinlik efekti
+
+### 🌌 Cosmos Atmosferi (v0.25.0)
+- **7 Prosedürel Nebula**: GLSL FBM noise tabanlı renkli gaz bulutsuları — mor, turkuaz, turuncu, kırmızı, mavi, fuşya, yeşil
+  - Billboard rotasyonu ile her açıdan görünür, Additive blending
+  - Filament yapıları (ridge noise), parlak çekirdek, yumuşak kenar maskesi
+- **3000 Uzay Tozu Partikülü**: Kamera etrafında süzülen mavi-beyaz/altın toz tanecikleri
+  - Sinüsoidal kırpışma, derinlik hissi, Additive blending
+- **3 Kozmik Toz Şeridi**: Karanlık nebula — arka planı kısmen kapatan prosedürel toz desenleri
+  - Kızılımsı kenar efekti (yıldız ışığının tozdan geçişi)
+- **Katmanlı render**: `milkyway.jpg` → Kozmik toz → Nebulalar → Yıldızlar → Uzay tozu → Veri küreleri
 
 ### 🤖 Yapay Zekâ Analizi
 - **Google Gemini 2.5 Flash** entegrasyonu
@@ -635,6 +646,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.25.0** | 2025-07-28 | Cosmos atmosferi: 7 nebula, 3000 uzay tozu, 3 kozmik toz şeridi, difraksiyon, kırpışma |
 | **0.24.1** | 2025-07-28 | Kök renk kontrast iyileştirmesi (djb2 hash + ayrık palet) |
 | **0.24.0** | 2025-07-28 | MSI installer paketi (cx_Freeze, gömülü Python runtime) |
 | **0.23.1** | 2025-07-28 | Milky Way panorama skybox (equirectangular, ters küre) |
