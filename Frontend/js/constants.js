@@ -25,9 +25,12 @@ var surahNamesTR = {
 
 var getSurahTR = (id) => surahNamesTR[id.split(':')[0]] || "Sure " + id.split(':')[0];
 
+var rootColorHues = [0, 30, 55, 90, 135, 170, 200, 235, 270, 305, 340];
+
 var getRootCSSColor = (root) => {
-    let h = 0; for (let i = 0; i < root.length; i++) h = (h << 5) - h + root.charCodeAt(i);
-    return `hsl(${Math.abs(h * 137.5) % 360}, 100%, 60%)`;
+    var h = 5381;
+    for (var i = 0; i < root.length; i++) h = ((h << 5) + h + root.charCodeAt(i)) | 0;
+    return `hsl(${rootColorHues[(h >>> 0) % rootColorHues.length]}, 90%, 65%)`;
 };
 
 var getRootPron = (root) => {

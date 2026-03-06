@@ -29,10 +29,13 @@
     <Compile Include="DataEngine\step1_fetch_quran.py" />
     <Compile Include="DataEngine\step2_extract_roots.py" />
     <Compile Include="DataEngine\step3_build_root_dict.py" />
+    <Compile Include="setup.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".github\workflows\deploy.yml" />
+    <Content Include=".github\workflows\release.yml" />
     <Content Include="build_exe.bat" />
+    <Content Include="build_msi.bat" />
     <Content Include="CHANGELOG.md" />
     <Content Include="DataEngine\config.json" />
     <Content Include="DataEngine\README.md" />

@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/Sürüm-0.24.0-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/Sürüm-0.24.1-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -167,6 +167,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.24.1 | **Kök Renk Kontrast**: Arapça charCode kümelenmesi nedeniyle benzer hue değerleri → djb2 hash + 11 ayrık renk paleti (min 30° ayrım) |
 | v0.21.5 | **GPU Bellek Sızıntısı**: Layout/dataset değişiminde eski geometry, material, texture dispose edilmiyor → düzeltildi |
 | v0.21.5 | **Ölü Kod Temizliği**: Kullanılmayan `ayahIndexMap`, `coronaVS/FS`, `outerGlowVS/FS` kaldırıldı |
 | v0.21.4 | **Desktop Çift Ses**: Python winsound + HTML audio aynı anda çalıyordu → Desktop'ta HTML audio devre dışı |
@@ -634,6 +635,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.24.1** | 2025-07-28 | Kök renk kontrast iyileştirmesi (djb2 hash + ayrık palet) |
 | **0.24.0** | 2025-07-28 | MSI installer paketi (cx_Freeze, gömülü Python runtime) |
 | **0.23.1** | 2025-07-28 | Milky Way panorama skybox (equirectangular, ters küre) |
 | **0.23.0** | 2025-07-28 | JSON editör iki sekmeli tasarım (data + roots) |

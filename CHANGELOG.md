@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [0.24.1] - 2025-07-28
+### Düzeltme
+- **Kök Renk Kontrast İyileştirmesi**: `getRootCSSColor()` fonksiyonu yeniden yazıldı — Arapça karakterlerin dar charCode aralığında kümelenen hue değerleri yerine djb2 hash + 11 ayrık renk paleti (min 30° renk ayrımı) kullanılarak kök etiketleri arasında net görsel ayrım sağlandı
+
 ## [0.24.0] - 2025-07-28
 ### Özellik
 - **MSI Installer Paketi**: cx_Freeze ile profesyonel Windows MSI kurulum paketi oluşturma desteği
