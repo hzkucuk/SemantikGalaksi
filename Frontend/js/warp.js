@@ -54,27 +54,20 @@ var animate = (now) => {
         }
     }
     if (warpActive) {
-        // 3 hız bölgesi: yavaş birikim → kısa hyperspace → hızlı çıkışa geçiş
-        if (warpProgress < 0.50) {
-            warpProgress += dt * 0.35;
-        } else if (warpProgress < 0.82) {
-            warpProgress += dt * 20.0;
-        } else {
-            warpProgress += dt * 6.0;
-        }
+        // Yavaş birikim → GÜM sonrası anında drift'e geç
+        warpProgress += dt * 0.35;
         var p = Math.min(warpProgress, 1);
         var ease = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
         // ═══════════════════════════════════════════════════════
-        // GİRİŞ → HYPERSPACE → ÇIKIŞ (simetrik)
+        // GİRİŞ: yavaşşş... GÜM! → anında drift (ters çıkış)
         // ═══════════════════════════════════════════════════════
         // Faz 1: YAVAŞ BİRİKİM (0-45%)  ~1.3s — yıldızlar yavaşça uzar
         // Faz 2: GÜM!          (45-50%)  ~0.15s — ani patlama
-        // Faz 3: HYPERSPACE    (50-82%)  ~0.46s — tam hız, çizgiler akıyor
-        // Faz 4: SNAP          (82-100%) ~0.03s — anında drift'e geç
+        //        → anında drift'e geç (ters çıkış)
 
         if (p < 1) {
-            var sp, swirl, exitFlash, bgAlpha;
+            var sp, swirl;
 
             if (p < 0.45) {
                 // ── YAVAŞ BİRİKİM ──
@@ -82,8 +75,6 @@ var animate = (now) => {
                 var t = p / 0.45;
                 sp = Math.pow(t, 3) * 0.08;
                 swirl = 0;
-                exitFlash = 0;
-                bgAlpha = 0;
                 warpShakeX = 0;
                 warpShakeY = 0;
 
@@ -93,32 +84,15 @@ var animate = (now) => {
                 var t = (p - 0.45) / 0.05;
                 sp = 0.08 + Math.pow(t, 0.3) * 0.92;
                 swirl = t * 0.2;
-                exitFlash = 0;
-                bgAlpha = 0;
                 warpShakeX = (Math.sin(t * 71.0) * 0.6 + Math.sin(t * 130.0) * 0.4) * (1.0 - t) * 200;
                 warpShakeY = (Math.cos(t * 89.0) * 0.5 + Math.cos(t * 110.0) * 0.4) * (1.0 - t) * 130;
 
-            } else if (p < 0.82) {
-                // ── HYPERSPACE — tam hız, çizgiler akıyor, hafif nefes ──
-                warpPhase = 3;
-                var t = (p - 0.50) / 0.32;
-                sp = 1.0;
-                swirl = 0.2 + Math.sin(t * Math.PI * 2.0) * 0.06;
-                exitFlash = 0;
-                bgAlpha = 0;
-                // Hafif hyperspace titreşimi
-                warpShakeX = Math.sin(t * 43.0) * 10;
-                warpShakeY = Math.cos(t * 31.0) * 7;
-
             } else {
-                // ── SNAP — anında drift'e geçiş ──
-                warpPhase = 4;
-                sp = 1.0;
-                swirl = 0.2;
-                exitFlash = 0;
-                bgAlpha = 0;
-                warpShakeX = 0;
-                warpShakeY = 0;
+                // ── GÜM tamamlandı — anında drift'e geç ──
+                sp = 1.0; swirl = 0.2;
+                warpShakeX = 0; warpShakeY = 0;
+                // Zorla bitir
+                warpProgress = 1.0;
             }
 
             warpSpeed = 1 + sp * 350;
@@ -131,8 +105,6 @@ var animate = (now) => {
             }
             if (warpBg) {
                 warpBg.visible = false;
-                warpBg.material.uniforms.uAlpha.value = 0;
-                warpBg.material.uniforms.uFlash.value = 0;
             }
         }
 
@@ -140,15 +112,9 @@ var animate = (now) => {
         if (p < 0.45) {
             var t = p / 0.45;
             camera.fov = 65 - t * 4;
-        } else if (p < 0.50) {
-            var t = (p - 0.45) / 0.05;
-            camera.fov = 61 + Math.pow(t, 0.3) * 54;
-        } else if (p < 0.82) {
-            // Hyperspace: geniş açı + hafif nefes salınımı
-            var t = (p - 0.50) / 0.32;
-            camera.fov = 115 + Math.sin(t * Math.PI * 2.0) * 3;
         } else {
-            camera.fov = 115;
+            var t = Math.min((p - 0.45) / 0.05, 1);
+            camera.fov = 61 + Math.pow(t, 0.3) * 54;
         }
         camera.updateProjectionMatrix();
 
