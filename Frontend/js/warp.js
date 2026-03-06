@@ -54,25 +54,30 @@ var animate = (now) => {
         }
     }
     if (warpActive) {
-        // Değişken ilerleme hızı: yavaş birikim → GÜM sonrası anında bitir
+        // 3 hız bölgesi: yavaş birikim → kısa hyperspace → hızlı çıkışa geçiş
         if (warpProgress < 0.50) {
             warpProgress += dt * 0.35;
+        } else if (warpProgress < 0.82) {
+            warpProgress += dt * 0.7;
         } else {
-            warpProgress += dt * 8.0;
+            warpProgress += dt * 6.0;
         }
         var p = Math.min(warpProgress, 1);
         var ease = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
         // ═══════════════════════════════════════════════════════
-        // GİRİŞ: yavaşşş... GÜM! → anında hyperspace bitir
-        // ÇIKIŞ: drift fazında ters sıra (GÜM! → yavaşşş söner)
+        // GİRİŞ → HYPERSPACE → ÇIKIŞ (simetrik)
         // ═══════════════════════════════════════════════════════
+        // Faz 1: YAVAŞ BİRİKİM (0-45%)  ~1.3s — yıldızlar yavaşça uzar
+        // Faz 2: GÜM!          (45-50%)  ~0.15s — ani patlama
+        // Faz 3: HYPERSPACE    (50-82%)  ~0.46s — tam hız, çizgiler akıyor
+        // Faz 4: SNAP          (82-100%) ~0.03s — anında drift'e geç
 
         if (p < 1) {
             var sp, swirl, exitFlash, bgAlpha;
 
             if (p < 0.45) {
-                // ── YAVAŞ BİRİKİM — yıldızlar yavaşça noktadan kısa çizgilere ──
+                // ── YAVAŞ BİRİKİM ──
                 warpPhase = 1;
                 var t = p / 0.45;
                 sp = Math.pow(t, 3) * 0.08;
@@ -83,25 +88,34 @@ var animate = (now) => {
                 warpShakeY = 0;
 
             } else if (p < 0.50) {
-                // ── GÜM! — 0.08 → 1.0 neredeyse anlık ──
+                // ── GÜM! ──
                 warpPhase = 2;
                 var t = (p - 0.45) / 0.05;
                 sp = 0.08 + Math.pow(t, 0.3) * 0.92;
                 swirl = t * 0.2;
                 exitFlash = 0;
                 bgAlpha = 0;
-
-                // Patlama sarsıntısı
                 warpShakeX = (Math.sin(t * 71.0) * 0.6 + Math.sin(t * 130.0) * 0.4) * (1.0 - t) * 200;
                 warpShakeY = (Math.cos(t * 89.0) * 0.5 + Math.cos(t * 110.0) * 0.4) * (1.0 - t) * 130;
 
-            } else {
-                // ── ANINDA BİTİR — bir göz kırpması, beyaz flash ──
+            } else if (p < 0.82) {
+                // ── HYPERSPACE — tam hız, çizgiler akıyor, hafif nefes ──
                 warpPhase = 3;
-                var t = (p - 0.50) / 0.50;
+                var t = (p - 0.50) / 0.32;
+                sp = 1.0;
+                swirl = 0.2 + Math.sin(t * Math.PI * 2.0) * 0.06;
+                exitFlash = 0;
+                bgAlpha = 0;
+                // Hafif hyperspace titreşimi
+                warpShakeX = Math.sin(t * 43.0) * 10;
+                warpShakeY = Math.cos(t * 31.0) * 7;
+
+            } else {
+                // ── SNAP — anında drift'e geçiş ──
+                warpPhase = 4;
                 sp = 1.0;
                 swirl = 0.2;
-                exitFlash = Math.sin(t * Math.PI) * 2.0;
+                exitFlash = 0;
                 bgAlpha = 0;
                 warpShakeX = 0;
                 warpShakeY = 0;
@@ -116,19 +130,23 @@ var animate = (now) => {
                 warpMesh.material.uniforms.uSwirl.value = swirl;
             }
             if (warpBg) {
-                warpBg.visible = (exitFlash > 0.01);
-                warpBg.material.uniforms.uAlpha.value = bgAlpha;
-                warpBg.material.uniforms.uFlash.value = exitFlash;
+                warpBg.visible = false;
+                warpBg.material.uniforms.uAlpha.value = 0;
+                warpBg.material.uniforms.uFlash.value = 0;
             }
         }
 
-        // FOV — yavaş birikim sonra GÜM
+        // FOV
         if (p < 0.45) {
             var t = p / 0.45;
             camera.fov = 65 - t * 4;
         } else if (p < 0.50) {
             var t = (p - 0.45) / 0.05;
             camera.fov = 61 + Math.pow(t, 0.3) * 54;
+        } else if (p < 0.82) {
+            // Hyperspace: geniş açı + hafif nefes salınımı
+            var t = (p - 0.50) / 0.32;
+            camera.fov = 115 + Math.sin(t * Math.PI * 2.0) * 3;
         } else {
             camera.fov = 115;
         }
@@ -145,7 +163,6 @@ var animate = (now) => {
             warpDrift = true; warpDriftTime = 0;
             warpDriftDir.copy(warpEnd).sub(warpStart).normalize();
             warpPhase = 0; warpShakeX = 0; warpShakeY = 0;
-            // FOV ve streak'leri sıfırlama — drift fazı devam ettirecek
             if (warpBg) {
                 warpBg.visible = false;
                 warpBg.material.uniforms.uFlash.value = 0;
