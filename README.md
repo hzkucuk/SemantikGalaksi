@@ -75,7 +75,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **Hyperspace warp**: Sureler arası GPU-hızlandırmalı geçiş (Three.js ShaderMaterial, 8000 yıldız, GLSL streak efekti)
 - **GLSL Prosedürel Güneş Simülasyonu** (v0.19.0): Simplex noise FBM + ridge filament + rim lighting — her sure kendi renginde plazma animasyonu
 - **HDR Bloom Pipeline** (v0.20.0): UnrealBloomPass + custom ACES tone mapping ShaderPass (strength=0.7, radius=0.6, threshold=0.3)
-- **Sinematik Hyperspace Warp** (v0.25.1): 5 fazlı Millennium Falcon tarzı — gerilim, fırlatma flash, hyperspace tunnel (blue shift + spiral), çıkış patlaması, kamera sarsıntısı, FOV 65→58→145→65
+- **Sinematik Hyperspace Warp** (v0.25.1): Millennium Falcon GIF referansına sadık — karanlık arka plan, uzun parlak beyaz çizgiler, punch ivme, çıkış flash
 - **Fatiha Suresi** (v0.22.2): Kırmızı renk vurgusu (`0xff0000`) — ilk sure özel olarak işaretli
 
 ### 🇹🇷 Türk Bayrağı SDF Shader
@@ -178,7 +178,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
-| v0.25.1 | **Sinematik Warp**: 3 fazlı basit warp → 5 fazlı Millennium Falcon hyperspace (tunnel vignette, blue shift, spiral, entry/exit flash, kamera sarsıntısı, 2.8s) |
+| v0.25.1 | **Sinematik Warp**: Millennium Falcon GIF referansına sadık — mavi overlay kaldırıldı, karanlık arka plan, çizgiler 3x parlak/uzun/kalın, beyaz-dominant, 3 faz (uzama→punch→çıkış flash) |
 | v0.24.1 | **Kök Renk Kontrast**: Arapça charCode kümelenmesi nedeniyle benzer hue değerleri → djb2 hash + 11 ayrık renk paleti (min 30° ayrım) |
 | v0.21.5 | **GPU Bellek Sızıntısı**: Layout/dataset değişiminde eski geometry, material, texture dispose edilmiyor → düzeltildi |
 | v0.21.5 | **Ölü Kod Temizliği**: Kullanılmayan `ayahIndexMap`, `coronaVS/FS`, `outerGlowVS/FS` kaldırıldı |

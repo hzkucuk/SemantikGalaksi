@@ -2,19 +2,14 @@
 
 ## [0.25.1] - 2025-07-28
 ### Özellik
-- **Sinematik Warp — Millennium Falcon Hyperspace**: Warp giriş/çıkış efektleri tamamen yeniden yazıldı
-  - 5 sinematik faz: Gerilim → Fırlatma → Hyperspace → Yavaşlama → Çıkış
-  - Hyperspace tunnel vignette (koyu kenarlar, parlak mavi merkez + ışık halkası)
-  - Giriş flash blast (beyaz-mavi merkez patlaması)
-  - Çıkış flash (ekran beyaza boyanma)
-  - Blue shift (hyperspace sırasında mavi renk kayması)
-  - Spiral tunnel rotasyonu (yıldız çizgileri derinliğe göre döner)
-  - Star Wars renk paleti: derin mavi → cyan → beyaz çekirdek
-  - Kalınlaşan yıldız çizgileri + enerji çekirdeği glow
-  - Dramatik FOV eğrisi (65→58→145→133→90→65)
-  - Kamera sarsıntısı (fırlatma + hyperspace titreşimi + çıkış dampening)
-  - Çift sıçramalı post-warp drift (3500 overshoot + sekme + FOV nefes)
-  - Warp süresi 1.25s → 2.8s (daha sinematik)
+- **Sinematik Warp — Millennium Falcon Hyperspace**: GIF referansına sadık kalınarak yeniden yazıldı
+  - Arka plan KARANLIK kalır — ekranı mavi overlay ile boyama kaldırıldı
+  - Efektin %90'ı YILDIZ ÇİZGİLERİ: daha uzun (8x cap), daha parlak (3x), daha kalın (2.5x)
+  - Beyaz-dominant renk paleti (paleBlue → coolWhite → pureWhite)
+  - 3 net faz: Uzama (0-12%) → Punch tam hız (12-85%) → Çıkış flash (85-100%)
+  - Çıkış anında kısa beyaz flash (tunnel/blueshift/entryFlash kaldırıldı)
+  - Hafif hyperspace rumble + minimal spiral rotation
+  - FOV eğrisi 65→60→115→65, süre ~2.2s
 
 ## [0.25.0] - 2025-07-28
 ### Özellik

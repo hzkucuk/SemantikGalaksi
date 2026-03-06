@@ -84,35 +84,28 @@ Hem üst arama çubuğu hem HUD panelindeki semantik bağlantı araması Arapça
 - **4 satır düzen**: Harfler (3 satır) + Harekeler & kontrol tuşları (1 satır)
 - **Sonuç gösterimi**: Arapça aramada sonuçlarda ayet metni ve eşleşen kökler (🔤) gösterilir
 
-## WebGL Hyperspace Warp Efekti (v0.25.1 — Sinematik Güncelleme)
-Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Star Wars Millennium Falcon Lightspeed Jump referansıyla tasarlandı.
+## WebGL Hyperspace Warp Efekti (v0.25.1 — Millennium Falcon GIF Referans)
+Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Millennium Falcon lightspeed GIF'ine sadık: **arka plan karanlık kalır, efektin %90'ı yıldız çizgileridir**.
 
 | Bileşen | Detay |
 |---------|-------|
 | Geometri | 10000 instance × 6 vertex `InstancedBufferGeometry` — radyal streak quad'ları |
-| Streak VS | Clip-space output, `smoothstep` uzama, spiral `uSwirl` tünel rotasyonu, hızla kalınlaşma |
-| Streak FS | Derin mavi → cyan → beyaz çekirdek renk paleti, enerji çekirdeği glow |
-| Background FS | 5 uniform: `uAlpha`, `uFlash`, `uBlueShift`, `uTunnel`, `uEntryFlash` |
-| Tunnel Vignette | Koyu kenarlar + parlak mavi merkez + ışık halkası (uç nokta) |
-| Entry Flash | Beyaz-mavi merkeze yoğun patlama (fırlatma anı) |
-| Exit Flash | Ekranı beyaza boyayan çıkış patlaması |
-| Blue Shift | Hyperspace sırasında tüm sahneye mavi renk kayması |
+| Streak VS | Clip-space, uzunluk cap 8.0, hızla kalınlaşma (2.5x), parlaklık boost (3x) |
+| Streak FS | Beyaz-dominant: `paleBlue → coolWhite → pureWhite`, baş→kuyruk glow |
+| Background | SADECE çıkış flash (kısa beyaz patlama) — overlay/tunnel/blueshift YOK |
 | Blending | `THREE.AdditiveBlending` — streak glow birikimi |
-| Kamera | 5 fazlı FOV eğrisi 65°→58°→145°→133°→90°→65° |
-| Sarsıntı | Fırlatma + hyperspace titreşimi + çıkış dampening |
+| Kamera | FOV 65°→60°→115°→65°, hafif hyperspace rumble |
 | Performans | Tek draw call, tüm hesaplama GPU GLSL shader'larında |
 
-### 5 Sinematik Faz
+### 3 Faz
 | Faz | Aralık | Açıklama |
 |-----|--------|----------|
-| 1. Gerilim | %0-10 | Yıldızlar yavaşça uzar, hafif zoom-in (FOV 65→58) |
-| 2. Fırlatma | %10-18 | ANİ ivme, giriş flash, kamera sarsıntısı, FOV 58→145 |
-| 3. Hyperspace | %18-78 | Tam hız tüneli, spiral rotasyon, mavi shift, titreşim |
-| 4. Yavaşlama | %78-90 | Hız düşer, çizgiler kısalır, FOV normalleşir |
-| 5. Çıkış | %90-100 | Beyaz flash, keskin FOV snap, normal uzaya dönüş |
+| 1. Uzama | %0-12 | Yıldızlar noktadan çizgiye kademeli uzar, hafif zoom-in |
+| 2. Punch | %12-85 | BANG! Tam hız, ekran beyaz çizgilerle dolu, rumble titreşimi |
+| 3. Çıkış | %85-100 | Çizgiler kısalır, kısa beyaz flash, FOV snap back |
 
 - **Başlatma**: Bir sureye tıklama veya `warpToId()` çağrısı ile tetiklenir
-- **Süre**: ~2.8 saniye (`dt × 0.36` ilerleme)
+- **Süre**: ~2.2 saniye (`dt × 0.45` ilerleme)
 - **Post-warp drift**: 2s çift sıçrama (3500 overshoot + sekme) + FOV nefes salınımı
 
 ## WebSocket Gerçek Zamanlı Senkronizasyon

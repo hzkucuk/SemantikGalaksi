@@ -27,18 +27,15 @@ var animate = (now) => {
             warpMesh.visible = true;
             warpMesh.material.uniforms.uSpeed.value = spd;
             warpMesh.material.uniforms.uTime.value += dt * spd * 0.1;
-            warpMesh.material.uniforms.uSwirl.value = sp * 0.3;
+            warpMesh.material.uniforms.uSwirl.value = sp * 0.15;
         }
         if (warpBg) {
-            warpBg.visible = true;
-            warpBg.material.uniforms.uAlpha.value = sp * 0.6;
-            warpBg.material.uniforms.uBlueShift.value = sp * 0.7;
-            warpBg.material.uniforms.uTunnel.value = sp * 0.5;
-            warpBg.material.uniforms.uEntryFlash.value = p < 0.15 ? (1.0 - p / 0.15) * 0.8 : 0;
             var exitFlash = 0;
             if (p > 0.8 && p < 0.95) {
                 exitFlash = Math.sin(((p - 0.8) / 0.15) * Math.PI) * 0.6;
             }
+            warpBg.visible = (exitFlash > 0.01);
+            warpBg.material.uniforms.uAlpha.value = 0;
             warpBg.material.uniforms.uFlash.value = exitFlash;
         }
         if (p >= 1) {
@@ -53,106 +50,62 @@ var animate = (now) => {
                 warpBg.visible = false;
                 warpBg.material.uniforms.uAlpha.value = 0;
                 warpBg.material.uniforms.uFlash.value = 0;
-                warpBg.material.uniforms.uBlueShift.value = 0;
-                warpBg.material.uniforms.uTunnel.value = 0;
-                warpBg.material.uniforms.uEntryFlash.value = 0;
             }
         }
     }
     if (warpActive) {
-        warpProgress += dt * 0.36; var p = Math.min(warpProgress, 1);
+        warpProgress += dt * 0.45; var p = Math.min(warpProgress, 1);
         var ease = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
         // ═══════════════════════════════════════════════════════
-        // STAR WARS MILLENNIUM FALCON — 5 SİNEMATİK FAZ
+        // MILLENNIUM FALCON LIGHTSPEED — GIF REFERANS
         // ═══════════════════════════════════════════════════════
-        // Faz 1: GERİLİM     (0-10%)  — Yıldızlar yavaşça uzar, hafif zoom-in
-        // Faz 2: FIRLATMA    (10-18%) — ANİ ivme, beyaz-mavi patlama, ekran sarsılır
-        // Faz 3: HYPERSPACE  (18-78%) — Tam hız tüneli, mavi shift, spiral
-        // Faz 4: YAVAŞLAMA   (78-90%) — Hız düşer, çizgiler kısalır
-        // Faz 5: ÇIKIŞ       (90-100%)— Beyaz flash, keskin FOV snap, normal uzay
+        // Arka plan KARANLIK kalır. Efektin %90'ı YILDIZ ÇİZGİLERİ.
+        // Faz 1: UZAMA   (0-12%)  — Yıldızlar noktadan çizgiye kademeli uzar
+        // Faz 2: PUNCH   (12-85%) — BANG! Tam hız, ekran beyaz çizgilerle dolu
+        // Faz 3: ÇIKIŞ   (85-100%)— Çizgiler kısalır, kısa beyaz flash, snap
 
         if (p < 1) {
-            var sp, swirl, blueShift, tunnel, entryFlash, exitFlash, bgAlpha;
+            var sp, swirl, exitFlash, bgAlpha;
 
-            if (p < 0.10) {
-                // ── FAZ 1: GERİLİM ──
+            if (p < 0.12) {
+                // ── FAZ 1: UZAMA — yıldızlar yavaşça çizgilere dönüyor ──
                 warpPhase = 1;
-                var t = p / 0.10;
-                sp = Math.pow(t, 4) * 0.15;
+                var t = p / 0.12;
+                sp = Math.pow(t, 2) * 0.4;
                 swirl = 0;
-                blueShift = t * 0.2;
-                tunnel = 0;
-                entryFlash = 0;
                 exitFlash = 0;
-                bgAlpha = t * 0.1;
+                bgAlpha = 0;
 
-            } else if (p < 0.18) {
-                // ── FAZ 2: FIRLATMA ──
+            } else if (p < 0.85) {
+                // ── FAZ 2: PUNCH — tam hız, uzun parlak beyaz çizgiler ──
                 warpPhase = 2;
-                var t = (p - 0.10) / 0.08;
-                sp = 0.15 + Math.pow(t, 2) * 0.85;
-                swirl = t * 0.3;
-                blueShift = 0.2 + t * 0.8;
-                tunnel = t * 0.6;
-                // Giriş flash — t=0'da patlama, hızla söner
-                entryFlash = Math.exp(-t * 3.5) * 1.2;
+                var t = (p - 0.12) / 0.73;
+                // Hızlı çıkış, sonra sabit tam hız
+                sp = 0.4 + Math.min(Math.pow(t * 3.0, 2), 0.6);
+                swirl = 0.15 + Math.sin(t * Math.PI) * 0.1;
                 exitFlash = 0;
-                bgAlpha = 0.1 + t * 0.7;
+                bgAlpha = 0;
 
-                // Kamera sarsıntısı — fırlatma anında
-                warpShakeX = (Math.sin(t * 47.0) * 0.5 + Math.sin(t * 113.0) * 0.3) * (1.0 - t) * 120;
-                warpShakeY = (Math.cos(t * 59.0) * 0.4 + Math.cos(t * 97.0) * 0.3) * (1.0 - t) * 80;
-
-            } else if (p < 0.78) {
-                // ── FAZ 3: HYPERSPACE ──
-                warpPhase = 3;
-                var t = (p - 0.18) / 0.60;
-                sp = 1.0;
-                swirl = 0.3 + Math.sin(t * Math.PI) * 0.4;
-                blueShift = 1.0;
-                tunnel = 0.6 + t * 0.4;
-                entryFlash = 0;
-                exitFlash = 0;
-                bgAlpha = 0.8 + t * 0.18;
-
-                // Hafif salınım — hyperspace titreşimi
-                warpShakeX = Math.sin(t * 31.0) * 8;
-                warpShakeY = Math.cos(t * 23.0) * 5;
-
-            } else if (p < 0.90) {
-                // ── FAZ 4: YAVAŞLAMA ──
-                warpPhase = 4;
-                var t = (p - 0.78) / 0.12;
-                sp = 1.0 - Math.pow(t, 2) * 0.7;
-                swirl = 0.7 * (1.0 - t);
-                blueShift = 1.0 - t * 0.6;
-                tunnel = 1.0 - t * 0.5;
-                entryFlash = 0;
-                exitFlash = 0;
-                bgAlpha = 0.98 - t * 0.2;
-
-                warpShakeX = Math.sin(t * 19.0) * 4 * (1.0 - t);
-                warpShakeY = Math.cos(t * 17.0) * 3 * (1.0 - t);
+                // Hafif titreşim — hyperspace rumble
+                warpShakeX = Math.sin(t * 37.0) * 15;
+                warpShakeY = Math.cos(t * 29.0) * 10;
 
             } else {
-                // ── FAZ 5: ÇIKIŞ ──
-                warpPhase = 5;
-                var t = (p - 0.90) / 0.10;
-                sp = 0.3 * Math.pow(1.0 - t, 3);
-                swirl = 0;
-                blueShift = 0.4 * (1.0 - t);
-                tunnel = 0.5 * (1.0 - t);
-                entryFlash = 0;
-                // Çıkış flash — beyaz patlama
-                exitFlash = Math.sin(t * Math.PI) * 1.5;
-                bgAlpha = Math.max(0.78 - t * 0.78, exitFlash * 0.6);
+                // ── FAZ 3: ÇIKIŞ — çizgiler kısalır, beyaz flash ──
+                warpPhase = 3;
+                var t = (p - 0.85) / 0.15;
+                sp = 1.0 * Math.pow(1.0 - t, 2);
+                swirl = 0.25 * (1.0 - t);
+                // Keskin beyaz flash — t=0.3 civarında pik
+                exitFlash = Math.sin(t * Math.PI) * 1.8;
+                bgAlpha = 0;
 
                 warpShakeX = 0;
                 warpShakeY = 0;
             }
 
-            warpSpeed = 1 + sp * 220;
+            warpSpeed = 1 + sp * 350;
 
             if (warpMesh) {
                 warpMesh.visible = true;
@@ -161,35 +114,27 @@ var animate = (now) => {
                 warpMesh.material.uniforms.uSwirl.value = swirl;
             }
             if (warpBg) {
-                warpBg.visible = true;
+                warpBg.visible = (exitFlash > 0.01);
                 warpBg.material.uniforms.uAlpha.value = bgAlpha;
                 warpBg.material.uniforms.uFlash.value = exitFlash;
-                warpBg.material.uniforms.uBlueShift.value = blueShift;
-                warpBg.material.uniforms.uTunnel.value = tunnel;
-                warpBg.material.uniforms.uEntryFlash.value = entryFlash;
             }
         }
 
-        // FOV — Sinematik 5 fazlı eğri
-        if (p < 0.10) {
-            // Gerilim: hafif daralma (zoom-in hissi)
-            camera.fov = 65 - (p / 0.10) * 7;
-        } else if (p < 0.18) {
-            // Fırlatma: dramatik genişleme
-            var t = (p - 0.10) / 0.08;
-            camera.fov = 58 + Math.pow(t, 0.6) * 87;
-        } else if (p < 0.78) {
-            // Hyperspace: geniş tünel, hafif nefes
-            var t = (p - 0.18) / 0.60;
-            camera.fov = 145 - Math.sin(t * Math.PI) * 12;
-        } else if (p < 0.90) {
-            // Yavaşlama: FOV normalleşmeye başlar
-            var t = (p - 0.78) / 0.12;
-            camera.fov = 133 - t * 43;
+        // FOV — Sade ve güçlü
+        if (p < 0.12) {
+            // Uzama: hafif zoom-in (gerilim)
+            camera.fov = 65 - (p / 0.12) * 5;
+        } else if (p < 0.20) {
+            // Punch anı: hızlı FOV genişleme
+            var t = (p - 0.12) / 0.08;
+            camera.fov = 60 + Math.pow(t, 0.5) * 55;
+        } else if (p < 0.85) {
+            // Hyperspace: geniş açı sabit
+            camera.fov = 115;
         } else {
-            // Çıkış: hızlı snap back
-            var t = (p - 0.90) / 0.10;
-            camera.fov = 90 - Math.pow(t, 0.5) * 25;
+            // Çıkış: FOV snap back
+            var t = (p - 0.85) / 0.15;
+            camera.fov = 115 - Math.pow(t, 0.4) * 50;
         }
         camera.updateProjectionMatrix();
 
@@ -215,9 +160,6 @@ var animate = (now) => {
                 warpBg.visible = false;
                 warpBg.material.uniforms.uFlash.value = 0;
                 warpBg.material.uniforms.uAlpha.value = 0;
-                warpBg.material.uniforms.uBlueShift.value = 0;
-                warpBg.material.uniforms.uTunnel.value = 0;
-                warpBg.material.uniforms.uEntryFlash.value = 0;
             }
         }
     }
