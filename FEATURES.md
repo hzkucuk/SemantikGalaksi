@@ -57,6 +57,23 @@ Kullanıcılar zengin metin formatında not tutabilir. Notlar sunucu tarafında 
 - Responsive: mobilde sadece ikon, desktop'ta ikon + etiket
 - Logo alanı: 🕋 ikonu + başlık + alt başlık
 
+## Ayet Seslendirme (TTS)
+HUD panelindeki ayet detay kartında ve ilişkili ayet listesinde bulunan seslendir düğmeleri ile Türkçe meal seslendirme.
+
+| Bileşen | Açıklama |
+|---------|----------|
+| Gemini TTS | Google Gemini 2.5 Flash Preview TTS — `Charon` sesi, Türkçe |
+| Tarayıcı TTS | `SpeechSynthesis` API fallback (tr-TR, rate 0.9) |
+| PCM→WAV | 24kHz PCM verisini WAV başlığı ile sarmalama (`pcmToWav`) |
+| Önbellek | `audioCache` Map — aynı metin tekrar istendiğinde ağ çağrısı yapılmaz |
+| Durum göstergesi | ▶ (hazır) → ⏳ (yükleniyor) → ⏹ (çalıyor) → ▶ (bitti) |
+
+### Seslendir Düğmesi Konumları
+| Konum | Fonksiyon | Açıklama |
+|-------|-----------|----------|
+| HUD ayet detay kartı | `speakCurrentHudAyah()` | Aktif ayetin mealini seslendirir |
+| İlişkili ayet listesi | `speakThis(btn, nodeId)` | Her ilişkili ayetin yanındaki ▶ butonu |
+
 ## Arapça Arama Desteği
 Hem üst arama çubuğu hem HUD panelindeki semantik bağlantı araması Arapça girişi destekler.
 

@@ -67,6 +67,8 @@ var showHUD = (n) => {
     stopAudio();
     isAudioLoading = false;
     activeSpeakBtn = null;
+    var hudSpeakBtn = document.getElementById('hud-speak-btn');
+    if (hudSpeakBtn) hudSpeakBtn.textContent = '▶';
     updateHighlightLines(n);
     var panel = document.getElementById('hud-panel');
     panel.classList.remove('hidden');
@@ -259,9 +261,14 @@ window.speakThis = async (btn, nodeId) => {
             utter.onend = () => { btn.textContent = '▶'; activeSpeakBtn = null; };
             utter.onerror = () => { btn.textContent = '▶'; activeSpeakBtn = null; };
         } else {
-            btn.textContent = '❌';
-            setTimeout(() => { btn.textContent = '▶'; }, 2000);
-            activeSpeakBtn = null;
-        }
-    }
-};
+                     btn.textContent = '❌';
+                        setTimeout(() => { btn.textContent = '▶'; }, 2000);
+                        activeSpeakBtn = null;
+                    }
+                }
+            };
+
+            window.speakCurrentHudAyah = async (btn) => {
+                if (!currentHudNode) return;
+                await window.speakThis(btn, currentHudNode.id);
+            };

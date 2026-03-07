@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.25.2] - 2025-07-28
+### Özellik
+- **HUD Seslendirme Düğmesi**: Ana ayet detay paneline (DİPNOT yanına) Seslendir butonu eklendi
+  - Gemini TTS ile Türkçe meal seslendirme, fallback olarak tarayıcı TTS
+  - ▶ / ⏳ / ⏹ durum geçişleri, cyan tema rengi
+  - `speakCurrentHudAyah()` fonksiyonu ile `currentHudNode` entegrasyonu
+
 ## [0.25.1] - 2025-07-28
 ### Özellik
 - **Sinematik Warp — Millennium Falcon Hyperspace**: GIF referansına sadik kalınarak yeniden yazıldı
