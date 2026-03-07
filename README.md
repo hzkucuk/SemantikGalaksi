@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/Sürüm-0.25.2-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.26.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -71,7 +71,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **114 sure** = 114 gezegen küresi (prosedürel GLSL güneş simülasyonu, Simplex noise FBM + rim lighting)
 - **6236+ ayet** = her sure etrafında yörüngede dönen uydu küreleri
 - **Kök bağlantıları** = ayetler arası neon ışık çizgileri (AdditiveBlending glow)
-- **4 yerleşim modeli**: Galaksi (Arşimed spirali), Bulutsu (Gauss kümeleri), Küp (3B ızgara), Küre (Fibonacci)
+- **5 yerleşim modeli**: Galaksi (Arşimed spirali), Bulutsu (Gauss kümeleri), Küp (3B ızgara), Küre (Fibonacci), الله (Arapça kaligrafi)
 - **Hyperspace warp**: Sureler arası GPU-hızlandırmalı geçiş (Three.js ShaderMaterial, 8000 yıldız, GLSL streak efekti)
 - **GLSL Prosedürel Güneş Simülasyonu** (v0.19.0): Simplex noise FBM + ridge filament + rim lighting — her sure kendi renginde plazma animasyonu
 - **HDR Bloom Pipeline** (v0.20.0): UnrealBloomPass + custom ACES tone mapping ShaderPass (strength=0.7, radius=0.6, threshold=0.3)

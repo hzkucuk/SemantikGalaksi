@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [0.26.0] - 2025-07-28
+### Özellik
+- **الله Kaligrafi Yerleşim Modeli**: Sureler ve ayetler Arapça "الله" (Allah) yazısı şeklinde 3D uzayda konumlandırılır
+  - 5 kaligrafik çizgi: Elif (ا) dikey, iki Lam (لل) dikey, taban çizgisi, Ha (ه) dairesi
+  - Çizgi uzunluklarına orantılı sure dağılımı (114 sure tüm harflere yayılır)
+  - Hafif Z-derinlik varyasyonu ile 3B his
+  - UI: Toolbar yerleşim menüsünde 🕋 الله butonu
+- **Etkilenen dosyalar:** `Frontend/js/data-loader.js`, `Frontend/index.html`
+
 ## [0.25.2] - 2025-07-28
 ### Özellik
 - **HUD Seslendirme Düğmesi**: Ana ayet detay paneline (DİPNOT yanına) Seslendir butonu eklendi

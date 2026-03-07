@@ -15,7 +15,7 @@ Uygulama PyInstaller ile tek klasör (one-folder) EXE olarak paketlenebilir.
 - **Dağıtım**: `dist\SemantikGalaksi` klasörünü ZIP olarak paketleyin
 
 ## Uzay Yerleşim Modelleri
-Sureler ve ayetler 4 farklı 3D yerleşim modeliyle uzayda konumlandırılabilir. Tüm modellerde **Dünya-Ay ölçeği** kullanılır:
+Sureler ve ayetler 5 farklı 3D yerleşim modeliyle uzayda konumlandırılabilir. Tüm modellerde **Dünya-Ay ölçeği** kullanılır:
 - Sure (Dünya) yarıçapı: 1500 birim
 - Ayet (Ay) yarıçapı: 400 birim (0.27× Dünya oranı)
 - Yörünge mesafesi: ~45000-80000 birim (model bağımlı)
@@ -26,6 +26,7 @@ Sureler ve ayetler 4 farklı 3D yerleşim modeliyle uzayda konumlandırılabilir
 | Bulutsu | 🌫️ | Gauss Kümeleri | 7 küme merkezi, Fibonacci dağılımı, Gauss saçılma |
 | Küp | 📦 | 3B Izgara | 5×5×5 = 125 düğüm noktası, kristal kafes yapı |
 | Küre | 🔮 | Fibonacci Küre | Altın oran açısı (φ), eşit alan dağılımı |
+| الله | 🕋 | Kaligrafi Çizgileri | Elif + 2 Lam + Taban + Ha dairesi — Allah lafzı şekli |
 
 - **Ayah Saçılma**: Galaksi modelinde disk (yukarı/aşağı), diğerlerinde küresel 3B saçılma
 - **Ayah Küre Kalitesi**: Her ayet küresi kendi surahının rengine uygun prosedürel texture alır (48 segment, 512px)

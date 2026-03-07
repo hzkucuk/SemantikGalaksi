@@ -123,6 +123,79 @@ var calcLayoutPositions = (surahIds, layoutType) => {
             });
             break;
         }
+        case 'allah': {
+            var S = 3000000;
+            ayahScatterR = 200000;
+            scatterThickness = 200000;
+            // الله kaligrafi çizgileri: [x, y] waypoint dizileri
+            var strokes = [
+                // Elif (ا) — sağ dikey çizgi
+                [[5, 0], [5, 3.5]],
+                // Birinci Lam (ل) — uzun dikey çizgi
+                [[2.5, 0], [2.5, 5.5]],
+                // İkinci Lam (ل) — uzun dikey çizgi
+                [[0, 0], [0, 5.5]],
+                // Taban çizgisi — yatay bağlayıcı
+                [[5.5, 0], [-2.5, 0]],
+                // Ha (ه) — dairesel halka
+                []
+            ];
+            // Ha dairesi noktaları
+            var haCx = -4, haCy = 1, haR = 1.3, haSegs = 20;
+            var haPoints = [];
+            for (var hi = 0; hi <= haSegs; hi++) {
+                var ha = (hi / haSegs) * Math.PI * 2;
+                haPoints.push([haCx + Math.cos(ha) * haR, haCy + Math.sin(ha) * haR]);
+            }
+            strokes[4] = haPoints;
+            // Her çizginin uzunluğunu hesapla
+            var strokeLens = strokes.map(function(pts) {
+                var len = 0;
+                for (var si = 1; si < pts.length; si++) {
+                    var dx = pts[si][0] - pts[si - 1][0];
+                    var dy = pts[si][1] - pts[si - 1][1];
+                    len += Math.sqrt(dx * dx + dy * dy);
+                }
+                return len;
+            });
+            var totalLen = strokeLens.reduce(function(a, b) { return a + b; }, 0);
+            // Sureleri çizgi uzunluklarına orantılı dağıt
+            var sIdx2 = 0;
+            strokes.forEach(function(pts, si) {
+                var count;
+                if (si === strokes.length - 1) {
+                    count = surahIds.length - sIdx2;
+                } else {
+                    count = Math.round((strokeLens[si] / totalLen) * surahIds.length);
+                }
+                var sLen = strokeLens[si];
+                for (var pi = 0; pi < count && sIdx2 < surahIds.length; pi++) {
+                    var t = count > 1 ? pi / (count - 1) : 0;
+                    var target = t * sLen;
+                    var acc = 0;
+                    var px = pts[0][0], py = pts[0][1];
+                    for (var j = 1; j < pts.length; j++) {
+                        var dx = pts[j][0] - pts[j - 1][0];
+                        var dy = pts[j][1] - pts[j - 1][1];
+                        var segL = Math.sqrt(dx * dx + dy * dy);
+                        if (acc + segL >= target || j === pts.length - 1) {
+                            var segT = segL > 0 ? Math.min((target - acc) / segL, 1) : 0;
+                            px = pts[j - 1][0] + dx * segT;
+                            py = pts[j - 1][1] + dy * segT;
+                            break;
+                        }
+                        acc += segL;
+                    }
+                    surahPosMap[surahIds[sIdx2]] = {
+                        x: px * S,
+                        y: py * S,
+                        z: (Math.random() - 0.5) * S * 0.15
+                    };
+                    sIdx2++;
+                }
+            });
+            break;
+        }
     }
     return { surahPosMap, ayahScatterR, scatterThickness };
 };
