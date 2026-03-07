@@ -1,24 +1,24 @@
-# DataEngine — Kur'an Veri Pipeline
+# DataEngine â€” Kur'an Veri Pipeline
 
-Kur'an ayetlerini API'den çeker, Gemini AI ile Arapça kök analizi yapar ve frontend için JSON dosyaları üretir.
+Kur'an ayetlerini API'den Ã§eker, Gemini AI ile ArapÃ§a kÃ¶k analizi yapar ve frontend iÃ§in JSON dosyalarÄ± Ã¼retir.
 
-## Pipeline Akışı
+## Pipeline AkÄ±ÅŸÄ±
 
 ```
-ADIM 1 (Fetch)       ?  quran_raw.json     (6236 ayet: Arapça + Türkçe)
-ADIM 2 (Roots/AI)    ?  quran_data.json    (ayet + sülasi kökler)
-ADIM 3 (Dict/AI)     ?  quran_roots.json   (kök sözlüğü: anlam + türemiş)
+ADIM 1 (Fetch)       â†’  quran_raw.json     (6236 ayet: ArapÃ§a + TÃ¼rkÃ§e)
+ADIM 2 (Roots/AI)    â†’  quran_data.json    (ayet + sÃ¼lasi kÃ¶kler)
+ADIM 3 (Dict/AI)     â†’  quran_roots.json   (kÃ¶k sÃ¶zlÃ¼ÄŸÃ¼: anlam + tÃ¼remiÅŸ)
 ```
 
-## Dosya Yapısı
+## Dosya YapÄ±sÄ±
 
-| Dosya | Açıklama |
+| Dosya | AÃ§Ä±klama |
 |-------|----------|
-| `run_pipeline.py` | Orkestratör — 3 adımı sırayla çalıştırır |
-| `step1_fetch_quran.py` | Quran API'den Arapça + Türkçe veri çeker |
-| `step2_extract_roots.py` | Gemini ile kök ayıklama |
-| `step3_build_root_dict.py` | Gemini ile kök sözlüğü oluşturma |
-| `gemini_client.py` | Ortak Gemini API istemcisi (paylaşımlı) |
+| `run_pipeline.py` | OrkestratÃ¶r â€” 3 adÄ±mÄ± sÄ±rayla Ã§alÄ±ÅŸtÄ±rÄ±r |
+| `step1_fetch_quran.py` | Quran API'den ArapÃ§a + TÃ¼rkÃ§e veri Ã§eker |
+| `step2_extract_roots.py` | Gemini ile kÃ¶k ayÄ±klama |
+| `step3_build_root_dict.py` | Gemini ile kÃ¶k sÃ¶zlÃ¼ÄŸÃ¼ oluÅŸturma |
+| `gemini_client.py` | Ortak Gemini API istemcisi (paylaÅŸÄ±mlÄ±) |
 
 ## Kurulum
 
@@ -27,23 +27,23 @@ cd DataEngine
 pip install -r requirements.txt
 ```
 
-`.env` dosyası:
+`.env` dosyasÄ±:
 ```
 API_KEY=your_gemini_api_key_here
 GEMINI_MODEL=gemini-2.0-flash
 ```
 
-## Kullanım
+## KullanÄ±m
 
 ```bash
-python run_pipeline.py              # Tüm adımlar
-python run_pipeline.py --from 2     # 2. adımdan başla
-python run_pipeline.py --only 1     # Sadece 1. adım
+python run_pipeline.py              # TÃ¼m adÄ±mlar
+python run_pipeline.py --from 2     # 2. adÄ±mdan baÅŸla
+python run_pipeline.py --only 1     # Sadece 1. adÄ±m
 ```
 
-## Resume Desteği
+## Resume DesteÄŸi
 
-Adım 2-3 kesintiye dayanıklıdır (progress dosyaları ile kaldığı yerden devam eder).
+AdÄ±m 2-3 kesintiye dayanÄ±klÄ±dÄ±r (progress dosyalarÄ± ile kaldÄ±ÄŸÄ± yerden devam eder).
 
 ## Frontend'e Kopyalama
 
