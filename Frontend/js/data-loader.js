@@ -142,20 +142,20 @@ var calcLayoutPositions = (surahIds, layoutType) => {
             // الله kaligrafi — görsel referansa birebir uyumlu
             // Sabit sure dağılımı ile oranlar kontrol altında (toplam: 114)
             var strokeDefs = [
-                // 1. Elif (ا) — sağ dikey, lamlardan kısa (~%65), hafif sola eğim üstte
-                { pts: cbez([5.5, 0], [5.55, 2.5], [5.5, 5], [5.2, 7], 20), count: 12 },
+                // 1. Elif (ا) — sağ dikey, lamlardan belirgin kısa (~%55), hafif eğimli
+                { pts: cbez([5.5, 0], [5.55, 2], [5.4, 4], [5, 6], 20), count: 10 },
                 // 2. Lam 1 (ل) — uzun dikey, çok hafif sola eğim
-                { pts: cbez([2.5, 0], [2.5, 3.5], [2.4, 7.5], [2.1, 11], 24), count: 18 },
+                { pts: cbez([2.5, 0], [2.5, 3.5], [2.35, 7.5], [2.1, 11], 24), count: 16 },
                 // 3. Lam 2 (ل) — uzun dikey, çok hafif sola eğim
-                { pts: cbez([0.3, 0], [0.3, 3.5], [0.15, 7.5], [-0.1, 11], 24), count: 18 },
+                { pts: cbez([0.3, 0], [0.3, 3.5], [0.1, 7.5], [-0.2, 11], 24), count: 16 },
                 // 4. Taban çizgisi — kavisli yatay bağlayıcı (sağdan sola)
-                { pts: cbez([6, 0], [3.5, -0.8], [0.5, -0.7], [-2.5, -0.3], 22), count: 20 },
-                // 5. Ha (ه) gövde — büyük kıvrımlı kuyruk (aşağı-sola dramatik yay)
-                { pts: cbez([-2.5, -0.3], [-4, -3], [-7, -5.5], [-8.5, -3.5], 28), count: 24 },
-                // 6. Ha (ه) uç — geri kıvrım (kuyruk kapanışı)
-                { pts: cbez([-8.5, -3.5], [-9, -1.5], [-7.5, 0], [-6, -1], 20), count: 14 },
+                { pts: cbez([6, 0], [3.5, -0.6], [0.5, -0.5], [-2.5, -0.2], 22), count: 18 },
+                // 5. Ha (ه) gövde — BÜYÜK kıvrımlı kuyruk (referanstaki dramatik yay)
+                { pts: cbez([-2.5, -0.2], [-4, -4], [-7.5, -7], [-10, -4.5], 30), count: 26 },
+                // 6. Ha (ه) uç — geri kıvrım (kuyruk kapanışı, daha geniş)
+                { pts: cbez([-10, -4.5], [-10.5, -2], [-8.5, 0], [-7, -0.8], 22), count: 18 },
                 // 7. Şedde / mim işareti — lamların üstünde küçük kavis
-                { pts: cbez([0.5, 12], [1, 12.8], [1.8, 12.8], [2.2, 12], 12), count: 8 }
+                { pts: cbez([0.5, 12], [1, 12.8], [1.8, 12.8], [2.2, 12], 12), count: 10 }
             ];
             var sIdx2 = 0;
             strokeDefs.forEach(function(def) {
