@@ -127,78 +127,55 @@ var calcLayoutPositions = (surahIds, layoutType) => {
             var S = 3000000;
             ayahScatterR = 200000;
             scatterThickness = 200000;
-            // Catmull-Rom spline: tüm noktalardan geçen pürüzsüz eğri (C1 süreklilik)
-            var catmull = function(points, perSeg) {
-                var res = [];
-                for (var ci = 0; ci < points.length - 1; ci++) {
-                    var p0 = points[Math.max(ci - 1, 0)];
-                    var p1 = points[ci];
-                    var p2 = points[ci + 1];
-                    var p3 = points[Math.min(ci + 2, points.length - 1)];
-                    for (var cj = 0; cj < perSeg; cj++) {
-                        var ct = cj / perSeg, ct2 = ct * ct, ct3 = ct2 * ct;
-                        res.push([
-                            0.5 * ((2*p1[0]) + (-p0[0]+p2[0])*ct + (2*p0[0]-5*p1[0]+4*p2[0]-p3[0])*ct2 + (-p0[0]+3*p1[0]-3*p2[0]+p3[0])*ct3),
-                            0.5 * ((2*p1[1]) + (-p0[1]+p2[1])*ct + (2*p0[1]-5*p1[1]+4*p2[1]-p3[1])*ct2 + (-p0[1]+3*p1[1]-3*p2[1]+p3[1])*ct3)
-                        ]);
-                    }
+            // Kübik Bezier: 4 kontrol noktası → n+1 pürüzsüz örnekleme
+            var cbez = function(p0, p1, p2, p3, n) {
+                var pts = [];
+                for (var bi = 0; bi <= n; bi++) {
+                    var t = bi / n, mt = 1 - t;
+                    pts.push([
+                        mt*mt*mt*p0[0] + 3*mt*mt*t*p1[0] + 3*mt*t*t*p2[0] + t*t*t*p3[0],
+                        mt*mt*mt*p0[1] + 3*mt*mt*t*p1[1] + 3*mt*t*t*p2[1] + t*t*t*p3[1]
+                    ]);
                 }
-                res.push([points[points.length - 1][0], points[points.length - 1][1]]);
-                return res;
+                return pts;
             };
-            // الله tek sürekli yol — anahtar noktalar (köşe yok)
-            var wp = [
-                // ── Taban sağ başlangıç ──
-                [7, -1],
-                // ── Elif (ا): yukarı çıkış ──
-                [6.3, 0], [6.2, 4], [6, 7], [5.7, 8.5],
-                // ── Elif tepe yuvarlama & geri iniş ──
-                [5.4, 9], [5.2, 7], [5.3, 3], [5.5, 0],
-                // ── Taban kavisi: Elif → Lam1 ──
-                [4.5, -1.3], [3.5, -0.9],
-                // ── Lam1 (ل): yukarı çıkış ──
-                [2.9, 0], [2.7, 5], [2.5, 9], [2.3, 11],
-                // ── Lam1 tepe yuvarlama & geri iniş ──
-                [2.0, 11.5], [1.7, 9], [1.8, 5], [2.0, 0],
-                // ── Taban kavisi: Lam1 → Lam2 ──
-                [1.3, -1.1], [0.7, -0.8],
-                // ── Lam2 (ل): yukarı çıkış ──
-                [0.3, 0], [0.1, 5], [-0.1, 9], [-0.3, 11],
-                // ── Lam2 tepe yuvarlama & geri iniş ──
-                [-0.6, 11.5], [-0.9, 9], [-0.8, 5], [-0.6, 0],
-                // ── Taban kavisi: Lam2 → Ha ──
-                [-1.2, -0.8], [-1.8, -1],
-                // ── Ha (ه): büyük kıvrımlı kuyruk ──
-                [-3, -3], [-5, -5.5], [-7, -6.2], [-8.5, -4.5],
-                // ── Ha: geri kıvrım & kapanış ──
-                [-9.2, -2.5], [-8.8, -0.5], [-7.2, 0.5], [-5.5, -0.3]
+            // الله kaligrafi — görsel referansa birebir uyumlu
+            // Sabit sure dağılımı ile oranlar kontrol altında (toplam: 114)
+            var strokeDefs = [
+                // 1. Elif (ا) — sağ dikey, lamlardan kısa (~%65), hafif sola eğim üstte
+                { pts: cbez([5.5, 0], [5.55, 2.5], [5.5, 5], [5.2, 7], 20), count: 12 },
+                // 2. Lam 1 (ل) — uzun dikey, çok hafif sola eğim
+                { pts: cbez([2.5, 0], [2.5, 3.5], [2.4, 7.5], [2.1, 11], 24), count: 18 },
+                // 3. Lam 2 (ل) — uzun dikey, çok hafif sola eğim
+                { pts: cbez([0.3, 0], [0.3, 3.5], [0.15, 7.5], [-0.1, 11], 24), count: 18 },
+                // 4. Taban çizgisi — kavisli yatay bağlayıcı (sağdan sola)
+                { pts: cbez([6, 0], [3.5, -0.8], [0.5, -0.7], [-2.5, -0.3], 22), count: 20 },
+                // 5. Ha (ه) gövde — büyük kıvrımlı kuyruk (aşağı-sola dramatik yay)
+                { pts: cbez([-2.5, -0.3], [-4, -3], [-7, -5.5], [-8.5, -3.5], 28), count: 24 },
+                // 6. Ha (ه) uç — geri kıvrım (kuyruk kapanışı)
+                { pts: cbez([-8.5, -3.5], [-9, -1.5], [-7.5, 0], [-6, -1], 20), count: 14 },
+                // 7. Şedde / mim işareti — lamların üstünde küçük kavis
+                { pts: cbez([0.5, 12], [1, 12.8], [1.8, 12.8], [2.2, 12], 12), count: 8 }
             ];
-            // Pürüzsüz yol oluştur (segment başına 4 örnekleme)
-            var smooth = catmull(wp, 4);
-            // Toplam yol uzunluğu
-            var pathLen = 0;
-            for (var pli = 1; pli < smooth.length; pli++) {
-                var pdx = smooth[pli][0] - smooth[pli - 1][0];
-                var pdy = smooth[pli][1] - smooth[pli - 1][1];
-                pathLen += Math.sqrt(pdx * pdx + pdy * pdy);
-            }
-            // 114 sureyi eşit aralıklarla dağıt
-            surahIds.forEach(function(sid, idx) {
-                var target = (idx / Math.max(surahIds.length - 1, 1)) * pathLen;
-                var acc = 0, px = smooth[0][0], py = smooth[0][1];
-                for (var pli = 1; pli < smooth.length; pli++) {
-                    var pdx = smooth[pli][0] - smooth[pli - 1][0];
-                    var pdy = smooth[pli][1] - smooth[pli - 1][1];
-                    var segL = Math.sqrt(pdx * pdx + pdy * pdy);
-                    if (acc + segL >= target || pli === smooth.length - 1) {
-                        var segT = segL > 0 ? Math.min((target - acc) / segL, 1) : 0;
-                        px = smooth[pli - 1][0] + pdx * segT;
-                        py = smooth[pli - 1][1] + pdy * segT;
-                        break;
-                    }
-                    acc += segL;
+            var sIdx2 = 0;
+            strokeDefs.forEach(function(def) {
+                var pts = def.pts;
+                var count = Math.min(def.count, surahIds.length - sIdx2);
+                for (var pi = 0; pi < count; pi++) {
+                    var t = count > 1 ? pi / (count - 1) : 0;
+                    var fi = t * (pts.length - 1);
+                    var lo = Math.floor(fi);
+                    var hi = Math.min(lo + 1, pts.length - 1);
+                    var fr = fi - lo;
+                    var px = pts[lo][0] + (pts[hi][0] - pts[lo][0]) * fr;
+                    var py = pts[lo][1] + (pts[hi][1] - pts[lo][1]) * fr;
+                    surahPosMap[surahIds[sIdx2]] = {
+                        x: px * S,
+                        y: py * S,
+                        z: (Math.random() - 0.5) * S * 0.12
+                    };
+                    sIdx2++;
                 }
-                surahPosMap[sid] = { x: px * S, y: py * S, z: (Math.random() - 0.5) * S * 0.12 };
             });
             break;
         }
