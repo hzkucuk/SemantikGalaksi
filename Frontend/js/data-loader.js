@@ -127,27 +127,35 @@ var calcLayoutPositions = (surahIds, layoutType) => {
             var S = 3000000;
             ayahScatterR = 200000;
             scatterThickness = 200000;
-            // الله kaligrafi çizgileri: [x, y] waypoint dizileri
+            // Kübik Bezier interpolasyonu: 4 kontrol noktası → n örnekleme
+            var cbez = function(p0, p1, p2, p3, n) {
+                var pts = [];
+                for (var bi = 0; bi <= n; bi++) {
+                    var t = bi / n, mt = 1 - t;
+                    pts.push([
+                        mt*mt*mt*p0[0] + 3*mt*mt*t*p1[0] + 3*mt*t*t*p2[0] + t*t*t*p3[0],
+                        mt*mt*mt*p0[1] + 3*mt*mt*t*p1[1] + 3*mt*t*t*p2[1] + t*t*t*p3[1]
+                    ]);
+                }
+                return pts;
+            };
+            // الله kaligrafi çizgileri — Bezier eğrileri (görsel referanslı)
             var strokes = [
-                // Elif (ا) — sağ dikey çizgi
-                [[5, 0], [5, 3.5]],
-                // Birinci Lam (ل) — uzun dikey çizgi
-                [[2.5, 0], [2.5, 5.5]],
-                // İkinci Lam (ل) — uzun dikey çizgi
-                [[0, 0], [0, 5.5]],
-                // Taban çizgisi — yatay bağlayıcı
-                [[5.5, 0], [-2.5, 0]],
-                // Ha (ه) — dairesel halka
-                []
+                // 1. Elif (ا) — sağ dikey, hafif sola eğimli (alt → üst)
+                cbez([6, -0.5], [6.15, 2.5], [6.2, 5.5], [5.7, 8.5], 14),
+                // 2. Birinci Lam (ل) — uzun dikey, hafif sola eğimli
+                cbez([2.8, -0.5], [2.7, 3], [2.5, 7], [2.2, 11], 18),
+                // 3. İkinci Lam (ل) — uzun dikey, hafif sola eğimli
+                cbez([0.3, -0.5], [0.2, 3], [0, 7], [-0.3, 11], 18),
+                // 4. Taban çizgisi — kavisli bağlayıcı (sağ → sol)
+                cbez([6.5, -0.5], [4, -1.5], [1, -1.3], [-1.5, -0.8], 16),
+                // 5. Ha (ه) gövde — büyük kıvrımlı kuyruk (aşağı-sola dramatik yay)
+                cbez([-1.5, -0.8], [-3, -3.5], [-6.5, -6], [-8.5, -3.5], 24),
+                // 6. Ha (ه) uç — geri kıvrım (yukarı-sağa doğru kapanış)
+                cbez([-8.5, -3.5], [-9, -1.5], [-7.5, 0], [-6, -0.8], 14),
+                // 7. Şedde (ّ) — lamların üstünde küçük kavis
+                cbez([0.5, 12], [1, 12.8], [1.8, 12.8], [2.3, 12], 8)
             ];
-            // Ha dairesi noktaları
-            var haCx = -4, haCy = 1, haR = 1.3, haSegs = 20;
-            var haPoints = [];
-            for (var hi = 0; hi <= haSegs; hi++) {
-                var ha = (hi / haSegs) * Math.PI * 2;
-                haPoints.push([haCx + Math.cos(ha) * haR, haCy + Math.sin(ha) * haR]);
-            }
-            strokes[4] = haPoints;
             // Her çizginin uzunluğunu hesapla
             var strokeLens = strokes.map(function(pts) {
                 var len = 0;
@@ -189,7 +197,7 @@ var calcLayoutPositions = (surahIds, layoutType) => {
                     surahPosMap[surahIds[sIdx2]] = {
                         x: px * S,
                         y: py * S,
-                        z: (Math.random() - 0.5) * S * 0.15
+                        z: (Math.random() - 0.5) * S * 0.12
                     };
                     sIdx2++;
                 }

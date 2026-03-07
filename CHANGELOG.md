@@ -3,7 +3,9 @@
 ## [0.26.0] - 2025-07-28
 ### Özellik
 - **الله Kaligrafi Yerleşim Modeli**: Sureler ve ayetler Arapça "الله" (Allah) yazısı şeklinde 3D uzayda konumlandırılır
-  - 5 kaligrafik çizgi: Elif (ا) dikey, iki Lam (لل) dikey, taban çizgisi, Ha (ه) dairesi
+  - **Kübik Bezier eğrileri** ile gerçekçi kaligrafi çizgileri (düz çizgi yerine kavisli kontur)
+  - 7 kaligrafik çizgi: Elif (ا) eğimli dikey, 2× Lam (لل) uzun eğimli dikey, kavisli taban çizgisi, Ha (ه) büyük kıvrımlı kuyruk + geri kapanış, Şedde (ّ) işareti
+  - Ha harfi: küçük daire değil, **dramatik aşağı-sola yay** (görseldeki kaligrafi referansına sadık)
   - Çizgi uzunluklarına orantılı sure dağılımı (114 sure tüm harflere yayılır)
   - Hafif Z-derinlik varyasyonu ile 3B his
   - UI: Toolbar yerleşim menüsünde 🕋 الله butonu
