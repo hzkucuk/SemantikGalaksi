@@ -26,9 +26,9 @@ Sureler ve ayetler 5 farklı 3D yerleşim modeliyle uzayda konumlandırılabilir
 | Bulutsu | 🌫️ | Gauss Kümeleri | 7 küme merkezi, Fibonacci dağılımı, Gauss saçılma |
 | Küp | 📦 | 3B Izgara | 5×5×5 = 125 düğüm noktası, kristal kafes yapı |
 | Küre | 🔮 | Fibonacci Küre | Altın oran açısı (φ), eşit alan dağılımı |
-| الله | 🕋 | Catmull-Rom Spline | Tek sürekli pürüzsüz yol — Elif + 2 Lam + Ha kıvrımlı kuyruk, köşe yok |
+| الله | 🕋 | 3D Helix Hat Sanatı | 3 katmanlı: Bezier çizgileri → sure helixi → ayet mini-spirali |
 
-- **Ayah Saçılma**: Galaksi modelinde disk (yukarı/aşağı), diğerlerinde küresel 3B saçılma
+- **Ayah Saçılma**: Galaksi = disk, الله = deterministik mini-spiral, diğerleri = küresel 3B saçılma
 - **Ayah Küre Kalitesi**: Her ayet küresi kendi surahının rengine uygun prosedürel texture alır (48 segment, 512px)
 - **Anlık Geçiş**: `switchLayout()` ile veri yeniden işlenir, warp ile geçiş
 - **UI**: Toolbar'da 🌌 butonu → açılır menü, her seçenek açıklama alt-metni içerir

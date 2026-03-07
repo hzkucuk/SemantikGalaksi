@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## [0.27.0] - 2025-07-28
+### Özellik
+- **الله Hat Sanatı — 3D Spiral Sarmal**: Hat sanatçısı yaklaşımıyla 3 katmanlı hiyerarşik yerleşim
+  - **Katman 1 — Çizgiler**: 7 kübik Bezier vuruşu الله kaligrafisinin iskeletini çizer
+  - **Katman 2 — Sure Helixi**: 114 sure, vuruş merkezleri etrafında 3D sarmal (helix) ile sarılır
+    - Bezier teğetinden normal hesaplanır → `R·cos(θ)·normal + R·sin(θ)·Z` ofseti
+    - Her vuruşta `max(2, count/4)` tur ile görsel derinlik
+  - **Katman 3 — Ayet Mini-Spirali**: Ayetler her surenin etrafında genişleyen sarmal ile dolanır
+    - Deterministik (rastgele değil) — `miniTurns = max(1.5, totalAyahs/8)`
+    - Genişleyen yarıçap (0.3→1.0×R) ile konik sarmal efekti
+- **Etkilenen dosyalar:** `Frontend/js/data-loader.js`
+
 ## [0.26.0] - 2025-07-28
 ### Özellik
 - **الله Kaligrafi Yerleşim Modeli**: Sureler ve ayetler Arapça "الله" (Allah) yazısı şeklinde 3D uzayda konumlandırılır

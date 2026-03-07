@@ -125,9 +125,12 @@ var calcLayoutPositions = (surahIds, layoutType) => {
         }
         case 'allah': {
             var S = 3000000;
-            ayahScatterR = 200000;
-            scatterThickness = 200000;
-            // Kübik Bezier: 4 kontrol noktası → n+1 pürüzsüz örnekleme
+            ayahScatterR = 55000;
+            scatterThickness = 55000;
+            // Hat sanatçısı yaklaşımı:
+            // 1) Bezier vuruşları hat çizgilerini tanımlar
+            // 2) Sureler bu çizgilerin etrafında 3D helix (sarmal) ile sarılır
+            // 3) Ayetler her surenin etrafında mini-spiral ile dolanır (processData'da)
             var cbez = function(p0, p1, p2, p3, n) {
                 var pts = [];
                 for (var bi = 0; bi <= n; bi++) {
@@ -139,41 +142,41 @@ var calcLayoutPositions = (surahIds, layoutType) => {
                 }
                 return pts;
             };
-            // الله kaligrafi — görsel referansa birebir uyumlu
-            // Sabit sure dağılımı ile oranlar kontrol altında (toplam: 114)
-            // Dikey çizgiler tabandan yatay başlayıp yukarı kavislenır (3 alt köşe radiuslu)
             var strokeDefs = [
-                // 1. Elif (ا) — tabandan yatay başlar, kavisle yukarı çıkar
                 { pts: cbez([6.5, -0.15], [5.8, -0.1], [5.5, 2.5], [5, 6], 20), count: 10 },
-                // 2. Lam 1 (ل) — tabandan yatay başlar, kavisle yukarı çıkar (uzun)
                 { pts: cbez([3.5, -0.35], [2.8, -0.15], [2.5, 4], [2.1, 11], 24), count: 16 },
-                // 3. Lam 2 (ل) — tabandan yatay başlar, kavisle yukarı çıkar (uzun)
                 { pts: cbez([1.3, -0.25], [0.6, -0.1], [0.3, 4], [-0.2, 11], 24), count: 16 },
-                // 4. Taban çizgisi — kavisli yatay bağlayıcı (sağdan sola)
                 { pts: cbez([7, -0.1], [3.5, -0.6], [0.5, -0.5], [-2.5, -0.2], 22), count: 18 },
-                // 5. Ha (ه) gövde — BÜYÜK kıvrımlı kuyruk (referanstaki dramatik yay)
                 { pts: cbez([-2.5, -0.2], [-4, -4], [-7.5, -7], [-10, -4.5], 30), count: 26 },
-                // 6. Ha (ه) uç — geri kıvrım (kuyruk kapanışı, daha geniş)
                 { pts: cbez([-10, -4.5], [-10.5, -2], [-8.5, 0], [-7, -0.8], 22), count: 18 },
-                // 7. Şedde / mim işareti — lamların üstünde küçük kavis
                 { pts: cbez([0.5, 12], [1, 12.8], [1.8, 12.8], [2.2, 12], 12), count: 10 }
             ];
+            var helixR = 0.25;
             var sIdx2 = 0;
             strokeDefs.forEach(function(def) {
                 var pts = def.pts;
                 var count = Math.min(def.count, surahIds.length - sIdx2);
+                var totalTurns = Math.max(2, count / 4);
                 for (var pi = 0; pi < count; pi++) {
                     var t = count > 1 ? pi / (count - 1) : 0;
                     var fi = t * (pts.length - 1);
                     var lo = Math.floor(fi);
                     var hi = Math.min(lo + 1, pts.length - 1);
                     var fr = fi - lo;
-                    var px = pts[lo][0] + (pts[hi][0] - pts[lo][0]) * fr;
-                    var py = pts[lo][1] + (pts[hi][1] - pts[lo][1]) * fr;
+                    var cx = pts[lo][0] + (pts[hi][0] - pts[lo][0]) * fr;
+                    var cy = pts[lo][1] + (pts[hi][1] - pts[lo][1]) * fr;
+                    var pI = Math.max(0, lo - 1);
+                    var nI = Math.min(pts.length - 1, hi + 1);
+                    var tx = pts[nI][0] - pts[pI][0];
+                    var ty = pts[nI][1] - pts[pI][1];
+                    var tL = Math.sqrt(tx * tx + ty * ty) || 1;
+                    tx /= tL; ty /= tL;
+                    var nx = -ty, ny = tx;
+                    var theta = t * totalTurns * Math.PI * 2;
                     surahPosMap[surahIds[sIdx2]] = {
-                        x: px * S,
-                        y: py * S,
-                        z: (Math.random() - 0.5) * S * 0.12
+                        x: (cx + helixR * Math.cos(theta) * nx) * S,
+                        y: (cy + helixR * Math.cos(theta) * ny) * S,
+                        z: helixR * Math.sin(theta) * S
                     };
                     sIdx2++;
                 }
@@ -260,19 +263,32 @@ var processData = (data) => {
             surahGroups.push(g); scene.add(g);
         } else {
             // Ayetler: surenin etrafında dağılım (Dünya-Ay oranı)
-            var angle = Math.random() * Math.PI * 2;
-            var dist = (Math.random() * 0.7 + 0.3) * ayahScatterR;
-            if (currentLayout === 'galaxy') {
-                var totalAyahs = surahAyahCounts[surahNum];
+            var totalAyahs = surahAyahCounts[surahNum];
+            if (currentLayout === 'allah') {
+                // Mini-spiral: ayetler sure etrafında sarmal şeklinde dolanır
+                var ayahIdx = ayahNum - 2;
+                var miniTurns = Math.max(1.5, totalAyahs / 8);
+                var miniT = totalAyahs > 2 ? ayahIdx / (totalAyahs - 2) : 0;
+                var miniTheta = miniT * miniTurns * Math.PI * 2;
+                var miniR = ayahScatterR * (0.3 + 0.7 * miniT);
+                var miniH = (miniT - 0.5) * scatterThickness * 2;
+                node.x = sp.x + Math.cos(miniTheta) * miniR;
+                node.y = sp.y + miniH;
+                node.z = sp.z + Math.sin(miniTheta) * miniR;
+            } else if (currentLayout === 'galaxy') {
+                var angle = Math.random() * Math.PI * 2;
+                var dist = (Math.random() * 0.7 + 0.3) * ayahScatterR;
                 var isUpper = ayahNum <= Math.ceil(totalAyahs / 2);
                 node.x = sp.x + Math.cos(angle) * dist;
                 node.z = sp.z + Math.sin(angle) * dist;
                 node.y = sp.y + (isUpper ? 1 : -1) * (Math.random() * 0.8 + 0.2) * scatterThickness;
             } else {
+                var angle2 = Math.random() * Math.PI * 2;
+                var dist2 = (Math.random() * 0.7 + 0.3) * ayahScatterR;
                 var phi = Math.acos(2 * Math.random() - 1);
-                node.x = sp.x + Math.sin(phi) * Math.cos(angle) * dist;
-                node.y = sp.y + Math.sin(phi) * Math.sin(angle) * dist;
-                node.z = sp.z + Math.cos(phi) * dist;
+                node.x = sp.x + Math.sin(phi) * Math.cos(angle2) * dist2;
+                node.y = sp.y + Math.sin(phi) * Math.sin(angle2) * dist2;
+                node.z = sp.z + Math.cos(phi) * dist2;
             }
             ayahNodes.push(node);
         }
