@@ -94,19 +94,21 @@ Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Millenn
 | Streak FS | Beyaz-dominant: `paleBlue → coolWhite → pureWhite`, baş→kuyruk glow |
 | Background | SADECE çıkış flash (kısa beyaz patlama) — overlay/tunnel/blueshift YOK |
 | Blending | `THREE.AdditiveBlending` — streak glow birikimi |
-| Kamera | FOV 65°→60°→115°→65°, hafif hyperspace rumble |
+| Kamera | FOV 65°→62°→68°→65°, minimal sallanma — Star Wars tarzı sabit açı |
 | Performans | Tek draw call, tüm hesaplama GPU GLSL shader'larında |
 
-### 3 Faz
+### 2 Faz Giriş + Simetrik Çıkış
 | Faz | Aralık | Açıklama |
 |-----|--------|----------|
-| 1. Uzama | %0-12 | Yıldızlar noktadan çizgiye kademeli uzar, hafif zoom-in |
-| 2. Punch | %12-85 | BANG! Tam hız, ekran beyaz çizgilerle dolu, rumble titreşimi |
-| 3. Çıkış | %85-100 | Çizgiler kısalır, kısa beyaz flash, FOV snap back |
+| 1. Yavaş Birikim | %0-45 (~1.3s) | Yıldızlar noktadan çizgiye kademeli uzar, hafif zoom-in |
+| 2. GÜM! | %45-50 (~0.15s) | Ani patlama, streak'ler tam hız, kamera sarsıntısı |
+| → Drift | Anında | GÜM'den 0 frame gecikmeyle ters çıkış başlar |
+| 3. Ters GÜM | %0-5 (~0.09s) | Ani frenleme, streak'ler hızla yavaşlar |
+| 4. Sönme | %5-100 (~1.7s) | Streak'ler yavaşça kaybolur, kamera yerine oturur |
 
 - **Başlatma**: Bir sureye tıklama veya `warpToId()` çağrısı ile tetiklenir
-- **Süre**: ~2.2 saniye (`dt × 0.45` ilerleme)
-- **Post-warp drift**: 2s çift sıçrama (3500 overshoot + sekme) + FOV nefes salınımı
+- **Süre**: Giriş ~1.5s + Çıkış ~1.8s
+- **Post-warp drift**: 2000 birim overshoot + sönümlü geri dönüş
 
 ## WebSocket Gerçek Zamanlı Senkronizasyon
 

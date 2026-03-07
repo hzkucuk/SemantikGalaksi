@@ -178,7 +178,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
-| v0.25.1 | **Sinematik Warp**: Millennium Falcon GIF referansına sadık — mavi overlay kaldırıldı, karanlık arka plan, çizgiler 3x parlak/uzun/kalın, beyaz-dominant, 3 faz (uzama→punch→çıkış flash) |
+| v0.25.1 | **Sinematik Warp**: Millennium Falcon tarzı — yavaş birikim (1.3s) → GÜM! (0.15s) → simetrik ters çıkış (1.8s), minimal FOV, sıfır gecikme, karanlık arka plan, beyaz-dominant streak'ler |
 | v0.24.1 | **Kök Renk Kontrast**: Arapça charCode kümelenmesi nedeniyle benzer hue değerleri → djb2 hash + 11 ayrık renk paleti (min 30° ayrım) |
 | v0.21.5 | **GPU Bellek Sızıntısı**: Layout/dataset değişiminde eski geometry, material, texture dispose edilmiyor → düzeltildi |
 | v0.21.5 | **Ölü Kod Temizliği**: Kullanılmayan `ayahIndexMap`, `coronaVS/FS`, `outerGlowVS/FS` kaldırıldı |

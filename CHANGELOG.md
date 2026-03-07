@@ -2,14 +2,14 @@
 
 ## [0.25.1] - 2025-07-28
 ### Özellik
-- **Sinematik Warp — Millennium Falcon Hyperspace**: GIF referansına sadık kalınarak yeniden yazıldı
+- **Sinematik Warp — Millennium Falcon Hyperspace**: GIF referansına sadik kalınarak yeniden yazıldı
   - Arka plan KARANLIK kalır — ekranı mavi overlay ile boyama kaldırıldı
   - Efektin %90'ı YILDIZ ÇİZGİLERİ: daha uzun (8x cap), daha parlak (3x), daha kalın (2.5x)
   - Beyaz-dominant renk paleti (paleBlue → coolWhite → pureWhite)
-  - 3 net faz: Uzama (0-12%) → Punch tam hız (12-85%) → Çıkış flash (85-100%)
-  - Çıkış anında kısa beyaz flash (tunnel/blueshift/entryFlash kaldırıldı)
-  - Hafif hyperspace rumble + minimal spiral rotation
-  - FOV eğrisi 65→60→115→65, süre ~2.2s
+  - 2 fazlı giriş: Yavaş birikim (0-45%, ~1.3s) → GÜM! ani patlama (45-50%, ~0.15s)
+  - Simetrik ters çıkış (drift): GÜM tersi (ani fren) → yavaş sönme (~1.8s)
+  - Minimal FOV değişimi (65→62→68→ geri) — Star Wars tarzı sabit kamera açısı
+  - Arada sıfır gecikme — GÜM bitince aynı frame'de drift başlar
 
 ## [0.25.0] - 2025-07-28
 ### Özellik
