@@ -109,13 +109,13 @@ var animate = (now) => {
             }
         }
 
-        // FOV
+        // FOV — minimal, Star Wars tarzı (kamera açısı neredeyse sabit)
         if (p < 0.45) {
             var t = p / 0.45;
-            camera.fov = 65 - t * 4;
+            camera.fov = 65 - t * 3;
         } else {
             var t = Math.min((p - 0.45) / 0.05, 1);
-            camera.fov = 61 + Math.pow(t, 0.3) * 54;
+            camera.fov = 62 + Math.pow(t, 0.3) * 6;
         }
         camera.updateProjectionMatrix();
 
@@ -172,13 +172,13 @@ var animate = (now) => {
         camera.position.copy(warpEnd).addScaledVector(warpDriftDir, drift);
         controls.target.copy(warpTarget);
 
-        // FOV: girişin tersi — 115 → hızlı daralma → yavaşça 65'e yerleşme
+        // FOV: girişin tersi — 68 → yavaşça 65'e yerleşme
         if (dp < 0.05) {
             var t = dp / 0.05;
-            camera.fov = 115 - Math.pow(t, 0.3) * 54;
+            camera.fov = 68 - Math.pow(t, 0.3) * 6;
         } else {
             var t = (dp - 0.05) / 0.95;
-            camera.fov = 61 + t * 4;
+            camera.fov = 62 + t * 3;
         }
         camera.updateProjectionMatrix();
 
