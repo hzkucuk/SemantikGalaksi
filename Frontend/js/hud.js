@@ -235,8 +235,6 @@ var showHUD = (n) => {
 window.speakThis = async (btn, nodeId) => {
     var node = nodes.find(n => n.id === nodeId);
     if (!node) return;
-    if (!apiKey) { apiKey = await KeyManager.getWorkingKey(); }
-    if (!apiKey) { showApiKeyGuide(); return; }
     var text = node.translation;
     if (activeSpeakBtn && activeSpeakBtn !== btn) { activeSpeakBtn.textContent = '▶'; }
     if (currentAudio || window.speechSynthesis?.speaking) {
@@ -248,25 +246,26 @@ window.speakThis = async (btn, nodeId) => {
     }
     activeSpeakBtn = btn;
     btn.textContent = '⏳';
-    var success = await speakAyah(text);
+    if (!apiKey) { apiKey = await KeyManager.getWorkingKey(); }
+    var success = apiKey ? await speakAyah(text) : false;
     if (success && currentAudio) {
         btn.textContent = '⏹';
         currentAudio.onended = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
         currentAudio.onerror = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
     } else {
-        // Gemini TTS başarısız (ücretsiz key) → tarayıcı TTS
+        // Gemini TTS başarısız veya API key yok → tarayıcı TTS
         var utter = speakWithBrowser(text);
         if (utter) {
             btn.textContent = '⏹';
             utter.onend = () => { btn.textContent = '▶'; activeSpeakBtn = null; };
             utter.onerror = () => { btn.textContent = '▶'; activeSpeakBtn = null; };
         } else {
-                     btn.textContent = '❌';
-                        setTimeout(() => { btn.textContent = '▶'; }, 2000);
-                        activeSpeakBtn = null;
-                    }
-                }
-            };
+            btn.textContent = '❌';
+            setTimeout(() => { btn.textContent = '▶'; }, 2000);
+            activeSpeakBtn = null;
+        }
+    }
+};
 
             window.speakCurrentHudAyah = async (btn) => {
                 if (!currentHudNode) return;
