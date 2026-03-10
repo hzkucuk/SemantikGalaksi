@@ -8,6 +8,14 @@ var bloomPass = null;
 var perfMode = localStorage.getItem('sgx_perf') || 'auto';
 var _labelFrame = 0;
 
+// İstatistik verileri
+var sceneStats = {
+    surahCount: 0, ayahCount: 0,
+    uniqueRoots: 0, connectedRoots: 0,
+    lineSegmentCount: 0, totalNodes: 0,
+    layout: '', fps: 0
+};
+
 // Veri yapıları
 var nodes = [];
 var surahGroups = [];

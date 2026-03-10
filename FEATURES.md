@@ -50,6 +50,21 @@ Zayıf cihazlarda (mobil, entegre GPU) otomatik düşük kalite moduna geçiş +
 - **Manuel Toggle**: Toolbar'da ⚡/🔋 butonu
 - **Kalıcılık**: `localStorage('sgx_perf')` ile saklanır
 
+## İstatistik Paneli
+Toolbar'daki 📊 butonuyla açılan sahne metrikleri HUD'u.
+
+| Metrik | Renk | Açıklama |
+|--------|------|----------|
+| Yerleşim | Beyaz | Aktif yerleşim modeli (Galaksi/Bulutsu/Küp/Küre/الله) |
+| Sureler | Cyan | Toplam sure sayısı |
+| Ayetler | Açık Mavi | Toplam ayet sayısı (sure merkezleri hariç) |
+| Toplam Düğüm | Mor | Sure + ayet toplam düğüm sayısı |
+| Benzersiz Kökler | Yeşil | Veri setindeki tekil kök sayısı |
+| Bağlı Kökler | Sarı | ≥2 ayeti bağlayan kök sayısı |
+| Çizgi Sayısı | Kırmızı | Kök bağlantı çizgi segment sayısı |
+| FPS | Turkuaz | Saniyedeki kare sayısı (1s güncelleme) |
+| Kalite | Beyaz | Performans modu (⚡ Yüksek / 🔋 Düşük) |
+
 ## WYSIWYG Not Editörü
 Kullanıcılar zengin metin formatında not tutabilir. Notlar sunucu tarafında kullanıcı bazlı JSON dosyalarına kaydedilir.
 

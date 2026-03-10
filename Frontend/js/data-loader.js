@@ -209,6 +209,27 @@ var switchLayout = (type) => {
     else if (nodes.length > 0) processData({ nodes });
 };
 
+var layoutLabels = { galaxy: '🌌 Galaksi', nebula: '🌫️ Bulutsu', cube: '📦 Küp', sphere: '🔮 Küre', allah: '🕋 الله' };
+
+var updateStatsPanel = () => {
+    var p = document.getElementById('stats-panel');
+    if (!p) return;
+    var s = sceneStats;
+    var layoutName = layoutLabels[s.layout] || s.layout;
+    p.querySelector('#stat-layout').textContent = layoutName;
+    p.querySelector('#stat-surahs').textContent = s.surahCount.toLocaleString('tr-TR');
+    p.querySelector('#stat-ayahs').textContent = s.ayahCount.toLocaleString('tr-TR');
+    p.querySelector('#stat-nodes').textContent = s.totalNodes.toLocaleString('tr-TR');
+    p.querySelector('#stat-roots').textContent = s.uniqueRoots.toLocaleString('tr-TR');
+    p.querySelector('#stat-connected').textContent = s.connectedRoots.toLocaleString('tr-TR');
+    p.querySelector('#stat-lines').textContent = s.lineSegmentCount.toLocaleString('tr-TR');
+};
+
+var toggleStats = () => {
+    var p = document.getElementById('stats-panel');
+    if (p) p.classList.toggle('hidden');
+};
+
 var processData = (data) => {
     if (!data || !data.nodes) return;
     surahGroups.forEach(g => { scene.remove(g); g.traverse(child => { if (child.isMesh) { child.geometry?.dispose(); if (child.material) { if (Array.isArray(child.material)) child.material.forEach(m => m.dispose()); else child.material.dispose(); } } if (child.isSprite) { child.material?.map?.dispose(); child.material?.dispose(); } }); });
@@ -341,5 +362,18 @@ var processData = (data) => {
         labelSprites.push(lbl);
         scene.add(lbl);
     });
+
+    // İstatistik verilerini güncelle
+    var connectedRoots = 0;
+    rootMap.forEach(function(ids) { if (ids.length >= 2) connectedRoots++; });
+    sceneStats.surahCount = surahIds.length;
+    sceneStats.ayahCount = ayahNodes.length;
+    sceneStats.totalNodes = nodes.length;
+    sceneStats.uniqueRoots = rootMap.size;
+    sceneStats.connectedRoots = connectedRoots;
+    sceneStats.lineSegmentCount = lineNodePairs.length;
+    sceneStats.layout = currentLayout;
+    updateStatsPanel();
+
     setTimeout(() => { if(nodes.length > 0) warpTo(nodes[0]); }, 100);
 };

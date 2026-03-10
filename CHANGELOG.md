@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.29.0] - 2025-07-28
+### Özellik
+- **İstatistik Paneli (📊)**: Sahne metriklerini gerçek zamanlı gösteren HUD paneli
+  - Sure sayısı, ayet sayısı, toplam düğüm, benzersiz kök, bağlı kök, çizgi sayısı
+  - Anlık FPS sayacı (saniyede 1 güncelleme)
+  - Aktif yerleşim modeli ve performans kalitesi gösterimi
+  - Toolbar'da 📊 toggle butonu
+  - Uzay temalı, şeffaf, kompakt grid tasarım
+- **Etkilenen dosyalar:** `Frontend/js/state.js`, `Frontend/js/data-loader.js`, `Frontend/js/warp.js`, `Frontend/index.html`
+
 ## [0.28.0] - 2025-07-28
 ### Özellik
 - **Performans Modu Sistemi**: Zayıf cihazlar için otomatik algılama + manuel toggle

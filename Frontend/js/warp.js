@@ -9,6 +9,8 @@ var warpTo = (node) => {
 window.warpToId = (id) => { var t = nodes.find(n => n.id === id); if(t) warpTo(t); };
 
 var _lastFrameTime = 0;
+var _fpsFrames = 0;
+var _fpsTime = 0;
 var animate = (now) => {
     requestAnimationFrame(animate);
     if (!now) now = performance.now();
@@ -268,6 +270,18 @@ var animate = (now) => {
                 else { s.visible = true; _shown.push([sx, sy]); }
             });
         }
+    }
+    // FPS hesaplama (saniyede bir güncellenir)
+    _fpsFrames++;
+    _fpsTime += dt;
+    if (_fpsTime >= 1) {
+        sceneStats.fps = Math.round(_fpsFrames / _fpsTime);
+        _fpsFrames = 0;
+        _fpsTime = 0;
+        var fpsEl = document.getElementById('stat-fps');
+        if (fpsEl) fpsEl.textContent = sceneStats.fps;
+        var perfEl = document.getElementById('stat-perf');
+        if (perfEl) perfEl.textContent = perfMode === 'low' ? '🔋 Düşük' : '⚡ Yüksek';
     }
     if (composer) {
         // Warp mesh'lerini bloom'dan hariç tut
