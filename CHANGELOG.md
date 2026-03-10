@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.30.4] - 2025-07-28
+### İyileştirme
+- **MSI Boyut Optimizasyonu**: Gereksiz paketler exclude edildi, 32.5 MB → 15.9 MB
+  - Çıkarılan: numpy, PIL/Pillow, pygments, IPython, PyInstaller, prompt_toolkit, jedi, parso, matplotlib, scipy, pandas
+- **Etkilenen dosyalar:** `setup.py`
+
 ## [0.30.3] - 2025-07-28
 ### İyileştirme
 - **Stats Panel Tooltip**: İstatistik panelindeki her satıra hover tooltip eklendi; her metriğin ne anlama geldiği açıklanıyor
