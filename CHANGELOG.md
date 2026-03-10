@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.30.3] - 2025-07-28
+### İyileştirme
+- **Stats Panel Tooltip**: İstatistik panelindeki her satıra hover tooltip eklendi; her metriğin ne anlama geldiği açıklanıyor
+- Grid yapıdan flex satır yapısına geçildi, `.stat-row` hover efekti ve CSS `::after` tooltip eklendi
+- **Etkilenen dosyalar:** `Frontend/index.html`
+
 ## [0.30.2] - 2025-07-28
 ### İyileştirme
 - **Tek Kaynak Versiyon Sistemi**: `VERSION` dosyası tek kaynak; `setup.py`, `build_msi.bat`, `index.html` otomatik okur
