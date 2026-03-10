@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.30.1] - 2025-07-28
+### Düzeltme
+- **Loading Screen Opaklık**: Açılış ekranı arka planı `rgba(0,0,0,0.82)` → `#000` (tam opak) yapıldı; arkadaki Three.js sahnesi artık loading sırasında görünmüyor
+- **Etkilenen dosyalar:** `Frontend/index.html`
+
 ## [0.30.0] - 2025-07-28
 ### İyileştirme
 - **Metrik Paneli Varsayılan Görünüm**: İstatistik paneli artık ilk açılışta görünür, kullanıcı ✕ ile kapatabilir
