@@ -33,6 +33,23 @@ Sureler ve ayetler 5 farklı 3D yerleşim modeliyle uzayda konumlandırılabilir
 - **Anlık Geçiş**: `switchLayout()` ile veri yeniden işlenir, warp ile geçiş
 - **UI**: Toolbar'da 🌌 butonu → açılır menü, her seçenek açıklama alt-metni içerir
 
+## Performans Modu
+Zayıf cihazlarda (mobil, entegre GPU) otomatik düşük kalite moduna geçiş + manuel toggle.
+
+| Özellik | Yüksek (⚡) | Düşük (🔋) |
+|---------|------------|------------|
+| Bloom (HDR) | ✅ Aktif | ❌ Kapalı |
+| Pixel Ratio | devicePixelRatio (≤2×) | 1× |
+| Nebulae (7 adet) | ✅ Görünür | ❌ Gizli |
+| Kozmik Toz (3 şerit) | ✅ Görünür | ❌ Gizli |
+| Uzay Tozu (3000 partikül) | ✅ Görünür | ❌ Gizli |
+| Label Güncelleme | Her frame | Her 4 frame |
+| Cosmos Uniform | Her frame güncellenir | Atlanır |
+
+- **Otomatik Algılama**: Mobil user-agent, Intel/Mesa/SwiftShader GPU, ≤4 CPU çekirdeği
+- **Manuel Toggle**: Toolbar'da ⚡/🔋 butonu
+- **Kalıcılık**: `localStorage('sgx_perf')` ile saklanır
+
 ## WYSIWYG Not Editörü
 Kullanıcılar zengin metin formatında not tutabilir. Notlar sunucu tarafında kullanıcı bazlı JSON dosyalarına kaydedilir.
 

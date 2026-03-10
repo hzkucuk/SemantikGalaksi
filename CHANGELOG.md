@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## [0.28.0] - 2025-07-28
+### Özellik
+- **Performans Modu Sistemi**: Zayıf cihazlar için otomatik algılama + manuel toggle
+  - **Otomatik algılama**: Mobil cihaz, Intel/Mesa/SwiftShader GPU, ≤4 CPU çekirdeği tespit edilirse düşük mod aktif
+  - **Bloom toggle**: UnrealBloomPass açılıp kapatılır (en büyük GPU tasarrufu)
+  - **Pixel ratio**: Düşük modda 1×, yüksek modda `devicePixelRatio` (≤2×)
+  - **Nebula/toz gizleme**: 7 nebula + 3 kozmik toz şeridi + uzay tozu partikülleri gizlenir
+  - **Label throttle**: Düşük modda ayet etiket overlap kontrolü her 4 frame'de 1 yapılır
+  - **Cosmos uniform skip**: Düşük modda nebula/dust lookAt + time uniform güncellemeleri atlanır
+  - **localStorage**: Kullanıcı tercihi `sgx_perf` anahtarıyla saklanır
+  - **UI**: Toolbar'da ⚡/🔋 toggle butonu (YÜKSEK/DÜŞÜK etiketli)
+- **Etkilenen dosyalar:** `Frontend/js/state.js`, `Frontend/js/scene-init.js`, `Frontend/js/settings.js`, `Frontend/js/warp.js`, `Frontend/index.html`
+
 ## [0.27.0] - 2025-07-28
 ### Özellik
 - **الله Hat Sanatı — 3D Spiral Sarmal**: Hat sanatçısı yaklaşımıyla 3 katmanlı hiyerarşik yerleşim

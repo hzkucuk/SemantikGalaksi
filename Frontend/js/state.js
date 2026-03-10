@@ -2,6 +2,11 @@
 
 // Three.js sahne nesneleri
 var scene, camera, renderer, composer, ayahMesh, starField, lineSegments, controls, highlightLines, skyMesh;
+var bloomPass = null;
+
+// Performans modu
+var perfMode = localStorage.getItem('sgx_perf') || 'auto';
+var _labelFrame = 0;
 
 // Veri yapıları
 var nodes = [];

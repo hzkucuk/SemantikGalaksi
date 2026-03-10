@@ -28,7 +28,7 @@ var init = () => {
     var renderScene = new THREE.RenderPass(scene, camera);
     composer.addPass(renderScene);
 
-    var bloomPass = new THREE.UnrealBloomPass(
+    bloomPass = new THREE.UnrealBloomPass(
         new THREE.Vector2(window.innerWidth, window.innerHeight),
         0.7,  // strength
         0.6,  // radius
@@ -478,6 +478,12 @@ var init = () => {
     renderer.domElement.addEventListener('click', onMouseClick);
     window.addEventListener('mousemove', onMouseMove);
     animate();
+
+    // --- PERFORMANS MODU OTOMATİK ALGILAMA ---
+    if (perfMode === 'auto') {
+        perfMode = detectWeakDevice() ? 'low' : 'high';
+    }
+    applyPerformanceMode();
 
     // --- OTOMATİK VERİ ÇEKME (GitHub Pages Desteği) ---
     fetchDataAutomatically();

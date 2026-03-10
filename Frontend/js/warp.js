@@ -224,22 +224,19 @@ var animate = (now) => {
         if (skyMesh) skyMesh.position.copy(camera.position);
 
         // --- Cosmos Atmosfer Güncellemeleri ---
-        // Nebula bulutsuları: time uniform güncelle + kameraya dön (billboard)
-        nebulaMeshes.forEach(function(m) {
-            m.material.uniforms.uTime.value = elapsed;
-            m.lookAt(camera.position);
-        });
-
-        // Kozmik toz şeritleri: time uniform güncelle + kameraya dön
-        cosmicDustLanes.forEach(function(m) {
-            m.material.uniforms.uTime.value = elapsed;
-            m.lookAt(camera.position);
-        });
-
-        // Uzay tozu: kamerayı takip et (derinlik hissi) + time güncelle
-        if (spaceDust && spaceDust.material.uniforms) {
-            spaceDust.material.uniforms.uTime.value = elapsed;
-            spaceDust.position.copy(camera.position);
+        if (perfMode !== 'low') {
+            nebulaMeshes.forEach(function(m) {
+                m.material.uniforms.uTime.value = elapsed;
+                m.lookAt(camera.position);
+            });
+            cosmicDustLanes.forEach(function(m) {
+                m.material.uniforms.uTime.value = elapsed;
+                m.lookAt(camera.position);
+            });
+            if (spaceDust && spaceDust.material.uniforms) {
+                spaceDust.material.uniforms.uTime.value = elapsed;
+                spaceDust.position.copy(camera.position);
+            }
         }
 
         // Neon beam ışınları: time uniform güncelle (enerji akış animasyonu)
@@ -252,22 +249,25 @@ var animate = (now) => {
         }
 
         var camP = camera.position;
-        var _proj = new THREE.Vector3();
-        var _shown = [];
-        var _minSep = 55;
-        labelSprites.forEach(s => {
-            if (camP.distanceTo(s.position) > 25000) { s.visible = false; return; }
-            _proj.copy(s.position).project(camera);
-            if (_proj.z > 1) { s.visible = false; return; }
-            var sx = (_proj.x * 0.5 + 0.5) * window.innerWidth;
-            var sy = (-_proj.y * 0.5 + 0.5) * window.innerHeight;
-            var tooClose = _shown.some(p => {
-                var dx = sx - p[0], dy = sy - p[1];
-                return dx * dx + dy * dy < _minSep * _minSep;
+        _labelFrame = (_labelFrame + 1) % 4;
+        if (perfMode !== 'low' || _labelFrame === 0) {
+            var _proj = new THREE.Vector3();
+            var _shown = [];
+            var _minSep = 55;
+            labelSprites.forEach(s => {
+                if (camP.distanceTo(s.position) > 25000) { s.visible = false; return; }
+                _proj.copy(s.position).project(camera);
+                if (_proj.z > 1) { s.visible = false; return; }
+                var sx = (_proj.x * 0.5 + 0.5) * window.innerWidth;
+                var sy = (-_proj.y * 0.5 + 0.5) * window.innerHeight;
+                var tooClose = _shown.some(p => {
+                    var dx = sx - p[0], dy = sy - p[1];
+                    return dx * dx + dy * dy < _minSep * _minSep;
+                });
+                if (tooClose) { s.visible = false; }
+                else { s.visible = true; _shown.push([sx, sy]); }
             });
-            if (tooClose) { s.visible = false; }
-            else { s.visible = true; _shown.push([sx, sy]); }
-        });
+        }
     }
     if (composer) {
         // Warp mesh'lerini bloom'dan hariç tut

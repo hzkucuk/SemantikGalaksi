@@ -97,3 +97,42 @@ window.closeSettings = () => {
     document.getElementById('settings-overlay').style.display = 'none';
     document.getElementById('api-key-guide').classList.add('hidden');
 };
+
+// --- Performans Modu Sistemi ---
+var detectWeakDevice = () => {
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) return true;
+    try {
+        var gl = renderer.getContext();
+        var ext = gl.getExtension('WEBGL_debug_renderer_info');
+        if (ext) {
+            var gpu = gl.getParameter(ext.UNMASKED_RENDERER_WEBGL).toLowerCase();
+            if (/intel|mesa|swiftshader|llvmpipe|apple gpu/i.test(gpu)) return true;
+        }
+    } catch(e) {}
+    if (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) return true;
+    return false;
+};
+
+var applyPerformanceMode = () => {
+    var isLow = perfMode === 'low';
+    if (bloomPass) bloomPass.enabled = !isLow;
+    renderer.setPixelRatio(isLow ? 1 : Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    if (composer) composer.setSize(window.innerWidth, window.innerHeight);
+    nebulaMeshes.forEach(function(m) { m.visible = !isLow; });
+    cosmicDustLanes.forEach(function(m) { m.visible = !isLow; });
+    if (spaceDust) spaceDust.visible = !isLow;
+    var btn = document.getElementById('perf-btn');
+    if (btn) {
+        btn.innerHTML = isLow
+            ? '<span>🔋</span><span class="hdr-btn-label">DÜŞÜK</span>'
+            : '<span>⚡</span><span class="hdr-btn-label">YÜKSEK</span>';
+        btn.title = isLow ? 'Performans Modu (Düşük Kalite) — Tıkla: Yüksek' : 'Yüksek Kalite — Tıkla: Düşük';
+    }
+};
+
+var togglePerformance = () => {
+    perfMode = perfMode === 'high' ? 'low' : 'high';
+    localStorage.setItem('sgx_perf', perfMode);
+    applyPerformanceMode();
+};
