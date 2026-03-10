@@ -48,6 +48,7 @@ Her değişiklik sonrası:
 - Her değişiklik tamamlandıktan sonra otomatik olarak `git add -A`, `git commit -m "mesaj"`, `git push origin master` çalıştır.
 - Kullanıcıdan onay bekleme, doğrudan push yap.
 - Her versiyon güncellemesinde `git tag -a vX.Y.Z -m "açıklama"` oluştur ve `git push origin vX.Y.Z` ile push'la.
+- **Push öncesi MSI build:** `git push` yapmadan önce `build_msi.bat` çalıştır. Build başarısız olursa push yapma, hatayı düzelt.
 
 ## Yanıt Formatı
 1. Değişiklik özeti (1-2 cümle)
