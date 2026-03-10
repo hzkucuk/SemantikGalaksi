@@ -4,7 +4,7 @@ cd /d "%~dp0"
 
 echo ╔══════════════════════════════════════════════════════════╗
 echo ║     SemantikGalaksi — MSI Installer Build Script        ║
-echo ║     Sürüm: 0.24.0                                      ║
+echo ║     Sürüm: 0.30.1                                      ║
 echo ╚══════════════════════════════════════════════════════════╝
 echo.
 echo   Dizin: %cd%

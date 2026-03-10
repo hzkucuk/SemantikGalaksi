@@ -154,7 +154,7 @@ executables = [
 # ── Setup ─────────────────────────────────────────────────────────────
 setup(
     name="SemantikGalaksi",
-    version="0.24.0",
+    version="0.30.1",
     description="Kur'an-ı Kerim Kelime Kök Uzayı — 3D Görselleştirme",
     long_description=(
         "Kur'an-ı Kerim surelerini ve ayetlerini 3D uzay görselleştirmesi ile keşfedin. "
