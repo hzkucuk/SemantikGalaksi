@@ -30,6 +30,8 @@ Açık talimat olmadan: EF Migration oluşturma, kolon silme/rename/tip değişt
 
 ## Otodökümantasyon (otomatik — hatırlatma bekleme)
 Her değişiklik sonrası:
+- **VERSION:** Proje kök dizinindeki `VERSION` dosyası tek kaynak (single source of truth). Her sürüm değişikliğinde bu dosyayı güncelle. `setup.py`, `build_msi.bat` ve `index.html` bu dosyadan okur.
+- **Frontend/js/state.js:** `APP_VERSION` değişkenini `VERSION` dosyasıyla aynı değere güncelle.
 - **CHANGELOG.md:** `[vX.Y.Z] — YYYY-MM-DD — [Özet] — [Etkilenen dosya]`
 - **FEATURES.md:** Yeni yetenek veya mantık değişikliğinde güncelle.
 - **INSTALL.md:** NuGet / config / env değişikliğinde senkronize et.
