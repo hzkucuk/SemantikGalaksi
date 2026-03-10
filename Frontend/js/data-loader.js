@@ -367,8 +367,8 @@ var processData = (data) => {
     var connectedRoots = 0;
     rootMap.forEach(function(ids) { if (ids.length >= 2) connectedRoots++; });
     sceneStats.surahCount = surahIds.length;
-    sceneStats.ayahCount = ayahNodes.length;
-    sceneStats.totalNodes = nodes.length;
+    sceneStats.ayahCount = nodes.length;
+    sceneStats.totalNodes = surahGroups.length + ayahNodes.length + (starField ? 1 : 0) + nebulaMeshes.length + cosmicDustLanes.length + (spaceDust ? 1 : 0);
     sceneStats.uniqueRoots = rootMap.size;
     sceneStats.connectedRoots = connectedRoots;
     sceneStats.lineSegmentCount = lineNodePairs.length;
