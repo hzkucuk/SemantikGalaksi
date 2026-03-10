@@ -1,7 +1,7 @@
 /** SemantikGalaksi — Paylaşılan Durum Değişkenleri */
 
 // Uygulama versiyonu (tek kaynak: VERSION dosyası → build sırasında buraya yansır)
-var APP_VERSION = '0.30.1';
+var APP_VERSION = '0.30.2';
 
 // Three.js sahne nesneleri
 var scene, camera, renderer, composer, ayahMesh, starField, lineSegments, controls, highlightLines, skyMesh;
