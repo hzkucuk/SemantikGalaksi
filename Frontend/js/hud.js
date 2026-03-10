@@ -103,7 +103,7 @@ var showHUD = (n) => {
         badge.style.cursor = 'pointer';
         var info = getRootInfo(r);
         var meaning = info ? info.meaning : '';
-        badge.innerHTML = `<span dir="rtl" class="text-2xl font-bold">${r}</span><span class="root-pron">${getRootPron(r)}</span>${meaning ? `<span class="mini-root-meaning" style="font-size:10px;margin-top:2px;">${meaning}</span>` : ''}`;
+        badge.innerHTML = `<span dir="rtl" class="text-2xl font-bold">${r}</span><span class="root-pron">${getRootPron(r)}</span>${meaning ? `<span class="mini-root-meaning" style="font-size:11px;margin-top:2px;">${meaning}</span>` : ''}`;
         badge.addEventListener('click', function() { toggleHudRootDetail(r, this); });
         rootsCont.appendChild(badge);
     });
@@ -126,31 +126,31 @@ var showHUD = (n) => {
             <div style="margin-bottom:12px;padding:12px;background:rgba(255,255,255,0.02);border:1px solid ${c.replace('hsl', 'hsla').replace(')', ',0.15)')};border-radius:12px;">
                 <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
                     <span dir="rtl" style="color:${c};font-size:18px;font-weight:bold;">${r}</span>
-                    <span style="color:${c};font-size:10px;opacity:0.7;">${getRootPron(r)}</span>
-                    <span style="margin-left:auto;font-size:9px;color:#64748b;">Kur'an geneli</span>
+                    <span style="color:${c};font-size:11px;opacity:0.7;">${getRootPron(r)}</span>
+                    <span style="margin-left:auto;font-size:11px;color:#64748b;">Kur'an geneli</span>
                 </div>
                 <div style="display:flex;gap:16px;margin-bottom:8px;">
                     <div style="text-align:center;">
                         <div style="font-size:20px;font-weight:900;color:${c};">${totalAyah}</div>
-                        <div style="font-size:8px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Ayet</div>
+                        <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Ayet</div>
                     </div>
                     <div style="text-align:center;">
                         <div style="font-size:20px;font-weight:900;color:${c};">${totalSurah}</div>
-                        <div style="font-size:8px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Sure</div>
+                        <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Sure</div>
                     </div>
                     <div style="text-align:center;">
                         <div style="font-size:20px;font-weight:900;color:${c};">${(totalAyah / 6236 * 100).toFixed(1)}%</div>
-                        <div style="font-size:8px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Oran</div>
+                        <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Oran</div>
                     </div>
                 </div>
-                <div style="font-size:8px;color:#475569;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:4px;">En Çok Geçtiği Sureler</div>
+                <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:4px;">En Çok Geçtiği Sureler</div>
                 ${topSurahs.map(([sid, cnt]) => `
                     <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
-                        <span style="font-size:10px;color:#94a3b8;min-width:80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${surahNamesTR[sid]}</span>
+                        <span style="font-size:11px;color:#94a3b8;min-width:80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${surahNamesTR[sid]}</span>
                         <div style="flex:1;height:6px;background:rgba(255,255,255,0.04);border-radius:3px;overflow:hidden;">
                             <div style="width:${cnt / barMax * 100}%;height:100%;background:${c};border-radius:3px;opacity:0.6;"></div>
                         </div>
-                        <span style="font-size:9px;color:${c};font-weight:700;min-width:20px;text-align:right;">${cnt}</span>
+                        <span style="font-size:10px;color:${c};font-weight:700;min-width:20px;text-align:right;">${cnt}</span>
                     </div>`).join('')}
             </div>`;
     });

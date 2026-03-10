@@ -39,9 +39,16 @@
         @media (max-width: 767px) {
             .hud-panel { border-left: none; border-top: 3px solid #00f2ff; }
             .root-badge { min-width: 60px; padding: 8px; }
-            .root-pron { font-size: 7px; }
+            .root-pron { font-size: 9px; }
             .ayah-list-item { padding: 10px; }
             .ayah-list-item:hover { transform: none; }
+            #stats-panel { right: 8px !important; bottom: 8px !important; padding: 12px 14px !important; min-width: 180px !important; border-radius: 14px !important; }
+            #stats-panel span[style*="letter-spacing:0.3em"] { font-size: 9px !important; }
+            .header-actions { gap: 4px; }
+            .hdr-btn { width: 32px; height: 32px; font-size: 13px; border-radius: 8px; }
+            .header-title { font-size: 13px; }
+            .header-logo { width: 30px; height: 30px; font-size: 14px; border-radius: 8px; }
+            .mini-root-meaning { font-size: 10px; }
         }
 
         .search-results {
@@ -752,7 +759,7 @@
         <div id="hud-content">
             <div class="mb-6 md:mb-8 border-b border-white/10 pb-6 md:pb-8">
                 <h2 id="hud-title" class="text-3xl md:text-4xl neon-title">SURE</h2>
-                <p id="hud-coord" class="text-[9px] md:text-[10px] text-slate-500 font-mono tracking-[0.4em] mt-2 uppercase opacity-60">KOORDİNAT: 0:0</p>
+                <p id="hud-coord" class="text-[11px] md:text-[12px] text-slate-500 font-mono tracking-[0.3em] mt-2 uppercase opacity-70">KOORDİNAT: 0:0</p>
             </div>
 
             <div class="bg-slate-900/60 p-4 md:p-8 rounded-xl md:rounded-[2.5rem] mb-4 md:mb-8 border border-white/5 shadow-inner" style="overflow:hidden;word-break:break-word;">
@@ -770,7 +777,7 @@
             </div>
 
             <div class="mb-6 md:mb-8">
-                <h3 class="text-[8px] md:text-[9px] font-black text-slate-600 uppercase tracking-[0.4em] mb-4 md:mb-6 italic text-center">Sülâsi Kök Analizi</h3>
+                <h3 class="text-[11px] md:text-[12px] font-black text-slate-500 uppercase tracking-[0.3em] mb-4 md:mb-6 italic text-center">Sülâsi Kök Analizi</h3>
                 <div id="hud-roots" class="flex flex-wrap justify-center gap-2 md:gap-4" style="padding:10px 0;"></div>
                 <div id="hud-root-stats" class="mt-4"></div>
             </div>
@@ -783,7 +790,7 @@
             </div>
 
             <div class="pb-8">
-                <h3 class="text-[9px] font-black text-cyan-950 uppercase tracking-[0.4em] mb-4 italic text-center">Semantik Bağlantılar</h3>
+                <h3 class="text-[11px] md:text-[12px] font-black text-cyan-800 uppercase tracking-[0.3em] mb-4 italic text-center">Semantik Bağlantılar</h3>
                 <div style="position:relative;margin-bottom:16px;">
                     <input type="text" id="hud-search" placeholder="Ayet, sure veya kök ara..." class="w-full bg-black/60 border border-white/10 rounded-full px-5 py-2 pr-10 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-600 font-mono">
                     <button id="hud-kb-btn" onclick="toggleHudKb()" style="position:absolute;right:6px;top:50%;transform:translateY(-50%);width:24px;height:24px;border-radius:6px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.35);font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;font-family:'Amiri',serif;">ع</button>
@@ -845,7 +852,7 @@
     <div id="toast-container" style="position:fixed;top:80px;right:16px;z-index:9999;display:flex;flex-direction:column;gap:8px;pointer-events:none;"></div>
 
     <!-- İstatistik Paneli -->
-    <div id="stats-panel" class="hidden" style="position:fixed;bottom:16px;right:16px;z-index:50;background:rgba(0,0,0,0.75);backdrop-filter:blur(16px);border:1px solid rgba(0,242,255,0.12);border-radius:20px;padding:16px 20px;min-width:220px;font-family:'Inter',sans-serif;">
+    <div id="stats-panel" style="position:fixed;bottom:16px;right:16px;z-index:50;background:rgba(0,0,0,0.75);backdrop-filter:blur(16px);border:1px solid rgba(0,242,255,0.12);border-radius:20px;padding:16px 20px;min-width:220px;max-width:calc(100vw - 32px);font-family:'Inter',sans-serif;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
             <span style="font-size:10px;font-weight:900;letter-spacing:0.3em;color:#00f2ff;text-transform:uppercase;">📊 Sahne İstatistikleri</span>
             <button onclick="toggleStats()" style="width:20px;height:20px;border:none;background:rgba(255,255,255,0.05);border-radius:50%;color:#475569;font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;">✕</button>
@@ -873,7 +880,7 @@
     </div>
 
     <!-- Versiyon Bilgisi -->
-    <div style="position:fixed;bottom:12px;right:16px;z-index:40;font-size:9px;font-weight:600;letter-spacing:0.15em;color:rgba(148,163,184,0.25);pointer-events:none;font-family:monospace;">v0.28.0</div>
+    <div style="position:fixed;bottom:12px;right:16px;z-index:40;font-size:9px;font-weight:600;letter-spacing:0.15em;color:rgba(148,163,184,0.25);pointer-events:none;font-family:monospace;">v0.30.0</div>
     <!-- Çevrimiçi Kullanıcılar -->
     <div id="online-indicator" style="position:fixed;bottom:16px;left:16px;z-index:50;display:none;background:rgba(0,0,0,0.7);backdrop-filter:blur(12px);border:1px solid rgba(52,211,153,0.2);border-radius:20px;padding:6px 14px;font-size:10px;color:#34d399;font-weight:700;letter-spacing:0.1em;cursor:pointer;" onclick="showOnlineList()" title="Çevrimiçi kullanıcılar">
         <span id="online-dot" style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#34d399;margin-right:6px;animation:pulse 2s infinite;"></span>

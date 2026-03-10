@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## [0.30.0] - 2025-07-28
+### İyileştirme
+- **Metrik Paneli Varsayılan Görünüm**: İstatistik paneli artık ilk açılışta görünür, kullanıcı ✕ ile kapatabilir
+- **HUD Font Boyutu Artışı**: Küçük ekranlarda okunamayan metinler düzeltildi
+  - KOORDİNAT: 9px → 11px (mobil), 10px → 12px (masaüstü)
+  - Sülâsi Kök Analizi: 8px → 11px (mobil), 9px → 12px (masaüstü)
+  - Semantik Bağlantılar: 9px → 11px (mobil), 12px (masaüstü)
+  - Kur'an geneli: 9px → 11px
+  - Ayet/Sure/Oran etiketleri: 8px → 10px
+  - En Çok Geçtiği Sureler: 8px → 10px
+  - root-pron: 7px → 9px (mobil)
+- **Responsive İyileştirmeler**: Stats paneli, header butonları ve root kartları mobil cihazlara uyumlu hale getirildi
+- **Etkilenen dosyalar:** `Frontend/index.html`, `Frontend/js/hud.js`
+
 ## [0.29.0] - 2025-07-28
 ### Özellik
 - **İstatistik Paneli (📊)**: Sahne metriklerini gerçek zamanlı gösteren HUD paneli
