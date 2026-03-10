@@ -21,6 +21,10 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 FRONTEND_DIR = os.path.join(ROOT_DIR, "Frontend")
 DATAENGINE_DIR = os.path.join(ROOT_DIR, "DataEngine")
 
+# ── Versiyon (tek kaynak: VERSION dosyası) ────────────────────────────
+with open(os.path.join(ROOT_DIR, "VERSION"), encoding="utf-8") as _vf:
+    APP_VERSION = _vf.read().strip()
+
 # ── Frontend dosyalarını topla ────────────────────────────────────────
 include_files = []
 
@@ -154,7 +158,7 @@ executables = [
 # ── Setup ─────────────────────────────────────────────────────────────
 setup(
     name="SemantikGalaksi",
-    version="0.30.1",
+    version=APP_VERSION,
     description="Kur'an-ı Kerim Kelime Kök Uzayı — 3D Görselleştirme",
     long_description=(
         "Kur'an-ı Kerim surelerini ve ayetlerini 3D uzay görselleştirmesi ile keşfedin. "

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [0.30.2] - 2025-07-28
+### İyileştirme
+- **Tek Kaynak Versiyon Sistemi**: `VERSION` dosyası tek kaynak; `setup.py`, `build_msi.bat`, `index.html` otomatik okur
+  - `VERSION` dosyasını değiştirmek tüm sistemi günceller
+  - `build_msi.bat` build öncesi `state.js`'i otomatik senkronize eder
+  - `index.html` badge'i `APP_VERSION` global değişkeninden dinamik doldurulur
+- **Etkilenen dosyalar:** `VERSION` (yeni), `setup.py`, `build_msi.bat`, `Frontend/js/state.js`, `Frontend/index.html`
+
 ## [0.30.1] - 2025-07-28
 ### Düzeltme
 - **Loading Screen Opaklık**: Açılış ekranı arka planı `rgba(0,0,0,0.82)` → `#000` (tam opak) yapıldı; arkadaki Three.js sahnesi artık loading sırasında görünmüyor
