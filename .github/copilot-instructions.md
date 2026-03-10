@@ -47,6 +47,7 @@ Her değişiklik sonrası:
 ## Git İşlemleri
 - Her değişiklik tamamlandıktan sonra otomatik olarak `git add -A`, `git commit -m "mesaj"`, `git push origin master` çalıştır.
 - Kullanıcıdan onay bekleme, doğrudan push yap.
+- Her versiyon güncellemesinde `git tag -a vX.Y.Z -m "açıklama"` oluştur ve `git push origin vX.Y.Z` ile push'la.
 
 ## Yanıt Formatı
 1. Değişiklik özeti (1-2 cümle)
