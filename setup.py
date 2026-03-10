@@ -79,6 +79,10 @@ build_exe_options = {
     "excludes": [
         "tkinter", "unittest", "email", "xml.etree",
         "pydoc_data", "distutils", "setuptools",
+        "numpy", "PIL", "Pillow", "pygments", "IPython",
+        "PyInstaller", "prompt_toolkit", "jedi", "parso",
+        "matplotlib", "scipy", "pandas", "notebook",
+        "jupyter", "ipykernel", "ipywidgets",
     ],
     "include_files": include_files,
     "include_msvcr": True,
