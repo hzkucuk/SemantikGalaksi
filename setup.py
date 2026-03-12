@@ -78,6 +78,9 @@ if os.path.exists(version_src):
     include_files.append((version_src, "VERSION"))
 
 # ── Build seçenekleri ─────────────────────────────────────────────────
+# cx_Freeze'in updater modülünü bulabilmesi için DataEngine'i path'e ekle
+sys.path.insert(0, DATAENGINE_DIR)
+
 build_exe_options = {
     "packages": [
         "webview", "webview.platforms.edgechromium",
