@@ -217,11 +217,6 @@ var animate = (now) => {
             ayahMesh.material.uniforms.time.value = elapsed;
         }
 
-        // Yıldız alanı: sensör zamanı güncelle (dönüş yok — uzayda sabit referans)
-        if (starField && starField.material.uniforms) {
-            starField.material.uniforms.uTime.value = elapsed;
-        }
-
         // Skybox kamerayı takip etsin (sonsuz uzak görünsün)
         if (skyMesh) skyMesh.position.copy(camera.position);
 

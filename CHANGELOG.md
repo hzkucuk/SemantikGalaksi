@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.33.2] - 2025-07-28
+### Performans
+- **Yıldız Partikülleri Kaldırıldı**: 120.000 yıldız partikülü ve shader sistemi kaldırıldı — milkyway.jpg skybox + nebula bulutları yeterli arka plan sağlıyor, gereksiz GPU yükü ortadan kalktı
+- **Etkilenen dosyalar:** `Frontend/js/scene-init.js`, `Frontend/js/warp.js`, `Frontend/js/state.js`
+
 ## [0.33.1] - 2025-07-28
 ### Düzeltme
 - **Seslendirme Kesintisi**: Mouse hareket edince çalan ses artık kesilmiyor — `hideTooltip` ve `closeHudTooltip`'ten `stopAudio()` çağrısı kaldırıldı
