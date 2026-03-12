@@ -171,16 +171,15 @@ var toggleHudRootDetail = (root, el) => {
             ${derivedHtml ? `<div style="font-size:10px;font-weight:700;color:#00f2ff;margin-bottom:4px;letter-spacing:0.08em;">TÜREMİŞ KELİMELER</div>${derivedHtml}` : ''}`;
     }
 
-    // Kartın içine ekle (liste) veya kök istatistiklerinin üstüne (ana badge)
+    // Kartın içine ekle (liste) veya köklerin hemen altına (ana badge)
     var card = el.closest('.ayah-list-item');
     if (card) {
         card.appendChild(panel);
     } else {
-        var statsDiv = document.getElementById('hud-root-stats');
-        if (statsDiv) {
-            statsDiv.parentElement.insertBefore(panel, statsDiv);
-        } else {
-            el.closest('#hud-roots')?.after(panel);
+        var rootsCont = el.closest('#hud-roots') || document.getElementById('hud-roots');
+        if (rootsCont) {
+            // Önceki panel varsa köklerin hemen altında, yeni panel onun yerine geçer
+            rootsCont.after(panel);
         }
     }
 };

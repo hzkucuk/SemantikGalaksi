@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.34.2] - 2025-07-28
+### Düzeltme
+- **HUD Kök Detay Paneli**: Üstteki köklere tıklandığında türemiş kelimeler paneli artık köklerin hemen altında açılıyor (en alta düşme sorunu giderildi)
+### İyileştirme
+- **MSI Derleme Politikası**: Patch 1-4 arası sadece git push, patch 5'te MINOR artırılıp release derlemesi yapılır
+- **Etkilenen dosyalar:** `Frontend/js/tooltip.js`, `.github/copilot-instructions.md`
+
 ## [0.34.1] - 2025-07-28
 ### Düzeltme
 - **TTS Ses Kalitesi**: Besmele ile birebir aynı ses pipeline'ı — PCM normalizasyon (peak→28000) eklendi, prompt "duayı" tonuyla eşlendi, cılız ses sorunu giderildi

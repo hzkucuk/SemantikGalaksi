@@ -48,7 +48,12 @@ Her değişiklik sonrası:
 - Her değişiklik tamamlandıktan sonra otomatik olarak `git add -A`, `git commit -m "mesaj"`, `git push origin master` çalıştır.
 - Kullanıcıdan onay bekleme, doğrudan push yap.
 - Her versiyon güncellemesinde `git tag -a vX.Y.Z -m "açıklama"` oluştur ve `git push origin vX.Y.Z` ile push'la.
-- **Push öncesi MSI build:** `git push` yapmadan önce `build_msi.bat` çalıştır. Build başarısız olursa push yapma, hatayı düzelt.
+
+## MSI Derleme Politikası
+- PATCH sürümleri (X.Y.1 – X.Y.4) için **MSI build yapma**, sadece git push yap.
+- PATCH 5'e ulaşıldığında (X.Y.5): MINOR sürümü artır (X.Y+1.0), MSI build (`build_msi.bat`) çalıştır, release oluştur.
+- Yani her 5 patch'te bir release derlemesi gerçekleşir.
+- Build başarısız olursa push yapma, hatayı düzelt.
 
 ## Yanıt Formatı
 1. Değişiklik özeti (1-2 cümle)
