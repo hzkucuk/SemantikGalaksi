@@ -1,0 +1,1200 @@
+{
+  "nodes": [
+    {
+      "id": "96:1",
+      "text": "اِقْرَأْ بِاسْمِ رَبِّكَ الَّذ۪ي خَلَقَۚ",
+      "translation": "Yaratan Rabbinin adıyla oku!",
+      "dipnot": "Bu suredeki ilk beş ayetin, ilk inen Kur’an ayetleri olduğu kabul edilir. Allah’ın ayetleri ikiye ayrılır: İlki yaratılmış ayetlerdir, bunlar kainattaki tüm varlıklardır. İkincisi indirilmiş ayetlerdir ki onlar ilahi kitaplardadır. Daha önce ilahi bir kitap okumamış olan Muhammed aleyhisselamın ilk inen bu emirle o anda okuyabileceği tek şey yaratılmış ayetlerdi. Bu ayetteki “Yaratan Rabbinin adıyla oku” emrinin yerine getirilmesi için, Allah’ın yarattıklarını, onların yaratıcısı olan Allah’ı düşünerek ve onu tanımak maksadıyla incelemek gerekir (Fussilet 41/52 - 53, Câsiye 45/3 - 6, Ğaşiye 88/17 - 20).",
+      "roots": [
+        "قرأ",
+        "سمو",
+        "ربب",
+        "خلق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bu suredeki ilk beş ayetin, ilk inen Kur’an ayetleri olduğu kabul edilir. Allah’ın ayetleri ikiye ayrılır: İlki yaratılmış ayetlerdir, bunlar kainattaki tüm varlıklardır. İkincisi indirilmiş ayetlerdir ki onlar ilahi kitaplardadır. Daha önce ilahi bir kitap okumamış olan Muhammed aleyhisselamın ilk inen bu emirle o anda okuyabileceği tek şey yaratılmış ayetlerdi. Bu ayetteki “Yaratan Rabbinin adıyla oku” emrinin yerine getirilmesi için, Allah’ın yarattıklarını, onların yaratıcısı olan Allah’ı düşünerek ve onu tanımak maksadıyla incelemek gerekir ("
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/52-53",
+          "targets": [
+            "41:52",
+            "41:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Câsiye 45/3-6",
+          "targets": [
+            "45:3",
+            "45:4",
+            "45:5",
+            "45:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ğaşiye 88/17-20",
+          "targets": [
+            "88:17",
+            "88:18",
+            "88:19",
+            "88:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:1",
+        "connections": [
+          {
+            "target_coordinate": "41:52",
+            "context": "Fussilet 41/52-53"
+          },
+          {
+            "target_coordinate": "41:53",
+            "context": "Fussilet 41/52-53"
+          },
+          {
+            "target_coordinate": "45:3",
+            "context": "Câsiye 45/3-6"
+          },
+          {
+            "target_coordinate": "45:4",
+            "context": "Câsiye 45/3-6"
+          },
+          {
+            "target_coordinate": "45:5",
+            "context": "Câsiye 45/3-6"
+          },
+          {
+            "target_coordinate": "45:6",
+            "context": "Câsiye 45/3-6"
+          },
+          {
+            "target_coordinate": "88:17",
+            "context": "Ğaşiye 88/17-20"
+          },
+          {
+            "target_coordinate": "88:18",
+            "context": "Ğaşiye 88/17-20"
+          },
+          {
+            "target_coordinate": "88:19",
+            "context": "Ğaşiye 88/17-20"
+          },
+          {
+            "target_coordinate": "88:20",
+            "context": "Ğaşiye 88/17-20"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 1. Ayetin Tefsiri\nاِقْرَأْ بِاسْمِ رَبِّكَ الَّذ۪ي خَلَقَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:2",
+      "text": "خَلَقَ الْاِنْسَانَ مِنْ عَلَقٍۚ",
+      "translation": "O, insanı rahim duvarına asılı embriyodan yaratmıştır.",
+      "dipnot": "Hac 22/5, Mü’minun 23/12 - 14, Mü’min 40/67, Kıyamet 75/37 - 38.",
+      "roots": [
+        "خلق",
+        "أنس",
+        "علق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hac 22/5",
+          "targets": [
+            "22:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/12-14",
+          "targets": [
+            "23:12",
+            "23:13",
+            "23:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/67",
+          "targets": [
+            "40:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/37-38",
+          "targets": [
+            "75:37",
+            "75:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:2",
+        "connections": [
+          {
+            "target_coordinate": "22:5",
+            "context": "Hac 22/5"
+          },
+          {
+            "target_coordinate": "23:12",
+            "context": "minun 23/12-14"
+          },
+          {
+            "target_coordinate": "23:13",
+            "context": "minun 23/12-14"
+          },
+          {
+            "target_coordinate": "23:14",
+            "context": "minun 23/12-14"
+          },
+          {
+            "target_coordinate": "40:67",
+            "context": "min 40/67"
+          },
+          {
+            "target_coordinate": "75:37",
+            "context": "Kıyamet 75/37-38"
+          },
+          {
+            "target_coordinate": "75:38",
+            "context": "Kıyamet 75/37-38"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 2. Ayetin Tefsiri\nخَلَقَ الْاِنْسَانَ مِنْ عَلَقٍۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:3",
+      "text": "اِقْرَأْ وَرَبُّكَ الْاَكْرَمُۙ",
+      "translation": "Oku! Rabbin en cömert olandır.",
+      "dipnot": "Rahman 55/78, İnfitar 82/6.",
+      "roots": [
+        "قرأ",
+        "ربب",
+        "كرم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Rahman 55/78",
+          "targets": [
+            "55:78"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/6",
+          "targets": [
+            "82:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:3",
+        "connections": [
+          {
+            "target_coordinate": "55:78",
+            "context": "Rahman 55/78"
+          },
+          {
+            "target_coordinate": "82:6",
+            "context": "İnfitar 82/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 3. Ayetin Tefsiri\nاِقْرَأْ وَرَبُّكَ الْاَكْرَمُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:4",
+      "text": "اَلَّذ۪ي عَلَّمَ بِالْقَلَمِۙ",
+      "translation": "O, kalemle öğretmiş olandır.",
+      "dipnot": "Bakara 2/31. âyette Allah’ın, Âdem’e her varlığın ismini (neye yaradıklarını) öğrettiği bildirilmiştir. Bu âyette de kalemle öğrettiği bildirilmektedir. Demek ki, yazıyı öğreten Allah, onu ilk öğrenen de Âdem’dir (Kalem 68/1).",
+      "roots": [
+        "علم",
+        "قلم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/31",
+          "targets": [
+            "2:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". âyette Allah’ın, Âdem’e her varlığın ismini (neye yaradıklarını) öğrettiği bildirilmiştir. Bu âyette de kalemle öğrettiği bildirilmektedir. Demek ki, yazıyı öğreten Allah, onu ilk öğrenen de Âdem’dir ("
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/1",
+          "targets": [
+            "68:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:4",
+        "connections": [
+          {
+            "target_coordinate": "2:31",
+            "context": "Bakara 2/31"
+          },
+          {
+            "target_coordinate": "68:1",
+            "context": "Kalem 68/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 4. Ayetin Tefsiri\nاَلَّذ۪ي عَلَّمَ بِالْقَلَمِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:5",
+      "text": "عَلَّمَ الْاِنْسَانَ مَا لَمْ يَعْلَمْۜ",
+      "translation": "İnsana, bilmediği şeyleri öğretmiştir.",
+      "dipnot": "",
+      "roots": [
+        "علم",
+        "أنس"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "96:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 5. Ayetin Tefsiri\nعَلَّمَ الْاِنْسَانَ مَا لَمْ يَعْلَمْۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:6",
+      "text": "كَلَّٓا اِنَّ الْاِنْسَانَ لَيَطْغٰىۙ",
+      "translation": "Yok, yok… İnsan kesinlikle taşkınlık eder.",
+      "dipnot": "",
+      "roots": [
+        "أنس",
+        "طغي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "96:6",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 6. Ayetin Tefsiri\nكَلَّٓا اِنَّ الْاِنْسَانَ لَيَطْغٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:7",
+      "text": "اَنْ رَاٰهُ اسْتَغْنٰىۜ",
+      "translation": "Kendini yeterli gördüğünde.",
+      "dipnot": "İnsanlar, refah düzeyleri artıp bir ihtiyaçları kalmadığını düşündükleri zaman taşkınlık etmeye başlarlar (Bakara 2/258, İsra 17/67 , Kasas 28/78, Zümer 39/49, Leyl 92/8 - 11).",
+      "roots": [
+        "رأي",
+        "غني"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "İnsanlar, refah düzeyleri artıp bir ihtiyaçları kalmadığını düşündükleri zaman taşkınlık etmeye başlarlar ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/258",
+          "targets": [
+            "2:258"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/67",
+          "targets": [
+            "17:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/78",
+          "targets": [
+            "28:78"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/49",
+          "targets": [
+            "39:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Leyl 92/8-11",
+          "targets": [
+            "92:8",
+            "92:9",
+            "92:10",
+            "92:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:7",
+        "connections": [
+          {
+            "target_coordinate": "2:258",
+            "context": "Bakara 2/258"
+          },
+          {
+            "target_coordinate": "17:67",
+            "context": "İsra 17/67"
+          },
+          {
+            "target_coordinate": "28:78",
+            "context": "Kasas 28/78"
+          },
+          {
+            "target_coordinate": "39:49",
+            "context": "Zümer 39/49"
+          },
+          {
+            "target_coordinate": "92:8",
+            "context": "Leyl 92/8-11"
+          },
+          {
+            "target_coordinate": "92:9",
+            "context": "Leyl 92/8-11"
+          },
+          {
+            "target_coordinate": "92:10",
+            "context": "Leyl 92/8-11"
+          },
+          {
+            "target_coordinate": "92:11",
+            "context": "Leyl 92/8-11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 7. Ayetin Tefsiri\nاَنْ رَاٰهُ اسْتَغْنٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:8",
+      "text": "اِنَّ اِلٰى رَبِّكَ الرُّجْعٰىۜ",
+      "translation": "Muhakkak ki dönüş Rabbinin huzurunadır.",
+      "dipnot": "Necm 53/42 Hakka 69/25 - 37.",
+      "roots": [
+        "ربب",
+        "رجع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Necm 53/42",
+          "targets": [
+            "53:42"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/25-37",
+          "targets": [
+            "69:25",
+            "69:26",
+            "69:27",
+            "69:28",
+            "69:29",
+            "69:30",
+            "69:31",
+            "69:32",
+            "69:33",
+            "69:34",
+            "69:35",
+            "69:36",
+            "69:37"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:8",
+        "connections": [
+          {
+            "target_coordinate": "53:42",
+            "context": "Necm 53/42"
+          },
+          {
+            "target_coordinate": "69:25",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:26",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:27",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:28",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:29",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:30",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:31",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:32",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:33",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:34",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:35",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:36",
+            "context": "Hakka 69/25-37"
+          },
+          {
+            "target_coordinate": "69:37",
+            "context": "Hakka 69/25-37"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 8. Ayetin Tefsiri\nاِنَّ اِلٰى رَبِّكَ الرُّجْعٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:9",
+      "text": "اَرَاَيْتَ الَّذ۪ي يَنْهٰىۙ",
+      "translation": "(Ey Muhammed!) Engelleyen kişiyi gördün mü?",
+      "dipnot": "",
+      "roots": [
+        "رأي",
+        "نهي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "96:9",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 9. Ayetin Tefsiri\nاَرَاَيْتَ الَّذ۪ي يَنْهٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:10",
+      "text": "عَبْدًا اِذَا صَلّٰىۜ",
+      "translation": "Bir kulu, kulluk görevini yaparken (engelleyeni)?",
+      "dipnot": "Bakara 2/114, En’am 6/26.",
+      "roots": [
+        "عبد",
+        "صلو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/114",
+          "targets": [
+            "2:114"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/26",
+          "targets": [
+            "6:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:10",
+        "connections": [
+          {
+            "target_coordinate": "2:114",
+            "context": "Bakara 2/114"
+          },
+          {
+            "target_coordinate": "6:26",
+            "context": "am 6/26"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 10. Ayetin Tefsiri\nعَبْدًا اِذَا صَلّٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:11",
+      "text": "اَرَاَيْتَ اِنْ كَانَ عَلَى الْهُدٰىۙ",
+      "translation": "Düşündün mü! O, doğru yolda olsaydı",
+      "dipnot": "",
+      "roots": [
+        "رأي",
+        "كون",
+        "هدي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "96:11",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 11. Ayetin Tefsiri\nاَرَاَيْتَ اِنْ كَانَ عَلَى الْهُدٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:12",
+      "text": "اَوْ اَمَرَ بِالتَّقْوٰىۜ",
+      "translation": "veya yanlışlardan sakınılmasını isteseydi (olmaz mıydı)!",
+      "dipnot": "",
+      "roots": [
+        "أمر",
+        "وقي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "96:12",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 12. Ayetin Tefsiri\nاَوْ اَمَرَ بِالتَّقْوٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:13",
+      "text": "اَرَاَيْتَ اِنْ كَذَّبَ وَتَوَلّٰىۜ",
+      "translation": "Şunu da düşündün mü! O, yalana sarılmış ve doğrulara sırt çevirmişse (ki çevirdi),",
+      "dipnot": "Necm 53/33",
+      "roots": [
+        "رأي",
+        "كذب",
+        "ولي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Necm 53/33",
+          "targets": [
+            "53:33"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:13",
+        "connections": [
+          {
+            "target_coordinate": "53:33",
+            "context": "Necm 53/33"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 13. Ayetin Tefsiri\nاَرَاَيْتَ اِنْ كَذَّبَ وَتَوَلّٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:14",
+      "text": "اَلَمْ يَعْلَمْ بِاَنَّ اللّٰهَ يَرٰىۜ",
+      "translation": "Allah’ın onu görmekte olduğunu bilmiyor mu?",
+      "dipnot": "Fecr 89/14.",
+      "roots": [
+        "علم",
+        "أله",
+        "رأي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Fecr 89/14",
+          "targets": [
+            "89:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:14",
+        "connections": [
+          {
+            "target_coordinate": "89:14",
+            "context": "Fecr 89/14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 14. Ayetin Tefsiri\nاَلَمْ يَعْلَمْ بِاَنَّ اللّٰهَ يَرٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:15",
+      "text": "كَلَّا لَئِنْ لَمْ يَنْتَهِ۬ لَنَسْفَعًا بِالنَّاصِيَةِۙ",
+      "translation": "Yok, yok… Vazgeçmezse kesinlikle tutup çekeriz perçeminden,",
+      "dipnot": "",
+      "roots": [
+        "نهي",
+        "سفع",
+        "نصي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "96:15",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 15. Ayetin Tefsiri\nكَلَّا لَئِنْ لَمْ يَنْتَهِ۬ لَنَسْفَعًا بِالنَّاصِيَةِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:16",
+      "text": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍۚ",
+      "translation": "yalancı ve suçlu perçeminden!",
+      "dipnot": "Tur 52/13, Rahman 55/41. Perçem, alın kısmını gösterir. Alın kısmı beynin frontal korteks denen ön bölgesini içerir. Bu bölge muhakeme, doğruyu yanlıştan ayırt etme ve davranışların kontrolü gibi özelliklerden sorumludur.",
+      "roots": [
+        "نصي",
+        "كذب",
+        "خطأ"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Tur 52/13",
+          "targets": [
+            "52:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/41",
+          "targets": [
+            "55:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Perçem, alın kısmını gösterir. Alın kısmı beynin frontal korteks denen ön bölgesini içerir. Bu bölge muhakeme, doğruyu yanlıştan ayırt etme ve davranışların kontrolü gibi özelliklerden sorumludur."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:16",
+        "connections": [
+          {
+            "target_coordinate": "52:13",
+            "context": "Tur 52/13"
+          },
+          {
+            "target_coordinate": "55:41",
+            "context": "Rahman 55/41"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 16. Ayetin Tefsiri\nنَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:17",
+      "text": "فَلْيَدْعُ نَادِيَهُۙ",
+      "translation": "O zaman (çağırabilirse) çağırsın bakalım yandaşlarını!",
+      "dipnot": "Bakara 2/165 - 167.",
+      "roots": [
+        "دعو",
+        "ندي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/165-167",
+          "targets": [
+            "2:165",
+            "2:166",
+            "2:167"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:17",
+        "connections": [
+          {
+            "target_coordinate": "2:165",
+            "context": "Bakara 2/165-167"
+          },
+          {
+            "target_coordinate": "2:166",
+            "context": "Bakara 2/165-167"
+          },
+          {
+            "target_coordinate": "2:167",
+            "context": "Bakara 2/165-167"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 17. Ayetin Tefsiri\nفَلْيَدْعُ نَادِيَهُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:18",
+      "text": "سَنَدْعُ الزَّبَانِيَةَۙ",
+      "translation": "Biz de zebanileri çağıracağız.",
+      "dipnot": "Zebani adı verilen cehennemde görevli melekler için bkz: Zümer 39/71 - 72, Mü’min 40/49 - 50, Zuhruf 43/77, Tahrim 66/6, Mülk 67/8, Müddessir 74/30 - 31.",
+      "roots": [
+        "دعو",
+        "زبن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Zebani adı verilen cehennemde görevli melekler için bkz: "
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/71-72",
+          "targets": [
+            "39:71",
+            "39:72"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/49-50",
+          "targets": [
+            "40:49",
+            "40:50"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/77",
+          "targets": [
+            "43:77"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tahrim 66/6",
+          "targets": [
+            "66:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/8",
+          "targets": [
+            "67:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/30-31",
+          "targets": [
+            "74:30",
+            "74:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:18",
+        "connections": [
+          {
+            "target_coordinate": "39:71",
+            "context": "Zümer 39/71-72"
+          },
+          {
+            "target_coordinate": "39:72",
+            "context": "Zümer 39/71-72"
+          },
+          {
+            "target_coordinate": "40:49",
+            "context": "min 40/49-50"
+          },
+          {
+            "target_coordinate": "40:50",
+            "context": "min 40/49-50"
+          },
+          {
+            "target_coordinate": "43:77",
+            "context": "Zuhruf 43/77"
+          },
+          {
+            "target_coordinate": "66:6",
+            "context": "Tahrim 66/6"
+          },
+          {
+            "target_coordinate": "67:8",
+            "context": "Mülk 67/8"
+          },
+          {
+            "target_coordinate": "74:30",
+            "context": "Müddessir 74/30-31"
+          },
+          {
+            "target_coordinate": "74:31",
+            "context": "Müddessir 74/30-31"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 18. Ayetin Tefsiri\nسَنَدْعُ الزَّبَانِيَةَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    },
+    {
+      "id": "96:19",
+      "text": "كَلَّاۜ لَا تُطِعْهُ وَاسْجُدْ وَاقْتَرِبْ",
+      "translation": "Yok, yok… Ona boyun eğme, sen (Allah’a) secde et ve ona yakınlaş!",
+      "dipnot": "Furkan 25/52, Ahzab 33/1, 48, Kalem 68/8. Secdenin kök anlamı eğilmedir (Müfredat). Bu sebeple Güneş, Ay, gezegenler, dünya ve yıldızlar arasında oluşan eğimler /deklinasyon ve ona bağlı olarak gölgenin uzayıp kısalması, “secde” kelimesiyle ifade edilmiştir (Nahl 16/48, Ra’d 13/15). Bazı ayetlerde sadece itaat anlamında (Hac 22/18, İnşikak 84/21), bazılarında da itaat ile birlikte fiziki eğilme anlamında kullanılır (Bakara 2/34, 58, Nisa 4/154, A’raf 7/161, Yusuf 12/4 ve 100). Nitekim namazda, vücudumuz ayaklar, eller ve dizler üzerinde yere paralelken alnı yere koymak da Allah’a itaat ederek eğilme anlamındaki secdedir (Nisa 4/102-103).",
+      "roots": [
+        "طوع",
+        "سجد",
+        "قرب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Furkan 25/52",
+          "targets": [
+            "25:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/1,48",
+          "targets": [
+            "33:1",
+            "33:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/8",
+          "targets": [
+            "68:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Secdenin kök anlamı eğilmedir (Müfredat). Bu sebeple Güneş, Ay, gezegenler, dünya ve yıldızlar arasında oluşan eğimler /deklinasyon ve ona bağlı olarak gölgenin uzayıp kısalması, “secde” kelimesiyle ifade edilmiştir ("
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/48",
+          "targets": [
+            "16:48"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/15",
+          "targets": [
+            "13:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bazı ayetlerde sadece itaat anlamında ("
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/18",
+          "targets": [
+            "22:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/21",
+          "targets": [
+            "84:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), bazılarında da itaat ile birlikte fiziki eğilme anlamında kullanılır ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/34,58",
+          "targets": [
+            "2:34",
+            "2:58"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/154",
+          "targets": [
+            "4:154"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/161",
+          "targets": [
+            "7:161"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yusuf 12/4",
+          "targets": [
+            "12:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "ve 100). Nitekim namazda, vücudumuz ayaklar, eller ve dizler üzerinde yere paralelken alnı yere koymak da Allah’a itaat ederek eğilme anlamındaki secdedir ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/102-103",
+          "targets": [
+            "4:102",
+            "4:103"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "96:19",
+        "connections": [
+          {
+            "target_coordinate": "25:52",
+            "context": "Furkan 25/52"
+          },
+          {
+            "target_coordinate": "33:1",
+            "context": "Ahzab 33/1,48"
+          },
+          {
+            "target_coordinate": "33:48",
+            "context": "Ahzab 33/1,48"
+          },
+          {
+            "target_coordinate": "68:8",
+            "context": "Kalem 68/8"
+          },
+          {
+            "target_coordinate": "16:48",
+            "context": "Nahl 16/48"
+          },
+          {
+            "target_coordinate": "13:15",
+            "context": "d 13/15"
+          },
+          {
+            "target_coordinate": "22:18",
+            "context": "Hac 22/18"
+          },
+          {
+            "target_coordinate": "84:21",
+            "context": "İnşikak 84/21"
+          },
+          {
+            "target_coordinate": "2:34",
+            "context": "Bakara 2/34,58"
+          },
+          {
+            "target_coordinate": "2:58",
+            "context": "Bakara 2/34,58"
+          },
+          {
+            "target_coordinate": "4:154",
+            "context": "Nisa 4/154"
+          },
+          {
+            "target_coordinate": "7:161",
+            "context": "raf 7/161"
+          },
+          {
+            "target_coordinate": "12:4",
+            "context": "Yusuf 12/4"
+          },
+          {
+            "target_coordinate": "4:102",
+            "context": "Nisa 4/102-103"
+          },
+          {
+            "target_coordinate": "4:103",
+            "context": "Nisa 4/102-103"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Alak Suresi 19. Ayetin Tefsiri\nكَلَّاۜ لَا تُطِعْهُ وَاسْجُدْ وَاقْتَرِبْ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/96.mp3"
+    }
+  ]
+}

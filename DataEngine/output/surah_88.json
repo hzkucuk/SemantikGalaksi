@@ -1,0 +1,1943 @@
+{
+  "nodes": [
+    {
+      "id": "88:1",
+      "text": "هَلْ اَتٰيكَ حَد۪يثُ الْغَاشِيَةِۜ",
+      "translation": "Her şeyi çepeçevre kuşatacak olanın /mezardan kalkış gününün haberi sana geldi, değil mi!",
+      "dipnot": "Hicr 15/85,\nHac 22/7,\nMü’min 40/59.",
+      "roots": [
+        "أتي",
+        "حدث",
+        "غشو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hicr 15/85",
+          "targets": [
+            "15:85"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/7",
+          "targets": [
+            "22:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/59",
+          "targets": [
+            "40:59"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:1",
+        "connections": [
+          {
+            "target_coordinate": "15:85",
+            "context": "Hicr 15/85"
+          },
+          {
+            "target_coordinate": "22:7",
+            "context": "Hac 22/7"
+          },
+          {
+            "target_coordinate": "40:59",
+            "context": "min 40/59"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 1. Ayetin Tefsiri\nهَلْ اَتٰيكَ حَد۪يثُ الْغَاشِيَةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:2",
+      "text": "وُجُوهٌ يَوْمَئِذٍ خَاشِعَةٌۙ",
+      "translation": "O gün kimi yüzler öne eğik olacaktır;",
+      "dipnot": "Kamer 54/6\n-\n7,\nKalem 68/43,\nMearic 70/43\n-\n44,\nNaziat 79/9.",
+      "roots": [
+        "وجه",
+        "يوم",
+        "خشع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kamer 54/6-7",
+          "targets": [
+            "54:6",
+            "54:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/43",
+          "targets": [
+            "68:43"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/43-44",
+          "targets": [
+            "70:43",
+            "70:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziat 79/9",
+          "targets": [
+            "79:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:2",
+        "connections": [
+          {
+            "target_coordinate": "54:6",
+            "context": "Kamer 54/6-7"
+          },
+          {
+            "target_coordinate": "54:7",
+            "context": "Kamer 54/6-7"
+          },
+          {
+            "target_coordinate": "68:43",
+            "context": "Kalem 68/43"
+          },
+          {
+            "target_coordinate": "70:43",
+            "context": "Mearic 70/43-44"
+          },
+          {
+            "target_coordinate": "70:44",
+            "context": "Mearic 70/43-44"
+          },
+          {
+            "target_coordinate": "79:9",
+            "context": "Naziat 79/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 2. Ayetin Tefsiri\nوُجُوهٌ يَوْمَئِذٍ خَاشِعَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:3",
+      "text": "عَامِلَةٌ نَاصِبَةٌۙ",
+      "translation": "çalışmış, boşuna yorulmuşlardır.",
+      "dipnot": "Hud 11/15\n-\n16,\nFurkan 25/22\n-\n23,\nKehf 18/103\n-\n106.",
+      "roots": [
+        "عمل",
+        "نصب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hud 11/15-16",
+          "targets": [
+            "11:15",
+            "11:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/22-23",
+          "targets": [
+            "25:22",
+            "25:23"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/103-106",
+          "targets": [
+            "18:103",
+            "18:104",
+            "18:105",
+            "18:106"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:3",
+        "connections": [
+          {
+            "target_coordinate": "11:15",
+            "context": "Hud 11/15-16"
+          },
+          {
+            "target_coordinate": "11:16",
+            "context": "Hud 11/15-16"
+          },
+          {
+            "target_coordinate": "25:22",
+            "context": "Furkan 25/22-23"
+          },
+          {
+            "target_coordinate": "25:23",
+            "context": "Furkan 25/22-23"
+          },
+          {
+            "target_coordinate": "18:103",
+            "context": "Kehf 18/103-106"
+          },
+          {
+            "target_coordinate": "18:104",
+            "context": "Kehf 18/103-106"
+          },
+          {
+            "target_coordinate": "18:105",
+            "context": "Kehf 18/103-106"
+          },
+          {
+            "target_coordinate": "18:106",
+            "context": "Kehf 18/103-106"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 3. Ayetin Tefsiri\nعَامِلَةٌ نَاصِبَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:4",
+      "text": "تَصْلٰى نَارًا حَامِيَةًۙ",
+      "translation": "Kızgın bir ateşe girip kalırlar.",
+      "dipnot": "Yunus 10/27,\nZümer 39/60,\nKıyamet 75/24\n-\n25,\nAbese 80/40\n-\n42.",
+      "roots": [
+        "صلي",
+        "نور",
+        "حمي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/27",
+          "targets": [
+            "10:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/60",
+          "targets": [
+            "39:60"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/24-25",
+          "targets": [
+            "75:24",
+            "75:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/40-42",
+          "targets": [
+            "80:40",
+            "80:41",
+            "80:42"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:4",
+        "connections": [
+          {
+            "target_coordinate": "10:27",
+            "context": "Yunus 10/27"
+          },
+          {
+            "target_coordinate": "39:60",
+            "context": "Zümer 39/60"
+          },
+          {
+            "target_coordinate": "75:24",
+            "context": "Kıyamet 75/24-25"
+          },
+          {
+            "target_coordinate": "75:25",
+            "context": "Kıyamet 75/24-25"
+          },
+          {
+            "target_coordinate": "80:40",
+            "context": "Abese 80/40-42"
+          },
+          {
+            "target_coordinate": "80:41",
+            "context": "Abese 80/40-42"
+          },
+          {
+            "target_coordinate": "80:42",
+            "context": "Abese 80/40-42"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 4. Ayetin Tefsiri\nتَصْلٰى نَارًا حَامِيَةًۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:5",
+      "text": "تُسْقٰى مِنْ عَيْنٍ اٰنِيَةٍۜ",
+      "translation": "Onlara, çok sıcak bir kaynaktan su verilir.",
+      "dipnot": "Yunus 10/4,\nİbrahim 14/16,\nKehf 18/29,\nSaffat 37/67,\nMuhammed 47/15,\nVakıa 56/54\n-\n55,\nNebe 78/24\n-\n25.",
+      "roots": [
+        "سقي",
+        "عين",
+        "أني"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/4",
+          "targets": [
+            "10:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/16",
+          "targets": [
+            "14:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/29",
+          "targets": [
+            "18:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/67",
+          "targets": [
+            "37:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/15",
+          "targets": [
+            "47:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/54-55",
+          "targets": [
+            "56:54",
+            "56:55"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/24-25",
+          "targets": [
+            "78:24",
+            "78:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:5",
+        "connections": [
+          {
+            "target_coordinate": "10:4",
+            "context": "Yunus 10/4"
+          },
+          {
+            "target_coordinate": "14:16",
+            "context": "İbrahim 14/16"
+          },
+          {
+            "target_coordinate": "18:29",
+            "context": "Kehf 18/29"
+          },
+          {
+            "target_coordinate": "37:67",
+            "context": "Saffat 37/67"
+          },
+          {
+            "target_coordinate": "47:15",
+            "context": "Muhammed 47/15"
+          },
+          {
+            "target_coordinate": "56:54",
+            "context": "Vakıa 56/54-55"
+          },
+          {
+            "target_coordinate": "56:55",
+            "context": "Vakıa 56/54-55"
+          },
+          {
+            "target_coordinate": "78:24",
+            "context": "Nebe 78/24-25"
+          },
+          {
+            "target_coordinate": "78:25",
+            "context": "Nebe 78/24-25"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 5. Ayetin Tefsiri\nتُسْقٰى مِنْ عَيْنٍ اٰنِيَةٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:6",
+      "text": "لَيْسَ لَهُمْ طَعَامٌ اِلَّا مِنْ ضَر۪يعٍۙ",
+      "translation": "Dikenli bir bitkiden başka yiyecekleri olmaz.",
+      "dipnot": "Bu ayette cehennemdekilerin ancak dikenli bir bitki, diğer bir ayette (\nHâkka 69/36\n) ise sadece irin yiyeceği söylenir. Birbiriyle çeliştiği sanılan bu iki ayette iki farklı yiyecekten bahsedilse de, diğer ayetlere bakılınca bunların aynı ağacın ürünü olduğu anlaşılacaktır. Çünkü cehennemdekilerin yiyeceklerinin, cehennemin dibinde biten, şeytanların başı gibi meyveleri olan ve yiyenlerin karnında kaynar su gibi kaynayan zakkum ağacından yiyecekleri bildirilmektedir (\nSaffat 37/62\n-\n66,\nDuhan 44/43\n-\n46,\nVakıa 56/52\n-\n53\n). Öyleyse bu ayetteki “dikenli bitki”,\nMüzzemmil 73/13\n’teki “boğaza tıkanan yiyecek” ve\nHakka 69/36’\ndaki “irin”in, zakkum ağacının ürünlerinin farklı vasıfları olduğu ortaya çıkar.",
+      "roots": [
+        "ليس",
+        "طعم",
+        "ضرع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bu ayette cehennemdekilerin ancak dikenli bir bitki, diğer bir ayette (\n"
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/36",
+          "targets": [
+            "69:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ise sadece irin yiyeceği söylenir. Birbiriyle çeliştiği sanılan bu iki ayette iki farklı yiyecekten bahsedilse de, diğer ayetlere bakılınca bunların aynı ağacın ürünü olduğu anlaşılacaktır. Çünkü cehennemdekilerin yiyeceklerinin, cehennemin dibinde biten, şeytanların başı gibi meyveleri olan ve yiyenlerin karnında kaynar su gibi kaynayan zakkum ağacından yiyecekleri bildirilmektedir (\n"
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/62-66",
+          "targets": [
+            "37:62",
+            "37:63",
+            "37:64",
+            "37:65",
+            "37:66"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/43-46",
+          "targets": [
+            "44:43",
+            "44:44",
+            "44:45",
+            "44:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/52-53",
+          "targets": [
+            "56:52",
+            "56:53"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Öyleyse bu ayetteki “dikenli bitki”,\n"
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/13",
+          "targets": [
+            "73:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’teki “boğaza tıkanan yiyecek” "
+        },
+        {
+          "type": "link",
+          "content": "ve\nHakka 69/36",
+          "targets": [
+            "69:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’\ndaki “irin”in, zakkum ağacının ürünlerinin farklı vasıfları olduğu ortaya çıkar."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:6",
+        "connections": [
+          {
+            "target_coordinate": "69:36",
+            "context": "Hâkka 69/36"
+          },
+          {
+            "target_coordinate": "37:62",
+            "context": "Saffat 37/62-66"
+          },
+          {
+            "target_coordinate": "37:63",
+            "context": "Saffat 37/62-66"
+          },
+          {
+            "target_coordinate": "37:64",
+            "context": "Saffat 37/62-66"
+          },
+          {
+            "target_coordinate": "37:65",
+            "context": "Saffat 37/62-66"
+          },
+          {
+            "target_coordinate": "37:66",
+            "context": "Saffat 37/62-66"
+          },
+          {
+            "target_coordinate": "44:43",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "44:44",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "44:45",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "44:46",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "56:52",
+            "context": "Vakıa 56/52-53"
+          },
+          {
+            "target_coordinate": "56:53",
+            "context": "Vakıa 56/52-53"
+          },
+          {
+            "target_coordinate": "73:13",
+            "context": "Müzzemmil 73/13"
+          },
+          {
+            "target_coordinate": "69:36",
+            "context": "ve\nHakka 69/36"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 6. Ayetin Tefsiri\nلَيْسَ لَهُمْ طَعَامٌ اِلَّا مِنْ ضَر۪يعٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:7",
+      "text": "لَا يُسْمِنُ وَلَا يُغْن۪ي مِنْ جُوعٍۜ",
+      "translation": "O, ne besler ne de açlığı giderir.",
+      "dipnot": "",
+      "roots": [
+        "سمن",
+        "غني",
+        "جوع"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "88:7",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 7. Ayetin Tefsiri\nلَا يُسْمِنُ وَلَا يُغْن۪ي مِنْ جُوعٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:8",
+      "text": "وُجُوهٌ يَوْمَئِذٍ نَاعِمَةٌۙ",
+      "translation": "O gün kimi yüzler de rahatlamıştır.",
+      "dipnot": "Âl-i İmran 3/106\n-\n107,\nYunus 10/26,\nKıyamet 75/22\n-\n23,\nAbese 80/38\n-\n39.",
+      "roots": [
+        "وجه",
+        "يوم",
+        "نعم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/106-107",
+          "targets": [
+            "3:106",
+            "3:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/26",
+          "targets": [
+            "10:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/22-23",
+          "targets": [
+            "75:22",
+            "75:23"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/38-39",
+          "targets": [
+            "80:38",
+            "80:39"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:8",
+        "connections": [
+          {
+            "target_coordinate": "3:106",
+            "context": "Âl-i İmran 3/106-107"
+          },
+          {
+            "target_coordinate": "3:107",
+            "context": "Âl-i İmran 3/106-107"
+          },
+          {
+            "target_coordinate": "10:26",
+            "context": "Yunus 10/26"
+          },
+          {
+            "target_coordinate": "75:22",
+            "context": "Kıyamet 75/22-23"
+          },
+          {
+            "target_coordinate": "75:23",
+            "context": "Kıyamet 75/22-23"
+          },
+          {
+            "target_coordinate": "80:38",
+            "context": "Abese 80/38-39"
+          },
+          {
+            "target_coordinate": "80:39",
+            "context": "Abese 80/38-39"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 8. Ayetin Tefsiri\nوُجُوهٌ يَوْمَئِذٍ نَاعِمَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:9",
+      "text": "لِسَعْيِهَا رَاضِيَةٌۙ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "سعي",
+        "رضو"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "88:9",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 9. Ayetin Tefsiri\nلِسَعْيِهَا رَاضِيَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:9",
+      "text": "",
+      "translation": "Sarf ettikleri çabalardan dolayı memnundurlar.",
+      "dipnot": "İsra 17/19,\nİnsan 76/20\n-\n22,\nFecr 89/27\n-\n28,\nBeyyine 98/7\n-\n8.",
+      "roots": [
+        "سعي",
+        "رضو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İsra 17/19",
+          "targets": [
+            "17:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/20-22",
+          "targets": [
+            "76:20",
+            "76:21",
+            "76:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/27-28",
+          "targets": [
+            "89:27",
+            "89:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beyyine 98/7-8",
+          "targets": [
+            "98:7",
+            "98:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:9",
+        "connections": [
+          {
+            "target_coordinate": "17:19",
+            "context": "İsra 17/19"
+          },
+          {
+            "target_coordinate": "76:20",
+            "context": "İnsan 76/20-22"
+          },
+          {
+            "target_coordinate": "76:21",
+            "context": "İnsan 76/20-22"
+          },
+          {
+            "target_coordinate": "76:22",
+            "context": "İnsan 76/20-22"
+          },
+          {
+            "target_coordinate": "89:27",
+            "context": "Fecr 89/27-28"
+          },
+          {
+            "target_coordinate": "89:28",
+            "context": "Fecr 89/27-28"
+          },
+          {
+            "target_coordinate": "98:7",
+            "context": "Beyyine 98/7-8"
+          },
+          {
+            "target_coordinate": "98:8",
+            "context": "Beyyine 98/7-8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 9. Ayetin Tefsiri\nلِسَعْيِهَا رَاضِيَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:10",
+      "text": "ف۪ي جَنَّةٍ عَالِيَةٍۙ",
+      "translation": "Yüce bir cennette / bahçede olurlar.",
+      "dipnot": "Hâkka 69/22.",
+      "roots": [
+        "جنن",
+        "علو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hâkka 69/22",
+          "targets": [
+            "69:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:10",
+        "connections": [
+          {
+            "target_coordinate": "69:22",
+            "context": "Hâkka 69/22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 10. Ayetin Tefsiri\nف۪ي جَنَّةٍ عَالِيَةٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:11",
+      "text": "لَا تَسْمَعُ ف۪يهَا لَاغِيَةًۜ",
+      "translation": "Orada tek bir boş söz bile duymazlar.",
+      "dipnot": "Meryem 19/62,\nVakıa 56/25\n-\n26,\nNebe 78/35.",
+      "roots": [
+        "سمع",
+        "لغو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Meryem 19/62",
+          "targets": [
+            "19:62"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/25-26",
+          "targets": [
+            "56:25",
+            "56:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/35",
+          "targets": [
+            "78:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:11",
+        "connections": [
+          {
+            "target_coordinate": "19:62",
+            "context": "Meryem 19/62"
+          },
+          {
+            "target_coordinate": "56:25",
+            "context": "Vakıa 56/25-26"
+          },
+          {
+            "target_coordinate": "56:26",
+            "context": "Vakıa 56/25-26"
+          },
+          {
+            "target_coordinate": "78:35",
+            "context": "Nebe 78/35"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 11. Ayetin Tefsiri\nلَا تَسْمَعُ ف۪يهَا لَاغِيَةًۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:12",
+      "text": "ف۪يهَا عَيْنٌ جَارِيَةٌۢ",
+      "translation": "Orada akıp duran bir kaynak vardır.",
+      "dipnot": "Hicr 15/45,\nDuhan 44/51\n-\n52,\nZariyat 51/15,\nRahman 55/50,\nİnsan 76/5\n-\n6,\n17\n-\n18,\nMutaffifin 83/28.",
+      "roots": [
+        "عين",
+        "جري"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hicr 15/45",
+          "targets": [
+            "15:45"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/51-52",
+          "targets": [
+            "44:51",
+            "44:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/15",
+          "targets": [
+            "51:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/50",
+          "targets": [
+            "55:50"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/5-6,17-18",
+          "targets": [
+            "76:5",
+            "76:6",
+            "76:17",
+            "76:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mutaffifin 83/28",
+          "targets": [
+            "83:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:12",
+        "connections": [
+          {
+            "target_coordinate": "15:45",
+            "context": "Hicr 15/45"
+          },
+          {
+            "target_coordinate": "44:51",
+            "context": "Duhan 44/51-52"
+          },
+          {
+            "target_coordinate": "44:52",
+            "context": "Duhan 44/51-52"
+          },
+          {
+            "target_coordinate": "51:15",
+            "context": "Zariyat 51/15"
+          },
+          {
+            "target_coordinate": "55:50",
+            "context": "Rahman 55/50"
+          },
+          {
+            "target_coordinate": "76:5",
+            "context": "İnsan 76/5-6,17-18"
+          },
+          {
+            "target_coordinate": "76:6",
+            "context": "İnsan 76/5-6,17-18"
+          },
+          {
+            "target_coordinate": "76:17",
+            "context": "İnsan 76/5-6,17-18"
+          },
+          {
+            "target_coordinate": "76:18",
+            "context": "İnsan 76/5-6,17-18"
+          },
+          {
+            "target_coordinate": "83:28",
+            "context": "Mutaffifin 83/28"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 12. Ayetin Tefsiri\nف۪يهَا عَيْنٌ جَارِيَةٌۢ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:13",
+      "text": "ف۪يهَا سُرُرٌ مَرْفُوعَةٌۙ",
+      "translation": "Yine orada yükseltilmiş sedirler vardır;",
+      "dipnot": "Hicr 15/47,\nSaffat 37/44,\nTur 52/20,\nVakıa 56/15,\n34.",
+      "roots": [
+        "سرر",
+        "رفع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hicr 15/47",
+          "targets": [
+            "15:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/44",
+          "targets": [
+            "37:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/20",
+          "targets": [
+            "52:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/15,34",
+          "targets": [
+            "56:15",
+            "56:34"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:13",
+        "connections": [
+          {
+            "target_coordinate": "15:47",
+            "context": "Hicr 15/47"
+          },
+          {
+            "target_coordinate": "37:44",
+            "context": "Saffat 37/44"
+          },
+          {
+            "target_coordinate": "52:20",
+            "context": "Tur 52/20"
+          },
+          {
+            "target_coordinate": "56:15",
+            "context": "Vakıa 56/15,34"
+          },
+          {
+            "target_coordinate": "56:34",
+            "context": "Vakıa 56/15,34"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 13. Ayetin Tefsiri\nف۪يهَا سُرُرٌ مَرْفُوعَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:14",
+      "text": "وَاَكْوَابٌ مَوْضُوعَةٌۙ",
+      "translation": "hazırlanmış testiler,",
+      "dipnot": "Zuhruf 43/71,\nVakıa 56/18,\nİnsan 76/15.",
+      "roots": [
+        "كوب",
+        "وضع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zuhruf 43/71",
+          "targets": [
+            "43:71"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/18",
+          "targets": [
+            "56:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/15",
+          "targets": [
+            "76:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:14",
+        "connections": [
+          {
+            "target_coordinate": "43:71",
+            "context": "Zuhruf 43/71"
+          },
+          {
+            "target_coordinate": "56:18",
+            "context": "Vakıa 56/18"
+          },
+          {
+            "target_coordinate": "76:15",
+            "context": "İnsan 76/15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 14. Ayetin Tefsiri\nوَاَكْوَابٌ مَوْضُوعَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:15",
+      "text": "وَنَمَارِقُ مَصْفُوفَةٌۙ",
+      "translation": "sıra sıra dizilmiş yastıklar,",
+      "dipnot": "Rahman 55/54,\n76.",
+      "roots": [
+        "نمرق",
+        "صفف"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Rahman 55/54,76",
+          "targets": [
+            "55:54",
+            "55:76"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:15",
+        "connections": [
+          {
+            "target_coordinate": "55:54",
+            "context": "Rahman 55/54,76"
+          },
+          {
+            "target_coordinate": "55:76",
+            "context": "Rahman 55/54,76"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 15. Ayetin Tefsiri\nوَنَمَارِقُ مَصْفُوفَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:16",
+      "text": "وَزَرَابِيُّ مَبْثُوثَةٌۜ",
+      "translation": "ve yere serilmiş halılar da.",
+      "dipnot": "",
+      "roots": [
+        "زرب",
+        "بثث"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "88:16",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 16. Ayetin Tefsiri\nوَزَرَابِيُّ مَبْثُوثَةٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:17",
+      "text": "اَفَلَا يَنْظُرُونَ اِلَى الْاِبِلِ كَيْفَ خُلِقَتْ۠",
+      "translation": "Hiç bakmazlar mı, yağmur yüklü bulut nasıl yaratılmış?",
+      "dipnot": "İbil (ابل), deve ve deve sürüsü anlamına geldiği gibi yağmur yüklü bulut anlamına da gelir (Lisan'ul-arab, Tâc'ul-arûs). Geniş bilgi için Fil Suresinde ebâbil kelimesi ile ilgili dipnota bkz.(Fil 105/3)",
+      "roots": [
+        "نظر",
+        "أبل",
+        "كيف",
+        "خلق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "İbil (ابل), deve ve deve sürüsü anlamına geldiği gibi yağmur yüklü bulut anlamına da gelir (Lisan'ul-arab, Tâc'ul-arûs). Geniş bilgi için Fil Suresinde ebâbil kelimesi ile ilgili dipnota bkz.("
+        },
+        {
+          "type": "link",
+          "content": "Fil 105/3",
+          "targets": [
+            "105:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:17",
+        "connections": [
+          {
+            "target_coordinate": "105:3",
+            "context": "Fil 105/3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 17. Ayetin Tefsiri\nاَفَلَا يَنْظُرُونَ اِلَى الْاِبِلِ كَيْفَ خُلِقَتْ۠"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:18",
+      "text": "وَاِلَى السَّمَٓاءِ كَيْفَ رُفِعَتْ۠",
+      "translation": "göğe bakmazlar mı nasıl yükseltilmiş,",
+      "dipnot": "Ra’d 13/2,\nLokman 31/10,\nKaf 50/6,\nMülk 67/3\n-\n4,\nNaziat 79/27\n-\n28.",
+      "roots": [
+        "سمو",
+        "كيف",
+        "رفع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/2",
+          "targets": [
+            "13:2"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/10",
+          "targets": [
+            "31:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/6",
+          "targets": [
+            "50:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/3-4",
+          "targets": [
+            "67:3",
+            "67:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziat 79/27-28",
+          "targets": [
+            "79:27",
+            "79:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:18",
+        "connections": [
+          {
+            "target_coordinate": "13:2",
+            "context": "d 13/2"
+          },
+          {
+            "target_coordinate": "31:10",
+            "context": "Lokman 31/10"
+          },
+          {
+            "target_coordinate": "50:6",
+            "context": "Kaf 50/6"
+          },
+          {
+            "target_coordinate": "67:3",
+            "context": "Mülk 67/3-4"
+          },
+          {
+            "target_coordinate": "67:4",
+            "context": "Mülk 67/3-4"
+          },
+          {
+            "target_coordinate": "79:27",
+            "context": "Naziat 79/27-28"
+          },
+          {
+            "target_coordinate": "79:28",
+            "context": "Naziat 79/27-28"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 18. Ayetin Tefsiri\nوَاِلَى السَّمَٓاءِ كَيْفَ رُفِعَتْ۠"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:19",
+      "text": "وَاِلَى الْجِبَالِ كَيْفَ نُصِبَتْ۠",
+      "translation": "dağlara bakmazlar mı (yere) nasıl saplanmış,",
+      "dipnot": "Hicr 15/19,\nNahl 16/15,\nEnbiya 21/31,\nLokman 31/10,\nFussilet 41/10,\nKaf 50/7,\nNebe 78/7,\nNaziat 79/32.",
+      "roots": [
+        "جبل",
+        "كيف",
+        "نصب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hicr 15/19",
+          "targets": [
+            "15:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/15",
+          "targets": [
+            "16:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/31",
+          "targets": [
+            "21:31"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/10",
+          "targets": [
+            "31:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/10",
+          "targets": [
+            "41:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/7",
+          "targets": [
+            "50:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/7",
+          "targets": [
+            "78:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziat 79/32",
+          "targets": [
+            "79:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:19",
+        "connections": [
+          {
+            "target_coordinate": "15:19",
+            "context": "Hicr 15/19"
+          },
+          {
+            "target_coordinate": "16:15",
+            "context": "Nahl 16/15"
+          },
+          {
+            "target_coordinate": "21:31",
+            "context": "Enbiya 21/31"
+          },
+          {
+            "target_coordinate": "31:10",
+            "context": "Lokman 31/10"
+          },
+          {
+            "target_coordinate": "41:10",
+            "context": "Fussilet 41/10"
+          },
+          {
+            "target_coordinate": "50:7",
+            "context": "Kaf 50/7"
+          },
+          {
+            "target_coordinate": "78:7",
+            "context": "Nebe 78/7"
+          },
+          {
+            "target_coordinate": "79:32",
+            "context": "Naziat 79/32"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 19. Ayetin Tefsiri\nوَاِلَى الْجِبَالِ كَيْفَ نُصِبَتْ۠"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:20",
+      "text": "وَاِلَى الْاَرْضِ كَيْفَ سُطِحَتْ۠",
+      "translation": "yeryüzüne bakmazlar mı nasıl (yaşanabilir bir) yüzey haline getirilmiş?",
+      "dipnot": "Zâriyat 51/48,\nNâziat 79/30,\nŞems 91/6.",
+      "roots": [
+        "أرض",
+        "كيف",
+        "سطح"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zâriyat 51/48",
+          "targets": [
+            "51:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nâziat 79/30",
+          "targets": [
+            "79:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/6",
+          "targets": [
+            "91:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:20",
+        "connections": [
+          {
+            "target_coordinate": "51:48",
+            "context": "Zâriyat 51/48"
+          },
+          {
+            "target_coordinate": "79:30",
+            "context": "Nâziat 79/30"
+          },
+          {
+            "target_coordinate": "91:6",
+            "context": "Şems 91/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 20. Ayetin Tefsiri\nوَاِلَى الْاَرْضِ كَيْفَ سُطِحَتْ۠"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:21",
+      "text": "فَذَكِّرْ اِنَّمَٓا اَنْتَ مُذَكِّرٌۜ",
+      "translation": "Öyleyse sen doğru bilgi ver /Kur’an’ı anlat! Sen sadece doğru bilgi vermekle görevlisin.",
+      "dipnot": "Zikir, bağlantılarıyla birlikte düşünülüp öğrenilen doğru bilgi, o bilgiyi kullanıma hazır tutmak, akla veya dile getirmektir (Müfredât). Doğru bilginin kaynağı Allah’ın ayetleridir. Bunlar, yaratılan ayetler ve indirilen ayetler olmak üzere iki türlüdür. Her birinden elde edilen doğru bilgi zikirdir ( Enbiya 21/24, En’âm 6/80 ). İnsanı, sadece bu bilgi tatmin eder. ( Ra’d 13/28 ). Allah’ı zikretmek; onu, kitabını ve yarattığı ayetleri dikkate almak, akıldan çıkarmamak ve onların üzerine düşünmektir. İnsan, bunlardan bildiği kadarıyla sorumludur ( Bakara 2/209 ). Kâf 50/45, Zâriyat 51/55, Tûr 52/29, A’lâ 87/9.",
+      "roots": [
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Zikir, bağlantılarıyla birlikte düşünülüp öğrenilen doğru bilgi, o bilgiyi kullanıma hazır tutmak, akla veya dile getirmektir (Müfredât). Doğru bilginin kaynağı Allah’ın ayetleridir. Bunlar, yaratılan ayetler ve indirilen ayetler olmak üzere iki türlüdür. Her birinden elde edilen doğru bilgi zikirdir ( "
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/24",
+          "targets": [
+            "21:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "âm 6/80",
+          "targets": [
+            "6:80"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İnsanı, sadece bu bilgi tatmin eder. ( Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/28",
+          "targets": [
+            "13:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah’ı zikretmek; onu, kitabını ve yarattığı ayetleri dikkate almak, akıldan çıkarmamak ve onların üzerine düşünmektir. İnsan, bunlardan bildiği kadarıyla sorumludur ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/209",
+          "targets": [
+            "2:209"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). "
+        },
+        {
+          "type": "link",
+          "content": "Kâf 50/45",
+          "targets": [
+            "50:45"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zâriyat 51/55",
+          "targets": [
+            "51:55"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tûr 52/29",
+          "targets": [
+            "52:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "lâ 87/9",
+          "targets": [
+            "87:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:21",
+        "connections": [
+          {
+            "target_coordinate": "21:24",
+            "context": "Enbiya 21/24"
+          },
+          {
+            "target_coordinate": "6:80",
+            "context": "âm 6/80"
+          },
+          {
+            "target_coordinate": "13:28",
+            "context": "d 13/28"
+          },
+          {
+            "target_coordinate": "2:209",
+            "context": "Bakara 2/209"
+          },
+          {
+            "target_coordinate": "50:45",
+            "context": "Kâf 50/45"
+          },
+          {
+            "target_coordinate": "51:55",
+            "context": "Zâriyat 51/55"
+          },
+          {
+            "target_coordinate": "52:29",
+            "context": "Tûr 52/29"
+          },
+          {
+            "target_coordinate": "87:9",
+            "context": "lâ 87/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 21. Ayetin Tefsiri\nفَذَكِّرْ اِنَّمَٓا اَنْتَ مُذَكِّرٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:22",
+      "text": "لَسْتَ عَلَيْهِمْ بِمُصَيْطِرٍۙ",
+      "translation": "Sen onları zorla hizaya getirecek değilsin!",
+      "dipnot": "Bakara 2/256,\nYunus 10/99,\nKaf 50/45.",
+      "roots": [
+        "ليس",
+        "سطر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/256",
+          "targets": [
+            "2:256"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/99",
+          "targets": [
+            "10:99"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/45",
+          "targets": [
+            "50:45"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:22",
+        "connections": [
+          {
+            "target_coordinate": "2:256",
+            "context": "Bakara 2/256"
+          },
+          {
+            "target_coordinate": "10:99",
+            "context": "Yunus 10/99"
+          },
+          {
+            "target_coordinate": "50:45",
+            "context": "Kaf 50/45"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 22. Ayetin Tefsiri\nلَسْتَ عَلَيْهِمْ بِمُصَيْطِرٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:23",
+      "text": "اِلَّا مَنْ تَوَلّٰى وَكَفَرَۙ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "ولي",
+        "كفر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "88:23",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 23. Ayetin Tefsiri\nاِلَّا مَنْ تَوَلّٰى وَكَفَرَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:24",
+      "text": "فَيُعَذِّبُهُ اللّٰهُ الْعَذَابَ الْاَكْبَرَۜ",
+      "translation": "Allah onu en büyük azaba çarptıracaktır.",
+      "dipnot": "Nisa 4/173, Secde 32/21, Fecr 89/25.",
+      "roots": [
+        "عذب",
+        "أله",
+        "كبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nisa 4/173",
+          "targets": [
+            "4:173"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/21",
+          "targets": [
+            "32:21"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/25",
+          "targets": [
+            "89:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:24",
+        "connections": [
+          {
+            "target_coordinate": "4:173",
+            "context": "Nisa 4/173"
+          },
+          {
+            "target_coordinate": "32:21",
+            "context": "Secde 32/21"
+          },
+          {
+            "target_coordinate": "89:25",
+            "context": "Fecr 89/25"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 24. Ayetin Tefsiri\nفَيُعَذِّبُهُ اللّٰهُ الْعَذَابَ الْاَكْبَرَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:25",
+      "text": "اِنَّ اِلَيْنَٓا اِيَابَهُمْۙ",
+      "translation": "Varacakları yer huzurumuzdur!",
+      "dipnot": "Lokman 31/23.",
+      "roots": [
+        "أوب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Lokman 31/23",
+          "targets": [
+            "31:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:25",
+        "connections": [
+          {
+            "target_coordinate": "31:23",
+            "context": "Lokman 31/23"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 25. Ayetin Tefsiri\nاِنَّ اِلَيْنَٓا اِيَابَهُمْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    },
+    {
+      "id": "88:26",
+      "text": "ثُمَّ اِنَّ عَلَيْنَا حِسَابَهُمْ",
+      "translation": "Sonra onları hesaba çekmek bizim işimizdir.",
+      "dipnot": "Ra’d 13/40, Mü’minun 23/117.",
+      "roots": [
+        "حسب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/40",
+          "targets": [
+            "13:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/117",
+          "targets": [
+            "23:117"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "88:26",
+        "connections": [
+          {
+            "target_coordinate": "13:40",
+            "context": "d 13/40"
+          },
+          {
+            "target_coordinate": "23:117",
+            "context": "minun 23/117"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Gâşiye Suresi 26. Ayetin Tefsiri\nثُمَّ اِنَّ عَلَيْنَا حِسَابَهُمْ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/88.mp3"
+    }
+  ]
+}

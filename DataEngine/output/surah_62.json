@@ -1,0 +1,1077 @@
+{
+  "nodes": [
+    {
+      "id": "62:1",
+      "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "translation": "İyiliği sonsuz, ikramı bol Allah’ın adıyla...",
+      "dipnot": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi, Tevbe 9/128. ayette Resulullah için; Fetih 48/29. ayette ise müminler için kullanılmıştır.",
+      "roots": [
+        "سبح",
+        "أله",
+        "سمو",
+        "أرض",
+        "ملك",
+        "قدس",
+        "عزز",
+        "حكم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi, "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/128",
+          "targets": [
+            "9:128"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette Resulullah için; "
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/29",
+          "targets": [
+            "48:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette ise müminler için kullanılmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:1",
+        "connections": [
+          {
+            "target_coordinate": "9:128",
+            "context": "Tevbe 9/128"
+          },
+          {
+            "target_coordinate": "48:29",
+            "context": "Fetih 48/29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 1. Ayetin Tefsiri\nيُسَبِّحُ لِلّٰهِ مَا فِي السَّمٰوَاتِ وَمَا فِي الْاَرْضِ الْمَلِكِ الْقُدُّوسِ الْعَز۪يزِ الْحَك۪يمِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:2",
+      "text": "يُسَبِّحُ لِلّٰهِ مَا فِي السَّمٰوَاتِ وَمَا فِي الْاَرْضِ الْمَلِكِ الْقُدُّوسِ الْعَز۪يزِ الْحَك۪يمِ",
+      "translation": "Göklerde ne var yerde ne varsa; mutlak hükümdar, tertemiz, daima üstün ve bütün kararları doğru olan Allah’ı[1*] tesbih etmekte /ona boyun eğmektedir[2*].",
+      "dipnot": "[1*] Taha 20/114, Mü’minun 23/116, Haşr 59/23 - 24. [2*] Gökler, yer ve onlarda bulunan her şey Allah’ın koyduğu kurallara gönüllü olarak boyun eğer ( İsra 17/44, Haşr 59/24, Teğabün 64/1 ).  İmtihan için yaratılan insanlar ve cinler ( Hûd 11/7, Kehf 18/7, Zariyat 51/56, Mülk 67/2 ) ise imtihan konusu olan işlerde serbest bırakılmışlardır. Bunun dışındaki alanlarda; örneğin nefes alıp verme, yeme, içme, giyinme, barınma, dinlenme ve benzeri konularda; Allah’ın doğada koyduğu kanunlara boyun eğmeden yaşayamazlar.",
+      "roots": [
+        "بعث",
+        "أمم",
+        "رسل",
+        "تلو",
+        "أيي",
+        "زكو",
+        "علم",
+        "كتب",
+        "حكم",
+        "كون",
+        "قبل",
+        "ضلل",
+        "بين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/114",
+          "targets": [
+            "20:114"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/116",
+          "targets": [
+            "23:116"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/23-24",
+          "targets": [
+            "59:23",
+            "59:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Gökler, yer ve onlarda bulunan her şey Allah’ın koyduğu kurallara gönüllü olarak boyun eğer ( "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/44",
+          "targets": [
+            "17:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/24",
+          "targets": [
+            "59:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/1",
+          "targets": [
+            "64:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").  İmtihan için yaratılan insanlar ve cinler ( "
+        },
+        {
+          "type": "link",
+          "content": "Hûd 11/7",
+          "targets": [
+            "11:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/7",
+          "targets": [
+            "18:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/56",
+          "targets": [
+            "51:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/2",
+          "targets": [
+            "67:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ise imtihan konusu olan işlerde serbest bırakılmışlardır. Bunun dışındaki alanlarda; örneğin nefes alıp verme, yeme, içme, giyinme, barınma, dinlenme ve benzeri konularda; Allah’ın doğada koyduğu kanunlara boyun eğmeden yaşayamazlar."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:2",
+        "connections": [
+          {
+            "target_coordinate": "20:114",
+            "context": "Taha 20/114"
+          },
+          {
+            "target_coordinate": "23:116",
+            "context": "minun 23/116"
+          },
+          {
+            "target_coordinate": "59:23",
+            "context": "Haşr 59/23-24"
+          },
+          {
+            "target_coordinate": "59:24",
+            "context": "Haşr 59/23-24"
+          },
+          {
+            "target_coordinate": "17:44",
+            "context": "İsra 17/44"
+          },
+          {
+            "target_coordinate": "59:24",
+            "context": "Haşr 59/24"
+          },
+          {
+            "target_coordinate": "64:1",
+            "context": "Teğabün 64/1"
+          },
+          {
+            "target_coordinate": "11:7",
+            "context": "Hûd 11/7"
+          },
+          {
+            "target_coordinate": "18:7",
+            "context": "Kehf 18/7"
+          },
+          {
+            "target_coordinate": "51:56",
+            "context": "Zariyat 51/56"
+          },
+          {
+            "target_coordinate": "67:2",
+            "context": "Mülk 67/2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 2. Ayetin Tefsiri\nهُوَ الَّذ۪ي بَعَثَ فِي الْاُمِّيّ۪نَ رَسُولًا مِنْهُمْ يَتْلُوا عَلَيْهِمْ اٰيَاتِه۪ وَيُزَكّ۪يهِمْ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَۗ وَاِنْ كَانُوا مِنْ قَبْلُ لَف۪ي ضَلَالٍ مُب۪ينٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:3",
+      "text": "هُوَ الَّذ۪ي بَعَثَ فِي الْاُمِّيّ۪نَ رَسُولًا مِنْهُمْ يَتْلُوا عَلَيْهِمْ اٰيَاتِه۪ وَيُزَكّ۪يهِمْ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَۗ وَاِنْ كَانُوا مِنْ قَبْلُ لَف۪ي ضَلَالٍ مُب۪ينٍۙ",
+      "translation": "Allah ümmilere (Mekkelilere)[1*], kendi içlerinden birini elçi olarak göndermiş olandır. O elçi onlara, Allah’ın ayetlerini bağlantılarıyla birlikte okur, onları geliştirir, onlara kitabı ve hikmeti öğretir[2*]. Çünkü onlar daha önce açık bir sapkınlık içindeydiler.",
+      "dipnot": "[1*] Ümmî kelimesi Kur’an’da üç farklı anlamda kullanılmıştır. Birincisi “ilahi kitap bilgisine sahip olmayan\" ( Âl-i İmran 3/20, 75 ), ikincisi “inandığı ilahi kitabın içeriğini bilmeyen” ( Bakara 2/78 ), üçüncüsü de -Mekke’nin  ümmü'l kur'a (şehirlerin anası) olarak adlandırılmasından dolayı- “Mekkeli olan”dır (Müfredat). Nebimiz daha önce ilahî kitap bilgisine sahip değildi ( Ankebut 29/47 - 48, Şûrâ 42/52 - 53",
+      "roots": [
+        "أخر",
+        "لحق",
+        "عزز",
+        "حكم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Ümmî kelimesi Kur’an’da üç farklı anlamda kullanılmıştır. Birincisi “ilahi kitap bilgisine sahip olmayan\" ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/20,75",
+          "targets": [
+            "3:20",
+            "3:75"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), ikincisi “inandığı ilahi kitabın içeriğini bilmeyen” ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/78",
+          "targets": [
+            "2:78"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), üçüncüsü de -Mekke’nin  ümmü'l kur'a (şehirlerin anası) olarak adlandırılmasından dolayı- “Mekkeli olan”dır (Müfredat). Nebimiz daha önce ilahî kitap bilgisine sahip değildi ( "
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/47-48",
+          "targets": [
+            "29:47",
+            "29:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/52-53",
+          "targets": [
+            "42:52",
+            "42:53"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:3",
+        "connections": [
+          {
+            "target_coordinate": "3:20",
+            "context": "Âl-i İmran 3/20,75"
+          },
+          {
+            "target_coordinate": "3:75",
+            "context": "Âl-i İmran 3/20,75"
+          },
+          {
+            "target_coordinate": "2:78",
+            "context": "Bakara 2/78"
+          },
+          {
+            "target_coordinate": "29:47",
+            "context": "Ankebut 29/47-48"
+          },
+          {
+            "target_coordinate": "29:48",
+            "context": "Ankebut 29/47-48"
+          },
+          {
+            "target_coordinate": "42:52",
+            "context": "Şûrâ 42/52-53"
+          },
+          {
+            "target_coordinate": "42:53",
+            "context": "Şûrâ 42/52-53"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 3. Ayetin Tefsiri\nوَاٰخَر۪ينَ مِنْهُمْ لَمَّا يَلْحَقُوا بِهِمْۜ وَهُوَ الْعَز۪يزُ الْحَك۪يمُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:3",
+      "text": "وَاٰخَر۪ينَ مِنْهُمْ لَمَّا يَلْحَقُوا بِهِمْۜ وَهُوَ الْعَز۪يزُ الْحَك۪يمُ",
+      "translation": "(Allah bu elçiyi) henüz onlara (Mekkelilere) katılmamış başkalarına da göndermiştir[*]. O, daima üstün ve bütün kararları doğru olandır.",
+      "dipnot": "[*] En’am 6/92, A’raf 7/158, Furkan 25/1, Sebe 34/28, Şûrâ 42/7.",
+      "roots": [
+        "أخر",
+        "لحق",
+        "عزز",
+        "حكم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/92",
+          "targets": [
+            "6:92"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/158",
+          "targets": [
+            "7:158"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/1",
+          "targets": [
+            "25:1"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/28",
+          "targets": [
+            "34:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/7",
+          "targets": [
+            "42:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:3",
+        "connections": [
+          {
+            "target_coordinate": "6:92",
+            "context": "am 6/92"
+          },
+          {
+            "target_coordinate": "7:158",
+            "context": "raf 7/158"
+          },
+          {
+            "target_coordinate": "25:1",
+            "context": "Furkan 25/1"
+          },
+          {
+            "target_coordinate": "34:28",
+            "context": "Sebe 34/28"
+          },
+          {
+            "target_coordinate": "42:7",
+            "context": "Şûrâ 42/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 3. Ayetin Tefsiri\nوَاٰخَر۪ينَ مِنْهُمْ لَمَّا يَلْحَقُوا بِهِمْۜ وَهُوَ الْعَز۪يزُ الْحَك۪يمُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:4",
+      "text": "ذٰلِكَ فَضْلُ اللّٰهِ يُؤْت۪يهِ مَنْ يَشَٓاءُۜ وَاللّٰهُ ذُو الْفَضْلِ الْعَظ۪يمِ",
+      "translation": "İşte bu (elçi gönderme işi), Allah’ın lütfudur[1*]. Onu, tercih ettiği[2*] kişilere verir. Allah, büyük lütuf sahibidir[3*].",
+      "dipnot": "[1*] Âl-i İmran 3/164. [2*] Şâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (شيء) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder ( Kamer 54/49, Ra’d 13/8 ). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır ( Enbiyâ 21/35 ). Allah, herkesin doğru yolda olmasını ister ( Nisa 4/26 ) ama sadece doğru şeyler yapanı doğru yolda sayar ( Nur 24/46 ). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur ( Şems 91/7 - 10 ). Buna göre şâe (شاء) fiilinin öznesi Allah olursa “gerekeni yaptı veya yarattı”, insan olursa “gerekeni yaptı” anlamında olur. Allah insanlara, tercihlerine göre davranma hürriyeti vermeseydi hiç kimse yanlış bir şey yapamaz ve imtihan diye bir şey de olmazdı ( Nahl 16/93 ). Yanlış kader anlayışını imanın bir esası gibi İslam’a yerleştirmek isteyenler, büyük bir çarpıtma yaparak şâe (شاء) fiiline irade yani isteme ve dileme anlamı vermiş; bunu, tefsirlere hatta sözlüklere bile yerleştirerek birçok ayetin mealini bozmuşlardır. Bkz http://www.suleymaniyevakfi.org/akaid-arastirmalari/kuranda-sey-mesiet-irade-ve-fitrat.html [3*] Hadid 57/29.",
+      "roots": [
+        "فضل",
+        "أله",
+        "أتي",
+        "شيأ",
+        "عظم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/164",
+          "targets": [
+            "3:164"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Şâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (شيء) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder ( "
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/49",
+          "targets": [
+            "54:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/8",
+          "targets": [
+            "13:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır ( "
+        },
+        {
+          "type": "link",
+          "content": "Enbiyâ 21/35",
+          "targets": [
+            "21:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah, herkesin doğru yolda olmasını ister ( "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/26",
+          "targets": [
+            "4:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ama sadece doğru şeyler yapanı doğru yolda sayar ( "
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/46",
+          "targets": [
+            "24:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur ( "
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/7-10",
+          "targets": [
+            "91:7",
+            "91:8",
+            "91:9",
+            "91:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Buna göre şâe (شاء) fiilinin öznesi Allah olursa “gerekeni yaptı veya yarattı”, insan olursa “gerekeni yaptı” anlamında olur. Allah insanlara, tercihlerine göre davranma hürriyeti vermeseydi hiç kimse yanlış bir şey yapamaz ve imtihan diye bir şey de olmazdı ( "
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/93",
+          "targets": [
+            "16:93"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yanlış kader anlayışını imanın bir esası gibi İslam’a yerleştirmek isteyenler, büyük bir çarpıtma yaparak şâe (شاء) fiiline irade yani isteme ve dileme anlamı vermiş; bunu, tefsirlere hatta sözlüklere bile yerleştirerek birçok ayetin mealini bozmuşlardır. Bkz http://www.suleymaniyevakfi.org/akaid-arastirmalari/kuranda-sey-mesiet-irade-ve-fitrat.html [3*] "
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/29",
+          "targets": [
+            "57:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:4",
+        "connections": [
+          {
+            "target_coordinate": "3:164",
+            "context": "Âl-i İmran 3/164"
+          },
+          {
+            "target_coordinate": "54:49",
+            "context": "Kamer 54/49"
+          },
+          {
+            "target_coordinate": "13:8",
+            "context": "d 13/8"
+          },
+          {
+            "target_coordinate": "21:35",
+            "context": "Enbiyâ 21/35"
+          },
+          {
+            "target_coordinate": "4:26",
+            "context": "Nisa 4/26"
+          },
+          {
+            "target_coordinate": "24:46",
+            "context": "Nur 24/46"
+          },
+          {
+            "target_coordinate": "91:7",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:8",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:9",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:10",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "16:93",
+            "context": "Nahl 16/93"
+          },
+          {
+            "target_coordinate": "57:29",
+            "context": "Hadid 57/29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 4. Ayetin Tefsiri\nذٰلِكَ فَضْلُ اللّٰهِ يُؤْت۪يهِ مَنْ يَشَٓاءُۜ وَاللّٰهُ ذُو الْفَضْلِ الْعَظ۪يمِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:5",
+      "text": "مَثَلُ الَّذ۪ينَ حُمِّلُوا التَّوْرٰيةَ ثُمَّ لَمْ يَحْمِلُوهَا كَمَثَلِ الْحِمَارِ يَحْمِلُ اَسْفَارًاۜ بِئْسَ مَثَلُ الْقَوْمِ الَّذ۪ينَ كَذَّبُوا بِاٰيَاتِ اللّٰهِۜ وَاللّٰهُ لَا يَهْدِي الْقَوْمَ الظَّالِم۪ينَ",
+      "translation": "Kendilerine Tevrat’a uyma görevi yüklenen sonra yüklendikleri o görevi yapmayanların[1*] durumu, hakikatleri açığa çıkaran kitapları[2*] taşıyan eşeğin durumu gibidir[3*]. Allah’ın ayetleri karşısında yalana sarılan bu topluluk ne kötü örnektir! Allah, yanlışlar içinde olan topluluğu yola getirmez.",
+      "dipnot": "[1*]",
+      "roots": [
+        "مثل",
+        "حمل",
+        "حمر",
+        "سفر",
+        "بأس",
+        "قوم",
+        "كذب",
+        "أيي",
+        "أله",
+        "هدي",
+        "ظلم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 5. Ayetin Tefsiri\nمَثَلُ الَّذ۪ينَ حُمِّلُوا التَّوْرٰيةَ ثُمَّ لَمْ يَحْمِلُوهَا كَمَثَلِ الْحِمَارِ يَحْمِلُ اَسْفَارًاۜ بِئْسَ مَثَلُ الْقَوْمِ الَّذ۪ينَ كَذَّبُوا بِاٰيَاتِ اللّٰهِۜ وَاللّٰهُ لَا يَهْدِي الْقَوْمَ الظَّالِم۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:6",
+      "text": "قُلْ يَٓا اَيُّهَا الَّذ۪ينَ هَادُٓوا اِنْ زَعَمْتُمْ اَنَّكُمْ اَوْلِيَٓاءُ لِلّٰهِ مِنْ دُونِ النَّاسِ فَتَمَنَّوُا الْمَوْتَ اِنْ كُنْتُمْ صَادِق۪ينَ",
+      "translation": "De ki: “Ey Yahudiler! Allah’a, başka insanların değil de sizin yakın olduğunuzu iddia ediyorsanız[1*] ve eğer doğru sözlü kişilerseniz ölümü dileyin bakalım[2*]!”",
+      "dipnot": "[1*] Bakara 2/111, Maide 5/18. [2*] Bakara 2/94.",
+      "roots": [
+        "قول",
+        "أيي",
+        "هود",
+        "زعم",
+        "ولي",
+        "أله",
+        "دون",
+        "أنس",
+        "مني",
+        "موت",
+        "كون",
+        "صدق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/111",
+          "targets": [
+            "2:111"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/18",
+          "targets": [
+            "5:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/94",
+          "targets": [
+            "2:94"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:6",
+        "connections": [
+          {
+            "target_coordinate": "2:111",
+            "context": "Bakara 2/111"
+          },
+          {
+            "target_coordinate": "5:18",
+            "context": "Maide 5/18"
+          },
+          {
+            "target_coordinate": "2:94",
+            "context": "Bakara 2/94"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 6. Ayetin Tefsiri\nقُلْ يَٓا اَيُّهَا الَّذ۪ينَ هَادُٓوا اِنْ زَعَمْتُمْ اَنَّكُمْ اَوْلِيَٓاءُ لِلّٰهِ مِنْ دُونِ النَّاسِ فَتَمَنَّوُا الْمَوْتَ اِنْ كُنْتُمْ صَادِق۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:7",
+      "text": "وَلَا يَتَمَنَّوْنَهُٓ اَبَدًا بِمَا قَدَّمَتْ اَيْد۪يهِمْۜ وَاللّٰهُ عَل۪يمٌ بِالظَّالِم۪ينَ",
+      "translation": "Elleriyle yaptıkları yüzünden ölümü hiç bir zaman dilemezler. Allah o zalimleri /yanlışa dalan o kimseleri bilir[*].",
+      "dipnot": "[*] Bakara 2/95 - 96.",
+      "roots": [
+        "مني",
+        "أبد",
+        "قدم",
+        "يدي",
+        "أله",
+        "علم",
+        "ظلم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/95-96",
+          "targets": [
+            "2:95",
+            "2:96"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:7",
+        "connections": [
+          {
+            "target_coordinate": "2:95",
+            "context": "Bakara 2/95-96"
+          },
+          {
+            "target_coordinate": "2:96",
+            "context": "Bakara 2/95-96"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 7. Ayetin Tefsiri\nوَلَا يَتَمَنَّوْنَهُٓ اَبَدًا بِمَا قَدَّمَتْ اَيْد۪يهِمْۜ وَاللّٰهُ عَل۪يمٌ بِالظَّالِم۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:8",
+      "text": "قُلْ اِنَّ الْمَوْتَ الَّذ۪ي تَفِرُّونَ مِنْهُ فَاِنَّهُ مُلَاق۪يكُمْ ثُمَّ تُرَدُّونَ اِلٰى عَالِمِ الْغَيْبِ وَالشَّهَادَةِ فَيُنَبِّئُكُمْ بِمَا كُنْتُمْ تَعْمَلُونَ۟",
+      "translation": "De ki: “Kendisinden kaçıp durduğunuz ölüm, sizi mutlaka bulacaktır[1*]. Sonra, gaybı /algılanamayanı da şehadeti /algılanabileni de bilen Allah’ın huzuruna çıkarılacaksınız. O size, neler yaptığınızı bildirecektir[2*].”",
+      "dipnot": "[1*] Nisa 4/78, Vakıa 56/60. [2*] Zümer 39/7.",
+      "roots": [
+        "قول",
+        "موت",
+        "فرر",
+        "لقي",
+        "ردد",
+        "علم",
+        "غيب",
+        "شهد",
+        "نبأ",
+        "كون",
+        "عمل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/78",
+          "targets": [
+            "4:78"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/60",
+          "targets": [
+            "56:60"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/7",
+          "targets": [
+            "39:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:8",
+        "connections": [
+          {
+            "target_coordinate": "4:78",
+            "context": "Nisa 4/78"
+          },
+          {
+            "target_coordinate": "56:60",
+            "context": "Vakıa 56/60"
+          },
+          {
+            "target_coordinate": "39:7",
+            "context": "Zümer 39/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 8. Ayetin Tefsiri\nقُلْ اِنَّ الْمَوْتَ الَّذ۪ي تَفِرُّونَ مِنْهُ فَاِنَّهُ مُلَاق۪يكُمْ ثُمَّ تُرَدُّونَ اِلٰى عَالِمِ الْغَيْبِ وَالشَّهَادَةِ فَيُنَبِّئُكُمْ بِمَا كُنْتُمْ تَعْمَلُونَ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:9",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِذَا نُودِيَ لِلصَّلٰوةِ مِنْ يَوْمِ الْجُمُعَةِ فَاسْعَوْا اِلٰى ذِكْرِ اللّٰهِ وَذَرُوا الْبَيْعَۜ ذٰلِكُمْ خَيْرٌ لَكُمْ اِنْ كُنْتُمْ تَعْلَمُونَ",
+      "translation": "Ey inanıp güvenenler[1*]! Cuma günü, o namaz için çağrı yapıldığında[2*] /ezan okunduğunda Allah’ın zikrine[3*] koşun, alışverişi de bırakın[4*]! Sizin için hayırlı olan budur, bunu bir bilseniz[5*]!",
+      "dipnot": "[1*] Ayette “Ey iman edenler!” şeklinde bütün Müslümanlara hitap edilmesi, diğer namazlar gibi Cuma namazının da kadın erkek ayrımı olmaksızın her Müslümana farz olduğunu ifade etmektedir. [2*] Bir gün içerisinde gündüz geceden önce geldiği için ( Yasin 36/40 ) günün ilk namazı öğlen vaktinde kılınır. Bu yüzden Cuma namazının vakti öğlen vaktidir, ona çağrı da bu vakitte yapılır. [3*] Allah’ın zikri, Allah’ın kitabıdır (",
+      "roots": [
+        "أيي",
+        "أمن",
+        "ندي",
+        "صلو",
+        "يوم",
+        "جمع",
+        "سعي",
+        "ذكر",
+        "أله",
+        "وذر",
+        "بيع",
+        "خير",
+        "كون",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Ayette “Ey iman edenler!” şeklinde bütün Müslümanlara hitap edilmesi, diğer namazlar gibi Cuma namazının da kadın erkek ayrımı olmaksızın her Müslümana farz olduğunu ifade etmektedir. [2*] Bir gün içerisinde gündüz geceden önce geldiği için ( "
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/40",
+          "targets": [
+            "36:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") günün ilk namazı öğlen vaktinde kılınır. Bu yüzden Cuma namazının vakti öğlen vaktidir, ona çağrı da bu vakitte yapılır. [3*] Allah’ın zikri, Allah’ın kitabıdır ("
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:9",
+        "connections": [
+          {
+            "target_coordinate": "36:40",
+            "context": "Yasin 36/40"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 9. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِذَا نُودِيَ لِلصَّلٰوةِ مِنْ يَوْمِ الْجُمُعَةِ فَاسْعَوْا اِلٰى ذِكْرِ اللّٰهِ وَذَرُوا الْبَيْعَۜ ذٰلِكُمْ خَيْرٌ لَكُمْ اِنْ كُنْتُمْ تَعْلَمُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:10",
+      "text": "فَاِذَا قُضِيَتِ الصَّلٰوةُ فَانْتَشِرُوا فِي الْاَرْضِ وَابْتَغُوا مِنْ فَضْلِ اللّٰهِ وَاذْكُرُوا اللّٰهَ كَث۪يرًا لَعَلَّكُمْ تُفْلِحُونَ",
+      "translation": "Namaz kılındığında hemen yeryüzüne dağılın ve Allah’ın lütfundan arayın. Allah’ı çokça zikredin /onu (onun sözlerini) hep aklınızda tutun ki umduğunuza kavuşasınız.",
+      "dipnot": "Namaz kılındığında dağılma emri, hutbenin namazdan önce okunacağını ve mescitte kılınacak başka bir namaz olmadığını ortaya koyar. Ahzab 33/41. İnsanlar her durumda Allah'ın kitabındaki kurallara göre davranmalı ve kendilerinden istenenleri akıllarından çıkarmamalıdırlar.",
+      "roots": [
+        "قضي",
+        "صلو",
+        "نشر",
+        "أرض",
+        "بغي",
+        "فضل",
+        "أله",
+        "ذكر",
+        "كثر",
+        "فلح"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Namaz kılındığında dağılma emri, hutbenin namazdan önce okunacağını ve mescitte kılınacak başka bir namaz olmadığını ortaya koyar. "
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/41",
+          "targets": [
+            "33:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". İnsanlar her durumda Allah'ın kitabındaki kurallara göre davranmalı ve kendilerinden istenenleri akıllarından çıkarmamalıdırlar."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:10",
+        "connections": [
+          {
+            "target_coordinate": "33:41",
+            "context": "Ahzab 33/41"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 10. Ayetin Tefsiri\nفَاِذَا قُضِيَتِ الصَّلٰوةُ فَانْتَشِرُوا فِي الْاَرْضِ وَابْتَغُوا مِنْ فَضْلِ اللّٰهِ وَاذْكُرُوا اللّٰهَ كَث۪يرًا لَعَلَّكُمْ تُفْلِحُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:11",
+      "text": "وَاِذَا رَاَوْا تِجَارَةً اَوْ لَهْوًاۨ انْفَضُّٓوا اِلَيْهَا وَتَرَكُوكَ قَٓائِمًاۜ قُلْ مَا عِنْدَ اللّٰهِ خَيْرٌ مِنَ اللَّهْوِ وَمِنَ التِّجَارَةِۜ وَاللّٰهُ خَيْرُ الرَّازِق۪ينَ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "رأي",
+        "تجر",
+        "لهو",
+        "فضض",
+        "ترك",
+        "قوم",
+        "قول",
+        "عند",
+        "أله",
+        "خير",
+        "رزق"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "62:11",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 11. Ayetin Tefsiri\nوَاِذَا رَاَوْا تِجَارَةً اَوْ لَهْوًاۨ انْفَضُّٓوا اِلَيْهَا وَتَرَكُوكَ قَٓائِمًاۜ قُلْ مَا عِنْدَ اللّٰهِ خَيْرٌ مِنَ اللَّهْوِ وَمِنَ التِّجَارَةِۜ وَاللّٰهُ خَيْرُ الرَّازِق۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    },
+    {
+      "id": "62:11",
+      "text": "",
+      "translation": "Bir ticaret veya eğlence görünce seni ayakta bırakıp gittiler. De ki “Allah’ın katında olanlar, her türlü eğlence ve ticaretten iyidir. Allah rızık verenlerin en iyisidir.”",
+      "dipnot": "Cabir b. Abdullah şöyle demiştir: Nebî sallallahu aleyhi ve sellem ile namaz kılarken yiyecek yüklü bir kervan geldi ve herkes ona koştu, onunla birlikte sadece 12 kişi kaldı. Bunun üzerine bu âyet indi (Buhârî, Tefsir 62). Bu olayın, Nebimizin hutbe okuduğu sırada olduğuna dair rivayet de vardır (Müslim, Cuma, 36)\nNahl 16/96,\nNur 24/37,\nKasas 28/60,\nŞûrâ 42/36.",
+      "roots": [
+        "رأي",
+        "تجر",
+        "لهو",
+        "فضض",
+        "ترك",
+        "قوم",
+        "قول",
+        "عند",
+        "أله",
+        "خير",
+        "رزق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Cabir b. Abdullah şöyle demiştir: Nebî sallallahu aleyhi ve sellem ile namaz kılarken yiyecek yüklü bir kervan geldi ve herkes ona koştu, onunla birlikte sadece 12 kişi kaldı. Bunun üzerine bu âyet indi (Buhârî, Tefsir 62). Bu olayın, Nebimizin hutbe okuduğu sırada olduğuna dair rivayet de vardır (Müslim, Cuma, 36)\n"
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/96",
+          "targets": [
+            "16:96"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/37",
+          "targets": [
+            "24:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/60",
+          "targets": [
+            "28:60"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/36",
+          "targets": [
+            "42:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "62:11",
+        "connections": [
+          {
+            "target_coordinate": "16:96",
+            "context": "Nahl 16/96"
+          },
+          {
+            "target_coordinate": "24:37",
+            "context": "Nur 24/37"
+          },
+          {
+            "target_coordinate": "28:60",
+            "context": "Kasas 28/60"
+          },
+          {
+            "target_coordinate": "42:36",
+            "context": "Şûrâ 42/36"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Cuma Suresi 11. Ayetin Tefsiri\nوَاِذَا رَاَوْا تِجَارَةً اَوْ لَهْوًاۨ انْفَضُّٓوا اِلَيْهَا وَتَرَكُوكَ قَٓائِمًاۜ قُلْ مَا عِنْدَ اللّٰهِ خَيْرٌ مِنَ اللَّهْوِ وَمِنَ التِّجَارَةِۜ وَاللّٰهُ خَيْرُ الرَّازِق۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/62.mp3"
+    }
+  ]
+}

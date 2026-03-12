@@ -1,0 +1,325 @@
+{
+  "nodes": [
+    {
+      "id": "113:1",
+      "text": "قُلْ اَعُوذُ بِرَبِّ الْفَلَقِۙ",
+      "translation": "De ki: “Sığınırım, bölünerek yaratılanların[*] Rabbine / sahibine,",
+      "dipnot": "[*] “Felak (فلق)”; bir şeyi bölüp parçalara ayırmak anlamındadır (Müfredat). Ayetteki “el-felak (الْفَلَقِ)”, bütün yaratılanlar anlamına da gelir (Mekayis). Bütün yaratılanlar, çeşitli bölünmeler geçirerek yaratılırlar. Bu, Allah’ın yaratma kuralıdır (En’am 6/95-96). Bu kural, “fıtrat” olarak da ifade edilir (Rûm 30/30, Fâtır 35/1).",
+      "roots": [
+        "قول",
+        "عوذ",
+        "ربب",
+        "فلق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] “Felak (فلق)”; bir şeyi bölüp parçalara ayırmak anlamındadır (Müfredat). Ayetteki “el-felak (الْفَلَقِ)”, bütün yaratılanlar anlamına da gelir (Mekayis). Bütün yaratılanlar, çeşitli bölünmeler geçirerek yaratılırlar. Bu, Allah’ın yaratma kuralıdır (En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/95-96",
+          "targets": [
+            "6:95",
+            "6:96"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bu kural, “fıtrat” olarak da ifade edilir ("
+        },
+        {
+          "type": "link",
+          "content": "Rûm 30/30",
+          "targets": [
+            "30:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fâtır 35/1",
+          "targets": [
+            "35:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "113:1",
+        "connections": [
+          {
+            "target_coordinate": "6:95",
+            "context": "am 6/95-96"
+          },
+          {
+            "target_coordinate": "6:96",
+            "context": "am 6/95-96"
+          },
+          {
+            "target_coordinate": "30:30",
+            "context": "Rûm 30/30"
+          },
+          {
+            "target_coordinate": "35:1",
+            "context": "Fâtır 35/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Felak Suresi 1. Ayetin Tefsiri\nقُلْ اَعُوذُ بِرَبِّ الْفَلَقِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/113.mp3"
+    },
+    {
+      "id": "113:2",
+      "text": "مِنْ شَرِّ مَا خَلَقَۙ",
+      "translation": "yarattığı şeylerin şerrinden,[*]",
+      "dipnot": "[*] Enfal 8/22, 55; Rûm 30/41, Beyyine 98/6.",
+      "roots": [
+        "شرر",
+        "خلق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/22,55",
+          "targets": [
+            "8:22",
+            "8:55"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Rûm 30/41",
+          "targets": [
+            "30:41"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beyyine 98/6",
+          "targets": [
+            "98:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "113:2",
+        "connections": [
+          {
+            "target_coordinate": "8:22",
+            "context": "Enfal 8/22,55"
+          },
+          {
+            "target_coordinate": "8:55",
+            "context": "Enfal 8/22,55"
+          },
+          {
+            "target_coordinate": "30:41",
+            "context": "Rûm 30/41"
+          },
+          {
+            "target_coordinate": "98:6",
+            "context": "Beyyine 98/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Felak Suresi 2. Ayetin Tefsiri\nمِنْ شَرِّ مَا خَلَقَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/113.mp3"
+    },
+    {
+      "id": "113:3",
+      "text": "وَمِنْ شَرِّ غَاسِقٍ اِذَا وَقَبَۙ",
+      "translation": "bastırdığı zaman karanlığın /soğuğun[*] şerrinden,",
+      "dipnot": "[*] “Ğasık (غَاسِقٍ)”, koyu karanlık ve soğuk anlamlarındadır (Lisan’ul-Arab). Bu ayet, gecenin en karanlık ve en soğuk bölümünü ifade eder. O vakitte, güneş ışınlarının etkisi kalmamış, yatsı vakti çıkmış (İsrâ 17/78) ve canlılar için dinlenme zamanı gelmiş olur (En’am 6/96). Nebîmiz, bu vakit başladığında yani yatsıdan sonra konuşmaktan hoşlanmazdı (Buhari, Ezan, 104; Müslim, Mesâcid, 235 – (647).",
+      "roots": [
+        "شرر",
+        "غسق",
+        "وقب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] “Ğasık (غَاسِقٍ)”, koyu karanlık ve soğuk anlamlarındadır (Lisan’ul-Arab). Bu ayet, gecenin en karanlık ve en soğuk bölümünü ifade eder. O vakitte, güneş ışınlarının etkisi kalmamış, yatsı vakti çıkmış ("
+        },
+        {
+          "type": "link",
+          "content": "İsrâ 17/78",
+          "targets": [
+            "17:78"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve canlılar için dinlenme zamanı gelmiş olur (En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/96",
+          "targets": [
+            "6:96"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Nebîmiz, bu vakit başladığında yani yatsıdan sonra konuşmaktan hoşlanmazdı (Buhari, Ezan, 104; Müslim, Mesâcid, 235 – (647)."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "113:3",
+        "connections": [
+          {
+            "target_coordinate": "17:78",
+            "context": "İsrâ 17/78"
+          },
+          {
+            "target_coordinate": "6:96",
+            "context": "am 6/96"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Felak Suresi 3. Ayetin Tefsiri\nوَمِنْ شَرِّ غَاسِقٍ اِذَا وَقَبَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/113.mp3"
+    },
+    {
+      "id": "113:4",
+      "text": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِۙ",
+      "translation": "(insanlar arasındaki) bağları[1*] (koparmak için) konuşup duranların[2*] şerrinden,[3*]",
+      "dipnot": "[1*] Bağlar diye meal verdiğimiz kelime ukde (العقدة)nin çoğulu ukad (الْعُقَدِ) dır, sağlam kurulan her türlü ilişkiyi ifade eder. Tarafları bağlayan nikah bağına “ukdet’un-nikah, satış sözleşmesine ukdet’ul-bey, karlı iş ilişkisine de el-ukde denir. (el-Ayn) [2*] “Nefs (نفث)” bir şeyin ağızdan çıkmasıdır (Mekâyîs). İnsanlar arası ilişkiler, bir takım sözlerle bozulur. Bunu yapanlar, genellikle yalan söylerler. Onları tanımak zor olduğu için şerlerinden Allah’a sığınmak gerekir (Kalem 68/8-13). Bu tür şeyleri, erkekler de yaptıkları için “Neffâsât (النَّفَّاثَاتِ)” kelimesine, “en-nüfus’un neffâsât (النفوس النَّفَّاثَاتِ)” anlamı verilmiştir. [3*]",
+      "roots": [
+        "شرر",
+        "نفث",
+        "عقد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Bağlar diye meal verdiğimiz kelime ukde (العقدة)nin çoğulu ukad (الْعُقَدِ) dır, sağlam kurulan her türlü ilişkiyi ifade eder. Tarafları bağlayan nikah bağına “ukdet’un-nikah, satış sözleşmesine ukdet’ul-bey, karlı iş ilişkisine de el-ukde denir. (el-Ayn) [2*] “Nefs (نفث)” bir şeyin ağızdan çıkmasıdır (Mekâyîs). İnsanlar arası ilişkiler, bir takım sözlerle bozulur. Bunu yapanlar, genellikle yalan söylerler. Onları tanımak zor olduğu için şerlerinden Allah’a sığınmak gerekir ("
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/8-13",
+          "targets": [
+            "68:8",
+            "68:9",
+            "68:10",
+            "68:11",
+            "68:12",
+            "68:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bu tür şeyleri, erkekler de yaptıkları için “Neffâsât (النَّفَّاثَاتِ)” kelimesine, “en-nüfus’un neffâsât (النفوس النَّفَّاثَاتِ)” anlamı verilmiştir. [3*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "113:4",
+        "connections": [
+          {
+            "target_coordinate": "68:8",
+            "context": "Kalem 68/8-13"
+          },
+          {
+            "target_coordinate": "68:9",
+            "context": "Kalem 68/8-13"
+          },
+          {
+            "target_coordinate": "68:10",
+            "context": "Kalem 68/8-13"
+          },
+          {
+            "target_coordinate": "68:11",
+            "context": "Kalem 68/8-13"
+          },
+          {
+            "target_coordinate": "68:12",
+            "context": "Kalem 68/8-13"
+          },
+          {
+            "target_coordinate": "68:13",
+            "context": "Kalem 68/8-13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Felak Suresi 4. Ayetin Tefsiri\nوَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/113.mp3"
+    },
+    {
+      "id": "113:5",
+      "text": "وَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ",
+      "translation": "bir de haset[1*] ettiği zaman haset edenin şerrinden.[2*]",
+      "dipnot": "[1*] Haset, başkasının sahip olduğu maddî veya mânevî imkânların kendisine intikal etmesi veya kıskanılan kişinin bu imkânlardan mahrum kalması yönündeki istek ve niyeti ifade eder (DİA).\n[2*] Bakara 2/109.",
+      "roots": [
+        "شرر",
+        "حسد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Haset, başkasının sahip olduğu maddî veya mânevî imkânların kendisine intikal etmesi veya kıskanılan kişinin bu imkânlardan mahrum kalması yönündeki istek ve niyeti ifade eder (DİA).\n[2*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/109",
+          "targets": [
+            "2:109"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "113:5",
+        "connections": [
+          {
+            "target_coordinate": "2:109",
+            "context": "Bakara 2/109"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Felak Suresi 5. Ayetin Tefsiri\nوَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/113.mp3"
+    }
+  ]
+}

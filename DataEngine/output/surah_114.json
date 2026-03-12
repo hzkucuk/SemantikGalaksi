@@ -1,0 +1,408 @@
+{
+  "nodes": [
+    {
+      "id": "114:0",
+      "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "translation": "İyiliği sonsuz, ikramı bol Allah’ın adıyla...",
+      "dipnot": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi,\nTevbe 9/128.\nayette Resulullah için;\nFetih 48/29.\nayette ise müminler için kullanılmıştır.",
+      "roots": null,
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi,\n"
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/128",
+          "targets": [
+            "9:128"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayette Resulullah için;\n"
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/29",
+          "targets": [
+            "48:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayette ise müminler için kullanılmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "114:0",
+        "connections": [
+          {
+            "target_coordinate": "9:128",
+            "context": "Tevbe 9/128"
+          },
+          {
+            "target_coordinate": "48:29",
+            "context": "Fetih 48/29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Felak Suresi 5. Ayetin Tefsiri\nوَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/114.mp3"
+    },
+    {
+      "id": "114:1",
+      "text": "قُلْ اَعُوذُ بِرَبِّ النَّاسِۙ",
+      "translation": "De ki: “Sığınırım insanların Rabbine /sahibine,",
+      "dipnot": "Felak 113/1. Rab kelimesinin Türkçe karşılığı “sahip”tir. Evin sahibine rabb’ud-dâr yani evin rabbi (Müfredât), sermaye sahibine de rabb’ül-mal yani sermayenin rabbi denir.",
+      "roots": [
+        "قول",
+        "عوذ",
+        "ربب",
+        "أنس"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Felak 113/1",
+          "targets": [
+            "113:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Rab kelimesinin Türkçe karşılığı “sahip”tir. Evin sahibine rabb’ud-dâr yani evin rabbi (Müfredât), sermaye sahibine de rabb’ül-mal yani sermayenin rabbi denir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "114:1",
+        "connections": [
+          {
+            "target_coordinate": "113:1",
+            "context": "Felak 113/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nâs Suresi 1. Ayetin Tefsiri\nقُلْ اَعُوذُ بِرَبِّ النَّاسِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/114.mp3"
+    },
+    {
+      "id": "114:2",
+      "text": "مَلِكِ النَّاسِۙ",
+      "translation": "insanların hükümdarına,",
+      "dipnot": "Tâhâ 20/114, Mü’minun 23/116.",
+      "roots": [
+        "ملك",
+        "أنس"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Tâhâ 20/114",
+          "targets": [
+            "20:114"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/116",
+          "targets": [
+            "23:116"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "114:2",
+        "connections": [
+          {
+            "target_coordinate": "20:114",
+            "context": "Tâhâ 20/114"
+          },
+          {
+            "target_coordinate": "23:116",
+            "context": "minun 23/116"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/114.mp3"
+    },
+    {
+      "id": "114:3",
+      "text": "اِلٰهِ النَّاسِۙ",
+      "translation": "insanların İlahına,",
+      "dipnot": "İlah, kulluk edilen varlıktır. Tek ilah Allah’tır. (Bakara 2/255, Âl-i İmran 3/2, Nisa 4/87, Taha 20/8, Neml 27/26, Kasas 28/70, Teğabün 64/13)",
+      "roots": [
+        "أله",
+        "أنس"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "İlah, kulluk edilen varlıktır. Tek ilah Allah’tır. ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/255",
+          "targets": [
+            "2:255"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/2",
+          "targets": [
+            "3:2"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/87",
+          "targets": [
+            "4:87"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/8",
+          "targets": [
+            "20:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/26",
+          "targets": [
+            "27:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/70",
+          "targets": [
+            "28:70"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/13",
+          "targets": [
+            "64:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "114:3",
+        "connections": [
+          {
+            "target_coordinate": "2:255",
+            "context": "Bakara 2/255"
+          },
+          {
+            "target_coordinate": "3:2",
+            "context": "Âl-i İmran 3/2"
+          },
+          {
+            "target_coordinate": "4:87",
+            "context": "Nisa 4/87"
+          },
+          {
+            "target_coordinate": "20:8",
+            "context": "Taha 20/8"
+          },
+          {
+            "target_coordinate": "27:26",
+            "context": "Neml 27/26"
+          },
+          {
+            "target_coordinate": "28:70",
+            "context": "Kasas 28/70"
+          },
+          {
+            "target_coordinate": "64:13",
+            "context": "Teğabün 64/13"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/114.mp3"
+    },
+    {
+      "id": "114:4",
+      "text": "مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِۙ",
+      "translation": "sinsice (kötülükler) fısıldayanın şerrinden (sığınırım)!",
+      "dipnot": "A'raf 7/200, Nahl 16/98, Mü'minun 23/97 - 98, Mü’min 40/56, Fussilet 41/36.",
+      "roots": [
+        "شرر",
+        "وسوس",
+        "خنس"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "A'raf 7/200",
+          "targets": [
+            "7:200"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/98",
+          "targets": [
+            "16:98"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mü'minun 23/97-98",
+          "targets": [
+            "23:97",
+            "23:98"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/56",
+          "targets": [
+            "40:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/36",
+          "targets": [
+            "41:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "114:4",
+        "connections": [
+          {
+            "target_coordinate": "7:200",
+            "context": "A'raf 7/200"
+          },
+          {
+            "target_coordinate": "16:98",
+            "context": "Nahl 16/98"
+          },
+          {
+            "target_coordinate": "23:97",
+            "context": "Mü'minun 23/97-98"
+          },
+          {
+            "target_coordinate": "23:98",
+            "context": "Mü'minun 23/97-98"
+          },
+          {
+            "target_coordinate": "40:56",
+            "context": "min 40/56"
+          },
+          {
+            "target_coordinate": "41:36",
+            "context": "Fussilet 41/36"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nâs Suresi 4. Ayetin Tefsiri\nمِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/114.mp3"
+    },
+    {
+      "id": "114:5",
+      "text": "اَلَّذ۪ي يُوَسْوِسُ ف۪ي صُدُورِ النَّاسِۙ",
+      "translation": "O, insanların içine (kötülükler) fısıldayandır.",
+      "dipnot": "",
+      "roots": [
+        "وسوس",
+        "صدر",
+        "أنس"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "114:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nâs Suresi 5. Ayetin Tefsiri\nاَلَّذ۪ي يُوَسْوِسُ ف۪ي صُدُورِ النَّاسِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/114.mp3"
+    },
+    {
+      "id": "114:6",
+      "text": "مِنَ الْجِنَّةِ وَالنَّاسِ",
+      "translation": "Cinlerden de olur, insanlardan da.",
+      "dipnot": "En’âm 6/112",
+      "roots": [
+        "جنن",
+        "أنس"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "âm 6/112",
+          "targets": [
+            "6:112"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "114:6",
+        "connections": [
+          {
+            "target_coordinate": "6:112",
+            "context": "âm 6/112"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nâs Suresi 6. Ayetin Tefsiri\nمِنَ الْجِنَّةِ وَالنَّاسِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/114.mp3"
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "nodes": [
+    {
+      "id": "99:1",
+      "text": "اِذَا زُلْزِلَتِ الْاَرْضُ زِلْزَالَهَاۙ",
+      "translation": "Yeryüzü, bütün şiddetiyle sarsılınca,",
+      "dipnot": "O gün yeryüzü kendisi için takdir edilen sarsıntıyla sarsılacaktır ( Hac 22/1 - 2, Vakıa 56/4, Hâkka 69/14, Müzzemmil 73/14, Naziat 79/6 - 7 ).",
+      "roots": [
+        "زلزل",
+        "أرض"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "O gün yeryüzü kendisi için takdir edilen sarsıntıyla sarsılacaktır ( "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/1-2",
+          "targets": [
+            "22:1",
+            "22:2"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/4",
+          "targets": [
+            "56:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/14",
+          "targets": [
+            "69:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/14",
+          "targets": [
+            "73:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziat 79/6-7",
+          "targets": [
+            "79:6",
+            "79:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "99:1",
+        "connections": [
+          {
+            "target_coordinate": "22:1",
+            "context": "Hac 22/1-2"
+          },
+          {
+            "target_coordinate": "22:2",
+            "context": "Hac 22/1-2"
+          },
+          {
+            "target_coordinate": "56:4",
+            "context": "Vakıa 56/4"
+          },
+          {
+            "target_coordinate": "69:14",
+            "context": "Hâkka 69/14"
+          },
+          {
+            "target_coordinate": "73:14",
+            "context": "Müzzemmil 73/14"
+          },
+          {
+            "target_coordinate": "79:6",
+            "context": "Naziat 79/6-7"
+          },
+          {
+            "target_coordinate": "79:7",
+            "context": "Naziat 79/6-7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Zilzâl Suresi 1. Ayetin Tefsiri\nاِذَا زُلْزِلَتِ الْاَرْضُ زِلْزَالَهَاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/99.mp3"
+    },
+    {
+      "id": "99:2",
+      "text": "وَاَخْرَجَتِ الْاَرْضُ اَثْقَالَهَاۙ",
+      "translation": "ve yer ağırlıklarını dışarı çıkarınca,",
+      "dipnot": "Kaf 50/44, Kamer 54/6 - 8, Mearic 70/43 - 44, İnşikak 84/3 - 4.",
+      "roots": [
+        "خرج",
+        "أرض",
+        "ثقل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kaf 50/44",
+          "targets": [
+            "50:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/6-8",
+          "targets": [
+            "54:6",
+            "54:7",
+            "54:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/43-44",
+          "targets": [
+            "70:43",
+            "70:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/3-4",
+          "targets": [
+            "84:3",
+            "84:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "99:2",
+        "connections": [
+          {
+            "target_coordinate": "50:44",
+            "context": "Kaf 50/44"
+          },
+          {
+            "target_coordinate": "54:6",
+            "context": "Kamer 54/6-8"
+          },
+          {
+            "target_coordinate": "54:7",
+            "context": "Kamer 54/6-8"
+          },
+          {
+            "target_coordinate": "54:8",
+            "context": "Kamer 54/6-8"
+          },
+          {
+            "target_coordinate": "70:43",
+            "context": "Mearic 70/43-44"
+          },
+          {
+            "target_coordinate": "70:44",
+            "context": "Mearic 70/43-44"
+          },
+          {
+            "target_coordinate": "84:3",
+            "context": "İnşikak 84/3-4"
+          },
+          {
+            "target_coordinate": "84:4",
+            "context": "İnşikak 84/3-4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Zilzâl Suresi 2. Ayetin Tefsiri\nوَاَخْرَجَتِ الْاَرْضُ اَثْقَالَهَاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/99.mp3"
+    },
+    {
+      "id": "99:3",
+      "text": "وَقَالَ الْاِنْسَانُ مَا لَهَاۚ",
+      "translation": "insan da “Ne olmuş buraya!” deyince,",
+      "dipnot": "İbrahim 14/48.",
+      "roots": [
+        "قول",
+        "أنس"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İbrahim 14/48",
+          "targets": [
+            "14:48"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "99:3",
+        "connections": [
+          {
+            "target_coordinate": "14:48",
+            "context": "İbrahim 14/48"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Zilzâl Suresi 3. Ayetin Tefsiri\nوَقَالَ الْاِنْسَانُ مَا لَهَاۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/99.mp3"
+    },
+    {
+      "id": "99:4",
+      "text": "يَوْمَئِذٍ تُحَدِّثُ اَخْبَارَهَاۙ",
+      "translation": "işte o gün yer, haberlerini anlatır;",
+      "dipnot": "",
+      "roots": [
+        "يوم",
+        "حدث",
+        "خبر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "99:4",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Zilzâl Suresi 4. Ayetin Tefsiri\nيَوْمَئِذٍ تُحَدِّثُ اَخْبَارَهَاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/99.mp3"
+    },
+    {
+      "id": "99:5",
+      "text": "بِاَنَّ رَبَّكَ اَوْحٰى لَهَاۜ",
+      "translation": "çünkü Rabbin bunları ona bildirmiş olur.",
+      "dipnot": "",
+      "roots": [
+        "ربب",
+        "وحي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "99:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Zilzâl Suresi 5. Ayetin Tefsiri\nبِاَنَّ رَبَّكَ اَوْحٰى لَهَاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/99.mp3"
+    },
+    {
+      "id": "99:6",
+      "text": "يَوْمَئِذٍ يَصْدُرُ النَّاسُ اَشْتَاتًاۙ لِيُرَوْا اَعْمَالَهُمْۜ",
+      "translation": "O gün insanlar, yaptıkları işlerin kendilerine gösterilmesi için ayrı ayrı öne çıkarlar.",
+      "dipnot": "Kehf 18/49, Necm 53/40, Kıyamet 75/13, Nebe 78/40, Tekvîr 81/14.",
+      "roots": [
+        "يوم",
+        "صدر",
+        "أنس",
+        "شتت",
+        "رأي",
+        "عمل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kehf 18/49",
+          "targets": [
+            "18:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Necm 53/40",
+          "targets": [
+            "53:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/13",
+          "targets": [
+            "75:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/40",
+          "targets": [
+            "78:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvîr 81/14",
+          "targets": [
+            "81:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "99:6",
+        "connections": [
+          {
+            "target_coordinate": "18:49",
+            "context": "Kehf 18/49"
+          },
+          {
+            "target_coordinate": "53:40",
+            "context": "Necm 53/40"
+          },
+          {
+            "target_coordinate": "75:13",
+            "context": "Kıyamet 75/13"
+          },
+          {
+            "target_coordinate": "78:40",
+            "context": "Nebe 78/40"
+          },
+          {
+            "target_coordinate": "81:14",
+            "context": "Tekvîr 81/14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Zilzâl Suresi 6. Ayetin Tefsiri\nيَوْمَئِذٍ يَصْدُرُ النَّاسُ اَشْتَاتًاۙ لِيُرَوْا اَعْمَالَهُمْۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/99.mp3"
+    },
+    {
+      "id": "99:7",
+      "text": "فَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۜ",
+      "translation": "Artık kim zerre kadar iyilik yapmış olsa onu görür.",
+      "dipnot": "Nisa 4/40, Enbiya 21/47, 94, Lokman 31/16.",
+      "roots": [
+        "عمل",
+        "ثقل",
+        "ذرر",
+        "خير",
+        "رأي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nisa 4/40",
+          "targets": [
+            "4:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/47,94",
+          "targets": [
+            "21:47",
+            "21:94"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/16",
+          "targets": [
+            "31:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "99:7",
+        "connections": [
+          {
+            "target_coordinate": "4:40",
+            "context": "Nisa 4/40"
+          },
+          {
+            "target_coordinate": "21:47",
+            "context": "Enbiya 21/47,94"
+          },
+          {
+            "target_coordinate": "21:94",
+            "context": "Enbiya 21/47,94"
+          },
+          {
+            "target_coordinate": "31:16",
+            "context": "Lokman 31/16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Zilzâl Suresi 7. Ayetin Tefsiri\nفَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/99.mp3"
+    },
+    {
+      "id": "99:8",
+      "text": "وَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُ",
+      "translation": "Kim de zerre kadar kötülük yapmış olsa onu görür.",
+      "dipnot": "Âl-i İmran 3/30, Yunus 10/21, Zuhruf 43/80, Kamer 54/52 - 53.",
+      "roots": [
+        "عمل",
+        "ثقل",
+        "ذرر",
+        "شرر",
+        "رأي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/30",
+          "targets": [
+            "3:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/21",
+          "targets": [
+            "10:21"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/80",
+          "targets": [
+            "43:80"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/52-53",
+          "targets": [
+            "54:52",
+            "54:53"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "99:8",
+        "connections": [
+          {
+            "target_coordinate": "3:30",
+            "context": "Âl-i İmran 3/30"
+          },
+          {
+            "target_coordinate": "10:21",
+            "context": "Yunus 10/21"
+          },
+          {
+            "target_coordinate": "43:80",
+            "context": "Zuhruf 43/80"
+          },
+          {
+            "target_coordinate": "54:52",
+            "context": "Kamer 54/52-53"
+          },
+          {
+            "target_coordinate": "54:53",
+            "context": "Kamer 54/52-53"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Zilzâl Suresi 8. Ayetin Tefsiri\nوَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/99.mp3"
+    }
+  ]
+}

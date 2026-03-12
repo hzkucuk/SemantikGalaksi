@@ -1,0 +1,240 @@
+{
+  "nodes": [
+    {
+      "id": "106:1",
+      "text": "لِا۪يلَافِ قُرَيْشٍۙ",
+      "translation": "Kureyşlilere karşı (kalplerde) bir sıcaklık oluşturduğu için;",
+      "dipnot": "",
+      "roots": [
+        "ألف",
+        "قرش"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "106:1",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kureyş Suresi 1. Ayetin Tefsiri\nلِا۪يلَافِ قُرَيْشٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/106.mp3"
+    },
+    {
+      "id": "106:2",
+      "text": "ا۪يلَافِهِمْ رِحْلَةَ الشِّتَٓاءِ وَالصَّيْفِۚ",
+      "translation": "(özellikle) kış ve yaz yolculuklarında onlara karşı sıcaklık oluşturduğu için,",
+      "dipnot": "",
+      "roots": [
+        "ألف",
+        "رحل",
+        "شتو",
+        "صيف"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "106:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kureyş Suresi 2. Ayetin Tefsiri\nا۪يلَافِهِمْ رِحْلَةَ الشِّتَٓاءِ وَالصَّيْفِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/106.mp3"
+    },
+    {
+      "id": "106:3",
+      "text": "فَلْيَعْبُدُوا رَبَّ هٰذَا الْبَيْتِۙ",
+      "translation": "onlar da bu Beyt'in (Kâbe’nin) Rabbine kulluk etsinler,",
+      "dipnot": "Kureyş, Muhammed aleyhisselamın mensubu olduğu, Mekke’nin yönetimini elinde tutan ve Kâbe’ye hizmette önde gelen Arap kabilesidir. Mekke, hem hac ve umre ibadetlerinin yapıldığı yer hem de önemli bir ticaret merkezidir ( Âl-i İmran 3/96, Hac 22/27 - 28 ). En’am 6/102, Neml 27/91.",
+      "roots": [
+        "عبد",
+        "ربب",
+        "بيت"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Kureyş, Muhammed aleyhisselamın mensubu olduğu, Mekke’nin yönetimini elinde tutan ve Kâbe’ye hizmette önde gelen Arap kabilesidir. Mekke, hem hac ve umre ibadetlerinin yapıldığı yer hem de önemli bir ticaret merkezidir ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/96",
+          "targets": [
+            "3:96"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/27-28",
+          "targets": [
+            "22:27",
+            "22:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/102",
+          "targets": [
+            "6:102"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/91",
+          "targets": [
+            "27:91"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "106:3",
+        "connections": [
+          {
+            "target_coordinate": "3:96",
+            "context": "Âl-i İmran 3/96"
+          },
+          {
+            "target_coordinate": "22:27",
+            "context": "Hac 22/27-28"
+          },
+          {
+            "target_coordinate": "22:28",
+            "context": "Hac 22/27-28"
+          },
+          {
+            "target_coordinate": "6:102",
+            "context": "am 6/102"
+          },
+          {
+            "target_coordinate": "27:91",
+            "context": "Neml 27/91"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kureyş Suresi 3. Ayetin Tefsiri\nفَلْيَعْبُدُوا رَبَّ هٰذَا الْبَيْتِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/106.mp3"
+    },
+    {
+      "id": "106:4",
+      "text": "اَلَّذ۪ٓي اَطْعَمَهُمْ مِنْ جُوعٍ وَاٰمَنَهُمْ مِنْ خَوْفٍ",
+      "translation": "Onları açlıktan (koruyup) doyuran ve korkudan emin kılan Rabbe!",
+      "dipnot": "Bakara 2/125 - 126, İbrahim 14/35 - 37. Kasas 28/57, Ankebut 29/67, Tin 95/3.",
+      "roots": [
+        "طعم",
+        "جوع",
+        "أمن",
+        "خوف"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/125-126",
+          "targets": [
+            "2:125",
+            "2:126"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/35-37",
+          "targets": [
+            "14:35",
+            "14:36",
+            "14:37"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". "
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/57",
+          "targets": [
+            "28:57"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/67",
+          "targets": [
+            "29:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tin 95/3",
+          "targets": [
+            "95:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "106:4",
+        "connections": [
+          {
+            "target_coordinate": "2:125",
+            "context": "Bakara 2/125-126"
+          },
+          {
+            "target_coordinate": "2:126",
+            "context": "Bakara 2/125-126"
+          },
+          {
+            "target_coordinate": "14:35",
+            "context": "İbrahim 14/35-37"
+          },
+          {
+            "target_coordinate": "14:36",
+            "context": "İbrahim 14/35-37"
+          },
+          {
+            "target_coordinate": "14:37",
+            "context": "İbrahim 14/35-37"
+          },
+          {
+            "target_coordinate": "28:57",
+            "context": "Kasas 28/57"
+          },
+          {
+            "target_coordinate": "29:67",
+            "context": "Ankebut 29/67"
+          },
+          {
+            "target_coordinate": "95:3",
+            "context": "Tin 95/3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kureyş Suresi 4. Ayetin Tefsiri\nاَلَّذ۪ٓي اَطْعَمَهُمْ مِنْ جُوعٍ وَاٰمَنَهُمْ مِنْ خَوْفٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/106.mp3"
+    }
+  ]
+}

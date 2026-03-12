@@ -1,0 +1,383 @@
+{
+  "nodes": [
+    {
+      "id": "105:1",
+      "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "translation": "İyiliği sonsuz, ikramı bol Allah’ın adıyla...",
+      "dipnot": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi, Tevbe 9/128. ayette Resulullah için; Fetih 48/29. ayette ise müminler için kullanılmıştır.",
+      "roots": [
+        "رأي",
+        "كيف",
+        "فعل",
+        "ربب",
+        "صحب",
+        "فيل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi, "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/128",
+          "targets": [
+            "9:128"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette Resulullah için; "
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/29",
+          "targets": [
+            "48:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette ise müminler için kullanılmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "105:1",
+        "connections": [
+          {
+            "target_coordinate": "9:128",
+            "context": "Tevbe 9/128"
+          },
+          {
+            "target_coordinate": "48:29",
+            "context": "Fetih 48/29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fîl Suresi 1. Ayetin Tefsiri\nاَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِاَصْحَابِ الْف۪يلِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/105.mp3"
+    },
+    {
+      "id": "105:2",
+      "text": "اَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِاَصْحَابِ الْف۪يلِۜ",
+      "translation": "Fillerle gelenleri Rabbinin ne hale getirdiğini gözünde canlandırmaz mısın?",
+      "dipnot": "Fil Vak’ası, Muhammed aleyhisselamın doğumuna yakın bir zamanda gerçekleşmiştir. Hristiyan olan Yemen genel valisi Ebrehe, Kâbe’yi yıkmak amacıyla, içinde bir ya da birçok filin bulunduğu orduyla Mekke’ye sefer düzenlemişti. Bu sûre, onların Allah tarafından nasıl helak edildiğini anlatmaktadır (Fil Vak’ası, DİA). Bu olayın geçtiği yıl, Araplar arasında “ m’ul Fîl-Fil Yılı” ismiyle meşhur olmuştur ( Tâhâ 20/128, Secde 32/26 ).",
+      "roots": [
+        "جعل",
+        "كيد",
+        "ضلل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Fil Vak’ası, Muhammed aleyhisselamın doğumuna yakın bir zamanda gerçekleşmiştir. Hristiyan olan Yemen genel valisi Ebrehe, Kâbe’yi yıkmak amacıyla, içinde bir ya da birçok filin bulunduğu orduyla Mekke’ye sefer düzenlemişti. Bu sûre, onların Allah tarafından nasıl helak edildiğini anlatmaktadır (Fil Vak’ası, DİA). Bu olayın geçtiği yıl, Araplar arasında “ m’ul Fîl-Fil Yılı” ismiyle meşhur olmuştur ( "
+        },
+        {
+          "type": "link",
+          "content": "Tâhâ 20/128",
+          "targets": [
+            "20:128"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/26",
+          "targets": [
+            "32:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "105:2",
+        "connections": [
+          {
+            "target_coordinate": "20:128",
+            "context": "Tâhâ 20/128"
+          },
+          {
+            "target_coordinate": "32:26",
+            "context": "Secde 32/26"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fîl Suresi 2. Ayetin Tefsiri\nاَلَمْ يَجْعَلْ كَيْدَهُمْ ف۪ي تَضْل۪يلٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/105.mp3"
+    },
+    {
+      "id": "105:3",
+      "text": "اَلَمْ يَجْعَلْ كَيْدَهُمْ ف۪ي تَضْل۪يلٍۙ",
+      "translation": "Onların oyunlarını (Ka’beyi yıkma planlarını)[1*] boşa çıkarmıştı, değil mi?[2*]",
+      "dipnot": "[1*] Oyun kurmuş olmaları, onların Ka’be’yi yıkma amaçlarını gizlediklerini gösterir. [2*] Enfal 8/18, Ra’d 13/42, Tur 52/42, Tarık 86/15 - 17.",
+      "roots": [
+        "رسل",
+        "طير",
+        "أبل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Oyun kurmuş olmaları, onların Ka’be’yi yıkma amaçlarını gizlediklerini gösterir. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/18",
+          "targets": [
+            "8:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/42",
+          "targets": [
+            "13:42"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/42",
+          "targets": [
+            "52:42"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tarık 86/15-17",
+          "targets": [
+            "86:15",
+            "86:16",
+            "86:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "105:3",
+        "connections": [
+          {
+            "target_coordinate": "8:18",
+            "context": "Enfal 8/18"
+          },
+          {
+            "target_coordinate": "13:42",
+            "context": "d 13/42"
+          },
+          {
+            "target_coordinate": "52:42",
+            "context": "Tur 52/42"
+          },
+          {
+            "target_coordinate": "86:15",
+            "context": "Tarık 86/15-17"
+          },
+          {
+            "target_coordinate": "86:16",
+            "context": "Tarık 86/15-17"
+          },
+          {
+            "target_coordinate": "86:17",
+            "context": "Tarık 86/15-17"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fîl Suresi 3. Ayetin Tefsiri\nوَاَرْسَلَ عَلَيْهِمْ طَيْرًا اَبَاب۪يلَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/105.mp3"
+    },
+    {
+      "id": "105:4",
+      "text": "وَاَرْسَلَ عَلَيْهِمْ طَيْرًا اَبَاب۪يلَۙ",
+      "translation": "Üzerlerine öbek öbek uçuşan[1*] şeyler /volkanik kül bulutları[2*] göndermişti.",
+      "dipnot": "[1*] “Tayr (طَيْر)”, “tâir (طائر)” kelimesinin çoğuludur. Kanadı olup havada uçan her şeye “tâir” denir (Müfredat). Kuş da iki kanadıyla uçan tâirdir ( En’âm 6/38 ). [2*] “Ebâbîl (أبابيل)” “arka arkaya, öbek öbek” demektir (el-Ayn). Zeccâc’a göre “tayrun ebâbîl (طير أَبابيل)” “şuradan buradan öbekler halinde tayr / uçuşan varlık” anlamındadır. “Ebâbîl (أبابيل)”, deve anlamına gelen “ibil (إبل)” ile aynı köktendir. İbil’in kök anlamı, öbek öbek olma, ağır olma ve kapsamadır (Mekâyîs). İbil, yağmur yüklü bulut anlamına da gelir. (el-Kâmûs). Bu tanımları dikkate alırsak, “tayran ebâbîl (طَيْرًا أَبَابِيلَ)”e, arka arkaya uçuşan kalın bulut kütleleri veya yanardağdan çıkan lav ve kül bulutları demek gerekir.",
+      "roots": [
+        "رمي",
+        "حجر",
+        "سجل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] “Tayr (طَيْر)”, “tâir (طائر)” kelimesinin çoğuludur. Kanadı olup havada uçan her şeye “tâir” denir (Müfredat). Kuş da iki kanadıyla uçan tâirdir ( En’"
+        },
+        {
+          "type": "link",
+          "content": "âm 6/38",
+          "targets": [
+            "6:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] “Ebâbîl (أبابيل)” “arka arkaya, öbek öbek” demektir (el-Ayn). Zeccâc’a göre “tayrun ebâbîl (طير أَبابيل)” “şuradan buradan öbekler halinde tayr / uçuşan varlık” anlamındadır. “Ebâbîl (أبابيل)”, deve anlamına gelen “ibil (إبل)” ile aynı köktendir. İbil’in kök anlamı, öbek öbek olma, ağır olma ve kapsamadır (Mekâyîs). İbil, yağmur yüklü bulut anlamına da gelir. (el-Kâmûs). Bu tanımları dikkate alırsak, “tayran ebâbîl (طَيْرًا أَبَابِيلَ)”e, arka arkaya uçuşan kalın bulut kütleleri veya yanardağdan çıkan lav ve kül bulutları demek gerekir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "105:4",
+        "connections": [
+          {
+            "target_coordinate": "6:38",
+            "context": "âm 6/38"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fîl Suresi 4. Ayetin Tefsiri\nتَرْم۪يهِمْ بِحِجَارَةٍ مِنْ سِجّ۪يلٍۖۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/105.mp3"
+    },
+    {
+      "id": "105:5",
+      "text": "تَرْم۪يهِمْ بِحِجَارَةٍ مِنْ سِجّ۪يلٍۖۙ",
+      "translation": "(O bulutlar) onlara katılaşmış çamurdan taşlar atıyorlardı.",
+      "dipnot": "",
+      "roots": [
+        "جعل",
+        "عصف",
+        "أكل"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "105:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fîl Suresi 5. Ayetin Tefsiri\nفَجَعَلَهُمْ كَعَصْفٍ مَأْكُولٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/105.mp3"
+    },
+    {
+      "id": "105:5",
+      "text": "فَجَعَلَهُمْ كَعَصْفٍ مَأْكُولٍ",
+      "translation": "Sonunda onları, (içi) yenmiş tahıl kabuğu gibi yapmıştı.",
+      "dipnot": "[1*] “Asf (عصف)” dane üzerindeki kabuğa denir (Mekâyîs). Allah ashab-ı fîli, danesi yenmiş kabuk gibi içi boş yapmıştı (Lisan’ul-Arab). Lut aleyhisselama inanmadıkları için yanardağ patlaması sonucu lav külleri altında kalan eşi ve diğerleri ile ilgili yedi ayette bu durum “kalıntısı kalan” anlamındaki ğâbir (غابر) (Lisan’ul-Arab) kelimesi ile ifade edilir (A’raf 7/83, Hicr 15/60, Şuara 26/171, Neml 27/57, Ankebut 29/32 - 33, Saffat 37/135). Demek yanardağ külleri altında kalan cesetlerin içi yok olur ama dışlarında bir şeyler kalır. [2*] Bu ayete göre fil olayının geçtiği Vâdi’n-nâr denilen bölgede kazı yapılsa, ölen askerlerin ve fillerin cesetleri, donmuş  ve  içleri boş bir halde bulunabilir. Bu vadi, Müzdelife ile Mina arasındadır. Vadinin iki tarafındaki dağları gözlemleyen herkes, yanardağ patlamasının izlerini açıkça görebilir.",
+      "roots": [
+        "جعل",
+        "عصف",
+        "أكل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] “Asf (عصف)” dane üzerindeki kabuğa denir (Mekâyîs). Allah ashab-ı fîli, danesi yenmiş kabuk gibi içi boş yapmıştı (Lisan’ul-Arab). Lut aleyhisselama inanmadıkları için yanardağ patlaması sonucu lav külleri altında kalan eşi ve diğerleri ile ilgili yedi ayette bu durum “kalıntısı kalan” anlamındaki ğâbir (غابر) (Lisan’ul-Arab) kelimesi ile ifade edilir (A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/83",
+          "targets": [
+            "7:83"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/60",
+          "targets": [
+            "15:60"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/171",
+          "targets": [
+            "26:171"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/57",
+          "targets": [
+            "27:57"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/32-33",
+          "targets": [
+            "29:32",
+            "29:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/135",
+          "targets": [
+            "37:135"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Demek yanardağ külleri altında kalan cesetlerin içi yok olur ama dışlarında bir şeyler kalır. [2*] Bu ayete göre fil olayının geçtiği Vâdi’n-nâr denilen bölgede kazı yapılsa, ölen askerlerin ve fillerin cesetleri, donmuş  ve  içleri boş bir halde bulunabilir. Bu vadi, Müzdelife ile Mina arasındadır. Vadinin iki tarafındaki dağları gözlemleyen herkes, yanardağ patlamasının izlerini açıkça görebilir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "105:5",
+        "connections": [
+          {
+            "target_coordinate": "7:83",
+            "context": "raf 7/83"
+          },
+          {
+            "target_coordinate": "15:60",
+            "context": "Hicr 15/60"
+          },
+          {
+            "target_coordinate": "26:171",
+            "context": "Şuara 26/171"
+          },
+          {
+            "target_coordinate": "27:57",
+            "context": "Neml 27/57"
+          },
+          {
+            "target_coordinate": "29:32",
+            "context": "Ankebut 29/32-33"
+          },
+          {
+            "target_coordinate": "29:33",
+            "context": "Ankebut 29/32-33"
+          },
+          {
+            "target_coordinate": "37:135",
+            "context": "Saffat 37/135"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fîl Suresi 5. Ayetin Tefsiri\nفَجَعَلَهُمْ كَعَصْفٍ مَأْكُولٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/105.mp3"
+    }
+  ]
+}

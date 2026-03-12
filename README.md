@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.29.0-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.31.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -111,10 +111,17 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **Katmanlı render**: `milkyway.jpg` → Kozmik toz → Nebulalar → Yıldızlar → Uzay tozu → Veri küreleri
 
 ### 🔊 Ayet Seslendirme (TTS)
-- **Gemini 2.5 Flash TTS** ile Türkçe meal seslendirme
+- **Doğrudan MP3 oynatma** — Süleymaniye Vakfı ses dosyaları (6088 ayet)
+- **Gemini 2.5 Flash TTS** ile Türkçe meal seslendirme (fallback)
 - Tarayıcı SpeechSynthesis fallback (API anahtarı yoksa)
 - HUD panelinde ve ilişkili ayet listesinde seslendir düğmeleri
 - PCM → WAV dönüşümü, önbellekleme, durum göstergesi (▶ / ⏳ / ⏹)
+
+### 📖 Zengin Dipnot & Tefsir Sistemi (v0.31.0)
+- **Yapılandırılmış dipnotlar** — ayet referansları tıklanabilir link olarak gösterilir
+- **Tefsir popup** — her ayet için detaylı tefsir içeriği (metin + çapraz referans linkleri)
+- **Çapraz referans haritası** — tefsir bazlı ayet→ayet bağlantıları (`mapping_data`)
+- Tıklanabilir referanslara tıklayınca ilgili ayete warp navigasyonu
 
 ### 🤖 Yapay Zekâ Analizi
 - **Google Gemini 2.5 Flash** entegrasyonu
@@ -184,6 +191,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.31.0 | **Zengin Veri Entegrasyonu**: `full_quran_rich_map.json` birleştirildi — dipnot_parsed linkleri, tefsir popup, çapraz referans haritası, doğrudan MP3 ses oynatma |
 | v0.25.2 | **HUD Seslendirme Düğmesi**: Ana ayet detay panelinde DİPNOT yanına Seslendir (▶) butonu eklendi — Gemini TTS + tarayıcı fallback |
 | v0.25.1 | **Sinematik Warp**: Millennium Falcon tarzı — yavaş birikim (1.3s) → GÜM! (0.15s) → simetrik ters çıkış (1.8s), minimal FOV, sıfır gecikme, karanlık arka plan, beyaz-dominant streak'ler |
 | v0.24.1 | **Kök Renk Kontrast**: Arapça charCode kümelenmesi nedeniyle benzer hue değerleri → djb2 hash + 11 ayrık renk paleti (min 30° ayrım) |
@@ -654,6 +662,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.31.0** | 2025-07-28 | Zengin veri entegrasyonu: dipnot_parsed linkleri, tefsir popup, çapraz referans haritası, doğrudan MP3 ses oynatma |
 | **0.25.2** | 2025-07-28 | HUD seslendirme düğmesi: ana ayet panelinde Seslendir butonu (Gemini TTS + tarayıcı fallback) |
 | **0.25.0** | 2025-07-28 | Cosmos atmosferi: 7 nebula, 3000 uzay tozu, 3 kozmik toz şeridi, difraksiyon, kırpışma |
 | **0.24.1** | 2025-07-28 | Kök renk kontrast iyileştirmesi (djb2 hash + ayrık palet) |

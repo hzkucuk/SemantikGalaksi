@@ -1,0 +1,2412 @@
+{
+  "nodes": [
+    {
+      "id": "71:1",
+      "text": "اِنَّٓا اَرْسَلْنَا نُوحًا اِلٰى قَوْمِه۪ٓ اَنْ اَنْذِرْ قَوْمَكَ مِنْ قَبْلِ اَنْ يَأْتِيَهُمْ عَذَابٌ اَل۪يمٌ",
+      "translation": "Biz Nuh’u “Acıklı bir azap gelmeden önce halkını uyar!” diye kendi halkına elçi olarak gönderdik.",
+      "dipnot": "Nuh kıssası hakkında ayrıntılı bilgi için bkz: A’raf 7/59 - 72, Hud 11/25 - 49, Yunus 10/71 - 73, Mü’minun 23/23 - 30, Şuara 26/105 - 122, Saffat 37/75 - 82, Kamer 54/9 - 16.",
+      "roots": [
+        "رسل",
+        "قوم",
+        "نذر",
+        "قبل",
+        "أتي",
+        "عذب",
+        "ألم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Nuh kıssası hakkında ayrıntılı bilgi için bkz: A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/59-72",
+          "targets": [
+            "7:59",
+            "7:60",
+            "7:61",
+            "7:62",
+            "7:63",
+            "7:64",
+            "7:65",
+            "7:66",
+            "7:67",
+            "7:68",
+            "7:69",
+            "7:70",
+            "7:71",
+            "7:72"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/25-49",
+          "targets": [
+            "11:25",
+            "11:26",
+            "11:27",
+            "11:28",
+            "11:29",
+            "11:30",
+            "11:31",
+            "11:32",
+            "11:33",
+            "11:34",
+            "11:35",
+            "11:36",
+            "11:37",
+            "11:38",
+            "11:39",
+            "11:40",
+            "11:41",
+            "11:42",
+            "11:43",
+            "11:44",
+            "11:45",
+            "11:46",
+            "11:47",
+            "11:48",
+            "11:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/71-73",
+          "targets": [
+            "10:71",
+            "10:72",
+            "10:73"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/23-30",
+          "targets": [
+            "23:23",
+            "23:24",
+            "23:25",
+            "23:26",
+            "23:27",
+            "23:28",
+            "23:29",
+            "23:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/105-122",
+          "targets": [
+            "26:105",
+            "26:106",
+            "26:107",
+            "26:108",
+            "26:109",
+            "26:110",
+            "26:111",
+            "26:112",
+            "26:113",
+            "26:114",
+            "26:115",
+            "26:116",
+            "26:117",
+            "26:118",
+            "26:119",
+            "26:120",
+            "26:121",
+            "26:122"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/75-82",
+          "targets": [
+            "37:75",
+            "37:76",
+            "37:77",
+            "37:78",
+            "37:79",
+            "37:80",
+            "37:81",
+            "37:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/9-16",
+          "targets": [
+            "54:9",
+            "54:10",
+            "54:11",
+            "54:12",
+            "54:13",
+            "54:14",
+            "54:15",
+            "54:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:1",
+        "connections": [
+          {
+            "target_coordinate": "7:59",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:60",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:61",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:62",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:63",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:64",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:65",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:66",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:67",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:68",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:69",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:70",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:71",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "7:72",
+            "context": "raf 7/59-72"
+          },
+          {
+            "target_coordinate": "11:25",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:26",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:27",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:28",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:29",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:30",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:31",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:32",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:33",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:34",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:35",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:36",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:37",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:38",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:39",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:40",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:41",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:42",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:43",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:44",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:45",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:46",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:47",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:48",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "11:49",
+            "context": "Hud 11/25-49"
+          },
+          {
+            "target_coordinate": "10:71",
+            "context": "Yunus 10/71-73"
+          },
+          {
+            "target_coordinate": "10:72",
+            "context": "Yunus 10/71-73"
+          },
+          {
+            "target_coordinate": "10:73",
+            "context": "Yunus 10/71-73"
+          },
+          {
+            "target_coordinate": "23:23",
+            "context": "minun 23/23-30"
+          },
+          {
+            "target_coordinate": "23:24",
+            "context": "minun 23/23-30"
+          },
+          {
+            "target_coordinate": "23:25",
+            "context": "minun 23/23-30"
+          },
+          {
+            "target_coordinate": "23:26",
+            "context": "minun 23/23-30"
+          },
+          {
+            "target_coordinate": "23:27",
+            "context": "minun 23/23-30"
+          },
+          {
+            "target_coordinate": "23:28",
+            "context": "minun 23/23-30"
+          },
+          {
+            "target_coordinate": "23:29",
+            "context": "minun 23/23-30"
+          },
+          {
+            "target_coordinate": "23:30",
+            "context": "minun 23/23-30"
+          },
+          {
+            "target_coordinate": "26:105",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:106",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:107",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:108",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:109",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:110",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:111",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:112",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:113",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:114",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:115",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:116",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:117",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:118",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:119",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:120",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:121",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "26:122",
+            "context": "Şuara 26/105-122"
+          },
+          {
+            "target_coordinate": "37:75",
+            "context": "Saffat 37/75-82"
+          },
+          {
+            "target_coordinate": "37:76",
+            "context": "Saffat 37/75-82"
+          },
+          {
+            "target_coordinate": "37:77",
+            "context": "Saffat 37/75-82"
+          },
+          {
+            "target_coordinate": "37:78",
+            "context": "Saffat 37/75-82"
+          },
+          {
+            "target_coordinate": "37:79",
+            "context": "Saffat 37/75-82"
+          },
+          {
+            "target_coordinate": "37:80",
+            "context": "Saffat 37/75-82"
+          },
+          {
+            "target_coordinate": "37:81",
+            "context": "Saffat 37/75-82"
+          },
+          {
+            "target_coordinate": "37:82",
+            "context": "Saffat 37/75-82"
+          },
+          {
+            "target_coordinate": "54:9",
+            "context": "Kamer 54/9-16"
+          },
+          {
+            "target_coordinate": "54:10",
+            "context": "Kamer 54/9-16"
+          },
+          {
+            "target_coordinate": "54:11",
+            "context": "Kamer 54/9-16"
+          },
+          {
+            "target_coordinate": "54:12",
+            "context": "Kamer 54/9-16"
+          },
+          {
+            "target_coordinate": "54:13",
+            "context": "Kamer 54/9-16"
+          },
+          {
+            "target_coordinate": "54:14",
+            "context": "Kamer 54/9-16"
+          },
+          {
+            "target_coordinate": "54:15",
+            "context": "Kamer 54/9-16"
+          },
+          {
+            "target_coordinate": "54:16",
+            "context": "Kamer 54/9-16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 1. Ayetin Tefsiri\nاِنَّٓا اَرْسَلْنَا نُوحًا اِلٰى قَوْمِه۪ٓ اَنْ اَنْذِرْ قَوْمَكَ مِنْ قَبْلِ اَنْ يَأْتِيَهُمْ عَذَابٌ اَل۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:2",
+      "text": "قَالَ يَا قَوْمِ اِنّ۪ي لَكُمْ نَذ۪يرٌ مُب۪ينٌۙ",
+      "translation": "Nuh şöyle dedi: “Ey halkım! Ben sizin için açık bir uyarıcıyım:",
+      "dipnot": "Hud 11/25, Şuara 26/106 - 107.",
+      "roots": [
+        "قول",
+        "قوم",
+        "نذر",
+        "بين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hud 11/25",
+          "targets": [
+            "11:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/106-107",
+          "targets": [
+            "26:106",
+            "26:107"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:2",
+        "connections": [
+          {
+            "target_coordinate": "11:25",
+            "context": "Hud 11/25"
+          },
+          {
+            "target_coordinate": "26:106",
+            "context": "Şuara 26/106-107"
+          },
+          {
+            "target_coordinate": "26:107",
+            "context": "Şuara 26/106-107"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 2. Ayetin Tefsiri\nقَالَ يَا قَوْمِ اِنّ۪ي لَكُمْ نَذ۪يرٌ مُب۪ينٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:3",
+      "text": "اَنِ اعْبُدُوا اللّٰهَ وَاتَّقُوهُ وَاَط۪يعُونِۙ",
+      "translation": "Allah’a kulluk edin, ona karşı yanlış yapmaktan sakının ve bana gönülden boyun eğin diye (sizi uyarıyorum).",
+      "dipnot": "A’raf 7/59, Hud 11/26, Mü’minun 23/23.",
+      "roots": [
+        "عبد",
+        "أله",
+        "وقي",
+        "طوع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/59",
+          "targets": [
+            "7:59"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/26",
+          "targets": [
+            "11:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/23",
+          "targets": [
+            "23:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:3",
+        "connections": [
+          {
+            "target_coordinate": "7:59",
+            "context": "raf 7/59"
+          },
+          {
+            "target_coordinate": "11:26",
+            "context": "Hud 11/26"
+          },
+          {
+            "target_coordinate": "23:23",
+            "context": "minun 23/23"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 3. Ayetin Tefsiri\nاَنِ اعْبُدُوا اللّٰهَ وَاتَّقُوهُ وَاَط۪يعُونِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:4",
+      "text": "يَغْفِرْ لَكُمْ مِنْ ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ اِلٰٓى اَجَلٍ مُسَمًّىۜ اِنَّ اَجَلَ اللّٰهِ اِذَا جَٓاءَ لَا يُؤَخَّرُۢ لَوْ كُنْتُمْ تَعْلَمُونَ",
+      "translation": "(Böyle yapın ki) O sizin günahlarınızı bağışlasın ve belirlenmiş ecelinizin sonuna kadar size süre tanısın. Allah’ın takdir ettiği ecel gelince erteleme olmaz. Keşke bunu bilseniz!”",
+      "dipnot": "[1*] Ecel, bir şey için belirlenen süredir (Bakara 2/231, 282, Kasas 28/28). Ana rahmindeki döllenmenin arkasından insanın fiziki özellikleri ve doğal yaşam süresi yani biyolojik ecel belirlenir (Abese 80/17 - 19). Bir de Allah katında, süresi belirlenmiş bir ecel yani ecel-i müsemma vardır (En’âm 6/2). İnsan en fazla ecel-i müsemmasına kadar yaşayabilir. Bazı yanlış davranışlar bu eceli kısaltır ve her şey gibi bunun da kaydı tutulur (Ra’d 13/38 - 39, Fatır 35/11). Yunus aleyhisselam ve kavmi gibi tövbe edip durumunu düzeltenlere, ecelinden kalan süreyi tamamlama imkanı verilir (Yunus 10/98, Hud 11/3, Enbiya 21/87 - 88, Saffat 37/139 - 148, Kalem 68/48 - 50). [2*] Hud 11/3, İbrahim 14/10. [3*] A’raf 7/34, Yunus 10/49, Hicr 15/5, Nahl 16/61, Müminûn 23/43, Münafikun 63/11.",
+      "roots": [
+        "غفر",
+        "ذنب",
+        "أخر",
+        "أجل",
+        "سمو",
+        "أله",
+        "جيأ",
+        "كون",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Ecel, bir şey için belirlenen süredir ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/231,282",
+          "targets": [
+            "2:231",
+            "2:282"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/28",
+          "targets": [
+            "28:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ana rahmindeki döllenmenin arkasından insanın fiziki özellikleri ve doğal yaşam süresi yani biyolojik ecel belirlenir ("
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/17-19",
+          "targets": [
+            "80:17",
+            "80:18",
+            "80:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bir de Allah katında, süresi belirlenmiş bir ecel yani ecel-i müsemma vardır (En’"
+        },
+        {
+          "type": "link",
+          "content": "âm 6/2",
+          "targets": [
+            "6:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İnsan en fazla ecel-i müsemmasına kadar yaşayabilir. Bazı yanlış davranışlar bu eceli kısaltır ve her şey gibi bunun da kaydı tutulur (Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/38-39",
+          "targets": [
+            "13:38",
+            "13:39"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/11",
+          "targets": [
+            "35:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yunus aleyhisselam ve kavmi gibi tövbe edip durumunu düzeltenlere, ecelinden kalan süreyi tamamlama imkanı verilir ("
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/98",
+          "targets": [
+            "10:98"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/3",
+          "targets": [
+            "11:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/87-88",
+          "targets": [
+            "21:87",
+            "21:88"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/139-148",
+          "targets": [
+            "37:139",
+            "37:140",
+            "37:141",
+            "37:142",
+            "37:143",
+            "37:144",
+            "37:145",
+            "37:146",
+            "37:147",
+            "37:148"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/48-50",
+          "targets": [
+            "68:48",
+            "68:49",
+            "68:50"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/3",
+          "targets": [
+            "11:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/10",
+          "targets": [
+            "14:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/34",
+          "targets": [
+            "7:34"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/49",
+          "targets": [
+            "10:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/5",
+          "targets": [
+            "15:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/61",
+          "targets": [
+            "16:61"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müminûn 23/43",
+          "targets": [
+            "23:43"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Münafikun 63/11",
+          "targets": [
+            "63:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:4",
+        "connections": [
+          {
+            "target_coordinate": "2:231",
+            "context": "Bakara 2/231,282"
+          },
+          {
+            "target_coordinate": "2:282",
+            "context": "Bakara 2/231,282"
+          },
+          {
+            "target_coordinate": "28:28",
+            "context": "Kasas 28/28"
+          },
+          {
+            "target_coordinate": "80:17",
+            "context": "Abese 80/17-19"
+          },
+          {
+            "target_coordinate": "80:18",
+            "context": "Abese 80/17-19"
+          },
+          {
+            "target_coordinate": "80:19",
+            "context": "Abese 80/17-19"
+          },
+          {
+            "target_coordinate": "6:2",
+            "context": "âm 6/2"
+          },
+          {
+            "target_coordinate": "13:38",
+            "context": "d 13/38-39"
+          },
+          {
+            "target_coordinate": "13:39",
+            "context": "d 13/38-39"
+          },
+          {
+            "target_coordinate": "35:11",
+            "context": "Fatır 35/11"
+          },
+          {
+            "target_coordinate": "10:98",
+            "context": "Yunus 10/98"
+          },
+          {
+            "target_coordinate": "11:3",
+            "context": "Hud 11/3"
+          },
+          {
+            "target_coordinate": "21:87",
+            "context": "Enbiya 21/87-88"
+          },
+          {
+            "target_coordinate": "21:88",
+            "context": "Enbiya 21/87-88"
+          },
+          {
+            "target_coordinate": "37:139",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:140",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:141",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:142",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:143",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:144",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:145",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:146",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:147",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:148",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "68:48",
+            "context": "Kalem 68/48-50"
+          },
+          {
+            "target_coordinate": "68:49",
+            "context": "Kalem 68/48-50"
+          },
+          {
+            "target_coordinate": "68:50",
+            "context": "Kalem 68/48-50"
+          },
+          {
+            "target_coordinate": "11:3",
+            "context": "Hud 11/3"
+          },
+          {
+            "target_coordinate": "14:10",
+            "context": "İbrahim 14/10"
+          },
+          {
+            "target_coordinate": "7:34",
+            "context": "raf 7/34"
+          },
+          {
+            "target_coordinate": "10:49",
+            "context": "Yunus 10/49"
+          },
+          {
+            "target_coordinate": "15:5",
+            "context": "Hicr 15/5"
+          },
+          {
+            "target_coordinate": "16:61",
+            "context": "Nahl 16/61"
+          },
+          {
+            "target_coordinate": "23:43",
+            "context": "Müminûn 23/43"
+          },
+          {
+            "target_coordinate": "63:11",
+            "context": "Münafikun 63/11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 4. Ayetin Tefsiri\nيَغْفِرْ لَكُمْ مِنْ ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ اِلٰٓى اَجَلٍ مُسَمًّىۜ اِنَّ اَجَلَ اللّٰهِ اِذَا جَٓاءَ لَا يُؤَخَّرُۢ لَوْ كُنْتُمْ تَعْلَمُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:6",
+      "text": "قَالَ رَبِّ اِنّ۪ي دَعَوْتُ قَوْم۪ي لَيْلًا وَنَهَارًاۙ",
+      "translation": "Nuh dedi ki: “Rabbim! Ben halkımı gece gündüz davet ettim.",
+      "dipnot": "Hud 11/32. ayette Nuh Aleyhisselamın bu mücadelesi ona inanmayanların ağzından aktarılmıştır.",
+      "roots": [
+        "زيد",
+        "دعو",
+        "فرر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hud 11/32",
+          "targets": [
+            "11:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette Nuh Aleyhisselamın bu mücadelesi ona inanmayanların ağzından aktarılmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:6",
+        "connections": [
+          {
+            "target_coordinate": "11:32",
+            "context": "Hud 11/32"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 6. Ayetin Tefsiri\nفَلَمْ يَزِدْهُمْ دُعَٓاء۪ٓي اِلَّا فِرَارًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:7",
+      "text": "فَلَمْ يَزِدْهُمْ دُعَٓاء۪ٓي اِلَّا فِرَارًا",
+      "translation": "Fakat davetim onların sadece kaçışlarını artırdı!",
+      "dipnot": "A’raf 7/60, Hud 11/27, Mü’minun 23/24 - 25, Şuara 26/116, Kamer 54/9.",
+      "roots": [
+        "كلل",
+        "دعو",
+        "غفر",
+        "جعل",
+        "صبع",
+        "أذن",
+        "غشو",
+        "ثوب",
+        "صرر",
+        "كبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/60",
+          "targets": [
+            "7:60"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/27",
+          "targets": [
+            "11:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/24-25",
+          "targets": [
+            "23:24",
+            "23:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/116",
+          "targets": [
+            "26:116"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/9",
+          "targets": [
+            "54:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:7",
+        "connections": [
+          {
+            "target_coordinate": "7:60",
+            "context": "raf 7/60"
+          },
+          {
+            "target_coordinate": "11:27",
+            "context": "Hud 11/27"
+          },
+          {
+            "target_coordinate": "23:24",
+            "context": "minun 23/24-25"
+          },
+          {
+            "target_coordinate": "23:25",
+            "context": "minun 23/24-25"
+          },
+          {
+            "target_coordinate": "26:116",
+            "context": "Şuara 26/116"
+          },
+          {
+            "target_coordinate": "54:9",
+            "context": "Kamer 54/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 7. Ayetin Tefsiri\nوَاِنّ۪ي كُلَّمَا دَعَوْتُهُمْ لِتَغْفِرَ لَهُمْ جَعَلُٓوا اَصَابِعَهُمْ ف۪ٓي اٰذَانِهِمْ وَاسْتَغْشَوْا ثِيَابَهُمْ وَاَصَرُّوا وَاسْتَكْبَرُوا اسْتِكْبَارًاۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:8",
+      "text": "وَاِنّ۪ي كُلَّمَا دَعَوْتُهُمْ لِتَغْفِرَ لَهُمْ جَعَلُٓوا اَصَابِعَهُمْ ف۪ٓي اٰذَانِهِمْ وَاسْتَغْشَوْا ثِيَابَهُمْ وَاَصَرُّوا وَاسْتَكْبَرُوا اسْتِكْبَارًاۚ",
+      "translation": "Sen bağışlayasın diye ne zaman onları (imana) davet ettiysem (duymamak için) parmaklarını kulaklarına tıkadılar, (görmemek için) elbiselerine büründüler, ayak dirediler ve kibirlendikçe kibirlendiler.",
+      "dipnot": "Bu tavrı gösterenlere ahirette bunun hesabı sorulacaktır ( Mü’minun 23/66 - 67, Casiye 45/7 - 8, 31 ).",
+      "roots": [
+        "دعو",
+        "جهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bu tavrı gösterenlere ahirette bunun hesabı sorulacaktır ( Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/66-67",
+          "targets": [
+            "23:66",
+            "23:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Casiye 45/7-8,31",
+          "targets": [
+            "45:7",
+            "45:8",
+            "45:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:8",
+        "connections": [
+          {
+            "target_coordinate": "23:66",
+            "context": "minun 23/66-67"
+          },
+          {
+            "target_coordinate": "23:67",
+            "context": "minun 23/66-67"
+          },
+          {
+            "target_coordinate": "45:7",
+            "context": "Casiye 45/7-8,31"
+          },
+          {
+            "target_coordinate": "45:8",
+            "context": "Casiye 45/7-8,31"
+          },
+          {
+            "target_coordinate": "45:31",
+            "context": "Casiye 45/7-8,31"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 8. Ayetin Tefsiri\nثُمَّ اِنّ۪ي دَعَوْتُهُمْ جِهَارًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:9",
+      "text": "ثُمَّ اِنّ۪ي دَعَوْتُهُمْ جِهَارًاۙ",
+      "translation": "Sonra onlara açıkça davette bulundum.",
+      "dipnot": "Yunus 10/71 - 72.",
+      "roots": [
+        "علن",
+        "سرر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/71-72",
+          "targets": [
+            "10:71",
+            "10:72"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:9",
+        "connections": [
+          {
+            "target_coordinate": "10:71",
+            "context": "Yunus 10/71-72"
+          },
+          {
+            "target_coordinate": "10:72",
+            "context": "Yunus 10/71-72"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 9. Ayetin Tefsiri\nثُمَّ اِنّ۪ٓي اَعْلَنْتُ لَهُمْ وَاَسْرَرْتُ لَهُمْ اِسْرَارًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:10",
+      "text": "ثُمَّ اِنّ۪ٓي اَعْلَنْتُ لَهُمْ وَاَسْرَرْتُ لَهُمْ اِسْرَارًاۙ",
+      "translation": "Orta yerde ilan ettiğim de oldu, gizliden gizliye anlattığım da.",
+      "dipnot": "A’raf 7/61 - 63.",
+      "roots": [
+        "قول",
+        "غفر",
+        "ربب",
+        "كون"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/61-63",
+          "targets": [
+            "7:61",
+            "7:62",
+            "7:63"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:10",
+        "connections": [
+          {
+            "target_coordinate": "7:61",
+            "context": "raf 7/61-63"
+          },
+          {
+            "target_coordinate": "7:62",
+            "context": "raf 7/61-63"
+          },
+          {
+            "target_coordinate": "7:63",
+            "context": "raf 7/61-63"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 10. Ayetin Tefsiri\nفَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ اِنَّهُ كَانَ غَفَّارًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:11",
+      "text": "فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ اِنَّهُ كَانَ غَفَّارًاۙ",
+      "translation": "Şöyle dedim: “Rabbinizden bağışlanma dileyin; çünkü o çokça bağışlayandır.",
+      "dipnot": "Taha 20/82.",
+      "roots": [
+        "رسل",
+        "سمو",
+        "درر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Taha 20/82",
+          "targets": [
+            "20:82"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:11",
+        "connections": [
+          {
+            "target_coordinate": "20:82",
+            "context": "Taha 20/82"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 11. Ayetin Tefsiri\nيُرْسِلِ السَّمَٓاءَ عَلَيْكُمْ مِدْرَارًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:12",
+      "text": "يُرْسِلِ السَّمَٓاءَ عَلَيْكُمْ مِدْرَارًاۙ",
+      "translation": "Böyle yapın ki size gökten bol bol yağmur göndersin;",
+      "dipnot": "Nuh Aleyhisselam’dan sonraki elçiler de ümmetlerine bu yönde çağrıda bulunmuşlardır ( Hud 11/3, 52, 61 ).",
+      "roots": [
+        "مدد",
+        "مول",
+        "بني",
+        "جعل",
+        "جنن",
+        "نهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Nuh Aleyhisselam’dan sonraki elçiler de ümmetlerine bu yönde çağrıda bulunmuşlardır ( "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/3,52,61",
+          "targets": [
+            "11:3",
+            "11:52",
+            "11:61"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:12",
+        "connections": [
+          {
+            "target_coordinate": "11:3",
+            "context": "Hud 11/3,52,61"
+          },
+          {
+            "target_coordinate": "11:52",
+            "context": "Hud 11/3,52,61"
+          },
+          {
+            "target_coordinate": "11:61",
+            "context": "Hud 11/3,52,61"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 12. Ayetin Tefsiri\nوَيُمْدِدْكُمْ بِاَمْوَالٍ وَبَن۪ينَ وَيَجْعَلْ لَكُمْ جَنَّاتٍ وَيَجْعَلْ لَكُمْ اَنْهَارًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:13",
+      "text": "وَيُمْدِدْكُمْ بِاَمْوَالٍ وَبَن۪ينَ وَيَجْعَلْ لَكُمْ جَنَّاتٍ وَيَجْعَلْ لَكُمْ اَنْهَارًاۜ",
+      "translation": "mallarınıza mal, çocuklarınıza çocuk katsın; sizin için bahçeler oluştursun, sizin için ırmaklar da oluştursun.",
+      "dipnot": "Şûrâ 42/49 - 50.",
+      "roots": [
+        "رجو",
+        "أله",
+        "وقر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Şûrâ 42/49-50",
+          "targets": [
+            "42:49",
+            "42:50"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:13",
+        "connections": [
+          {
+            "target_coordinate": "42:49",
+            "context": "Şûrâ 42/49-50"
+          },
+          {
+            "target_coordinate": "42:50",
+            "context": "Şûrâ 42/49-50"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 13. Ayetin Tefsiri\nمَا لَكُمْ لَا تَرْجُونَ لِلّٰهِ وَقَارًاۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:14",
+      "text": "مَا لَكُمْ لَا تَرْجُونَ لِلّٰهِ وَقَارًاۚ",
+      "translation": "Size ne oluyor da Allah’a saygı gösterme isteği duymuyorsunuz?",
+      "dipnot": "",
+      "roots": [
+        "خلق",
+        "طور"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "71:14",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 14. Ayetin Tefsiri\nوَقَدْ خَلَقَكُمْ اَطْوَارًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:15",
+      "text": "وَقَدْ خَلَقَكُمْ اَطْوَارًا",
+      "translation": "Halbuki o sizi evrelerden geçirerek yarattı.",
+      "dipnot": "Secde 32/7 - 9, Mu’minun 23/12 - 14, Zümer 39/6, Kıyamet 75/37 - 39, Mürselat 77/20 - 23.",
+      "roots": [
+        "رأي",
+        "كيف",
+        "خلق",
+        "أله",
+        "سبع",
+        "سمو",
+        "طبق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Secde 32/7-9",
+          "targets": [
+            "32:7",
+            "32:8",
+            "32:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mu’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/12-14",
+          "targets": [
+            "23:12",
+            "23:13",
+            "23:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/6",
+          "targets": [
+            "39:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/37-39",
+          "targets": [
+            "75:37",
+            "75:38",
+            "75:39"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/20-23",
+          "targets": [
+            "77:20",
+            "77:21",
+            "77:22",
+            "77:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:15",
+        "connections": [
+          {
+            "target_coordinate": "32:7",
+            "context": "Secde 32/7-9"
+          },
+          {
+            "target_coordinate": "32:8",
+            "context": "Secde 32/7-9"
+          },
+          {
+            "target_coordinate": "32:9",
+            "context": "Secde 32/7-9"
+          },
+          {
+            "target_coordinate": "23:12",
+            "context": "minun 23/12-14"
+          },
+          {
+            "target_coordinate": "23:13",
+            "context": "minun 23/12-14"
+          },
+          {
+            "target_coordinate": "23:14",
+            "context": "minun 23/12-14"
+          },
+          {
+            "target_coordinate": "39:6",
+            "context": "Zümer 39/6"
+          },
+          {
+            "target_coordinate": "75:37",
+            "context": "Kıyamet 75/37-39"
+          },
+          {
+            "target_coordinate": "75:38",
+            "context": "Kıyamet 75/37-39"
+          },
+          {
+            "target_coordinate": "75:39",
+            "context": "Kıyamet 75/37-39"
+          },
+          {
+            "target_coordinate": "77:20",
+            "context": "Mürselat 77/20-23"
+          },
+          {
+            "target_coordinate": "77:21",
+            "context": "Mürselat 77/20-23"
+          },
+          {
+            "target_coordinate": "77:22",
+            "context": "Mürselat 77/20-23"
+          },
+          {
+            "target_coordinate": "77:23",
+            "context": "Mürselat 77/20-23"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 15. Ayetin Tefsiri\nاَلَمْ تَرَوْا كَيْفَ خَلَقَ اللّٰهُ سَبْعَ سَمٰوَاتٍ طِبَاقًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:16",
+      "text": "اَلَمْ تَرَوْا كَيْفَ خَلَقَ اللّٰهُ سَبْعَ سَمٰوَاتٍ طِبَاقًاۙ",
+      "translation": "Allah’ın yedi kat göğü tabaka tabaka nasıl yaratmış olduğunu görmediniz mi?",
+      "dipnot": "Mülk 67/3, Nebe 78/12.",
+      "roots": [
+        "جعل",
+        "قمر",
+        "نور",
+        "شمس",
+        "سرج"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Mülk 67/3",
+          "targets": [
+            "67:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/12",
+          "targets": [
+            "78:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:16",
+        "connections": [
+          {
+            "target_coordinate": "67:3",
+            "context": "Mülk 67/3"
+          },
+          {
+            "target_coordinate": "78:12",
+            "context": "Nebe 78/12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 16. Ayetin Tefsiri\nوَجَعَلَ الْقَمَرَ ف۪يهِنَّ نُورًا وَجَعَلَ الشَّمْسَ سِرَاجًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:17",
+      "text": "وَجَعَلَ الْقَمَرَ ف۪يهِنَّ نُورًا وَجَعَلَ الشَّمْسَ سِرَاجًا",
+      "translation": "Onların içinde Ay’ı ışık yansıtıcısı, Güneş’i de ışık kaynağı yapmıştır.",
+      "dipnot": "Yunus 10/5, Furkan 25/61, Nebe 78/13.",
+      "roots": [
+        "أله",
+        "نبت",
+        "أرض"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/5",
+          "targets": [
+            "10:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/61",
+          "targets": [
+            "25:61"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/13",
+          "targets": [
+            "78:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:17",
+        "connections": [
+          {
+            "target_coordinate": "10:5",
+            "context": "Yunus 10/5"
+          },
+          {
+            "target_coordinate": "25:61",
+            "context": "Furkan 25/61"
+          },
+          {
+            "target_coordinate": "78:13",
+            "context": "Nebe 78/13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 17. Ayetin Tefsiri\nوَاللّٰهُ اَنْبَتَكُمْ مِنَ الْاَرْضِ نَبَاتًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:18",
+      "text": "ثُمَّ يُع۪يدُكُمْ ف۪يهَا وَيُخْرِجُكُمْ اِخْرَاجًا",
+      "translation": "Sonra sizi ona iade edecek ve bir kere daha çıkaracaktır",
+      "dipnot": "A’raf 7/25, Taha 20/55, Kaf 50/11.",
+      "roots": [
+        "عود",
+        "خرج"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/25",
+          "targets": [
+            "7:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/55",
+          "targets": [
+            "20:55"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/11",
+          "targets": [
+            "50:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:18",
+        "connections": [
+          {
+            "target_coordinate": "7:25",
+            "context": "raf 7/25"
+          },
+          {
+            "target_coordinate": "20:55",
+            "context": "Taha 20/55"
+          },
+          {
+            "target_coordinate": "50:11",
+            "context": "Kaf 50/11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 18. Ayetin Tefsiri\nثُمَّ يُع۪يدُكُمْ ف۪يهَا وَيُخْرِجُكُمْ اِخْرَاجًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:19",
+      "text": "وَاللّٰهُ جَعَلَ لَكُمُ الْاَرْضَ بِسَاطًاۙ",
+      "translation": "Allah, yeryüzünü sizin için bir yaygı yaptı ki",
+      "dipnot": "Bakara 2/22, Zariyat 51/48, Mülk 67/15.",
+      "roots": [
+        "أله",
+        "جعل",
+        "أرض",
+        "بسط"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/22",
+          "targets": [
+            "2:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/48",
+          "targets": [
+            "51:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/15",
+          "targets": [
+            "67:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:19",
+        "connections": [
+          {
+            "target_coordinate": "2:22",
+            "context": "Bakara 2/22"
+          },
+          {
+            "target_coordinate": "51:48",
+            "context": "Zariyat 51/48"
+          },
+          {
+            "target_coordinate": "67:15",
+            "context": "Mülk 67/15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 19. Ayetin Tefsiri\nوَاللّٰهُ جَعَلَ لَكُمُ الْاَرْضَ بِسَاطًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:20",
+      "text": "لِتَسْلُكُوا مِنْهَا سُبُلًا فِجَاجًا۟",
+      "translation": "onun geniş yollarından geçip gidesiniz”",
+      "dipnot": "Nahl 16/15, Enbiya 21/31, Zuhruf 43/10.",
+      "roots": [
+        "سلك",
+        "سبل",
+        "فجج"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nahl 16/15",
+          "targets": [
+            "16:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/31",
+          "targets": [
+            "21:31"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/10",
+          "targets": [
+            "43:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:20",
+        "connections": [
+          {
+            "target_coordinate": "16:15",
+            "context": "Nahl 16/15"
+          },
+          {
+            "target_coordinate": "21:31",
+            "context": "Enbiya 21/31"
+          },
+          {
+            "target_coordinate": "43:10",
+            "context": "Zuhruf 43/10"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 20. Ayetin Tefsiri\nلِتَسْلُكُوا مِنْهَا سُبُلًا فِجَاجًا۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:21",
+      "text": "قَالَ نُوحٌ رَبِّ اِنَّهُمْ عَصَوْن۪ي وَاتَّبَعُوا مَنْ لَمْ يَزِدْهُ مَالُهُ وَوَلَدُهُٓ اِلَّا خَسَارًاۚ",
+      "translation": "Nuh sözlerine şöyle devam etti: “Rabbim! Onlar bana karşı geldiler; malı ve evladı, sadece hüsranını artıran kişilere uydular",
+      "dipnot": "Nuh 71/7.",
+      "roots": [
+        "قول",
+        "ربب",
+        "عصي",
+        "تبع",
+        "زيد",
+        "مول",
+        "ولد",
+        "خسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nuh 71/7",
+          "targets": [
+            "71:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:21",
+        "connections": [
+          {
+            "target_coordinate": "71:7",
+            "context": "Nuh 71/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 21. Ayetin Tefsiri\nقَالَ نُوحٌ رَبِّ اِنَّهُمْ عَصَوْن۪ي وَاتَّبَعُوا مَنْ لَمْ يَزِدْهُ مَالُهُ وَوَلَدُهُٓ اِلَّا خَسَارًاۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:22",
+      "text": "وَمَكَرُوا مَكْرًا كُبَّارًاۚ",
+      "translation": "Çok büyük planlar kurdular",
+      "dipnot": "A’raf 7/60, İbrahim 14/45 - 46.",
+      "roots": [
+        "مكر",
+        "كبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/60",
+          "targets": [
+            "7:60"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/45-46",
+          "targets": [
+            "14:45",
+            "14:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:22",
+        "connections": [
+          {
+            "target_coordinate": "7:60",
+            "context": "raf 7/60"
+          },
+          {
+            "target_coordinate": "14:45",
+            "context": "İbrahim 14/45-46"
+          },
+          {
+            "target_coordinate": "14:46",
+            "context": "İbrahim 14/45-46"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 22. Ayetin Tefsiri\nوَمَكَرُوا مَكْرًا كُبَّارًاۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:23",
+      "text": "وَقَالُوا لَا تَذَرُنَّ اٰلِهَتَكُمْ وَلَا تَذَرُنَّ وَدًّا وَلَا سُوَاعًاۙ وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرًاۚ",
+      "translation": "“Sakın ilahlarınızı bırakmayın! Vedd’i, Suvâ’ı, Yeğûs’u, Yeûk’u ve Nesr’i asla bırakmayın!” dediler",
+      "dipnot": "Benzer bir tavrı Mekkeli müşrikler de göstermişlerdir ( Sâd 38/6 ).",
+      "roots": [
+        "قول",
+        "وذر",
+        "أله",
+        "ودد",
+        "سوع",
+        "نسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Benzer bir tavrı Mekkeli müşrikler de göstermişlerdir ( "
+        },
+        {
+          "type": "link",
+          "content": "Sâd 38/6",
+          "targets": [
+            "38:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:23",
+        "connections": [
+          {
+            "target_coordinate": "38:6",
+            "context": "Sâd 38/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 23. Ayetin Tefsiri\nوَقَالُوا لَا تَذَرُنَّ اٰلِهَتَكُمْ وَلَا تَذَرُنَّ وَدًّا وَلَا سُوَاعًاۙ وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرًاۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:24",
+      "text": "وَقَدْ اَضَلُّوا كَث۪يرًاۚ وَلَا تَزِدِ الظَّالِم۪ينَ اِلَّا ضَلَالًا",
+      "translation": "Onlar, gerçekten (insanların) çoğunu saptırdılar. (Rabbim!) Sen de yanlışlar içindeki bu kimselerin sadece sapkınlıklarını artır!”",
+      "dipnot": "Nuh 71/28.",
+      "roots": [
+        "ضلل",
+        "كثر",
+        "زيد",
+        "ظلم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nuh 71/28",
+          "targets": [
+            "71:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:24",
+        "connections": [
+          {
+            "target_coordinate": "71:28",
+            "context": "Nuh 71/28"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 24. Ayetin Tefsiri\nوَقَدْ اَضَلُّوا كَث۪يرًاۚ وَلَا تَزِدِ الظَّالِم۪ينَ اِلَّا ضَلَالًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:25",
+      "text": "مِمَّا خَط۪ٓيـَٔاتِهِمْ اُغْرِقُوا فَاُدْخِلُوا نَارًا فَلَمْ يَجِدُوا لَهُمْ مِنْ دُونِ اللّٰهِ اَنْصَارًا",
+      "translation": "Onlar, hatalarından dolayı suda boğuldular. Daha sonra ateşe sokulacaklar. Allah ile aralarına girecek yardımcılar da bulamayacaklar.",
+      "dipnot": "A’raf 7/64, Yunus 10/73, Enbiya 21/77, Furkan 25/37, Şuara 26/120, Saffat 37/82.",
+      "roots": [
+        "خطأ",
+        "غرق",
+        "دخل",
+        "نور",
+        "وجد",
+        "دون",
+        "أله",
+        "نصر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/64",
+          "targets": [
+            "7:64"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/73",
+          "targets": [
+            "10:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/77",
+          "targets": [
+            "21:77"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/37",
+          "targets": [
+            "25:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/120",
+          "targets": [
+            "26:120"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/82",
+          "targets": [
+            "37:82"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:25",
+        "connections": [
+          {
+            "target_coordinate": "7:64",
+            "context": "raf 7/64"
+          },
+          {
+            "target_coordinate": "10:73",
+            "context": "Yunus 10/73"
+          },
+          {
+            "target_coordinate": "21:77",
+            "context": "Enbiya 21/77"
+          },
+          {
+            "target_coordinate": "25:37",
+            "context": "Furkan 25/37"
+          },
+          {
+            "target_coordinate": "26:120",
+            "context": "Şuara 26/120"
+          },
+          {
+            "target_coordinate": "37:82",
+            "context": "Saffat 37/82"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 25. Ayetin Tefsiri\nمِمَّا خَط۪ٓيـَٔاتِهِمْ اُغْرِقُوا فَاُدْخِلُوا نَارًا فَلَمْ يَجِدُوا لَهُمْ مِنْ دُونِ اللّٰهِ اَنْصَارًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:26",
+      "text": "وَقَالَ نُوحٌ رَبِّ لَا تَذَرْ عَلَى الْاَرْضِ مِنَ الْكَافِر۪ينَ دَيَّارًا",
+      "translation": "Nuh (daha önce) şöyle demişti: “Rabbim, kâfirlerden yeryüzünde dolaşan tek bir kimse bile bırakma!",
+      "dipnot": "Enbiya 21/76 - 77, Mü’minun 23/26, Sâffat 37/75, Kamer 54/10.",
+      "roots": [
+        "قول",
+        "ربب",
+        "وذر",
+        "أرض",
+        "كفر",
+        "دور"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Enbiya 21/76-77",
+          "targets": [
+            "21:76",
+            "21:77"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/26",
+          "targets": [
+            "23:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sâffat 37/75",
+          "targets": [
+            "37:75"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/10",
+          "targets": [
+            "54:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:26",
+        "connections": [
+          {
+            "target_coordinate": "21:76",
+            "context": "Enbiya 21/76-77"
+          },
+          {
+            "target_coordinate": "21:77",
+            "context": "Enbiya 21/76-77"
+          },
+          {
+            "target_coordinate": "23:26",
+            "context": "minun 23/26"
+          },
+          {
+            "target_coordinate": "37:75",
+            "context": "Sâffat 37/75"
+          },
+          {
+            "target_coordinate": "54:10",
+            "context": "Kamer 54/10"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 26. Ayetin Tefsiri\nوَقَالَ نُوحٌ رَبِّ لَا تَذَرْ عَلَى الْاَرْضِ مِنَ الْكَافِر۪ينَ دَيَّارًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:27",
+      "text": "اِنَّكَ اِنْ تَذَرْهُمْ يُضِلُّوا عِبَادَكَ وَلَا يَلِدُٓوا اِلَّا فَاجِرًا كَفَّارًا",
+      "translation": "Eğer bırakırsan senin kullarını saptırırlar. Bunlar sadece kafirlikte direnen günahkar nesiller meydana getirirler",
+      "dipnot": "",
+      "roots": [
+        "وذر",
+        "ضلل",
+        "عبد",
+        "ولد",
+        "فجر",
+        "كفر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "71:27",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 27. Ayetin Tefsiri\nاِنَّكَ اِنْ تَذَرْهُمْ يُضِلُّوا عِبَادَكَ وَلَا يَلِدُٓوا اِلَّا فَاجِرًا كَفَّارًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    },
+    {
+      "id": "71:28",
+      "text": "رَبِّ اغْفِرْ ل۪ي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِن۪ينَ وَالْمُؤْمِنَاتِۜ وَلَا تَزِدِ الظَّالِم۪ينَ اِلَّا تَبَارًا",
+      "translation": "Rabbim! Beni, anamı, babamı, evime mümin olarak girenleri, bütün mümin erkekleri ve mümin kadınları bağışla! Yanlışa dalanların da sadece yıkımlarını artır!”",
+      "dipnot": "[1*] Nuh aleyhisselamın eşi kafirdi, üstelik ona ihanet etmiş (Tahrim 60/10) ve bir oğlu olmuştu. Nuh aleyhisselam onun kendi oğlu olmadığını bilmese de kafir olduğunu biliyordu (Hud 11/42-43). Eşi ve oğlu sandığı kişi, onun evine mümin olarak girmedikleriden Nuh aleyhisselam, onlar için Allah’tan af  talebinde bulunmamıştı.\n[2*] Benzer bir duayı İbrahim Aleyhisselam da yapmıştır (İbrahim 14/41).\n[3*] Nuh 71/24.",
+      "roots": [
+        "ربب",
+        "غفر",
+        "ولد",
+        "دخل",
+        "بيت",
+        "أمن",
+        "زيد",
+        "ظلم",
+        "تبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Nuh aleyhisselamın eşi kafirdi, üstelik ona ihanet etmiş ("
+        },
+        {
+          "type": "link",
+          "content": "Tahrim 60/10",
+          "targets": [
+            "66:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve bir oğlu olmuştu. Nuh aleyhisselam onun kendi oğlu olmadığını bilmese de kafir olduğunu biliyordu ("
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/42-43",
+          "targets": [
+            "11:42",
+            "11:43"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Eşi ve oğlu sandığı kişi, onun evine mümin olarak girmedikleriden Nuh aleyhisselam, onlar için Allah’tan af  talebinde bulunmamıştı.\n[2*] Benzer bir duayı İbrahim Aleyhisselam da yapmıştır ("
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/41",
+          "targets": [
+            "14:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[3*] "
+        },
+        {
+          "type": "link",
+          "content": "Nuh 71/24",
+          "targets": [
+            "71:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "71:28",
+        "connections": [
+          {
+            "target_coordinate": "66:10",
+            "context": "Tahrim 60/10"
+          },
+          {
+            "target_coordinate": "11:42",
+            "context": "Hud 11/42-43"
+          },
+          {
+            "target_coordinate": "11:43",
+            "context": "Hud 11/42-43"
+          },
+          {
+            "target_coordinate": "14:41",
+            "context": "İbrahim 14/41"
+          },
+          {
+            "target_coordinate": "71:24",
+            "context": "Nuh 71/24"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nûh Suresi 28. Ayetin Tefsiri\nرَبِّ اغْفِرْ ل۪ي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِن۪ينَ وَالْمُؤْمِنَاتِۜ وَلَا تَزِدِ الظَّالِم۪ينَ اِلَّا تَبَارًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/71.mp3"
+    }
+  ]
+}

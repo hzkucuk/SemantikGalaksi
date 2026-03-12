@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [0.31.0] - 2025-07-28
+### Özellik
+- **Zengin Veri Entegrasyonu**: `full_quran_rich_map.json` verileri `quran_data.json` ile birleştirildi (6236 node korundu)
+  - `dipnot_parsed`: Yapılandırılmış dipnotlar — tıklanabilir ayet referans linkleri (warp navigasyonu)
+  - `mapping_data`: Çapraz referans haritası — her ayetin tefsir bazlı bağlantıları
+  - `tefsir_popup`: Detaylı tefsir içeriği (metin + ayet linkleri)
+  - `audio`: Süleymaniye Vakfı ses dosyası URL'leri (6088 ayet)
+- **Zengin Dipnot Gösterimi**: HUD dipnot alanı artık `dipnot_parsed` ile render edilir — ayet referansları tıklanabilir link olarak gösterilir, tıklayınca ilgili ayete warp yapılır
+- **Doğrudan Ses Oynatma**: `audio` URL'si mevcutsa öncelikli olarak MP3 dosyası oynatılır (fallback: Gemini TTS → Tarayıcı TTS)
+- **Etkilenen dosyalar:** `Frontend/quran_data.json`, `Frontend/js/hud.js`
+
 ## [0.30.4] - 2025-07-28
 ### İyileştirme
 - **MSI Boyut Optimizasyonu**: Gereksiz paketler exclude edildi, 32.5 MB → 15.9 MB

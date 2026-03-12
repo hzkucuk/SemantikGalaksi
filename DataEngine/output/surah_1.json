@@ -1,0 +1,1869 @@
+{
+  "nodes": [
+    {
+      "id": "1:1",
+      "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "translation": "İyiliği sonsuz, ikramı bol Allah’ın adıyla...[*]",
+      "dipnot": "[*]\n\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi,\nTevbe 9/128.\nayette Resulullah için;\nFetih 48/29.\nayette ise müminler için kullanılmıştır.",
+      "roots": [
+        "سمو",
+        "أله",
+        "رحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*]\n\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi,\n"
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/128",
+          "targets": [
+            "9:128"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayette Resulullah için;\n"
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/29",
+          "targets": [
+            "48:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayette ise müminler için kullanılmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "1:1",
+        "connections": [
+          {
+            "target_coordinate": "9:128",
+            "context": "Tevbe 9/128"
+          },
+          {
+            "target_coordinate": "48:29",
+            "context": "Fetih 48/29"
+          },
+          {
+            "target_coordinate": "15:87",
+            "context": "BESMELE\nHicr 15/87"
+          },
+          {
+            "target_coordinate": "27:30",
+            "context": "Neml 27/30"
+          },
+          {
+            "target_coordinate": "1:1",
+            "context": "Fatiha 1/1"
+          },
+          {
+            "target_coordinate": "7:156",
+            "context": "A'raf 7/156"
+          },
+          {
+            "target_coordinate": "17:54",
+            "context": "İsra 17/54"
+          },
+          {
+            "target_coordinate": "17:2",
+            "context": "İsra 17/2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Besmelenin Tefsiri\nبِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n"
+        },
+        {
+          "type": "link",
+          "content": "BESMELE\nHicr 15/87",
+          "targets": [
+            "15:87"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayet nedeniyle Fatiha'nın 7 ayet olduğu kesindir. Lakin, başındaki besmelenin ayet olup olmadığı tartışmalıdır.\n"
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/30",
+          "targets": [
+            "27:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayetteki besmele, Kur'ân'dan bir ayettir. Her surenin başında bulunan besmele ise;\na. Şafiler ve Hanbelilere göre bulundukları surenin ilk ayetidir.\nb. İmam Malik'e göre, sureleri birbirinden ayırmak için sahabe tarafından konmuş olup, hiçbiri ayet değildir.\nc. Kimilerine göre ise ayettir ama surenin 1.ayeti olmayıp başlı başına birer ayettir.\nd. Sadece Fatiha'nın başındaki besmele, o surenin ayetidir. Diğer surelerin başındaki besmeleler ayet değildir.\n(bkz. DİA, Besmele, 5, sf.529-532)\nÇoğunluk besmeleyi Fatih'nın 1.ayet saymamaktadır. Besmeleyi, 1.ayet sayanlar, \"sıradellezine...\"yi 7.ayet saymaktadır. Besmeleyi ayet saymayanlar ise \"gayrilmağdubi\"den itibaren olan kısmı 7.ayet sayarlar.\n“İyiliği sonsuz, ikramı bol Allah’ın adıyla.\"\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/1",
+          "targets": [
+            "1:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\nRahman sıfatı Kur'an'da sadece Allah-u Teala için, Rahim ise  hem Allah hem de diğer varlıklar için kullanılmaktadır. "
+        },
+        {
+          "type": "link",
+          "content": "Örneğin\nTevbe 9/128",
+          "targets": [
+            "9:128"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayette Muhammed (s.a.v),\n"
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/29",
+          "targets": [
+            "48:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette ise Nebimiz ve sahabe için \"Rahim\" sıfatı kullanılmaktadır.\nHem Rahman hem de Rahim kelimesi, rahmet köküyle ilgilidir. Türkçemizdeki Rahim ve sıla-i Rahim (akrabalık ilişkisi) ifadesi de rahim köküyle ilgilidir. Bizim kanaatimize göre Rahman, sonsuz iyilik sahibi olmayı ifade etmekte olup, Allah'ın tüm varlıkları, hiç bir ayırım gözetmeksizin bütün ihtiyaçlarını vermesi, besleyip büyütmesi, olgunlaştırmasıdır.\nO öyle Rahman'dır ki, O'ndan başka hiçbir varlık kendi düşmanını besleyip büyütmez.\nRahim sıfatı ise; gayret gösteren kullarına Allah'ın rahmetini, özel ikramlarını ifade eder. Başka bir ifade ile Rahman sıfatı; herkese yönelik iyilikleri, Rahim ise gayret gösteren kimselere yapılan özel ikramları anlatmaktadır. A'raf 156. ayet şöyledir; “\nBu dünyada da Ahirette de bize güzel şeyler yaz; biz sana yöneldik.” Allah dedi ki “saptığına karar verdiğim kişiyi azabıma çarptırırım, rahmetim ise her şeyi kapsar. Onu, yanlışlardan sakınan ve zekât verenlere yazacağım. Ayetlerime inanıp güvenen şu kişilere de yazacağım.\"\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "A'raf 7/156",
+          "targets": [
+            "7:156"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Bu ayette, \"yazacağım\" ifadesinin kullanılması insanların önceden belirlenmiş bir kaderlerinin bulunmadığını göstermektedir. İkinci olarak, Allah'ın rahmetinin takva, zekat, ayetlere inanma gibi çalışıp gayret etme şartına bağlı olduğunu ortaya koymaktadır.\nTürkçemizde \"rahmet\", merhamet anlamında kullanılmaktadır. Merhamet; \"acımak\" (kalp yumuşaklığı) ve \"yardım etmek\" fiillerini kapsar. İnsanın merhameti (rahmeti) gücü yetiyorsa yardım etmek, imkan bulamıyorsa üzülüp acımak şeklinde tecelli etmektedir. Allah'ın gücünün yetmediği bir şey olamayacağından, O'nun rahmeti, çalışıp hak eden kullarına yapmış olduğu iyilik ve ikramlarıdır.\nBesmeleyi \"Rahman ve Rahim olan\" şeklinde Türkçeye çevirmek de uygun değildir. Çünkü muhatap, bu iki kelimenin anlamını bilmemektedir. Elmalılı; Rahman kelimesinin \"esirgeyen\" şeklinde çevrilmesini yanlış bulmaktadır. Çünkü esirgemek kelimesinde, \"cimrilik edip vermemek\" anlamı vardır.\nBiz besmeleye \"iyiliği sonsuz (Rahman), ikramı bol (Rahim) olan Allah'ın adıyla\" şeklinde bir mana verdik.\nVEKİLLİK:\nBazı kimseler besmeleyi \"adıyla\" değil de \"adına\" (Rahman ve Rahim olan Allah'ın adına) şeklinde tercüme etmektedirler ki böyle bir anlam kesinlikle kabul edilemez. \"Şu kişinin adına\" denildiği zaman, \"bu işi kendim için değil onun adına yapıyorum\" anlamı çıkmaktadır. Kişinin bir başkası adına bir şey yapabilmesi için, kendi adına yapılmasını isteyenin, o kimseye yetki vermesi gerekir ki buna vekillik/vekalet denir. Allah'ın bir kimseye vekalet vermesi mümkün değildir:\n\"Seni onlara vekil olasın diye göndermedik.\"\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/54",
+          "targets": [
+            "17:54"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ayetinde Allah-u Teala Hz. Muhammed'e \"Sen; insanlara karşı beni temsil edemediğin gibi onları bana karşı da koruyamazsın\" demektedir. Vekalet, İslam'ın omurga kavramlarından biri olup, dinde Allah ile insan arasında hiç bir vekil yoktur:\n\"Musa’ya kitabı verdik ve o kitabı İsrailoğullarına rehber kıldık. “Benimle aranıza bir vekil koymayın.” dedik.\"\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/2",
+          "targets": [
+            "17:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Yüce Allah'ın, bu ayette Tevrat'ın gönderiliş amacını \"Benden başkasını vekil edinmeyin\" şeklinde tanımlaması, vekillik konusunun tevhid açısından son derece önemli olduğunu göstermektedir.\nSonuç olarak, hiç kimse Allah'ı temsil etmeye yetkili değildir. Bu konuda Elmalılı da \"besmelenin Allah adına\" şeklinde tercüme edilemeyeceğini söylemektedir. (Hak Dini Kuran Dili, Azim, Cilt 1, sf.56-57, sadeleştirme İsmail Karaçam ve diğerleri)"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/1.mp3"
+    },
+    {
+      "id": "1:2",
+      "text": "اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَم۪ينَۙ",
+      "translation": "Her şeyi mükemmel yapmak,[*] bütün varlıkların Rabbi[*]/Sahibi olan Allah’a özgüdür.",
+      "dipnot": "[1*]\n“Hamd”, birini yaptığı şeyden dolayı övmektir. “Güzel yemek yapar, arkadaşlığı iyidir.” gibi sözler buna girer. “Şükür” ise kendine iyilik yapanı övmek veya yapılan iyiliğe iyilikle karşılık vermektir (Lisan’ul-arab). Yaptığı her şeyi güzel yapan sadece Allah’tır. Allah’ın yaptığı ile insanların yaptığı arasındaki farkı göstermek için “güzel” yerine “mükemmel” kelimesini kullandık.\n[2*]\nRab kelimesinin Türkçe karşılığı “sahip”tir. Evin sahibine rabb’ud-dâr = evin rabbi (Müfredât), sermaye sahibine de rabb’ul-mal = sermayenin rabbi denir. Yusuf aleyhisselam, kralın gönderdiği köleye şöyle demişti: “Rabbine dön de sor bakalım, ellerini kesen kadınların derdi neymiş? Benim Rabbim onların oyunlarını bilir.” (\nYusuf 12/50\n) Bu ayette “rab” kelimesi önce “kölenin sahibi olan kral” anlamında, daha sonra da “herşeyin sahibi olan Allah” anlamında kullanılmıştır.",
+      "roots": [
+        "حمد",
+        "أله",
+        "ربب",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\n“Hamd”, birini yaptığı şeyden dolayı övmektir. “Güzel yemek yapar, arkadaşlığı iyidir.” gibi sözler buna girer. “Şükür” ise kendine iyilik yapanı övmek veya yapılan iyiliğe iyilikle karşılık vermektir (Lisan’ul-arab). Yaptığı her şeyi güzel yapan sadece Allah’tır. Allah’ın yaptığı ile insanların yaptığı arasındaki farkı göstermek için “güzel” yerine “mükemmel” kelimesini kullandık.\n[2*]\nRab kelimesinin Türkçe karşılığı “sahip”tir. Evin sahibine rabb’ud-dâr = evin rabbi (Müfredât), sermaye sahibine de rabb’ul-mal = sermayenin rabbi denir. Yusuf aleyhisselam, kralın gönderdiği köleye şöyle demişti: “Rabbine dön de sor bakalım, ellerini kesen kadınların derdi neymiş? Benim Rabbim onların oyunlarını bilir.” (\n"
+        },
+        {
+          "type": "link",
+          "content": "Yusuf 12/50",
+          "targets": [
+            "12:50"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Bu ayette “rab” kelimesi önce “kölenin sahibi olan kral” anlamında, daha sonra da “herşeyin sahibi olan Allah” anlamında kullanılmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "1:2",
+        "connections": [
+          {
+            "target_coordinate": "12:50",
+            "context": "Yusuf 12/50"
+          },
+          {
+            "target_coordinate": "19:93",
+            "context": "Meryem 19/93"
+          },
+          {
+            "target_coordinate": "20:50",
+            "context": "Taha 20/50"
+          },
+          {
+            "target_coordinate": "7:54",
+            "context": "Araf 7/54"
+          },
+          {
+            "target_coordinate": "27:26",
+            "context": "Neml 27/26"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fâtiha Suresi 2. Ayetin Tefsiri\nاَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَم۪ينَۙ\nHAMD\n\"Elhamdü\" kelimesindeki \"el\" takısı, cins ifade etmekte olup, \"bütün hamdler\" anlamına gelmektedir. Övgü ifade eden Medih, hamd, şükür olmak üzere üç kelimemiz vardır. Medih, hak etsin yahut hak etmemiş olsun, çaba ya da yeteneğine dayalı bir şey yapsın yahut yapmamış olsun, bir kimseyi övmeye denir. Hamd'de ise iki anlam vardır: \"yaptığı şeyi güzel yapmak\" ve \"o işi bizzat kendisi yapmak\" Dolayısıyla hamd; \"Bir kimseyi yaptığı şeyi en güzel şekilde bizzat kendisi yaptığı için övmeye\" denir.\nAraplar, \"şükür\" (şükran) ifadesini hem \"teşekkür ederim\" anlamında insanlar için, hem de Allah'a şükretmek için kullanırlar. Türkçede ise teşekkür insanlara yönelik, hamd ise Allah için kullanılır.\nVerdiğimiz bu bilgiler dolayısıyla bu ayeti \"yaptığı her şeyi güzel yaptığı için övgü (hamd) iyiliği sonsuz (Rahman) ikramı bol (Rahim), tüm varlıkları (alemlerin) Sahibi (Rabbi) Allah içindir\" diye manalandırdık.\nRAB\nRab kelimesi sözlükte; eğitmek, yetiştirmek, toplamak, koruyup gözetmek, sahip olmak, üstün ve otorite olmak gibi anlamlara gelmektedir. İlah (tanrı) kelimesi \"mabud\", rab kelimesi ise \"sahip\" demektir.\nRablik (sahiplik) sahibi olunan şey üzerinde otorite olmayı ve bunları besleyip büyütmeyi, terbiye edip geliştirmeyi ifade eder. Varlıklar ile Allah ilişkisinde Kuran, Rab  (Allah) ile Abd (kullar) dışında abd/kul üstü bir kategori yani aracı kabul etmemektedir. Melekler ve peygamberler dahil tüm varlıklar Abd'dır: \"Göklerde ve yerde her kim varsa tümü Rahman'ın (huzuruna) abd(kul) olarak gelecektir.\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/93",
+          "targets": [
+            "19:93"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\n\"Bizim Rabbimiz her şeyi yaratan sonra da yolunu gösterendir\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/50",
+          "targets": [
+            "20:50"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Allah'ın rabliği, diğer varlıkların sözde ve sınırlı sahipliğine benzemez. Allah, kainatı ve tüm varlıkları yok iken yaratan, besleyip, geliştiren, tüm ihtiyaçlarını verendir. Rablikte temel konu karar/yetki sahibi olmaktır. \"Yaratmak da emir de ona aittir\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Araf 7/54",
+          "targets": [
+            "7:54"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") \"Büyük arşın/egemenliğin sahibi O'dur\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/26",
+          "targets": [
+            "27:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Dolayısıyla kulluk, Allah'ı var ve bir kabul etmekten ziyade O'nun emrine kayıtsız şartsız teslim olmayı ifade eder.\nAlemin ifadesi \"tüm varlıklar\" demekdir. Özellikle Rabbul alemin şeklinde kullanıldığında, canlı cansız tüm varlıkların kainatın sahibi anlamına gelmektedir."
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/1.mp3"
+    },
+    {
+      "id": "1:3",
+      "text": "اَلرَّحْمٰنِ الرَّح۪يمِۙ",
+      "translation": "İyiliği sonsuz, ikramı bol olan,[*]",
+      "dipnot": "[*]\nRahman ve rahim kelimelerinin anlamı için bkz:\nFatiha 1/1.\nAyetin dipnotu.",
+      "roots": [
+        "رحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*]\nRahman ve rahim kelimelerinin anlamı için bkz:\n"
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/1",
+          "targets": [
+            "1:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nAyetin dipnotu."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "1:3",
+        "connections": [
+          {
+            "target_coordinate": "1:1",
+            "context": "Fatiha 1/1"
+          },
+          {
+            "target_coordinate": "7:32",
+            "context": "Araf 7/32"
+          },
+          {
+            "target_coordinate": "7:156",
+            "context": "Araf 7/156"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fâtiha Suresi 3. Ayetin Tefsiri\nاَلرَّحْمٰنِ الرَّح۪يمِۙ\n''İyiliği sonsuz, ikramı bol olandır''\nRahman sıfatı sadece Allah için, Rahim ise  hem Allah hem de diğer varlıklar için kullanılmaktadır. Örneğin Tevbe suresi 128.ayette Hz. Muhammed, Fetih suresi 29.ayette ise Peygamber ve sahabe için \"Rahim\" sıfatı kullanılmaktadır. Genel kabul, Allah'ın Rahman sıfatının, \"tüm varlıkların ve mümin-kafir ayırt etmeksizin\" insanların bütün ihtiyaçlarını karşılamasını \"Rahim\" sıfatının ise, \"ahirette sadece müminlere cennette nimetler vermesini\" ifade ettiği şeklindedir. Araf 32.ayet şöyledir; \"De ki: “Allah’ın kulları için çıkardığı süsü (yakışan giysiyi), temiz ve lezzetli rızıkları kim haram etti? De ki, bunlar dünyada esasen müminler içindir; Kıyamet gününde ise sadece onlar için olacaktır.” Bilen bir toplum için âyetlerimizi böyle açıklarız.\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Araf 7/32",
+          "targets": [
+            "7:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bu ayete göre Rahim sıfatının sadece ahirete yönelik olduğu yaklaşımı isabetli değildir. Yine bu ayet, islamda fakirizmin olmadığını gösterir. Zekat, sadaka ve diğer gerekli sosyal sorumlulukları yerine getirip, büyüklenmedikçe zenginlik sahibi müminlerin servetleri ölçüsünce bir hayat yaşamaları yasaklanmış değildir.\nHem Rahman hem de Rahim kelimesi, rahmet köküyle ilgilidir. Türkçemizdeki Rahim ve sıla-i Rahim (akrabalık ilişkisi) ifadesi de rahim köküyle ilgilidir. Bizim kanaatimize göre Rahman,; sonsuz iyilik sahibi olmayı ifade etmekte lup, Allah'ın tüm varlıkları, hiç bir ayırım gözetmeksizin bütün ihtiyaçlarını vermesi, besleyip büyütmesi, olgunlaştırmasıdır.\nO öyle Rahman'dır ki, O'ndan başka hiçbir varlık kendi düşmanını besleyip büyütmez.\nRahim sıfatı ise; gayret gösteren kullarına Allah'ın rahmetini, özel ikramlarını ifade eder. Başka bir ifade ile Rahman sıfatı; herkese yönelik iyilikleri, Rahim ise gayret gösteren kimselere yapılan özel ikramları anlatmaktadır. Araf 156. ayet şöyledir; “(Derler ki:)Rabbimiz, bu dünyada bize iyilik yaz, Ahirette de... Biz sana yöneldik.” Allah dedi ki: “Azap edeceğime, koyduğum düzene göre azap ederim. İkramım ise her şeyi kaplar. İlerisinde onu, korunanlar ve zekât verenler ile âyetlerime inananlara yazacağım.\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Araf 7/156",
+          "targets": [
+            "7:156"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\nBu ayette, \"yazacağım\" ifadesinin kullanılması insanların önceden belirlenmiş bir kaderlerinin bulunmadığını göstermektedir. İkinci olarak, Allah'ın rahmetinin takva, zekat, ayetlere inanma gibi çalışıp gayret etme şartına bağlı olduğunu ortaya koymaktadır.\nTürkçemizde \"rahmet\", merhamet anlamında kullanılmaktadır. Merhamet; \"acımak\" (kalp yumuşaklığı) ve \"yardım etmek\" fiillerini kapsar. İnsanın merhameti (rahmeti) gücü yetiyorsa yarım etmek, imkan bulamıyorsa üzülüp acımak şeklinde tecelli etmektedir. Allah'ın gücünün yetmediği bir şey olamayacağından, O'nun rahmeti, çalışıp hakeden kullarına yapmış olduğu iyilik ve ikramlarıdır."
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/1.mp3"
+    },
+    {
+      "id": "1:4",
+      "text": "مَالِكِ يَوْمِ الدّ۪ينِۜ",
+      "translation": "yapılan her şeyin karşılığını bulacağı[1*] gününün tek yetkilisi olan Allah’a (özgüdür).[2*]",
+      "dipnot": "[1*]\n“Her şeyin karşılığını bulacağı gün” diye tercüme edilen ifade, “din günü” anlamına gelen “yevm’ud din”dir. Din kelimesi “âdet, durum, yapılan işe karşılık vermek, verilen karşılık ve itaat /boyun eğme” anlamlarına gelir (Sıhâh). Din, Kuran’da insanın kabul edip ona göre yaşamaya söz verdiği sistem anlamına da gelir (\nÂl-i İmran 3/19,\nKafirun 109/6\n). Allah’ın dininde boyun eğilecek olan yalnızca Allah’tır. “Din günü” de dünyada yapılanların karşılığının alınacağı Ahiret günüdür (\nNûr 24/25,\nSaffat 37/19\n-\n20,\nSad 38/78,\nZâriyât 51/6\n12\n-\n13,\nVakıa 56/56,\nMearic 70/26,\nMüddessir 74/46,\nİnfitar 82/9,",
+      "roots": [
+        "ملك",
+        "يوم",
+        "دين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\n“Her şeyin karşılığını bulacağı gün” diye tercüme edilen ifade, “din günü” anlamına gelen “yevm’ud din”dir. Din kelimesi “âdet, durum, yapılan işe karşılık vermek, verilen karşılık ve itaat /boyun eğme” anlamlarına gelir (Sıhâh). Din, Kuran’da insanın kabul edip ona göre yaşamaya söz verdiği sistem anlamına da gelir (\n"
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/19",
+          "targets": [
+            "3:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kafirun 109/6",
+          "targets": [
+            "109:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah’ın dininde boyun eğilecek olan yalnızca Allah’tır. “Din günü” de dünyada yapılanların karşılığının alınacağı Ahiret günüdür (\n"
+        },
+        {
+          "type": "link",
+          "content": "Nûr 24/25",
+          "targets": [
+            "24:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/19-20",
+          "targets": [
+            "37:19",
+            "37:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/78",
+          "targets": [
+            "38:78"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Zâriyât 51/6\n12\n-\n13,\n"
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/56",
+          "targets": [
+            "56:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/26",
+          "targets": [
+            "70:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/46",
+          "targets": [
+            "74:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/9",
+          "targets": [
+            "82:9"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "1:4",
+        "connections": [
+          {
+            "target_coordinate": "3:19",
+            "context": "Âl-i İmran 3/19"
+          },
+          {
+            "target_coordinate": "109:6",
+            "context": "Kafirun 109/6"
+          },
+          {
+            "target_coordinate": "24:25",
+            "context": "Nûr 24/25"
+          },
+          {
+            "target_coordinate": "37:19",
+            "context": "Saffat 37/19-20"
+          },
+          {
+            "target_coordinate": "37:20",
+            "context": "Saffat 37/19-20"
+          },
+          {
+            "target_coordinate": "38:78",
+            "context": "Sad 38/78"
+          },
+          {
+            "target_coordinate": "56:56",
+            "context": "Vakıa 56/56"
+          },
+          {
+            "target_coordinate": "70:26",
+            "context": "Mearic 70/26"
+          },
+          {
+            "target_coordinate": "74:46",
+            "context": "Müddessir 74/46"
+          },
+          {
+            "target_coordinate": "82:9",
+            "context": "İnfitar 82/9"
+          },
+          {
+            "target_coordinate": "1:4",
+            "context": "Fatiha 1/4"
+          },
+          {
+            "target_coordinate": "99:7",
+            "context": "99/7-8,7"
+          },
+          {
+            "target_coordinate": "99:8",
+            "context": "99/7-8,7"
+          },
+          {
+            "target_coordinate": "82:17",
+            "context": "82/17-19"
+          },
+          {
+            "target_coordinate": "82:18",
+            "context": "82/17-19"
+          },
+          {
+            "target_coordinate": "82:19",
+            "context": "82/17-19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fâtiha Suresi 4. Ayetin Tefsiri\nمَالِكِ يَوْمِ الدّ۪ينِۜ\n“Hesap gününün tek sahibidir\"\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/4",
+          "targets": [
+            "1:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")”\nMülk; hakimiyet ve yetki, malik ise; yetki sahibi demektir. Din ve deyn (borç) kelimeleri aynı kökten olup, her ikisi de \"borç\" demektir. Kişilerin birbirine olan borçlarına deyn (borç), her şeyimizi borçlu olduğumuz Allah'ın bizden uymamızı istediği kurallar bütününe ise din denir. Var olan yasaları tanıyıp nasıl ki tabiattaki nimetlerden daha iyi yararlanmamızı sağlıyorsa, Allah'ın bizler için koyduğu kurallara (din) uymak da hem vücudumuzu rahatlatır hem de bizi çevre ile uyumlu hale getirerek geliştirir.\n\"Yevmid din\" (din günü) ise, \"borç kesme\" hesap verme günüdür. Birçok ayette vurgulandığı üzere, ahiret gününde hiç kimse için aracı, yardımcı ya da şefaatçi olamayacaktır. Haksızlık yapılmaksızın kişinin amelleri tartılıp değerlendirilecek, herkes yaptığının karşılığını alacak tartısı ağır gelen kurtulacaktır. (\n"
+        },
+        {
+          "type": "link",
+          "content": "99/7-8,7",
+          "targets": [
+            "99:7",
+            "99:8",
+            "99:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "/8\n-\n9\n)\n\"Maliki yevmid din\"in ne olduğunu,\nİnfitar 17\n-\n19\nayetler açıklamaktadır: \"Yevmid din (hesap gününün)in ne olduğunu sana kim öğretti? Evet, o yevmid din'in ne olduğunu sana kim öğretti? O gün hiç bir kişinin hiç bir kişi lehine yapacağı hiç bir şey yoktur. O gün emir (yetki) tamamen Allah'ın tekelindedir\" (\n"
+        },
+        {
+          "type": "link",
+          "content": "82/17-19",
+          "targets": [
+            "82:17",
+            "82:18",
+            "82:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/1.mp3"
+    },
+    {
+      "id": "1:5",
+      "text": "اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَع۪ينُۜ",
+      "translation": "(Allah’ım!) Kulluğu doğrudan sana yapar[1*] yardımı da doğrudan senden isteriz.[2*]",
+      "dipnot": "[1*] “Kulluk etme” anlamı verdiğimiz kelime, “ibadet (عبادة)”tir. Arapçada ibadet; kendini aşağı seviyede görerek boyun eğmek anlamına gelir (Müfredat). Türkçede ise ibadet denince akla yalnızca namaz, oruç, zekat gibi görevler gelir. Bu yüzden mealde kelimenin Arapçadaki geniş anlamını yansıtan \"kulluk etme\" ifadesi kullanılmıştır. Birçok ayette insanların Allah ile aralarına koydukları kişi veya varlıklara kulluk ettikleri bildirilir. Ama Allah Teala, böyle bir kulluğu kabul etmez (Tevbe 9/31, Yunus 10/18, Zümer 39/3).\n[2*] Yardımı doğrudan Allah’tan istemek, ondan bir şey isterken araya aracı koymamaktır (Cin 72/20). Çünkü bazıları Allah’ı, ulaşılamaz konumda sayar, Allah’a yakın gördüğü bir varlığı araya koyarak (Zümer 39/3) yardımı onun aracılığı ile ister ve araya koyduğu şeyi, ilahlık seviyesine yükseltmiş olur. Halbuki Allah, insana sinir uçlarından daha yakındır (Kâf 50/16). Aslında bunu onlar da hissettikleri için, sıkışınca aracıları unutup doğrudan Allah’a yönelir, yardımı ondan isterler. Ama sıkıntıları geçince tekrar aracılara yönelirler (En’am 6/63-64, İsra 17/67, Ankebût 29/65-66). İnsanlar birbirinden yardım isteyebilirler. Çünkü Allah, iyilik ve takva /yanlışlardan sakınma konusunda yardımlaşmayı emretmiş; günah işleme ve düşmanlık etme konusunda yardımlaşmayı (Maide 5/2), bir de bir şey isteyene karşı ilgisiz davranmayı yasaklamıştır (Duha 93/10).",
+      "roots": [
+        "عبد",
+        "عون"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] “Kulluk etme” anlamı verdiğimiz kelime, “ibadet (عبادة)”tir. Arapçada ibadet; kendini aşağı seviyede görerek boyun eğmek anlamına gelir (Müfredat). Türkçede ise ibadet denince akla yalnızca namaz, oruç, zekat gibi görevler gelir. Bu yüzden mealde kelimenin Arapçadaki geniş anlamını yansıtan \"kulluk etme\" ifadesi kullanılmıştır. Birçok ayette insanların Allah ile aralarına koydukları kişi veya varlıklara kulluk ettikleri bildirilir. Ama Allah Teala, böyle bir kulluğu kabul etmez ("
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/31",
+          "targets": [
+            "9:31"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/18",
+          "targets": [
+            "10:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/3",
+          "targets": [
+            "39:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[2*] Yardımı doğrudan Allah’tan istemek, ondan bir şey isterken araya aracı koymamaktır ("
+        },
+        {
+          "type": "link",
+          "content": "Cin 72/20",
+          "targets": [
+            "72:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Çünkü bazıları Allah’ı, ulaşılamaz konumda sayar, Allah’a yakın gördüğü bir varlığı araya koyarak ("
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/3",
+          "targets": [
+            "39:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") yardımı onun aracılığı ile ister ve araya koyduğu şeyi, ilahlık seviyesine yükseltmiş olur. Halbuki Allah, insana sinir uçlarından daha yakındır ("
+        },
+        {
+          "type": "link",
+          "content": "Kâf 50/16",
+          "targets": [
+            "50:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Aslında bunu onlar da hissettikleri için, sıkışınca aracıları unutup doğrudan Allah’a yönelir, yardımı ondan isterler. Ama sıkıntıları geçince tekrar aracılara yönelirler (En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/63-64",
+          "targets": [
+            "6:63",
+            "6:64"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/67",
+          "targets": [
+            "17:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebût 29/65-66",
+          "targets": [
+            "29:65",
+            "29:66"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İnsanlar birbirinden yardım isteyebilirler. Çünkü Allah, iyilik ve takva /yanlışlardan sakınma konusunda yardımlaşmayı emretmiş; günah işleme ve düşmanlık etme konusunda yardımlaşmayı ("
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/2",
+          "targets": [
+            "5:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), bir de bir şey isteyene karşı ilgisiz davranmayı yasaklamıştır ("
+        },
+        {
+          "type": "link",
+          "content": "Duha 93/10",
+          "targets": [
+            "93:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "1:5",
+        "connections": [
+          {
+            "target_coordinate": "9:31",
+            "context": "Tevbe 9/31"
+          },
+          {
+            "target_coordinate": "10:18",
+            "context": "Yunus 10/18"
+          },
+          {
+            "target_coordinate": "39:3",
+            "context": "Zümer 39/3"
+          },
+          {
+            "target_coordinate": "72:20",
+            "context": "Cin 72/20"
+          },
+          {
+            "target_coordinate": "39:3",
+            "context": "Zümer 39/3"
+          },
+          {
+            "target_coordinate": "50:16",
+            "context": "Kâf 50/16"
+          },
+          {
+            "target_coordinate": "6:63",
+            "context": "am 6/63-64"
+          },
+          {
+            "target_coordinate": "6:64",
+            "context": "am 6/63-64"
+          },
+          {
+            "target_coordinate": "17:67",
+            "context": "İsra 17/67"
+          },
+          {
+            "target_coordinate": "29:65",
+            "context": "Ankebût 29/65-66"
+          },
+          {
+            "target_coordinate": "29:66",
+            "context": "Ankebût 29/65-66"
+          },
+          {
+            "target_coordinate": "5:2",
+            "context": "Maide 5/2"
+          },
+          {
+            "target_coordinate": "93:10",
+            "context": "Duha 93/10"
+          },
+          {
+            "target_coordinate": "1:5",
+            "context": "Fatiha 1/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fâtiha Suresi 5. Ayetin Tefsiri\nاِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَع۪ينُۜ\n“Allah’ım Kulluğu yalnız sana yaparız, yardımı da yalnız senden isteriz.\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/5",
+          "targets": [
+            "1:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")”\nYalnızca Allah'a abd/kul olmak demek, hürriyetin doruk noktası olup, O'ndan başka hiç bir kimseye kul-köle olmamak demektir. Zaten mümin olsun kafir olsun, herkes Allah'ın kuludur. Mümin sadece Allah'a köle olur. Kafir ise Allah'ın yanında başka şeylere de köle olur.\nAllah'ın emir ve yasakları, sahil ameller, ibadetler, yasaklar bunların tümü bizi geliştirmeye hayat kalitemizi ve şahsiyetimizi güçlendirmeye yönelik kurallardır. Başımıza gelen sıkıntılar ise, günahımızdan dolayı ise, tevbe etmemiz için bir fırsattır, değilse bizi olgunlaştıran derecemizi artıran bir imtihandır. İbadet, Allah'ın emrini yapmak yasaklarından korunmak için yapılan tüm eylemlere denir.\nYalnızca Allah'tan Yardım Dilemek:\nYardımlaşma ve işbölümü, sosyal hayatın zorunlu bir kuralıdır. Allah da bu anlamda bir yardımlaşmayı emretmiştir; \"iyilik ve takva konusunda yardımlaşın; günah ve düşmanlıkta ise yardımlaşmayın\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/2",
+          "targets": [
+            "5:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Yasak olan, Allah'a ait olan alada, bir takım kimselerden yardım istemektir. Yani, Allah'ın kimi özelliklerini başkalarına vererek, sadece Allah'tan istenmesi gereken şeyleri onlardan istemektir."
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/1.mp3"
+    },
+    {
+      "id": "1:6",
+      "text": "اِهْدِنَا الصِّرَاطَ الْمُسْتَق۪يمَۙ",
+      "translation": "Bizi dosdoğru olan yola[1*] yönelt;[2*]",
+      "dipnot": "[1*] Sırat-ı müstakim “doğru yol” demektir. Bu yolda olmak yalnızca Allah’a kulluk etmekle olur. (Âl-i İmrân 3/51, Yâsîn 36/60-61). Yalnızca Allah’a kulluk ise onun kitabına sarılmakla mümkündür. (En’âm 6/151-153, Zuhruf 43/43).\n[2*] “Bizi doğru olan yola yönelt\" diye tercüme edilen ifadenin birebir karşılığı “bizi sırat-ı müstakime hidayet et” şeklindedir. Hidayet, nazikçe yol göstermektir (Müfredat). Allah’ın hidâyeti dört çeşittir: Birincisi; varlığını, birliğini ve her şeyden yakın olduğunu her vesileyle göstermesidir. Bu yüzden Allah, yanlış yola girenleri bir şekilde uyarır (Şems 91/8-10, En’âm 6/125). Allah’ı, ulaşılamaz görüp araya aracılar koymayı müşriklik sayar ve bu davranışı asla bağışlamaz (Nisâ 4/48, 115-117). İkincisi, iyiyi kötüden ayırma özelliği verdiği insana doğruyu bulmasında rehberlik etmesidir (Enfal 8/29",
+      "roots": [
+        "هدي",
+        "صرط",
+        "قوم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Sırat-ı müstakim “doğru yol” demektir. Bu yolda olmak yalnızca Allah’a kulluk etmekle olur. ("
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmrân 3/51",
+          "targets": [
+            "3:51"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yâsîn 36/60-61",
+          "targets": [
+            "36:60",
+            "36:61"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yalnızca Allah’a kulluk ise onun kitabına sarılmakla mümkündür. (En’"
+        },
+        {
+          "type": "link",
+          "content": "âm 6/151-153",
+          "targets": [
+            "6:151",
+            "6:152",
+            "6:153"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/43",
+          "targets": [
+            "43:43"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[2*] “Bizi doğru olan yola yönelt\" diye tercüme edilen ifadenin birebir karşılığı “bizi sırat-ı müstakime hidayet et” şeklindedir. Hidayet, nazikçe yol göstermektir (Müfredat). Allah’ın hidâyeti dört çeşittir: Birincisi; varlığını, birliğini ve her şeyden yakın olduğunu her vesileyle göstermesidir. Bu yüzden Allah, yanlış yola girenleri bir şekilde uyarır ("
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/8-10",
+          "targets": [
+            "91:8",
+            "91:9",
+            "91:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "âm 6/125",
+          "targets": [
+            "6:125"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah’ı, ulaşılamaz görüp araya aracılar koymayı müşriklik sayar ve bu davranışı asla bağışlamaz ("
+        },
+        {
+          "type": "link",
+          "content": "Nisâ 4/48,115-117",
+          "targets": [
+            "4:48",
+            "4:115",
+            "4:116",
+            "4:117"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İkincisi, iyiyi kötüden ayırma özelliği verdiği insana doğruyu bulmasında rehberlik etmesidir ("
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/29",
+          "targets": [
+            "8:29"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "1:6",
+        "connections": [
+          {
+            "target_coordinate": "3:51",
+            "context": "Âl-i İmrân 3/51"
+          },
+          {
+            "target_coordinate": "36:60",
+            "context": "Yâsîn 36/60-61"
+          },
+          {
+            "target_coordinate": "36:61",
+            "context": "Yâsîn 36/60-61"
+          },
+          {
+            "target_coordinate": "6:151",
+            "context": "âm 6/151-153"
+          },
+          {
+            "target_coordinate": "6:152",
+            "context": "âm 6/151-153"
+          },
+          {
+            "target_coordinate": "6:153",
+            "context": "âm 6/151-153"
+          },
+          {
+            "target_coordinate": "43:43",
+            "context": "Zuhruf 43/43"
+          },
+          {
+            "target_coordinate": "91:8",
+            "context": "Şems 91/8-10"
+          },
+          {
+            "target_coordinate": "91:9",
+            "context": "Şems 91/8-10"
+          },
+          {
+            "target_coordinate": "91:10",
+            "context": "Şems 91/8-10"
+          },
+          {
+            "target_coordinate": "6:125",
+            "context": "âm 6/125"
+          },
+          {
+            "target_coordinate": "4:48",
+            "context": "Nisâ 4/48,115-117"
+          },
+          {
+            "target_coordinate": "4:115",
+            "context": "Nisâ 4/48,115-117"
+          },
+          {
+            "target_coordinate": "4:116",
+            "context": "Nisâ 4/48,115-117"
+          },
+          {
+            "target_coordinate": "4:117",
+            "context": "Nisâ 4/48,115-117"
+          },
+          {
+            "target_coordinate": "8:29",
+            "context": "Enfal 8/29"
+          },
+          {
+            "target_coordinate": "1:6",
+            "context": "Fatiha 1/6"
+          },
+          {
+            "target_coordinate": "19:76",
+            "context": "Meryem 19/76"
+          },
+          {
+            "target_coordinate": "29:69",
+            "context": "Ankebut 29/69"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fâtiha Suresi 6. Ayetin Tefsiri\nاِهْدِنَا الصِّرَاطَ الْمُسْتَق۪يمَۙ\nYarabbi o doğru yolu bize göster\n. (\n"
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/6",
+          "targets": [
+            "1:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\"\nHİDAYET\nRagıp el-İsfehani, Müfredat'ta Allah'ın hidayetini dört bölüme ayırmıştır:\n1. Akıl, irade ve gerekli organ ve yeteneklerle yaratması\n2. Peygamber ve kitap göndermesi\n3. Yoluna girenlere nimet ve ikramlarda bulunması\n4. Ahiretteki hidayet; cennetliklere cennetin yolunu göstermesi\nBuna, kuran ayetlerinden çıkan sonuca göre biz 5. olarak şunu ekleyebiliriz;\n5. Kişi ne yönde gayret gösterirse, Allah da onu o yöne yöneltir. Kendi irade ve çabasıyla hidayete yönelmeyeni, müdahale ederek doğru yola sokmaz. \"Allah yola gelmiş olanların hidayetini artırır\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/76",
+          "targets": [
+            "19:76"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") \"Bizim yolumuzda gayret gösterenleri, mutlaka yollarımıza sokarız\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/69",
+          "targets": [
+            "29:69"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\n\"ihdinas sıradel müstakim\" ayetinin 2 anlamı olabilir:\n1. \"(Ya Rabbi) Bize doğru yolu göster\"\n2. \"Bizi doğru yoluna kabul et\"\n\"Bizi doğru yoluna ilet/sok\" şeklindeki bir anlam ise kişinin gayreti sonucu hidayet veya dalaleti hak edeceği kuralını tam olarak yansıtmadığı için güzel bir tercüme değildir."
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/1.mp3"
+    },
+    {
+      "id": "1:7",
+      "text": "صِرَاطَ الَّذ۪ينَ اَنْعَمْتَ عَلَيْهِمْۙ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّٓالّ۪ينَ",
+      "translation": "kendilerine nimet verdiğin kimselerin[1*] yoluna; öfkeni hak etmemiş[2*] ve yoldan çıkmamış[3*] olanların yoluna yönelt! (Âmin)[4*]",
+      "dipnot": "[1*] Allah’ın nimet verdiği kimseler; nebiler, doğru kişiler, bilginler ve iyilerdir (Nisâ, 4/69).\n[2*] Öfke, Arapçadaki \"gazab'ın\" karşılığıdır. Öfkeyi hak etmiş olanlar, ilgili ayetler ışığında şunlardır: Bir kısım Yahudiler (Bakara 2/61, 90; Âli-İmrân 3/112; Mâide 5/60, A´râf 7/152), bir mümini kasten öldürenler (Nisâ 4/93), hakikate karşı direnenler (A´râf 7/71), savaş meydanından kaçanlar (Enfâl 8/16), dinden dönenler (Nahl 16/106), taşkınlık yapanlar (Tâhâ 20/81), Allah hakkında haksız tartışmaya girenler (Şûrâ 42/16), iffetsiz olduğu halde kendini temize çıkarmak için kocasına iftira atan kadınlar (Nûr 24/9), münafık erkek ve münafık kadınlar ile müşrik erkek ve müşrik kadınlar (Fetih 48/6).\n[3*] Yoldan çıkanlar şunlardır: Allah'ın ayetlerini yalanlayanlar (Mü'minun 23/105-106), inandıktan sonra kâfir olanlar (Maide 5/12), Allah'ın yolundan engelleyenler (Nisa 4/167), din konusunda haddi aşanlar (Maide 5/77), zanna uyanlar (Enam 6/116), dünya hayatını ahiret hayatına tercih edenler (İbrahim 14/3), Allah’a ortak koşanlar (Nisa 4/116), fasıklar (Maide 5/108; En'am 6/77), Allah'tan başkasına dua edenler (Ahkaf 46/5; Hac 22/12), Şeytanları Allah ile aralarına koyup kendilerine veli edinenler (A´raf 7/30), zalimler (Meryem 19/38), Allah’a ve Resulüne isyan edenler (Ahzab 33/36), Allah'ın zikrine /kitabına karşı katı tutum sergileyenler (Zümer 39/22), Allah'ın davetçilerinin çağrısını kabul etmeyenler (Ahkaf 46/32), kıyameti inkar edenler (Şura 42/18), münafıklar (Bakara 2/8-16), Allah'ın indirdiği kitapları gizleyenler (Bakara 2/174-175), kâfirler (Nisa 4/136), müşrikler (Nisa 4/116, İbrahim 14/30), dünya malına ve süslerine kapılıp haktan uzaklaşanlar (Yunus 10/88), nefsinin arzularına uyanlar (Yusuf 12/30), Allah'ın kitabından uzaklaşanlar (Taha 20/52, Lokman 31/6), Allah'ın kitabından bir delil getirmeden Allah hakkında konuşanlara uyanlar (Hac 22/8-9), kötüleri dost edinenler (Furkan 25/28-29), hakikati yalanlayanlar (Kalem 68/7-8).\n[4*]",
+      "roots": [
+        "صرط",
+        "نعم",
+        "غير",
+        "غضب",
+        "ضلل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Allah’ın nimet verdiği kimseler; nebiler, doğru kişiler, bilginler ve iyilerdir (Nisâ, "
+        },
+        {
+          "type": "link",
+          "content": "4/69",
+          "targets": [
+            "4:69"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[2*] Öfke, Arapçadaki \"gazab'ın\" karşılığıdır. Öfkeyi hak etmiş olanlar, ilgili ayetler ışığında şunlardır: Bir kısım Yahudiler ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/61,90",
+          "targets": [
+            "2:61",
+            "2:90"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Âli-İmrân 3/112",
+          "targets": [
+            "3:112"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Mâide 5/60",
+          "targets": [
+            "5:60"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A´"
+        },
+        {
+          "type": "link",
+          "content": "râf 7/152",
+          "targets": [
+            "7:152"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), bir mümini kasten öldürenler ("
+        },
+        {
+          "type": "link",
+          "content": "Nisâ 4/93",
+          "targets": [
+            "4:93"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), hakikate karşı direnenler (A´"
+        },
+        {
+          "type": "link",
+          "content": "râf 7/71",
+          "targets": [
+            "7:71"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), savaş meydanından kaçanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/16",
+          "targets": [
+            "8:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), dinden dönenler ("
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/106",
+          "targets": [
+            "16:106"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), taşkınlık yapanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Tâhâ 20/81",
+          "targets": [
+            "20:81"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah hakkında haksız tartışmaya girenler ("
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/16",
+          "targets": [
+            "42:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), iffetsiz olduğu halde kendini temize çıkarmak için kocasına iftira atan kadınlar ("
+        },
+        {
+          "type": "link",
+          "content": "Nûr 24/9",
+          "targets": [
+            "24:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), münafık erkek ve münafık kadınlar ile müşrik erkek ve müşrik kadınlar ("
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/6",
+          "targets": [
+            "48:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[3*] Yoldan çıkanlar şunlardır: Allah'ın ayetlerini yalanlayanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Mü'minun 23/105-106",
+          "targets": [
+            "23:105",
+            "23:106"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), inandıktan sonra kâfir olanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/12",
+          "targets": [
+            "5:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah'ın yolundan engelleyenler ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/167",
+          "targets": [
+            "4:167"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), din konusunda haddi aşanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/77",
+          "targets": [
+            "5:77"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), zanna uyanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Enam 6/116",
+          "targets": [
+            "6:116"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), dünya hayatını ahiret hayatına tercih edenler ("
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/3",
+          "targets": [
+            "14:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah’a ortak koşanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/116",
+          "targets": [
+            "4:116"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), fasıklar ("
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/108",
+          "targets": [
+            "5:108"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "En'am 6/77",
+          "targets": [
+            "6:77"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah'tan başkasına dua edenler ("
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/5",
+          "targets": [
+            "46:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/12",
+          "targets": [
+            "22:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Şeytanları Allah ile aralarına koyup kendilerine veli edinenler (A´"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/30",
+          "targets": [
+            "7:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), zalimler ("
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/38",
+          "targets": [
+            "19:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah’a ve Resulüne isyan edenler ("
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/36",
+          "targets": [
+            "33:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah'ın zikrine /kitabına karşı katı tutum sergileyenler ("
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/22",
+          "targets": [
+            "39:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah'ın davetçilerinin çağrısını kabul etmeyenler ("
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/32",
+          "targets": [
+            "46:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), kıyameti inkar edenler ("
+        },
+        {
+          "type": "link",
+          "content": "Şura 42/18",
+          "targets": [
+            "42:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), münafıklar ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/8-16",
+          "targets": [
+            "2:8",
+            "2:9",
+            "2:10",
+            "2:11",
+            "2:12",
+            "2:13",
+            "2:14",
+            "2:15",
+            "2:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah'ın indirdiği kitapları gizleyenler ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/174-175",
+          "targets": [
+            "2:174",
+            "2:175"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), kâfirler ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/136",
+          "targets": [
+            "4:136"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), müşrikler ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/116",
+          "targets": [
+            "4:116"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/30",
+          "targets": [
+            "14:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), dünya malına ve süslerine kapılıp haktan uzaklaşanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/88",
+          "targets": [
+            "10:88"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), nefsinin arzularına uyanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Yusuf 12/30",
+          "targets": [
+            "12:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah'ın kitabından uzaklaşanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/52",
+          "targets": [
+            "20:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/6",
+          "targets": [
+            "31:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah'ın kitabından bir delil getirmeden Allah hakkında konuşanlara uyanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/8-9",
+          "targets": [
+            "22:8",
+            "22:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), kötüleri dost edinenler ("
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/28-29",
+          "targets": [
+            "25:28",
+            "25:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), hakikati yalanlayanlar ("
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/7-8",
+          "targets": [
+            "68:7",
+            "68:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[4*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "1:7",
+        "connections": [
+          {
+            "target_coordinate": "4:69",
+            "context": "4/69"
+          },
+          {
+            "target_coordinate": "2:61",
+            "context": "Bakara 2/61,90"
+          },
+          {
+            "target_coordinate": "2:90",
+            "context": "Bakara 2/61,90"
+          },
+          {
+            "target_coordinate": "3:112",
+            "context": "Âli-İmrân 3/112"
+          },
+          {
+            "target_coordinate": "5:60",
+            "context": "Mâide 5/60"
+          },
+          {
+            "target_coordinate": "7:152",
+            "context": "râf 7/152"
+          },
+          {
+            "target_coordinate": "4:93",
+            "context": "Nisâ 4/93"
+          },
+          {
+            "target_coordinate": "7:71",
+            "context": "râf 7/71"
+          },
+          {
+            "target_coordinate": "8:16",
+            "context": "Enfâl 8/16"
+          },
+          {
+            "target_coordinate": "16:106",
+            "context": "Nahl 16/106"
+          },
+          {
+            "target_coordinate": "20:81",
+            "context": "Tâhâ 20/81"
+          },
+          {
+            "target_coordinate": "42:16",
+            "context": "Şûrâ 42/16"
+          },
+          {
+            "target_coordinate": "24:9",
+            "context": "Nûr 24/9"
+          },
+          {
+            "target_coordinate": "48:6",
+            "context": "Fetih 48/6"
+          },
+          {
+            "target_coordinate": "23:105",
+            "context": "Mü'minun 23/105-106"
+          },
+          {
+            "target_coordinate": "23:106",
+            "context": "Mü'minun 23/105-106"
+          },
+          {
+            "target_coordinate": "5:12",
+            "context": "Maide 5/12"
+          },
+          {
+            "target_coordinate": "4:167",
+            "context": "Nisa 4/167"
+          },
+          {
+            "target_coordinate": "5:77",
+            "context": "Maide 5/77"
+          },
+          {
+            "target_coordinate": "6:116",
+            "context": "Enam 6/116"
+          },
+          {
+            "target_coordinate": "14:3",
+            "context": "İbrahim 14/3"
+          },
+          {
+            "target_coordinate": "4:116",
+            "context": "Nisa 4/116"
+          },
+          {
+            "target_coordinate": "5:108",
+            "context": "Maide 5/108"
+          },
+          {
+            "target_coordinate": "6:77",
+            "context": "En'am 6/77"
+          },
+          {
+            "target_coordinate": "46:5",
+            "context": "Ahkaf 46/5"
+          },
+          {
+            "target_coordinate": "22:12",
+            "context": "Hac 22/12"
+          },
+          {
+            "target_coordinate": "7:30",
+            "context": "raf 7/30"
+          },
+          {
+            "target_coordinate": "19:38",
+            "context": "Meryem 19/38"
+          },
+          {
+            "target_coordinate": "33:36",
+            "context": "Ahzab 33/36"
+          },
+          {
+            "target_coordinate": "39:22",
+            "context": "Zümer 39/22"
+          },
+          {
+            "target_coordinate": "46:32",
+            "context": "Ahkaf 46/32"
+          },
+          {
+            "target_coordinate": "42:18",
+            "context": "Şura 42/18"
+          },
+          {
+            "target_coordinate": "2:8",
+            "context": "Bakara 2/8-16"
+          },
+          {
+            "target_coordinate": "2:9",
+            "context": "Bakara 2/8-16"
+          },
+          {
+            "target_coordinate": "2:10",
+            "context": "Bakara 2/8-16"
+          },
+          {
+            "target_coordinate": "2:11",
+            "context": "Bakara 2/8-16"
+          },
+          {
+            "target_coordinate": "2:12",
+            "context": "Bakara 2/8-16"
+          },
+          {
+            "target_coordinate": "2:13",
+            "context": "Bakara 2/8-16"
+          },
+          {
+            "target_coordinate": "2:14",
+            "context": "Bakara 2/8-16"
+          },
+          {
+            "target_coordinate": "2:15",
+            "context": "Bakara 2/8-16"
+          },
+          {
+            "target_coordinate": "2:16",
+            "context": "Bakara 2/8-16"
+          },
+          {
+            "target_coordinate": "2:174",
+            "context": "Bakara 2/174-175"
+          },
+          {
+            "target_coordinate": "2:175",
+            "context": "Bakara 2/174-175"
+          },
+          {
+            "target_coordinate": "4:136",
+            "context": "Nisa 4/136"
+          },
+          {
+            "target_coordinate": "4:116",
+            "context": "Nisa 4/116"
+          },
+          {
+            "target_coordinate": "14:30",
+            "context": "İbrahim 14/30"
+          },
+          {
+            "target_coordinate": "10:88",
+            "context": "Yunus 10/88"
+          },
+          {
+            "target_coordinate": "12:30",
+            "context": "Yusuf 12/30"
+          },
+          {
+            "target_coordinate": "20:52",
+            "context": "Taha 20/52"
+          },
+          {
+            "target_coordinate": "31:6",
+            "context": "Lokman 31/6"
+          },
+          {
+            "target_coordinate": "22:8",
+            "context": "Hac 22/8-9"
+          },
+          {
+            "target_coordinate": "22:9",
+            "context": "Hac 22/8-9"
+          },
+          {
+            "target_coordinate": "25:28",
+            "context": "Furkan 25/28-29"
+          },
+          {
+            "target_coordinate": "25:29",
+            "context": "Furkan 25/28-29"
+          },
+          {
+            "target_coordinate": "68:7",
+            "context": "Kalem 68/7-8"
+          },
+          {
+            "target_coordinate": "68:8",
+            "context": "Kalem 68/7-8"
+          },
+          {
+            "target_coordinate": "1:7",
+            "context": "Fatiha 1/7"
+          },
+          {
+            "target_coordinate": "39:23",
+            "context": "Zümer 39/23"
+          },
+          {
+            "target_coordinate": "15:87",
+            "context": "Hicr 15/87"
+          },
+          {
+            "target_coordinate": "17:106",
+            "context": "İsra 17/106"
+          },
+          {
+            "target_coordinate": "20:114",
+            "context": "Taha 20/114"
+          },
+          {
+            "target_coordinate": "75:16",
+            "context": "Kıyamet 75/16-19"
+          },
+          {
+            "target_coordinate": "75:17",
+            "context": "Kıyamet 75/16-19"
+          },
+          {
+            "target_coordinate": "75:18",
+            "context": "Kıyamet 75/16-19"
+          },
+          {
+            "target_coordinate": "75:19",
+            "context": "Kıyamet 75/16-19"
+          },
+          {
+            "target_coordinate": "2:97",
+            "context": "Bakara 2/97"
+          },
+          {
+            "target_coordinate": "87:6",
+            "context": "A'la 87/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Fâtiha Suresi 7. Ayetin Tefsiri\nصِرَاطَ الَّذ۪ينَ اَنْعَمْتَ عَلَيْهِمْۙ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّٓالّ۪ينَ\n“Kendisine nimet verdiğin kişilerin yolunu,gazaba uğramamış olanların yolunu göster... ("
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/7",
+          "targets": [
+            "1:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")”\nTefsirlerde genellikle gazaba uğrayanlar; \"yahudiler\" sapıtmış olanlar, \"hristiyanlar\" şeklinde açıklanmıştır.\nFatiha'nın Büyük Kur'an ve Yedi İkişerli (Mesani) oluşu:\nAllah Kur'an'ın tüm ayetlerini mesani (ikişerli) ve müteşabih (birbirine benzeyen) şekilde indirmiştir: \"Allah sözün en güzelini ikişerli (mesani) birbirine benzeyen (müteşabih) bir kitap olarak indirdi\" ("
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/23",
+          "targets": [
+            "39:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Bu ayete göre 6236 ayetin tümü, hem mesani hem de müteşabihtir.\nYani Allah bu mesanilerden 7 tanesini seçerek Fatiha'yı oluşturmuştur;\n\"şu bir gerçek ki biz sana ikişerlilerden (mesani) 7 tanesini ve büyük Kur'anı (Kur'anen azim) verdik\" (\n"
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/87",
+          "targets": [
+            "15:87"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\nBu ayete göre Fatiha suresinin 2 adı bulunmaktadır:\n1. Seb'ul mesani (ikişerlilerden 7 ayet)\n2. Kur'anül Azim (Büyük Kur'an)\nBir hadiste peygamberimiz \"Fatiha, bana verilmiş büyük Kur'andır\" demektedir. (Buhari, Tefsir 1; Nesai, Iftitah 26; Ebu Davud, Vitr 15)\nFatiha, Kur'an'ın içindeki Kur'an'ın (anlam kümelerinin) en büyüğüdür. Namazlarımızda Fatiha suresini okumamız emredilmiş olup, Peygamberimiz \"fatiha olmadan namaz olmaz\" buyurmuştur. Biz Fatiha suresini okurken, Kur'an'ın tümünden alınmış ikili ayetlerden yedisini okumakla, adeta Kur'an'ın özetini yani tamamını okumuş oluyoruz.\nKur'an kelimesinini türetildiği karae kelimesinin kökü, karye (şehir/köy) kelimesi gibi \"toplanmak\" anlamına gelir. Karye; insanları bir araya getiren, köy, kasaba, şehir gibi tüm yerleşim yerlerinin ortak adıdır. Tüm kentlerin bir anası vardır ki Kur'an Mekke'ye ümmül kura (şehirlerin anası) der. İşte Fatiha suresi de, Kur'andaki anlam kümelerinin anası olduğu için Allah ona \"büyük Kur'an\" (\n"
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/87",
+          "targets": [
+            "15:87"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") demektedir. Buna göre Kur'anda birde küçük küçük Kur'anlar (anlam kümeleri) vardır:\n\"(Kur'anen karaknahu) anlam kümeleri olarak (Kur'anen) biz onu topladık (karaknahu) ki insanlara dura dura okuyasın\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/106",
+          "targets": [
+            "17:106"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\nKur'anda geçen Kur'an kelimelerinin tümü, Kur'an-ı Kerim anlamında kullanılmamış olup, kimileri; \"toplam\" yani \"anlam kümesi\" anlamındadır. Şöyle ki; Kur'an'da ele alınan meselelerin ana ayetleri vardır ki buna muhkem (temel ayet) denir. Bu ana ayete benzeyen onunla anlam ilişkisi Kur'an ayetlere ise müteşabih (benzerler) denilmektedir. Muhkem ile müteşabih bir araya gelerek mesani (ikişerli) denilen yapıyı oluşturur. Bu mesaniler de bir araya gelerek \"Kur'an\" dediğimiz anlam kümelerini oluşturur. İşte, bir meseleyi kavramamız için, meselenin ilgili mesanilerinden oluşan ünitesini (Kur'an) toplamamız gerekmektedir.\nYukarıda belirttiğimiz İsra 106 ayetteki \"Kur'an\" kelimesi mealen \"Kur'an-ı Kerim\" şeklindedir. \"el-Kur'ane\" şeklinde olması gerekirdi. Oysa \"Kur'anen\" şeklindedir. Daha da önemlisi; aynı ayetteki \"faraknahu\" daki \"hu\" zamiri, Kur'an-ı kerimi gösterir ve \"Kur'anen\" kelimesi ise bu fiilin mefulü olmaktadır.\nAllah Kur'an'ın nuzulü esnasında, Peygamberimize anlam kümeleri tamamlanmadan bir mesele ile ilgili acele olarak hüküm vermeyi yasaklamıştır.\n\"Onun vahyi tamamlanmadan önce Kur'an ile hükmetmekte (amel etmekte) acele etme\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/114",
+          "targets": [
+            "20:114"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\nUlemanın temel hatası, dini meselelerde, mesani ilişkisini kurmadan yani anlam kümelerini dikkate almadan fetva vermeleridir.\nAşağıdaki ayetin meali, aynı konuyu açıklamaktadır:\n\"Bununla acele bir şekilde dilini harekete geçirme (hüküm verme) Onu toparlamak ve Kur'an (onları kümesi) yapmak bize düşer, Biz onu Kur'an (anlam kümesi) yaptığımızda o zaman bu anlam kümelerine uy\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/16-19",
+          "targets": [
+            "75:16",
+            "75:17",
+            "75:18",
+            "75:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\nBu ayete\n\"Onu toplayıp okumak bize düşer\"(\n"
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/17",
+          "targets": [
+            "75:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\nşeklinde meallerde yanlış bir şekilde mana verilerek Hz. Peygamberin gelen vahyi unutmamak için, nuzulü esnasında tekrar ettiği şeklinde yorumlanmıştır.\nOysa Kur'an, Hz. Peygamberin kalbine indiği için (\n"
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/97",
+          "targets": [
+            "2:97"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") zaten onu unutmuyordur. Kaldı ki; \"Kur'anı sana okutacağız, böylece unutmayacaksın\" (\n"
+        },
+        {
+          "type": "link",
+          "content": "A'la 87/6",
+          "targets": [
+            "87:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ayeti de onun ayetleri unutmama garantisinin verildiğini göstermektedir."
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/1.mp3"
+    }
+  ]
+}

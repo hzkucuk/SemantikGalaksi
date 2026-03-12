@@ -1,0 +1,423 @@
+{
+  "nodes": [
+    {
+      "id": "95:1",
+      "text": "وَالتّ۪ينِ وَالزَّيْتُونِۙ",
+      "translation": "İncir’e ve Zeytin’e yemin olsun,",
+      "dipnot": "Bu ayette incire ve zeytine yemin edilerek bunların önemine dikkat çekilmektedir. Devamındaki Tîn 95/2 - 3 ayetlerinde yemin edilenlerin nebilerin vahiy aldığı yerler olması, bu ayetteki sözcüklerin de vahiy alınan yerlere işaret ettiğini düşündürür. Budistler Buda’nın, Ganj’ın bir kolu olan Neranjara kıyısında, Gaya’da Bodhi veya Bo ağacı denen incirin altında aydınlanmaya eriştiğine inanır ve orayı kutsal ziyaret yeri sayarlar (Budizm, Günay Tümer DİA). Bu, Buda’nın da nebîlerden olduğunu gösteriyor olabilir (Fatır 35/24). Kudüs’te, İsa aleyhisselamın dua için sık sık gittiği dağ Zeytin Dağı’dır. Bu dağın eteğindeki Getsemani Bahçesi, İsa aleyhisselamın, havarileri ile yediği son akşam yemeğinden sonra Yahuda tarafından yakalatıldığı bahçedir (Matta 26:36-46, Markos 14:26-42, Luka 22:39-46). Bütün bunlardan dolayı bu kelimenin Zeytin Dağı’nı işaret ettiği söylenebilir.",
+      "roots": [
+        "تين",
+        "زيت"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bu ayette incire ve zeytine yemin edilerek bunların önemine dikkat çekilmektedir. "
+        },
+        {
+          "type": "link",
+          "content": "Devamındaki Tîn 95/2-3",
+          "targets": [
+            "95:2",
+            "95:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "ayetlerinde yemin edilenlerin nebilerin vahiy aldığı yerler olması, bu ayetteki sözcüklerin de vahiy alınan yerlere işaret ettiğini düşündürür. Budistler Buda’nın, Ganj’ın bir kolu olan Neranjara kıyısında, Gaya’da Bodhi veya Bo ağacı denen incirin altında aydınlanmaya eriştiğine inanır ve orayı kutsal ziyaret yeri sayarlar (Budizm, Günay Tümer DİA). Bu, Buda’nın da nebîlerden olduğunu gösteriyor olabilir ("
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/24",
+          "targets": [
+            "35:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Kudüs’te, İsa aleyhisselamın dua için sık sık gittiği dağ Zeytin Dağı’dır. Bu dağın eteğindeki Getsemani Bahçesi, İsa aleyhisselamın, havarileri ile yediği son akşam yemeğinden sonra Yahuda tarafından yakalatıldığı bahçedir (Matta 26:36-46, Markos 14:26-42, Luka 22:39-46). Bütün bunlardan dolayı bu kelimenin Zeytin Dağı’nı işaret ettiği söylenebilir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "95:1",
+        "connections": [
+          {
+            "target_coordinate": "95:2",
+            "context": "Devamındaki Tîn 95/2-3"
+          },
+          {
+            "target_coordinate": "95:3",
+            "context": "Devamındaki Tîn 95/2-3"
+          },
+          {
+            "target_coordinate": "35:24",
+            "context": "Fatır 35/24"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tîn Suresi 1. Ayetin Tefsiri\nوَالتّ۪ينِ وَالزَّيْتُونِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/95.mp3"
+    },
+    {
+      "id": "95:2",
+      "text": "وَطُورِ س۪ين۪ينَۙ",
+      "translation": "Sina’daki Tûr dağı’na,",
+      "dipnot": "Tûr, dağ anlamındadır (Mekâyis). Kur’an’da sadece Sina’da bulunan bir dağın adı olarak kullanıldığından, özel isim de kabul edilir (Müfredat). Bu dağ, Sina’da olduğu için izafet /isim tamlaması “fî (في)” anlamında takdir edilerek anlam verilmiştir. Mü’minûn Sûresi’nde “Seynâ” (Mü’minun 23/20), bu âyette “Sînîn” olarak geçen bu yere Türkçede “Sina” denir. Musa aleyhisselamın vahiy aldığı dağ burasıdır (Meryem 19/52, Kasas 28/29).",
+      "roots": [
+        "طور"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Tûr, dağ anlamındadır (Mekâyis). Kur’an’da sadece Sina’da bulunan bir dağın adı olarak kullanıldığından, özel isim de kabul edilir (Müfredat). Bu dağ, Sina’da olduğu için izafet /isim tamlaması “fî (في)” anlamında takdir edilerek anlam verilmiştir. Mü’minûn Sûresi’nde “Seynâ” (Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/20",
+          "targets": [
+            "23:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), bu âyette “Sînîn” olarak geçen bu yere Türkçede “Sina” denir. Musa aleyhisselamın vahiy aldığı dağ burasıdır ("
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/52",
+          "targets": [
+            "19:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/29",
+          "targets": [
+            "28:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "95:2",
+        "connections": [
+          {
+            "target_coordinate": "23:20",
+            "context": "minun 23/20"
+          },
+          {
+            "target_coordinate": "19:52",
+            "context": "Meryem 19/52"
+          },
+          {
+            "target_coordinate": "28:29",
+            "context": "Kasas 28/29"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/95.mp3"
+    },
+    {
+      "id": "95:3",
+      "text": "وَهٰذَا الْبَلَدِ الْاَم۪ينِۙ",
+      "translation": "ve bu güvenli şehre /Mekke’ye de yemin olsun ki",
+      "dipnot": "Güvenli belde Mekke’dir (Bakara 2/126, Beled 90/1.",
+      "roots": [
+        "بلد",
+        "أمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Güvenli belde Mekke’dir ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/126",
+          "targets": [
+            "2:126"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beled 90/1",
+          "targets": [
+            "90:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "95:3",
+        "connections": [
+          {
+            "target_coordinate": "2:126",
+            "context": "Bakara 2/126"
+          },
+          {
+            "target_coordinate": "90:1",
+            "context": "Beled 90/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tîn Suresi 3. Ayetin Tefsiri\nوَهٰذَا الْبَلَدِ الْاَم۪ينِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/95.mp3"
+    },
+    {
+      "id": "95:4",
+      "text": "لَقَدْ خَلَقْنَا الْاِنْسَانَ ف۪ٓي اَحْسَنِ تَقْو۪يمٍۘ",
+      "translation": "biz insanı, kesinlikle en güzel tabiatta yarattık.",
+      "dipnot": "",
+      "roots": [
+        "خلق",
+        "أنس",
+        "حسن",
+        "قوم"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "95:4",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tîn Suresi 4. Ayetin Tefsiri\nلَقَدْ خَلَقْنَا الْاِنْسَانَ ف۪ٓي اَحْسَنِ تَقْو۪يمٍۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/95.mp3"
+    },
+    {
+      "id": "95:5",
+      "text": "ثُمَّ رَدَدْنَاهُ اَسْفَلَ سَافِل۪ينَۙ",
+      "translation": "Sonra (yaptığı yanlışlar yüzünden) onu aşağıların en aşağısına düşürdük.",
+      "dipnot": "[*]\nMaide 5/60,\nA’raf 7/179.\nTevrat’ta şu ifade geçer: “Tanrı insanı doğru yarattı, ancak onlar farklı yollara yöneldiler.” (Vaiz 7:29).",
+      "roots": [
+        "ردد",
+        "سفل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/60",
+          "targets": [
+            "5:60"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/179",
+          "targets": [
+            "7:179"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nTevrat’ta şu ifade geçer: “Tanrı insanı doğru yarattı, ancak onlar farklı yollara yöneldiler.” (Vaiz 7:29)."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "95:5",
+        "connections": [
+          {
+            "target_coordinate": "5:60",
+            "context": "Maide 5/60"
+          },
+          {
+            "target_coordinate": "7:179",
+            "context": "raf 7/179"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tîn Suresi 5. Ayetin Tefsiri\nثُمَّ رَدَدْنَاهُ اَسْفَلَ سَافِل۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/95.mp3"
+    },
+    {
+      "id": "95:6",
+      "text": "اِلَّا الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ اَجْرٌ غَيْرُ مَمْنُونٍۜ",
+      "translation": "İnanıp güvenen ve iyi işler yapanlar bunun dışındadır. Onlar için kesintisiz bir ödül vardır.",
+      "dipnot": "[*]\nFussilet 41/8,\nİnşikak 84/25.",
+      "roots": [
+        "أمن",
+        "عمل",
+        "صلح",
+        "أجر",
+        "غير",
+        "منن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/8",
+          "targets": [
+            "41:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/25",
+          "targets": [
+            "84:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "95:6",
+        "connections": [
+          {
+            "target_coordinate": "41:8",
+            "context": "Fussilet 41/8"
+          },
+          {
+            "target_coordinate": "84:25",
+            "context": "İnşikak 84/25"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tîn Suresi 6. Ayetin Tefsiri\nاِلَّا الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ اَجْرٌ غَيْرُ مَمْنُونٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/95.mp3"
+    },
+    {
+      "id": "95:7",
+      "text": "فَمَا يُكَذِّبُكَ بَعْدُ بِالدّ۪ينِۜ",
+      "translation": "(Ey insan), artık bundan sonra bu din karşısında seni yalana sürükleyen şey ne olabilir?",
+      "dipnot": "[*]\nİnfitar 82/9,\nMâun 107/1.",
+      "roots": [
+        "كذب",
+        "بعد",
+        "دين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*]\n"
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/9",
+          "targets": [
+            "82:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mâun 107/1",
+          "targets": [
+            "107:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "95:7",
+        "connections": [
+          {
+            "target_coordinate": "82:9",
+            "context": "İnfitar 82/9"
+          },
+          {
+            "target_coordinate": "107:1",
+            "context": "Mâun 107/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tîn Suresi 7. Ayetin Tefsiri\nفَمَا يُكَذِّبُكَ بَعْدُ بِالدّ۪ينِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/95.mp3"
+    },
+    {
+      "id": "95:8",
+      "text": "اَلَيْسَ اللّٰهُ بِاَحْكَمِ الْحَاكِم۪ينَ",
+      "translation": "Allah, karar verenler içinde en doğru karar veren değil midir?",
+      "dipnot": "[*]\nHud 11/45.",
+      "roots": [
+        "ليس",
+        "أله",
+        "حكم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/45",
+          "targets": [
+            "11:45"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "95:8",
+        "connections": [
+          {
+            "target_coordinate": "11:45",
+            "context": "Hud 11/45"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tîn Suresi 8. Ayetin Tefsiri\nاَلَيْسَ اللّٰهُ بِاَحْكَمِ الْحَاكِم۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/95.mp3"
+    }
+  ]
+}

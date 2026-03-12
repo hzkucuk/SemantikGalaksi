@@ -56,3 +56,6 @@ Desktop.ini
 *.tmp
 [Ll]og/
 [Ll]ogs/
+
+# Hassas/ozel scriptler
+DataEngine/quran_extractor_v3.py

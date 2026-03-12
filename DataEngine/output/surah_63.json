@@ -1,0 +1,1005 @@
+{
+  "nodes": [
+    {
+      "id": "63:1",
+      "text": "اِذَا جَٓاءَكَ الْمُنَافِقُونَ قَالُوا نَشْهَدُ اِنَّكَ لَرَسُولُ اللّٰهِۢ وَاللّٰهُ يَعْلَمُ اِنَّكَ لَرَسُولُهُۜ وَاللّٰهُ يَشْهَدُ اِنَّ الْمُنَافِق۪ينَ لَكَاذِبُونَۚ",
+      "translation": "Münafıklar (iki yüzlüler) sana geldiklerinde: \"Biz şahidiz ki sen kesinlikle Allah'ın elçisisin.\" dediler. Evet, Allah biliyor ki sen kesinlikle onun elçisisin; ama Allah şahit ki münafıklar kesinlikle yalancıdırlar.",
+      "dipnot": "Münafıkların yalancı kimseler oldukları birçok ayette vurgulanmış ( Tevbe 9/77, 107, Mücadele 58/18, Haşr 59/11 ), bu yalancılıklarından dolayı acı bir azaba uğrayacakları ve hem Allah’ı hem de insanları kandırmaya çalıştıkları için cehennemin en alt tabakasına atılacakları haber verilmiştir ( Bakara 2/8 - 10, 76, Nisa 4/142 - 145 ).",
+      "roots": [
+        "جيأ",
+        "نفق",
+        "قول",
+        "شهد",
+        "رسل",
+        "أله",
+        "علم",
+        "كذب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Münafıkların yalancı kimseler oldukları birçok ayette vurgulanmış ( "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/77,107",
+          "targets": [
+            "9:77",
+            "9:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mücadele 58/18",
+          "targets": [
+            "58:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/11",
+          "targets": [
+            "59:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), bu yalancılıklarından dolayı acı bir azaba uğrayacakları ve hem Allah’ı hem de insanları kandırmaya çalıştıkları için cehennemin en alt tabakasına atılacakları haber verilmiştir ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/8-10,76",
+          "targets": [
+            "2:8",
+            "2:9",
+            "2:10",
+            "2:76"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/142-145",
+          "targets": [
+            "4:142",
+            "4:143",
+            "4:144",
+            "4:145"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:1",
+        "connections": [
+          {
+            "target_coordinate": "9:77",
+            "context": "Tevbe 9/77,107"
+          },
+          {
+            "target_coordinate": "9:107",
+            "context": "Tevbe 9/77,107"
+          },
+          {
+            "target_coordinate": "58:18",
+            "context": "Mücadele 58/18"
+          },
+          {
+            "target_coordinate": "59:11",
+            "context": "Haşr 59/11"
+          },
+          {
+            "target_coordinate": "2:8",
+            "context": "Bakara 2/8-10,76"
+          },
+          {
+            "target_coordinate": "2:9",
+            "context": "Bakara 2/8-10,76"
+          },
+          {
+            "target_coordinate": "2:10",
+            "context": "Bakara 2/8-10,76"
+          },
+          {
+            "target_coordinate": "2:76",
+            "context": "Bakara 2/8-10,76"
+          },
+          {
+            "target_coordinate": "4:142",
+            "context": "Nisa 4/142-145"
+          },
+          {
+            "target_coordinate": "4:143",
+            "context": "Nisa 4/142-145"
+          },
+          {
+            "target_coordinate": "4:144",
+            "context": "Nisa 4/142-145"
+          },
+          {
+            "target_coordinate": "4:145",
+            "context": "Nisa 4/142-145"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 1. Ayetin Tefsiri\nاِذَا جَٓاءَكَ الْمُنَافِقُونَ قَالُوا نَشْهَدُ اِنَّكَ لَرَسُولُ اللّٰهِۢ وَاللّٰهُ يَعْلَمُ اِنَّكَ لَرَسُولُهُۜ وَاللّٰهُ يَشْهَدُ اِنَّ الْمُنَافِق۪ينَ لَكَاذِبُونَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:2",
+      "text": "اِتَّخَذُٓوا اَيْمَانَهُمْ جُنَّةً فَصَدُّوا عَنْ سَب۪يلِ اللّٰهِۜ اِنَّهُمْ سَٓاءَ مَا كَانُوا يَعْمَلُونَ",
+      "translation": "Onlar yeminlerini kalkan edinip Allah’ın yolundan ayrıldılar. Onların yapmakta oldukları şey ne kötüdür!",
+      "dipnot": "Mücadele 58/14 - 16.",
+      "roots": [
+        "أخذ",
+        "يمن",
+        "جنن",
+        "صدد",
+        "سبل",
+        "أله",
+        "سوأ",
+        "كون",
+        "عمل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Mücadele 58/14-16",
+          "targets": [
+            "58:14",
+            "58:15",
+            "58:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:2",
+        "connections": [
+          {
+            "target_coordinate": "58:14",
+            "context": "Mücadele 58/14-16"
+          },
+          {
+            "target_coordinate": "58:15",
+            "context": "Mücadele 58/14-16"
+          },
+          {
+            "target_coordinate": "58:16",
+            "context": "Mücadele 58/14-16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 2. Ayetin Tefsiri\nاِتَّخَذُٓوا اَيْمَانَهُمْ جُنَّةً فَصَدُّوا عَنْ سَب۪يلِ اللّٰهِۜ اِنَّهُمْ سَٓاءَ مَا كَانُوا يَعْمَلُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:3",
+      "text": "ذٰلِكَ بِاَنَّهُمْ اٰمَنُوا ثُمَّ كَفَرُوا فَطُبِعَ عَلٰى قُلُوبِهِمْ فَهُمْ لَا يَفْقَهُونَ",
+      "translation": "Bunun sebebi onların önce inanmaları, sonra kafirlik etmeleridir. Ardından kalpleri üzerinde yeni bir yapı oluşturulur da artık onlar (gerçekleri) kavrayamazlar.",
+      "dipnot": "[1*] Nisa 4/137 - 138. [2*] Bu durum, kişi tövbe edip kendini düzeltinceye kadar devam eder ( Nisa 4/17 - 18, Furkan 25/68 - 71 ). Tövbe etmeyip kendini düzeltmezse cehenneme gider ( Âl-i İmran 3/86 - 90 ). [3*] Tevbe 9/87, 93, Nahl 16/106 - 108, Muhammed 47/16.",
+      "roots": [
+        "أمن",
+        "كفر",
+        "طبع",
+        "قلب",
+        "فقه"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/137-138",
+          "targets": [
+            "4:137",
+            "4:138"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Bu durum, kişi tövbe edip kendini düzeltinceye kadar devam eder ( "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/17-18",
+          "targets": [
+            "4:17",
+            "4:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/68-71",
+          "targets": [
+            "25:68",
+            "25:69",
+            "25:70",
+            "25:71"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Tövbe etmeyip kendini düzeltmezse cehenneme gider ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/86-90",
+          "targets": [
+            "3:86",
+            "3:87",
+            "3:88",
+            "3:89",
+            "3:90"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [3*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/87,93",
+          "targets": [
+            "9:87",
+            "9:93"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/106-108",
+          "targets": [
+            "16:106",
+            "16:107",
+            "16:108"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/16",
+          "targets": [
+            "47:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:3",
+        "connections": [
+          {
+            "target_coordinate": "4:137",
+            "context": "Nisa 4/137-138"
+          },
+          {
+            "target_coordinate": "4:138",
+            "context": "Nisa 4/137-138"
+          },
+          {
+            "target_coordinate": "4:17",
+            "context": "Nisa 4/17-18"
+          },
+          {
+            "target_coordinate": "4:18",
+            "context": "Nisa 4/17-18"
+          },
+          {
+            "target_coordinate": "25:68",
+            "context": "Furkan 25/68-71"
+          },
+          {
+            "target_coordinate": "25:69",
+            "context": "Furkan 25/68-71"
+          },
+          {
+            "target_coordinate": "25:70",
+            "context": "Furkan 25/68-71"
+          },
+          {
+            "target_coordinate": "25:71",
+            "context": "Furkan 25/68-71"
+          },
+          {
+            "target_coordinate": "3:86",
+            "context": "Âl-i İmran 3/86-90"
+          },
+          {
+            "target_coordinate": "3:87",
+            "context": "Âl-i İmran 3/86-90"
+          },
+          {
+            "target_coordinate": "3:88",
+            "context": "Âl-i İmran 3/86-90"
+          },
+          {
+            "target_coordinate": "3:89",
+            "context": "Âl-i İmran 3/86-90"
+          },
+          {
+            "target_coordinate": "3:90",
+            "context": "Âl-i İmran 3/86-90"
+          },
+          {
+            "target_coordinate": "9:87",
+            "context": "Tevbe 9/87,93"
+          },
+          {
+            "target_coordinate": "9:93",
+            "context": "Tevbe 9/87,93"
+          },
+          {
+            "target_coordinate": "16:106",
+            "context": "Nahl 16/106-108"
+          },
+          {
+            "target_coordinate": "16:107",
+            "context": "Nahl 16/106-108"
+          },
+          {
+            "target_coordinate": "16:108",
+            "context": "Nahl 16/106-108"
+          },
+          {
+            "target_coordinate": "47:16",
+            "context": "Muhammed 47/16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 3. Ayetin Tefsiri\nذٰلِكَ بِاَنَّهُمْ اٰمَنُوا ثُمَّ كَفَرُوا فَطُبِعَ عَلٰى قُلُوبِهِمْ فَهُمْ لَا يَفْقَهُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:4",
+      "text": "وَاِذَا رَاَيْتَهُمْ تُعْجِبُكَ اَجْسَامُهُمْۜ وَاِنْ يَقُولُوا تَسْمَعْ لِقَوْلِهِمْۜ كَاَنَّهُمْ خُشُبٌ مُسَنَّدَةٌۜ يَحْسَبُونَ كُلَّ صَيْحَةٍ عَلَيْهِمْۜ هUMU الْعَدُوُّ فَاحْذَرْهُمْۜ قَاتَلَهُمُ اللّٰهُۘ اَنّٰى يُؤْفَكُونَ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "رأي",
+        "عجب",
+        "جسم",
+        "قول",
+        "سمع",
+        "خشب",
+        "سند",
+        "حسب",
+        "كلل",
+        "صيح",
+        "عدو",
+        "حذر",
+        "قتل",
+        "أله",
+        "أفك"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "63:4",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 4. Ayetin Tefsiri\nوَاِذَا رَاَيْتَهُمْ تُعْجِبُكَ اَجْسَامُهُمْۜ وَاِنْ يَقُولُوا تَسْمَعْ لِقَوْلِهِمْۜ كَاَنَّهُمْ خُشُبٌ مُسَنَّدَةٌۜ يَحْسَبُونَ كُلَّ صَيْحَةٍ عَلَيْهِمْۜ هُمُ الْعَدُوُّ فَاحْذَرْهُمْۜ قَاتَلَهُمُ اللّٰهُۘ اَنّٰى يُؤْفَكُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:4",
+      "text": "",
+      "translation": "Onları gördüğünde dış görünüşleri seni hayran bırakır. Konuşurlarsa sözlerine kulak verirsin. Onlar sanki (duvara) dayalı kütükler gibidir. Her yüksek sesi aleyhlerine sanırlar. Asıl düşman onlardır; öyleyse onlara karşı dikkatli ol! Allah canlarını alsın, bu hale nasıl ve nereden sürükleniyorlar!",
+      "dipnot": "[1*] Herhangi bir yere dayanmış kütükler, sabitlenmedikleri takdirde yüksek bir sesin titreşimi bile onları yere düşürür. Münafıklar onlara benzerler. Hem Müslümanlar hem de kafirlerle bağlantıları zayıf olduğu için her an gerçek kimliklerinin ortaya çıkmasından korkarlar (Nisa 4/143, Tevbe 9/64) [2*] Bakara 2/204 - 206, Tevbe 9/101.",
+      "roots": [
+        "رأي",
+        "عجب",
+        "جسم",
+        "قول",
+        "سمع",
+        "خشب",
+        "سند",
+        "حسب",
+        "كلل",
+        "صيح",
+        "عدو",
+        "حذر",
+        "قتل",
+        "أله",
+        "أفك"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Herhangi bir yere dayanmış kütükler, sabitlenmedikleri takdirde yüksek bir sesin titreşimi bile onları yere düşürür. Münafıklar onlara benzerler. Hem Müslümanlar hem de kafirlerle bağlantıları zayıf olduğu için her an gerçek kimliklerinin ortaya çıkmasından korkarlar ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/143",
+          "targets": [
+            "4:143"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/64",
+          "targets": [
+            "9:64"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/204-206",
+          "targets": [
+            "2:204",
+            "2:205",
+            "2:206"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/101",
+          "targets": [
+            "9:101"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:4",
+        "connections": [
+          {
+            "target_coordinate": "4:143",
+            "context": "Nisa 4/143"
+          },
+          {
+            "target_coordinate": "9:64",
+            "context": "Tevbe 9/64"
+          },
+          {
+            "target_coordinate": "2:204",
+            "context": "Bakara 2/204-206"
+          },
+          {
+            "target_coordinate": "2:205",
+            "context": "Bakara 2/204-206"
+          },
+          {
+            "target_coordinate": "2:206",
+            "context": "Bakara 2/204-206"
+          },
+          {
+            "target_coordinate": "9:101",
+            "context": "Tevbe 9/101"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 4. Ayetin Tefsiri\nوَاِذَا رَاَيْتَهُمْ تُعْجِبُكَ اَجْسَامُهُمْۜ وَاِنْ يَقُولُوا تَسْمَعْ لِقَوْلِهِمْۜ كَاَنَّهُمْ خُشُبٌ مُسَنَّدَةٌۜ يَحْسَبُونَ كُلَّ صَيْحَةٍ عَلَيْهِمْۜ هُمُ الْعَدُوُّ فَاحْذَرْهُمْۜ قَاتَلَهُمُ اللّٰهُۘ اَنّٰى يُؤْفَكُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:5",
+      "text": "وَاِذَا ق۪يلَ لَهُمْ تَعَالَوْا يَسْتَغْفِرْ لَكُمْ رَسُولُ اللّٰهِ لَوَّوْا رُؤُ۫سَهُمْ وَرَاَيْتَهُمْ يَصُدُّونَ وَهُمْ مُسْتَكْبِرُونَ",
+      "translation": "Onlara: “Gelin, Allah’ın elçisi sizin için (Allah’tan) bağışlanma dilesin!” denildiğinde başlarını çevirirler. Onların kibirli bir halde uzaklaştıklarını görürsün[*].",
+      "dipnot": "[*] Nisa 4/61 - 64.",
+      "roots": [
+        "قول",
+        "علو",
+        "غفر",
+        "رسل",
+        "أله",
+        "لوي",
+        "رأس",
+        "رأي",
+        "صدد",
+        "كبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/61-64",
+          "targets": [
+            "4:61",
+            "4:62",
+            "4:63",
+            "4:64"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:5",
+        "connections": [
+          {
+            "target_coordinate": "4:61",
+            "context": "Nisa 4/61-64"
+          },
+          {
+            "target_coordinate": "4:62",
+            "context": "Nisa 4/61-64"
+          },
+          {
+            "target_coordinate": "4:63",
+            "context": "Nisa 4/61-64"
+          },
+          {
+            "target_coordinate": "4:64",
+            "context": "Nisa 4/61-64"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 5. Ayetin Tefsiri\nوَاِذَا ق۪يلَ لَهُمْ تَعَالَوْا يَسْتَغْفِرْ لَكُمْ رَسُولُ اللّٰهِ لَوَّوْا رُؤُ۫سَهُمْ وَرَاَيْتَهُمْ يَصُدُّونَ وَهُمْ مُسْتَكْبِرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:6",
+      "text": "سَوَٓاءٌ عَلَيْهِمْ اَسْتَغْفَرْتَ لَهُمْ اَمْ لَمْ تَسْتَغْفِرْ لَهُمْۜ لَنْ يَغْفِرَ اللّٰهُ لَهُمْۜ اِنَّ اللّٰهَ لَا يَهْدِي الْقَوْمَ الْفَاسِق۪ينَ",
+      "translation": "Sen onların bağışlanmalarını dilesen de dilemesen de onlar hakkında bir şey değişmez; (kendilerini düzeltmedikçe) Allah onları asla bağışlamaz! Çünkü Allah, yoldan çıkmış bir topluluğu yola getirmez[*].",
+      "dipnot": "[*] Tevbe 9/80.",
+      "roots": [
+        "سوي",
+        "غفر",
+        "أله",
+        "هدي",
+        "قوم",
+        "فسق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/80",
+          "targets": [
+            "9:80"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:6",
+        "connections": [
+          {
+            "target_coordinate": "9:80",
+            "context": "Tevbe 9/80"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 6. Ayetin Tefsiri\nسَوَٓاءٌ عَلَيْهِمْ اَسْتَغْفَرْتَ لَهُمْ اَمْ لَمْ تَسْتَغْفِرْ لَهُمْۜ لَنْ يَغْفِرَ اللّٰهُ لَهُمْۜ اِنَّ اللّٰهَ لَا يَهْدِي الْقَوْمَ الْفَاسِق۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:7",
+      "text": "هُمُ الَّذ۪ينَ يَقُولُونَ لَا تُنْفِقُوا عَلٰى مَنْ عِنْدَ رَسُولِ اللّٰهِ حَتّٰى يَنْفَضُّواۜ وَلِلّٰهِ خَزَٓائِنُ السَّمٰوَاتِ وَالْاَرْضِ وَلٰكِنَّ الْمُنَافِق۪ينَ لَا يَفْقَهُونَ",
+      "translation": "Onlar, \"Allah'ın elçisinin yanında yer alanlara hiçbir şey vermeyin ki dağılıp gitsinler!\" diyen kimselerdir. Halbuki göklerin ve yerin hazineleri Allah'ındır;[*] ama münafıklar bunu kavramazlar.",
+      "dipnot": "[*] Hicr 15/21.",
+      "roots": [
+        "قول",
+        "نفق",
+        "عند",
+        "رسل",
+        "أله",
+        "فضض",
+        "خزن",
+        "سمو",
+        "أرض",
+        "فقه"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/21",
+          "targets": [
+            "15:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:7",
+        "connections": [
+          {
+            "target_coordinate": "15:21",
+            "context": "Hicr 15/21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 7. Ayetin Tefsiri\nهُمُ الَّذ۪ينَ يَقُولُونَ لَا تُنْفِقُوا عَلٰى مَنْ عِنْدَ رَسُولِ اللّٰهِ حَتّٰى يَنْفَضُّواۜ وَلِلّٰهِ خَزَٓائِنُ السَّمٰوَاتِ وَالْاَرْضِ وَلٰكِنَّ الْمُنَافِق۪ينَ لَا يَفْقَهُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:8",
+      "text": "يَقُولُونَ لَئِنْ رَجَعْنَٓا اِلَى الْمَد۪ينَةِ لَيُخْرِجَنَّ الْاَعَزُّ مِنْهَا الْاَذَلَّۜ وَلِلّٰهِ الْعِزَّةُ وَلِرَسُولِه۪ وَلِلْمُؤْمِن۪ينَ وَلٰكِنَّ الْمُنَافِق۪ينَ لَا يَعْلَمُونَ۟",
+      "translation": "Onlar, \"Hele Medine'ye dönelim; en güçlü ve şerefli olanlar, o en aşağılıkları elbette oradan çıkaracak![1*]\" da diyorlar. Oysa güç ve şeref Allah'a, elçisine ve müminlere aittir;[2*] ama münafıklar bunu bilmezler.",
+      "dipnot": "[1*] Abdullah b. Übey b. Selûl önderliğindeki münafıklar bu sözü Benî Mustalik Gazvesi sırasında Resulullah ve müminler için söylemişlerdi (Taberî, Münafikun Suresi Tefsiri). [2*] Güç ve şeref tümüyle Allah’ın elinde olduğu için, onları hak eden kişilere verir (Âl-i İmran 3/26, Nisa 4/139, Yunus 10/65, Fatır 35/10, Saffat 37/180).",
+      "roots": [
+        "قول",
+        "رجع",
+        "مدن",
+        "خرج",
+        "عزز",
+        "ذلل",
+        "أله",
+        "رسل",
+        "أمن",
+        "نفق",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Abdullah b. Übey b. Selûl önderliğindeki münafıklar bu sözü Benî Mustalik Gazvesi sırasında Resulullah ve müminler için söylemişlerdi (Taberî, Münafikun Suresi Tefsiri). [2*] Güç ve şeref tümüyle Allah’ın elinde olduğu için, onları hak eden kişilere verir ("
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/26",
+          "targets": [
+            "3:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/139",
+          "targets": [
+            "4:139"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/65",
+          "targets": [
+            "10:65"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/10",
+          "targets": [
+            "35:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/180",
+          "targets": [
+            "37:180"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:8",
+        "connections": [
+          {
+            "target_coordinate": "3:26",
+            "context": "Âl-i İmran 3/26"
+          },
+          {
+            "target_coordinate": "4:139",
+            "context": "Nisa 4/139"
+          },
+          {
+            "target_coordinate": "10:65",
+            "context": "Yunus 10/65"
+          },
+          {
+            "target_coordinate": "35:10",
+            "context": "Fatır 35/10"
+          },
+          {
+            "target_coordinate": "37:180",
+            "context": "Saffat 37/180"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 8. Ayetin Tefsiri\nيَقُولُونَ لَئِنْ رَجَعْنَٓا اِلَى الْمَد۪ينَةِ لَيُخْرِجَنَّ الْاَعَزُّ مِنْهَا الْاَذَلَّۜ وَلِلّٰهِ الْعِزَّةُ وَلِرَسُولِه۪ وَلِلْمُؤْمِن۪ينَ وَلٰكِنَّ الْمُنَافِق۪ينَ لَا يَعْلَمُونَ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:9",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا لَا تُلْهِكُمْ اَمْوَالُكُمْ وَلَٓا اَوْلَادُكُمْ عَنْ ذِكْرِ اللّٰهِۚ وَمَنْ يَفْعَلْ ذٰلِكَ فَاُو۬لٰٓئِكَ هُمُ الْخَاسِرُونَ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "أيي",
+        "أمن",
+        "لهو",
+        "مول",
+        "ولد",
+        "ذكر",
+        "أله",
+        "فعل",
+        "خسر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "63:9",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 9. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا لَا تُلْهِكُمْ اَمْوَالُكُمْ وَلَٓا اَوْلَادُكُمْ عَنْ ذِكْرِ اللّٰهِۚ وَمَنْ يَفْعَلْ ذٰلِكَ فَاُو۬لٰٓئِكَ هُمُ الْخَاسِرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:10",
+      "text": "",
+      "translation": "Ey inanıp güvenenler! Mallarınız ve çocuklarınız sizi, Allah'ın zikrinden[1*] /kitabından alıkoymasın. Kim bunu yaparsa (Allah’ın zikrinden uzaklaşırsa) işte onlar hüsrana uğrayanlardır[2*].",
+      "dipnot": "[1*]\nZikir, hem önceki kitapların hem de Kur’an’ın ortak adıdır (Nahl 16/43-44, Enbiya 21/7, 24).\n[2*]\nTevbe 9/24, Sebe 34/37.",
+      "roots": [
+        "نفق",
+        "رزق",
+        "قبل",
+        "أتي",
+        "أحد",
+        "موت",
+        "قول",
+        "ربب",
+        "أخر",
+        "أجل",
+        "قرب",
+        "صدق",
+        "كون",
+        "صلح"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\nZikir, hem önceki kitapların hem de Kur’an’ın ortak adıdır ("
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/43-44",
+          "targets": [
+            "16:43",
+            "16:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/7,24",
+          "targets": [
+            "21:7",
+            "21:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[2*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/24",
+          "targets": [
+            "9:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/37",
+          "targets": [
+            "34:37"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:10",
+        "connections": [
+          {
+            "target_coordinate": "16:43",
+            "context": "Nahl 16/43-44"
+          },
+          {
+            "target_coordinate": "16:44",
+            "context": "Nahl 16/43-44"
+          },
+          {
+            "target_coordinate": "21:7",
+            "context": "Enbiya 21/7,24"
+          },
+          {
+            "target_coordinate": "21:24",
+            "context": "Enbiya 21/7,24"
+          },
+          {
+            "target_coordinate": "9:24",
+            "context": "Tevbe 9/24"
+          },
+          {
+            "target_coordinate": "34:37",
+            "context": "Sebe 34/37"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 10. Ayetin Tefsiri\nوَاَنْفِقُوا مِمَّا رَزَقْنَاكُمْ مِنْ قَبْلِ اَنْ يَأْتِيَ اَحَدَكُمُ الْمَوْتُ فَيَقُولَ رَبِّ لَوْلَٓا اَخَّرْتَن۪ٓي اِلٰٓى اَجَلٍ قَر۪يبٍۙ فَاَصَّدَّقَ وَاَكُنْ مِنَ الصَّالِح۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    },
+    {
+      "id": "63:11",
+      "text": "وَاَنْفِقُوا مِمَّا رَزَقْنَاكُمْ مِنْ قَبْلِ اَنْ يَأْتِيَ اَحَدَكُمُ الْمَوْتُ فَيَقُولَ رَبِّ لَوْلَٓا اَخَّرْتَن۪ٓي اِلٰٓى اَجَلٍ قَر۪يبٍۙ فَاَصَّدَّقَ وَاَكُنْ مِنَ الصَّالِح۪ينَ",
+      "translation": "Sizden birine ölüm gelip çatmadan önce[1*] size rızık olarak verdiğimiz şeylerden hayra harcayın[2*]; yoksa (harcama yapmadan) ölen kişi şöyle der: \"Rabbim, ölümümü kısa bir süre geciktirsen de sadaka /zekat verip[3*] iyilerden olsam!\"",
+      "dipnot": "[1*]\nBakara 2/254, İbrahim 14/31.\n[2*]\nArapçada infak, “harcama” demektir. Kur’an’a göre kişinin hayra yaptığı harcamaların hepsi infaktır (Bakara 2/215). Buna göre infak, sadaka ve zekâtı da içine alan üst kavramdır; bu yüzden farz olan sadaka ve zekât yerine bazen infak kelimesi kullanılmıştır (Bakara 2/267, Tevbe 9/34).\n[3*]\nSadaka kelimesi Arapçadan Türkçeye geçerken anlam daralmasına uğradığı için “yapılan ufak tefek yardımlar” şeklinde anlaşılmaktadır. Arapçada ise sadaka, farz olan zekâtı da içine alan bir kavramdır. Zekât mükellefi olsun olmasın herkesin kendi gücü nispetinde hayra harcama yapma görevi vardır. Bu görev Kur’an’da, yerine göre “zekât”, “sadaka” ve “infak” kelimeleriyle ifade edilmiştir. Türkçede zekât farz, sadaka ise nafile harcama olarak bilindiği için metne zekât kelimesi de eklenmiştir. Nitekim burada, infak etmeyen ve sadaka vermeyen kişinin sorumlu olacağının bildirilmesi, emredilen infakın ve sadakanın farz olduğunu göstermektedir.",
+      "roots": [
+        "أخر",
+        "أله",
+        "نفس",
+        "جيأ",
+        "أجل",
+        "خبر",
+        "عمل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/254",
+          "targets": [
+            "2:254"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/31",
+          "targets": [
+            "14:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[2*]\nArapçada infak, “harcama” demektir. Kur’an’a göre kişinin hayra yaptığı harcamaların hepsi infaktır ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/215",
+          "targets": [
+            "2:215"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Buna göre infak, sadaka ve zekâtı da içine alan üst kavramdır; bu yüzden farz olan sadaka ve zekât yerine bazen infak kelimesi kullanılmıştır ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/267",
+          "targets": [
+            "2:267"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/34",
+          "targets": [
+            "9:34"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[3*]\nSadaka kelimesi Arapçadan Türkçeye geçerken anlam daralmasına uğradığı için “yapılan ufak tefek yardımlar” şeklinde anlaşılmaktadır. Arapçada ise sadaka, farz olan zekâtı da içine alan bir kavramdır. Zekât mükellefi olsun olmasın herkesin kendi gücü nispetinde hayra harcama yapma görevi vardır. Bu görev Kur’an’da, yerine göre “zekât”, “sadaka” ve “infak” kelimeleriyle ifade edilmiştir. Türkçede zekât farz, sadaka ise nafile harcama olarak bilindiği için metne zekât kelimesi de eklenmiştir. Nitekim burada, infak etmeyen ve sadaka vermeyen kişinin sorumlu olacağının bildirilmesi, emredilen infakın ve sadakanın farz olduğunu göstermektedir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "63:11",
+        "connections": [
+          {
+            "target_coordinate": "2:254",
+            "context": "Bakara 2/254"
+          },
+          {
+            "target_coordinate": "14:31",
+            "context": "İbrahim 14/31"
+          },
+          {
+            "target_coordinate": "2:215",
+            "context": "Bakara 2/215"
+          },
+          {
+            "target_coordinate": "2:267",
+            "context": "Bakara 2/267"
+          },
+          {
+            "target_coordinate": "9:34",
+            "context": "Tevbe 9/34"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Münâfikûn Suresi 11. Ayetin Tefsiri\nوَلَنْ يُؤَخِّرَ اللّٰهُ نَفْسًا اِذَا جَٓاءَ اَجَلُهَاۜ وَاللّٰهُ خَب۪يرٌ بِمَا تَعْمَلُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/63.mp3"
+    }
+  ]
+}

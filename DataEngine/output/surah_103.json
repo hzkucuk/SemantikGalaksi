@@ -1,0 +1,303 @@
+{
+  "nodes": [
+    {
+      "id": "103:1",
+      "text": "وَالْعَصْرِۙ",
+      "translation": "Akıp giden zamana yemin olsun ki[*]",
+      "dipnot": "Bir kişinin en değerli varlığı vaktidir. Bu yüzden insan, vaktini Allah’ın rızasına uygun işlerle değerlendirmelidir (Mü’minun 23/3, Furkan 25/72, Kasas 28/55, İnşirah 94/7).",
+      "roots": [
+        "عصر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bir kişinin en değerli varlığı vaktidir. Bu yüzden insan, vaktini Allah’ın rızasına uygun işlerle değerlendirmelidir (Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/3",
+          "targets": [
+            "23:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/72",
+          "targets": [
+            "25:72"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/55",
+          "targets": [
+            "28:55"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşirah 94/7",
+          "targets": [
+            "94:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "103:1",
+        "connections": [
+          {
+            "target_coordinate": "23:3",
+            "context": "minun 23/3"
+          },
+          {
+            "target_coordinate": "25:72",
+            "context": "Furkan 25/72"
+          },
+          {
+            "target_coordinate": "28:55",
+            "context": "Kasas 28/55"
+          },
+          {
+            "target_coordinate": "94:7",
+            "context": "İnşirah 94/7"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/103.mp3"
+    },
+    {
+      "id": "103:2",
+      "text": "اِنَّ الْاِنْسَانَ لَف۪ي خُسْرٍۙ",
+      "translation": "insan kesin olarak kayıptadır.[*]",
+      "dipnot": "Bakara 2/27, Nisa 4/119, En’am 6/31, 140, A’raf 7/178, Yunus 10/45, Hac 22/11, Zümer 39/63, Tîn 95/4 - 5.",
+      "roots": [
+        "أنس",
+        "خسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/27",
+          "targets": [
+            "2:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/119",
+          "targets": [
+            "4:119"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/31,140",
+          "targets": [
+            "6:31",
+            "6:140"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/178",
+          "targets": [
+            "7:178"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/45",
+          "targets": [
+            "10:45"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/11",
+          "targets": [
+            "22:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/63",
+          "targets": [
+            "39:63"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tîn 95/4-5",
+          "targets": [
+            "95:4",
+            "95:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "103:2",
+        "connections": [
+          {
+            "target_coordinate": "2:27",
+            "context": "Bakara 2/27"
+          },
+          {
+            "target_coordinate": "4:119",
+            "context": "Nisa 4/119"
+          },
+          {
+            "target_coordinate": "6:31",
+            "context": "am 6/31,140"
+          },
+          {
+            "target_coordinate": "6:140",
+            "context": "am 6/31,140"
+          },
+          {
+            "target_coordinate": "7:178",
+            "context": "raf 7/178"
+          },
+          {
+            "target_coordinate": "10:45",
+            "context": "Yunus 10/45"
+          },
+          {
+            "target_coordinate": "22:11",
+            "context": "Hac 22/11"
+          },
+          {
+            "target_coordinate": "39:63",
+            "context": "Zümer 39/63"
+          },
+          {
+            "target_coordinate": "95:4",
+            "context": "Tîn 95/4-5"
+          },
+          {
+            "target_coordinate": "95:5",
+            "context": "Tîn 95/4-5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Asr Suresi 2. Ayetin Tefsiri\nاِنَّ الْاِنْسَانَ لَف۪ي خُسْرٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/103.mp3"
+    },
+    {
+      "id": "103:3",
+      "text": "اِلَّا الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ",
+      "translation": "Ancak, inanıp güvenen ve iyi işler yapan, birbirlerine hakka /Allah’tan gelen gerçeklere[1*] uymayı tembih eden ve sabırlı olmayı/ duruşunu bozmamayı tembih eden kimseler bunun dışındadır.[2*]",
+      "dipnot": "[1*] Bütünüyle hak olan, Allah’ın kitabıdır. Bilgilerini doğru kullanan herkes bunu anlar (Fussilet 41/53). [2*] Fussilet 41/8, İnşikak 84/25, Beled 90/17, Tîn 95/6.",
+      "roots": [
+        "أمن",
+        "عمل",
+        "صلح",
+        "وصي",
+        "حقق",
+        "صبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Bütünüyle hak olan, Allah’ın kitabıdır. Bilgilerini doğru kullanan herkes bunu anlar ("
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/53",
+          "targets": [
+            "41:53"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/8",
+          "targets": [
+            "41:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/25",
+          "targets": [
+            "84:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beled 90/17",
+          "targets": [
+            "90:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tîn 95/6",
+          "targets": [
+            "95:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "103:3",
+        "connections": [
+          {
+            "target_coordinate": "41:53",
+            "context": "Fussilet 41/53"
+          },
+          {
+            "target_coordinate": "41:8",
+            "context": "Fussilet 41/8"
+          },
+          {
+            "target_coordinate": "84:25",
+            "context": "İnşikak 84/25"
+          },
+          {
+            "target_coordinate": "90:17",
+            "context": "Beled 90/17"
+          },
+          {
+            "target_coordinate": "95:6",
+            "context": "Tîn 95/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Asr Suresi 3. Ayetin Tefsiri\nاِلَّا الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/103.mp3"
+    }
+  ]
+}

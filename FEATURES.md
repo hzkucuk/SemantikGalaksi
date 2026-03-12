@@ -95,7 +95,8 @@ HUD panelindeki ayet detay kartında ve ilişkili ayet listesinde bulunan seslen
 
 | Bileşen | Açıklama |
 |---------|----------|
-| Gemini TTS | Google Gemini 2.5 Flash Preview TTS — `Charon` sesi, Türkçe |
+| Doğrudan MP3 | Veri setindeki `audio` URL'si (Süleymaniye Vakfı) — öncelikli kaynak |
+| Gemini TTS | Google Gemini 2.5 Flash Preview TTS — `Charon` sesi, Türkçe (fallback) |
 | Tarayıcı TTS | `SpeechSynthesis` API fallback (tr-TR, rate 0.9) |
 | PCM→WAV | 24kHz PCM verisini WAV başlığı ile sarmalama (`pcmToWav`) |
 | Önbellek | `audioCache` Map — aynı metin tekrar istendiğinde ağ çağrısı yapılmaz |
@@ -269,3 +270,24 @@ Birden fazla makineyle çalışma desteği (örn. 1 sunucu + N terminal):
 - **viewer**: Sadece okuma ve indirme
 - Token tabanlı oturum, SHA-256 + salt şifreleme
 - Varsayılan giriş: `admin / admin123`
+
+## Zengin Veri Entegrasyonu (v0.31.0)
+`full_quran_rich_map.json` verileri `quran_data.json` ile birleştirildi. Her ayet artık ek zengin veri alanları içerir:
+
+| Alan | Tip | Açıklama |
+|------|-----|----------|
+| `dipnot_parsed` | Array | Yapılandırılmış dipnot — `text` ve `link` parçaları, tıklanabilir ayet referansları |
+| `mapping_data` | Object | Çapraz referans haritası — `coordinate` + `connections[]` (target_coordinate, context) |
+| `tefsir_popup` | Array | Detaylı tefsir içeriği — metin + ayet linkleri (popup/modal gösterim için) |
+| `audio` | String | Süleymaniye Vakfı MP3 ses URL'si (6088 ayet) |
+
+### Dipnot Gösterimi
+- HUD panelindeki dipnot alanı `dipnot_parsed` varsa zengin içerik render eder
+- Ayet referansları tıklanabilir link olarak gösterilir (amber renk, altı çizgili)
+- Linke tıklayınca ilgili ayete warp navigasyonu yapılır
+- `dipnot_parsed` yoksa düz metin (`dipnot`) gösterilir (geriye uyumlu)
+
+### Ses Oynatma Öncelik Zinciri
+1. **Doğrudan MP3** — `audio` URL'si mevcutsa doğrudan oynatılır (en hızlı)
+2. **Gemini TTS** — API key varsa Gemini 2.5 Flash ile Türkçe seslendirme
+3. **Tarayıcı TTS** — `SpeechSynthesis` API fallback (tr-TR)

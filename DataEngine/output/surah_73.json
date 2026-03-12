@@ -1,0 +1,1726 @@
+{
+  "nodes": [
+    {
+      "id": "73:1",
+      "text": "يَٓا اَيُّهَا الْمُزَّمِّلُۙ",
+      "translation": "Ey (verdiğimiz) görevi üstlenen kişi[*]",
+      "dipnot": "Yük yükleme anlamındaki “zeml (زمل)” (Mekayis) kökünden türeyen “müzzemmil” kelimesi ism-i fâil olduğu yani eylemi yapan kişiyi ifade ettiği için, kendisine verilen nübüvvet görevini üstlenmiş olan Muhammed aleyhisselamı gösterir. Müzzemmil 73/5 . ayet ona daha ağır bir görev yükleneceğini bildirmekte, Müddessir 74/1 . ayet de Muhammed aleyhisselama verilen görevden bahsetmektedir.",
+      "roots": [
+        "أيي",
+        "زمل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Yük yükleme anlamındaki “zeml (زمل)” (Mekayis) kökünden türeyen “müzzemmil” kelimesi ism-i fâil olduğu yani eylemi yapan kişiyi ifade ettiği için, kendisine verilen nübüvvet görevini üstlenmiş olan Muhammed aleyhisselamı gösterir. "
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/5",
+          "targets": [
+            "73:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayet ona daha ağır bir görev yükleneceğini bildirmekte, "
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/1",
+          "targets": [
+            "74:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayet de Muhammed aleyhisselama verilen görevden bahsetmektedir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:1",
+        "connections": [
+          {
+            "target_coordinate": "73:5",
+            "context": "Müzzemmil 73/5"
+          },
+          {
+            "target_coordinate": "74:1",
+            "context": "Müddessir 74/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 1. Ayetin Tefsiri\nيَٓا اَيُّهَا الْمُزَّمِّلُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:2",
+      "text": "قُمِ الَّيْلَ اِلَّا قَل۪يلًاۙ",
+      "translation": "Az bir kısmı hariç geceleyin ayakta ol!",
+      "dipnot": "",
+      "roots": [
+        "قوم",
+        "ليل",
+        "قلل"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "73:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 2. Ayetin Tefsiri\nقُمِ الَّيْلَ اِلَّا قَل۪يلًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:3",
+      "text": "نِصْفَهُٓ اَوِ انْقُصْ مِنْهُ قَل۪يلًاۙ",
+      "translation": "Gece yarısında kalk (ve ayakta ol) ya da (ayakta olacağın süreyi) biraz eksilt[*].",
+      "dipnot": "Arapçada “gece (ليل)” sözcüğü, gün batımından gün doğumuna kadarki zaman diliminin tamamını kapsar. Gece üç ana bölümden oluşur. Bu bölümlendirme matematiksel hesaba göre değil, ufkun kararmasına ya da aydınlanmasına göre yapılır; çünkü Hûd 11/114. ayet, gecenin gündüze yakın bölümlerinden bahseder ve bu yakınlık gördüğümüz güneş ışığı ve ısının değişikliğiyle anlaşılır. Uzunluktan bağımsız olarak, bu bölümlerin her birine “gecenin üçte biri” denir. Gecenin birinci bölümü akşam ve yatsı namazlarının vaktidir. İkinci bölümü yatsı vaktinin bitiminden seher vaktine kadar olan uyku ve dinlenme vaktidir (En’am 6/96 ). Üçüncü bölümü ise seher/sahur vaktiyle sabah namazının vaktidir. Gecenin birinci ve üçüncü bölümleri alacakaranlıktır ve uzunlukları hemen hemen birbirine eşittir. İkinci bölüm ise ikisinin ortasındaki en uzun bölümdür (İnsan 76/26 ). Bu bölüme “gece yarısı (نصفه)” denir (Müzzemmil 73/20",
+      "roots": [
+        "نصف",
+        "نقص",
+        "قلل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Arapçada “gece (ليل)” sözcüğü, gün batımından gün doğumuna kadarki zaman diliminin tamamını kapsar. Gece üç ana bölümden oluşur. Bu bölümlendirme matematiksel hesaba göre değil, ufkun kararmasına ya da aydınlanmasına göre yapılır; "
+        },
+        {
+          "type": "link",
+          "content": "çünkü Hûd 11/114",
+          "targets": [
+            "11:114"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayet, gecenin gündüze yakın bölümlerinden bahseder ve bu yakınlık gördüğümüz güneş ışığı ve ısının değişikliğiyle anlaşılır. Uzunluktan bağımsız olarak, bu bölümlerin her birine “gecenin üçte biri” denir. Gecenin birinci bölümü akşam ve yatsı namazlarının vaktidir. İkinci bölümü yatsı vaktinin bitiminden seher vaktine kadar olan uyku ve dinlenme vaktidir (En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/96",
+          "targets": [
+            "6:96"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Üçüncü bölümü ise seher/sahur vaktiyle sabah namazının vaktidir. Gecenin birinci ve üçüncü bölümleri alacakaranlıktır ve uzunlukları hemen hemen birbirine eşittir. İkinci bölüm ise ikisinin ortasındaki en uzun bölümdür ("
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/26",
+          "targets": [
+            "76:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bu bölüme “gece yarısı (نصفه)” denir ("
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/20",
+          "targets": [
+            "73:20"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:3",
+        "connections": [
+          {
+            "target_coordinate": "11:114",
+            "context": "çünkü Hûd 11/114"
+          },
+          {
+            "target_coordinate": "6:96",
+            "context": "am 6/96"
+          },
+          {
+            "target_coordinate": "76:26",
+            "context": "İnsan 76/26"
+          },
+          {
+            "target_coordinate": "73:20",
+            "context": "Müzzemmil 73/20"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 3. Ayetin Tefsiri\nنِصْفَهُٓ اَوِ انْقُصْ مِنْهُ قَل۪يلًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:4",
+      "text": "اَوْ زِدْ عَلَيْهِ وَرَتِّلِ الْقُرْاٰنَ تَرْت۪يلًاۜ",
+      "translation": "Yahut biraz daha (süre) ekle[1*] ve Kur'ân'ı tertîl üzere oku /âyet kümelerinin[2*] bağlantılarını bulup onları doğru bir şekilde sıralayarak oku[3*]!",
+      "dipnot": "[1*]\nMüzzemmil 73/20.\n[2*]\n“Ayet kümeleri” anlamı verdiğimiz “kur'ân”, karaa (قرأ) fiilinin mastarı olup toplama ve birleştirme anlamındadır. Mastar olarak kullanıldığı gibi bütünlük ve küme anlamında isim olarak da kullanılır. Allah’ın son kitabına Kur’an denmesi, bütün sureleri toplayıp bir araya getirmesi sebebiyledir (Lisanu’l-Arab). Arapçada kur’ân (قُرْآنً) kelimesinin çoğulu olmadığından tekil için de çoğul için de kullanılır. Bu sebeple kur’ân kelimesine, bağlamına göre, kur’ânlar yani ayet kümeleri diye de anlam verilebilir.\n[3*]\nTertîl, bir şeyin bağlantılarını kurup onu doğru bir şekilde sıralamaktır (Müfredat). Allah, kendi sözlerinden ibaret olan ayetlerin birbirleriyle bağlantılarını da kendisi kurmuş, onları, açık ve anlaşılır bir metotla, hikmet metodu ile düzenlemiştir (A'raf 7/52, İsra 17/106, Furkan 25/32). Burada Muhammed aleyhisselama emredilen tertîl, Allah’ın kurduğu bağlantıları bularak ayet kümelerini ona göre anlamaya çalışmasıdır. Böylece Kur’an’ı, Allah’ın istediği şekilde okumuş olacaktır. Bu ayet, surenin son ayeti ile birlikte düşünülünce Nebimizin Mekke’de, her gece ümmetinden bir kesime, Kitabı ve hikmeti öğrettiğini (Bakara 2/151,",
+      "roots": [
+        "زيد",
+        "رتل",
+        "قرأ"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/20",
+          "targets": [
+            "73:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[2*]\n“Ayet kümeleri” anlamı verdiğimiz “kur'ân”, karaa (قرأ) fiilinin mastarı olup toplama ve birleştirme anlamındadır. Mastar olarak kullanıldığı gibi bütünlük ve küme anlamında isim olarak da kullanılır. Allah’ın son kitabına Kur’an denmesi, bütün sureleri toplayıp bir araya getirmesi sebebiyledir (Lisanu’l-Arab). Arapçada kur’ân (قُرْآنً) kelimesinin çoğulu olmadığından tekil için de çoğul için de kullanılır. Bu sebeple kur’ân kelimesine, bağlamına göre, kur’ânlar yani ayet kümeleri diye de anlam verilebilir.\n[3*]\nTertîl, bir şeyin bağlantılarını kurup onu doğru bir şekilde sıralamaktır (Müfredat). Allah, kendi sözlerinden ibaret olan ayetlerin birbirleriyle bağlantılarını da kendisi kurmuş, onları, açık ve anlaşılır bir metotla, hikmet metodu ile düzenlemiştir ("
+        },
+        {
+          "type": "link",
+          "content": "A'raf 7/52",
+          "targets": [
+            "7:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/106",
+          "targets": [
+            "17:106"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/32",
+          "targets": [
+            "25:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Burada Muhammed aleyhisselama emredilen tertîl, Allah’ın kurduğu bağlantıları bularak ayet kümelerini ona göre anlamaya çalışmasıdır. Böylece Kur’an’ı, Allah’ın istediği şekilde okumuş olacaktır. Bu ayet, surenin son ayeti ile birlikte düşünülünce Nebimizin Mekke’de, her gece ümmetinden bir kesime, Kitabı ve hikmeti öğrettiğini ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/151",
+          "targets": [
+            "2:151"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:4",
+        "connections": [
+          {
+            "target_coordinate": "73:20",
+            "context": "Müzzemmil 73/20"
+          },
+          {
+            "target_coordinate": "7:52",
+            "context": "A'raf 7/52"
+          },
+          {
+            "target_coordinate": "17:106",
+            "context": "İsra 17/106"
+          },
+          {
+            "target_coordinate": "25:32",
+            "context": "Furkan 25/32"
+          },
+          {
+            "target_coordinate": "2:151",
+            "context": "Bakara 2/151"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 4. Ayetin Tefsiri\nاَوْ زِدْ عَلَيْهِ وَرَتِّلِ الْقُرْاٰنَ تَرْت۪يلًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:5",
+      "text": "اِنَّا سَنُلْق۪ي عَلَيْكَ قَوْلًا ثَق۪يلًاۜ",
+      "translation": "Çünkü biz sana (sorumluluğu) ağır sözler ulaştıracağız[*].",
+      "dipnot": "Ağır sorumluluklar yükleyen ayetler indireceğiz (Haşr 59/21).",
+      "roots": [
+        "لقي",
+        "قول",
+        "ثقل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Ağır sorumluluklar yükleyen ayetler indireceğiz ("
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/21",
+          "targets": [
+            "59:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:5",
+        "connections": [
+          {
+            "target_coordinate": "59:21",
+            "context": "Haşr 59/21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 5. Ayetin Tefsiri\nاِنَّا سَنُلْق۪ي عَلَيْكَ قَوْلًا ثَق۪يلًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:6",
+      "text": "اِنَّ نَاشِئَةَ الَّيْلِ هِيَ اَشَدُّ وَطْـًٔا وَاَقْوَمُ ق۪يلًاۜ",
+      "translation": "Gece oluşan ortam[1*] belletme açısından daha etkili (o ortamda yapılan) konuşmalar da daha kalıcıdır[2*].",
+      "dipnot": "[1*] Öğrenilen bilginin zihinde kalıcılık kazanması ve bellek oluşumu beyinde önce kısa süreli güçlendirme /potensiasyon ve yapılan tekrarlarla birlikte uzun süreli güçlendirme /potensiasyon denilen süreçlerle oluşur. Bu süreçte sinir hücreleri arasında gözle görülür bağlantılar oluşur ve sinir hücreleri yeniden inşa olurlar.\n[2*] Bu Surenin 20. ayetinde, gece yapılan Kur’an’ı anlama çalışmalarına, Nebimizle beraber bir çok Müslümanın da katıldığı ifade edilmektedir.",
+      "roots": [
+        "نشأ",
+        "ليل",
+        "شدد",
+        "وطأ",
+        "قوم",
+        "قول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Öğrenilen bilginin zihinde kalıcılık kazanması ve bellek oluşumu beyinde önce kısa süreli güçlendirme /potensiasyon ve yapılan tekrarlarla birlikte uzun süreli güçlendirme /potensiasyon denilen süreçlerle oluşur. Bu süreçte sinir hücreleri arasında gözle görülür bağlantılar oluşur ve sinir hücreleri yeniden inşa olurlar.\n[2*] Bu Surenin 20. ayetinde, gece yapılan Kur’an’ı anlama çalışmalarına, Nebimizle beraber bir çok Müslümanın da katıldığı ifade edilmektedir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:6",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 6. Ayetin Tefsiri\nاِنَّ نَاشِئَةَ الَّيْلِ هِيَ اَشَدُّ وَطْـًٔا وَاَقْوَمُ ق۪يلًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:7",
+      "text": "اِنَّ لَكَ فِي النَّهَارِ سَبْحًا طَو۪يلًاۜ",
+      "translation": "Gündüzün, uzayıp giden meşguliyetlerin olur[*].",
+      "dipnot": "Kasas 28/73, Nebe 78/10 - 11.",
+      "roots": [
+        "نهر",
+        "سبح",
+        "طول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kasas 28/73",
+          "targets": [
+            "28:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/10-11",
+          "targets": [
+            "78:10",
+            "78:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:7",
+        "connections": [
+          {
+            "target_coordinate": "28:73",
+            "context": "Kasas 28/73"
+          },
+          {
+            "target_coordinate": "78:10",
+            "context": "Nebe 78/10-11"
+          },
+          {
+            "target_coordinate": "78:11",
+            "context": "Nebe 78/10-11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 7. Ayetin Tefsiri\nاِنَّ لَكَ فِي النَّهَارِ سَبْحًا طَو۪يلًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:8",
+      "text": "وَاذْكُرِ اسْمَ رَبِّكَ وَتَبَتَّلْ اِلَيْهِ تَبْت۪يلًاۜ",
+      "translation": "Rabbinin ismini /özelliğini[1*] aklında tut[2*] ve tamamen O’nun yoluna baş koy[3*]!",
+      "dipnot": "[1*] “Özellik” diye meal verdiğimiz kelime “isim”dir. Çünkü Arapçada isim, bir şeyi tanımlayan, neye yaradığını gösteren ve akılda tutmaya yarayan sözdür (Müfredat). Türkçede “isim”, bu anlamı içermediği için meale “özellik” olarak yazdık (Bakara 2/31, A’raf 7/180, İsra 17/110, Taha 20/8, Haşr 59/24).\n[2*] İnsan 76/25.\n[3*] En’am 6/162 - 163.",
+      "roots": [
+        "ذكر",
+        "سمو",
+        "ربب",
+        "بتل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] “Özellik” diye meal verdiğimiz kelime “isim”dir. Çünkü Arapçada isim, bir şeyi tanımlayan, neye yaradığını gösteren ve akılda tutmaya yarayan sözdür (Müfredat). Türkçede “isim”, bu anlamı içermediği için meale “özellik” olarak yazdık ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/31",
+          "targets": [
+            "2:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/180",
+          "targets": [
+            "7:180"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/110",
+          "targets": [
+            "17:110"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/8",
+          "targets": [
+            "20:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/24",
+          "targets": [
+            "59:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[2*] "
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/25",
+          "targets": [
+            "76:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[3*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/162-163",
+          "targets": [
+            "6:162",
+            "6:163"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:8",
+        "connections": [
+          {
+            "target_coordinate": "2:31",
+            "context": "Bakara 2/31"
+          },
+          {
+            "target_coordinate": "7:180",
+            "context": "raf 7/180"
+          },
+          {
+            "target_coordinate": "17:110",
+            "context": "İsra 17/110"
+          },
+          {
+            "target_coordinate": "20:8",
+            "context": "Taha 20/8"
+          },
+          {
+            "target_coordinate": "59:24",
+            "context": "Haşr 59/24"
+          },
+          {
+            "target_coordinate": "76:25",
+            "context": "İnsan 76/25"
+          },
+          {
+            "target_coordinate": "6:162",
+            "context": "am 6/162-163"
+          },
+          {
+            "target_coordinate": "6:163",
+            "context": "am 6/162-163"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 8. Ayetin Tefsiri\nوَاذْكُرِ اسْمَ رَبِّكَ وَتَبَتَّلْ اِلَيْهِ تَبْت۪يلًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:9",
+      "text": "رَبُّ الْمَشْرِقِ وَالْمَغْرِبِ لَٓا اِلٰهَ اِلَّا هُوَ فَاتَّخِذْهُ وَك۪يلًا",
+      "translation": "O, doğunun da batının da Rabbi /Sahibidir[1*]. Ondan başka ilâh yoktur. Öyleyse O’nu kendine vekil /dayanak edin[2*]!",
+      "dipnot": "[1*] Güneş, yıl boyunca her gün farklı noktalardan doğar ve batar. 21 Aralık’tan 21 Haziran’a kadar doğuş ve batış noktaları sürekli kuzeye kayar. 20 Haziran’da kuzeydeki en uç doğuş ve batış noktalarına ulaşır, 21 Haziran’da geri dönmeye başlar ve 21 Aralık’a kadar sürekli güneye kayar. 20 Aralık’ta güneydeki en uç doğuş ve batış noktalarına ulaşır ve 21 Aralık’ta geri dönmeye başlar. (Şuara 26/28, Saffat 37/5, Rahman 55/17, Mearic 70/40).\n[2*] Ahzab 33/3, 48, Teğabün 64/13.",
+      "roots": [
+        "ربب",
+        "شرق",
+        "غرب",
+        "أله",
+        "أخذ",
+        "وكل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Güneş, yıl boyunca her gün farklı noktalardan doğar ve batar. 21 Aralık’tan 21 Haziran’a kadar doğuş ve batış noktaları sürekli kuzeye kayar. 20 Haziran’da kuzeydeki en uç doğuş ve batış noktalarına ulaşır, 21 Haziran’da geri dönmeye başlar ve 21 Aralık’a kadar sürekli güneye kayar. 20 Aralık’ta güneydeki en uç doğuş ve batış noktalarına ulaşır ve 21 Aralık’ta geri dönmeye başlar. ("
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/28",
+          "targets": [
+            "26:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/5",
+          "targets": [
+            "37:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/17",
+          "targets": [
+            "55:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/40",
+          "targets": [
+            "70:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[2*] "
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/3,48",
+          "targets": [
+            "33:3",
+            "33:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/13",
+          "targets": [
+            "64:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:9",
+        "connections": [
+          {
+            "target_coordinate": "26:28",
+            "context": "Şuara 26/28"
+          },
+          {
+            "target_coordinate": "37:5",
+            "context": "Saffat 37/5"
+          },
+          {
+            "target_coordinate": "55:17",
+            "context": "Rahman 55/17"
+          },
+          {
+            "target_coordinate": "70:40",
+            "context": "Mearic 70/40"
+          },
+          {
+            "target_coordinate": "33:3",
+            "context": "Ahzab 33/3,48"
+          },
+          {
+            "target_coordinate": "33:48",
+            "context": "Ahzab 33/3,48"
+          },
+          {
+            "target_coordinate": "64:13",
+            "context": "Teğabün 64/13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 9. Ayetin Tefsiri\nرَبُّ الْمَشْرِقِ وَالْمَغْرِبِ لَٓا اِلٰهَ اِلَّا هُوَ فَاتَّخِذْهُ وَك۪يلًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:10",
+      "text": "وَاصْبِرْ عَلٰى مَا يَقُولُونَ وَاهْجُرْهُمْ هَجْرًا جَم۪يلًا",
+      "translation": "Onların söylediklerine sabret /duruşunu bozma ve onlardan güzel bir şekilde ayrıl[*].",
+      "dipnot": "Nisa 4/140, En’am 6/68, Tâhâ 20/130, Sâd 38/17, Kâf 50/39, Mearic 70/5.",
+      "roots": [
+        "صبر",
+        "قول",
+        "هجر",
+        "جمل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nisa 4/140",
+          "targets": [
+            "4:140"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/68",
+          "targets": [
+            "6:68"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tâhâ 20/130",
+          "targets": [
+            "20:130"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sâd 38/17",
+          "targets": [
+            "38:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kâf 50/39",
+          "targets": [
+            "50:39"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/5",
+          "targets": [
+            "70:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:10",
+        "connections": [
+          {
+            "target_coordinate": "4:140",
+            "context": "Nisa 4/140"
+          },
+          {
+            "target_coordinate": "6:68",
+            "context": "am 6/68"
+          },
+          {
+            "target_coordinate": "20:130",
+            "context": "Tâhâ 20/130"
+          },
+          {
+            "target_coordinate": "38:17",
+            "context": "Sâd 38/17"
+          },
+          {
+            "target_coordinate": "50:39",
+            "context": "Kâf 50/39"
+          },
+          {
+            "target_coordinate": "70:5",
+            "context": "Mearic 70/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 10. Ayetin Tefsiri\nوَاصْبِرْ عَلٰى مَا يَقُولُونَ وَاهْجُرْهُمْ هَجْرًا جَم۪يلًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:11",
+      "text": "وَذَرْن۪ي وَالْمُكَذِّب۪ينَ اُو۬لِي النَّعْمَةِ وَمَهِّلْهُمْ قَل۪يلًا",
+      "translation": "Nimetler içindeki yalancıları da bana bırak[1*] ve onlara biraz süre tanı[2*]!",
+      "dipnot": "[1*] Kalem 68/44, Müddessir 74/11 - 15.\n[2*] A’raf 7/182 -",
+      "roots": [
+        "وذر",
+        "كذب",
+        "نعم",
+        "مهل",
+        "قلل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/44",
+          "targets": [
+            "68:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/11-15",
+          "targets": [
+            "74:11",
+            "74:12",
+            "74:13",
+            "74:14",
+            "74:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[2*] A’raf 7/182 -"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:11",
+        "connections": [
+          {
+            "target_coordinate": "68:44",
+            "context": "Kalem 68/44"
+          },
+          {
+            "target_coordinate": "74:11",
+            "context": "Müddessir 74/11-15"
+          },
+          {
+            "target_coordinate": "74:12",
+            "context": "Müddessir 74/11-15"
+          },
+          {
+            "target_coordinate": "74:13",
+            "context": "Müddessir 74/11-15"
+          },
+          {
+            "target_coordinate": "74:14",
+            "context": "Müddessir 74/11-15"
+          },
+          {
+            "target_coordinate": "74:15",
+            "context": "Müddessir 74/11-15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 11. Ayetin Tefsiri\nوَذَرْن۪ي وَالْمُكَذِّب۪ينَ اُو۬لِي النَّعْمَةِ وَمَهِّلْهُمْ قَل۪يلًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:12",
+      "text": "اِنَّ لَدَيْنَٓا اَنْكَالًا وَجَح۪يمًاۙ",
+      "translation": "Çünkü (onlar için) yanımızda bukağılar, yakıcı ateş /cehennem,",
+      "dipnot": "[*] İbrahim 14/49, Mü’min 40/71, Hakka 69/30 - 32, İnsan 76/4.",
+      "roots": [
+        "نكل",
+        "جحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/49",
+          "targets": [
+            "14:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/71",
+          "targets": [
+            "40:71"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/30-32",
+          "targets": [
+            "69:30",
+            "69:31",
+            "69:32"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/4",
+          "targets": [
+            "76:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:12",
+        "connections": [
+          {
+            "target_coordinate": "14:49",
+            "context": "İbrahim 14/49"
+          },
+          {
+            "target_coordinate": "40:71",
+            "context": "min 40/71"
+          },
+          {
+            "target_coordinate": "69:30",
+            "context": "Hakka 69/30-32"
+          },
+          {
+            "target_coordinate": "69:31",
+            "context": "Hakka 69/30-32"
+          },
+          {
+            "target_coordinate": "69:32",
+            "context": "Hakka 69/30-32"
+          },
+          {
+            "target_coordinate": "76:4",
+            "context": "İnsan 76/4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 12. Ayetin Tefsiri\nاِنَّ لَدَيْنَٓا اَنْكَالًا وَجَح۪يمًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:13",
+      "text": "وَطَعَامًا ذَا غُصَّةٍ وَعَذَابًا اَل۪يمًا",
+      "translation": "boğazı tıkayan bir yiyecek ve acıklı bir azap var.",
+      "dipnot": "[*] Saffat 37/62 - 65, Duhan 44/43 - 46. Vakıa 56/51 - 53, Hâkka 69/36 - 37, Ğaşiye 88/6 - 7.",
+      "roots": [
+        "طعم",
+        "غصص",
+        "عذب",
+        "ألم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/62-65",
+          "targets": [
+            "37:62",
+            "37:63",
+            "37:64",
+            "37:65"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/43-46",
+          "targets": [
+            "44:43",
+            "44:44",
+            "44:45",
+            "44:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". "
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/51-53",
+          "targets": [
+            "56:51",
+            "56:52",
+            "56:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/36-37",
+          "targets": [
+            "69:36",
+            "69:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ğaşiye 88/6-7",
+          "targets": [
+            "88:6",
+            "88:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:13",
+        "connections": [
+          {
+            "target_coordinate": "37:62",
+            "context": "Saffat 37/62-65"
+          },
+          {
+            "target_coordinate": "37:63",
+            "context": "Saffat 37/62-65"
+          },
+          {
+            "target_coordinate": "37:64",
+            "context": "Saffat 37/62-65"
+          },
+          {
+            "target_coordinate": "37:65",
+            "context": "Saffat 37/62-65"
+          },
+          {
+            "target_coordinate": "44:43",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "44:44",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "44:45",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "44:46",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "56:51",
+            "context": "Vakıa 56/51-53"
+          },
+          {
+            "target_coordinate": "56:52",
+            "context": "Vakıa 56/51-53"
+          },
+          {
+            "target_coordinate": "56:53",
+            "context": "Vakıa 56/51-53"
+          },
+          {
+            "target_coordinate": "69:36",
+            "context": "Hâkka 69/36-37"
+          },
+          {
+            "target_coordinate": "69:37",
+            "context": "Hâkka 69/36-37"
+          },
+          {
+            "target_coordinate": "88:6",
+            "context": "Ğaşiye 88/6-7"
+          },
+          {
+            "target_coordinate": "88:7",
+            "context": "Ğaşiye 88/6-7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 13. Ayetin Tefsiri\nوَطَعَامًا ذَا غُصَّةٍ وَعَذَابًا اَل۪يمًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:14",
+      "text": "يَوْمَ تَرْجُفُ الْاَرْضُ وَالْجِبَالُ وَكَانَتِ الْجِبَالُ كَث۪يبًا مَه۪يلًا",
+      "translation": "O gün, yeryüzü ve dağlar şiddetle sarsılacak, dağlar saçılıp dağılmış kum tepelerine dönüşecek.",
+      "dipnot": "[*] Yeniden diriliş gününden önce dağların durumunu anlatan diğer ayetler için bkz: Kehf 18/47, Taha 20/105 - 107 , Tur 52/10, Vakıa 56/6, Hâkka 69/14, Mearic 70/9, Mürselat 77/10, Nebe 78/20, Tekvir 81/3, Karia 101/5.",
+      "roots": [
+        "يوم",
+        "رجف",
+        "أرض",
+        "جبل",
+        "كون",
+        "كثب",
+        "هيل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Yeniden diriliş gününden önce dağların durumunu anlatan diğer ayetler için bkz: "
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/47",
+          "targets": [
+            "18:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/105-107",
+          "targets": [
+            "20:105",
+            "20:106",
+            "20:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/10",
+          "targets": [
+            "52:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/6",
+          "targets": [
+            "56:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/14",
+          "targets": [
+            "69:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/9",
+          "targets": [
+            "70:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/10",
+          "targets": [
+            "77:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/20",
+          "targets": [
+            "78:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/3",
+          "targets": [
+            "81:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Karia 101/5",
+          "targets": [
+            "101:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:14",
+        "connections": [
+          {
+            "target_coordinate": "18:47",
+            "context": "Kehf 18/47"
+          },
+          {
+            "target_coordinate": "20:105",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "20:106",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "20:107",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "52:10",
+            "context": "Tur 52/10"
+          },
+          {
+            "target_coordinate": "56:6",
+            "context": "Vakıa 56/6"
+          },
+          {
+            "target_coordinate": "69:14",
+            "context": "Hâkka 69/14"
+          },
+          {
+            "target_coordinate": "70:9",
+            "context": "Mearic 70/9"
+          },
+          {
+            "target_coordinate": "77:10",
+            "context": "Mürselat 77/10"
+          },
+          {
+            "target_coordinate": "78:20",
+            "context": "Nebe 78/20"
+          },
+          {
+            "target_coordinate": "81:3",
+            "context": "Tekvir 81/3"
+          },
+          {
+            "target_coordinate": "101:5",
+            "context": "Karia 101/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 14. Ayetin Tefsiri\nيَوْمَ تَرْجُفُ الْاَرْضُ وَالْجِبَالُ وَكَانَتِ الْجِبَالُ كَث۪يبًا مَه۪يلًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:15",
+      "text": "اِنَّٓا اَرْسَلْنَٓا اِلَيْكُمْ رَسُولًا شَاهِدًا عَلَيْكُمْ كَمَٓا اَرْسَلْنَٓا اِلٰى فِرْعَوْنَ رَسُولًاۜ",
+      "translation": "Firavun’a resul /elçi gönderdiğimiz gibi size de hakkınızda şahitlik edecek bir resul /elçi gönderdik.",
+      "dipnot": "[1*] Hud 11/96 - 97, Mü’minun 23/45 - 46, Mü’min 40/23 - 24, Zuhruf 43/46. [2*] Nisa 4/41, Ahzab 33/45, Fetih 48/8.",
+      "roots": [
+        "رسل",
+        "شهد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/96-97",
+          "targets": [
+            "11:96",
+            "11:97"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/45-46",
+          "targets": [
+            "23:45",
+            "23:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/23-24",
+          "targets": [
+            "40:23",
+            "40:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/46",
+          "targets": [
+            "43:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/41",
+          "targets": [
+            "4:41"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/45",
+          "targets": [
+            "33:45"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/8",
+          "targets": [
+            "48:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:15",
+        "connections": [
+          {
+            "target_coordinate": "11:96",
+            "context": "Hud 11/96-97"
+          },
+          {
+            "target_coordinate": "11:97",
+            "context": "Hud 11/96-97"
+          },
+          {
+            "target_coordinate": "23:45",
+            "context": "minun 23/45-46"
+          },
+          {
+            "target_coordinate": "23:46",
+            "context": "minun 23/45-46"
+          },
+          {
+            "target_coordinate": "40:23",
+            "context": "min 40/23-24"
+          },
+          {
+            "target_coordinate": "40:24",
+            "context": "min 40/23-24"
+          },
+          {
+            "target_coordinate": "43:46",
+            "context": "Zuhruf 43/46"
+          },
+          {
+            "target_coordinate": "4:41",
+            "context": "Nisa 4/41"
+          },
+          {
+            "target_coordinate": "33:45",
+            "context": "Ahzab 33/45"
+          },
+          {
+            "target_coordinate": "48:8",
+            "context": "Fetih 48/8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 15. Ayetin Tefsiri\nاِنَّٓا اَرْسَلْنَٓا اِلَيْكُمْ رَسُولًا شَاهِدًا عَلَيْكُمْ كَمَٓا اَرْسَلْنَٓا اِلٰى فِرْعَوْنَ رَسُولًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:16",
+      "text": "فَعَصٰى فِرْعَوْنُ الرَّسُولَ فَاَخَذْنَاهُ اَخْذًا وَب۪يلًا",
+      "translation": "Ama Firavun o resule karşı geldi, biz de onu kötü bir şekilde yakaladık.",
+      "dipnot": "[*] Zariyat 51/38 - 40.",
+      "roots": [
+        "عصي",
+        "رسل",
+        "أخذ",
+        "وبل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/38-40",
+          "targets": [
+            "51:38",
+            "51:39",
+            "51:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:16",
+        "connections": [
+          {
+            "target_coordinate": "51:38",
+            "context": "Zariyat 51/38-40"
+          },
+          {
+            "target_coordinate": "51:39",
+            "context": "Zariyat 51/38-40"
+          },
+          {
+            "target_coordinate": "51:40",
+            "context": "Zariyat 51/38-40"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 16. Ayetin Tefsiri\nفَعَصٰى فِرْعَوْنُ الرَّسُولَ فَاَخَذْنَاهُ اَخْذًا وَب۪يلًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:17",
+      "text": "فَكَيْفَ تَتَّقُونَ اِنْ كَفَرْتُمْ يَوْمًا يَجْعَلُ الْوِلْدَانَ ش۪يبًاۗ",
+      "translation": "Peki ya siz (bu resulü) görmezden gelirseniz, çocukları bile ak saçlı ihtiyarlar haline getirecek (kadar dehşetli) bir günde kendinizi nasıl koruyacaksınız!",
+      "dipnot": "[*] Hac 22/1 - 2.",
+      "roots": [
+        "كيف",
+        "وقي",
+        "كفر",
+        "يوم",
+        "جعل",
+        "ولد",
+        "شيب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/1-2",
+          "targets": [
+            "22:1",
+            "22:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:17",
+        "connections": [
+          {
+            "target_coordinate": "22:1",
+            "context": "Hac 22/1-2"
+          },
+          {
+            "target_coordinate": "22:2",
+            "context": "Hac 22/1-2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 17. Ayetin Tefsiri\nفَكَيْفَ تَتَّقُونَ اِنْ كَفَرْتُمْ يَوْمًا يَجْعَلُ الْوِلْدَانَ ش۪يبًاۗ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:18",
+      "text": "اَلسَّمَٓاءُ مُنْفَطِرٌ بِه۪ۜ كَانَ وَعْدُهُ مَفْعُولًا",
+      "translation": "O gün gök yarılmış, Allah’ın verdiği söz yerine gelmiş olur.",
+      "dipnot": "[1*] İnfitar 82/1. [2*] Yunus 10/4, Enbiya 21/104.",
+      "roots": [
+        "سمو",
+        "فطر",
+        "كون",
+        "وعد",
+        "فعل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/1",
+          "targets": [
+            "82:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/4",
+          "targets": [
+            "10:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/104",
+          "targets": [
+            "21:104"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:18",
+        "connections": [
+          {
+            "target_coordinate": "82:1",
+            "context": "İnfitar 82/1"
+          },
+          {
+            "target_coordinate": "10:4",
+            "context": "Yunus 10/4"
+          },
+          {
+            "target_coordinate": "21:104",
+            "context": "Enbiya 21/104"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 18. Ayetin Tefsiri\nاَلسَّمَٓاءُ مُنْفَطِرٌ بِه۪ۜ كَانَ وَعْدُهُ مَفْعُولًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:19",
+      "text": "اِنَّ هٰذِه۪ تَذْكِرَةٌۚ فَمَنْ شَٓاءَ اتَّخَذَ اِلٰى رَبِّه۪ سَب۪يلًا۟",
+      "translation": "Bunlar, size verilen doğru bilgilerdir. Yapılması gerekeni yapan, Rabbinin gösterdiği bir yola girer.",
+      "dipnot": "[1*] Şâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (شيء) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder ( Kamer 54/49, Ra’d 13/8 ). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır ( Enbiyâ 21/35 ). Allah, herkesin doğru yolda olmasını ister ( Nisa 4/26 ) ama sadece doğru şeyler yapanı doğru yolda sayar ( Nur 24/46 ). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur ( Şems 91/7 - 10",
+      "roots": [
+        "ذكر",
+        "شيأ",
+        "أخذ",
+        "ربب",
+        "سبل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Şâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (شيء) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder ( "
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/49",
+          "targets": [
+            "54:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/8",
+          "targets": [
+            "13:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır ( "
+        },
+        {
+          "type": "link",
+          "content": "Enbiyâ 21/35",
+          "targets": [
+            "21:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah, herkesin doğru yolda olmasını ister ( "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/26",
+          "targets": [
+            "4:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ama sadece doğru şeyler yapanı doğru yolda sayar ( "
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/46",
+          "targets": [
+            "24:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur ( "
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/7-10",
+          "targets": [
+            "91:7",
+            "91:8",
+            "91:9",
+            "91:10"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:19",
+        "connections": [
+          {
+            "target_coordinate": "54:49",
+            "context": "Kamer 54/49"
+          },
+          {
+            "target_coordinate": "13:8",
+            "context": "d 13/8"
+          },
+          {
+            "target_coordinate": "21:35",
+            "context": "Enbiyâ 21/35"
+          },
+          {
+            "target_coordinate": "4:26",
+            "context": "Nisa 4/26"
+          },
+          {
+            "target_coordinate": "24:46",
+            "context": "Nur 24/46"
+          },
+          {
+            "target_coordinate": "91:7",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:8",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:9",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:10",
+            "context": "Şems 91/7-10"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 19. Ayetin Tefsiri\nاِنَّ هٰذِه۪ تَذْكِرَةٌۚ فَمَنْ شَٓاءَ اتَّخَذَ اِلٰى رَبِّه۪ سَب۪يلًا۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    },
+    {
+      "id": "73:20",
+      "text": "اِنَّ رَبَّكَ يَعْلَمُ اَنَّكَ تَقُومُ اَدْنٰى مِنْ ثُلُثَيِ الَّيْلِ وَنِصْفَهُ وَثُلُثَهُ وَطَٓائِفَةٌ مِنَ الَّذ۪ينَ مَعَكَۜ وَاللّٰهُ يُقَدِّرُ الَّيْلَ وَالنَّهَارَۜ عَلِمَ اَنْ لَنْ تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَاقْرَؤُ۫ا مَا تَيَسَّرَ مِنَ الْقُرْاٰنِۜ عَلِمَ اَنْ سَيَكُونُ مِنْكُمْ مَرْضٰىۙ وَاٰخَرُونَ يَضْرِبُونَ فِي الْاَرْضِ يَبْتَغُونَ مِنْ فَضْلِ اللّٰهِۙ وَاٰخَرُونَ يُقَاتِلُونَ ف۪ي سَب۪يلِ اللّٰهِۘ فَاقْرَؤُ۫ا مَا تَيَسَّرَ مِنْهُۙ وَاَق۪يمُوا الصَّلٰوةَ وَاٰتُوا الزَّكٰوةَ وَاَقْرِضُوا اللّٰهَ قَرْضًا حَسَنًاۜ وَمَا تُقَدِّمُوا لِاَنْفُسِكُمْ مِنْ خَيْرٍ تَجِدُوهُ عِنْدَ اللّٰهِ هُوَ خَيْرًا وَاَعْظَمَ اَجْرًاۜ وَاسْتَغْفِرُوا اللّٰهَۜ اِنَّ اللّٰهَ غَفُورٌ رَح۪يمٌ",
+      "translation": "Senin ve seninle beraber olanlardan bir grubun, gecenin üçte ikisine yakın bir vakitte, yarısında veya üçte birinde ayakta olduğunuzu Rabbin elbette biliyor[1*]. Gece ile gündüzün ölçüsünü Allah koyar. O, bunu tam başaramayacağınızı bildi de yüzünüze baktı (ve işinizi kolaylaştırdı). Artık Kur'ân’ı kolayınıza geldiği zaman[2*] okuyun. O, içinizden hastaların olacağını, kimilerinin Allah'ın lütfunu aramak için yolculuğa çıkacağını, kimilerinin de Allah yolunda savaşacağını bilir. Öyleyse Kur’an’ı, kolayınıza geldiği zaman okuyun. Namazı düzgün ve sürekli kılın, zekâtı verin ve Allah’a güzel bir ödünç verin[3*]. Kendiniz için şimdiden ne hayır yaparsanız onun karşılığını Allah katında daha iyi ve daha büyük bir ödül olarak bulursunuz[4*]. Allah'tan bağışlanma dileyin. Çünkü Allah, çok bağışlayan ve ikramı bol olandır.",
+      "dipnot": "[1*] Gecenin bölümleriyle ilgili ayrıntılı bilgi için Müzzemmil 73/3. ayetin dipnotuna bakınız.\n[2*] Suredeki bütünlüğün bozulmaması için (مَا تَيَسَّرَ) deki (ما)’yı, fiile mastar ve vakit anlamı yükleyen bağlaç saymak gerekir. Ona “kolayınıza geldiği zaman” anlamı vermemiz bundandır.\n[3*] “Karz (قرض)” Arapçada “kesmek” anlamındadır. Ayette geçen  “güzel bir ödünç”, kendi malından kesip vermek, infak etmek anlamındadır. Kimseden bir karşılık beklemeden Allah rızası için infak edenlere Allah kat-kat fazlasını verecektir (",
+      "roots": [
+        "ربب",
+        "علم",
+        "قوم",
+        "دنو",
+        "ثلث",
+        "ليل",
+        "نصف",
+        "طوف",
+        "أله",
+        "قدر",
+        "نهر",
+        "حصي",
+        "توب",
+        "قرأ",
+        "يسر",
+        "كون",
+        "مرض",
+        "أخر",
+        "ضرب",
+        "أرض",
+        "بغي",
+        "فضل",
+        "قتل",
+        "سبل",
+        "صلو",
+        "أتي",
+        "زكو",
+        "قرض",
+        "حسن",
+        "قدم",
+        "نفس",
+        "خير",
+        "وجد",
+        "عند",
+        "عظم",
+        "أجر",
+        "غفر",
+        "رحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Gecenin bölümleriyle ilgili ayrıntılı bilgi için Müzzemmil 73/3",
+          "targets": [
+            "73:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayetin dipnotuna bakınız.\n[2*] Suredeki bütünlüğün bozulmaması için (مَا تَيَسَّرَ) deki (ما)’yı, fiile mastar ve vakit anlamı yükleyen bağlaç saymak gerekir. Ona “kolayınıza geldiği zaman” anlamı vermemiz bundandır.\n[3*] “Karz (قرض)” Arapçada “kesmek” anlamındadır. Ayette geçen  “güzel bir ödünç”, kendi malından kesip vermek, infak etmek anlamındadır. Kimseden bir karşılık beklemeden Allah rızası için infak edenlere Allah kat-kat fazlasını verecektir ("
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "73:20",
+        "connections": [
+          {
+            "target_coordinate": "73:3",
+            "context": "Gecenin bölümleriyle ilgili ayrıntılı bilgi için Müzzemmil 73/3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Müzzemmil Suresi 20. Ayetin Tefsiri\nاِنَّ رَبَّكَ يَعْلَمُ اَنَّكَ تَقُومُ اَدْنٰى مِنْ ثُلُثَيِ الَّيْلِ وَنِصْفَهُ وَثُلُثَهُ وَطَٓائِفَةٌ مِنَ الَّذ۪ينَ مَعَكَۜ وَاللّٰهُ يُقَدِّرُ الَّيْلَ وَالنَّهَارَۜ عَلِمَ اَنْ لَنْ تُحْصُوهُ فَتَابَ عَلَيْكُمْ فَاقْرَؤُ۫ا مَا تَيَسَّرَ مِنَ الْقُرْاٰنِۜ عَلِمَ اَنْ سَيَكُونُ مِنْكُمْ مَرْضٰىۙ وَاٰخَرُونَ يَضْرِبُونَ فِي الْاَرْضِ يَبْتَغُونَ مِنْ فَضْلِ اللّٰهِۙ وَاٰخَرُونَ يُقَاتِلُونَ ف۪ي سَب۪يلِ اللّٰهِۘ فَاقْرَؤُ۫ا مَا تَيَسَّرَ مِنْهُۙ وَاَق۪يمُوا الصَّلٰوةَ وَاٰتُوا الزَّكٰوةَ وَاَقْرِضُوا اللّٰهَ قَرْضًا حَسَنًاۜ وَمَا تُقَدِّمُوا لِاَنْفُسِكُمْ مِنْ خَيْرٍ تَجِدُوهُ عِنْدَ اللّٰهِ هُوَ خَيْرًا وَاَعْظَمَ اَجْرًاۜ وَاسْتَغْفِرُوا اللّٰهَۜ اِنَّ اللّٰهَ غَفُورٌ رَح۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/73.mp3"
+    }
+  ]
+}

@@ -1,0 +1,6329 @@
+{
+  "nodes": [
+    {
+      "id": "56:1",
+      "text": "اِذَا وَقَعَتِ الْوَاقِعَةُۙ",
+      "translation": "Olacak olan (yeniden diriliş) olduğu zaman[*];",
+      "dipnot": "Hâkka 69/13 - 15.",
+      "roots": [
+        "وقع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hâkka 69/13-15",
+          "targets": [
+            "69:13",
+            "69:14",
+            "69:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:1",
+        "connections": [
+          {
+            "target_coordinate": "69:13",
+            "context": "Hâkka 69/13-15"
+          },
+          {
+            "target_coordinate": "69:14",
+            "context": "Hâkka 69/13-15"
+          },
+          {
+            "target_coordinate": "69:15",
+            "context": "Hâkka 69/13-15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 1. Ayetin Tefsiri\nاِذَا وَقَعَتِ الْوَاقِعَةُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:2",
+      "text": "لَيْسَ لِوَقْعَتِهَا كَاذِبَةٌۢ",
+      "translation": "onun oluşunu yalan sayacak kimse kalmaz[*].",
+      "dipnot": "O gün insanlar öyle bir halde olacak ki bunu yalanlamaları mümkün olmayacaktır ( Hac 22/1 - 2 ).",
+      "roots": [
+        "ليس",
+        "وقع",
+        "كذب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "O gün insanlar öyle bir halde olacak ki bunu yalanlamaları mümkün olmayacaktır ( "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/1-2",
+          "targets": [
+            "22:1",
+            "22:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:2",
+        "connections": [
+          {
+            "target_coordinate": "22:1",
+            "context": "Hac 22/1-2"
+          },
+          {
+            "target_coordinate": "22:2",
+            "context": "Hac 22/1-2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 2. Ayetin Tefsiri\nلَيْسَ لِوَقْعَتِهَا كَاذِبَةٌۢ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:3",
+      "text": "خَافِضَةٌ رَافِعَةٌۙ",
+      "translation": "O olay, (kimini) alçaltacak, (kimini de) yükseltecektir[*].",
+      "dipnot": "O gün, kâfirler alçalacak, müminler de yükselecektir ( Âl-i İmran 3/106 - 107, Yunus 10/26 - 27, Hadid 57/12, Abese 80/33 - 42 ).",
+      "roots": [
+        "خفض",
+        "رفع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "O gün, kâfirler alçalacak, müminler de yükselecektir ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/106-107",
+          "targets": [
+            "3:106",
+            "3:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/26-27",
+          "targets": [
+            "10:26",
+            "10:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/12",
+          "targets": [
+            "57:12"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/33-42",
+          "targets": [
+            "80:33",
+            "80:34",
+            "80:35",
+            "80:36",
+            "80:37",
+            "80:38",
+            "80:39",
+            "80:40",
+            "80:41",
+            "80:42"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:3",
+        "connections": [
+          {
+            "target_coordinate": "3:106",
+            "context": "Âl-i İmran 3/106-107"
+          },
+          {
+            "target_coordinate": "3:107",
+            "context": "Âl-i İmran 3/106-107"
+          },
+          {
+            "target_coordinate": "10:26",
+            "context": "Yunus 10/26-27"
+          },
+          {
+            "target_coordinate": "10:27",
+            "context": "Yunus 10/26-27"
+          },
+          {
+            "target_coordinate": "57:12",
+            "context": "Hadid 57/12"
+          },
+          {
+            "target_coordinate": "80:33",
+            "context": "Abese 80/33-42"
+          },
+          {
+            "target_coordinate": "80:34",
+            "context": "Abese 80/33-42"
+          },
+          {
+            "target_coordinate": "80:35",
+            "context": "Abese 80/33-42"
+          },
+          {
+            "target_coordinate": "80:36",
+            "context": "Abese 80/33-42"
+          },
+          {
+            "target_coordinate": "80:37",
+            "context": "Abese 80/33-42"
+          },
+          {
+            "target_coordinate": "80:38",
+            "context": "Abese 80/33-42"
+          },
+          {
+            "target_coordinate": "80:39",
+            "context": "Abese 80/33-42"
+          },
+          {
+            "target_coordinate": "80:40",
+            "context": "Abese 80/33-42"
+          },
+          {
+            "target_coordinate": "80:41",
+            "context": "Abese 80/33-42"
+          },
+          {
+            "target_coordinate": "80:42",
+            "context": "Abese 80/33-42"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 3. Ayetin Tefsiri\nخَافِضَةٌ رَافِعَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:4",
+      "text": "اِذَا رُجَّتِ الْاَرْضُ رَجًّاۙ",
+      "translation": "Yer çalkalanıp[*] yerinden oynadığı,",
+      "dipnot": "Hakka 69/14, Müzzemmil 73/14, Fecr 89/21, Zilzal 99/1.",
+      "roots": [
+        "رجج",
+        "أرض"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hakka 69/14",
+          "targets": [
+            "69:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/14",
+          "targets": [
+            "73:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/21",
+          "targets": [
+            "89:21"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zilzal 99/1",
+          "targets": [
+            "99:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:4",
+        "connections": [
+          {
+            "target_coordinate": "69:14",
+            "context": "Hakka 69/14"
+          },
+          {
+            "target_coordinate": "73:14",
+            "context": "Müzzemmil 73/14"
+          },
+          {
+            "target_coordinate": "89:21",
+            "context": "Fecr 89/21"
+          },
+          {
+            "target_coordinate": "99:1",
+            "context": "Zilzal 99/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 4. Ayetin Tefsiri\nاِذَا رُجَّتِ الْاَرْضُ رَجًّاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:5",
+      "text": "وَبُسَّتِ الْجِبَالُ بَسًّاۙ",
+      "translation": "dağlar paramparça edilip",
+      "dipnot": "",
+      "roots": [
+        "بسس",
+        "جبل"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 5. Ayetin Tefsiri\nوَبُسَّتِ الْجِبَالُ بَسًّاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:6",
+      "text": "فَكَانَتْ هَبَٓاءً مُنْبَثًّاۙ",
+      "translation": "yayılmış toza toprağa dönüştüğü[*],",
+      "dipnot": "Yeniden diriliş gününden önce dağların durumunu anlatan diğer ayetler için bkz: Kehf 18/47, Taha 20/105 - 107 Tur 52/10, Hakka 69/14, Mearic 70/9, Müzzemmil 73/14, Mürselat 77/10, Nebe 78/20, Tekvir 81/3, Karia 101/5.",
+      "roots": [
+        "كون",
+        "هبو",
+        "بثث"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Yeniden diriliş gününden önce dağların durumunu anlatan diğer ayetler için bkz: "
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/47",
+          "targets": [
+            "18:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/105-107",
+          "targets": [
+            "20:105",
+            "20:106",
+            "20:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/10",
+          "targets": [
+            "52:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/14",
+          "targets": [
+            "69:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/9",
+          "targets": [
+            "70:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/14",
+          "targets": [
+            "73:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/10",
+          "targets": [
+            "77:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/20",
+          "targets": [
+            "78:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/3",
+          "targets": [
+            "81:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Karia 101/5",
+          "targets": [
+            "101:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:6",
+        "connections": [
+          {
+            "target_coordinate": "18:47",
+            "context": "Kehf 18/47"
+          },
+          {
+            "target_coordinate": "20:105",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "20:106",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "20:107",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "52:10",
+            "context": "Tur 52/10"
+          },
+          {
+            "target_coordinate": "69:14",
+            "context": "Hakka 69/14"
+          },
+          {
+            "target_coordinate": "70:9",
+            "context": "Mearic 70/9"
+          },
+          {
+            "target_coordinate": "73:14",
+            "context": "Müzzemmil 73/14"
+          },
+          {
+            "target_coordinate": "77:10",
+            "context": "Mürselat 77/10"
+          },
+          {
+            "target_coordinate": "78:20",
+            "context": "Nebe 78/20"
+          },
+          {
+            "target_coordinate": "81:3",
+            "context": "Tekvir 81/3"
+          },
+          {
+            "target_coordinate": "101:5",
+            "context": "Karia 101/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 6. Ayetin Tefsiri\nفَكَانَتْ هَبَٓاءً مُنْبَثًّاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:7",
+      "text": "وَكُنْتُمْ اَزْوَاجًا ثَلٰثَةًۜ",
+      "translation": "ve sizler üç sınıf olduğunuz zaman[*],",
+      "dipnot": "Rum 30/14 - 16.",
+      "roots": [
+        "كون",
+        "زوج",
+        "ثلث"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Rum 30/14-16",
+          "targets": [
+            "30:14",
+            "30:15",
+            "30:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:7",
+        "connections": [
+          {
+            "target_coordinate": "30:14",
+            "context": "Rum 30/14-16"
+          },
+          {
+            "target_coordinate": "30:15",
+            "context": "Rum 30/14-16"
+          },
+          {
+            "target_coordinate": "30:16",
+            "context": "Rum 30/14-16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 7. Ayetin Tefsiri\nوَكُنْتُمْ اَزْوَاجًا ثَلٰثَةًۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:8",
+      "text": "فَاَصْحَابُ الْمَيْمَنَةِ مَٓا اَصْحَابُ الْمَيْمَنَةِۜ",
+      "translation": "iyi durumda olacak olanlar… Kimlerdir iyi durumda olacak olanlar?[*]",
+      "dipnot": "Vakıa 56/27 - 40, Beled 90/12 - 18.",
+      "roots": [
+        "صحب",
+        "يمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/27-40",
+          "targets": [
+            "56:27",
+            "56:28",
+            "56:29",
+            "56:30",
+            "56:31",
+            "56:32",
+            "56:33",
+            "56:34",
+            "56:35",
+            "56:36",
+            "56:37",
+            "56:38",
+            "56:39",
+            "56:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beled 90/12-18",
+          "targets": [
+            "90:12",
+            "90:13",
+            "90:14",
+            "90:15",
+            "90:16",
+            "90:17",
+            "90:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:8",
+        "connections": [
+          {
+            "target_coordinate": "56:27",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:28",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:29",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:30",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:31",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:32",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:33",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:34",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:35",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:36",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:37",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:38",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:39",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "56:40",
+            "context": "Vakıa 56/27-40"
+          },
+          {
+            "target_coordinate": "90:12",
+            "context": "Beled 90/12-18"
+          },
+          {
+            "target_coordinate": "90:13",
+            "context": "Beled 90/12-18"
+          },
+          {
+            "target_coordinate": "90:14",
+            "context": "Beled 90/12-18"
+          },
+          {
+            "target_coordinate": "90:15",
+            "context": "Beled 90/12-18"
+          },
+          {
+            "target_coordinate": "90:16",
+            "context": "Beled 90/12-18"
+          },
+          {
+            "target_coordinate": "90:17",
+            "context": "Beled 90/12-18"
+          },
+          {
+            "target_coordinate": "90:18",
+            "context": "Beled 90/12-18"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 8. Ayetin Tefsiri\nفَاَصْحَابُ الْمَيْمَنَةِ مَٓا اَصْحَابُ الْمَيْمَنَةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:9",
+      "text": "وَاَصْحَابُ الْمَشْـَٔمَةِ مَٓا اَصْحَابُ الْمَشْـَٔمَةِۜ",
+      "translation": "Zor durumda olacak olanlar… Kimlerdir zor durumda olacak olanlar?[*]",
+      "dipnot": "Vakıa 56/41 - 56, Beled 90/19 - 20.",
+      "roots": [
+        "صحب",
+        "شأم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/41-56",
+          "targets": [
+            "56:41",
+            "56:42",
+            "56:43",
+            "56:44",
+            "56:45",
+            "56:46",
+            "56:47",
+            "56:48",
+            "56:49",
+            "56:50",
+            "56:51",
+            "56:52",
+            "56:53",
+            "56:54",
+            "56:55",
+            "56:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beled 90/19-20",
+          "targets": [
+            "90:19",
+            "90:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:9",
+        "connections": [
+          {
+            "target_coordinate": "56:41",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:42",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:43",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:44",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:45",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:46",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:47",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:48",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:49",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:50",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:51",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:52",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:53",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:54",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:55",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "56:56",
+            "context": "Vakıa 56/41-56"
+          },
+          {
+            "target_coordinate": "90:19",
+            "context": "Beled 90/19-20"
+          },
+          {
+            "target_coordinate": "90:20",
+            "context": "Beled 90/19-20"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 9. Ayetin Tefsiri\nوَاَصْحَابُ الْمَشْـَٔمَةِ مَٓا اَصْحَابُ الْمَشْـَٔمَةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:10",
+      "text": "وَالسَّابِقُونَ السَّابِقُونَۙ",
+      "translation": "Bir de önde olanlar vardır, hep önde olanlar!",
+      "dipnot": "",
+      "roots": [
+        "سبق"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:10",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 10. Ayetin Tefsiri\nوَالسَّابِقُونَ السَّابِقُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:11",
+      "text": "اُو۬لٰٓئِكَ الْمُقَرَّبُونَۚ",
+      "translation": "Onlar, Allah’a yakınlığı onaylanmış kimselerdir[*].",
+      "dipnot": "",
+      "roots": [
+        "قرب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:11",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 11. Ayetin Tefsiri\nاُو۬لٰٓئِكَ الْمُقَرَّبُونَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:12",
+      "text": "ف۪ي جَنَّاتِ النَّع۪يمِ",
+      "translation": "Nimetlerle dolu cennetlerde olacaklardır.",
+      "dipnot": "Yunus 10/9, Hac 22/56, Lokman 31/8, Saffat 37/40 - 43, Kalem 68/34.",
+      "roots": [
+        "جنن",
+        "نعم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/9",
+          "targets": [
+            "10:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/56",
+          "targets": [
+            "22:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/8",
+          "targets": [
+            "31:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/40-43",
+          "targets": [
+            "37:40",
+            "37:41",
+            "37:42",
+            "37:43"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/34",
+          "targets": [
+            "68:34"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:12",
+        "connections": [
+          {
+            "target_coordinate": "10:9",
+            "context": "Yunus 10/9"
+          },
+          {
+            "target_coordinate": "22:56",
+            "context": "Hac 22/56"
+          },
+          {
+            "target_coordinate": "31:8",
+            "context": "Lokman 31/8"
+          },
+          {
+            "target_coordinate": "37:40",
+            "context": "Saffat 37/40-43"
+          },
+          {
+            "target_coordinate": "37:41",
+            "context": "Saffat 37/40-43"
+          },
+          {
+            "target_coordinate": "37:42",
+            "context": "Saffat 37/40-43"
+          },
+          {
+            "target_coordinate": "37:43",
+            "context": "Saffat 37/40-43"
+          },
+          {
+            "target_coordinate": "68:34",
+            "context": "Kalem 68/34"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 12. Ayetin Tefsiri\nف۪ي جَنَّاتِ النَّع۪يمِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:13",
+      "text": "ثُلَّةٌ مِنَ الْاَوَّل۪ينَۙ",
+      "translation": "Onlar, çoğunluğu öncekilerden olan bir topluluktur;",
+      "dipnot": "Önde olanların büyük bir bölümü, Adem aleyhisselamdan Muhammed aleyhisselama kadar gelmiş olan nebilerin ümmetlerindendir.",
+      "roots": [
+        "ثلل",
+        "أول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Önde olanların büyük bir bölümü, Adem aleyhisselamdan Muhammed aleyhisselama kadar gelmiş olan nebilerin ümmetlerindendir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:13",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 13. Ayetin Tefsiri\nثُلَّةٌ مِنَ الْاَوَّل۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:14",
+      "text": "وَقَل۪يلٌ مِنَ الْاٰخِر۪ينَۜ",
+      "translation": "birazı da sonrakilerdendir.",
+      "dipnot": "Önde olanların az bir kısmı da Muhammed aleyhisselamdan kıyamete kadar devam edecek olan son ümmetten olacaktır.",
+      "roots": [
+        "قلل",
+        "أخر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Önde olanların az bir kısmı da Muhammed aleyhisselamdan kıyamete kadar devam edecek olan son ümmetten olacaktır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:14",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 14. Ayetin Tefsiri\nوَقَل۪يلٌ مِنَ الْاٰخِر۪ينَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:15",
+      "text": "عَلٰى سُرُرٍ مَوْضُونَةٍۙ",
+      "translation": "Mücevherlerle işlenmiş sedirlere kurulacak,",
+      "dipnot": "Hicr 15/47, Saffat 37/44, Tur 52/20, Ğaşiye 88/13.",
+      "roots": [
+        "سرر",
+        "وضن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hicr 15/47",
+          "targets": [
+            "15:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/44",
+          "targets": [
+            "37:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/20",
+          "targets": [
+            "52:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ğaşiye 88/13",
+          "targets": [
+            "88:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:15",
+        "connections": [
+          {
+            "target_coordinate": "15:47",
+            "context": "Hicr 15/47"
+          },
+          {
+            "target_coordinate": "37:44",
+            "context": "Saffat 37/44"
+          },
+          {
+            "target_coordinate": "52:20",
+            "context": "Tur 52/20"
+          },
+          {
+            "target_coordinate": "88:13",
+            "context": "Ğaşiye 88/13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 15. Ayetin Tefsiri\nعَلٰى سُرُرٍ مَوْضُونَةٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:16",
+      "text": "مُتَّكِـ۪ٔينَ عَلَيْهَا مُتَقَابِل۪ينَ",
+      "translation": "karşılıklı olarak onlara yaslanacaklar.",
+      "dipnot": "Duhan 44/53.",
+      "roots": [
+        "وكأ",
+        "قبل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Duhan 44/53",
+          "targets": [
+            "44:53"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:16",
+        "connections": [
+          {
+            "target_coordinate": "44:53",
+            "context": "Duhan 44/53"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 16. Ayetin Tefsiri\nمُتَّكِـ۪ٔينَ عَلَيْهَا مُتَقَابِل۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:17",
+      "text": "يَطُوفُ عَلَيْهِمْ وِلْدَانٌ مُخَلَّدُونَۙ",
+      "translation": "Ölümsüzleştirilmiş erkek hizmetçiler çevrelerinde dolaşacak,",
+      "dipnot": "İnsan 76/19.",
+      "roots": [
+        "طوف",
+        "ولد",
+        "خلد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İnsan 76/19",
+          "targets": [
+            "76:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:17",
+        "connections": [
+          {
+            "target_coordinate": "76:19",
+            "context": "İnsan 76/19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 17. Ayetin Tefsiri\nيَطُوفُ عَلَيْهِمْ وِلْدَانٌ مُخَلَّدُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:18",
+      "text": "بِاَكْوَابٍ وَاَبَار۪يقَ وَكَأْسٍ مِنْ مَع۪ينٍۙ",
+      "translation": "testiler, ibrikler ve kaynağından doldurulmuş kadehlerle...",
+      "dipnot": "Saffat 37/45 - 46, Zuhruf 43/71, İnsan 76/15, Nebe 78/34.",
+      "roots": [
+        "كوب",
+        "برق",
+        "كأس",
+        "عين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Saffat 37/45-46",
+          "targets": [
+            "37:45",
+            "37:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/71",
+          "targets": [
+            "43:71"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/15",
+          "targets": [
+            "76:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/34",
+          "targets": [
+            "78:34"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:18",
+        "connections": [
+          {
+            "target_coordinate": "37:45",
+            "context": "Saffat 37/45-46"
+          },
+          {
+            "target_coordinate": "37:46",
+            "context": "Saffat 37/45-46"
+          },
+          {
+            "target_coordinate": "43:71",
+            "context": "Zuhruf 43/71"
+          },
+          {
+            "target_coordinate": "76:15",
+            "context": "İnsan 76/15"
+          },
+          {
+            "target_coordinate": "78:34",
+            "context": "Nebe 78/34"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 18. Ayetin Tefsiri\nبِاَكْوَابٍ وَاَبَار۪يقَ وَكَأْسٍ مِنْ مَع۪ينٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:19",
+      "text": "لَا يُصَدَّعُونَ عَنْهَا وَلَا يُنْزِفُونَۙ",
+      "translation": "İçtikleri şeyden dolayı ne başları ağrıtılacak ne de sarhoş olacaklar.",
+      "dipnot": "Saffat 37/47, Muhammed 47/15, Tur 52/23.",
+      "roots": [
+        "صدع",
+        "نزف"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Saffat 37/47",
+          "targets": [
+            "37:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/15",
+          "targets": [
+            "47:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/23",
+          "targets": [
+            "52:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:19",
+        "connections": [
+          {
+            "target_coordinate": "37:47",
+            "context": "Saffat 37/47"
+          },
+          {
+            "target_coordinate": "47:15",
+            "context": "Muhammed 47/15"
+          },
+          {
+            "target_coordinate": "52:23",
+            "context": "Tur 52/23"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 19. Ayetin Tefsiri\nلَا يُصَدَّعُونَ عَنْهَا وَلَا يُنْزِفُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:20",
+      "text": "وَفَاكِهَةٍ مِمَّا يَتَخَيَّرُونَۙ",
+      "translation": "(O hizmetçiler) cennetliklerin tercih ettikleri meyveler",
+      "dipnot": "Yasin 36/57.",
+      "roots": [
+        "فكه",
+        "خير"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yasin 36/57",
+          "targets": [
+            "36:57"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:20",
+        "connections": [
+          {
+            "target_coordinate": "36:57",
+            "context": "Yasin 36/57"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 20. Ayetin Tefsiri\nوَفَاكِهَةٍ مِمَّا يَتَخَيَّرُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:21",
+      "text": "وَلَحْمِ طَيْرٍ مِمَّا يَشْتَهُونَۜ",
+      "translation": "ve canlarının çektiği kuş etleri ile de (dolaşacaklar).",
+      "dipnot": "Tur 52/22.",
+      "roots": [
+        "لحم",
+        "طير",
+        "شهو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Tur 52/22",
+          "targets": [
+            "52:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:21",
+        "connections": [
+          {
+            "target_coordinate": "52:22",
+            "context": "Tur 52/22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 21. Ayetin Tefsiri\nوَلَحْمِ طَيْرٍ مِمَّا يَشْتَهُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:22",
+      "text": "وَحُورٌ ع۪ينٌۙ",
+      "translation": "Bir de ceylan gözlü huriler (dolaşacak).",
+      "dipnot": "Huriler, cennete giden kadının ve erkeğin yakın çevresinde olan dişi hizmetçilerdir. Vücutları, kabuğunda saklı inciler gibi örtülü olan, gözlerini hizmet ettikleri kişilerin üzerinden ayırmayan huriler (Saffat 37/48 - 49, Rahman 55/56, 72; Vakıa 56/22 - 23), ilk kez cennette yaratılmış olacak (Vakıa 56/36), üst seviyede hizmet sunacak ve birbirleriyle aynı yaşta olacaklardır (Nebe 78/33). Hurilerle ilgili olarak Duhan 44/54 ve Tur 52/20",
+      "roots": [
+        "حور",
+        "عين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Huriler, cennete giden kadının ve erkeğin yakın çevresinde olan dişi hizmetçilerdir. Vücutları, kabuğunda saklı inciler gibi örtülü olan, gözlerini hizmet ettikleri kişilerin üzerinden ayırmayan huriler ("
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/48-49",
+          "targets": [
+            "37:48",
+            "37:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/56,72",
+          "targets": [
+            "55:56",
+            "55:72"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/22-23",
+          "targets": [
+            "56:22",
+            "56:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), ilk kez cennette yaratılmış olacak ("
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/36",
+          "targets": [
+            "56:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), üst seviyede hizmet sunacak ve birbirleriyle aynı yaşta olacaklardır ("
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/33",
+          "targets": [
+            "78:33"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). "
+        },
+        {
+          "type": "link",
+          "content": "Hurilerle ilgili olarak Duhan 44/54",
+          "targets": [
+            "44:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "ve Tur 52/20",
+          "targets": [
+            "52:20"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:22",
+        "connections": [
+          {
+            "target_coordinate": "37:48",
+            "context": "Saffat 37/48-49"
+          },
+          {
+            "target_coordinate": "37:49",
+            "context": "Saffat 37/48-49"
+          },
+          {
+            "target_coordinate": "55:56",
+            "context": "Rahman 55/56,72"
+          },
+          {
+            "target_coordinate": "55:72",
+            "context": "Rahman 55/56,72"
+          },
+          {
+            "target_coordinate": "56:22",
+            "context": "Vakıa 56/22-23"
+          },
+          {
+            "target_coordinate": "56:23",
+            "context": "Vakıa 56/22-23"
+          },
+          {
+            "target_coordinate": "56:36",
+            "context": "Vakıa 56/36"
+          },
+          {
+            "target_coordinate": "78:33",
+            "context": "Nebe 78/33"
+          },
+          {
+            "target_coordinate": "44:54",
+            "context": "Hurilerle ilgili olarak Duhan 44/54"
+          },
+          {
+            "target_coordinate": "52:20",
+            "context": "ve Tur 52/20"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:23",
+      "text": "كَاَمْثَالِ اللُّؤْلُؤِ۬ الْمَكْنُونِۚ",
+      "translation": "Sanki onlar kabuğunda saklı inci gibidir",
+      "dipnot": "Saffat 37/48-49.",
+      "roots": [
+        "مثل",
+        "لؤلؤ",
+        "كنن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Saffat 37/48-49",
+          "targets": [
+            "37:48",
+            "37:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:23",
+        "connections": [
+          {
+            "target_coordinate": "37:48",
+            "context": "Saffat 37/48-49"
+          },
+          {
+            "target_coordinate": "37:49",
+            "context": "Saffat 37/48-49"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 23. Ayetin Tefsiri\nكَاَمْثَالِ اللُّؤْلُؤِ۬ الْمَكْنُونِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:24",
+      "text": "جَزَٓاءً بِمَا كَانُوا يَعْمَلُونَ",
+      "translation": "(Bütün bunlar) Yaptıklarına karşılık onları ödüllendirmek içindir",
+      "dipnot": "Secde 32/17, Ahkaf 46/13-14, İnsan 76/22.",
+      "roots": [
+        "جزي",
+        "كون",
+        "عمل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Secde 32/17",
+          "targets": [
+            "32:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/13-14",
+          "targets": [
+            "46:13",
+            "46:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/22",
+          "targets": [
+            "76:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:24",
+        "connections": [
+          {
+            "target_coordinate": "32:17",
+            "context": "Secde 32/17"
+          },
+          {
+            "target_coordinate": "46:13",
+            "context": "Ahkaf 46/13-14"
+          },
+          {
+            "target_coordinate": "46:14",
+            "context": "Ahkaf 46/13-14"
+          },
+          {
+            "target_coordinate": "76:22",
+            "context": "İnsan 76/22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 24. Ayetin Tefsiri\nجَزَٓاءً بِمَا كَانُوا يَعْمَلُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:25",
+      "text": "لَا يَسْمَعُونَ ف۪يهَا لَغْوًا وَلَا تَأْث۪يمًاۙ",
+      "translation": "Orada boş söz ve günaha sokan bir şey işitmeyecekler",
+      "dipnot": "Nebe 78/35-36.",
+      "roots": [
+        "سمع",
+        "لغو",
+        "أثم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nebe 78/35-36",
+          "targets": [
+            "78:35",
+            "78:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:25",
+        "connections": [
+          {
+            "target_coordinate": "78:35",
+            "context": "Nebe 78/35-36"
+          },
+          {
+            "target_coordinate": "78:36",
+            "context": "Nebe 78/35-36"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 25. Ayetin Tefsiri\nلَا يَسْمَعُونَ ف۪يهَا لَغْوًا وَلَا تَأْث۪يمًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:26",
+      "text": "اِلَّا ق۪يلًا سَلَامًا سَلَامًا",
+      "translation": "(İşitecekleri) sadece “selam selam” sözleri (esenlik ve güvenlik içeren sözler) olacak",
+      "dipnot": "Meryem 19/62.",
+      "roots": [
+        "قول",
+        "سلم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Meryem 19/62",
+          "targets": [
+            "19:62"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:26",
+        "connections": [
+          {
+            "target_coordinate": "19:62",
+            "context": "Meryem 19/62"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 26. Ayetin Tefsiri\nاِلَّا ق۪يلًا سَلَامًا سَلَامًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:27",
+      "text": "وَاَصْحَابُ الْيَم۪ينِ مَٓا اَصْحَابُ الْيَم۪ينِۜ",
+      "translation": "Defteri sağdan verilenler… Kimlerdir defteri sağdan verilenler?",
+      "dipnot": "Defteri sağından verilenlerin hepsi cennete gider ve oranın nimetlerinden yararlanırlar ( İsra 17/71, Vakıa 56/90-91, Hâkka 69/19-24, Müddessir 74/39-40, İnşikak 84/7-9 ). Ancak hepsi aynı konumda olmazlar ( İsra 17/21 ). Allah, kendi yolunda malı ve canıyla elinden geleni yapanları, özürsüz olarak oturup kalanlarla bir tutmayacak, vereceği büyük bir ödülle diğerlerinden üstün kılacaktır ( Nisa 4/95-96 ).",
+      "roots": [
+        "صحب",
+        "يمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Defteri sağından verilenlerin hepsi cennete gider ve oranın nimetlerinden yararlanırlar ( "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/71",
+          "targets": [
+            "17:71"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/90-91",
+          "targets": [
+            "56:90",
+            "56:91"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/19-24",
+          "targets": [
+            "69:19",
+            "69:20",
+            "69:21",
+            "69:22",
+            "69:23",
+            "69:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/39-40",
+          "targets": [
+            "74:39",
+            "74:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/7-9",
+          "targets": [
+            "84:7",
+            "84:8",
+            "84:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ancak hepsi aynı konumda olmazlar ( "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/21",
+          "targets": [
+            "17:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah, kendi yolunda malı ve canıyla elinden geleni yapanları, özürsüz olarak oturup kalanlarla bir tutmayacak, vereceği büyük bir ödülle diğerlerinden üstün kılacaktır ( "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/95-96",
+          "targets": [
+            "4:95",
+            "4:96"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:27",
+        "connections": [
+          {
+            "target_coordinate": "17:71",
+            "context": "İsra 17/71"
+          },
+          {
+            "target_coordinate": "56:90",
+            "context": "Vakıa 56/90-91"
+          },
+          {
+            "target_coordinate": "56:91",
+            "context": "Vakıa 56/90-91"
+          },
+          {
+            "target_coordinate": "69:19",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:20",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:21",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:22",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:23",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:24",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "74:39",
+            "context": "Müddessir 74/39-40"
+          },
+          {
+            "target_coordinate": "74:40",
+            "context": "Müddessir 74/39-40"
+          },
+          {
+            "target_coordinate": "84:7",
+            "context": "İnşikak 84/7-9"
+          },
+          {
+            "target_coordinate": "84:8",
+            "context": "İnşikak 84/7-9"
+          },
+          {
+            "target_coordinate": "84:9",
+            "context": "İnşikak 84/7-9"
+          },
+          {
+            "target_coordinate": "17:21",
+            "context": "İsra 17/21"
+          },
+          {
+            "target_coordinate": "4:95",
+            "context": "Nisa 4/95-96"
+          },
+          {
+            "target_coordinate": "4:96",
+            "context": "Nisa 4/95-96"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 27. Ayetin Tefsiri\nوَاَصْحَابُ الْيَم۪ينِ مَٓا اَصْحَابُ الْيَم۪ينِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:28",
+      "text": "ف۪ي سِدْرٍ مَخْضُودٍۙ",
+      "translation": "Onlar; dikensiz sidre ağaçları",
+      "dipnot": "Türkçede bu ağaca, Arabistan kirazı denir.",
+      "roots": [
+        "سدر",
+        "خضد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Türkçede bu ağaca, Arabistan kirazı denir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:28",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 28. Ayetin Tefsiri\nف۪ي سِدْرٍ مَخْضُودٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:29",
+      "text": "وَطَلْحٍ مَنْضُودٍۙ",
+      "translation": "meyveleri salkım salkım dizili muz ağaçları arasında,",
+      "dipnot": "",
+      "roots": [
+        "طلح",
+        "نضد"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:29",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 29. Ayetin Tefsiri\nوَطَلْحٍ مَنْضُودٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:30",
+      "text": "وَظِلٍّ مَمْدُودٍۙ",
+      "translation": "ve uzayıp giden gölgeliklerde,",
+      "dipnot": "",
+      "roots": [
+        "ظلل",
+        "مدد"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:30",
+        "connections": []
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:31",
+      "text": "وَمَٓاءٍ مَسْكُوبٍۙ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "موه",
+        "سكب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:31",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 31. Ayetin Tefsiri\nوَمَٓاءٍ مَسْكُوبٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:32",
+      "text": "",
+      "translation": "çağlayan su başlarında,",
+      "dipnot": "",
+      "roots": [
+        "فكه",
+        "كثر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:32",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 32. Ayetin Tefsiri\nوَفَاكِهَةٍ كَث۪يرَةٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:33",
+      "text": "وَفَاكِهَةٍ كَث۪يرَةٍۙ",
+      "translation": "çokça meyveler,",
+      "dipnot": "",
+      "roots": [
+        "قطع",
+        "منع"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:33",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 33. Ayetin Tefsiri\nلَا مَقْطُوعَةٍ وَلَا مَمْنُوعَةٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:34",
+      "text": "لَا مَقْطُوعَةٍ وَلَا مَمْنُوعَةٍۙ",
+      "translation": "tükenmeyen ve yenmesi yasaklanmayan meyveler içinde,",
+      "dipnot": "",
+      "roots": [
+        "فرش",
+        "رفع"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:34",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 34. Ayetin Tefsiri\nوَفُرُشٍ مَرْفُوعَةٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:35",
+      "text": "وَفُرُشٍ مَرْفُوعَةٍۜ",
+      "translation": "yüksek döşeklerde olacaklar[*].",
+      "dipnot": "Cennette, önderlerin dışındakiler de cennet nimetlerinden yararlanacak, huri ve vildan yani dişi ve erkek hizmetçiler onlara da hizmet edecektir (Ra’d 13/35, Hicr 15/45 - 48, Yasin 36/55 - 58, Saffat 37/40 - 49, Sad 38/49 - 54, Tur 52/17 - 28, Hâkka 69/19 - 24, İnsan 76/5 - 22, Mürselat 77/41 - 44, Ğaşiye 88/8 - 16).",
+      "roots": [
+        "نشأ"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Cennette, önderlerin dışındakiler de cennet nimetlerinden yararlanacak, huri ve vildan yani dişi ve erkek hizmetçiler onlara da hizmet edecektir (Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/35",
+          "targets": [
+            "13:35"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/45-48",
+          "targets": [
+            "15:45",
+            "15:46",
+            "15:47",
+            "15:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/55-58",
+          "targets": [
+            "36:55",
+            "36:56",
+            "36:57",
+            "36:58"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/40-49",
+          "targets": [
+            "37:40",
+            "37:41",
+            "37:42",
+            "37:43",
+            "37:44",
+            "37:45",
+            "37:46",
+            "37:47",
+            "37:48",
+            "37:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/49-54",
+          "targets": [
+            "38:49",
+            "38:50",
+            "38:51",
+            "38:52",
+            "38:53",
+            "38:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/17-28",
+          "targets": [
+            "52:17",
+            "52:18",
+            "52:19",
+            "52:20",
+            "52:21",
+            "52:22",
+            "52:23",
+            "52:24",
+            "52:25",
+            "52:26",
+            "52:27",
+            "52:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/19-24",
+          "targets": [
+            "69:19",
+            "69:20",
+            "69:21",
+            "69:22",
+            "69:23",
+            "69:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/5-22",
+          "targets": [
+            "76:5",
+            "76:6",
+            "76:7",
+            "76:8",
+            "76:9",
+            "76:10",
+            "76:11",
+            "76:12",
+            "76:13",
+            "76:14",
+            "76:15",
+            "76:16",
+            "76:17",
+            "76:18",
+            "76:19",
+            "76:20",
+            "76:21",
+            "76:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/41-44",
+          "targets": [
+            "77:41",
+            "77:42",
+            "77:43",
+            "77:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ğaşiye 88/8-16",
+          "targets": [
+            "88:8",
+            "88:9",
+            "88:10",
+            "88:11",
+            "88:12",
+            "88:13",
+            "88:14",
+            "88:15",
+            "88:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:35",
+        "connections": [
+          {
+            "target_coordinate": "13:35",
+            "context": "d 13/35"
+          },
+          {
+            "target_coordinate": "15:45",
+            "context": "Hicr 15/45-48"
+          },
+          {
+            "target_coordinate": "15:46",
+            "context": "Hicr 15/45-48"
+          },
+          {
+            "target_coordinate": "15:47",
+            "context": "Hicr 15/45-48"
+          },
+          {
+            "target_coordinate": "15:48",
+            "context": "Hicr 15/45-48"
+          },
+          {
+            "target_coordinate": "36:55",
+            "context": "Yasin 36/55-58"
+          },
+          {
+            "target_coordinate": "36:56",
+            "context": "Yasin 36/55-58"
+          },
+          {
+            "target_coordinate": "36:57",
+            "context": "Yasin 36/55-58"
+          },
+          {
+            "target_coordinate": "36:58",
+            "context": "Yasin 36/55-58"
+          },
+          {
+            "target_coordinate": "37:40",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "37:41",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "37:42",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "37:43",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "37:44",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "37:45",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "37:46",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "37:47",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "37:48",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "37:49",
+            "context": "Saffat 37/40-49"
+          },
+          {
+            "target_coordinate": "38:49",
+            "context": "Sad 38/49-54"
+          },
+          {
+            "target_coordinate": "38:50",
+            "context": "Sad 38/49-54"
+          },
+          {
+            "target_coordinate": "38:51",
+            "context": "Sad 38/49-54"
+          },
+          {
+            "target_coordinate": "38:52",
+            "context": "Sad 38/49-54"
+          },
+          {
+            "target_coordinate": "38:53",
+            "context": "Sad 38/49-54"
+          },
+          {
+            "target_coordinate": "38:54",
+            "context": "Sad 38/49-54"
+          },
+          {
+            "target_coordinate": "52:17",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:18",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:19",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:20",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:21",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:22",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:23",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:24",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:25",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:26",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:27",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "52:28",
+            "context": "Tur 52/17-28"
+          },
+          {
+            "target_coordinate": "69:19",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:20",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:21",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:22",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:23",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "69:24",
+            "context": "Hâkka 69/19-24"
+          },
+          {
+            "target_coordinate": "76:5",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:6",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:7",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:8",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:9",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:10",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:11",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:12",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:13",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:14",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:15",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:16",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:17",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:18",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:19",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:20",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:21",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:22",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "77:41",
+            "context": "Mürselat 77/41-44"
+          },
+          {
+            "target_coordinate": "77:42",
+            "context": "Mürselat 77/41-44"
+          },
+          {
+            "target_coordinate": "77:43",
+            "context": "Mürselat 77/41-44"
+          },
+          {
+            "target_coordinate": "77:44",
+            "context": "Mürselat 77/41-44"
+          },
+          {
+            "target_coordinate": "88:8",
+            "context": "Ğaşiye 88/8-16"
+          },
+          {
+            "target_coordinate": "88:9",
+            "context": "Ğaşiye 88/8-16"
+          },
+          {
+            "target_coordinate": "88:10",
+            "context": "Ğaşiye 88/8-16"
+          },
+          {
+            "target_coordinate": "88:11",
+            "context": "Ğaşiye 88/8-16"
+          },
+          {
+            "target_coordinate": "88:12",
+            "context": "Ğaşiye 88/8-16"
+          },
+          {
+            "target_coordinate": "88:13",
+            "context": "Ğaşiye 88/8-16"
+          },
+          {
+            "target_coordinate": "88:14",
+            "context": "Ğaşiye 88/8-16"
+          },
+          {
+            "target_coordinate": "88:15",
+            "context": "Ğaşiye 88/8-16"
+          },
+          {
+            "target_coordinate": "88:16",
+            "context": "Ğaşiye 88/8-16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 35. Ayetin Tefsiri\nاِنَّٓا اَنْشَأْنَاهُنَّ اِنْشَٓاءًۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:36",
+      "text": "اِنَّٓا اَنْشَأْنَاهُنَّ اِنْشَٓاءًۙ",
+      "translation": "Onları[*]/ hizmet eden hurileri biz oluşturup geliştirdik.",
+      "dipnot": "“Onları” diye anlam verdiğimiz (هن) zamirine, bazı tefsir ve meallerde “cennetliklerin eşleri” anlamı verilir. Bunun için 34. âyetteki “yüksek döşeklerde olacaklar (وَفُرُشٍ مَّرْفُوعَةٍ)” ifadesine, Arap diline aykırı olarak “onlara, pek değerli eşler vereceğiz” şeklinde anlam vermişlerdir. Oysa 34. ayetteki ifade, 27. ayetle başlayan ve oradaki “fî (في)” harfi cerri nedeniyle mekan belirttiği açık olan bir dizi yer zarfının sonuncusudur. 27-34 arasındaki tüm ayetlerde defteri sağdan verilenlerin kalacakları yerler anlatılmaktadır. Ayete “onlara, pek değerli eşler vereceğiz” anlamını verebilmek için, zarf olan kelimelere mef’ul /nesne muamelesi yapılması gerekir ki bu, Arap dili açısından mümkün değildir. Zaten “eşler” diye anlam verdikleri furuş (فُرُش) kelimesi, Rahman Suresinin 54. âyetinde, “cennetliklerin yaslandıkları döşekler” anlamında kullanılmıştır ve ona “döşekler” dışında bir anlam veren de olmamıştır. Bu ayette de furuş kelimesi aynı anlamdadır. Bundan üç ayet sonra:“Onlar, defteri sağdan verilenler içindir.\" (Vakıa 56/38) ifadesi tekrarlanmaktadır. Bu sebeple, zamirin gidebileceği tek yer, Vakıa 56/22. âyetteki hurilerdir.",
+      "roots": [
+        "جعل",
+        "بكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“Onları” diye anlam verdiğimiz (هن) zamirine, bazı tefsir ve meallerde “cennetliklerin eşleri” anlamı verilir. Bunun için 34. âyetteki “yüksek döşeklerde olacaklar (وَفُرُشٍ مَّرْفُوعَةٍ)” ifadesine, Arap diline aykırı olarak “onlara, pek değerli eşler vereceğiz” şeklinde anlam vermişlerdir. Oysa 34. ayetteki ifade, 27. ayetle başlayan ve oradaki “fî (في)” harfi cerri nedeniyle mekan belirttiği açık olan bir dizi yer zarfının sonuncusudur. 27-34 arasındaki tüm ayetlerde defteri sağdan verilenlerin kalacakları yerler anlatılmaktadır. Ayete “onlara, pek değerli eşler vereceğiz” anlamını verebilmek için, zarf olan kelimelere mef’ul /nesne muamelesi yapılması gerekir ki bu, Arap dili açısından mümkün değildir. Zaten “eşler” diye anlam verdikleri furuş (فُرُش) kelimesi, Rahman Suresinin 54. âyetinde, “cennetliklerin yaslandıkları döşekler” anlamında kullanılmıştır ve ona “döşekler” dışında bir anlam veren de olmamıştır. Bu ayette de furuş kelimesi aynı anlamdadır. Bundan üç ayet sonra:“Onlar, defteri sağdan verilenler içindir.\" ("
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/38",
+          "targets": [
+            "56:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ifadesi tekrarlanmaktadır. Bu sebeple, zamirin gidebileceği tek yer, "
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/22",
+          "targets": [
+            "56:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". âyetteki hurilerdir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:36",
+        "connections": [
+          {
+            "target_coordinate": "56:38",
+            "context": "Vakıa 56/38"
+          },
+          {
+            "target_coordinate": "56:22",
+            "context": "Vakıa 56/22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 36. Ayetin Tefsiri\nفَجَعَلْنَاهُنَّ اَبْكَارًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:37",
+      "text": "فَجَعَلْنَاهُنَّ اَبْكَارًاۙ",
+      "translation": "Onları ilk olarak (orada) yarattık[*].",
+      "dipnot": "“İlk olarak” diye anlam verilen kelime “(بكر) bikr”in çoğulu olan “(أبكار) ebkâr”dır. Bikr’in kök anlamı, bir şeyin ilki ve başlangıcı olmaktır (Mekâyîs’ul-luğa (بكر) md.). Bu kelime, bâkire kadınlar için de kullanılır. Tefsir ve mealler, “(فَجَعَلْنَاهُنَّ أَبْكَارًا)” ayetine  “onları ilk defa (orada) yarattık” yerine “onları bâkireler yaptık” anlamı vermişlerdir. Halbuki hurilerle ilk defa cennette karşılaşılacağını söyleyen başka ayetler de vardır (Rahman 55/56, 72 - 74).",
+      "roots": [
+        "عرب",
+        "ترب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“İlk olarak” diye anlam verilen kelime “(بكر) bikr”in çoğulu olan “(أبكار) ebkâr”dır. Bikr’in kök anlamı, bir şeyin ilki ve başlangıcı olmaktır (Mekâyîs’ul-luğa (بكر) md.). Bu kelime, bâkire kadınlar için de kullanılır. Tefsir ve mealler, “(فَجَعَلْنَاهُنَّ أَبْكَارًا)” ayetine  “onları ilk defa (orada) yarattık” yerine “onları bâkireler yaptık” anlamı vermişlerdir. Halbuki hurilerle ilk defa cennette karşılaşılacağını söyleyen başka ayetler de vardır ("
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/56,72-74",
+          "targets": [
+            "55:56",
+            "55:72",
+            "55:73",
+            "55:74"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:37",
+        "connections": [
+          {
+            "target_coordinate": "55:56",
+            "context": "Rahman 55/56,72-74"
+          },
+          {
+            "target_coordinate": "55:72",
+            "context": "Rahman 55/56,72-74"
+          },
+          {
+            "target_coordinate": "55:73",
+            "context": "Rahman 55/56,72-74"
+          },
+          {
+            "target_coordinate": "55:74",
+            "context": "Rahman 55/56,72-74"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 37. Ayetin Tefsiri\nعُرُبًا اَتْرَابًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:38",
+      "text": "عُرُبًا اَتْرَابًاۙ",
+      "translation": "Güler yüzlü, içleri temiz[1*] ve birbirlerine yaşıtlar[2*] yaptık.",
+      "dipnot": "“Güler yüzlü ve içi temiz” anlamı verdiğimiz kelime (عروب) ‘arûb’un çoğulu olan (عرب) ‘urub’dur. (el-Ayn). [2*] Nebe 78/33.",
+      "roots": [
+        "صحب",
+        "يمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“Güler yüzlü ve içi temiz” anlamı verdiğimiz kelime (عروب) ‘arûb’un çoğulu olan (عرب) ‘urub’dur. (el-Ayn). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/33",
+          "targets": [
+            "78:33"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:38",
+        "connections": [
+          {
+            "target_coordinate": "78:33",
+            "context": "Nebe 78/33"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 38. Ayetin Tefsiri\nلِاَصْحَابِ الْيَم۪ينِۜ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:39",
+      "text": "لِاَصْحَابِ الْيَم۪ينِۜ۟",
+      "translation": "Bunlar, defteri sağdan verilenler içindir[*].",
+      "dipnot": "Vakıa 56/27.",
+      "roots": [
+        "ثلل",
+        "أول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/27",
+          "targets": [
+            "56:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:39",
+        "connections": [
+          {
+            "target_coordinate": "56:27",
+            "context": "Vakıa 56/27"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 39. Ayetin Tefsiri\nثُلَّةٌ مِنَ الْاَوَّل۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:40",
+      "text": "وَثُلَّةٌ مِنَ الْاٰخِر۪ينَۜ",
+      "translation": "hem de sonrakilerden oluşan büyük bir topluluktur",
+      "dipnot": "Vakıa 56/10 - 14. Ayetlerde, önde gelenlerin büyük bir bölümünün önceki ümmetlerden, az bir bölümünün de Muhammed aleyhisselamın ümmetinden olacağı bildirilmiş, burada ise defteri sağdan verilenlerin, her iki taraftan da büyük bir bölümü oluşturacağı ifade edilmiştir.",
+      "roots": [
+        "ثلل",
+        "أخر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/10-14",
+          "targets": [
+            "56:10",
+            "56:11",
+            "56:12",
+            "56:13",
+            "56:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Ayetlerde, önde gelenlerin büyük bir bölümünün önceki ümmetlerden, az bir bölümünün de Muhammed aleyhisselamın ümmetinden olacağı bildirilmiş, burada ise defteri sağdan verilenlerin, her iki taraftan da büyük bir bölümü oluşturacağı ifade edilmiştir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:40",
+        "connections": [
+          {
+            "target_coordinate": "56:10",
+            "context": "Vakıa 56/10-14"
+          },
+          {
+            "target_coordinate": "56:11",
+            "context": "Vakıa 56/10-14"
+          },
+          {
+            "target_coordinate": "56:12",
+            "context": "Vakıa 56/10-14"
+          },
+          {
+            "target_coordinate": "56:13",
+            "context": "Vakıa 56/10-14"
+          },
+          {
+            "target_coordinate": "56:14",
+            "context": "Vakıa 56/10-14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 40. Ayetin Tefsiri\nوَثُلَّةٌ مِنَ الْاٰخِر۪ينَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:41",
+      "text": "وَاَصْحَابُ الشِّمَالِۙ مَٓا اَصْحَابُ الشِّمَالِۜ",
+      "translation": "Defteri soldan verilenler… Kimlerdir defteri soldan verilenler?",
+      "dipnot": "Hakka 69/25 - 29, İnşikak 84/10 - 15.",
+      "roots": [
+        "صحب",
+        "شمل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hakka 69/25-29",
+          "targets": [
+            "69:25",
+            "69:26",
+            "69:27",
+            "69:28",
+            "69:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/10-15",
+          "targets": [
+            "84:10",
+            "84:11",
+            "84:12",
+            "84:13",
+            "84:14",
+            "84:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:41",
+        "connections": [
+          {
+            "target_coordinate": "69:25",
+            "context": "Hakka 69/25-29"
+          },
+          {
+            "target_coordinate": "69:26",
+            "context": "Hakka 69/25-29"
+          },
+          {
+            "target_coordinate": "69:27",
+            "context": "Hakka 69/25-29"
+          },
+          {
+            "target_coordinate": "69:28",
+            "context": "Hakka 69/25-29"
+          },
+          {
+            "target_coordinate": "69:29",
+            "context": "Hakka 69/25-29"
+          },
+          {
+            "target_coordinate": "84:10",
+            "context": "İnşikak 84/10-15"
+          },
+          {
+            "target_coordinate": "84:11",
+            "context": "İnşikak 84/10-15"
+          },
+          {
+            "target_coordinate": "84:12",
+            "context": "İnşikak 84/10-15"
+          },
+          {
+            "target_coordinate": "84:13",
+            "context": "İnşikak 84/10-15"
+          },
+          {
+            "target_coordinate": "84:14",
+            "context": "İnşikak 84/10-15"
+          },
+          {
+            "target_coordinate": "84:15",
+            "context": "İnşikak 84/10-15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 41. Ayetin Tefsiri\nوَاَصْحَابُ الشِّمَالِۙ مَٓا اَصْحَابُ الشِّمَالِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:42",
+      "text": "ف۪ي سَمُومٍ وَحَم۪يمٍۙ",
+      "translation": "Onlar, iliklerine kadar işleyen ateş ile kaynar su arasında",
+      "dipnot": "Mü’min 40/70 - 72, Rahman 55/43 - 44.",
+      "roots": [
+        "سمم",
+        "حمم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/70-72",
+          "targets": [
+            "40:70",
+            "40:71",
+            "40:72"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/43-44",
+          "targets": [
+            "55:43",
+            "55:44"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:42",
+        "connections": [
+          {
+            "target_coordinate": "40:70",
+            "context": "min 40/70-72"
+          },
+          {
+            "target_coordinate": "40:71",
+            "context": "min 40/70-72"
+          },
+          {
+            "target_coordinate": "40:72",
+            "context": "min 40/70-72"
+          },
+          {
+            "target_coordinate": "55:43",
+            "context": "Rahman 55/43-44"
+          },
+          {
+            "target_coordinate": "55:44",
+            "context": "Rahman 55/43-44"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 42. Ayetin Tefsiri\nف۪ي سَمُومٍ وَحَم۪يمٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:43",
+      "text": "وَظِلٍّ مِنْ يَحْمُومٍۙ",
+      "translation": "ve kapkara bir dumanın gölgesinde olacak olanlardır",
+      "dipnot": "Zümer 39/16.",
+      "roots": [
+        "ظلل",
+        "حمم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zümer 39/16",
+          "targets": [
+            "39:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:43",
+        "connections": [
+          {
+            "target_coordinate": "39:16",
+            "context": "Zümer 39/16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 43. Ayetin Tefsiri\nوَظِلٍّ مِنْ يَحْمُومٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:44",
+      "text": "لَا بَارِدٍ وَلَا كَر۪يمٍ",
+      "translation": "(O gölge) ne serinletici ne de ferahlatıcıdır",
+      "dipnot": "Mürselat 77/30 - 31.",
+      "roots": [
+        "برد",
+        "كرم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Mürselat 77/30-31",
+          "targets": [
+            "77:30",
+            "77:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:44",
+        "connections": [
+          {
+            "target_coordinate": "77:30",
+            "context": "Mürselat 77/30-31"
+          },
+          {
+            "target_coordinate": "77:31",
+            "context": "Mürselat 77/30-31"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 44. Ayetin Tefsiri\nلَا بَارِدٍ وَلَا كَر۪يمٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:45",
+      "text": "اِنَّهُمْ كَانُوا قَبْلَ ذٰلِكَ مُتْرَف۪ينَۚ",
+      "translation": "Onlar bundan önce kendilerine verilen nimetlerle şımarmış kimselerdi",
+      "dipnot": "İbrahim 14/7, Mü’minun 23/33.",
+      "roots": [
+        "كون",
+        "قبل",
+        "ترف"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İbrahim 14/7",
+          "targets": [
+            "14:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/33",
+          "targets": [
+            "23:33"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:45",
+        "connections": [
+          {
+            "target_coordinate": "14:7",
+            "context": "İbrahim 14/7"
+          },
+          {
+            "target_coordinate": "23:33",
+            "context": "minun 23/33"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 45. Ayetin Tefsiri\nاِنَّهُمْ كَانُوا قَبْلَ ذٰلِكَ مُتْرَف۪ينَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:46",
+      "text": "وَكَANUU YUSIRRUUNE ALAL HINSEL AZIIM",
+      "translation": "O büyük günahta /şirkte ısrar ederlerdi",
+      "dipnot": "Lokman 31/13. Bunun bir örneği için bkz: Nuh 71/5 - 7.",
+      "roots": [
+        "كون",
+        "صرر",
+        "حنث",
+        "عظم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Lokman 31/13",
+          "targets": [
+            "31:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Bunun bir örneği için bkz: "
+        },
+        {
+          "type": "link",
+          "content": "Nuh 71/5-7",
+          "targets": [
+            "71:5",
+            "71:6",
+            "71:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:46",
+        "connections": [
+          {
+            "target_coordinate": "31:13",
+            "context": "Lokman 31/13"
+          },
+          {
+            "target_coordinate": "71:5",
+            "context": "Nuh 71/5-7"
+          },
+          {
+            "target_coordinate": "71:6",
+            "context": "Nuh 71/5-7"
+          },
+          {
+            "target_coordinate": "71:7",
+            "context": "Nuh 71/5-7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 46. Ayetin Tefsiri\nوَكَانُوا يُصِرُّونَ عَلَى الْحِنْثِ الْعَظ۪يمِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:47",
+      "text": "وَكَANUU YEKUULUUNE EIZAA MITNAA VE KUNNAA TURAABEN VE IZAMEN EINNAA LEMEB'UUSUUN",
+      "translation": "Şöyle derlerdi: “Ölüp de toprak ve kemikler haline geldikten sonra mı! Biz gerçekten tekrar diriltilecek miyiz!",
+      "dipnot": "Ra’d 13/5, İsra 17/49, Mü’minun 23/35, 82, Secde 32/10, Saffat 37/16, Kaf 50/3, Naziât 79/10 - 12.",
+      "roots": [
+        "كون",
+        "قول",
+        "موت",
+        "ترب",
+        "عظم",
+        "بعث"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/5",
+          "targets": [
+            "13:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/49",
+          "targets": [
+            "17:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/35,82",
+          "targets": [
+            "23:35",
+            "23:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/10",
+          "targets": [
+            "32:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/16",
+          "targets": [
+            "37:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/3",
+          "targets": [
+            "50:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziât 79/10-12",
+          "targets": [
+            "79:10",
+            "79:11",
+            "79:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:47",
+        "connections": [
+          {
+            "target_coordinate": "13:5",
+            "context": "d 13/5"
+          },
+          {
+            "target_coordinate": "17:49",
+            "context": "İsra 17/49"
+          },
+          {
+            "target_coordinate": "23:35",
+            "context": "minun 23/35,82"
+          },
+          {
+            "target_coordinate": "23:82",
+            "context": "minun 23/35,82"
+          },
+          {
+            "target_coordinate": "32:10",
+            "context": "Secde 32/10"
+          },
+          {
+            "target_coordinate": "37:16",
+            "context": "Saffat 37/16"
+          },
+          {
+            "target_coordinate": "50:3",
+            "context": "Kaf 50/3"
+          },
+          {
+            "target_coordinate": "79:10",
+            "context": "Naziât 79/10-12"
+          },
+          {
+            "target_coordinate": "79:11",
+            "context": "Naziât 79/10-12"
+          },
+          {
+            "target_coordinate": "79:12",
+            "context": "Naziât 79/10-12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 47. Ayetin Tefsiri\nوَكَانُوا يَقُولُونَ اَئِذَا مِتْنَا وَكُنَّا تُرَابًا وَعِظَامًا ءَاِنَّا لَمَبْعُوثُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:48",
+      "text": "EVE AABAAUNEL EVVELUUN",
+      "translation": "Geçmiş atalarımız da mı !",
+      "dipnot": "Saffat 37/17.",
+      "roots": [
+        "أبو",
+        "أول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Saffat 37/17",
+          "targets": [
+            "37:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:48",
+        "connections": [
+          {
+            "target_coordinate": "37:17",
+            "context": "Saffat 37/17"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 48. Ayetin Tefsiri\nاَوَاٰبَٓاؤُ۬نَا الْاَوَّلُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:49",
+      "text": "KUL INNEL EVVELIINE VEL AAXIRIIN",
+      "translation": "Onlara de ki: “Öncekiler de sonrakiler de",
+      "dipnot": "Saffat 37/18.",
+      "roots": [
+        "قول",
+        "أول",
+        "أخر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Saffat 37/18",
+          "targets": [
+            "37:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:49",
+        "connections": [
+          {
+            "target_coordinate": "37:18",
+            "context": "Saffat 37/18"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 49. Ayetin Tefsiri\nقُلْ اِنَّ الْاَوَّل۪ينَ وَالْاٰخِر۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:50",
+      "text": "LEMEJMUUUUNE ILAA MIIKAATI YEVMİN MA'LUUM",
+      "translation": "bilinen günün belirlenen vaktinde (diriltilip), kesinlikle bir araya toplanacaklardır",
+      "dipnot": "Nisa 4/87, Kehf 18/99, Yasin 36/32, 53, Casiye 45/26, Mürselat 77/38.",
+      "roots": [
+        "جمع",
+        "وقت",
+        "يوم",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nisa 4/87",
+          "targets": [
+            "4:87"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/99",
+          "targets": [
+            "18:99"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/32,53",
+          "targets": [
+            "36:32",
+            "36:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Casiye 45/26",
+          "targets": [
+            "45:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/38",
+          "targets": [
+            "77:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:50",
+        "connections": [
+          {
+            "target_coordinate": "4:87",
+            "context": "Nisa 4/87"
+          },
+          {
+            "target_coordinate": "18:99",
+            "context": "Kehf 18/99"
+          },
+          {
+            "target_coordinate": "36:32",
+            "context": "Yasin 36/32,53"
+          },
+          {
+            "target_coordinate": "36:53",
+            "context": "Yasin 36/32,53"
+          },
+          {
+            "target_coordinate": "45:26",
+            "context": "Casiye 45/26"
+          },
+          {
+            "target_coordinate": "77:38",
+            "context": "Mürselat 77/38"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 50. Ayetin Tefsiri\nلَمَجْمُوعُونَ اِلٰى م۪يقَاتِ يَوْمٍ مَعْلُومٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:51",
+      "text": "SUMME INNEKUM EYYUHED DAALLUUNEL MUKAZZIBUUN",
+      "translation": "Sonra siz, ey yalan söyleyip duran sapkınlar!",
+      "dipnot": "Al-i İmran 3/90, Vakıa 56/92 - 94.",
+      "roots": [
+        "أيي",
+        "ضلل",
+        "كذب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Al-i İmran 3/90",
+          "targets": [
+            "3:90"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/92-94",
+          "targets": [
+            "56:92",
+            "56:93",
+            "56:94"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:51",
+        "connections": [
+          {
+            "target_coordinate": "3:90",
+            "context": "Al-i İmran 3/90"
+          },
+          {
+            "target_coordinate": "56:92",
+            "context": "Vakıa 56/92-94"
+          },
+          {
+            "target_coordinate": "56:93",
+            "context": "Vakıa 56/92-94"
+          },
+          {
+            "target_coordinate": "56:94",
+            "context": "Vakıa 56/92-94"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 51. Ayetin Tefsiri\nثُمَّ اِنَّكُمْ اَيُّهَا الضَّٓالُّونَ الْمُكَذِّبُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:52",
+      "text": "LAAKILUUNE MIN ŞECERIN MIN ZAKKUUM",
+      "translation": "Kesinlikle zakkum ağacından yiyeceksiniz",
+      "dipnot": "Saffat 37/62 - 65, Duhan 44/43 - 46.",
+      "roots": [
+        "أكل",
+        "شجر",
+        "زقم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Saffat 37/62-65",
+          "targets": [
+            "37:62",
+            "37:63",
+            "37:64",
+            "37:65"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/43-46",
+          "targets": [
+            "44:43",
+            "44:44",
+            "44:45",
+            "44:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:52",
+        "connections": [
+          {
+            "target_coordinate": "37:62",
+            "context": "Saffat 37/62-65"
+          },
+          {
+            "target_coordinate": "37:63",
+            "context": "Saffat 37/62-65"
+          },
+          {
+            "target_coordinate": "37:64",
+            "context": "Saffat 37/62-65"
+          },
+          {
+            "target_coordinate": "37:65",
+            "context": "Saffat 37/62-65"
+          },
+          {
+            "target_coordinate": "44:43",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "44:44",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "44:45",
+            "context": "Duhan 44/43-46"
+          },
+          {
+            "target_coordinate": "44:46",
+            "context": "Duhan 44/43-46"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 52. Ayetin Tefsiri\nلَاٰكِلُونَ مِنْ شَجَرٍ مِنْ زَقُّومٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:53",
+      "text": "FEMAA LIUUNE MINHEL BUTUUN",
+      "translation": "Karınlarınızı onunla dolduracaksınız",
+      "dipnot": "Saffat 37/66.",
+      "roots": [
+        "ملأ",
+        "بطن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Saffat 37/66",
+          "targets": [
+            "37:66"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:53",
+        "connections": [
+          {
+            "target_coordinate": "37:66",
+            "context": "Saffat 37/66"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 53. Ayetin Tefsiri\nفَمَالِؤُ۫نَ مِنْهَا الْبُطُونَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:54",
+      "text": "FEŞAARIBUUNE ALEYHI MINEL HAMIIM",
+      "translation": "Üzerine kaynar sudan içeceksiniz",
+      "dipnot": "Yunus 10/4, Kehf 18/29, Saffat 37/67, Nebe 78/24 - 25, Ğaşiye 88/5.",
+      "roots": [
+        "شرب",
+        "حمم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/4",
+          "targets": [
+            "10:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/29",
+          "targets": [
+            "18:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/67",
+          "targets": [
+            "37:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/24-25",
+          "targets": [
+            "78:24",
+            "78:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ğaşiye 88/5",
+          "targets": [
+            "88:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:54",
+        "connections": [
+          {
+            "target_coordinate": "10:4",
+            "context": "Yunus 10/4"
+          },
+          {
+            "target_coordinate": "18:29",
+            "context": "Kehf 18/29"
+          },
+          {
+            "target_coordinate": "37:67",
+            "context": "Saffat 37/67"
+          },
+          {
+            "target_coordinate": "78:24",
+            "context": "Nebe 78/24-25"
+          },
+          {
+            "target_coordinate": "78:25",
+            "context": "Nebe 78/24-25"
+          },
+          {
+            "target_coordinate": "88:5",
+            "context": "Ğaşiye 88/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 54. Ayetin Tefsiri\nفَشَارِبُونَ عَلَيْهِ مِنَ الْحَم۪يمِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:55",
+      "text": "FEŞAARIBUUNE ŞURBEL HIIM",
+      "translation": "Susuzluktan yanıp kavrulmuş develerin içmesi gibi içeceksiniz.",
+      "dipnot": "Meryem 19/86.",
+      "roots": [
+        "شرب",
+        "هيم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Meryem 19/86",
+          "targets": [
+            "19:86"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:55",
+        "connections": [
+          {
+            "target_coordinate": "19:86",
+            "context": "Meryem 19/86"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 55. Ayetin Tefsiri\nفَشَارِبُونَ شُرْبَ الْه۪يمِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:56",
+      "text": "هٰذَا نُزُلُهُمْ يَوْمَ الدّ۪ينِۜ",
+      "translation": "Bu, her şeyin karşılığını bulacağı günde onlara verilen ziyafettir!",
+      "dipnot": "[1*] Din, “âdet, durum; yapılan işe karşılık vermek ve verilen karşılık, itaat /boyun eğme” anlamlarına gelir (es-Sıhâh). Din, Kuran’da insanın kabul edip ona göre yaşamaya söz verdiği sistem anlamına da gelir ( Al-i İmran 3/19, Kafirun 109/6 ). Eğer bu din Allah’ın dini ise boyun eğilen yalnızca Allah’tır ve karşılığı ondan beklenir. “Din günü” de dünyada yapılanların karşılığının alınacağı Ahiret günüdür ( Fatiha 1/4, Nûr 24/25, Saffat 37/19 - 20, Sad 38/78, Zâriyât 51/6 - 12 - 13, Mearic 70/26, Müddessir 74/46, İnfitar 82/9, 15 - 19 ). [2*] Kehf 18/102, Vakıa 56/93.",
+      "roots": [
+        "نزل",
+        "يوم",
+        "دين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Din, “âdet, durum; yapılan işe karşılık vermek ve verilen karşılık, itaat /boyun eğme” anlamlarına gelir (es-Sıhâh). Din, Kuran’da insanın kabul edip ona göre yaşamaya söz verdiği sistem anlamına da gelir ( "
+        },
+        {
+          "type": "link",
+          "content": "Al-i İmran 3/19",
+          "targets": [
+            "3:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kafirun 109/6",
+          "targets": [
+            "109:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Eğer bu din Allah’ın dini ise boyun eğilen yalnızca Allah’tır ve karşılığı ondan beklenir. “Din günü” de dünyada yapılanların karşılığının alınacağı Ahiret günüdür ( "
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/4",
+          "targets": [
+            "1:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nûr 24/25",
+          "targets": [
+            "24:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/19-20",
+          "targets": [
+            "37:19",
+            "37:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/78",
+          "targets": [
+            "38:78"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zâriyât 51/6-12-13",
+          "targets": [
+            "51:6",
+            "51:7",
+            "51:8",
+            "51:9",
+            "51:10",
+            "51:11",
+            "51:12",
+            "51:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/26",
+          "targets": [
+            "70:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/46",
+          "targets": [
+            "74:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/9,15-19",
+          "targets": [
+            "82:9",
+            "82:15",
+            "82:16",
+            "82:17",
+            "82:18",
+            "82:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/102",
+          "targets": [
+            "18:102"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/93",
+          "targets": [
+            "56:93"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:56",
+        "connections": [
+          {
+            "target_coordinate": "3:19",
+            "context": "Al-i İmran 3/19"
+          },
+          {
+            "target_coordinate": "109:6",
+            "context": "Kafirun 109/6"
+          },
+          {
+            "target_coordinate": "1:4",
+            "context": "Fatiha 1/4"
+          },
+          {
+            "target_coordinate": "24:25",
+            "context": "Nûr 24/25"
+          },
+          {
+            "target_coordinate": "37:19",
+            "context": "Saffat 37/19-20"
+          },
+          {
+            "target_coordinate": "37:20",
+            "context": "Saffat 37/19-20"
+          },
+          {
+            "target_coordinate": "38:78",
+            "context": "Sad 38/78"
+          },
+          {
+            "target_coordinate": "51:6",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:7",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:8",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:9",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:10",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:11",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:12",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:13",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "70:26",
+            "context": "Mearic 70/26"
+          },
+          {
+            "target_coordinate": "74:46",
+            "context": "Müddessir 74/46"
+          },
+          {
+            "target_coordinate": "82:9",
+            "context": "İnfitar 82/9,15-19"
+          },
+          {
+            "target_coordinate": "82:15",
+            "context": "İnfitar 82/9,15-19"
+          },
+          {
+            "target_coordinate": "82:16",
+            "context": "İnfitar 82/9,15-19"
+          },
+          {
+            "target_coordinate": "82:17",
+            "context": "İnfitar 82/9,15-19"
+          },
+          {
+            "target_coordinate": "82:18",
+            "context": "İnfitar 82/9,15-19"
+          },
+          {
+            "target_coordinate": "82:19",
+            "context": "İnfitar 82/9,15-19"
+          },
+          {
+            "target_coordinate": "18:102",
+            "context": "Kehf 18/102"
+          },
+          {
+            "target_coordinate": "56:93",
+            "context": "Vakıa 56/93"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 56. Ayetin Tefsiri\nهٰذَا نُزُلُهُمْ يَوْمَ الدّ۪ينِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:57",
+      "text": "نَحْنُ خَلَقْنَاكُمْ فَلَوْلَا تُصَدِّقُونَ۟",
+      "translation": "Sizi biz yarattık, (ahirette olacakları) keşke kabul etseniz!",
+      "dipnot": "[*] Hucurat 49/13, İnsan 76/28.",
+      "roots": [
+        "خلق",
+        "صدق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Hucurat 49/13",
+          "targets": [
+            "49:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/28",
+          "targets": [
+            "76:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:57",
+        "connections": [
+          {
+            "target_coordinate": "49:13",
+            "context": "Hucurat 49/13"
+          },
+          {
+            "target_coordinate": "76:28",
+            "context": "İnsan 76/28"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 57. Ayetin Tefsiri\nنَحْنُ خَلَقْنَاكُمْ فَلَوْلَا تُصَدِّقُونَ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:58",
+      "text": "اَفَرَاَيْتُمْ مَا تُمْنُونَۜ",
+      "translation": "Boşalttığınız meniyi hiç düşündünüz mü[*]?\n[*]",
+      "dipnot": "[*] Türkçede meni, sadece erkeklerin spermini Arapçada ise bütün canlıların ölçülerinin belirlendiği esnadaki üreme hücrelerini ifade eder (Müfredat). Bu iş, döllenme sırasında oluşur ( Necm 53/46, Kıyamet 75/37 ). Burada kadının hayız döneminde dışarı attığı ve erkeğin boşalttığı üreme hücreleri anlatılmaktadır.",
+      "roots": [
+        "رأي",
+        "مني"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Türkçede meni, sadece erkeklerin spermini Arapçada ise bütün canlıların ölçülerinin belirlendiği esnadaki üreme hücrelerini ifade eder (Müfredat). Bu iş, döllenme sırasında oluşur ( "
+        },
+        {
+          "type": "link",
+          "content": "Necm 53/46",
+          "targets": [
+            "53:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/37",
+          "targets": [
+            "75:37"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Burada kadının hayız döneminde dışarı attığı ve erkeğin boşalttığı üreme hücreleri anlatılmaktadır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:58",
+        "connections": [
+          {
+            "target_coordinate": "53:46",
+            "context": "Necm 53/46"
+          },
+          {
+            "target_coordinate": "75:37",
+            "context": "Kıyamet 75/37"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 58. Ayetin Tefsiri\nاَفَرَاَيْتُمْ مَا تُمْنُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:59",
+      "text": "ءَاَنْتُمْ تَخْلُقُونَهُٓ اَمْ نَحْنُ الْخَالِقُونَ",
+      "translation": "Onu siz mi yaratıyorsunuz yoksa yaratan biz miyiz[*]?\n[*]",
+      "dipnot": "[*] Mürselat 77/20, Tarık 86/5 - 7.",
+      "roots": [
+        "خلق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/20",
+          "targets": [
+            "77:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tarık 86/5-7",
+          "targets": [
+            "86:5",
+            "86:6",
+            "86:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:59",
+        "connections": [
+          {
+            "target_coordinate": "77:20",
+            "context": "Mürselat 77/20"
+          },
+          {
+            "target_coordinate": "86:5",
+            "context": "Tarık 86/5-7"
+          },
+          {
+            "target_coordinate": "86:6",
+            "context": "Tarık 86/5-7"
+          },
+          {
+            "target_coordinate": "86:7",
+            "context": "Tarık 86/5-7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 59. Ayetin Tefsiri\nءَاَنْتُمْ تَخْلُقُونَهُٓ اَمْ نَحْنُ الْخَالِقُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:60",
+      "text": "نَحْنُ قَدَّرْنَا بَيْنَكُمُ الْمَوْتَ وَمَا نَحْنُ بِمَسْبُوق۪ينَۙ",
+      "translation": "Aranızda, ölümü biz takdir ettik; bizim önümüze geçilemez[*].\n[*]",
+      "dipnot": "[*] Âl-i İmran 3/185, Nisa 4/78, Enbiya 21/35, Ankebut 29/57, Cuma 62/8.",
+      "roots": [
+        "قدر",
+        "بين",
+        "موت",
+        "سبق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/185",
+          "targets": [
+            "3:185"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/78",
+          "targets": [
+            "4:78"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/35",
+          "targets": [
+            "21:35"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/57",
+          "targets": [
+            "29:57"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Cuma 62/8",
+          "targets": [
+            "62:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:60",
+        "connections": [
+          {
+            "target_coordinate": "3:185",
+            "context": "Âl-i İmran 3/185"
+          },
+          {
+            "target_coordinate": "4:78",
+            "context": "Nisa 4/78"
+          },
+          {
+            "target_coordinate": "21:35",
+            "context": "Enbiya 21/35"
+          },
+          {
+            "target_coordinate": "29:57",
+            "context": "Ankebut 29/57"
+          },
+          {
+            "target_coordinate": "62:8",
+            "context": "Cuma 62/8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 60. Ayetin Tefsiri\nنَحْنُ قَدَّرْنَا بَيْنَكُمُ الْمَوْتَ وَمَا نَحْنُ بِمَسْبُوق۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:61",
+      "text": "عَلٰٓى اَنْ نُبَدِّلَ اَمْثَالَكُمْ وَنُنْشِئَكُمْ ف۪ي مَا لَا تَعْلَمُونَ",
+      "translation": "Bu, (tanınmanızı engellemeden) yapınızın yerine başka bir yapı koymak ve bilmediğiniz bir şekilde sizi yeniden oluşturmak içindir.[*]\n[*]",
+      "dipnot": "[*] Ahirette herkes, Adem aleyhisselam gibi olgunluk yaşında yaratılacak A’raf 7/29 müminler ve kafirler yüzlerinden belli olacak Âl-i İmran 3/106 . Müminlerin yüzü ak, kâfirlerin ki kara olacak. Mahşer yerinde müminlerin nurları önlerinden ve sağlarından yansıyacak ve ölümsüz bir yapıda yaratılacaklardır. İsra 17/99, Ankebut 29/20, Necm 53/47, Tahrim 66/8.",
+      "roots": [
+        "بدل",
+        "مثل",
+        "نشأ",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Ahirette herkes, Adem aleyhisselam gibi olgunluk yaşında yaratılacak A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/29",
+          "targets": [
+            "7:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "müminler ve kafirler yüzlerinden belli olacak Âl-i İmran 3/106",
+          "targets": [
+            "3:106"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Müminlerin yüzü ak, kâfirlerin ki kara olacak. Mahşer yerinde müminlerin nurları önlerinden ve sağlarından yansıyacak ve ölümsüz bir yapıda yaratılacaklardır. "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/99",
+          "targets": [
+            "17:99"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/20",
+          "targets": [
+            "29:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Necm 53/47",
+          "targets": [
+            "53:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tahrim 66/8",
+          "targets": [
+            "66:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:61",
+        "connections": [
+          {
+            "target_coordinate": "7:29",
+            "context": "raf 7/29"
+          },
+          {
+            "target_coordinate": "3:106",
+            "context": "müminler ve kafirler yüzlerinden belli olacak Âl-i İmran 3/106"
+          },
+          {
+            "target_coordinate": "17:99",
+            "context": "İsra 17/99"
+          },
+          {
+            "target_coordinate": "29:20",
+            "context": "Ankebut 29/20"
+          },
+          {
+            "target_coordinate": "53:47",
+            "context": "Necm 53/47"
+          },
+          {
+            "target_coordinate": "66:8",
+            "context": "Tahrim 66/8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 61. Ayetin Tefsiri\nعَلٰٓى اَنْ نُبَدِّلَ اَمْثَالَكُمْ وَنُنْشِئَكُمْ ف۪ي مَا لَا تَعْلَمُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:62",
+      "text": "وَلَقَدْ عَلِمْتُمُ النَّشْاَةَ الْاُو۫لٰى فَلَوْلَا تَذَكَّرُونَ",
+      "translation": "İlk oluşumunuzu[*] iyi biliyorsunuz. Keşke bilgilerinizi kullansanız!\n[*]",
+      "dipnot": "[*] En’am 6/98, Hac 22/5, Mülk 67/23.",
+      "roots": [
+        "علم",
+        "نشأ",
+        "أول",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/98",
+          "targets": [
+            "6:98"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/5",
+          "targets": [
+            "22:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/23",
+          "targets": [
+            "67:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:62",
+        "connections": [
+          {
+            "target_coordinate": "6:98",
+            "context": "am 6/98"
+          },
+          {
+            "target_coordinate": "22:5",
+            "context": "Hac 22/5"
+          },
+          {
+            "target_coordinate": "67:23",
+            "context": "Mülk 67/23"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 62. Ayetin Tefsiri\nوَلَقَدْ عَلِمْتُمُ النَّشْاَةَ الْاُو۫لٰى فَلَوْلَا تَذَكَّرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:63",
+      "text": "اَفَرَاَيْتُمْ مَا تَحْرُثُونَۜ",
+      "translation": "Ekmekte olduğunuz tohumu düşündünüz mü[*]?\n[*]",
+      "dipnot": "[*] Yasin 36/33 - 36.",
+      "roots": [
+        "رأي",
+        "حرث"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/33-36",
+          "targets": [
+            "36:33",
+            "36:34",
+            "36:35",
+            "36:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:63",
+        "connections": [
+          {
+            "target_coordinate": "36:33",
+            "context": "Yasin 36/33-36"
+          },
+          {
+            "target_coordinate": "36:34",
+            "context": "Yasin 36/33-36"
+          },
+          {
+            "target_coordinate": "36:35",
+            "context": "Yasin 36/33-36"
+          },
+          {
+            "target_coordinate": "36:36",
+            "context": "Yasin 36/33-36"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 63. Ayetin Tefsiri\nاَفَرَاَيْتُمْ مَا تَحْرُثُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:64",
+      "text": "ءَاَنْتُمْ تَزْرَعُونَهُٓ اَمْ نَحْنُ الزَّارِعُونَ",
+      "translation": "Onu siz mi bitirip yetiştiriyorsunuz, yoksa bitirip yetiştiren biz miyiz[*]?\n[*]",
+      "dipnot": "[*] En’am 6/141, Nahl 16/10 - 11, Secde 32/27, Nebe 78/14 - 16.",
+      "roots": [
+        "زرع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/141",
+          "targets": [
+            "6:141"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/10-11",
+          "targets": [
+            "16:10",
+            "16:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/27",
+          "targets": [
+            "32:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/14-16",
+          "targets": [
+            "78:14",
+            "78:15",
+            "78:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:64",
+        "connections": [
+          {
+            "target_coordinate": "6:141",
+            "context": "am 6/141"
+          },
+          {
+            "target_coordinate": "16:10",
+            "context": "Nahl 16/10-11"
+          },
+          {
+            "target_coordinate": "16:11",
+            "context": "Nahl 16/10-11"
+          },
+          {
+            "target_coordinate": "32:27",
+            "context": "Secde 32/27"
+          },
+          {
+            "target_coordinate": "78:14",
+            "context": "Nebe 78/14-16"
+          },
+          {
+            "target_coordinate": "78:15",
+            "context": "Nebe 78/14-16"
+          },
+          {
+            "target_coordinate": "78:16",
+            "context": "Nebe 78/14-16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 64. Ayetin Tefsiri\nءَاَنْتُمْ تَزْرَعُونَهُٓ اَمْ نَحْنُ الزَّارِعُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:65",
+      "text": "لَوْ نَشَٓاءُ لَجَعَلْنَاهُ حُطَامًا فَظَلْتُمْ تَفَكَّهُونَ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "شيأ",
+        "جعل",
+        "حطم",
+        "ظلل",
+        "فكه"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:65",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 65. Ayetin Tefsiri\nلَوْ نَشَٓاءُ لَجَعَلْنَاهُ حُطَامًا فَظَلْتُمْ تَفَكَّهُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:65",
+      "text": "",
+      "translation": "Gerek görürsek, onları çer çöp haline getiririz de şaşar kalırsınız.",
+      "dipnot": "[1*] Şâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (شيء) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder (Kamer 54/49, Ra’d 13/8). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır (Enbiyâ 21/35). Allah, herkesin doğru yolda olmasını ister (Nisa 4/26) ama sadece doğru şeyler yapanı doğru yolda sayar (Nur 24/46). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur (Şems 91/7-10). Buna göre şâe (شاء) fiilinin öznesi Allah olursa “gerekeni yaptı veya yarattı”, insan olursa “gerekeni yaptı” anlamında olur. Allah insanlara, tercihlerine göre davranma hürriyeti vermeseydi hiç kimse yanlış bir şey yapamaz ve imtihan diye bir şey de olmazdı (Nahl 16/93). Yanlış kader anlayışını imanın bir esası gibi İslam’a yerleştirmek isteyenler, büyük bir çarpıtma yaparak şâe (شاء) fiiline irade yani isteme ve dileme anlamı vermiş; bunu, tefsirlere hatta sözlüklere bile yerleştirerek birçok ayetin mealini bozmuşlardır. Bkz: http://www.suleymaniyevakfi.org/akaid-arastirmalari/kuranda-sey-mesiet-irade-ve-fitrat.html [2*] Zümer 39/21, Hadid 57/20.",
+      "roots": [
+        "شيأ",
+        "جعل",
+        "حطم",
+        "ظلل",
+        "فكه"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Şâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (شيء) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder ("
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/49",
+          "targets": [
+            "54:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/8",
+          "targets": [
+            "13:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır ("
+        },
+        {
+          "type": "link",
+          "content": "Enbiyâ 21/35",
+          "targets": [
+            "21:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah, herkesin doğru yolda olmasını ister ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/26",
+          "targets": [
+            "4:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ama sadece doğru şeyler yapanı doğru yolda sayar ("
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/46",
+          "targets": [
+            "24:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur ("
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/7-10",
+          "targets": [
+            "91:7",
+            "91:8",
+            "91:9",
+            "91:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Buna göre şâe (شاء) fiilinin öznesi Allah olursa “gerekeni yaptı veya yarattı”, insan olursa “gerekeni yaptı” anlamında olur. Allah insanlara, tercihlerine göre davranma hürriyeti vermeseydi hiç kimse yanlış bir şey yapamaz ve imtihan diye bir şey de olmazdı ("
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/93",
+          "targets": [
+            "16:93"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yanlış kader anlayışını imanın bir esası gibi İslam’a yerleştirmek isteyenler, büyük bir çarpıtma yaparak şâe (شاء) fiiline irade yani isteme ve dileme anlamı vermiş; bunu, tefsirlere hatta sözlüklere bile yerleştirerek birçok ayetin mealini bozmuşlardır. Bkz: http://www.suleymaniyevakfi.org/akaid-arastirmalari/kuranda-sey-mesiet-irade-ve-fitrat.html [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/21",
+          "targets": [
+            "39:21"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/20",
+          "targets": [
+            "57:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:65",
+        "connections": [
+          {
+            "target_coordinate": "54:49",
+            "context": "Kamer 54/49"
+          },
+          {
+            "target_coordinate": "13:8",
+            "context": "d 13/8"
+          },
+          {
+            "target_coordinate": "21:35",
+            "context": "Enbiyâ 21/35"
+          },
+          {
+            "target_coordinate": "4:26",
+            "context": "Nisa 4/26"
+          },
+          {
+            "target_coordinate": "24:46",
+            "context": "Nur 24/46"
+          },
+          {
+            "target_coordinate": "91:7",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:8",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:9",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:10",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "16:93",
+            "context": "Nahl 16/93"
+          },
+          {
+            "target_coordinate": "39:21",
+            "context": "Zümer 39/21"
+          },
+          {
+            "target_coordinate": "57:20",
+            "context": "Hadid 57/20"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 65. Ayetin Tefsiri\nلَوْ نَشَٓاءُ لَجَعَلْنَاهُ حُطَامًا فَظَلْتُمْ تَفَكَّهُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:66",
+      "text": "اِنَّا لَمُغْرَمُونَۙ",
+      "translation": "(Şöyle dersiniz:) “Biz kesinlikle zarara sokulmuş kimseleriz.",
+      "dipnot": "",
+      "roots": [
+        "غرم"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:66",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 66. Ayetin Tefsiri\nاِنَّا لَمُغْرَمُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:67",
+      "text": "بَلْ نَحْنُ مَحْرُومُونَ",
+      "translation": "Aslında biz mahrum bırakılmış kimseleriz[*].”",
+      "dipnot": "[*] Bunun somut bir örneği için bkz: Kalem 68/17-32.",
+      "roots": [
+        "حرم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Bunun somut bir örneği için bkz: "
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/17-32",
+          "targets": [
+            "68:17",
+            "68:18",
+            "68:19",
+            "68:20",
+            "68:21",
+            "68:22",
+            "68:23",
+            "68:24",
+            "68:25",
+            "68:26",
+            "68:27",
+            "68:28",
+            "68:29",
+            "68:30",
+            "68:31",
+            "68:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:67",
+        "connections": [
+          {
+            "target_coordinate": "68:17",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:18",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:19",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:20",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:21",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:22",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:23",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:24",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:25",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:26",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:27",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:28",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:29",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:30",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:31",
+            "context": "Kalem 68/17-32"
+          },
+          {
+            "target_coordinate": "68:32",
+            "context": "Kalem 68/17-32"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 67. Ayetin Tefsiri\nبَلْ نَحْنُ مَحْرُومُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:68",
+      "text": "اَفَرَاَيْتُمُ الْمَٓاءَ الَّذ۪ي تَشْرَبُونَۜ",
+      "translation": "Ya içmekte olduğunuz suyu düşündünüz mü?",
+      "dipnot": "",
+      "roots": [
+        "رأي",
+        "موه",
+        "شرب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:68",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 68. Ayetin Tefsiri\nاَفَرَاَيْتُمُ الْمَٓاءَ الَّذ۪ي تَشْرَبُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:69",
+      "text": "ءَاَنْتُمْ اَنْزَلْتُمُوهُ مِنَ الْمُزْنِ اَمْ نَحْنُ الْمُنْزِلُونَ",
+      "translation": "Onu buluttan siz mi indirdiniz, yoksa indiren biz miyiz[*]?",
+      "dipnot": "[*] Hicr 15/21, Mü’minun 23/18, Zümer 39/21.",
+      "roots": [
+        "نزل",
+        "مزن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/21",
+          "targets": [
+            "15:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/18",
+          "targets": [
+            "23:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/21",
+          "targets": [
+            "39:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:69",
+        "connections": [
+          {
+            "target_coordinate": "15:21",
+            "context": "Hicr 15/21"
+          },
+          {
+            "target_coordinate": "23:18",
+            "context": "minun 23/18"
+          },
+          {
+            "target_coordinate": "39:21",
+            "context": "Zümer 39/21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 69. Ayetin Tefsiri\nءَاَنْتُمْ اَنْزَلْتُمُوهُ مِنَ الْمُزْنِ اَمْ نَحْنُ الْمُنْزِلُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:70",
+      "text": "لَوْ نَشَٓاءُ جَعَلْنَاهُ اُجَاجًا فَلَوْلَا تَشْكُرُونَ",
+      "translation": "İsteseydik o suyu acı yapardık[*]. Keşke şükretseniz /görevlerinizi yerine getirseniz!",
+      "dipnot": "[*] Nitekim suları tuzlu ve acı olan deniz ve göller vardır (Furkan 25/53, Fatır 35/12). Bütün sular böyle olsaydı içilecek su bulunamazdı.",
+      "roots": [
+        "شيأ",
+        "جعل",
+        "أجج",
+        "شكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Nitekim suları tuzlu ve acı olan deniz ve göller vardır ("
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/53",
+          "targets": [
+            "25:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/12",
+          "targets": [
+            "35:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bütün sular böyle olsaydı içilecek su bulunamazdı."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:70",
+        "connections": [
+          {
+            "target_coordinate": "25:53",
+            "context": "Furkan 25/53"
+          },
+          {
+            "target_coordinate": "35:12",
+            "context": "Fatır 35/12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 70. Ayetin Tefsiri\nلَوْ نَشَٓاءُ جَعَلْنَاهُ اُجَاجًا فَلَوْلَا تَشْكُرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:71",
+      "text": "اَفَرَاَيْتُمُ النَّارَ الَّت۪ي تُورُونَۜ",
+      "translation": "Peki ya tutuşturmakta olduğunuz ateşi düşündünüz mü?",
+      "dipnot": "",
+      "roots": [
+        "رأي",
+        "نور",
+        "وري"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:71",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 71. Ayetin Tefsiri\nاَفَرَاَيْتُمُ النَّارَ الَّت۪ي تُورُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:72",
+      "text": "ءَاَنْتُمْ اَنْشَأْتُمْ شَجَرَتَهَٓا اَمْ نَحْنُ الْمُنْشِؤُ۫نَ",
+      "translation": "Onun ağacını[*] siz mi oluşturup geliştirdiniz yoksa oluşturup geliştiren biz miyiz?",
+      "dipnot": "[*] Burada bahsedilen ağaç, başka bir maddeye ihtiyaç duymadan doğrudan parçaları birbirine sürtülerek kıvılcım çıkarılabilen ve o kıvılcımın tutuşturucu olarak kullanıldığı ağaçtır (Yasin 36/80).",
+      "roots": [
+        "نشأ",
+        "شجر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Burada bahsedilen ağaç, başka bir maddeye ihtiyaç duymadan doğrudan parçaları birbirine sürtülerek kıvılcım çıkarılabilen ve o kıvılcımın tutuşturucu olarak kullanıldığı ağaçtır ("
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/80",
+          "targets": [
+            "36:80"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:72",
+        "connections": [
+          {
+            "target_coordinate": "36:80",
+            "context": "Yasin 36/80"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 72. Ayetin Tefsiri\nءَاَنْتُمْ اَنْشَأْتُمْ شَجَرَتَهَٓا اَمْ نَحْنُ الْمُنْشِؤُ۫نَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:73",
+      "text": "نَحْنُ جَعَلْنَاهَا تَذْكِرَةً وَمَتَاعًا لِلْمُقْو۪ينَۚ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "جعل",
+        "ذكر",
+        "متع",
+        "قوي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:73",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 73. Ayetin Tefsiri\nنَحْنُ جَعَلْنَاهَا تَذْكِرَةً وَمَتَاعًا لِلْمُقْو۪ينَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:74",
+      "text": "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظ۪يمِ۟",
+      "translation": "Öyleyse sen, Rabbinin muazzam ismi /özelliği[1*] sebebiyle ona boyun eğ![2*]",
+      "dipnot": "[1*] “Özellik” diye meal verdiğimiz kelime “isim”dir. Çünkü Arapçada isim, bir şeyi tanımlayan, neye yaradığını gösteren ve akılda tutmaya yarayan sözdür (Müfredat). Türkçede “isim”, bu anlamı içermediği için meale “özellik” olarak yazdık ( Bakara 2/31 ). [2*] Vakıa 56/96, Hâkka 69/52.",
+      "roots": [
+        "سبح",
+        "سمو",
+        "ربب",
+        "عظم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] “Özellik” diye meal verdiğimiz kelime “isim”dir. Çünkü Arapçada isim, bir şeyi tanımlayan, neye yaradığını gösteren ve akılda tutmaya yarayan sözdür (Müfredat). Türkçede “isim”, bu anlamı içermediği için meale “özellik” olarak yazdık ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/31",
+          "targets": [
+            "2:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/96",
+          "targets": [
+            "56:96"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/52",
+          "targets": [
+            "69:52"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:74",
+        "connections": [
+          {
+            "target_coordinate": "2:31",
+            "context": "Bakara 2/31"
+          },
+          {
+            "target_coordinate": "56:96",
+            "context": "Vakıa 56/96"
+          },
+          {
+            "target_coordinate": "69:52",
+            "context": "Hâkka 69/52"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 74. Ayetin Tefsiri\nفَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظ۪يمِ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:75",
+      "text": "فَلَٓا اُقْسِمُ بِمَوَاقِعِ النُّجُومِۙ",
+      "translation": "Hayır! (Kur’an ile ilgili söyledikleriniz doğru değil) Yıldızların bulunduğu yerlere[*] yemin ederim.",
+      "dipnot": "[*] Yıldızların bulunduğu yer birinci kat semadır. Orası, mele-i a’lâ’nın /büyük melekler topluluğunun bulunduğu yerdir. Güneş, ay ve gezegenler birinci kat semanın süsleridir ( Saffat 37/6 - 8 ).",
+      "roots": [
+        "قسم",
+        "وقع",
+        "نجم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Yıldızların bulunduğu yer birinci kat semadır. Orası, mele-i a’lâ’nın /büyük melekler topluluğunun bulunduğu yerdir. Güneş, ay ve gezegenler birinci kat semanın süsleridir ( "
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/6-8",
+          "targets": [
+            "37:6",
+            "37:7",
+            "37:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:75",
+        "connections": [
+          {
+            "target_coordinate": "37:6",
+            "context": "Saffat 37/6-8"
+          },
+          {
+            "target_coordinate": "37:7",
+            "context": "Saffat 37/6-8"
+          },
+          {
+            "target_coordinate": "37:8",
+            "context": "Saffat 37/6-8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 75. Ayetin Tefsiri\nفَلَٓا اُقْسِمُ بِمَوَاقِعِ النُّجُومِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:76",
+      "text": "وَاِنَّهُ لَقَسَمٌ لَوْ تَعْلَمُونَ عَظ۪يمٌۙ",
+      "translation": "Keşke bilseniz, bu kesinlikle büyük bir yemindir!",
+      "dipnot": "",
+      "roots": [
+        "قسم",
+        "علم",
+        "عظم"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:76",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 76. Ayetin Tefsiri\nوَاِنَّهُ لَقَسَمٌ لَوْ تَعْلَمُونَ عَظ۪يمٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:77",
+      "text": "اِنَّهُ لَقُرْاٰنٌ كَر۪يمٌۙ",
+      "translation": "O, şüphesiz değerli bir Kur’an’dır[*].",
+      "dipnot": "[*] Yasin 36/69 - 70.",
+      "roots": [
+        "قرأ",
+        "كرم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/69-70",
+          "targets": [
+            "36:69",
+            "36:70"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:77",
+        "connections": [
+          {
+            "target_coordinate": "36:69",
+            "context": "Yasin 36/69-70"
+          },
+          {
+            "target_coordinate": "36:70",
+            "context": "Yasin 36/69-70"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 77. Ayetin Tefsiri\nاِنَّهُ لَقُرْاٰنٌ كَر۪يمٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:78",
+      "text": "ف۪ي كِتَابٍ مَكْنُونٍۙ",
+      "translation": "(Yıldızların bulunduğu yerde) saklı tutulan bir kitaptadır[*].",
+      "dipnot": "[*] Zuhruf 43/3 - 4, Büruc 85/21 - 22.",
+      "roots": [
+        "كتب",
+        "كنن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/3-4",
+          "targets": [
+            "43:3",
+            "43:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Büruc 85/21-22",
+          "targets": [
+            "85:21",
+            "85:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:78",
+        "connections": [
+          {
+            "target_coordinate": "43:3",
+            "context": "Zuhruf 43/3-4"
+          },
+          {
+            "target_coordinate": "43:4",
+            "context": "Zuhruf 43/3-4"
+          },
+          {
+            "target_coordinate": "85:21",
+            "context": "Büruc 85/21-22"
+          },
+          {
+            "target_coordinate": "85:22",
+            "context": "Büruc 85/21-22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 78. Ayetin Tefsiri\nف۪ي كِتَابٍ مَكْنُونٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:79",
+      "text": "لَا يَمَسُّهُٓ اِلَّا الْمُطَهَّرُونَۜ",
+      "translation": "Oradaki kitaba, tertemiz oldukları onaylanmış olanlardan[1*] (meleklerden) başkası dokunamaz[2*].",
+      "dipnot": "[1*] “Tertemiz oldukları onaylanmış olanlar” anlamı verdiğimiz kelime ism-i mef’ul kalıbındaki “mutahharûn (المطهرون)”dur. Bunlar, Allah’ın melek olarak görevlendirdiği cinlerdir. Onlardan herhangi biri, daha önce melek olan İblis gibi (bkz. Bakara 2/34, Kehf 18/50 ve dipnotları), yanlış bir yola girerse görevden uzaklaştırılır ( Nisa 4/172 - 173 ). [2*] Gökler yedi kattır ( Bakara 2/29, Fussilet 41/12, Talak 65/12, Mülk 67/3 ). Birinci kat sema, Mele-i A’lâ yani büyük meleklerin toplanma yeridir. Şeytanlar oraya yaklaştırılmazlar ( Saffât 37/6 - 10 ). Kur’an’ın yazılı olduğu levha, orada korunmaktadır. Ona sadece melekler dokunabilir. Meleklerden başkasının dokunamayacağı bildirilen Kur’an; elimizdeki Kur’an değil, Kur’an da dahil olmak üzere tüm ilahi bilgilerin saklı tutulduğu ana kitap olan Levh-i Mahfuz’dur. Buna rağmen bu ayet, Kur’an’a abdestsiz ve cünüp olanlarla âdetli ve lohusa kadınların dokunamayacağının delili sayılır. Oysa abdest veya cünüplükten dolayı yıkanma, sadece namaz için şarttır ( Maide 5/6 ). Kur’an okunacağı zaman yapılması emredilen, şeytandan Allah’a sığınmaktır ( Nahl 16/98 ). Abdestsiz, cünüp, âdetli veya lohusa olanların Kur’an’a dokunmalarının veya Kur’an okumalarının haram olduğunu söyleyen sahih bir hadis de yoktur.",
+      "roots": [
+        "مسس",
+        "طهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] “Tertemiz oldukları onaylanmış olanlar” anlamı verdiğimiz kelime ism-i mef’ul kalıbındaki “mutahharûn (المطهرون)”dur. Bunlar, Allah’ın melek olarak görevlendirdiği cinlerdir. Onlardan herhangi biri, daha önce melek olan İblis gibi (bkz. "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/34",
+          "targets": [
+            "2:34"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/50",
+          "targets": [
+            "18:50"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "ve dipnotları), yanlış bir yola girerse görevden uzaklaştırılır ( "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/172-173",
+          "targets": [
+            "4:172",
+            "4:173"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] Gökler yedi kattır ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/29",
+          "targets": [
+            "2:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/12",
+          "targets": [
+            "41:12"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Talak 65/12",
+          "targets": [
+            "65:12"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/3",
+          "targets": [
+            "67:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Birinci kat sema, Mele-i A’lâ yani büyük meleklerin toplanma yeridir. Şeytanlar oraya yaklaştırılmazlar ( "
+        },
+        {
+          "type": "link",
+          "content": "Saffât 37/6-10",
+          "targets": [
+            "37:6",
+            "37:7",
+            "37:8",
+            "37:9",
+            "37:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Kur’an’ın yazılı olduğu levha, orada korunmaktadır. Ona sadece melekler dokunabilir. Meleklerden başkasının dokunamayacağı bildirilen Kur’an; elimizdeki Kur’an değil, Kur’an da dahil olmak üzere tüm ilahi bilgilerin saklı tutulduğu ana kitap olan Levh-i Mahfuz’dur. Buna rağmen bu ayet, Kur’an’a abdestsiz ve cünüp olanlarla âdetli ve lohusa kadınların dokunamayacağının delili sayılır. Oysa abdest veya cünüplükten dolayı yıkanma, sadece namaz için şarttır ( "
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/6",
+          "targets": [
+            "5:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Kur’an okunacağı zaman yapılması emredilen, şeytandan Allah’a sığınmaktır ( "
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/98",
+          "targets": [
+            "16:98"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Abdestsiz, cünüp, âdetli veya lohusa olanların Kur’an’a dokunmalarının veya Kur’an okumalarının haram olduğunu söyleyen sahih bir hadis de yoktur."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:79",
+        "connections": [
+          {
+            "target_coordinate": "2:34",
+            "context": "Bakara 2/34"
+          },
+          {
+            "target_coordinate": "18:50",
+            "context": "Kehf 18/50"
+          },
+          {
+            "target_coordinate": "4:172",
+            "context": "Nisa 4/172-173"
+          },
+          {
+            "target_coordinate": "4:173",
+            "context": "Nisa 4/172-173"
+          },
+          {
+            "target_coordinate": "2:29",
+            "context": "Bakara 2/29"
+          },
+          {
+            "target_coordinate": "41:12",
+            "context": "Fussilet 41/12"
+          },
+          {
+            "target_coordinate": "65:12",
+            "context": "Talak 65/12"
+          },
+          {
+            "target_coordinate": "67:3",
+            "context": "Mülk 67/3"
+          },
+          {
+            "target_coordinate": "37:6",
+            "context": "Saffât 37/6-10"
+          },
+          {
+            "target_coordinate": "37:7",
+            "context": "Saffât 37/6-10"
+          },
+          {
+            "target_coordinate": "37:8",
+            "context": "Saffât 37/6-10"
+          },
+          {
+            "target_coordinate": "37:9",
+            "context": "Saffât 37/6-10"
+          },
+          {
+            "target_coordinate": "37:10",
+            "context": "Saffât 37/6-10"
+          },
+          {
+            "target_coordinate": "5:6",
+            "context": "Maide 5/6"
+          },
+          {
+            "target_coordinate": "16:98",
+            "context": "Nahl 16/98"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 79. Ayetin Tefsiri\nلَا يَمَسُّهُٓ اِلَّا الْمُطَهَّرُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:80",
+      "text": "تَنْز۪يلٌ مِنْ رَبِّ الْعَالَم۪ينَ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "نزل",
+        "ربب",
+        "علم"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:80",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 80. Ayetin Tefsiri\nتَنْز۪يلٌ مِنْ رَبِّ الْعَالَم۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:81",
+      "text": "اَفَبِهٰذَا الْحَد۪يثِ اَنْتُمْ مُدْهِنُونَۙ",
+      "translation": "Şimdi siz, bu söz /Kur’an hakkında gerçek dışı beyanlarda mı bulunuyorsunuz!",
+      "dipnot": "Kafirler, Kur’an’ın Allah’ın kelamı olduğunu gayet iyi bilirler ama bunu açıklamak istemezler (Âl-i İmran 3/106, Kasas 28/57).",
+      "roots": [
+        "حدث",
+        "دهن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Kafirler, Kur’an’ın Allah’ın kelamı olduğunu gayet iyi bilirler ama bunu açıklamak istemezler ("
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/106",
+          "targets": [
+            "3:106"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/57",
+          "targets": [
+            "28:57"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:81",
+        "connections": [
+          {
+            "target_coordinate": "3:106",
+            "context": "Âl-i İmran 3/106"
+          },
+          {
+            "target_coordinate": "28:57",
+            "context": "Kasas 28/57"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 81. Ayetin Tefsiri\nاَفَبِهٰذَا الْحَد۪يثِ اَنْتُمْ مُدْهِنُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:82",
+      "text": "وَتَجْعَلُونَ رِزْقَكُمْ اَنَّكُمْ تُكَذِّبُونَ",
+      "translation": "Yalan söylemeyi geçim kaynağınız haline mi getiriyorsunuz?",
+      "dipnot": "Bakara 2/41, 79, 174, Al-i İmran 3/77 - 78, Tevbe 9/34.",
+      "roots": [
+        "جعل",
+        "رزق",
+        "كذب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/41,79,174",
+          "targets": [
+            "2:41",
+            "2:79",
+            "2:174"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Al-i İmran 3/77-78",
+          "targets": [
+            "3:77",
+            "3:78"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/34",
+          "targets": [
+            "9:34"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:82",
+        "connections": [
+          {
+            "target_coordinate": "2:41",
+            "context": "Bakara 2/41,79,174"
+          },
+          {
+            "target_coordinate": "2:79",
+            "context": "Bakara 2/41,79,174"
+          },
+          {
+            "target_coordinate": "2:174",
+            "context": "Bakara 2/41,79,174"
+          },
+          {
+            "target_coordinate": "3:77",
+            "context": "Al-i İmran 3/77-78"
+          },
+          {
+            "target_coordinate": "3:78",
+            "context": "Al-i İmran 3/77-78"
+          },
+          {
+            "target_coordinate": "9:34",
+            "context": "Tevbe 9/34"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 82. Ayetin Tefsiri\nوَتَجْعَلُونَ رِزْقَكُمْ اَنَّكُمْ تُكَذِّبُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:83",
+      "text": "فَلَوْلَٓا اِذَا بَلَغَتِ الْحُلْقُومَۙ",
+      "translation": "Can boğaza geldiği zaman hadi! (Onu geri çevirin de görelim!)",
+      "dipnot": "Nahl 16/28, Müminun 23/99 - 100, Kıyamet 75/26 - 29.",
+      "roots": [
+        "بلغ",
+        "حلق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nahl 16/28",
+          "targets": [
+            "16:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müminun 23/99-100",
+          "targets": [
+            "23:99",
+            "23:100"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/26-29",
+          "targets": [
+            "75:26",
+            "75:27",
+            "75:28",
+            "75:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:83",
+        "connections": [
+          {
+            "target_coordinate": "16:28",
+            "context": "Nahl 16/28"
+          },
+          {
+            "target_coordinate": "23:99",
+            "context": "Müminun 23/99-100"
+          },
+          {
+            "target_coordinate": "23:100",
+            "context": "Müminun 23/99-100"
+          },
+          {
+            "target_coordinate": "75:26",
+            "context": "Kıyamet 75/26-29"
+          },
+          {
+            "target_coordinate": "75:27",
+            "context": "Kıyamet 75/26-29"
+          },
+          {
+            "target_coordinate": "75:28",
+            "context": "Kıyamet 75/26-29"
+          },
+          {
+            "target_coordinate": "75:29",
+            "context": "Kıyamet 75/26-29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 83. Ayetin Tefsiri\nفَلَوْلَٓا اِذَا بَلَغَتِ الْحُلْقُومَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:84",
+      "text": "وَاَنْتُمْ ح۪ينَئِذٍ تَنْظُرُونَۙ",
+      "translation": "Siz o zaman (ölmekte olan kişiye) bakar durursunuz.",
+      "dipnot": "O sırada ölüm melekleri gelmiş olur (En’am 6/61).",
+      "roots": [
+        "حين",
+        "نظر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "O sırada ölüm melekleri gelmiş olur (En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/61",
+          "targets": [
+            "6:61"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:84",
+        "connections": [
+          {
+            "target_coordinate": "6:61",
+            "context": "am 6/61"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 84. Ayetin Tefsiri\nوَاَنْتُمْ ح۪ينَئِذٍ تَنْظُرُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:85",
+      "text": "وَنَحْنُ اَقْرَبُ اِلَيْهِ مِنْكُمْ وَلٰكِنْ لَا تُبْصِرُونَ",
+      "translation": "Biz ona, sizden daha yakınızdır ama siz göremezsiniz.",
+      "dipnot": "",
+      "roots": [
+        "قرب",
+        "بصر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:85",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 85. Ayetin Tefsiri\nوَنَحْنُ اَقْرَبُ اِلَيْهِ مِنْكُمْ وَلٰكِنْ لَا تُبْصِرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:86",
+      "text": "فَلَوْلَٓا اِنْ كُنْتُمْ غَيْرَ مَد۪ين۪ينَۙ",
+      "translation": "Hadi bakalım, eğer hesaba çekilmeyecek kimselerseniz,",
+      "dipnot": "Saffat 37/ 52 - 53, Maun 107/1.",
+      "roots": [
+        "كون",
+        "غير",
+        "دين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Saffat 37/52-53",
+          "targets": [
+            "37:52",
+            "37:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maun 107/1",
+          "targets": [
+            "107:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:86",
+        "connections": [
+          {
+            "target_coordinate": "37:52",
+            "context": "Saffat 37/52-53"
+          },
+          {
+            "target_coordinate": "37:53",
+            "context": "Saffat 37/52-53"
+          },
+          {
+            "target_coordinate": "107:1",
+            "context": "Maun 107/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 86. Ayetin Tefsiri\nفَلَوْلَٓا اِنْ كُنْتُمْ غَيْرَ مَد۪ين۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:87",
+      "text": "تَرْجِعُونَهَٓا اِنْ كُنْتُمْ صَادِق۪ينَ",
+      "translation": "iddianızda da haklıysanız, çıkmakta olan canı geri çevirin de görelim!",
+      "dipnot": "Bu ayetten anlaşılacağı üzere, insan ölüm karşısında çaresizdir.",
+      "roots": [
+        "رجع",
+        "كون",
+        "صدق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bu ayetten anlaşılacağı üzere, insan ölüm karşısında çaresizdir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:87",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 87. Ayetin Tefsiri\nتَرْجِعُونَهَٓا اِنْ كُنْتُمْ صَادِق۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:88",
+      "text": "فَاَمَّٓا اِنْ كَانَ مِنَ الْمُقَرَّب۪ينَۙ",
+      "translation": "Eğer ölen kişi Allah’a yakınlığı onaylanmış olanlardan ise",
+      "dipnot": "Vakıa 56/10 - 11.",
+      "roots": [
+        "كون",
+        "قرب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/10-11",
+          "targets": [
+            "56:10",
+            "56:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:88",
+        "connections": [
+          {
+            "target_coordinate": "56:10",
+            "context": "Vakıa 56/10-11"
+          },
+          {
+            "target_coordinate": "56:11",
+            "context": "Vakıa 56/10-11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 88. Ayetin Tefsiri\nفَاَمَّٓا اِنْ كَانَ مِنَ الْمُقَرَّب۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:89",
+      "text": "فَرَوْحٌ وَرَيْحَانٌ وَجَنَّتُ نَع۪يمٍ",
+      "translation": "onun için iyilik ve ikram, güzel kokular ve nimetlerle dolu cennet vardır.",
+      "dipnot": "Nahl 16/32.",
+      "roots": [
+        "روح",
+        "جنن",
+        "نعم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nahl 16/32",
+          "targets": [
+            "16:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:89",
+        "connections": [
+          {
+            "target_coordinate": "16:32",
+            "context": "Nahl 16/32"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 89. Ayetin Tefsiri\nفَرَوْحٌ وَرَيْحَانٌ وَجَنَّتُ نَع۪يمٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:90",
+      "text": "وَاَمَّٓا اِنْ كَانَ مِنْ اَصْحَابِ الْيَم۪ينِۙ",
+      "translation": "Eğer defteri sağdan verilenlerden ise",
+      "dipnot": "Vakıa 56/27.",
+      "roots": [
+        "كون",
+        "صحب",
+        "يمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/27",
+          "targets": [
+            "56:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:90",
+        "connections": [
+          {
+            "target_coordinate": "56:27",
+            "context": "Vakıa 56/27"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 90. Ayetin Tefsiri\nوَاَمَّٓا اِنْ كَانَ مِنْ اَصْحَابِ الْيَم۪ينِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:91",
+      "text": "فَسَلَامٌ لَكَ مِنْ اَصْحَابِ الْيَم۪ينِ",
+      "translation": "(ona şöyle denir:) “Defteri sağdan verilenlerden olan kişi! Sana selam olsun!”",
+      "dipnot": "",
+      "roots": [
+        "سلم",
+        "صحب",
+        "يمن"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "56:91",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 91. Ayetin Tefsiri\nفَسَلَامٌ لَكَ مِنْ اَصْحَابِ الْيَم۪ينِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:92",
+      "text": "وَاَمَّٓا اِنْ كَانَ مِنَ الْمُكَذِّب۪ينَ الضَّٓالّ۪ينَۙ",
+      "translation": "Ama eğer yalan söyleyip duran sapkınlardan ise,",
+      "dipnot": "Vakıa 56/51.",
+      "roots": [
+        "كون",
+        "كذب",
+        "ضلل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/51",
+          "targets": [
+            "56:51"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:92",
+        "connections": [
+          {
+            "target_coordinate": "56:51",
+            "context": "Vakıa 56/51"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 92. Ayetin Tefsiri\nوَاَمَّٓا اِنْ كَانَ مِنَ الْمُكَذِّب۪ينَ الضَّٓالّ۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:93",
+      "text": "فَنُزُلٌ مِنْ حَم۪يمٍۙ",
+      "translation": "kaynar sudan bir ziyafet",
+      "dipnot": "Vakıa 56/52 - 56.",
+      "roots": [
+        "نزل",
+        "حمم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/52-56",
+          "targets": [
+            "56:52",
+            "56:53",
+            "56:54",
+            "56:55",
+            "56:56"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:93",
+        "connections": [
+          {
+            "target_coordinate": "56:52",
+            "context": "Vakıa 56/52-56"
+          },
+          {
+            "target_coordinate": "56:53",
+            "context": "Vakıa 56/52-56"
+          },
+          {
+            "target_coordinate": "56:54",
+            "context": "Vakıa 56/52-56"
+          },
+          {
+            "target_coordinate": "56:55",
+            "context": "Vakıa 56/52-56"
+          },
+          {
+            "target_coordinate": "56:56",
+            "context": "Vakıa 56/52-56"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 93. Ayetin Tefsiri\nفَنُزُلٌ مِنْ حَم۪يمٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:94",
+      "text": "وَتَصْلِيَةُ جَح۪يمٍۙ",
+      "translation": "ve yakıcı ateşte kızarma vardır.",
+      "dipnot": "Mutaffifin 83/15 - 16.",
+      "roots": [
+        "صلي",
+        "جحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Mutaffifin 83/15-16",
+          "targets": [
+            "83:15",
+            "83:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:94",
+        "connections": [
+          {
+            "target_coordinate": "83:15",
+            "context": "Mutaffifin 83/15-16"
+          },
+          {
+            "target_coordinate": "83:16",
+            "context": "Mutaffifin 83/15-16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 94. Ayetin Tefsiri\nوَتَصْلِيَةُ جَح۪يمٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:95",
+      "text": "اِنَّ هٰذَا لَهُوَ حَقُّ الْيَق۪ينِۚ",
+      "translation": "Şüphesiz bu Kur’an, doğruluğu kesin olarak bilinebilir bir gerçektir.",
+      "dipnot": "Fussilet 41/53, Hakka 69/51.",
+      "roots": [
+        "حقق",
+        "يقن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Fussilet 41/53",
+          "targets": [
+            "41:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/51",
+          "targets": [
+            "69:51"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:95",
+        "connections": [
+          {
+            "target_coordinate": "41:53",
+            "context": "Fussilet 41/53"
+          },
+          {
+            "target_coordinate": "69:51",
+            "context": "Hakka 69/51"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 95. Ayetin Tefsiri\nاِنَّ هٰذَا لَهُوَ حَقُّ الْيَق۪ينِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    },
+    {
+      "id": "56:96",
+      "text": "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظ۪يمِ",
+      "translation": "Öyleyse sen, Rabbinin muazzam ismi /özelliği sebebiyle ona boyun eğ!",
+      "dipnot": "Vakıa 56/74, Hâkka 69/52.",
+      "roots": [
+        "سبح",
+        "سمو",
+        "ربب",
+        "عظم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/74",
+          "targets": [
+            "56:74"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/52",
+          "targets": [
+            "69:52"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "56:96",
+        "connections": [
+          {
+            "target_coordinate": "56:74",
+            "context": "Vakıa 56/74"
+          },
+          {
+            "target_coordinate": "69:52",
+            "context": "Hâkka 69/52"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Vâkıa Suresi 96. Ayetin Tefsiri\nفَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظ۪يمِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/56.mp3"
+    }
+  ]
+}

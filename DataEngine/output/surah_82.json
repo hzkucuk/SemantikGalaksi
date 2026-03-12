@@ -1,0 +1,1868 @@
+{
+  "nodes": [
+    {
+      "id": "82:1",
+      "text": "اِذَا السَّمَٓاءُ انْفَطَرَتْۙ",
+      "translation": "Gök yarıldığında,",
+      "dipnot": "İnsanların yeniden dirileceği günden önce göklerin durumunu anlatan diğer ayetler için bkz: Enbiya 21/104, Furkan 25/25, Tur 52/9, Rahman 55/37, Hakka 69/16, Mearic 70/8, Müzzemmil 73/18, Mürselat 77/9, Nebe 78/19, Tekvir 81/11, İnşikak 84/1 - 2.",
+      "roots": [
+        "سمو",
+        "فطر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "İnsanların yeniden dirileceği günden önce göklerin durumunu anlatan diğer ayetler için bkz: "
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/104",
+          "targets": [
+            "21:104"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/25",
+          "targets": [
+            "25:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/9",
+          "targets": [
+            "52:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/37",
+          "targets": [
+            "55:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/16",
+          "targets": [
+            "69:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/8",
+          "targets": [
+            "70:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/18",
+          "targets": [
+            "73:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/9",
+          "targets": [
+            "77:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/19",
+          "targets": [
+            "78:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/11",
+          "targets": [
+            "81:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/1-2",
+          "targets": [
+            "84:1",
+            "84:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:1",
+        "connections": [
+          {
+            "target_coordinate": "21:104",
+            "context": "Enbiya 21/104"
+          },
+          {
+            "target_coordinate": "25:25",
+            "context": "Furkan 25/25"
+          },
+          {
+            "target_coordinate": "52:9",
+            "context": "Tur 52/9"
+          },
+          {
+            "target_coordinate": "55:37",
+            "context": "Rahman 55/37"
+          },
+          {
+            "target_coordinate": "69:16",
+            "context": "Hakka 69/16"
+          },
+          {
+            "target_coordinate": "70:8",
+            "context": "Mearic 70/8"
+          },
+          {
+            "target_coordinate": "73:18",
+            "context": "Müzzemmil 73/18"
+          },
+          {
+            "target_coordinate": "77:9",
+            "context": "Mürselat 77/9"
+          },
+          {
+            "target_coordinate": "78:19",
+            "context": "Nebe 78/19"
+          },
+          {
+            "target_coordinate": "81:11",
+            "context": "Tekvir 81/11"
+          },
+          {
+            "target_coordinate": "84:1",
+            "context": "İnşikak 84/1-2"
+          },
+          {
+            "target_coordinate": "84:2",
+            "context": "İnşikak 84/1-2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 1. Ayetin Tefsiri\nاِذَا السَّمَٓاءُ انْفَطَرَتْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:2",
+      "text": "وَاِذَا الْكَوَاكِبُ انْتَثَرَتْۙ",
+      "translation": "gezegenler dağıldığında,",
+      "dipnot": "Güneşin çekim alanında olan gök cisimlerine necm /yıldız değil, kevkeb /gezegen denir. Bunlar Kur’an’a göre 11 tanedir ( Yusuf 12/4 ). Gezegenler, birinci kat semanın süsleridir ( Saffat 37/6 ). Yeniden diriliş öncesinde Güneş çepeçevre sarılacaktır ( Tekvîr 81/1 ). Böylece Güneş gözden kaybolacaktır. Güneş’in kaybolduğu bir durumda çekim gücü de yok olacak, gezegenleri tutan bir güç kalmayacak, onlar da yörüngelerinden çıkıp dağılacaktır.",
+      "roots": [
+        "كوكب",
+        "نثر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Güneşin çekim alanında olan gök cisimlerine necm /yıldız değil, kevkeb /gezegen denir. Bunlar Kur’an’a göre 11 tanedir ( "
+        },
+        {
+          "type": "link",
+          "content": "Yusuf 12/4",
+          "targets": [
+            "12:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Gezegenler, birinci kat semanın süsleridir ( "
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/6",
+          "targets": [
+            "37:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yeniden diriliş öncesinde Güneş çepeçevre sarılacaktır ( "
+        },
+        {
+          "type": "link",
+          "content": "Tekvîr 81/1",
+          "targets": [
+            "81:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Böylece Güneş gözden kaybolacaktır. Güneş’in kaybolduğu bir durumda çekim gücü de yok olacak, gezegenleri tutan bir güç kalmayacak, onlar da yörüngelerinden çıkıp dağılacaktır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:2",
+        "connections": [
+          {
+            "target_coordinate": "12:4",
+            "context": "Yusuf 12/4"
+          },
+          {
+            "target_coordinate": "37:6",
+            "context": "Saffat 37/6"
+          },
+          {
+            "target_coordinate": "81:1",
+            "context": "Tekvîr 81/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 2. Ayetin Tefsiri\nوَاِذَا الْكَوَاكِبُ انْتَثَرَتْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:3",
+      "text": "وَاِذَا الْبِحَارُ فُجِّرَتْۙ",
+      "translation": "denizler (kıtaların üzerine) taşırıldığında,",
+      "dipnot": "Tekvir 81/6. \"Denizlerin taşırılmasından sonra, karalar sular altında kalır ve Âdem aleyhisselamın yaratıldığı ortam yani balçık ve kokuşmuş çamur ortamı oluşur ( Hicr 15/26 - 28 ). Ölülerin vücutlarından kalan ve onların bütün özelliklerini taşıyan parçacıklar, tarlaya serpilmiş tohumlar gibi bölünür, gelişir ve yeniden yaratılış gerçekleşir ( A’raf 7/29, Lokman 31/28, Kaf 50/4, Nuh 71/17 - 18 ).",
+      "roots": [
+        "بحر",
+        "فجر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Tekvir 81/6",
+          "targets": [
+            "81:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". \"Denizlerin taşırılmasından sonra, karalar sular altında kalır ve Âdem aleyhisselamın yaratıldığı ortam yani balçık ve kokuşmuş çamur ortamı oluşur ( "
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/26-28",
+          "targets": [
+            "15:26",
+            "15:27",
+            "15:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ölülerin vücutlarından kalan ve onların bütün özelliklerini taşıyan parçacıklar, tarlaya serpilmiş tohumlar gibi bölünür, gelişir ve yeniden yaratılış gerçekleşir ( A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/29",
+          "targets": [
+            "7:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/28",
+          "targets": [
+            "31:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/4",
+          "targets": [
+            "50:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nuh 71/17-18",
+          "targets": [
+            "71:17",
+            "71:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:3",
+        "connections": [
+          {
+            "target_coordinate": "81:6",
+            "context": "Tekvir 81/6"
+          },
+          {
+            "target_coordinate": "15:26",
+            "context": "Hicr 15/26-28"
+          },
+          {
+            "target_coordinate": "15:27",
+            "context": "Hicr 15/26-28"
+          },
+          {
+            "target_coordinate": "15:28",
+            "context": "Hicr 15/26-28"
+          },
+          {
+            "target_coordinate": "7:29",
+            "context": "raf 7/29"
+          },
+          {
+            "target_coordinate": "31:28",
+            "context": "Lokman 31/28"
+          },
+          {
+            "target_coordinate": "50:4",
+            "context": "Kaf 50/4"
+          },
+          {
+            "target_coordinate": "71:17",
+            "context": "Nuh 71/17-18"
+          },
+          {
+            "target_coordinate": "71:18",
+            "context": "Nuh 71/17-18"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 3. Ayetin Tefsiri\nوَاِذَا الْبِحَارُ فُجِّرَتْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:4",
+      "text": "وَاِذَا الْقُبُورُ بُعْثِرَتْۙ",
+      "translation": "ve kabirlerin içi dışına çıkarıldığında,",
+      "dipnot": "Hac 22/7, Adiyat 100/9 - 11.",
+      "roots": [
+        "قبر",
+        "بعثر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hac 22/7",
+          "targets": [
+            "22:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Adiyat 100/9-11",
+          "targets": [
+            "100:9",
+            "100:10",
+            "100:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:4",
+        "connections": [
+          {
+            "target_coordinate": "22:7",
+            "context": "Hac 22/7"
+          },
+          {
+            "target_coordinate": "100:9",
+            "context": "Adiyat 100/9-11"
+          },
+          {
+            "target_coordinate": "100:10",
+            "context": "Adiyat 100/9-11"
+          },
+          {
+            "target_coordinate": "100:11",
+            "context": "Adiyat 100/9-11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 4. Ayetin Tefsiri\nوَاِذَا الْقُبُورُ بُعْثِرَتْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:5",
+      "text": "عَلِمَتْ نَفْسٌ مَا قَدَّمَتْ وَاَخَّرَتْۜ",
+      "translation": "her nefis, neyi önceleyip yaptığını ve neyi ertelediğini öğrenecektir.",
+      "dipnot": "Âl-i İmran 3/30, Kıyamet 75/13, Naziat 79/34 - 35, Tekvir 81/14, Fecr 89/23 - 24.",
+      "roots": [
+        "علم",
+        "نفس",
+        "قدم",
+        "أخر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/30",
+          "targets": [
+            "3:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/13",
+          "targets": [
+            "75:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziat 79/34-35",
+          "targets": [
+            "79:34",
+            "79:35"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/14",
+          "targets": [
+            "81:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/23-24",
+          "targets": [
+            "89:23",
+            "89:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:5",
+        "connections": [
+          {
+            "target_coordinate": "3:30",
+            "context": "Âl-i İmran 3/30"
+          },
+          {
+            "target_coordinate": "75:13",
+            "context": "Kıyamet 75/13"
+          },
+          {
+            "target_coordinate": "79:34",
+            "context": "Naziat 79/34-35"
+          },
+          {
+            "target_coordinate": "79:35",
+            "context": "Naziat 79/34-35"
+          },
+          {
+            "target_coordinate": "81:14",
+            "context": "Tekvir 81/14"
+          },
+          {
+            "target_coordinate": "89:23",
+            "context": "Fecr 89/23-24"
+          },
+          {
+            "target_coordinate": "89:24",
+            "context": "Fecr 89/23-24"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 5. Ayetin Tefsiri\nعَلِمَتْ نَفْسٌ مَا قَدَّمَتْ وَاَخَّرَتْۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:6",
+      "text": "يَٓا اَيُّهَا الْاِنْسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَر۪يمِۙ",
+      "translation": "Ey insan! Çok cömert olan Rabbin /Sahibin hakkında seni aldatan şey nedir?",
+      "dipnot": "Lokman 31/33, Fatır 35/5.",
+      "roots": [
+        "أيي",
+        "أنس",
+        "غرر",
+        "ربب",
+        "كرم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Lokman 31/33",
+          "targets": [
+            "31:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/5",
+          "targets": [
+            "35:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:6",
+        "connections": [
+          {
+            "target_coordinate": "31:33",
+            "context": "Lokman 31/33"
+          },
+          {
+            "target_coordinate": "35:5",
+            "context": "Fatır 35/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 6. Ayetin Tefsiri\nيَٓا اَيُّهَا الْاِنْسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَر۪يمِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:7",
+      "text": "اَلَّذ۪ي خَلَقَكَ فَسَوّٰيكَ فَعَدَلَكَۙ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "خلق",
+        "سوي",
+        "عدل"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "82:7",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 7. Ayetin Tefsiri\nاَلَّذ۪ي خَلَقَكَ فَسَوّٰيكَ فَعَدَلَكَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:8",
+      "text": "ف۪ٓي اَيِّ صُورَةٍ مَا شَٓاءَ رَكَّبَكَۜ",
+      "translation": "Rabbin; seni yaratan, son şeklini veren, arkasından (ruh üfleyerek) seni (diğer insanlarla) denk hale getiren, tercih ettiği özgün bir biçimde seni oluşturandır.",
+      "dipnot": "[*] Mü’minun 23/12-14, Secde 32/7-9, Kıyamet 75/37-38, A’la 87/1-2. [1*] Şâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (şey) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder (Kamer 54/49, Ra’d 13/8). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır (Enbiyâ 21/35). Allah, herkesin doğru yolda olmasını ister (Nisa 4/26) ama sadece doğru şeyler yapanı doğru yolda sayar (Nur 24/46). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur (Şems 91/7-10). Buna göre şâe (شاء) fiilinin öznesi Allah olursa “gerekeni yaptı veya yarattı”, insan olursa “gerekeni yaptı” anlamında olur. Allah insanlara, tercihlerine göre davranma hürriyeti vermeseydi hiç kimse yanlış bir şey yapamaz ve imtihan diye bir şey de olmazdı (Nahl 16/93). Yanlış kader anlayışını imanın bir esası gibi İslam’a yerleştirmek isteyenler, büyük bir çarpıtma yaparak şâe (شاء) fiiline irade yani isteme ve dileme anlamı vermiş; bunu, tefsirlere hatta sözlüklere bile yerleştirerek birçok ayetin mealini bozmuşlardır. Bkz: http://www.suleymaniyevakfi.org/akaid-arastirmalari/kuranda-sey-mesiet-irade-ve-fitrat.html [2*] Bakara 2/54, Âl-i İmran 3/6, Mü’min 40/64, Haşr 59/24, Teğabün 64/3, Tin 95/4.",
+      "roots": [
+        "أيي",
+        "صور",
+        "شيأ",
+        "ركب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/12-14",
+          "targets": [
+            "23:12",
+            "23:13",
+            "23:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/7-9",
+          "targets": [
+            "32:7",
+            "32:8",
+            "32:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/37-38",
+          "targets": [
+            "75:37",
+            "75:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "la 87/1-2",
+          "targets": [
+            "87:1",
+            "87:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [1*] Şâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (şey) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder ("
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/49",
+          "targets": [
+            "54:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/8",
+          "targets": [
+            "13:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır ("
+        },
+        {
+          "type": "link",
+          "content": "Enbiyâ 21/35",
+          "targets": [
+            "21:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah, herkesin doğru yolda olmasını ister ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/26",
+          "targets": [
+            "4:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ama sadece doğru şeyler yapanı doğru yolda sayar ("
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/46",
+          "targets": [
+            "24:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur ("
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/7-10",
+          "targets": [
+            "91:7",
+            "91:8",
+            "91:9",
+            "91:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Buna göre şâe (شاء) fiilinin öznesi Allah olursa “gerekeni yaptı veya yarattı”, insan olursa “gerekeni yaptı” anlamında olur. Allah insanlara, tercihlerine göre davranma hürriyeti vermeseydi hiç kimse yanlış bir şey yapamaz ve imtihan diye bir şey de olmazdı ("
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/93",
+          "targets": [
+            "16:93"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yanlış kader anlayışını imanın bir esası gibi İslam’a yerleştirmek isteyenler, büyük bir çarpıtma yaparak şâe (شاء) fiiline irade yani isteme ve dileme anlamı vermiş; bunu, tefsirlere hatta sözlüklere bile yerleştirerek birçok ayetin mealini bozmuşlardır. Bkz: http://www.suleymaniyevakfi.org/akaid-arastirmalari/kuranda-sey-mesiet-irade-ve-fitrat.html [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/54",
+          "targets": [
+            "2:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/6",
+          "targets": [
+            "3:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/64",
+          "targets": [
+            "40:64"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/24",
+          "targets": [
+            "59:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/3",
+          "targets": [
+            "64:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tin 95/4",
+          "targets": [
+            "95:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:8",
+        "connections": [
+          {
+            "target_coordinate": "23:12",
+            "context": "minun 23/12-14"
+          },
+          {
+            "target_coordinate": "23:13",
+            "context": "minun 23/12-14"
+          },
+          {
+            "target_coordinate": "23:14",
+            "context": "minun 23/12-14"
+          },
+          {
+            "target_coordinate": "32:7",
+            "context": "Secde 32/7-9"
+          },
+          {
+            "target_coordinate": "32:8",
+            "context": "Secde 32/7-9"
+          },
+          {
+            "target_coordinate": "32:9",
+            "context": "Secde 32/7-9"
+          },
+          {
+            "target_coordinate": "75:37",
+            "context": "Kıyamet 75/37-38"
+          },
+          {
+            "target_coordinate": "75:38",
+            "context": "Kıyamet 75/37-38"
+          },
+          {
+            "target_coordinate": "87:1",
+            "context": "la 87/1-2"
+          },
+          {
+            "target_coordinate": "87:2",
+            "context": "la 87/1-2"
+          },
+          {
+            "target_coordinate": "54:49",
+            "context": "Kamer 54/49"
+          },
+          {
+            "target_coordinate": "13:8",
+            "context": "d 13/8"
+          },
+          {
+            "target_coordinate": "21:35",
+            "context": "Enbiyâ 21/35"
+          },
+          {
+            "target_coordinate": "4:26",
+            "context": "Nisa 4/26"
+          },
+          {
+            "target_coordinate": "24:46",
+            "context": "Nur 24/46"
+          },
+          {
+            "target_coordinate": "91:7",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:8",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:9",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:10",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "16:93",
+            "context": "Nahl 16/93"
+          },
+          {
+            "target_coordinate": "2:54",
+            "context": "Bakara 2/54"
+          },
+          {
+            "target_coordinate": "3:6",
+            "context": "Âl-i İmran 3/6"
+          },
+          {
+            "target_coordinate": "40:64",
+            "context": "min 40/64"
+          },
+          {
+            "target_coordinate": "59:24",
+            "context": "Haşr 59/24"
+          },
+          {
+            "target_coordinate": "64:3",
+            "context": "Teğabün 64/3"
+          },
+          {
+            "target_coordinate": "95:4",
+            "context": "Tin 95/4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 8. Ayetin Tefsiri\nف۪ٓي اَيِّ صُورَةٍ مَا شَٓاءَ رَكَّبَكَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:9",
+      "text": "كَلَّا بَلْ تُكَذِّبُونَ بِالدّ۪ينِۙ",
+      "translation": "Hayır, hayır! Aslında siz bu din hakkında yalan söyleyip duruyorsunuz!",
+      "dipnot": "[*] Tîn 95/7, Mâun 107/1.",
+      "roots": [
+        "كذب",
+        "دين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Tîn 95/7",
+          "targets": [
+            "95:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mâun 107/1",
+          "targets": [
+            "107:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:9",
+        "connections": [
+          {
+            "target_coordinate": "95:7",
+            "context": "Tîn 95/7"
+          },
+          {
+            "target_coordinate": "107:1",
+            "context": "Mâun 107/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 9. Ayetin Tefsiri\nكَلَّا بَلْ تُكَذِّبُونَ بِالدّ۪ينِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:10",
+      "text": "وَاِنَّ عَلَيْكُمْ لَحَافِظ۪ينَۙ",
+      "translation": "Şurası kesin ki üzerinizde (sizinle ilgili bilgileri) özenle koruyanlar vardır.",
+      "dipnot": "",
+      "roots": [
+        "حفظ"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "82:10",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 10. Ayetin Tefsiri\nوَاِنَّ عَلَيْكُمْ لَحَافِظ۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:11",
+      "text": "كِرَامًا كَاتِب۪ينَۙ",
+      "translation": "Değerli yazıcılar…",
+      "dipnot": "",
+      "roots": [
+        "كرم",
+        "كتب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "82:11",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 11. Ayetin Tefsiri\nكِرَامًا كَاتِب۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:12",
+      "text": "يَعْلَمُونَ مَا تَفْعَلُونَ",
+      "translation": "Onlar ne yaptığınızı bilirler.",
+      "dipnot": "[*] Yunus 10/21, Kehf 18/49, Zuhruf 43/80, Casiye 45/29, Kaf 50/17-18, Kamer 54/52-53.",
+      "roots": [
+        "علم",
+        "فعل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/21",
+          "targets": [
+            "10:21"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/49",
+          "targets": [
+            "18:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/80",
+          "targets": [
+            "43:80"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Casiye 45/29",
+          "targets": [
+            "45:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/17-18",
+          "targets": [
+            "50:17",
+            "50:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/52-53",
+          "targets": [
+            "54:52",
+            "54:53"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:12",
+        "connections": [
+          {
+            "target_coordinate": "10:21",
+            "context": "Yunus 10/21"
+          },
+          {
+            "target_coordinate": "18:49",
+            "context": "Kehf 18/49"
+          },
+          {
+            "target_coordinate": "43:80",
+            "context": "Zuhruf 43/80"
+          },
+          {
+            "target_coordinate": "45:29",
+            "context": "Casiye 45/29"
+          },
+          {
+            "target_coordinate": "50:17",
+            "context": "Kaf 50/17-18"
+          },
+          {
+            "target_coordinate": "50:18",
+            "context": "Kaf 50/17-18"
+          },
+          {
+            "target_coordinate": "54:52",
+            "context": "Kamer 54/52-53"
+          },
+          {
+            "target_coordinate": "54:53",
+            "context": "Kamer 54/52-53"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 12. Ayetin Tefsiri\nيَعْلَمُونَ مَا تَفْعَلُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:13",
+      "text": "اِنَّ الْاَبْرَارَ لَف۪ي نَع۪يمٍۚ",
+      "translation": "Erdemliler, elbette nimetler içinde olacaklar.",
+      "dipnot": "[*] İnsan 76/5-22, Mutaffifin 83/22-28.",
+      "roots": [
+        "برر",
+        "نعم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/5-22",
+          "targets": [
+            "76:5",
+            "76:6",
+            "76:7",
+            "76:8",
+            "76:9",
+            "76:10",
+            "76:11",
+            "76:12",
+            "76:13",
+            "76:14",
+            "76:15",
+            "76:16",
+            "76:17",
+            "76:18",
+            "76:19",
+            "76:20",
+            "76:21",
+            "76:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mutaffifin 83/22-28",
+          "targets": [
+            "83:22",
+            "83:23",
+            "83:24",
+            "83:25",
+            "83:26",
+            "83:27",
+            "83:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:13",
+        "connections": [
+          {
+            "target_coordinate": "76:5",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:6",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:7",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:8",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:9",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:10",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:11",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:12",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:13",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:14",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:15",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:16",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:17",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:18",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:19",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:20",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:21",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "76:22",
+            "context": "İnsan 76/5-22"
+          },
+          {
+            "target_coordinate": "83:22",
+            "context": "Mutaffifin 83/22-28"
+          },
+          {
+            "target_coordinate": "83:23",
+            "context": "Mutaffifin 83/22-28"
+          },
+          {
+            "target_coordinate": "83:24",
+            "context": "Mutaffifin 83/22-28"
+          },
+          {
+            "target_coordinate": "83:25",
+            "context": "Mutaffifin 83/22-28"
+          },
+          {
+            "target_coordinate": "83:26",
+            "context": "Mutaffifin 83/22-28"
+          },
+          {
+            "target_coordinate": "83:27",
+            "context": "Mutaffifin 83/22-28"
+          },
+          {
+            "target_coordinate": "83:28",
+            "context": "Mutaffifin 83/22-28"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 13. Ayetin Tefsiri\nاِنَّ الْاَبْرَارَ لَف۪ي نَع۪يمٍۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:14",
+      "text": "وَاِنَّ الْفُجَّارَ لَف۪ي جَح۪يمٍۚ",
+      "translation": "Günaha batanlar ise mutlaka yakıcı ateşte olacak,",
+      "dipnot": "[*] Sad 38/28, Kalem 68/35.",
+      "roots": [
+        "فجر",
+        "جحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/28",
+          "targets": [
+            "38:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/35",
+          "targets": [
+            "68:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:14",
+        "connections": [
+          {
+            "target_coordinate": "38:28",
+            "context": "Sad 38/28"
+          },
+          {
+            "target_coordinate": "68:35",
+            "context": "Kalem 68/35"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 14. Ayetin Tefsiri\nوَاِنَّ الْفُجَّارَ لَف۪ي جَح۪يمٍۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:15",
+      "text": "يَصْلَوْنَهَا يَوْمَ الدّ۪ينِ",
+      "translation": "yapılan her şeyin karşılığını bulacağı gün oraya girip kalacak",
+      "dipnot": "[*] İbrahim 14/28-29, Sad 38/55-60.",
+      "roots": [
+        "صلي",
+        "يوم",
+        "دين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/28-29",
+          "targets": [
+            "14:28",
+            "14:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/55-60",
+          "targets": [
+            "38:55",
+            "38:56",
+            "38:57",
+            "38:58",
+            "38:59",
+            "38:60"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:15",
+        "connections": [
+          {
+            "target_coordinate": "14:28",
+            "context": "İbrahim 14/28-29"
+          },
+          {
+            "target_coordinate": "14:29",
+            "context": "İbrahim 14/28-29"
+          },
+          {
+            "target_coordinate": "38:55",
+            "context": "Sad 38/55-60"
+          },
+          {
+            "target_coordinate": "38:56",
+            "context": "Sad 38/55-60"
+          },
+          {
+            "target_coordinate": "38:57",
+            "context": "Sad 38/55-60"
+          },
+          {
+            "target_coordinate": "38:58",
+            "context": "Sad 38/55-60"
+          },
+          {
+            "target_coordinate": "38:59",
+            "context": "Sad 38/55-60"
+          },
+          {
+            "target_coordinate": "38:60",
+            "context": "Sad 38/55-60"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 15. Ayetin Tefsiri\nيَصْلَوْنَهَا يَوْمَ الدّ۪ينِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:16",
+      "text": "وَمَا هُمْ عَنْهَا بِغَٓائِب۪ينَۜ",
+      "translation": "ve oradan kaçıp kaybolamayacaklardır.",
+      "dipnot": "[*] Bakara 2/167, Maide 5/36-37, Hac 22/22, Mu’minun 23/107-108, Secde 32/20, Fatır 35/37, Casiye 45/34-35.",
+      "roots": [
+        "غيب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/167",
+          "targets": [
+            "2:167"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/36-37",
+          "targets": [
+            "5:36",
+            "5:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/22",
+          "targets": [
+            "22:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mu’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/107-108",
+          "targets": [
+            "23:107",
+            "23:108"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/20",
+          "targets": [
+            "32:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/37",
+          "targets": [
+            "35:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Casiye 45/34-35",
+          "targets": [
+            "45:34",
+            "45:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:16",
+        "connections": [
+          {
+            "target_coordinate": "2:167",
+            "context": "Bakara 2/167"
+          },
+          {
+            "target_coordinate": "5:36",
+            "context": "Maide 5/36-37"
+          },
+          {
+            "target_coordinate": "5:37",
+            "context": "Maide 5/36-37"
+          },
+          {
+            "target_coordinate": "22:22",
+            "context": "Hac 22/22"
+          },
+          {
+            "target_coordinate": "23:107",
+            "context": "minun 23/107-108"
+          },
+          {
+            "target_coordinate": "23:108",
+            "context": "minun 23/107-108"
+          },
+          {
+            "target_coordinate": "32:20",
+            "context": "Secde 32/20"
+          },
+          {
+            "target_coordinate": "35:37",
+            "context": "Fatır 35/37"
+          },
+          {
+            "target_coordinate": "45:34",
+            "context": "Casiye 45/34-35"
+          },
+          {
+            "target_coordinate": "45:35",
+            "context": "Casiye 45/34-35"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 16. Ayetin Tefsiri\nوَمَا هُمْ عَنْهَا بِغَٓائِب۪ينَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:18",
+      "text": "وَمَٓا اَدْرٰيكَ مَا يَوْمُ الدّ۪ينِۙ",
+      "translation": "Her şeyin karşılığını bulacağı günün ne olduğunu sana kim bildirebilir!",
+      "dipnot": "",
+      "roots": [
+        "دري",
+        "يوم",
+        "دين"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "82:18",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 18. Ayetin Tefsiri\nثُمَّ مَٓا اَدْرٰيكَ مَا يَوْمُ الدّ۪ينِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:19",
+      "text": "ثُمَّ مَٓا اَدْرٰيكَ مَا يَوْمُ الدّ۪ينِۜ",
+      "translation": "Evet, sana kim bildirebilir, her şeyin karşılığını bulacağı günün ne olduğunu![*]",
+      "dipnot": "Din, “âdet, durum; yapılan işe karşılık vermek ve verilen karşılık, itaat /boyun eğme” anlamlarına gelir (es-Sıhâh). Din, Kuran’da insanın kabul edip ona göre yaşamaya söz verdiği sistem anlamına da gelir ( Âl-i İmran 3/19, Kafirun 109/6 ). Eğer bu din Allah’ın dini ise boyun eğilen yalnızca Allah’tır ve karşılığı ondan beklenir. “Din günü” de dünyada yapılanların karşılığının alınacağı Ahiret günüdür ( Fatiha1/4, Nûr 24/25, Saffat 37/19 - 20, Zâriyât 51/6 - 12 - 13, Vakıa 56/56, Mearic 70/26, Müddessir 74/46 ).",
+      "roots": [
+        "يوم",
+        "ملك",
+        "نفس",
+        "شيأ",
+        "أمر",
+        "أله"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Din, “âdet, durum; yapılan işe karşılık vermek ve verilen karşılık, itaat /boyun eğme” anlamlarına gelir (es-Sıhâh). Din, Kuran’da insanın kabul edip ona göre yaşamaya söz verdiği sistem anlamına da gelir ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/19",
+          "targets": [
+            "3:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kafirun 109/6",
+          "targets": [
+            "109:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Eğer bu din Allah’ın dini ise boyun eğilen yalnızca Allah’tır ve karşılığı ondan beklenir. “Din günü” de dünyada yapılanların karşılığının alınacağı Ahiret günüdür ( Fatiha"
+        },
+        {
+          "type": "link",
+          "content": "1/4",
+          "targets": [
+            "1:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nûr 24/25",
+          "targets": [
+            "24:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/19-20",
+          "targets": [
+            "37:19",
+            "37:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zâriyât 51/6-12-13",
+          "targets": [
+            "51:6",
+            "51:7",
+            "51:8",
+            "51:9",
+            "51:10",
+            "51:11",
+            "51:12",
+            "51:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/56",
+          "targets": [
+            "56:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/26",
+          "targets": [
+            "70:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/46",
+          "targets": [
+            "74:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:19",
+        "connections": [
+          {
+            "target_coordinate": "3:19",
+            "context": "Âl-i İmran 3/19"
+          },
+          {
+            "target_coordinate": "109:6",
+            "context": "Kafirun 109/6"
+          },
+          {
+            "target_coordinate": "1:4",
+            "context": "1/4"
+          },
+          {
+            "target_coordinate": "24:25",
+            "context": "Nûr 24/25"
+          },
+          {
+            "target_coordinate": "37:19",
+            "context": "Saffat 37/19-20"
+          },
+          {
+            "target_coordinate": "37:20",
+            "context": "Saffat 37/19-20"
+          },
+          {
+            "target_coordinate": "51:6",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:7",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:8",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:9",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:10",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:11",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:12",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "51:13",
+            "context": "Zâriyât 51/6-12-13"
+          },
+          {
+            "target_coordinate": "56:56",
+            "context": "Vakıa 56/56"
+          },
+          {
+            "target_coordinate": "70:26",
+            "context": "Mearic 70/26"
+          },
+          {
+            "target_coordinate": "74:46",
+            "context": "Müddessir 74/46"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnfitâr Suresi 19. Ayetin Tefsiri\nيَوْمَ لَا تَمْلِكُ نَفْسٌ لِنَفْسٍ شَيْـًٔاۜ وَالْاَمْرُ يَوْمَئِذٍ لِلّٰهِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    },
+    {
+      "id": "82:20",
+      "text": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِنَفْسٍ شَيْـًٔاۜ وَالْاَمْرُ يَوْمَئِذٍ لِلّٰهِ",
+      "translation": "Hiç kimsenin bir başkası için bir şey yapma yetkisi olmadığı günü (aklından çıkarma)[1*]. O gün her iş Allah’ın elindedir.[2*]",
+      "dipnot": "[1*] Bakara 2/48, 123, Lokman 31/33, Sebe 34/42, Duhan 44/41, Mümtahine 60/3. [2*] En'am 6/73, Hac 22/56, Furkan 25/26, Mü'min 40/16.",
+      "roots": null,
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/48,123",
+          "targets": [
+            "2:48",
+            "2:123"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/33",
+          "targets": [
+            "31:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/42",
+          "targets": [
+            "34:42"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/41",
+          "targets": [
+            "44:41"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mümtahine 60/3",
+          "targets": [
+            "60:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "En'am 6/73",
+          "targets": [
+            "6:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/56",
+          "targets": [
+            "22:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/26",
+          "targets": [
+            "25:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mü'min 40/16",
+          "targets": [
+            "40:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "82:20",
+        "connections": [
+          {
+            "target_coordinate": "2:48",
+            "context": "Bakara 2/48,123"
+          },
+          {
+            "target_coordinate": "2:123",
+            "context": "Bakara 2/48,123"
+          },
+          {
+            "target_coordinate": "31:33",
+            "context": "Lokman 31/33"
+          },
+          {
+            "target_coordinate": "34:42",
+            "context": "Sebe 34/42"
+          },
+          {
+            "target_coordinate": "44:41",
+            "context": "Duhan 44/41"
+          },
+          {
+            "target_coordinate": "60:3",
+            "context": "Mümtahine 60/3"
+          },
+          {
+            "target_coordinate": "6:73",
+            "context": "En'am 6/73"
+          },
+          {
+            "target_coordinate": "22:56",
+            "context": "Hac 22/56"
+          },
+          {
+            "target_coordinate": "25:26",
+            "context": "Furkan 25/26"
+          },
+          {
+            "target_coordinate": "40:16",
+            "context": "Mü'min 40/16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 1. Ayetin Tefsiri\nوَيْلٌ لِلْمُطَفِّف۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/82.mp3"
+    }
+  ]
+}

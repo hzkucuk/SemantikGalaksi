@@ -1,0 +1,341 @@
+{
+  "nodes": [
+    {
+      "id": "97:1",
+      "text": "اِنَّٓا اَنْزَلْنَاهُ ف۪ي لَيْلَةِ الْقَدْرِۚ",
+      "translation": "Biz onu / ilk ayet kümesini kadir gecesinde indirdik![*]",
+      "dipnot": "Bakara 2/185. âyette, Kur’an’ın Ramazan ayında, Duhân 44/3. âyette mübarek bir gecede, bu ayette de Kadir gecesinde indirildiği bildirilmektedir. Dolayısıyla “Biz onu indirdik (اَنْزَلْنَاهُ)” ifadesindeki “onu (ه)” zamiri, Kur’an’ın tamamına değil, kadir gecesinde inen beş ayete işaret etmektedir (Alak 96/1 - 5). Çünkü Kur’ân’ın indirilmesi yirmi yılı aşkın bir zamanda tamamlanmıştır.",
+      "roots": [
+        "نزل",
+        "ليل",
+        "قدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/185",
+          "targets": [
+            "2:185"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". âyette, Kur’an’ın Ramazan ayında, "
+        },
+        {
+          "type": "link",
+          "content": "Duhân 44/3",
+          "targets": [
+            "44:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". âyette mübarek bir gecede, bu ayette de Kadir gecesinde indirildiği bildirilmektedir. Dolayısıyla “Biz onu indirdik (اَنْزَلْنَاهُ)” ifadesindeki “onu (ه)” zamiri, Kur’an’ın tamamına değil, kadir gecesinde inen beş ayete işaret etmektedir ("
+        },
+        {
+          "type": "link",
+          "content": "Alak 96/1-5",
+          "targets": [
+            "96:1",
+            "96:2",
+            "96:3",
+            "96:4",
+            "96:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Çünkü Kur’ân’ın indirilmesi yirmi yılı aşkın bir zamanda tamamlanmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "97:1",
+        "connections": [
+          {
+            "target_coordinate": "2:185",
+            "context": "Bakara 2/185"
+          },
+          {
+            "target_coordinate": "44:3",
+            "context": "Duhân 44/3"
+          },
+          {
+            "target_coordinate": "96:1",
+            "context": "Alak 96/1-5"
+          },
+          {
+            "target_coordinate": "96:2",
+            "context": "Alak 96/1-5"
+          },
+          {
+            "target_coordinate": "96:3",
+            "context": "Alak 96/1-5"
+          },
+          {
+            "target_coordinate": "96:4",
+            "context": "Alak 96/1-5"
+          },
+          {
+            "target_coordinate": "96:5",
+            "context": "Alak 96/1-5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kadir Suresi 1. Ayetin Tefsiri\nاِنَّٓا اَنْزَلْنَاهُ ف۪ي لَيْلَةِ الْقَدْرِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/97.mp3"
+    },
+    {
+      "id": "97:2",
+      "text": "وَمَٓا اَدْرٰيكَ مَا لَيْلَةُ الْقَدْرِۜ",
+      "translation": "Kadir gecesinin ne olduğunu sana kim bildirebilir!",
+      "dipnot": "",
+      "roots": [
+        "دري",
+        "ليل",
+        "قدر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "97:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kadir Suresi 2. Ayetin Tefsiri\nوَمَٓا اَدْرٰيكَ مَا لَيْلَةُ الْقَدْرِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/97.mp3"
+    },
+    {
+      "id": "97:3",
+      "text": "لَيْلَةُ الْقَدْرِ خَيْرٌ مِنْ اَلْفِ شَهْرٍۜ",
+      "translation": "Kadir gecesi, bin aydan daha hayırlıdır!",
+      "dipnot": "",
+      "roots": [
+        "ليل",
+        "قدر",
+        "خير",
+        "ألف",
+        "شهر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "97:3",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kadir Suresi 3. Ayetin Tefsiri\nلَيْلَةُ الْقَدْرِ خَيْرٌ مِنْ اَلْفِ شَهْرٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/97.mp3"
+    },
+    {
+      "id": "97:4",
+      "text": "تَنَزَّلُ الْمَلٰٓئِكَةُ وَالرُّوحُ ف۪يهَا بِاِذْنِ رَبِّهِمْۚ مِنْ كُلِّ اَمْرٍۙۛ",
+      "translation": "O gece, melekler ve ruh[1*] Rablerinin izni ile[2*] her bir iş için iner de iner.[3*]",
+      "dipnot": "[1*] Tefsir ve mealler, buradaki Ruh ile Cebrail’in kastedildiğini söylerler. Allah, Cebrail dahil, bütün melekleri, kendi emri olan ruh ile tercih ettiği kullarına indirdiğini söylediği için (Nahl 16/2) burada ruh ile kastedilen, görevlendirilen meleklere verilen emrin (Duhân 44/4 - 5) içeriği olmalıdır. O zaman âyetin meali şöyle olur: “O gece, melekler, yanlarındaki ruh ile Rablerinin izni doğrultusunda her bir iş için iner de iner.” Çünkü buradaki ruh, Allah’tan gelen bilgi anlamındadır (İsra 17/85, Mümin 40/15, Şura 42/52). “yanlarındaki ruh ile” anlamının doğru olması için, metnin; (وعندهم الروح) şeklinde tadir edilmesi gerekir. Bu tür takdirler, Arap dilinin olmazsa olmazlarındandır. [2*] Meryem 19/64, Duhân 44/5. [3*] O gece meleklere görev taksimatı yapılır ve her biri, aldığı emirle görev yerine gönderilir (Duhân 44/1 - 6).",
+      "roots": [
+        "نزل",
+        "ملك",
+        "روح",
+        "أذن",
+        "ربب",
+        "كلل",
+        "أمر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Tefsir ve mealler, buradaki Ruh ile Cebrail’in kastedildiğini söylerler. Allah, Cebrail dahil, bütün melekleri, kendi emri olan ruh ile tercih ettiği kullarına indirdiğini söylediği için ("
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/2",
+          "targets": [
+            "16:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") burada ruh ile kastedilen, görevlendirilen meleklere verilen emrin ("
+        },
+        {
+          "type": "link",
+          "content": "Duhân 44/4-5",
+          "targets": [
+            "44:4",
+            "44:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") içeriği olmalıdır. O zaman âyetin meali şöyle olur: “O gece, melekler, yanlarındaki ruh ile Rablerinin izni doğrultusunda her bir iş için iner de iner.” Çünkü buradaki ruh, Allah’tan gelen bilgi anlamındadır ("
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/85",
+          "targets": [
+            "17:85"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mümin 40/15",
+          "targets": [
+            "40:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şura 42/52",
+          "targets": [
+            "42:52"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). “yanlarındaki ruh ile” anlamının doğru olması için, metnin; (وعندهم الروح) şeklinde tadir edilmesi gerekir. Bu tür takdirler, Arap dilinin olmazsa olmazlarındandır. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/64",
+          "targets": [
+            "19:64"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duhân 44/5",
+          "targets": [
+            "44:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] O gece meleklere görev taksimatı yapılır ve her biri, aldığı emirle görev yerine gönderilir ("
+        },
+        {
+          "type": "link",
+          "content": "Duhân 44/1-6",
+          "targets": [
+            "44:1",
+            "44:2",
+            "44:3",
+            "44:4",
+            "44:5",
+            "44:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "97:4",
+        "connections": [
+          {
+            "target_coordinate": "16:2",
+            "context": "Nahl 16/2"
+          },
+          {
+            "target_coordinate": "44:4",
+            "context": "Duhân 44/4-5"
+          },
+          {
+            "target_coordinate": "44:5",
+            "context": "Duhân 44/4-5"
+          },
+          {
+            "target_coordinate": "17:85",
+            "context": "İsra 17/85"
+          },
+          {
+            "target_coordinate": "40:15",
+            "context": "Mümin 40/15"
+          },
+          {
+            "target_coordinate": "42:52",
+            "context": "Şura 42/52"
+          },
+          {
+            "target_coordinate": "19:64",
+            "context": "Meryem 19/64"
+          },
+          {
+            "target_coordinate": "44:5",
+            "context": "Duhân 44/5"
+          },
+          {
+            "target_coordinate": "44:1",
+            "context": "Duhân 44/1-6"
+          },
+          {
+            "target_coordinate": "44:2",
+            "context": "Duhân 44/1-6"
+          },
+          {
+            "target_coordinate": "44:3",
+            "context": "Duhân 44/1-6"
+          },
+          {
+            "target_coordinate": "44:4",
+            "context": "Duhân 44/1-6"
+          },
+          {
+            "target_coordinate": "44:5",
+            "context": "Duhân 44/1-6"
+          },
+          {
+            "target_coordinate": "44:6",
+            "context": "Duhân 44/1-6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kadir Suresi 4. Ayetin Tefsiri\nتَنَزَّلُ الْمَلٰٓئِكَةُ وَالرُّوحُ ف۪يهَا بِاِذْنِ رَبِّهِمْۚ مِنْ كُلِّ اَمْرٍۙۛ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/97.mp3"
+    },
+    {
+      "id": "97:5",
+      "text": "سَلَامٌ۠ۛ هِيَ حَتّٰى مَطْلَعِ الْفَجْرِ",
+      "translation": "O, fecrin[1*] doğuşuna kadar bir güvenlik ve esenlik gecesidir.[2*]",
+      "dipnot": "[1*]",
+      "roots": [
+        "سلم",
+        "طلع",
+        "فجر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "97:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kadir Suresi 5. Ayetin Tefsiri\nسَلَامٌ۠ۛ هِيَ حَتّٰى مَطْلَعِ الْفَجْرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/97.mp3"
+    }
+  ]
+}

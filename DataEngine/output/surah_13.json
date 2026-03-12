@@ -1,0 +1,6114 @@
+{
+  "nodes": [
+    {
+      "id": "13:1",
+      "text": "الٓمٓرٰ۠ تِلْكَ اٰيَاتُ الْكِتَابِۜ وَالَّذ۪ٓي اُنْزِلَ اِلَيْكَ مِنْ رَبِّكَ الْحَقُّ وَلٰكِنَّ اَكْثَرَ النَّاسِ لَا يُؤْمِنُونَ",
+      "translation": "Elif-Lâm-Mîm-Râ![1*] Bunlar, bu Kitab’ın ayetleridir.[2*] Rabbinden sana indirilen (Kur’an), tümüyle gerçektir[3*] Ama insanların çoğu inanıp güvenmez.",
+      "dipnot": "1*: Bu harflere huruf-u mukattaa /birbiri ile bağlantısı kesilmiş harfler denir. Bunların Nebîmize sorulmamış olması, bilinen bir anlamının olduğunu gösterir. Yoksa müşrikler bunu dillerine dolar, Nebîmizi sürekli rahatsız ederlerdi. Bununla ilgili sorular, İslam’ın Arap yarımadası dışına yayılmasından sonra başlamıştır. Bu harflerle başlayan yirmi dokuz sureden yirmi beşinde Kur’an’a, dördünde de önemli bir konuya vurgu yapılıyor olmasından onların dikkatleri toplama görevi yaptığı anlaşılır. Türkçede böyle bir kullanım yoktur. 2*: Hicr 15/1. 3*: En’am 6/66, Ra’d 13/19.",
+      "roots": [
+        "أيي",
+        "كتب",
+        "نزل",
+        "ربب",
+        "حقق",
+        "كثر",
+        "أنس",
+        "أمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "1*: Bu harflere huruf-u mukattaa /birbiri ile bağlantısı kesilmiş harfler denir. Bunların Nebîmize sorulmamış olması, bilinen bir anlamının olduğunu gösterir. Yoksa müşrikler bunu dillerine dolar, Nebîmizi sürekli rahatsız ederlerdi. Bununla ilgili sorular, İslam’ın Arap yarımadası dışına yayılmasından sonra başlamıştır. Bu harflerle başlayan yirmi dokuz sureden yirmi beşinde Kur’an’a, dördünde de önemli bir konuya vurgu yapılıyor olmasından onların dikkatleri toplama görevi yaptığı anlaşılır. Türkçede böyle bir kullanım yoktur. 2*: "
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/1",
+          "targets": [
+            "15:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". 3*: En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/66",
+          "targets": [
+            "6:66"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/19",
+          "targets": [
+            "13:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:1",
+        "connections": [
+          {
+            "target_coordinate": "15:1",
+            "context": "Hicr 15/1"
+          },
+          {
+            "target_coordinate": "6:66",
+            "context": "am 6/66"
+          },
+          {
+            "target_coordinate": "13:19",
+            "context": "d 13/19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 1. Ayetin Tefsiri\nالٓمٓرٰ۠ تِلْكَ اٰيَاتُ الْكِتَابِۜ وَالَّذ۪ٓي اُنْزِلَ اِلَيْكَ مِنْ رَبِّكَ الْحَقُّ وَلٰكِنَّ اَكْثَرَ النَّاسِ لَا يُؤْمِنُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:2",
+      "text": "اَللّٰهُ الَّذ۪ي رَفَعَ السَّمٰوَاتِ بِغَيْرِ عَمَدٍ تَرَوْنَهَا ثُمَّ اسْتَوٰى عَلَى الْعَرْشِ وَسَخَّرَ الشَّمْسَ وَالْقَمَرَۜ كُلٌّ يَجْر۪ي لِاَجَلٍ مُسَمًّىۜ يُدَبِّرُ الْاَمْرَ يُفَصِّلُ الْاٰيَاتِ لَعَلَّكُمْ بِلِقَٓاءِ رَبِّكُمْ تُوقِنُونَ",
+      "translation": "Allah gökleri, görebileceğiniz direkler olmadan yükseltmiş olan,[1*] sonra arşa /yönetimin başına geçen[2*] ve Güneş ile Ay’ı hizmete koyandır. Her biri, (kendi yörüngesinde) belli bir süre için akar gider.[3*] Bütün işleri O düzenler.[4*] Rabbinizin huzuruna varacağınızı kesin olarak anlayasınız diye ayetleri ayrıntılı olarak açıklar.[5*]",
+      "dipnot": "1*: Lokman 31/10, Fussilet 41/9 - 12. 2*: Arş, üst yönetim makamını gösteren mecaz ifadedir ( Yusuf 12/100, Neml 27/23 ). Türkçede onun yerine padişahlar için \"taht\", diğer yöneticiler için \"koltuk\" kelimesi kullanılır. Dolayısıyla “Allah arşa istiva etti” sözü de kâinatın yönetiminin Allah’ın elinde olduğunu ifade eder ( A'raf 7/54, Hud 11/7, Yunus 10/3, Taha 20/5, Furkan 25/59, Secde 32/4, Hadid 57/4 ). 3*: Lokman 31/29, Fatır 35/13, Yasin 36/38 - 40,",
+      "roots": [
+        "أله",
+        "رفع",
+        "سمو",
+        "غير",
+        "عمد",
+        "رأي",
+        "سوي",
+        "عرش",
+        "سخر",
+        "شمس",
+        "قمر",
+        "كلل",
+        "جري",
+        "أجل",
+        "دبر",
+        "أمر",
+        "فصل",
+        "أيي",
+        "لقي",
+        "ربب",
+        "يقن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "1*: "
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/10",
+          "targets": [
+            "31:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/9-12",
+          "targets": [
+            "41:9",
+            "41:10",
+            "41:11",
+            "41:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". 2*: Arş, üst yönetim makamını gösteren mecaz ifadedir ( "
+        },
+        {
+          "type": "link",
+          "content": "Yusuf 12/100",
+          "targets": [
+            "12:100"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/23",
+          "targets": [
+            "27:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Türkçede onun yerine padişahlar için \"taht\", diğer yöneticiler için \"koltuk\" kelimesi kullanılır. Dolayısıyla “Allah arşa istiva etti” sözü de kâinatın yönetiminin Allah’ın elinde olduğunu ifade eder ( "
+        },
+        {
+          "type": "link",
+          "content": "A'raf 7/54",
+          "targets": [
+            "7:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/7",
+          "targets": [
+            "11:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/3",
+          "targets": [
+            "10:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/5",
+          "targets": [
+            "20:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/59",
+          "targets": [
+            "25:59"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/4",
+          "targets": [
+            "32:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/4",
+          "targets": [
+            "57:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). 3*: "
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/29",
+          "targets": [
+            "31:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/13",
+          "targets": [
+            "35:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/38-40",
+          "targets": [
+            "36:38",
+            "36:39",
+            "36:40"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:2",
+        "connections": [
+          {
+            "target_coordinate": "31:10",
+            "context": "Lokman 31/10"
+          },
+          {
+            "target_coordinate": "41:9",
+            "context": "Fussilet 41/9-12"
+          },
+          {
+            "target_coordinate": "41:10",
+            "context": "Fussilet 41/9-12"
+          },
+          {
+            "target_coordinate": "41:11",
+            "context": "Fussilet 41/9-12"
+          },
+          {
+            "target_coordinate": "41:12",
+            "context": "Fussilet 41/9-12"
+          },
+          {
+            "target_coordinate": "12:100",
+            "context": "Yusuf 12/100"
+          },
+          {
+            "target_coordinate": "27:23",
+            "context": "Neml 27/23"
+          },
+          {
+            "target_coordinate": "7:54",
+            "context": "A'raf 7/54"
+          },
+          {
+            "target_coordinate": "11:7",
+            "context": "Hud 11/7"
+          },
+          {
+            "target_coordinate": "10:3",
+            "context": "Yunus 10/3"
+          },
+          {
+            "target_coordinate": "20:5",
+            "context": "Taha 20/5"
+          },
+          {
+            "target_coordinate": "25:59",
+            "context": "Furkan 25/59"
+          },
+          {
+            "target_coordinate": "32:4",
+            "context": "Secde 32/4"
+          },
+          {
+            "target_coordinate": "57:4",
+            "context": "Hadid 57/4"
+          },
+          {
+            "target_coordinate": "31:29",
+            "context": "Lokman 31/29"
+          },
+          {
+            "target_coordinate": "35:13",
+            "context": "Fatır 35/13"
+          },
+          {
+            "target_coordinate": "36:38",
+            "context": "Yasin 36/38-40"
+          },
+          {
+            "target_coordinate": "36:39",
+            "context": "Yasin 36/38-40"
+          },
+          {
+            "target_coordinate": "36:40",
+            "context": "Yasin 36/38-40"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 2. Ayetin Tefsiri\nاَللّٰهُ الَّذ۪ي رَفَعَ السَّمٰوَاتِ بِغَيْرِ عَمَدٍ تَرَوْنَهَا ثُمَّ اسْتَوٰى عَلَى الْعَرْشِ وَسَخَّرَ الشَّمْسَ وَالْقَمَرَۜ كُلٌّ يَجْر۪ي لِاَجَلٍ مُسَمًّىۜ يُدَبِّرُ الْاَمْرَ يُفَصِّلُ الْاٰيَاتِ لَعَلَّكُمْ بِلِقَٓاءِ رَبِّكُمْ تُوقِنُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:3",
+      "text": "وَهُوَ الَّذ۪ي مَدَّ الْاَرْضَ وَجَعَلَ ف۪يهَا رَوَاسِيَ وَاَنْهَارًاۜ وَمِنْ كُلِّ الثَّمَرَاتِ جَعَلَ ف۪يهَا زَوْجَيْنِ اثْنَيْنِ يُغْشِي الَّيْلَ النَّهَارَۜ اِنَّ ف۪ي ذٰلِكَ لَاٰيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ",
+      "translation": "Yine O, yeryüzünü yayan /döşeyen, içine sabit dağlar ve ırmaklar yerleştiren, her türlü bitkide (erkekli-dişili) iki eş olma özelliği oluşturandır. Geceyi gündüzün üzerine örter. Bunda, düşünen bir topluluk için gerçekten ayetler /göstergeler vardır.",
+      "dipnot": "\"Yerin yayılması\", yeryüzünün yaratılışının başlangıcı olan \"patlama\"dan (Enbiya 21/30) son halini almasına (Bakara 2/22, Zariyat 51/48) kadar geçirdiği aşamaların son evresidir. Arapçada “sabit olma” anlamındaki “rasv (رسو)” kökünden türeyen “revâsî (رواسي)” kelimesi, “râsiye”nin (راسية) çoğuludur. Kelimenin “yerinden kaldırılamayan kazanlar (قُدُورٍ رَّاسِيَاتٍ)” şeklinde Sebe 34/13’te ve “geminin demir atması (مُرْسَاهَا)” anlamında Hud 11/41’deki kullanımları, “sabit olma” anlamını pekiştirmektedir. Bu kelimenin Kur’an’da, dağların yerde sabit olması özelliğine vurgu ile dağ anlamında kullanıldığı, Fussilet 41/10, Mürselât 77/27 ve Naziât 79/32. ayetlerden anlaşılmaktadır. Kur’an’da dağ anlamında başka kelimeler de vardır: İnsanların çevrelerinde gördükleri ağaç, nehir gibi coğrafî unsurlardan biri anlamında “cebel (جبل)”, yüceliğine vurguyla “tavd (طود)”, sağlamlığı ve şekline vurguyla “veted (وتد)”, sabitliğine vurguyla “rasiye (راسية)” kelimeleri kullanılmaktadır. “Revâsî (رواسي)” kelimesi 9 âyette geçmektedir. Kelime Nahl 16/15, Enbiyâ 21/31, Lokman 31/10. ayetlerinde “gidip gelme, sallanma, sarsılma” anlamlarına gelen “meyd (ميد)” kökünden bir fiille birlikte kullanılmıştır. Bu ayetlerde insanları sarsacak olan, yeryüzüdür. Dağların varlığı insanları bu sarsıntı esnasında korumak, daha güvenli bir yerleşim yeri oluşturmak içindir. Ayetlerde dağların yeri sabitlemesinden bahsedilmemekte, dağların kendilerinin yeryüzündeki sabitliğine vurgu yapılmaktadır. Nitekim toprak, kum ve alüvyonlu kıyı kesimlerin depremlerde en uzun süreli sarsıntı yaratan, sarsıntının şiddetinin en büyük, hızının da en fazla hissedildiği bölgeler olduğu, dağlık ve kayalık alanlarda ise bu sarsıntıların çok daha kısa ve yavaş gerçekleştiği yer bilimcileri tarafından da tespit edilmiş gerçeklerdir. Bu ayetler bu gerçeği dile getirmekte, bu özelliğinden dolayı dağlar için “sabit olma” kök anlamından türetilmiş “revâsî (رواسي)” kelimesi kullanılmaktadır. Allah Teala her şeyi, erkekli dişili iki eş olarak yaratmıştır (Hucurat 49/13,",
+      "roots": [
+        "مدد",
+        "أرض",
+        "جعل",
+        "رسو",
+        "نهر",
+        "كلل",
+        "ثمر",
+        "زوج",
+        "ثني",
+        "غشو",
+        "ليل",
+        "أيي",
+        "قوم",
+        "فكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "\"Yerin yayılması\", yeryüzünün yaratılışının başlangıcı olan \"patlama\"dan ("
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/30",
+          "targets": [
+            "21:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") son halini almasına ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/22",
+          "targets": [
+            "2:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/48",
+          "targets": [
+            "51:48"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") kadar geçirdiği aşamaların son evresidir. Arapçada “sabit olma” anlamındaki “rasv (رسو)” kökünden türeyen “revâsî (رواسي)” kelimesi, “râsiye”nin (راسية) çoğuludur. Kelimenin “yerinden kaldırılamayan kazanlar (قُدُورٍ رَّاسِيَاتٍ)” "
+        },
+        {
+          "type": "link",
+          "content": "şeklinde Sebe 34/13",
+          "targets": [
+            "34:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’te ve “geminin demir atması (مُرْسَاهَا)” "
+        },
+        {
+          "type": "link",
+          "content": "anlamında Hud 11/41",
+          "targets": [
+            "11:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’deki kullanımları, “sabit olma” anlamını pekiştirmektedir. Bu kelimenin Kur’an’da, dağların yerde sabit olması özelliğine vurgu ile dağ anlamında kullanıldığı, "
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/10",
+          "targets": [
+            "41:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselât 77/27",
+          "targets": [
+            "77:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "ve Naziât 79/32",
+          "targets": [
+            "79:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayetlerden anlaşılmaktadır. Kur’an’da dağ anlamında başka kelimeler de vardır: İnsanların çevrelerinde gördükleri ağaç, nehir gibi coğrafî unsurlardan biri anlamında “cebel (جبل)”, yüceliğine vurguyla “tavd (طود)”, sağlamlığı ve şekline vurguyla “veted (وتد)”, sabitliğine vurguyla “rasiye (راسية)” kelimeleri kullanılmaktadır. “Revâsî (رواسي)” kelimesi 9 âyette geçmektedir. "
+        },
+        {
+          "type": "link",
+          "content": "Kelime Nahl 16/15",
+          "targets": [
+            "16:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiyâ 21/31",
+          "targets": [
+            "21:31"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/10",
+          "targets": [
+            "31:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayetlerinde “gidip gelme, sallanma, sarsılma” anlamlarına gelen “meyd (ميد)” kökünden bir fiille birlikte kullanılmıştır. Bu ayetlerde insanları sarsacak olan, yeryüzüdür. Dağların varlığı insanları bu sarsıntı esnasında korumak, daha güvenli bir yerleşim yeri oluşturmak içindir. Ayetlerde dağların yeri sabitlemesinden bahsedilmemekte, dağların kendilerinin yeryüzündeki sabitliğine vurgu yapılmaktadır. Nitekim toprak, kum ve alüvyonlu kıyı kesimlerin depremlerde en uzun süreli sarsıntı yaratan, sarsıntının şiddetinin en büyük, hızının da en fazla hissedildiği bölgeler olduğu, dağlık ve kayalık alanlarda ise bu sarsıntıların çok daha kısa ve yavaş gerçekleştiği yer bilimcileri tarafından da tespit edilmiş gerçeklerdir. Bu ayetler bu gerçeği dile getirmekte, bu özelliğinden dolayı dağlar için “sabit olma” kök anlamından türetilmiş “revâsî (رواسي)” kelimesi kullanılmaktadır. Allah Teala her şeyi, erkekli dişili iki eş olarak yaratmıştır ("
+        },
+        {
+          "type": "link",
+          "content": "Hucurat 49/13",
+          "targets": [
+            "49:13"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:3",
+        "connections": [
+          {
+            "target_coordinate": "21:30",
+            "context": "Enbiya 21/30"
+          },
+          {
+            "target_coordinate": "2:22",
+            "context": "Bakara 2/22"
+          },
+          {
+            "target_coordinate": "51:48",
+            "context": "Zariyat 51/48"
+          },
+          {
+            "target_coordinate": "34:13",
+            "context": "şeklinde Sebe 34/13"
+          },
+          {
+            "target_coordinate": "11:41",
+            "context": "anlamında Hud 11/41"
+          },
+          {
+            "target_coordinate": "41:10",
+            "context": "Fussilet 41/10"
+          },
+          {
+            "target_coordinate": "77:27",
+            "context": "Mürselât 77/27"
+          },
+          {
+            "target_coordinate": "79:32",
+            "context": "ve Naziât 79/32"
+          },
+          {
+            "target_coordinate": "16:15",
+            "context": "Kelime Nahl 16/15"
+          },
+          {
+            "target_coordinate": "21:31",
+            "context": "Enbiyâ 21/31"
+          },
+          {
+            "target_coordinate": "31:10",
+            "context": "Lokman 31/10"
+          },
+          {
+            "target_coordinate": "49:13",
+            "context": "Hucurat 49/13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 3. Ayetin Tefsiri\nوَهُوَ الَّذ۪ي مَدَّ الْاَرْضَ وَجَعَلَ ف۪يهَا رَوَاسِيَ وَاَنْهَارًاۜ وَمِنْ كُلِّ الثَّمَرَاتِ جَعَلَ ف۪يهَا زَوْجَيْنِ اثْنَيْنِ يُغْشِي الَّيْلَ النَّهَارَۜ اِنَّ ف۪ي ذٰلِكَ لَاٰيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:4",
+      "text": "وَفِي الْاَرْضِ قِطَعٌ مُتَجَاوِرَاتٌ وَجَنَّاتٌ مِنْ اَعْنَابٍ وَزَرْعٌ وَنَخ۪يلٌ صِنْوَانٌ وَغَيْرُ صِنْوَانٍ يُسْقٰى بِمَٓاءٍ وَاحِدٍ۠ وَنُفَضِّلُ بَعْضَهَا عَلٰى بَعْضٍ فِي الْاُكُلِۜ اِنَّ ف۪ي ذٰلِكَ لَاٰيَاتٍ لِقَوْمٍ يَعْقِلُونَ",
+      "translation": "Yeryüzünde birbirine komşu kara parçaları, üzüm bağları, tarım ürünleri ve çatallı - çatalsız hurma ağaçları vardır. Hepsi aynı su ile sulanır; ama biz tat açısından her birini diğerinden farklı lezzette kılarız. Bunda, aklını kullanan /doğru bağlantılar kuran bir topluluk için gerçekten ayetler /göstergeler vardır.",
+      "dipnot": "En’am 6/99, 141, Nahl 16/11, Mü’minun 23/19, Yasin 36/33 - 36, Zümer 39/21, Kaf 50/9 - 11.",
+      "roots": [
+        "أرض",
+        "قطع",
+        "جور",
+        "جنن",
+        "عنب",
+        "زرع",
+        "نخل",
+        "صنو",
+        "غير",
+        "سقي",
+        "موه",
+        "وحد",
+        "فضل",
+        "بعض",
+        "أكل",
+        "أيي",
+        "قوم",
+        "عقل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/99,141",
+          "targets": [
+            "6:99",
+            "6:141"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/11",
+          "targets": [
+            "16:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/19",
+          "targets": [
+            "23:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/33-36",
+          "targets": [
+            "36:33",
+            "36:34",
+            "36:35",
+            "36:36"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/21",
+          "targets": [
+            "39:21"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/9-11",
+          "targets": [
+            "50:9",
+            "50:10",
+            "50:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:4",
+        "connections": [
+          {
+            "target_coordinate": "6:99",
+            "context": "am 6/99,141"
+          },
+          {
+            "target_coordinate": "6:141",
+            "context": "am 6/99,141"
+          },
+          {
+            "target_coordinate": "16:11",
+            "context": "Nahl 16/11"
+          },
+          {
+            "target_coordinate": "23:19",
+            "context": "minun 23/19"
+          },
+          {
+            "target_coordinate": "36:33",
+            "context": "Yasin 36/33-36"
+          },
+          {
+            "target_coordinate": "36:34",
+            "context": "Yasin 36/33-36"
+          },
+          {
+            "target_coordinate": "36:35",
+            "context": "Yasin 36/33-36"
+          },
+          {
+            "target_coordinate": "36:36",
+            "context": "Yasin 36/33-36"
+          },
+          {
+            "target_coordinate": "39:21",
+            "context": "Zümer 39/21"
+          },
+          {
+            "target_coordinate": "50:9",
+            "context": "Kaf 50/9-11"
+          },
+          {
+            "target_coordinate": "50:10",
+            "context": "Kaf 50/9-11"
+          },
+          {
+            "target_coordinate": "50:11",
+            "context": "Kaf 50/9-11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 4. Ayetin Tefsiri\nوَفِي الْاَرْضِ قِطَعٌ مُتَجَاوِرَاتٌ وَجَنَّاتٌ مِنْ اَعْنَابٍ وَزَرْعٌ وَنَخ۪يلٌ صِنْوَانٌ وَغَيْرُ صِنْوَانٍ يُسْقٰى بِمَٓاءٍ وَاحِدٍ۠ وَنُفَضِّلُ بَعْضَهَا عَلٰى بَعْضٍ فِي الْاُكُلِۜ اِنَّ ف۪ي ذٰلِكَ لَاٰيَاتٍ لِقَوْمٍ يَعْقِلُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:5",
+      "text": "وَاِنْ تَعْجَبْ فَعَجَبٌ قَوْلُهُمْ ءَاِذَا كُنَّا تُرَابًا ءَاِنَّا لَف۪ي خَلْقٍ جَد۪يدٍۜ اُو۬لٰٓئِكَ الَّذ۪ينَ كَفَرُوا بِرَبِّهِمْۚ وَاُو۬لٰٓئِكَ الْاَغْلَالُ ف۪ٓي اَعْنَاقِهِمْۚ وَاُو۬لٰٓئِكَ اَصْحَابُ النَّارِۚ هُمْ ف۪يهَا خَالِدُونَ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "عجب",
+        "قول",
+        "كون",
+        "ترب",
+        "خلق",
+        "جدد",
+        "كفر",
+        "ربب",
+        "غلل",
+        "عنق",
+        "صحب",
+        "نور",
+        "خلد"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "13:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 5. Ayetin Tefsiri\nوَاِنْ تَعْجَبْ فَعَجَبٌ قَوْلُهُمْ ءَاِذَا كُنَّا تُرَابًا ءَاِنَّا لَف۪ي خَلْقٍ جَد۪يدٍۜ اُو۬لٰٓئِكَ الَّذ۪ينَ كَفَرُوا بِرَبِّهِمْۚ وَاُو۬لٰٓئِكَ الْاَغْلَالُ ف۪ٓي اَعْنَاقِهِمْۚ وَاُو۬لٰٓئِكَ اَصْحَابُ النَّارِۚ هُمْ ف۪يهَا خَالِدُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:6",
+      "text": "",
+      "translation": "Eğer (bu muhteşem yapıya) şaşıyorsan asıl şaşılacak olan, onların: “Toprak olduğumuzda mı, gerçekten yeniden mi yaratılacağız?” demeleridir. İşte onlar, Rablerini görmezlikte direnenlerdir. Işte onlar, boyunlarına halka takılacak olanlardır. İşte onlar cehennem ateşinin ahalisidir. Orada ölümsüz olarak kalacaklardır.",
+      "dipnot": "İsra 17/49, Mü’minun 23/82, Secde 32/10, Saffat 37/16 - 17, Kaf 50/2 - 3, 15. Naziât 79/10 - 12.",
+      "roots": [
+        "عجل",
+        "سوأ",
+        "قبل",
+        "حسن",
+        "خلو",
+        "مثل",
+        "ربب",
+        "غفر",
+        "أنس",
+        "ظلم",
+        "شدد",
+        "عقب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İsra 17/49",
+          "targets": [
+            "17:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/82",
+          "targets": [
+            "23:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/10",
+          "targets": [
+            "32:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/16-17",
+          "targets": [
+            "37:16",
+            "37:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/2-3,15",
+          "targets": [
+            "50:2",
+            "50:3",
+            "50:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". "
+        },
+        {
+          "type": "link",
+          "content": "Naziât 79/10-12",
+          "targets": [
+            "79:10",
+            "79:11",
+            "79:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:6",
+        "connections": [
+          {
+            "target_coordinate": "17:49",
+            "context": "İsra 17/49"
+          },
+          {
+            "target_coordinate": "23:82",
+            "context": "minun 23/82"
+          },
+          {
+            "target_coordinate": "32:10",
+            "context": "Secde 32/10"
+          },
+          {
+            "target_coordinate": "37:16",
+            "context": "Saffat 37/16-17"
+          },
+          {
+            "target_coordinate": "37:17",
+            "context": "Saffat 37/16-17"
+          },
+          {
+            "target_coordinate": "50:2",
+            "context": "Kaf 50/2-3,15"
+          },
+          {
+            "target_coordinate": "50:3",
+            "context": "Kaf 50/2-3,15"
+          },
+          {
+            "target_coordinate": "50:15",
+            "context": "Kaf 50/2-3,15"
+          },
+          {
+            "target_coordinate": "79:10",
+            "context": "Naziât 79/10-12"
+          },
+          {
+            "target_coordinate": "79:11",
+            "context": "Naziât 79/10-12"
+          },
+          {
+            "target_coordinate": "79:12",
+            "context": "Naziât 79/10-12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 6. Ayetin Tefsiri\nوَيَسْتَعْجِلُونَكَ بِالسَّيِّئَةِ قَبْلَ الْحَسَنَةِ وَقَدْ خَلَتْ مِنْ قَبْلِهِمُ الْمَثُلَاتُۜ وَاِنَّ رَبَّكَ لَذُو مَغْفِرَةٍ لِلنَّاسِ عَلٰى ظُلْمِهِمْۚ وَاِنَّ رَبَّكَ لَشَد۪يدُ الْعِقَابِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:7",
+      "text": "وَيَسْتَعْجِلُونَكَ بِالسَّيِّئَةِ قَبْلَ الْحَسَنَةِ وَقَدْ خَلَتْ مِنْ قَبْلِهِمُ الْمَثُلَاتُۜ وَاِنَّ رَبَّكَ لَذُو مَغْفِرَةٍ لِلنَّاسِ عَلٰى ظُلْمِهِمْۚ وَاِنَّ رَبَّكَ لَشَد۪يدُ الْعِقَابِ",
+      "translation": "Senden, kötülüğün iyilikten önce çabucak gelmesini istiyorlar.[1*] Oysa onlardan önce benzer örnekler gelip geçti.[2*] Hiç şüphe yok ki senin Rabbin, yanlışlarına rağmen[3*] insanları bağışlayandır. Ve yine senin Rabbin, cezalandırması pek çetin olandır.[4*]",
+      "dipnot": "Onların şaşılacak bir başka yönü de Muhammed aleyhisselama inanıp iyiliğe kavuşmayı istemek yerine azabın başlarına gelmesini istemeleridir (En'am 6/57 - 58, Enfal 8/32 - 33, Hac 22/47, Ankebut 29/53 - 54). [2*] Nur 24/34, Neml 27/45 - 46. [3*] Nahl 16/61, Kehf 18/58, Fatır 35/45. [4*] Çetin, ayetteki (شديد) ‘şedîd’in karşılığıdır. Şedîd, ‘güçlü bağla bağlı’ anlamındadır. Allah, vereceği cezayı, kulunun suçuna bağlamıştır (En'âm 6/160).",
+      "roots": [
+        "قول",
+        "كفر",
+        "نزل",
+        "أيي",
+        "ربب",
+        "نذر",
+        "كلل",
+        "قوم",
+        "هدي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Onların şaşılacak bir başka yönü de Muhammed aleyhisselama inanıp iyiliğe kavuşmayı istemek yerine azabın başlarına gelmesini istemeleridir ("
+        },
+        {
+          "type": "link",
+          "content": "En'am 6/57-58",
+          "targets": [
+            "6:57",
+            "6:58"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/32-33",
+          "targets": [
+            "8:32",
+            "8:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/47",
+          "targets": [
+            "22:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/53-54",
+          "targets": [
+            "29:53",
+            "29:54"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/34",
+          "targets": [
+            "24:34"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/45-46",
+          "targets": [
+            "27:45",
+            "27:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] "
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/61",
+          "targets": [
+            "16:61"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/58",
+          "targets": [
+            "18:58"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/45",
+          "targets": [
+            "35:45"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [4*] Çetin, ayetteki (شديد) ‘şedîd’in karşılığıdır. Şedîd, ‘güçlü bağla bağlı’ anlamındadır. Allah, vereceği cezayı, kulunun suçuna bağlamıştır ("
+        },
+        {
+          "type": "link",
+          "content": "En'âm 6/160",
+          "targets": [
+            "6:160"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:7",
+        "connections": [
+          {
+            "target_coordinate": "6:57",
+            "context": "En'am 6/57-58"
+          },
+          {
+            "target_coordinate": "6:58",
+            "context": "En'am 6/57-58"
+          },
+          {
+            "target_coordinate": "8:32",
+            "context": "Enfal 8/32-33"
+          },
+          {
+            "target_coordinate": "8:33",
+            "context": "Enfal 8/32-33"
+          },
+          {
+            "target_coordinate": "22:47",
+            "context": "Hac 22/47"
+          },
+          {
+            "target_coordinate": "29:53",
+            "context": "Ankebut 29/53-54"
+          },
+          {
+            "target_coordinate": "29:54",
+            "context": "Ankebut 29/53-54"
+          },
+          {
+            "target_coordinate": "24:34",
+            "context": "Nur 24/34"
+          },
+          {
+            "target_coordinate": "27:45",
+            "context": "Neml 27/45-46"
+          },
+          {
+            "target_coordinate": "27:46",
+            "context": "Neml 27/45-46"
+          },
+          {
+            "target_coordinate": "16:61",
+            "context": "Nahl 16/61"
+          },
+          {
+            "target_coordinate": "18:58",
+            "context": "Kehf 18/58"
+          },
+          {
+            "target_coordinate": "35:45",
+            "context": "Fatır 35/45"
+          },
+          {
+            "target_coordinate": "6:160",
+            "context": "En'âm 6/160"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 7. Ayetin Tefsiri\nوَيَقُولُ الَّذ۪ينَ كَفَرُوا لَوْلَٓا اُنْزِلَ عَلَيْهِ اٰيَةٌ مِنْ رَبِّه۪ۜ اِنَّمَٓا اَنْتَ مُنْذِرٌ وَلِكُلِّ قَوْمٍ هَادٍ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:8",
+      "text": "وَيَقُولُ الَّذ۪ينَ كَفَرُوا لَوْلَٓا اُنْزِلَ عَلَيْهِ اٰيَةٌ مِنْ رَبِّهِۜ اِنَّمَٓا اَنْتَ مُنْذِرٌ وَلِكُلِّ قَوْمٍ هَادٍ۟",
+      "translation": "Kâfirlik edenler: “Ona Rabbinden bir ayet /mucize indirilse ya!” derler.[1*] (Ey Muhammed!) Sen sadece uyarılarda bulunan birisin.[2*] Her topluluğun bir yol göstericisi vardır.[3*]",
+      "dipnot": "Yunus 10/20, Hud 11/12, Ra’d 13/27, İsra 17/90 - 93, Furkan 25/7 - 8, Ankebut 29/50 - 51. [2*] Sad 38/65, Naziat 79/45. [3*] A’raf 7/181, Yunus 10/47, Nahl 16/36, Fatır 35/24.",
+      "roots": [
+        "أله",
+        "علم",
+        "حمل",
+        "كلل",
+        "أنث",
+        "غيض",
+        "رحم",
+        "زيد",
+        "شيأ",
+        "عند",
+        "قدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/20",
+          "targets": [
+            "10:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/12",
+          "targets": [
+            "11:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/27",
+          "targets": [
+            "13:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/90-93",
+          "targets": [
+            "17:90",
+            "17:91",
+            "17:92",
+            "17:93"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/7-8",
+          "targets": [
+            "25:7",
+            "25:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/50-51",
+          "targets": [
+            "29:50",
+            "29:51"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/65",
+          "targets": [
+            "38:65"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziat 79/45",
+          "targets": [
+            "79:45"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/181",
+          "targets": [
+            "7:181"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/47",
+          "targets": [
+            "10:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/36",
+          "targets": [
+            "16:36"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/24",
+          "targets": [
+            "35:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:8",
+        "connections": [
+          {
+            "target_coordinate": "10:20",
+            "context": "Yunus 10/20"
+          },
+          {
+            "target_coordinate": "11:12",
+            "context": "Hud 11/12"
+          },
+          {
+            "target_coordinate": "13:27",
+            "context": "d 13/27"
+          },
+          {
+            "target_coordinate": "17:90",
+            "context": "İsra 17/90-93"
+          },
+          {
+            "target_coordinate": "17:91",
+            "context": "İsra 17/90-93"
+          },
+          {
+            "target_coordinate": "17:92",
+            "context": "İsra 17/90-93"
+          },
+          {
+            "target_coordinate": "17:93",
+            "context": "İsra 17/90-93"
+          },
+          {
+            "target_coordinate": "25:7",
+            "context": "Furkan 25/7-8"
+          },
+          {
+            "target_coordinate": "25:8",
+            "context": "Furkan 25/7-8"
+          },
+          {
+            "target_coordinate": "29:50",
+            "context": "Ankebut 29/50-51"
+          },
+          {
+            "target_coordinate": "29:51",
+            "context": "Ankebut 29/50-51"
+          },
+          {
+            "target_coordinate": "38:65",
+            "context": "Sad 38/65"
+          },
+          {
+            "target_coordinate": "79:45",
+            "context": "Naziat 79/45"
+          },
+          {
+            "target_coordinate": "7:181",
+            "context": "raf 7/181"
+          },
+          {
+            "target_coordinate": "10:47",
+            "context": "Yunus 10/47"
+          },
+          {
+            "target_coordinate": "16:36",
+            "context": "Nahl 16/36"
+          },
+          {
+            "target_coordinate": "35:24",
+            "context": "Fatır 35/24"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 8. Ayetin Tefsiri\nاَللّٰهُ يَعْلَمُ مَا تَحْمِلُ كُلُّ اُنْثٰى وَمَا تَغ۪يضُ الْاَرْحَامُ وَمَا تَزْدَادُۜ وَكُلُّ شَيْءٍ عِنْدَهُ بِمِقْدَارٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:9",
+      "text": "اَللّٰهُ يَعْلَمُ مَا تَحْمِلُ كُلُّ اُنْثٰى وَمَا تَغ۪يضُ الْاَرْحَامُ وَمَا تَزْدَادُۜ وَكُلُّ شَيْءٍ عِنْدَهُ بِمِقْدَارٍ",
+      "translation": "Allah her dişinin rahminde ne taşıdığını, rahimlerin neyi eksilttiğini /dışarı attığını ve neyi artırdığını /geliştirdiğini bilir.[1*] Her şey, onun yanında bir ölçüye göredir.[2*]",
+      "dipnot": "Âl-i İmran 3/6, Hac 22/5, Fatır 35/11, Fussilet 41/47. [2*] Furkan 25/2, Kamer 54/49.",
+      "roots": [
+        "علم",
+        "غيب",
+        "شهد",
+        "كبر",
+        "علو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/6",
+          "targets": [
+            "3:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/5",
+          "targets": [
+            "22:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/11",
+          "targets": [
+            "35:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/47",
+          "targets": [
+            "41:47"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/2",
+          "targets": [
+            "25:2"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/49",
+          "targets": [
+            "54:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:9",
+        "connections": [
+          {
+            "target_coordinate": "3:6",
+            "context": "Âl-i İmran 3/6"
+          },
+          {
+            "target_coordinate": "22:5",
+            "context": "Hac 22/5"
+          },
+          {
+            "target_coordinate": "35:11",
+            "context": "Fatır 35/11"
+          },
+          {
+            "target_coordinate": "41:47",
+            "context": "Fussilet 41/47"
+          },
+          {
+            "target_coordinate": "25:2",
+            "context": "Furkan 25/2"
+          },
+          {
+            "target_coordinate": "54:49",
+            "context": "Kamer 54/49"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 9. Ayetin Tefsiri\nعَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَب۪يرُ الْمُتَعَالِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:10",
+      "text": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَب۪يرُ الْمُتَعَالِ",
+      "translation": "O, gaybı /algılanamayanı da şehadeti /algılanabileni de bilendir; büyüktür, pek yücedir.",
+      "dipnot": "En’am 6/73, Secde 32/6, Haşr 59/22, Teğabun 64/18.",
+      "roots": [
+        "سوي",
+        "سرر",
+        "قول",
+        "جهر",
+        "خفي",
+        "ليل",
+        "سرب",
+        "نهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/73",
+          "targets": [
+            "6:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/6",
+          "targets": [
+            "32:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/22",
+          "targets": [
+            "59:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabun 64/18",
+          "targets": [
+            "64:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:10",
+        "connections": [
+          {
+            "target_coordinate": "6:73",
+            "context": "am 6/73"
+          },
+          {
+            "target_coordinate": "32:6",
+            "context": "Secde 32/6"
+          },
+          {
+            "target_coordinate": "59:22",
+            "context": "Haşr 59/22"
+          },
+          {
+            "target_coordinate": "64:18",
+            "context": "Teğabun 64/18"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 10. Ayetin Tefsiri\nسَوَٓاءٌ مِنْكُمْ مَنْ اَسَرَّ الْقَوْلَ وَمَنْ جَهَرَ بِه۪ وَمَنْ هُوَ مُسْتَخْفٍ بِالَّيْلِ وَسَارِبٌ بِالنَّهَارِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:11",
+      "text": "سَوَٓاءٌ مِنْكُمْ مَنْ اَسَرَّ الْقَوْلَ وَمَنْ جَهَرَ بِه۪ وَمَنْ هُوَ مُسْتَخْفٍ بِالَّيْلِ وَسَارِبٌ بِالنَّهَارِ",
+      "translation": "İçinizden sözü gizleyen ve onu açığa vuran da gece saklanan ve gündüz dışarı çıkan da (O’nun için) birdir.",
+      "dipnot": "En’am 6/3, Nahl 16/19, Teğabun 64/4, Mülk 67/13 - 14.",
+      "roots": [
+        "عقب",
+        "بين",
+        "يدي",
+        "خلف",
+        "حفظ",
+        "أمر",
+        "أله",
+        "غير",
+        "قوم",
+        "نفس",
+        "رود",
+        "سوأ",
+        "ردد",
+        "دون",
+        "ولي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/3",
+          "targets": [
+            "6:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/19",
+          "targets": [
+            "16:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabun 64/4",
+          "targets": [
+            "64:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/13-14",
+          "targets": [
+            "67:13",
+            "67:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:11",
+        "connections": [
+          {
+            "target_coordinate": "6:3",
+            "context": "am 6/3"
+          },
+          {
+            "target_coordinate": "16:19",
+            "context": "Nahl 16/19"
+          },
+          {
+            "target_coordinate": "64:4",
+            "context": "Teğabun 64/4"
+          },
+          {
+            "target_coordinate": "67:13",
+            "context": "Mülk 67/13-14"
+          },
+          {
+            "target_coordinate": "67:14",
+            "context": "Mülk 67/13-14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 11. Ayetin Tefsiri\nلَهُ مُعَقِّبَاتٌ مِنْ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِه۪ يَحْفَظُونَهُ مِنْ اَمْرِ اللّٰهِۜ اِنَّ اللّٰهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتّٰى يُغَيِّرُوا مَا بِاَنْفُسِهِمْۜ وَاِذَٓا اَرَادَ اللّٰهُ بِقَوْمٍ سُٓوءًا فَلَا مَرَدَّ لَهُۚ وَمَا لَهُمْ مِنْ دُونِه۪ مِنْ وَالٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:12",
+      "text": "لَهُ مُعَقِّبَاتٌ مِنْ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِه۪ يَحْفَظُونَهُ مِنْ اَمْرِ اللّٰهِۜ اِنَّ اللّٰهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتّٰى يُغَيِّرُوا مَا بِاَنْفُسِهِمْۜ وَاِذَٓا اَرَادَ اللّٰهُ بِقَوْمٍ سُٓوءًا فَلَا مَرَدَّ لَهُۚ وَمَا لَهُمْ مِنْ دُونِه۪ مِنْ وَالٍ",
+      "translation": "Kişiyi önünden ve arkasından takip edenler (melekler) vardır, Allah’ın emriyle onu korurlar.[1*] Bir toplum, kendinde olanı değiştirmedikçe Allah, o toplumda olanı değiştirmez. Allah (hak ettikleri için)[2*] bir toplumun başına bir kötülük getirmek istediği zaman ona engel olacak bir şey bulunmaz.[3*] Onların Allah ile aralarına girecek bir yakınları da olmaz.",
+      "dipnot": "[1*]\nEn’am 6/61,\nTârık 86/4.\n[2*]\nAllah’ın bir topluma sıkıntı vermesi, ancak o toplumun onu hak etmesinin sonucunda olur (\nEnfal 8/53,\nNahl 16/112,\nSebe 34/15\n-\n17\n).\n[3*]\nEn’am 6/17,\nYunus 10/107,\nFatır 35/2,\nZümer 39/38.",
+      "roots": [
+        "رأي",
+        "برق",
+        "خوف",
+        "طمع",
+        "نشأ",
+        "سحب",
+        "ثقل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\nEn’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/61",
+          "targets": [
+            "6:61"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Târık 86/4",
+          "targets": [
+            "86:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[2*]\nAllah’ın bir topluma sıkıntı vermesi, ancak o toplumun onu hak etmesinin sonucunda olur (\n"
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/53",
+          "targets": [
+            "8:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/112",
+          "targets": [
+            "16:112"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/15-17",
+          "targets": [
+            "34:15",
+            "34:16",
+            "34:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[3*]\nEn’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/17",
+          "targets": [
+            "6:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/107",
+          "targets": [
+            "10:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/2",
+          "targets": [
+            "35:2"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/38",
+          "targets": [
+            "39:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:12",
+        "connections": [
+          {
+            "target_coordinate": "6:61",
+            "context": "am 6/61"
+          },
+          {
+            "target_coordinate": "86:4",
+            "context": "Târık 86/4"
+          },
+          {
+            "target_coordinate": "8:53",
+            "context": "Enfal 8/53"
+          },
+          {
+            "target_coordinate": "16:112",
+            "context": "Nahl 16/112"
+          },
+          {
+            "target_coordinate": "34:15",
+            "context": "Sebe 34/15-17"
+          },
+          {
+            "target_coordinate": "34:16",
+            "context": "Sebe 34/15-17"
+          },
+          {
+            "target_coordinate": "34:17",
+            "context": "Sebe 34/15-17"
+          },
+          {
+            "target_coordinate": "6:17",
+            "context": "am 6/17"
+          },
+          {
+            "target_coordinate": "10:107",
+            "context": "Yunus 10/107"
+          },
+          {
+            "target_coordinate": "35:2",
+            "context": "Fatır 35/2"
+          },
+          {
+            "target_coordinate": "39:38",
+            "context": "Zümer 39/38"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 12. Ayetin Tefsiri\nهُوَ الَّذ۪ي يُر۪يكُمُ الْبَرْقَ خَوْفًا وَطَمَعًا وَيُنْشِئُ السَّحَابَ الثِّقَالَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:13",
+      "text": "هُوَ الَّذ۪ي يُر۪يكُمُ الْبَرْقَ خَوْفًا وَطَمَعًا وَيُنْشِئُ السَّحَابَ الثِّقَالَۚ",
+      "translation": "O, bir korku ve bir umut olsun diye size şimşeği gösteren[1*] ve (yağmur yüklü) ağır bulutları oluşturandır.[2*]",
+      "dipnot": "[1*]\nRum 30/24.\n[2*]\nA’raf 7/54,\nNur 24/43.",
+      "roots": [
+        "سبح",
+        "رعد",
+        "حمد",
+        "ملك",
+        "خوف",
+        "رسل",
+        "صعق",
+        "صوب",
+        "شيأ",
+        "جدل",
+        "أله",
+        "شدد",
+        "محل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/24",
+          "targets": [
+            "30:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[2*]\nA’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/54",
+          "targets": [
+            "7:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/43",
+          "targets": [
+            "24:43"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:13",
+        "connections": [
+          {
+            "target_coordinate": "30:24",
+            "context": "Rum 30/24"
+          },
+          {
+            "target_coordinate": "7:54",
+            "context": "raf 7/54"
+          },
+          {
+            "target_coordinate": "24:43",
+            "context": "Nur 24/43"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 13. Ayetin Tefsiri\nوَيُسَبِّحُ الرَّعْدُ بِحَمْدِه۪ وَالْمَلٰٓئِكَةُ مِنْ خ۪يفَتِه۪ۚ وَيُرْسِلُ الصَّوَاعِقَ فَيُص۪يبُ بِهَا مَنْ يَشَٓاءُ وَهُمْ يُجَادِلُونَ فِي اللّٰهِۚ وَهُوَ شَد۪يدُ الْمِحَالِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:13",
+      "text": "وَيُسَبِّحُ الرَّعْدُ بِحَمْدِه۪ وَالْمَلٰٓئِكَةُ مِنْ خ۪يفَتِه۪ۚ وَيُرْسِلُ الصَّوَاعِقَ فَيُص۪يبُ بِهَا مَنْ يَشَٓاءُ وَهُمْ يُجَادِلُونَ فِي اللّٰهِۚ وَهُوَ شَد۪يدُ الْمِحَالِۜ",
+      "translation": "Gök gürültüsü, O’nun her şeyi mükemmel yapması sebebiyle O’na boyun eğer, melekler de O’ndan korkmaları sebebiyle (boyun eğerler)[1*] O, yıldırımları gönderip onlarla tercih ettiğini[2*] çarpar. Durum böyleyken o kâfirler Allah hakkında tartışıp duruyorlar. Halbuki o, tuzakları bertaraf etme konusunda çok güçlüdür.",
+      "dipnot": "[1*]\nMelekler, imtihan edilen varlıklar olduğu için boyun eğmeme hakları vardır (\nNisa 4/172\n-\n173\n) ama gök gürültüsü, ister istemez boyun eğer (\nFussilet 41/11\n). Ayrıca şu ayetlere bkz:\nA’raf 7/206,\nİsra 17/44,\nEnbiya 21/19\n-\n20,\nNur 24/41,\nFussilet 41/38,\nHadid 57/1,\nHaşr 59/1,\nSaf 61/1,\nCuma 62/1,\nTeğabun 64/1.\n[2*]\nŞâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (شيء) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder (\nKamer 54/49,\nRa’d 13/8\n). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır (\nEnbiyâ 21/35\n). Allah, herkesin doğru yolda olmasını ister (\nNisa 4/26\n) ama sadece doğru şeyler yapanı doğru yolda sayar (\nNur 24/46\n). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur (\nŞems 91/7\n-\n10",
+      "roots": [
+        "سبح",
+        "رعد",
+        "حمد",
+        "ملك",
+        "خوف",
+        "رسل",
+        "صعق",
+        "صوب",
+        "شيأ",
+        "جدل",
+        "أله",
+        "شدد",
+        "محل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\nMelekler, imtihan edilen varlıklar olduğu için boyun eğmeme hakları vardır (\n"
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/172-173",
+          "targets": [
+            "4:172",
+            "4:173"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ama gök gürültüsü, ister istemez boyun eğer (\n"
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/11",
+          "targets": [
+            "41:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ayrıca şu ayetlere bkz:\nA’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/206",
+          "targets": [
+            "7:206"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/44",
+          "targets": [
+            "17:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/19-20",
+          "targets": [
+            "21:19",
+            "21:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/41",
+          "targets": [
+            "24:41"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/38",
+          "targets": [
+            "41:38"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/1",
+          "targets": [
+            "57:1"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/1",
+          "targets": [
+            "59:1"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saf 61/1",
+          "targets": [
+            "61:1"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Cuma 62/1",
+          "targets": [
+            "62:1"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabun 64/1",
+          "targets": [
+            "64:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[2*]\nŞâe (شاء) fiili, “bir şey yapmak” anlamındaki şey (شيء) mastarından türemiştir. Allah’ın yapması o şeyi var etmesi, insanın yapması da o şey için gereken çabayı göstermesidir (Müfredât). Allah, her şeyi bir ölçüye göre var eder (\n"
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/49",
+          "targets": [
+            "54:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/8",
+          "targets": [
+            "13:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İmtihanla ilgili şeyleri iyi ve kötü diye ikiye ayırmıştır (\n"
+        },
+        {
+          "type": "link",
+          "content": "Enbiyâ 21/35",
+          "targets": [
+            "21:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah, herkesin doğru yolda olmasını ister (\n"
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/26",
+          "targets": [
+            "4:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ama sadece doğru şeyler yapanı doğru yolda sayar (\n"
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/46",
+          "targets": [
+            "24:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yaptığının doğru veya yanlış olduğunu da kişiye ilham eder. Onun için doğru davrananın içi rahat, yanlış davrananın içi de sıkıntılı olur (\n"
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/7-10",
+          "targets": [
+            "91:7",
+            "91:8",
+            "91:9",
+            "91:10"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:13",
+        "connections": [
+          {
+            "target_coordinate": "4:172",
+            "context": "Nisa 4/172-173"
+          },
+          {
+            "target_coordinate": "4:173",
+            "context": "Nisa 4/172-173"
+          },
+          {
+            "target_coordinate": "41:11",
+            "context": "Fussilet 41/11"
+          },
+          {
+            "target_coordinate": "7:206",
+            "context": "raf 7/206"
+          },
+          {
+            "target_coordinate": "17:44",
+            "context": "İsra 17/44"
+          },
+          {
+            "target_coordinate": "21:19",
+            "context": "Enbiya 21/19-20"
+          },
+          {
+            "target_coordinate": "21:20",
+            "context": "Enbiya 21/19-20"
+          },
+          {
+            "target_coordinate": "24:41",
+            "context": "Nur 24/41"
+          },
+          {
+            "target_coordinate": "41:38",
+            "context": "Fussilet 41/38"
+          },
+          {
+            "target_coordinate": "57:1",
+            "context": "Hadid 57/1"
+          },
+          {
+            "target_coordinate": "59:1",
+            "context": "Haşr 59/1"
+          },
+          {
+            "target_coordinate": "61:1",
+            "context": "Saf 61/1"
+          },
+          {
+            "target_coordinate": "62:1",
+            "context": "Cuma 62/1"
+          },
+          {
+            "target_coordinate": "64:1",
+            "context": "Teğabun 64/1"
+          },
+          {
+            "target_coordinate": "54:49",
+            "context": "Kamer 54/49"
+          },
+          {
+            "target_coordinate": "13:8",
+            "context": "d 13/8"
+          },
+          {
+            "target_coordinate": "21:35",
+            "context": "Enbiyâ 21/35"
+          },
+          {
+            "target_coordinate": "4:26",
+            "context": "Nisa 4/26"
+          },
+          {
+            "target_coordinate": "24:46",
+            "context": "Nur 24/46"
+          },
+          {
+            "target_coordinate": "91:7",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:8",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:9",
+            "context": "Şems 91/7-10"
+          },
+          {
+            "target_coordinate": "91:10",
+            "context": "Şems 91/7-10"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 13. Ayetin Tefsiri\nوَيُسَبِّحُ الرَّعْدُ بِحَمْدِه۪ وَالْمَلٰٓئِكَةُ مِنْ خ۪يفَتِه۪ۚ وَيُرْسِلُ الصَّوَاعِقَ فَيُص۪يبُ بِهَا مَنْ يَشَٓاءُ وَهُمْ يُجَادِلُونَ فِي اللّٰهِۚ وَهُوَ شَد۪يدُ الْمِحَالِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:14",
+      "text": "لَهُ دَعْوَةُ الْحَقِّۜ وَالَّذِينَ يَدْعُونَ مِنْ دُونِه۪ لَا يَسْتَج۪يبُونَ لَهُمْ بِشَيْءٍ اِلَّا كَبَاسِطِ كَفَّيْهِ اِلَى الْمَٓاءِ لِيَبْلُغَ فَاهُ وَمَا هُوَ بِبَالِغِه۪ۜ وَمَا دُعَٓاءُ الْكَافِر۪ينَ اِلَّا ف۪ي ضَلَالٍ",
+      "translation": "Doğru dua, yalnızca Allah'a yapılandır.[1*] Allah ile aralarına koyup dua ettikleri, onlara hiçbir şekilde karşılık veremez.[2*] Onların durumu, ağzına su gitsin diye iki avucunu suya uzatandan farklı değildir; halbuki su, (bu şekilde) ağza ulaşmaz. Kâfirlerin[3*] duası, sadece boşa giden bir duadır.[4*]",
+      "dipnot": "[1*] Fatiha 1/5. [2*] A’raf 7/194 , Fatır 35/14, Ahkaf 46/4 - 6. [3*] Bu ayetten de anlaşıldığı üzere her müşrik kâfir, her kâfir müşriktir. Bilmeden Allah'a ortak koşan kişi müşrik sayılmaz ( Bakara 2/22, Âl-i İmran 3/151, Tevbe 9/17 ). [4*] Bu kişilerin cehennemdeki durumlarını anlatan ayetler için bkz: Mü’min 40/48 - 50.",
+      "roots": [
+        "دعو",
+        "حقق",
+        "دون",
+        "جوب",
+        "شيأ",
+        "بسط",
+        "كفف",
+        "موه",
+        "بلغ",
+        "فوه",
+        "كفر",
+        "ضلل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/5",
+          "targets": [
+            "1:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/194",
+          "targets": [
+            "7:194"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/14",
+          "targets": [
+            "35:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/4-6",
+          "targets": [
+            "46:4",
+            "46:5",
+            "46:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] Bu ayetten de anlaşıldığı üzere her müşrik kâfir, her kâfir müşriktir. Bilmeden Allah'a ortak koşan kişi müşrik sayılmaz ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/22",
+          "targets": [
+            "2:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/151",
+          "targets": [
+            "3:151"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/17",
+          "targets": [
+            "9:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [4*] Bu kişilerin cehennemdeki durumlarını anlatan ayetler için bkz: Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/48-50",
+          "targets": [
+            "40:48",
+            "40:49",
+            "40:50"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:14",
+        "connections": [
+          {
+            "target_coordinate": "1:5",
+            "context": "Fatiha 1/5"
+          },
+          {
+            "target_coordinate": "7:194",
+            "context": "raf 7/194"
+          },
+          {
+            "target_coordinate": "35:14",
+            "context": "Fatır 35/14"
+          },
+          {
+            "target_coordinate": "46:4",
+            "context": "Ahkaf 46/4-6"
+          },
+          {
+            "target_coordinate": "46:5",
+            "context": "Ahkaf 46/4-6"
+          },
+          {
+            "target_coordinate": "46:6",
+            "context": "Ahkaf 46/4-6"
+          },
+          {
+            "target_coordinate": "2:22",
+            "context": "Bakara 2/22"
+          },
+          {
+            "target_coordinate": "3:151",
+            "context": "Âl-i İmran 3/151"
+          },
+          {
+            "target_coordinate": "9:17",
+            "context": "Tevbe 9/17"
+          },
+          {
+            "target_coordinate": "40:48",
+            "context": "min 40/48-50"
+          },
+          {
+            "target_coordinate": "40:49",
+            "context": "min 40/48-50"
+          },
+          {
+            "target_coordinate": "40:50",
+            "context": "min 40/48-50"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 14. Ayetin Tefsiri\nلَهُ دَعْوَةُ الْحَقِّۜ وَالَّذ۪ينَ يَدْعُونَ مِنْ دُونِه۪ لَا يَسْتَج۪يبُونَ لَهُمْ بِشَيْءٍ اِلَّا كَبَاسِطِ كَفَّيْهِ اِلَى الْمَٓاءِ لِيَبْلُغَ فَاهُ وَمَا هُوَ بِبَالِغِه۪ۜ وَمَا دُعَٓاءُ الْكَافِر۪ينَ اِلَّا ف۪ي ضَلَالٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:15",
+      "text": "وَلِلّٰهِ يَسْجُدُ مَنْ فِي السَّمٰوَاتِ وَالْاَرْضِ طَوْعًا وَكَرْهًا وَظِلَالُهُمْ بِالْغُدُوِّ وَالْاٰصَالِ",
+      "translation": "Göklerde ve yerde olanlar ve onların gölgeleri (uzayarak ve kısalarak)[1*] öğle ve ikindi vakitlerinde[2*] gönüllü ve zorunlu olarak Allah'a secde ederler /boyun eğerler.[3*]",
+      "dipnot": "[1*] Furkan 25/45 - 46. [2*] Bkz. A’raf 7/205. ayetin dipnotu. [3*] Secdenin kök anlamı eğilme ve boyun eğmedir. (Müfredat). ( Nahl 16/48 - 49 , Hac 22/18, Rahman 55/6 ).",
+      "roots": [
+        "أله",
+        "سجد",
+        "سمو",
+        "أرض",
+        "طوع",
+        "كره",
+        "ظلل",
+        "غدو",
+        "أصل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/45-46",
+          "targets": [
+            "25:45",
+            "25:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Bkz. A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/205",
+          "targets": [
+            "7:205"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayetin dipnotu. [3*] Secdenin kök anlamı eğilme ve boyun eğmedir. (Müfredat). ( "
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/48-49",
+          "targets": [
+            "16:48",
+            "16:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/18",
+          "targets": [
+            "22:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/6",
+          "targets": [
+            "55:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:15",
+        "connections": [
+          {
+            "target_coordinate": "25:45",
+            "context": "Furkan 25/45-46"
+          },
+          {
+            "target_coordinate": "25:46",
+            "context": "Furkan 25/45-46"
+          },
+          {
+            "target_coordinate": "7:205",
+            "context": "raf 7/205"
+          },
+          {
+            "target_coordinate": "16:48",
+            "context": "Nahl 16/48-49"
+          },
+          {
+            "target_coordinate": "16:49",
+            "context": "Nahl 16/48-49"
+          },
+          {
+            "target_coordinate": "22:18",
+            "context": "Hac 22/18"
+          },
+          {
+            "target_coordinate": "55:6",
+            "context": "Rahman 55/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 15. Ayetin Tefsiri\nوَلِلّٰهِ يَسْجُدُ مَنْ فِي السَّمٰوَاتِ وَالْاَرْضِ طَوْعًا وَكَرْهًا وَظِلَالُهُمْ بِالْغُدُوِّ وَالْاٰصَالِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:16",
+      "text": "قُلْ مَنْ رَبُّ السَّمٰوَاتِ وَالْاَرْضِۜ قُلِ اللّٰهُۜ قُلْ اَفَاتَّخَذْتُمْ مِنْ دُونِه۪ٓ اَوْلِيَٓاءَ لَا يَمْلِكُونَ لِاَنْفُسِهِمْ نَفْعًا وَلَا ضَرًّاۜ قُلْ هَلْ يَسْتَوِي الْاَعْمٰى وَالْبَص۪يرُۙ اَمْ هَلْ تَسْتَوِي الظُّلُمَاتُ وَالنُّورُۚ اَمْ جَعَلُوا لِلّٰهِ شُرَكَٓاءَ خَلَقُوا كَخَلْقِه۪ فَتَشَابَهَ الْخَلْقُ عَلَيْهِمْۜ قُلِ اللّٰهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "قول",
+        "ربب",
+        "سمو",
+        "أرض",
+        "أله",
+        "أخذ",
+        "دون",
+        "ولي",
+        "ملك",
+        "نفس",
+        "نفع",
+        "ضرر",
+        "سوي",
+        "عمي",
+        "بصر",
+        "ظلم",
+        "نور",
+        "جعل",
+        "شرك",
+        "خلق",
+        "شبه",
+        "كلل",
+        "شيأ",
+        "وحد",
+        "قهر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "13:16",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 16. Ayetin Tefsiri\nقُلْ مَنْ رَبُّ السَّمٰوَاتِ وَالْاَرْضِۜ قُلِ اللّٰهُۜ قُلْ اَفَاتَّخَذْتُمْ مِنْ دُونِه۪ٓ اَوْلِيَٓاءَ لَا يَمْلِكُونَ لِاَنْفُسِهِمْ نَفْعًا وَلَا ضَرًّاۜ قُلْ هَلْ يَسْتَوِي الْاَعْمٰى وَالْبَص۪يرُۙ اَمْ هَلْ تَسْتَوِي الظُّلُمَاتُ وَالنُّورُۚ اَمْ جَعَلُوا لِلّٰهِ شُرَكَٓاءَ خَلَقُوا كَخَلْقِه۪ فَتَشَابَهَ الْخَلْقُ عَلَيْهِمْۜ قُلِ اللّٰهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:16",
+      "text": "",
+      "translation": "Onlara: “Göklerin ve yerin Rabbi /Sahibi kimdir?” diye sor ve de ki: \"Allah’tır.\" Bir de şunu sor: “Kendilerine bile bir fayda sağlamaya veya bir zarar vermeye gücü yetmeyen velileri /yakın saydıklarınızı mı Allah ile aranıza koydunuz?” De ki: “Hiç kör ile gören bir olur mu? Ya da karanlıklarla aydınlık bir olur mu?\" Yoksa onlar Allah’a, kendilerince O’nun yaratması gibi yaratan ve yarattıkları, O’nun yarattıkları ile benzeşen ortaklar mı oluşturdular? Onlara de ki: “Allah her şeyin yaratıcısıdır. O, tektir, her şeyi emri altına almış olandır.”",
+      "dipnot": "1*: Cevabı onlar verseydi aynı şeyi söyleyeceklerdi (Yunus 10/31, Mü'minun 23/84-89, Ankebut 29/61-63, Lokman 31/25, Zümer 39/38, Zuhruf 43/87). 2*: İsra 17/56, Furkan 25/3, Sebe 34/22, Zümer 39/43. 3*: En’am 6/50, Hud 11/24, Fatır 35/19 - 20, Mü’min 40/58. 4*: Ra’d 13/33, Fatır 35/40, Ahkaf 46/4. 5*: Sad 38/65.",
+      "roots": [
+        "قول",
+        "ربب",
+        "سمو",
+        "أرض",
+        "أله",
+        "أخذ",
+        "دون",
+        "ولي",
+        "ملك",
+        "نفس",
+        "نفع",
+        "ضرر",
+        "سوي",
+        "عمي",
+        "بصر",
+        "ظلم",
+        "نور",
+        "جعل",
+        "شرك",
+        "خلق",
+        "شبه",
+        "كلل",
+        "شيأ",
+        "وحد",
+        "قهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "1*: Cevabı onlar verseydi aynı şeyi söyleyeceklerdi ("
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/31",
+          "targets": [
+            "10:31"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mü'minun 23/84-89",
+          "targets": [
+            "23:84",
+            "23:85",
+            "23:86",
+            "23:87",
+            "23:88",
+            "23:89"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/61-63",
+          "targets": [
+            "29:61",
+            "29:62",
+            "29:63"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/25",
+          "targets": [
+            "31:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/38",
+          "targets": [
+            "39:38"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/87",
+          "targets": [
+            "43:87"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). 2*: "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/56",
+          "targets": [
+            "17:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/3",
+          "targets": [
+            "25:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/22",
+          "targets": [
+            "34:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/43",
+          "targets": [
+            "39:43"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". 3*: En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/50",
+          "targets": [
+            "6:50"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/24",
+          "targets": [
+            "11:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/19-20",
+          "targets": [
+            "35:19",
+            "35:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/58",
+          "targets": [
+            "40:58"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". 4*: Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/33",
+          "targets": [
+            "13:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/40",
+          "targets": [
+            "35:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/4",
+          "targets": [
+            "46:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". 5*: "
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/65",
+          "targets": [
+            "38:65"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:16",
+        "connections": [
+          {
+            "target_coordinate": "10:31",
+            "context": "Yunus 10/31"
+          },
+          {
+            "target_coordinate": "23:84",
+            "context": "Mü'minun 23/84-89"
+          },
+          {
+            "target_coordinate": "23:85",
+            "context": "Mü'minun 23/84-89"
+          },
+          {
+            "target_coordinate": "23:86",
+            "context": "Mü'minun 23/84-89"
+          },
+          {
+            "target_coordinate": "23:87",
+            "context": "Mü'minun 23/84-89"
+          },
+          {
+            "target_coordinate": "23:88",
+            "context": "Mü'minun 23/84-89"
+          },
+          {
+            "target_coordinate": "23:89",
+            "context": "Mü'minun 23/84-89"
+          },
+          {
+            "target_coordinate": "29:61",
+            "context": "Ankebut 29/61-63"
+          },
+          {
+            "target_coordinate": "29:62",
+            "context": "Ankebut 29/61-63"
+          },
+          {
+            "target_coordinate": "29:63",
+            "context": "Ankebut 29/61-63"
+          },
+          {
+            "target_coordinate": "31:25",
+            "context": "Lokman 31/25"
+          },
+          {
+            "target_coordinate": "39:38",
+            "context": "Zümer 39/38"
+          },
+          {
+            "target_coordinate": "43:87",
+            "context": "Zuhruf 43/87"
+          },
+          {
+            "target_coordinate": "17:56",
+            "context": "İsra 17/56"
+          },
+          {
+            "target_coordinate": "25:3",
+            "context": "Furkan 25/3"
+          },
+          {
+            "target_coordinate": "34:22",
+            "context": "Sebe 34/22"
+          },
+          {
+            "target_coordinate": "39:43",
+            "context": "Zümer 39/43"
+          },
+          {
+            "target_coordinate": "6:50",
+            "context": "am 6/50"
+          },
+          {
+            "target_coordinate": "11:24",
+            "context": "Hud 11/24"
+          },
+          {
+            "target_coordinate": "35:19",
+            "context": "Fatır 35/19-20"
+          },
+          {
+            "target_coordinate": "35:20",
+            "context": "Fatır 35/19-20"
+          },
+          {
+            "target_coordinate": "40:58",
+            "context": "min 40/58"
+          },
+          {
+            "target_coordinate": "13:33",
+            "context": "d 13/33"
+          },
+          {
+            "target_coordinate": "35:40",
+            "context": "Fatır 35/40"
+          },
+          {
+            "target_coordinate": "46:4",
+            "context": "Ahkaf 46/4"
+          },
+          {
+            "target_coordinate": "38:65",
+            "context": "Sad 38/65"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 16. Ayetin Tefsiri\nقُلْ مَنْ رَبُّ السَّمٰوَاتِ وَالْاَرْضِۜ قُلِ اللّٰهُۜ قُلْ اَفَاتَّخَذْتُمْ مِنْ دُونِه۪ٓ اَوْلِيَٓاءَ لَا يَمْلِكُونَ لِاَنْفُسِهِمْ نَفْعًا وَلَا ضَرًّاۜ قُلْ هَلْ يَسْتَوِي الْاَعْمٰى وَالْبَص۪يرُۙ اَمْ هَلْ تَسْتَوِي الظُّلُمَاتُ وَالنُّورُۚ اَمْ جَعَلُوا لِلّٰهِ شُرَكَٓاءَ خَلَقُوا كَخَلْقِه۪ فَتَشَابَهَ الْخَلْقُ عَلَيْهِمْۜ قُلِ اللّٰهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:17",
+      "text": "اَنْزَلَ مِنَ السَّمَٓاءِ مَٓاءً فَسَالَتْ اَوْدِيَةٌ بِقَدَرِهَا فَاحْتَمَلَ السَّيْلُ زَبَدًا رَابِيًاۜ وَمِمَّا يُوقِدُونَ عَلَيْهِ فِي النَّارِ ابْتِغَٓاءَ حِلْيَةٍ اَوْ مَتَاعٍ زَبَدٌ مِثْلُهُۜ كَذٰلِكَ يَضْرِبُ اللّٰهُ الْحَقَّ وَالْبَاطِلَۜ فَاَمَّا الزَّبَدُ فَيَذْهَبُ جُفَٓاءًۚ وَاَمَّا مَا يَنْفَعُ النَّاسَ فَيَمْكُثُ فِي الْاَرْضِۜ كَذٰلِكَ يَضْرِبُ اللّٰهُ الْاَمْثَالَۜ",
+      "translation": "Allah gökten su indirir de vadiler kendi ölçüsünce sel olup akar. Sel de üste çıkan köpüğü taşır. İnsanların süs veya eşya yapmak için ateşte erittiklerinin üzerinde de benzer bir köpük oluşur. Allah, hak ile batılı işte böyle örneklerle anlatır. Köpük atılır gider. İnsanlara yararı olan şeyler ise yerinde kalır. Allah örnekleri işte böyle verir.",
+      "dipnot": "1*: İsra 17/81, Enbiya 21/18, Sebe 34/49. 2*: İsra 17/89, Kehf 18/54, Rum 30/58, Zümer 39/27.",
+      "roots": [
+        "نزل",
+        "سمو",
+        "موه",
+        "سيل",
+        "ودي",
+        "قدر",
+        "حمل",
+        "زبد",
+        "ربو",
+        "وقد",
+        "نور",
+        "بغي",
+        "حلي",
+        "متع",
+        "مثل",
+        "ضرب",
+        "أله",
+        "حقق",
+        "بطل",
+        "ذهب",
+        "جفأ",
+        "نفع",
+        "أنس",
+        "مكث",
+        "أرض"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "1*: "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/81",
+          "targets": [
+            "17:81"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/18",
+          "targets": [
+            "21:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/49",
+          "targets": [
+            "34:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". 2*: "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/89",
+          "targets": [
+            "17:89"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/54",
+          "targets": [
+            "18:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/58",
+          "targets": [
+            "30:58"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/27",
+          "targets": [
+            "39:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:17",
+        "connections": [
+          {
+            "target_coordinate": "17:81",
+            "context": "İsra 17/81"
+          },
+          {
+            "target_coordinate": "21:18",
+            "context": "Enbiya 21/18"
+          },
+          {
+            "target_coordinate": "34:49",
+            "context": "Sebe 34/49"
+          },
+          {
+            "target_coordinate": "17:89",
+            "context": "İsra 17/89"
+          },
+          {
+            "target_coordinate": "18:54",
+            "context": "Kehf 18/54"
+          },
+          {
+            "target_coordinate": "30:58",
+            "context": "Rum 30/58"
+          },
+          {
+            "target_coordinate": "39:27",
+            "context": "Zümer 39/27"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 17. Ayetin Tefsiri\nاَنْزَلَ مِنَ السَّمَٓاءِ مَٓاءً فَسَالَتْ اَوْدِيَةٌ بِقَدَرِهَا فَاحْتَمَلَ السَّيْلُ زَبَدًا رَابِيًاۜ وَمِمَّا يُوقِدُونَ عَلَيْهِ فِي النَّارِ ابْتِغَٓاءَ حِلْيَةٍ اَوْ مَتَاعٍ زَبَدٌ مِثْلُهُۜ كَذٰلِكَ يَضْرِبُ اللّٰهُ الْحَقَّ وَالْبَاطِلَۜ فَاَمَّا الزَّبَدُ فَيَذْهَبُ جُفَٓاءًۚ وَاَمَّا مَا يَنْفَعُ النَّاسَ فَيَمْكُثُ فِي الْاَرْضِۜ كَذٰلِكَ يَضْرِبُ اللّٰهُ الْاَمْثَالَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:18",
+      "text": "لِلَّذ۪ينَ اسْتَجَابُوا لِرَبِّهِمُ الْحُسْنٰىۜ وَالَّذ۪ينَ لَمْ يَسْتَج۪يبُوا لَهُ لَوْ اَنَّ لَهُمْ مَا فِي الْاَرْضِ جَم۪يعًا وَمِثْلَهُ مَعَهُ لَافْتَدَوْا بِه۪ۜ اُو۬لٰٓئِكَ لَهُمْ سُٓوءُ الْحِسَابِۙ وَمَأْوٰيهُمْ جَهَنَّمُۜ وَبِئْسَ الْمِهَادُ۟",
+      "translation": "Rablerinin çağrısına uyanlar için en güzel karşılık vardır. Onun çağrısına uymayanlar ise yeryüzündeki her şey ve onunla birlikte bir o kadarı daha onların olsa kesinlikle onu fidye olarak verip kurtulmak isterler. İşte onların verecekleri hesap kötü olacaktır. Sığınacakları yer cehennemdir. Orası ne kötü bir yerleşim yeridir!",
+      "dipnot": "1*: Yunus 10/26, Kehf 18/88. 2*: Âl-i İmran 3/91, Maide 5/36, Yunus 10/54, Zümer 39/47, Mearic 70/11 - 14.",
+      "roots": [
+        "جوب",
+        "ربب",
+        "حسن",
+        "أرض",
+        "جمع",
+        "مثل",
+        "فدي",
+        "سوأ",
+        "حسب",
+        "أوي",
+        "بأس",
+        "مهد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "1*: "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/26",
+          "targets": [
+            "10:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/88",
+          "targets": [
+            "18:88"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". 2*: "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/91",
+          "targets": [
+            "3:91"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/36",
+          "targets": [
+            "5:36"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/54",
+          "targets": [
+            "10:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/47",
+          "targets": [
+            "39:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/11-14",
+          "targets": [
+            "70:11",
+            "70:12",
+            "70:13",
+            "70:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:18",
+        "connections": [
+          {
+            "target_coordinate": "10:26",
+            "context": "Yunus 10/26"
+          },
+          {
+            "target_coordinate": "18:88",
+            "context": "Kehf 18/88"
+          },
+          {
+            "target_coordinate": "3:91",
+            "context": "Âl-i İmran 3/91"
+          },
+          {
+            "target_coordinate": "5:36",
+            "context": "Maide 5/36"
+          },
+          {
+            "target_coordinate": "10:54",
+            "context": "Yunus 10/54"
+          },
+          {
+            "target_coordinate": "39:47",
+            "context": "Zümer 39/47"
+          },
+          {
+            "target_coordinate": "70:11",
+            "context": "Mearic 70/11-14"
+          },
+          {
+            "target_coordinate": "70:12",
+            "context": "Mearic 70/11-14"
+          },
+          {
+            "target_coordinate": "70:13",
+            "context": "Mearic 70/11-14"
+          },
+          {
+            "target_coordinate": "70:14",
+            "context": "Mearic 70/11-14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 18. Ayetin Tefsiri\nلِلَّذ۪ينَ اسْتَجَابُوا لِرَبِّهِمُ الْحُسْنٰىۜ وَالَّذ۪ينَ لَمْ يَسْتَج۪يبُوا لَهُ لَوْ اَنَّ لَهُمْ مَا فِي الْاَرْضِ جَم۪يعًا وَمِثْلَهُ مَعَهُ لَافْتَدَوْا بِه۪ۜ اُو۬لٰٓئِكَ لَهُمْ سُٓوءُ الْحِسَابِۙ وَمَأْوٰيهُمْ جَهَنَّمُۜ وَبِئْسَ الْمِهَادُ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:19",
+      "text": "اَفَمَنْ يَعْلَمُ اَنَّمَٓا اُنْزِلَ اِلَيْكَ مِنْ رَبِّكَ الْحَقُّ كَمَنْ هُوَ اَعْمٰىۜ اِنَّمَا يَتَذَكَّرُ اُو۬لُوا الْاَلْبَابِۙ",
+      "translation": "Rabbinden sana indirilenin gerçek olduğunu bilen biri, ona karşı körlük eden kişi gibi olur mu? Sadece aklıselim sahibi olanlar doğru bilgiden yararlanır.",
+      "dipnot": "1*: İsra 17/72, Sebe 34/6,",
+      "roots": [
+        "علم",
+        "نزل",
+        "ربب",
+        "حقق",
+        "عمي",
+        "ذكر",
+        "لبب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "1*: "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/72",
+          "targets": [
+            "17:72"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/6",
+          "targets": [
+            "34:6"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:19",
+        "connections": [
+          {
+            "target_coordinate": "17:72",
+            "context": "İsra 17/72"
+          },
+          {
+            "target_coordinate": "34:6",
+            "context": "Sebe 34/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 19. Ayetin Tefsiri\nاَفَمَنْ يَعْلَمُ اَنَّمَٓا اُنْزِلَ اِلَيْكَ مِنْ رَبِّكَ الْحَقُّ كَمَنْ هُوَ اَعْمٰىۜ اِنَّمَا يَتَذَكَّرُ اُو۬لُوا الْاَلْبَابِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:20",
+      "text": "اَلَّذ۪ينَ يُوفُونَ بِعَهْدِ اللّٰهِ وَلَا يَنْقُضُونَ الْم۪يثَاقَۙ",
+      "translation": "Onlar, Allah’a karşı taahhütlerini yerine getiren ve verdikleri sözden caymayan kimselerdir.",
+      "dipnot": "Her insan ergenlik çağına girerken Allah’ın kendisinin Rabbi olduğuna şahit olur ve Allah’tan başkasına kulluk etmeyeceğine söz verir (Maide 5/7, A’raf 7/172).",
+      "roots": [
+        "وفي",
+        "عهد",
+        "أله",
+        "نقض",
+        "وثق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Her insan ergenlik çağına girerken Allah’ın kendisinin Rabbi olduğuna şahit olur ve Allah’tan başkasına kulluk etmeyeceğine söz verir ("
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/7",
+          "targets": [
+            "5:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/172",
+          "targets": [
+            "7:172"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:20",
+        "connections": [
+          {
+            "target_coordinate": "5:7",
+            "context": "Maide 5/7"
+          },
+          {
+            "target_coordinate": "7:172",
+            "context": "raf 7/172"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 20. Ayetin Tefsiri\nاَلَّذ۪ينَ يُوفُونَ بِعَهْدِ اللّٰهِ وَلَا يَنْقُضُونَ الْم۪يثَاقَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:21",
+      "text": "وَالَّذ۪ينَ يَصِلُونَ مَٓا اَمَرَ اللّٰهُ بِه۪ٓ اَنْ يُوصَلَ وَيَخْشَوْنَ رَبَّهُمْ وَيَخَافُونَ سُٓوءَ الْحِسَابِۜ",
+      "translation": "Onlar; Allah’ın kurulmasını emrettiği bağı kuran, Rablerinden çekinen ve verecekleri hesabın kötü olmasından korkanlardır.",
+      "dipnot": "Bunlar Allah’ı, kendinin en yakını (Kaf 50/16) olarak bilen ve araya bir aracı koymayanlardır. Allah ile arasına aracı koyanlar, bu bağı koparır ve müşrik olurlar (Bakara 2/26-27).\nNur 24/37, İnsan 76/7.",
+      "roots": [
+        "وصل",
+        "أمر",
+        "أله",
+        "خشي",
+        "ربب",
+        "خوف",
+        "سوأ",
+        "حسب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bunlar Allah’ı, kendinin en yakını ("
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/16",
+          "targets": [
+            "50:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") olarak bilen ve araya bir aracı koymayanlardır. Allah ile arasına aracı koyanlar, bu bağı koparır ve müşrik olurlar ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/26-27",
+          "targets": [
+            "2:26",
+            "2:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n"
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/37",
+          "targets": [
+            "24:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/7",
+          "targets": [
+            "76:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:21",
+        "connections": [
+          {
+            "target_coordinate": "50:16",
+            "context": "Kaf 50/16"
+          },
+          {
+            "target_coordinate": "2:26",
+            "context": "Bakara 2/26-27"
+          },
+          {
+            "target_coordinate": "2:27",
+            "context": "Bakara 2/26-27"
+          },
+          {
+            "target_coordinate": "24:37",
+            "context": "Nur 24/37"
+          },
+          {
+            "target_coordinate": "76:7",
+            "context": "İnsan 76/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 21. Ayetin Tefsiri\nوَالَّذ۪ينَ يَصِلُونَ مَٓا اَمَرَ اللّٰهُ بِه۪ٓ اَنْ يُوصَلَ وَيَخْشَوْنَ رَبَّهُمْ وَيَخَافُونَ سُٓوءَ الْحِسَابِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:22",
+      "text": "وَالَّذ۪ينَ صَبَرُوا ابْتِغَٓاءَ وَجْهِ رَبِّهِمْ وَاَقَامُوا الصَّلٰوةَ وَاَنْفَقُوا مِمَّا رَزَقْنَاهُمْ سِرًّا وَعَلَانِيَةً وَيَدْرَؤُ۫نَ بِالْحَسَنَةِ السَّيِّئَةَ اُو۬لٰٓئِكَ لَهُمْ عُقْبَى الدَّارِۙ",
+      "translation": "Yine onlar; Rablerinin teveccühünü kazanmak için sabreden /duruşunu bozmayan, namazı düzgün ve sürekli kılan, kendilerine verdiğimiz rızıktan gizli-açık infak eden /hayra harcayan ve kötülüğü iyilikle savan kimselerdir. İşte onlar, dünya yurdunun (güzel) sonucunu elde edecek olanlardır.",
+      "dipnot": "Sabır, aklın ve dinin gerektirdiği şekilde kendine hakim olmaktır (Müfredat). Bu şekilde davranan kişi, önüne çıkan engelleri aşarak yoluna devam eder. Dilimizde bunu en iyi ifade eden söz ‘duruşunu bozmamak’tır.\nKasas 28/52-54, Ankebut 29/58-59, Fatır 35/29-30.\nDünyada, Allah’ın gösterdiği yoldan gidenler, asıl hedeflerine ahirette ulaşılarlar.",
+      "roots": [
+        "صبر",
+        "بغي",
+        "وجه",
+        "ربب",
+        "قوم",
+        "صلو",
+        "نفق",
+        "رزق",
+        "سرر",
+        "علن",
+        "درأ",
+        "حسن",
+        "سوأ",
+        "عقب",
+        "دور"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Sabır, aklın ve dinin gerektirdiği şekilde kendine hakim olmaktır (Müfredat). Bu şekilde davranan kişi, önüne çıkan engelleri aşarak yoluna devam eder. Dilimizde bunu en iyi ifade eden söz ‘duruşunu bozmamak’tır.\n"
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/52-54",
+          "targets": [
+            "28:52",
+            "28:53",
+            "28:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/58-59",
+          "targets": [
+            "29:58",
+            "29:59"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/29-30",
+          "targets": [
+            "35:29",
+            "35:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nDünyada, Allah’ın gösterdiği yoldan gidenler, asıl hedeflerine ahirette ulaşılarlar."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:22",
+        "connections": [
+          {
+            "target_coordinate": "28:52",
+            "context": "Kasas 28/52-54"
+          },
+          {
+            "target_coordinate": "28:53",
+            "context": "Kasas 28/52-54"
+          },
+          {
+            "target_coordinate": "28:54",
+            "context": "Kasas 28/52-54"
+          },
+          {
+            "target_coordinate": "29:58",
+            "context": "Ankebut 29/58-59"
+          },
+          {
+            "target_coordinate": "29:59",
+            "context": "Ankebut 29/58-59"
+          },
+          {
+            "target_coordinate": "35:29",
+            "context": "Fatır 35/29-30"
+          },
+          {
+            "target_coordinate": "35:30",
+            "context": "Fatır 35/29-30"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 22. Ayetin Tefsiri\nوَالَّذ۪ينَ صَبَرُوا ابْتِغَٓاءَ وَجْهِ رَبِّهِمْ وَاَقَامُوا الصَّلٰوةَ وَاَنْفَقُوا مِمَّا رَزَقْنَاهُمْ سِرًّا وَعَلَانِيَةً وَيَدْرَؤُ۫نَ بِالْحَسَنَةِ السَّيِّئَةَ اُو۬لٰٓئِكَ لَهُمْ عُقْبَى الدَّارِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:23",
+      "text": "جَنَّاتُ عَدْنٍ يَدْخُلُونَهَا وَمَنْ صَلَحَ مِنْ اٰبَٓائِهِمْ وَاَزْوَاجِهِمْ وَذُرِّيَّاتِهِمْ وَالْمَلٰٓئِكَةُ يَدْخُلُونَ عَلَيْهِمْ مِنْ كُلِّ بَابٍۚ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "جنن",
+        "دخل",
+        "صلح",
+        "أبو",
+        "زوج",
+        "ذرر",
+        "ملك",
+        "كلل",
+        "بوب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "13:23",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 23. Ayetin Tefsiri\nجَنَّاتُ عَدْنٍ يَدْخُلُونَهَا وَمَنْ صَلَحَ مِنْ اٰبَٓائِهِمْ وَاَزْوَاجِهِمْ وَذُرِّيَّاتِهِمْ وَالْمَلٰٓئِكَةُ يَدْخُلُونَ عَلَيْهِمْ مِنْ كُلِّ بَابٍۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:24",
+      "text": "سَلَامٌ عَلَيْكُمْ بِمَا صَبَرْتُمْ فَنِعْمَ عُقْبَى الدَّارِۜ",
+      "translation": "\"Sabırlı davranmanıza /duruşunuzu bozmamanıza karşılık, selam olsun size! Dünya yurdunun sonucu ne güzel!\"",
+      "dipnot": "Hicr 15/45 - 46, Nahl 16/30 - 32, Furkan 25/75, Zümer 39/73, Kaf 50/34.",
+      "roots": [
+        "سلم",
+        "صبر",
+        "نعم",
+        "عقب",
+        "دور"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hicr 15/45-46",
+          "targets": [
+            "15:45",
+            "15:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/30-32",
+          "targets": [
+            "16:30",
+            "16:31",
+            "16:32"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/75",
+          "targets": [
+            "25:75"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/73",
+          "targets": [
+            "39:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/34",
+          "targets": [
+            "50:34"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:24",
+        "connections": [
+          {
+            "target_coordinate": "15:45",
+            "context": "Hicr 15/45-46"
+          },
+          {
+            "target_coordinate": "15:46",
+            "context": "Hicr 15/45-46"
+          },
+          {
+            "target_coordinate": "16:30",
+            "context": "Nahl 16/30-32"
+          },
+          {
+            "target_coordinate": "16:31",
+            "context": "Nahl 16/30-32"
+          },
+          {
+            "target_coordinate": "16:32",
+            "context": "Nahl 16/30-32"
+          },
+          {
+            "target_coordinate": "25:75",
+            "context": "Furkan 25/75"
+          },
+          {
+            "target_coordinate": "39:73",
+            "context": "Zümer 39/73"
+          },
+          {
+            "target_coordinate": "50:34",
+            "context": "Kaf 50/34"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 24. Ayetin Tefsiri\nسَلَامٌ عَلَيْكُمْ بِمَا صَبَرْتُمْ فَنِعْمَ عُقْبَى الدَّارِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:25",
+      "text": "وَالَّذ۪ينَ يَنْقُضُونَ عَهْدَ اللّٰهِ مِنْ بَعْدِ م۪يثَاقِه۪ وَيَقْطَعُونَ مَٓا اَمَرَ اللّٰهُ بِه۪ٓ اَنْ يُوصَلَ وَيُفْسِدُونَ فِي الْاَرْضِۙ اُو۬لٰٓئِكَ لَهُمُ اللَّعْنَةُ وَلَهُمْ سُٓوءُ الدَّارِ",
+      "translation": "Allah’a verdikleri sözden sonra taahhütlerini bozan, Allah’ın kurulmasını emrettiği bağı koparan ve yeryüzünde bozgunculuk yapanlar var ya; işte onların hak ettikleri lanetlenmedir /dışlanmadır. Kötü yurt onlarındır.",
+      "dipnot": "Bunlar fâsıklardır (Bakara 2/26 - 27 ), Fâsık, Allah’a içinden söz verdikten sonra onunla bağını koparıp yoldan çıkan kişidir.O, Allah’ın emirlerini anlar, onlara inanır, uymaya karar verir, ama sonra vazgeçer ( Al-i İmran 3/81 - 82 , Maide 5/47 , Nur 24/55 ) ve onları unutmuş gibi davranır ( Tevbe 9/67 , Haşr 59/19 ). İşte cezayı hak edenler onlardır ( Ahkaf 46/35 ).Bunlar, cehennemden çıkamayacaklardır ( A’raf 7/44 - 45 ).",
+      "roots": [
+        "نقض",
+        "عهد",
+        "أله",
+        "بعد",
+        "وثق",
+        "قطع",
+        "أمر",
+        "وصل",
+        "فسد",
+        "أرض",
+        "لعن",
+        "سوأ",
+        "دور"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bunlar fâsıklardır ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/26-27",
+          "targets": [
+            "2:26",
+            "2:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Fâsık, Allah’a içinden söz verdikten sonra onunla bağını koparıp yoldan çıkan kişidir.O, Allah’ın emirlerini anlar, onlara inanır, uymaya karar verir, ama sonra vazgeçer ( "
+        },
+        {
+          "type": "link",
+          "content": "Al-i İmran 3/81-82",
+          "targets": [
+            "3:81",
+            "3:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/47",
+          "targets": [
+            "5:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/55",
+          "targets": [
+            "24:55"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve onları unutmuş gibi davranır ( "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/67",
+          "targets": [
+            "9:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/19",
+          "targets": [
+            "59:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İşte cezayı hak edenler onlardır ( "
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/35",
+          "targets": [
+            "46:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").Bunlar, cehennemden çıkamayacaklardır ( A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/44-45",
+          "targets": [
+            "7:44",
+            "7:45"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:25",
+        "connections": [
+          {
+            "target_coordinate": "2:26",
+            "context": "Bakara 2/26-27"
+          },
+          {
+            "target_coordinate": "2:27",
+            "context": "Bakara 2/26-27"
+          },
+          {
+            "target_coordinate": "3:81",
+            "context": "Al-i İmran 3/81-82"
+          },
+          {
+            "target_coordinate": "3:82",
+            "context": "Al-i İmran 3/81-82"
+          },
+          {
+            "target_coordinate": "5:47",
+            "context": "Maide 5/47"
+          },
+          {
+            "target_coordinate": "24:55",
+            "context": "Nur 24/55"
+          },
+          {
+            "target_coordinate": "9:67",
+            "context": "Tevbe 9/67"
+          },
+          {
+            "target_coordinate": "59:19",
+            "context": "Haşr 59/19"
+          },
+          {
+            "target_coordinate": "46:35",
+            "context": "Ahkaf 46/35"
+          },
+          {
+            "target_coordinate": "7:44",
+            "context": "raf 7/44-45"
+          },
+          {
+            "target_coordinate": "7:45",
+            "context": "raf 7/44-45"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 25. Ayetin Tefsiri\nوَالَّذ۪ينَ يَنْقُضُونَ عَهْدَ اللّٰهِ مِنْ بَعْدِ م۪يثَاقِه۪ وَيَقْطَعُونَ مَٓا اَمَرَ اللّٰهُ بِه۪ٓ اَنْ يُوصَلَ وَيُفْسِدُونَ فِي الْاَرْضِۙ اُو۬لٰٓئِكَ لَهُمُ اللَّعْنَةُ وَلَهُمْ سُٓوءُ الدَّارِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:26",
+      "text": "اَللّٰهُ يَبْسُطُ الرِّزْقَ لِمَنْ يَشَٓاءُ وَيَقْدِرُۜ وَفَرِحُوا بِالْحَيٰوةِ الدُّنْيَاۜ وَمَا الْحَيٰوةُ الدُّنْيَا فِي الْاٰخِرَةِ اِلَّا مَتَاعٌ۟",
+      "translation": "Allah, tercih ettiği kişi için[1*] rızkı genişletir de daraltır da.[2*] Onlar ise dünya hayatıyla mutlu olurlar.[3*] Oysa dünya hayatı ahirete göre geçici bir yararlanmadan başka bir şey değildir.[4*]",
+      "dipnot": "[1*] Şâe (شاء) ile ilgili detaylı bilgi için bkz Ra’d 13/13. ayetin dipnotu. [2*] İsra 17/30, Kasas 28/82, Rum 30/37, Ankebut 29/62, Sebe 34/36, 39, Zümer 39/52, Şura 42/12. [3*] Yunus 10/7. [4*] Kasas 28/60, Şûrâ 42/36.",
+      "roots": [
+        "أله",
+        "بسط",
+        "رزق",
+        "شيأ",
+        "قدر",
+        "فرح",
+        "حيي",
+        "دنو",
+        "أخر",
+        "متع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Şâe (شاء) ile ilgili detaylı bilgi için bkz Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/13",
+          "targets": [
+            "13:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayetin dipnotu. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/30",
+          "targets": [
+            "17:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/82",
+          "targets": [
+            "28:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/37",
+          "targets": [
+            "30:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/62",
+          "targets": [
+            "29:62"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/36,39",
+          "targets": [
+            "34:36",
+            "34:39"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/52",
+          "targets": [
+            "39:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şura 42/12",
+          "targets": [
+            "42:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/7",
+          "targets": [
+            "10:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [4*] "
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/60",
+          "targets": [
+            "28:60"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/36",
+          "targets": [
+            "42:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:26",
+        "connections": [
+          {
+            "target_coordinate": "13:13",
+            "context": "d 13/13"
+          },
+          {
+            "target_coordinate": "17:30",
+            "context": "İsra 17/30"
+          },
+          {
+            "target_coordinate": "28:82",
+            "context": "Kasas 28/82"
+          },
+          {
+            "target_coordinate": "30:37",
+            "context": "Rum 30/37"
+          },
+          {
+            "target_coordinate": "29:62",
+            "context": "Ankebut 29/62"
+          },
+          {
+            "target_coordinate": "34:36",
+            "context": "Sebe 34/36,39"
+          },
+          {
+            "target_coordinate": "34:39",
+            "context": "Sebe 34/36,39"
+          },
+          {
+            "target_coordinate": "39:52",
+            "context": "Zümer 39/52"
+          },
+          {
+            "target_coordinate": "42:12",
+            "context": "Şura 42/12"
+          },
+          {
+            "target_coordinate": "10:7",
+            "context": "Yunus 10/7"
+          },
+          {
+            "target_coordinate": "28:60",
+            "context": "Kasas 28/60"
+          },
+          {
+            "target_coordinate": "42:36",
+            "context": "Şûrâ 42/36"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 26. Ayetin Tefsiri\nاَللّٰهُ يَبْسُطُ الرِّزْقَ لِمَنْ يَشَٓاءُ وَيَقْدِرُۜ وَفَرِحُوا بِالْحَيٰوةِ الدُّنْيَاۜ وَمَا الْحَيٰوةُ الدُّنْيَا فِي الْاٰخِرَةِ اِلَّا مَتَاعٌ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:27",
+      "text": "وَيَقُولُ الَّذ۪ينَ كَفَرُوا لَوْلَٓا اُنْزِلَ عَلَيْهِ اٰيَةٌ مِنْ رَبِّه۪ۜ قُلْ اِنَّ اللّٰهَ يُضِلُّ مَنْ يَشَٓاءُ وَيَهْد۪ٓي اِلَيْهِ مَنْ اَنَابَۚ",
+      "translation": "Kâfirlik edenler: “Rabbinden ona bir ayet /mucize indirilse ya!” derler.[1*] De ki: “Allah, (sapıklığın) gereğini yapanı sapık sayar, kendisine yöneleni de yoluna kabul eder.”[2*]",
+      "dipnot": "[1*] Ra’d 13/7. [2*] Âl-i İmran 3/101, Kasas 28/56, Şûrâ 42/13.",
+      "roots": [
+        "قول",
+        "كفر",
+        "نزل",
+        "أيي",
+        "ربب",
+        "أله",
+        "ضلل",
+        "شيأ",
+        "هدي",
+        "نوب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/7",
+          "targets": [
+            "13:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/101",
+          "targets": [
+            "3:101"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/56",
+          "targets": [
+            "28:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/13",
+          "targets": [
+            "42:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:27",
+        "connections": [
+          {
+            "target_coordinate": "13:7",
+            "context": "d 13/7"
+          },
+          {
+            "target_coordinate": "3:101",
+            "context": "Âl-i İmran 3/101"
+          },
+          {
+            "target_coordinate": "28:56",
+            "context": "Kasas 28/56"
+          },
+          {
+            "target_coordinate": "42:13",
+            "context": "Şûrâ 42/13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 27. Ayetin Tefsiri\nوَيَقُولُ الَّذ۪ينَ كَفَرُوا لَوْلَٓا اُنْزِلَ عَلَيْهِ اٰيَةٌ مِنْ رَبِّه۪ۜ قُلْ اِنَّ اللّٰهَ يُضِلُّ مَنْ يَشَٓاءُ وَيَهْد۪ٓي اِلَيْهِ مَنْ اَنَابَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:28",
+      "text": "اَلَّذ۪ينَ اٰمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللّٰهِۜ اَلَا بِذِكْرِ اللّٰهِ تَطْمَئِنُّ الْقُلُوبُۜ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "أمن",
+        "طمأن",
+        "قلب",
+        "ذكر",
+        "أله"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "13:28",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 28. Ayetin Tefsiri\nاَلَّذ۪ينَ اٰمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللّٰهِۜ اَلَا بِذِكْرِ اللّٰهِ تَطْمَئِنُّ الْقُلُوبُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:28",
+      "text": "",
+      "translation": "Onlar, inanıp güvenen ve kalpleri Allah'ın zikri /Kitabı[1*] ile tatmin olanlardır[2*]. Bilin ki kalpler, sadece Allah'ın zikri ile tatmin olur.",
+      "dipnot": "[1*] Zikir, hem önceki kitapların hem de Kur’an’ın ortak adıdır (Nahl 16/43-44, Enbiya 21/7, 24). [2*] Zümer 39/23.",
+      "roots": [
+        "أمن",
+        "طمأن",
+        "قلب",
+        "ذكر",
+        "أله"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Zikir, hem önceki kitapların hem de Kur’an’ın ortak adıdır ("
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/43-44",
+          "targets": [
+            "16:43",
+            "16:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/7,24",
+          "targets": [
+            "21:7",
+            "21:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/23",
+          "targets": [
+            "39:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:28",
+        "connections": [
+          {
+            "target_coordinate": "16:43",
+            "context": "Nahl 16/43-44"
+          },
+          {
+            "target_coordinate": "16:44",
+            "context": "Nahl 16/43-44"
+          },
+          {
+            "target_coordinate": "21:7",
+            "context": "Enbiya 21/7,24"
+          },
+          {
+            "target_coordinate": "21:24",
+            "context": "Enbiya 21/7,24"
+          },
+          {
+            "target_coordinate": "39:23",
+            "context": "Zümer 39/23"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 28. Ayetin Tefsiri\nاَلَّذ۪ينَ اٰمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللّٰهِۜ اَلَا بِذِكْرِ اللّٰهِ تَطْمَئِنُّ الْقُلُوبُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:29",
+      "text": "اَلَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ طُوبٰى لَهُمْ وَحُسْنُ مَاٰبٍ",
+      "translation": "İnanıp güvenen ve iyi işler yapanlar için mutluluk ve varılacak güzel bir yer vardır[*].",
+      "dipnot": "[*] Bakara 2/25, 82, Nisa 4/57, 122, Yunus 10/9-10, Hud 11/23, Kehf 18/107-108, Ankebut 29/7, 9, 58-59, Rum 30/15, Lokman 31/8-9, Secde 32/19, Casiye 45/30, Buruc 85/11.",
+      "roots": [
+        "أمن",
+        "عمل",
+        "صلح",
+        "طيب",
+        "حسن",
+        "أوب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/25,82",
+          "targets": [
+            "2:25",
+            "2:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/57,122",
+          "targets": [
+            "4:57",
+            "4:122"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/9-10",
+          "targets": [
+            "10:9",
+            "10:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/23",
+          "targets": [
+            "11:23"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/107-108",
+          "targets": [
+            "18:107",
+            "18:108"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/7,9,58-59",
+          "targets": [
+            "29:7",
+            "29:9",
+            "29:58",
+            "29:59"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/15",
+          "targets": [
+            "30:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/8-9",
+          "targets": [
+            "31:8",
+            "31:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/19",
+          "targets": [
+            "32:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Casiye 45/30",
+          "targets": [
+            "45:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Buruc 85/11",
+          "targets": [
+            "85:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:29",
+        "connections": [
+          {
+            "target_coordinate": "2:25",
+            "context": "Bakara 2/25,82"
+          },
+          {
+            "target_coordinate": "2:82",
+            "context": "Bakara 2/25,82"
+          },
+          {
+            "target_coordinate": "4:57",
+            "context": "Nisa 4/57,122"
+          },
+          {
+            "target_coordinate": "4:122",
+            "context": "Nisa 4/57,122"
+          },
+          {
+            "target_coordinate": "10:9",
+            "context": "Yunus 10/9-10"
+          },
+          {
+            "target_coordinate": "10:10",
+            "context": "Yunus 10/9-10"
+          },
+          {
+            "target_coordinate": "11:23",
+            "context": "Hud 11/23"
+          },
+          {
+            "target_coordinate": "18:107",
+            "context": "Kehf 18/107-108"
+          },
+          {
+            "target_coordinate": "18:108",
+            "context": "Kehf 18/107-108"
+          },
+          {
+            "target_coordinate": "29:7",
+            "context": "Ankebut 29/7,9,58-59"
+          },
+          {
+            "target_coordinate": "29:9",
+            "context": "Ankebut 29/7,9,58-59"
+          },
+          {
+            "target_coordinate": "29:58",
+            "context": "Ankebut 29/7,9,58-59"
+          },
+          {
+            "target_coordinate": "29:59",
+            "context": "Ankebut 29/7,9,58-59"
+          },
+          {
+            "target_coordinate": "30:15",
+            "context": "Rum 30/15"
+          },
+          {
+            "target_coordinate": "31:8",
+            "context": "Lokman 31/8-9"
+          },
+          {
+            "target_coordinate": "31:9",
+            "context": "Lokman 31/8-9"
+          },
+          {
+            "target_coordinate": "32:19",
+            "context": "Secde 32/19"
+          },
+          {
+            "target_coordinate": "45:30",
+            "context": "Casiye 45/30"
+          },
+          {
+            "target_coordinate": "85:11",
+            "context": "Buruc 85/11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 29. Ayetin Tefsiri\nاَلَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ طُوبٰى لَهُمْ وَحُسْنُ مَاٰبٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:30",
+      "text": "كَذٰلِكَ اَرْسَلْنَاكَ ف۪ٓي اُمَّةٍ قَدْ خَلَتْ مِنْ قَبْلِهَٓا اُمَمٌ لِتَتْلُوَ۬ا عَلَيْهِمُ الَّذ۪ٓي اَوْحَيْنَٓا اِلَيْكَ وَهُمْ يَكْفُرُونَ بِالرَّحْمٰنِۜ قُلْ هُوَ رَبّ۪ي لَٓا اِلٰهَ اِلَّا هُوَۚ عَلَيْهِ تَوَكَّلْتُ وَاِلَيْهِ مَتَابِ",
+      "translation": "Böylece seni de kendilerinden önce nice toplumlar geçmiş olan bir topluma elçi gönderdik[1*] ki sana vahyettiğimizi onlara bağlantılarıyla birlikte okuyasın[2*]. Oysa onlar Rahmân’a /iyiliği sonsuz olana[3*] karşı nankörlük etmektedirler[4*]. De ki: “O, benim Rabbimdir. Ondan başka ilah yoktur[5*]. Ben yalnızca ona güvenip dayandım. Dönüşüm de yalnız onadır[6*].”",
+      "dipnot": "[1*] Âl-i İmran 3/144, Fatır 35/24, Casiye 45/18, Müzzemmil 73/15. [2*] Kehf 18/27, Neml 27/92, Ankebut 29/45. [3*] Rahmân, “rahmeti yani iyilik ve ikramı her şeyi kuşatan” demektir. Allah, Rahmân olması sebebiyle tüm varlıkların ihtiyaçlarını karşılar (Fatiha 1/1). Bu yüzden “Rahmân” sözcüğü Allah'tan başkası için kullanılmaz. [4*] Furkan 25/60. [5*] Duhan 44/8. [6*] Tevbe 9/129, Şûrâ 42/10.",
+      "roots": [
+        "رسل",
+        "أمم",
+        "خلو",
+        "قبل",
+        "تلو",
+        "وحي",
+        "كفر",
+        "رحم",
+        "قول",
+        "ربب",
+        "أله",
+        "وكل",
+        "توب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/144",
+          "targets": [
+            "3:144"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/24",
+          "targets": [
+            "35:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Casiye 45/18",
+          "targets": [
+            "45:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/15",
+          "targets": [
+            "73:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/27",
+          "targets": [
+            "18:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/92",
+          "targets": [
+            "27:92"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/45",
+          "targets": [
+            "29:45"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] Rahmân, “rahmeti yani iyilik ve ikramı her şeyi kuşatan” demektir. Allah, Rahmân olması sebebiyle tüm varlıkların ihtiyaçlarını karşılar ("
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/1",
+          "targets": [
+            "1:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bu yüzden “Rahmân” sözcüğü Allah'tan başkası için kullanılmaz. [4*] "
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/60",
+          "targets": [
+            "25:60"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [5*] "
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/8",
+          "targets": [
+            "44:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [6*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/129",
+          "targets": [
+            "9:129"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/10",
+          "targets": [
+            "42:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:30",
+        "connections": [
+          {
+            "target_coordinate": "3:144",
+            "context": "Âl-i İmran 3/144"
+          },
+          {
+            "target_coordinate": "35:24",
+            "context": "Fatır 35/24"
+          },
+          {
+            "target_coordinate": "45:18",
+            "context": "Casiye 45/18"
+          },
+          {
+            "target_coordinate": "73:15",
+            "context": "Müzzemmil 73/15"
+          },
+          {
+            "target_coordinate": "18:27",
+            "context": "Kehf 18/27"
+          },
+          {
+            "target_coordinate": "27:92",
+            "context": "Neml 27/92"
+          },
+          {
+            "target_coordinate": "29:45",
+            "context": "Ankebut 29/45"
+          },
+          {
+            "target_coordinate": "1:1",
+            "context": "Fatiha 1/1"
+          },
+          {
+            "target_coordinate": "25:60",
+            "context": "Furkan 25/60"
+          },
+          {
+            "target_coordinate": "44:8",
+            "context": "Duhan 44/8"
+          },
+          {
+            "target_coordinate": "9:129",
+            "context": "Tevbe 9/129"
+          },
+          {
+            "target_coordinate": "42:10",
+            "context": "Şûrâ 42/10"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 30. Ayetin Tefsiri\nكَذٰلِكَ اَرْسَلْنَاكَ ف۪ٓي اُمَّةٍ قَدْ خَلَتْ مِنْ قَبْلِهَٓا اُمَمٌ لِتَتْلُوَ۬ا عَلَيْهِمُ الَّذ۪ٓي اَوْحَيْنَٓا اِلَيْكَ وَهُمْ يَكْفُرُونَ بِالرَّحْمٰنِۜ قُلْ هُوَ رَبّ۪ي لَٓا اِلٰهَ اِلَّا هُوَۚ عَلَيْهِ تَوَكَّلْتُ وَاِلَيْهِ مَتَابِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:31",
+      "text": "وَلَوْ اَنَّ قُرْاٰنًا سُيِّرَتْ بِهِ الْجِبَالُ اَوْ قُطِّعَتْ بِهِ الْاَرْضُ اَوْ كُلِّمَ بِهِ الْمَوْتٰىۜ بَلْ لِلّٰهِ الْاَمْرُ جَم۪يعًاۜ اَفَلَمْ يَا۬يْـَٔسِ الَّذ۪ينَ اٰمَنُٓوا اَنْ لَوْ يَشَٓاءُ اللّٰهُ لَهَدَى النَّاسَ جَم۪يعًاۜ وَلَا يَزَالُ الَّذ۪ينَ كَفَرُوا تُص۪يبُهُمْ بِمَا صَنَعُوا قَارِعَةٌ اَوْ تَحُلُّ قَر۪يبًا مِنْ دَارِهِمْ حَتّٰى يَأْتِيَ وَعْدُ اللّٰهِۜ اِنَّ اللّٰهَ لَا يُخْلِفُ الْم۪يعَادَ۟",
+      "translation": "Eğer Kur’an ile dağlar yürütülecek veya yeryüzü parça parça edilecek ya da ölüler konuşturulacak olsaydı (onlar yine de inanmazlardı).[1*] Hayır! Bütün işler Allah’a aittir (her şeye o karar verir).[2*] İnanıp güvenenler, (kafirlerden) hala ümit kesmediler mi: Eğer tercihi Allah yapsaydı tüm insanları yola getirirdi.[3*] Kafirlik edenlerin başlarına, ustaca yaptıkları şeyler sebebiyle felaket gelmeye devam edecek veya felaket, yurtlarının yakınına inecek[4*] ve sonunda Allah’ın vaadi gelecektir. Allah vaadinden asla dönmez.",
+      "dipnot": "[1*] En’am 6/111, Enbiya 21/6. [2*] A’raf 7/54. [3*] En’am 6/149, Nahl 16/9. [4*] Zümer 39/39-40.",
+      "roots": [
+        "قرأ",
+        "سير",
+        "جبل",
+        "قطع",
+        "أرض",
+        "كلم",
+        "موت",
+        "أله",
+        "أمر",
+        "جمع",
+        "يأس",
+        "أمن",
+        "شيأ",
+        "هدي",
+        "أنس",
+        "زيل",
+        "كفر",
+        "صوب",
+        "صنع",
+        "قرع",
+        "حلل",
+        "قرب",
+        "دور",
+        "أتي",
+        "وعد",
+        "خلف"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/111",
+          "targets": [
+            "6:111"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/6",
+          "targets": [
+            "21:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/54",
+          "targets": [
+            "7:54"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/149",
+          "targets": [
+            "6:149"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/9",
+          "targets": [
+            "16:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [4*] "
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/39-40",
+          "targets": [
+            "39:39",
+            "39:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:31",
+        "connections": [
+          {
+            "target_coordinate": "6:111",
+            "context": "am 6/111"
+          },
+          {
+            "target_coordinate": "21:6",
+            "context": "Enbiya 21/6"
+          },
+          {
+            "target_coordinate": "7:54",
+            "context": "raf 7/54"
+          },
+          {
+            "target_coordinate": "6:149",
+            "context": "am 6/149"
+          },
+          {
+            "target_coordinate": "16:9",
+            "context": "Nahl 16/9"
+          },
+          {
+            "target_coordinate": "39:39",
+            "context": "Zümer 39/39-40"
+          },
+          {
+            "target_coordinate": "39:40",
+            "context": "Zümer 39/39-40"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 31. Ayetin Tefsiri\nوَلَوْ اَنَّ قُرْاٰنًا سُيِّرَتْ بِهِ الْجِبَالُ اَوْ قُطِّعَتْ بِهِ الْاَرْضُ اَوْ كُلِّمَ بِهِ الْمَوْتٰىۜ بَلْ لِلّٰهِ الْاَمْرُ جَم۪يعًاۜ اَفَلَمْ يَا۬يْـَٔسِ الَّذ۪ينَ اٰمَنُٓوا اَنْ لَوْ يَشَٓاءُ اللّٰهُ لَهَدَى النَّاسَ جَم۪يعًاۜ وَلَا يَزَالُ الَّذ۪ينَ كَفَرُوا تُص۪يبُهُمْ بِمَا صَنَعُوا قَارِعَةٌ اَوْ تَحُلُّ قَر۪يبًا مِنْ دَارِهِمْ حَتّٰى يَأْتِيَ وَعْدُ اللّٰهِۜ اِنَّ اللّٰهَ لَا يُخْلِفُ الْم۪يعَادَ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:33",
+      "text": "وَلَقَدِ اسْتُهْزِئَ بِرُسُلٍ مِنْ قَبْلِكَ فَاَمْلَيْتُ لِلَّذ۪ينَ كَفَرُوا ثُمَّ اَخَذْتُهُمْ۠ فَكَيْفَ كَانَ عِقَابِ",
+      "translation": "(Ey Muhammed!) Senden önceki elçiler de mutlaka hafife alınmışlardı.[1*] Ben kafirlik edenlere önce süre verdim; sonra onları yakaladım. Cezalandırmam nasılmış (gördüler).[2*]",
+      "dipnot": "[1*] En’am 6/10, Hicr 15/11, Enbiya 21/41, Yasin 36/30, Zuhruf 43/7. [2*] Hac 22/42 - 44, 48, Mü’min 40/5.",
+      "roots": [
+        "قوم",
+        "كلل",
+        "نفس",
+        "كسب",
+        "جعل",
+        "أله",
+        "شرك",
+        "قول",
+        "سمو",
+        "نبأ",
+        "علم",
+        "أرض",
+        "ظهر",
+        "زين",
+        "كفر",
+        "مكر",
+        "صدد",
+        "سبل",
+        "ضلل",
+        "هدي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/10",
+          "targets": [
+            "6:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/11",
+          "targets": [
+            "15:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/41",
+          "targets": [
+            "21:41"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/30",
+          "targets": [
+            "36:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/7",
+          "targets": [
+            "43:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/42-44,48",
+          "targets": [
+            "22:42",
+            "22:43",
+            "22:44",
+            "22:48"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/5",
+          "targets": [
+            "40:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:33",
+        "connections": [
+          {
+            "target_coordinate": "6:10",
+            "context": "am 6/10"
+          },
+          {
+            "target_coordinate": "15:11",
+            "context": "Hicr 15/11"
+          },
+          {
+            "target_coordinate": "21:41",
+            "context": "Enbiya 21/41"
+          },
+          {
+            "target_coordinate": "36:30",
+            "context": "Yasin 36/30"
+          },
+          {
+            "target_coordinate": "43:7",
+            "context": "Zuhruf 43/7"
+          },
+          {
+            "target_coordinate": "22:42",
+            "context": "Hac 22/42-44,48"
+          },
+          {
+            "target_coordinate": "22:43",
+            "context": "Hac 22/42-44,48"
+          },
+          {
+            "target_coordinate": "22:44",
+            "context": "Hac 22/42-44,48"
+          },
+          {
+            "target_coordinate": "22:48",
+            "context": "Hac 22/42-44,48"
+          },
+          {
+            "target_coordinate": "40:5",
+            "context": "min 40/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 33. Ayetin Tefsiri\nاَفَمَنْ هُوَ قَٓائِمٌ عَلٰى كُلِّ نَفْسٍ بِمَا كَسَبَتْۚ وَجَعَلُوا لِلّٰهِ شُرَكَٓاءَۜ قُلْ سَمُّوهُمْۜ اَمْ تُنَبِّؤُ۫نَهُ بِمَا لَا يَعْلَمُ فِي الْاَرْضِ اَمْ بِظَاهِرٍ مِنَ الْقَوْلِۜ بَلْ زُيِّنَ لِلَّذ۪ينَ كَفَرُوا مَكْرُهُمْ وَصُدُّوا عَنِ السَّب۪يلِۜ وَمَنْ يُضْلِلِ اللّٰهُ فَمَا لَهُ مِنْ هَادٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:34",
+      "text": "اَفَمَنْ هُوَ قَٓائِمٌ عَلٰى كُلِّ نَفْسٍ بِمَا كَسَبَتْۚ وَجَعَلُوا لِلّٰهِ شُرَكَٓاءَۜ قُلْ سَمُّوهُمْۜ اَمْ تُنَبِّؤُ۫نَهُ بِمَا لَا يَعْلَمُ فِي الْاَرْضِ اَمْ بِظَاهِرٍ مِنَ الْقَوْلِۜ بَلْ زُيِّنَ لِلَّذ۪ينَ كَفَرُوا مَكْرُهُمْ وَصُدُّوا عَنِ السَّب۪يلِۜ وَمَنْ يُضْلِلِ اللّٰهُ فَمَا لَهُ مِنْ هَادٍ",
+      "translation": "Herkesin yapıp ettiğini sürekli gözetimi altında tutan biri mi (başkalarına denk olacak)? Ama onlar Allah’a ortak saydıkları varlıklar oluşturdular.[1*] De ki: “Söyleyin bakalım onların özelliklerini!”[2*] Yoksa siz Allah’a, yeryüzünde bilmediği bir şeyi mi haber veriyorsunuz[3*] ya da içi boş sözler mi söylüyorsunuz? Aslında kafirlik edenlerin kurdukları planlar kendilerine süslü gösterildi ve onun yolundan geri çevrildiler. Allah’ın sapkın saydığını yola getirebilecek hiç kimse yoktur.[4*]",
+      "dipnot": "[1*] En’am 6/100, Ra’d 13/16. [2*] Arapçada isim, bir şeyi tanımlayan, neye yaradığını gösteren ve akılda tutmaya yarayan sözdür (Müfredat). [3*] Yunus 10/18. [4*] A’raf 7/186, Kasas 28/56.",
+      "roots": [
+        "عذب",
+        "حيي",
+        "دنو",
+        "أخر",
+        "شقق",
+        "أله",
+        "وقي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/100",
+          "targets": [
+            "6:100"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/16",
+          "targets": [
+            "13:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Arapçada isim, bir şeyi tanımlayan, neye yaradığını gösteren ve akılda tutmaya yarayan sözdür (Müfredat). [3*] "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/18",
+          "targets": [
+            "10:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [4*] A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/186",
+          "targets": [
+            "7:186"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/56",
+          "targets": [
+            "28:56"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:34",
+        "connections": [
+          {
+            "target_coordinate": "6:100",
+            "context": "am 6/100"
+          },
+          {
+            "target_coordinate": "13:16",
+            "context": "d 13/16"
+          },
+          {
+            "target_coordinate": "10:18",
+            "context": "Yunus 10/18"
+          },
+          {
+            "target_coordinate": "7:186",
+            "context": "raf 7/186"
+          },
+          {
+            "target_coordinate": "28:56",
+            "context": "Kasas 28/56"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 34. Ayetin Tefsiri\nلَهُمْ عَذَابٌ فِي الْحَيٰوةِ الدُّنْيَا وَلَعَذَابُ الْاٰخِرَةِ اَشَقُّۚ وَمَا لَهُمْ مِنَ اللّٰهِ مِنْ وَاقٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:35",
+      "text": "لَهُمْ عَذَابٌ فِي الْحَيٰوةِ الدُّنْيَا وَلَعَذَابُ الْاٰخِرَةِ اَشَقُّۚ وَمَا لَهُمْ مِنَ اللّٰهِ مِنْ وَاقٍ",
+      "translation": "Onlar için dünya hayatında bir azap vardır. Ahiretteki azap ise kesinlikle daha meşakkatli olacaktır.[*] Onları Allah’tan (onun azabından) koruyacak hiç kimse yoktur.",
+      "dipnot": "[*] Tâhâ 20/127, Zümer 39/26.",
+      "roots": [
+        "مثل",
+        "جنن",
+        "وعد",
+        "وقي",
+        "جري",
+        "تحت",
+        "نهر",
+        "أكل",
+        "دوم",
+        "ظلل",
+        "عقب",
+        "كفر",
+        "نور"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Tâhâ 20/127",
+          "targets": [
+            "20:127"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/26",
+          "targets": [
+            "39:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:35",
+        "connections": [
+          {
+            "target_coordinate": "20:127",
+            "context": "Tâhâ 20/127"
+          },
+          {
+            "target_coordinate": "39:26",
+            "context": "Zümer 39/26"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 35. Ayetin Tefsiri\nمَثَلُ الْجَنَّةِ الَّت۪ي وُعِدَ الْمُتَّقُونَۜ تَجْر۪ي مِنْ تَحْتِهَا الْاَنْهَارُۜ اُكُلُهَا دَٓائِمٌ وَظِلُّهَاۜ تِلْكَ عُقْبَى الَّذ۪ينَ اتَّقَوْاۗ وَعُقْبَى الْكَافِر۪ينَ النَّارُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:36",
+      "text": "مَثَلُ الْجَنَّةِ الَّت۪ي وُعِدَ الْمُتَّقُونَۜ تَجْر۪ي مِنْ تَحْتِهَا الْاَنْهَارُۜ اُكُلُهَا دَٓائِمٌ وَظِلُّهَاۜ تِلْكَ عُقْبَى الَّذ۪ينَ اتَّقَوْاۗ وَعُقْبَى الْكَافِر۪ينَ النَّارُ",
+      "translation": "Yanlışlardan sakınanlara vaat edilen cennet şöyledir:[1*] İçlerinden ırmaklar akar, oranın yiyecekleri de gölgeleri de sürekli vardır.[2*] Bu, yanlış yapmaktan sakınanların (mutlu) sonudur.[3*] Kâfirlerin sonu ise ateştir.",
+      "dipnot": "[1*] Muhammed 47/15. [2*] Nisa 4/57, Hud 11/108, Sad 38/54, Vakıa 56/28 - 33, İnsan 76/14, Mürselat 77/41 - 44. [3*] Ra’d 13/22 - 24.",
+      "roots": [
+        "أتي",
+        "كتب",
+        "فرح",
+        "نزل",
+        "حزب",
+        "نكر",
+        "بعض",
+        "قول",
+        "أمر",
+        "عبد",
+        "أله",
+        "شرك",
+        "دعو",
+        "أوب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/15",
+          "targets": [
+            "47:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/57",
+          "targets": [
+            "4:57"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/108",
+          "targets": [
+            "11:108"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/54",
+          "targets": [
+            "38:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/28-33",
+          "targets": [
+            "56:28",
+            "56:29",
+            "56:30",
+            "56:31",
+            "56:32",
+            "56:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/14",
+          "targets": [
+            "76:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/41-44",
+          "targets": [
+            "77:41",
+            "77:42",
+            "77:43",
+            "77:44"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/22-24",
+          "targets": [
+            "13:22",
+            "13:23",
+            "13:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:36",
+        "connections": [
+          {
+            "target_coordinate": "47:15",
+            "context": "Muhammed 47/15"
+          },
+          {
+            "target_coordinate": "4:57",
+            "context": "Nisa 4/57"
+          },
+          {
+            "target_coordinate": "11:108",
+            "context": "Hud 11/108"
+          },
+          {
+            "target_coordinate": "38:54",
+            "context": "Sad 38/54"
+          },
+          {
+            "target_coordinate": "56:28",
+            "context": "Vakıa 56/28-33"
+          },
+          {
+            "target_coordinate": "56:29",
+            "context": "Vakıa 56/28-33"
+          },
+          {
+            "target_coordinate": "56:30",
+            "context": "Vakıa 56/28-33"
+          },
+          {
+            "target_coordinate": "56:31",
+            "context": "Vakıa 56/28-33"
+          },
+          {
+            "target_coordinate": "56:32",
+            "context": "Vakıa 56/28-33"
+          },
+          {
+            "target_coordinate": "56:33",
+            "context": "Vakıa 56/28-33"
+          },
+          {
+            "target_coordinate": "76:14",
+            "context": "İnsan 76/14"
+          },
+          {
+            "target_coordinate": "77:41",
+            "context": "Mürselat 77/41-44"
+          },
+          {
+            "target_coordinate": "77:42",
+            "context": "Mürselat 77/41-44"
+          },
+          {
+            "target_coordinate": "77:43",
+            "context": "Mürselat 77/41-44"
+          },
+          {
+            "target_coordinate": "77:44",
+            "context": "Mürselat 77/41-44"
+          },
+          {
+            "target_coordinate": "13:22",
+            "context": "d 13/22-24"
+          },
+          {
+            "target_coordinate": "13:23",
+            "context": "d 13/22-24"
+          },
+          {
+            "target_coordinate": "13:24",
+            "context": "d 13/22-24"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 36. Ayetin Tefsiri\nوَالَّذ۪ينَ اٰتَيْنَاهُمُ الْكِتَابَ يَفْرَحُونَ بِمَٓا اُنْزِلَ اِلَيْكَ وَمِنَ الْاَحْزَابِ مَنْ يُنْكِرُ بَعْضَهُۜ قُلْ اِنَّمَٓا اُمِرْتُ اَنْ اَعْبُدَ اللّٰهَ وَلَٓا اُشْرِكَ بِه۪ۜ اِلَيْهِ اَدْعُوا وَاِلَيْهِ مَاٰبِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:37",
+      "text": "وَالَّذ۪ينَ اٰتَيْنَاهُمُ الْكِتَابَ يَفْرَحُونَ بِمَٓا اُنْزِلَ اِلَيْكَ وَمِنَ الْاَحْزَابِ مَنْ يُنْكِرُ بَعْضَهُۜ قُلْ اِنَّمَٓا اُمِرْتُ اَنْ اَعْبُدَ اللّٰهَ وَلَٓا اُشْرِكَ بِه۪ۜ اِلَيْهِ اَدْعُوا وَاِلَيْهِ مَاٰبِ",
+      "translation": "Kendilerine kitap verdiklerimiz sana indirilene sevinirler. Onun bir kısmını inkar eden kesimleri de vardır.[1*] De ki: “Ben sadece, Allah’a kulluk etme ve O’na ortak koşmama emri aldım.[2*] Ben ancak O’na çağırıyorum; varacağım yer de ancak O’nun huzurudur.”[3*]",
+      "dipnot": "",
+      "roots": [
+        "نزل",
+        "حكم",
+        "عرب",
+        "تبع",
+        "هوي",
+        "بعد",
+        "جيأ",
+        "علم",
+        "أله",
+        "ولي",
+        "وقي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "13:37",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 37. Ayetin Tefsiri\nوَكَذٰلِكَ اَنْزَلْنَاهُ حُكْمًا عَرَبِيًّاۜ وَلَئِنِ اتَّبَعْتَ اَهْوَٓاءَهُمْ بَعْدَ مَا جَٓاءَكَ مِنَ الْعِلْمِۙ مَا لَكَ مِنَ اللّٰهِ مِنْ وَلِيٍّ وَلَا وَاقٍ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:37",
+      "text": "وَكَذٰلِكَ اَنْزَلْنَاهُ حُكْمًا عَرَبِيًّاۜ وَلَئِنِ اتَّبَعْتَ اَهْوَٓاءَهُمْ بَعْدَ مَا جَٓاءَكَ مِنَ الْعِلْمِۙ مَا لَكَ مِنَ اللّٰهِ مِنْ وَلِيٍّ وَلَا وَاقٍ۟",
+      "translation": "Böylece (önceki ümmetlere kendi dilleriyle indirdiğimiz gibi sana da) Kur’an’ı Arapça hükümler şeklinde indirdik. Bu bilgi sana geldikten sonra onların arzularına uyarsan Allah senin velin / yakının da olmaz koruyucun da.",
+      "dipnot": "[1*] Her elçiye verilen kitap, kendi toplumunun diliyle olur (İbrahim 14/4). [2*] Yusuf 12/2, Taha 20/113-114, Zümer 39/28, Fussilet 41/3, Şura 42/7, Zuhruf 43/3. Kur’an’ın önceki kitapları Arap dili ile tasdik ediyor olması bir zorunluluktur (Ahkaf 46/12). Çünkü o kitaplar son nebinin İsmail aleyhisselamın soyundan olacağını (Tevrat /Tesniye 18:18-19, İncil /Elçilerin İşleri 3:21-23) ve Mekke’den çıkacağını bildirir (Tevrat /Tesniye 18:18-19, Mezmurlar 84:5-6, 118:22-26; İncil /Matta 21:42-44). [3*] Bakara 2/120, 145.",
+      "roots": [
+        "نزل",
+        "حكم",
+        "عرب",
+        "تبع",
+        "هوي",
+        "بعد",
+        "جيأ",
+        "علم",
+        "أله",
+        "ولي",
+        "وقي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Her elçiye verilen kitap, kendi toplumunun diliyle olur ("
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/4",
+          "targets": [
+            "14:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Yusuf 12/2",
+          "targets": [
+            "12:2"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/113-114",
+          "targets": [
+            "20:113",
+            "20:114"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/28",
+          "targets": [
+            "39:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/3",
+          "targets": [
+            "41:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şura 42/7",
+          "targets": [
+            "42:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/3",
+          "targets": [
+            "43:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Kur’an’ın önceki kitapları Arap dili ile tasdik ediyor olması bir zorunluluktur ("
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/12",
+          "targets": [
+            "46:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Çünkü o kitaplar son nebinin İsmail aleyhisselamın soyundan olacağını (Tevrat /Tesniye 18:18-19, İncil /Elçilerin İşleri 3:21-23) ve Mekke’den çıkacağını bildirir (Tevrat /Tesniye 18:18-19, Mezmurlar 84:5-6, 118:22-26; İncil /Matta 21:42-44). [3*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/120,145",
+          "targets": [
+            "2:120",
+            "2:145"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:37",
+        "connections": [
+          {
+            "target_coordinate": "14:4",
+            "context": "İbrahim 14/4"
+          },
+          {
+            "target_coordinate": "12:2",
+            "context": "Yusuf 12/2"
+          },
+          {
+            "target_coordinate": "20:113",
+            "context": "Taha 20/113-114"
+          },
+          {
+            "target_coordinate": "20:114",
+            "context": "Taha 20/113-114"
+          },
+          {
+            "target_coordinate": "39:28",
+            "context": "Zümer 39/28"
+          },
+          {
+            "target_coordinate": "41:3",
+            "context": "Fussilet 41/3"
+          },
+          {
+            "target_coordinate": "42:7",
+            "context": "Şura 42/7"
+          },
+          {
+            "target_coordinate": "43:3",
+            "context": "Zuhruf 43/3"
+          },
+          {
+            "target_coordinate": "46:12",
+            "context": "Ahkaf 46/12"
+          },
+          {
+            "target_coordinate": "2:120",
+            "context": "Bakara 2/120,145"
+          },
+          {
+            "target_coordinate": "2:145",
+            "context": "Bakara 2/120,145"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 37. Ayetin Tefsiri\nوَكَذٰلِكَ اَنْزَلْنَاهُ حُكْمًا عَرَبِيًّاۜ وَلَئِنِ اتَّبَعْتَ اَهْوَٓاءَهُمْ بَعْدَ مَا جَٓاءَكَ مِنَ الْعِلْمِۙ مَا لَكَ مِنَ اللّٰهِ مِنْ وَلِيٍّ وَلَا وَاقٍ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:38",
+      "text": "وَلَقَدْ اَرْسَلْنَا رُسُلًا مِنْ قَبْلِكَ وَجَعَلْنَا لَهُمْ اَزْوَاجًا وَذُرِّيَّةًۜ وَمَا كَانَ لِرَسُولٍ اَنْ يَأْتِيَ بِاٰيَةٍ اِلَّا بِاِذْنِ اللّٰهِۜ لِكُلِّ اَجَلٍ كِتَابٌ",
+      "translation": "Biz senden önce de elçiler gönderdik. Onlara eşler ve evlatlar verdik. Hiçbir elçinin Allah’ın izni olmadan bir ayet /bir mucize getirmesi mümkün değildir. Her ecelin yazılı bir kaydı vardır.",
+      "dipnot": "[1*] İbrahim 14/11, Mü’min 40/78. [2*] Ecel, bir şey için belirlenen süredir (Bakara 2/231, 282, Kasas 28/28). Ana karnındaki döllenme sırasında insanın fiziki özellikleri ve doğal yaşam süresi yani biyolojik eceli belirlenir (Abese 80/17-19). Bu ayete göre bir de Allah katında, ondan başkasının bilmediği, süresi belirlenmiş bir ecel yani ecel-i müsemma vardır. İnsan en fazla ecel-i müsemmasına kadar yaşayabilir. Bazı davranışlar bu eceli kısaltır ve her şey gibi bunun da kaydı tutulur (Fatır 35/11). Yunus aleyhisselam ve kavmi gibi tövbe edip durumunu düzeltenlere, ecel-i müsemasından kalan süreyi tamamlama imkanı verilir (Yunus 10/98, Hud 11/3, İbrahim 14/10, Enbiya 21/87-88, Saffat 37/139-148, Kalem 68/48-50, Nuh 71/4).",
+      "roots": [
+        "رسل",
+        "قبل",
+        "جعل",
+        "زوج",
+        "ذرر",
+        "كون",
+        "أتي",
+        "أيي",
+        "أذن",
+        "أله",
+        "كلل",
+        "أجل",
+        "كتب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/11",
+          "targets": [
+            "14:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/78",
+          "targets": [
+            "40:78"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Ecel, bir şey için belirlenen süredir ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/231,282",
+          "targets": [
+            "2:231",
+            "2:282"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/28",
+          "targets": [
+            "28:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ana karnındaki döllenme sırasında insanın fiziki özellikleri ve doğal yaşam süresi yani biyolojik eceli belirlenir ("
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/17-19",
+          "targets": [
+            "80:17",
+            "80:18",
+            "80:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bu ayete göre bir de Allah katında, ondan başkasının bilmediği, süresi belirlenmiş bir ecel yani ecel-i müsemma vardır. İnsan en fazla ecel-i müsemmasına kadar yaşayabilir. Bazı davranışlar bu eceli kısaltır ve her şey gibi bunun da kaydı tutulur ("
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/11",
+          "targets": [
+            "35:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yunus aleyhisselam ve kavmi gibi tövbe edip durumunu düzeltenlere, ecel-i müsemasından kalan süreyi tamamlama imkanı verilir ("
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/98",
+          "targets": [
+            "10:98"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/3",
+          "targets": [
+            "11:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/10",
+          "targets": [
+            "14:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/87-88",
+          "targets": [
+            "21:87",
+            "21:88"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/139-148",
+          "targets": [
+            "37:139",
+            "37:140",
+            "37:141",
+            "37:142",
+            "37:143",
+            "37:144",
+            "37:145",
+            "37:146",
+            "37:147",
+            "37:148"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/48-50",
+          "targets": [
+            "68:48",
+            "68:49",
+            "68:50"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nuh 71/4",
+          "targets": [
+            "71:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:38",
+        "connections": [
+          {
+            "target_coordinate": "14:11",
+            "context": "İbrahim 14/11"
+          },
+          {
+            "target_coordinate": "40:78",
+            "context": "min 40/78"
+          },
+          {
+            "target_coordinate": "2:231",
+            "context": "Bakara 2/231,282"
+          },
+          {
+            "target_coordinate": "2:282",
+            "context": "Bakara 2/231,282"
+          },
+          {
+            "target_coordinate": "28:28",
+            "context": "Kasas 28/28"
+          },
+          {
+            "target_coordinate": "80:17",
+            "context": "Abese 80/17-19"
+          },
+          {
+            "target_coordinate": "80:18",
+            "context": "Abese 80/17-19"
+          },
+          {
+            "target_coordinate": "80:19",
+            "context": "Abese 80/17-19"
+          },
+          {
+            "target_coordinate": "35:11",
+            "context": "Fatır 35/11"
+          },
+          {
+            "target_coordinate": "10:98",
+            "context": "Yunus 10/98"
+          },
+          {
+            "target_coordinate": "11:3",
+            "context": "Hud 11/3"
+          },
+          {
+            "target_coordinate": "14:10",
+            "context": "İbrahim 14/10"
+          },
+          {
+            "target_coordinate": "21:87",
+            "context": "Enbiya 21/87-88"
+          },
+          {
+            "target_coordinate": "21:88",
+            "context": "Enbiya 21/87-88"
+          },
+          {
+            "target_coordinate": "37:139",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:140",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:141",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:142",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:143",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:144",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:145",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:146",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:147",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "37:148",
+            "context": "Saffat 37/139-148"
+          },
+          {
+            "target_coordinate": "68:48",
+            "context": "Kalem 68/48-50"
+          },
+          {
+            "target_coordinate": "68:49",
+            "context": "Kalem 68/48-50"
+          },
+          {
+            "target_coordinate": "68:50",
+            "context": "Kalem 68/48-50"
+          },
+          {
+            "target_coordinate": "71:4",
+            "context": "Nuh 71/4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 38. Ayetin Tefsiri\nوَلَقَدْ اَرْسَلْنَا رُسُلًا مِنْ قَبْلِكَ وَجَعَلْنَا لَهُمْ اَزْوَاجًا وَذُرِّيَّةًۜ وَمَا كَانَ لِرَسُولٍ اَنْ يَأْتِيَ بِاٰيَةٍ اِلَّا بِاِذْنِ اللّٰهِۜ لِكُلِّ اَجَلٍ كِتَابٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:39",
+      "text": "يَمْحُوا اللّٰهُ مَا يَشَٓاءُ وَيُثْبِتُۚ وَعِنْدَهُٓ اُمُّ الْكِتَابِ",
+      "translation": "Allah (kayıtlardan) tercih ettiğini siler veya sabitler. Ana Kitap O’nun yanındadır.",
+      "dipnot": "[*] En’am 6/59, Yunus 10/61, Hud 11/6, Hac 22/70, Neml 27/75, Fatır 35/11, Hadid 57/22.",
+      "roots": [
+        "محو",
+        "أله",
+        "شيأ",
+        "ثبت",
+        "عند",
+        "أمم",
+        "كتب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/59",
+          "targets": [
+            "6:59"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/61",
+          "targets": [
+            "10:61"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/6",
+          "targets": [
+            "11:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/70",
+          "targets": [
+            "22:70"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/75",
+          "targets": [
+            "27:75"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/11",
+          "targets": [
+            "35:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/22",
+          "targets": [
+            "57:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:39",
+        "connections": [
+          {
+            "target_coordinate": "6:59",
+            "context": "am 6/59"
+          },
+          {
+            "target_coordinate": "10:61",
+            "context": "Yunus 10/61"
+          },
+          {
+            "target_coordinate": "11:6",
+            "context": "Hud 11/6"
+          },
+          {
+            "target_coordinate": "22:70",
+            "context": "Hac 22/70"
+          },
+          {
+            "target_coordinate": "27:75",
+            "context": "Neml 27/75"
+          },
+          {
+            "target_coordinate": "35:11",
+            "context": "Fatır 35/11"
+          },
+          {
+            "target_coordinate": "57:22",
+            "context": "Hadid 57/22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 39. Ayetin Tefsiri\nيَمْحُوا اللّٰهُ مَا يَشَٓاءُ وَيُثْبِتُۚ وَعِنْدَهُٓ اُمُّ الْكِتَابِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:40",
+      "text": "وَاِنْ مَا نُرِيَنَّكَ بَعْضَ الَّذ۪ي نَعِدُهُمْ اَوْ نَتَوَفَّيَنَّكَ فَاِنَّمَا عَلَيْكَ الْبَلَاغُ وَعَلَيْنَا الْحِسَابُ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "رأي",
+        "بعض",
+        "وعد",
+        "وفي",
+        "بلغ",
+        "حسب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "13:40",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 40. Ayetin Tefsiri\nوَاِنْ مَا نُرِيَنَّكَ بَعْضَ الَّذ۪ي نَعِدُهُمْ اَوْ نَتَوَفَّيَنَّكَ فَاِنَّمَا عَلَيْكَ الْبَلَاغُ وَعَلَيْنَا الْحِسَابُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:40",
+      "text": "",
+      "translation": "Onları tehdit ettiğimiz şeyin bir kısmını sana göstersek de (göstermeyip) seni vefat ettirsek de sana düşen, sadece tebliğdir. Hesap sormak ise bizim işimizdir.",
+      "dipnot": "[1*] Yunus 10/46, Mü’min 40/77. [2*] Maide 5/67, 99, Nahl 16/82, Nur 24/54, Ankebut 29/18, Şûrâ 42/48, Teğabün 64/12. [3*] Mü’minun 23/117, Kâf 50/45, Ğâşiye 88/21 - 26.",
+      "roots": [
+        "رأي",
+        "بعض",
+        "وعد",
+        "وفي",
+        "بلغ",
+        "حسب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/46",
+          "targets": [
+            "10:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/77",
+          "targets": [
+            "40:77"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/67,99",
+          "targets": [
+            "5:67",
+            "5:99"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/82",
+          "targets": [
+            "16:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/54",
+          "targets": [
+            "24:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/18",
+          "targets": [
+            "29:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/48",
+          "targets": [
+            "42:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/12",
+          "targets": [
+            "64:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/117",
+          "targets": [
+            "23:117"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kâf 50/45",
+          "targets": [
+            "50:45"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ğâşiye 88/21-26",
+          "targets": [
+            "88:21",
+            "88:22",
+            "88:23",
+            "88:24",
+            "88:25",
+            "88:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:40",
+        "connections": [
+          {
+            "target_coordinate": "10:46",
+            "context": "Yunus 10/46"
+          },
+          {
+            "target_coordinate": "40:77",
+            "context": "min 40/77"
+          },
+          {
+            "target_coordinate": "5:67",
+            "context": "Maide 5/67,99"
+          },
+          {
+            "target_coordinate": "5:99",
+            "context": "Maide 5/67,99"
+          },
+          {
+            "target_coordinate": "16:82",
+            "context": "Nahl 16/82"
+          },
+          {
+            "target_coordinate": "24:54",
+            "context": "Nur 24/54"
+          },
+          {
+            "target_coordinate": "29:18",
+            "context": "Ankebut 29/18"
+          },
+          {
+            "target_coordinate": "42:48",
+            "context": "Şûrâ 42/48"
+          },
+          {
+            "target_coordinate": "64:12",
+            "context": "Teğabün 64/12"
+          },
+          {
+            "target_coordinate": "23:117",
+            "context": "minun 23/117"
+          },
+          {
+            "target_coordinate": "50:45",
+            "context": "Kâf 50/45"
+          },
+          {
+            "target_coordinate": "88:21",
+            "context": "Ğâşiye 88/21-26"
+          },
+          {
+            "target_coordinate": "88:22",
+            "context": "Ğâşiye 88/21-26"
+          },
+          {
+            "target_coordinate": "88:23",
+            "context": "Ğâşiye 88/21-26"
+          },
+          {
+            "target_coordinate": "88:24",
+            "context": "Ğâşiye 88/21-26"
+          },
+          {
+            "target_coordinate": "88:25",
+            "context": "Ğâşiye 88/21-26"
+          },
+          {
+            "target_coordinate": "88:26",
+            "context": "Ğâşiye 88/21-26"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 40. Ayetin Tefsiri\nوَاِنْ مَا نُرِيَنَّكَ بَعْضَ الَّذ۪ي نَعِدُهُمْ اَوْ نَتَوَفَّيَنَّكَ فَاِنَّمَا عَلَيْكَ الْبَلَاغُ وَعَلَيْنَا الْحِسَابُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:41",
+      "text": "اَوَلَمْ يَرَوْا اَنَّا نَأْتِي الْاَرْضَ نَنْقُصُهَا مِنْ اَطْرَافِهَاۜ وَاللّٰهُ يَحْكُمُ لَا مُعَقِّبَ لِحُكْمِه۪ۜ وَهُوَ سَر۪يعُ الْحِسَابِ",
+      "translation": "Onlar görmüyorlar mı ki yurtlarına geliyor, onu parça parça ellerinden alıyoruz. Hükmü Allah verir. O’nun hükmünü bozacak yoktur. O, hesabı çabuk görendir.",
+      "dipnot": "[1*] Allah’ın gelmesi, Allah’ın dininin gelmesidir. Bir yere Allah’ın dini gelince onun etki alanı genişlerken diğerlerininki daralır (Enbiya 21/44). Nebimizin Mekke’de dini tebliğ etmeye başlamasından sonra İslam’ın etkisi sürekli artarken kâfirlerin etkisi azalıyordu. [2*] En’am 6/57, Kehf 18/26, Kasas 28/70.",
+      "roots": [
+        "رأي",
+        "أتي",
+        "أرض",
+        "نقص",
+        "طرف",
+        "أله",
+        "حكم",
+        "عقب",
+        "سرع",
+        "حسب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Allah’ın gelmesi, Allah’ın dininin gelmesidir. Bir yere Allah’ın dini gelince onun etki alanı genişlerken diğerlerininki daralır ("
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/44",
+          "targets": [
+            "21:44"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Nebimizin Mekke’de dini tebliğ etmeye başlamasından sonra İslam’ın etkisi sürekli artarken kâfirlerin etkisi azalıyordu. [2*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/57",
+          "targets": [
+            "6:57"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/26",
+          "targets": [
+            "18:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/70",
+          "targets": [
+            "28:70"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:41",
+        "connections": [
+          {
+            "target_coordinate": "21:44",
+            "context": "Enbiya 21/44"
+          },
+          {
+            "target_coordinate": "6:57",
+            "context": "am 6/57"
+          },
+          {
+            "target_coordinate": "18:26",
+            "context": "Kehf 18/26"
+          },
+          {
+            "target_coordinate": "28:70",
+            "context": "Kasas 28/70"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 41. Ayetin Tefsiri\nاَوَلَمْ يَرَوْا اَنَّا نَأْتِي الْاَرْضَ نَنْقُصُهَا مِنْ اَطْرَافِهَاۜ وَاللّٰهُ يَحْكُمُ لَا مُعَقِّبَ لِحُكْمِه۪ۜ وَهُوَ سَر۪يعُ الْحِسَابِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:42",
+      "text": "وَقَدْ مَكَرَ الَّذ۪ينَ مِنْ قَبْلِهِمْ فَلِلّٰهِ الْمَكْرُ جَم۪يعًاۜ يَعْلَمُ مَا تَكْسِبُ كُلُّ نَفْسٍۜ وَسَيَعْلَمُ الْكُفَّارُ لِمَنْ عُقْبَى الدَّارِ",
+      "translation": "Bunlardan öncekiler de planlar kurdular. Oysa bütün planlar Allah’ın gözetimi altındadır. O, kimin ne kazandığını bilir. Kafirler, son yurdun kimin olacağını yakında öğreneceklerdir.",
+      "dipnot": "[1*] Allah’ın izni olmadan kimseye zarar veremezler. Allah onların tüm kötü planlarını boşa çıkarır, başlarına geçirir (Âl-i İmran 3/54, Enfal 8/30, İbrahim 14/46, Nahl 16/26, 45 - 47, Fatır 35/10, 43). [2*] En’am 6/3.",
+      "roots": [
+        "مكر",
+        "قبل",
+        "أله",
+        "جمع",
+        "علم",
+        "كسب",
+        "كلل",
+        "نفس",
+        "كفر",
+        "عقب",
+        "دور"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Allah’ın izni olmadan kimseye zarar veremezler. Allah onların tüm kötü planlarını boşa çıkarır, başlarına geçirir ("
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/54",
+          "targets": [
+            "3:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/30",
+          "targets": [
+            "8:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/46",
+          "targets": [
+            "14:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/26,45-47",
+          "targets": [
+            "16:26",
+            "16:45",
+            "16:46",
+            "16:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/10,43",
+          "targets": [
+            "35:10",
+            "35:43"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/3",
+          "targets": [
+            "6:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:42",
+        "connections": [
+          {
+            "target_coordinate": "3:54",
+            "context": "Âl-i İmran 3/54"
+          },
+          {
+            "target_coordinate": "8:30",
+            "context": "Enfal 8/30"
+          },
+          {
+            "target_coordinate": "14:46",
+            "context": "İbrahim 14/46"
+          },
+          {
+            "target_coordinate": "16:26",
+            "context": "Nahl 16/26,45-47"
+          },
+          {
+            "target_coordinate": "16:45",
+            "context": "Nahl 16/26,45-47"
+          },
+          {
+            "target_coordinate": "16:46",
+            "context": "Nahl 16/26,45-47"
+          },
+          {
+            "target_coordinate": "16:47",
+            "context": "Nahl 16/26,45-47"
+          },
+          {
+            "target_coordinate": "35:10",
+            "context": "Fatır 35/10,43"
+          },
+          {
+            "target_coordinate": "35:43",
+            "context": "Fatır 35/10,43"
+          },
+          {
+            "target_coordinate": "6:3",
+            "context": "am 6/3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 42. Ayetin Tefsiri\nوَقَدْ مَكَرَ الَّذ۪ينَ مِنْ قَبْلِهِمْ فَلِلّٰهِ الْمَكْرُ جَم۪يعًاۜ يَعْلَمُ مَا تَكْسِبُ كُلُّ نَفْسٍۜ وَسَيَعْلَمُ الْكُفَّارُ لِمَنْ عُقْبَى الدَّارِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    },
+    {
+      "id": "13:43",
+      "text": "وَيَقُولُ الَّذ۪ينَ كَفَرُوا لَسْتَ مُرْسَلًاۜ قُلْ كَفٰى بِاللّٰهِ شَه۪يدًا بَيْن۪ي وَبَيْنَكُمْۙ وَمَنْ عِنْدَهُ عِلْمُ الْكِتَابِ",
+      "translation": "Kâfirlik edenler: “Sen (Allah tarafından) gönderilmiş bir elçi değilsin!” derler. Sen de de ki: “Benimle sizin aranızda şahit olarak Allah da yeter, Kitab’ın bilgisine sahip olanlar da.”",
+      "dipnot": "[1*] Nisa 4/166, En’am 6/19. [2*] Kur’an’ın veya daha önce indirilmiş kitapların içeriğini bilenler, Muhammed aleyhisselamın, Allah’ın elçisi olduğuna şahit olurlar (Bakara 2/23 - 24, Âl-i İmrân 3/86, Maide 5/83, A’raf 7/157, Ahkaf 46/10).",
+      "roots": [
+        "قول",
+        "كفر",
+        "ليس",
+        "رسل",
+        "كفي",
+        "أله",
+        "شهد",
+        "بين",
+        "عند",
+        "علم",
+        "كتب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/166",
+          "targets": [
+            "4:166"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/19",
+          "targets": [
+            "6:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Kur’an’ın veya daha önce indirilmiş kitapların içeriğini bilenler, Muhammed aleyhisselamın, Allah’ın elçisi olduğuna şahit olurlar ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/23-24",
+          "targets": [
+            "2:23",
+            "2:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmrân 3/86",
+          "targets": [
+            "3:86"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/83",
+          "targets": [
+            "5:83"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/157",
+          "targets": [
+            "7:157"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/10",
+          "targets": [
+            "46:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "13:43",
+        "connections": [
+          {
+            "target_coordinate": "4:166",
+            "context": "Nisa 4/166"
+          },
+          {
+            "target_coordinate": "6:19",
+            "context": "am 6/19"
+          },
+          {
+            "target_coordinate": "2:23",
+            "context": "Bakara 2/23-24"
+          },
+          {
+            "target_coordinate": "2:24",
+            "context": "Bakara 2/23-24"
+          },
+          {
+            "target_coordinate": "3:86",
+            "context": "Âl-i İmrân 3/86"
+          },
+          {
+            "target_coordinate": "5:83",
+            "context": "Maide 5/83"
+          },
+          {
+            "target_coordinate": "7:157",
+            "context": "raf 7/157"
+          },
+          {
+            "target_coordinate": "46:10",
+            "context": "Ahkaf 46/10"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Ra'd Suresi 43. Ayetin Tefsiri\nوَيَقُولُ الَّذ۪ينَ كَفَرُوا لَسْتَ مُرْسَلًاۜ قُلْ كَفٰى بِاللّٰهِ شَه۪يدًا بَيْن۪ي وَبَيْنَكُمْۙ وَمَنْ عِنْدَهُ عِلْمُ الْكِتَابِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/13.mp3"
+    }
+  ]
+}

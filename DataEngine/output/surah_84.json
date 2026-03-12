@@ -1,0 +1,1652 @@
+{
+  "nodes": [
+    {
+      "id": "84:1",
+      "text": "اِذَا السَّمَٓاءُ انْشَقَّتْۙ",
+      "translation": "Gök parçalandığında,",
+      "dipnot": "Yeniden dirilişten önce göklerin durumunu anlatan ayetler için bkz:\nEnbiya 21/104,\nFurkan 25/25,\nTur 52/9,\nRahman 55/37,\nHâkka 69/16,\nMearic 70/8,\nMüzzemmil 73/18,\nMürselat 77/9,\nNebe 78/19,\nTekvir 81/11,\nİnfitar 82/1.",
+      "roots": [
+        "سمو",
+        "شقق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Yeniden dirilişten önce göklerin durumunu anlatan ayetler için bkz:\n"
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/104",
+          "targets": [
+            "21:104"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/25",
+          "targets": [
+            "25:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/9",
+          "targets": [
+            "52:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/37",
+          "targets": [
+            "55:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/16",
+          "targets": [
+            "69:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/8",
+          "targets": [
+            "70:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/18",
+          "targets": [
+            "73:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/9",
+          "targets": [
+            "77:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/19",
+          "targets": [
+            "78:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/11",
+          "targets": [
+            "81:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/1",
+          "targets": [
+            "82:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:1",
+        "connections": [
+          {
+            "target_coordinate": "21:104",
+            "context": "Enbiya 21/104"
+          },
+          {
+            "target_coordinate": "25:25",
+            "context": "Furkan 25/25"
+          },
+          {
+            "target_coordinate": "52:9",
+            "context": "Tur 52/9"
+          },
+          {
+            "target_coordinate": "55:37",
+            "context": "Rahman 55/37"
+          },
+          {
+            "target_coordinate": "69:16",
+            "context": "Hâkka 69/16"
+          },
+          {
+            "target_coordinate": "70:8",
+            "context": "Mearic 70/8"
+          },
+          {
+            "target_coordinate": "73:18",
+            "context": "Müzzemmil 73/18"
+          },
+          {
+            "target_coordinate": "77:9",
+            "context": "Mürselat 77/9"
+          },
+          {
+            "target_coordinate": "78:19",
+            "context": "Nebe 78/19"
+          },
+          {
+            "target_coordinate": "81:11",
+            "context": "Tekvir 81/11"
+          },
+          {
+            "target_coordinate": "82:1",
+            "context": "İnfitar 82/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 1. Ayetin Tefsiri\nاِذَا السَّمَٓاءُ انْشَقَّتْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:2",
+      "text": "وَاَذِنَتْ لِرَبِّهَا وَحُقَّتْۙ",
+      "translation": "Rabbini dinlediği ve görevini yaptığı onaylanmış olur.",
+      "dipnot": "Göklere yüklenen görev için bkz:\nFussilet 41/11\n-\n12.",
+      "roots": [
+        "أذن",
+        "ربب",
+        "حقق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Göklere yüklenen görev için bkz:\n"
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/11-12",
+          "targets": [
+            "41:11",
+            "41:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:2",
+        "connections": [
+          {
+            "target_coordinate": "41:11",
+            "context": "Fussilet 41/11-12"
+          },
+          {
+            "target_coordinate": "41:12",
+            "context": "Fussilet 41/11-12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 2. Ayetin Tefsiri\nوَاَذِنَتْ لِرَبِّهَا وَحُقَّتْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:3",
+      "text": "وَاِذَا الْاَرْضُ مُدَّتْۙ",
+      "translation": "Yeryüzünün alanı (daha da) artırıldığında,",
+      "dipnot": "Yeniden dirilişten önce yerlerinden yürütülüp parçalanmış dağlar, denizleri dolduracaktır (\nKehf 18/47,\nTaha 20/105\n-\n107,\nTûr 52/10,\nMürselat 77/10,\nTekvir 81/6,\nFecr 89/21\n). Yeryüzünün tamamı kara parçasına dönüşecek ve alanı bu şekilde artırılmış olacaktır.",
+      "roots": [
+        "أرض",
+        "مدد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Yeniden dirilişten önce yerlerinden yürütülüp parçalanmış dağlar, denizleri dolduracaktır (\n"
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/47",
+          "targets": [
+            "18:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/105-107",
+          "targets": [
+            "20:105",
+            "20:106",
+            "20:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tûr 52/10",
+          "targets": [
+            "52:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/10",
+          "targets": [
+            "77:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/6",
+          "targets": [
+            "81:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/21",
+          "targets": [
+            "89:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yeryüzünün tamamı kara parçasına dönüşecek ve alanı bu şekilde artırılmış olacaktır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:3",
+        "connections": [
+          {
+            "target_coordinate": "18:47",
+            "context": "Kehf 18/47"
+          },
+          {
+            "target_coordinate": "20:105",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "20:106",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "20:107",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "52:10",
+            "context": "Tûr 52/10"
+          },
+          {
+            "target_coordinate": "77:10",
+            "context": "Mürselat 77/10"
+          },
+          {
+            "target_coordinate": "81:6",
+            "context": "Tekvir 81/6"
+          },
+          {
+            "target_coordinate": "89:21",
+            "context": "Fecr 89/21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 3. Ayetin Tefsiri\nوَاِذَا الْاَرْضُ مُدَّتْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:4",
+      "text": "وَاَلْقَتْ مَا ف۪يهَا وَتَخَلَّتْۙ",
+      "translation": "ve içinde olanları dışarı atıp boşaldığında,",
+      "dipnot": "Zilzal 99/1\n-\n3.",
+      "roots": [
+        "لقي",
+        "خلو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zilzal 99/1-3",
+          "targets": [
+            "99:1",
+            "99:2",
+            "99:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:4",
+        "connections": [
+          {
+            "target_coordinate": "99:1",
+            "context": "Zilzal 99/1-3"
+          },
+          {
+            "target_coordinate": "99:2",
+            "context": "Zilzal 99/1-3"
+          },
+          {
+            "target_coordinate": "99:3",
+            "context": "Zilzal 99/1-3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 4. Ayetin Tefsiri\nوَاَلْقَتْ مَا ف۪يهَا وَتَخَلَّتْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:5",
+      "text": "وَاَذِنَتْ لِرَبِّهَا وَحُقَّتْۜ",
+      "translation": "Rabbini dinlediği ve görevini yaptığı onaylanmış olur.",
+      "dipnot": "Zilzal 99/4\n-\n5.",
+      "roots": [
+        "أذن",
+        "ربب",
+        "حقق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zilzal 99/4-5",
+          "targets": [
+            "99:4",
+            "99:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:5",
+        "connections": [
+          {
+            "target_coordinate": "99:4",
+            "context": "Zilzal 99/4-5"
+          },
+          {
+            "target_coordinate": "99:5",
+            "context": "Zilzal 99/4-5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 5. Ayetin Tefsiri\nوَاَذِنَتْ لِرَبِّهَا وَحُقَّتْۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:6",
+      "text": "يَٓا اَيُّهَا الْاِنْسَانُ اِنَّكَ كَادِحٌ اِلٰى رَبِّكَ كَدْحًا فَمُلَاق۪يهِۚ",
+      "translation": "Ey insan! Sen Rabbine varıncaya (ölünceye) kadar çabalayıp durmaktasın. Sonunda onunla yüzleşeceksin.",
+      "dipnot": "Ankebut 29/5.",
+      "roots": [
+        "أيي",
+        "أنس",
+        "كدح",
+        "ربب",
+        "لقي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Ankebut 29/5",
+          "targets": [
+            "29:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:6",
+        "connections": [
+          {
+            "target_coordinate": "29:5",
+            "context": "Ankebut 29/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 6. Ayetin Tefsiri\nيَٓا اَيُّهَا الْاِنْسَانُ اِنَّكَ كَادِحٌ اِلٰى رَبِّكَ كَدْحًا فَمُلَاق۪يهِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:7",
+      "text": "فَاَمَّا مَنْ اُو۫تِيَ كِتَابَهُ بِيَم۪ينِه۪ۙ",
+      "translation": "Kimin amel defteri sağından verilirse",
+      "dipnot": "Amel defteri sağından verilenlerin hepsi cennete gider ve oranın nimetlerinden yararlanırlar (\nİsra 17/71,\nVakıa 56/27,\n90\n-\n91,\nHâkka 69/19\n-\n20,\nMüddessir 74/39\n-\n40\n). Ancak hepsi aynı konumda olmazlar. Allah, kendi yolunda malı ve canıyla elinden geleni yapanları, özürsüz olarak oturup kalanlarla bir tutmayacak, vereceği büyük bir ödülle diğerlerinden üstün kılacaktır (\nNisa 4/95\n-\n96,\nİsra 17/21\n).",
+      "roots": [
+        "أتي",
+        "كتب",
+        "يمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Amel defteri sağından verilenlerin hepsi cennete gider ve oranın nimetlerinden yararlanırlar (\n"
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/71",
+          "targets": [
+            "17:71"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/27,90-91",
+          "targets": [
+            "56:27",
+            "56:90",
+            "56:91"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/19-20",
+          "targets": [
+            "69:19",
+            "69:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/39-40",
+          "targets": [
+            "74:39",
+            "74:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ancak hepsi aynı konumda olmazlar. Allah, kendi yolunda malı ve canıyla elinden geleni yapanları, özürsüz olarak oturup kalanlarla bir tutmayacak, vereceği büyük bir ödülle diğerlerinden üstün kılacaktır (\n"
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/95-96",
+          "targets": [
+            "4:95",
+            "4:96"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/21",
+          "targets": [
+            "17:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:7",
+        "connections": [
+          {
+            "target_coordinate": "17:71",
+            "context": "İsra 17/71"
+          },
+          {
+            "target_coordinate": "56:27",
+            "context": "Vakıa 56/27,90-91"
+          },
+          {
+            "target_coordinate": "56:90",
+            "context": "Vakıa 56/27,90-91"
+          },
+          {
+            "target_coordinate": "56:91",
+            "context": "Vakıa 56/27,90-91"
+          },
+          {
+            "target_coordinate": "69:19",
+            "context": "Hâkka 69/19-20"
+          },
+          {
+            "target_coordinate": "69:20",
+            "context": "Hâkka 69/19-20"
+          },
+          {
+            "target_coordinate": "74:39",
+            "context": "Müddessir 74/39-40"
+          },
+          {
+            "target_coordinate": "74:40",
+            "context": "Müddessir 74/39-40"
+          },
+          {
+            "target_coordinate": "4:95",
+            "context": "Nisa 4/95-96"
+          },
+          {
+            "target_coordinate": "4:96",
+            "context": "Nisa 4/95-96"
+          },
+          {
+            "target_coordinate": "17:21",
+            "context": "İsra 17/21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 7. Ayetin Tefsiri\nفَاَمَّا مَنْ اُو۫تِيَ كِتَابَهُ بِيَم۪ينِه۪ۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:8",
+      "text": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَس۪يرًاۙ",
+      "translation": "onun hesabı, kolay bir şekilde görülecek,",
+      "dipnot": "",
+      "roots": [
+        "حسب",
+        "يسر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "84:8",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 8. Ayetin Tefsiri\nفَسَوْفَ يُحَاسَبُ حِسَابًا يَس۪يرًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:9",
+      "text": "وَيَنْقَلِبُ اِلٰٓى اَهْلِه۪ مَسْرُورًاۜ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "قلب",
+        "أهل",
+        "سرر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "84:9",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 9. Ayetin Tefsiri\nوَيَنْقَلِبُ اِلٰٓى اَهْلِه۪ مَسْرُورًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:10",
+      "text": "وَاَمَّا مَنْ اُو۫تِيَ كِتَابَهُ وَرَٓاءَ ظَهْرِه۪ۙ",
+      "translation": "Kimin de amel defteri arkasından verilirse",
+      "dipnot": "Vakıa 56/41-46, Hâkka 69/25-26.",
+      "roots": [
+        "أتي",
+        "كتب",
+        "وري",
+        "ظهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/41-46",
+          "targets": [
+            "56:41",
+            "56:42",
+            "56:43",
+            "56:44",
+            "56:45",
+            "56:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/25-26",
+          "targets": [
+            "69:25",
+            "69:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:10",
+        "connections": [
+          {
+            "target_coordinate": "56:41",
+            "context": "Vakıa 56/41-46"
+          },
+          {
+            "target_coordinate": "56:42",
+            "context": "Vakıa 56/41-46"
+          },
+          {
+            "target_coordinate": "56:43",
+            "context": "Vakıa 56/41-46"
+          },
+          {
+            "target_coordinate": "56:44",
+            "context": "Vakıa 56/41-46"
+          },
+          {
+            "target_coordinate": "56:45",
+            "context": "Vakıa 56/41-46"
+          },
+          {
+            "target_coordinate": "56:46",
+            "context": "Vakıa 56/41-46"
+          },
+          {
+            "target_coordinate": "69:25",
+            "context": "Hâkka 69/25-26"
+          },
+          {
+            "target_coordinate": "69:26",
+            "context": "Hâkka 69/25-26"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 10. Ayetin Tefsiri\nوَاَمَّا مَنْ اُو۫تِيَ كِتَابَهُ وَرَٓاءَ ظَهْرِه۪ۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:11",
+      "text": "فَسَوْفَ يَدْعُو ثُبُورًاۙ",
+      "translation": "o, yok olmak için yalvaracak,",
+      "dipnot": "Hâkka 69/27, Nebe 78/40.",
+      "roots": [
+        "دعو",
+        "ثبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hâkka 69/27",
+          "targets": [
+            "69:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/40",
+          "targets": [
+            "78:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:11",
+        "connections": [
+          {
+            "target_coordinate": "69:27",
+            "context": "Hâkka 69/27"
+          },
+          {
+            "target_coordinate": "78:40",
+            "context": "Nebe 78/40"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 11. Ayetin Tefsiri\nفَسَوْفَ يَدْعُو ثُبُورًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:12",
+      "text": "وَيَصْلٰى سَع۪يرًاۜ",
+      "translation": "ama alevli bir ateşe girip kalacaktır.",
+      "dipnot": "İnfitar 82/14-15.",
+      "roots": [
+        "صلي",
+        "سعر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İnfitar 82/14-15",
+          "targets": [
+            "82:14",
+            "82:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:12",
+        "connections": [
+          {
+            "target_coordinate": "82:14",
+            "context": "İnfitar 82/14-15"
+          },
+          {
+            "target_coordinate": "82:15",
+            "context": "İnfitar 82/14-15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 12. Ayetin Tefsiri\nوَيَصْلٰى سَع۪يرًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:13",
+      "text": "اِنَّهُ كَانَ ف۪ٓي اَهْلِه۪ مَسْرُورًا",
+      "translation": "Halbuki o, (dünyada) ailesi ve yakınları arasında sevinç içindeydi;",
+      "dipnot": "Kıyamet 75/33, Mutaffifin 83/31.",
+      "roots": [
+        "كون",
+        "أهل",
+        "سرر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kıyamet 75/33",
+          "targets": [
+            "75:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mutaffifin 83/31",
+          "targets": [
+            "83:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:13",
+        "connections": [
+          {
+            "target_coordinate": "75:33",
+            "context": "Kıyamet 75/33"
+          },
+          {
+            "target_coordinate": "83:31",
+            "context": "Mutaffifin 83/31"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 13. Ayetin Tefsiri\nاِنَّهُ كَانَ ف۪ٓي اَهْلِه۪ مَسْرُورًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:14",
+      "text": "اِنَّهُ ظَنَّ اَنْ لَنْ يَحُورَۚۛ",
+      "translation": "asla bu duruma düşmeyeceğini zannediyordu.",
+      "dipnot": "Yunus 10/7-8, Enbiya 21/1, Nebe 78/27.",
+      "roots": [
+        "ظنن",
+        "حور"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/7-8",
+          "targets": [
+            "10:7",
+            "10:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/1",
+          "targets": [
+            "21:1"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/27",
+          "targets": [
+            "78:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:14",
+        "connections": [
+          {
+            "target_coordinate": "10:7",
+            "context": "Yunus 10/7-8"
+          },
+          {
+            "target_coordinate": "10:8",
+            "context": "Yunus 10/7-8"
+          },
+          {
+            "target_coordinate": "21:1",
+            "context": "Enbiya 21/1"
+          },
+          {
+            "target_coordinate": "78:27",
+            "context": "Nebe 78/27"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 14. Ayetin Tefsiri\nاِنَّهُ ظَنَّ اَنْ لَنْ يَحُورَۚۛ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:15",
+      "text": "بَلٰىۚۛ اِنَّ رَبَّهُ كَانَ بِه۪ بَص۪يرًاۜ",
+      "translation": "Hayır! Rabbi onu hep görüyordu.",
+      "dipnot": "Yunus 10/61, Mücadele 58/7.",
+      "roots": [
+        "ربب",
+        "كون",
+        "بصر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/61",
+          "targets": [
+            "10:61"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mücadele 58/7",
+          "targets": [
+            "58:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:15",
+        "connections": [
+          {
+            "target_coordinate": "10:61",
+            "context": "Yunus 10/61"
+          },
+          {
+            "target_coordinate": "58:7",
+            "context": "Mücadele 58/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 15. Ayetin Tefsiri\nبَلٰىۚۛ اِنَّ رَبَّهُ كَانَ بِه۪ بَص۪يرًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:16",
+      "text": "فَلَٓا اُقْسِمُ بِالشَّفَقِۙ",
+      "translation": "Hayır (onun zannettiği gibi değil)! Akşamın alaca karanlığına yemin ederim,",
+      "dipnot": "Arapça “şafak (شفق)” kelimesi, güneş batışı esnasında gündüzün ışığının gecenin karanlığına karışmasını ifade eder (Müfredat). Türkçede buna akşamın alaca karanlığı denir.",
+      "roots": [
+        "قسم",
+        "شفق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Arapça “şafak (شفق)” kelimesi, güneş batışı esnasında gündüzün ışığının gecenin karanlığına karışmasını ifade eder (Müfredat). Türkçede buna akşamın alaca karanlığı denir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:16",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 16. Ayetin Tefsiri\nفَلَٓا اُقْسِمُ بِالشَّفَقِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:17",
+      "text": "وَالَّيْلِ وَمَا وَسَقَۙ",
+      "translation": "geceye ve kapsadığı şeylere,",
+      "dipnot": "Müddessir 74/33, Tekvir 81/17, Fecr 89/4, Şems 91/4, Leyl 92/1, Duha 93/2.",
+      "roots": [
+        "ليل",
+        "وسق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Müddessir 74/33",
+          "targets": [
+            "74:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/17",
+          "targets": [
+            "81:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/4",
+          "targets": [
+            "89:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/4",
+          "targets": [
+            "91:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Leyl 92/1",
+          "targets": [
+            "92:1"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duha 93/2",
+          "targets": [
+            "93:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:17",
+        "connections": [
+          {
+            "target_coordinate": "74:33",
+            "context": "Müddessir 74/33"
+          },
+          {
+            "target_coordinate": "81:17",
+            "context": "Tekvir 81/17"
+          },
+          {
+            "target_coordinate": "89:4",
+            "context": "Fecr 89/4"
+          },
+          {
+            "target_coordinate": "91:4",
+            "context": "Şems 91/4"
+          },
+          {
+            "target_coordinate": "92:1",
+            "context": "Leyl 92/1"
+          },
+          {
+            "target_coordinate": "93:2",
+            "context": "Duha 93/2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 17. Ayetin Tefsiri\nوَالَّيْلِ وَمَا وَسَقَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:18",
+      "text": "وَالْقَمَرِ اِذَا اتَّسَقَۙ",
+      "translation": "dolunay haline geldiğinde aya da yemin ederim ki",
+      "dipnot": "Müddessir 74/32, Şems 91/2.",
+      "roots": [
+        "قمر",
+        "وسق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Müddessir 74/32",
+          "targets": [
+            "74:32"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/2",
+          "targets": [
+            "91:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:18",
+        "connections": [
+          {
+            "target_coordinate": "74:32",
+            "context": "Müddessir 74/32"
+          },
+          {
+            "target_coordinate": "91:2",
+            "context": "Şems 91/2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 18. Ayetin Tefsiri\nوَالْقَمَرِ اِذَا اتَّسَقَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:19",
+      "text": "لَتَرْكَبُنَّ طَبَقًا عَنْ طَبَقٍۜ",
+      "translation": "(hayat yolculuğunda) kesinlikle bir durumdan bir başka duruma geçeceksiniz!",
+      "dipnot": "Hayat, bebeklikten yaşlılığa, varlıktan darlığa sonra tekrar bolluğa vb pek çok şekilde aşamaları olan bir yolculuktur ( Bakara 2/155, Nahl 16/70, Hac 22/5, Mu’minun 23/12-16, Rum 30/54, Yasin 36/68, Mü’min 40/67, Ahkaf 46/15 ). Bunları sürekli gözlemleyebilen insanların, yeniden diriltileceklerini ve hesap vermek zorunda kalacaklarını da akletmeleri gerekir.",
+      "roots": [
+        "ركب",
+        "طبق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Hayat, bebeklikten yaşlılığa, varlıktan darlığa sonra tekrar bolluğa vb pek çok şekilde aşamaları olan bir yolculuktur ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/155",
+          "targets": [
+            "2:155"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/70",
+          "targets": [
+            "16:70"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/5",
+          "targets": [
+            "22:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mu’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/12-16",
+          "targets": [
+            "23:12",
+            "23:13",
+            "23:14",
+            "23:15",
+            "23:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/54",
+          "targets": [
+            "30:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/68",
+          "targets": [
+            "36:68"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/67",
+          "targets": [
+            "40:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/15",
+          "targets": [
+            "46:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bunları sürekli gözlemleyebilen insanların, yeniden diriltileceklerini ve hesap vermek zorunda kalacaklarını da akletmeleri gerekir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:19",
+        "connections": [
+          {
+            "target_coordinate": "2:155",
+            "context": "Bakara 2/155"
+          },
+          {
+            "target_coordinate": "16:70",
+            "context": "Nahl 16/70"
+          },
+          {
+            "target_coordinate": "22:5",
+            "context": "Hac 22/5"
+          },
+          {
+            "target_coordinate": "23:12",
+            "context": "minun 23/12-16"
+          },
+          {
+            "target_coordinate": "23:13",
+            "context": "minun 23/12-16"
+          },
+          {
+            "target_coordinate": "23:14",
+            "context": "minun 23/12-16"
+          },
+          {
+            "target_coordinate": "23:15",
+            "context": "minun 23/12-16"
+          },
+          {
+            "target_coordinate": "23:16",
+            "context": "minun 23/12-16"
+          },
+          {
+            "target_coordinate": "30:54",
+            "context": "Rum 30/54"
+          },
+          {
+            "target_coordinate": "36:68",
+            "context": "Yasin 36/68"
+          },
+          {
+            "target_coordinate": "40:67",
+            "context": "min 40/67"
+          },
+          {
+            "target_coordinate": "46:15",
+            "context": "Ahkaf 46/15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 19. Ayetin Tefsiri\nلَتَرْكَبُنَّ طَبَقًا عَنْ طَبَقٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:20",
+      "text": "فَمَا لَهُمْ لَا يُؤْمِنُونَۙ",
+      "translation": "Öyleyse onlara ne oluyor da inanmıyorlar!",
+      "dipnot": "En’am 6/111, Yunus 10/97, Meryem 19/39.",
+      "roots": [
+        "أمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/111",
+          "targets": [
+            "6:111"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/97",
+          "targets": [
+            "10:97"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/39",
+          "targets": [
+            "19:39"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:20",
+        "connections": [
+          {
+            "target_coordinate": "6:111",
+            "context": "am 6/111"
+          },
+          {
+            "target_coordinate": "10:97",
+            "context": "Yunus 10/97"
+          },
+          {
+            "target_coordinate": "19:39",
+            "context": "Meryem 19/39"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 20. Ayetin Tefsiri\nفَمَا لَهُمْ لَا يُؤْمِنُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:21",
+      "text": "وَاِذَا قُرِئَ عَلَيْهِمُ الْقُرْاٰنُ لَا يَسْجُدُونَۜ",
+      "translation": "Kendilerine Kur’ân okununca (hükümlerine) boyun eğmiyorlar!",
+      "dipnot": "Furkan 25/60.",
+      "roots": [
+        "قرأ",
+        "سجد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Furkan 25/60",
+          "targets": [
+            "25:60"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:21",
+        "connections": [
+          {
+            "target_coordinate": "25:60",
+            "context": "Furkan 25/60"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 21. Ayetin Tefsiri\nوَاِذَا قُرِئَ عَلَيْهِمُ الْقُرْاٰنُ لَا يَسْجُدُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:22",
+      "text": "بَلِ الَّذ۪ينَ كَفَرُوا يُكَذِّبُونَۘ",
+      "translation": "Kafirlik edenler aslında yalan söyleyip duruyorlar.",
+      "dipnot": "Büruc 85/19.",
+      "roots": [
+        "كفر",
+        "كذب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Büruc 85/19",
+          "targets": [
+            "85:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:22",
+        "connections": [
+          {
+            "target_coordinate": "85:19",
+            "context": "Büruc 85/19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 22. Ayetin Tefsiri\nبَلِ الَّذ۪ينَ كَفَرُوا يُكَذِّبُونَۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:23",
+      "text": "وَاللّٰهُ اَعْلَمُ بِمَا يُوعُونَۘ",
+      "translation": "Allah onların içlerinde neyi tuttuklarını çok iyi bilir.",
+      "dipnot": "Âl-i İmran 3/29, En’am 6/3, Nahl 16/19, Teğabün 64/4, Mülk 67/13-14.",
+      "roots": [
+        "أله",
+        "علم",
+        "وعي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/29",
+          "targets": [
+            "3:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/3",
+          "targets": [
+            "6:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/19",
+          "targets": [
+            "16:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/4",
+          "targets": [
+            "64:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/13-14",
+          "targets": [
+            "67:13",
+            "67:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:23",
+        "connections": [
+          {
+            "target_coordinate": "3:29",
+            "context": "Âl-i İmran 3/29"
+          },
+          {
+            "target_coordinate": "6:3",
+            "context": "am 6/3"
+          },
+          {
+            "target_coordinate": "16:19",
+            "context": "Nahl 16/19"
+          },
+          {
+            "target_coordinate": "64:4",
+            "context": "Teğabün 64/4"
+          },
+          {
+            "target_coordinate": "67:13",
+            "context": "Mülk 67/13-14"
+          },
+          {
+            "target_coordinate": "67:14",
+            "context": "Mülk 67/13-14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 23. Ayetin Tefsiri\nوَاللّٰهُ اَعْلَمُ بِمَا يُوعُونَۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:24",
+      "text": "فَبَشِّرْهُمْ بِعَذَابٍ اَل۪يمٍۙ",
+      "translation": "Sen onlara acıklı bir azabı müjdele!",
+      "dipnot": "Lokman 31/7, Casiye 45/8.",
+      "roots": [
+        "بشر",
+        "عذب",
+        "ألم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Lokman 31/7",
+          "targets": [
+            "31:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Casiye 45/8",
+          "targets": [
+            "45:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:24",
+        "connections": [
+          {
+            "target_coordinate": "31:7",
+            "context": "Lokman 31/7"
+          },
+          {
+            "target_coordinate": "45:8",
+            "context": "Casiye 45/8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 24. Ayetin Tefsiri\nفَبَشِّرْهُمْ بِعَذَابٍ اَل۪يمٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:25",
+      "text": "اِلَّا الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ اَجْرٌ غَيْرُ مَمْنُونٍ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "أمن",
+        "عمل",
+        "صلح",
+        "أجر",
+        "غير",
+        "منن"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "84:25",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 25. Ayetin Tefsiri\nاِلَّا الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ اَجْرٌ غَيْرُ مَمْنُونٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    },
+    {
+      "id": "84:25",
+      "text": "",
+      "translation": "İnanıp güvenen ve iyi işler yapanlar ise bunun dışındadır. Onlar için kesintisiz bir ödül vardır.",
+      "dipnot": "Fussilet 41/8,\nTin 95/6.",
+      "roots": [
+        "أمن",
+        "عمل",
+        "صلح",
+        "أجر",
+        "غير",
+        "منن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Fussilet 41/8",
+          "targets": [
+            "41:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tin 95/6",
+          "targets": [
+            "95:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "84:25",
+        "connections": [
+          {
+            "target_coordinate": "41:8",
+            "context": "Fussilet 41/8"
+          },
+          {
+            "target_coordinate": "95:6",
+            "context": "Tin 95/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 25. Ayetin Tefsiri\nاِلَّا الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ اَجْرٌ غَيْرُ مَمْنُونٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/84.mp3"
+    }
+  ]
+}

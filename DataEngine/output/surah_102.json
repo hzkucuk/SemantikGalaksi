@@ -1,0 +1,541 @@
+{
+  "nodes": [
+    {
+      "id": "102:1",
+      "text": "اَلْهٰيكُمُ التَّكَاثُرُۙ",
+      "translation": "Çoklukla övünme yarışı sizi (Allah’a karşı görevlerinizden) alıkoydu.",
+      "dipnot": "Çoklukla övünme duygusu, mü’min-kafir, bütün insanlarda vardır (Hadid 57/20, Kehf 18/34). Nebimizin komutasında yapılan Huneyn savaşında müminler, ilk defa kafirlerden sayıca fazlaydılar. Bu, onları çok etkiledi ama işlerine yaramadı. Allah’ın yardımı olmasaydı savaşı kazanamayacaklardı (Tevbe 9/25-26). Malı ve evladı ile övünenlerin çoğu Allah’ın ayetlerini dikkate almaz. Nitekim bu gibi insanlar, Allah’ın nebilerinin yaptığı tebliği kabul etmemiş, onlara şöyle demişlerdi: \"Biz sizinle gönderilen mesajları tanımayız. Malımız da evladımız da daha çok. Biz azaba uğratılacak değiliz” (Sebe 34/34-35).",
+      "roots": [
+        "لهو",
+        "كثر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Çoklukla övünme duygusu, mü’min-kafir, bütün insanlarda vardır ("
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/20",
+          "targets": [
+            "57:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/34",
+          "targets": [
+            "18:34"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Nebimizin komutasında yapılan Huneyn savaşında müminler, ilk defa kafirlerden sayıca fazlaydılar. Bu, onları çok etkiledi ama işlerine yaramadı. Allah’ın yardımı olmasaydı savaşı kazanamayacaklardı ("
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/25-26",
+          "targets": [
+            "9:25",
+            "9:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Malı ve evladı ile övünenlerin çoğu Allah’ın ayetlerini dikkate almaz. Nitekim bu gibi insanlar, Allah’ın nebilerinin yaptığı tebliği kabul etmemiş, onlara şöyle demişlerdi: \"Biz sizinle gönderilen mesajları tanımayız. Malımız da evladımız da daha çok. Biz azaba uğratılacak değiliz” ("
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/34-35",
+          "targets": [
+            "34:34",
+            "34:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "102:1",
+        "connections": [
+          {
+            "target_coordinate": "57:20",
+            "context": "Hadid 57/20"
+          },
+          {
+            "target_coordinate": "18:34",
+            "context": "Kehf 18/34"
+          },
+          {
+            "target_coordinate": "9:25",
+            "context": "Tevbe 9/25-26"
+          },
+          {
+            "target_coordinate": "9:26",
+            "context": "Tevbe 9/25-26"
+          },
+          {
+            "target_coordinate": "34:34",
+            "context": "Sebe 34/34-35"
+          },
+          {
+            "target_coordinate": "34:35",
+            "context": "Sebe 34/34-35"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tekâsür Suresi 1. Ayetin Tefsiri\nاَلْهٰيكُمُ التَّكَاثُرُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/102.mp3"
+    },
+    {
+      "id": "102:2",
+      "text": "حَتّٰى زُرْتُمُ الْمَقَابِرَۜ",
+      "translation": "Siz kabirlere girinceye kadar (bu yarış) sürdü.",
+      "dipnot": "",
+      "roots": [
+        "زور",
+        "قبر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "102:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tekâsür Suresi 2. Ayetin Tefsiri\nحَتّٰى زُرْتُمُ الْمَقَابِرَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/102.mp3"
+    },
+    {
+      "id": "102:3",
+      "text": "كَلَّا سَوْفَ تَعْلَمُونَۙ",
+      "translation": "Yok, ileride öğreneceksiniz!",
+      "dipnot": "En’am 6/67, Hicr 15/2-3, Nahl 16/55.",
+      "roots": [
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/67",
+          "targets": [
+            "6:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/2-3",
+          "targets": [
+            "15:2",
+            "15:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/55",
+          "targets": [
+            "16:55"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "102:3",
+        "connections": [
+          {
+            "target_coordinate": "6:67",
+            "context": "am 6/67"
+          },
+          {
+            "target_coordinate": "15:2",
+            "context": "Hicr 15/2-3"
+          },
+          {
+            "target_coordinate": "15:3",
+            "context": "Hicr 15/2-3"
+          },
+          {
+            "target_coordinate": "16:55",
+            "context": "Nahl 16/55"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tekâsür Suresi 3. Ayetin Tefsiri\nكَلَّا سَوْفَ تَعْلَمُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/102.mp3"
+    },
+    {
+      "id": "102:4",
+      "text": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَۜ",
+      "translation": "Yok yok, nasıl olsa ileride öğreneceksiniz!",
+      "dipnot": "Sâd 38/87-88, Nebe 78/1-5.",
+      "roots": [
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Sâd 38/87-88",
+          "targets": [
+            "38:87",
+            "38:88"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/1-5",
+          "targets": [
+            "78:1",
+            "78:2",
+            "78:3",
+            "78:4",
+            "78:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "102:4",
+        "connections": [
+          {
+            "target_coordinate": "38:87",
+            "context": "Sâd 38/87-88"
+          },
+          {
+            "target_coordinate": "38:88",
+            "context": "Sâd 38/87-88"
+          },
+          {
+            "target_coordinate": "78:1",
+            "context": "Nebe 78/1-5"
+          },
+          {
+            "target_coordinate": "78:2",
+            "context": "Nebe 78/1-5"
+          },
+          {
+            "target_coordinate": "78:3",
+            "context": "Nebe 78/1-5"
+          },
+          {
+            "target_coordinate": "78:4",
+            "context": "Nebe 78/1-5"
+          },
+          {
+            "target_coordinate": "78:5",
+            "context": "Nebe 78/1-5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tekâsür Suresi 4. Ayetin Tefsiri\nثُمَّ كَلَّا سَوْفَ تَعْلَمُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/102.mp3"
+    },
+    {
+      "id": "102:5",
+      "text": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَق۪ينِۜ",
+      "translation": "Hayır hayır! Bunu (bu övünmenin yanlışlığını) keşke kesin bir bilgiyle bilseniz (böyle davranmazsınız).",
+      "dipnot": "Birçok insan, bildiği halde bilmiyormuş gibi davrandığı için onlar da bu kapsama girer (Enbiya 21/39, Rum 30/58-59).",
+      "roots": [
+        "علم",
+        "يقن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Birçok insan, bildiği halde bilmiyormuş gibi davrandığı için onlar da bu kapsama girer ("
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/39",
+          "targets": [
+            "21:39"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/58-59",
+          "targets": [
+            "30:58",
+            "30:59"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "102:5",
+        "connections": [
+          {
+            "target_coordinate": "21:39",
+            "context": "Enbiya 21/39"
+          },
+          {
+            "target_coordinate": "30:58",
+            "context": "Rum 30/58-59"
+          },
+          {
+            "target_coordinate": "30:59",
+            "context": "Rum 30/58-59"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tekâsür Suresi 5. Ayetin Tefsiri\nكَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَق۪ينِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/102.mp3"
+    },
+    {
+      "id": "102:6",
+      "text": "لَتَرَوُنَّ الْجَح۪يمَۙ",
+      "translation": "O yakıcı ateşi kesinlikle göreceksiniz.",
+      "dipnot": "",
+      "roots": [
+        "رأي",
+        "جحم"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "102:6",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tekâsür Suresi 6. Ayetin Tefsiri\nلَتَرَوُنَّ الْجَح۪يمَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/102.mp3"
+    },
+    {
+      "id": "102:7",
+      "text": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَق۪ينِۙ",
+      "translation": "Evet, onu kesin olarak bizzat kendi gözünüzle göreceksiniz.",
+      "dipnot": "Mü’min-kafir herkes ahirette cehennemi görecek; ama oraya sadece suçlular girecektir (Kehf 18/53, Furkan 25/12-13, Şuara 26/91, Mülk 67/27, Naziat 79/36). Sevabı günahından fazla olanlar cehennemi uzaktan görecek; ama onun hışırtısını bile duymayacaklardır (Enbiya 21/101-102). Cehenneme gidenlerle onlar arasında karşılıklı konuşmalar olacaktır (A’raf 7/44-",
+      "roots": [
+        "رأي",
+        "عين",
+        "يقن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Mü’min-kafir herkes ahirette cehennemi görecek; ama oraya sadece suçlular girecektir ("
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/53",
+          "targets": [
+            "18:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/12-13",
+          "targets": [
+            "25:12",
+            "25:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/91",
+          "targets": [
+            "26:91"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/27",
+          "targets": [
+            "67:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziat 79/36",
+          "targets": [
+            "79:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Sevabı günahından fazla olanlar cehennemi uzaktan görecek; ama onun hışırtısını bile duymayacaklardır ("
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/101-102",
+          "targets": [
+            "21:101",
+            "21:102"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Cehenneme gidenlerle onlar arasında karşılıklı konuşmalar olacaktır (A’raf 7/44-"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "102:7",
+        "connections": [
+          {
+            "target_coordinate": "18:53",
+            "context": "Kehf 18/53"
+          },
+          {
+            "target_coordinate": "25:12",
+            "context": "Furkan 25/12-13"
+          },
+          {
+            "target_coordinate": "25:13",
+            "context": "Furkan 25/12-13"
+          },
+          {
+            "target_coordinate": "26:91",
+            "context": "Şuara 26/91"
+          },
+          {
+            "target_coordinate": "67:27",
+            "context": "Mülk 67/27"
+          },
+          {
+            "target_coordinate": "79:36",
+            "context": "Naziat 79/36"
+          },
+          {
+            "target_coordinate": "21:101",
+            "context": "Enbiya 21/101-102"
+          },
+          {
+            "target_coordinate": "21:102",
+            "context": "Enbiya 21/101-102"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tekâsür Suresi 7. Ayetin Tefsiri\nثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَق۪ينِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/102.mp3"
+    },
+    {
+      "id": "102:8",
+      "text": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ النَّع۪يمِ",
+      "translation": "Bir de o gün, (size verilen) nimetlerden kesinlikle sorguya çekileceksiniz.",
+      "dipnot": "A'raf 7/6, Hicr 15/92, Nahl 16/93, Enbiya 21/23, Zuhruf 43/44.",
+      "roots": [
+        "سأل",
+        "يوم",
+        "نعم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "A'raf 7/6",
+          "targets": [
+            "7:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/92",
+          "targets": [
+            "15:92"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/93",
+          "targets": [
+            "16:93"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/23",
+          "targets": [
+            "21:23"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/44",
+          "targets": [
+            "43:44"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "102:8",
+        "connections": [
+          {
+            "target_coordinate": "7:6",
+            "context": "A'raf 7/6"
+          },
+          {
+            "target_coordinate": "15:92",
+            "context": "Hicr 15/92"
+          },
+          {
+            "target_coordinate": "16:93",
+            "context": "Nahl 16/93"
+          },
+          {
+            "target_coordinate": "21:23",
+            "context": "Enbiya 21/23"
+          },
+          {
+            "target_coordinate": "43:44",
+            "context": "Zuhruf 43/44"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Tekâsür Suresi 8. Ayetin Tefsiri\nثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ النَّع۪يمِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/102.mp3"
+    }
+  ]
+}

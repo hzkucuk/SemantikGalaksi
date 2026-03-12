@@ -1,0 +1,1854 @@
+{
+  "nodes": [
+    {
+      "id": "83:1",
+      "text": "وَيْلٌ لِلْمُطَفِّف۪ينَۙ",
+      "translation": "Eksik ölçüp tartanların vay haline!",
+      "dipnot": "Ölçerken ve tartarken nasıl davranılması gerektiği konusundaki genel prensipler için bkz: En’am 6/152, İsra 17/35, Rahman 55/9.",
+      "roots": [
+        "طفف"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Ölçerken ve tartarken nasıl davranılması gerektiği konusundaki genel prensipler için bkz: En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/152",
+          "targets": [
+            "6:152"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/35",
+          "targets": [
+            "17:35"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/9",
+          "targets": [
+            "55:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:1",
+        "connections": [
+          {
+            "target_coordinate": "6:152",
+            "context": "am 6/152"
+          },
+          {
+            "target_coordinate": "17:35",
+            "context": "İsra 17/35"
+          },
+          {
+            "target_coordinate": "55:9",
+            "context": "Rahman 55/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 1. Ayetin Tefsiri\nوَيْلٌ لِلْمُطَفِّف۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:2",
+      "text": "اَلَّذ۪ينَ اِذَا اكْتَالُوا عَلَى النَّاسِ يَسْتَوْفُونَۘ",
+      "translation": "Onlar insanlardan alırken ölçünün tam olmasını isteyen;",
+      "dipnot": "",
+      "roots": [
+        "كيل",
+        "أنس",
+        "وفي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "83:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 2. Ayetin Tefsiri\nاَلَّذ۪ينَ اِذَا اكْتَالُوا عَلَى النَّاسِ يَسْتَوْفُونَۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:3",
+      "text": "وَاِذَا كَالُوهُمْ اَوْ وَزَنُوهُمْ يُخْسِرُونَۜ",
+      "translation": "ama insanlara verirken ölçtükleri veya tarttıklarında onları zarara sokan kimselerdir.",
+      "dipnot": "A’raf 7/85, Hud 11/84 - 85, Şuara 26/181 - 183.",
+      "roots": [
+        "كيل",
+        "وزن",
+        "خسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/85",
+          "targets": [
+            "7:85"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/84-85",
+          "targets": [
+            "11:84",
+            "11:85"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/181-183",
+          "targets": [
+            "26:181",
+            "26:182",
+            "26:183"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:3",
+        "connections": [
+          {
+            "target_coordinate": "7:85",
+            "context": "raf 7/85"
+          },
+          {
+            "target_coordinate": "11:84",
+            "context": "Hud 11/84-85"
+          },
+          {
+            "target_coordinate": "11:85",
+            "context": "Hud 11/84-85"
+          },
+          {
+            "target_coordinate": "26:181",
+            "context": "Şuara 26/181-183"
+          },
+          {
+            "target_coordinate": "26:182",
+            "context": "Şuara 26/181-183"
+          },
+          {
+            "target_coordinate": "26:183",
+            "context": "Şuara 26/181-183"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 3. Ayetin Tefsiri\nوَاِذَا كَالُوهُمْ اَوْ وَزَنُوهُمْ يُخْسِرُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:4",
+      "text": "اَلَا يَظُنُّ اُو۬لٰٓئِكَ اَنَّهُمْ مَبْعُوثُونَۙ",
+      "translation": "Onlar yeniden diriltileceklerini hiç mi düşünmüyorlar?",
+      "dipnot": "",
+      "roots": [
+        "ظنن",
+        "بعث"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "83:4",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 4. Ayetin Tefsiri\nاَلَا يَظُنُّ اُو۬لٰٓئِكَ اَنَّهُمْ مَبْعُوثُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:5",
+      "text": "لِيَوْمٍ عَظ۪يمٍۙ",
+      "translation": "O azametli günde;",
+      "dipnot": "Yeniden diriliş günü şu ayetlerde “azametli gün” olarak nitelendirilmiştir: En’am 6/15, A’raf 7/59, Yunus 10/15, Meryem 19/37, Şuara 26/135, 156, 189, Zümer 39/13, Ahkaf 46/21.",
+      "roots": [
+        "يوم",
+        "عظم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Yeniden diriliş günü şu ayetlerde “azametli gün” olarak nitelendirilmiştir: En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/15",
+          "targets": [
+            "6:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/59",
+          "targets": [
+            "7:59"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/15",
+          "targets": [
+            "10:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/37",
+          "targets": [
+            "19:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/135,156,189",
+          "targets": [
+            "26:135",
+            "26:156",
+            "26:189"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/13",
+          "targets": [
+            "39:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/21",
+          "targets": [
+            "46:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:5",
+        "connections": [
+          {
+            "target_coordinate": "6:15",
+            "context": "am 6/15"
+          },
+          {
+            "target_coordinate": "7:59",
+            "context": "raf 7/59"
+          },
+          {
+            "target_coordinate": "10:15",
+            "context": "Yunus 10/15"
+          },
+          {
+            "target_coordinate": "19:37",
+            "context": "Meryem 19/37"
+          },
+          {
+            "target_coordinate": "26:135",
+            "context": "Şuara 26/135,156,189"
+          },
+          {
+            "target_coordinate": "26:156",
+            "context": "Şuara 26/135,156,189"
+          },
+          {
+            "target_coordinate": "26:189",
+            "context": "Şuara 26/135,156,189"
+          },
+          {
+            "target_coordinate": "39:13",
+            "context": "Zümer 39/13"
+          },
+          {
+            "target_coordinate": "46:21",
+            "context": "Ahkaf 46/21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 5. Ayetin Tefsiri\nلِيَوْمٍ عَظ۪يمٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:6",
+      "text": "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَم۪ينَۜ",
+      "translation": "varlıkların rabbi için bütün insanların diriltilip ayağa kalkacağı günü (hiç mi düşünmüyorlar?",
+      "dipnot": "Nebe 78/38.",
+      "roots": [
+        "يوم",
+        "قوم",
+        "أنس",
+        "ربب",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nebe 78/38",
+          "targets": [
+            "78:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:6",
+        "connections": [
+          {
+            "target_coordinate": "78:38",
+            "context": "Nebe 78/38"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 6. Ayetin Tefsiri\nيَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَم۪ينَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:7",
+      "text": "كَلَّٓا اِنَّ كِتَابَ الْفُجَّارِ لَف۪ي سِجّ۪ينٍۜ",
+      "translation": "Hayır, hayır! Günaha batanların kaydı Siccîn’dedir.",
+      "dipnot": "",
+      "roots": [
+        "كتب",
+        "فجر",
+        "سجن"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "83:7",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 7. Ayetin Tefsiri\nكَلَّٓا اِنَّ كِتَابَ الْفُجَّارِ لَف۪ي سِجّ۪ينٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:8",
+      "text": "وَمَٓا اَدْرٰيكَ مَا سِجّ۪ينٌۜ",
+      "translation": "Siccîn’in ne olduğunu sana kim bildirebilir!",
+      "dipnot": "",
+      "roots": [
+        "دري",
+        "سجن"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "83:8",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 8. Ayetin Tefsiri\nوَمَٓا اَدْرٰيكَ مَا سِجّ۪ينٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:9",
+      "text": "كِتَابٌ مَرْقُومٌۜ",
+      "translation": "O, yazılmış bir defterdir.",
+      "dipnot": "Kehf 18/49, Yasin 36/12, Kamer 54/52 - 53, Nebe 78/29.",
+      "roots": [
+        "كتب",
+        "رقم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kehf 18/49",
+          "targets": [
+            "18:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/12",
+          "targets": [
+            "36:12"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/52-53",
+          "targets": [
+            "54:52",
+            "54:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/29",
+          "targets": [
+            "78:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:9",
+        "connections": [
+          {
+            "target_coordinate": "18:49",
+            "context": "Kehf 18/49"
+          },
+          {
+            "target_coordinate": "36:12",
+            "context": "Yasin 36/12"
+          },
+          {
+            "target_coordinate": "54:52",
+            "context": "Kamer 54/52-53"
+          },
+          {
+            "target_coordinate": "54:53",
+            "context": "Kamer 54/52-53"
+          },
+          {
+            "target_coordinate": "78:29",
+            "context": "Nebe 78/29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 9. Ayetin Tefsiri\nكِتَابٌ مَرْقُومٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:10",
+      "text": "وَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّب۪ينَۙ",
+      "translation": "O gün, (doğrular karşısında) yalan söyleyip durmuş olanların vay haline!",
+      "dipnot": "Tur 52/11, Mürselat 77/15.",
+      "roots": [
+        "يوم",
+        "كذب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Tur 52/11",
+          "targets": [
+            "52:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/15",
+          "targets": [
+            "77:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:10",
+        "connections": [
+          {
+            "target_coordinate": "52:11",
+            "context": "Tur 52/11"
+          },
+          {
+            "target_coordinate": "77:15",
+            "context": "Mürselat 77/15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 10. Ayetin Tefsiri\nوَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّب۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:11",
+      "text": "اَلَّذ۪ينَ يُكَذِّبُونَ بِيَوْمِ الدّ۪ينِۜ",
+      "translation": "Onlar, her şeyin karşılığını bulacağı gün hakkında yalana sarılıp duranlardır.",
+      "dipnot": "",
+      "roots": [
+        "كذب",
+        "يوم",
+        "دين"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "83:11",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 11. Ayetin Tefsiri\nاَلَّذ۪ينَ يُكَذِّبُونَ بِيَوْمِ الدّ۪ينِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:12",
+      "text": "وَمَا يُكَذِّبُ بِه۪ٓ اِلَّا كُلُّ مُعْتَدٍ اَث۪يمٍۙ",
+      "translation": "Sınırı aşanlar ve günahkarlar dışında hiç kimse, o gün hakkında yalana sarılmaz.",
+      "dipnot": "Kalem 68/12.",
+      "roots": [
+        "كذب",
+        "كلل",
+        "عدو",
+        "أثم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kalem 68/12",
+          "targets": [
+            "68:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:12",
+        "connections": [
+          {
+            "target_coordinate": "68:12",
+            "context": "Kalem 68/12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 12. Ayetin Tefsiri\nوَمَا يُكَذِّبُ بِه۪ٓ اِلَّا كُلُّ مُعْتَدٍ اَث۪يمٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:13",
+      "text": "اِذَا تُتْلٰى عَلَيْهِ اٰيَاتُنَا قَالَ اَسَاط۪يرُ الْاَوَّل۪ينَۜ",
+      "translation": "Böyle birine âyetlerimiz bağlantıları ile birlikte okununca, “Bunlar öncekilerin yazıları!” der.",
+      "dipnot": "Ayette geçen esâtîr (أَسَاطِيرُ) kelimesi, “bir şeye hiza vermek, saf tutturmak” anlamına gelen satr (سطر) kökünden türemiş olan ustûre (اسطورة) kelimesinin çoğuludur (Müfredat). Satara (سَطَرَ) fiilinin “yazı yazmak” anlamına gelmesi, harflerin hizaya sokulması, anlamlı bir şekilde sıralanması sebebiyledir. Dokuz yerde geçen esâtîru’l-evvelîn (أَسَاطِيرُ الْأَوَّلِينَ) ifadesi, Kur’an’da anlatılanların yeni olmadığını, önceki ilahi kitaplarda, diğer kitaplarda, yazıtlarda ya da anlatılarda zaten var olduğunu belirtmek için ayetleri görmezden gelenler tarafından kullanılan alaycı bir ifadedir. Bunu söyleyerek Kur’an’ın önceki ilahi kitapları tasdik etmesini de istismar etmişlerdir ( En’am 6/25, Enfal 8/31, Nahl 16/24, Mü'minun 23/83, Furkan 25/5, Neml 27/68, Ahkaf 46/17, Kalem 68/15 ).",
+      "roots": [
+        "تلو",
+        "أيي",
+        "قول",
+        "سطر",
+        "أول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Ayette geçen esâtîr (أَسَاطِيرُ) kelimesi, “bir şeye hiza vermek, saf tutturmak” anlamına gelen satr (سطر) kökünden türemiş olan ustûre (اسطورة) kelimesinin çoğuludur (Müfredat). Satara (سَطَرَ) fiilinin “yazı yazmak” anlamına gelmesi, harflerin hizaya sokulması, anlamlı bir şekilde sıralanması sebebiyledir. Dokuz yerde geçen esâtîru’l-evvelîn (أَسَاطِيرُ الْأَوَّلِينَ) ifadesi, Kur’an’da anlatılanların yeni olmadığını, önceki ilahi kitaplarda, diğer kitaplarda, yazıtlarda ya da anlatılarda zaten var olduğunu belirtmek için ayetleri görmezden gelenler tarafından kullanılan alaycı bir ifadedir. Bunu söyleyerek Kur’an’ın önceki ilahi kitapları tasdik etmesini de istismar etmişlerdir ( En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/25",
+          "targets": [
+            "6:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/31",
+          "targets": [
+            "8:31"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/24",
+          "targets": [
+            "16:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mü'minun 23/83",
+          "targets": [
+            "23:83"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/5",
+          "targets": [
+            "25:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/68",
+          "targets": [
+            "27:68"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/17",
+          "targets": [
+            "46:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/15",
+          "targets": [
+            "68:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:13",
+        "connections": [
+          {
+            "target_coordinate": "6:25",
+            "context": "am 6/25"
+          },
+          {
+            "target_coordinate": "8:31",
+            "context": "Enfal 8/31"
+          },
+          {
+            "target_coordinate": "16:24",
+            "context": "Nahl 16/24"
+          },
+          {
+            "target_coordinate": "23:83",
+            "context": "Mü'minun 23/83"
+          },
+          {
+            "target_coordinate": "25:5",
+            "context": "Furkan 25/5"
+          },
+          {
+            "target_coordinate": "27:68",
+            "context": "Neml 27/68"
+          },
+          {
+            "target_coordinate": "46:17",
+            "context": "Ahkaf 46/17"
+          },
+          {
+            "target_coordinate": "68:15",
+            "context": "Kalem 68/15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 13. Ayetin Tefsiri\nاِذَا تُتْلٰى عَلَيْهِ اٰيَاتُنَا قَالَ اَسَاط۪يرُ الْاَوَّل۪ينَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:14",
+      "text": "كَلَّا بَلْ۔ رَانَ عَلٰى قُلُوبِهِمْ مَا كَانُوا يَكْسِبُونَ",
+      "translation": "Hayır, hayır! Aslında onların elde ettikleri şeyler kalpleri üzerinde pas oluşturmuştur.",
+      "dipnot": "Nahl 16/106 - 108.",
+      "roots": [
+        "رين",
+        "قلب",
+        "كون",
+        "كسب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nahl 16/106-108",
+          "targets": [
+            "16:106",
+            "16:107",
+            "16:108"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:14",
+        "connections": [
+          {
+            "target_coordinate": "16:106",
+            "context": "Nahl 16/106-108"
+          },
+          {
+            "target_coordinate": "16:107",
+            "context": "Nahl 16/106-108"
+          },
+          {
+            "target_coordinate": "16:108",
+            "context": "Nahl 16/106-108"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 14. Ayetin Tefsiri\nكَلَّا بَلْ۔ رَانَ عَلٰى قُلُوبِهِمْ مَا كَانُوا يَكْسِبُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:15",
+      "text": "كَلَّٓا اِنَّهُمْ عَنْ رَبِّهِمْ يَوْمَئِذٍ لَمَحْجُوبُونَۜ",
+      "translation": "Hayır, hayır! O gün onlar Rablerinden (onun rahmetinden) kesinlikle mahrum kalacaklar.",
+      "dipnot": "Bakara 2/161 - 162, 174, Âl-i İmran 3/77, 86 - 88.",
+      "roots": [
+        "ربب",
+        "يوم",
+        "حجب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/161-162,174",
+          "targets": [
+            "2:161",
+            "2:162",
+            "2:174"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/77,86-88",
+          "targets": [
+            "3:77",
+            "3:86",
+            "3:87",
+            "3:88"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:15",
+        "connections": [
+          {
+            "target_coordinate": "2:161",
+            "context": "Bakara 2/161-162,174"
+          },
+          {
+            "target_coordinate": "2:162",
+            "context": "Bakara 2/161-162,174"
+          },
+          {
+            "target_coordinate": "2:174",
+            "context": "Bakara 2/161-162,174"
+          },
+          {
+            "target_coordinate": "3:77",
+            "context": "Âl-i İmran 3/77,86-88"
+          },
+          {
+            "target_coordinate": "3:86",
+            "context": "Âl-i İmran 3/77,86-88"
+          },
+          {
+            "target_coordinate": "3:87",
+            "context": "Âl-i İmran 3/77,86-88"
+          },
+          {
+            "target_coordinate": "3:88",
+            "context": "Âl-i İmran 3/77,86-88"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 15. Ayetin Tefsiri\nكَلَّٓا اِنَّهُمْ عَنْ رَبِّهِمْ يَوْمَئِذٍ لَمَحْجُوبُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:16",
+      "text": "ثُمَّ اِنَّهُمْ لَصَالُوا الْجَح۪يمِۜ",
+      "translation": "Sonra o yakıcı ateşe kesinlikle girip kalacaklar.",
+      "dipnot": "İnfitar 82/14 - 15.",
+      "roots": [
+        "صلي",
+        "جحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İnfitar 82/14-15",
+          "targets": [
+            "82:14",
+            "82:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:16",
+        "connections": [
+          {
+            "target_coordinate": "82:14",
+            "context": "İnfitar 82/14-15"
+          },
+          {
+            "target_coordinate": "82:15",
+            "context": "İnfitar 82/14-15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 16. Ayetin Tefsiri\nثُمَّ اِنَّهُمْ لَصَالُوا الْجَح۪يمِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:17",
+      "text": "ثُمَّ يُقَالُ هٰذَا الَّذ۪ي كُنْتُمْ بِه۪ تُكَذِّبُونَۜ",
+      "translation": "Sonra onlara: “İşte bu, hakkında yalana sarılıp durduğunuz şeydir!” denilecek.",
+      "dipnot": "Yasin 36/63, Rahman 55/43, Tur 52/14.",
+      "roots": [
+        "قول",
+        "كون",
+        "كذب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yasin 36/63",
+          "targets": [
+            "36:63"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/43",
+          "targets": [
+            "55:43"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/14",
+          "targets": [
+            "52:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:17",
+        "connections": [
+          {
+            "target_coordinate": "36:63",
+            "context": "Yasin 36/63"
+          },
+          {
+            "target_coordinate": "55:43",
+            "context": "Rahman 55/43"
+          },
+          {
+            "target_coordinate": "52:14",
+            "context": "Tur 52/14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 17. Ayetin Tefsiri\nثُمَّ يُقَالُ هٰذَا الَّذ۪ي كُنْتُمْ بِه۪ تُكَذِّبُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:18",
+      "text": "كَلَّٓا اِنَّ كِتَابَ الْاَبْرَارِ لَف۪ي عِلِّيّ۪ينَۜ",
+      "translation": "Hayır, hayır! Erdemlilerin kaydı İlliyyûn’dadır.",
+      "dipnot": "",
+      "roots": [
+        "كتب",
+        "برر",
+        "علو"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "83:18",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 18. Ayetin Tefsiri\nكَلَّٓا اِنَّ كِتَابَ الْاَبْرَارِ لَف۪ي عِلِّيّ۪ينَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:19",
+      "text": "وَمَٓا اَدْرٰيكَ مَا عِلِّيُّونَۜ",
+      "translation": "İlliyyûn’un ne olduğunu sana kim bildirebilir!",
+      "dipnot": "",
+      "roots": [
+        "دري",
+        "علو"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "83:19",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 19. Ayetin Tefsiri\nوَمَٓا اَدْرٰيكَ مَا عِلِّيُّونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:20",
+      "text": "كِتَابٌ مَرْقُومٌۙ",
+      "translation": "O da yazılmış bir defterdir.",
+      "dipnot": "Mutaffifin 83/9.",
+      "roots": [
+        "كتب",
+        "رقم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Mutaffifin 83/9",
+          "targets": [
+            "83:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:20",
+        "connections": [
+          {
+            "target_coordinate": "83:9",
+            "context": "Mutaffifin 83/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 20. Ayetin Tefsiri\nكِتَابٌ مَرْقُومٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:21",
+      "text": "يَشْهَدُهُ الْمُقَرَّبُونَۜ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "شهد",
+        "قرب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "83:21",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 21. Ayetin Tefsiri\nيَشْهَدُهُ الْمُقَرَّبُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:22",
+      "text": "",
+      "translation": "Yakınlığı onaylanmış olanlar (melekler) ona tanıklık ederler.",
+      "dipnot": "Nisa 4/172.",
+      "roots": [
+        "برر",
+        "نعم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nisa 4/172",
+          "targets": [
+            "4:172"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:22",
+        "connections": [
+          {
+            "target_coordinate": "4:172",
+            "context": "Nisa 4/172"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 22. Ayetin Tefsiri\nاِنَّ الْاَبْرَارَ لَف۪ي نَع۪يمٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:23",
+      "text": "اِنَّ الْاَبْرَارَ لَف۪ي نَع۪يمٍۙ",
+      "translation": "Erdemliler, elbette nimetler içinde olacaklar,",
+      "dipnot": "İnfitar 82/13.",
+      "roots": [
+        "أرك",
+        "نظر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İnfitar 82/13",
+          "targets": [
+            "82:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:23",
+        "connections": [
+          {
+            "target_coordinate": "82:13",
+            "context": "İnfitar 82/13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 23. Ayetin Tefsiri\nعَلَى الْاَرَٓائِكِ يَنْظُرُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:24",
+      "text": "عَلَى الْاَرَٓائِكِ يَنْظُرُونَۙ",
+      "translation": "koltukları üzerinde etrafı seyredecekler.",
+      "dipnot": "Kehf 18/31, Yasin 36/55 - 56, İnsan 76/13, Mutaffifin 83/34 - 35.",
+      "roots": [
+        "عرف",
+        "وجه",
+        "نضر",
+        "نعم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kehf 18/31",
+          "targets": [
+            "18:31"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/55-56",
+          "targets": [
+            "36:55",
+            "36:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/13",
+          "targets": [
+            "76:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mutaffifin 83/34-35",
+          "targets": [
+            "83:34",
+            "83:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:24",
+        "connections": [
+          {
+            "target_coordinate": "18:31",
+            "context": "Kehf 18/31"
+          },
+          {
+            "target_coordinate": "36:55",
+            "context": "Yasin 36/55-56"
+          },
+          {
+            "target_coordinate": "36:56",
+            "context": "Yasin 36/55-56"
+          },
+          {
+            "target_coordinate": "76:13",
+            "context": "İnsan 76/13"
+          },
+          {
+            "target_coordinate": "83:34",
+            "context": "Mutaffifin 83/34-35"
+          },
+          {
+            "target_coordinate": "83:35",
+            "context": "Mutaffifin 83/34-35"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 24. Ayetin Tefsiri\nتَعْرِفُ ف۪ي وُجُوهِهِمْ نَضْرَةَ النَّع۪يمِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:25",
+      "text": "تَعْرِفُ ف۪ي وُجُوهِهِمْ نَضْرَةَ النَّع۪يمِۚ",
+      "translation": "Nimetlerin verdiği sevinci yüzlerinden anlarsın.",
+      "dipnot": "Kıyamet 75/22, İnsan 76/11.",
+      "roots": [
+        "سقي",
+        "رحق",
+        "ختم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kıyamet 75/22",
+          "targets": [
+            "75:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/11",
+          "targets": [
+            "76:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:25",
+        "connections": [
+          {
+            "target_coordinate": "75:22",
+            "context": "Kıyamet 75/22"
+          },
+          {
+            "target_coordinate": "76:11",
+            "context": "İnsan 76/11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 25. Ayetin Tefsiri\nيُسْقَوْنَ مِنْ رَح۪يقٍ مَخْتُومٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:26",
+      "text": "يُسْقَوْنَ مِنْ رَح۪يقٍ مَخْتُومٍۙ",
+      "translation": "Onlara mühürlenmiş halis bir şarap sunulur.",
+      "dipnot": "İnsan 76/17.",
+      "roots": [
+        "ختم",
+        "مسك",
+        "نفس"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İnsan 76/17",
+          "targets": [
+            "76:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:26",
+        "connections": [
+          {
+            "target_coordinate": "76:17",
+            "context": "İnsan 76/17"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 26. Ayetin Tefsiri\nخِتَامُهُ مِسْكٌۜ وَف۪ي ذٰلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:27",
+      "text": "خِتَامُهُ مِسْكٌۜ وَف۪ي ذٰلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَۜ",
+      "translation": "Sonu (bıraktığı koku) misk gibidir. Arzu duyacak olanlar işte buna arzu duysunlar!",
+      "dipnot": "Saffat 37/61.",
+      "roots": [
+        "مزج",
+        "سنم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Saffat 37/61",
+          "targets": [
+            "37:61"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:27",
+        "connections": [
+          {
+            "target_coordinate": "37:61",
+            "context": "Saffat 37/61"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 27. Ayetin Tefsiri\nوَمِزَاجُهُ مِنْ تَسْن۪يمٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:28",
+      "text": "وَمِزَاجُهُ مِنْ تَسْن۪يمٍۙ",
+      "translation": "O şarabın katkısı Tesnîm’dendir.",
+      "dipnot": "",
+      "roots": [
+        "عين",
+        "شرب",
+        "قرب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "83:28",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 28. Ayetin Tefsiri\nعَيْنًا يَشْرَبُ بِهَا الْمُقَرَّبُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:29",
+      "text": "عَيْنًا يَشْرَبُ بِهَا الْمُقَرَّبُونَۜ",
+      "translation": "O, Allah’a yakınlığı onaylanmış olanların içecekleri bir kaynaktır.",
+      "dipnot": "İnsan 76/5 - 6, 17 - 18.",
+      "roots": [
+        "جرم",
+        "كون",
+        "أمن",
+        "ضحك"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İnsan 76/5-6,17-18",
+          "targets": [
+            "76:5",
+            "76:6",
+            "76:17",
+            "76:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:29",
+        "connections": [
+          {
+            "target_coordinate": "76:5",
+            "context": "İnsan 76/5-6,17-18"
+          },
+          {
+            "target_coordinate": "76:6",
+            "context": "İnsan 76/5-6,17-18"
+          },
+          {
+            "target_coordinate": "76:17",
+            "context": "İnsan 76/5-6,17-18"
+          },
+          {
+            "target_coordinate": "76:18",
+            "context": "İnsan 76/5-6,17-18"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 29. Ayetin Tefsiri\nاِنَّ الَّذ۪ينَ اَجْرَمُوا كَانُوا مِنَ الَّذ۪ينَ اٰمَنُوا يَضْحَكُونَۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:30",
+      "text": "اِنَّ الَّذ۪ينَ اَجْرَمُوا كَانُوا مِنَ الَّذ۪ينَ اٰمَنُوا يَضْحَكُونَۘ",
+      "translation": "Suça batanlar, inanıp güvenmiş olanlara gülüp dururlardı;",
+      "dipnot": "Mü’minun 23/110.",
+      "roots": [
+        "مرر",
+        "غمز"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/110",
+          "targets": [
+            "23:110"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:30",
+        "connections": [
+          {
+            "target_coordinate": "23:110",
+            "context": "minun 23/110"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 30. Ayetin Tefsiri\nوَاِذَا مَرُّوا بِهِمْ يَتَغَامَزُونَۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:31",
+      "text": "وَاِذَا مَرُّوا بِهِمْ يَتَغَامَزُونَۘ",
+      "translation": "onların yanından geçerlerken birbirlerine kaş göz eder,",
+      "dipnot": "Bakara 2/212, Tevbe 9/79.",
+      "roots": [
+        "قلب",
+        "أهل",
+        "فكه"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/212",
+          "targets": [
+            "2:212"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/79",
+          "targets": [
+            "9:79"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:31",
+        "connections": [
+          {
+            "target_coordinate": "2:212",
+            "context": "Bakara 2/212"
+          },
+          {
+            "target_coordinate": "9:79",
+            "context": "Tevbe 9/79"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 31. Ayetin Tefsiri\nوَاِذَا انْقَلَبُٓوا اِلٰٓى اَهْلِهِمُ انْقَلَبُوا فَكِه۪ينَۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:32",
+      "text": "وَاِذَا انْقَلَبُٓوا اِلٰٓى اَهْلِهِمُ انْقَلَبُوا فَكِه۪ينَۘ",
+      "translation": "aile ve yakınlarına dönerken de zevk içinde dönerlerdi.",
+      "dipnot": "Kıyamet 75/33, İnşikak 84/13.",
+      "roots": [
+        "رأي",
+        "قول",
+        "ضلل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kıyamet 75/33",
+          "targets": [
+            "75:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/13",
+          "targets": [
+            "84:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:32",
+        "connections": [
+          {
+            "target_coordinate": "75:33",
+            "context": "Kıyamet 75/33"
+          },
+          {
+            "target_coordinate": "84:13",
+            "context": "İnşikak 84/13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 32. Ayetin Tefsiri\nوَاِذَا رَاَوْهُمْ قَالُٓوا اِنَّ هٰٓؤُ۬لَٓاءِ لَضَٓالُّونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:33",
+      "text": "وَاِذَا رَاَوْهُمْ قَالُٓوا اِنَّ هٰٓؤُ۬لَٓاءِ لَضَٓالُّونَۙ",
+      "translation": "Müminleri gördükleri zaman ise: “Bunlar, kesinlikle sapıtmış!” derlerdi.",
+      "dipnot": "Furkan 25/41 - 42, Mülk 67/9.",
+      "roots": [
+        "رسل",
+        "حفظ"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Furkan 25/41-42",
+          "targets": [
+            "25:41",
+            "25:42"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/9",
+          "targets": [
+            "67:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:33",
+        "connections": [
+          {
+            "target_coordinate": "25:41",
+            "context": "Furkan 25/41-42"
+          },
+          {
+            "target_coordinate": "25:42",
+            "context": "Furkan 25/41-42"
+          },
+          {
+            "target_coordinate": "67:9",
+            "context": "Mülk 67/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 33. Ayetin Tefsiri\nوَمَٓا اُرْسِلُوا عَلَيْهِمْ حَافِظ۪ينَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:34",
+      "text": "وَمَٓA اُرْسِلُوا عَلَيْهِمْ حَافِظ۪ينَۜ",
+      "translation": "Oysa onların başına bekçi olarak gönderilmemişlerdi.",
+      "dipnot": "Allah’ın elçisi dahi insanların başına bekçi olarak gönderilmemiştir ( Nisa 4/80, En’am 6/104, 107 ). Durum böyleyken, kafirlerin müminler hakkında böyle bir görevi ya da yetkisi asla olamaz.",
+      "roots": [
+        "يوم",
+        "أمن",
+        "كفر",
+        "ضحك"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Allah’ın elçisi dahi insanların başına bekçi olarak gönderilmemiştir ( "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/80",
+          "targets": [
+            "4:80"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/104,107",
+          "targets": [
+            "6:104",
+            "6:107"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Durum böyleyken, kafirlerin müminler hakkında böyle bir görevi ya da yetkisi asla olamaz."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:34",
+        "connections": [
+          {
+            "target_coordinate": "4:80",
+            "context": "Nisa 4/80"
+          },
+          {
+            "target_coordinate": "6:104",
+            "context": "am 6/104,107"
+          },
+          {
+            "target_coordinate": "6:107",
+            "context": "am 6/104,107"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 34. Ayetin Tefsiri\nفَالْيَوْمَ الَّذ۪ينَ اٰمَنُوا مِنَ الْكُفَّارِ يَضْحَكُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:35",
+      "text": "فَالْيَوْمَ الَّذ۪ينَ اٰمَنُوا مِنَ الْكُفَّارِ يَضْحَكُونَۙ",
+      "translation": "O gün ise inanıp güvenenler o kâfirlere gülecekler;",
+      "dipnot": "Hûd 11/38.",
+      "roots": [
+        "أرك",
+        "نظر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hûd 11/38",
+          "targets": [
+            "11:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:35",
+        "connections": [
+          {
+            "target_coordinate": "11:38",
+            "context": "Hûd 11/38"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 35. Ayetin Tefsiri\nعَلَى الْاَرَٓائِكِ يَنْظُرُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:36",
+      "text": "عَلَى الْاَرَٓائِكِ يَنْظُرُونَۜ",
+      "translation": "koltuklarına kurulup bakacaklar",
+      "dipnot": "Mutaffifin 83/23.",
+      "roots": [
+        "ثوب",
+        "كفر",
+        "كون",
+        "فعل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Mutaffifin 83/23",
+          "targets": [
+            "83:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:36",
+        "connections": [
+          {
+            "target_coordinate": "83:23",
+            "context": "Mutaffifin 83/23"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mutaffifîn Suresi 36. Ayetin Tefsiri\nهَلْ ثُوِّبَ الْكُفَّارُ مَا كَانُوا يَفْعَلُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    },
+    {
+      "id": "83:37",
+      "text": "هَلْ ثُوِّبَ الْكُفَّارُ مَا كَانُوا يَفْعَلُونَ",
+      "translation": "o kâfirlere, yapıp ettiklerinin ödülü (!) verilmiş mi diye!",
+      "dipnot": "A’raf 7/44, Saffat 37/51 - 57.",
+      "roots": null,
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/44",
+          "targets": [
+            "7:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/51-57",
+          "targets": [
+            "37:51",
+            "37:52",
+            "37:53",
+            "37:54",
+            "37:55",
+            "37:56",
+            "37:57"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "83:37",
+        "connections": [
+          {
+            "target_coordinate": "7:44",
+            "context": "raf 7/44"
+          },
+          {
+            "target_coordinate": "37:51",
+            "context": "Saffat 37/51-57"
+          },
+          {
+            "target_coordinate": "37:52",
+            "context": "Saffat 37/51-57"
+          },
+          {
+            "target_coordinate": "37:53",
+            "context": "Saffat 37/51-57"
+          },
+          {
+            "target_coordinate": "37:54",
+            "context": "Saffat 37/51-57"
+          },
+          {
+            "target_coordinate": "37:55",
+            "context": "Saffat 37/51-57"
+          },
+          {
+            "target_coordinate": "37:56",
+            "context": "Saffat 37/51-57"
+          },
+          {
+            "target_coordinate": "37:57",
+            "context": "Saffat 37/51-57"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşikâk Suresi 1. Ayetin Tefsiri\nاِذَا السَّمَٓاءُ انْشَقَّتْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/83.mp3"
+    }
+  ]
+}

@@ -1,0 +1,951 @@
+{
+  "nodes": [
+    {
+      "id": "98:1",
+      "text": "لَمْ يَكُنِ الَّذ۪ينَ كَفَرُوا مِنْ اَهْلِ الْكِتَابِ وَالْمُشْرِك۪ينَ مُنْفَكّ۪ينَ حَتّٰى تَأْتِيَهُمُ الْبَيِّنَةُۙ",
+      "translation": "Ehlikitaptan /kitaplarında uzman olanlardan ve müşriklerden[1*] kâfirlik edenler, kendilerine o beyyine/ açık delil gelinceye kadar çözülmüş değillerdi;[2*]",
+      "dipnot": "[1*] Allah’ın varlığı ve birliği konusunda kimsenin şüphesi yoktur. Buna rağmen Allah’a daha çok yaklaşmak amacıyla araya çeşitli aracılar konup onlara itaat edilerek (Zümer 39/3), o aracılar ilah haline getirilir (A’raf 7/30). Putların ilah olamayacağını herkes kolayca anlayacağından, onlara tapan kimse bilerek şirk koşmuş olur. İnsanların çoğu gök cisimleri, melekler, din büyükleri ve daha nice varlığa Allah’a benzer nitelikler yükleyerek, onları Allah ile aralarına koyar ve müşrik olurlar. Ancak Bakara 2/22’de, “bile bile Allah’a benzer nitelikte varlıklar uydurmayın” ifadesinin kullanılması, bilmeden yapılan yanlışların affedileceğini gösterir (Bakara 2/286). Bunun örneği İbrahim aleyhisselamdır. O, büluğa erdiği andan itibaren putların rab olmayacağını anlamıştı. Ama gözlemler yapıp kesin kanaate varıncaya kadar yıldızın, ayın ve güneşin kendi rabbi olduğunu sanıyordu. Onların rab olamayacaklarını anlar anlamaz kesin tavrını ortaya koydu (En’am 6/75-79, Enbiya 21/51-64) ve ulaştığı bu bilgiyi hemen toplumuna anlatarak onları da uyardı (En’am 6/79-83). Onun bu konuda, bile bile yaptığı bir yanlış olmadığı için Allah onu hiçbir zaman müşriklerden saymamıştır (Bakara 2/135, Âl-i imran 3/18, 67, 95, En’am 6/161, Nahl 16/123, Enbiya 21/52-56). Benzer durum, herkes için de geçerlidir. Hiçbir Müslüman puta tapmaz ama bugün Müslümanlar, Nebimiz Muhammed aleyhisselamı, ilim adamlarını ve din adamlarını rab edindiklerinin farkında değillerdir. Allah Teala Kur’an’ı sadece kendisinin açıkladığını, açıklamayı bir ilme göre yaptığını (A’raf 7/52",
+      "roots": [
+        "كون",
+        "كفر",
+        "أهل",
+        "كتب",
+        "شرك",
+        "فكك",
+        "أتي",
+        "بين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Allah’ın varlığı ve birliği konusunda kimsenin şüphesi yoktur. Buna rağmen Allah’a daha çok yaklaşmak amacıyla araya çeşitli aracılar konup onlara itaat edilerek ("
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/3",
+          "targets": [
+            "39:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), o aracılar ilah haline getirilir (A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/30",
+          "targets": [
+            "7:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Putların ilah olamayacağını herkes kolayca anlayacağından, onlara tapan kimse bilerek şirk koşmuş olur. İnsanların çoğu gök cisimleri, melekler, din büyükleri ve daha nice varlığa Allah’a benzer nitelikler yükleyerek, onları Allah ile aralarına koyar ve müşrik olurlar. "
+        },
+        {
+          "type": "link",
+          "content": "Ancak Bakara 2/22",
+          "targets": [
+            "2:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’de, “bile bile Allah’a benzer nitelikte varlıklar uydurmayın” ifadesinin kullanılması, bilmeden yapılan yanlışların affedileceğini gösterir ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/286",
+          "targets": [
+            "2:286"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bunun örneği İbrahim aleyhisselamdır. O, büluğa erdiği andan itibaren putların rab olmayacağını anlamıştı. Ama gözlemler yapıp kesin kanaate varıncaya kadar yıldızın, ayın ve güneşin kendi rabbi olduğunu sanıyordu. Onların rab olamayacaklarını anlar anlamaz kesin tavrını ortaya koydu (En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/75-79",
+          "targets": [
+            "6:75",
+            "6:76",
+            "6:77",
+            "6:78",
+            "6:79"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/51-64",
+          "targets": [
+            "21:51",
+            "21:52",
+            "21:53",
+            "21:54",
+            "21:55",
+            "21:56",
+            "21:57",
+            "21:58",
+            "21:59",
+            "21:60",
+            "21:61",
+            "21:62",
+            "21:63",
+            "21:64"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve ulaştığı bu bilgiyi hemen toplumuna anlatarak onları da uyardı (En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/79-83",
+          "targets": [
+            "6:79",
+            "6:80",
+            "6:81",
+            "6:82",
+            "6:83"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Onun bu konuda, bile bile yaptığı bir yanlış olmadığı için Allah onu hiçbir zaman müşriklerden saymamıştır ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/135",
+          "targets": [
+            "2:135"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Âl-i imran 3/18,67,95",
+          "targets": [
+            "3:18",
+            "3:67",
+            "3:95"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/161",
+          "targets": [
+            "6:161"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/123",
+          "targets": [
+            "16:123"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/52-56",
+          "targets": [
+            "21:52",
+            "21:53",
+            "21:54",
+            "21:55",
+            "21:56"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Benzer durum, herkes için de geçerlidir. Hiçbir Müslüman puta tapmaz ama bugün Müslümanlar, Nebimiz Muhammed aleyhisselamı, ilim adamlarını ve din adamlarını rab edindiklerinin farkında değillerdir. Allah Teala Kur’an’ı sadece kendisinin açıkladığını, açıklamayı bir ilme göre yaptığını (A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/52",
+          "targets": [
+            "7:52"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "98:1",
+        "connections": [
+          {
+            "target_coordinate": "39:3",
+            "context": "Zümer 39/3"
+          },
+          {
+            "target_coordinate": "7:30",
+            "context": "raf 7/30"
+          },
+          {
+            "target_coordinate": "2:22",
+            "context": "Ancak Bakara 2/22"
+          },
+          {
+            "target_coordinate": "2:286",
+            "context": "Bakara 2/286"
+          },
+          {
+            "target_coordinate": "6:75",
+            "context": "am 6/75-79"
+          },
+          {
+            "target_coordinate": "6:76",
+            "context": "am 6/75-79"
+          },
+          {
+            "target_coordinate": "6:77",
+            "context": "am 6/75-79"
+          },
+          {
+            "target_coordinate": "6:78",
+            "context": "am 6/75-79"
+          },
+          {
+            "target_coordinate": "6:79",
+            "context": "am 6/75-79"
+          },
+          {
+            "target_coordinate": "21:51",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:52",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:53",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:54",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:55",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:56",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:57",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:58",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:59",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:60",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:61",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:62",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:63",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "21:64",
+            "context": "Enbiya 21/51-64"
+          },
+          {
+            "target_coordinate": "6:79",
+            "context": "am 6/79-83"
+          },
+          {
+            "target_coordinate": "6:80",
+            "context": "am 6/79-83"
+          },
+          {
+            "target_coordinate": "6:81",
+            "context": "am 6/79-83"
+          },
+          {
+            "target_coordinate": "6:82",
+            "context": "am 6/79-83"
+          },
+          {
+            "target_coordinate": "6:83",
+            "context": "am 6/79-83"
+          },
+          {
+            "target_coordinate": "2:135",
+            "context": "Bakara 2/135"
+          },
+          {
+            "target_coordinate": "3:18",
+            "context": "Âl-i imran 3/18,67,95"
+          },
+          {
+            "target_coordinate": "3:67",
+            "context": "Âl-i imran 3/18,67,95"
+          },
+          {
+            "target_coordinate": "3:95",
+            "context": "Âl-i imran 3/18,67,95"
+          },
+          {
+            "target_coordinate": "6:161",
+            "context": "am 6/161"
+          },
+          {
+            "target_coordinate": "16:123",
+            "context": "Nahl 16/123"
+          },
+          {
+            "target_coordinate": "21:52",
+            "context": "Enbiya 21/52-56"
+          },
+          {
+            "target_coordinate": "21:53",
+            "context": "Enbiya 21/52-56"
+          },
+          {
+            "target_coordinate": "21:54",
+            "context": "Enbiya 21/52-56"
+          },
+          {
+            "target_coordinate": "21:55",
+            "context": "Enbiya 21/52-56"
+          },
+          {
+            "target_coordinate": "21:56",
+            "context": "Enbiya 21/52-56"
+          },
+          {
+            "target_coordinate": "7:52",
+            "context": "raf 7/52"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beyyine Suresi 1. Ayetin Tefsiri\nلَمْ يَكُنِ الَّذ۪ينَ كَفَرُوا مِنْ اَهْلِ الْكِتَابِ وَالْمُشْرِك۪ينَ مُنْفَكّ۪ينَ حَتّٰى تَأْتِيَهُمُ الْبَيِّنَةُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/98.mp3"
+    },
+    {
+      "id": "98:2",
+      "text": "رَسُولٌ مِنَ اللّٰهِ يَتْلُوا صُحُفًا مُطَهَّرَةًۙ",
+      "translation": "tertemiz sayfaları bağlantılarıyla birlikte okuyan Allah’ın elçisi (gelinceye kadar)...",
+      "dipnot": "Maide 5/19, En’am 6/155 - 157, Tâhâ 20/133 - 134.",
+      "roots": [
+        "رسل",
+        "أله",
+        "تلو",
+        "صحف",
+        "طهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Maide 5/19",
+          "targets": [
+            "5:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/155-157",
+          "targets": [
+            "6:155",
+            "6:156",
+            "6:157"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tâhâ 20/133-134",
+          "targets": [
+            "20:133",
+            "20:134"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "98:2",
+        "connections": [
+          {
+            "target_coordinate": "5:19",
+            "context": "Maide 5/19"
+          },
+          {
+            "target_coordinate": "6:155",
+            "context": "am 6/155-157"
+          },
+          {
+            "target_coordinate": "6:156",
+            "context": "am 6/155-157"
+          },
+          {
+            "target_coordinate": "6:157",
+            "context": "am 6/155-157"
+          },
+          {
+            "target_coordinate": "20:133",
+            "context": "Tâhâ 20/133-134"
+          },
+          {
+            "target_coordinate": "20:134",
+            "context": "Tâhâ 20/133-134"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beyyine Suresi 2. Ayetin Tefsiri\nرَسُولٌ مِنَ اللّٰهِ يَتْلُوا صُحُفًا مُطَهَّرَةًۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/98.mp3"
+    },
+    {
+      "id": "98:3",
+      "text": "ف۪يهَا كُتُبٌ قَيِّمَةٌۜ",
+      "translation": "O sayfalarda dosdoğru yazılar vardır.",
+      "dipnot": "“Yazılar” şeklinde çevirdiğimiz kelime “kütüb”dür. Onun tekili olan “kitab (كتاب)” kelimesinin kök anlamı, bir şeyi bir şeye eklemektir (Mekayîs). Arapçada kelimeleri ekleyerek yazılan her türlü yazıya “kitab” denir (Müfredat).",
+      "roots": [
+        "كتب",
+        "قوم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“Yazılar” şeklinde çevirdiğimiz kelime “kütüb”dür. Onun tekili olan “kitab (كتاب)” kelimesinin kök anlamı, bir şeyi bir şeye eklemektir (Mekayîs). Arapçada kelimeleri ekleyerek yazılan her türlü yazıya “kitab” denir (Müfredat)."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "98:3",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beyyine Suresi 3. Ayetin Tefsiri\nف۪يهَا كُتُبٌ قَيِّمَةٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/98.mp3"
+    },
+    {
+      "id": "98:4",
+      "text": "وَمَا تَفَرَّقَ الَّذ۪ينَ اُو۫تُوا الْكِتَابَ اِلَّا مِنْ بَعْدِ مَا جَٓاءَتْهُمُ الْبَيِّنَةُۜ",
+      "translation": "Kendilerine kitap verilenler, ancak onlara o beyyine/ açık delil geldikten sonra bölünüp parçalandılar.",
+      "dipnot": "Şirk içinde olduğunu bilmeyen birine, durumunu ortaya koyan ayetler bağlantıları ile birlikte okununca irkilir ve bir müddet sonra gerçekleri görür (Enbiya 21/62 - 65). Bütün gerçekleri gördükten sonra bazıları doğrulara yönelir (Neml 27/44), bazısı da çıkarlarından vazgeçemediği için (Kasas 28/57) eski inancına geri döner ve artık bile bile müşrik olur (Âl-i İmran 3/105, Şûrâ 42/14).",
+      "roots": [
+        "فرق",
+        "أتي",
+        "كتب",
+        "بعد",
+        "جيأ",
+        "بين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Şirk içinde olduğunu bilmeyen birine, durumunu ortaya koyan ayetler bağlantıları ile birlikte okununca irkilir ve bir müddet sonra gerçekleri görür ("
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/62-65",
+          "targets": [
+            "21:62",
+            "21:63",
+            "21:64",
+            "21:65"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bütün gerçekleri gördükten sonra bazıları doğrulara yönelir ("
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/44",
+          "targets": [
+            "27:44"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), bazısı da çıkarlarından vazgeçemediği için ("
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/57",
+          "targets": [
+            "28:57"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") eski inancına geri döner ve artık bile bile müşrik olur ("
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/105",
+          "targets": [
+            "3:105"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/14",
+          "targets": [
+            "42:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "98:4",
+        "connections": [
+          {
+            "target_coordinate": "21:62",
+            "context": "Enbiya 21/62-65"
+          },
+          {
+            "target_coordinate": "21:63",
+            "context": "Enbiya 21/62-65"
+          },
+          {
+            "target_coordinate": "21:64",
+            "context": "Enbiya 21/62-65"
+          },
+          {
+            "target_coordinate": "21:65",
+            "context": "Enbiya 21/62-65"
+          },
+          {
+            "target_coordinate": "27:44",
+            "context": "Neml 27/44"
+          },
+          {
+            "target_coordinate": "28:57",
+            "context": "Kasas 28/57"
+          },
+          {
+            "target_coordinate": "3:105",
+            "context": "Âl-i İmran 3/105"
+          },
+          {
+            "target_coordinate": "42:14",
+            "context": "Şûrâ 42/14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beyyine Suresi 4. Ayetin Tefsiri\nوَمَا تَفَرَّقَ الَّذ۪ينَ اُو۫تُوا الْكِتَابَ اِلَّا مِنْ بَعْدِ مَا جَٓاءَتْهُمُ الْبَيِّنَةُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/98.mp3"
+    },
+    {
+      "id": "98:5",
+      "text": "وَمَٓا اُمِرُٓوا اِلَّا لِيَعْبُدُوا اللّٰهَ مُخْلِص۪ينَ لَهُ الدّ۪ينَ حُنَفَٓاءَ وَيُق۪يمُوا الصَّلٰوةَ وَيُؤْتُوا الزَّكٰوةَ وَذٰلِكَ د۪ينُ الْقَيِّمَةِۜ",
+      "translation": "Halbuki (tıpkı bu kitapta emredildiği gibi) onlara da Allah’ın dinine bir şey katmadan doğrudan doğruya O’na kulluk etmeleri, namazı düzgün ve sürekli kılmaları, zekâtı vermeleri dışında bir şey emredilmemişti. İşte bu dosdoğru dindir.",
+      "dipnot": "[1*]",
+      "roots": [
+        "أمر",
+        "عبد",
+        "أله",
+        "خلص",
+        "دين",
+        "حنف",
+        "قوم",
+        "صلو",
+        "أتي",
+        "زكو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "98:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beyyine Suresi 5. Ayetin Tefsiri\nوَمَٓا اُمِرُٓوا اِلَّا لِيَعْبُدُوا اللّٰهَ مُخْلِص۪ينَ لَهُ الدّ۪ينَ حُنَفَٓاءَ وَيُق۪يمُوا الصَّلٰوةَ وَيُؤْتُوا الزَّكٰوةَ وَذٰلِكَ د۪ينُ الْقَيِّمَةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/98.mp3"
+    },
+    {
+      "id": "98:6",
+      "text": "اِنَّ الَّذ۪ينَ كَفَرُوا مِنْ اَهْلِ الْكِتَابِ وَالْمُشْرِك۪ينَ ف۪ي نَارِ جَهَنَّمَ خَالِد۪ينَ ف۪يهَاۜ اُو۬لٰٓئِكَ هُمْ شَرُّ الْبَرِيَّةِۜ",
+      "translation": "Ehlikitaptan ve müşriklerden kâfirlik edenler, ölümsüz olarak kalmak üzere Cehennem ateşinde olacaklardır. İşte onlar yaratılmışların en şerlileridir.",
+      "dipnot": "[1*] Nisa 4/167 - 169. [2*] Enfal 8/22.",
+      "roots": [
+        "كفر",
+        "أهل",
+        "كتب",
+        "شرك",
+        "نور",
+        "خلد",
+        "شرر",
+        "برأ"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/167-169",
+          "targets": [
+            "4:167",
+            "4:168",
+            "4:169"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/22",
+          "targets": [
+            "8:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "98:6",
+        "connections": [
+          {
+            "target_coordinate": "4:167",
+            "context": "Nisa 4/167-169"
+          },
+          {
+            "target_coordinate": "4:168",
+            "context": "Nisa 4/167-169"
+          },
+          {
+            "target_coordinate": "4:169",
+            "context": "Nisa 4/167-169"
+          },
+          {
+            "target_coordinate": "8:22",
+            "context": "Enfal 8/22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beyyine Suresi 6. Ayetin Tefsiri\nاِنَّ الَّذ۪ينَ كَفَرُوا مِنْ اَهْلِ الْكِتَابِ وَالْمُشْرِك۪ينَ ف۪ي نَارِ جَهَنَّمَ خَالِد۪ينَ ف۪يهَاۜ اُو۬لٰٓئِكَ هُمْ شَرُّ الْبَرِيَّةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/98.mp3"
+    },
+    {
+      "id": "98:7",
+      "text": "اِنَّ الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِۙ اُو۬لٰٓئِكَ هُمْ خَيْرُ الْبَرِيَّةِۜ",
+      "translation": "İnanıp güvenen ve iyi işler yapanlar var ya… İşte onlar yaratılmışların en hayırlılarıdır.",
+      "dipnot": "",
+      "roots": [
+        "أمن",
+        "عمل",
+        "صلح",
+        "خير",
+        "برأ"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "98:7",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beyyine Suresi 7. Ayetin Tefsiri\nاِنَّ الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِۙ اُو۬لٰٓئِكَ هُمْ خَيْرُ الْبَرِيَّةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/98.mp3"
+    },
+    {
+      "id": "98:8",
+      "text": "جَزَٓاؤُ۬هُمْ عِنْدَ رَبِّهِمْ جَنَّاتُ عَدْنٍ تَجْر۪ي مِنْ تَحْتِهَا الْاَنْهَارُ خَالِد۪ينَ ف۪يهَٓا اَبَدًاۜ رَضِيَ اللّٰهُ عَنْهُمْ وَرَضُوا عَنْهُۜ ذٰلِكَ لِمَنْ خَشِيَ رَبَّهُ",
+      "translation": "Onların Rableri katında alacağı karşılık, ölümsüz olarak kalacakları, içlerinden ırmaklar akan cennetlerdir. Allah onlardan razı, onlar da Allah’tan razıdır. İşte bu (ödül), Rabbinden çekinenler içindir.",
+      "dipnot": "[1*] Kur’an’da, cennetlik ve cehennemlik olanlar için iki kelime kullanılır. Birisi “sonsuza kadar” anlamına gelen “ebeden (أَبَدًا)” diğeri de “ölümsüz olan” anlamındaki “hâlid (خَالِد)”dir. Cennetlikler için Nisa 4/57, 122; Maide 5/119, Tevbe 9/20 - 22, 100; Tegabun 64/9, Talak 65/11 ayetlerine; cehennemlikler için Nisa 4/168 - 169, Ahzab 33/64 - 65, Cin 72/23 ayetlerine bakınız. [2*] Âl-i İmran 3/15, Maide 5/119, Tevbe 9/72, 100, Mücadele 58/22, Fecr 89/27 - 28.",
+      "roots": [
+        "جزي",
+        "عند",
+        "ربب",
+        "جنن",
+        "جري",
+        "تحت",
+        "نهر",
+        "خلد",
+        "أبد",
+        "رضو",
+        "أله",
+        "خشي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Kur’an’da, cennetlik ve cehennemlik olanlar için iki kelime kullanılır. Birisi “sonsuza kadar” anlamına gelen “ebeden (أَبَدًا)” diğeri de “ölümsüz olan” anlamındaki “hâlid (خَالِد)”dir. "
+        },
+        {
+          "type": "link",
+          "content": "Cennetlikler için Nisa 4/57,122",
+          "targets": [
+            "4:57",
+            "4:122"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/119",
+          "targets": [
+            "5:119"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/20-22,100",
+          "targets": [
+            "9:20",
+            "9:21",
+            "9:22",
+            "9:100"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Tegabun 64/9",
+          "targets": [
+            "64:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Talak 65/11",
+          "targets": [
+            "65:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "ayetlerine; "
+        },
+        {
+          "type": "link",
+          "content": "cehennemlikler için Nisa 4/168-169",
+          "targets": [
+            "4:168",
+            "4:169"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/64-65",
+          "targets": [
+            "33:64",
+            "33:65"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Cin 72/23",
+          "targets": [
+            "72:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "ayetlerine bakınız. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/15",
+          "targets": [
+            "3:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/119",
+          "targets": [
+            "5:119"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/72,100",
+          "targets": [
+            "9:72",
+            "9:100"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mücadele 58/22",
+          "targets": [
+            "58:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/27-28",
+          "targets": [
+            "89:27",
+            "89:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "98:8",
+        "connections": [
+          {
+            "target_coordinate": "4:57",
+            "context": "Cennetlikler için Nisa 4/57,122"
+          },
+          {
+            "target_coordinate": "4:122",
+            "context": "Cennetlikler için Nisa 4/57,122"
+          },
+          {
+            "target_coordinate": "5:119",
+            "context": "Maide 5/119"
+          },
+          {
+            "target_coordinate": "9:20",
+            "context": "Tevbe 9/20-22,100"
+          },
+          {
+            "target_coordinate": "9:21",
+            "context": "Tevbe 9/20-22,100"
+          },
+          {
+            "target_coordinate": "9:22",
+            "context": "Tevbe 9/20-22,100"
+          },
+          {
+            "target_coordinate": "9:100",
+            "context": "Tevbe 9/20-22,100"
+          },
+          {
+            "target_coordinate": "64:9",
+            "context": "Tegabun 64/9"
+          },
+          {
+            "target_coordinate": "65:11",
+            "context": "Talak 65/11"
+          },
+          {
+            "target_coordinate": "4:168",
+            "context": "cehennemlikler için Nisa 4/168-169"
+          },
+          {
+            "target_coordinate": "4:169",
+            "context": "cehennemlikler için Nisa 4/168-169"
+          },
+          {
+            "target_coordinate": "33:64",
+            "context": "Ahzab 33/64-65"
+          },
+          {
+            "target_coordinate": "33:65",
+            "context": "Ahzab 33/64-65"
+          },
+          {
+            "target_coordinate": "72:23",
+            "context": "Cin 72/23"
+          },
+          {
+            "target_coordinate": "3:15",
+            "context": "Âl-i İmran 3/15"
+          },
+          {
+            "target_coordinate": "5:119",
+            "context": "Maide 5/119"
+          },
+          {
+            "target_coordinate": "9:72",
+            "context": "Tevbe 9/72,100"
+          },
+          {
+            "target_coordinate": "9:100",
+            "context": "Tevbe 9/72,100"
+          },
+          {
+            "target_coordinate": "58:22",
+            "context": "Mücadele 58/22"
+          },
+          {
+            "target_coordinate": "89:27",
+            "context": "Fecr 89/27-28"
+          },
+          {
+            "target_coordinate": "89:28",
+            "context": "Fecr 89/27-28"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beyyine Suresi 8. Ayetin Tefsiri\nجَزَٓاؤُ۬هُمْ عِنْدَ رَبِّهِمْ جَنَّاتُ عَدْنٍ تَجْر۪ي مِنْ تَحْتِهَا الْاَنْهَارُ خَالِد۪ينَ ف۪يهَٓا اَبَدًاۜ رَضِيَ اللّٰهُ عَنْهُمْ وَرَضُوا عَنْهُۜ ذٰلِكَ لِمَنْ خَشِيَ رَبَّهُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/98.mp3"
+    }
+  ]
+}
