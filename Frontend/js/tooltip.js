@@ -10,8 +10,8 @@ var clampTooltip = (tooltip, x, y) => {
 
 var buildTooltipContent = (n, showCloseBtn) => {
     var highlightedText = highlightArabicText(n.text, n.roots);
-    var rootsHtml = (n.roots || []).map(r => {
-        var color = getRootCSSColor(r);
+    var rootsHtml = (n.roots || []).map((r, ri) => {
+        var color = getRootCSSColor(r, ri);
         var info = getRootInfo(r);
         var meaning = info ? info.meaning : '';
         return `
@@ -123,7 +123,7 @@ var toggleRootDetail = (root, el) => {
     container.dataset.activeRoot = root;
     var info = getRootInfo(root);
     if (!info) { container.innerHTML = `<div class="root-detail-panel"><span style="color:#64748b;font-size:11px;">Bu kök için detay bilgisi henüz yüklenmedi.</span></div>`; return; }
-    var color = getRootCSSColor(root);
+    var color = el ? el.style.color || getRootCSSColor(root) : getRootCSSColor(root);
     var derivedHtml = (info.derived || []).map(d => `
         <div class="root-derived-item">
             <span class="root-derived-word" style="color:${color}">${d.word}</span>
@@ -150,7 +150,7 @@ var toggleHudRootDetail = (root, el) => {
     document.querySelectorAll('.hud-root-detail-panel').forEach(p => p.remove());
 
     var info = getRootInfo(root);
-    var color = getRootCSSColor(root);
+    var color = el ? el.style.color || getRootCSSColor(root) : getRootCSSColor(root);
     var panel = document.createElement('div');
     panel.className = 'hud-root-detail-panel';
     panel.dataset.root = root;

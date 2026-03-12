@@ -200,8 +200,8 @@ var showHUD = (n) => {
                         </div>
                     </div>
                     <div class="flex flex-wrap gap-1">
-                        ${(rn.roots || []).map(r => {
-                            var _c = getRootCSSColor(r);
+                        ${(rn.roots || []).map((r, _ri) => {
+                            var _c = getRootCSSColor(r, _ri);
                             var _info = getRootInfo(r);
                             var _m = _info ? _info.meaning : '';
                             return `
