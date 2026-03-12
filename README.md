@@ -186,7 +186,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔄 Otomatik Güncelleme (v0.34.4)
 - Uygulama açılışta **GitHub Release API** üzerinden yeni sürüm kontrolü yapar
 - Yeşil toast bildirimi ile kullanıcıya yeni sürüm sunulur (“Güncelle” / “Kapat”)
-- Güncelleme öncesi tüm kullanıcı verileri (notlar, config, datasets, DB) **ZIP olarak yedeklenir**
+- Güncelleme öncesi tüm kullanıcı verileri (notlar, config, datasets, DB) uygulama klasörü altında **ZIP olarak yedeklenir**
 - MSI sessiz kurulum (`msiexec /passive /norestart`)
 - Maksimum 5 yedek tutulur, eski yedekler otomatik silinir
 

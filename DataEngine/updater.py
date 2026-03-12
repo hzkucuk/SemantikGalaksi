@@ -8,7 +8,7 @@ Akış:
     1. Uygulama açılışında arka planda GitHub'dan son sürüm kontrol edilir
     2. Güncelleme varsa kullanıcıya toast bildirimi gösterilir
     3. Kullanıcı "Güncelle" derse:
-        a) %APPDATA%/SemantikGalaksi/backups/ altına ZIP yedek alınır
+        a) Uygulama klasörü/backups/ altına ZIP yedek alınır
         b) MSI temp'e indirilir
         c) Batch script ile yükleyici başlatılır
         d) Uygulama kapanır, MSI yeni sürümü kurar
@@ -35,9 +35,8 @@ def _get_app_dir():
 
 
 def _get_backup_dir():
-    """Yedekleme dizini: %APPDATA%/SemantikGalaksi/backups"""
-    appdata = os.environ.get('APPDATA', os.path.expanduser('~'))
-    d = os.path.join(appdata, 'SemantikGalaksi', 'backups')
+    """Yedekleme dizini: <uygulama_kök>/backups"""
+    d = os.path.join(_get_app_dir(), 'backups')
     os.makedirs(d, exist_ok=True)
     return d
 
@@ -164,7 +163,7 @@ def create_backup():
 def download_and_install(msi_url, msi_name=None):
     """MSI indir, yedek al, yükleyiciyi başlat.
 
-    1. Kullanıcı verisi ZIP yedeklenir (%APPDATA%)
+    1. Kullanıcı verisi ZIP yedeklenir (uygulama klasörü/backups/)
     2. MSI temp klasörüne indirilir
     3. Batch script oluşturulur (3s bekle → MSI /passive kur)
     4. Batch script yeni process olarak başlatılır

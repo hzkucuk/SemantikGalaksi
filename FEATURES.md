@@ -115,7 +115,7 @@ Masaüstü EXE açılışta GitHub Release API üzerinden yeni sürüm kontrolü
 |---------|----------|
 | Sürüm Kontrolü | GitHub Release API'den en son sürüm etiketi çekilir, yerel VERSION ile karşılaştırılır |
 | Bildirim | Yeşil toast bildirimi ile kullanıcıya yeni sürüm sunulur ("Güncelle" / "Kapat") |
-| Yedekleme | Güncelleme öncesi `%APPDATA%/SemantikGalaksi/backups/` altına ZIP yedek alınır |
+| Yedekleme | Güncelleme öncesi uygulama klasörü/backups/ altına ZIP yedek alınır |
 | MSI İndirme | GitHub Release'den Server MSI paketi `%TEMP%` dizinine indirilir |
 | Sessiz Kurulum | `msiexec /passive /norestart` ile arka planda kurulum yapılır |
 
