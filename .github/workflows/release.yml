@@ -50,19 +50,54 @@ jobs:
           $content = $content -replace 'version="[^"]*"', "version=`"${{ steps.version.outputs.VERSION }}`""
           Set-Content setup.py -Value $content -Encoding UTF8
 
-      - name: Build MSI
-        run: python setup.py bdist_msi
+      - name: Build Server MSI
+        shell: cmd
+        run: |
+          set SG_BUILD_MODE=server
+          python setup.py bdist_msi
 
-      - name: Find MSI file
-        id: msi
+      - name: Rename Server MSI
         shell: pwsh
         run: |
           $msi = Get-ChildItem -Path dist -Filter "*.msi" -Recurse | Select-Object -First 1
-          if (-not $msi) { Write-Error "MSI dosyasi bulunamadi!"; exit 1 }
-          echo "MSI_PATH=$($msi.FullName)" >> $env:GITHUB_OUTPUT
-          echo "MSI_NAME=$($msi.Name)" >> $env:GITHUB_OUTPUT
-          echo "MSI_SIZE=$([math]::Round($msi.Length/1MB, 2)) MB" >> $env:GITHUB_OUTPUT
-          Write-Host "MSI: $($msi.FullName) ($([math]::Round($msi.Length/1MB, 2)) MB)"
+          if (-not $msi) { Write-Error "Server MSI bulunamadi!"; exit 1 }
+          $newName = "SemantikGalaksi-${{ steps.version.outputs.VERSION }}-server-win64.msi"
+          Move-Item $msi.FullName "dist\$newName" -Force
+          Write-Host "Server MSI: $newName"
+
+      - name: Clean build directory
+        shell: pwsh
+        run: if (Test-Path "build") { Remove-Item -Recurse -Force "build" }
+
+      - name: Build Client MSI
+        shell: cmd
+        run: |
+          set SG_BUILD_MODE=client
+          python setup.py bdist_msi
+
+      - name: Rename Client MSI
+        shell: pwsh
+        run: |
+          $msi = Get-ChildItem -Path dist -Filter "*.msi" -Recurse | Where-Object { $_.Name -notlike "*server*" } | Select-Object -First 1
+          if (-not $msi) { Write-Error "Client MSI bulunamadi!"; exit 1 }
+          $newName = "SemantikGalaksi-${{ steps.version.outputs.VERSION }}-client-win64.msi"
+          Move-Item $msi.FullName "dist\$newName" -Force
+          Write-Host "Client MSI: $newName"
+
+      - name: Collect MSI info
+        id: msi
+        shell: pwsh
+        run: |
+          $serverMsi = Get-ChildItem -Path dist -Filter "*server*.msi" | Select-Object -First 1
+          $clientMsi = Get-ChildItem -Path dist -Filter "*client*.msi" | Select-Object -First 1
+          echo "SERVER_PATH=$($serverMsi.FullName)" >> $env:GITHUB_OUTPUT
+          echo "SERVER_NAME=$($serverMsi.Name)" >> $env:GITHUB_OUTPUT
+          echo "SERVER_SIZE=$([math]::Round($serverMsi.Length/1MB, 2)) MB" >> $env:GITHUB_OUTPUT
+          echo "CLIENT_PATH=$($clientMsi.FullName)" >> $env:GITHUB_OUTPUT
+          echo "CLIENT_NAME=$($clientMsi.Name)" >> $env:GITHUB_OUTPUT
+          echo "CLIENT_SIZE=$([math]::Round($clientMsi.Length/1MB, 2)) MB" >> $env:GITHUB_OUTPUT
+          Write-Host "Server: $($serverMsi.Name) ($([math]::Round($serverMsi.Length/1MB, 2)) MB)"
+          Write-Host "Client: $($clientMsi.Name) ($([math]::Round($clientMsi.Length/1MB, 2)) MB)"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -72,18 +107,27 @@ jobs:
             ## 🕋 SemantikGalaksi ${{ github.ref_name }}
 
             ### 📦 Kurulum
-            1. Aşağıdan **${{ steps.msi.outputs.MSI_NAME }}** dosyasını indirin (${{ steps.msi.outputs.MSI_SIZE }})
+            | Paket | Boyut | Açıklama |
+            |-------|-------|----------|
+            | **${{ steps.msi.outputs.SERVER_NAME }}** | ${{ steps.msi.outputs.SERVER_SIZE }} | Tam kurulum — sunucu + tüm veri dosyaları |
+            | **${{ steps.msi.outputs.CLIENT_NAME }}** | ${{ steps.msi.outputs.CLIENT_SIZE }} | Terminal kurulumu — JSON veriler sunucudan alınır |
+
+            1. Aşağıdan ihtiyacınıza uygun MSI dosyasını indirin
             2. Çift tıklayarak kurulum sihirbazını başlatın
             3. Masaüstündeki veya Başlat Menüsündeki kısayoldan çalıştırın
 
             ### ℹ️ Bilgi
             - Python runtime **gömülü** — ayrıca Python kurmanıza gerek yok
+            - **Server**: Kendi başına çalışır, tüm veriler dahil
+            - **Client**: Ağdaki bir Server'a bağlanır (`config.json` ile `server_ip` ayarlayın)
             - Masaüstü + Başlat Menüsü kısayolları otomatik oluşturulur
             - Denetim Masası → Program Kaldır ile temiz kaldırma
 
             ### 📋 Değişiklikler
             Detaylı değişiklik listesi için [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/master/CHANGELOG.md) dosyasına bakın.
-          files: ${{ steps.msi.outputs.MSI_PATH }}
+          files: |
+            ${{ steps.msi.outputs.SERVER_PATH }}
+            ${{ steps.msi.outputs.CLIENT_PATH }}
           draft: false
           prerelease: false
           generate_release_notes: false

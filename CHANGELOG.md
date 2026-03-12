@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.33.3] - 2025-07-28
+### İyileştirme
+- **GitHub Release Dual MSI**: `release.yml` artık hem Server hem Client MSI üretip release'e ekliyor — tek MSI yerine iki paket yayınlanıyor
+- **Etkilenen dosya:** `.github/workflows/release.yml`
+
 ## [0.33.2] - 2025-07-28
 ### Performans
 - **Yıldız Partikülleri Kaldırıldı**: 120.000 yıldız partikülü ve shader sistemi kaldırıldı — milkyway.jpg skybox + nebula bulutları yeterli arka plan sağlıyor, gereksiz GPU yükü ortadan kalktı
