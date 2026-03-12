@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [0.33.1] - 2025-07-28
+### Düzeltme
+- **Seslendirme Kesintisi**: Mouse hareket edince çalan ses artık kesilmiyor — `hideTooltip` ve `closeHudTooltip`'ten `stopAudio()` çağrısı kaldırıldı
+- **AI TTS Ses Kalitesi**: Seslendirme sesi Charon → Orus olarak değiştirildi, besmele ile aynı kaliteli Türkçe prompt eklendi
+### İyileştirme
+- **HUD İstatistik Konumu**: Kök istatistikleri HUD panelinde en alta taşındı — Semantik Bağlantılar listesinin altında ayrı bölüm olarak gösterilir
+- **Etkilenen dosyalar:** `Frontend/js/tooltip.js`, `Frontend/js/audio.js`, `Frontend/index.html`
+
 ## [0.33.0] - 2025-07-28
 ### Özellik
 - **MSI Server/Client Modu**: Kurulum sırasında Server veya Client seçimi — Client modunda JSON veri dosyaları hariç tutulur (sunucudan alınır)

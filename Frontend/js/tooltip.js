@@ -110,10 +110,10 @@ var showLineTooltip = (pair, x, y) => {
     clampTooltip(tooltip, x, y);
 };
 
-var hideTooltip = () => { if (hudTooltipPinned) return; var t = document.getElementById('tooltip'); t.style.display = 'none'; t.style.pointerEvents = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); stopAudio(); };
+var hideTooltip = () => { if (hudTooltipPinned) return; var t = document.getElementById('tooltip'); t.style.display = 'none'; t.style.pointerEvents = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); };
 window.hideTooltip = hideTooltip;
 
-var closeHudTooltip = () => { hudTooltipPinned = false; var t = document.getElementById('tooltip'); t.style.display = 'none'; t.style.pointerEvents = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); stopAudio(); };
+var closeHudTooltip = () => { hudTooltipPinned = false; var t = document.getElementById('tooltip'); t.style.display = 'none'; t.style.pointerEvents = 'none'; lastHoveredId = null; clearTimeout(hoverTimeout); };
 window.closeHudTooltip = closeHudTooltip;
 
 var toggleRootDetail = (root, el) => {
