@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.32.0-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.32.1-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -191,6 +191,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.32.1 | **Kok Vurgulama Duzeltmesi**: Sedde destegi eklendi, yanlis pozitif eslesmeler engellendi — tum kokler dogru renkleniyor |
 | v0.32.0 | **Sure Seslendirme**: HUD’da mor 📖 butonla tam sure MP3 dinleme (Süleymaniye Vakfı), ayet TTS eski davranışa döndürüldü |
 | v0.31.1 | **Referans Düzeltmeleri**: 3 hatalı ayet referansı düzeltildi (16:145→16:115, 81:30→81:29 ×2), hadis/sayfa referansları korundu |
 | v0.31.0 | **Zengin Veri Entegrasyonu**: `full_quran_rich_map.json` birleştirildi — dipnot_parsed linkleri, tefsir popup, çapraz referans haritası, doğrudan MP3 ses oynatma |

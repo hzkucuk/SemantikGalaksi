@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.32.1] - 2025-07-28
+### Düzeltme
+- **Arapça Kök Vurgulama**: Şedde (ّ) harfi artık doğru işleniyor — tekrarlı kök harfleri (ربب, حيي) eşleşebiliyor
+- **Yanlış Pozitif Engelleme**: Span kontrolü ve kelime uzunluk kısıtı eklendi — uzak harflerle sahte eşleşmeler engellendi
+- **Etkilenen dosya:** `Frontend/js/highlight.js`
+
 ## [0.32.0] - 2025-07-28
 ### Özellik
 - **Sure Seslendirme**: HUD paneline mor 📖 buton eklendi — Süleymaniye Vakfı MP3 ile tam sure dinleme
