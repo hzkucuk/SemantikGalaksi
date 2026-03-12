@@ -16,7 +16,7 @@ OUTPUT_PATH = os.path.join(SCRIPT_DIR, '..', 'Frontend', 'besmele.wav')
 
 BESMELE_TEXT = (
     "Kovulmuş şeytandan Allah'a sığınırım! "
-    "Rahman ve Rahim olan Allah'ın adıyla."
+    "İyiliği sonsuz, ikramı bol Allah'ın adıyla."
 )
 
 TTS_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent"

@@ -43,9 +43,9 @@ var highlightArabicText = (text, roots) => {
         }
         return false;
     };
-    const rootData = roots.filter(r => r).map(r => {
+    const rootData = roots.filter(r => r).map((r, idx) => {
         const clean = cleanNorm(r.trim()).replace(/\s/g, '');
-        return { orig: r, clean, color: getRootCSSColor(r) };
+        return { orig: r, clean, color: getRootCSSColor(r, idx) };
     }).filter(r => r.clean.length >= 2);
     let result = '', buf = '';
     for (let i = 0; i <= text.length; i++) {

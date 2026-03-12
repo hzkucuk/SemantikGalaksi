@@ -25,8 +25,15 @@ DATAENGINE_DIR = os.path.join(ROOT_DIR, "DataEngine")
 with open(os.path.join(ROOT_DIR, "VERSION"), encoding="utf-8") as _vf:
     APP_VERSION = _vf.read().strip()
 
+# ── Build modu: server (varsayılan) veya client ──────────────────────
+BUILD_MODE = os.environ.get("SG_BUILD_MODE", "server").lower()
+IS_CLIENT = BUILD_MODE == "client"
+
 # ── Frontend dosyalarını topla ────────────────────────────────────────
 include_files = []
+
+# Client modunda JSON veri dosyaları hariç tutulur (sunucudan alınır)
+_client_exclude = {"quran_data.json", "quran_roots.json"}
 
 # Frontend kök dosyaları
 frontend_root_files = [
@@ -35,6 +42,8 @@ frontend_root_files = [
     "tailwind.min.js", "besmele.wav",
 ]
 for f in frontend_root_files:
+    if IS_CLIENT and f in _client_exclude:
+        continue
     src = os.path.join(FRONTEND_DIR, f)
     if os.path.exists(src):
         include_files.append((src, os.path.join("Frontend", f)))
@@ -133,17 +142,23 @@ msi_data = {
 }
 
 # ── MSI seçenekleri ───────────────────────────────────────────────────
+_mode_label = "Client" if IS_CLIENT else "Server"
+_upgrade_code = (
+    "{B2C3D4E5-F6A7-8901-BCDE-F12345678901}" if IS_CLIENT
+    else "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
+)
+
 bdist_msi_options = {
     "add_to_path": False,
     "data": msi_data,
     "environment_variables": [],
-    "upgrade_code": "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}",
+    "upgrade_code": _upgrade_code,
     "install_icon": None,
     "all_users": True,
     "initial_target_dir": r"C:\SemantikGalaksi",
     "summary_data": {
         "author": "SemantikGalaksi",
-        "comments": "Kur'an-ı Kerim Kelime Kök Uzayı — 3D uzay görselleştirmesi ile Kur'an keşfi",
+        "comments": f"Kur'an-ı Kerim Kelime Kök Uzayı — {_mode_label} Kurulumu",
         "keywords": "Kuran, Quran, 3D, semantik, kök analizi",
     },
 }

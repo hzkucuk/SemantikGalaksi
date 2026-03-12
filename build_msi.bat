@@ -53,13 +53,30 @@ if errorlevel 1 (
 echo       Tum bagimliliklar hazir.
 echo.
 
-REM ── 4. state.js versiyonunu senkronize et ───────────────────
-echo [4/5] Frontend versiyonu senkronize ediliyor...
+REM ── 4. Server/Client secimi ─────────────────────────────────
+echo ╔══════════════════════════════════════════════════════════╗
+echo ║  Kurulum Tipi Secin:                                    ║
+echo ║    [1] Server  (tum dosyalar dahil — varsayilan)         ║
+echo ║    [2] Client  (JSON veri dosyalari haric)               ║
+echo ╚══════════════════════════════════════════════════════════╝
+set /p BUILD_CHOICE="  Seciminiz (1/2) [1]: "
+if "%BUILD_CHOICE%"=="" set BUILD_CHOICE=1
+if "%BUILD_CHOICE%"=="2" (
+    set SG_BUILD_MODE=client
+    echo       → Client modu secildi (JSON veriler haric tutulacak^)
+) else (
+    set SG_BUILD_MODE=server
+    echo       → Server modu secildi (tum dosyalar dahil^)
+)
+echo.
+
+REM ── 5. state.js versiyonunu senkronize et ───────────────────
+echo [5/6] Frontend versiyonu senkronize ediliyor...
 python -c "import re,pathlib;v=pathlib.Path('VERSION').read_text().strip();p=pathlib.Path('Frontend/js/state.js');t=p.read_text(encoding='utf-8');p.write_text(re.sub(r\"APP_VERSION\s*=\s*'[^']*'\",\"APP_VERSION = '\"+v+\"'\",t),encoding='utf-8');print('       APP_VERSION =',v)"
 echo.
 
-REM ── 5. MSI oluştur ─────────────────────────────────────────
-echo [5/5] MSI paketi olusturuluyor...
+REM ── 6. MSI oluştur ─────────────────────────────────────────
+echo [6/6] MSI paketi olusturuluyor (%SG_BUILD_MODE% modu)...
 echo       Bu islem birkac dakika surebilir...
 echo.
 
@@ -83,10 +100,17 @@ echo ╔════════════════════════
 echo ║  [✓] MSI Build BASARILI!                                ║
 echo ╠══════════════════════════════════════════════════════════╣
 
-REM MSI dosyasını bul ve göster
+REM MSI dosyasını bul, yeniden adlandır ve göster
 for /f "delims=" %%f in ('dir /b /s dist\*.msi 2^>nul') do (
-    echo ║  Cikti: %%f
-    for %%s in ("%%f") do echo ║  Boyut: %%~zs bytes
+    set "ORIGINAL_MSI=%%f"
+    set "MSI_DIR=%%~dpf"
+)
+set "FINAL_MSI=%MSI_DIR%SemantikGalaksi-%APP_VER%-%SG_BUILD_MODE%-win64.msi"
+if defined ORIGINAL_MSI (
+    move "%ORIGINAL_MSI%" "%FINAL_MSI%" >nul 2>&1
+    echo ║  Cikti: %FINAL_MSI%
+    for %%s in ("%FINAL_MSI%") do echo ║  Boyut: %%~zs bytes
+    echo ║  Mod:   %SG_BUILD_MODE%
 )
 
 echo ║                                                          ║

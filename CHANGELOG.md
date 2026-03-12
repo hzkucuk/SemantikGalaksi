@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.33.0] - 2025-07-28
+### Özellik
+- **MSI Server/Client Modu**: Kurulum sırasında Server veya Client seçimi — Client modunda JSON veri dosyaları hariç tutulur (sunucudan alınır)
+- **Besmele Meali Güncelleme**: Açılış ekranı Süleymaniye Vakfı mealine güncellendi — "İyiliği sonsuz, ikramı bol Allah'ın adıyla"
+- **Kök Renk Paleti İyileştirme**: 11 hue → 16 ayrık HSL renk, index bazlı atama — aynı sayfadaki kökler asla aynı rengi almaz
+- **Etkilenen dosyalar:** `setup.py`, `build_msi.bat`, `Frontend/index.html`, `Frontend/js/constants.js`, `Frontend/js/hud.js`, `Frontend/js/highlight.js`, `DataEngine/generate_besmele_audio.py`
+
 ## [0.32.2] - 2025-07-28
 ### Düzeltme
 - **Zayıf Harf Eşdeğerlik Kontrolü**: İndirgenmiş kök eşleşmesinde (weak letter drop) ا/و/ي eşdeğerliği devre dışı bırakıldı — `سحروا`→`وحي` gibi sahte eşleşmeler engellendi

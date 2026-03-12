@@ -25,12 +25,36 @@ var surahNamesTR = {
 
 var getSurahTR = (id) => surahNamesTR[id.split(':')[0]] || "Sure " + id.split(':')[0];
 
-var rootColorHues = [0, 30, 55, 90, 135, 170, 200, 235, 270, 305, 340];
+var rootColorPalette = [
+    [0,   90, 65],  // kırmızı
+    [25,  90, 60],  // turuncu
+    [50,  85, 55],  // sarı
+    [80,  80, 55],  // lime
+    [120, 75, 55],  // yeşil
+    [160, 80, 55],  // teal
+    [185, 85, 60],  // cyan
+    [210, 90, 65],  // açık mavi
+    [235, 85, 70],  // mavi
+    [260, 80, 70],  // indigo
+    [285, 75, 70],  // mor
+    [310, 80, 65],  // magenta
+    [335, 85, 65],  // pembe
+    [15,  70, 75],  // somon
+    [145, 70, 65],  // nane
+    [195, 70, 75],  // buz mavisi
+];
 
-var getRootCSSColor = (root) => {
-    var h = 5381;
-    for (var i = 0; i < root.length; i++) h = ((h << 5) + h + root.charCodeAt(i)) | 0;
-    return `hsl(${rootColorHues[(h >>> 0) % rootColorHues.length]}, 90%, 65%)`;
+var getRootCSSColor = (root, index) => {
+    var idx;
+    if (index !== undefined) {
+        idx = index % rootColorPalette.length;
+    } else {
+        var h = 5381;
+        for (var i = 0; i < root.length; i++) h = ((h << 5) + h + root.charCodeAt(i)) | 0;
+        idx = (h >>> 0) % rootColorPalette.length;
+    }
+    var c = rootColorPalette[idx];
+    return `hsl(${c[0]}, ${c[1]}%, ${c[2]}%)`;
 };
 
 var getRootPron = (root) => {

@@ -108,8 +108,8 @@ var showHUD = (n) => {
     aiResult.innerHTML = '';
 
     var rootsCont = document.getElementById('hud-roots'); rootsCont.innerHTML = '';
-    (n.roots || []).forEach(r => {
-        var c = getRootCSSColor(r); var badge = document.createElement('div'); badge.className = "root-badge";
+    (n.roots || []).forEach((r, ri) => {
+        var c = getRootCSSColor(r, ri); var badge = document.createElement('div'); badge.className = "root-badge";
         badge.style.color = c; badge.style.borderColor = c.replace('hsl', 'hsla').replace(')', ', 0.4)');
         badge.style.backgroundColor = c.replace('hsl', 'hsla').replace(')', ', 0.1)');
         badge.style.cursor = 'pointer';
@@ -123,12 +123,12 @@ var showHUD = (n) => {
     // Kök istatistikleri
     var statsDiv = document.getElementById('hud-root-stats');
     var statsHtml = '';
-    (n.roots || []).forEach(r => {
+    (n.roots || []).forEach((r, ri) => {
         var ids = rootMap.get(r) || [];
         var totalAyah = ids.length;
         var surahSet = new Set(ids.map(i => nodes[i].id.split(':')[0]));
         var totalSurah = surahSet.size;
-        var c = getRootCSSColor(r);
+        var c = getRootCSSColor(r, ri);
         // Sure bazlı dağılım (en çok geçen 5)
         var surahCounts = {};
         ids.forEach(i => { var sid = nodes[i].id.split(':')[0]; surahCounts[sid] = (surahCounts[sid] || 0) + 1; });
