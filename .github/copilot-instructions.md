@@ -53,6 +53,7 @@ Her değişiklik sonrası:
 - PATCH sürümleri (X.Y.1 – X.Y.4) için **MSI build yapma**, sadece git push yap.
 - PATCH 5'e ulaşıldığında (X.Y.5): MINOR sürümü artır (X.Y+1.0), MSI build (`build_msi.bat`) çalıştır, release oluştur.
 - Yani her 5 patch'te bir release derlemesi gerçekleşir.
+- Kullanıcı **"release derle"** dediğinde patch sayısına bakılmaksızın: MINOR sürümü artır, MSI build çalıştır, git tag + push yap, release oluştur.
 - Build başarısız olursa push yapma, hatayı düzelt.
 
 ## Yanıt Formatı
