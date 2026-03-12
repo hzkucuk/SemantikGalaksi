@@ -1,0 +1,5912 @@
+{
+  "nodes": [
+    {
+      "id": "8:1",
+      "text": "يَسْـَٔلُونَكَ عَنِ الْاَنْفَالِۜ قُلِ الْاَنْفَالُ لِلّٰهِ وَالرَّسُولِۚ فَاتَّقُوا اللّٰهَ وَاَصْلِحُوا ذَاتَ بَيْنِكُمْۖ وَاَط۪يعُوا اللّٰهَ وَرَسُولَهُٓ اِنْ كُنْتُمْ مُؤْمِن۪ينَ",
+      "translation": "Sana enfâli /savaş sonucu ele geçirilen kamu mallarını soruyorlar. De ki:\"Enfâl, Allah’a ve resulüne aittir.”[1*] Allah’a karşı yanlış yapmaktan sakının ve aranızı düzeltin.[2*] Eğer inanıp güveniyorsanız Allah’a ve resulüne /Allah’ın kitabına[3*] gönülden boyun eğin.",
+      "dipnot": "[1*] Savaş  sonucunda ele geçen kamu mallarına enfal, savaş meydanında ele geçirilen mal ve esirlere ganimet (Enfal 8/41), savaşmadan ele geçirilenlere de fey (Haşr 59/6 - 9) denir. Enfâlin Allah ve resulüne ait olması, onun artık Allah’ın kanunlarına göre yönetilecek bir kamu malı olduğunu gösterir. Fethedilen yerlerdeki özel mülklere ve savaşa katılmamış olanlara dokunulmaz. [2*] Hucurat 49/10. [3*] Resul (رسول), “birine gönderilen söz” anlamına geldiği gibi “o sözü iletmek için gönderilen elçi” anlamına da gelir. (Müfredat). Allah’ın elçilerinin görevi, onun sözlerini insanlara ulaştırmaktır. Bu sebeple Kur’an’da geçen  Allah’ın resulü (رسول اللّه) ifadelerinde asıl vurgu ayetleredir. Muhammed aleyhisselam öldüğü için bizim muhatabımız olan resul, Kur’an’dır (Âl-i İmrân 3/144, Maide 5/67, Nahl 16/35).",
+      "roots": [
+        "سأل",
+        "نفل",
+        "قول",
+        "أله",
+        "رسل",
+        "وقي",
+        "صلح",
+        "بين",
+        "طوع",
+        "كون",
+        "أمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Savaş  sonucunda ele geçen kamu mallarına enfal, savaş meydanında ele geçirilen mal ve esirlere ganimet ("
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/41",
+          "targets": [
+            "8:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), savaşmadan ele geçirilenlere de fey ("
+        },
+        {
+          "type": "link",
+          "content": "Haşr 59/6-9",
+          "targets": [
+            "59:6",
+            "59:7",
+            "59:8",
+            "59:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") denir. Enfâlin Allah ve resulüne ait olması, onun artık Allah’ın kanunlarına göre yönetilecek bir kamu malı olduğunu gösterir. Fethedilen yerlerdeki özel mülklere ve savaşa katılmamış olanlara dokunulmaz. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Hucurat 49/10",
+          "targets": [
+            "49:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] Resul (رسول), “birine gönderilen söz” anlamına geldiği gibi “o sözü iletmek için gönderilen elçi” anlamına da gelir. (Müfredat). Allah’ın elçilerinin görevi, onun sözlerini insanlara ulaştırmaktır. Bu sebeple Kur’an’da geçen  Allah’ın resulü (رسول اللّه) ifadelerinde asıl vurgu ayetleredir. Muhammed aleyhisselam öldüğü için bizim muhatabımız olan resul, Kur’an’dır ("
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmrân 3/144",
+          "targets": [
+            "3:144"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/67",
+          "targets": [
+            "5:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/35",
+          "targets": [
+            "16:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:1",
+        "connections": [
+          {
+            "target_coordinate": "8:41",
+            "context": "Enfal 8/41"
+          },
+          {
+            "target_coordinate": "59:6",
+            "context": "Haşr 59/6-9"
+          },
+          {
+            "target_coordinate": "59:7",
+            "context": "Haşr 59/6-9"
+          },
+          {
+            "target_coordinate": "59:8",
+            "context": "Haşr 59/6-9"
+          },
+          {
+            "target_coordinate": "59:9",
+            "context": "Haşr 59/6-9"
+          },
+          {
+            "target_coordinate": "49:10",
+            "context": "Hucurat 49/10"
+          },
+          {
+            "target_coordinate": "3:144",
+            "context": "Âl-i İmrân 3/144"
+          },
+          {
+            "target_coordinate": "5:67",
+            "context": "Maide 5/67"
+          },
+          {
+            "target_coordinate": "16:35",
+            "context": "Nahl 16/35"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 1. Ayetin Tefsiri\nيَسْـَٔلُونَكَ عَنِ الْاَنْفَالِۜ قُلِ الْاَنْفَالُ لِلّٰهِ وَالرَّسُولِۚ فَاتَّقُوا اللّٰهَ وَاَصْلِحُوا ذَاتَ بَيْنِكُمْۖ وَاَط۪يعُوا اللّٰهَ وَرَسُولَهُٓ اِنْ كُنْتُمْ مُؤْمِن۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:2",
+      "text": "اِنَّمَا الْمُؤْمِنُونَ الَّذ۪ينَ اِذَا ذُكِرَ اللّٰهُ وَجِلَتْ قُلُوبُهُمْ وَاِذَا تُلِيَتْ عَلَيْهِمْ اٰيَاتُهُ زَادَتْهُمْ ا۪يمَانًا وَعَلٰى رَبِّهِمْ يَتَوَكَّلُونَۚ",
+      "translation": "Müminler ancak şu kimselerdir: Allah anılınca yürekleri titrer,[1*] Allah’ın ayetleri onlara bağlantılarıyla birlikte okununca bu ayetler onların imanlarını /güvenlerini artırır;[2*] onlar yalnızca Rablerine güvenip dayanırlar,",
+      "dipnot": "[1*] Hac 22/35, Nur 24/62, Hucurat 49/15. [2*] Tevbe 9/124; İsra 17/107 - 109.",
+      "roots": [
+        "أمن",
+        "ذكر",
+        "أله",
+        "وجل",
+        "قلب",
+        "تلو",
+        "أيي",
+        "زيد",
+        "ربب",
+        "وكل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/35",
+          "targets": [
+            "22:35"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/62",
+          "targets": [
+            "24:62"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hucurat 49/15",
+          "targets": [
+            "49:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/124",
+          "targets": [
+            "9:124"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/107-109",
+          "targets": [
+            "17:107",
+            "17:108",
+            "17:109"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:2",
+        "connections": [
+          {
+            "target_coordinate": "22:35",
+            "context": "Hac 22/35"
+          },
+          {
+            "target_coordinate": "24:62",
+            "context": "Nur 24/62"
+          },
+          {
+            "target_coordinate": "49:15",
+            "context": "Hucurat 49/15"
+          },
+          {
+            "target_coordinate": "9:124",
+            "context": "Tevbe 9/124"
+          },
+          {
+            "target_coordinate": "17:107",
+            "context": "İsra 17/107-109"
+          },
+          {
+            "target_coordinate": "17:108",
+            "context": "İsra 17/107-109"
+          },
+          {
+            "target_coordinate": "17:109",
+            "context": "İsra 17/107-109"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 2. Ayetin Tefsiri\nاِنَّمَا الْمُؤْمِنُونَ الَّذ۪ينَ اِذَا ذُكِرَ اللّٰهُ وَجِلَتْ قُلُوبُهُمْ وَاِذَا تُلِيَتْ عَلَيْهِمْ اٰيَاتُهُ زَادَتْهُمْ ا۪يمَانًا وَعَلٰى رَبِّهِمْ يَتَوَكَّلُونَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:3",
+      "text": "اَلَّذ۪ينَ يُق۪يمُونَ الصَّلٰوةَ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَۜ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "قوم",
+        "صلو",
+        "رزق",
+        "نفق"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "8:3",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 3. Ayetin Tefsiri\nاَلَّذ۪ينَ يُق۪يمُونَ الصَّلٰوةَ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:4",
+      "text": "اُو۬لٰٓئِكَ هُمُ الْمُؤْمِنُونَ حَقًّاۜ لَهُمْ دَرَجَاتٌ عِنْدَ رَبِّهِمْ وَمَغْفِرَةٌ وَرِزْقٌ كَر۪يمٌۚ",
+      "translation": "İşte onlar gerçek müminlerdir. Onlar için Rableri katında dereceler, bağışlanma ve değerli bir rızık vardır.[*]",
+      "dipnot": "Enfâl 8/74, Hac 22/50.",
+      "roots": [
+        "أمن",
+        "حقق",
+        "درج",
+        "عند",
+        "ربب",
+        "غفر",
+        "رزق",
+        "كرم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Enfâl 8/74",
+          "targets": [
+            "8:74"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/50",
+          "targets": [
+            "22:50"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:4",
+        "connections": [
+          {
+            "target_coordinate": "8:74",
+            "context": "Enfâl 8/74"
+          },
+          {
+            "target_coordinate": "22:50",
+            "context": "Hac 22/50"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 4. Ayetin Tefsiri\nاُو۬لٰٓئِكَ هُمُ الْمُؤْمِنُونَ حَقًّاۜ لَهُمْ دَرَجَاتٌ عِنْدَ رَبِّهِمْ وَمَغْفِرَةٌ وَرِزْقٌ كَر۪يمٌۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:5",
+      "text": "كَمَٓا اَخْرَجَكَ رَبُّكَ مِنْ بَيْتِكَ بِالْحَقِّۖ وَاِنَّ فَر۪يقًا مِنَ الْمُؤْمِن۪ينَ لَكَارِهُونَۙ",
+      "translation": "Onlar, o gerçek / Romalıların Persleri yendiği gün, müminleri bir zaferle sevindireceği gerçeği[*] sebebiyle Rabbinin seni evinden çıkardığı sıradaki (müminler) gibidir. (O sırada) Müminlerin bir kesimi de tam bir hoşnutsuzluk içinde idiler.",
+      "dipnot": "Mekke’de inen Rum 30/1-6. âyetlerde Romalıların Perslere yenildiği ama dokuz yıl içinde galip gelecekleri ve o gün Allah’ın müminleri bir zaferle sevindireceği bildirilmiştir. Bu ayette belirtilen “o gerçek”, bu sözün gerçekleşeceği vaktin geldiği gerçeğidir.",
+      "roots": [
+        "خرج",
+        "ربب",
+        "بيت",
+        "حقق",
+        "فرق",
+        "أمن",
+        "كره"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Mekke’"
+        },
+        {
+          "type": "link",
+          "content": "de inen Rum 30/1-6",
+          "targets": [
+            "30:1",
+            "30:2",
+            "30:3",
+            "30:4",
+            "30:5",
+            "30:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". âyetlerde Romalıların Perslere yenildiği ama dokuz yıl içinde galip gelecekleri ve o gün Allah’ın müminleri bir zaferle sevindireceği bildirilmiştir. Bu ayette belirtilen “o gerçek”, bu sözün gerçekleşeceği vaktin geldiği gerçeğidir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:5",
+        "connections": [
+          {
+            "target_coordinate": "30:1",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:2",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:3",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:4",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:5",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:6",
+            "context": "de inen Rum 30/1-6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 5. Ayetin Tefsiri\nكَمَٓا اَخْرَجَكَ رَبُّكَ مِنْ بَيْتِكَ بِالْحَقِّۖ وَاِنَّ فَر۪يقًا مِنَ الْمُؤْمِن۪ينَ لَكَارِهُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:6",
+      "text": "يُجَادِلُونَكَ فِي الْحَقِّ بَعْدَ مَا تَبَيَّنَ كَاَنَّمَا يُسَاقُونَ اِلَى الْمَوْتِ وَهُمْ يَنْظُرُونَۜ",
+      "translation": "O gerçek bütünüyle ortaya çıktığı halde göz göre göre ölüme sürükleniyorlarmış gibi seninle çekişiyorlardı.",
+      "dipnot": "",
+      "roots": [
+        "جدل",
+        "حقق",
+        "بعد",
+        "بين",
+        "سوق",
+        "موت",
+        "نظر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "8:6",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 6. Ayetin Tefsiri\nيُجَادِلُونَكَ فِي الْحَقِّ بَعْدَ مَا تَبَيَّنَ كَاَنَّمَا يُسَاقُونَ اِلَى الْمَوْتِ وَهُمْ يَنْظُرُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:7",
+      "text": "وَاِذْ يَعِدُكُمُ اللّٰهُ اِحْدَى الطَّٓائِفَتَيْنِ اَنَّهَا لَكُمْ وَتَوَدُّونَ اَنَّ غَيْرَ ذَاتِ الشَّوْكَةِ تَكُونُ لَكُمْ وَيُر۪يدُ اللّٰهُ اَنْ يُحِقَّ الْحَقَّ بِكَلِمَاتِه۪ وَيَقْطَعَ دَابِرَ الْكَافِر۪ينَۙ",
+      "translation": "Oysa Allah söz vermişti, o iki topluluktan[1*] biri kesinlikle sizin olacaktı. Siz, silahsız olanın (kervanın)[2*] sizin olmasını arzuluyordunuz. Allah ise sözleriyle /ayetleriyle[3*] yaptığı o gerçek vaadi tahakkuk ettirmek ve o kâfirlerin ardını kesmek /Mekke’deki hakimiyetlerini bitirmek istiyordu.",
+      "dipnot": "",
+      "roots": [
+        "وعد",
+        "أله",
+        "أحد",
+        "طوف",
+        "ودد",
+        "غير",
+        "شوك",
+        "كون",
+        "رود",
+        "حقق",
+        "كلم",
+        "قطع",
+        "دبر",
+        "كفر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "8:7",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 7. Ayetin Tefsiri\nوَاِذْ يَعِدُكُمُ اللّٰهُ اِحْدَى الطَّٓائِفَتَيْنِ اَنَّهَا لَكُمْ وَتَوَدُّونَ اَنَّ غَيْرَ ذَاتِ الشَّوْكَةِ تَكُونُ لَكُمْ وَيُر۪يدُ اللّٰهُ اَنْ يُحِقَّ الْحَقَّ بِكَلِمَاتِه۪ وَيَقْطَعَ دَابِرَ الْكَافِر۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:8",
+      "text": "لِيُحِقَّ الْحَقَّ وَيُبْطِلَ الْبَاطِلَ وَلَوْ كَرِهَ الْمُجْرِمُونَۚ",
+      "translation": "Suçluların /Mekkeli müşriklerin hoşuna gitmese de Allah o gerçeği /yaptığı vaadi tahakkuk ettirmek ve onların batıl eylemlerini[*] boşa çıkarmak istiyordu.",
+      "dipnot": "[*] Perslerle Romalıların savaştığı gün, Allah’ın müminlere zafer vereceğini, Mekke’de inen Rum 30/1 - 6. âyetlerden öğrenmelerine rağmen müşriklerin, Allah’ın verdiği zafer sözünü boşa çıkarma gayretleri.",
+      "roots": [
+        "حقق",
+        "بطل",
+        "كره",
+        "جرم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Perslerle Romalıların savaştığı gün, Allah’ın müminlere zafer vereceğini, Mekke’"
+        },
+        {
+          "type": "link",
+          "content": "de inen Rum 30/1-6",
+          "targets": [
+            "30:1",
+            "30:2",
+            "30:3",
+            "30:4",
+            "30:5",
+            "30:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". âyetlerden öğrenmelerine rağmen müşriklerin, Allah’ın verdiği zafer sözünü boşa çıkarma gayretleri."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:8",
+        "connections": [
+          {
+            "target_coordinate": "30:1",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:2",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:3",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:4",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:5",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:6",
+            "context": "de inen Rum 30/1-6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 8. Ayetin Tefsiri\nلِيُحِقَّ الْحَقَّ وَيُبْطِلَ الْبَاطِلَ وَلَوْ كَرِهَ الْمُجْرِمُونَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:9",
+      "text": "اِذْ تَسْتَغ۪يثُونَ رَبَّكُمْ فَاسْتَجَابَ لَكُمْ اَنّ۪ي مُمِدُّكُمْ بِاَلْفٍ مِنَ الْمَلٰٓئِكَةِ مُرْدِف۪ينَ",
+      "translation": "Hani o gün (Bedir’de) Rabbinize yalvarıp yakarıyordunuz. O da “Ardı ardına gelen biner melek (toplam üç bin melek)[*] ile sizin imdadınıza yetişiyorum.” diye cevap vermişti.",
+      "dipnot": "[*] Âl-i İmran 3/124. âyette, Bedir’de yardıma gelen meleklerin sayısının toplam üç bin olduğu belirtilmiştir. Bu ayetten de üç bin meleğin binerli gruplar halinde indirildiği anlaşılmaktadır.",
+      "roots": [
+        "غوث",
+        "ربب",
+        "جوب",
+        "مدد",
+        "ألف",
+        "ملك",
+        "ردف"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/124",
+          "targets": [
+            "3:124"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". âyette, Bedir’de yardıma gelen meleklerin sayısının toplam üç bin olduğu belirtilmiştir. Bu ayetten de üç bin meleğin binerli gruplar halinde indirildiği anlaşılmaktadır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:9",
+        "connections": [
+          {
+            "target_coordinate": "3:124",
+            "context": "Âl-i İmran 3/124"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 9. Ayetin Tefsiri\nاِذْ تَسْتَغ۪يثُونَ رَبَّكُمْ فَاسْتَجَابَ لَكُمْ اَنّ۪ي مُمِدُّكُمْ بِاَلْفٍ مِنَ الْمَلٰٓئِكَةِ مُرْدِف۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:10",
+      "text": "وَمَا جَعَلَهُ اللّٰهُ اِلَّا بُشْرٰى وَلِتَطْمَئِنَّ بِه۪ قُلُوبُكُمْۚ وَمَا النَّصْرُ اِلَّا مِنْ عِنْدِ اللّٰهِۜ اِنَّ اللّٰهَ عَز۪يزٌ حَك۪يمٌ۟",
+      "translation": "Allah bunu, sırf size bir müjde olsun ve bununla kalpleriniz yatışsın diye yapmıştı. Yoksa zafer yalnızca Allah katındandır. Allah daima üstün olan ve bütün kararları doğru olandır.[*]",
+      "dipnot": "[*] Âl-i İmran 3/126, Hac 22/40, Rum 30/47, Mü’min 40/51.",
+      "roots": [
+        "جعل",
+        "أله",
+        "بشر",
+        "طمأن",
+        "قلب",
+        "نصر",
+        "عند",
+        "عزز",
+        "حكم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/126",
+          "targets": [
+            "3:126"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/40",
+          "targets": [
+            "22:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/47",
+          "targets": [
+            "30:47"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/51",
+          "targets": [
+            "40:51"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:10",
+        "connections": [
+          {
+            "target_coordinate": "3:126",
+            "context": "Âl-i İmran 3/126"
+          },
+          {
+            "target_coordinate": "22:40",
+            "context": "Hac 22/40"
+          },
+          {
+            "target_coordinate": "30:47",
+            "context": "Rum 30/47"
+          },
+          {
+            "target_coordinate": "40:51",
+            "context": "min 40/51"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 10. Ayetin Tefsiri\nوَمَا جَعَلَهُ اللّٰهُ اِلَّا بُشْرٰى وَلِتَطْمَئِنَّ بِه۪ قُلُوبُكُمْۚ وَمَا النَّصْرُ اِلَّا مِنْ عِنْدِ اللّٰهِۜ اِنَّ اللّٰهَ عَز۪يزٌ حَك۪يمٌ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:11",
+      "text": "اِذْ يُغَشّ۪يكُمُ النُّعَاسَ اَمَنَةً مِنْهُ وَيُنَزِّلُ عَلَيْكُمْ مِنَ السَّمَٓاءِ مَٓاءً لِيُطَهِّرَكُمْ بِه۪ وَيُذْهِبَ عَنْكُمْ رِجْزَ الشَّيْطَانِ وَلِيَرْبِطَ عَلٰى قُلُوبِكُمْ وَيُثَبِّتَ بِهِ الْاَقْدَامَۜ",
+      "translation": "Hani Allah, bir güven duygusu vermek için sizi tatlı bir uykuya daldırmıştı.[*] O, bununla sizi tertemiz yapmak, şeytanın yol açtığı pisliği gidermek, kalplerinizi metanetli ve ayaklarınızı sabit kılmak için gökten üzerinize su da indiriyordu.",
+      "dipnot": "[*] Benzer durum Uhud savaşında da yaşanmıştı (Âl-i İmran 3/154).",
+      "roots": [
+        "غشو",
+        "نعس",
+        "أمن",
+        "نزل",
+        "سمو",
+        "موه",
+        "طهر",
+        "ذهب",
+        "رجز",
+        "شطن",
+        "ربط",
+        "قلب",
+        "ثبت",
+        "قدم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Benzer durum Uhud savaşında da yaşanmıştı ("
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/154",
+          "targets": [
+            "3:154"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:11",
+        "connections": [
+          {
+            "target_coordinate": "3:154",
+            "context": "Âl-i İmran 3/154"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 11. Ayetin Tefsiri\nاِذْ يُغَشّ۪يكُمُ النُّعَاسَ اَمَنَةً مِنْهُ وَيُنَزِّلُ عَلَيْكُمْ مِنَ السَّمَٓاءِ مَٓاءً لِيُطَهِّرَكُمْ بِه۪ وَيُذْهِبَ عَنْكُمْ رِجْزَ الشَّيْطَانِ وَلِيَرْبِطَ عَلٰى قُلُوبِكُمْ وَيُثَبِّتَ بِهِ الْاَقْدَامَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:12",
+      "text": "اِذْ يُوح۪ي رَبُّكَ اِلَى الْمَلٰٓئِكَةِ اَنّ۪ي مَعَكُمْ فَثَبِّتُوا الَّذ۪ينَ اٰمَنُواۜ سَاُلْق۪ي ف۪ي قُلُوبِ الَّذ۪ينَ كَفَرُوا الرُّعْبَ فَاضْرِبُوا فَوْقَ الْاَعْنَاقِ وَاضْرِبُوا مِنْهُمْ كُلَّ بَنَانٍۜ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "وحي",
+        "ربب",
+        "ملك",
+        "ثبت",
+        "أمن",
+        "لقي",
+        "قلب",
+        "كفر",
+        "رعب",
+        "ضرب",
+        "فوق",
+        "عنق",
+        "كلل",
+        "بنن"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "8:12",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 12. Ayetin Tefsiri\nاِذْ يُوح۪ي رَبُّكَ اِلَى الْمَلٰٓئِكَةِ اَنّ۪ي مَعَكُمْ فَثَبِّتُوا الَّذ۪ينَ اٰمَنُواۜ سَاُلْق۪ي ف۪ي قُلُوبِ الَّذ۪ينَ كَفَرُوا الرُّعْبَ فَاضْرِبُوا فَوْقَ الْاَعْنَاقِ وَاضْرِبُوا مِنْهُمْ كُلَّ بَنَانٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:13",
+      "text": "ذٰلِكَ بِاَنَّهُمْ شَٓاقُّوا اللّٰهَ وَرَسُولَهُۚ وَمَنْ يُشَاقِقِ اللّٰهَ وَرَسُولَهُ فَاِنَّ اللّٰهَ شَد۪يدُ الْعِقَابِ",
+      "translation": "Çünkü bu kâfirler, Allah’ın ve elçisinin karşısında yer aldılar. Kim Allah’ın ve elçisinin karşısında yer alırsa bilsin ki Allah’ın cezalandırması çetindir.",
+      "dipnot": "Benzer ifade Haşr 59/4. Ayette Yahudiler için de kullanılmıştır.",
+      "roots": [
+        "شقق",
+        "أله",
+        "رسل",
+        "شدد",
+        "عقب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Benzer ifade Haşr 59/4",
+          "targets": [
+            "59:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Ayette Yahudiler için de kullanılmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:13",
+        "connections": [
+          {
+            "target_coordinate": "59:4",
+            "context": "Benzer ifade Haşr 59/4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 13. Ayetin Tefsiri\nذٰلِكَ بِاَنَّهُمْ شَٓاقُّوا اللّٰهَ وَرَسُولَهُۚ وَمَنْ يُشَاقِقِ اللّٰهَ وَرَسُولَهُ فَاِنَّ اللّٰهَ شَد۪يدُ الْعِقَابِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:14",
+      "text": "ذٰلِكُمْ فَذُوقُوهُ وَاَنَّ لِلْكَافِر۪ينَ عَذَابَ النَّارِ",
+      "translation": "Haydi, tadın o cezayı bakalım! O kâfirler için bir de ateş azabı vardır.",
+      "dipnot": "Mülk 67/6.",
+      "roots": [
+        "ذوق",
+        "كفر",
+        "عذب",
+        "نور"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Mülk 67/6",
+          "targets": [
+            "67:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:14",
+        "connections": [
+          {
+            "target_coordinate": "67:6",
+            "context": "Mülk 67/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 14. Ayetin Tefsiri\nذٰلِكُمْ فَذُوقُوهُ وَاَنَّ لِلْكَافِر۪ينَ عَذَابَ النَّارِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:15",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِذَا لَق۪يتُمُ الَّذ۪ينَ كَفَرُوا زَحْفًا فَلَا تُوَلُّوهُمُ الْاَدْبَارَۚ",
+      "translation": "Ey inanıp güvenenler! Ordu halinde kâfirlerle karşılaştığınızda sakın onlara arkanızı dönmeyin!",
+      "dipnot": "Nisa 4/104.",
+      "roots": [
+        "أيي",
+        "أمن",
+        "لقي",
+        "كفر",
+        "زحف",
+        "ولي",
+        "دبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nisa 4/104",
+          "targets": [
+            "4:104"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:15",
+        "connections": [
+          {
+            "target_coordinate": "4:104",
+            "context": "Nisa 4/104"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 15. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِذَا لَق۪يتُمُ الَّذ۪ينَ كَفَرُوا زَحْفًا فَلَا تُوَلُّوهُمُ الْاَدْبَارَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:16",
+      "text": "وَمَنْ يُوَلِّهِمْ يَوْمَئِذٍ دُبُرَهُٓ اِلَّا مُتَحَرِّفًا لِقِتَالٍ اَوْ مُتَحَيِّزًا اِلٰى فِئَةٍ فَقَدْ بَٓاءَ بِغَضَبٍ مِنَ اللّٰهِ وَمَأْوٰيهُ جَهَنَّمُۜ وَبِئْسَ الْمَص۪يرُ",
+      "translation": "Savaş taktiği olarak yer değiştirme ya da bir birliğin yanında yer alma dışında o gün kim onlara arkasını dönerse kesinlikle Allah’ın gazabına uğrar. Onun sığınacağı yer cehennemdir. Ne kötü hale gelmektir o!",
+      "dipnot": "Uhud savaşında bu kural ihlal edilmiştir ( Âl-i İmran 3/153 ).",
+      "roots": [
+        "ولي",
+        "يوم",
+        "دبر",
+        "حرف",
+        "قتل",
+        "حوز",
+        "فأي",
+        "بوأ",
+        "غضب",
+        "أله",
+        "أوي",
+        "بأس",
+        "صير"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Uhud savaşında bu kural ihlal edilmiştir ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/153",
+          "targets": [
+            "3:153"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:16",
+        "connections": [
+          {
+            "target_coordinate": "3:153",
+            "context": "Âl-i İmran 3/153"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 16. Ayetin Tefsiri\nوَمَنْ يُوَلِّهِمْ يَوْمَئِذٍ دُبُرَهُٓ اِلَّا مُتَحَرِّفًا لِقِتَالٍ اَوْ مُتَحَيِّزًا اِلٰى فِئَةٍ فَقَدْ بَٓاءَ بِغَضَبٍ مِنَ اللّٰهِ وَمَأْوٰيهُ جَهَنَّمُۜ وَبِئْسَ الْمَص۪يرُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:17",
+      "text": "فَلَمْ تَقْتُلُوهُمْ وَلٰكِنَّ اللّٰهَ قَتَلَكُمْۖ وَمَا رَمَيْتَ اِذْ رَمَيْتَ وَلٰكِنَّ اللّٰهَ رَمٰىۚ وَلِيُبْلِيَ الْمُؤْمِن۪ينَ مِنْهُ بَلَٓاءً حَسَنًاۜ اِنَّ اللّٰهَ سَم۪يعٌ عَل۪يمٌ",
+      "translation": "Onları aslında siz öldürmediniz; onları (sizin elinizle) öldüren Allah’tır. Attığın zaman da sen atmadın, onu (hedefi vuracak şekilde) atan Allah’tır. Bu, inanıp güvenenleri güzel bir imtihandan geçirmek içindi. Allah daima dinleyen ve bilendir.",
+      "dipnot": "Bakara 2/251, Tevbe 9/14, Hac 22/40. Allah’ın onayı olmadan hiç kimse ölmez ( Âl-i İmran 3/145, 156 ). Yapılan her iş, Allah’ın onayı ile olur ( Tekvir 81/28 - 29, İnsan 76/29 - 30 ). Âl-i İmrân 3/154 - 156.",
+      "roots": [
+        "قتل",
+        "أله",
+        "رمي",
+        "بلو",
+        "أمن",
+        "حسن",
+        "سمع",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/251",
+          "targets": [
+            "2:251"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/14",
+          "targets": [
+            "9:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/40",
+          "targets": [
+            "22:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Allah’ın onayı olmadan hiç kimse ölmez ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/145,156",
+          "targets": [
+            "3:145",
+            "3:156"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yapılan her iş, Allah’ın onayı ile olur ( "
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/28-29",
+          "targets": [
+            "81:28",
+            "81:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/29-30",
+          "targets": [
+            "76:29",
+            "76:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmrân 3/154-156",
+          "targets": [
+            "3:154",
+            "3:155",
+            "3:156"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:17",
+        "connections": [
+          {
+            "target_coordinate": "2:251",
+            "context": "Bakara 2/251"
+          },
+          {
+            "target_coordinate": "9:14",
+            "context": "Tevbe 9/14"
+          },
+          {
+            "target_coordinate": "22:40",
+            "context": "Hac 22/40"
+          },
+          {
+            "target_coordinate": "3:145",
+            "context": "Âl-i İmran 3/145,156"
+          },
+          {
+            "target_coordinate": "3:156",
+            "context": "Âl-i İmran 3/145,156"
+          },
+          {
+            "target_coordinate": "81:28",
+            "context": "Tekvir 81/28-29"
+          },
+          {
+            "target_coordinate": "81:29",
+            "context": "Tekvir 81/28-29"
+          },
+          {
+            "target_coordinate": "76:29",
+            "context": "İnsan 76/29-30"
+          },
+          {
+            "target_coordinate": "76:30",
+            "context": "İnsan 76/29-30"
+          },
+          {
+            "target_coordinate": "3:154",
+            "context": "Âl-i İmrân 3/154-156"
+          },
+          {
+            "target_coordinate": "3:155",
+            "context": "Âl-i İmrân 3/154-156"
+          },
+          {
+            "target_coordinate": "3:156",
+            "context": "Âl-i İmrân 3/154-156"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 17. Ayetin Tefsiri\nفَلَمْ تَقْتُلُوهُمْ وَلٰكِنَّ اللّٰهَ قَتَلَهُمْۖ وَمَا رَمَيْتَ اِذْ رَمَيْتَ وَلٰكِنَّ اللّٰهَ رَمٰىۚ وَلِيُبْلِيَ الْمُؤْمِن۪ينَ مِنْهُ بَلَٓاءً حَسَنًاۜ اِنَّ اللّٰهَ سَم۪يعٌ عَل۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:18",
+      "text": "ذٰلِكُمْ وَاَنَّ اللّٰهَ مُوهِنُ كَيْدِ الْكَافِر۪ينَ",
+      "translation": "Öyle oldu. Çünkü kâfirlerin oyunlarını zayıf düşüren Allah’tır.",
+      "dipnot": "Allah kafirlerin planlarını boşa çıkarır ( Tur 52/42, Tarık 86/15 - 17, Fil 105/1 - 2. )",
+      "roots": [
+        "أله",
+        "وهن",
+        "كيد",
+        "كفر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Allah kafirlerin planlarını boşa çıkarır ( "
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/42",
+          "targets": [
+            "52:42"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tarık 86/15-17",
+          "targets": [
+            "86:15",
+            "86:16",
+            "86:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fil 105/1-2",
+          "targets": [
+            "105:1",
+            "105:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". )"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:18",
+        "connections": [
+          {
+            "target_coordinate": "52:42",
+            "context": "Tur 52/42"
+          },
+          {
+            "target_coordinate": "86:15",
+            "context": "Tarık 86/15-17"
+          },
+          {
+            "target_coordinate": "86:16",
+            "context": "Tarık 86/15-17"
+          },
+          {
+            "target_coordinate": "86:17",
+            "context": "Tarık 86/15-17"
+          },
+          {
+            "target_coordinate": "105:1",
+            "context": "Fil 105/1-2"
+          },
+          {
+            "target_coordinate": "105:2",
+            "context": "Fil 105/1-2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 18. Ayetin Tefsiri\nذٰلِكُمْ وَاَنَّ اللّٰهَ مُوهِنُ كَيْدِ الْكَافِر۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:20",
+      "text": "اِنْ تَسْتَفْتِحُوا فَقَدْ جَٓاءَكُمُ الْفَتْحُۚ وَاِنْ تَنْتَهُوا فَهُوَ خَيْرٌ لَكُمْۚ وَاِنْ تَعُودُوا نَعُدْۚ وَلَنْ تُغْنِيَ عَنْكُمْ فِئَتُكُمْ شَيْـًٔا وَلَوْ كَثُرَتْۙ وَاَنَّ اللّٰهَ مَعَ الْمُؤْمِن۪ينَ۟",
+      "translation": "(Mekke’de iken size haber verilen) zaferi istiyordunuz, işte (yaptığınız yanlışlara rağmen) size zafer geldi. Eğer (yanlış davranışlara) son verirseniz bu sizin için iyi olur. (O yanlışlara) bir daha dönerseniz biz de (yardım etme sözümüzden) döneriz. O zaman birliğiniz sayıca fazla olsa da asla bir işinize yaramaz! Çünkü Allah, kendisine gerçekten inanıp güvenenlerle beraberdir.",
+      "dipnot": "[1*] Açıklama için bkz. Enfâl 8/68 ve dipnotu. [2*] Tevbe 9/38-39, Muhammed 47/7.",
+      "roots": [
+        "أيي",
+        "أمن",
+        "طوع",
+        "أله",
+        "رسل",
+        "ولي",
+        "سمع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Açıklama için bkz. "
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/68",
+          "targets": [
+            "8:68"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "ve dipnotu. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/38-39",
+          "targets": [
+            "9:38",
+            "9:39"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/7",
+          "targets": [
+            "47:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:20",
+        "connections": [
+          {
+            "target_coordinate": "8:68",
+            "context": "Enfâl 8/68"
+          },
+          {
+            "target_coordinate": "9:38",
+            "context": "Tevbe 9/38-39"
+          },
+          {
+            "target_coordinate": "9:39",
+            "context": "Tevbe 9/38-39"
+          },
+          {
+            "target_coordinate": "47:7",
+            "context": "Muhammed 47/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 20. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اَط۪يعُوا اللّٰهَ وَرَسُولَهُ وَلَا تَوَلَّوْا عَنْهُ وَاَنْتُمْ تَسْمَعُونَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:21",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اَط۪يعُوا اللّٰهَ وَرَسُولَهُ وَلَا تَوَلَّوْا عَنْهُ وَاَنْتُمْ تَسْمَعُونَۚ",
+      "translation": "Ey inanıp güvenenler! Allah’a ve resulüne gönülden boyun eğin. Dinlediğiniz halde ondan yüz çevirmeyin.",
+      "dipnot": "[*] Âl-i İmran 3/132, Nisa 4/59, 92, Maide 5/92, Nur 24/54, Muhammed 47/33, Teğabün 64/12.",
+      "roots": [
+        "كون",
+        "قول",
+        "سمع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/132",
+          "targets": [
+            "3:132"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/59,92",
+          "targets": [
+            "4:59",
+            "4:92"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/92",
+          "targets": [
+            "5:92"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/54",
+          "targets": [
+            "24:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/33",
+          "targets": [
+            "47:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/12",
+          "targets": [
+            "64:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:21",
+        "connections": [
+          {
+            "target_coordinate": "3:132",
+            "context": "Âl-i İmran 3/132"
+          },
+          {
+            "target_coordinate": "4:59",
+            "context": "Nisa 4/59,92"
+          },
+          {
+            "target_coordinate": "4:92",
+            "context": "Nisa 4/59,92"
+          },
+          {
+            "target_coordinate": "5:92",
+            "context": "Maide 5/92"
+          },
+          {
+            "target_coordinate": "24:54",
+            "context": "Nur 24/54"
+          },
+          {
+            "target_coordinate": "47:33",
+            "context": "Muhammed 47/33"
+          },
+          {
+            "target_coordinate": "64:12",
+            "context": "Teğabün 64/12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 21. Ayetin Tefsiri\nوَلَا تَكُونُوا كَالَّذ۪ينَ قَالُوا سَمِعْنَا وَهُمْ لَا يَسْمَعُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:22",
+      "text": "وَلَا تَكُونُوا كَالَّذ۪ينَ قَالُوا سَمِعْنَا وَهُمْ لَا يَسْمَعُونَ",
+      "translation": "Dinlemedikleri halde “dinledik” diyenler gibi de olmayın.",
+      "dipnot": "[*] A’raf 7/179.",
+      "roots": [
+        "شرر",
+        "دبب",
+        "عند",
+        "أله",
+        "صمم",
+        "بكم",
+        "عقل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/179",
+          "targets": [
+            "7:179"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:22",
+        "connections": [
+          {
+            "target_coordinate": "7:179",
+            "context": "raf 7/179"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 22. Ayetin Tefsiri\nاِنَّ شَرَّ الدَّوَٓابِّ عِنْدَ اللّٰهِ الصُّمُّ الْبُكْمُ الَّذ۪ينَ لَا يَعْقِلُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:23",
+      "text": "اِنَّ شَرَّ الدَّوَٓابِّ عِنْدَ اللّٰهِ الصُّمُّ الْبُكْمُ الَّذ۪ينَ لَا يَعْقِلُونَ",
+      "translation": "Allah katında canlıların en kötüsü, aklını kullanmayan /(ayetlerimizle olaylar arasında) doğru bağlantı kurmayan sağır ve dilsizlerdir.",
+      "dipnot": "[*] Bakara 2/17-18-171, Enfâl 8/55, Hac 22/46, Furkan 25/73, Beyyine 98/6.",
+      "roots": [
+        "علم",
+        "أله",
+        "خير",
+        "سمع",
+        "ولي",
+        "عرض"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/17-18-171",
+          "targets": [
+            "2:17",
+            "2:18",
+            "2:19",
+            "2:20",
+            "2:21",
+            "2:22",
+            "2:23",
+            "2:24",
+            "2:25",
+            "2:26",
+            "2:27",
+            "2:28",
+            "2:29",
+            "2:30",
+            "2:31",
+            "2:32",
+            "2:33",
+            "2:34",
+            "2:35",
+            "2:36",
+            "2:37",
+            "2:38",
+            "2:39",
+            "2:40",
+            "2:41",
+            "2:42",
+            "2:43",
+            "2:44",
+            "2:45",
+            "2:46",
+            "2:47",
+            "2:48",
+            "2:49",
+            "2:50",
+            "2:51",
+            "2:52",
+            "2:53",
+            "2:54",
+            "2:55",
+            "2:56",
+            "2:57",
+            "2:58",
+            "2:59",
+            "2:60",
+            "2:61",
+            "2:62",
+            "2:63",
+            "2:64",
+            "2:65",
+            "2:66",
+            "2:67",
+            "2:68",
+            "2:69",
+            "2:70",
+            "2:71",
+            "2:72",
+            "2:73",
+            "2:74",
+            "2:75",
+            "2:76",
+            "2:77",
+            "2:78",
+            "2:79",
+            "2:80",
+            "2:81",
+            "2:82",
+            "2:83",
+            "2:84",
+            "2:85",
+            "2:86",
+            "2:87",
+            "2:88",
+            "2:89",
+            "2:90",
+            "2:91",
+            "2:92",
+            "2:93",
+            "2:94",
+            "2:95",
+            "2:96",
+            "2:97",
+            "2:98",
+            "2:99",
+            "2:100",
+            "2:101",
+            "2:102",
+            "2:103",
+            "2:104",
+            "2:105",
+            "2:106",
+            "2:107",
+            "2:108",
+            "2:109",
+            "2:110",
+            "2:111",
+            "2:112",
+            "2:113",
+            "2:114",
+            "2:115",
+            "2:116",
+            "2:117",
+            "2:118",
+            "2:119",
+            "2:120",
+            "2:121",
+            "2:122",
+            "2:123",
+            "2:124",
+            "2:125",
+            "2:126",
+            "2:127",
+            "2:128",
+            "2:129",
+            "2:130",
+            "2:131",
+            "2:132",
+            "2:133",
+            "2:134",
+            "2:135",
+            "2:136",
+            "2:137",
+            "2:138",
+            "2:139",
+            "2:140",
+            "2:141",
+            "2:142",
+            "2:143",
+            "2:144",
+            "2:145",
+            "2:146",
+            "2:147",
+            "2:148",
+            "2:149",
+            "2:150",
+            "2:151",
+            "2:152",
+            "2:153",
+            "2:154",
+            "2:155",
+            "2:156",
+            "2:157",
+            "2:158",
+            "2:159",
+            "2:160",
+            "2:161",
+            "2:162",
+            "2:163",
+            "2:164",
+            "2:165",
+            "2:166",
+            "2:167",
+            "2:168",
+            "2:169",
+            "2:170",
+            "2:171"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/55",
+          "targets": [
+            "8:55"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/46",
+          "targets": [
+            "22:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/73",
+          "targets": [
+            "25:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beyyine 98/6",
+          "targets": [
+            "98:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:23",
+        "connections": [
+          {
+            "target_coordinate": "2:17",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:18",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:19",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:20",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:21",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:22",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:23",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:24",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:25",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:26",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:27",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:28",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:29",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:30",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:31",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:32",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:33",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:34",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:35",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:36",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:37",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:38",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:39",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:40",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:41",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:42",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:43",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:44",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:45",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:46",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:47",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:48",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:49",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:50",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:51",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:52",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:53",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:54",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:55",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:56",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:57",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:58",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:59",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:60",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:61",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:62",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:63",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:64",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:65",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:66",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:67",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:68",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:69",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:70",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:71",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:72",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:73",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:74",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:75",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:76",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:77",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:78",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:79",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:80",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:81",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:82",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:83",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:84",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:85",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:86",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:87",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:88",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:89",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:90",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:91",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:92",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:93",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:94",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:95",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:96",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:97",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:98",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:99",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:100",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:101",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:102",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:103",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:104",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:105",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:106",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:107",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:108",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:109",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:110",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:111",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:112",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:113",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:114",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:115",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:116",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:117",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:118",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:119",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:120",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:121",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:122",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:123",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:124",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:125",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:126",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:127",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:128",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:129",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:130",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:131",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:132",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:133",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:134",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:135",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:136",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:137",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:138",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:139",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:140",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:141",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:142",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:143",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:144",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:145",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:146",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:147",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:148",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:149",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:150",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:151",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:152",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:153",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:154",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:155",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:156",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:157",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:158",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:159",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:160",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:161",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:162",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:163",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:164",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:165",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:166",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:167",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:168",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:169",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:170",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "2:171",
+            "context": "Bakara 2/17-18-171"
+          },
+          {
+            "target_coordinate": "8:55",
+            "context": "Enfâl 8/55"
+          },
+          {
+            "target_coordinate": "22:46",
+            "context": "Hac 22/46"
+          },
+          {
+            "target_coordinate": "25:73",
+            "context": "Furkan 25/73"
+          },
+          {
+            "target_coordinate": "98:6",
+            "context": "Beyyine 98/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 23. Ayetin Tefsiri\nوَلَوْ عَلِمَ اللّٰهُ ف۪يهِمْ خَيْرًا لَاَسْمَعَهُمْۜ وَلَوْ اَسْمَعَهُمْ لَتَوَلَّوْا وَهُمْ مُعْرِضُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:24",
+      "text": "وَلَوْ عَلِمَ اللّٰهُ ف۪يهِمْ خَيْرًا لَاَسْمَعَهُمْۜ وَلَوْ اَسْمَعَهُمْ لَتَوَلَّوْا وَهُمْ مُعْرِضُونَ",
+      "translation": "Allah onlarda bir hayır olduğunu bilseydi elbette dinlemelerini sağlardı. Dinlemelerini sağlasaydı bile onlar yine de yüz çevirerek sırtlarını dönerlerdi.",
+      "dipnot": "[*] Allah, kişinin içinde ne olduğunu bildiği için onların yola gelmeme konusundaki kararlılıklarını da bilir (Hud 11/36).",
+      "roots": [
+        "أيي",
+        "أمن",
+        "جوب",
+        "أله",
+        "رسل",
+        "دعو",
+        "حيي",
+        "علم",
+        "حول",
+        "بين",
+        "مرأ",
+        "قلب",
+        "حشر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Allah, kişinin içinde ne olduğunu bildiği için onların yola gelmeme konusundaki kararlılıklarını da bilir ("
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/36",
+          "targets": [
+            "11:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:24",
+        "connections": [
+          {
+            "target_coordinate": "11:36",
+            "context": "Hud 11/36"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 24. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا اسْتَج۪يبُوا لِلّٰهِ وَلِلرَّسُولِ اِذَا دَعَاكُمْ لِمَا يُحْي۪يكُمْۚ وَاعْلَمُٓوا اَنَّ اللّٰهَ يَحُولُ بَيْنَ الْمَرْءِ وَقَلْبِه۪ وَاَنَّهُٓ اِلَيْهِ تُحْشَرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:25",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا اسْتَج۪يبُوا لِلّٰهِ وَلِلرَّسُولِ اِذَا دَعَاكُمْ لِمَا يُحْي۪يكُمْۚ وَاعْلَمُٓوا اَنَّ اللّٰهَ يَحُولُ بَيْنَ الْمَرْءِ وَقَلْبِه۪ وَاَنَّهُٓ اِلَيْهِ تُحْشَرُونَ",
+      "translation": "Ey inanıp güvenenler! Allah ve resulü sizi, size hayat verecek şeye çağırdığı zaman çağrısına uyun. Allah’ın, kişi ile kalbi arasına girdiğini ve onun huzurunda toplanacağınızı bilin.",
+      "dipnot": "[*] Bakara 2/186, Nur 24/63, Şûrâ 42/47. [*] Kasas 28/56, Kaf 50/16, Şems 91/7-8. [*] Mü’minun 23/79, Mülk 67/24.",
+      "roots": [
+        "وقي",
+        "فتن",
+        "صوب",
+        "ظلم",
+        "خصص",
+        "علم",
+        "أله",
+        "شدد",
+        "عقب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/186",
+          "targets": [
+            "2:186"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/63",
+          "targets": [
+            "24:63"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/47",
+          "targets": [
+            "42:47"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [*] "
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/56",
+          "targets": [
+            "28:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/16",
+          "targets": [
+            "50:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/7-8",
+          "targets": [
+            "91:7",
+            "91:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [*] Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/79",
+          "targets": [
+            "23:79"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/24",
+          "targets": [
+            "67:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:25",
+        "connections": [
+          {
+            "target_coordinate": "2:186",
+            "context": "Bakara 2/186"
+          },
+          {
+            "target_coordinate": "24:63",
+            "context": "Nur 24/63"
+          },
+          {
+            "target_coordinate": "42:47",
+            "context": "Şûrâ 42/47"
+          },
+          {
+            "target_coordinate": "28:56",
+            "context": "Kasas 28/56"
+          },
+          {
+            "target_coordinate": "50:16",
+            "context": "Kaf 50/16"
+          },
+          {
+            "target_coordinate": "91:7",
+            "context": "Şems 91/7-8"
+          },
+          {
+            "target_coordinate": "91:8",
+            "context": "Şems 91/7-8"
+          },
+          {
+            "target_coordinate": "23:79",
+            "context": "minun 23/79"
+          },
+          {
+            "target_coordinate": "67:24",
+            "context": "Mülk 67/24"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 25. Ayetin Tefsiri\nوَاتَّقُوا فِتْنَةً لَا تُص۪يبَنَّ الَّذ۪ينَ ظَلَمُوا مِنْكُمْ خَٓاصَّةًۚ وَاعْلَمُٓوا اَنَّ اللّٰهَ شَد۪يدُ الْعِقَابِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:26",
+      "text": "وَاذْكُرُٓوا اِذْ اَنْتُمْ قَل۪يلٌ مُسْتَضْعَفُونَ فِي الْاَرْضِ تَخَافُونَ اَنْ يَتَخَطَّفَكُمُ النَّاسُ فَاٰوٰيكُمْ وَاَيَّدَكُمْ بِنَصْرِه۪ وَرَزَقَكُمْ مِنَ الطَّيِّبَاتِ لَعَلَّكُمْ تَشْكُرُونَ",
+      "translation": "Hatırlayın! Hani bir zamanlar yaşadığınız yerde siz, ezilen bir azınlıktınız; insanların sizi kapıp götürmesinden korkuyordunuz. Allah, size yer yurt verdi, yardımı ile sizi destekledi[*] ve temiz rızıklarla rızıklandırdı ki görevlerinizi yerine getiresiniz.",
+      "dipnot": "[*] Yunus 10/103, Hac 22/40, Rum 30/47, Mü’min 40/51.",
+      "roots": [
+        "ذكر",
+        "قلل",
+        "ضعف",
+        "أرض",
+        "خوف",
+        "خطف",
+        "أنس",
+        "أوي",
+        "أيد",
+        "نصر",
+        "رزق",
+        "طيب",
+        "شكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/103",
+          "targets": [
+            "10:103"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/40",
+          "targets": [
+            "22:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/47",
+          "targets": [
+            "30:47"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/51",
+          "targets": [
+            "40:51"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:26",
+        "connections": [
+          {
+            "target_coordinate": "10:103",
+            "context": "Yunus 10/103"
+          },
+          {
+            "target_coordinate": "22:40",
+            "context": "Hac 22/40"
+          },
+          {
+            "target_coordinate": "30:47",
+            "context": "Rum 30/47"
+          },
+          {
+            "target_coordinate": "40:51",
+            "context": "min 40/51"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 26. Ayetin Tefsiri\nوَاذْكُرُٓوا اِذْ اَنْتُمْ قَل۪يلٌ مُسْتَضْعَفُونَ فِي الْاَرْضِ تَخَافُونَ اَنْ يَتَخَطَّفَكُمُ النَّاسُ فَاٰوٰيكُمْ وَاَيَّدَكُمْ بِنَصْرِه۪ وَرَزَقَكُمْ مِنَ الطَّيِّبَاتِ لَعَلَّكُمْ تَشْكُرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:27",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا لَا تَخُونُوا اللّٰهَ وَالرَّسُولَ وَتَخُونُٓوا اَمَانَاتِكُمْ وَاَنْتُمْ تَعْلَمُونَ",
+      "translation": "Ey inanıp güvenenler! Allah’a ve resulüne hainlik etmeyin.[1*] Size emanet edilenlere de bile bile hainlik etmeyin.[2*]",
+      "dipnot": "[1*] Çünkü Allah hainlik edenleri sevmez (Nisa 4/107, Enfâl 8/58, Hac 22/38). [2*] Mü’minun 23/8, Mearic 70/32.",
+      "roots": [
+        "أيي",
+        "أمن",
+        "خون",
+        "أله",
+        "رسل",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Çünkü Allah hainlik edenleri sevmez ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/107",
+          "targets": [
+            "4:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/58",
+          "targets": [
+            "8:58"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/38",
+          "targets": [
+            "22:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/8",
+          "targets": [
+            "23:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/32",
+          "targets": [
+            "70:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:27",
+        "connections": [
+          {
+            "target_coordinate": "4:107",
+            "context": "Nisa 4/107"
+          },
+          {
+            "target_coordinate": "8:58",
+            "context": "Enfâl 8/58"
+          },
+          {
+            "target_coordinate": "22:38",
+            "context": "Hac 22/38"
+          },
+          {
+            "target_coordinate": "23:8",
+            "context": "minun 23/8"
+          },
+          {
+            "target_coordinate": "70:32",
+            "context": "Mearic 70/32"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 27. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا لَا تَخُونُوا اللّٰهَ وَالرَّسُولَ وَتَخُونُٓوا اَمَانَاتِكُمْ وَاَنْتُمْ تَعْلَمُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:28",
+      "text": "وَاعْلَمُٓوا اَنَّمَٓا اَمْوَالُكُمْ وَاَوْلَادُكُمْ فِتْنَةٌۙ وَاَنَّ اللّٰهَ عِنْدَهُٓ اَجْرٌ عَظ۪يمٌ۟",
+      "translation": "Mallarınızın ve çocuklarınızın ancak birer imtihan[1*] sebebi olduğunu, Allah katında ise büyük bir ödül bulunduğunu bilin.[2*]",
+      "dipnot": "[1*] Fitne için bkz. Enfâl 8/25. ayetin dipnotu. [2*] Kehf 18/46, Sebe 34/37, Münafikun 63/9, Teğabün 64/15.",
+      "roots": [
+        "علم",
+        "مول",
+        "ولد",
+        "فتن",
+        "أله",
+        "عند",
+        "أجر",
+        "عظم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Fitne için bkz. "
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/25",
+          "targets": [
+            "8:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayetin dipnotu. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/46",
+          "targets": [
+            "18:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/37",
+          "targets": [
+            "34:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Münafikun 63/9",
+          "targets": [
+            "63:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/15",
+          "targets": [
+            "64:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:28",
+        "connections": [
+          {
+            "target_coordinate": "8:25",
+            "context": "Enfâl 8/25"
+          },
+          {
+            "target_coordinate": "18:46",
+            "context": "Kehf 18/46"
+          },
+          {
+            "target_coordinate": "34:37",
+            "context": "Sebe 34/37"
+          },
+          {
+            "target_coordinate": "63:9",
+            "context": "Münafikun 63/9"
+          },
+          {
+            "target_coordinate": "64:15",
+            "context": "Teğabün 64/15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 28. Ayetin Tefsiri\nوَاعْلَمُٓوا اَنَّمَٓا اَمْوَالُكُمْ وَاَوْلَادُكُمْ فِتْنَةٌۙ وَاَنَّ اللّٰهَ عِنْدَهُٓ اَجْرٌ عَظ۪يمٌ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:29",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِنْ تَتَّقُوا اللّٰهَ يَجْعَلْ لَكُمْ فُرْقَانًا وَيُكَفِّرْ عَنْكُمْ سَيِّـَٔاتِكُمْ وَيَغْفِرْ لَكُمْۜ وَاللّٰهُ ذُو الْفَضْلِ الْعَظ۪يمِ",
+      "translation": "Ey inanıp güvenenler! Allah’a karşı yanlış yapmaktan sakınırsanız O, sizde doğruyu yanlıştan ayırma yeteneği oluşturur,[1*] kötü işlerinizi örter ve sizi bağışlar.[2*] Allah büyük lütuf sahibidir.",
+      "dipnot": "[1*] Hadid 57/28. [2*] Ankebut 29/7.",
+      "roots": [
+        "أيي",
+        "أمن",
+        "وقي",
+        "أله",
+        "جعل",
+        "فرق",
+        "كفر",
+        "سوأ",
+        "غفر",
+        "فضل",
+        "عظم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/28",
+          "targets": [
+            "57:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/7",
+          "targets": [
+            "29:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:29",
+        "connections": [
+          {
+            "target_coordinate": "57:28",
+            "context": "Hadid 57/28"
+          },
+          {
+            "target_coordinate": "29:7",
+            "context": "Ankebut 29/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 29. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِنْ تَتَّقُوا اللّٰهَ يَجْعَلْ لَكُمْ فُرْقَانًا وَيُكَفِّرْ عَنْكُمْ سَيِّـَٔاتِكُمْ وَيَغْفِرْ لَكُمْۜ وَاللّٰهُ ذُو الْفَضْلِ الْعَظ۪يمِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:30",
+      "text": "وَاِذْ يَمْكُرُ بِكَ الَّذ۪ينَ كَفَرُوا لِيُثْبِتُوكَ اَوْ يَقْتُلُوكَ اَوْ يُخْرِجُوكَۜ وَيَمْكُرُونَ وَيَمْكُرُ اللّٰهُۜ وَاللّٰهُ خَيْرُ الْمَاكِر۪ينَ",
+      "translation": "Kâfirlik edenler bir zamanlar seni tutuklamak, öldürmek ya da (yurdundan) çıkarmak için[1*] plan kuruyorlardı. Onlar plan kuruyordu ama Allah da bir plan kuruyordu. En iyi plan kuran Allah’tır.[2*]",
+      "dipnot": "[1*] Tevbe 9/13, 40; İsra 17/76. [2*] Ra’d 13/42, Nahl 16/127, Neml 27/70, Fatır 35/10.",
+      "roots": [
+        "مكر",
+        "كفر",
+        "ثبت",
+        "قتل",
+        "خرج",
+        "أله",
+        "خير"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/13,40",
+          "targets": [
+            "9:13",
+            "9:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/76",
+          "targets": [
+            "17:76"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/42",
+          "targets": [
+            "13:42"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/127",
+          "targets": [
+            "16:127"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/70",
+          "targets": [
+            "27:70"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/10",
+          "targets": [
+            "35:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:30",
+        "connections": [
+          {
+            "target_coordinate": "9:13",
+            "context": "Tevbe 9/13,40"
+          },
+          {
+            "target_coordinate": "9:40",
+            "context": "Tevbe 9/13,40"
+          },
+          {
+            "target_coordinate": "17:76",
+            "context": "İsra 17/76"
+          },
+          {
+            "target_coordinate": "13:42",
+            "context": "d 13/42"
+          },
+          {
+            "target_coordinate": "16:127",
+            "context": "Nahl 16/127"
+          },
+          {
+            "target_coordinate": "27:70",
+            "context": "Neml 27/70"
+          },
+          {
+            "target_coordinate": "35:10",
+            "context": "Fatır 35/10"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 30. Ayetin Tefsiri\nوَاِذْ يَمْكُرُ بِكَ الَّذ۪ينَ كَفَرُوا لِيُثْبِتُوكَ اَوْ يَقْتُلُوكَ اَوْ يُخْرِجُوكَۜ وَيَمْكُرُونَ وَيَمْكُرُ اللّٰهُۜ وَاللّٰهُ خَيْرُ الْمَاكِر۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:31",
+      "text": "وَاِذَا تُتْلٰى عَلَيْهِمْ اٰيَاتُنَا قَالُوا قَدْ سَمِعْنَا لَوْ نَشَٓاءُ لَقُلْنَا مِثْلَ هٰذَٓاۙ اِنْ هٰذَٓا اِلَّٓا اَسَاط۪يرُ الْاَوَّل۪ينَ",
+      "translation": "Onlara ayetlerimiz bağlantılarıyla birlikte okunduğu zaman “Tamam dinledik, istesek bunun benzerini biz de söyleriz.[1*] Bu, öncekilerin yazılarından[2*] başka bir şey değildir.” dediler.",
+      "dipnot": "[1*] En’am 6/93. [2*]",
+      "roots": [
+        "تلو",
+        "أيي",
+        "قول",
+        "سمع",
+        "شيأ",
+        "مثل",
+        "سطر",
+        "أول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/93",
+          "targets": [
+            "6:93"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:31",
+        "connections": [
+          {
+            "target_coordinate": "6:93",
+            "context": "am 6/93"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 31. Ayetin Tefsiri\nوَاِذَا تُتْلٰى عَلَيْهِمْ اٰيَاتُنَا قَالُوا قَدْ سَمِعْنَا لَوْ نَشَٓاءُ لَقُلْنَا مِثْلَ هٰذَٓاۙ اِنْ هٰذَٓا اِلَّٓا اَسَاط۪يرُ الْاَوَّل۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:32",
+      "text": "وَاِذْ قَالُوا اللّٰهُمَّ اِنْ كَانَ هٰذَا هُوَ الْحَقَّ مِنْ عِنْدِكَ فَاَمْطِرْ عَلَيْنَا حِجَارَةً مِنَ السَّمَٓاءِ اَوِ ائْتِنَا بِعَذَابٍ اَل۪يمٍ",
+      "translation": "Onlar şunu da demişlerdi: “Allahım! Eğer bu (Kur’ân) senin katından (gelmiş) bir gerçekse gökten üstümüze taş yağdır ya da bizi acıklı bir azaba çarptır.”",
+      "dipnot": "Kehf 18/55, Neml 27/71-72, Ankebut 29/53-54, Meâric 70/1-3.",
+      "roots": [
+        "قول",
+        "أله",
+        "كون",
+        "حقق",
+        "عند",
+        "مطر",
+        "حجر",
+        "سمو",
+        "أتي",
+        "عذب",
+        "ألم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kehf 18/55",
+          "targets": [
+            "18:55"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/71-72",
+          "targets": [
+            "27:71",
+            "27:72"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/53-54",
+          "targets": [
+            "29:53",
+            "29:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Meâric 70/1-3",
+          "targets": [
+            "70:1",
+            "70:2",
+            "70:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:32",
+        "connections": [
+          {
+            "target_coordinate": "18:55",
+            "context": "Kehf 18/55"
+          },
+          {
+            "target_coordinate": "27:71",
+            "context": "Neml 27/71-72"
+          },
+          {
+            "target_coordinate": "27:72",
+            "context": "Neml 27/71-72"
+          },
+          {
+            "target_coordinate": "29:53",
+            "context": "Ankebut 29/53-54"
+          },
+          {
+            "target_coordinate": "29:54",
+            "context": "Ankebut 29/53-54"
+          },
+          {
+            "target_coordinate": "70:1",
+            "context": "Meâric 70/1-3"
+          },
+          {
+            "target_coordinate": "70:2",
+            "context": "Meâric 70/1-3"
+          },
+          {
+            "target_coordinate": "70:3",
+            "context": "Meâric 70/1-3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 32. Ayetin Tefsiri\nوَاِذْ قَالُوا اللّٰهُمَّ اِنْ كَانَ هٰذَا هُوَ الْحَقَّ مِنْ عِنْدِكَ فَاَمْطِرْ عَلَيْنَا حِجَارَةً مِنَ السَّمَٓاءِ اَوِ ائْتِنَا بِعَذَابٍ اَل۪يمٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:33",
+      "text": "وَمَا كَانَ اللّٰهُ لِيُعَذِّبَهُمْ وَاَنْتَ ف۪يهِمْۜ وَمَا كَانَ اللّٰهُ مُعَذِّبَهُمْ وَهُمْ يَسْتَغْفِرُونَ",
+      "translation": "Halbuki sen aralarında iken Allah onlara azap edecek değildi. Onlar bağışlanma dilerken de azap edecek değildi.",
+      "dipnot": "Zuhruf 43/41-42. Yunus 10/98, Hud 11/117, Kasas 28/59.",
+      "roots": [
+        "كون",
+        "أله",
+        "عذب",
+        "غفر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zuhruf 43/41-42",
+          "targets": [
+            "43:41",
+            "43:42"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/98",
+          "targets": [
+            "10:98"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/117",
+          "targets": [
+            "11:117"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/59",
+          "targets": [
+            "28:59"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:33",
+        "connections": [
+          {
+            "target_coordinate": "43:41",
+            "context": "Zuhruf 43/41-42"
+          },
+          {
+            "target_coordinate": "43:42",
+            "context": "Zuhruf 43/41-42"
+          },
+          {
+            "target_coordinate": "10:98",
+            "context": "Yunus 10/98"
+          },
+          {
+            "target_coordinate": "11:117",
+            "context": "Hud 11/117"
+          },
+          {
+            "target_coordinate": "28:59",
+            "context": "Kasas 28/59"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 33. Ayetin Tefsiri\nوَمَا كَانَ اللّٰهُ لِيُعَذِّبَهُمْ وَاَنْتَ ف۪يهِمْۜ وَمَا كَانَ اللّٰهُ مُعَذِّبَهُمْ وَهُمْ يَسْتَغْفِرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:34",
+      "text": "وَمَا لَهُمْ اَلَّا يُعَذِّبَهُمُ اللّٰهُ وَهُمْ يَصُدُّونَ عَنِ الْمَسْجِدِ الْحَرَامِ وَمَا كَانُٓوا اَوْلِيَٓاءَهُۜ اِنْ اَوْلِيَٓاؤُ۬هُٓ اِلَّا الْمُتَّقُونَ وَلٰكِنَّ اَكْثَرَهُمْ لَا يَعْلَمُونَ",
+      "translation": "Onlar sizi Mescid-i Haram’dan engelleyip dururlarken Allah ne diye onlara azap etmesin ki! Üstelik orayı yönetmeye layık da değiller. Orayı yönetmeye layık olanlar ancak Allah’a karşı yanlış yapmaktan sakınanlardır. Ama onların (kafirlerin) çoğu, bunu bilmez.",
+      "dipnot": "Hac 22/25. Tevbe 9/17-19.",
+      "roots": [
+        "عذب",
+        "أله",
+        "صدد",
+        "سجد",
+        "حرم",
+        "كون",
+        "ولي",
+        "وقي",
+        "كثر",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hac 22/25",
+          "targets": [
+            "22:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/17-19",
+          "targets": [
+            "9:17",
+            "9:18",
+            "9:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:34",
+        "connections": [
+          {
+            "target_coordinate": "22:25",
+            "context": "Hac 22/25"
+          },
+          {
+            "target_coordinate": "9:17",
+            "context": "Tevbe 9/17-19"
+          },
+          {
+            "target_coordinate": "9:18",
+            "context": "Tevbe 9/17-19"
+          },
+          {
+            "target_coordinate": "9:19",
+            "context": "Tevbe 9/17-19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 34. Ayetin Tefsiri\nوَمَا لَهُمْ اَلَّا يُعَذِّبَهُمُ اللّٰهُ وَهُمْ يَصُدُّونَ عَنِ الْمَسْجِدِ الْحَرَامِ وَمَا كَانُٓوا اَوْلِيَٓاءَهُۜ اِنْ اَوْلِيَٓاؤُ۬هُٓ اِلَّا الْمُتَّقُونَ وَلٰكِنَّ اَكْثَرَهُمْ لَا يَعْلَمُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:35",
+      "text": "وَمَا كَانَ صَلَاتُهُمْ عِنْدَ الْبَيْتِ اِلَّا مُكَٓاءً وَتَصْدِيَةًۜ فَذُوقُوا الْعَذَابَ بِمَا كُنْتُمْ تَكْفُرُونَ",
+      "translation": "O Beyt’in /Kâbe’nin yanındaki ibadetleri, sadece ıslık çalmak ve el çırpmaktan ibarettir. Kâfirlik etmenize karşılık tadın bakalım bu azabı.",
+      "dipnot": "Bu kişilerin yaptıkları işin kâfirlik olarak isimlendirilmesi, Kabe’de yapılacak ibadetin nasıl olması gerektiğini iyi bilmelerine rağmen, kendi kafalarına göre ibadet şekli uydurduklarını gösterir. Orada yapılacak olan ibadetler, hükümleri Allah tarafından belirlenen namaz, umre ve hac ibadeti olmalıdır (Bakara 2/125, Âl-i İmran 3/96-97, Hac 22/26-28).",
+      "roots": [
+        "كون",
+        "صلو",
+        "عند",
+        "بيت",
+        "مكو",
+        "صدي",
+        "ذوق",
+        "عذب",
+        "كفر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bu kişilerin yaptıkları işin kâfirlik olarak isimlendirilmesi, Kabe’de yapılacak ibadetin nasıl olması gerektiğini iyi bilmelerine rağmen, kendi kafalarına göre ibadet şekli uydurduklarını gösterir. Orada yapılacak olan ibadetler, hükümleri Allah tarafından belirlenen namaz, umre ve hac ibadeti olmalıdır ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/125",
+          "targets": [
+            "2:125"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/96-97",
+          "targets": [
+            "3:96",
+            "3:97"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/26-28",
+          "targets": [
+            "22:26",
+            "22:27",
+            "22:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:35",
+        "connections": [
+          {
+            "target_coordinate": "2:125",
+            "context": "Bakara 2/125"
+          },
+          {
+            "target_coordinate": "3:96",
+            "context": "Âl-i İmran 3/96-97"
+          },
+          {
+            "target_coordinate": "3:97",
+            "context": "Âl-i İmran 3/96-97"
+          },
+          {
+            "target_coordinate": "22:26",
+            "context": "Hac 22/26-28"
+          },
+          {
+            "target_coordinate": "22:27",
+            "context": "Hac 22/26-28"
+          },
+          {
+            "target_coordinate": "22:28",
+            "context": "Hac 22/26-28"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 35. Ayetin Tefsiri\nوَمَا كَانَ صَلَاتُهُمْ عِنْدَ الْبَيْتِ اِلَّا مُكَٓاءً وَتَصْدِيَةًۜ فَذُوقُوا الْعَذَابَ بِمَا كُنْتُمْ تَكْفُرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:37",
+      "text": "اِنَّ الَّذ۪ينَ كَفَرُوا يُنْفِقُونَ اَمْوَالَهُمْ لِيَصُدُّوا عَنْ سَب۪يلِ اللّٰهِۜ فَسَيُنْفِقُونَهَا ثُمَّ تَكُونُ عَلَيْهِمْ حَسْرَةً ثُمَّ يُغْلَبُونَۜ وَالَّذ۪ينَ كَفَرُٓوا اِلٰى جَهَنَّمَ يُحْشَرُونَۙ",
+      "translation": "Kâfirlik edenler, mallarını Allah’ın yolundan engellemek için harcıyorlar ve harcamaya da devam edeceklerdir. Yaptıkları harcamalar, daha sonra içlerinde bir yürek acısına dönüşecek ve sonunda mağlup olacaklardır. Kâfirlik edenler, cehennemde toplanacaklardır.",
+      "dipnot": "Âl-i İmran 3/178.",
+      "roots": [
+        "ميز",
+        "أله",
+        "خبث",
+        "طيب",
+        "جعل",
+        "بعض",
+        "ركم",
+        "جمع",
+        "خسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/178",
+          "targets": [
+            "3:178"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:37",
+        "connections": [
+          {
+            "target_coordinate": "3:178",
+            "context": "Âl-i İmran 3/178"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 37. Ayetin Tefsiri\nلِيَم۪يزَ اللّٰهُ الْخَب۪يثَ مِنَ الطَّيِّبِ وَيَجْعَلَ الْخَب۪يثَ بَعْضَهُ عَلٰى بَعْضٍ فَيَرْكُمَهُ جَم۪يعًا فَيَجْعَلَهُ ف۪ي جَهَنَّمَۜ اُو۬لٰٓئِكَ هُمُ الْخَاسِرُونَ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:38",
+      "text": "لِيَم۪يزَ اللّٰهُ الْخَب۪يثَ مِنَ الطَّيِّبِ وَيَجْعَلَ الْخَب۪يثَ بَعْضَهُ عَلٰى بَعْضٍ فَيَرْكُمَهُ جَم۪يعًا فَيَجْعَلَهُ ف۪ي جَهَنَّمَۜ اُو۬لٰٓئِكَ هُمُ الْخَاسِرُونَ۟",
+      "translation": "Allah bunu, pis olanları temiz olanlardan ayırmak, kötüleri sıkışacak bir şekilde bir araya getirip yığmak ve hepsini cehenneme atmak için yapar. Kaybedecek olanlar işte onlardır.",
+      "dipnot": "Âl-i İmran 3/179. Kaf 50/30.",
+      "roots": [
+        "قول",
+        "كفر",
+        "نهي",
+        "غفر",
+        "سلف",
+        "عود",
+        "مضي",
+        "سنن",
+        "أول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/179",
+          "targets": [
+            "3:179"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". "
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/30",
+          "targets": [
+            "50:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:38",
+        "connections": [
+          {
+            "target_coordinate": "3:179",
+            "context": "Âl-i İmran 3/179"
+          },
+          {
+            "target_coordinate": "50:30",
+            "context": "Kaf 50/30"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 38. Ayetin Tefsiri\nقُلْ لِلَّذ۪ينَ كَفَرُٓوا اِنْ يَنْتَهُوا يُغْفَرْ لَهُمْ مَا قَدْ سَلَفَۚ وَاِنْ يَعُودُوا فَقَدْ مَضَتْ سُنَّتُ الْاَوَّل۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:39",
+      "text": "قُلْ لِلَّذ۪ينَ كَفَرُٓوا اِنْ يَنْتَهُوا يُغْفَرْ لَهُمْ مَا قَدْ سَلَفَۚ وَاِنْ يَعُودُوا فَقَدْ مَضَتْ سُنَّتُ الْاَوَّل۪ينَ",
+      "translation": "Kâfirlik edenlere /ayetleri görmezlikte direnenlere de ki: Eğer (kâfirliklerine) son verirlerse daha önce yaptıkları bağışlanır; ama tekrar dönecek olurlarsa öncekilere uygulanan sünnet /yasa (bu kitapta) geçti.",
+      "dipnot": "Hicr 15/13, Kehf 18/55, Ahzab 33/60 - 63, Fatır 35/43, Zuhruf 43/8, Fetih 48/22 - 23.",
+      "roots": [
+        "قتل",
+        "كون",
+        "فتن",
+        "دين",
+        "كلل",
+        "أله",
+        "نهي",
+        "عمل",
+        "بصر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hicr 15/13",
+          "targets": [
+            "15:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/55",
+          "targets": [
+            "18:55"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/60-63",
+          "targets": [
+            "33:60",
+            "33:61",
+            "33:62",
+            "33:63"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/43",
+          "targets": [
+            "35:43"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/8",
+          "targets": [
+            "43:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/22-23",
+          "targets": [
+            "48:22",
+            "48:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:39",
+        "connections": [
+          {
+            "target_coordinate": "15:13",
+            "context": "Hicr 15/13"
+          },
+          {
+            "target_coordinate": "18:55",
+            "context": "Kehf 18/55"
+          },
+          {
+            "target_coordinate": "33:60",
+            "context": "Ahzab 33/60-63"
+          },
+          {
+            "target_coordinate": "33:61",
+            "context": "Ahzab 33/60-63"
+          },
+          {
+            "target_coordinate": "33:62",
+            "context": "Ahzab 33/60-63"
+          },
+          {
+            "target_coordinate": "33:63",
+            "context": "Ahzab 33/60-63"
+          },
+          {
+            "target_coordinate": "35:43",
+            "context": "Fatır 35/43"
+          },
+          {
+            "target_coordinate": "43:8",
+            "context": "Zuhruf 43/8"
+          },
+          {
+            "target_coordinate": "48:22",
+            "context": "Fetih 48/22-23"
+          },
+          {
+            "target_coordinate": "48:23",
+            "context": "Fetih 48/22-23"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 39. Ayetin Tefsiri\nوَقَاتِلُوهُمْ حَتّٰى لَا تَكُونَ فِتْنَةٌ وَيَكُونَ الدّ۪ينُ كُلُّهُ لِلّٰهِۚ فَاِنِ انْتَهَوْا فَاِنَّ اللّٰهَ بِمَا يَعْمَلُونَ بَص۪يرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:40",
+      "text": "وَقَاتِلُوهُمْ حَتّٰى لَا تَكُونَ فِتْنَةٌ وَيَكُونَ الدّ۪ينُ كُلُّهُ لِلّٰهِۚ فَاِنِ انْتَهُوا فَاِنَّ اللّٰهَ بِمَا يَعْمَلُونَ بَص۪يرٌ",
+      "translation": "Onlarla (sizinle savaşanlarla) savaşın ki fitne (savaş ateşi) yok olsun ve Allah’ın dini tümüyle hâkim olsun. Eğer (savaşmayı) bırakırlarsa (onlara ilişmeyin). Şüphesiz Allah onların yapmakta olduklarını daima görmektedir.",
+      "dipnot": "Bakara 2/190. Fitne için bkz. Enfal 8/25 . ayetin dipnotu. Dinde zorlama olamayacağı için ( Bakara 2/256 ) ayette söylenen şey, herkesin Müslüman olması değil ( Yunus 10/99 ), Allah’ın koyduğu kuralların hâkim olmasıdır ( Fetih 48/28 ). O da herkesin hürriyet içinde yaşayacağı bir ortam oluşması demektir ( Kehf 18/29 ). Bakara 2/190 - 193.",
+      "roots": [
+        "ولي",
+        "علم",
+        "أله",
+        "نعم",
+        "نصر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/190",
+          "targets": [
+            "2:190"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Fitne için bkz. "
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/25",
+          "targets": [
+            "8:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayetin dipnotu. Dinde zorlama olamayacağı için ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/256",
+          "targets": [
+            "2:256"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ayette söylenen şey, herkesin Müslüman olması değil ( "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/99",
+          "targets": [
+            "10:99"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Allah’ın koyduğu kuralların hâkim olmasıdır ( "
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/28",
+          "targets": [
+            "48:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). O da herkesin hürriyet içinde yaşayacağı bir ortam oluşması demektir ( "
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/29",
+          "targets": [
+            "18:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/190-193",
+          "targets": [
+            "2:190",
+            "2:191",
+            "2:192",
+            "2:193"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:40",
+        "connections": [
+          {
+            "target_coordinate": "2:190",
+            "context": "Bakara 2/190"
+          },
+          {
+            "target_coordinate": "8:25",
+            "context": "Enfal 8/25"
+          },
+          {
+            "target_coordinate": "2:256",
+            "context": "Bakara 2/256"
+          },
+          {
+            "target_coordinate": "10:99",
+            "context": "Yunus 10/99"
+          },
+          {
+            "target_coordinate": "48:28",
+            "context": "Fetih 48/28"
+          },
+          {
+            "target_coordinate": "18:29",
+            "context": "Kehf 18/29"
+          },
+          {
+            "target_coordinate": "2:190",
+            "context": "Bakara 2/190-193"
+          },
+          {
+            "target_coordinate": "2:191",
+            "context": "Bakara 2/190-193"
+          },
+          {
+            "target_coordinate": "2:192",
+            "context": "Bakara 2/190-193"
+          },
+          {
+            "target_coordinate": "2:193",
+            "context": "Bakara 2/190-193"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 40. Ayetin Tefsiri\nوَاِنْ تَوَلَّوْا فَاعْلَمُٓوا اَنَّ اللّٰهَ مَوْلٰيكُمْۜ نِعْمَ الْمَوْلٰى وَنِعْمَ النَّص۪يرُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:41",
+      "text": "وَاِنْ تَوَلَّوْا فَاعْلَمُٓوا اَنَّ اللّٰهَ مَوْلٰيكُمْۜ نِعْمَ الْمَوْلٰى وَنِعْمَ النَّص۪يرُ",
+      "translation": "Tekrar (savaşa) dönerlerse bilin ki Allah sizin en yakınınızdır. O ne güzel yakın ve ne güzel yardımcıdır!",
+      "dipnot": "Hac 22/78.",
+      "roots": [
+        "علم",
+        "غنم",
+        "شيأ",
+        "أله",
+        "خمس",
+        "رسل",
+        "قرب",
+        "يتم",
+        "سكن",
+        "بني",
+        "سبل",
+        "كون",
+        "أمن",
+        "نزل",
+        "عبد",
+        "يوم",
+        "فرق",
+        "لقي",
+        "جمع",
+        "كلل",
+        "قدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hac 22/78",
+          "targets": [
+            "22:78"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:41",
+        "connections": [
+          {
+            "target_coordinate": "22:78",
+            "context": "Hac 22/78"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 41. Ayetin Tefsiri\nوَاعْلَمُٓوا اَنَّمَا غَنِمْتُمْ مِنْ شَيْءٍ فَاَنَّ لِلّٰهِ خُمُسَهُ وَلِلرَّسُولِ وَلِذِي الْقُرْبٰى وَالْيَتَامٰى وَالْمَسَاك۪ينِ وَابْنِ السَّب۪يلِۙ اِنْ كُنْتُمْ اٰمَنْتُمْ بِاللّٰهِ وَمَٓا اَنْزَلْنَا عَلٰى عَبْدِنَا يَوْمَ الْفُرْقَانِ يَوْمَ الْتَقَى الْجَمْعَانِۜ وَاللّٰهُ عَلٰى كُلِّ شَيْءٍ قَد۪يرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:42",
+      "text": "اِذْ اَنْتُمْ بِالْعُدْوَةِ الدُّنْيَا وَهُمْ بِالْعُدْوَةِ الْقُصْوٰى وَالرَّكْبُ اَسْفَلَ مِنْكُمْۜ وَلَوْ تَوَاعَدْتُمْ لَاخْتَلَفْتُمْ فِي الْم۪يعَادِۙ وَلٰكِنْ لِيَقْضِيَ اللّٰهُ اَمْرًا كَانَ مَفْعُولًاۙ لِيَهْلِكَ مَنْ هَلَكَ عَنْ بَيِّنَةٍ وَيَحْيٰى مَنْ حَيَّ عَنْ بَيِّنَةٍۜ وَاِنَّ اللّٰهَ لَسَم۪يعٌ عَل۪يمٌۙ",
+      "translation": "Siz vadinin (Medine’ye) en yakın yamacında, onlar vadinin en uzak yamacında, kervan ise sizin alt tarafınızdaydı. Sözleşseydiniz böyle denk getiremezdiniz. Ama Allah, kararlaştırılan bir işi[1*] gerçekleştirsin; ölen gerçeği görerek ölsün, yaşayan da gerçeği görerek yaşasın[2*] diye böyle yaptı. Elbette daima dinleyen ve bilen Allah’tır.",
+      "dipnot": "[1*] Enfâl 8/5. [2*] Romalıların Perslere galip geleceği gün, Müslümanların bir zafer ile sevindirileceği sözünün (Rum 30/2 - 5) doğru olduğunu herkes görsün.",
+      "roots": [
+        "عدو",
+        "دنو",
+        "قصو",
+        "ركب",
+        "سفل",
+        "وعد",
+        "خلف",
+        "قضي",
+        "أله",
+        "أمر",
+        "كون",
+        "فعل",
+        "هلك",
+        "بين",
+        "حيي",
+        "سمع",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/5",
+          "targets": [
+            "8:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Romalıların Perslere galip geleceği gün, Müslümanların bir zafer ile sevindirileceği sözünün ("
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/2-5",
+          "targets": [
+            "30:2",
+            "30:3",
+            "30:4",
+            "30:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") doğru olduğunu herkes görsün."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:42",
+        "connections": [
+          {
+            "target_coordinate": "8:5",
+            "context": "Enfâl 8/5"
+          },
+          {
+            "target_coordinate": "30:2",
+            "context": "Rum 30/2-5"
+          },
+          {
+            "target_coordinate": "30:3",
+            "context": "Rum 30/2-5"
+          },
+          {
+            "target_coordinate": "30:4",
+            "context": "Rum 30/2-5"
+          },
+          {
+            "target_coordinate": "30:5",
+            "context": "Rum 30/2-5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 42. Ayetin Tefsiri\nاِذْ اَنْتُمْ بِالْعُدْوَةِ الدُّنْيَا وَهُمْ بِالْعُدْوَةِ الْقُصْوٰى وَالرَّكْبُ اَسْفَلَ مِنْكُمْۜ وَلَوْ تَوَاعَدْتُمْ لَاخْتَلَفْتُمْ فِي الْم۪يعَادِۙ وَلٰكِنْ لِيَقْضِيَ اللّٰهُ اَمْرًا كَانَ مَفْعُولًاۙ لِيَهْلِكَ مَنْ هَلَكَ عَنْ بَيِّنَةٍ وَيَحْيٰى مَنْ حَيَّ عَنْ بَيِّنَةٍۜ وَاِنَّ اللّٰهَ لَسَم۪يعٌ عَل۪يمٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:43",
+      "text": "اِذْ يُر۪يكَهُمُ اللّٰهُ ف۪ي مَنَامِكَ قَل۪يلًاۜ وَلَوْ اَرٰيكَهُمْ كَث۪يرًا لَفَشِلْتُمْ وَلَتَنَازَعْتُمْ فِي الْاَمْرِ وَلٰكِنَّ اللّٰهَ سَلَّمَۜ اِنَّهُ عَل۪يمٌ بِذَاتِ الصُّدُورِ",
+      "translation": "(Ey Muhammed!) Allah onları rüyanda sana az göstermişti. Eğer onları sana çok gösterseydi kesinlikle zaafa kapılır ve savaşma konusunda mutlaka anlaşmazlığa düşerdiniz. Ama Allah, sizi bu hale düşmekten kurtardı.[*] Çünkü O, sinelerinizde olanları bilir.",
+      "dipnot": "[*] Âl-i İmran 3/123.",
+      "roots": [
+        "رأي",
+        "أله",
+        "نوم",
+        "قلل",
+        "كثر",
+        "فشل",
+        "نزع",
+        "أمر",
+        "سلم",
+        "علم",
+        "صدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/123",
+          "targets": [
+            "3:123"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:43",
+        "connections": [
+          {
+            "target_coordinate": "3:123",
+            "context": "Âl-i İmran 3/123"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 43. Ayetin Tefsiri\nاِذْ يُر۪يكَهُمُ اللّٰهُ ف۪ي مَنَامِكَ قَل۪يلًاۜ وَلَوْ اَرٰيكَهُمْ كَث۪يرًا لَفَشِلْتُمْ وَلَتَنَازَعْتُمْ فِي الْاَمْرِ وَلٰكِنَّ اللّٰهَ سَلَّمَۜ اِنَّهُ عَل۪يمٌ بِذَاتِ الصُّدُورِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:44",
+      "text": "وَاِذْ يُر۪يكُمُوهُمْ اِذِ الْتَقَيْتُمْ ف۪ٓي اَعْيُنِكُمْ قَل۪يلًا وَيُقَلِّلُكُمْ ف۪ٓي اَعْيُنِهِمْ لِيَقْضِيَ اللّٰهُ اَمْرًا كَانَ مَفْعُولًاۜ وَاِلَى اللّٰهِ تُرْجَعُ الْاُمُورُ۟",
+      "translation": "Onlarla (Mekke ordusuyla) karşılaştığınızda Allah, sizin gözünüzde onları az göstermiş [1*], onların gözünde de sizi az göstermişti. Allah, kararlaştırılan bir işi gerçekleştirsin diye böyle yapmıştı.[2*] Bütün işler Allah’a arz edilir.",
+      "dipnot": "[1*] Âl-i İmran 3/13. [2*] Enfâl 8/42.",
+      "roots": [
+        "رأي",
+        "لقي",
+        "عين",
+        "قلل",
+        "قضي",
+        "أله",
+        "أمر",
+        "كون",
+        "فعل",
+        "رجع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/13",
+          "targets": [
+            "3:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/42",
+          "targets": [
+            "8:42"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:44",
+        "connections": [
+          {
+            "target_coordinate": "3:13",
+            "context": "Âl-i İmran 3/13"
+          },
+          {
+            "target_coordinate": "8:42",
+            "context": "Enfâl 8/42"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 44. Ayetin Tefsiri\nوَاِذْ يُر۪يكُمُوهُمْ اِذِ الْتَقَيْتُمْ ف۪ٓي اَعْيُنِكُمْ قَل۪يلًا وَيُقَلِّلُكُمْ ف۪ٓي اَعْيُنِهِمْ لِيَقْضِيَ اللّٰهُ اَمْرًا كَانَ مَفْعُولًاۜ وَاِلَى اللّٰهِ تُرْجَعُ الْاُمُورُ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:45",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِذَا لَق۪يتُمْ فِئَةً فَاثْبُتُوا وَاذْكُرُوا اللّٰهَ كَث۪يرًا لَعَلَّكُمْ تُفْلِحُونَۚ",
+      "translation": "Ey inanıp güvenenler! Bir birlikle karşı karşıya gelince sebat gösterin /dayanıklı olun[1*] ve Allah’ı (onun sözlerini) hep aklınızda tutun[2*] ki umduğunuza kavuşasınız.",
+      "dipnot": "[1*] Enfâl 8/15 - 16,",
+      "roots": [
+        "أيي",
+        "أمن",
+        "لقي",
+        "فأي",
+        "ثبت",
+        "ذكر",
+        "أله",
+        "كثر",
+        "فلح"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/15-16",
+          "targets": [
+            "8:15",
+            "8:16"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:45",
+        "connections": [
+          {
+            "target_coordinate": "8:15",
+            "context": "Enfâl 8/15-16"
+          },
+          {
+            "target_coordinate": "8:16",
+            "context": "Enfâl 8/15-16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 45. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِذَا لَق۪يتُمْ فِئَةً فَاثْبُتُوا وَاذْكُرُوا اللّٰهَ كَث۪يرًا لَعَلَّكُمْ تُفْلِحُونَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:46",
+      "text": "وَاَط۪يعُوا اللّٰهَ وَرَسُولَهُ وَلَا تَنَازَعُوا فَتَفْشَلُوا وَتَذْهَبَ ر۪يحُكُمْ وَاصْبِرُواۜ اِنَّ اللّٰهَ مَعَ الصَّابِر۪ينَۚ",
+      "translation": "Allah’a ve resulüne gönülden boyun eğin.[1*] Birbirinizle çekişmeyin yoksa zaafa kapılırsınız ve gücünüz gider.[2*] Siz sabırlı olun /duruşunuzu bozmayın.[3*] Allah sabredenlerle beraberdir.",
+      "dipnot": "",
+      "roots": [
+        "طوع",
+        "أله",
+        "رسل",
+        "نزع",
+        "فشل",
+        "ذهب",
+        "روح",
+        "صبر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "8:46",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 46. Ayetin Tefsiri\nوَاَط۪يعُوا اللّٰهَ وَرَسُولَهُ وَلَا تَنَازَعُوا فَتَفْشَلُوا وَتَذْهَبَ ر۪يحُكُمْ وَاصْبِرُواۜ اِنَّ اللّٰهَ مَعَ الصَّابِر۪ينَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:47",
+      "text": "وَلَا تَكُونُوا كَالَّذ۪ينَ خَرَجُوا مِنْ دِيَارِهِمْ بَطَرًا وَرِئَٓاءَ النَّاسِ وَيَصُدُّونَ عَنْ سَب۪يلِ اللّٰهِۜ وَاللّٰهُ بِمَا يَعْمَلُونَ مُح۪يطٌ",
+      "translation": "Çalım satarak ve insanlara gösteriş yaparak yurtlarından çıkan[1*] ve Allah’ın yolundan engelleyenler gibi olmayın.[2*] Allah, onların yapmakta olduklarını çepeçevre kuşatır.",
+      "dipnot": "[1*] Burada Müslümanlara karşı zafer elde edeceklerinden emin bir şekilde Mekke’den çıkış yapan müşrik ordusundan bahsedilmektedir.",
+      "roots": [
+        "كون",
+        "خرج",
+        "دور",
+        "بطر",
+        "رأي",
+        "أنس",
+        "صدد",
+        "سبل",
+        "أله",
+        "عمل",
+        "حوط"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Burada Müslümanlara karşı zafer elde edeceklerinden emin bir şekilde Mekke’den çıkış yapan müşrik ordusundan bahsedilmektedir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:47",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 47. Ayetin Tefsiri\nوَلَا تَكُونُوا كَالَّذ۪ينَ خَرَجُوا مِنْ دِيَارِهِمْ بَطَرًا وَرِئَٓاءَ النَّاسِ وَيَصُدُّونَ عَنْ سَب۪يلِ اللّٰهِۜ وَاللّٰهُ بِمَا يَعْمَلُونَ مُح۪يطٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:48",
+      "text": "وَاِذْ زَيَّنَ لَهُمُ الشَّيْطَانُ اَعْمَالَهُمْ وَقَالَ لَا غَالِبَ لَكُمُ الْيَوْمَ مِنَ النَّاسِ وَاِنّ۪ي جَارٌ لَكُمْۚ فَلَمَّا تَرَٓاءَتِ الْفِئَتَانِ نَكَصَ عَلٰى عَقِبَيْهِ وَقَالَ اِنّ۪ي بَر۪ٓيءٌ مِنْكُمْ اِنّ۪ٓي اَرٰى مَا لَا تَرَوْنَ اِنّ۪ٓي اَخَافُ اللّٰهَۜ وَاللّٰهُ شَد۪يدُ الْعِقَابِ۟",
+      "translation": "Şeytan, onlara yaptıklarını süslü göstermiş ve şöyle demişti: “Bugün insanlardan sizi yenebilecek biri yoktur, ben de sizin yanınızdayım.” İki birlik (karşı karşıya gelip) birbirini görünce de (Şeytan) geri çekildi ve şöyle dedi: “Ben sizden uzağım. Ben sizin göremediğinizi (melekleri) görüyorum. Ben Allah’tan korkarım![*] Allah’ın cezalandırması çetindir.”",
+      "dipnot": "",
+      "roots": [
+        "زين",
+        "شطن",
+        "عمل",
+        "قول",
+        "غلب",
+        "يوم",
+        "أنس",
+        "جور",
+        "رأي",
+        "فأي",
+        "نكص",
+        "عقب",
+        "برأ",
+        "خوف",
+        "أله",
+        "شدد"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "8:48",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 48. Ayetin Tefsiri\nوَاِذْ زَيَّنَ لَهُمُ الشَّيْطَانُ اَعْمَالَهُمْ وَقَالَ لَا غَالِبَ لَكُمُ الْيَوْمَ مِنَ النَّاسِ وَاِنّ۪ي جَارٌ لَكُمْۚ فَلَمَّا تَرَٓاءَتِ الْفِئَتَانِ نَكَصَ عَلٰى عَقِبَيْهِ وَقَالَ اِنّ۪ي بَر۪ٓيءٌ مِنْكُمْ اِنّ۪ٓي اَرٰى مَا لَا تَرَوْنَ اِنّ۪ٓي اَخَافُ اللّٰهَۜ وَاللّٰهُ شَد۪يدُ الْعِقَابِ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:49",
+      "text": "اِذْ يَقُولُ الْمُنَافِقُونَ وَالَّذ۪ينَ ف۪ي قُلُوبِهِمْ مَرَضٌ غَرَّ هٰٓؤُ۬لَٓاءِ د۪ينُهُمْۜ وَمَنْ يَتَوَكَّلْ عَلَى اللّٰهِ فَاِنَّ اللّٰهَ عَز۪يزٌ حَك۪يمٌ",
+      "translation": "Hani (Mekke ordusuna katılan) münafıklar[1*] ile kalplerinde hastalık olanlar[2*] da “Bunları dinleri aldatmış!” diyorlardı. Halbuki kim Allah’a güvenip dayanırsa (bilsin ki) Allah daima üstün ve bütün kararları doğru olandır.",
+      "dipnot": "[1*] Bunlar, Mekke’den gelen ordunun içinde yer alan münafıklardır. Müslümanları öldürmek için fırsat kollayan bu münafıklara karşı gösterilmesi gereken davranışlar Nisa 4/88 - 91 . âyetlerde açıklanmıştır.",
+      "roots": [
+        "قول",
+        "نفق",
+        "قلب",
+        "مرض",
+        "غرر",
+        "دين",
+        "وكل",
+        "أله",
+        "عزز",
+        "حكم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Bunlar, Mekke’den gelen ordunun içinde yer alan münafıklardır. "
+        },
+        {
+          "type": "link",
+          "content": "Müslümanları öldürmek için fırsat kollayan bu münafıklara karşı gösterilmesi gereken davranışlar Nisa 4/88-91",
+          "targets": [
+            "4:88",
+            "4:89",
+            "4:90",
+            "4:91"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". âyetlerde açıklanmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:49",
+        "connections": [
+          {
+            "target_coordinate": "4:88",
+            "context": "Müslümanları öldürmek için fırsat kollayan bu münafıklara karşı gösterilmesi gereken davranışlar Nisa 4/88-91"
+          },
+          {
+            "target_coordinate": "4:89",
+            "context": "Müslümanları öldürmek için fırsat kollayan bu münafıklara karşı gösterilmesi gereken davranışlar Nisa 4/88-91"
+          },
+          {
+            "target_coordinate": "4:90",
+            "context": "Müslümanları öldürmek için fırsat kollayan bu münafıklara karşı gösterilmesi gereken davranışlar Nisa 4/88-91"
+          },
+          {
+            "target_coordinate": "4:91",
+            "context": "Müslümanları öldürmek için fırsat kollayan bu münafıklara karşı gösterilmesi gereken davranışlar Nisa 4/88-91"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 49. Ayetin Tefsiri\nاِذْ يَقُولُ الْمُنَافِقُونَ وَالَّذ۪ينَ ف۪ي قُلُوبِهِمْ مَرَضٌ غَرَّ هٰٓؤُ۬لَٓاءِ د۪ينُهُمْۜ وَمَنْ يَتَوَكَّلْ عَلَى اللّٰهِ فَاِنَّ اللّٰهَ عَز۪يزٌ حَك۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:50",
+      "text": "وَلَوْ تَرٰٓى اِذْ يَتَوَفَّى الَّذ۪ينَ كَفَرُواۙ الْمَلٰٓئِكَةُ يَضْرِبُونَ وُجُوهَهُمْ وَاَدْبَارَهُمْۚ وَذُوقُوا عَذَابَ الْحَر۪يقِ",
+      "translation": "Melekler, yüzlerine ve sırtlarına vura vura vefat[1*] ettirirken o kâfirleri bir görsen![2*] Onlara: “Yangın azabını tadın bakalım!” derler.",
+      "dipnot": "[1*] Zümer 39/42 ’ye göre insan, biri beden diğeri ruh olmak üzere iki nefisten oluşur. Ruhun çoğunlukla can ile aynı şey olduğu zannedilir. Oysa ana rahminde canlılık döllenmeyle başlarken, ruhun üflenmesi bütün organların tamamlanmasından sonra olur. Ruh bedenle birleştiğinde insan, dinleyen, basiret ve gönül sahibi olan bir canlı türü haline gelir ( Mü'minûn 23/12 - 14, Secde 32/7 - 9 ). Beden bir bilgisayarın donanımına; can, donanıma güç veren elektriğe benzer. Ruh ise bilgisayarın işletim sistemi gibidir. İşletim sistemi nasıl bütün bilgileri koruyorsa ruh da öyledir. Ruhun bedenden çekilip alınmasına “vefat ettirme” denir. Allah insanı iki şekilde vefat ettirir: biri uyuyunca, diğeri de ölünce olur. Allah, hem uyuyan hem de ölen bedenin ruhunu tutar. Ruh ve canın farklı şeyler olduğu, uyuyan insanın canlılığını korumasından da anlaşılır. Uyuyan insanın ruhu, uyandığında; ölen kişinin ruhu ise ahirette bedenler yeniden diriltildiğinde geri döner ( Mü'minûn 23/100, Tekvîr 81/7 ). [2*] En’am 6/93, Muhammed 47/27.",
+      "roots": [
+        "رأي",
+        "وفي",
+        "كفر",
+        "ملك",
+        "ضرب",
+        "وجه",
+        "دبر",
+        "ذوق",
+        "عذب",
+        "حرق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/42",
+          "targets": [
+            "39:42"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’ye göre insan, biri beden diğeri ruh olmak üzere iki nefisten oluşur. Ruhun çoğunlukla can ile aynı şey olduğu zannedilir. Oysa ana rahminde canlılık döllenmeyle başlarken, ruhun üflenmesi bütün organların tamamlanmasından sonra olur. Ruh bedenle birleştiğinde insan, dinleyen, basiret ve gönül sahibi olan bir canlı türü haline gelir ( "
+        },
+        {
+          "type": "link",
+          "content": "Mü'minûn 23/12-14",
+          "targets": [
+            "23:12",
+            "23:13",
+            "23:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/7-9",
+          "targets": [
+            "32:7",
+            "32:8",
+            "32:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Beden bir bilgisayarın donanımına; can, donanıma güç veren elektriğe benzer. Ruh ise bilgisayarın işletim sistemi gibidir. İşletim sistemi nasıl bütün bilgileri koruyorsa ruh da öyledir. Ruhun bedenden çekilip alınmasına “vefat ettirme” denir. Allah insanı iki şekilde vefat ettirir: biri uyuyunca, diğeri de ölünce olur. Allah, hem uyuyan hem de ölen bedenin ruhunu tutar. Ruh ve canın farklı şeyler olduğu, uyuyan insanın canlılığını korumasından da anlaşılır. Uyuyan insanın ruhu, uyandığında; ölen kişinin ruhu ise ahirette bedenler yeniden diriltildiğinde geri döner ( "
+        },
+        {
+          "type": "link",
+          "content": "Mü'minûn 23/100",
+          "targets": [
+            "23:100"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvîr 81/7",
+          "targets": [
+            "81:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/93",
+          "targets": [
+            "6:93"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/27",
+          "targets": [
+            "47:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:50",
+        "connections": [
+          {
+            "target_coordinate": "39:42",
+            "context": "Zümer 39/42"
+          },
+          {
+            "target_coordinate": "23:12",
+            "context": "Mü'minûn 23/12-14"
+          },
+          {
+            "target_coordinate": "23:13",
+            "context": "Mü'minûn 23/12-14"
+          },
+          {
+            "target_coordinate": "23:14",
+            "context": "Mü'minûn 23/12-14"
+          },
+          {
+            "target_coordinate": "32:7",
+            "context": "Secde 32/7-9"
+          },
+          {
+            "target_coordinate": "32:8",
+            "context": "Secde 32/7-9"
+          },
+          {
+            "target_coordinate": "32:9",
+            "context": "Secde 32/7-9"
+          },
+          {
+            "target_coordinate": "23:100",
+            "context": "Mü'minûn 23/100"
+          },
+          {
+            "target_coordinate": "81:7",
+            "context": "Tekvîr 81/7"
+          },
+          {
+            "target_coordinate": "6:93",
+            "context": "am 6/93"
+          },
+          {
+            "target_coordinate": "47:27",
+            "context": "Muhammed 47/27"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 50. Ayetin Tefsiri\nوَلَوْ تَرٰٓى اِذْ يَتَوَفَّى الَّذ۪ينَ كَفَرُواۙ الْمَلٰٓئِكَةُ يَضْرِبُونَ وُجُوهَهُمْ وَاَدْبَارَهُمْۚ وَذُوقُوا عَذَابَ الْحَر۪يقِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:51",
+      "text": "ذٰلِكَ بِمَا قَدَّمَتْ اَيْد۪يكُمْ وَاَنَّ اللّٰهَ لَيْسَ بِظَلَّامٍ لِلْعَب۪يدِۙ",
+      "translation": "“Bu, kendi ellerinizle yaptıklarınızın karşılığıdır. Yoksa Allah, kullarına asla haksızlık etmez.”[*]",
+      "dipnot": "[*] Âl-i İmran 3/182, Nisa 4/40, Hac 22/10, Fussilet 41/46, Kaf 50/29.",
+      "roots": [
+        "قدم",
+        "يدي",
+        "أله",
+        "ليس",
+        "ظلم",
+        "عبد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/182",
+          "targets": [
+            "3:182"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/40",
+          "targets": [
+            "4:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/10",
+          "targets": [
+            "22:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/46",
+          "targets": [
+            "41:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/29",
+          "targets": [
+            "50:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:51",
+        "connections": [
+          {
+            "target_coordinate": "3:182",
+            "context": "Âl-i İmran 3/182"
+          },
+          {
+            "target_coordinate": "4:40",
+            "context": "Nisa 4/40"
+          },
+          {
+            "target_coordinate": "22:10",
+            "context": "Hac 22/10"
+          },
+          {
+            "target_coordinate": "41:46",
+            "context": "Fussilet 41/46"
+          },
+          {
+            "target_coordinate": "50:29",
+            "context": "Kaf 50/29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 51. Ayetin Tefsiri\nذٰلِكَ بِمَا قَدَّمَتْ اَيْد۪يكُمْ وَاَنَّ اللّٰهَ لَيْسَ بِظَلَّامٍ لِلْعَب۪يدِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:52",
+      "text": "كَدَأْبِ اٰلِ فِرْعَوْنَۙ وَالَّذ۪ينَ مِنْ قَبْلِهِمْۜ كَفَرُوا بِاٰيَاتِ اللّٰهِ فَاَخَذَهُمُ اللّٰهُ بِذُنُوبِهِمْۜ اِنَّ اللّٰهَ قَوِيٌّ شَد۪يدُ الْعِقَابِ",
+      "translation": "Bunların hali, tıpkı Firavun hanedanının ve onlardan öncekilerin hali gibidir. Allah’ın ayetlerini görmezlikte direndiler, Allah da onları günahları sebebiyle yakaladı. Allah güçlüdür, cezalandırması çetindir.[*]",
+      "dipnot": "[*] Âl-i İmran 3/10-11.",
+      "roots": [
+        "دأب",
+        "أول",
+        "قبل",
+        "كفر",
+        "أيي",
+        "أله",
+        "أخذ",
+        "ذنب",
+        "قوي",
+        "شدد",
+        "عقب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/10-11",
+          "targets": [
+            "3:10",
+            "3:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:52",
+        "connections": [
+          {
+            "target_coordinate": "3:10",
+            "context": "Âl-i İmran 3/10-11"
+          },
+          {
+            "target_coordinate": "3:11",
+            "context": "Âl-i İmran 3/10-11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 52. Ayetin Tefsiri\nكَدَأْبِ اٰلِ فِرْعَوْنَۙ وَالَّذ۪ينَ مِنْ قَبْلِهِمْۜ كَفَرُوا بِاٰيَاتِ اللّٰهِ فَاَخَذَهُمُ اللّٰهُ بِذُنُوبِهِمْۜ اِنَّ اللّٰهَ قَوِيٌّ شَد۪يدُ الْعِقَابِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:53",
+      "text": "ذٰلِكَ بِاَنَّ اللّٰهَ لَمْ يَكُ مُغَيِّرًا نِعْمَةً اَنْعَمَهَا عَلٰى قَوْمٍ حَتّٰى يُغَيِّRÛ مَا بِاَنْفُسِهِمْۙ وَاَنَّ اللّٰهَ سَم۪يعٌ عَل۪يمٌۙ",
+      "translation": "Bu şundan dolayıdır: Bir topluluk kendinde olanı değiştirmedikçe Allah da onlara verdiği nimeti değiştirmez.[*] Çünkü Allah daima dinleyen ve bilendir.",
+      "dipnot": "[*] Ra’d 13/11.",
+      "roots": [
+        "أله",
+        "كون",
+        "غير",
+        "نعم",
+        "قوم",
+        "نفس",
+        "سمع",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/11",
+          "targets": [
+            "13:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:53",
+        "connections": [
+          {
+            "target_coordinate": "13:11",
+            "context": "d 13/11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 53. Ayetin Tefsiri\nذٰلِكَ بِاَنَّ اللّٰهَ لَمْ يَكُ مُغَيِّرًا نِعْمَةً اَنْعَمَهَا عَلٰى قَوْمٍ حَتّٰى يُغَيِّرُوا مَا بِاَنْفُسِهِمْۙ وَاَنَّ اللّٰهَ سَم۪يعٌ عَل۪يمٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:54",
+      "text": "كَدَأْبِ اٰلِ فِرْعَوْنَۙ وَالَّذ۪ينَ مِنْ قَبْلِهِمْۜ كَذَّبُوا بِاٰيَاتِ رَبِّهِمْۚ فَاَهْلَكْنَاهُمْ بِذُنُوبِهِمْ وَاَغْرَقْنَٓا اٰلَ فِرْعَوْنَۚ وَكُلٌّ كَانُوا ظَالِم۪ينَ",
+      "translation": "Evet! Bunların hali tıpkı Firavun hanedanının ve onlardan öncekilerin hali gibidir. Onlar, Rablerinin ayetleri karşısında yalana sarıldılar. Biz de onları günahları sebebiyle helak ettik. Firavun hanedanını suda boğduk. Hepsi de yanlışlar içindeydi.",
+      "dipnot": "[1*] Enfâl 8/52. [2*] Zuhruf 43/55.",
+      "roots": [
+        "دأب",
+        "أول",
+        "قبل",
+        "كذب",
+        "أيي",
+        "ربب",
+        "هلك",
+        "ذنب",
+        "غرق",
+        "كلل",
+        "كون",
+        "ظلم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/52",
+          "targets": [
+            "8:52"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/55",
+          "targets": [
+            "43:55"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:54",
+        "connections": [
+          {
+            "target_coordinate": "8:52",
+            "context": "Enfâl 8/52"
+          },
+          {
+            "target_coordinate": "43:55",
+            "context": "Zuhruf 43/55"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 54. Ayetin Tefsiri\nكَدَأْبِ اٰلِ فِرْعَوْنَۙ وَالَّذ۪ينَ مِنْ قَبْلِهِمْۜ كَذَّبُوا بِاٰيَاتِ رَبِّهِمْۚ فَاَهْلَكْنَاهُمْ بِذُنُوبِهِمْ وَاَغْرَقْنَٓا اٰلَ فِرْعَوْنَۚ وَكُلٌّ كَانُوا ظَالِم۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:55",
+      "text": "اِنَّ شَرَّ الدَّوَٓابِّ عِنْدَ اللّٰهِ الَّذ۪ينَ كَفَرُوا فَهُمْ لَا يُؤْمِنُونَۚ",
+      "translation": "Allah katında canlıların en kötüsü, kafirlik edenler /görmezlikte direnenlerdir. Bu sebeple onlar (Allah’a) inanıp güvenmezler.",
+      "dipnot": "[*] Bakara 2/17 - 18 ve 171 , Enfâl 8/22, Hac 22/46, Furkan 25/73 , Beyyine 98/6 .",
+      "roots": [
+        "شرر",
+        "دبب",
+        "عند",
+        "أله",
+        "كفر",
+        "أمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/17-18",
+          "targets": [
+            "2:17",
+            "2:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "ve 171 , "
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/22",
+          "targets": [
+            "8:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/46",
+          "targets": [
+            "22:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/73",
+          "targets": [
+            "25:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beyyine 98/6",
+          "targets": [
+            "98:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:55",
+        "connections": [
+          {
+            "target_coordinate": "2:17",
+            "context": "Bakara 2/17-18"
+          },
+          {
+            "target_coordinate": "2:18",
+            "context": "Bakara 2/17-18"
+          },
+          {
+            "target_coordinate": "8:22",
+            "context": "Enfâl 8/22"
+          },
+          {
+            "target_coordinate": "22:46",
+            "context": "Hac 22/46"
+          },
+          {
+            "target_coordinate": "25:73",
+            "context": "Furkan 25/73"
+          },
+          {
+            "target_coordinate": "98:6",
+            "context": "Beyyine 98/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 55. Ayetin Tefsiri\nاِنَّ شَرَّ الدَّوَٓابِّ عِنْدَ اللّٰهِ الَّذ۪ينَ كَفَرُوا فَهُمْ لَا يُؤْمِنُونَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:56",
+      "text": "اَلَّذ۪ينَ عَاهَدْتَ مِنْهُمْ ثُمَّ يَنْقُضُونَ عَهْدَهُمْ ف۪ي كُلِّ مَرَّةٍ وَهُمْ لَا يَتَّقُونَ",
+      "translation": "Onlar, kendileriyle antlaşma yaptığın ve antlaşmalarını her seferinde bozan kimselerdir. Onlar yanlış yapmaktan sakınmazlar.",
+      "dipnot": "[*] Mâide 5/13, 41.",
+      "roots": [
+        "عهد",
+        "نقض",
+        "كلل",
+        "مرر",
+        "وقي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Mâide 5/13,41",
+          "targets": [
+            "5:13",
+            "5:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:56",
+        "connections": [
+          {
+            "target_coordinate": "5:13",
+            "context": "Mâide 5/13,41"
+          },
+          {
+            "target_coordinate": "5:41",
+            "context": "Mâide 5/13,41"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 56. Ayetin Tefsiri\nاَلَّذ۪ينَ عَاهَدْتَ مِنْهُمْ ثُمَّ يَنْقُضُونَ عَهْدَهُمْ ف۪ي كُلِّ مَرَّةٍ وَهُمْ لَا يَتَّقُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:57",
+      "text": "فَاِمَّا تَثْقَفَنَّهُمْ فِي الْحَرْبِ فَشَرِّدْ بِهِمْ مَنْ خَلْفَهُمْ لَعَلَّهُمْ يَذَّكَّرُونَ",
+      "translation": "Savaşta yakalarsan onları öyle bir dağıt ki arkalarındakiler de dağılsınlar. Belki akıllarını başlarına alırlar.",
+      "dipnot": "[*] Muhammed 47/4.",
+      "roots": [
+        "ثقف",
+        "حرب",
+        "شرد",
+        "خلف",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/4",
+          "targets": [
+            "47:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:57",
+        "connections": [
+          {
+            "target_coordinate": "47:4",
+            "context": "Muhammed 47/4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 57. Ayetin Tefsiri\nفَاِمَّا تَثْقَفَنَّهُمْ فِي الْحَرْبِ فَشَرِّدْ بِهِمْ مَنْ خَلْفَهُمْ لَعَلَّهُمْ يَذَّكَّرُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:58",
+      "text": "وَاِمَّا تَخَافَنَّ مِنْ قَوْمٍ خِيَانَةً فَانْبِذْ اِلَيْهِمْ عَلٰى سَوَٓاءٍۜ اِنَّ اللّٰهَ لَا يُحِبُّ الْخَٓائِن۪ينَ۟",
+      "translation": "Bir topluluğun hainlik yapacağından, bilgiye dayalı olarak korkarsan buna karşılık sen de anlaşmayı bozduğunu onlara bildir. Allah hainleri sevmez.",
+      "dipnot": "[1*] Âyet metninde geçen havf (خوف) kelimesi, kesin veya kesine yakın bir bilgiye dayalı olan korkudur (Müfredat). Ayet, “Allah hainleri sevmez” şeklinde bittiği için buradaki korkunun, sağlam bir gerekçeye dayalı olması gerekir. [2*] Hac 22/38.",
+      "roots": [
+        "خوف",
+        "قوم",
+        "خون",
+        "نبذ",
+        "سوي",
+        "أله",
+        "حبب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Âyet metninde geçen havf (خوف) kelimesi, kesin veya kesine yakın bir bilgiye dayalı olan korkudur (Müfredat). Ayet, “Allah hainleri sevmez” şeklinde bittiği için buradaki korkunun, sağlam bir gerekçeye dayalı olması gerekir. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/38",
+          "targets": [
+            "22:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:58",
+        "connections": [
+          {
+            "target_coordinate": "22:38",
+            "context": "Hac 22/38"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 58. Ayetin Tefsiri\nوَاِمَّا تَخَافَنَّ مِنْ قَوْمٍ خِيَانَةً فَانْبِذْ اِلَيْهِمْ عَلٰى سَوَٓاءٍۜ اِنَّ اللّٰهَ لَا يُحِبُّ الْخَٓائِن۪ينَ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:59",
+      "text": "وَلَا يَحْسَبَنَّ الَّذ۪ينَ كَفَرُوا سَبَقُواۜ اِنَّهُمْ لَا يُعْجِزُونَ",
+      "translation": "Kâfirlik edenler kaçıp kurtulabileceklerini sanmasınlar; onlar (bizi) aciz bırakamazlar.",
+      "dipnot": "[*] Nur 24/57.",
+      "roots": [
+        "حسب",
+        "كفر",
+        "سبق",
+        "عجز"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Nur 24/57",
+          "targets": [
+            "24:57"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:59",
+        "connections": [
+          {
+            "target_coordinate": "24:57",
+            "context": "Nur 24/57"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 59. Ayetin Tefsiri\nوَلَا يَحْسَبَنَّ الَّذ۪ينَ كَفَرُوا سَبَقُواۜ اِنَّهُمْ لَا يُعْجِزُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:60",
+      "text": "وَاَعِدُّوا لَهُمْ مَا اسْتَطَعْتُمْ مِنْ قُوَّةٍ وَمِنْ رِبَاطِ الْخَيْلِ تُرْهِبُونَ بِه۪ عَدُوَّ اللّٰهِ وَعَدُوَّكُمْ وَاٰخَر۪ينَ مِنْ دُونِهِمْۚ لَا تَعْلَمُونَهُمْۚ اَللّٰهُ يَعْلَمُهُمْۜ وَمَا تُنْفِقُوا مِنْ شَيْءٍ ف۪ي سَب۪يلِ اللّٰهِ يُوَفَّ اِلَيْكُمْ وَاَنْتُمْ لَا تُظْلَمُونَ",
+      "translation": "Onlara karşı gücünüzün yettiği kadar kuvvet ve bağlanıp beslenen atlar hazırlayın. Onlar ile Allah’ın düşmanını, kendi düşmanınızı ve ayrıca sizin bilmeyip de Allah’ın bildiği öbür düşmanları korkutursunuz. Allah yolunda ne harcarsanız size tam olarak ödenir, haksızlığa uğratılmazsınız.",
+      "dipnot": "[1*] Nisa 4/71. [2*]",
+      "roots": [
+        "عدد",
+        "طوع",
+        "قوي",
+        "ربط",
+        "خيل",
+        "رهب",
+        "عدو",
+        "أله",
+        "أخر",
+        "دون",
+        "علم",
+        "نفق",
+        "شيأ",
+        "سبل",
+        "وفي",
+        "ظلم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/71",
+          "targets": [
+            "4:71"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:60",
+        "connections": [
+          {
+            "target_coordinate": "4:71",
+            "context": "Nisa 4/71"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 60. Ayetin Tefsiri\nوَاَعِدُّوا لَهُمْ مَا اسْتَطَعْتُمْ مِنْ قُوَّةٍ وَمِنْ رِبَاطِ الْخَيْلِ تُرْهِبُونَ بِه۪ عَدُوَّ اللّٰهِ وَعَدُوَّكُمْ وَاٰخَر۪ينَ مِنْ دُونِهِمْۚ لَا تَعْلَمُونَهُمْۚ اَللّٰهُ يَعْلَمُهُمْۜ وَمَا تُنْفِقُوا مِنْ شَيْءٍ ف۪ي سَب۪يلِ اللّٰهِ يُوَفَّ اِلَيْكُمْ وَاَنْتُمْ لَا تُظْلَمُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:61",
+      "text": "وَاِنْ جَنَحُوا لِلسَّلْمِ فَاجْنَحْ لَهَا وَتَوَكَّلْ عَلَى اللّٰهِۜ اِنَّهُ هُوَ السَّم۪يعُ الْعَل۪يمُ",
+      "translation": "Eğer barıştan yana olurlarsa sen de barıştan yana ol[*] ve Allah’a güvenip dayan. O, daima dinleyen ve bilendir.",
+      "dipnot": "Saldıran tarafa barış teklifi yapılması yasaktır (Muhammed 47/35). Ancak düşman taraf savaştan vazgeçer de barış teklifi yaparsa teklifleri kabul edilir.",
+      "roots": [
+        "جنح",
+        "سلم",
+        "وكل",
+        "أله",
+        "سمع",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Saldıran tarafa barış teklifi yapılması yasaktır ("
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/35",
+          "targets": [
+            "47:35"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ancak düşman taraf savaştan vazgeçer de barış teklifi yaparsa teklifleri kabul edilir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:61",
+        "connections": [
+          {
+            "target_coordinate": "47:35",
+            "context": "Muhammed 47/35"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 61. Ayetin Tefsiri\nوَاِنْ جَنَحُوا لِلسَّلْمِ فَاجْنَحْ لَهَا وَتَوَكَّلْ عَلَى اللّٰهِۜ اِنَّهُ هُوَ السَّم۪يعُ الْعَل۪يمُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:62",
+      "text": "وَاِنْ يُر۪يدُٓوا اَنْ يَخْدَعُوكَ فَاِنَّ حَسْبَكَ اللّٰهُۜ هُوَ الَّذ۪ٓي اَيَّدَكَ بِنَصْرِه۪ وَبِالْمُؤْمِن۪ينَۙ",
+      "translation": "Seni aldatmak isterlerse şüphesiz Allah sana yeter. Seni, kendi yardımıyla[*] ve müminlerle destekleyen odur.",
+      "dipnot": "Tevbe 9/40, Ahzab 33/56.",
+      "roots": [
+        "رود",
+        "خدع",
+        "حسب",
+        "أله",
+        "أيد",
+        "نصر",
+        "أمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Tevbe 9/40",
+          "targets": [
+            "9:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/56",
+          "targets": [
+            "33:56"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:62",
+        "connections": [
+          {
+            "target_coordinate": "9:40",
+            "context": "Tevbe 9/40"
+          },
+          {
+            "target_coordinate": "33:56",
+            "context": "Ahzab 33/56"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 62. Ayetin Tefsiri\nوَاِنْ يُر۪يدُٓوا اَنْ يَخْدَعُوكَ فَاِنَّ حَسْبَكَ اللّٰهُۜ هُوَ الَّذ۪ٓي اَيَّدَكَ بِنَصْرِه۪ وَبِالْمُؤْمِن۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:63",
+      "text": "وَاَلَّفَ بَيْنَ قُلُوبِهِمْۜ لَوْ اَنْفَقْتَ مَا فِي الْاَرْضِ جَم۪يعًا مَٓا اَلَّفْتَ بَيْنَ قُلُوبِهِمْ وَلٰكِنَّ اللّٰهَ اَلَّفَ بَيْنَهُمْۜ اِنَّهُ عَز۪يزٌ حَك۪يمٌ",
+      "translation": "Onların (müminlerin) kalplerini birbirine o ısındırdı. Sen yeryüzündeki her şeyi harcasaydın yine de onların kalplerini birbirine ısındıramazdın. Ama onları birbirine Allah ısındırdı.[*] O, daima üstün olan ve bütün kararları doğru olandır.",
+      "dipnot": "Âl-i İmran 3/103.",
+      "roots": [
+        "ألف",
+        "بين",
+        "قلب",
+        "نفق",
+        "أرض",
+        "جمع",
+        "أله",
+        "عزز",
+        "حكم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/103",
+          "targets": [
+            "3:103"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:63",
+        "connections": [
+          {
+            "target_coordinate": "3:103",
+            "context": "Âl-i İmran 3/103"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 63. Ayetin Tefsiri\nوَاَلَّفَ بَيْنَ قُلُوبِهِمْۜ لَوْ اَنْفَقْتَ مَا فِي الْاَرْضِ جَم۪يعًا مَٓا اَلَّفْتَ بَيْنَ قُلُوبِهِمْ وَلٰكِنَّ اللّٰهَ اَلَّفَ بَيْنَهُمْۜ اِنَّهُ عَز۪يزٌ حَك۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:64",
+      "text": "يَٓا اَيُّهَا النَّبِيُّ حَسْبُكَ اللّٰهُ وَمَنِ اتَّبَعَكَ مِنَ الْمُؤْمِن۪ينَ۟",
+      "translation": "Ey Nebi! Sana da sana uyan müminlere de Allah yeter.[*]",
+      "dipnot": "Nisa 4/45, Ahzab 33/25.",
+      "roots": [
+        "أيي",
+        "نبأ",
+        "حسب",
+        "أله",
+        "تبع",
+        "أمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nisa 4/45",
+          "targets": [
+            "4:45"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/25",
+          "targets": [
+            "33:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:64",
+        "connections": [
+          {
+            "target_coordinate": "4:45",
+            "context": "Nisa 4/45"
+          },
+          {
+            "target_coordinate": "33:25",
+            "context": "Ahzab 33/25"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 64. Ayetin Tefsiri\nيَٓا اَيُّهَا النَّبِيُّ حَسْبُكَ اللّٰهُ وَمَنِ اتَّبَعَكَ مِنَ الْمُؤْمِن۪ينَ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:66",
+      "text": "يَٓا اَيُّهَا النَّبِيُّ حَرِّضِ الْمُؤْمِن۪ينَ عَلَى الْقِتَالِۜ اِنْ يَكُنْ مِنْكُمْ عِشْرُونَ صَابِرُونَ يَغْلِبُوا مِائَتَيْنِۚ وَاِنْ يَكُنْ مِنْكُمْ مِائَةٌ يَغْلِبُٓوا اَلْفًا مِنَ الَّذ۪ينَ كَفَرُوا بِاَنَّهُمْ قَوْمٌ لَا يَفْقَهُونَ",
+      "translation": "Ey Nebi! Müminleri savaşa teşvik et. İçinizden sabırlı /duruşunu bozmayan yirmi kişi olursa iki yüz kişiyi yener; içinizden yüz kişi olursa onlar da kâfirlik edenlerden bin kişiyi yener. Çünkü onlar (sabretmenin önemini) kavrayamayan bir topluluktur.",
+      "dipnot": "",
+      "roots": [
+        "أون",
+        "خفف",
+        "أله",
+        "علم",
+        "ضعف",
+        "كون",
+        "مأي",
+        "صبر",
+        "غلب",
+        "ألف",
+        "أذن"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "8:66",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 66. Ayetin Tefsiri\nاَلْـٰٔنَ خَفَّفَ اللّٰهُ عَنْكُمْ وَعَلِمَ اَنَّ ف۪يكُمْ ضَعْفًاۜ فَاِنْ يَكُنْ مِنْكُمْ مِائَةٌ صَابِرَةٌ يَغْلِبُوا مِائَتَيْنِۚ وَاِنْ يَكُنْ مِنْكُمْ اَلْفٌ يَغْلِبُٓوا اَلْفَيْنِ بِاِذْنِ اللّٰهِۜ وَاللّٰهُ مَعَ الصَّابِر۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:67",
+      "text": "اَلْـٰٔنَ خَفَّفَ اللّٰهُ عَنْكُمْ وَعَلِمَ اَنَّ ف۪يكُمْ ضَعْفًاۜ فَاِنْ يَكُنْ مِنْكُمْ مِائَةٌ صَابِرَةٌ يَغْلِبُوا مِائَتَيْنِۚ وَاِنْ يَكُنْ مِنْكُمْ اَلْفٌ يَغْلِبُٓوا اَلْفَيْنِ بِاِذْنِ اللّٰهِۜ وَاللّٰهُ مَعَ الصَّابِر۪ينَ",
+      "translation": "Fakat şimdi Allah, yükünüzü hafifletti çünkü sizde bir zayıflık olduğunu bildi. Artık içinizden sabırlı /duruşunu bozmayan yüz kişi olursa Allah’ın izniyle iki yüz kişiyi yener, içinizden bin kişi olursa iki bin kişiyi yener.[*] Allah sabredenlerle / duruşunu bozmayanlarla beraberdir.",
+      "dipnot": "Bu âyet, bir önceki âyeti, hayırlısı ile nesh etmiş yani ondaki hükmü hafifletmiştir. Nesh ile ilgili ayrıntılı bilgi için Bakara 2/106’nın dipnotuna bkz.",
+      "roots": [
+        "كون",
+        "نبأ",
+        "أسر",
+        "ثخن",
+        "أرض",
+        "رود",
+        "عرض",
+        "دنو",
+        "أله",
+        "أخر",
+        "عزز",
+        "حكم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bu âyet, bir önceki âyeti, hayırlısı ile nesh etmiş yani ondaki hükmü hafifletmiştir. "
+        },
+        {
+          "type": "link",
+          "content": "Nesh ile ilgili ayrıntılı bilgi için Bakara 2/106",
+          "targets": [
+            "2:106"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’nın dipnotuna bkz."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:67",
+        "connections": [
+          {
+            "target_coordinate": "2:106",
+            "context": "Nesh ile ilgili ayrıntılı bilgi için Bakara 2/106"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 67. Ayetin Tefsiri\nمَا كَانَ لِنَبِيٍّ اَنْ يَكُونَ لَهُٓ اَسْرٰى حَتّٰى يُثْخِنَ فِي الْاَرْضِۜ تُر۪يدُونَ عَرَضَ الدُّنْيَاۗ وَاللّٰهُ يُر۪يدُ الْاٰخِرَةَۜ وَاللّٰهُ عَز۪يزٌ حَك۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:68",
+      "text": "مَا كَانَ لِنَبِيٍّ اَنْ يَكُونَ لَهُٓ اَسْرٰى حَتّٰى يُثْخِنَ فِي الْاَرْضِۜ تُر۪يدُونَ عَرَضَ الدُّنْيَاۗ وَاللّٰهُ يُر۪يدُ الْاٰخِرَةَۜ وَاللّٰهُ عَز۪يزٌ حَك۪يمٌ",
+      "translation": "Hiçbir nebinin savaş alanında[1*] düşmanı etkisiz hale getirmeden esir alma hakkı yoktur![2*] Siz, hemen elinize geçecek şeyler istiyorsunuz. Allah ise sonrasını[3*] istiyor. Allah daima üstün olan ve bütün kararları doğru olandır.",
+      "dipnot": "[1*] Ayette geçen “el-ard (الارض)” kelimesi, “o yer” anlamındadır. Burada savaşın yapıldığı yeri göstermektedir.\n[2*] Bu ayet nebilerde ismet sıfatının olmadığının delillerindendir (Nisa 4/105-107, Tevbe 9/43, Hud 11/12, İsra 17/73-75, Neml 27/10-11, Fetih 48/1-2, Tahrim 66/1-2). Yani nebiler günahlardan korunmuş değillerdir.\n[3*] Allah, savaş meydanında düşmanı tamamen etkisiz hale getirmeden esir almanıza izin vermemiştir (Muhammed 47/4).",
+      "roots": [
+        "كتب",
+        "أله",
+        "سبق",
+        "مسس",
+        "أخذ",
+        "عذب",
+        "عظم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Ayette geçen “el-ard (الارض)” kelimesi, “o yer” anlamındadır. Burada savaşın yapıldığı yeri göstermektedir.\n[2*] Bu ayet nebilerde ismet sıfatının olmadığının delillerindendir ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/105-107",
+          "targets": [
+            "4:105",
+            "4:106",
+            "4:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/43",
+          "targets": [
+            "9:43"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/12",
+          "targets": [
+            "11:12"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/73-75",
+          "targets": [
+            "17:73",
+            "17:74",
+            "17:75"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/10-11",
+          "targets": [
+            "27:10",
+            "27:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/1-2",
+          "targets": [
+            "48:1",
+            "48:2"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tahrim 66/1-2",
+          "targets": [
+            "66:1",
+            "66:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yani nebiler günahlardan korunmuş değillerdir.\n[3*] Allah, savaş meydanında düşmanı tamamen etkisiz hale getirmeden esir almanıza izin vermemiştir ("
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/4",
+          "targets": [
+            "47:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:68",
+        "connections": [
+          {
+            "target_coordinate": "4:105",
+            "context": "Nisa 4/105-107"
+          },
+          {
+            "target_coordinate": "4:106",
+            "context": "Nisa 4/105-107"
+          },
+          {
+            "target_coordinate": "4:107",
+            "context": "Nisa 4/105-107"
+          },
+          {
+            "target_coordinate": "9:43",
+            "context": "Tevbe 9/43"
+          },
+          {
+            "target_coordinate": "11:12",
+            "context": "Hud 11/12"
+          },
+          {
+            "target_coordinate": "17:73",
+            "context": "İsra 17/73-75"
+          },
+          {
+            "target_coordinate": "17:74",
+            "context": "İsra 17/73-75"
+          },
+          {
+            "target_coordinate": "17:75",
+            "context": "İsra 17/73-75"
+          },
+          {
+            "target_coordinate": "27:10",
+            "context": "Neml 27/10-11"
+          },
+          {
+            "target_coordinate": "27:11",
+            "context": "Neml 27/10-11"
+          },
+          {
+            "target_coordinate": "48:1",
+            "context": "Fetih 48/1-2"
+          },
+          {
+            "target_coordinate": "48:2",
+            "context": "Fetih 48/1-2"
+          },
+          {
+            "target_coordinate": "66:1",
+            "context": "Tahrim 66/1-2"
+          },
+          {
+            "target_coordinate": "66:2",
+            "context": "Tahrim 66/1-2"
+          },
+          {
+            "target_coordinate": "47:4",
+            "context": "Muhammed 47/4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 68. Ayetin Tefsiri\nلَوْلَا كِتَابٌ مِنَ اللّٰهِ سَبَقَ لَمَسَّكُمْ ف۪يمَٓا اَخَذْتُمْ عَذَابٌ عَظ۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:69",
+      "text": "لَوْلَا كِتَابٌ مِنَ اللّٰهِ سَبَقَ لَمَسَّكُمْ ف۪يمَٓا اَخَذْتُمْ عَذَابٌ عَظ۪يمٌ",
+      "translation": "Allah’ın daha önce kayda geçmiş[1*] bir kararı olmasaydı aldığınız şeyden dolayı size büyük bir azap dokunurdu.[2*]",
+      "dipnot": "[1*] “Kayda geçmiş karar” meali verdiğimiz kitab =(كتاب) kelimesinin kök anlamı, bir şeyi bir şeye eklemektir (Mekayîs). Arapçada kelimeleri ekleyerek yazılan yazıya da sözleri ekleyerek yapılan konuşmaya da kitap denir (Müfredat).\n[2*] Mekke’de inen Rum 30/1-6.",
+      "roots": [
+        "أكل",
+        "غنم",
+        "حلل",
+        "طيب",
+        "وقي",
+        "أله",
+        "غفر",
+        "رحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] “Kayda geçmiş karar” meali verdiğimiz kitab =(كتاب) kelimesinin kök anlamı, bir şeyi bir şeye eklemektir (Mekayîs). Arapçada kelimeleri ekleyerek yazılan yazıya da sözleri ekleyerek yapılan konuşmaya da kitap denir (Müfredat).\n[2*] Mekke’"
+        },
+        {
+          "type": "link",
+          "content": "de inen Rum 30/1-6",
+          "targets": [
+            "30:1",
+            "30:2",
+            "30:3",
+            "30:4",
+            "30:5",
+            "30:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:69",
+        "connections": [
+          {
+            "target_coordinate": "30:1",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:2",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:3",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:4",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:5",
+            "context": "de inen Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:6",
+            "context": "de inen Rum 30/1-6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 69. Ayetin Tefsiri\nفَكُلُوا مِمَّا غَنِمْتُمْ حَلَالًا طَيِّبًاۘ وَاتَّقُوا اللّٰهَۜ اِنَّ اللّٰهَ غَفُورٌ رَح۪يمٌ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:69",
+      "text": "فَكُلُوا مِمَّا غَنِمْتُمْ حَلَالًا طَيِّبًاۘ وَاتَّقُوا اللّٰهَۜ اِنَّ اللّٰهَ غَفُورٌ رَح۪يمٌ۟",
+      "translation": "Artık ganimet olarak aldıklarınızdan helal ve temiz olanları yiyin[*]. Allah’a karşı yanlış yapmaktan sakının. Şüphesiz Allah, çok bağışlayan ve ikramı bol olandır.",
+      "dipnot": "Allah, Bedir’de yanlış yapan Müslümanlara zafer verdiğini bildirdikten sonra aldıkları ganimetleri yemelerini de helal kılmıştır. Ganimet, esirlerden alınacak fidyeler (Nisa 4/94, Muhammed 47/4) ve savaş meydanında düşmandan alınan diğer mallardır (Enfâl 8/41).",
+      "roots": [
+        "أكل",
+        "غنم",
+        "حلل",
+        "طيب",
+        "وقي",
+        "أله",
+        "غفر",
+        "رحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Allah, Bedir’de yanlış yapan Müslümanlara zafer verdiğini bildirdikten sonra aldıkları ganimetleri yemelerini de helal kılmıştır. Ganimet, esirlerden alınacak fidyeler ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/94",
+          "targets": [
+            "4:94"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/4",
+          "targets": [
+            "47:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve savaş meydanında düşmandan alınan diğer mallardır ("
+        },
+        {
+          "type": "link",
+          "content": "Enfâl 8/41",
+          "targets": [
+            "8:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:69",
+        "connections": [
+          {
+            "target_coordinate": "4:94",
+            "context": "Nisa 4/94"
+          },
+          {
+            "target_coordinate": "47:4",
+            "context": "Muhammed 47/4"
+          },
+          {
+            "target_coordinate": "8:41",
+            "context": "Enfâl 8/41"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 69. Ayetin Tefsiri\nفَكُلُوا مِمَّا غَنِمْتُمْ حَلَالًا طَيِّبًاۘ وَاتَّقُوا اللّٰهَۜ اِنَّ اللّٰهَ غَفُورٌ رَح۪يمٌ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:71",
+      "text": "يَٓا اَيُّهَا النَّبِيُّ قُلْ لِمَنْ ف۪ٓي اَيْد۪يكُمْ مِنَ الْاَسْرٰٓىۙ اِنْ يَعْلَمِ اللّٰهُ ف۪ي قُلُوبِكُمْ خَيْرًا يُؤْتِكُمْ خَيْرًا مِمَّٓا اُخِذَ مِنْكُمْ وَيَغْفِرْ لَكُمْۜ وَاللّٰهُ غَفُورٌ رَح۪يمٌ",
+      "translation": "Ey Nebi! Elinizde bulunan esirlere de ki: “Allah eğer kalplerinizde bir hayır olduğunu bilirse size sizden alınandan daha iyisini (imanı) verir ve sizi bağışlar. Allah, çok bağışlayan ve ikramı bol olandır.”",
+      "dipnot": "",
+      "roots": [
+        "رود",
+        "خون",
+        "أله",
+        "قبل",
+        "مكن",
+        "علم",
+        "حكم"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "8:71",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 71. Ayetin Tefsiri\nوَاِنْ يُر۪يدُوا خِيَانَتَكَ فَقَدْ خَانُوا اللّٰهَ مِنْ قَبْلُ فَاَمْكَنَ مِنْهُمْۜ وَاللّٰهُ عَل۪يمٌ حَك۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:72",
+      "text": "وَاِنْ يُر۪يدُوا خِيَانَتَكَ فَقَدْ خَانُوا اللّٰهَ مِنْ قَبْلُ فَاَمْكَنَ مِنْهُمْۜ وَاللّٰهُ عَل۪يمٌ حَك۪يمٌ",
+      "translation": "Sana hainlik etmek isterlerse (bil ki) bunlar daha önce Allah’a da hainlik ettiler. Bu yüzden Allah kahredilmelerine imkan verdi. Allah, daima bilen ve kararları doğru olandır.",
+      "dipnot": "Onların Allah’a hainlik etmeleri, ona ortaklar koşup verdiği nimetlere karşı nankörlük etmeleridir (Yunus 10/31-32).",
+      "roots": [
+        "أمن",
+        "هجر",
+        "جهد",
+        "مول",
+        "نفس",
+        "سبل",
+        "أله",
+        "أوي",
+        "نصر",
+        "بعض",
+        "ولي",
+        "شيأ",
+        "دين",
+        "قوم",
+        "بين",
+        "وثق",
+        "عمل",
+        "بصر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Onların Allah’a hainlik etmeleri, ona ortaklar koşup verdiği nimetlere karşı nankörlük etmeleridir ("
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/31-32",
+          "targets": [
+            "10:31",
+            "10:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:72",
+        "connections": [
+          {
+            "target_coordinate": "10:31",
+            "context": "Yunus 10/31-32"
+          },
+          {
+            "target_coordinate": "10:32",
+            "context": "Yunus 10/31-32"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 72. Ayetin Tefsiri\nاِنَّ الَّذ۪ينَ اٰمَنُوا وَهَاجَرُوا وَجَاهَدُوا بِاَمْوَالِهِمْ وَاَنْفُسِهِمْ ف۪ي سَب۪يلِ اللّٰهِ وَالَّذ۪ينَ اٰوَوْا وَنَصَرُٓوا اُو۬لٰٓئِكَ بَعْضُهُمْ اَوْلِيَٓاءُ بَعْضٍۜ وَالَّذ۪ينَ اٰمَنُوا وَلَمْ يُهَاجِرُوا مَا لَكُمْ مِنْ وَلَايَتِهِمْ مِنْ شَيْءٍ حَتّٰى يُهَاجِرُواۚ وَاِنِ اسْتَنْصَرُوكُمْ فِي الدّ۪ينِ فَعَلَيْكُمُ النَّصْرُ اِلَّا عَلٰى قَوْمٍ بَيْنَكُمْ وَبَيْنَهُمْ م۪يثَاقٌۜ وَاللّٰهُ بِمَا تَعْمَلُونَ بَص۪يرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:73",
+      "text": "وَالَّذ۪ينَ كَفَرُوا بَعْضُهُمْ اَوْلِيَٓاءُ بَعْضٍۜ اِلَّا تَفْعَلُوهُ تَكُنْ فِتْنَةٌ فِي الْاَرْضِ وَفَسَادٌ كَب۪يرٌۜ",
+      "translation": "Kâfirlik edenler de birbirlerinin velisidir / koruyup kollayıcısıdır.[1*] Eğer bunu (birbirinizi koruyup kollama görevini) yapmazsanız o yerde fitne / çatışma[2*] ve büyük bir fesat / bozulma ortaya çıkar.[3*]",
+      "dipnot": "[1*] Tevbe 9/67, Casiye 45/19. [2*] Çatışma diye tercüme ettiğimiz “fitne” için bkz Enfâl 8/25. ayetin dipnotu. [3*] Mekke’deki Müslümanlara yönelik yapacağınız ve anlaşma koşullarınızın dışında kalacak her türlü girişim, oradaki Müslümanlara karşı olumlu değil olumsuz sonuçlara sebep olur. Çatışma ve bozulma ortamı oluşur ve Müslümanların katline neden olur.",
+      "roots": [
+        "كفر",
+        "بعض",
+        "ولي",
+        "فعل",
+        "كون",
+        "فتن",
+        "أرض",
+        "فسد",
+        "كبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/67",
+          "targets": [
+            "9:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Casiye 45/19",
+          "targets": [
+            "45:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Çatışma diye tercüme ettiğimiz “fitne” "
+        },
+        {
+          "type": "link",
+          "content": "için bkz Enfâl 8/25",
+          "targets": [
+            "8:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayetin dipnotu. [3*] Mekke’deki Müslümanlara yönelik yapacağınız ve anlaşma koşullarınızın dışında kalacak her türlü girişim, oradaki Müslümanlara karşı olumlu değil olumsuz sonuçlara sebep olur. Çatışma ve bozulma ortamı oluşur ve Müslümanların katline neden olur."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:73",
+        "connections": [
+          {
+            "target_coordinate": "9:67",
+            "context": "Tevbe 9/67"
+          },
+          {
+            "target_coordinate": "45:19",
+            "context": "Casiye 45/19"
+          },
+          {
+            "target_coordinate": "8:25",
+            "context": "için bkz Enfâl 8/25"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 73. Ayetin Tefsiri\nوَالَّذ۪ينَ كَفَرُوا بَعْضُهُمْ اَوْلِيَٓاءُ بَعْضٍۜ اِلَّا تَفْعَلُوهُ تَكُنْ فِتْنَةٌ فِي الْاَرْضِ وَفَسَادٌ كَب۪يرٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:74",
+      "text": "وَالَّذ۪ينَ اٰمَنُوا وَهَاجَرُوا وَجَاهَدُوا ف۪ي سَب۪يلِ اللّٰهِ وَالَّذ۪ينَ اٰوَوْا وَنَصَرُٓوا اُو۬لٰٓئِكَ هُمُ الْمُؤْمِنُونَ حَقًّاۜ لَهُمْ مَغْفِرَةٌ وَرِزْقٌ كَر۪يمٌ",
+      "translation": "İnanıp güvenen, hicret eden ve Allah yolunda cihat edenler /ellerinden geleni yapanlar ile bunları barındırıp yardım edenler var ya işte onlar gerçek müminlerdir. Onlar için bağışlanma ve değerli bir rızık vardır.[*]",
+      "dipnot": "[*] Bakara 2/218, Âl-i İmran 3/195, Nisa 4/100, Tevbe 9/20, 100, Nahl 16/41, 110, Hac 22/58.",
+      "roots": [
+        "أمن",
+        "هجر",
+        "جهد",
+        "سبل",
+        "أله",
+        "أوي",
+        "نصر",
+        "حقق",
+        "غفر",
+        "رزق",
+        "كرم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/218",
+          "targets": [
+            "2:218"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/195",
+          "targets": [
+            "3:195"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/100",
+          "targets": [
+            "4:100"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/20,100",
+          "targets": [
+            "9:20",
+            "9:100"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/41,110",
+          "targets": [
+            "16:41",
+            "16:110"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/58",
+          "targets": [
+            "22:58"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:74",
+        "connections": [
+          {
+            "target_coordinate": "2:218",
+            "context": "Bakara 2/218"
+          },
+          {
+            "target_coordinate": "3:195",
+            "context": "Âl-i İmran 3/195"
+          },
+          {
+            "target_coordinate": "4:100",
+            "context": "Nisa 4/100"
+          },
+          {
+            "target_coordinate": "9:20",
+            "context": "Tevbe 9/20,100"
+          },
+          {
+            "target_coordinate": "9:100",
+            "context": "Tevbe 9/20,100"
+          },
+          {
+            "target_coordinate": "16:41",
+            "context": "Nahl 16/41,110"
+          },
+          {
+            "target_coordinate": "16:110",
+            "context": "Nahl 16/41,110"
+          },
+          {
+            "target_coordinate": "22:58",
+            "context": "Hac 22/58"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 74. Ayetin Tefsiri\nوَالَّذ۪ينَ اٰمَنُوا وَهَاجَرُوا وَجَاهَدُوا ف۪ي سَب۪يلِ اللّٰهِ وَالَّذ۪ينَ اٰوَوْا وَنَصَرُٓوا اُو۬لٰٓئِكَ هُمُ الْمُؤْمِنُونَ حَقًّاۜ لَهُمْ مَغْفِرَةٌ وَرِزْقٌ كَر۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    },
+    {
+      "id": "8:75",
+      "text": "وَالَّذ۪ينَ اٰمَنُوا مِنْ بَعْدُ وَهَاجَرُوا وَجَاهَدُوا مَعَكُمْ فَاُو۬لٰٓئِكَ مِنْكُمْۜ وَاُو۬لُوا الْاَرْحَامِ بَعْضُهُمْ اَوْلٰى بِبَعْضٍ ف۪ي كِتَابِ اللّٰهِۜ اِنَّ اللّٰهَ بِكُلِّ شَيْءٍ عَل۪يمٌ",
+      "translation": "Sonradan inanıp güvenen, hicret eden ve sizinle beraber cihat edenler /ellerinden geleni yapanlar var ya işte onlar da sizdendir. Ama Allah’ın Kitabında (geçen miras konusunda), kan bağı ile bağlı olanların kimisi kimisinden önce gelir.[*] Allah, her şeyi bilir.",
+      "dipnot": "[*] Bütün müminler birbirinin yakınıdır; ancak bu yakınlık mirastan pay sahibi olmak için yeterli değildir. Vârisler mümin olmasalar bile miras, soy yakınlığına göre paylaştırılır ( Nisa 4/7 - 11, 33, 176 ; Ahzab 33/6 ).",
+      "roots": [
+        "أمن",
+        "بعد",
+        "هجر",
+        "جهد",
+        "رحم",
+        "بعض",
+        "ولي",
+        "كتب",
+        "أله",
+        "كلل",
+        "شيأ",
+        "علم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Bütün müminler birbirinin yakınıdır; ancak bu yakınlık mirastan pay sahibi olmak için yeterli değildir. Vârisler mümin olmasalar bile miras, soy yakınlığına göre paylaştırılır ( "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/7-11,33,176",
+          "targets": [
+            "4:7",
+            "4:8",
+            "4:9",
+            "4:10",
+            "4:11",
+            "4:33",
+            "4:176"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/6",
+          "targets": [
+            "33:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "8:75",
+        "connections": [
+          {
+            "target_coordinate": "4:7",
+            "context": "Nisa 4/7-11,33,176"
+          },
+          {
+            "target_coordinate": "4:8",
+            "context": "Nisa 4/7-11,33,176"
+          },
+          {
+            "target_coordinate": "4:9",
+            "context": "Nisa 4/7-11,33,176"
+          },
+          {
+            "target_coordinate": "4:10",
+            "context": "Nisa 4/7-11,33,176"
+          },
+          {
+            "target_coordinate": "4:11",
+            "context": "Nisa 4/7-11,33,176"
+          },
+          {
+            "target_coordinate": "4:33",
+            "context": "Nisa 4/7-11,33,176"
+          },
+          {
+            "target_coordinate": "4:176",
+            "context": "Nisa 4/7-11,33,176"
+          },
+          {
+            "target_coordinate": "33:6",
+            "context": "Ahzab 33/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Enfâl Suresi 75. Ayetin Tefsiri\nوَالَّذ۪ينَ اٰمَنُوا مِنْ بَعْدُ وَهَاجَرُوا وَجَاهَدُوا مَعَكُمْ فَاُو۬لٰٓئِكَ مِنْكُمْۜ وَاُو۬لُوا الْاَرْحَامِ بَعْضُهُمْ اَوْلٰى بِبَعْضٍ ف۪ي كِتَابِ اللّٰهِۜ اِنَّ اللّٰهَ بِكُلِّ شَيْءٍ عَل۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/8.mp3"
+    }
+  ]
+}

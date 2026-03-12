@@ -1,0 +1,1070 @@
+{
+  "nodes": [
+    {
+      "id": "90:1",
+      "text": "لَٓا اُقْسِمُ بِهٰذَا الْبَلَدِۙ",
+      "translation": "Hayır, bu şehre (Mekke’ye) yemin ederim,",
+      "dipnot": "Tîn 95/3.",
+      "roots": [
+        "قسم",
+        "بلد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Tîn 95/3",
+          "targets": [
+            "95:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:1",
+        "connections": [
+          {
+            "target_coordinate": "95:3",
+            "context": "Tîn 95/3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 1. Ayetin Tefsiri\nلَٓا اُقْسِمُ بِهٰذَا الْبَلَدِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:2",
+      "text": "وَاَنْتَ حِلٌّ بِهٰذَا الْبَلَدِۙ",
+      "translation": "(şimdi) sen bu şehirde güvende olmasan bile!",
+      "dipnot": "“Hill (الحل)”, canı helal (el-Ayn) yani can güvenliği yok, anlamındadır. Mekke herkes için can ve mal güvenliğinin olduğu bir yer iken (Bakara 2/125, İbrahim 14/35, Kasas 28/57, Ankebut 29/67) Muhammed aleyhisselamı hapsetme, öldürme veya sürgün etme konusunda Mekkeli müşrikler kararlıydı (Enfal 8/30). Ayet bu durumu anlatmaktadır.",
+      "roots": [
+        "حلل",
+        "بلد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“Hill (الحل)”, canı helal (el-Ayn) yani can güvenliği yok, anlamındadır. Mekke herkes için can ve mal güvenliğinin olduğu bir yer iken ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/125",
+          "targets": [
+            "2:125"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/35",
+          "targets": [
+            "14:35"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/57",
+          "targets": [
+            "28:57"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/67",
+          "targets": [
+            "29:67"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Muhammed aleyhisselamı hapsetme, öldürme veya sürgün etme konusunda Mekkeli müşrikler kararlıydı ("
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/30",
+          "targets": [
+            "8:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ayet bu durumu anlatmaktadır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:2",
+        "connections": [
+          {
+            "target_coordinate": "2:125",
+            "context": "Bakara 2/125"
+          },
+          {
+            "target_coordinate": "14:35",
+            "context": "İbrahim 14/35"
+          },
+          {
+            "target_coordinate": "28:57",
+            "context": "Kasas 28/57"
+          },
+          {
+            "target_coordinate": "29:67",
+            "context": "Ankebut 29/67"
+          },
+          {
+            "target_coordinate": "8:30",
+            "context": "Enfal 8/30"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 2. Ayetin Tefsiri\nوَاَنْتَ حِلٌّ بِهٰذَا الْبَلَدِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:3",
+      "text": "وَوَالِدٍ وَمَا وَلَدَۙ",
+      "translation": "Çocuk sahibi olana[1*] ve çocuğuna da yemin olsun ki[2*]",
+      "dipnot": "Âyette geçen “vâlid (وَالِد)” kelimesi Kur’an’da  tekil formda ana ya da babadan herhangi birini anlatmak için (Lokman 31/33), tesniye formda da anne ve babanın her ikisini ifade etmek için kullanılmıştır (Bakara 2/83, Nisa 4/135, İsra 17/23). Öyleyse vâlid; “çocuk sahibi olan” demektir. Her insanın çocuğu olmayabilir; ancak her insan bir başkasının çocuğudur. Öyleyse, ayette tüm insanlara yemin edilmektedir.",
+      "roots": [
+        "ولد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Âyette geçen “vâlid (وَالِد)” kelimesi Kur’an’da  tekil formda ana ya da babadan herhangi birini anlatmak için ("
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/33",
+          "targets": [
+            "31:33"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), tesniye formda da anne ve babanın her ikisini ifade etmek için kullanılmıştır ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/83",
+          "targets": [
+            "2:83"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/135",
+          "targets": [
+            "4:135"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/23",
+          "targets": [
+            "17:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Öyleyse vâlid; “çocuk sahibi olan” demektir. Her insanın çocuğu olmayabilir; ancak her insan bir başkasının çocuğudur. Öyleyse, ayette tüm insanlara yemin edilmektedir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:3",
+        "connections": [
+          {
+            "target_coordinate": "31:33",
+            "context": "Lokman 31/33"
+          },
+          {
+            "target_coordinate": "2:83",
+            "context": "Bakara 2/83"
+          },
+          {
+            "target_coordinate": "4:135",
+            "context": "Nisa 4/135"
+          },
+          {
+            "target_coordinate": "17:23",
+            "context": "İsra 17/23"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 3. Ayetin Tefsiri\nوَوَالِدٍ وَمَا وَلَدَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:4",
+      "text": "لَقَدْ خَلَقْنَا الْاِنْسَانَ ف۪ي كَبَدٍۜ",
+      "translation": "kesinlikle biz insanı zorluklara katlanacak güçte yarattık.",
+      "dipnot": "Allah insanı en güzel donanımda yaratmış (Tîn 95/4) ve kimseye gücünün üstünde bir sorumluluk yüklememiştir (Bakara 2/286 En'âm 6/152). Demek ki her insanın karşılaştığı zorluklarla mücadele edecek potansiyeli mevcuttur.",
+      "roots": [
+        "خلق",
+        "أنس",
+        "كبد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Allah insanı en güzel donanımda yaratmış ("
+        },
+        {
+          "type": "link",
+          "content": "Tîn 95/4",
+          "targets": [
+            "95:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve kimseye gücünün üstünde bir sorumluluk yüklememiştir ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/286",
+          "targets": [
+            "2:286"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "En'âm 6/152",
+          "targets": [
+            "6:152"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Demek ki her insanın karşılaştığı zorluklarla mücadele edecek potansiyeli mevcuttur."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:4",
+        "connections": [
+          {
+            "target_coordinate": "95:4",
+            "context": "Tîn 95/4"
+          },
+          {
+            "target_coordinate": "2:286",
+            "context": "Bakara 2/286"
+          },
+          {
+            "target_coordinate": "6:152",
+            "context": "En'âm 6/152"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 4. Ayetin Tefsiri\nلَقَدْ خَلَقْنَا الْاِنْسَانَ ف۪ي كَبَدٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:5",
+      "text": "اَيَحْسَبُ اَنْ لَنْ يَقْدِرَ عَلَيْهِ اَحَدٌۢ",
+      "translation": "(Böyle yarattık diye) o, kimsenin kendisine asla güç yetiremeyeceğini mi sanıyor!",
+      "dipnot": "Alak 96/6-7.",
+      "roots": [
+        "حسب",
+        "قدر",
+        "أحد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Alak 96/6-7",
+          "targets": [
+            "96:6",
+            "96:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:5",
+        "connections": [
+          {
+            "target_coordinate": "96:6",
+            "context": "Alak 96/6-7"
+          },
+          {
+            "target_coordinate": "96:7",
+            "context": "Alak 96/6-7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 5. Ayetin Tefsiri\nاَيَحْسَبُ اَنْ لَنْ يَقْدِرَ عَلَيْهِ اَحَدٌۢ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:6",
+      "text": "يَقُولُ اَهْلَكْتُ مَالًا لُبَدًاۜ",
+      "translation": "“Yığın yığın mal tükettim!”[*] diyor.",
+      "dipnot": "Âl-i imran 3/116-117, Nisa 4/38.",
+      "roots": [
+        "قول",
+        "هلك",
+        "مول",
+        "لبد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i imran 3/116-117",
+          "targets": [
+            "3:116",
+            "3:117"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/38",
+          "targets": [
+            "4:38"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:6",
+        "connections": [
+          {
+            "target_coordinate": "3:116",
+            "context": "Âl-i imran 3/116-117"
+          },
+          {
+            "target_coordinate": "3:117",
+            "context": "Âl-i imran 3/116-117"
+          },
+          {
+            "target_coordinate": "4:38",
+            "context": "Nisa 4/38"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 6. Ayetin Tefsiri\nيَقُولُ اَهْلَكْتُ مَالًا لُبَدًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:7",
+      "text": "اَيَحْسَبُ اَنْ لَمْ يَرَهُٓ اَحَدٌۜ",
+      "translation": "Kimsenin onu görmediğini mi sanıyor!",
+      "dipnot": "Yunus 10/61, Hadid 57/4, Mücadele 58/7.",
+      "roots": [
+        "حسب",
+        "رأي",
+        "أحد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/61",
+          "targets": [
+            "10:61"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/4",
+          "targets": [
+            "57:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mücadele 58/7",
+          "targets": [
+            "58:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:7",
+        "connections": [
+          {
+            "target_coordinate": "10:61",
+            "context": "Yunus 10/61"
+          },
+          {
+            "target_coordinate": "57:4",
+            "context": "Hadid 57/4"
+          },
+          {
+            "target_coordinate": "58:7",
+            "context": "Mücadele 58/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 7. Ayetin Tefsiri\nاَيَحْسَبُ اَنْ لَمْ يَرَهُٓ اَحَدٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:8",
+      "text": "اَلَمْ نَجْعَلْ لَهُ عَيْنَيْنِۙ",
+      "translation": "Ona iki göz vermedik mi?",
+      "dipnot": "",
+      "roots": [
+        "جعل",
+        "عين"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "90:8",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 8. Ayetin Tefsiri\nاَلَمْ نَجْعَلْ لَهُ عَيْنَيْنِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:9",
+      "text": "وَلِسَانًا وَشَفَتَيْنِۙ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "لسن",
+        "شفه"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "90:9",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 9. Ayetin Tefsiri\nوَلِسَانًا وَشَفَتَيْنِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:10",
+      "text": "وَهَدَيْنَاهُ النَّجْدَيْنِۚ",
+      "translation": "Ona (biri hak biri bâtıl olan) iki yolu da gösterdik.",
+      "dipnot": "İnsan 76/3.",
+      "roots": [
+        "هدي",
+        "نجد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İnsan 76/3",
+          "targets": [
+            "76:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:10",
+        "connections": [
+          {
+            "target_coordinate": "76:3",
+            "context": "İnsan 76/3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 10. Ayetin Tefsiri\nوَهَدَيْنَاهُ النَّجْدَيْنِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:11",
+      "text": "فَلَا اقْتَحَمَ الْعَقَبَةَۘ",
+      "translation": "Ama o, sarp yokuşu göze almadı.",
+      "dipnot": "",
+      "roots": [
+        "قحم",
+        "عقب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "90:11",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 11. Ayetin Tefsiri\nفَلَا اقْتَحَمَ الْعَقَبَةَۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:12",
+      "text": "وَمَٓا اَدْرٰيكَ مَا الْعَقَبَةُۜ",
+      "translation": "Sarp yokuşun ne olduğunu sana kim bildirebilir?",
+      "dipnot": "",
+      "roots": [
+        "دري",
+        "عقب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "90:12",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 12. Ayetin Tefsiri\nوَمَٓا اَدْرٰيكَ مَا الْعَقَبَةُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:13",
+      "text": "فَكُّ رَقَبَةٍۙ",
+      "translation": "O, boyunduruk altında olan birini kurtarmaktır.",
+      "dipnot": "",
+      "roots": [
+        "فكك",
+        "رقب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "90:13",
+        "connections": []
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:14",
+      "text": "اَوْ اِطْعَامٌ ف۪ي يَوْمٍ ذ۪ي مَسْغَبَةٍۙ",
+      "translation": "Veya kıtlık gününde yedirmektir,",
+      "dipnot": "",
+      "roots": [
+        "طعم",
+        "يوم",
+        "سغب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "90:14",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 14. Ayetin Tefsiri\nاَوْ اِطْعَامٌ ف۪ي يَوْمٍ ذ۪ي مَسْغَبَةٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:15",
+      "text": "يَت۪يمًا ذَا مَقْرَبَةٍۙ",
+      "translation": "yakınlarından bir yetimi",
+      "dipnot": "Türkçede babası olmayan çocuğa yetim; annesi veya hem annesi hem babası olmayan çocuğa öksüz denir. Kur’an’da bunların tamamına yetim denir. Bunun bir örneği Nisa 4/6. ayettir. Orada sözü edilen yetimler kapsamına, bunların hepsi girer.",
+      "roots": [
+        "يتم",
+        "قرب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Türkçede babası olmayan çocuğa yetim; annesi veya hem annesi hem babası olmayan çocuğa öksüz denir. Kur’an’da bunların tamamına yetim denir. "
+        },
+        {
+          "type": "link",
+          "content": "Bunun bir örneği Nisa 4/6",
+          "targets": [
+            "4:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayettir. Orada sözü edilen yetimler kapsamına, bunların hepsi girer."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:15",
+        "connections": [
+          {
+            "target_coordinate": "4:6",
+            "context": "Bunun bir örneği Nisa 4/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 15. Ayetin Tefsiri\nيَت۪يمًا ذَا مَقْرَبَةٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:16",
+      "text": "اَوْ مِسْك۪ينًا ذَا مَتْرَبَةٍۜ",
+      "translation": "ya da toz toprak içinde (sokakta) kalmış bir çaresizi.",
+      "dipnot": "Bakara 2/177, Nisa 4/36, Fecr 89/17 - 20.",
+      "roots": [
+        "سكن",
+        "ترب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/177",
+          "targets": [
+            "2:177"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/36",
+          "targets": [
+            "4:36"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/17-20",
+          "targets": [
+            "89:17",
+            "89:18",
+            "89:19",
+            "89:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:16",
+        "connections": [
+          {
+            "target_coordinate": "2:177",
+            "context": "Bakara 2/177"
+          },
+          {
+            "target_coordinate": "4:36",
+            "context": "Nisa 4/36"
+          },
+          {
+            "target_coordinate": "89:17",
+            "context": "Fecr 89/17-20"
+          },
+          {
+            "target_coordinate": "89:18",
+            "context": "Fecr 89/17-20"
+          },
+          {
+            "target_coordinate": "89:19",
+            "context": "Fecr 89/17-20"
+          },
+          {
+            "target_coordinate": "89:20",
+            "context": "Fecr 89/17-20"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 16. Ayetin Tefsiri\nاَوْ مِسْك۪ينًا ذَا مَتْرَبَةٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:17",
+      "text": "ثُمَّ كَانَ مِنَ الَّذ۪ينَ اٰمَنُوا وَتَوَاصَوْا بِالصَّبْرِ وَتَوَاصَوْا بِالْمَرْحَمَةِۜ",
+      "translation": "Bunların yanısıra, inanıp güvenen, birbirlerine sabrı /duruşunu bozmamayı tembih eden ve merhametli olmayı tembih eden kişilerden olmaktır.",
+      "dipnot": "[1*] Ayetteki “(ثمَ) sümme” edatına “bunların yanısıra” anlamı verilmiştir. Çünkü “sümme” dört türlü kullanımı olan bir edattır. Bunlardan biri, sıralama veya öncelik-sonralık kastedilmeksizin mutlak beraberliği ifade eder (Mu’cemu'l-Lugati'l-Arabiyyeti'l-Muasıra; Yunus 10/103; Hud 11/1, 3, 52 ). [2*] Asr 103/1 - 3.",
+      "roots": [
+        "كون",
+        "أمن",
+        "وصي",
+        "صبر",
+        "رحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Ayetteki “(ثمَ) sümme” edatına “bunların yanısıra” anlamı verilmiştir. Çünkü “sümme” dört türlü kullanımı olan bir edattır. Bunlardan biri, sıralama veya öncelik-sonralık kastedilmeksizin mutlak beraberliği ifade eder (Mu’cemu'l-Lugati'l-Arabiyyeti'l-Muasıra; "
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/103",
+          "targets": [
+            "10:103"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/1,3,52",
+          "targets": [
+            "11:1",
+            "11:3",
+            "11:52"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Asr 103/1-3",
+          "targets": [
+            "103:1",
+            "103:2",
+            "103:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:17",
+        "connections": [
+          {
+            "target_coordinate": "10:103",
+            "context": "Yunus 10/103"
+          },
+          {
+            "target_coordinate": "11:1",
+            "context": "Hud 11/1,3,52"
+          },
+          {
+            "target_coordinate": "11:3",
+            "context": "Hud 11/1,3,52"
+          },
+          {
+            "target_coordinate": "11:52",
+            "context": "Hud 11/1,3,52"
+          },
+          {
+            "target_coordinate": "103:1",
+            "context": "Asr 103/1-3"
+          },
+          {
+            "target_coordinate": "103:2",
+            "context": "Asr 103/1-3"
+          },
+          {
+            "target_coordinate": "103:3",
+            "context": "Asr 103/1-3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 17. Ayetin Tefsiri\nثُمَّ كَانَ مِنَ الَّذ۪ينَ اٰمَنُوا وَتَوَاصَوْا بِالصَّبْرِ وَتَوَاصَوْا بِالْمَرْحَمَةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:18",
+      "text": "اُو۬لٰٓئِكَ اَصْحَابُ الْمَيْمَنَةِۜ",
+      "translation": "İşte onlar, (mahşerde) iyi durumda olacak olanlardır.",
+      "dipnot": "Vakıa 56/8.",
+      "roots": [
+        "صحب",
+        "يمن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/8",
+          "targets": [
+            "56:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:18",
+        "connections": [
+          {
+            "target_coordinate": "56:8",
+            "context": "Vakıa 56/8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 18. Ayetin Tefsiri\nاُو۬لٰٓئِكَ اَصْحَابُ الْمَيْمَنَةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:19",
+      "text": "وَالَّذ۪ينَ كَفَرُوا بِاٰيَاتِنَا هُمْ اَصْحَابُ الْمَشْـَٔمَةِۜ",
+      "translation": "Ayetlerimiz karşısında kafirlik eden/onları görmezlikte direnenler de zor durumda olacak olanlardır.",
+      "dipnot": "Vakıa 56/9, 41 - 56.",
+      "roots": [
+        "كفر",
+        "أيي",
+        "صحب",
+        "شأم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Vakıa 56/9,41-56",
+          "targets": [
+            "56:9",
+            "56:41",
+            "56:42",
+            "56:43",
+            "56:44",
+            "56:45",
+            "56:46",
+            "56:47",
+            "56:48",
+            "56:49",
+            "56:50",
+            "56:51",
+            "56:52",
+            "56:53",
+            "56:54",
+            "56:55",
+            "56:56"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:19",
+        "connections": [
+          {
+            "target_coordinate": "56:9",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:41",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:42",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:43",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:44",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:45",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:46",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:47",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:48",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:49",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:50",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:51",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:52",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:53",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:54",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:55",
+            "context": "Vakıa 56/9,41-56"
+          },
+          {
+            "target_coordinate": "56:56",
+            "context": "Vakıa 56/9,41-56"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 19. Ayetin Tefsiri\nوَالَّذ۪ينَ كَفَرُوا بِاٰيَاتِنَا هُمْ اَصْحَابُ الْمَشْـَٔمَةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    },
+    {
+      "id": "90:20",
+      "text": "عَلَيْهِمْ نَارٌ مُؤْصَدَةٌ",
+      "translation": "Onların üzerine kapatılmış bir ateş vardır.",
+      "dipnot": "Kehf 18/29, Furkan 25/13, Hümeze 104/5 - 9.",
+      "roots": [
+        "نور",
+        "وصد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kehf 18/29",
+          "targets": [
+            "18:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/13",
+          "targets": [
+            "25:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hümeze 104/5-9",
+          "targets": [
+            "104:5",
+            "104:6",
+            "104:7",
+            "104:8",
+            "104:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "90:20",
+        "connections": [
+          {
+            "target_coordinate": "18:29",
+            "context": "Kehf 18/29"
+          },
+          {
+            "target_coordinate": "25:13",
+            "context": "Furkan 25/13"
+          },
+          {
+            "target_coordinate": "104:5",
+            "context": "Hümeze 104/5-9"
+          },
+          {
+            "target_coordinate": "104:6",
+            "context": "Hümeze 104/5-9"
+          },
+          {
+            "target_coordinate": "104:7",
+            "context": "Hümeze 104/5-9"
+          },
+          {
+            "target_coordinate": "104:8",
+            "context": "Hümeze 104/5-9"
+          },
+          {
+            "target_coordinate": "104:9",
+            "context": "Hümeze 104/5-9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Beled Suresi 20. Ayetin Tefsiri\nعَلَيْهِمْ نَارٌ مُؤْصَدَةٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/90.mp3"
+    }
+  ]
+}

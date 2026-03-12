@@ -1,0 +1,5145 @@
+{
+  "nodes": [
+    {
+      "id": "54:1",
+      "text": "اِقْتَرَبَتِ السَّاعَةُ وَانْشَقَّ الْقَمَرُ",
+      "translation": "O saat /yeniden diriliş saati yaklaştı[1*]. Her şey ayan beyan ortaya çıktı[2*].",
+      "dipnot": "[1*] Enbiya 21/1, 97, Necm 53/57. [2*] İnşikak’ul-kamer (نشقاق القمر) sözünün deyim olarak anlamı, bir şeyin ayan beyan ortaya çıkmasıdır (Müfredat شق md.). Muhammed aleyhisselamın, ayı yarma mucizesi gösterdiğine inananlar, kelime tercümesi yaparak bu ayete “Ay yarıldı” şeklinde motamot anlam vermişlerdir. Böyle bir mucize, Kur’an bütünlüğüne aykırıdır; çünkü Allah Teala Muhammed aleyhisselama hissî mucizeler vermediğini, ona verilen tek mucizenin Kur’an olduğunu bildirmiştir ( İsra 17/59, Ankebut 29/50 - 51 ). Ay’ın kıyamet alameti olarak yarılacağını söyleyenler de bulunmaktadır (DİA, İnşikak’ul-kamer). Halbuki kıyamet, ansızın gelecektir; zaten son nebinin gelmesi ile ( Ahzab 33/40 ) kıyametin bütün alametleri oluşmuştur ( Muhammed 47/18 ).",
+      "roots": [
+        "قرب",
+        "سوع",
+        "شقق",
+        "قمر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/1,97",
+          "targets": [
+            "21:1",
+            "21:97"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Necm 53/57",
+          "targets": [
+            "53:57"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] İnşikak’ul-kamer (نشقاق القمر) sözünün deyim olarak anlamı, bir şeyin ayan beyan ortaya çıkmasıdır (Müfredat شق md.). Muhammed aleyhisselamın, ayı yarma mucizesi gösterdiğine inananlar, kelime tercümesi yaparak bu ayete “Ay yarıldı” şeklinde motamot anlam vermişlerdir. Böyle bir mucize, Kur’an bütünlüğüne aykırıdır; çünkü Allah Teala Muhammed aleyhisselama hissî mucizeler vermediğini, ona verilen tek mucizenin Kur’an olduğunu bildirmiştir ( "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/59",
+          "targets": [
+            "17:59"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/50-51",
+          "targets": [
+            "29:50",
+            "29:51"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ay’ın kıyamet alameti olarak yarılacağını söyleyenler de bulunmaktadır (DİA, İnşikak’ul-kamer). Halbuki kıyamet, ansızın gelecektir; zaten son nebinin gelmesi ile ( "
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/40",
+          "targets": [
+            "33:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") kıyametin bütün alametleri oluşmuştur ( "
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/18",
+          "targets": [
+            "47:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:1",
+        "connections": [
+          {
+            "target_coordinate": "21:1",
+            "context": "Enbiya 21/1,97"
+          },
+          {
+            "target_coordinate": "21:97",
+            "context": "Enbiya 21/1,97"
+          },
+          {
+            "target_coordinate": "53:57",
+            "context": "Necm 53/57"
+          },
+          {
+            "target_coordinate": "17:59",
+            "context": "İsra 17/59"
+          },
+          {
+            "target_coordinate": "29:50",
+            "context": "Ankebut 29/50-51"
+          },
+          {
+            "target_coordinate": "29:51",
+            "context": "Ankebut 29/50-51"
+          },
+          {
+            "target_coordinate": "33:40",
+            "context": "Ahzab 33/40"
+          },
+          {
+            "target_coordinate": "47:18",
+            "context": "Muhammed 47/18"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 1. Ayetin Tefsiri\nاِقْتَرَبَتِ السَّاعَةُ وَانْشَقَّ الْقَمَرُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:2",
+      "text": "وَاِنْ يَرَوْا اٰيَةً يُعْرِضُوا وَيَقُولُوا سِحْرٌ مُسْتَمِرٌّ",
+      "translation": "(Kafirlik edenler) Ne zaman bir ayet görseler yüz çevirir[1*] ve “Süregelen bir sihir daha!” derler[2*].",
+      "dipnot": "[1*] En’am 6/4, 25, A’raf 7/146, Enbiya 21/6, Şuara 26/5, Yasin 36/46, Tur 52/44. [2*] En’am 6/7, Sebe 34/43, Saffat 37/14 - 15, Zuhruf 43/30, Ahkaf 46/7.",
+      "roots": [
+        "رأي",
+        "أيي",
+        "عرض",
+        "قول",
+        "سحر",
+        "مرر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/4,25",
+          "targets": [
+            "6:4",
+            "6:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/146",
+          "targets": [
+            "7:146"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/6",
+          "targets": [
+            "21:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/5",
+          "targets": [
+            "26:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/46",
+          "targets": [
+            "36:46"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/44",
+          "targets": [
+            "52:44"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/7",
+          "targets": [
+            "6:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/43",
+          "targets": [
+            "34:43"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/14-15",
+          "targets": [
+            "37:14",
+            "37:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/30",
+          "targets": [
+            "43:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/7",
+          "targets": [
+            "46:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:2",
+        "connections": [
+          {
+            "target_coordinate": "6:4",
+            "context": "am 6/4,25"
+          },
+          {
+            "target_coordinate": "6:25",
+            "context": "am 6/4,25"
+          },
+          {
+            "target_coordinate": "7:146",
+            "context": "raf 7/146"
+          },
+          {
+            "target_coordinate": "21:6",
+            "context": "Enbiya 21/6"
+          },
+          {
+            "target_coordinate": "26:5",
+            "context": "Şuara 26/5"
+          },
+          {
+            "target_coordinate": "36:46",
+            "context": "Yasin 36/46"
+          },
+          {
+            "target_coordinate": "52:44",
+            "context": "Tur 52/44"
+          },
+          {
+            "target_coordinate": "6:7",
+            "context": "am 6/7"
+          },
+          {
+            "target_coordinate": "34:43",
+            "context": "Sebe 34/43"
+          },
+          {
+            "target_coordinate": "37:14",
+            "context": "Saffat 37/14-15"
+          },
+          {
+            "target_coordinate": "37:15",
+            "context": "Saffat 37/14-15"
+          },
+          {
+            "target_coordinate": "43:30",
+            "context": "Zuhruf 43/30"
+          },
+          {
+            "target_coordinate": "46:7",
+            "context": "Ahkaf 46/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 2. Ayetin Tefsiri\nوَاِنْ يَرَوْا اٰيَةً يُعْرِضُوا وَيَقُولُوا سِحْرٌ مُسْتَمِرٌّ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:3",
+      "text": "وَكَذَّبُوا وَاتَّبَعُٓوا اَهْوَٓاءَهُمْ وَكُلُّ اَمْرٍ مُسْتَقِرٌّ",
+      "translation": "Onlar yalana sarıldı ve arzularının peşine düştüler[1*]. Ama her iş bir yere kadardır[2*].",
+      "dipnot": "[1*] Şuara 26/5 - 6, Rum 30/29, Muhammed 47/14, Kaf 50/5. [2*] En’am 6/67.",
+      "roots": [
+        "كذب",
+        "تبع",
+        "هوي",
+        "كلل",
+        "أمر",
+        "قرر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/5-6",
+          "targets": [
+            "26:5",
+            "26:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/29",
+          "targets": [
+            "30:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/14",
+          "targets": [
+            "47:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/5",
+          "targets": [
+            "50:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/67",
+          "targets": [
+            "6:67"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:3",
+        "connections": [
+          {
+            "target_coordinate": "26:5",
+            "context": "Şuara 26/5-6"
+          },
+          {
+            "target_coordinate": "26:6",
+            "context": "Şuara 26/5-6"
+          },
+          {
+            "target_coordinate": "30:29",
+            "context": "Rum 30/29"
+          },
+          {
+            "target_coordinate": "47:14",
+            "context": "Muhammed 47/14"
+          },
+          {
+            "target_coordinate": "50:5",
+            "context": "Kaf 50/5"
+          },
+          {
+            "target_coordinate": "6:67",
+            "context": "am 6/67"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 3. Ayetin Tefsiri\nوَكَذَّبُوا وَاتَّبَعُٓوا اَهْوَٓاءَهُمْ وَكُلُّ اَمْرٍ مُسْتَقِرٌّ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:4",
+      "text": "وَلَقَدْ جَٓاءَهُمْ مِنَ الْاَنْبَٓاءِ مَا ف۪يهِ مُزْدَجَرٌۙ",
+      "translation": "Halbuki onlara, içinde (görevinden) engellenen kişinin de (Nuh’un da)[1*] anlatıldığı nice haberler geldi[2*],",
+      "dipnot": "[1*] Bu kişinin Nuh aleyhisselam olduğu Kamer 54/9. ayette açıklanmıştır. [2*] Tevbe 9/70, İbrahim 14/9, Necm 53/36 - 54, Teğabün 64/5 - 7.",
+      "roots": [
+        "جيأ",
+        "نبأ",
+        "زجر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Bu kişinin Nuh aleyhisselam olduğu Kamer 54/9",
+          "targets": [
+            "54:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette açıklanmıştır. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/70",
+          "targets": [
+            "9:70"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/9",
+          "targets": [
+            "14:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Necm 53/36-54",
+          "targets": [
+            "53:36",
+            "53:37",
+            "53:38",
+            "53:39",
+            "53:40",
+            "53:41",
+            "53:42",
+            "53:43",
+            "53:44",
+            "53:45",
+            "53:46",
+            "53:47",
+            "53:48",
+            "53:49",
+            "53:50",
+            "53:51",
+            "53:52",
+            "53:53",
+            "53:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/5-7",
+          "targets": [
+            "64:5",
+            "64:6",
+            "64:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:4",
+        "connections": [
+          {
+            "target_coordinate": "54:9",
+            "context": "Bu kişinin Nuh aleyhisselam olduğu Kamer 54/9"
+          },
+          {
+            "target_coordinate": "9:70",
+            "context": "Tevbe 9/70"
+          },
+          {
+            "target_coordinate": "14:9",
+            "context": "İbrahim 14/9"
+          },
+          {
+            "target_coordinate": "53:36",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:37",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:38",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:39",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:40",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:41",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:42",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:43",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:44",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:45",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:46",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:47",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:48",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:49",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:50",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:51",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:52",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:53",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "53:54",
+            "context": "Necm 53/36-54"
+          },
+          {
+            "target_coordinate": "64:5",
+            "context": "Teğabün 64/5-7"
+          },
+          {
+            "target_coordinate": "64:6",
+            "context": "Teğabün 64/5-7"
+          },
+          {
+            "target_coordinate": "64:7",
+            "context": "Teğabün 64/5-7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 4. Ayetin Tefsiri\nوَلَقَدْ جَٓاءَهُمْ مِنَ الْاَنْبَٓاءِ مَا ف۪يهِ مُزْدَجَرٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:5",
+      "text": "حِكْمَةٌ بَالِغَةٌ فَمَا تُغْنِ النُّذُرُۙ",
+      "translation": "son derece doğru hükümler (geldi)[1*]. Ama uyarılar bir işe yaramıyor[2*].",
+      "dipnot": "[1*]",
+      "roots": [
+        "حكم",
+        "بلغ",
+        "غني",
+        "نذر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 5. Ayetin Tefsiri\nحِكْمَةٌ بَالِغَةٌ فَمَا تُغْنِ النُّذُرُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:6",
+      "text": "فَتَوَلَّ عَنْهُمْۢ يَوْمَ يَدْعُ الدَّاعِ اِلٰى شَيْءٍ نُكُرٍۙ",
+      "translation": "Artık onlardan yüz çevir[1*]. Çağırıcının, görülmedik bir şeye çağıracağı gün[2*],",
+      "dipnot": "[1*] Saffat 37/174, 178, Zariyat 51/54. [2*] İsra 17/52, Kaf 50/41.",
+      "roots": [
+        "ولي",
+        "يوم",
+        "دعو",
+        "شيأ",
+        "نكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/174,178",
+          "targets": [
+            "37:174",
+            "37:178"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/54",
+          "targets": [
+            "51:54"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/52",
+          "targets": [
+            "17:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/41",
+          "targets": [
+            "50:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:6",
+        "connections": [
+          {
+            "target_coordinate": "37:174",
+            "context": "Saffat 37/174,178"
+          },
+          {
+            "target_coordinate": "37:178",
+            "context": "Saffat 37/174,178"
+          },
+          {
+            "target_coordinate": "51:54",
+            "context": "Zariyat 51/54"
+          },
+          {
+            "target_coordinate": "17:52",
+            "context": "İsra 17/52"
+          },
+          {
+            "target_coordinate": "50:41",
+            "context": "Kaf 50/41"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 6. Ayetin Tefsiri\nفَتَوَلَّ عَنْهُمْۢ يَوْمَ يَدْعُ الدَّاعِ اِلٰى شَيْءٍ نُكُرٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:7",
+      "text": "خُشَّعًا اَبْصَارُهُمْ يَخْرُجُونَ مِنَ الْاَجْدَاثِ كَاَنَّهُمْ جَرَادٌ مُنْتَشِرٌۙ",
+      "translation": "bakışları öne eğik vaziyette kabirlerinden çıkacaklar, etrafa yayılan çekirgeler gibi olacaklar[*],",
+      "dipnot": "[*] Enbiya 21/97, Yasin 36/51 - 52, Kalem 68/42 - 43, Mearic 70/42 - 44, Naziat 79/6 - 9.",
+      "roots": [
+        "خشع",
+        "بصر",
+        "خرج",
+        "جدث",
+        "جرد",
+        "نشر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/97",
+          "targets": [
+            "21:97"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/51-52",
+          "targets": [
+            "36:51",
+            "36:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/42-43",
+          "targets": [
+            "68:42",
+            "68:43"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/42-44",
+          "targets": [
+            "70:42",
+            "70:43",
+            "70:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziat 79/6-9",
+          "targets": [
+            "79:6",
+            "79:7",
+            "79:8",
+            "79:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:7",
+        "connections": [
+          {
+            "target_coordinate": "21:97",
+            "context": "Enbiya 21/97"
+          },
+          {
+            "target_coordinate": "36:51",
+            "context": "Yasin 36/51-52"
+          },
+          {
+            "target_coordinate": "36:52",
+            "context": "Yasin 36/51-52"
+          },
+          {
+            "target_coordinate": "68:42",
+            "context": "Kalem 68/42-43"
+          },
+          {
+            "target_coordinate": "68:43",
+            "context": "Kalem 68/42-43"
+          },
+          {
+            "target_coordinate": "70:42",
+            "context": "Mearic 70/42-44"
+          },
+          {
+            "target_coordinate": "70:43",
+            "context": "Mearic 70/42-44"
+          },
+          {
+            "target_coordinate": "70:44",
+            "context": "Mearic 70/42-44"
+          },
+          {
+            "target_coordinate": "79:6",
+            "context": "Naziat 79/6-9"
+          },
+          {
+            "target_coordinate": "79:7",
+            "context": "Naziat 79/6-9"
+          },
+          {
+            "target_coordinate": "79:8",
+            "context": "Naziat 79/6-9"
+          },
+          {
+            "target_coordinate": "79:9",
+            "context": "Naziat 79/6-9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 7. Ayetin Tefsiri\nخُشَّعًا اَبْصَارُهُمْ يَخْرُجُونَ مِنَ الْاَجْدَاثِ كَاَنَّهُمْ جَرَادٌ مُنْتَشِرٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:8",
+      "text": "مُهْطِع۪ينَ اِلَى الدَّاعِۜ يَقُولُ الْكَافِرُونَ هٰذَا يَوْمٌ عَسِرٌ",
+      "translation": "çağırıcıya doğru hızla koşacaklardır[1*]. O kafirler şöyle diyecekler: “Bu pek zor bir gün[2*]!”",
+      "dipnot": "[1*] İbrahim 14/42 - 43, Taha 20/108. [2*] Furkan 25/26, Saffat 37/19 - 21, Müddessir 74/8 - 10, Nebe 78/40.",
+      "roots": [
+        "هطع",
+        "دعو",
+        "قول",
+        "كفر",
+        "يوم",
+        "عسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/42-43",
+          "targets": [
+            "14:42",
+            "14:43"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/108",
+          "targets": [
+            "20:108"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/26",
+          "targets": [
+            "25:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/19-21",
+          "targets": [
+            "37:19",
+            "37:20",
+            "37:21"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/8-10",
+          "targets": [
+            "74:8",
+            "74:9",
+            "74:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/40",
+          "targets": [
+            "78:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:8",
+        "connections": [
+          {
+            "target_coordinate": "14:42",
+            "context": "İbrahim 14/42-43"
+          },
+          {
+            "target_coordinate": "14:43",
+            "context": "İbrahim 14/42-43"
+          },
+          {
+            "target_coordinate": "20:108",
+            "context": "Taha 20/108"
+          },
+          {
+            "target_coordinate": "25:26",
+            "context": "Furkan 25/26"
+          },
+          {
+            "target_coordinate": "37:19",
+            "context": "Saffat 37/19-21"
+          },
+          {
+            "target_coordinate": "37:20",
+            "context": "Saffat 37/19-21"
+          },
+          {
+            "target_coordinate": "37:21",
+            "context": "Saffat 37/19-21"
+          },
+          {
+            "target_coordinate": "74:8",
+            "context": "Müddessir 74/8-10"
+          },
+          {
+            "target_coordinate": "74:9",
+            "context": "Müddessir 74/8-10"
+          },
+          {
+            "target_coordinate": "74:10",
+            "context": "Müddessir 74/8-10"
+          },
+          {
+            "target_coordinate": "78:40",
+            "context": "Nebe 78/40"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 8. Ayetin Tefsiri\nمُهْطِع۪ينَ اِلَى الدَّاعِۜ يَقُولُ الْكَافِرُونَ هٰذَا يَوْمٌ عَسِرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:9",
+      "text": "كَذَّبَتْ قَبْلَهُمْ قَوْمُ نُوحٍ فَكَذَّبُوا عَبْدَنَا وَقَالُوا مَجْنُونٌ وَازْدُجِرَ",
+      "translation": "Bunlardan önce Nuh’un toplumu da yalana sarılmış[1*], kulumuzu yalanlamış ve “Bu, cinlerin etkisinde[2*].“ demişlerdi; görevini yapması engellenmişti[3*].",
+      "dipnot": "[1*] Hac 22/42, Sad 38/12, Mü’min 40/5, Kaf 50/12. [2*] Mü’minun 23/24 - 25, Zariyat 51/52. [3*] Şuara 26/116 - 118.",
+      "roots": [
+        "كذب",
+        "قبل",
+        "قوم",
+        "عبد",
+        "قول",
+        "جنن",
+        "زجر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/42",
+          "targets": [
+            "22:42"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/12",
+          "targets": [
+            "38:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/5",
+          "targets": [
+            "40:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/12",
+          "targets": [
+            "50:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/24-25",
+          "targets": [
+            "23:24",
+            "23:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/52",
+          "targets": [
+            "51:52"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] "
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/116-118",
+          "targets": [
+            "26:116",
+            "26:117",
+            "26:118"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:9",
+        "connections": [
+          {
+            "target_coordinate": "22:42",
+            "context": "Hac 22/42"
+          },
+          {
+            "target_coordinate": "38:12",
+            "context": "Sad 38/12"
+          },
+          {
+            "target_coordinate": "40:5",
+            "context": "min 40/5"
+          },
+          {
+            "target_coordinate": "50:12",
+            "context": "Kaf 50/12"
+          },
+          {
+            "target_coordinate": "23:24",
+            "context": "minun 23/24-25"
+          },
+          {
+            "target_coordinate": "23:25",
+            "context": "minun 23/24-25"
+          },
+          {
+            "target_coordinate": "51:52",
+            "context": "Zariyat 51/52"
+          },
+          {
+            "target_coordinate": "26:116",
+            "context": "Şuara 26/116-118"
+          },
+          {
+            "target_coordinate": "26:117",
+            "context": "Şuara 26/116-118"
+          },
+          {
+            "target_coordinate": "26:118",
+            "context": "Şuara 26/116-118"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 9. Ayetin Tefsiri\nكَذَّبَتْ قَبْلَهُمْ قَوْمُ نُوحٍ فَكَذَّبُوا عَبْدَنَا وَقَالُوا مَجْنُونٌ وَازْدُجِرَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:10",
+      "text": "فَدَعَا رَبَّهُٓ اَنّ۪ي مَغْلُوبٌ فَانْتَصِرْ",
+      "translation": "O da: “Ben yenik düştüm, yardım et[*]!” diye Rabbine yalvarmıştı.",
+      "dipnot": "[*] Enbiya 21/76 - 77, Mü’minun 23/26, Nuh 71/26 - 28.",
+      "roots": [
+        "دعو",
+        "ربب",
+        "غلب",
+        "نصر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/76-77",
+          "targets": [
+            "21:76",
+            "21:77"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/26",
+          "targets": [
+            "23:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nuh 71/26-28",
+          "targets": [
+            "71:26",
+            "71:27",
+            "71:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:10",
+        "connections": [
+          {
+            "target_coordinate": "21:76",
+            "context": "Enbiya 21/76-77"
+          },
+          {
+            "target_coordinate": "21:77",
+            "context": "Enbiya 21/76-77"
+          },
+          {
+            "target_coordinate": "23:26",
+            "context": "minun 23/26"
+          },
+          {
+            "target_coordinate": "71:26",
+            "context": "Nuh 71/26-28"
+          },
+          {
+            "target_coordinate": "71:27",
+            "context": "Nuh 71/26-28"
+          },
+          {
+            "target_coordinate": "71:28",
+            "context": "Nuh 71/26-28"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 10. Ayetin Tefsiri\nفَدَعَا رَبَّهُٓ اَنّ۪ي مَغْلُوبٌ فَانْتَصِرْ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:11",
+      "text": "فَفَتَحْنَٓا اَبْوَابَ السَّمَٓاءِ بِمَٓاءٍ مُنْهَمِرٍۘ",
+      "translation": "Biz de oluk oluk sular aksın diye göğün kapılarını açtık.",
+      "dipnot": "",
+      "roots": [
+        "فتح",
+        "بوب",
+        "سمو",
+        "موه",
+        "همر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "54:11",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 11. Ayetin Tefsiri\nفَفَتَحْنَٓا اَبْوَابَ السَّمَٓاءِ بِمَٓاءٍ مُنْهَمِرٍۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:12",
+      "text": "وَفَجَّرْنَا الْاَرْضَ عُيُونًا فَالْتَقَى الْمَٓاءُ عَلٰٓى اَمْرٍ قَدْ قُدِرَۚ",
+      "translation": "Yerden de su kaynakları fışkırttık.[1*] Böylece kararlaştırılmış bir iş (tufan) için sular birbirine kavuştu.[2*]",
+      "dipnot": "[1*] Tufan’ın oluşması benzer şekilde Tevrat’ın Yaratılış 7:11-12 pasajlarında anlatılmaktadır. [2*] Hud 11/44.",
+      "roots": [
+        "فجر",
+        "أرض",
+        "عين",
+        "لقي",
+        "موه",
+        "أمر",
+        "قدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Tufan’ın oluşması benzer şekilde Tevrat’ın Yaratılış 7:11-12 pasajlarında anlatılmaktadır. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/44",
+          "targets": [
+            "11:44"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:12",
+        "connections": [
+          {
+            "target_coordinate": "11:44",
+            "context": "Hud 11/44"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 12. Ayetin Tefsiri\nوَفَجَّرْنَا الْاَرْضَ عُيُونًا فَالْتَقَى الْمَٓاءُ عَلٰٓى اَمْرٍ قَدْ قُدِرَۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:13",
+      "text": "وَحَمَلْنَاهُ عَلٰى ذَاتِ اَلْوَاحٍ وَدُسُرٍۙ",
+      "translation": "Nuh’u, levhalı ve perçinli bir gemide taşıdık[*].",
+      "dipnot": "[*] Bu gemi Allah'ın gözetimi altında ve vahye göre inşa edilmiştir ( Hud 11/37, Mü'minun 23/27 ). Bu konu Tevrat’ta da anlatılmıştır (Yaratılış 6:14-16)",
+      "roots": [
+        "حمل",
+        "لوح",
+        "دسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Bu gemi Allah'ın gözetimi altında ve vahye göre inşa edilmiştir ( "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/37",
+          "targets": [
+            "11:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mü'minun 23/27",
+          "targets": [
+            "23:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bu konu Tevrat’ta da anlatılmıştır (Yaratılış 6:14-16)"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:13",
+        "connections": [
+          {
+            "target_coordinate": "11:37",
+            "context": "Hud 11/37"
+          },
+          {
+            "target_coordinate": "23:27",
+            "context": "Mü'minun 23/27"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 13. Ayetin Tefsiri\nوَحَمَلْنَاهُ عَلٰى ذَاتِ اَلْوَاحٍ وَدُسُرٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:14",
+      "text": "تَجْر۪ي بِاَعْيُنِنَاۚ جَزَٓاءً لِمَنْ كَانَ كُفِرَ",
+      "translation": "Gemi, gözetimimiz altında akıp gidiyordu. Bunu, görmezden gelinen kişiye (Nuh’a) bir ödül olsun diye yaptık[*].",
+      "dipnot": "[*] Hud 11/42.",
+      "roots": [
+        "جري",
+        "عين",
+        "جزي",
+        "كون",
+        "كفر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/42",
+          "targets": [
+            "11:42"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:14",
+        "connections": [
+          {
+            "target_coordinate": "11:42",
+            "context": "Hud 11/42"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 14. Ayetin Tefsiri\nتَجْر۪ي بِاَعْيُنِنَاۚ جَزَٓاءً لِمَنْ كَانَ كُفِرَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:15",
+      "text": "وَلَقَدْ تَرَكْنَاهَٓا اٰيَةً فَهَلْ مِنْ مُدَّكِرٍ",
+      "translation": "Şurası bir gerçek ki gemiyi, bir ayet /belge olarak bıraktık. Peki, (bu konuda) bir bilgisi olan var mı[*]?",
+      "dipnot": "[*] Mü’minun 23/30, Şuara 26/121 - 122, Ankebut 29/15, Hakka 69/11 - 12.",
+      "roots": [
+        "ترك",
+        "أيي",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/30",
+          "targets": [
+            "23:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/121-122",
+          "targets": [
+            "26:121",
+            "26:122"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/15",
+          "targets": [
+            "29:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/11-12",
+          "targets": [
+            "69:11",
+            "69:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:15",
+        "connections": [
+          {
+            "target_coordinate": "23:30",
+            "context": "minun 23/30"
+          },
+          {
+            "target_coordinate": "26:121",
+            "context": "Şuara 26/121-122"
+          },
+          {
+            "target_coordinate": "26:122",
+            "context": "Şuara 26/121-122"
+          },
+          {
+            "target_coordinate": "29:15",
+            "context": "Ankebut 29/15"
+          },
+          {
+            "target_coordinate": "69:11",
+            "context": "Hakka 69/11-12"
+          },
+          {
+            "target_coordinate": "69:12",
+            "context": "Hakka 69/11-12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 15. Ayetin Tefsiri\nوَلَقَدْ تَرَكْنَاهَٓا اٰيَةً فَهَلْ مِنْ مُدَّكِرٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:16",
+      "text": "فَكَيْفَ كَانَ عَذَاب۪ي وَنُذُرِ",
+      "translation": "(Gördünüz mü) benim azabım ve uyarılarım nasıl olmuş[*]!",
+      "dipnot": "[*] Rum 30/9.",
+      "roots": [
+        "كيف",
+        "كون",
+        "عذب",
+        "نذر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/9",
+          "targets": [
+            "30:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:16",
+        "connections": [
+          {
+            "target_coordinate": "30:9",
+            "context": "Rum 30/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 16. Ayetin Tefsiri\nفَكَيْفَ كَانَ عَذَاب۪ي وَنُذُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:17",
+      "text": "وَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ",
+      "translation": "Biz Kur’an’ı, doğru bilgi[1*] edinilmesi için gerçekten kolaylaştırdık[2*]. Peki, o bilgiyi alan var mı?",
+      "dipnot": "[1*] Zikir, bağlantılarıyla birlikte düşünülüp öğrenilen doğru bilgi, o bilgiyi kullanıma hazır tutmak, akla veya dile getirmektir (Müfredât ذكر md.). Doğru bilginin kaynağı Allah’ın ayetleridir. Bunlar, yaratılan âyetler ve indirilen âyetler olmak üzere iki türlüdür. Her birinden elde edilen doğru bilgi zikirdir (Enbiya 21/24, En’âm 6/80). İnsanı, sadece bu bilgi tatmin eder (Ra’d 13/28). Allah’ı zikretmek; onu, kitabını ve yarattığı ayetleri dikkate almak, akıldan çıkarmamak ve onların üzerine düşünmektir. İnsan bunlardan bildiği kadarıyla sorumludur (Bakara 2/286). Kur’ân’daki bütün bilgiler doğru olduğu için Allah ona zikir adını vermiştir. (Bkz. Hicr 15/9.) Kur’ân kelimesi ise hem son Kitabın ismi hem de o kitaptaki hükümlere ulaşmayı sağlayan ilgili ayet kümeleri anlamına gelir. (Bkz. İsra 17/106) [2*] Meryem 19/97, Duhan 44/58, Kamer 54/22, 32, 40.",
+      "roots": [
+        "يسر",
+        "قرأ",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Zikir, bağlantılarıyla birlikte düşünülüp öğrenilen doğru bilgi, o bilgiyi kullanıma hazır tutmak, akla veya dile getirmektir (Müfredât ذكر md.). Doğru bilginin kaynağı Allah’ın ayetleridir. Bunlar, yaratılan âyetler ve indirilen âyetler olmak üzere iki türlüdür. Her birinden elde edilen doğru bilgi zikirdir ("
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/24",
+          "targets": [
+            "21:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "âm 6/80",
+          "targets": [
+            "6:80"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İnsanı, sadece bu bilgi tatmin eder (Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/28",
+          "targets": [
+            "13:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah’ı zikretmek; onu, kitabını ve yarattığı ayetleri dikkate almak, akıldan çıkarmamak ve onların üzerine düşünmektir. İnsan bunlardan bildiği kadarıyla sorumludur ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/286",
+          "targets": [
+            "2:286"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Kur’ân’daki bütün bilgiler doğru olduğu için Allah ona zikir adını vermiştir. (Bkz. "
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/9",
+          "targets": [
+            "15:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".) Kur’ân kelimesi ise hem son Kitabın ismi hem de o kitaptaki hükümlere ulaşmayı sağlayan ilgili ayet kümeleri anlamına gelir. (Bkz. "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/106",
+          "targets": [
+            "17:106"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/97",
+          "targets": [
+            "19:97"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/58",
+          "targets": [
+            "44:58"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/22,32,40",
+          "targets": [
+            "54:22",
+            "54:32",
+            "54:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:17",
+        "connections": [
+          {
+            "target_coordinate": "21:24",
+            "context": "Enbiya 21/24"
+          },
+          {
+            "target_coordinate": "6:80",
+            "context": "âm 6/80"
+          },
+          {
+            "target_coordinate": "13:28",
+            "context": "d 13/28"
+          },
+          {
+            "target_coordinate": "2:286",
+            "context": "Bakara 2/286"
+          },
+          {
+            "target_coordinate": "15:9",
+            "context": "Hicr 15/9"
+          },
+          {
+            "target_coordinate": "17:106",
+            "context": "İsra 17/106"
+          },
+          {
+            "target_coordinate": "19:97",
+            "context": "Meryem 19/97"
+          },
+          {
+            "target_coordinate": "44:58",
+            "context": "Duhan 44/58"
+          },
+          {
+            "target_coordinate": "54:22",
+            "context": "Kamer 54/22,32,40"
+          },
+          {
+            "target_coordinate": "54:32",
+            "context": "Kamer 54/22,32,40"
+          },
+          {
+            "target_coordinate": "54:40",
+            "context": "Kamer 54/22,32,40"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 17. Ayetin Tefsiri\nوَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:18",
+      "text": "كَذَّبَتْ عَادٌ فَكَيْفَ كَانَ عَذَاب۪ي وَنُذُرِ",
+      "translation": "(Hûd’un toplumu) Âd da yalana sarılmıştı[1*]. (Bakın bakalım) benim azabım ve uyarılarım nasıl olmuş[2*]!",
+      "dipnot": "[1*] Âd Kavmi ile ilgili ayetler için bkz: A’raf 7/65 - 72, Hud 11/51 - 60, Şuara 26/123 - 140, Ahkaf 46/21 - 25, Zariyat 51/41 - 42, Hakka 69/6 - 8, Fecr 89/6 - 8. [2*] Kamer 54/16.",
+      "roots": [
+        "كذب",
+        "عود",
+        "كيف",
+        "كون",
+        "عذب",
+        "نذر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Âd Kavmi ile ilgili ayetler için bkz: A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/65-72",
+          "targets": [
+            "7:65",
+            "7:66",
+            "7:67",
+            "7:68",
+            "7:69",
+            "7:70",
+            "7:71",
+            "7:72"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/51-60",
+          "targets": [
+            "11:51",
+            "11:52",
+            "11:53",
+            "11:54",
+            "11:55",
+            "11:56",
+            "11:57",
+            "11:58",
+            "11:59",
+            "11:60"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/123-140",
+          "targets": [
+            "26:123",
+            "26:124",
+            "26:125",
+            "26:126",
+            "26:127",
+            "26:128",
+            "26:129",
+            "26:130",
+            "26:131",
+            "26:132",
+            "26:133",
+            "26:134",
+            "26:135",
+            "26:136",
+            "26:137",
+            "26:138",
+            "26:139",
+            "26:140"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/21-25",
+          "targets": [
+            "46:21",
+            "46:22",
+            "46:23",
+            "46:24",
+            "46:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/41-42",
+          "targets": [
+            "51:41",
+            "51:42"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/6-8",
+          "targets": [
+            "69:6",
+            "69:7",
+            "69:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/6-8",
+          "targets": [
+            "89:6",
+            "89:7",
+            "89:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/16",
+          "targets": [
+            "54:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:18",
+        "connections": [
+          {
+            "target_coordinate": "7:65",
+            "context": "raf 7/65-72"
+          },
+          {
+            "target_coordinate": "7:66",
+            "context": "raf 7/65-72"
+          },
+          {
+            "target_coordinate": "7:67",
+            "context": "raf 7/65-72"
+          },
+          {
+            "target_coordinate": "7:68",
+            "context": "raf 7/65-72"
+          },
+          {
+            "target_coordinate": "7:69",
+            "context": "raf 7/65-72"
+          },
+          {
+            "target_coordinate": "7:70",
+            "context": "raf 7/65-72"
+          },
+          {
+            "target_coordinate": "7:71",
+            "context": "raf 7/65-72"
+          },
+          {
+            "target_coordinate": "7:72",
+            "context": "raf 7/65-72"
+          },
+          {
+            "target_coordinate": "11:51",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "11:52",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "11:53",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "11:54",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "11:55",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "11:56",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "11:57",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "11:58",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "11:59",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "11:60",
+            "context": "Hud 11/51-60"
+          },
+          {
+            "target_coordinate": "26:123",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:124",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:125",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:126",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:127",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:128",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:129",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:130",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:131",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:132",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:133",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:134",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:135",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:136",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:137",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:138",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:139",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "26:140",
+            "context": "Şuara 26/123-140"
+          },
+          {
+            "target_coordinate": "46:21",
+            "context": "Ahkaf 46/21-25"
+          },
+          {
+            "target_coordinate": "46:22",
+            "context": "Ahkaf 46/21-25"
+          },
+          {
+            "target_coordinate": "46:23",
+            "context": "Ahkaf 46/21-25"
+          },
+          {
+            "target_coordinate": "46:24",
+            "context": "Ahkaf 46/21-25"
+          },
+          {
+            "target_coordinate": "46:25",
+            "context": "Ahkaf 46/21-25"
+          },
+          {
+            "target_coordinate": "51:41",
+            "context": "Zariyat 51/41-42"
+          },
+          {
+            "target_coordinate": "51:42",
+            "context": "Zariyat 51/41-42"
+          },
+          {
+            "target_coordinate": "69:6",
+            "context": "Hakka 69/6-8"
+          },
+          {
+            "target_coordinate": "69:7",
+            "context": "Hakka 69/6-8"
+          },
+          {
+            "target_coordinate": "69:8",
+            "context": "Hakka 69/6-8"
+          },
+          {
+            "target_coordinate": "89:6",
+            "context": "Fecr 89/6-8"
+          },
+          {
+            "target_coordinate": "89:7",
+            "context": "Fecr 89/6-8"
+          },
+          {
+            "target_coordinate": "89:8",
+            "context": "Fecr 89/6-8"
+          },
+          {
+            "target_coordinate": "54:16",
+            "context": "Kamer 54/16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 18. Ayetin Tefsiri\nكَذَّبَتْ عَادٌ فَكَيْفَ كَانَ عَذَاب۪ي وَنُذُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:19",
+      "text": "اِنَّٓا اَرْسَلْنَا عَلَيْهِمْ ر۪يحًا صَرْصَرًا ف۪ي يَوْمِ نَحْسٍ مُسْتَمِرٍّۙ",
+      "translation": "Kötülüğü sürüp giden kara günde üstlerine soğuk ve şiddetli bir rüzgar gönderdik[*];",
+      "dipnot": "[*] Fussilet 41/16, Zariyat 51/41, Hakka 69/6.",
+      "roots": [
+        "رسل",
+        "روح",
+        "صرصر",
+        "يوم",
+        "نحس",
+        "مرر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/16",
+          "targets": [
+            "41:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/41",
+          "targets": [
+            "51:41"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/6",
+          "targets": [
+            "69:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:19",
+        "connections": [
+          {
+            "target_coordinate": "41:16",
+            "context": "Fussilet 41/16"
+          },
+          {
+            "target_coordinate": "51:41",
+            "context": "Zariyat 51/41"
+          },
+          {
+            "target_coordinate": "69:6",
+            "context": "Hakka 69/6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 19. Ayetin Tefsiri\nاِنَّٓا اَرْسَلْنَا عَلَيْهِمْ ر۪يحًا صَرْصَرًا ف۪ي يَوْمِ نَحْسٍ مُسْتَمِرٍّۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:20",
+      "text": "تَنْزِعُ النَّاسَۙ كَاَنَّهُمْ اَعْجَازُ نَخْلٍ مُنْقَعِرٍ",
+      "translation": "insanları kaldırıp atıyordu. Sanki onlar köklerinden sökülmüş hurma kütükleri gibiydiler[*].",
+      "dipnot": "[*] Ahkaf 46/24 - 25, Hakka 69/7 - 8.",
+      "roots": [
+        "نزع",
+        "أنس",
+        "عجز",
+        "نخل",
+        "قعر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/24-25",
+          "targets": [
+            "46:24",
+            "46:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/7-8",
+          "targets": [
+            "69:7",
+            "69:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:20",
+        "connections": [
+          {
+            "target_coordinate": "46:24",
+            "context": "Ahkaf 46/24-25"
+          },
+          {
+            "target_coordinate": "46:25",
+            "context": "Ahkaf 46/24-25"
+          },
+          {
+            "target_coordinate": "69:7",
+            "context": "Hakka 69/7-8"
+          },
+          {
+            "target_coordinate": "69:8",
+            "context": "Hakka 69/7-8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 20. Ayetin Tefsiri\nتَنْزِعُ النَّاسَۙ كَاَنَّهُمْ اَعْجَازُ نَخْلٍ مُنْقَعِرٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:21",
+      "text": "فَكَيْفَ كَانَ عَذَاب۪ي وَنُذُرِ",
+      "translation": "(Gördünüz mü) benim azabım ve uyarılarım nasıl olmuş[*]!",
+      "dipnot": "[*] Kamer 54/16.",
+      "roots": [
+        "كيف",
+        "كون",
+        "عذب",
+        "نذر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/16",
+          "targets": [
+            "54:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:21",
+        "connections": [
+          {
+            "target_coordinate": "54:16",
+            "context": "Kamer 54/16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 21. Ayetin Tefsiri\nفَكَيْفَ كَانَ عَذَاب۪ي وَنُذُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:22",
+      "text": "وَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ۟",
+      "translation": "Biz Kur’an’ı, doğru bilgi edinilmesi için gerçekten kolaylaştırdık. Peki, o bilgiyi alan var mı[*]?",
+      "dipnot": "[*] Kamer 54/17.",
+      "roots": [
+        "يسر",
+        "قرأ",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/17",
+          "targets": [
+            "54:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:22",
+        "connections": [
+          {
+            "target_coordinate": "54:17",
+            "context": "Kamer 54/17"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 22. Ayetin Tefsiri\nوَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:23",
+      "text": "كَذَّبَتْ ثَمُودُ بِالنُّذُرِ",
+      "translation": "(Salih’in toplumu) Semud da uyarılar karşısında yalana sarılmıştı[*].",
+      "dipnot": "[*] Semûd Kavmi ile ilgili ayetler için bkz. A’raf 7/73 - 79, Hud 11/61 - 68, Hicr 15/80 - 84, Şuara 26/142 - 159, Neml 27/45 - 53, Hakka 69/4 - 5, Şems 91/11 - 15.",
+      "roots": [
+        "كذب",
+        "نذر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Semûd Kavmi ile ilgili ayetler için bkz. A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/73-79",
+          "targets": [
+            "7:73",
+            "7:74",
+            "7:75",
+            "7:76",
+            "7:77",
+            "7:78",
+            "7:79"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/61-68",
+          "targets": [
+            "11:61",
+            "11:62",
+            "11:63",
+            "11:64",
+            "11:65",
+            "11:66",
+            "11:67",
+            "11:68"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/80-84",
+          "targets": [
+            "15:80",
+            "15:81",
+            "15:82",
+            "15:83",
+            "15:84"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/142-159",
+          "targets": [
+            "26:142",
+            "26:143",
+            "26:144",
+            "26:145",
+            "26:146",
+            "26:147",
+            "26:148",
+            "26:149",
+            "26:150",
+            "26:151",
+            "26:152",
+            "26:153",
+            "26:154",
+            "26:155",
+            "26:156",
+            "26:157",
+            "26:158",
+            "26:159"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/45-53",
+          "targets": [
+            "27:45",
+            "27:46",
+            "27:47",
+            "27:48",
+            "27:49",
+            "27:50",
+            "27:51",
+            "27:52",
+            "27:53"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/4-5",
+          "targets": [
+            "69:4",
+            "69:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/11-15",
+          "targets": [
+            "91:11",
+            "91:12",
+            "91:13",
+            "91:14",
+            "91:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:23",
+        "connections": [
+          {
+            "target_coordinate": "7:73",
+            "context": "raf 7/73-79"
+          },
+          {
+            "target_coordinate": "7:74",
+            "context": "raf 7/73-79"
+          },
+          {
+            "target_coordinate": "7:75",
+            "context": "raf 7/73-79"
+          },
+          {
+            "target_coordinate": "7:76",
+            "context": "raf 7/73-79"
+          },
+          {
+            "target_coordinate": "7:77",
+            "context": "raf 7/73-79"
+          },
+          {
+            "target_coordinate": "7:78",
+            "context": "raf 7/73-79"
+          },
+          {
+            "target_coordinate": "7:79",
+            "context": "raf 7/73-79"
+          },
+          {
+            "target_coordinate": "11:61",
+            "context": "Hud 11/61-68"
+          },
+          {
+            "target_coordinate": "11:62",
+            "context": "Hud 11/61-68"
+          },
+          {
+            "target_coordinate": "11:63",
+            "context": "Hud 11/61-68"
+          },
+          {
+            "target_coordinate": "11:64",
+            "context": "Hud 11/61-68"
+          },
+          {
+            "target_coordinate": "11:65",
+            "context": "Hud 11/61-68"
+          },
+          {
+            "target_coordinate": "11:66",
+            "context": "Hud 11/61-68"
+          },
+          {
+            "target_coordinate": "11:67",
+            "context": "Hud 11/61-68"
+          },
+          {
+            "target_coordinate": "11:68",
+            "context": "Hud 11/61-68"
+          },
+          {
+            "target_coordinate": "15:80",
+            "context": "Hicr 15/80-84"
+          },
+          {
+            "target_coordinate": "15:81",
+            "context": "Hicr 15/80-84"
+          },
+          {
+            "target_coordinate": "15:82",
+            "context": "Hicr 15/80-84"
+          },
+          {
+            "target_coordinate": "15:83",
+            "context": "Hicr 15/80-84"
+          },
+          {
+            "target_coordinate": "15:84",
+            "context": "Hicr 15/80-84"
+          },
+          {
+            "target_coordinate": "26:142",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:143",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:144",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:145",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:146",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:147",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:148",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:149",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:150",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:151",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:152",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:153",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:154",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:155",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:156",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:157",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:158",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "26:159",
+            "context": "Şuara 26/142-159"
+          },
+          {
+            "target_coordinate": "27:45",
+            "context": "Neml 27/45-53"
+          },
+          {
+            "target_coordinate": "27:46",
+            "context": "Neml 27/45-53"
+          },
+          {
+            "target_coordinate": "27:47",
+            "context": "Neml 27/45-53"
+          },
+          {
+            "target_coordinate": "27:48",
+            "context": "Neml 27/45-53"
+          },
+          {
+            "target_coordinate": "27:49",
+            "context": "Neml 27/45-53"
+          },
+          {
+            "target_coordinate": "27:50",
+            "context": "Neml 27/45-53"
+          },
+          {
+            "target_coordinate": "27:51",
+            "context": "Neml 27/45-53"
+          },
+          {
+            "target_coordinate": "27:52",
+            "context": "Neml 27/45-53"
+          },
+          {
+            "target_coordinate": "27:53",
+            "context": "Neml 27/45-53"
+          },
+          {
+            "target_coordinate": "69:4",
+            "context": "Hakka 69/4-5"
+          },
+          {
+            "target_coordinate": "69:5",
+            "context": "Hakka 69/4-5"
+          },
+          {
+            "target_coordinate": "91:11",
+            "context": "Şems 91/11-15"
+          },
+          {
+            "target_coordinate": "91:12",
+            "context": "Şems 91/11-15"
+          },
+          {
+            "target_coordinate": "91:13",
+            "context": "Şems 91/11-15"
+          },
+          {
+            "target_coordinate": "91:14",
+            "context": "Şems 91/11-15"
+          },
+          {
+            "target_coordinate": "91:15",
+            "context": "Şems 91/11-15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 23. Ayetin Tefsiri\nكَذَّبَتْ ثَمُودُ بِالنُّذُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:24",
+      "text": "فَقَالُٓوا اَبَشَرًا مِنَّا وَاحِدًا نَتَّبِعُهُٓۙ اِنَّٓا اِذًا لَف۪ي ضَلَالٍ وَسُعُرٍ",
+      "translation": "Şöyle demişlerdi: “İçimizden, tek başına kalmış bir beşere mi uyacağız[*]! O zaman kesinlikle bir sapkınlık ve çılgınlık içine girmiş oluruz.",
+      "dipnot": "[*] Şuara 26/154.",
+      "roots": [
+        "قول",
+        "بشر",
+        "وحد",
+        "تبع",
+        "ضلل",
+        "سعر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/154",
+          "targets": [
+            "26:154"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:24",
+        "connections": [
+          {
+            "target_coordinate": "26:154",
+            "context": "Şuara 26/154"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 24. Ayetin Tefsiri\nفَقَالُٓوا اَبَشَرًا مِنَّا وَاحِدًا نَتَّبِعُهُٓۙ اِنَّٓا اِذًا لَف۪ي ضَلَالٍ وَسُعُرٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:25",
+      "text": "ءَاُلْقِيَ الذِّكْرُ عَلَيْهِ مِنْ بَيْنِنَا بَلْ هُوَ كَذَّابٌ اَشِرٌ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "لقي",
+        "ذكر",
+        "بين",
+        "كذب",
+        "أشر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "54:25",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 25. Ayetin Tefsiri\nءَاُلْقِيَ الذِّكْرُ عَلَيْهِ مِنْ بَيْنِنَا بَلْ هُوَ كَذَّابٌ اَشِرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:25",
+      "text": "",
+      "translation": "O zikir[1*] /o doğru bilgiler aramızdan ona mı verilmiş[2*]! Aslında o; yalancının ve ukalanın tekidir[3*]!”",
+      "dipnot": "Zikir hem önceki kitapların hem de Kur’an’ın ortak adıdır (Hicr 15/9, Nahl 16/43-44, Enbiya 21/7, 24). Mekkeli müşrikler aynısını Muhammed Aleyhisselam için söylemişlerdir (Sad 38/8, Zuhruf 43/31). Hicr 15/80, Şuara 26/141, Şems 91/11.",
+      "roots": [
+        "لقي",
+        "ذكر",
+        "بين",
+        "كذب",
+        "أشر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Zikir hem önceki kitapların hem de Kur’an’ın ortak adıdır ("
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/9",
+          "targets": [
+            "15:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/43-44",
+          "targets": [
+            "16:43",
+            "16:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/7,24",
+          "targets": [
+            "21:7",
+            "21:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Mekkeli müşrikler aynısını Muhammed Aleyhisselam için söylemişlerdir ("
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/8",
+          "targets": [
+            "38:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/31",
+          "targets": [
+            "43:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). "
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/80",
+          "targets": [
+            "15:80"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/141",
+          "targets": [
+            "26:141"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/11",
+          "targets": [
+            "91:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:25",
+        "connections": [
+          {
+            "target_coordinate": "15:9",
+            "context": "Hicr 15/9"
+          },
+          {
+            "target_coordinate": "16:43",
+            "context": "Nahl 16/43-44"
+          },
+          {
+            "target_coordinate": "16:44",
+            "context": "Nahl 16/43-44"
+          },
+          {
+            "target_coordinate": "21:7",
+            "context": "Enbiya 21/7,24"
+          },
+          {
+            "target_coordinate": "21:24",
+            "context": "Enbiya 21/7,24"
+          },
+          {
+            "target_coordinate": "38:8",
+            "context": "Sad 38/8"
+          },
+          {
+            "target_coordinate": "43:31",
+            "context": "Zuhruf 43/31"
+          },
+          {
+            "target_coordinate": "15:80",
+            "context": "Hicr 15/80"
+          },
+          {
+            "target_coordinate": "26:141",
+            "context": "Şuara 26/141"
+          },
+          {
+            "target_coordinate": "91:11",
+            "context": "Şems 91/11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 25. Ayetin Tefsiri\nءَاُلْقِيَ الذِّكْرُ عَلَيْهِ مِنْ بَيْنِنَا بَلْ هُوَ كَذَّابٌ اَشِرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:26",
+      "text": "سَيَعْلَمُونَ غَدًا مَنِ الْكَذَّابُ الْاَشِرُ",
+      "translation": "Kimin yalancı ve ukala olduğunu yarın öğrenecekler.",
+      "dipnot": "",
+      "roots": [
+        "علم",
+        "غدو",
+        "كذب",
+        "أشر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "54:26",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 26. Ayetin Tefsiri\nسَيَعْلَمُونَ غَدًا مَنِ الْكَذَّابُ الْاَشِرُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:27",
+      "text": "اِنَّا مُرْسِلُوا النَّاقَةِ فِتْنَةً لَهُمْ فَارْتَقِبْهُمْ وَاصْطَبِرْۘ",
+      "translation": "(Salih’e şöyle dedik:) “Biz, onları imtihan etmek[1*] için bir dişi deve göndereceğiz[2*]. Sen de onları gözetle ve sabırlı ol.",
+      "dipnot": "“Fitne”, altını içindeki yabancı maddelerden ayırmak için ateşe sokmaktır (Müfredat). Kur’an’da bu kelime imtihan (A’râf 7/155), aldatma (A’râf 7/27), cehennem azabı (Zariyât 51/10-14) ve savaş (Bakara 2/216) anlamlarında kullanılmıştır. A’raf 7/73, Hud 11/64, İsra 17/59.",
+      "roots": [
+        "رسل",
+        "نوق",
+        "فتن",
+        "رقب",
+        "صبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“Fitne”, altını içindeki yabancı maddelerden ayırmak için ateşe sokmaktır (Müfredat). Kur’an’da bu kelime imtihan (A’"
+        },
+        {
+          "type": "link",
+          "content": "râf 7/155",
+          "targets": [
+            "7:155"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), aldatma (A’"
+        },
+        {
+          "type": "link",
+          "content": "râf 7/27",
+          "targets": [
+            "7:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), cehennem azabı ("
+        },
+        {
+          "type": "link",
+          "content": "Zariyât 51/10-14",
+          "targets": [
+            "51:10",
+            "51:11",
+            "51:12",
+            "51:13",
+            "51:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve savaş ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/216",
+          "targets": [
+            "2:216"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") anlamlarında kullanılmıştır. A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/73",
+          "targets": [
+            "7:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/64",
+          "targets": [
+            "11:64"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/59",
+          "targets": [
+            "17:59"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:27",
+        "connections": [
+          {
+            "target_coordinate": "7:155",
+            "context": "râf 7/155"
+          },
+          {
+            "target_coordinate": "7:27",
+            "context": "râf 7/27"
+          },
+          {
+            "target_coordinate": "51:10",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:11",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:12",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:13",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:14",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "2:216",
+            "context": "Bakara 2/216"
+          },
+          {
+            "target_coordinate": "7:73",
+            "context": "raf 7/73"
+          },
+          {
+            "target_coordinate": "11:64",
+            "context": "Hud 11/64"
+          },
+          {
+            "target_coordinate": "17:59",
+            "context": "İsra 17/59"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 27. Ayetin Tefsiri\nاِنَّا مُرْسِلُوا النَّاقَةِ فِتْنَةً لَهُمْ فَارْتَقِبْهُمْ وَاصْطَبِرْۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:28",
+      "text": "وَنَبِّئْهُمْ اَنَّ الْمَٓاءَ قِسْمَةٌ بَيْنَهُمْۚ كُلُّ شِرْبٍ مُحْتَضَرٌ",
+      "translation": "Onlara suyun, o deve ile aralarında paylaştırıldığını bildir. İçme sırası gelen, suyun başında bulunsun[*].”",
+      "dipnot": "Şuara 26/155, Şems 91/13.",
+      "roots": [
+        "نبأ",
+        "موه",
+        "قسم",
+        "بين",
+        "كلل",
+        "شرب",
+        "حضر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Şuara 26/155",
+          "targets": [
+            "26:155"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/13",
+          "targets": [
+            "91:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:28",
+        "connections": [
+          {
+            "target_coordinate": "26:155",
+            "context": "Şuara 26/155"
+          },
+          {
+            "target_coordinate": "91:13",
+            "context": "Şems 91/13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 28. Ayetin Tefsiri\nوَنَبِّئْهُمْ اَنَّ الْمَٓاءَ قِسْمَةٌ بَيْنَهُمْۚ كُلُّ شِرْبٍ مُحْتَضَرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:29",
+      "text": "فَنَادَوْا صَاحِبَهُمْ فَتَعَاطٰى فَعَقَرَ",
+      "translation": "Fakat onlar bir arkadaşlarını çağırdılar; o da işi üstlendi ve deveyi ayaklarını keserek öldürdü[*].",
+      "dipnot": "A’raf 7/77, Hud 11/65, Şuara 26/156-157, Şems 91/14.",
+      "roots": [
+        "ندي",
+        "صحب",
+        "عطو",
+        "عقر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/77",
+          "targets": [
+            "7:77"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/65",
+          "targets": [
+            "11:65"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/156-157",
+          "targets": [
+            "26:156",
+            "26:157"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/14",
+          "targets": [
+            "91:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:29",
+        "connections": [
+          {
+            "target_coordinate": "7:77",
+            "context": "raf 7/77"
+          },
+          {
+            "target_coordinate": "11:65",
+            "context": "Hud 11/65"
+          },
+          {
+            "target_coordinate": "26:156",
+            "context": "Şuara 26/156-157"
+          },
+          {
+            "target_coordinate": "26:157",
+            "context": "Şuara 26/156-157"
+          },
+          {
+            "target_coordinate": "91:14",
+            "context": "Şems 91/14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 29. Ayetin Tefsiri\nفَنَادَوْا صَاحِبَهُمْ فَتَعَاطٰى فَعَقَرَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:30",
+      "text": "فَكَيْفَ كَانَ عَذَاب۪ي وَنُذُرِ",
+      "translation": "(Bakın bakalım) benim azabım ve uyarılarım nasıl olmuş[*]!",
+      "dipnot": "Kamer 54/16.",
+      "roots": [
+        "كيف",
+        "كون",
+        "عذب",
+        "نذر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kamer 54/16",
+          "targets": [
+            "54:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:30",
+        "connections": [
+          {
+            "target_coordinate": "54:16",
+            "context": "Kamer 54/16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 30. Ayetin Tefsiri\nفَكَيْفَ كَانَ عَذَاب۪ي وَنُذُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:31",
+      "text": "اِنَّٓا اَرْسَلْنَا عَلَيْهِمْ صَيْحَةً وَاحِدَةً فَكَانُوا كَهَش۪يمِ الْمُحْتَظِرِ",
+      "translation": "Üzerlerine yüksek bir ses gönderdik. Hepsi ağılcının kullandığı kuru ot parçaları gibi oldular[*].",
+      "dipnot": "A’raf 7/78, Hud 11/67-68, Hicr 15/83, Şuara 26/158, Neml 27/51-52, Fussilet 41/17, Hakka 69/5, Şems 91/14.",
+      "roots": [
+        "رسل",
+        "صيح",
+        "وحد",
+        "كون",
+        "هشم",
+        "حظر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/78",
+          "targets": [
+            "7:78"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/67-68",
+          "targets": [
+            "11:67",
+            "11:68"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/83",
+          "targets": [
+            "15:83"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/158",
+          "targets": [
+            "26:158"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/51-52",
+          "targets": [
+            "27:51",
+            "27:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/17",
+          "targets": [
+            "41:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/5",
+          "targets": [
+            "69:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/14",
+          "targets": [
+            "91:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:31",
+        "connections": [
+          {
+            "target_coordinate": "7:78",
+            "context": "raf 7/78"
+          },
+          {
+            "target_coordinate": "11:67",
+            "context": "Hud 11/67-68"
+          },
+          {
+            "target_coordinate": "11:68",
+            "context": "Hud 11/67-68"
+          },
+          {
+            "target_coordinate": "15:83",
+            "context": "Hicr 15/83"
+          },
+          {
+            "target_coordinate": "26:158",
+            "context": "Şuara 26/158"
+          },
+          {
+            "target_coordinate": "27:51",
+            "context": "Neml 27/51-52"
+          },
+          {
+            "target_coordinate": "27:52",
+            "context": "Neml 27/51-52"
+          },
+          {
+            "target_coordinate": "41:17",
+            "context": "Fussilet 41/17"
+          },
+          {
+            "target_coordinate": "69:5",
+            "context": "Hakka 69/5"
+          },
+          {
+            "target_coordinate": "91:14",
+            "context": "Şems 91/14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 31. Ayetin Tefsiri\nاِنَّٓا اَرْسَلْنَا عَلَيْهِمْ صَيْحَةً وَاحِدَةً فَكَانُوا كَهَش۪يمِ الْمُحْتَظِرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:32",
+      "text": "وَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ",
+      "translation": "Biz Kur’an’ı, bilgi edinilmesi için gerçekten kolaylaştırdık. Peki, o bilgiyi alan var mı[*]?",
+      "dipnot": "Kamer 54/17.",
+      "roots": [
+        "يسر",
+        "قرأ",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kamer 54/17",
+          "targets": [
+            "54:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:32",
+        "connections": [
+          {
+            "target_coordinate": "54:17",
+            "context": "Kamer 54/17"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 32. Ayetin Tefsiri\nوَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:33",
+      "text": "كَذَّبَتْ قَوْمُ لُوطٍ بِالنُّذُرِ",
+      "translation": "Lut’un toplumu da uyarılar karşısında yalana sarıldı[*].",
+      "dipnot": "Lut Aleyhisselamın kıssası hakkında ayrıntılı bilgi için bkz: A’raf 7/80-84, Hicr 15/61-77, Enbiya 21/74-75, Şuara 26/160-174, Neml 27/54-58, Ankebut 29/28-35, Saffat 37/133-138, Zariyat 51/31-37.",
+      "roots": [
+        "كذب",
+        "قوم",
+        "نذر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Lut Aleyhisselamın kıssası hakkında ayrıntılı bilgi için bkz: A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/80-84",
+          "targets": [
+            "7:80",
+            "7:81",
+            "7:82",
+            "7:83",
+            "7:84"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/61-77",
+          "targets": [
+            "15:61",
+            "15:62",
+            "15:63",
+            "15:64",
+            "15:65",
+            "15:66",
+            "15:67",
+            "15:68",
+            "15:69",
+            "15:70",
+            "15:71",
+            "15:72",
+            "15:73",
+            "15:74",
+            "15:75",
+            "15:76",
+            "15:77"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/74-75",
+          "targets": [
+            "21:74",
+            "21:75"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/160-174",
+          "targets": [
+            "26:160",
+            "26:161",
+            "26:162",
+            "26:163",
+            "26:164",
+            "26:165",
+            "26:166",
+            "26:167",
+            "26:168",
+            "26:169",
+            "26:170",
+            "26:171",
+            "26:172",
+            "26:173",
+            "26:174"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/54-58",
+          "targets": [
+            "27:54",
+            "27:55",
+            "27:56",
+            "27:57",
+            "27:58"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/28-35",
+          "targets": [
+            "29:28",
+            "29:29",
+            "29:30",
+            "29:31",
+            "29:32",
+            "29:33",
+            "29:34",
+            "29:35"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/133-138",
+          "targets": [
+            "37:133",
+            "37:134",
+            "37:135",
+            "37:136",
+            "37:137",
+            "37:138"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/31-37",
+          "targets": [
+            "51:31",
+            "51:32",
+            "51:33",
+            "51:34",
+            "51:35",
+            "51:36",
+            "51:37"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:33",
+        "connections": [
+          {
+            "target_coordinate": "7:80",
+            "context": "raf 7/80-84"
+          },
+          {
+            "target_coordinate": "7:81",
+            "context": "raf 7/80-84"
+          },
+          {
+            "target_coordinate": "7:82",
+            "context": "raf 7/80-84"
+          },
+          {
+            "target_coordinate": "7:83",
+            "context": "raf 7/80-84"
+          },
+          {
+            "target_coordinate": "7:84",
+            "context": "raf 7/80-84"
+          },
+          {
+            "target_coordinate": "15:61",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:62",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:63",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:64",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:65",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:66",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:67",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:68",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:69",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:70",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:71",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:72",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:73",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:74",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:75",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:76",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "15:77",
+            "context": "Hicr 15/61-77"
+          },
+          {
+            "target_coordinate": "21:74",
+            "context": "Enbiya 21/74-75"
+          },
+          {
+            "target_coordinate": "21:75",
+            "context": "Enbiya 21/74-75"
+          },
+          {
+            "target_coordinate": "26:160",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:161",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:162",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:163",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:164",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:165",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:166",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:167",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:168",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:169",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:170",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:171",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:172",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:173",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "26:174",
+            "context": "Şuara 26/160-174"
+          },
+          {
+            "target_coordinate": "27:54",
+            "context": "Neml 27/54-58"
+          },
+          {
+            "target_coordinate": "27:55",
+            "context": "Neml 27/54-58"
+          },
+          {
+            "target_coordinate": "27:56",
+            "context": "Neml 27/54-58"
+          },
+          {
+            "target_coordinate": "27:57",
+            "context": "Neml 27/54-58"
+          },
+          {
+            "target_coordinate": "27:58",
+            "context": "Neml 27/54-58"
+          },
+          {
+            "target_coordinate": "29:28",
+            "context": "Ankebut 29/28-35"
+          },
+          {
+            "target_coordinate": "29:29",
+            "context": "Ankebut 29/28-35"
+          },
+          {
+            "target_coordinate": "29:30",
+            "context": "Ankebut 29/28-35"
+          },
+          {
+            "target_coordinate": "29:31",
+            "context": "Ankebut 29/28-35"
+          },
+          {
+            "target_coordinate": "29:32",
+            "context": "Ankebut 29/28-35"
+          },
+          {
+            "target_coordinate": "29:33",
+            "context": "Ankebut 29/28-35"
+          },
+          {
+            "target_coordinate": "29:34",
+            "context": "Ankebut 29/28-35"
+          },
+          {
+            "target_coordinate": "29:35",
+            "context": "Ankebut 29/28-35"
+          },
+          {
+            "target_coordinate": "37:133",
+            "context": "Saffat 37/133-138"
+          },
+          {
+            "target_coordinate": "37:134",
+            "context": "Saffat 37/133-138"
+          },
+          {
+            "target_coordinate": "37:135",
+            "context": "Saffat 37/133-138"
+          },
+          {
+            "target_coordinate": "37:136",
+            "context": "Saffat 37/133-138"
+          },
+          {
+            "target_coordinate": "37:137",
+            "context": "Saffat 37/133-138"
+          },
+          {
+            "target_coordinate": "37:138",
+            "context": "Saffat 37/133-138"
+          },
+          {
+            "target_coordinate": "51:31",
+            "context": "Zariyat 51/31-37"
+          },
+          {
+            "target_coordinate": "51:32",
+            "context": "Zariyat 51/31-37"
+          },
+          {
+            "target_coordinate": "51:33",
+            "context": "Zariyat 51/31-37"
+          },
+          {
+            "target_coordinate": "51:34",
+            "context": "Zariyat 51/31-37"
+          },
+          {
+            "target_coordinate": "51:35",
+            "context": "Zariyat 51/31-37"
+          },
+          {
+            "target_coordinate": "51:36",
+            "context": "Zariyat 51/31-37"
+          },
+          {
+            "target_coordinate": "51:37",
+            "context": "Zariyat 51/31-37"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 33. Ayetin Tefsiri\nكَذَّبَتْ قَوْمُ لُوطٍ بِالنُّذُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:34",
+      "text": "اِنَّٓا اَرْسَلْنَا عَلَيْهِمْ حَاصِبًا اِلَّٓا اٰلَ لُوطٍۜ نَجَّيْنَاهُمْ بِسَحَرٍۙ",
+      "translation": "Lut’un ailesi dışında kalanlara, (lav çamurlarından oluşmuş[1*]) taş ve toprak savuran bir kasırga gönderdik. Lut’un ailesini ise[2*] seher vaktinde[3*] kurtardık,",
+      "dipnot": "Zariyat 51/33. Şuara 26/171.",
+      "roots": [
+        "رسل",
+        "حصب",
+        "أول",
+        "نجو",
+        "سحر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zariyat 51/33",
+          "targets": [
+            "51:33"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". "
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/171",
+          "targets": [
+            "26:171"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:34",
+        "connections": [
+          {
+            "target_coordinate": "51:33",
+            "context": "Zariyat 51/33"
+          },
+          {
+            "target_coordinate": "26:171",
+            "context": "Şuara 26/171"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 34. Ayetin Tefsiri\nاِنَّٓا اَرْسَلْنَا عَلَيْهِمْ حَاصِبًا اِلَّٓا اٰلَ لُوطٍۜ نَجَّيْنَاهُمْ بِسَحَرٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:35",
+      "text": "نِعْمَةً مِنْ عِنْدِنَاۜ كَذٰلِكَ نَجْز۪ي مَنْ شَكَرَ",
+      "translation": "katımızdan bir nimet olarak... Şükredenleri /görevlerini yerine getirenleri işte böyle ödüllendiririz[*].",
+      "dipnot": "Enbiya 21/9.",
+      "roots": [
+        "نعم",
+        "عند",
+        "جزي",
+        "شكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Enbiya 21/9",
+          "targets": [
+            "21:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:35",
+        "connections": [
+          {
+            "target_coordinate": "21:9",
+            "context": "Enbiya 21/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 35. Ayetin Tefsiri\nنِعْمَةً مِنْ عِنْدِنَاۜ كَذٰلِكَ نَجْز۪ي مَنْ شَكَرَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:36",
+      "text": "وَلَقَدْ اَنْذَرَهُمْ بَطْشَتَنَا فَتَمَارَوْا بِالنُّذُرِ",
+      "translation": "Lut, vuracağımız darbe hakkında onları uyarmıştı[*] ama uyarıları kuşkuyla karşıladılar.",
+      "dipnot": "Şuara 26/161 - 163.",
+      "roots": [
+        "نذر",
+        "بطش",
+        "مري"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Şuara 26/161-163",
+          "targets": [
+            "26:161",
+            "26:162",
+            "26:163"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:36",
+        "connections": [
+          {
+            "target_coordinate": "26:161",
+            "context": "Şuara 26/161-163"
+          },
+          {
+            "target_coordinate": "26:162",
+            "context": "Şuara 26/161-163"
+          },
+          {
+            "target_coordinate": "26:163",
+            "context": "Şuara 26/161-163"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 36. Ayetin Tefsiri\nوَلَقَدْ اَنْذَرَهُمْ بَطْشَتَنَا فَتَمَارَوْا بِالنُّذُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:37",
+      "text": "وَلَقَدْ رَاوَدُوهُ عَنْ ضَيْفِه۪ فَطَمَسْنَٓا اَعْيُنَهُمْ فَذُوقُوا عَذَاب۪ي وَنُذُرِ",
+      "translation": "Üstelik Lut’tan, ısrarla onun konukları ile birlikte olmayı istediler[1*]. Biz de onların gözlerini kör ettik[2*]. “Azabımı ve uyarılarımı şimdi tadın bakalım.”",
+      "dipnot": "[1*] Hud 11/77 - 79, Hicr 15/67 - 71. [2*] Bu olay Tevrat/ Yaratılış 19:4-11 pasajlarında da anlatılır.",
+      "roots": [
+        "رود",
+        "ضيف",
+        "طمس",
+        "عين",
+        "ذوق",
+        "عذب",
+        "نذر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/77-79",
+          "targets": [
+            "11:77",
+            "11:78",
+            "11:79"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/67-71",
+          "targets": [
+            "15:67",
+            "15:68",
+            "15:69",
+            "15:70",
+            "15:71"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Bu olay Tevrat/ Yaratılış 19:4-11 pasajlarında da anlatılır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:37",
+        "connections": [
+          {
+            "target_coordinate": "11:77",
+            "context": "Hud 11/77-79"
+          },
+          {
+            "target_coordinate": "11:78",
+            "context": "Hud 11/77-79"
+          },
+          {
+            "target_coordinate": "11:79",
+            "context": "Hud 11/77-79"
+          },
+          {
+            "target_coordinate": "15:67",
+            "context": "Hicr 15/67-71"
+          },
+          {
+            "target_coordinate": "15:68",
+            "context": "Hicr 15/67-71"
+          },
+          {
+            "target_coordinate": "15:69",
+            "context": "Hicr 15/67-71"
+          },
+          {
+            "target_coordinate": "15:70",
+            "context": "Hicr 15/67-71"
+          },
+          {
+            "target_coordinate": "15:71",
+            "context": "Hicr 15/67-71"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 37. Ayetin Tefsiri\nوَلَقَدْ رَاوَدُوهُ عَنْ ضَيْفِه۪ فَطَمَسْنَٓا اَعْيُنَهُمْ فَذُوقُوا عَذَاب۪ي وَنُذُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:38",
+      "text": "وَلَقَدْ صَبَّحَهُمْ بُكْرَةً عَذَابٌ مُسْتَقِرٌّۚ",
+      "translation": "Sabahleyin erkenden onlara kalıcı bir azap indi[*].",
+      "dipnot": "Hud 11/81, Hicr 15/73 - 74, Saffat 37/177.",
+      "roots": [
+        "صبح",
+        "بكر",
+        "عذب",
+        "قرر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hud 11/81",
+          "targets": [
+            "11:81"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/73-74",
+          "targets": [
+            "15:73",
+            "15:74"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/177",
+          "targets": [
+            "37:177"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:38",
+        "connections": [
+          {
+            "target_coordinate": "11:81",
+            "context": "Hud 11/81"
+          },
+          {
+            "target_coordinate": "15:73",
+            "context": "Hicr 15/73-74"
+          },
+          {
+            "target_coordinate": "15:74",
+            "context": "Hicr 15/73-74"
+          },
+          {
+            "target_coordinate": "37:177",
+            "context": "Saffat 37/177"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 38. Ayetin Tefsiri\nوَلَقَدْ صَبَّحَهُمْ بُكْرَةً عَذَابٌ مُسْتَقِرٌّۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:39",
+      "text": "فَذُوقُوا عَذَاب۪ي وَنُذُرِ",
+      "translation": "“Azabımı ve uyarılarımı şimdi tadın bakalım.”",
+      "dipnot": "",
+      "roots": [
+        "ذوق",
+        "عذب",
+        "نذر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "54:39",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 39. Ayetin Tefsiri\nفَذُوقُوا عَذَاب۪ي وَنُذُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:40",
+      "text": "وَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ۟",
+      "translation": "Biz Kur’an’ı, bilgi edinilmesi için gerçekten kolaylaştırdık. Peki, o bilgiyi alan var mı[*]?",
+      "dipnot": "Kamer 54/17.",
+      "roots": [
+        "يسر",
+        "قرأ",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kamer 54/17",
+          "targets": [
+            "54:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:40",
+        "connections": [
+          {
+            "target_coordinate": "54:17",
+            "context": "Kamer 54/17"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 40. Ayetin Tefsiri\nوَلَقَدْ يَسَّرْنَا الْقُرْاٰنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:41",
+      "text": "وَلَقَدْ جَٓاءَ اٰلَ فِرْعَوْنَ النُّذُرُۚ",
+      "translation": "Firavun hanedanına da uyarılar geldi[*].",
+      "dipnot": "Yunus 10/75, Zuhruf 43/46.",
+      "roots": [
+        "جيأ",
+        "أول",
+        "نذر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/75",
+          "targets": [
+            "10:75"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/46",
+          "targets": [
+            "43:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:41",
+        "connections": [
+          {
+            "target_coordinate": "10:75",
+            "context": "Yunus 10/75"
+          },
+          {
+            "target_coordinate": "43:46",
+            "context": "Zuhruf 43/46"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 41. Ayetin Tefsiri\nوَلَقَدْ جَٓاءَ اٰلَ فِرْعَوْنَ النُّذُرُۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:42",
+      "text": "كَذَّبُوا بِاٰيَاتِنَا كُلِّهَا فَاَخَذْنَاهُمْ اَخْذَ عَز۪يزٍ مُقْتَدِرٍ",
+      "translation": "Ayetlerimizin tamamı karşısında yalana sarıldılar. Biz de onları, daima üstün ve iktidar sahibi olana yaraşır biçimde yakaladık[*].",
+      "dipnot": "Yunus 10/76, Neml 27/13 - 14, Kasas 28/36 - 37, Zuhruf 43/47 - 48.",
+      "roots": [
+        "كذب",
+        "أيي",
+        "كلل",
+        "أخذ",
+        "عزز",
+        "قدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/76",
+          "targets": [
+            "10:76"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/13-14",
+          "targets": [
+            "27:13",
+            "27:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/36-37",
+          "targets": [
+            "28:36",
+            "28:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/47-48",
+          "targets": [
+            "43:47",
+            "43:48"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:42",
+        "connections": [
+          {
+            "target_coordinate": "10:76",
+            "context": "Yunus 10/76"
+          },
+          {
+            "target_coordinate": "27:13",
+            "context": "Neml 27/13-14"
+          },
+          {
+            "target_coordinate": "27:14",
+            "context": "Neml 27/13-14"
+          },
+          {
+            "target_coordinate": "28:36",
+            "context": "Kasas 28/36-37"
+          },
+          {
+            "target_coordinate": "28:37",
+            "context": "Kasas 28/36-37"
+          },
+          {
+            "target_coordinate": "43:47",
+            "context": "Zuhruf 43/47-48"
+          },
+          {
+            "target_coordinate": "43:48",
+            "context": "Zuhruf 43/47-48"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 42. Ayetin Tefsiri\nكَذَّبُوا بِاٰيَاتِنَا كُلِّهَا فَاَخَذْنَاهُمْ اَخْذَ عَز۪يزٍ مُقْتَدِرٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:43",
+      "text": "اَكُفَّارُكُمْ خَيْرٌ مِنْ اُو۬لٰٓئِكُمْ اَمْ لَكُمْ بَرَٓاءَةٌ فِي الزُّبُرِۚ",
+      "translation": "(Ey Mekkeliler!) Sizin kafirleriniz onlardan iyi mi[1*]? Yoksa zebûrlarda[2*] /kitaplarda sizin lehinize bir beraat /aklanma kararı mı var!",
+      "dipnot": "[1*] Duhan 44/37. [2*] Zebûrlar diye meal verdiğimiz ez-Zübür =الزُّبر, zebûr’un çoğuludur, hikmet dolu kitaplar anlamındadır (ez-Zeccâc, Meânî’l-Kur’ân ve İ’râbuhu). Al-i İmrân 3/81 ’de bütün nebîlere kitap ve hikmet verildiği açıklandığı için bu ayetteki ‘zübür’ün, hikmet dolu kitaplar dışında bir anlamı olamaz. Kelime, Şuarâ 26/196, Fatır 35/25 ve Kamer 54/43 ’te aynı anlamı ifade etmektedir. Bu zebûrlardan biri de Davut aleyhisselama verilmiştir ( Nisa 4/163, İsra 17/55 ). Zebûr, Davut aleyhisselama verilen kitabın özel ismi olmadığı için ez-Zebûr şeklinde geçmemektedir. Kelime, ez-Zebûr şeklinde elif lâmlı olarak sadece Enbiyâ 21/105 ’te geçer ve Davut aleyhisselam da dahil bütün nebîlere verilen kitapları ifade eder.",
+      "roots": [
+        "كفر",
+        "خير",
+        "برأ",
+        "زبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/37",
+          "targets": [
+            "44:37"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Zebûrlar diye meal verdiğimiz ez-Zübür =الزُّبر, zebûr’un çoğuludur, hikmet dolu kitaplar anlamındadır (ez-Zeccâc, Meânî’l-Kur’ân ve İ’râbuhu). "
+        },
+        {
+          "type": "link",
+          "content": "Al-i İmrân 3/81",
+          "targets": [
+            "3:81"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’de bütün nebîlere kitap ve hikmet verildiği açıklandığı için bu ayetteki ‘zübür’ün, hikmet dolu kitaplar dışında bir anlamı olamaz. Kelime, "
+        },
+        {
+          "type": "link",
+          "content": "Şuarâ 26/196",
+          "targets": [
+            "26:196"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fatır 35/25",
+          "targets": [
+            "35:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "ve Kamer 54/43",
+          "targets": [
+            "54:43"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’te aynı anlamı ifade etmektedir. Bu zebûrlardan biri de Davut aleyhisselama verilmiştir ( "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/163",
+          "targets": [
+            "4:163"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/55",
+          "targets": [
+            "17:55"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Zebûr, Davut aleyhisselama verilen kitabın özel ismi olmadığı için ez-Zebûr şeklinde geçmemektedir. Kelime, "
+        },
+        {
+          "type": "link",
+          "content": "ez-Zebûr şeklinde elif lâmlı olarak sadece Enbiyâ 21/105",
+          "targets": [
+            "21:105"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "’te geçer ve Davut aleyhisselam da dahil bütün nebîlere verilen kitapları ifade eder."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:43",
+        "connections": [
+          {
+            "target_coordinate": "44:37",
+            "context": "Duhan 44/37"
+          },
+          {
+            "target_coordinate": "3:81",
+            "context": "Al-i İmrân 3/81"
+          },
+          {
+            "target_coordinate": "26:196",
+            "context": "Şuarâ 26/196"
+          },
+          {
+            "target_coordinate": "35:25",
+            "context": "Fatır 35/25"
+          },
+          {
+            "target_coordinate": "54:43",
+            "context": "ve Kamer 54/43"
+          },
+          {
+            "target_coordinate": "4:163",
+            "context": "Nisa 4/163"
+          },
+          {
+            "target_coordinate": "17:55",
+            "context": "İsra 17/55"
+          },
+          {
+            "target_coordinate": "21:105",
+            "context": "ez-Zebûr şeklinde elif lâmlı olarak sadece Enbiyâ 21/105"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 43. Ayetin Tefsiri\nاَكُفَّارُكُمْ خَيْرٌ مِنْ اُو۬لٰٓئِكُمْ اَمْ لَكُمْ بَرَٓاءَةٌ فِي الزُّبُرِۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:44",
+      "text": "اَمْ يَقُولُونَ نَحْنُ جَم۪يعٌ مُنْتَصِرٌ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "قول",
+        "جمع",
+        "نصر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "54:44",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 44. Ayetin Tefsiri\nاَمْ يَقُولُونَ نَحْنُ جَم۪يعٌ مُنْتَصِرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:45",
+      "text": "سَيُهْزَمُ الْجَمْعُ وَيُوَلُّونَ الدُّبُرَ",
+      "translation": "Toplulukları yakında bozguna uğratılacak ve birbirlerine sırt çevirecekler[*].",
+      "dipnot": "İsra 17/76, Rum 30/1 - 6.",
+      "roots": [
+        "هزم",
+        "جمع",
+        "ولي",
+        "دبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İsra 17/76",
+          "targets": [
+            "17:76"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/1-6",
+          "targets": [
+            "30:1",
+            "30:2",
+            "30:3",
+            "30:4",
+            "30:5",
+            "30:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:45",
+        "connections": [
+          {
+            "target_coordinate": "17:76",
+            "context": "İsra 17/76"
+          },
+          {
+            "target_coordinate": "30:1",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:2",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:3",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:4",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:5",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:6",
+            "context": "Rum 30/1-6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 45. Ayetin Tefsiri\nسَيُهْزَمُ الْجَمْعُ وَيُوَلُّونَ الدُّبُرَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:46",
+      "text": "بَلِ السَّاعَةُ مَوْعِدُهُمْ وَالسَّاعَةُ اَدْهٰى وَاَمَرُّ",
+      "translation": "Yeniden diriliş saati, asıl tehdit edildikleri saattir[1*]. O saat (dünyada yaşayacaklarından) daha dehşetli ve daha acıdır[2*].",
+      "dipnot": "[1*] Zariyat 51/60. [2*] Ra’d 13/34, Taha 20/127, Zümer 39/26.",
+      "roots": [
+        "سوع",
+        "وعد",
+        "دهي",
+        "مرر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/60",
+          "targets": [
+            "51:60"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/34",
+          "targets": [
+            "13:34"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/127",
+          "targets": [
+            "20:127"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/26",
+          "targets": [
+            "39:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:46",
+        "connections": [
+          {
+            "target_coordinate": "51:60",
+            "context": "Zariyat 51/60"
+          },
+          {
+            "target_coordinate": "13:34",
+            "context": "d 13/34"
+          },
+          {
+            "target_coordinate": "20:127",
+            "context": "Taha 20/127"
+          },
+          {
+            "target_coordinate": "39:26",
+            "context": "Zümer 39/26"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 46. Ayetin Tefsiri\nبَلِ السَّاعَةُ مَوْعِدُهُمْ وَالسَّاعَةُ اَدْهٰى وَاَمَرُّ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:47",
+      "text": "اِنَّ الْمُجْرِم۪ينَ ف۪ي ضَلَالٍ وَسُعُرٍۢ",
+      "translation": "Suça batanlar, gerçekten sapkınlık ve çılgınlık içindedirler[*].",
+      "dipnot": "Zuhruf 43/74 - 77.",
+      "roots": [
+        "جرم",
+        "ضلل",
+        "سعر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zuhruf 43/74-77",
+          "targets": [
+            "43:74",
+            "43:75",
+            "43:76",
+            "43:77"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:47",
+        "connections": [
+          {
+            "target_coordinate": "43:74",
+            "context": "Zuhruf 43/74-77"
+          },
+          {
+            "target_coordinate": "43:75",
+            "context": "Zuhruf 43/74-77"
+          },
+          {
+            "target_coordinate": "43:76",
+            "context": "Zuhruf 43/74-77"
+          },
+          {
+            "target_coordinate": "43:77",
+            "context": "Zuhruf 43/74-77"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 47. Ayetin Tefsiri\nاِنَّ الْمُجْرِم۪ينَ ف۪ي ضَلَالٍ وَسُعُرٍۢ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:48",
+      "text": "يَوْمَ يُسْحَبُونَ فِي النَّارِ عَلٰى وُجُوهِهِمْۜ ذُوقُوا مَسَّ سَقَرَ",
+      "translation": "Ateşin içinde yüzüstü süründürülecekleri gün[1*] onlara: “Sakarın[2*] /Cehennemin dokunuşlarını tadın bakalım!” (denir).",
+      "dipnot": "[1*] Mü’min 40/70 - 72 [2*] \"Sakar\", Cehennemin bir başka adıdır ( Müddessir 74/26 - 30, 40 - 47 ). “Yakıp kavuran” anlamına gelir (Mekâyis). Kişilerin Cehennemdeki cezaları, işledikleri suça göre farklı olacaktır ( Enam 6/60, İsra 17/21 ).",
+      "roots": [
+        "يوم",
+        "سحب",
+        "نور",
+        "وجه",
+        "ذوق",
+        "مسس"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/70-72",
+          "targets": [
+            "40:70",
+            "40:71",
+            "40:72"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "[2*] \"Sakar\", Cehennemin bir başka adıdır ( "
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/26-30,40-47",
+          "targets": [
+            "74:26",
+            "74:27",
+            "74:28",
+            "74:29",
+            "74:30",
+            "74:40",
+            "74:41",
+            "74:42",
+            "74:43",
+            "74:44",
+            "74:45",
+            "74:46",
+            "74:47"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). “Yakıp kavuran” anlamına gelir (Mekâyis). Kişilerin Cehennemdeki cezaları, işledikleri suça göre farklı olacaktır ( "
+        },
+        {
+          "type": "link",
+          "content": "Enam 6/60",
+          "targets": [
+            "6:60"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/21",
+          "targets": [
+            "17:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:48",
+        "connections": [
+          {
+            "target_coordinate": "40:70",
+            "context": "min 40/70-72"
+          },
+          {
+            "target_coordinate": "40:71",
+            "context": "min 40/70-72"
+          },
+          {
+            "target_coordinate": "40:72",
+            "context": "min 40/70-72"
+          },
+          {
+            "target_coordinate": "74:26",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:27",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:28",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:29",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:30",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:40",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:41",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:42",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:43",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:44",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:45",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:46",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "74:47",
+            "context": "Müddessir 74/26-30,40-47"
+          },
+          {
+            "target_coordinate": "6:60",
+            "context": "Enam 6/60"
+          },
+          {
+            "target_coordinate": "17:21",
+            "context": "İsra 17/21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 48. Ayetin Tefsiri\nيَوْمَ يُسْحَبُونَ فِي النَّارِ عَلٰى وُجُوهِهِمْۜ ذُوقُوا مَسَّ سَقَرَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:49",
+      "text": "اِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ",
+      "translation": "Şüphesiz ki biz, her şeyi bir ölçüye göre yarattık[*].",
+      "dipnot": "Ra’d 13/8, Furkan 25/2.",
+      "roots": [
+        "كلل",
+        "شيأ",
+        "خلق",
+        "قدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/8",
+          "targets": [
+            "13:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/2",
+          "targets": [
+            "25:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:49",
+        "connections": [
+          {
+            "target_coordinate": "13:8",
+            "context": "d 13/8"
+          },
+          {
+            "target_coordinate": "25:2",
+            "context": "Furkan 25/2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 49. Ayetin Tefsiri\nاِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:50",
+      "text": "وَمَٓا اَمْرُنَٓا اِلَّا وَاحِدَةٌ كَلَمْحٍ بِالْبَصَرِ",
+      "translation": "(Sizi öldürüp tekrar diriltme) İşimiz, bir tek emre bakar; (sizin için) göz açıp kapama gibidir[*].",
+      "dipnot": "Nahl 16/77.",
+      "roots": [
+        "أمر",
+        "وحد",
+        "لمح",
+        "بصر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nahl 16/77",
+          "targets": [
+            "16:77"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:50",
+        "connections": [
+          {
+            "target_coordinate": "16:77",
+            "context": "Nahl 16/77"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 50. Ayetin Tefsiri\nوَمَٓا اَمْرُنَٓا اِلَّا وَاحِدَةٌ كَلَمْحٍ بِالْبَصَرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:51",
+      "text": "وَلَقَدْ اَهْلَكْنَٓا اَشْيَاعَكُمْ فَهَلْ مِنْ مُدَّكِرٍ",
+      "translation": "Sizin gibi gruplaşanları helak ettik. Peki, bu bilgiyi alan var mı[*]?",
+      "dipnot": "Duhan 44/37.",
+      "roots": [
+        "هلك",
+        "شيع",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Duhan 44/37",
+          "targets": [
+            "44:37"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:51",
+        "connections": [
+          {
+            "target_coordinate": "44:37",
+            "context": "Duhan 44/37"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 51. Ayetin Tefsiri\nوَلَقَدْ اَهْلَكْنَٓا اَشْيَاعَكُمْ فَهَلْ مِنْ مُدَّكِرٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:52",
+      "text": "وَكُلُّ شَيْءٍ فَعَلُوهُ فِي الزُّبُرِ",
+      "translation": "Yaptıkları her şey amel defterlerindedir[*].",
+      "dipnot": "ez-Zübür (الزُّبر) indirilen kitaplar anlamına geldiği gibi, amel defteri anlamına da gelmektedir. Bir sonraki ayet ile birlikte düşünüldüğünde burada amel defteri olduğu açıktır ( Yasin 36/12, Nebe 78/29 ).",
+      "roots": [
+        "كلل",
+        "شيأ",
+        "فعل",
+        "زبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "ez-Zübür (الزُّبر) indirilen kitaplar anlamına geldiği gibi, amel defteri anlamına da gelmektedir. Bir sonraki ayet ile birlikte düşünüldüğünde burada amel defteri olduğu açıktır ( "
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/12",
+          "targets": [
+            "36:12"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/29",
+          "targets": [
+            "78:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:52",
+        "connections": [
+          {
+            "target_coordinate": "36:12",
+            "context": "Yasin 36/12"
+          },
+          {
+            "target_coordinate": "78:29",
+            "context": "Nebe 78/29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 52. Ayetin Tefsiri\nوَكُلُّ شَيْءٍ فَعَلُوهُ فِي الزُّبُرِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:53",
+      "text": "وَكُلُّ صَغ۪يرٍ وَكَب۪يرٍ مُسْتَطَرٌ",
+      "translation": "Küçük, büyük her şey satır satır yazılmıştır[*].",
+      "dipnot": "Yunus 10/21, Mü’minun 23/62, Kehf 18/49, Zuhruf 43/80, Casiye 45/29, İnfitar 82/10 - 12.",
+      "roots": [
+        "كلل",
+        "صغر",
+        "كبر",
+        "سطر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/21",
+          "targets": [
+            "10:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/62",
+          "targets": [
+            "23:62"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/49",
+          "targets": [
+            "18:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/80",
+          "targets": [
+            "43:80"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Casiye 45/29",
+          "targets": [
+            "45:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/10-12",
+          "targets": [
+            "82:10",
+            "82:11",
+            "82:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:53",
+        "connections": [
+          {
+            "target_coordinate": "10:21",
+            "context": "Yunus 10/21"
+          },
+          {
+            "target_coordinate": "23:62",
+            "context": "minun 23/62"
+          },
+          {
+            "target_coordinate": "18:49",
+            "context": "Kehf 18/49"
+          },
+          {
+            "target_coordinate": "43:80",
+            "context": "Zuhruf 43/80"
+          },
+          {
+            "target_coordinate": "45:29",
+            "context": "Casiye 45/29"
+          },
+          {
+            "target_coordinate": "82:10",
+            "context": "İnfitar 82/10-12"
+          },
+          {
+            "target_coordinate": "82:11",
+            "context": "İnfitar 82/10-12"
+          },
+          {
+            "target_coordinate": "82:12",
+            "context": "İnfitar 82/10-12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 53. Ayetin Tefsiri\nوَكُلُّ صَغ۪يرٍ وَكَب۪يرٍ مُسْتَطَرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:54",
+      "text": "اِنَّ الْمُتَّق۪ينَ ف۪ي جَنَّاتٍ وَنَهَرٍۙ",
+      "translation": "Kendini yanlışlardan koruyanlar bahçelerde ve ırmaklarda olacak[*],",
+      "dipnot": "Tur 52/17.",
+      "roots": [
+        "وقي",
+        "جنن",
+        "نهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Tur 52/17",
+          "targets": [
+            "52:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:54",
+        "connections": [
+          {
+            "target_coordinate": "52:17",
+            "context": "Tur 52/17"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 54. Ayetin Tefsiri\nاِنَّ الْمُتَّق۪ينَ ف۪ي جَنَّاتٍ وَنَهَرٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    },
+    {
+      "id": "54:55",
+      "text": "ف۪ي مَقْعَدِ صِدْقٍ عِنْدَ مَل۪يكٍ مُقْتَدِرٍ",
+      "translation": "Doğru olanların makamında, iktidar sahibi hükümdarın /Allah’ın huzurunda bulunacaklardır.[*]",
+      "dipnot": "Yunus 10/2.",
+      "roots": [
+        "قعد",
+        "صدق",
+        "عند",
+        "ملك",
+        "قدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/2",
+          "targets": [
+            "10:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "54:55",
+        "connections": [
+          {
+            "target_coordinate": "10:2",
+            "context": "Yunus 10/2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kamer Suresi 55. Ayetin Tefsiri\nف۪ي مَقْعَدِ صِدْقٍ عِنْدَ مَل۪يكٍ مُقْتَدِرٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/54.mp3"
+    }
+  ]
+}

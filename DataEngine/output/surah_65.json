@@ -1,0 +1,1024 @@
+{
+  "nodes": [
+    {
+      "id": "65:1",
+      "text": "يَٓا اَيُّهَا النَّبِيُّ اِذَا طَلَّقْتُمُ النِّسَٓاءَ فَطَلِّقُوهُنَّ لِعِدَّتِهِنَّ وَاَحْصُوا الْعِدَّةَۚ وَاتَّقُوا اللّٰهَ رَبَّكُمْۚ لَا تُخْرِجُوهُنَّ مِنْ بُيُوتِهِنَّ وَلَا يَخْرُجْنَ اِلَّٓا اَنْ يَأْت۪ينَ بِفَاحِشَةٍ مُبَيِّنَةٍۜ وَتِلْكَ حُدُودُ اللّٰهِۜ وَمَنْ يَتَعَدَّ حُدُودَ اللّٰهِ فَقَدْ ظَلَمَ نَفْسَهُۜ لَا تَدْر۪ي لَعَلَّ اللّٰهَ يُحْدِثُ بَعْدَ ذٰلِكَ اَمْرًا",
+      "translation": "Ey Nebî! Kadınları boşayacağınız zaman onları, kendileri için belirlenmiş iddet kurallarına göre boşayın ve iddeti sayın. Rabbiniz olan Allah’a karşı yanlış yapmaktan sakının. Siz, onları evlerinden çıkarmayın; onlar da çıkmasınlar. Sadece, haram kılınan cinsel ilişkiye girdikleri şüphe götürmez bir şekilde belli ise çıkarabilirsiniz. Bunlar Allah’ın koyduğu sınırlardır. Kim Allah’ın koyduğu sınırları aşarsa yanlışı kesinlikle kendisine yapar. Bilemezsin, belki Allah bunun ardından yeni bir durum ortaya çıkarır.",
+      "dipnot": "[1*] İddet, bir kocanın, karısını boşamasıyla başlayan bekleme süresidir. Kadın düzenli âdet görüyorsa eşi onu, temizlik döneminde ve ilişkiye girmeden boşamalıdır. Üçüncü temizlik süresinin tamamlanması ile iddet biter (Bakara 2/228). Üç temizlik ve iki âdet süresinin toplamı yaklaşık üç ayı bulur. Âdetten kesilmiş olan veya âdet düzensizliği yaşayan kadınlar da eşlerinin boşamasından itibaren üç ay iddet beklerler. Hamile olan kadınların iddeti ise hamileliğin sonlanmasına kadar devam eder (Talak 65/4).\n[2*] İddeti bekleyecek olan kadın, iddet süresini saymakla görevli olan da onu boşayan kocadır. İddet sayma emri kocanın, iddet süresi içinde eşiyle yakından ilgilenmesini zorunlu kılar. Bu, hem aralarındaki problemleri çözmelerine yardımcı olur hem de kocanın geri dönme hakkının olduğu süreyi kaçırmamasını sağlar. Kadın da iddeti ile ilgili konularda kocasına, doğru bilgi vermek zorundadır (Bakara 2/228",
+      "roots": [
+        "أيي",
+        "نبأ",
+        "طلق",
+        "نسو",
+        "عدد",
+        "حصي",
+        "وقي",
+        "أله",
+        "ربب",
+        "خرج",
+        "بيت",
+        "أتي",
+        "فحش",
+        "بين",
+        "حدد",
+        "عدو",
+        "ظلم",
+        "نفس",
+        "دري",
+        "حدث",
+        "بعد",
+        "أمر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] İddet, bir kocanın, karısını boşamasıyla başlayan bekleme süresidir. Kadın düzenli âdet görüyorsa eşi onu, temizlik döneminde ve ilişkiye girmeden boşamalıdır. Üçüncü temizlik süresinin tamamlanması ile iddet biter ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/228",
+          "targets": [
+            "2:228"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Üç temizlik ve iki âdet süresinin toplamı yaklaşık üç ayı bulur. Âdetten kesilmiş olan veya âdet düzensizliği yaşayan kadınlar da eşlerinin boşamasından itibaren üç ay iddet beklerler. Hamile olan kadınların iddeti ise hamileliğin sonlanmasına kadar devam eder ("
+        },
+        {
+          "type": "link",
+          "content": "Talak 65/4",
+          "targets": [
+            "65:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[2*] İddeti bekleyecek olan kadın, iddet süresini saymakla görevli olan da onu boşayan kocadır. İddet sayma emri kocanın, iddet süresi içinde eşiyle yakından ilgilenmesini zorunlu kılar. Bu, hem aralarındaki problemleri çözmelerine yardımcı olur hem de kocanın geri dönme hakkının olduğu süreyi kaçırmamasını sağlar. Kadın da iddeti ile ilgili konularda kocasına, doğru bilgi vermek zorundadır ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/228",
+          "targets": [
+            "2:228"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:1",
+        "connections": [
+          {
+            "target_coordinate": "2:228",
+            "context": "Bakara 2/228"
+          },
+          {
+            "target_coordinate": "65:4",
+            "context": "Talak 65/4"
+          },
+          {
+            "target_coordinate": "2:228",
+            "context": "Bakara 2/228"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 1. Ayetin Tefsiri\nيَٓا اَيُّهَا النَّبِيُّ اِذَا طَلَّقْتُمُ النِّسَٓاءَ فَطَلِّقُوهُنَّ لِعِدَّتِهِنَّ وَاَحْصُوا الْعِدَّةَۚ وَاتَّقُوا اللّٰهَ رَبَّكُمْۚ لَا تُخْرِجُوهُنَّ مِنْ بُيُوتِهِنَّ وَلَا يَخْرُجْنَ اِلَّٓا اَنْ يَأْت۪ينَ بِفَاحِشَةٍ مُبَيِّنَةٍۜ وَتِلْكَ حُدُودُ اللّٰهِۜ وَمَنْ يَتَعَدَّ حُدُودَ اللّٰهِ فَقَدْ ظَلَمَ نَفْسَهُۜ لَا تَدْر۪ي لَعَلَّ اللّٰهَ يُحْدِثُ بَعْدَ ذٰلِكَ اَمْرًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:2",
+      "text": "فَاِذَا بَلَغْنَ اَجَلَهُنَّ فَاَمْسِكُوهُنَّ بِمَعْرُوفٍ اَوْ فَارِقُوهُنَّ بِمَعْرُوفٍ وَاَشْهِدُوا ذَوَيْ عَدْلٍ مِنْكُمْ وَاَق۪يمُوا الشَّهَادَةَ لِلّٰهِۜ ذٰلِكُمْ يُوعَظُ بِه۪ مَنْ كَانَ يُؤْمِنُ بِاللّٰهِ وَالْيَوْمِ الْاٰخِرِۜ وَمَنْ يَتَّقِ اللّٰهَ يَجْعَلْ لَهُ مَخْرَجًاۙ",
+      "translation": "Bekleme sürelerinin (iddetin) sonuna vardıklarında onları ya marufa[1*] /Kur’an’daki hükümlere göre (nikahınızda) tutun[2*] ya da onlardan maruf ile ayrılın. İçinizden iki adil kişiyi şahit tutun[3*]. (Ey şahitler! Siz de) şahitliği Allah için tam ve düzgün yapın[4*]. İşte bunlarla, içinizden Allah’a ve Ahiret gününe inananlara öğüt veriliyor. Kim Allah’a karşı yanlış yapmaktan sakınırsa Allah ona bir çıkış yolu açar.",
+      "dipnot": "[1*] Ma’ruf, güzelliği akıl veya din yoluyla bilinen şeydir. Zıttı ‘münker’dir (Müfredat). Ma’rufa uygun bilgi, fıtratı yansıttığı için evrensel nitelikte olur. [2*]",
+      "roots": [
+        "بلغ",
+        "أجل",
+        "مسك",
+        "عرف",
+        "فرق",
+        "شهد",
+        "عدل",
+        "قوم",
+        "أله",
+        "وعظ",
+        "كون",
+        "أمن",
+        "يوم",
+        "أخر",
+        "وقي",
+        "جعل",
+        "خرج"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Ma’ruf, güzelliği akıl veya din yoluyla bilinen şeydir. Zıttı ‘münker’dir (Müfredat). Ma’rufa uygun bilgi, fıtratı yansıttığı için evrensel nitelikte olur. [2*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 2. Ayetin Tefsiri\nفَاِذَا بَلَغْنَ اَجَلَهُنَّ فَاَمْسِكُوهُنَّ بِمَعْرُوفٍ اَوْ فَارِقُوهُنَّ بِمَعْرُوفٍ وَاَشْهِدُوا ذَوَيْ عَدْلٍ مِنْكُمْ وَاَق۪يمُوا الشَّهَادَةَ لِلّٰهِۜ ذٰلِكُمْ يُوعَظُ بِه۪ مَنْ كَانَ يُؤْمِنُ بِاللّٰهِ وَالْيَوْمِ الْاٰخِرِۜ وَمَنْ يَتَّقِ اللّٰهَ يَجْعَلْ لَهُ مَخْرَجًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:3",
+      "text": "وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُۜ وَمَنْ يَتَوَكَّلْ عَلَى اللّٰهِ فَهُوَ حَسْبُهُۜ اِنَّ اللّٰهَ بَالِغُ اَمْرِه۪ۜ قَدْ جَعَلَ اللّٰهُ لِكُلِّ شَيْءٍ قَدْرًا",
+      "translation": "Allah ona, hiç beklemediği yerden rızık verir[1*]. Kim Allah’a güvenip dayanırsa O, ona yeter. Şüphesiz Allah, işini sonuca ulaştırır. Kesinlikle Allah, her şey için bir ölçü koymuştur[2*].",
+      "dipnot": "[1*] Nisa 4/130, Hud 11/6, Ankebut 29/60. [2*] Allah her şey için bir ölçü, bir standart koyduğu için buraya kadar anlatılanlar, ölçüye uygun olarak yapılan birinci talakı gösterir. Yaklaşık üç aylık bir sürece yayılan bu talak en fazla iki defa gerçekleşebilir; üçüncü boşamada bu kurallar geçerli olmaz. Tek seferde iki veya üç talakla boşama, şarta veya belli bir zamanın gelmesine bağlayarak boşama da dahil olmak üzere, Bakara 2/229-230 ve Talak 65/2. ayetlerde belirtilen hususlara riayet edilmeyen tüm boşanmalar geçersizdir.",
+      "roots": [
+        "رزق",
+        "حيث",
+        "حسب",
+        "وكل",
+        "أله",
+        "بلغ",
+        "أمر",
+        "جعل",
+        "كلل",
+        "شيأ",
+        "قدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/130",
+          "targets": [
+            "4:130"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/6",
+          "targets": [
+            "11:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/60",
+          "targets": [
+            "29:60"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Allah her şey için bir ölçü, bir standart koyduğu için buraya kadar anlatılanlar, ölçüye uygun olarak yapılan birinci talakı gösterir. Yaklaşık üç aylık bir sürece yayılan bu talak en fazla iki defa gerçekleşebilir; üçüncü boşamada bu kurallar geçerli olmaz. Tek seferde iki veya üç talakla boşama, şarta veya belli bir zamanın gelmesine bağlayarak boşama da dahil olmak üzere, "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/229-230",
+          "targets": [
+            "2:229",
+            "2:230"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "ve Talak 65/2",
+          "targets": [
+            "65:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayetlerde belirtilen hususlara riayet edilmeyen tüm boşanmalar geçersizdir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:3",
+        "connections": [
+          {
+            "target_coordinate": "4:130",
+            "context": "Nisa 4/130"
+          },
+          {
+            "target_coordinate": "11:6",
+            "context": "Hud 11/6"
+          },
+          {
+            "target_coordinate": "29:60",
+            "context": "Ankebut 29/60"
+          },
+          {
+            "target_coordinate": "2:229",
+            "context": "Bakara 2/229-230"
+          },
+          {
+            "target_coordinate": "2:230",
+            "context": "Bakara 2/229-230"
+          },
+          {
+            "target_coordinate": "65:2",
+            "context": "ve Talak 65/2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 3. Ayetin Tefsiri\nوَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُۜ وَمَنْ يَتَوَكَّلْ عَلَى اللّٰهِ فَهُوَ حَسْبُهُۜ اِنَّ اللّٰهَ بَالِغُ اَمْرِه۪ۜ قَدْ جَعَلَ اللّٰهُ لِكُلِّ شَيْءٍ قَدْرًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:4",
+      "text": "وَالّٰٓـ۪ٔي يَئِسْنَ مِنَ الْمَح۪يضِ مِنْ نِسَٓائِكُمْ اِنِ ارْتَبْتُمْ فَعِدَّتُهُنَّ ثَلٰثَةُ اَشْهُرٍۙ وَالّٰٓـ۪ٔي لَمْ يَحِضْنَۜ وَاُو۬لَاتُ الْاَحْمَالِ اَجَلُهُنَّ اَنْ يَضَعْنَ حَمْلَهُنَّۜ وَمَنْ يَتَّقِ اللّٰهَ يَجْعَلْ لَهُ مِنْ اَمْرِه۪ يُسْرًا",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "يأس",
+        "حيض",
+        "نسو",
+        "ريب",
+        "عدد",
+        "ثلث",
+        "شهر",
+        "حمل",
+        "أجل",
+        "وضع",
+        "وقي",
+        "أله",
+        "جعل",
+        "أمر",
+        "يسر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "65:4",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 4. Ayetin Tefsiri\nوَالّٰٓـ۪ٔي يَئِسْنَ مِنَ الْمَح۪يضِ مِنْ نِسَٓائِكُمْ اِنِ ارْتَبْتُمْ فَعِدَّتُهُنَّ ثَلٰثَةُ اَشْهُرٍۙ وَالّٰٓـ۪ٔي لَمْ يَحِضْنَۜ وَاُو۬لَاتُ الْاَحْمَالِ اَجَلُهُنَّ اَنْ يَضَعْنَ حَمْلَهُنَّۜ وَمَنْ يَتَّقِ اللّٰهَ يَجْعَلْ لَهُ مِنْ اَمْرِه۪ يُسْرًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:4",
+      "text": "",
+      "translation": "Kadınlarınızdan âdetten ümidini kesmiş (menopoza girmiş) olanlar(ın iddeti) hakkında şüpheye düşerseniz (bilin ki) onların iddeti üç aydır; âdet görmeyen kadınlarınki de öyledir. Hamile olanların bekleme süreleri ise hamileliklerinin sonlanması ile biter. Kim Allah’a karşı yanlış yapmaktan sakınırsa Allah onun işinde bir kolaylık oluşturur.",
+      "dipnot": "Birçok meal ve tefsirde ayetteki bu ifadeye “henüz âdet görmeyenler” anlamı verilerek bu ayet, çocukların evlendirilmesinin delili sayılmıştır. Ahzâb 33/49. ayete göre gerdeğe girmeden boşanan kadının iddet beklemesi gerekmediği için bu ayet, çocuklarla gerdeğe girilebileceğinin de delili sayılmıştır. Halbuki ayette, yaşadığı sıkıntıdan/stresten dolayı boşanma esnasında âdet göremez olan yani âdet düzeni bozulan kadınlarla normalde (boşanma öncesinde de) âdet düzensizliği yaşayan, birkaç ayda bir âdet gören kadınların kast edildiği anlaşılmaktadır. Zira düzenli olarak âdet görmeyen kadınlarda iki âdet arası aylarca ve hatta duruma göre yıllarca sürebilir. Zaten evlilik konusunda nikâh çağından bahseden Kur’an’ın (Nisa 4/6) henüz reşit olmamış çocukların evlendirilmesini kabul etmesi de mümkün değildir. Eğer ayette “henüz adet görmeyen ancak normalde görmesi beklenen” çocuklardan bahsediliyor olsaydı, olumsuzluk edatı olarak “lem” değil, “lemma”nın kullanılması gerekirdi. Bu yanlış tercüme, düzenli adet görmeyen kadınların durumu hakkındaki sorunun da çözümsüz kalmasına neden olmuş, mezhepler bu durumdaki kadın için kendilerine göre şöyle bir fetva vermişlerdir: “Düzenli adet görmeyen kadın, kendi yaşıtları adetten kesilinyece kadar bekleyecek, ondan sonra üç ay iddet sayacak, sonra boşanmış kabul edilecektir.” Bu fetvanın hem ayete aykırı olduğu hem de bu durumdaki kadına ve onun nafakasını sağlamak zorunda olan erkeğe büyük zulüm olduğu açıktır. Âdetten kesilen, düzenli âdet görmeyen ve hamile olduğu için âdet göremeyen kadınların dışında bir de normal şekilde yani düzenli âdet gören kadınlar vardır ki onların iddetleri de üç kez âdet görüp temizlenmeleridir (Bakara 2/228).",
+      "roots": [
+        "يأس",
+        "حيض",
+        "نسو",
+        "ريب",
+        "عدد",
+        "ثلث",
+        "شهر",
+        "حمل",
+        "أجل",
+        "وضع",
+        "وقي",
+        "أله",
+        "جعل",
+        "أمر",
+        "يسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Birçok meal ve tefsirde ayetteki bu ifadeye “henüz âdet görmeyenler” anlamı verilerek bu ayet, çocukların evlendirilmesinin delili sayılmıştır. "
+        },
+        {
+          "type": "link",
+          "content": "Ahzâb 33/49",
+          "targets": [
+            "33:49"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayete göre gerdeğe girmeden boşanan kadının iddet beklemesi gerekmediği için bu ayet, çocuklarla gerdeğe girilebileceğinin de delili sayılmıştır. Halbuki ayette, yaşadığı sıkıntıdan/stresten dolayı boşanma esnasında âdet göremez olan yani âdet düzeni bozulan kadınlarla normalde (boşanma öncesinde de) âdet düzensizliği yaşayan, birkaç ayda bir âdet gören kadınların kast edildiği anlaşılmaktadır. Zira düzenli olarak âdet görmeyen kadınlarda iki âdet arası aylarca ve hatta duruma göre yıllarca sürebilir. Zaten evlilik konusunda nikâh çağından bahseden Kur’an’ın ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/6",
+          "targets": [
+            "4:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") henüz reşit olmamış çocukların evlendirilmesini kabul etmesi de mümkün değildir. Eğer ayette “henüz adet görmeyen ancak normalde görmesi beklenen” çocuklardan bahsediliyor olsaydı, olumsuzluk edatı olarak “lem” değil, “lemma”nın kullanılması gerekirdi. Bu yanlış tercüme, düzenli adet görmeyen kadınların durumu hakkındaki sorunun da çözümsüz kalmasına neden olmuş, mezhepler bu durumdaki kadın için kendilerine göre şöyle bir fetva vermişlerdir: “Düzenli adet görmeyen kadın, kendi yaşıtları adetten kesilinyece kadar bekleyecek, ondan sonra üç ay iddet sayacak, sonra boşanmış kabul edilecektir.” Bu fetvanın hem ayete aykırı olduğu hem de bu durumdaki kadına ve onun nafakasını sağlamak zorunda olan erkeğe büyük zulüm olduğu açıktır. Âdetten kesilen, düzenli âdet görmeyen ve hamile olduğu için âdet göremeyen kadınların dışında bir de normal şekilde yani düzenli âdet gören kadınlar vardır ki onların iddetleri de üç kez âdet görüp temizlenmeleridir ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/228",
+          "targets": [
+            "2:228"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:4",
+        "connections": [
+          {
+            "target_coordinate": "33:49",
+            "context": "Ahzâb 33/49"
+          },
+          {
+            "target_coordinate": "4:6",
+            "context": "Nisa 4/6"
+          },
+          {
+            "target_coordinate": "2:228",
+            "context": "Bakara 2/228"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 4. Ayetin Tefsiri\nوَالّٰٓـ۪ٔي يَئِسْنَ مِنَ الْمَح۪يضِ مِنْ نِسَٓائِكُمْ اِنِ ارْتَبْتُمْ فَعِدَّتُهُنَّ ثَلٰثَةُ اَشْهُرٍۙ وَالّٰٓـ۪ٔي لَمْ يَحِضْنَۜ وَاُو۬لَاتُ الْاَحْمَالِ اَجَلُهُنَّ اَنْ يَضَعْنَ حَمْلَهُنَّۜ وَمَنْ يَتَّقِ اللّٰهَ يَجْعَلْ لَهُ مِنْ اَمْرِه۪ يُسْرًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:5",
+      "text": "ذٰلِكَ اَمْرُ اللّٰهِ اَنْزَلَهُٓ اِلَيْكُمْۜ وَمَنْ يَتَّقِ اللّٰهَ يُكَفِّرْ عَنْهُ سَيِّـَٔاتِه۪ وَيُعْظِمْ لَهُٓ اَجْرًا",
+      "translation": "Bu Allah’ın size indirdiği emridir. Kim Allah’a karşı yanlış yapmaktan sakınırsa Allah da onun kötülüklerini örter ve alacağı ödülü çoğaltır.",
+      "dipnot": "Teğabün 64/9.",
+      "roots": [
+        "أمر",
+        "أله",
+        "نزل",
+        "وقي",
+        "كفر",
+        "سوأ",
+        "عظم",
+        "أجر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Teğabün 64/9",
+          "targets": [
+            "64:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:5",
+        "connections": [
+          {
+            "target_coordinate": "64:9",
+            "context": "Teğabün 64/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 5. Ayetin Tefsiri\nذٰلِكَ اَمْرُ اللّٰهِ اَنْزَلَهُٓ اِلَيْكُمْۜ وَمَنْ يَتَّقِ اللّٰهَ يُكَفِّرْ عَنْهُ سَيِّـَٔاتِه۪ وَيُعْظِمْ لَهُٓ اَجْرًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:6",
+      "text": "اَسْكِنُوهُنَّ مِنْ حَيْثُ سَكَنْتُمْ مِنْ وُجْدِكُمْ وَلَا تُضَارُّوهُنَّ لِتُضَيِّقُوا عَلَيْهِنَّۜ وَاِنْ كُنَّ اُو۬لَاتِ حَمْلٍ فَاَنْفِقُوا عَلَيْهِنَّ حَتّٰى يَضَعْنَ حَمْلَهُنَّۚ فَاِنْ اَرْضَعْنَ لَكُمْ فَاٰتُوهُنَّ اُجُورَهُنَّۚ وَأْتَمِرُوا بَيْنَكُمْ بِمَعْرُوفٍۚ وَاِنْ تَعَاسَرْتُمْ فَسَتُرْضِعُ لَهُٓ اُخْرٰىۜ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "سكن",
+        "حيث",
+        "وجد",
+        "ضرر",
+        "ضيق",
+        "كون",
+        "حمل",
+        "نفق",
+        "وضع",
+        "رضع",
+        "أتي",
+        "أجر",
+        "أمر",
+        "بين",
+        "عرف",
+        "عسر",
+        "أخر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "65:6",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 6. Ayetin Tefsiri\nاَسْكِنُوهُنَّ مِنْ حَيْثُ سَكَنْتُمْ مِنْ وُجْدِكُمْ وَلَا تُضَٓارُّوهُنَّ لِتُضَيِّقُوا عَلَيْهِنَّۜ وَاِنْ كُنَّ اُو۬لَاتِ حَمْلٍ فَاَنْفِقُوا عَلَيْهِنَّ حَتّٰى يَضَعْنَ حَمْلَهُنَّۚ فَاِنْ اَرْضَعْنَ لَكُمْ فَاٰتُوهُنَّ اُجُورَهُنَّۚ وَأْتَمِرُوا بَيْنَكُمْ بِمَعْرُوفٍۚ وَاِنْ تَعَاسَرْتُمْ فَسَتُرْضِعُ لَهُٓ اُخْرٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:6",
+      "text": "",
+      "translation": "Boşadığınız kadınları (iddetleri süresince) imkanlarınız ölçüsünde oturduğunuz yerin bir bölümünde oturtun. (Evi) dar etmek için onlara zarar vermeye kalkmayın. Hamile iseler hamilelikleri sonlanıncaya kadar nafakalarını karşılayın. Çocuğu sizin için emzirirlerse ücretlerini verin. İşleri aranızda marufa göre karşılıklı görüşme ile yürütün. Eğer karşılıklı olarak zorlanırsanız babası için çocuğu, bir başkası emzirecektir.",
+      "dipnot": "Talak 65/1. Kadın boşandığı için çocuğunu emzirmek istemeyebilir. Eğer emzirirse baba emzirme ücretini verir (Bakara 2/233).",
+      "roots": [
+        "سكن",
+        "حيث",
+        "وجد",
+        "ضرر",
+        "ضيق",
+        "كون",
+        "حمل",
+        "نفق",
+        "وضع",
+        "رضع",
+        "أتي",
+        "أجر",
+        "أمر",
+        "بين",
+        "عرف",
+        "عسر",
+        "أخر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Talak 65/1",
+          "targets": [
+            "65:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Kadın boşandığı için çocuğunu emzirmek istemeyebilir. Eğer emzirirse baba emzirme ücretini verir ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/233",
+          "targets": [
+            "2:233"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:6",
+        "connections": [
+          {
+            "target_coordinate": "65:1",
+            "context": "Talak 65/1"
+          },
+          {
+            "target_coordinate": "2:233",
+            "context": "Bakara 2/233"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 6. Ayetin Tefsiri\nاَسْكِنُوهُنَّ مِنْ حَيْثُ سَكَنْتُمْ مِنْ وُجْدِكُمْ وَلَا تُضَٓارُّوهُنَّ لِتُضَيِّقُوا عَلَيْهِنَّۜ وَاِنْ كُنَّ اُو۬لَاتِ حَمْلٍ فَاَنْفِقُوا عَلَيْهِنَّ حَتّٰى يَضَعْنَ حَمْلَهُنَّۚ فَاِنْ اَرْضَعْنَ لَكُمْ فَاٰتُوهُنَّ اُجُورَهُنَّۚ وَأْتَمِرُوا بَيْنَكُمْ بِمَعْرُوفٍۚ وَاِنْ تَعَاسَرْتُمْ فَسَتُرْضِعُ لَهُٓ اُخْرٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:7",
+      "text": "لِيُنْفِقْ ذُو سَعَةٍ مِنْ سَعَتِه۪ۜ وَمَنْ قُدِرَ عَلَيْهِ رِزْقُهُ فَلْيُنْفِقْ مِمَّٓا اٰتٰيهُ اللّٰهُۜ لَا يُكَلِّفُ اللّٰهُ نَفْسًا اِلَّا مَٓا اٰتٰيهَاۜ سَيَجْعَلُ اللّٰهُ بَعْدَ عُسْرٍ يُسْرًا۟",
+      "translation": "Varlıklı olan, harcamayı varlığına göre yapsın. Rızkı dar olan da Allah’ın kendisine verdiğinden harcasın. Allah hiç kimseye, verdiği imkandan fazla sorumluluk yüklemez. Allah, zorluğun ardından bir kolaylık oluşturacaktır.",
+      "dipnot": "İddet süresi içinde kadının geçimi için yapılan harcamalar ve iddet bittikten sonra çocuğu emzirme ücreti, kocanın imkanlarına göre belirlenir (Bakara 2/241). Bakara 2/286. İnşirah 94/5-6.",
+      "roots": [
+        "نفق",
+        "وسع",
+        "قدر",
+        "رزق",
+        "أتي",
+        "أله",
+        "كلف",
+        "نفس",
+        "جعل",
+        "بعد",
+        "عسر",
+        "يسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "İddet süresi içinde kadının geçimi için yapılan harcamalar ve iddet bittikten sonra çocuğu emzirme ücreti, kocanın imkanlarına göre belirlenir ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/241",
+          "targets": [
+            "2:241"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/286",
+          "targets": [
+            "2:286"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". "
+        },
+        {
+          "type": "link",
+          "content": "İnşirah 94/5-6",
+          "targets": [
+            "94:5",
+            "94:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:7",
+        "connections": [
+          {
+            "target_coordinate": "2:241",
+            "context": "Bakara 2/241"
+          },
+          {
+            "target_coordinate": "2:286",
+            "context": "Bakara 2/286"
+          },
+          {
+            "target_coordinate": "94:5",
+            "context": "İnşirah 94/5-6"
+          },
+          {
+            "target_coordinate": "94:6",
+            "context": "İnşirah 94/5-6"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 7. Ayetin Tefsiri\nلِيُنْفِقْ ذُو سَعَةٍ مِنْ سَعَتِه۪ۜ وَمَنْ قُدِرَ عَلَيْهِ رِزْقُهُ فَلْيُنْفِقْ مِمَّٓا اٰتٰيهُ اللّٰهُۜ لَا يُكَلِّفُ اللّٰهُ نَفْسًا اِلَّا مَٓا اٰتٰيهَاۜ سَيَجْعَلُ اللّٰهُ بَعْدَ عُسْرٍ يُسْرًا۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:8",
+      "text": "وَكَاَيِّنْ مِنْ قَرْيَةٍ عَتَتْ عَنْ اَمْرِ رَبِّهَا وَرُسُلِه۪ فَحَاسَبْنَاهَا حِسَابًا شَد۪يدًا وَعَذَّبْنَاهَا عَذَابًا نُكْرًا",
+      "translation": "Rablerinin emrine ve elçilerine başkaldırmış nice kenti çetin bir hesaba çektik ve görülmemiş bir azaba uğrattık.",
+      "dipnot": "Hac 22/45, 48, Muhammed 47/13.",
+      "roots": [
+        "قري",
+        "عتو",
+        "أمر",
+        "ربب",
+        "رسل",
+        "حسب",
+        "شدد",
+        "عذب",
+        "نكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hac 22/45,48",
+          "targets": [
+            "22:45",
+            "22:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/13",
+          "targets": [
+            "47:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:8",
+        "connections": [
+          {
+            "target_coordinate": "22:45",
+            "context": "Hac 22/45,48"
+          },
+          {
+            "target_coordinate": "22:48",
+            "context": "Hac 22/45,48"
+          },
+          {
+            "target_coordinate": "47:13",
+            "context": "Muhammed 47/13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 8. Ayetin Tefsiri\nوَكَاَيِّنْ مِنْ قَرْيَةٍ عَتَتْ عَنْ اَمْرِ رَبِّهَا وَرُسُلِه۪ فَحَاسَبْنَاهَا حِسَابًا شَد۪يدًا وَعَذَّبْنَاهَا عَذَابًا نُكْرًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:9",
+      "text": "فَذَاقَتْ وَبَالَ اَمْرِهَا وَكَانَ عَاقِبَةُ اَمْرِهَا خُسْرًا",
+      "translation": "Böylece yaptıklarının cezasını tattılar ve işlerinin sonu hüsran oldu.",
+      "dipnot": "Teğabün 64/5.",
+      "roots": [
+        "ذوق",
+        "وبل",
+        "أمر",
+        "كون",
+        "عقب",
+        "خسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Teğabün 64/5",
+          "targets": [
+            "64:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:9",
+        "connections": [
+          {
+            "target_coordinate": "64:5",
+            "context": "Teğabün 64/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 9. Ayetin Tefsiri\nفَذَاقَتْ وَبَالَ اَمْرِهَا وَكَانَ عَاقِبَةُ اَمْرِهَا خُسْرًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:10",
+      "text": "اَعَدَّ اللّٰهُ لَهُمْ عَذَابًا شَد۪يدًا فَاتَّقُوا اللّٰهَ يَٓا اُو۬لِي الْاَلْبَابِۚۛ اَلَّذ۪ينَ اٰمَنُواۚۛ قَدْ اَنْزَلَ اللّٰهُ اِلَيْكُمْ ذِكْرًاۙ",
+      "translation": "Allah onlar için çetin bir azap daha hazırlamıştır. Ey inanıp güvenenler! Ey aklıselim sahipleri! Allah’a karşı yanlış yapmaktan sakının (ki böyle bir azabı çekmeyesiniz). Allah size bir zikir /bir kitap indirdi.",
+      "dipnot": "Âl-i İmran 3/56, İsra 17/58, Fussilet 41/27. Zikir, hem önceki kitapların hem de Kur’an’ın ortak adıdır (Nahl 16/43-44, Enbiya 21/7, 24).",
+      "roots": [
+        "عدد",
+        "أله",
+        "عذب",
+        "شدد",
+        "وقي",
+        "لبب",
+        "أمن",
+        "نزل",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/56",
+          "targets": [
+            "3:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/58",
+          "targets": [
+            "17:58"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/27",
+          "targets": [
+            "41:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Zikir, hem önceki kitapların hem de Kur’an’ın ortak adıdır ("
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/43-44",
+          "targets": [
+            "16:43",
+            "16:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/7,24",
+          "targets": [
+            "21:7",
+            "21:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:10",
+        "connections": [
+          {
+            "target_coordinate": "3:56",
+            "context": "Âl-i İmran 3/56"
+          },
+          {
+            "target_coordinate": "17:58",
+            "context": "İsra 17/58"
+          },
+          {
+            "target_coordinate": "41:27",
+            "context": "Fussilet 41/27"
+          },
+          {
+            "target_coordinate": "16:43",
+            "context": "Nahl 16/43-44"
+          },
+          {
+            "target_coordinate": "16:44",
+            "context": "Nahl 16/43-44"
+          },
+          {
+            "target_coordinate": "21:7",
+            "context": "Enbiya 21/7,24"
+          },
+          {
+            "target_coordinate": "21:24",
+            "context": "Enbiya 21/7,24"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 10. Ayetin Tefsiri\nاَعَدَّ اللّٰهُ لَهُمْ عَذَابًا شَد۪يدًا فَاتَّقُوا اللّٰهَ يَٓا اُو۬لِي الْاَلْبَابِۚۛ اَلَّذ۪ينَ اٰمَنُواۚۛ قَدْ اَنْزَلَ اللّٰهُ اِلَيْكُمْ ذِكْرًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:11",
+      "text": "رَسُولًا يَتْلُوا عَلَيْكُمْ اٰيَاتِ اللّٰهِ مُبَيِّنَاتٍ لِيُخْرِجَ الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ مِنَ الظُّلُمَاتِ اِلَى النُّورِۜ وَمَنْ يُؤْمِنْ بِاللّٰهِ وَيَعْمَلْ صَالِحًا يُدْخِلْهُ جَنَّاتٍ تَجْر۪ي مِنْ تَحْتِهَا الْاَنْهَارُ خَالِد۪ينَ ف۪يهَٓا اَبَدًاۜ قَدْ اَحْسَنَ اللّٰهُ لَهُ رِزْقًا",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "رسل",
+        "تلو",
+        "أيي",
+        "أله",
+        "بين",
+        "خرج",
+        "أمن",
+        "عمل",
+        "صلح",
+        "ظلم",
+        "نور",
+        "دخل",
+        "جنن",
+        "جري",
+        "تحت",
+        "نهر",
+        "خلد",
+        "أبد",
+        "حسن",
+        "رزق"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "65:11",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 11. Ayetin Tefsiri\nرَسُولًا يَتْلُوا عَلَيْكُمْ اٰيَاتِ اللّٰهِ مُبَيِّنَاتٍ لِيُخْرِجَ الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ مِنَ الظُّلُمَاتِ اِلَى النُّورِۜ وَمَنْ يُؤْمِنْ بِاللّٰهِ وَيَعْمَلْ صَالِحًا يُدْخِلْهُ جَنَّاتٍ تَجْر۪ي مِنْ تَحْتِهَا الْاَنْهَارُ خَالِد۪ينَ ف۪يهَٓا اَبَدًاۜ قَدْ اَحْسَنَ اللّٰهُ لَهُ رِزْقًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    },
+    {
+      "id": "65:12",
+      "text": "اَللّٰهُ الَّذ۪ي خَلَقَ سَبْعَ سَمٰوَاتٍ وَمِنَ الْاَرْضِ مِثْلَهُنَّۜ يَتَنَزَّلُ الْاَمْرُ بَيْنَهُنَّ لِتَعْلَمُٓوا اَنَّ اللّٰهَ عَلٰى كُلِّ شَيْءٍ قَد۪يرٌۙ وَاَنَّ اللّٰهَ قَدْ اَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا",
+      "translation": "Allah, yedi (kat)[1*] göğü bir de onların mislini yani (yedi kat) yeri[2*] yaratmış olandır. (Allah’ın emrettiği) işler, bunlar arasında inip durur[3*]. Bu, Allah’ın her şeye bir ölçü koyduğunu ve Allah’ın, kesinlikle her şeyi bilgisiyle çepeçevre kuşattığını bilmeniz içindir[4*].",
+      "dipnot": "[1*] Göğün yedi kat gök şeklinde düzenlenmesiyle ilgili diğer ayetler için bkz. Mülk 67/3, Nuh 71/15. [2*] Arap dilinde misil; örneklikte, ölçüde, diğer hususlarda hatta anlamda bir şeyin benzeri olmaktır (El-Ayn). Yer de yedi kat göğün misli olarak yaratıldığı için onun da yedi kat şeklinde düzenlenmiş olması gerekir ( Rahman 55/33 ). Dünyanın üst tarafı nasıl sularla, bitkilerle ve hayvanlarla döşeli ise yedinci kat gök de aynı olur. Oranın zirve noktasında sidre ağacının olması bundan dolayıdır ( Necm 53/14 ). [3*] İşler, yer ile göğün tabakaları arasında yürür ( Secde 32/5 ). [4*] Hicr 15/85, Enbiya 21/16, Sâd 38/27, Duhan 44/38 - 39, Zariyat 51/56.",
+      "roots": [
+        "أله",
+        "خلق",
+        "سبع",
+        "سمو",
+        "أرض",
+        "مثل",
+        "نزل",
+        "أمر",
+        "بين",
+        "علم",
+        "كلل",
+        "شيأ",
+        "قدر",
+        "حوط"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Göğün yedi kat gök şeklinde düzenlenmesiyle ilgili diğer ayetler için bkz. "
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/3",
+          "targets": [
+            "67:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nuh 71/15",
+          "targets": [
+            "71:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Arap dilinde misil; örneklikte, ölçüde, diğer hususlarda hatta anlamda bir şeyin benzeri olmaktır (El-Ayn). Yer de yedi kat göğün misli olarak yaratıldığı için onun da yedi kat şeklinde düzenlenmiş olması gerekir ( "
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/33",
+          "targets": [
+            "55:33"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Dünyanın üst tarafı nasıl sularla, bitkilerle ve hayvanlarla döşeli ise yedinci kat gök de aynı olur. Oranın zirve noktasında sidre ağacının olması bundan dolayıdır ( "
+        },
+        {
+          "type": "link",
+          "content": "Necm 53/14",
+          "targets": [
+            "53:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [3*] İşler, yer ile göğün tabakaları arasında yürür ( "
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/5",
+          "targets": [
+            "32:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [4*] "
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/85",
+          "targets": [
+            "15:85"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/16",
+          "targets": [
+            "21:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sâd 38/27",
+          "targets": [
+            "38:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/38-39",
+          "targets": [
+            "44:38",
+            "44:39"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/56",
+          "targets": [
+            "51:56"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "65:12",
+        "connections": [
+          {
+            "target_coordinate": "67:3",
+            "context": "Mülk 67/3"
+          },
+          {
+            "target_coordinate": "71:15",
+            "context": "Nuh 71/15"
+          },
+          {
+            "target_coordinate": "55:33",
+            "context": "Rahman 55/33"
+          },
+          {
+            "target_coordinate": "53:14",
+            "context": "Necm 53/14"
+          },
+          {
+            "target_coordinate": "32:5",
+            "context": "Secde 32/5"
+          },
+          {
+            "target_coordinate": "15:85",
+            "context": "Hicr 15/85"
+          },
+          {
+            "target_coordinate": "21:16",
+            "context": "Enbiya 21/16"
+          },
+          {
+            "target_coordinate": "38:27",
+            "context": "Sâd 38/27"
+          },
+          {
+            "target_coordinate": "44:38",
+            "context": "Duhan 44/38-39"
+          },
+          {
+            "target_coordinate": "44:39",
+            "context": "Duhan 44/38-39"
+          },
+          {
+            "target_coordinate": "51:56",
+            "context": "Zariyat 51/56"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Talâk Suresi 12. Ayetin Tefsiri\nاَللّٰهُ الَّذ۪ي خَلَقَ سَبْعَ سَمٰوَاتٍ وَمِنَ الْاَرْضِ مِثْلَهُنَّۜ يَتَنَزَّلُ الْاَمْرُ بَيْنَهُنَّ لِتَعْلَمُٓوا اَنَّ اللّٰهَ عَلٰى كُلِّ شَيْءٍ قَد۪يرٌۙ وَاَنَّ اللّٰهَ قَدْ اَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/65.mp3"
+    }
+  ]
+}

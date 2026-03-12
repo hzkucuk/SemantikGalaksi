@@ -1,0 +1,680 @@
+{
+  "nodes": [
+    {
+      "id": "93:1",
+      "text": "وَالضُّحٰىۙ",
+      "translation": "Duhâya /Güneş’in yaydığı ışınlara yemin olsun!",
+      "dipnot": "Naziat 79/29, Şems 91/1.",
+      "roots": [
+        "ضحو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Naziat 79/29",
+          "targets": [
+            "79:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/1",
+          "targets": [
+            "91:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "93:1",
+        "connections": [
+          {
+            "target_coordinate": "79:29",
+            "context": "Naziat 79/29"
+          },
+          {
+            "target_coordinate": "91:1",
+            "context": "Şems 91/1"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:2",
+      "text": "وَالَّيْلِ اِذَا سَجٰىۙ",
+      "translation": "Durgunlaştığında geceye de yemin olsun ki",
+      "dipnot": "“Secâ (سَجَى)” durgunlaştı, demektir. Henüz kararmamış ama rüzgarı durgunlaşmış geceye “leyletun sâciyetun (ليلةٌ ساجيةٌ)” denir (el-Ayn, سجو md.). Güney ve kuzey 45 derece enlemlerle Ekvator arasındaki bölgelerde, güneş batınca gündüz biter, gece başlar. Bu sırada duhâ da kaybolmaya başlar, hava sakinleşir ve rüzgarda hissedilir bir durgunlaşma görülür. 45 derece enlemlerle kutuplar arasındaki bölgelerde ise gecenin başlangıcı, güneşin doğup batmasıyla değil, bu durgunlaşma ile anlaşılır. Aynı durum, gün doğuşu ya da batışının izlenmesi imkanı olmayan dağlık bölgeler ve bulutlu günler için de geçerlidir. Yatsı vaktinin bitişinden (bkz. İsra 17/78 ve dipnotları) seher vaktine kadar gecenin sükûneti devam eder ( En’am 6/96 ). Gecenin önemine dikkat çeken diğer ayetler şunlardır: Kasas 28/71 - 73, Müddessir 74/33, Tekvir 81/17, İnşikak 84/17, Fecr 89/4, Şems 91/4, Leyl 92/1. Bu ve önceki ayette Allah, duhâya ve geceye yemin etmektedir. Allah’ın bir şeye yemin etmesi, o şeyin önemine vurgu yapmak ve daha sonra söylenecek şeye dikkat çekmek içindir.",
+      "roots": [
+        "ليل",
+        "سجو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“Secâ (سَجَى)” durgunlaştı, demektir. Henüz kararmamış ama rüzgarı durgunlaşmış geceye “leyletun sâciyetun (ليلةٌ ساجيةٌ)” denir (el-Ayn, سجو md.). Güney ve kuzey 45 derece enlemlerle Ekvator arasındaki bölgelerde, güneş batınca gündüz biter, gece başlar. Bu sırada duhâ da kaybolmaya başlar, hava sakinleşir ve rüzgarda hissedilir bir durgunlaşma görülür. 45 derece enlemlerle kutuplar arasındaki bölgelerde ise gecenin başlangıcı, güneşin doğup batmasıyla değil, bu durgunlaşma ile anlaşılır. Aynı durum, gün doğuşu ya da batışının izlenmesi imkanı olmayan dağlık bölgeler ve bulutlu günler için de geçerlidir. Yatsı vaktinin bitişinden (bkz. "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/78",
+          "targets": [
+            "17:78"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "ve dipnotları) seher vaktine kadar gecenin sükûneti devam eder ( En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/96",
+          "targets": [
+            "6:96"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Gecenin önemine dikkat çeken diğer ayetler şunlardır: "
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/71-73",
+          "targets": [
+            "28:71",
+            "28:72",
+            "28:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/33",
+          "targets": [
+            "74:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/17",
+          "targets": [
+            "81:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/17",
+          "targets": [
+            "84:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/4",
+          "targets": [
+            "89:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/4",
+          "targets": [
+            "91:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Leyl 92/1",
+          "targets": [
+            "92:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Bu ve önceki ayette Allah, duhâya ve geceye yemin etmektedir. Allah’ın bir şeye yemin etmesi, o şeyin önemine vurgu yapmak ve daha sonra söylenecek şeye dikkat çekmek içindir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "93:2",
+        "connections": [
+          {
+            "target_coordinate": "17:78",
+            "context": "İsra 17/78"
+          },
+          {
+            "target_coordinate": "6:96",
+            "context": "am 6/96"
+          },
+          {
+            "target_coordinate": "28:71",
+            "context": "Kasas 28/71-73"
+          },
+          {
+            "target_coordinate": "28:72",
+            "context": "Kasas 28/71-73"
+          },
+          {
+            "target_coordinate": "28:73",
+            "context": "Kasas 28/71-73"
+          },
+          {
+            "target_coordinate": "74:33",
+            "context": "Müddessir 74/33"
+          },
+          {
+            "target_coordinate": "81:17",
+            "context": "Tekvir 81/17"
+          },
+          {
+            "target_coordinate": "84:17",
+            "context": "İnşikak 84/17"
+          },
+          {
+            "target_coordinate": "89:4",
+            "context": "Fecr 89/4"
+          },
+          {
+            "target_coordinate": "91:4",
+            "context": "Şems 91/4"
+          },
+          {
+            "target_coordinate": "92:1",
+            "context": "Leyl 92/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 2. Ayetin Tefsiri\nوَالَّيْلِ اِذَا سَجٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:3",
+      "text": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلٰىۜ",
+      "translation": "(Ey Muhammed!) Rabbin seni bırakmadığı gibi sana darılmadı da.",
+      "dipnot": "Allah nebisini yalnız bırakmamış, en zor anlarında bile ona yardımcı olmuştur ( Tevbe 9/40 ).",
+      "roots": [
+        "ودع",
+        "ربب",
+        "قلي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Allah nebisini yalnız bırakmamış, en zor anlarında bile ona yardımcı olmuştur ( "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/40",
+          "targets": [
+            "9:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "93:3",
+        "connections": [
+          {
+            "target_coordinate": "9:40",
+            "context": "Tevbe 9/40"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 3. Ayetin Tefsiri\nمَا وَدَّعَكَ رَبُّكَ وَمَا قَلٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:4",
+      "text": "وَلَلْاٰخِرَةُ خَيْرٌ لَكَ مِنَ الْاُو۫لٰىۜ",
+      "translation": "Senin için sonraki (hayat), şimdikinden kesinlikle daha iyi olacaktır.",
+      "dipnot": "Nasr 110/1 - 3.",
+      "roots": [
+        "أخر",
+        "خير",
+        "أول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nasr 110/1-3",
+          "targets": [
+            "110:1",
+            "110:2",
+            "110:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "93:4",
+        "connections": [
+          {
+            "target_coordinate": "110:1",
+            "context": "Nasr 110/1-3"
+          },
+          {
+            "target_coordinate": "110:2",
+            "context": "Nasr 110/1-3"
+          },
+          {
+            "target_coordinate": "110:3",
+            "context": "Nasr 110/1-3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 4. Ayetin Tefsiri\nوَلَلْاٰخِرَةُ خَيْرٌ لَكَ مِنَ الْاُو۫لٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:5",
+      "text": "وَلَسَوْفَ يُعْط۪يكَ رَبُّكَ فَتَرْضٰىۜ",
+      "translation": "Rabbin elbette sana (nimetler) verecek ve sen de hoşnut olacaksın.",
+      "dipnot": "Kalem 68/3.",
+      "roots": [
+        "عطو",
+        "ربب",
+        "رضو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kalem 68/3",
+          "targets": [
+            "68:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "93:5",
+        "connections": [
+          {
+            "target_coordinate": "68:3",
+            "context": "Kalem 68/3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 5. Ayetin Tefsiri\nوَلَسَوْفَ يُعْط۪يكَ رَبُّكَ فَتَرْضٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:6",
+      "text": "اَلَمْ يَجِدْكَ يَت۪يمًا فَاٰوٰىۖ",
+      "translation": "O, seni yetim bulup da barındırmadı mı?",
+      "dipnot": "",
+      "roots": [
+        "وجد",
+        "يتم",
+        "أوي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "93:6",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 6. Ayetin Tefsiri\nاَلَمْ يَجِدْكَ يَت۪يمًا فَاٰوٰىۖ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:7",
+      "text": "وَوَجَدَكَ ضَٓالًّا فَهَدٰىۖ",
+      "translation": "Seni şaşkın halde bulup da yolu göstermedi mi?",
+      "dipnot": "",
+      "roots": [
+        "وجد",
+        "ضلل",
+        "هدي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "93:7",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 7. Ayetin Tefsiri\nوَوَجَدَكَ ضَٓالًّا فَهَدٰىۖ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:8",
+      "text": "وَوَجَدَكَ عَٓائِلًا فَاَغْنٰىۜ",
+      "translation": "Seni muhtaç halde bulup da ihtiyacını karşılamadı mı?",
+      "dipnot": "Necm 53/48.",
+      "roots": [
+        "وجد",
+        "عيل",
+        "غني"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Necm 53/48",
+          "targets": [
+            "53:48"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "93:8",
+        "connections": [
+          {
+            "target_coordinate": "53:48",
+            "context": "Necm 53/48"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 8. Ayetin Tefsiri\nوَوَجَدَكَ عَٓائِلًا فَاَغْنٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:9",
+      "text": "فَاَمَّا الْيَت۪يمَ فَلَا تَقْهَرْۜ",
+      "translation": "Öyleyse sen de sakın yetimi hor görme!",
+      "dipnot": "Bakara 2/220,\nNisa 4/2,\n10.",
+      "roots": [
+        "يتم",
+        "قهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/220",
+          "targets": [
+            "2:220"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/2,10",
+          "targets": [
+            "4:2",
+            "4:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "93:9",
+        "connections": [
+          {
+            "target_coordinate": "2:220",
+            "context": "Bakara 2/220"
+          },
+          {
+            "target_coordinate": "4:2",
+            "context": "Nisa 4/2,10"
+          },
+          {
+            "target_coordinate": "4:10",
+            "context": "Nisa 4/2,10"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 9. Ayetin Tefsiri\nفَاَمَّا الْيَت۪يمَ فَلَا تَقْهَرْۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:10",
+      "text": "وَاَمَّا السَّٓائِلَ فَلَا تَنْهَرْۜ",
+      "translation": "İsteyene ve sorana da ilgisiz davranma!",
+      "dipnot": "İlgisiz davranma anlamı verilen “felâ tenher” (فَلَا تَنْهَرْ) ifadesindeki fiilin kökü olan “nehr” (نهر) bir şeyin açılması veya onu açma anlamına gelir. (Mekayis) İki kıyı arasından akıp giden suyun yerine nehir (نهر), güneşin doğuşu ile batışı arasına giren aydınlığa da nehar (نهار) yani gündüz denir. Bir defasında Nebimiz, sahabeden Abdullah İbn Ümmi Mektûm’a ilgisiz davrandığı için azarlanmıştı (\nAbese 80/1\n-\n10\n) Allah Teâlâ bu gibi davranışları Nebimize yasaklamıştır (\nEn’am 6/52,\nKehf 18/28\n).",
+      "roots": [
+        "سأل",
+        "نهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "İlgisiz davranma anlamı verilen “felâ tenher” (فَلَا تَنْهَرْ) ifadesindeki fiilin kökü olan “nehr” (نهر) bir şeyin açılması veya onu açma anlamına gelir. (Mekayis) İki kıyı arasından akıp giden suyun yerine nehir (نهر), güneşin doğuşu ile batışı arasına giren aydınlığa da nehar (نهار) yani gündüz denir. Bir defasında Nebimiz, sahabeden Abdullah İbn Ümmi Mektûm’a ilgisiz davrandığı için azarlanmıştı (\n"
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/1-10",
+          "targets": [
+            "80:1",
+            "80:2",
+            "80:3",
+            "80:4",
+            "80:5",
+            "80:6",
+            "80:7",
+            "80:8",
+            "80:9",
+            "80:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Allah Teâlâ bu gibi davranışları Nebimize yasaklamıştır (\nEn’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/52",
+          "targets": [
+            "6:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/28",
+          "targets": [
+            "18:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "93:10",
+        "connections": [
+          {
+            "target_coordinate": "80:1",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "80:2",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "80:3",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "80:4",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "80:5",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "80:6",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "80:7",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "80:8",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "80:9",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "80:10",
+            "context": "Abese 80/1-10"
+          },
+          {
+            "target_coordinate": "6:52",
+            "context": "am 6/52"
+          },
+          {
+            "target_coordinate": "18:28",
+            "context": "Kehf 18/28"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 10. Ayetin Tefsiri\nوَاَمَّا السَّٓائِلَ فَلَا تَنْهَرْۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    },
+    {
+      "id": "93:11",
+      "text": "وَاَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+      "translation": "Rabbinin sana olan nimetini /Kur’an’ı daima anlat!",
+      "dipnot": "En'âm 6/51,\nMüddessir 74/1\n-\n3,\nA'lâ 87/9,\nĞaşiye 88/21,\nKevser 108/1.",
+      "roots": [
+        "نعم",
+        "ربب",
+        "حدث"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "En'âm 6/51",
+          "targets": [
+            "6:51"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/1-3",
+          "targets": [
+            "74:1",
+            "74:2",
+            "74:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "A'lâ 87/9",
+          "targets": [
+            "87:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ğaşiye 88/21",
+          "targets": [
+            "88:21"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kevser 108/1",
+          "targets": [
+            "108:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "93:11",
+        "connections": [
+          {
+            "target_coordinate": "6:51",
+            "context": "En'âm 6/51"
+          },
+          {
+            "target_coordinate": "74:1",
+            "context": "Müddessir 74/1-3"
+          },
+          {
+            "target_coordinate": "74:2",
+            "context": "Müddessir 74/1-3"
+          },
+          {
+            "target_coordinate": "74:3",
+            "context": "Müddessir 74/1-3"
+          },
+          {
+            "target_coordinate": "87:9",
+            "context": "A'lâ 87/9"
+          },
+          {
+            "target_coordinate": "88:21",
+            "context": "Ğaşiye 88/21"
+          },
+          {
+            "target_coordinate": "108:1",
+            "context": "Kevser 108/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Duhâ Suresi 11. Ayetin Tefsiri\nوَاَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/93.mp3"
+    }
+  ]
+}

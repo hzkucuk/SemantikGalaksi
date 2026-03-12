@@ -78,11 +78,20 @@ var showHUD = (n) => {
     document.getElementById('hud-translation').innerText = n.translation;
     document.getElementById('hud-arabic').innerHTML = arabicHighlighted;
 
-    // Dipnot alanını güncelle
+    // Dipnot alanını güncelle (dipnot_parsed varsa zengin içerik, yoksa düz metin)
     var dipnotDiv = document.getElementById('hud-dipnot');
     var dipnotLabel = document.getElementById('dipnot-label');
     dipnotDiv.classList.add('hidden');
-    if (n.dipnot) {
+    if (n.dipnot_parsed && n.dipnot_parsed.length > 0) {
+        var dipnotHtml = n.dipnot_parsed.map(part => {
+            if (part.type === 'link' && part.targets && part.targets.length > 0) {
+                return `<a href="#" onclick="event.preventDefault(); event.stopPropagation(); warpToId('${part.targets[0]}')" style="color:#f59e0b;text-decoration:underline;cursor:pointer;font-weight:600;">${part.content}</a>`;
+            }
+            return `<span>${part.content.replace(/\n/g, '<br>')}</span>`;
+        }).join('');
+        dipnotDiv.innerHTML = dipnotHtml;
+        dipnotLabel.textContent = 'Dipnot';
+    } else if (n.dipnot) {
         dipnotDiv.textContent = n.dipnot;
         dipnotLabel.textContent = 'Dipnot';
     } else {
@@ -246,6 +255,20 @@ window.speakThis = async (btn, nodeId) => {
     }
     activeSpeakBtn = btn;
     btn.textContent = '⏳';
+
+    // Öncelik 1: Veri setindeki audio URL'si (doğrudan MP3)
+    if (node.audio) {
+        try {
+            currentAudio = new Audio(node.audio);
+            currentAudio.play();
+            btn.textContent = '⏹';
+            currentAudio.onended = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
+            currentAudio.onerror = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
+            return;
+        } catch(e) { currentAudio = null; }
+    }
+
+    // Öncelik 2: Gemini TTS
     if (!apiKey) { apiKey = await KeyManager.getWorkingKey(); }
     var success = apiKey ? await speakAyah(text) : false;
     if (success && currentAudio) {
@@ -253,7 +276,7 @@ window.speakThis = async (btn, nodeId) => {
         currentAudio.onended = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
         currentAudio.onerror = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
     } else {
-        // Gemini TTS başarısız veya API key yok → tarayıcı TTS
+        // Öncelik 3: Tarayıcı TTS
         var utter = speakWithBrowser(text);
         if (utter) {
             btn.textContent = '⏹';

@@ -1,0 +1,421 @@
+{
+  "nodes": [
+    {
+      "id": "109:1",
+      "text": "قُلْ يَٓا اَيُّهَا الْكَافِرُونَۙ",
+      "translation": "De ki: “Ey kâfirler /ayetleri görmezlikte direnenler!",
+      "dipnot": "Küfür, örtme; kâfir, örten anlamındadır (Müfredât). Bütün kâfirler, aynı zamanda yalancıdırlar (Bakara 2/39). Onların bu değişmez özelliği sebebiyle kâfirlik kelimesini en iyi karşılayan ifade “görmezlikte direnen”dir. Bir kişi, Kur’ân’ın Allah’ın kitabı olduğunu anladıktan sonra onun âyetlerinden bir tanesini dahi görmemekte direnirse üstünü örtmüş ve kâfir olmuş olur. Bu kişi, direnmesine sebep olan şeyi birinci sıraya, Allah’ı ikinci sıraya koyduğu için de müşrik olur. Bundan dolayı her kâfir, müşrik; her müşrik de kâfirdir (Âl-i İmrân 3/151).",
+      "roots": [
+        "قول",
+        "أيي",
+        "كفر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Küfür, örtme; kâfir, örten anlamındadır (Müfredât). Bütün kâfirler, aynı zamanda yalancıdırlar ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/39",
+          "targets": [
+            "2:39"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Onların bu değişmez özelliği sebebiyle kâfirlik kelimesini en iyi karşılayan ifade “görmezlikte direnen”dir. Bir kişi, Kur’ân’ın Allah’ın kitabı olduğunu anladıktan sonra onun âyetlerinden bir tanesini dahi görmemekte direnirse üstünü örtmüş ve kâfir olmuş olur. Bu kişi, direnmesine sebep olan şeyi birinci sıraya, Allah’ı ikinci sıraya koyduğu için de müşrik olur. Bundan dolayı her kâfir, müşrik; her müşrik de kâfirdir ("
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmrân 3/151",
+          "targets": [
+            "3:151"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "109:1",
+        "connections": [
+          {
+            "target_coordinate": "2:39",
+            "context": "Bakara 2/39"
+          },
+          {
+            "target_coordinate": "3:151",
+            "context": "Âl-i İmrân 3/151"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâfirûn Suresi 1. Ayetin Tefsiri\nقُلْ يَٓا اَيُّهَا الْكَافِرُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/109.mp3"
+    },
+    {
+      "id": "109:2",
+      "text": "لَٓا اَعْبُدُ مَا تَعْبُدُونَۙ",
+      "translation": "Ben, sizin kulluk ettiklerinize kulluk etmem!",
+      "dipnot": "Yunus 10/104, Zümer 39/11.",
+      "roots": [
+        "عبد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/104",
+          "targets": [
+            "10:104"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/11",
+          "targets": [
+            "39:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "109:2",
+        "connections": [
+          {
+            "target_coordinate": "10:104",
+            "context": "Yunus 10/104"
+          },
+          {
+            "target_coordinate": "39:11",
+            "context": "Zümer 39/11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâfirûn Suresi 2. Ayetin Tefsiri\nلَٓا اَعْبُدُ مَا تَعْبُدُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/109.mp3"
+    },
+    {
+      "id": "109:3",
+      "text": "وَلَٓا اَنْتُمْ عَابِدُونَ مَٓا اَعْبُدُۚ",
+      "translation": "Siz de benim kulluk ettiğime kulluk eden kimseler değilsiniz!",
+      "dipnot": "Sâd 38/4 - 7.",
+      "roots": [
+        "عبد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Sâd 38/4-7",
+          "targets": [
+            "38:4",
+            "38:5",
+            "38:6",
+            "38:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "109:3",
+        "connections": [
+          {
+            "target_coordinate": "38:4",
+            "context": "Sâd 38/4-7"
+          },
+          {
+            "target_coordinate": "38:5",
+            "context": "Sâd 38/4-7"
+          },
+          {
+            "target_coordinate": "38:6",
+            "context": "Sâd 38/4-7"
+          },
+          {
+            "target_coordinate": "38:7",
+            "context": "Sâd 38/4-7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâfirûn Suresi 3. Ayetin Tefsiri\nوَلَٓا اَنْتُمْ عَابِدُونَ مَٓا اَعْبُدُۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/109.mp3"
+    },
+    {
+      "id": "109:4",
+      "text": "وَلَٓا اَنَا۬ عَابِدٌ مَا عَبَدْتُمْۙ",
+      "translation": "Ben, sizin kulluk ettiklerinize kulluk edecek biri değilim!",
+      "dipnot": "En’am 6/14, 56, Ra’d 13/36, Neml 27/91, Zümer 39/14, Mü’min 40/66.",
+      "roots": [
+        "عبد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/14,56",
+          "targets": [
+            "6:14",
+            "6:56"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/36",
+          "targets": [
+            "13:36"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/91",
+          "targets": [
+            "27:91"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/14",
+          "targets": [
+            "39:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/66",
+          "targets": [
+            "40:66"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "109:4",
+        "connections": [
+          {
+            "target_coordinate": "6:14",
+            "context": "am 6/14,56"
+          },
+          {
+            "target_coordinate": "6:56",
+            "context": "am 6/14,56"
+          },
+          {
+            "target_coordinate": "13:36",
+            "context": "d 13/36"
+          },
+          {
+            "target_coordinate": "27:91",
+            "context": "Neml 27/91"
+          },
+          {
+            "target_coordinate": "39:14",
+            "context": "Zümer 39/14"
+          },
+          {
+            "target_coordinate": "40:66",
+            "context": "min 40/66"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâfirûn Suresi 4. Ayetin Tefsiri\nوَلَٓا اَنَا۬ عَابِدٌ مَا عَبَدْتُمْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/109.mp3"
+    },
+    {
+      "id": "109:5",
+      "text": "وَلَٓا اَنْتُمْ عَابِدُونَ مَٓا اَعْبُدُۜ",
+      "translation": "Zaten siz de benim kulluk ettiğime kulluk edecek kimseler değilsiniz!",
+      "dipnot": "Zümer 39/15.",
+      "roots": [
+        "عبد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zümer 39/15",
+          "targets": [
+            "39:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "109:5",
+        "connections": [
+          {
+            "target_coordinate": "39:15",
+            "context": "Zümer 39/15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâfirûn Suresi 5. Ayetin Tefsiri\nوَلَٓا اَنْتُمْ عَابِدُونَ مَٓا اَعْبُدُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/109.mp3"
+    },
+    {
+      "id": "109:6",
+      "text": "لَكُمْ د۪ينُكُمْ وَلِيَ د۪ينِ",
+      "translation": "Sizin dininiz size, benim dinim de bana!”",
+      "dipnot": "Bakara 2/139, Yunus 10/41, Hud 11/109, Şuara 26/216, Kasas 28/55 - 56, Sebe 34/25 - 27, Şûrâ 42/15.",
+      "roots": [
+        "دين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/139",
+          "targets": [
+            "2:139"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/41",
+          "targets": [
+            "10:41"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/109",
+          "targets": [
+            "11:109"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/216",
+          "targets": [
+            "26:216"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/55-56",
+          "targets": [
+            "28:55",
+            "28:56"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/25-27",
+          "targets": [
+            "34:25",
+            "34:26",
+            "34:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/15",
+          "targets": [
+            "42:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "109:6",
+        "connections": [
+          {
+            "target_coordinate": "2:139",
+            "context": "Bakara 2/139"
+          },
+          {
+            "target_coordinate": "10:41",
+            "context": "Yunus 10/41"
+          },
+          {
+            "target_coordinate": "11:109",
+            "context": "Hud 11/109"
+          },
+          {
+            "target_coordinate": "26:216",
+            "context": "Şuara 26/216"
+          },
+          {
+            "target_coordinate": "28:55",
+            "context": "Kasas 28/55-56"
+          },
+          {
+            "target_coordinate": "28:56",
+            "context": "Kasas 28/55-56"
+          },
+          {
+            "target_coordinate": "34:25",
+            "context": "Sebe 34/25-27"
+          },
+          {
+            "target_coordinate": "34:26",
+            "context": "Sebe 34/25-27"
+          },
+          {
+            "target_coordinate": "34:27",
+            "context": "Sebe 34/25-27"
+          },
+          {
+            "target_coordinate": "42:15",
+            "context": "Şûrâ 42/15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâfirûn Suresi 6. Ayetin Tefsiri\nلَكُمْ د۪ينُكُمْ وَلِيَ د۪ينِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/109.mp3"
+    }
+  ]
+}

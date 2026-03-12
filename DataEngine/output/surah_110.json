@@ -1,0 +1,309 @@
+{
+  "nodes": [
+    {
+      "id": "110:1",
+      "text": "اِذَا جَٓاءَ نَصْرُ اللّٰهِ وَالْفَتْحُۙ",
+      "translation": "(Ey Muhammed!) Allah’ın yardımı gelip o fetih (Mekke’nin fethi) gerçekleştiğinde[*]",
+      "dipnot": "[*] Kasas 28/85, Fetih 48/1-3.",
+      "roots": [
+        "جيأ",
+        "نصر",
+        "أله",
+        "فتح"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/85",
+          "targets": [
+            "28:85"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/1-3",
+          "targets": [
+            "48:1",
+            "48:2",
+            "48:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "110:1",
+        "connections": [
+          {
+            "target_coordinate": "28:85",
+            "context": "Kasas 28/85"
+          },
+          {
+            "target_coordinate": "48:1",
+            "context": "Fetih 48/1-3"
+          },
+          {
+            "target_coordinate": "48:2",
+            "context": "Fetih 48/1-3"
+          },
+          {
+            "target_coordinate": "48:3",
+            "context": "Fetih 48/1-3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nasr Suresi 1. Ayetin Tefsiri\nاِذَا جَٓاءَ نَصْرُ اللّٰهِ وَالْفَتْحُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/110.mp3"
+    },
+    {
+      "id": "110:2",
+      "text": "وَرَاَيْتَ النَّاسَ يَدْخُلُونَ ف۪ي د۪ينِ اللّٰهِ اَفْوَاجًاۙ",
+      "translation": "ve insanların bölük bölük Allah’ın dinine girdiklerini gördüğünde,",
+      "dipnot": "",
+      "roots": [
+        "رأي",
+        "أنس",
+        "دخل",
+        "دين",
+        "أله",
+        "فوج"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "110:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nasr Suresi 2. Ayetin Tefsiri\nوَرَاَيْتَ النَّاسَ يَدْخُلُونَ ف۪ي د۪ينِ اللّٰهِ اَفْوَاجًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/110.mp3"
+    },
+    {
+      "id": "110:3",
+      "text": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُۜ اِنَّهُ كَانَ تَوَّابًا",
+      "translation": "her şeyi mükemmel yapmasından dolayı Rabbini tesbih et /ona boyun eğ ve ondan bağışlanma dile![1*] Çünkü o, tövbeleri /dönüşleri kabul edendir.[2*]",
+      "dipnot": "[1*] Enfal 8/67-68, Mü’min 40/55, Muhammed 47/19. [2*] Bu ayetten, Muhammed aleyhisselamın, tövbe etmesini gerektiren bir günah işlediği anlaşılmaktadır. Ayet bağlantılı âyetlerle birlikte okununca, bu günahı Bedir Savaşı’nda işlediği ortaya çıkar: Yüce Allah, düşmanı takip etmeyip geri dönmeyi (Enfal 8/15-16) ve onları etkisiz hale getirmeden esir almayı (Muhammed 47/4) yasaklamıştır. Muhammed aleyhisselam Bedir savaşında bunlara aykırı davranıp düşmanı takip etmemiş ve esir almıştı. Eğer Allah, Müslümanlar Mekke'de iken onlara, o gün için zafer sözü vermiş olmasaydı (Rum 30/1-6), Bedir’de büyük bir yenilgiye uğrayacaklardı (Enfal 8/67-68). Fetih Suresinde, bu iki suçun bağışlanmasının Mekke’nin fethiyle mümkün olacağı bildirilmiş (Fetih 48/1-3), bu surede ise Nebimize fetih gerçekleştikten sonra bağışlanma talep etmesi emredilmiştir. Böylece Nebimiz, her konuda olduğu gibi tövbe ve istiğfar konusunda da bize örnek kılınmıştır (Ahzab 33/21). Buradan, nebiler dahil hiç kimsenin günahlara karşı korunmadığı açıkça anlaşılmaktadır.",
+      "roots": [
+        "سبح",
+        "حمد",
+        "ربب",
+        "غفر",
+        "كون",
+        "توب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/67-68",
+          "targets": [
+            "8:67",
+            "8:68"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/55",
+          "targets": [
+            "40:55"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/19",
+          "targets": [
+            "47:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Bu ayetten, Muhammed aleyhisselamın, tövbe etmesini gerektiren bir günah işlediği anlaşılmaktadır. Ayet bağlantılı âyetlerle birlikte okununca, bu günahı Bedir Savaşı’nda işlediği ortaya çıkar: Yüce Allah, düşmanı takip etmeyip geri dönmeyi ("
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/15-16",
+          "targets": [
+            "8:15",
+            "8:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve onları etkisiz hale getirmeden esir almayı ("
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/4",
+          "targets": [
+            "47:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") yasaklamıştır. Muhammed aleyhisselam Bedir savaşında bunlara aykırı davranıp düşmanı takip etmemiş ve esir almıştı. Eğer Allah, Müslümanlar Mekke'de iken onlara, o gün için zafer sözü vermiş olmasaydı ("
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/1-6",
+          "targets": [
+            "30:1",
+            "30:2",
+            "30:3",
+            "30:4",
+            "30:5",
+            "30:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), Bedir’de büyük bir yenilgiye uğrayacaklardı ("
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/67-68",
+          "targets": [
+            "8:67",
+            "8:68"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Fetih Suresinde, bu iki suçun bağışlanmasının Mekke’nin fethiyle mümkün olacağı bildirilmiş ("
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/1-3",
+          "targets": [
+            "48:1",
+            "48:2",
+            "48:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), bu surede ise Nebimize fetih gerçekleştikten sonra bağışlanma talep etmesi emredilmiştir. Böylece Nebimiz, her konuda olduğu gibi tövbe ve istiğfar konusunda da bize örnek kılınmıştır ("
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/21",
+          "targets": [
+            "33:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Buradan, nebiler dahil hiç kimsenin günahlara karşı korunmadığı açıkça anlaşılmaktadır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "110:3",
+        "connections": [
+          {
+            "target_coordinate": "8:67",
+            "context": "Enfal 8/67-68"
+          },
+          {
+            "target_coordinate": "8:68",
+            "context": "Enfal 8/67-68"
+          },
+          {
+            "target_coordinate": "40:55",
+            "context": "min 40/55"
+          },
+          {
+            "target_coordinate": "47:19",
+            "context": "Muhammed 47/19"
+          },
+          {
+            "target_coordinate": "8:15",
+            "context": "Enfal 8/15-16"
+          },
+          {
+            "target_coordinate": "8:16",
+            "context": "Enfal 8/15-16"
+          },
+          {
+            "target_coordinate": "47:4",
+            "context": "Muhammed 47/4"
+          },
+          {
+            "target_coordinate": "30:1",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:2",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:3",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:4",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:5",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "30:6",
+            "context": "Rum 30/1-6"
+          },
+          {
+            "target_coordinate": "8:67",
+            "context": "Enfal 8/67-68"
+          },
+          {
+            "target_coordinate": "8:68",
+            "context": "Enfal 8/67-68"
+          },
+          {
+            "target_coordinate": "48:1",
+            "context": "Fetih 48/1-3"
+          },
+          {
+            "target_coordinate": "48:2",
+            "context": "Fetih 48/1-3"
+          },
+          {
+            "target_coordinate": "48:3",
+            "context": "Fetih 48/1-3"
+          },
+          {
+            "target_coordinate": "33:21",
+            "context": "Ahzab 33/21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Nasr Suresi 3. Ayetin Tefsiri\nفَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُۜ اِنَّهُ كَانَ تَوَّابًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/110.mp3"
+    }
+  ]
+}

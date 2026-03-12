@@ -25,6 +25,7 @@
     <Compile Include="DataEngine\fix_empty_roots.py" />
     <Compile Include="DataEngine\gemini_client.py" />
     <Compile Include="DataEngine\generate_besmele_audio.py" />
+    <Compile Include="DataEngine\quran_extractor_v3.py" />
     <Compile Include="DataEngine\run_pipeline.py" />
     <Compile Include="DataEngine\step1_fetch_quran.py" />
     <Compile Include="DataEngine\step2_extract_roots.py" />
@@ -38,6 +39,7 @@
     <Content Include="build_msi.bat" />
     <Content Include="CHANGELOG.md" />
     <Content Include="DataEngine\config.json" />
+    <Content Include="DataEngine\quran-morphology.txt" />
     <Content Include="DataEngine\README.md" />
     <Content Include="FEATURES.md" />
     <Content Include="Frontend\index.html" />
@@ -72,6 +74,7 @@
     <Content Include="LICENSE" />
     <Content Include="README.md" />
     <Content Include="SemantikGalaksi.spec" />
+    <Content Include="VERSION" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".github\" />

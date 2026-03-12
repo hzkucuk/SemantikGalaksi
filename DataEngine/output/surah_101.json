@@ -1,0 +1,712 @@
+{
+  "nodes": [
+    {
+      "id": "101:1",
+      "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "translation": "İyiliği sonsuz, ikramı bol Allah’ın adıyla...",
+      "dipnot": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi, Tevbe 9/128. ayette Resulullah için; Fetih 48/29. ayette ise müminler için kullanılmıştır.",
+      "roots": [
+        "قرع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi, "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/128",
+          "targets": [
+            "9:128"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette Resulullah için; "
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/29",
+          "targets": [
+            "48:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette ise müminler için kullanılmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "101:1",
+        "connections": [
+          {
+            "target_coordinate": "9:128",
+            "context": "Tevbe 9/128"
+          },
+          {
+            "target_coordinate": "48:29",
+            "context": "Fetih 48/29"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:2",
+      "text": "اَلْقَارِعَةُۙ",
+      "translation": "Gümbürdeyecek olan!",
+      "dipnot": "Gümbürdeyecek olan, ahirette yeniden yaratılmış insanların mezarlarından kalkmaları için çalınan sûrun yani kalk borusunun çıkaracağı gümbürtüdür (A’raf 7/187, Neml 21/87, Zümer 39/68, Hâkka 69/13 - 15, Abese 80/33).",
+      "roots": [
+        "قرع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Gümbürdeyecek olan, ahirette yeniden yaratılmış insanların mezarlarından kalkmaları için çalınan sûrun yani kalk borusunun çıkaracağı gümbürtüdür (A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/187",
+          "targets": [
+            "7:187"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 21/87",
+          "targets": [
+            "27:87"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/68",
+          "targets": [
+            "39:68"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/13-15",
+          "targets": [
+            "69:13",
+            "69:14",
+            "69:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/33",
+          "targets": [
+            "80:33"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "101:2",
+        "connections": [
+          {
+            "target_coordinate": "7:187",
+            "context": "raf 7/187"
+          },
+          {
+            "target_coordinate": "27:87",
+            "context": "Neml 21/87"
+          },
+          {
+            "target_coordinate": "39:68",
+            "context": "Zümer 39/68"
+          },
+          {
+            "target_coordinate": "69:13",
+            "context": "Hâkka 69/13-15"
+          },
+          {
+            "target_coordinate": "69:14",
+            "context": "Hâkka 69/13-15"
+          },
+          {
+            "target_coordinate": "69:15",
+            "context": "Hâkka 69/13-15"
+          },
+          {
+            "target_coordinate": "80:33",
+            "context": "Abese 80/33"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:3",
+      "text": "مَا الْقَارِعَةُۚ",
+      "translation": "Nedir o gümbürdeyecek olan?",
+      "dipnot": "",
+      "roots": [
+        "دري",
+        "قرع"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "101:3",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâria Suresi 3. Ayetin Tefsiri\nوَمَٓا اَدْرٰيكَ مَا الْقَارِعَةُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:4",
+      "text": "وَمَٓا اَدْرٰيكَ مَا الْقَارِعَةُۜ",
+      "translation": "Gümbürdeyecek olanın ne olduğunu sana kim bildirebilir!",
+      "dipnot": "Hâkka 69/1 - 4.",
+      "roots": [
+        "يوم",
+        "كون",
+        "أنس",
+        "فرش",
+        "بثث"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hâkka 69/1-4",
+          "targets": [
+            "69:1",
+            "69:2",
+            "69:3",
+            "69:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "101:4",
+        "connections": [
+          {
+            "target_coordinate": "69:1",
+            "context": "Hâkka 69/1-4"
+          },
+          {
+            "target_coordinate": "69:2",
+            "context": "Hâkka 69/1-4"
+          },
+          {
+            "target_coordinate": "69:3",
+            "context": "Hâkka 69/1-4"
+          },
+          {
+            "target_coordinate": "69:4",
+            "context": "Hâkka 69/1-4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâria Suresi 4. Ayetin Tefsiri\nيَوْمَ يَكُونُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوثِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:5",
+      "text": "يَوْمَ يَكُونُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوثِۙ",
+      "translation": "O (gümbürdemenin olduğu) gün insanlar yayılmış kelebekler gibi olur;",
+      "dipnot": "Yasin 36/51, Meâric 70/43 - 44, Kamer 54/7.",
+      "roots": [
+        "كون",
+        "جبل",
+        "عهن",
+        "نفش"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yasin 36/51",
+          "targets": [
+            "36:51"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Meâric 70/43-44",
+          "targets": [
+            "70:43",
+            "70:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kamer 54/7",
+          "targets": [
+            "54:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "101:5",
+        "connections": [
+          {
+            "target_coordinate": "36:51",
+            "context": "Yasin 36/51"
+          },
+          {
+            "target_coordinate": "70:43",
+            "context": "Meâric 70/43-44"
+          },
+          {
+            "target_coordinate": "70:44",
+            "context": "Meâric 70/43-44"
+          },
+          {
+            "target_coordinate": "54:7",
+            "context": "Kamer 54/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâria Suresi 5. Ayetin Tefsiri\nوَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنْفُوشِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:6",
+      "text": "وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنْفُوشِۜ",
+      "translation": "dağlar ise çırpılmış renkli yünler gibi olmuş olur.",
+      "dipnot": "Yeniden diriliş gününden önce dağların durumunu anlatan diğer ayetler için bkz: Kehf 18/47, Taha 20/105 - 107, Tur 52/10, Vakıa 56/5 - 6, Hakka 69/14, Mearic 70/9, Müzzemmil 73/14, Mürselat 77/10, Nebe 78/20, Tekvir 81/3.",
+      "roots": [
+        "ثقل",
+        "وزن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Yeniden diriliş gününden önce dağların durumunu anlatan diğer ayetler için bkz: "
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/47",
+          "targets": [
+            "18:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/105-107",
+          "targets": [
+            "20:105",
+            "20:106",
+            "20:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tur 52/10",
+          "targets": [
+            "52:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/5-6",
+          "targets": [
+            "56:5",
+            "56:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/14",
+          "targets": [
+            "69:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/9",
+          "targets": [
+            "70:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/14",
+          "targets": [
+            "73:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/10",
+          "targets": [
+            "77:10"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nebe 78/20",
+          "targets": [
+            "78:20"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/3",
+          "targets": [
+            "81:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "101:6",
+        "connections": [
+          {
+            "target_coordinate": "18:47",
+            "context": "Kehf 18/47"
+          },
+          {
+            "target_coordinate": "20:105",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "20:106",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "20:107",
+            "context": "Taha 20/105-107"
+          },
+          {
+            "target_coordinate": "52:10",
+            "context": "Tur 52/10"
+          },
+          {
+            "target_coordinate": "56:5",
+            "context": "Vakıa 56/5-6"
+          },
+          {
+            "target_coordinate": "56:6",
+            "context": "Vakıa 56/5-6"
+          },
+          {
+            "target_coordinate": "69:14",
+            "context": "Hakka 69/14"
+          },
+          {
+            "target_coordinate": "70:9",
+            "context": "Mearic 70/9"
+          },
+          {
+            "target_coordinate": "73:14",
+            "context": "Müzzemmil 73/14"
+          },
+          {
+            "target_coordinate": "77:10",
+            "context": "Mürselat 77/10"
+          },
+          {
+            "target_coordinate": "78:20",
+            "context": "Nebe 78/20"
+          },
+          {
+            "target_coordinate": "81:3",
+            "context": "Tekvir 81/3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâria Suresi 6. Ayetin Tefsiri\nفَاَمَّا مَنْ ثَقُلَتْ مَوَاز۪ينُهُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:7",
+      "text": "فَاَمَّا مَنْ ثَقُلَتْ مَوَاز۪ينُهُۙ",
+      "translation": "Artık kimin tartıları (sevapları) ağır gelirse",
+      "dipnot": "",
+      "roots": [
+        "عيش",
+        "رضو"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "101:7",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâria Suresi 7. Ayetin Tefsiri\nفَهُوَ ف۪ي ع۪يشَةٍ رَاضِيَةٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:8",
+      "text": "فَهُوَ ف۪ي ع۪يشَةٍ رَاضِيَةٍۜ",
+      "translation": "o, bütün beklentileri karşılayan bir yaşayış içindedir.",
+      "dipnot": "A’raf 7/8, Enbiya 21/47, Mü’minun 23/102, Neml 27/89, Hâkka 69/19 - 21.",
+      "roots": [
+        "خفف",
+        "وزن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/8",
+          "targets": [
+            "7:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/47",
+          "targets": [
+            "21:47"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/102",
+          "targets": [
+            "23:102"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/89",
+          "targets": [
+            "27:89"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/19-21",
+          "targets": [
+            "69:19",
+            "69:20",
+            "69:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "101:8",
+        "connections": [
+          {
+            "target_coordinate": "7:8",
+            "context": "raf 7/8"
+          },
+          {
+            "target_coordinate": "21:47",
+            "context": "Enbiya 21/47"
+          },
+          {
+            "target_coordinate": "23:102",
+            "context": "minun 23/102"
+          },
+          {
+            "target_coordinate": "27:89",
+            "context": "Neml 27/89"
+          },
+          {
+            "target_coordinate": "69:19",
+            "context": "Hâkka 69/19-21"
+          },
+          {
+            "target_coordinate": "69:20",
+            "context": "Hâkka 69/19-21"
+          },
+          {
+            "target_coordinate": "69:21",
+            "context": "Hâkka 69/19-21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâria Suresi 8. Ayetin Tefsiri\nوَاَمَّا مَنْ خَفَّتْ مَوَاز۪ينُهُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:9",
+      "text": "وَاَمَّا مَنْ خَفَّتْ مَوَاز۪ينُهُۙ",
+      "translation": "Kimin de tartıları (sevapları) hafif gelirse",
+      "dipnot": "",
+      "roots": [
+        "أمم",
+        "هوي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "101:9",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâria Suresi 9. Ayetin Tefsiri\nفَاُمُّهُ هَاوِيَةٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:10",
+      "text": "فَاُمُّهُ هَاوِيَةٌۜ",
+      "translation": "onun anası (onu sarıp sarmalayacak olan) Hâviye’dir.",
+      "dipnot": "A’raf 7/9, Mü’minun 23/103 - 104.",
+      "roots": [
+        "دري"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/9",
+          "targets": [
+            "7:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/103-104",
+          "targets": [
+            "23:103",
+            "23:104"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "101:10",
+        "connections": [
+          {
+            "target_coordinate": "7:9",
+            "context": "raf 7/9"
+          },
+          {
+            "target_coordinate": "23:103",
+            "context": "minun 23/103-104"
+          },
+          {
+            "target_coordinate": "23:104",
+            "context": "minun 23/103-104"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Kâria Suresi 10. Ayetin Tefsiri\nوَمَٓا اَدْرٰيكَ مَا هِيَهْۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    },
+    {
+      "id": "101:11",
+      "text": "وَمَٓا اَدْرٰيكَ مَا هِيَهْۜ",
+      "translation": "Hâviye’nin ne olduğunu sana kim bildirebilir!",
+      "dipnot": "Hümeze 104/5 - 9.",
+      "roots": [
+        "نور",
+        "حمي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hümeze 104/5-9",
+          "targets": [
+            "104:5",
+            "104:6",
+            "104:7",
+            "104:8",
+            "104:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "101:11",
+        "connections": [
+          {
+            "target_coordinate": "104:5",
+            "context": "Hümeze 104/5-9"
+          },
+          {
+            "target_coordinate": "104:6",
+            "context": "Hümeze 104/5-9"
+          },
+          {
+            "target_coordinate": "104:7",
+            "context": "Hümeze 104/5-9"
+          },
+          {
+            "target_coordinate": "104:8",
+            "context": "Hümeze 104/5-9"
+          },
+          {
+            "target_coordinate": "104:9",
+            "context": "Hümeze 104/5-9"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/101.mp3"
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "nodes": [
+    {
+      "id": "94:1",
+      "text": "اَلَمْ نَشْرَحْ لَكَ صَدْرَكَۙ",
+      "translation": "Senin gönlünü (İslam’a) açmadık mı?[*]",
+      "dipnot": "En’am 6/125, İsra 17/73 - 75, Taha 20/25, Zümer 39/22.",
+      "roots": [
+        "شرح",
+        "صدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/125",
+          "targets": [
+            "6:125"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/73-75",
+          "targets": [
+            "17:73",
+            "17:74",
+            "17:75"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/25",
+          "targets": [
+            "20:25"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/22",
+          "targets": [
+            "39:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "94:1",
+        "connections": [
+          {
+            "target_coordinate": "6:125",
+            "context": "am 6/125"
+          },
+          {
+            "target_coordinate": "17:73",
+            "context": "İsra 17/73-75"
+          },
+          {
+            "target_coordinate": "17:74",
+            "context": "İsra 17/73-75"
+          },
+          {
+            "target_coordinate": "17:75",
+            "context": "İsra 17/73-75"
+          },
+          {
+            "target_coordinate": "20:25",
+            "context": "Taha 20/25"
+          },
+          {
+            "target_coordinate": "39:22",
+            "context": "Zümer 39/22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşirâh Suresi 1. Ayetin Tefsiri\nاَلَمْ نَشْرَحْ لَكَ صَدْرَكَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/94.mp3"
+    },
+    {
+      "id": "94:2",
+      "text": "وَوَضَعْنَا عَنْكَ وِزْرَكَۙ",
+      "translation": "Yükünü kaldırıp atmadık mı,",
+      "dipnot": "",
+      "roots": [
+        "وضع",
+        "وزر"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "94:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşirâh Suresi 2. Ayetin Tefsiri\nوَوَضَعْنَا عَنْكَ وِزْرَكَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/94.mp3"
+    },
+    {
+      "id": "94:3",
+      "text": "اَلَّذ۪ٓي اَنْقَضَ ظَهْرَكَۙ",
+      "translation": "belini büken yükünü?[*]",
+      "dipnot": "Nahl 16/127 - 128, Duha 93/7.",
+      "roots": [
+        "نقض",
+        "ظهر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nahl 16/127-128",
+          "targets": [
+            "16:127",
+            "16:128"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duha 93/7",
+          "targets": [
+            "93:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "94:3",
+        "connections": [
+          {
+            "target_coordinate": "16:127",
+            "context": "Nahl 16/127-128"
+          },
+          {
+            "target_coordinate": "16:128",
+            "context": "Nahl 16/127-128"
+          },
+          {
+            "target_coordinate": "93:7",
+            "context": "Duha 93/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşirâh Suresi 3. Ayetin Tefsiri\nاَلَّذ۪ٓي اَنْقَضَ ظَهْرَكَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/94.mp3"
+    },
+    {
+      "id": "94:4",
+      "text": "وَرَفَعْنَا لَكَ ذِكْرَكَۜ",
+      "translation": "İtibarını da yükseltmedik mi?[*]",
+      "dipnot": "Ahzab 33/21, 45 - 46.",
+      "roots": [
+        "رفع",
+        "ذكر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Ahzab 33/21,45-46",
+          "targets": [
+            "33:21",
+            "33:45",
+            "33:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "94:4",
+        "connections": [
+          {
+            "target_coordinate": "33:21",
+            "context": "Ahzab 33/21,45-46"
+          },
+          {
+            "target_coordinate": "33:45",
+            "context": "Ahzab 33/21,45-46"
+          },
+          {
+            "target_coordinate": "33:46",
+            "context": "Ahzab 33/21,45-46"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşirâh Suresi 4. Ayetin Tefsiri\nوَرَفَعْنَا لَكَ ذِكْرَكَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/94.mp3"
+    },
+    {
+      "id": "94:5",
+      "text": "فَاِنَّ مَعَ الْعُسْرِ يُسْرًاۙ",
+      "translation": "Şurası kesin ki her bir zorlukla beraber bir kolaylık vardır![*]",
+      "dipnot": "Talak 65/7.",
+      "roots": [
+        "عسر",
+        "يسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Talak 65/7",
+          "targets": [
+            "65:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "94:5",
+        "connections": [
+          {
+            "target_coordinate": "65:7",
+            "context": "Talak 65/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşirâh Suresi 5. Ayetin Tefsiri\nفَاِنَّ مَعَ الْعُسْرِ يُسْرًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/94.mp3"
+    },
+    {
+      "id": "94:6",
+      "text": "اِنَّ مَعَ الْعُسْرِ يُسْرًاۜ",
+      "translation": "O zorlukla beraber gerçekten bir kolaylık daha vardır.[*]",
+      "dipnot": "Bu ayet indiği zaman Nebîmizin şu müjdeyi verdiği rivayet edilmiştir: “Bir güçlük iki kolaylığı asla yenemez.”(Muvatta, Cihad 6).",
+      "roots": [
+        "عسر",
+        "يسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bu ayet indiği zaman Nebîmizin şu müjdeyi verdiği rivayet edilmiştir: “Bir güçlük iki kolaylığı asla yenemez.”(Muvatta, Cihad 6)."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "94:6",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşirâh Suresi 6. Ayetin Tefsiri\nاِنَّ مَعَ الْعُسْرِ يُسْرًاۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/94.mp3"
+    },
+    {
+      "id": "94:7",
+      "text": "فَاِذَا فَرَغْتَ فَانْصَبْۙ",
+      "translation": "Öyleyse boş kaldığında bir işe koyul[*]",
+      "dipnot": "Bir kişinin en değerli varlığı vaktidir ( Asr 103/1 - 3 ). Bu yüzden inanan kişi, vaktini Allah’ın rızasına aykırı olmayan işlerle değerlendirmelidir.",
+      "roots": [
+        "فرغ",
+        "نصب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bir kişinin en değerli varlığı vaktidir ( "
+        },
+        {
+          "type": "link",
+          "content": "Asr 103/1-3",
+          "targets": [
+            "103:1",
+            "103:2",
+            "103:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bu yüzden inanan kişi, vaktini Allah’ın rızasına aykırı olmayan işlerle değerlendirmelidir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "94:7",
+        "connections": [
+          {
+            "target_coordinate": "103:1",
+            "context": "Asr 103/1-3"
+          },
+          {
+            "target_coordinate": "103:2",
+            "context": "Asr 103/1-3"
+          },
+          {
+            "target_coordinate": "103:3",
+            "context": "Asr 103/1-3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşirâh Suresi 7. Ayetin Tefsiri\nفَاِذَا فَرَغْتَ فَانْصَبْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/94.mp3"
+    },
+    {
+      "id": "94:8",
+      "text": "وَاِلٰى رَبِّكَ فَارْغَبْ",
+      "translation": "ve sadece Rabbine yönel![*]",
+      "dipnot": "Allah son nefese kadar kulluğa devam etme emri vermiştir ( Hicr 15/99, Ahzab 33/1 - 3, Müzzemmil 73/8 ).",
+      "roots": [
+        "ربب",
+        "رغب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Allah son nefese kadar kulluğa devam etme emri vermiştir ( "
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/99",
+          "targets": [
+            "15:99"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/1-3",
+          "targets": [
+            "33:1",
+            "33:2",
+            "33:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/8",
+          "targets": [
+            "73:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "94:8",
+        "connections": [
+          {
+            "target_coordinate": "15:99",
+            "context": "Hicr 15/99"
+          },
+          {
+            "target_coordinate": "33:1",
+            "context": "Ahzab 33/1-3"
+          },
+          {
+            "target_coordinate": "33:2",
+            "context": "Ahzab 33/1-3"
+          },
+          {
+            "target_coordinate": "33:3",
+            "context": "Ahzab 33/1-3"
+          },
+          {
+            "target_coordinate": "73:8",
+            "context": "Müzzemmil 73/8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İnşirâh Suresi 8. Ayetin Tefsiri\nوَاِلٰى رَبِّكَ فَارْغَبْ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/94.mp3"
+    }
+  ]
+}

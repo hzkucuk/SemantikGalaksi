@@ -1,0 +1,1109 @@
+{
+  "nodes": [
+    {
+      "id": "86:1",
+      "text": "وَالسَّمَٓاءِ وَالطَّارِقِۙ",
+      "translation": "Göğe[1*] ve Târık’a[2*] yemin olsun![3*]",
+      "dipnot": "[1*] Zariyat 51/7, Buruc 85/1, Tarık 86/11, Şems 91/5.\n[2*] Târık, yolda yürüyen demektir; daha çok “gece gelen” anlamında kullanılır (Müfredat).\n[3*] Burada Allah, göğe ve Târık’a yemin etmektedir. Allah’ın bir şeye yemin etmesi, o şeyin önemine vurgu yapmak ve daha sonra gelen şeye dikkat çekmek içindir.",
+      "roots": [
+        "سمو",
+        "طرق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/7",
+          "targets": [
+            "51:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Buruc 85/1",
+          "targets": [
+            "85:1"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tarık 86/11",
+          "targets": [
+            "86:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/5",
+          "targets": [
+            "91:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[2*] Târık, yolda yürüyen demektir; daha çok “gece gelen” anlamında kullanılır (Müfredat).\n[3*] Burada Allah, göğe ve Târık’a yemin etmektedir. Allah’ın bir şeye yemin etmesi, o şeyin önemine vurgu yapmak ve daha sonra gelen şeye dikkat çekmek içindir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:1",
+        "connections": [
+          {
+            "target_coordinate": "51:7",
+            "context": "Zariyat 51/7"
+          },
+          {
+            "target_coordinate": "85:1",
+            "context": "Buruc 85/1"
+          },
+          {
+            "target_coordinate": "86:11",
+            "context": "Tarık 86/11"
+          },
+          {
+            "target_coordinate": "91:5",
+            "context": "Şems 91/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 1. Ayetin Tefsiri\nوَالسَّمَٓاءِ وَالطَّارِقِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:2",
+      "text": "وَمَٓا اَدْرٰيكَ مَا الطَّارِقُۙ",
+      "translation": "Târık’ın ne olduğunu sana ne bildirebilir!",
+      "dipnot": "",
+      "roots": [
+        "دري",
+        "طرق"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "86:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 2. Ayetin Tefsiri\nوَمَٓا اَدْرٰيكَ مَا الطَّارِقُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:3",
+      "text": "اَلنَّجْمُ الثَّاقِبُۙ",
+      "translation": "O, (karanlığı) delip geçen yıldızdır.[*]",
+      "dipnot": "[*] Kuzey yarım kürede her gece gözüken ve güçlü ışığıyla karanlığı delen tek yıldız Kutup Yıldızıdır. Ekvatora sıfır, kutup noktasına 90 derecelik açı yapar. Bu ikisi arasındaki her yere yaptığı açı, oranın enlemi kadardır. Konum ve yön belirlemede en önemli göstergedir ( Necm 53/1, Rahman 55/6 ). Nahl 16/16. ayette bu yıldızın yol bulmaya yaradığının anlatılması, ayetlerde belirlilik takısıyla gelen \"en-necm (النَّجْمِ)\" kelimesinin \"Kutup Yıldızı\" olduğunu gösterir. Güney Kutbunda Sigma Octantis adı verilen yıldızın da benzer özellikleri vardır.",
+      "roots": [
+        "نجم",
+        "ثقب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Kuzey yarım kürede her gece gözüken ve güçlü ışığıyla karanlığı delen tek yıldız Kutup Yıldızıdır. Ekvatora sıfır, kutup noktasına 90 derecelik açı yapar. Bu ikisi arasındaki her yere yaptığı açı, oranın enlemi kadardır. Konum ve yön belirlemede en önemli göstergedir ( "
+        },
+        {
+          "type": "link",
+          "content": "Necm 53/1",
+          "targets": [
+            "53:1"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/6",
+          "targets": [
+            "55:6"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). "
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/16",
+          "targets": [
+            "16:16"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette bu yıldızın yol bulmaya yaradığının anlatılması, ayetlerde belirlilik takısıyla gelen \"en-necm (النَّجْمِ)\" kelimesinin \"Kutup Yıldızı\" olduğunu gösterir. Güney Kutbunda Sigma Octantis adı verilen yıldızın da benzer özellikleri vardır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:3",
+        "connections": [
+          {
+            "target_coordinate": "53:1",
+            "context": "Necm 53/1"
+          },
+          {
+            "target_coordinate": "55:6",
+            "context": "Rahman 55/6"
+          },
+          {
+            "target_coordinate": "16:16",
+            "context": "Nahl 16/16"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 3. Ayetin Tefsiri\nاَلنَّجْمُ الثَّاقِبُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:4",
+      "text": "اِنْ كُلُّ نَفْسٍ لَمَّا عَلَيْهَا حَافِظٌۜ",
+      "translation": "Üzerinde koruyucusu[*] olmayan hiç kimse yoktur.",
+      "dipnot": "[*] En’am 6/61, Ra’d 13/11, İnfitar 82/10 - 12.",
+      "roots": [
+        "كلل",
+        "نفس",
+        "حفظ"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/61",
+          "targets": [
+            "6:61"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Ra’"
+        },
+        {
+          "type": "link",
+          "content": "d 13/11",
+          "targets": [
+            "13:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/10-12",
+          "targets": [
+            "82:10",
+            "82:11",
+            "82:12"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:4",
+        "connections": [
+          {
+            "target_coordinate": "6:61",
+            "context": "am 6/61"
+          },
+          {
+            "target_coordinate": "13:11",
+            "context": "d 13/11"
+          },
+          {
+            "target_coordinate": "82:10",
+            "context": "İnfitar 82/10-12"
+          },
+          {
+            "target_coordinate": "82:11",
+            "context": "İnfitar 82/10-12"
+          },
+          {
+            "target_coordinate": "82:12",
+            "context": "İnfitar 82/10-12"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 4. Ayetin Tefsiri\nاِنْ كُلُّ نَفْسٍ لَمَّا عَلَيْهَا حَافِظٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:5",
+      "text": "فَلْيَنْظُرِ الْاِنْسَانُ مِمَّ خُلِقَۜ",
+      "translation": "İnsan, hangi şeyden yaratıldığına bir baksın![*]",
+      "dipnot": "[*] Abese 80/18 - 19.",
+      "roots": [
+        "نظر",
+        "أنس",
+        "خلق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/18-19",
+          "targets": [
+            "80:18",
+            "80:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:5",
+        "connections": [
+          {
+            "target_coordinate": "80:18",
+            "context": "Abese 80/18-19"
+          },
+          {
+            "target_coordinate": "80:19",
+            "context": "Abese 80/18-19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 5. Ayetin Tefsiri\nفَلْيَنْظُرِ الْاِنْسَانُ مِمَّ خُلِقَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:6",
+      "text": "خُلِقَ مِنْ مَٓاءٍ دَافِقٍۙ",
+      "translation": "Boşalan /akıp giden bir sıvıdan yaratıldı.[*]",
+      "dipnot": "[*] Yaratılışın aşamaları için bkz: Hac 22/5, Müminun 23/12 - 14, Secde 32/8, Zümer 39/6, Mümin 40/67, Vakıa 56/58 - 62, Mearic 70/39, Mürselat 77/20.",
+      "roots": [
+        "خلق",
+        "موه",
+        "دفق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Yaratılışın aşamaları için bkz: "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/5",
+          "targets": [
+            "22:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müminun 23/12-14",
+          "targets": [
+            "23:12",
+            "23:13",
+            "23:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Secde 32/8",
+          "targets": [
+            "32:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/6",
+          "targets": [
+            "39:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mümin 40/67",
+          "targets": [
+            "40:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/58-62",
+          "targets": [
+            "56:58",
+            "56:59",
+            "56:60",
+            "56:61",
+            "56:62"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/39",
+          "targets": [
+            "70:39"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mürselat 77/20",
+          "targets": [
+            "77:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:6",
+        "connections": [
+          {
+            "target_coordinate": "22:5",
+            "context": "Hac 22/5"
+          },
+          {
+            "target_coordinate": "23:12",
+            "context": "Müminun 23/12-14"
+          },
+          {
+            "target_coordinate": "23:13",
+            "context": "Müminun 23/12-14"
+          },
+          {
+            "target_coordinate": "23:14",
+            "context": "Müminun 23/12-14"
+          },
+          {
+            "target_coordinate": "32:8",
+            "context": "Secde 32/8"
+          },
+          {
+            "target_coordinate": "39:6",
+            "context": "Zümer 39/6"
+          },
+          {
+            "target_coordinate": "40:67",
+            "context": "Mümin 40/67"
+          },
+          {
+            "target_coordinate": "56:58",
+            "context": "Vakıa 56/58-62"
+          },
+          {
+            "target_coordinate": "56:59",
+            "context": "Vakıa 56/58-62"
+          },
+          {
+            "target_coordinate": "56:60",
+            "context": "Vakıa 56/58-62"
+          },
+          {
+            "target_coordinate": "56:61",
+            "context": "Vakıa 56/58-62"
+          },
+          {
+            "target_coordinate": "56:62",
+            "context": "Vakıa 56/58-62"
+          },
+          {
+            "target_coordinate": "70:39",
+            "context": "Mearic 70/39"
+          },
+          {
+            "target_coordinate": "77:20",
+            "context": "Mürselat 77/20"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 6. Ayetin Tefsiri\nخُلِقَ مِنْ مَٓاءٍ دَافِقٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:7",
+      "text": "يَخْرُجُ مِنْ بَيْنِ الصُّلْبِ وَالتَّرَٓائِبِۜ",
+      "translation": "O sıvı bel kemiği ile leğen kemikleri arasından çıkar.[*]",
+      "dipnot": "",
+      "roots": [
+        "خرج",
+        "بين",
+        "صلب",
+        "ترب"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "86:7",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 7. Ayetin Tefsiri\nيَخْرُجُ مِنْ بَيْنِ الصُّلْبِ وَالتَّرَٓائِبِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:8",
+      "text": "اِنَّهُ عَلٰى رَجْعِه۪ لَقَادِرٌۜ",
+      "translation": "Elbette Allah, insanı geri döndürmenin (tekrar yaratmanın) ölçüsünü de koyandır;[*]",
+      "dipnot": "Kâdir (قادر), bir şeyin ölçüsünü koyan anlamına gelir. (Müfredat, Mekâyîs) Allah, yeniden yaratılışın ölçüsünü koymuştur. Ölüp de toprağa karışan herkesin vücudundan kalan bir parça, yeniden diriliş öncesinde döllenmiş yumurta gibi olacak ve toprak onu, bütün özellikleriyle yeniden oluşturacaktır (A’raf 7/29, Enbiya 21/104, Rum 30/27, Kaf 50/9-11, Nuh 71/17-18, Kıyamet 75/3-5).",
+      "roots": [
+        "رجع",
+        "قدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Kâdir (قادر), bir şeyin ölçüsünü koyan anlamına gelir. (Müfredat, Mekâyîs) Allah, yeniden yaratılışın ölçüsünü koymuştur. Ölüp de toprağa karışan herkesin vücudundan kalan bir parça, yeniden diriliş öncesinde döllenmiş yumurta gibi olacak ve toprak onu, bütün özellikleriyle yeniden oluşturacaktır (A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/29",
+          "targets": [
+            "7:29"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/104",
+          "targets": [
+            "21:104"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/27",
+          "targets": [
+            "30:27"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/9-11",
+          "targets": [
+            "50:9",
+            "50:10",
+            "50:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nuh 71/17-18",
+          "targets": [
+            "71:17",
+            "71:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/3-5",
+          "targets": [
+            "75:3",
+            "75:4",
+            "75:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:8",
+        "connections": [
+          {
+            "target_coordinate": "7:29",
+            "context": "raf 7/29"
+          },
+          {
+            "target_coordinate": "21:104",
+            "context": "Enbiya 21/104"
+          },
+          {
+            "target_coordinate": "30:27",
+            "context": "Rum 30/27"
+          },
+          {
+            "target_coordinate": "50:9",
+            "context": "Kaf 50/9-11"
+          },
+          {
+            "target_coordinate": "50:10",
+            "context": "Kaf 50/9-11"
+          },
+          {
+            "target_coordinate": "50:11",
+            "context": "Kaf 50/9-11"
+          },
+          {
+            "target_coordinate": "71:17",
+            "context": "Nuh 71/17-18"
+          },
+          {
+            "target_coordinate": "71:18",
+            "context": "Nuh 71/17-18"
+          },
+          {
+            "target_coordinate": "75:3",
+            "context": "Kıyamet 75/3-5"
+          },
+          {
+            "target_coordinate": "75:4",
+            "context": "Kıyamet 75/3-5"
+          },
+          {
+            "target_coordinate": "75:5",
+            "context": "Kıyamet 75/3-5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 8. Ayetin Tefsiri\nاِنَّهُ عَلٰى رَجْعِه۪ لَقَادِرٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:9",
+      "text": "يَوْمَ تُبْلَى السَّرَٓائِرُۙ",
+      "translation": "(tekrar yaratma) bütün sırların ortaya döküleceği günde (olacaktır).[*]",
+      "dipnot": "Mü’min 40/16, Hâkka 69/18, Âdiyat 100/9-11.",
+      "roots": [
+        "يوم",
+        "بلو",
+        "سرر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/16",
+          "targets": [
+            "40:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/18",
+          "targets": [
+            "69:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Âdiyat 100/9-11",
+          "targets": [
+            "100:9",
+            "100:10",
+            "100:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:9",
+        "connections": [
+          {
+            "target_coordinate": "40:16",
+            "context": "min 40/16"
+          },
+          {
+            "target_coordinate": "69:18",
+            "context": "Hâkka 69/18"
+          },
+          {
+            "target_coordinate": "100:9",
+            "context": "Âdiyat 100/9-11"
+          },
+          {
+            "target_coordinate": "100:10",
+            "context": "Âdiyat 100/9-11"
+          },
+          {
+            "target_coordinate": "100:11",
+            "context": "Âdiyat 100/9-11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 9. Ayetin Tefsiri\nيَوْمَ تُبْلَى السَّرَٓائِرُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:10",
+      "text": "فَمَا لَهُ مِنْ قُوَّةٍ وَلَا نَاصِرٍۜ",
+      "translation": "Artık onun bir gücü de bir yardımcısı da olmaz![*]",
+      "dipnot": "Bakara 2/107, İnfitar 82/19.",
+      "roots": [
+        "قوي",
+        "نصر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/107",
+          "targets": [
+            "2:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/19",
+          "targets": [
+            "82:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:10",
+        "connections": [
+          {
+            "target_coordinate": "2:107",
+            "context": "Bakara 2/107"
+          },
+          {
+            "target_coordinate": "82:19",
+            "context": "İnfitar 82/19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 10. Ayetin Tefsiri\nفَمَا لَهُ مِنْ قُوَّةٍ وَلَا نَاصِرٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:11",
+      "text": "وَالسَّمَٓاءِ ذَاتِ الرَّجْعِۙ",
+      "translation": "İlk (yaratılıştaki) haline dönme özelliğine sahip göğe[*] yemin olsun.",
+      "dipnot": "İbrahim 14/48, Enbiya 21/30, 104.",
+      "roots": [
+        "سمو",
+        "رجع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İbrahim 14/48",
+          "targets": [
+            "14:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/30,104",
+          "targets": [
+            "21:30",
+            "21:104"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:11",
+        "connections": [
+          {
+            "target_coordinate": "14:48",
+            "context": "İbrahim 14/48"
+          },
+          {
+            "target_coordinate": "21:30",
+            "context": "Enbiya 21/30,104"
+          },
+          {
+            "target_coordinate": "21:104",
+            "context": "Enbiya 21/30,104"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 11. Ayetin Tefsiri\nوَالسَّمَٓاءِ ذَاتِ الرَّجْعِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:12",
+      "text": "وَالْاَرْضِ ذَاتِ الصَّدْعِۙ",
+      "translation": "Çatlama özelliğine sahip yere[*] de yemin olsun ki",
+      "dipnot": "Topraktaki bu özellik, bitkinin bitmesine imkân verdiği gibi (Abese 80/24-32) ölüp toprağa karışan insanın, oradan bir bitki gibi yeniden yaratılmasına da imkan verir (Rum 30/19).",
+      "roots": [
+        "أرض",
+        "صدع"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Topraktaki bu özellik, bitkinin bitmesine imkân verdiği gibi ("
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/24-32",
+          "targets": [
+            "80:24",
+            "80:25",
+            "80:26",
+            "80:27",
+            "80:28",
+            "80:29",
+            "80:30",
+            "80:31",
+            "80:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ölüp toprağa karışan insanın, oradan bir bitki gibi yeniden yaratılmasına da imkan verir ("
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/19",
+          "targets": [
+            "30:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:12",
+        "connections": [
+          {
+            "target_coordinate": "80:24",
+            "context": "Abese 80/24-32"
+          },
+          {
+            "target_coordinate": "80:25",
+            "context": "Abese 80/24-32"
+          },
+          {
+            "target_coordinate": "80:26",
+            "context": "Abese 80/24-32"
+          },
+          {
+            "target_coordinate": "80:27",
+            "context": "Abese 80/24-32"
+          },
+          {
+            "target_coordinate": "80:28",
+            "context": "Abese 80/24-32"
+          },
+          {
+            "target_coordinate": "80:29",
+            "context": "Abese 80/24-32"
+          },
+          {
+            "target_coordinate": "80:30",
+            "context": "Abese 80/24-32"
+          },
+          {
+            "target_coordinate": "80:31",
+            "context": "Abese 80/24-32"
+          },
+          {
+            "target_coordinate": "80:32",
+            "context": "Abese 80/24-32"
+          },
+          {
+            "target_coordinate": "30:19",
+            "context": "Rum 30/19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 12. Ayetin Tefsiri\nوَالْاَرْضِ ذَاتِ الصَّدْعِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:13",
+      "text": "اِنَّهُ لَقَوْلٌ فَصْلٌۙ",
+      "translation": "O (Kur’ân), kesinlikle hak ile batılı /doğru ile yanlışı ayıran bir sözdür;[*]",
+      "dipnot": "En’am 6/57, Furkan 25/1.",
+      "roots": [
+        "قول",
+        "فصل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/57",
+          "targets": [
+            "6:57"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/1",
+          "targets": [
+            "25:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:13",
+        "connections": [
+          {
+            "target_coordinate": "6:57",
+            "context": "am 6/57"
+          },
+          {
+            "target_coordinate": "25:1",
+            "context": "Furkan 25/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 13. Ayetin Tefsiri\nاِنَّهُ لَقَوْلٌ فَصْلٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:14",
+      "text": "وَمَا هُوَ بِالْهَزْلِۜ",
+      "translation": "o. faydasız bir şey değildir.[*]",
+      "dipnot": "Hâkka 69/40-43.",
+      "roots": [
+        "هزل"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hâkka 69/40-43",
+          "targets": [
+            "69:40",
+            "69:41",
+            "69:42",
+            "69:43"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:14",
+        "connections": [
+          {
+            "target_coordinate": "69:40",
+            "context": "Hâkka 69/40-43"
+          },
+          {
+            "target_coordinate": "69:41",
+            "context": "Hâkka 69/40-43"
+          },
+          {
+            "target_coordinate": "69:42",
+            "context": "Hâkka 69/40-43"
+          },
+          {
+            "target_coordinate": "69:43",
+            "context": "Hâkka 69/40-43"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 14. Ayetin Tefsiri\nوَمَا هُوَ بِالْهَزْلِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:15",
+      "text": "اِنَّهُمْ يَك۪يدُونَ كَيْدًاۙ",
+      "translation": "Onlar bir oyun kuruyorlar;",
+      "dipnot": "",
+      "roots": [
+        "كيد"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "86:15",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 15. Ayetin Tefsiri\nاِنَّهُمْ يَك۪يدُونَ كَيْدًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:16",
+      "text": "وَاَك۪يدُ كَيْدًاۚ",
+      "translation": "ben de bir oyun kuruyorum.[*]",
+      "dipnot": "Tur 52/42.",
+      "roots": [
+        "كيد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Tur 52/42",
+          "targets": [
+            "52:42"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:16",
+        "connections": [
+          {
+            "target_coordinate": "52:42",
+            "context": "Tur 52/42"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    },
+    {
+      "id": "86:17",
+      "text": "فَمَهِّلِ الْكَافِر۪ينَ اَمْهِلْهُمْ رُوَيْدًا",
+      "translation": "Öyleyse o kâfirlere süre tanı, bir müddet onları kendi hallerine bırak!",
+      "dipnot": "A’raf 7/182 - 183, Meryem 19/84, Müzzemmil 73/11.",
+      "roots": [
+        "مهل",
+        "كفر",
+        "رود"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/182-183",
+          "targets": [
+            "7:182",
+            "7:183"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/84",
+          "targets": [
+            "19:84"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müzzemmil 73/11",
+          "targets": [
+            "73:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "86:17",
+        "connections": [
+          {
+            "target_coordinate": "7:182",
+            "context": "raf 7/182-183"
+          },
+          {
+            "target_coordinate": "7:183",
+            "context": "raf 7/182-183"
+          },
+          {
+            "target_coordinate": "19:84",
+            "context": "Meryem 19/84"
+          },
+          {
+            "target_coordinate": "73:11",
+            "context": "Müzzemmil 73/11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Târık Suresi 17. Ayetin Tefsiri\nفَمَهِّلِ الْكَافِر۪ينَ اَمْهِلْهُمْ رُوَيْدًا"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/86.mp3"
+    }
+  ]
+}

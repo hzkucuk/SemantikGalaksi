@@ -1,0 +1,673 @@
+{
+  "nodes": [
+    {
+      "id": "100:1",
+      "text": "وَالْعَادِيَاتِ ضَبْحًاۙ",
+      "translation": "(Allah yolunda) nefes nefese koşturup duranlara yemin olsun![*]",
+      "dipnot": "Allah, birçok surede olduğu gibi bu surede de değer verdiği şeylere yemin ederek arkasından gelen bir başka şeyin önemine vurgu yapmaktadır. Bazı tefsir bilginleri, burada yemin edilenlerin savaş atları olduğunu söylemiş ve ayetlere ona göre anlam vermişlerdir. Ancak atları yönetenler de insanlar olduğu için, ilk beş ayette yemin edilen şeyler, kadın-erkek her şahsı içine alan “en-nüfus (النفوس)” yani nefisler sözünün sıfatı sayılmış ve ona göre meal verilmiştir.",
+      "roots": [
+        "عدو",
+        "ضبح"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Allah, birçok surede olduğu gibi bu surede de değer verdiği şeylere yemin ederek arkasından gelen bir başka şeyin önemine vurgu yapmaktadır. Bazı tefsir bilginleri, burada yemin edilenlerin savaş atları olduğunu söylemiş ve ayetlere ona göre anlam vermişlerdir. Ancak atları yönetenler de insanlar olduğu için, ilk beş ayette yemin edilen şeyler, kadın-erkek her şahsı içine alan “en-nüfus (النفوس)” yani nefisler sözünün sıfatı sayılmış ve ona göre meal verilmiştir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "100:1",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 1. Ayetin Tefsiri\nوَالْعَادِيَاتِ ضَبْحًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:2",
+      "text": "فَالْمُورِيَاتِ قَدْحًاۙ",
+      "translation": "Kıvılcımlar çaktıranlara,",
+      "dipnot": "",
+      "roots": [
+        "وري",
+        "قدح"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "100:2",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 2. Ayetin Tefsiri\nفَالْمُورِيَاتِ قَدْحًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:3",
+      "text": "فَالْمُغ۪يرَاتِ صُبْحًاۙ",
+      "translation": "sabahleyin harekete geçenlere,",
+      "dipnot": "",
+      "roots": [
+        "غير",
+        "صبح"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "100:3",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 3. Ayetin Tefsiri\nفَالْمُغ۪يرَاتِ صُبْحًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:4",
+      "text": "فَاَثَرْنَ بِه۪ نَقْعًاۙ",
+      "translation": "bu çabaları ile kalıcı bir eser bırakanlara,",
+      "dipnot": "",
+      "roots": [
+        "ثور",
+        "نقع"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "100:4",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 4. Ayetin Tefsiri\nفَاَثَرْنَ بِه۪ نَقْعًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:5",
+      "text": "فَوَسَطْنَ بِه۪ جَمْعًاۙ",
+      "translation": "böylece yaptıklarıyla, bir topluluk olarak merkezde yer alanlara yemin olsun ki",
+      "dipnot": "",
+      "roots": [
+        "وسط",
+        "جمع"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "100:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 5. Ayetin Tefsiri\nفَوَسَطْنَ بِه۪ جَمْعًاۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:6",
+      "text": "اِنَّ الْاِنْسَانَ لِرَبِّه۪ لَكَنُودٌۚ",
+      "translation": "(çoğu) insan, Rabbine karşı gerçekten iyilikbilmezdir.[*]",
+      "dipnot": "Buraya kadar yapılan yeminlerle üzerine dikkat çekilen konu, çoğu insanın Rabbine karşı iyilikbilmez olmasıdır ( Hud 11/9, İbrahim 14/34, İsra 17/67, Hac 22/66, Şûrâ 42/48, Abese 80/17 ). Bu sebeple iyilik peşinde koşanlar, karşılığını sadece Allah’tan beklemelidirler ( Leyl 92/17 - 21 ). Her şeylerini borçlu oldukları Rablerine karşı bile iyilikbilmez olanların, insanlara karşı iyilikbilmez olmaları da normaldir.",
+      "roots": [
+        "أنس",
+        "ربب",
+        "كند"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Buraya kadar yapılan yeminlerle üzerine dikkat çekilen konu, çoğu insanın Rabbine karşı iyilikbilmez olmasıdır ( "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/9",
+          "targets": [
+            "11:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/34",
+          "targets": [
+            "14:34"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/67",
+          "targets": [
+            "17:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/66",
+          "targets": [
+            "22:66"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/48",
+          "targets": [
+            "42:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/17",
+          "targets": [
+            "80:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Bu sebeple iyilik peşinde koşanlar, karşılığını sadece Allah’tan beklemelidirler ( "
+        },
+        {
+          "type": "link",
+          "content": "Leyl 92/17-21",
+          "targets": [
+            "92:17",
+            "92:18",
+            "92:19",
+            "92:20",
+            "92:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Her şeylerini borçlu oldukları Rablerine karşı bile iyilikbilmez olanların, insanlara karşı iyilikbilmez olmaları da normaldir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "100:6",
+        "connections": [
+          {
+            "target_coordinate": "11:9",
+            "context": "Hud 11/9"
+          },
+          {
+            "target_coordinate": "14:34",
+            "context": "İbrahim 14/34"
+          },
+          {
+            "target_coordinate": "17:67",
+            "context": "İsra 17/67"
+          },
+          {
+            "target_coordinate": "22:66",
+            "context": "Hac 22/66"
+          },
+          {
+            "target_coordinate": "42:48",
+            "context": "Şûrâ 42/48"
+          },
+          {
+            "target_coordinate": "80:17",
+            "context": "Abese 80/17"
+          },
+          {
+            "target_coordinate": "92:17",
+            "context": "Leyl 92/17-21"
+          },
+          {
+            "target_coordinate": "92:18",
+            "context": "Leyl 92/17-21"
+          },
+          {
+            "target_coordinate": "92:19",
+            "context": "Leyl 92/17-21"
+          },
+          {
+            "target_coordinate": "92:20",
+            "context": "Leyl 92/17-21"
+          },
+          {
+            "target_coordinate": "92:21",
+            "context": "Leyl 92/17-21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 6. Ayetin Tefsiri\nاِنَّ الْاِنْسَانَ لِرَبِّه۪ لَكَنُودٌۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:7",
+      "text": "وَاِنَّهُ عَلٰى ذٰلِكَ لَشَه۪يدٌۚ",
+      "translation": "Şüphesiz buna kendisi de şahittir.[*]",
+      "dipnot": "Kıyamet 75/14 - 15.",
+      "roots": [
+        "شهد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kıyamet 75/14-15",
+          "targets": [
+            "75:14",
+            "75:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "100:7",
+        "connections": [
+          {
+            "target_coordinate": "75:14",
+            "context": "Kıyamet 75/14-15"
+          },
+          {
+            "target_coordinate": "75:15",
+            "context": "Kıyamet 75/14-15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 7. Ayetin Tefsiri\nوَاِنَّهُ عَلٰى ذٰلِكَ لَشَه۪يدٌۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:8",
+      "text": "وَاِنَّهُ لِحُبِّ الْخَيْرِ لَشَد۪يدٌۜ",
+      "translation": "Çünkü ondaki mal ve makam[*] sevgisi çok güçlüdür.",
+      "dipnot": "“Mal ve makam” anlamı verdiğimiz kelime “hayr (الخير)”dır. Dünyada sevilen ve istenen mal-mülk, makam, mevki, itibar gibi her iyi şeyi içerir ( Âl-i İmran 3/26, A’raf 7/188, Sad 38/32 ). İnsanda bunlara olan sevginin sonu gelmez ( Âl-i İmran 3/14, Fussilet 41/49,",
+      "roots": [
+        "حبب",
+        "خير",
+        "شدد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“Mal ve makam” anlamı verdiğimiz kelime “hayr (الخير)”dır. Dünyada sevilen ve istenen mal-mülk, makam, mevki, itibar gibi her iyi şeyi içerir ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/26",
+          "targets": [
+            "3:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/188",
+          "targets": [
+            "7:188"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Sad 38/32",
+          "targets": [
+            "38:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). İnsanda bunlara olan sevginin sonu gelmez ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/14",
+          "targets": [
+            "3:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/49",
+          "targets": [
+            "41:49"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "100:8",
+        "connections": [
+          {
+            "target_coordinate": "3:26",
+            "context": "Âl-i İmran 3/26"
+          },
+          {
+            "target_coordinate": "7:188",
+            "context": "raf 7/188"
+          },
+          {
+            "target_coordinate": "38:32",
+            "context": "Sad 38/32"
+          },
+          {
+            "target_coordinate": "3:14",
+            "context": "Âl-i İmran 3/14"
+          },
+          {
+            "target_coordinate": "41:49",
+            "context": "Fussilet 41/49"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 8. Ayetin Tefsiri\nوَاِنَّهُ لِحُبِّ الْخَيْرِ لَشَد۪يدٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:9",
+      "text": "اَفَلَا يَعْلَمُ اِذَا بُعْثِرَ مَا فِي الْقُبُورِۙ",
+      "translation": "O hiç bilmiyor mu ki kabirlerde olanlar dışarı çıkarıldığında[*]",
+      "dipnot": "Hac 22/7, İnfitar 82/4 - 5.",
+      "roots": [
+        "علم",
+        "بعثر",
+        "قبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hac 22/7",
+          "targets": [
+            "22:7"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/4-5",
+          "targets": [
+            "82:4",
+            "82:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "100:9",
+        "connections": [
+          {
+            "target_coordinate": "22:7",
+            "context": "Hac 22/7"
+          },
+          {
+            "target_coordinate": "82:4",
+            "context": "İnfitar 82/4-5"
+          },
+          {
+            "target_coordinate": "82:5",
+            "context": "İnfitar 82/4-5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 9. Ayetin Tefsiri\nاَفَلَا يَعْلَمُ اِذَا بُعْثِرَ مَا فِي الْقُبُورِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:10",
+      "text": "وَحُصِّلَ مَا فِي الصُّدُورِۙ",
+      "translation": "ve sinelerde olanlar toparlanıp ortaya konulduğunda[*]",
+      "dipnot": "Mü’min 40/15 - 16, Hâkka 69/18, Tarık 86/9, Zilzal 99/6 - 8.",
+      "roots": [
+        "حصل",
+        "صدر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/15-16",
+          "targets": [
+            "40:15",
+            "40:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/18",
+          "targets": [
+            "69:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tarık 86/9",
+          "targets": [
+            "86:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zilzal 99/6-8",
+          "targets": [
+            "99:6",
+            "99:7",
+            "99:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "100:10",
+        "connections": [
+          {
+            "target_coordinate": "40:15",
+            "context": "min 40/15-16"
+          },
+          {
+            "target_coordinate": "40:16",
+            "context": "min 40/15-16"
+          },
+          {
+            "target_coordinate": "69:18",
+            "context": "Hâkka 69/18"
+          },
+          {
+            "target_coordinate": "86:9",
+            "context": "Tarık 86/9"
+          },
+          {
+            "target_coordinate": "99:6",
+            "context": "Zilzal 99/6-8"
+          },
+          {
+            "target_coordinate": "99:7",
+            "context": "Zilzal 99/6-8"
+          },
+          {
+            "target_coordinate": "99:8",
+            "context": "Zilzal 99/6-8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 10. Ayetin Tefsiri\nوَحُصِّلَ مَا فِي الصُّدُورِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    },
+    {
+      "id": "100:11",
+      "text": "اِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَب۪يرٌ",
+      "translation": "ٍişte o gün Rableri onlara (neler yaptıklarını) kesinlikle bildirecektir![*]",
+      "dipnot": "“Habîr (خَبِير)” kelimesi, “haberdar olan” anlamına geldiği gibi, “haber veren” anlamına da gelir (Müfredat). Allah daima her şeyden haberdardır ( Hud 11/111; Lokman 31/16, 34; Mülk 67/14 ). Ayet ahiretten bahsettiği için burada sözü edilen durum, Allah’ın haberdar olması değil, insanların yaptıklarını onlara haber vermesidir ( Kehf 18/49, Yasin 36/12, Mücadele 58/6 , Kıyamet 75/13, İnfitar 82/5 ).",
+      "roots": [
+        "ربب",
+        "يوم",
+        "خبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“Habîr (خَبِير)” kelimesi, “haberdar olan” anlamına geldiği gibi, “haber veren” anlamına da gelir (Müfredat). Allah daima her şeyden haberdardır ( "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/111",
+          "targets": [
+            "11:111"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/16,34",
+          "targets": [
+            "31:16",
+            "31:34"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/14",
+          "targets": [
+            "67:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ayet ahiretten bahsettiği için burada sözü edilen durum, Allah’ın haberdar olması değil, insanların yaptıklarını onlara haber vermesidir ( "
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/49",
+          "targets": [
+            "18:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/12",
+          "targets": [
+            "36:12"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mücadele 58/6",
+          "targets": [
+            "58:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/13",
+          "targets": [
+            "75:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/5",
+          "targets": [
+            "82:5"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "100:11",
+        "connections": [
+          {
+            "target_coordinate": "11:111",
+            "context": "Hud 11/111"
+          },
+          {
+            "target_coordinate": "31:16",
+            "context": "Lokman 31/16,34"
+          },
+          {
+            "target_coordinate": "31:34",
+            "context": "Lokman 31/16,34"
+          },
+          {
+            "target_coordinate": "67:14",
+            "context": "Mülk 67/14"
+          },
+          {
+            "target_coordinate": "18:49",
+            "context": "Kehf 18/49"
+          },
+          {
+            "target_coordinate": "36:12",
+            "context": "Yasin 36/12"
+          },
+          {
+            "target_coordinate": "58:6",
+            "context": "Mücadele 58/6"
+          },
+          {
+            "target_coordinate": "75:13",
+            "context": "Kıyamet 75/13"
+          },
+          {
+            "target_coordinate": "82:5",
+            "context": "İnfitar 82/5"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Âdiyât Suresi 11. Ayetin Tefsiri\nاِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَب۪يرٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/100.mp3"
+    }
+  ]
+}

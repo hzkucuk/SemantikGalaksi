@@ -1,0 +1,1508 @@
+{
+  "nodes": [
+    {
+      "id": "85:1",
+      "text": "وَالسَّمَاءِ ذَاتِ الْبُرُوجِۙ",
+      "translation": "Burçları /takımyıldızları[*] olan göğe yemin olsun!",
+      "dipnot": "“Burç (برج)”, Arapçada köşk ve kale anlamına gelir (Mekayis). Birinci kat semayı süsleyen takımyıldızlar, uzaktan köşkler ve kaleler gibi gözükürler (Nisa 4/78, Hicr 15/16, Furkan 25/61).",
+      "roots": [
+        "سمو",
+        "برج"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“Burç (برج)”, Arapçada köşk ve kale anlamına gelir (Mekayis). Birinci kat semayı süsleyen takımyıldızlar, uzaktan köşkler ve kaleler gibi gözükürler ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/78",
+          "targets": [
+            "4:78"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/16",
+          "targets": [
+            "15:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/61",
+          "targets": [
+            "25:61"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:1",
+        "connections": [
+          {
+            "target_coordinate": "4:78",
+            "context": "Nisa 4/78"
+          },
+          {
+            "target_coordinate": "15:16",
+            "context": "Hicr 15/16"
+          },
+          {
+            "target_coordinate": "25:61",
+            "context": "Furkan 25/61"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 1. Ayetin Tefsiri\nوَالسَّمَٓاءِ ذَاتِ الْبُرُوجِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:2",
+      "text": "وَالْيَوْمِ الْمَوْعُودِۙ",
+      "translation": "Söz verilen o güne yemin olsun![*]",
+      "dipnot": "A’raf 7/44, Yasin 36/52, Kaf 50/20.",
+      "roots": [
+        "يوم",
+        "وعد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/44",
+          "targets": [
+            "7:44"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/52",
+          "targets": [
+            "36:52"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/20",
+          "targets": [
+            "50:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:2",
+        "connections": [
+          {
+            "target_coordinate": "7:44",
+            "context": "raf 7/44"
+          },
+          {
+            "target_coordinate": "36:52",
+            "context": "Yasin 36/52"
+          },
+          {
+            "target_coordinate": "50:20",
+            "context": "Kaf 50/20"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 2. Ayetin Tefsiri\nوَالْيَوْمِ الْمَوْعُودِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:3",
+      "text": "وَشَاهِدٍ وَمَشْهُودٍۜ",
+      "translation": "(O gün) Şahit olana da şahit olunana[1*] da yemin olsun ki[2*]",
+      "dipnot": "[1*] Allah Teala, ahiretteki yargılamada her toplum için kendilerinden şahit getirecek ve her şey hem tutulan kayıtlarla hem şahit ifadeleriyle kesin olarak ortaya konacaktır (Nisa 4/41, Hud 11/18, Nahl 16/84, 89, Kasas 28/75, Zümer 39/69, Mümin 40/51, Kaf 50/21). [2*] Buraya kadar olan üç âyette Allah yemin etmektedir. Allah’ın bir şeye yemin etmesi, onun önemine vurgu yapmak ve daha sonra gelen şeye dikkat çekmek içindir.",
+      "roots": [
+        "شهد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Allah Teala, ahiretteki yargılamada her toplum için kendilerinden şahit getirecek ve her şey hem tutulan kayıtlarla hem şahit ifadeleriyle kesin olarak ortaya konacaktır ("
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/41",
+          "targets": [
+            "4:41"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/18",
+          "targets": [
+            "11:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/84,89",
+          "targets": [
+            "16:84",
+            "16:89"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/75",
+          "targets": [
+            "28:75"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/69",
+          "targets": [
+            "39:69"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mümin 40/51",
+          "targets": [
+            "40:51"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/21",
+          "targets": [
+            "50:21"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] Buraya kadar olan üç âyette Allah yemin etmektedir. Allah’ın bir şeye yemin etmesi, onun önemine vurgu yapmak ve daha sonra gelen şeye dikkat çekmek içindir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:3",
+        "connections": [
+          {
+            "target_coordinate": "4:41",
+            "context": "Nisa 4/41"
+          },
+          {
+            "target_coordinate": "11:18",
+            "context": "Hud 11/18"
+          },
+          {
+            "target_coordinate": "16:84",
+            "context": "Nahl 16/84,89"
+          },
+          {
+            "target_coordinate": "16:89",
+            "context": "Nahl 16/84,89"
+          },
+          {
+            "target_coordinate": "28:75",
+            "context": "Kasas 28/75"
+          },
+          {
+            "target_coordinate": "39:69",
+            "context": "Zümer 39/69"
+          },
+          {
+            "target_coordinate": "40:51",
+            "context": "Mümin 40/51"
+          },
+          {
+            "target_coordinate": "50:21",
+            "context": "Kaf 50/21"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 3. Ayetin Tefsiri\nوَشَاهِدٍ وَمَشْهُودٍۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:4",
+      "text": "قُتِلَ اَصْحَابُ الْاُخْدُودِۙ",
+      "translation": "uzun ve derin hendeklerin sahipleri kahrolup gittiler,[*]",
+      "dipnot": "İkinci Himyerîler’in son hükümdarı olan Zûnüvâs Yahudiliği kabul etmiş, 523’te Necran’ı ele geçirerek Hristiyanlardan Yahudiliğe geçmelerini istemiş, kabul etmeyenleri ateş dolu çukurlara attırarak yaktırmıştır. Rivayetlere göre Zûnüvâs 120.000 kişi ile Necran’ı kuşatmış, yaklaşık 2.000 kişiyi bir kiliseye doldurarak ateşe vermiştir. Diğer taraftan kazdırdığı uzun ve derin hendeklere odun doldurulmuş, bu odunlar tutuşturulduktan sonra Hristiyanlar içine atılarak yakılmıştır. Zûnüvâs tarafından öldürülen Hristiyanların sayısı İslâmî kaynaklarda 20.000, Süryânî kaynaklarda ise 4.000 olarak belirtilmektedir. Halkı hendeklere doldurarak öldürme olaylarının tarihte çeşitli zamanlarda meydana geldiği anlaşılmaktadır. Yemen’de Tübba‘, Bâbil’de Buhtunnasr, Kostantiniye’de Kral Konstantin devirlerinde benzeri olaylar görülmüştür (DİA, Ashabu’l-Uhdud).",
+      "roots": [
+        "قتل",
+        "صحب",
+        "خدد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "İkinci Himyerîler’in son hükümdarı olan Zûnüvâs Yahudiliği kabul etmiş, 523’te Necran’ı ele geçirerek Hristiyanlardan Yahudiliğe geçmelerini istemiş, kabul etmeyenleri ateş dolu çukurlara attırarak yaktırmıştır. Rivayetlere göre Zûnüvâs 120.000 kişi ile Necran’ı kuşatmış, yaklaşık 2.000 kişiyi bir kiliseye doldurarak ateşe vermiştir. Diğer taraftan kazdırdığı uzun ve derin hendeklere odun doldurulmuş, bu odunlar tutuşturulduktan sonra Hristiyanlar içine atılarak yakılmıştır. Zûnüvâs tarafından öldürülen Hristiyanların sayısı İslâmî kaynaklarda 20.000, Süryânî kaynaklarda ise 4.000 olarak belirtilmektedir. Halkı hendeklere doldurarak öldürme olaylarının tarihte çeşitli zamanlarda meydana geldiği anlaşılmaktadır. Yemen’de Tübba‘, Bâbil’de Buhtunnasr, Kostantiniye’de Kral Konstantin devirlerinde benzeri olaylar görülmüştür (DİA, Ashabu’l-Uhdud)."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:4",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 4. Ayetin Tefsiri\nقُتِلَ اَصْحَابُ الْاُخْدُودِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:5",
+      "text": "اَلنَّارِ ذَاتِ الْوَقُودِۙ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "نور",
+        "وقد"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "85:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 5. Ayetin Tefsiri\nاَلنَّارِ ذَاتِ الْوَقُودِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:6",
+      "text": "اِذْ هُمْ عَلَيْهَا قُعُودٌۙ",
+      "translation": "Onlar, o ateşin çevresinde oturmuşlar,",
+      "dipnot": "",
+      "roots": [
+        "قعد"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "85:6",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 6. Ayetin Tefsiri\nاِذْ هُمْ عَلَيْهَا قُعُودٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:7",
+      "text": "وَهُمْ عَلٰى مَا يَفْعَلُونَ بِالْمُؤْمِن۪ينَ شُهُودٌۜ",
+      "translation": "mü’minlere yaptıklarını seyrediyorlardı.",
+      "dipnot": "",
+      "roots": [
+        "فعل",
+        "أمن",
+        "شهد"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "85:7",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 7. Ayetin Tefsiri\nوَهُمْ عَلٰى مَا يَفْعَلُونَ بِالْمُؤْمِن۪ينَ شُهُودٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:8",
+      "text": "وَمَا نَقَمُوا مِنْهُمْ اِلَّٓا اَنْ يُؤْمِنُوا بِاللّٰهِ الْعَز۪يزِ الْحَم۪يدِۙ",
+      "translation": "Onlara bu cezayı vermelerinin tek sebebi, mü’minlerin daima üstün olan, her şeyi mükemmel yapan Allah’a inanıp güvenmeleriydi.",
+      "dipnot": "Allah’a inanmak, O’na güvenmekle olur. İnandığını söyleyen herkes O’na gereği gibi güvenmez. Dolayısıyla Allah’a güvenenler, bu gibilerin hesaplarını bozar ve onları fena halde sinirlendirirler (Maide 5/59, A'raf 7/126, Hac 22/40).",
+      "roots": [
+        "نقم",
+        "أمن",
+        "أله",
+        "عزز",
+        "حمد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Allah’a inanmak, O’na güvenmekle olur. İnandığını söyleyen herkes O’na gereği gibi güvenmez. Dolayısıyla Allah’a güvenenler, bu gibilerin hesaplarını bozar ve onları fena halde sinirlendirirler ("
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/59",
+          "targets": [
+            "5:59"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "A'raf 7/126",
+          "targets": [
+            "7:126"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/40",
+          "targets": [
+            "22:40"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:8",
+        "connections": [
+          {
+            "target_coordinate": "5:59",
+            "context": "Maide 5/59"
+          },
+          {
+            "target_coordinate": "7:126",
+            "context": "A'raf 7/126"
+          },
+          {
+            "target_coordinate": "22:40",
+            "context": "Hac 22/40"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 8. Ayetin Tefsiri\nوَمَا نَقَمُوا مِنْهُمْ اِلَّٓا اَنْ يُؤْمِنُوا بِاللّٰهِ الْعَز۪يزِ الْحَم۪يدِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:9",
+      "text": "اَلَّذ۪ي لَهُ مُلْكُ السَّمٰوَاتِ وَالْاَرْضِۜ وَاللّٰهُ عَلٰى كُلِّ شَيْءٍ شَه۪يدٌۜ",
+      "translation": "Göklerde ve yerde tüm yetkiler kendinde olan Allah’a… Allah, her şeye şahittir.",
+      "dipnot": "Âl-i İmran 3/189.",
+      "roots": [
+        "ملك",
+        "سمو",
+        "أرض",
+        "أله",
+        "كلل",
+        "شيأ",
+        "شهد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/189",
+          "targets": [
+            "3:189"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:9",
+        "connections": [
+          {
+            "target_coordinate": "3:189",
+            "context": "Âl-i İmran 3/189"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 9. Ayetin Tefsiri\nاَلَّذ۪ي لَهُ مُلْكُ السَّمٰوَاتِ وَالْاَرْضِۜ وَاللّٰهُ عَلٰى كُلِّ شَيْءٍ شَه۪يدٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:10",
+      "text": "اِنَّ الَّذ۪ينَ فَتَنُوا الْمُؤْمِن۪ينَ وَالْمُؤْمِنَاتِ ثُمَّ لَمْ يَتُوبُوا فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ الْحَر۪يقِۜ",
+      "translation": "Mü’min erkeklere ve mü’min kadınlara işkence eden, sonra da tövbe etmeyen /dönüş yapmayanların hak ettikleri Cehennem azabıdır. Onların hak ettikleri yangın azabıdır.",
+      "dipnot": "“İşkence” anlamı verdiğimiz kelimenin kökü fitne (فتنة)“dir. Fitne”, altını içindeki yabancı maddelerden ayırmak için ateşe sokmaktır (Müfredat). Kur’an’da bu kelime imtihan (A’râf 7/155), aldatma (A’râf 7/27), cehennem azabı (Zariyât 51/10-14) ve savaş (Bakara 2/216) anlamlarında da kullanılmıştır. Arapçada tövbe, dönüş yapmak demektir. Tövbe edip girdiği yanlış yolu bırakan ve iyi işler yapmaya başlayan kişilerin işledikleri günah ne olursa olsun Allah o günahı bağışlar. Tövbe kapısı, Müslümanlara bu büyük zulmü yapanlara dahi açıktır (Âl-i İmran 3/135, Nisa 4/17, Taha 20/82, Furkan 25/68-71, Zümer 39/53).",
+      "roots": [
+        "فتن",
+        "أمن",
+        "توب",
+        "عذب",
+        "حرق"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "“İşkence” anlamı verdiğimiz kelimenin kökü fitne (فتنة)“dir. Fitne”, altını içindeki yabancı maddelerden ayırmak için ateşe sokmaktır (Müfredat). Kur’an’da bu kelime imtihan (A’"
+        },
+        {
+          "type": "link",
+          "content": "râf 7/155",
+          "targets": [
+            "7:155"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), aldatma (A’"
+        },
+        {
+          "type": "link",
+          "content": "râf 7/27",
+          "targets": [
+            "7:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), cehennem azabı ("
+        },
+        {
+          "type": "link",
+          "content": "Zariyât 51/10-14",
+          "targets": [
+            "51:10",
+            "51:11",
+            "51:12",
+            "51:13",
+            "51:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve savaş ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/216",
+          "targets": [
+            "2:216"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") anlamlarında da kullanılmıştır. Arapçada tövbe, dönüş yapmak demektir. Tövbe edip girdiği yanlış yolu bırakan ve iyi işler yapmaya başlayan kişilerin işledikleri günah ne olursa olsun Allah o günahı bağışlar. Tövbe kapısı, Müslümanlara bu büyük zulmü yapanlara dahi açıktır ("
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/135",
+          "targets": [
+            "3:135"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/17",
+          "targets": [
+            "4:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Taha 20/82",
+          "targets": [
+            "20:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/68-71",
+          "targets": [
+            "25:68",
+            "25:69",
+            "25:70",
+            "25:71"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/53",
+          "targets": [
+            "39:53"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:10",
+        "connections": [
+          {
+            "target_coordinate": "7:155",
+            "context": "râf 7/155"
+          },
+          {
+            "target_coordinate": "7:27",
+            "context": "râf 7/27"
+          },
+          {
+            "target_coordinate": "51:10",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:11",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:12",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:13",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:14",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "2:216",
+            "context": "Bakara 2/216"
+          },
+          {
+            "target_coordinate": "3:135",
+            "context": "Âl-i İmran 3/135"
+          },
+          {
+            "target_coordinate": "4:17",
+            "context": "Nisa 4/17"
+          },
+          {
+            "target_coordinate": "20:82",
+            "context": "Taha 20/82"
+          },
+          {
+            "target_coordinate": "25:68",
+            "context": "Furkan 25/68-71"
+          },
+          {
+            "target_coordinate": "25:69",
+            "context": "Furkan 25/68-71"
+          },
+          {
+            "target_coordinate": "25:70",
+            "context": "Furkan 25/68-71"
+          },
+          {
+            "target_coordinate": "25:71",
+            "context": "Furkan 25/68-71"
+          },
+          {
+            "target_coordinate": "39:53",
+            "context": "Zümer 39/53"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 10. Ayetin Tefsiri\nاِنَّ الَّذ۪ينَ فَتَنُوا الْمُؤْمِن۪ينَ وَالْمُؤْمِنَاتِ ثُمَّ لَمْ يَتُوبُوا فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ الْحَر۪يقِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:11",
+      "text": "اِنَّ الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ جَنَّاتٌ تَجْر۪ي مِنْ تَحْتِهَا الْاَنْهَارُۜ ذٰلِكَ الْفَوْزُ الْكَب۪يرُۜ",
+      "translation": "Allah’a inanıp güvenen ve iyi işler yapanların hak ettikleri ise içlerinden ırmaklar akan cennetlerdir. İşte bu, büyük bir başarıdır.",
+      "dipnot": "Bakara 2/82, Nisa 4/122, Maide 5/9, Yunus 10/9, Nahl 16/97, Kehf 18/107, Ankebut 29/58, Mü’min 40/40, Teğabün 64/9.",
+      "roots": [
+        "أمن",
+        "عمل",
+        "صلح",
+        "جنن",
+        "جري",
+        "تحت",
+        "نهر",
+        "فوز",
+        "كبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/82",
+          "targets": [
+            "2:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/122",
+          "targets": [
+            "4:122"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/9",
+          "targets": [
+            "5:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/9",
+          "targets": [
+            "10:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/97",
+          "targets": [
+            "16:97"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/107",
+          "targets": [
+            "18:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/58",
+          "targets": [
+            "29:58"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/40",
+          "targets": [
+            "40:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Teğabün 64/9",
+          "targets": [
+            "64:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:11",
+        "connections": [
+          {
+            "target_coordinate": "2:82",
+            "context": "Bakara 2/82"
+          },
+          {
+            "target_coordinate": "4:122",
+            "context": "Nisa 4/122"
+          },
+          {
+            "target_coordinate": "5:9",
+            "context": "Maide 5/9"
+          },
+          {
+            "target_coordinate": "10:9",
+            "context": "Yunus 10/9"
+          },
+          {
+            "target_coordinate": "16:97",
+            "context": "Nahl 16/97"
+          },
+          {
+            "target_coordinate": "18:107",
+            "context": "Kehf 18/107"
+          },
+          {
+            "target_coordinate": "29:58",
+            "context": "Ankebut 29/58"
+          },
+          {
+            "target_coordinate": "40:40",
+            "context": "min 40/40"
+          },
+          {
+            "target_coordinate": "64:9",
+            "context": "Teğabün 64/9"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 11. Ayetin Tefsiri\nاِنَّ الَّذ۪ينَ اٰمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ جَنَّاتٌ تَجْر۪ي مِنْ تَحْتِهَا الْاَنْهَارُۜ ذٰلِكَ الْفَوْزُ الْكَب۪يرُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:12",
+      "text": "اِنَّ بَطْشَ رَبِّكَ لَشَد۪يدٌۜ",
+      "translation": "Rabbinin vuracağı darbe, gerçekten çok güçlüdür.",
+      "dipnot": "Hud 11/102.",
+      "roots": [
+        "بطش",
+        "ربب",
+        "شدد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hud 11/102",
+          "targets": [
+            "11:102"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:12",
+        "connections": [
+          {
+            "target_coordinate": "11:102",
+            "context": "Hud 11/102"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 12. Ayetin Tefsiri\nاِنَّ بَطْشَ رَبِّكَ لَشَد۪يدٌۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:13",
+      "text": "اِنَّهُ هُوَ يُبْدِئُ وَيُع۪يدُۚ",
+      "translation": "O, (yaratılışı) başlatan ve (ahirette) tekrarlayacak olandır.",
+      "dipnot": "Yunus 10/4, 34, Enbiya 21/104, Neml 27/64, Ankebut 29/19, Rum 30/11, 27.",
+      "roots": [
+        "بدأ",
+        "عود"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yunus 10/4,34",
+          "targets": [
+            "10:4",
+            "10:34"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/104",
+          "targets": [
+            "21:104"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/64",
+          "targets": [
+            "27:64"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/19",
+          "targets": [
+            "29:19"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/11,27",
+          "targets": [
+            "30:11",
+            "30:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:13",
+        "connections": [
+          {
+            "target_coordinate": "10:4",
+            "context": "Yunus 10/4,34"
+          },
+          {
+            "target_coordinate": "10:34",
+            "context": "Yunus 10/4,34"
+          },
+          {
+            "target_coordinate": "21:104",
+            "context": "Enbiya 21/104"
+          },
+          {
+            "target_coordinate": "27:64",
+            "context": "Neml 27/64"
+          },
+          {
+            "target_coordinate": "29:19",
+            "context": "Ankebut 29/19"
+          },
+          {
+            "target_coordinate": "30:11",
+            "context": "Rum 30/11,27"
+          },
+          {
+            "target_coordinate": "30:27",
+            "context": "Rum 30/11,27"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 13. Ayetin Tefsiri\nاِنَّهُ هُوَ يُبْدِئُ وَيُع۪يدُۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:14",
+      "text": "وَهُوَ الْغَفُورُ الْوَدُودُۙ",
+      "translation": "O, çok bağışlayan ve sevgi dolu olandır.",
+      "dipnot": "Hud 11/90, Hicr 15/49, Zümer 39/53.",
+      "roots": [
+        "غفر",
+        "ودد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hud 11/90",
+          "targets": [
+            "11:90"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/49",
+          "targets": [
+            "15:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/53",
+          "targets": [
+            "39:53"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:14",
+        "connections": [
+          {
+            "target_coordinate": "11:90",
+            "context": "Hud 11/90"
+          },
+          {
+            "target_coordinate": "15:49",
+            "context": "Hicr 15/49"
+          },
+          {
+            "target_coordinate": "39:53",
+            "context": "Zümer 39/53"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 14. Ayetin Tefsiri\nوَهُوَ الْغَفُورُ الْوَدُودُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:15",
+      "text": "ذُو الْعَرْشِ الْمَج۪يدُۙ",
+      "translation": "Arş’ın /yönetim merkezinin sahibidir, pek yücedir.",
+      "dipnot": "Hud 11/73,",
+      "roots": [
+        "عرش",
+        "مجد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hud 11/73",
+          "targets": [
+            "11:73"
+          ]
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:15",
+        "connections": [
+          {
+            "target_coordinate": "11:73",
+            "context": "Hud 11/73"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 15. Ayetin Tefsiri\nذُو الْعَرْشِ الْمَج۪يدُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:16",
+      "text": "فَعَّالٌ لِمَا يُر۪يدُۜ",
+      "translation": "İrade ettiği[1*] her şeyi yapacak güçtedir.[2*]",
+      "dipnot": "[1*] İrâde, istemek ve dilemektir. Allah, bütün kullarının yola gelmesini irade eder ama kimseyi zorlamadığı için ( Bakara 2/256 ) sadece gereğini yapanları yola getirir ( Nisa 4/26 ). Allah, bir şeyi irade ettikten sonra “ol” emrini verirse o şey mutlaka olur ( Yasin 36/82 ) İmtihanla ilgili konularda “ol” emrini, sadece gereğini yapanlar için verir ( İnsan 76/30, Tekvir 81/29 ). [2*] Hud 11/107, Hac 22/14.",
+      "roots": [
+        "فعل",
+        "رود"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] İrâde, istemek ve dilemektir. Allah, bütün kullarının yola gelmesini irade eder ama kimseyi zorlamadığı için ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/256",
+          "targets": [
+            "2:256"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") sadece gereğini yapanları yola getirir ( "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/26",
+          "targets": [
+            "4:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Allah, bir şeyi irade ettikten sonra “ol” emrini verirse o şey mutlaka olur ( "
+        },
+        {
+          "type": "link",
+          "content": "Yasin 36/82",
+          "targets": [
+            "36:82"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") İmtihanla ilgili konularda “ol” emrini, sadece gereğini yapanlar için verir ( "
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/30",
+          "targets": [
+            "76:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/29",
+          "targets": [
+            "81:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Hud 11/107",
+          "targets": [
+            "11:107"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/14",
+          "targets": [
+            "22:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:16",
+        "connections": [
+          {
+            "target_coordinate": "2:256",
+            "context": "Bakara 2/256"
+          },
+          {
+            "target_coordinate": "4:26",
+            "context": "Nisa 4/26"
+          },
+          {
+            "target_coordinate": "36:82",
+            "context": "Yasin 36/82"
+          },
+          {
+            "target_coordinate": "76:30",
+            "context": "İnsan 76/30"
+          },
+          {
+            "target_coordinate": "81:29",
+            "context": "Tekvir 81/29"
+          },
+          {
+            "target_coordinate": "11:107",
+            "context": "Hud 11/107"
+          },
+          {
+            "target_coordinate": "22:14",
+            "context": "Hac 22/14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 16. Ayetin Tefsiri\nفَعَّالٌ لِمَا يُر۪يدُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:17",
+      "text": "هَلْ اَتٰيكَ حَد۪يثُ الْجُنُودِۙ",
+      "translation": "O orduların haberi sana ulaştı, değil mi?",
+      "dipnot": "",
+      "roots": [
+        "أتي",
+        "حدث",
+        "جند"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "85:17",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 17. Ayetin Tefsiri\nهَلْ اَتٰيكَ حَد۪يثُ الْجُنُودِۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:18",
+      "text": "فِرْعَوْنَ وَثَمُودَۜ",
+      "translation": "Firavun ve Semud ordularının…",
+      "dipnot": "[*] Salih aleyhisselamın elçi olarak gönderildiği Semud kavmi, bağ ve bahçeleri, pınarları, ekinlik ve hurmalıkları olan bir yerde yaşıyordu ( Şuarâ 26/147 - 148 ). Kayaları yontarak yaptıkları evler ve düzlüklere kurdukları sarayları vardı ( Arâf 7/74, Hicr 15/82, Şuarâ 26/149, Fecr 89/9 ). Salih aleyhisselamın getirdiği âyetler ve gösterdiği deve mucizesi, onları iknaya yetiyordu ama ona inanmak menfaatlerine ters düştüğü için inanmıyorlardı. Firavun ve hanedanı da aynıydı. Musa aleyhisselamın Allah’ın elçisi olduğunu kesin olarak anlamışlardı ama menfaatlerine ters düştüğü için onu bir türlü kabul edemiyorlardı ( Neml 27/13 - 14 ).",
+      "roots": null,
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] Salih aleyhisselamın elçi olarak gönderildiği Semud kavmi, bağ ve bahçeleri, pınarları, ekinlik ve hurmalıkları olan bir yerde yaşıyordu ( "
+        },
+        {
+          "type": "link",
+          "content": "Şuarâ 26/147-148",
+          "targets": [
+            "26:147",
+            "26:148"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Kayaları yontarak yaptıkları evler ve düzlüklere kurdukları sarayları vardı ( "
+        },
+        {
+          "type": "link",
+          "content": "Arâf 7/74",
+          "targets": [
+            "7:74"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hicr 15/82",
+          "targets": [
+            "15:82"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuarâ 26/149",
+          "targets": [
+            "26:149"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/9",
+          "targets": [
+            "89:9"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Salih aleyhisselamın getirdiği âyetler ve gösterdiği deve mucizesi, onları iknaya yetiyordu ama ona inanmak menfaatlerine ters düştüğü için inanmıyorlardı. Firavun ve hanedanı da aynıydı. Musa aleyhisselamın Allah’ın elçisi olduğunu kesin olarak anlamışlardı ama menfaatlerine ters düştüğü için onu bir türlü kabul edemiyorlardı ( "
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/13-14",
+          "targets": [
+            "27:13",
+            "27:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:18",
+        "connections": [
+          {
+            "target_coordinate": "26:147",
+            "context": "Şuarâ 26/147-148"
+          },
+          {
+            "target_coordinate": "26:148",
+            "context": "Şuarâ 26/147-148"
+          },
+          {
+            "target_coordinate": "7:74",
+            "context": "Arâf 7/74"
+          },
+          {
+            "target_coordinate": "15:82",
+            "context": "Hicr 15/82"
+          },
+          {
+            "target_coordinate": "26:149",
+            "context": "Şuarâ 26/149"
+          },
+          {
+            "target_coordinate": "89:9",
+            "context": "Fecr 89/9"
+          },
+          {
+            "target_coordinate": "27:13",
+            "context": "Neml 27/13-14"
+          },
+          {
+            "target_coordinate": "27:14",
+            "context": "Neml 27/13-14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 18. Ayetin Tefsiri\nفِرْعَوْنَ وَثَمُودَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:19",
+      "text": "بَلِ الَّذ۪ينَ كَفَرُوا ف۪ي تَكْذ۪يبٍۙ",
+      "translation": "(Kur’an’ı) görmezlikten gelenler aslında yalanlar içindedirler.[*]",
+      "dipnot": "[*] İnşikak 84/22.",
+      "roots": [
+        "كفر",
+        "كذب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/22",
+          "targets": [
+            "84:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:19",
+        "connections": [
+          {
+            "target_coordinate": "84:22",
+            "context": "İnşikak 84/22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 19. Ayetin Tefsiri\nبَلِ الَّذ۪ينَ كَفَرُوا ف۪ي تَكْذ۪يبٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:20",
+      "text": "وَاللّٰهُ مِنْ وَرَٓائِهِمْ مُح۪يطٌۚ",
+      "translation": "Allah onları çepeçevre kuşatmıştır.[*]",
+      "dipnot": "[*] Nisa 4/126, İsra 17/60, Mü’min 40/45, Fussilet 41/54, Ahkaf 46/26.",
+      "roots": [
+        "أله",
+        "وري",
+        "حوط"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/126",
+          "targets": [
+            "4:126"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/60",
+          "targets": [
+            "17:60"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/45",
+          "targets": [
+            "40:45"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/54",
+          "targets": [
+            "41:54"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ahkaf 46/26",
+          "targets": [
+            "46:26"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:20",
+        "connections": [
+          {
+            "target_coordinate": "4:126",
+            "context": "Nisa 4/126"
+          },
+          {
+            "target_coordinate": "17:60",
+            "context": "İsra 17/60"
+          },
+          {
+            "target_coordinate": "40:45",
+            "context": "min 40/45"
+          },
+          {
+            "target_coordinate": "41:54",
+            "context": "Fussilet 41/54"
+          },
+          {
+            "target_coordinate": "46:26",
+            "context": "Ahkaf 46/26"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 20. Ayetin Tefsiri\nوَاللّٰهُ مِنْ وَرَٓائِهِمْ مُح۪يطٌۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:21",
+      "text": "بَلْ هُوَ قُرْاٰنٌ مَج۪يدٌۙ",
+      "translation": "Aslında o, yüce Kur’an’dır.[*]",
+      "dipnot": "[*] Kâf 50/1.",
+      "roots": [
+        "قرأ",
+        "مجد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Kâf 50/1",
+          "targets": [
+            "50:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:21",
+        "connections": [
+          {
+            "target_coordinate": "50:1",
+            "context": "Kâf 50/1"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 21. Ayetin Tefsiri\nبَلْ هُوَ قُرْاٰنٌ مَج۪يدٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    },
+    {
+      "id": "85:22",
+      "text": "ف۪ي لَوْحٍ مَحْفُوظٍ",
+      "translation": "Levh-i Mahfuz’dadır /korunmuş bir levhadadır.[*]",
+      "dipnot": "[*] Zuhruf 43/3 - 4, Vakıa 56/77 - 78.",
+      "roots": [
+        "لوح",
+        "حفظ"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/3-4",
+          "targets": [
+            "43:3",
+            "43:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Vakıa 56/77-78",
+          "targets": [
+            "56:77",
+            "56:78"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "85:22",
+        "connections": [
+          {
+            "target_coordinate": "43:3",
+            "context": "Zuhruf 43/3-4"
+          },
+          {
+            "target_coordinate": "43:4",
+            "context": "Zuhruf 43/3-4"
+          },
+          {
+            "target_coordinate": "56:77",
+            "context": "Vakıa 56/77-78"
+          },
+          {
+            "target_coordinate": "56:78",
+            "context": "Vakıa 56/77-78"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Burûc Suresi 22. Ayetin Tefsiri\nف۪ي لَوْحٍ مَحْفُوظٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/85.mp3"
+    }
+  ]
+}

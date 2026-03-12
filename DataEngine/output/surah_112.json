@@ -1,0 +1,383 @@
+{
+  "nodes": [
+    {
+      "id": "112:1",
+      "text": "قُلْ هُوَ اللّٰهُ اَحَدٌۚ",
+      "translation": "De ki: “O Allah, bir tektir.",
+      "dipnot": "Bakara 2/163, En’am 6/3, Nahl 16/51, Kasas 28/70, Saffat 37/4.",
+      "roots": [
+        "قول",
+        "أله",
+        "أحد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/163",
+          "targets": [
+            "2:163"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/3",
+          "targets": [
+            "6:3"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nahl 16/51",
+          "targets": [
+            "16:51"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kasas 28/70",
+          "targets": [
+            "28:70"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/4",
+          "targets": [
+            "37:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "112:1",
+        "connections": [
+          {
+            "target_coordinate": "2:163",
+            "context": "Bakara 2/163"
+          },
+          {
+            "target_coordinate": "6:3",
+            "context": "am 6/3"
+          },
+          {
+            "target_coordinate": "16:51",
+            "context": "Nahl 16/51"
+          },
+          {
+            "target_coordinate": "28:70",
+            "context": "Kasas 28/70"
+          },
+          {
+            "target_coordinate": "37:4",
+            "context": "Saffat 37/4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İhlâs Suresi 1. Ayetin Tefsiri\nقُلْ هُوَ اللّٰهُ اَحَدٌۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/112.mp3"
+    },
+    {
+      "id": "112:2",
+      "text": "اَللّٰهُ الصَّمَدُۚ",
+      "translation": "Allah, her şeyin kendisine muhtaç olduğu varlıktır.",
+      "dipnot": "Fatır 35/15, Rahman 55/29.",
+      "roots": [
+        "أله",
+        "صمد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Fatır 35/15",
+          "targets": [
+            "35:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rahman 55/29",
+          "targets": [
+            "55:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "112:2",
+        "connections": [
+          {
+            "target_coordinate": "35:15",
+            "context": "Fatır 35/15"
+          },
+          {
+            "target_coordinate": "55:29",
+            "context": "Rahman 55/29"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/112.mp3"
+    },
+    {
+      "id": "112:3",
+      "text": "لَمْ يَلِدْ وَلَمْ يُولَدْۙ",
+      "translation": "Çocuk sahibi olmamıştır, kimsenin çocuğu da değildir.",
+      "dipnot": "Bakara 2/116, En’am 6/100 - 101, Tevbe 9/30, Yunus 10/68, İsra 17/111, Kehf 18/4 - 5, Meryem 19/88 - 93, Enbiya 21/26, Saffat 37/151 - 154.",
+      "roots": [
+        "ولد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/116",
+          "targets": [
+            "2:116"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "En’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/100-101",
+          "targets": [
+            "6:100",
+            "6:101"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/30",
+          "targets": [
+            "9:30"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/68",
+          "targets": [
+            "10:68"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/111",
+          "targets": [
+            "17:111"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/4-5",
+          "targets": [
+            "18:4",
+            "18:5"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/88-93",
+          "targets": [
+            "19:88",
+            "19:89",
+            "19:90",
+            "19:91",
+            "19:92",
+            "19:93"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/26",
+          "targets": [
+            "21:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/151-154",
+          "targets": [
+            "37:151",
+            "37:152",
+            "37:153",
+            "37:154"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "112:3",
+        "connections": [
+          {
+            "target_coordinate": "2:116",
+            "context": "Bakara 2/116"
+          },
+          {
+            "target_coordinate": "6:100",
+            "context": "am 6/100-101"
+          },
+          {
+            "target_coordinate": "6:101",
+            "context": "am 6/100-101"
+          },
+          {
+            "target_coordinate": "9:30",
+            "context": "Tevbe 9/30"
+          },
+          {
+            "target_coordinate": "10:68",
+            "context": "Yunus 10/68"
+          },
+          {
+            "target_coordinate": "17:111",
+            "context": "İsra 17/111"
+          },
+          {
+            "target_coordinate": "18:4",
+            "context": "Kehf 18/4-5"
+          },
+          {
+            "target_coordinate": "18:5",
+            "context": "Kehf 18/4-5"
+          },
+          {
+            "target_coordinate": "19:88",
+            "context": "Meryem 19/88-93"
+          },
+          {
+            "target_coordinate": "19:89",
+            "context": "Meryem 19/88-93"
+          },
+          {
+            "target_coordinate": "19:90",
+            "context": "Meryem 19/88-93"
+          },
+          {
+            "target_coordinate": "19:91",
+            "context": "Meryem 19/88-93"
+          },
+          {
+            "target_coordinate": "19:92",
+            "context": "Meryem 19/88-93"
+          },
+          {
+            "target_coordinate": "19:93",
+            "context": "Meryem 19/88-93"
+          },
+          {
+            "target_coordinate": "21:26",
+            "context": "Enbiya 21/26"
+          },
+          {
+            "target_coordinate": "37:151",
+            "context": "Saffat 37/151-154"
+          },
+          {
+            "target_coordinate": "37:152",
+            "context": "Saffat 37/151-154"
+          },
+          {
+            "target_coordinate": "37:153",
+            "context": "Saffat 37/151-154"
+          },
+          {
+            "target_coordinate": "37:154",
+            "context": "Saffat 37/151-154"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İhlâs Suresi 3. Ayetin Tefsiri\nلَمْ يَلِدْ وَلَمْ يُولَدْۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/112.mp3"
+    },
+    {
+      "id": "112:4",
+      "text": "وَلَمْ يَكُنْ لَهُ كُفُوًا اَحَدٌ",
+      "translation": "Hiçbir şey ona denk değildir.”",
+      "dipnot": "Nahl 16/74, Şûrâ 42/11. Aynı gerçek Tevrat’ta da vurgulanır: “Yücesin, ey Egemen RAB! Bir benzerin yok, senden başka Tanrı da yok!” (2. Samuel 7:22). \"Beni kime benzeteceksiniz ki eşitim olsun?” diyor Kutsal Olan” (Yeşeya 40/25).",
+      "roots": [
+        "كون",
+        "كفأ",
+        "أحد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nahl 16/74",
+          "targets": [
+            "16:74"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/11",
+          "targets": [
+            "42:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". Aynı gerçek Tevrat’ta da vurgulanır: “Yücesin, ey Egemen RAB! Bir benzerin yok, senden başka Tanrı da yok!” (2. Samuel 7:22). \"Beni kime benzeteceksiniz ki eşitim olsun?” diyor Kutsal Olan” ("
+        },
+        {
+          "type": "link",
+          "content": "Yeşeya 40/25",
+          "targets": [
+            "40:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "112:4",
+        "connections": [
+          {
+            "target_coordinate": "16:74",
+            "context": "Nahl 16/74"
+          },
+          {
+            "target_coordinate": "42:11",
+            "context": "Şûrâ 42/11"
+          },
+          {
+            "target_coordinate": "40:25",
+            "context": "Yeşeya 40/25"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "İhlâs Suresi 4. Ayetin Tefsiri\nوَلَمْ يَكُنْ لَهُ كُفُوًا اَحَدٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/112.mp3"
+    }
+  ]
+}

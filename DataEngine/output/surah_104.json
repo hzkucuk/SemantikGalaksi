@@ -1,0 +1,688 @@
+{
+  "nodes": [
+    {
+      "id": "104:1",
+      "text": "وَيْلٌ لِكُلِّ هُمَزَةٍ لُمَزَةٍۙ",
+      "translation": "Kışkırtıcılık yapan[1*], ayıplayıp duran herkesin vay haline![2*]",
+      "dipnot": "[1*] Kalem 68/11. [2*] Hucurat 49/11.",
+      "roots": [
+        "كلل",
+        "همز",
+        "لمز"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Kalem 68/11",
+          "targets": [
+            "68:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Hucurat 49/11",
+          "targets": [
+            "49:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "104:1",
+        "connections": [
+          {
+            "target_coordinate": "68:11",
+            "context": "Kalem 68/11"
+          },
+          {
+            "target_coordinate": "49:11",
+            "context": "Hucurat 49/11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Hümeze Suresi 1. Ayetin Tefsiri\nوَيْلٌ لِكُلِّ هُمَزَةٍ لُمَزَةٍۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/104.mp3"
+    },
+    {
+      "id": "104:2",
+      "text": "اَلَّذ۪ي جَمَعَ مَالًا وَعَدَّدَهُۙ",
+      "translation": "mal biriktiren ve onu sayıp duran,[*]",
+      "dipnot": "[*] Tevbe 9/34, Mearic 70/18, Fecr 89/20.",
+      "roots": [
+        "جمع",
+        "مول",
+        "عدد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/34",
+          "targets": [
+            "9:34"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/18",
+          "targets": [
+            "70:18"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/20",
+          "targets": [
+            "89:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "104:2",
+        "connections": [
+          {
+            "target_coordinate": "9:34",
+            "context": "Tevbe 9/34"
+          },
+          {
+            "target_coordinate": "70:18",
+            "context": "Mearic 70/18"
+          },
+          {
+            "target_coordinate": "89:20",
+            "context": "Fecr 89/20"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Hümeze Suresi 2. Ayetin Tefsiri\nاَلَّذ۪ي جَمَعَ مَالًا وَعَدَّدَهُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/104.mp3"
+    },
+    {
+      "id": "104:3",
+      "text": "يَحْسَبُ اَنَّ مَالَهُٓ اَخْلَدَهُۚ",
+      "translation": "malının kendisini ölümsüzleştireceğini sanarak (biriktirip sayan herkesin vay haline)![*]",
+      "dipnot": "[*] Kehf 18/35 - 36, Fussilet 41/50, Müddessir 74/11 - 15, Leyl 92/8 - 11.",
+      "roots": [
+        "حسب",
+        "مول",
+        "خلد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Kehf 18/35-36",
+          "targets": [
+            "18:35",
+            "18:36"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/50",
+          "targets": [
+            "41:50"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/11-15",
+          "targets": [
+            "74:11",
+            "74:12",
+            "74:13",
+            "74:14",
+            "74:15"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Leyl 92/8-11",
+          "targets": [
+            "92:8",
+            "92:9",
+            "92:10",
+            "92:11"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "104:3",
+        "connections": [
+          {
+            "target_coordinate": "18:35",
+            "context": "Kehf 18/35-36"
+          },
+          {
+            "target_coordinate": "18:36",
+            "context": "Kehf 18/35-36"
+          },
+          {
+            "target_coordinate": "41:50",
+            "context": "Fussilet 41/50"
+          },
+          {
+            "target_coordinate": "74:11",
+            "context": "Müddessir 74/11-15"
+          },
+          {
+            "target_coordinate": "74:12",
+            "context": "Müddessir 74/11-15"
+          },
+          {
+            "target_coordinate": "74:13",
+            "context": "Müddessir 74/11-15"
+          },
+          {
+            "target_coordinate": "74:14",
+            "context": "Müddessir 74/11-15"
+          },
+          {
+            "target_coordinate": "74:15",
+            "context": "Müddessir 74/11-15"
+          },
+          {
+            "target_coordinate": "92:8",
+            "context": "Leyl 92/8-11"
+          },
+          {
+            "target_coordinate": "92:9",
+            "context": "Leyl 92/8-11"
+          },
+          {
+            "target_coordinate": "92:10",
+            "context": "Leyl 92/8-11"
+          },
+          {
+            "target_coordinate": "92:11",
+            "context": "Leyl 92/8-11"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Hümeze Suresi 3. Ayetin Tefsiri\nيَحْسَبُ اَنَّ مَالَهُٓ اَخْلَدَهُۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/104.mp3"
+    },
+    {
+      "id": "104:4",
+      "text": "كَلَّا لَيُنْبَذَنَّ فِي الْحُطَمَةِۘ",
+      "translation": "Yok yok; o, kesinlikle Hutame’ye atılacaktır.[*]",
+      "dipnot": "[*] Duhan 44/47, Kaf 50/24, Hâkka 69/30 - 31.",
+      "roots": [
+        "نبذ",
+        "حطم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Duhan 44/47",
+          "targets": [
+            "44:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kaf 50/24",
+          "targets": [
+            "50:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/30-31",
+          "targets": [
+            "69:30",
+            "69:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "104:4",
+        "connections": [
+          {
+            "target_coordinate": "44:47",
+            "context": "Duhan 44/47"
+          },
+          {
+            "target_coordinate": "50:24",
+            "context": "Kaf 50/24"
+          },
+          {
+            "target_coordinate": "69:30",
+            "context": "Hâkka 69/30-31"
+          },
+          {
+            "target_coordinate": "69:31",
+            "context": "Hâkka 69/30-31"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Hümeze Suresi 4. Ayetin Tefsiri\nكَلَّا لَيُنْبَذَنَّ فِي الْحُطَمَةِۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/104.mp3"
+    },
+    {
+      "id": "104:5",
+      "text": "وَمَٓا اَدْرٰيكَ مَا الْحُطَمَةُۜ",
+      "translation": "Hutame’nin ne olduğunu sana kim bildirebilir![*]",
+      "dipnot": "[*] Müddessir 74/26 - 30.",
+      "roots": [
+        "دري",
+        "حطم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/26-30",
+          "targets": [
+            "74:26",
+            "74:27",
+            "74:28",
+            "74:29",
+            "74:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "104:5",
+        "connections": [
+          {
+            "target_coordinate": "74:26",
+            "context": "Müddessir 74/26-30"
+          },
+          {
+            "target_coordinate": "74:27",
+            "context": "Müddessir 74/26-30"
+          },
+          {
+            "target_coordinate": "74:28",
+            "context": "Müddessir 74/26-30"
+          },
+          {
+            "target_coordinate": "74:29",
+            "context": "Müddessir 74/26-30"
+          },
+          {
+            "target_coordinate": "74:30",
+            "context": "Müddessir 74/26-30"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Hümeze Suresi 5. Ayetin Tefsiri\nوَمَٓا اَدْرٰيكَ مَا الْحُطَمَةُۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/104.mp3"
+    },
+    {
+      "id": "104:6",
+      "text": "نَارُ اللّٰهِ الْمُوقَدَةُۙ",
+      "translation": "O, Allah’ın tutuşturulmuş ateşidir;[*]",
+      "dipnot": "[*] İsra 17/97 - 98, Karia 101/9 - 11, Ğaşiye 88/4.",
+      "roots": [
+        "نور",
+        "أله",
+        "وقد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/97-98",
+          "targets": [
+            "17:97",
+            "17:98"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Karia 101/9-11",
+          "targets": [
+            "101:9",
+            "101:10",
+            "101:11"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ğaşiye 88/4",
+          "targets": [
+            "88:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "104:6",
+        "connections": [
+          {
+            "target_coordinate": "17:97",
+            "context": "İsra 17/97-98"
+          },
+          {
+            "target_coordinate": "17:98",
+            "context": "İsra 17/97-98"
+          },
+          {
+            "target_coordinate": "101:9",
+            "context": "Karia 101/9-11"
+          },
+          {
+            "target_coordinate": "101:10",
+            "context": "Karia 101/9-11"
+          },
+          {
+            "target_coordinate": "101:11",
+            "context": "Karia 101/9-11"
+          },
+          {
+            "target_coordinate": "88:4",
+            "context": "Ğaşiye 88/4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Hümeze Suresi 6. Ayetin Tefsiri\nنَارُ اللّٰهِ الْمُوقَدَةُۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/104.mp3"
+    },
+    {
+      "id": "104:7",
+      "text": "اَلَّت۪ي تَطَّلِعُ عَلَى الْاَفْـِٔدَةِۜ",
+      "translation": "yüreklere kadar işleyen ateş...[*]",
+      "dipnot": "[*] Hac 22/19 - 22.",
+      "roots": [
+        "طلع",
+        "فأد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Hac 22/19-22",
+          "targets": [
+            "22:19",
+            "22:20",
+            "22:21",
+            "22:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "104:7",
+        "connections": [
+          {
+            "target_coordinate": "22:19",
+            "context": "Hac 22/19-22"
+          },
+          {
+            "target_coordinate": "22:20",
+            "context": "Hac 22/19-22"
+          },
+          {
+            "target_coordinate": "22:21",
+            "context": "Hac 22/19-22"
+          },
+          {
+            "target_coordinate": "22:22",
+            "context": "Hac 22/19-22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Hümeze Suresi 7. Ayetin Tefsiri\nاَلَّت۪ي تَطَّلِعُ عَلَى الْاَفْـِٔدَةِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/104.mp3"
+    },
+    {
+      "id": "104:8",
+      "text": "اِنَّهَا عَلَيْهِمْ مُؤْصَدَةٌۙ",
+      "translation": "O ateş, onların üzerine kapatılmıştır,[*]",
+      "dipnot": "[*] A’raf 7/40 - 41, İbrahim 14/49 - 50, Ankebut 29/55, Zümer 39/15 - 16, Beled 90/19 - 20.",
+      "roots": [
+        "وصد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/40-41",
+          "targets": [
+            "7:40",
+            "7:41"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/49-50",
+          "targets": [
+            "14:49",
+            "14:50"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/55",
+          "targets": [
+            "29:55"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/15-16",
+          "targets": [
+            "39:15",
+            "39:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beled 90/19-20",
+          "targets": [
+            "90:19",
+            "90:20"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "104:8",
+        "connections": [
+          {
+            "target_coordinate": "7:40",
+            "context": "raf 7/40-41"
+          },
+          {
+            "target_coordinate": "7:41",
+            "context": "raf 7/40-41"
+          },
+          {
+            "target_coordinate": "14:49",
+            "context": "İbrahim 14/49-50"
+          },
+          {
+            "target_coordinate": "14:50",
+            "context": "İbrahim 14/49-50"
+          },
+          {
+            "target_coordinate": "29:55",
+            "context": "Ankebut 29/55"
+          },
+          {
+            "target_coordinate": "39:15",
+            "context": "Zümer 39/15-16"
+          },
+          {
+            "target_coordinate": "39:16",
+            "context": "Zümer 39/15-16"
+          },
+          {
+            "target_coordinate": "90:19",
+            "context": "Beled 90/19-20"
+          },
+          {
+            "target_coordinate": "90:20",
+            "context": "Beled 90/19-20"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Hümeze Suresi 8. Ayetin Tefsiri\nاِنَّهَا عَلَيْهِمْ مُؤْصَدَةٌۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/104.mp3"
+    },
+    {
+      "id": "104:9",
+      "text": "ف۪ي عَمَدٍ مُمَدَّدَةٍ",
+      "translation": "(o ateş) uzatılmış sütunlar arasındadır![*]",
+      "dipnot": "[*] Furkan 25/13, Mülk 67/6 - 8.",
+      "roots": [
+        "عمد",
+        "مدد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Furkan 25/13",
+          "targets": [
+            "25:13"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mülk 67/6-8",
+          "targets": [
+            "67:6",
+            "67:7",
+            "67:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "104:9",
+        "connections": [
+          {
+            "target_coordinate": "25:13",
+            "context": "Furkan 25/13"
+          },
+          {
+            "target_coordinate": "67:6",
+            "context": "Mülk 67/6-8"
+          },
+          {
+            "target_coordinate": "67:7",
+            "context": "Mülk 67/6-8"
+          },
+          {
+            "target_coordinate": "67:8",
+            "context": "Mülk 67/6-8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Hümeze Suresi 9. Ayetin Tefsiri\nف۪ي عَمَدٍ مُمَدَّدَةٍ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/104.mp3"
+    }
+  ]
+}

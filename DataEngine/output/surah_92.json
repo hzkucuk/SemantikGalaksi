@@ -1,0 +1,1579 @@
+{
+  "nodes": [
+    {
+      "id": "1:1",
+      "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "translation": "İyiliği sonsuz, ikramı bol Allah’ın adıyla...",
+      "dipnot": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi,\nTevbe 9/128.\nayette Resulullah için;\nFetih 48/29.\nayette ise müminler için kullanılmıştır.",
+      "roots": [
+        "سمو",
+        "أله",
+        "رحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "\"Rahmân” ve “Rahîm\" kelimeleri, rahmet (رحمة) kökündendir. Rahmet, iyilik ve ikramı gerektiren incelik anlamındadır. Allah’ın özelliği olarak kullanılınca sadece iyilik ve ikram anlaşılır (Müfredât). Rahmân “rahmeti her şeyi kuşatan” demektir. Bu özellik Allah’tan başkasında olmayacağı için  bu kelimeyi “iyiliği sonsuz” diye çevirdik. Rahîm “çok merhametli” demektir. Bu özellik Allah’ın dışındaki varlıklarda da olabileceği için ona \"ikramı bol\" anlamını verdik. Nitekim ‘rahîm’ kelimesi,\n"
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/128",
+          "targets": [
+            "9:128"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayette Resulullah için;\n"
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/29",
+          "targets": [
+            "48:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayette ise müminler için kullanılmıştır."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "1:1",
+        "connections": [
+          {
+            "target_coordinate": "9:128",
+            "context": "Tevbe 9/128"
+          },
+          {
+            "target_coordinate": "48:29",
+            "context": "Fetih 48/29"
+          },
+          {
+            "target_coordinate": "15:87",
+            "context": "BESMELE\nHicr 15/87"
+          },
+          {
+            "target_coordinate": "27:30",
+            "context": "Neml 27/30"
+          },
+          {
+            "target_coordinate": "1:1",
+            "context": "Fatiha 1/1"
+          },
+          {
+            "target_coordinate": "7:156",
+            "context": "A'raf 7/156"
+          },
+          {
+            "target_coordinate": "17:54",
+            "context": "İsra 17/54"
+          },
+          {
+            "target_coordinate": "17:2",
+            "context": "İsra 17/2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Besmelenin Tefsiri\nبِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n"
+        },
+        {
+          "type": "link",
+          "content": "BESMELE\nHicr 15/87",
+          "targets": [
+            "15:87"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayet nedeniyle Fatiha'nın 7 ayet olduğu kesindir. Lakin, başındaki besmelenin ayet olup olmadığı tartışmalıdır.\n"
+        },
+        {
+          "type": "link",
+          "content": "Neml 27/30",
+          "targets": [
+            "27:30"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayetteki besmele, Kur'ân'dan bir ayettir. Her surenin başında bulunan besmele ise;\na. Şafiler ve Hanbelilere göre bulundukları surenin ilk ayetidir.\nb. İmam Malik'e göre, sureleri birbirinden ayırmak için sahabe tarafından konmuş olup, hiçbiri ayet değildir.\nc. Kimilerine göre ise ayettir ama surenin 1.ayeti olmayıp başlı başına birer ayettir.\nd. Sadece Fatiha'nın başındaki besmele, o surenin ayetidir. Diğer surelerin başındaki besmeleler ayet değildir.\n(bkz. DİA, Besmele, 5, sf.529-532)\nÇoğunluk besmeleyi Fatih'nın 1.ayet saymamaktadır. Besmeleyi, 1.ayet sayanlar, \"sıradellezine...\"yi 7.ayet saymaktadır. Besmeleyi ayet saymayanlar ise \"gayrilmağdubi\"den itibaren olan kısmı 7.ayet sayarlar.\n“İyiliği sonsuz, ikramı bol Allah’ın adıyla.\"\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "Fatiha 1/1",
+          "targets": [
+            "1:1"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")\nRahman sıfatı Kur'an'da sadece Allah-u Teala için, Rahim ise  hem Allah hem de diğer varlıklar için kullanılmaktadır. "
+        },
+        {
+          "type": "link",
+          "content": "Örneğin\nTevbe 9/128",
+          "targets": [
+            "9:128"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nayette Muhammed (s.a.v),\n"
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/29",
+          "targets": [
+            "48:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". ayette ise Nebimiz ve sahabe için \"Rahim\" sıfatı kullanılmaktadır.\nHem Rahman hem de Rahim kelimesi, rahmet köküyle ilgilidir. Türkçemizdeki Rahim ve sıla-i Rahim (akrabalık ilişkisi) ifadesi de rahim köküyle ilgilidir. Bizim kanaatimize göre Rahman, sonsuz iyilik sahibi olmayı ifade etmekte olup, Allah'ın tüm varlıkları, hiç bir ayırım gözetmeksizin bütün ihtiyaçlarını vermesi, besleyip büyütmesi, olgunlaştırmasıdır.\nO öyle Rahman'dır ki, O'ndan başka hiçbir varlık kendi düşmanını besleyip büyütmez.\nRahim sıfatı ise; gayret gösteren kullarına Allah'ın rahmetini, özel ikramlarını ifade eder. Başka bir ifade ile Rahman sıfatı; herkese yönelik iyilikleri, Rahim ise gayret gösteren kimselere yapılan özel ikramları anlatmaktadır. A'raf 156. ayet şöyledir; “\nBu dünyada da Ahirette de bize güzel şeyler yaz; biz sana yöneldik.” Allah dedi ki “saptığına karar verdiğim kişiyi azabıma çarptırırım, rahmetim ise her şeyi kapsar. Onu, yanlışlardan sakınan ve zekât verenlere yazacağım. Ayetlerime inanıp güvenen şu kişilere de yazacağım.\"\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "A'raf 7/156",
+          "targets": [
+            "7:156"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Bu ayette, \"yazacağım\" ifadesinin kullanılması insanların önceden belirlenmiş bir kaderlerinin bulunmadığını göstermektedir. İkinci olarak, Allah'ın rahmetinin takva, zekat, ayetlere inanma gibi çalışıp gayret etme şartına bağlı olduğunu ortaya koymaktadır.\nTürkçemizde \"rahmet\", merhamet anlamında kullanılmaktadır. Merhamet; \"acımak\" (kalp yumuşaklığı) ve \"yardım etmek\" fiillerini kapsar. İnsanın merhameti (rahmeti) gücü yetiyorsa yardım etmek, imkan bulamıyorsa üzülüp acımak şeklinde tecelli etmektedir. Allah'ın gücünün yetmediği bir şey olamayacağından, O'nun rahmeti, çalışıp hak eden kullarına yapmış olduğu iyilik ve ikramlarıdır.\nBesmeleyi \"Rahman ve Rahim olan\" şeklinde Türkçeye çevirmek de uygun değildir. Çünkü muhatap, bu iki kelimenin anlamını bilmemektedir. Elmalılı; Rahman kelimesinin \"esirgeyen\" şeklinde çevrilmesini yanlış bulmaktadır. Çünkü esirgemek kelimesinde, \"cimrilik edip vermemek\" anlamı vardır.\nBiz besmeleye \"iyiliği sonsuz (Rahman), ikramı bol (Rahim) olan Allah'ın adıyla\" şeklinde bir mana verdik.\nVEKİLLİK:\nBazı kimseler besmeleyi \"adıyla\" değil de \"adına\" (Rahman ve Rahim olan Allah'ın adına) şeklinde tercüme etmektedirler ki böyle bir anlam kesinlikle kabul edilemez. \"Şu kişinin adına\" denildiği zaman, \"bu işi kendim için değil onun adına yapıyorum\" anlamı çıkmaktadır. Kişinin bir başkası adına bir şey yapabilmesi için, kendi adına yapılmasını isteyenin, o kimseye yetki vermesi gerekir ki buna vekillik/vekalet denir. Allah'ın bir kimseye vekalet vermesi mümkün değildir:\n\"Seni onlara vekil olasın diye göndermedik.\"\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/54",
+          "targets": [
+            "17:54"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ayetinde Allah-u Teala Hz. Muhammed'e \"Sen; insanlara karşı beni temsil edemediğin gibi onları bana karşı da koruyamazsın\" demektedir. Vekalet, İslam'ın omurga kavramlarından biri olup, dinde Allah ile insan arasında hiç bir vekil yoktur:\n\"Musa’ya kitabı verdik ve o kitabı İsrailoğullarına rehber kıldık. “Benimle aranıza bir vekil koymayın.” dedik.\"\n(\n"
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/2",
+          "targets": [
+            "17:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") Yüce Allah'ın, bu ayette Tevrat'ın gönderiliş amacını \"Benden başkasını vekil edinmeyin\" şeklinde tanımlaması, vekillik konusunun tevhid açısından son derece önemli olduğunu göstermektedir.\nSonuç olarak, hiç kimse Allah'ı temsil etmeye yetkili değildir. Bu konuda Elmalılı da \"besmelenin Allah adına\" şeklinde tercüme edilemeyeceğini söylemektedir. (Hak Dini Kuran Dili, Azim, Cilt 1, sf.56-57, sadeleştirme İsmail Karaçam ve diğerleri)"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:1",
+      "text": "وَالَّيْلِ اِذَا يَغْشٰىۙ",
+      "translation": "(Gündüzü) Kapladığı zaman geceye,",
+      "dipnot": "Geceye yemin edilen ayetler için bkz:\nMüddessir 74/33,\nTekvir 81/17,\nİnşikak 84/17,\nFecr 89/4,\nŞems 91/4,\nDuha 93/2\n.",
+      "roots": [
+        "ليل",
+        "غشو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Geceye yemin edilen ayetler için bkz:\n"
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/33",
+          "targets": [
+            "74:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tekvir 81/17",
+          "targets": [
+            "81:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnşikak 84/17",
+          "targets": [
+            "84:17"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/4",
+          "targets": [
+            "89:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şems 91/4",
+          "targets": [
+            "91:4"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Duha 93/2",
+          "targets": [
+            "93:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:1",
+        "connections": [
+          {
+            "target_coordinate": "74:33",
+            "context": "Müddessir 74/33"
+          },
+          {
+            "target_coordinate": "81:17",
+            "context": "Tekvir 81/17"
+          },
+          {
+            "target_coordinate": "84:17",
+            "context": "İnşikak 84/17"
+          },
+          {
+            "target_coordinate": "89:4",
+            "context": "Fecr 89/4"
+          },
+          {
+            "target_coordinate": "91:4",
+            "context": "Şems 91/4"
+          },
+          {
+            "target_coordinate": "93:2",
+            "context": "Duha 93/2"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 1. Ayetin Tefsiri\nوَالَّيْلِ اِذَا يَغْشٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:2",
+      "text": "وَالنَّهَارِ اِذَا تَجَلّٰىۙ",
+      "translation": "açığa çıktığında gündüze,",
+      "dipnot": "Şems 91/3.",
+      "roots": [
+        "نهر",
+        "جلو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Şems 91/3",
+          "targets": [
+            "91:3"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:2",
+        "connections": [
+          {
+            "target_coordinate": "91:3",
+            "context": "Şems 91/3"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 2. Ayetin Tefsiri\nوَالنَّهَارِ اِذَا تَجَلّٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:3",
+      "text": "وَمَا خَلَقَ الذَّكَرَ وَالْاُنْثٰىۙ",
+      "translation": "erkeği ve dişiyi yaratana yemin olsun ki",
+      "dipnot": "Yasin 36/36,\nZuhruf 43/12,\nZariyat 51/49,\nŞûrâ 42/49\n-\n50.",
+      "roots": [
+        "خلق",
+        "ذكر",
+        "أنث"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Yasin 36/36",
+          "targets": [
+            "36:36"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/12",
+          "targets": [
+            "43:12"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zariyat 51/49",
+          "targets": [
+            "51:49"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şûrâ 42/49-50",
+          "targets": [
+            "42:49",
+            "42:50"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:3",
+        "connections": [
+          {
+            "target_coordinate": "36:36",
+            "context": "Yasin 36/36"
+          },
+          {
+            "target_coordinate": "43:12",
+            "context": "Zuhruf 43/12"
+          },
+          {
+            "target_coordinate": "51:49",
+            "context": "Zariyat 51/49"
+          },
+          {
+            "target_coordinate": "42:49",
+            "context": "Şûrâ 42/49-50"
+          },
+          {
+            "target_coordinate": "42:50",
+            "context": "Şûrâ 42/49-50"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 3. Ayetin Tefsiri\nوَمَا خَلَقَ الذَّكَرَ وَالْاُنْثٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:4",
+      "text": "اِنَّ سَعْيَكُمْ لَشَتّٰىۜ",
+      "translation": "sizin çalışmalarınız elbette farklı farklıdır.",
+      "dipnot": "Bakara 2/148,\nİsra 17/84.",
+      "roots": [
+        "سعي",
+        "شتت"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/148",
+          "targets": [
+            "2:148"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/84",
+          "targets": [
+            "17:84"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:4",
+        "connections": [
+          {
+            "target_coordinate": "2:148",
+            "context": "Bakara 2/148"
+          },
+          {
+            "target_coordinate": "17:84",
+            "context": "İsra 17/84"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 4. Ayetin Tefsiri\nاِنَّ سَعْيَكُمْ لَشَتّٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:5",
+      "text": "فَاَمَّا مَنْ اَعْطٰى وَاتَّقٰىۙ",
+      "translation": "Her kim (elinde olandan) verir ve yanlış yapmaktan sakınır,",
+      "dipnot": "Naziat 79/40\n-\n41.",
+      "roots": [
+        "عطو",
+        "وقي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Naziat 79/40-41",
+          "targets": [
+            "79:40",
+            "79:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:5",
+        "connections": [
+          {
+            "target_coordinate": "79:40",
+            "context": "Naziat 79/40-41"
+          },
+          {
+            "target_coordinate": "79:41",
+            "context": "Naziat 79/40-41"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 5. Ayetin Tefsiri\nفَاَمَّا مَنْ اَعْطٰى وَاتَّقٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:6",
+      "text": "وَصَدَّقَ بِالْحُسْنٰىۙ",
+      "translation": "bir de en güzel olanı (âyetlerimizi) kabul ederse,",
+      "dipnot": "Zümer 39/33.",
+      "roots": [
+        "صدق",
+        "حسن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Zümer 39/33",
+          "targets": [
+            "39:33"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:6",
+        "connections": [
+          {
+            "target_coordinate": "39:33",
+            "context": "Zümer 39/33"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 6. Ayetin Tefsiri\nوَصَدَّقَ بِالْحُسْنٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:7",
+      "text": "فَسَنُيَسِّرُهُ لِلْيُسْرٰىۜ",
+      "translation": "onun en kolay olana yönelmesini kolaylaştıracağız.",
+      "dipnot": "Bakara 2/112,\nMaide 5/16,\nAnkebut 29/69,\nA’lâ 87/8.",
+      "roots": [
+        "يسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/112",
+          "targets": [
+            "2:112"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/16",
+          "targets": [
+            "5:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/69",
+          "targets": [
+            "29:69"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "lâ 87/8",
+          "targets": [
+            "87:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:7",
+        "connections": [
+          {
+            "target_coordinate": "2:112",
+            "context": "Bakara 2/112"
+          },
+          {
+            "target_coordinate": "5:16",
+            "context": "Maide 5/16"
+          },
+          {
+            "target_coordinate": "29:69",
+            "context": "Ankebut 29/69"
+          },
+          {
+            "target_coordinate": "87:8",
+            "context": "lâ 87/8"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 7. Ayetin Tefsiri\nفَسَنُيَسِّرُهُ لِلْيُسْرٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:8",
+      "text": "وَاَمَّا مَنْ بَخِلَ وَاسْتَغْنٰىۙ",
+      "translation": "Kim de cimrilik eder ve (yanlışlardan sakınmaya) ihtiyaç duymaz,",
+      "dipnot": "Âl-i İmran 3/180,\nNisa 4/37,\nHadid 57/24,\nNaziat 79/37\n-\n39,\nAlak 96/6\n-\n7.",
+      "roots": [
+        "بخل",
+        "غني"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/180",
+          "targets": [
+            "3:180"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/37",
+          "targets": [
+            "4:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Hadid 57/24",
+          "targets": [
+            "57:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Naziat 79/37-39",
+          "targets": [
+            "79:37",
+            "79:38",
+            "79:39"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Alak 96/6-7",
+          "targets": [
+            "96:6",
+            "96:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:8",
+        "connections": [
+          {
+            "target_coordinate": "3:180",
+            "context": "Âl-i İmran 3/180"
+          },
+          {
+            "target_coordinate": "4:37",
+            "context": "Nisa 4/37"
+          },
+          {
+            "target_coordinate": "57:24",
+            "context": "Hadid 57/24"
+          },
+          {
+            "target_coordinate": "79:37",
+            "context": "Naziat 79/37-39"
+          },
+          {
+            "target_coordinate": "79:38",
+            "context": "Naziat 79/37-39"
+          },
+          {
+            "target_coordinate": "79:39",
+            "context": "Naziat 79/37-39"
+          },
+          {
+            "target_coordinate": "96:6",
+            "context": "Alak 96/6-7"
+          },
+          {
+            "target_coordinate": "96:7",
+            "context": "Alak 96/6-7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 8. Ayetin Tefsiri\nوَاَمَّا مَنْ بَخِلَ وَاسْتَغْنٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:9",
+      "text": "وَكَذَّبَ بِالْحُسْنٰىۙ",
+      "translation": "en güzel olan (âyetlerimiz) karşısında yalana sarılırsa",
+      "dipnot": "A’raf 7/36,\n40,\nZümer 39/32.",
+      "roots": [
+        "كذب",
+        "حسن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/36,40",
+          "targets": [
+            "7:36",
+            "7:40"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Zümer 39/32",
+          "targets": [
+            "39:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:9",
+        "connections": [
+          {
+            "target_coordinate": "7:36",
+            "context": "raf 7/36,40"
+          },
+          {
+            "target_coordinate": "7:40",
+            "context": "raf 7/36,40"
+          },
+          {
+            "target_coordinate": "39:32",
+            "context": "Zümer 39/32"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 9. Ayetin Tefsiri\nوَكَذَّبَ بِالْحُسْنٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:10",
+      "text": "فَسَنُيَسِّرُهُ لِلْعُسْرٰىۜ",
+      "translation": "onun da en zor olana yönelmesini kolaylaştıracağız.",
+      "dipnot": "Nisa 4/115,\nFâtır 35/8,\nMuhammed 47/14.",
+      "roots": [
+        "يسر",
+        "عسر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nisa 4/115",
+          "targets": [
+            "4:115"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fâtır 35/8",
+          "targets": [
+            "35:8"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/14",
+          "targets": [
+            "47:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:10",
+        "connections": [
+          {
+            "target_coordinate": "4:115",
+            "context": "Nisa 4/115"
+          },
+          {
+            "target_coordinate": "35:8",
+            "context": "Fâtır 35/8"
+          },
+          {
+            "target_coordinate": "47:14",
+            "context": "Muhammed 47/14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 10. Ayetin Tefsiri\nفَسَنُيَسِّرُهُ لِلْعُسْرٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:11",
+      "text": "وَمَا يُغْن۪ي عَنْهُ مَالُهُٓ اِذَا تَرَدّٰىۜ",
+      "translation": "(Cehenneme) yuvarlandığı zaman malı bir işine yaramayacak.",
+      "dipnot": "Âl-i İmran 3/10,\n116;\nŞuarâ 26/88\n-\n89;\nSebe 34/37;\nMücadele 58/17;\nHâkka 69/28\n-\n29.",
+      "roots": [
+        "غني",
+        "مول",
+        "ردي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/10,116",
+          "targets": [
+            "3:10",
+            "3:116"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ";\n"
+        },
+        {
+          "type": "link",
+          "content": "Şuarâ 26/88-89",
+          "targets": [
+            "26:88",
+            "26:89"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ";\n"
+        },
+        {
+          "type": "link",
+          "content": "Sebe 34/37",
+          "targets": [
+            "34:37"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ";\n"
+        },
+        {
+          "type": "link",
+          "content": "Mücadele 58/17",
+          "targets": [
+            "58:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ";\n"
+        },
+        {
+          "type": "link",
+          "content": "Hâkka 69/28-29",
+          "targets": [
+            "69:28",
+            "69:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:11",
+        "connections": [
+          {
+            "target_coordinate": "3:10",
+            "context": "Âl-i İmran 3/10,116"
+          },
+          {
+            "target_coordinate": "3:116",
+            "context": "Âl-i İmran 3/10,116"
+          },
+          {
+            "target_coordinate": "26:88",
+            "context": "Şuarâ 26/88-89"
+          },
+          {
+            "target_coordinate": "26:89",
+            "context": "Şuarâ 26/88-89"
+          },
+          {
+            "target_coordinate": "34:37",
+            "context": "Sebe 34/37"
+          },
+          {
+            "target_coordinate": "58:17",
+            "context": "Mücadele 58/17"
+          },
+          {
+            "target_coordinate": "69:28",
+            "context": "Hâkka 69/28-29"
+          },
+          {
+            "target_coordinate": "69:29",
+            "context": "Hâkka 69/28-29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 11. Ayetin Tefsiri\nوَمَا يُغْن۪ي عَنْهُ مَالُهُٓ اِذَا تَرَدّٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:12",
+      "text": "اِنَّ عَلَيْنَا لَلْهُدٰىۘ",
+      "translation": "Doğru yola kabul etmek, kesinlikle bizim işimizdir.",
+      "dipnot": "Kasas 28/56.",
+      "roots": [
+        "هدي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Kasas 28/56",
+          "targets": [
+            "28:56"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:12",
+        "connections": [
+          {
+            "target_coordinate": "28:56",
+            "context": "Kasas 28/56"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 12. Ayetin Tefsiri\nاِنَّ عَلَيْنَا لَلْهُدٰىۘ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:13",
+      "text": "وَاِنَّ لَنَا لَلْاٰخِرَةَ وَالْاُو۫لٰى",
+      "translation": "Şüphesiz Ahiret de bizimdir, dünya da...",
+      "dipnot": "Necm 53/25.",
+      "roots": [
+        "أخر",
+        "أول"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Necm 53/25",
+          "targets": [
+            "53:25"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:13",
+        "connections": [
+          {
+            "target_coordinate": "53:25",
+            "context": "Necm 53/25"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 13. Ayetin Tefsiri\nوَاِنَّ لَنَا لَلْاٰخِرَةَ وَالْاُو۫لٰى"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:14",
+      "text": "فَاَنْذَرْتُكُمْ نَارًا تَلَظّٰىۚ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "نذر",
+        "نور",
+        "لظي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "92:14",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 14. Ayetin Tefsiri\nفَاَنْذَرْتُكُمْ نَارًا تَلَظّٰىۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:14",
+      "text": "",
+      "translation": "Bu sebeple ben sizi, alevler saçan ateşe karşı uyardım.",
+      "dipnot": "Mearic 70/15 - 16, Tahrîm 66/6, Müddessir 74/35 - 36.",
+      "roots": [
+        "نذر",
+        "نور",
+        "لظي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Mearic 70/15-16",
+          "targets": [
+            "70:15",
+            "70:16"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tahrîm 66/6",
+          "targets": [
+            "66:6"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/35-36",
+          "targets": [
+            "74:35",
+            "74:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:14",
+        "connections": [
+          {
+            "target_coordinate": "70:15",
+            "context": "Mearic 70/15-16"
+          },
+          {
+            "target_coordinate": "70:16",
+            "context": "Mearic 70/15-16"
+          },
+          {
+            "target_coordinate": "66:6",
+            "context": "Tahrîm 66/6"
+          },
+          {
+            "target_coordinate": "74:35",
+            "context": "Müddessir 74/35-36"
+          },
+          {
+            "target_coordinate": "74:36",
+            "context": "Müddessir 74/35-36"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 14. Ayetin Tefsiri\nفَاَنْذَرْتُكُمْ نَارًا تَلَظّٰىۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:15",
+      "text": "لَا يَصْلٰيهَٓا اِلَّا الْاَشْقٰىۙ",
+      "translation": "Ona sadece en hayırsız olan kişi girip kalacak;",
+      "dipnot": "Hud 11/106, A’lâ 87/11 - 13.",
+      "roots": [
+        "صلي",
+        "شقو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hud 11/106",
+          "targets": [
+            "11:106"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "lâ 87/11-13",
+          "targets": [
+            "87:11",
+            "87:12",
+            "87:13"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:15",
+        "connections": [
+          {
+            "target_coordinate": "11:106",
+            "context": "Hud 11/106"
+          },
+          {
+            "target_coordinate": "87:11",
+            "context": "lâ 87/11-13"
+          },
+          {
+            "target_coordinate": "87:12",
+            "context": "lâ 87/11-13"
+          },
+          {
+            "target_coordinate": "87:13",
+            "context": "lâ 87/11-13"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 15. Ayetin Tefsiri\nلَا يَصْلٰيهَٓا اِلَّا الْاَشْقٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:16",
+      "text": "اَلَّذ۪ي كَذَّبَ وَتَوَلّٰىۜ",
+      "translation": "yalana sarılan ve doğrulara sırt çeviren kişi.",
+      "dipnot": "Bunlar müşrikler, Allah’ın sözlerini ikinci sıraya koyup üstünü örten ve bile bile yanlış yapanlardır. Her kâfir müşrik, her müşrik de kafirdir ( Âl-i İmran 3/151, Tâhâ 20/48, Kıyamet 75/31 - 32 ).",
+      "roots": [
+        "كذب",
+        "ولي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Bunlar müşrikler, Allah’ın sözlerini ikinci sıraya koyup üstünü örten ve bile bile yanlış yapanlardır. Her kâfir müşrik, her müşrik de kafirdir ( "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/151",
+          "targets": [
+            "3:151"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tâhâ 20/48",
+          "targets": [
+            "20:48"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Kıyamet 75/31-32",
+          "targets": [
+            "75:31",
+            "75:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:16",
+        "connections": [
+          {
+            "target_coordinate": "3:151",
+            "context": "Âl-i İmran 3/151"
+          },
+          {
+            "target_coordinate": "20:48",
+            "context": "Tâhâ 20/48"
+          },
+          {
+            "target_coordinate": "75:31",
+            "context": "Kıyamet 75/31-32"
+          },
+          {
+            "target_coordinate": "75:32",
+            "context": "Kıyamet 75/31-32"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 16. Ayetin Tefsiri\nاَلَّذ۪ي كَذَّبَ وَتَوَلّٰىۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:17",
+      "text": "وَسَيُجَنَّبُهَا الْاَتْقٰىۙ",
+      "translation": "Kendini yanlışlardan en iyi koruyan kişi ise ondan uzak tutulacaktır;",
+      "dipnot": "[1*] Bunlar da Allah’ın sözlerini birinci sıraya koyup O’na teslim olan kimselerdir ( Mü’min 40/66 ). [2*] Enbiya 21/101 - 103, Necm 53/31 - 32.",
+      "roots": [
+        "جنب",
+        "وقي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Bunlar da Allah’ın sözlerini birinci sıraya koyup O’na teslim olan kimselerdir ( Mü’"
+        },
+        {
+          "type": "link",
+          "content": "min 40/66",
+          "targets": [
+            "40:66"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/101-103",
+          "targets": [
+            "21:101",
+            "21:102",
+            "21:103"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Necm 53/31-32",
+          "targets": [
+            "53:31",
+            "53:32"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:17",
+        "connections": [
+          {
+            "target_coordinate": "40:66",
+            "context": "min 40/66"
+          },
+          {
+            "target_coordinate": "21:101",
+            "context": "Enbiya 21/101-103"
+          },
+          {
+            "target_coordinate": "21:102",
+            "context": "Enbiya 21/101-103"
+          },
+          {
+            "target_coordinate": "21:103",
+            "context": "Enbiya 21/101-103"
+          },
+          {
+            "target_coordinate": "53:31",
+            "context": "Necm 53/31-32"
+          },
+          {
+            "target_coordinate": "53:32",
+            "context": "Necm 53/31-32"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 17. Ayetin Tefsiri\nوَسَيُجَنَّبُهَا الْاَتْقٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:18",
+      "text": "اَلَّذ۪ي يُؤْت۪ي مَالَهُ يَتَزَكّٰىۚ",
+      "translation": "kendini geliştirmek için malını veren kişi.",
+      "dipnot": "Taha 20/75 - 76, Fâtır 35/18, A’lâ 87/14 - 15.",
+      "roots": [
+        "أتي",
+        "مول",
+        "زكو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Taha 20/75-76",
+          "targets": [
+            "20:75",
+            "20:76"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fâtır 35/18",
+          "targets": [
+            "35:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "lâ 87/14-15",
+          "targets": [
+            "87:14",
+            "87:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:18",
+        "connections": [
+          {
+            "target_coordinate": "20:75",
+            "context": "Taha 20/75-76"
+          },
+          {
+            "target_coordinate": "20:76",
+            "context": "Taha 20/75-76"
+          },
+          {
+            "target_coordinate": "35:18",
+            "context": "Fâtır 35/18"
+          },
+          {
+            "target_coordinate": "87:14",
+            "context": "lâ 87/14-15"
+          },
+          {
+            "target_coordinate": "87:15",
+            "context": "lâ 87/14-15"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 18. Ayetin Tefsiri\nاَلَّذ۪ي يُؤْت۪ي مَالَهُ يَتَزَكّٰىۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:19",
+      "text": "وَمَا لِاَحَدٍ عِنْدَهُ مِنْ نِعْمَةٍ تُجْزٰىۙ",
+      "translation": "O, kendisine yapılan bir iyiliğin karşılığı olsun diye değil,",
+      "dipnot": "",
+      "roots": [
+        "أحد",
+        "عند",
+        "نعم",
+        "جزي"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "92:19",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 19. Ayetin Tefsiri\nوَمَا لِاَحَدٍ عِنْدَهُ مِنْ نِعْمَةٍ تُجْزٰىۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:20",
+      "text": "اِلَّا ابْتِغَٓاءَ وَجْهِ رَبِّهِ الْاَعْلٰىۚ",
+      "translation": "sadece yüce Rabbinin teveccühünü kazanmak için verir.",
+      "dipnot": "Bakara 2/272, Mü’minun 23/60 - 61, Rum 30/38, İnsan 76/8 - 10.",
+      "roots": [
+        "بغي",
+        "وجه",
+        "ربب",
+        "علو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/272",
+          "targets": [
+            "2:272"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Mü’"
+        },
+        {
+          "type": "link",
+          "content": "minun 23/60-61",
+          "targets": [
+            "23:60",
+            "23:61"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Rum 30/38",
+          "targets": [
+            "30:38"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/8-10",
+          "targets": [
+            "76:8",
+            "76:9",
+            "76:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:20",
+        "connections": [
+          {
+            "target_coordinate": "2:272",
+            "context": "Bakara 2/272"
+          },
+          {
+            "target_coordinate": "23:60",
+            "context": "minun 23/60-61"
+          },
+          {
+            "target_coordinate": "23:61",
+            "context": "minun 23/60-61"
+          },
+          {
+            "target_coordinate": "30:38",
+            "context": "Rum 30/38"
+          },
+          {
+            "target_coordinate": "76:8",
+            "context": "İnsan 76/8-10"
+          },
+          {
+            "target_coordinate": "76:9",
+            "context": "İnsan 76/8-10"
+          },
+          {
+            "target_coordinate": "76:10",
+            "context": "İnsan 76/8-10"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Leyl Suresi 20. Ayetin Tefsiri\nاِلَّا ابْتِغَٓاءَ وَجْهِ رَبِّهِ الْاَعْلٰىۚ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    },
+    {
+      "id": "92:21",
+      "text": "وَلَسَوْفَ يَرْضٰى",
+      "translation": "İleride, o da kesinlikle hoşnut olacaktır.",
+      "dipnot": "Mücadele 58/22, Fecr 89/27 - 28, Beyyine 98/7 - 8.",
+      "roots": [
+        "رضو"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Mücadele 58/22",
+          "targets": [
+            "58:22"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/27-28",
+          "targets": [
+            "89:27",
+            "89:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Beyyine 98/7-8",
+          "targets": [
+            "98:7",
+            "98:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "92:21",
+        "connections": [
+          {
+            "target_coordinate": "58:22",
+            "context": "Mücadele 58/22"
+          },
+          {
+            "target_coordinate": "89:27",
+            "context": "Fecr 89/27-28"
+          },
+          {
+            "target_coordinate": "89:28",
+            "context": "Fecr 89/27-28"
+          },
+          {
+            "target_coordinate": "98:7",
+            "context": "Beyyine 98/7-8"
+          },
+          {
+            "target_coordinate": "98:8",
+            "context": "Beyyine 98/7-8"
+          }
+        ]
+      },
+      "tefsir_popup": null,
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/92.mp3"
+    }
+  ]
+}

@@ -1,0 +1,1496 @@
+{
+  "nodes": [
+    {
+      "id": "60:1",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا لَا تَتَّخِذُوا عَدُوّ۪ي وَعَدُوَّكُمْ اَوْلِيَٓاءَ تُلْقُونَ اِلَيْهِمْ بِالْمَوَدَّةِ وَقَدْ كَفَرُوا بِمَا جَٓاءَكُمْ مِنَ الْحَقِّۚ يُخْرِجُونَ الرَّسُولَ وَاِيَّاكُمْ اَنْ تُؤْمِنُوا بِاللّٰهِ رَبِّكُمْۜ اِنْ كُنْتُمْ خَرَجْتُمْ جِهَادًا ف۪ي سَب۪يل۪ي وَابْتِغَٓاءَ مَرْضَات۪ي تُسِرُّونَ اِلَيْهِمْ بِالْمَوَدَّةِۗ وَاَنَا۬ اَعْلَمُ بِمَٓا اَخْفَيْتُمْ وَمَٓا اَعْلَنْتُمْۜ وَمَنْ يَفْعَلْهُ مِنْكُمْ فَقَدْ ضَلَّ سَوَٓاءَ السَّب۪يلِ",
+      "translation": "Ey inanıp güvenenler! Benim de düşmanım, sizin de düşmanınız olanları veliler /yakın dostlar edinmeyin[1*]. Siz onlara karşı sevgi gösteriyorsunuz. Oysa onlar, size gelen gerçeği görmezlikten geldiler. Rabbiniz olan Allah’a inanıp güveniyorsunuz diye hem elçiyi hem de sizi yurdunuzdan çıkarıyorlar. Eğer benim yolumda cihad etmek[2*] ve benim rızamı kazanmak için (Mekke’den) çıktıysanız bunu yapmayın[3*]. Hâlâ onlara içten içe sevgi besliyorsunuz. Halbuki ben, gizlediğinizi de açığa vurduğunuzu da biliyorum. Sizden kim bunu yaparsa doğru yoldan sapmış olur.",
+      "dipnot": "[1*] Âl-i İmran 3/28, Nisa 4/144, Maide 5/57, Enfal 8/72 - 73, Tevbe 9/23 [2*] “Cihad (جهاد)”, düşmanın, şeytanın veya arzuların baskısına karşı Allah’ın emrine uymak için verilen her türlü mücadeledir (Müfredat). Allah yolunda savaş, cihadın çok önemli bir parçasıdır. Birini doğru yoldan çıkarmak için gösterilen gayrete de cihad denir ( Ankebut 29/8 ). [3*] Tevbe 9/24, Mücadele 58/22.",
+      "roots": [
+        "أيي",
+        "أمن",
+        "أخذ",
+        "عدو",
+        "ولي",
+        "لقي",
+        "ودد",
+        "كفر",
+        "جيأ",
+        "حقق",
+        "خرج",
+        "رسل",
+        "أله",
+        "ربب",
+        "كون",
+        "جهد",
+        "سبل",
+        "بغي",
+        "رضو",
+        "سرر",
+        "علم",
+        "خفي",
+        "علن",
+        "فعل",
+        "ضلل",
+        "سوي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Âl-i İmran 3/28",
+          "targets": [
+            "3:28"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/144",
+          "targets": [
+            "4:144"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/57",
+          "targets": [
+            "5:57"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/72-73",
+          "targets": [
+            "8:72",
+            "8:73"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/23",
+          "targets": [
+            "9:23"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "[2*] “Cihad (جهاد)”, düşmanın, şeytanın veya arzuların baskısına karşı Allah’ın emrine uymak için verilen her türlü mücadeledir (Müfredat). Allah yolunda savaş, cihadın çok önemli bir parçasıdır. Birini doğru yoldan çıkarmak için gösterilen gayrete de cihad denir ( "
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/8",
+          "targets": [
+            "29:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). [3*] "
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/24",
+          "targets": [
+            "9:24"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mücadele 58/22",
+          "targets": [
+            "58:22"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:1",
+        "connections": [
+          {
+            "target_coordinate": "3:28",
+            "context": "Âl-i İmran 3/28"
+          },
+          {
+            "target_coordinate": "4:144",
+            "context": "Nisa 4/144"
+          },
+          {
+            "target_coordinate": "5:57",
+            "context": "Maide 5/57"
+          },
+          {
+            "target_coordinate": "8:72",
+            "context": "Enfal 8/72-73"
+          },
+          {
+            "target_coordinate": "8:73",
+            "context": "Enfal 8/72-73"
+          },
+          {
+            "target_coordinate": "9:23",
+            "context": "Tevbe 9/23"
+          },
+          {
+            "target_coordinate": "29:8",
+            "context": "Ankebut 29/8"
+          },
+          {
+            "target_coordinate": "9:24",
+            "context": "Tevbe 9/24"
+          },
+          {
+            "target_coordinate": "58:22",
+            "context": "Mücadele 58/22"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 1. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا لَا تَتَّخِذُوا عَدُوّ۪ي وَعَدُوَّكُمْ اَوْلِيَٓاءَ تُلْقُونَ اِلَيْهِمْ بِالْمَوَدَّةِ وَقَدْ كَفَرُوا بِمَا جَٓاءَكُمْ مِنَ الْحَقِّۚ يُخْرِجُونَ الرَّسُولَ وَاِيَّاكُمْ اَنْ تُؤْمِنُوا بِاللّٰهِ رَبِّكُمْۜ اِنْ كُنْتُمْ خَرَجْتُمْ جِهَادًا ف۪ي سَب۪يل۪ي وَابْتِغَٓاءَ مَرْضَات۪ي تُسِرُّونَ اِلَيْهِمْ بِالْمَوَدَّةِۗ وَاَنَا۬ اَعْلَمُ بِمَٓا اَخْفَيْتُمْ وَمَٓا اَعْلَنْتُمْۜ وَمَنْ يَفْعَلْهُ مِنْكُمْ فَقَدْ ضَلَّ سَوَٓاءَ السَّب۪يلِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:2",
+      "text": "اِنْ يَثْقَفُوكُمْ يَكُونُوا لَكُمْ اَعْدَٓاءً وَيَبْسُطُٓوا اِلَيْكُمْ اَيْدِيَهُمْ وَاَلْسِنَتَهُمْ بِالسُّٓوءِ وَوَدُّوا لَوْ تَكْفُرُونَۜ",
+      "translation": "(Siz onlara sevgi besliyorsunuz ama onlar) Sizi ele geçirirlerse size düşman kesilirler, ellerini ve dillerini size kötülük etmek için kullanırlar. Kafirlik etmenizi/ ayetleri görmezden gelmenizi de çok isterler[*].",
+      "dipnot": "[*] Nisa 4/89 - 90.",
+      "roots": [
+        "ثقف",
+        "كون",
+        "عدو",
+        "بسط",
+        "يدي",
+        "لسن",
+        "سوأ",
+        "ودد",
+        "كفر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/89-90",
+          "targets": [
+            "4:89",
+            "4:90"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:2",
+        "connections": [
+          {
+            "target_coordinate": "4:89",
+            "context": "Nisa 4/89-90"
+          },
+          {
+            "target_coordinate": "4:90",
+            "context": "Nisa 4/89-90"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 2. Ayetin Tefsiri\nاِنْ يَثْقَفُوكُمْ يَكُونُوا لَكُمْ اَعْدَٓاءً وَيَبْسُطُٓوا اِلَيْكُمْ اَيْدِيَهُمْ وَاَلْسِنَتَهُمْ بِالسُّٓوءِ وَوَدُّوا لَوْ تَكْفُرُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:4",
+      "text": "لَنْ تَنْفَعَكُمْ اَرْحَامُكُمْ وَلَٓا اَوْلَادُكُمْۚۛ يَوْمَ الْقِيٰمَةِۚۛ يَفْصِلُ بَيْنَكُمْۜ وَاللّٰهُ بِمَا تَعْمَلُونَ بَص۪يرٌ",
+      "translation": "Kıyamet /mezardan kalkış gününde akrabalarınızın ve çocuklarınızın size hiçbir faydası olmayacak[*]; çünkü Allah aranızı ayıracaktır. O, yaptığınız herşeyi görmektedir.",
+      "dipnot": "[*]\nBakara 2/48,\n123,\nŞuara 26/88,\nLokman 31/33,\nMearic 70/11\n-\n14,\nAbese 80/33\n-\n37,\nİnfitar 82/19.",
+      "roots": [
+        "كون",
+        "أسو",
+        "حسن",
+        "قول",
+        "قوم",
+        "برأ",
+        "عبد",
+        "دون",
+        "أله",
+        "كفر",
+        "بدو",
+        "بين",
+        "عدو",
+        "بغض",
+        "أبد",
+        "أمن",
+        "وحد",
+        "أبو",
+        "غفر",
+        "ملك",
+        "شيأ",
+        "ربب",
+        "وكل",
+        "نوب",
+        "صير"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/48,123",
+          "targets": [
+            "2:48",
+            "2:123"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/88",
+          "targets": [
+            "26:88"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Lokman 31/33",
+          "targets": [
+            "31:33"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Mearic 70/11-14",
+          "targets": [
+            "70:11",
+            "70:12",
+            "70:13",
+            "70:14"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Abese 80/33-37",
+          "targets": [
+            "80:33",
+            "80:34",
+            "80:35",
+            "80:36",
+            "80:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İnfitar 82/19",
+          "targets": [
+            "82:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:4",
+        "connections": [
+          {
+            "target_coordinate": "2:48",
+            "context": "Bakara 2/48,123"
+          },
+          {
+            "target_coordinate": "2:123",
+            "context": "Bakara 2/48,123"
+          },
+          {
+            "target_coordinate": "26:88",
+            "context": "Şuara 26/88"
+          },
+          {
+            "target_coordinate": "31:33",
+            "context": "Lokman 31/33"
+          },
+          {
+            "target_coordinate": "70:11",
+            "context": "Mearic 70/11-14"
+          },
+          {
+            "target_coordinate": "70:12",
+            "context": "Mearic 70/11-14"
+          },
+          {
+            "target_coordinate": "70:13",
+            "context": "Mearic 70/11-14"
+          },
+          {
+            "target_coordinate": "70:14",
+            "context": "Mearic 70/11-14"
+          },
+          {
+            "target_coordinate": "80:33",
+            "context": "Abese 80/33-37"
+          },
+          {
+            "target_coordinate": "80:34",
+            "context": "Abese 80/33-37"
+          },
+          {
+            "target_coordinate": "80:35",
+            "context": "Abese 80/33-37"
+          },
+          {
+            "target_coordinate": "80:36",
+            "context": "Abese 80/33-37"
+          },
+          {
+            "target_coordinate": "80:37",
+            "context": "Abese 80/33-37"
+          },
+          {
+            "target_coordinate": "82:19",
+            "context": "İnfitar 82/19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 4. Ayetin Tefsiri\nقَدْ كَانَتْ لَكُمْ اُسْوَةٌ حَسَنَةٌ ف۪ٓي اِبْرٰه۪يمَ وَالَّذ۪ينَ مَعَهُۚ اِذْ قَالُوا لِقَوْمِهِمْ اِنَّا بُرَءٰٓؤُ۬ا مِنْكُمْ وَمِمَّا تَعْبُدُونَ مِنْ دُونِ اللّٰهِۘ كَفَرْنَا بِكُمْ وَبَدَا بَيْنَنَا وَبَيْنَكُمُ الْعَدَاوَةُ وَالْبَغْضَٓاءُ اَبَدًا حَتّٰى تُؤْمِنُوا بِاللّٰهِ وَحْدَهُٓ اِلَّا قَوْلَ اِبْرٰه۪يمَ لِاَب۪يهِ لَاَسْتَغْفِرَنَّ لَكَ وَمَٓا اَمْلِكُ لَكَ مِنَ اللّٰهِ مِنْ شَيْءٍۜ رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَاِلَيْكَ اَنَبْنَا وَاِلَيْكَ الْمَص۪يرُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:5",
+      "text": "قَدْ كَانَتْ لَكُمْ اُسْوَةٌ حَسَنَةٌ ف۪ٓي اِبْرٰه۪يمَ وَالَّذ۪ينَ مَعَهُۚ اِذْ قَالُوا لِقَوْمِهِمْ اِنَّا بُرَءٰٓؤُ۬ا مِنْكُمْ وَمِمَّا تَعْبُدُونَ مِنْ دُونِ اللّٰهِۘ كَفَرْنَا بِكُمْ وَبَدَا بَيْنَنَا وَبَيْنَكُمُ الْعَدَاوَةُ وَالْبَغْضَٓاءُ اَبَدًا حَتّٰى تُؤْمِنُوا بِاللّٰهِ وَحْدَهُٓ اِلَّا قَوْلَ اِبْرٰه۪يمَ لِاَب۪يهِ لَاَسْتَغْفِرَنَّ لَكَ وَمَٓا اَمْلِكُ لَكَ مِنَ اللّٰهِ مِنْ شَيْءٍۜ رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَاِلَيْكَ اَنَبْنَا وَاِلَيْكَ الْمَص۪يرُ",
+      "translation": "İbrahim’de ve onunla birlikte olanlarda[1*] sizin için gerçekten güzel bir örnek vardır. Onlar (Allah’ın emriyle hicret ettiklerinde[2*]) toplumlarına şöyle demişlerdi: “Biz sizden ve Allah ile aranıza koyup kulluk ettiklerinizden uzağız[3*]. Biz sizi tanımıyoruz! Bizimle sizin aranızda ebedi bir düşmanlık ve nefret doğdu[4*]. Bu, Allah’ın tek (ilah) olduğuna inanmanıza kadar devam edecek”. Fakat İbrahim’in, (müşrik olan) babasına söylediği şu söz size örnek olmaz: “Kesinlikle senin için bağışlanma dileyeceğim[5*]; ama Allah’tan sana gelecek bir şeyi engellemeye gücüm yetmez.” (İbrahim ile birlikte olanlar Allah’a şöyle dua etmişlerdi:) “Rabbimiz, sadece sana güvenip dayandık ve sana yöneldik. Dönüp varılacak yer, senin huzurundur.",
+      "dipnot": "[1*]\nBu ayette çoğul ifade kullanıldığı için İbrahim aleyhisselam ile birlikte oradan çıkanlar en az üç kişi olmalıdır. Onlardan biri Lût aleyhisselamdır (\nEnbiya 21/71\n). Tevrat’ta, İbrahim’in (a.s.) yanında yeğeni Lût, karısı Sâre ve hizmetçilerinin de bulunduğu yazılıdır (Yaratılış 12:4).\n[2*]\nAnkebût 29/26,\nSaffat 37/99.\nİbrahim ve beraberindekilerin bulundukları yerden Allah’ın emriyle hicret ettikleri, Tevrat’ın Yaratılış 12:1-3 pasajlarında anlatılmaktadır.\n[3*]\nZuhruf 43/26\n-\n28.\n[4*]\nİbrahim aleyhisselam, inancı yüzünden, babası tarafından kovulmuş (\nMeryem 19/46\n), halkı tarafından da ateşe atılarak öldürülmek istenmişti (\nEnbiya 21/68\n-\n70,\nAnkebut 29/24\n). Aralarındaki düşmanlık ve nefret bu sebeple ortaya çıkmıştı. Bütün bunlara rağmen İbrahim aleyhisselam, babasının bağışlanması için dua etmişti (\nİbrahim 14/41\n).\n[5*]\nTevbe 9/113\n-\n114,\nMeryem 19/47,\nŞuara 26/86.",
+      "roots": [
+        "ربب",
+        "جعل",
+        "فتن",
+        "كفر",
+        "غفر",
+        "عزز",
+        "حكم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\nBu ayette çoğul ifade kullanıldığı için İbrahim aleyhisselam ile birlikte oradan çıkanlar en az üç kişi olmalıdır. Onlardan biri Lût aleyhisselamdır (\n"
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/71",
+          "targets": [
+            "21:71"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Tevrat’ta, İbrahim’in (a.s.) yanında yeğeni Lût, karısı Sâre ve hizmetçilerinin de bulunduğu yazılıdır (Yaratılış 12:4).\n[2*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Ankebût 29/26",
+          "targets": [
+            "29:26"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Saffat 37/99",
+          "targets": [
+            "37:99"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\nİbrahim ve beraberindekilerin bulundukları yerden Allah’ın emriyle hicret ettikleri, Tevrat’ın Yaratılış 12:1-3 pasajlarında anlatılmaktadır.\n[3*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Zuhruf 43/26-28",
+          "targets": [
+            "43:26",
+            "43:27",
+            "43:28"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[4*]\nİbrahim aleyhisselam, inancı yüzünden, babası tarafından kovulmuş (\n"
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/46",
+          "targets": [
+            "19:46"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), halkı tarafından da ateşe atılarak öldürülmek istenmişti (\n"
+        },
+        {
+          "type": "link",
+          "content": "Enbiya 21/68-70",
+          "targets": [
+            "21:68",
+            "21:69",
+            "21:70"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Ankebut 29/24",
+          "targets": [
+            "29:24"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Aralarındaki düşmanlık ve nefret bu sebeple ortaya çıkmıştı. Bütün bunlara rağmen İbrahim aleyhisselam, babasının bağışlanması için dua etmişti (\n"
+        },
+        {
+          "type": "link",
+          "content": "İbrahim 14/41",
+          "targets": [
+            "14:41"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[5*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/113-114",
+          "targets": [
+            "9:113",
+            "9:114"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Meryem 19/47",
+          "targets": [
+            "19:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Şuara 26/86",
+          "targets": [
+            "26:86"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:5",
+        "connections": [
+          {
+            "target_coordinate": "21:71",
+            "context": "Enbiya 21/71"
+          },
+          {
+            "target_coordinate": "29:26",
+            "context": "Ankebût 29/26"
+          },
+          {
+            "target_coordinate": "37:99",
+            "context": "Saffat 37/99"
+          },
+          {
+            "target_coordinate": "43:26",
+            "context": "Zuhruf 43/26-28"
+          },
+          {
+            "target_coordinate": "43:27",
+            "context": "Zuhruf 43/26-28"
+          },
+          {
+            "target_coordinate": "43:28",
+            "context": "Zuhruf 43/26-28"
+          },
+          {
+            "target_coordinate": "19:46",
+            "context": "Meryem 19/46"
+          },
+          {
+            "target_coordinate": "21:68",
+            "context": "Enbiya 21/68-70"
+          },
+          {
+            "target_coordinate": "21:69",
+            "context": "Enbiya 21/68-70"
+          },
+          {
+            "target_coordinate": "21:70",
+            "context": "Enbiya 21/68-70"
+          },
+          {
+            "target_coordinate": "29:24",
+            "context": "Ankebut 29/24"
+          },
+          {
+            "target_coordinate": "14:41",
+            "context": "İbrahim 14/41"
+          },
+          {
+            "target_coordinate": "9:113",
+            "context": "Tevbe 9/113-114"
+          },
+          {
+            "target_coordinate": "9:114",
+            "context": "Tevbe 9/113-114"
+          },
+          {
+            "target_coordinate": "19:47",
+            "context": "Meryem 19/47"
+          },
+          {
+            "target_coordinate": "26:86",
+            "context": "Şuara 26/86"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 5. Ayetin Tefsiri\nرَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِلَّذ۪ينَ كَفَرُوا وَاغْفِرْ لَنَا رَبَّنَاۚ اِنَّكَ اَنْتَ الْعَز۪يزُ الْحَك۪يمُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:6",
+      "text": "رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِلَّذ۪ينَ كَفَرُوا وَاغْفِرْ لَنَا رَبَّنَاۚ اِنَّكَ اَنْتَ الْعَز۪يزُ الْحَك۪يمُ",
+      "translation": "",
+      "dipnot": "",
+      "roots": [
+        "كون",
+        "أسو",
+        "حسن",
+        "رجو",
+        "أله",
+        "يوم",
+        "أخر",
+        "ولي",
+        "غني",
+        "حمد"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "60:6",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 6. Ayetin Tefsiri\nلَقَدْ كَانَ لَكُمْ ف۪يهِمْ اُسْوَةٌ حَسَنَةٌ لِمَنْ كَانَ يَرْجُوا اللّٰهَ وَالْيَوْمَ الْاٰخِرَۜ وَمَنْ يَتَوَلَّ فَاِنَّ اللّٰهَ هُوَ الْغَنِيُّ الْحَم۪يدُ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:2",
+      "text": "",
+      "translation": "Ey Rabbimiz! Bizi kafirlik edenlerin (eline düşürüp de) fitne[1*] konusu yapma /işkencelerine maruz bırakma[2*]. Rabbimiz bizi bağışla! Şüphesiz sen, daima üstün ve bütün kararları doğru olansın[3*].",
+      "dipnot": "[1*] \"İşkence\" anlamı verdiğimiz kelime fitnedir. “Fitne”, altını içindeki yabancı maddelerden ayırmak için ateşe sokmaktır (Müfredat). Kur’an’da bu kelime imtihan (A’raf 7/155), aldatma (A’raf 7/27), cehennem azabı (Zariyât 51/10-14) ve savaş (Bakara 2/216) anlamlarında da kullanılmıştır. [2*] Mümtahine 60/2. [3*] Benzer bir duayı Musa Aleyhisselama inanan Müslümanlar da yapmıştır (Yunus 10/85-86).",
+      "roots": [
+        "ثقف",
+        "كون",
+        "عدو",
+        "بسط",
+        "يدي",
+        "لسن",
+        "سوأ",
+        "ودد",
+        "كفر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] \"İşkence\" anlamı verdiğimiz kelime fitnedir. “Fitne”, altını içindeki yabancı maddelerden ayırmak için ateşe sokmaktır (Müfredat). Kur’an’da bu kelime imtihan (A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/155",
+          "targets": [
+            "7:155"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), aldatma (A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/27",
+          "targets": [
+            "7:27"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), cehennem azabı ("
+        },
+        {
+          "type": "link",
+          "content": "Zariyât 51/10-14",
+          "targets": [
+            "51:10",
+            "51:11",
+            "51:12",
+            "51:13",
+            "51:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") ve savaş ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/216",
+          "targets": [
+            "2:216"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ") anlamlarında da kullanılmıştır. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Mümtahine 60/2",
+          "targets": [
+            "60:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [3*] Benzer bir duayı Musa Aleyhisselama inanan Müslümanlar da yapmıştır ("
+        },
+        {
+          "type": "link",
+          "content": "Yunus 10/85-86",
+          "targets": [
+            "10:85",
+            "10:86"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:2",
+        "connections": [
+          {
+            "target_coordinate": "7:155",
+            "context": "raf 7/155"
+          },
+          {
+            "target_coordinate": "7:27",
+            "context": "raf 7/27"
+          },
+          {
+            "target_coordinate": "51:10",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:11",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:12",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:13",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "51:14",
+            "context": "Zariyât 51/10-14"
+          },
+          {
+            "target_coordinate": "2:216",
+            "context": "Bakara 2/216"
+          },
+          {
+            "target_coordinate": "60:2",
+            "context": "Mümtahine 60/2"
+          },
+          {
+            "target_coordinate": "10:85",
+            "context": "Yunus 10/85-86"
+          },
+          {
+            "target_coordinate": "10:86",
+            "context": "Yunus 10/85-86"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 2. Ayetin Tefsiri\nاِنْ يَثْقَفُوكُمْ يَكُونُوا لَكُمْ اَعْدَٓاءً وَيَبْسُطُٓوا اِلَيْكُمْ اَيْدِيَهُمْ وَاَلْسِنَتَهُمْ بِالسُّٓوءِ وَوَدُّوا لَوْ تَكْفُرُونَۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:6",
+      "text": "لَقَدْ كَانَ لَكُمْ ف۪يهِمْ اُسْوَةٌ حَسَنَةٌ لِمَنْ كَانَ يَرْجُوا اللّٰهَ وَالْيَوْمَ الْاٰخِرَۜ وَمَنْ يَتَوَلَّ فَاِنَّ اللّٰهَ هُوَ الْغَنِيُّ الْحَم۪يدُ۟",
+      "translation": "Sizin için yani Allah’tan ve ahiret gününden beklentisi olanlar için onlarda, kesinlikle güzel bir örnek vardır[*]. Kim (Allah’tan ve ahiret gününden) yüz çevirirse bilsin ki Allah, hiçbir şeye ihtiyacı olmayan, yaptığını da mükemmel yapandır.",
+      "dipnot": "[*] Mümtahine 60/4.",
+      "roots": [
+        "كون",
+        "أسو",
+        "حسن",
+        "رجو",
+        "أله",
+        "يوم",
+        "أخر",
+        "ولي",
+        "غني",
+        "حمد"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[*] "
+        },
+        {
+          "type": "link",
+          "content": "Mümtahine 60/4",
+          "targets": [
+            "60:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:6",
+        "connections": [
+          {
+            "target_coordinate": "60:4",
+            "context": "Mümtahine 60/4"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 6. Ayetin Tefsiri\nلَقَدْ كَانَ لَكُمْ ف۪يهِمْ اُسْوَةٌ حَسَنَةٌ لِمَنْ كَانَ يَرْجُوا اللّٰهَ وَالْيَوْمَ الْاٰخِرَۜ وَمَنْ يَتَوَلَّ فَاِنَّ اللّٰهَ هُوَ الْغَنِيُّ الْحَم۪يدُ۟"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:7",
+      "text": "عَسَى اللّٰهُ اَنْ يَجْعَلَ بَيْنَكُمْ وَبَيْنَ الَّذ۪ينَ عَادَيْتُمْ مِنْهُمْ مَوَدَّةًۜ وَاللّٰهُ قَد۪يرٌۜ وَاللّٰهُ غَفُورٌ رَح۪يمٌ",
+      "translation": "Umulur ki Allah, (inandıkları takdirde[1*]) onlardan düşman olduğunuz kişilerle sizin aranızda bir sevgi oluşturur[2*]. Allah, ölçü koyandır. Allah, çok bağışlayan ve ikramı bol olandır.",
+      "dipnot": "[1*] Bize örnek gösterilen İbrahim aleyhisselam ve beraberindekiler halklarına şöyle demişlerdi: “Bu (düşmanlık ve nefret) sizin Allah’ın tek (ilah) olduğuna inanmanıza kadar devam edecek” (Mümtahine 60/4). Müslümanları Mekke’den çıkaranların büyük bir bölümü, daha sonra müslüman olmuş ve aradaki düşmanlık dostluğa dönüşmüştü. [2*] Fussilet 41/34.",
+      "roots": [
+        "عسي",
+        "أله",
+        "جعل",
+        "بين",
+        "عدو",
+        "ودد",
+        "قدر",
+        "غفر",
+        "رحم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Bize örnek gösterilen İbrahim aleyhisselam ve beraberindekiler halklarına şöyle demişlerdi: “Bu (düşmanlık ve nefret) sizin Allah’ın tek (ilah) olduğuna inanmanıza kadar devam edecek” ("
+        },
+        {
+          "type": "link",
+          "content": "Mümtahine 60/4",
+          "targets": [
+            "60:4"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Müslümanları Mekke’den çıkaranların büyük bir bölümü, daha sonra müslüman olmuş ve aradaki düşmanlık dostluğa dönüşmüştü. [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Fussilet 41/34",
+          "targets": [
+            "41:34"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:7",
+        "connections": [
+          {
+            "target_coordinate": "60:4",
+            "context": "Mümtahine 60/4"
+          },
+          {
+            "target_coordinate": "41:34",
+            "context": "Fussilet 41/34"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 7. Ayetin Tefsiri\nعَسَى اللّٰهُ اَنْ يَجْعَلَ بَيْنَكُمْ وَبَيْنَ الَّذ۪ينَ عَادَيْتُمْ مِنْهُمْ مَوَدَّةًۜ وَاللّٰهُ قَد۪يرٌۜ وَاللّٰهُ غَفُورٌ رَح۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:8",
+      "text": "لَا يَنْهٰيكُمُ اللّٰهُ عَنِ الَّذ۪ينَ لَمْ يُقَاتِلُوكُمْ فِي الدّ۪ينِ وَلَمْ يُخْرِجُوكُمْ مِنْ دِيَارِكُمْ اَنْ تَبَرُّوهُمْ وَتُقْسِطُٓوا اِلَيْهِمْۜ اِنَّ اللّٰهَ يُحِبُّ الْمُقْسِط۪ينَ",
+      "translation": "Allah, din konusunda sizinle savaşmamış ve sizi yurdunuzdan çıkarmamış kimselere karşı erdemli ve hakka uygun davranmanızı yasaklamaz[1*]. Allah hakka uygun davrananları sever[2*].",
+      "dipnot": "[1*] Nisa 4/90. [2*] Nisa 4/135, Maide 5/8, 42, A’raf 7/29.",
+      "roots": [
+        "نهي",
+        "أله",
+        "قتل",
+        "دين",
+        "خرج",
+        "دور",
+        "برر",
+        "قسط",
+        "حبب"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/90",
+          "targets": [
+            "4:90"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/135",
+          "targets": [
+            "4:135"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Maide 5/8,42",
+          "targets": [
+            "5:8",
+            "5:42"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "A’"
+        },
+        {
+          "type": "link",
+          "content": "raf 7/29",
+          "targets": [
+            "7:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:8",
+        "connections": [
+          {
+            "target_coordinate": "4:90",
+            "context": "Nisa 4/90"
+          },
+          {
+            "target_coordinate": "4:135",
+            "context": "Nisa 4/135"
+          },
+          {
+            "target_coordinate": "5:8",
+            "context": "Maide 5/8,42"
+          },
+          {
+            "target_coordinate": "5:42",
+            "context": "Maide 5/8,42"
+          },
+          {
+            "target_coordinate": "7:29",
+            "context": "raf 7/29"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 8. Ayetin Tefsiri\nلَا يَنْهٰيكُمُ اللّٰهُ عَنِ الَّذ۪ينَ لَمْ يُقَاتِلُوكُمْ فِي الدّ۪ينِ وَلَمْ يُخْرِجُوكُمْ مِنْ دِيَارِكُمْ اَنْ تَبَرُّوهُمْ وَتُقْسِطُٓوا اِلَيْهِمْۜ اِنَّ اللّٰهَ يُحِبُّ الْمُقْسِط۪ينَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:9",
+      "text": "اِنَّمَا يَنْهٰيكُمُ اللّٰهُ عَنِ الَّذ۪ينَ قَاتَلُوكُمْ فِي الدّ۪ينِ وَاَخْرَجُوكُمْ مِنْ دِيَارِكُمْ وَظَاهَرُوا عَلٰٓى اِخْرَاجِكُمْ اَنْ تَوَلَّوْهُمْۚ وَمَنْ يَتَوَلَّهُمْ فَاُو۬لٰٓئِكَ هُمُ الظَّالِمُونَ",
+      "translation": "Allah sadece, din konusunda sizinle savaşmış, sizi yurdunuzdan çıkarmış ve çıkarılmanıza destek vermiş olanları dost saymanızı yasaklar[1*]. Kim onları dost sayarsa işte onlar yanlış yapanların ta kendileridir[2*].",
+      "dipnot": "[1*] Bakara 2/190-193, Nisa 4/91, Tevbe 9/12-14, 123. [2*] Müslümanlar, gayrimüslimleri sırdaş edinemez, onları stratejik konumlarda tutamazlar (",
+      "roots": [
+        "نهي",
+        "أله",
+        "قتل",
+        "دين",
+        "خرج",
+        "دور",
+        "ظهر",
+        "ولي",
+        "ظلم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/190-193",
+          "targets": [
+            "2:190",
+            "2:191",
+            "2:192",
+            "2:193"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/91",
+          "targets": [
+            "4:91"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/12-14,123",
+          "targets": [
+            "9:12",
+            "9:13",
+            "9:14",
+            "9:123"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ". [2*] Müslümanlar, gayrimüslimleri sırdaş edinemez, onları stratejik konumlarda tutamazlar ("
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:9",
+        "connections": [
+          {
+            "target_coordinate": "2:190",
+            "context": "Bakara 2/190-193"
+          },
+          {
+            "target_coordinate": "2:191",
+            "context": "Bakara 2/190-193"
+          },
+          {
+            "target_coordinate": "2:192",
+            "context": "Bakara 2/190-193"
+          },
+          {
+            "target_coordinate": "2:193",
+            "context": "Bakara 2/190-193"
+          },
+          {
+            "target_coordinate": "4:91",
+            "context": "Nisa 4/91"
+          },
+          {
+            "target_coordinate": "9:12",
+            "context": "Tevbe 9/12-14,123"
+          },
+          {
+            "target_coordinate": "9:13",
+            "context": "Tevbe 9/12-14,123"
+          },
+          {
+            "target_coordinate": "9:14",
+            "context": "Tevbe 9/12-14,123"
+          },
+          {
+            "target_coordinate": "9:123",
+            "context": "Tevbe 9/12-14,123"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 9. Ayetin Tefsiri\nاِنَّمَا يَنْهٰيكُمُ اللّٰهُ عَنِ الَّذ۪ينَ قَاتَلُوكُمْ فِي الدّ۪ينِ وَاَخْرَجُوكُمْ مِنْ دِيَارِكُمْ وَظَاهَرُوا عَلٰٓى اِخْرَاجِكُمْ اَنْ تَوَلَّوْهُمْۚ وَمَنْ يَتَوَلَّهُمْ فَاُو۬لٰٓئِكَ هُمُ الظَّالِمُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:10",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِذَا جَٓاءَكُمُ الْمُؤْمِنَاتُ مُهَاجِرَاتٍ فَامْتَحِنُوهُنَّۜ اَللّٰهُ اَعْلَمُ بِا۪يمَانِهِنَّۚ فَاِنْ عَلِمْتُمُوهُنَّ مُؤْمِنَاتٍ فَلَا تَرْجِعُوهُنَّ اِلَى الْكُفَّارِۜ لَا هُنَّ حِلٌّ لَهُمْ وَلَا هُمْ يَحِلُّونَ لَهُنَّۜ وَاٰتُوهُمْ مَٓا اَنْفَقُواۜ وَلَا جُنَاحَ عَلَيْكُمْ اَنْ تَنْكِحُوهُنَّ اِذَٓا اٰتَيْتُمُوهُنَّ اُجُورَهُنَّۜ وَلَا تُمْسِكُوا بِعِصَمِ الْكَوَافِرِ وَسْـَٔلُوا مَٓا اَنْفَقْتُمْ وَلْيَسْـَٔلُوا مَٓا اَنْفَقُواۜ ذٰلِكُمْ حُكْمُ اللّٰهِۜ يَحْكُمُ بَيْنَكُمْۜ وَاللّٰهُ عَل۪يمٌ حَك۪يمٌ",
+      "translation": "Ey inanıp güvenenler! Mümin kadınlar (kocalarını terk edip) hicret ederek size geldiklerinde onları imtihandan geçirin. Onların imanlarını en iyi Allah bilir. Eğer mümin olduklarını anlarsanız onları o kâfirlere (kocalarına) geri göndermeyin. Artık bu kadınlar onlara helal değildir. Onlar da bu kadınlara helal olmazlar[1*]. Kocalarının bunlara verdiklerini geri verin. Mehirlerini verdiğiniz takdirde, bu kadınlarla evlenmenizin size bir günahı yoktur. (Sizden ayrılmak isteyen) kafir karılarınızın bileklerine yapışmayın/  onları zorla tutmayın; onlara verdiklerinizi geri isteyin[2*]. Onlar da /Mekkeli erkekler de (kaçıp size gelen eşlerine) verdiklerini istesinler[3*]. İşte bu, Allah’ın hükmüdür; aranızda o hükmeder. Allah, daima bilen ve kararları doğru olandır.",
+      "dipnot": "[1*] Bu ifadeler, mümin olduklarını söyleyerek kafir eşlerinden ayrılmak için gelip müslümanlara sığınan kadınlarla ilgilidir. Burada eşlerin birbirine helal olmamasının sebebi, kocalarının kafir olmaları değil, bu kadınların onlarla evliliklerine son vermek istemeleridir. İddialarında haklı olduklarını anlamak için imanlarının sorgulanması gerekir. Burada yapılması istenen budur. Kadınların haklılıkları ortaya çıkınca boşanma gerçekleşmiş ve o kadınların kocalarının kendilerine verdiklerini geri verme sorumlulukları doğar. Bu ayet, kocalarının onlara verdikleriniı geri verme sorumluluğunu müslümanlara yüklemektedir. (Bakara 2/228-229, Nisa 4/19).\n[2*] Burada, eşinden ayrılan, kadın olduğu için ondan aldıklarını geri vermesi gerekir (Bakara 2/229, Nisa 4/19).\n[3*] Eşlerinin kendilerine ne kadar mal verdiğini söyleyenler, Mekke’den kaçıp gelen kadınlardır. Kocaları onlara daha fazla mal verdiklerini iddia edebilirler. Bu ayet onlara, eşlerine verdikleri malı geri isteme hakkı vermektedir. İddialarını ispatlarlarsa onları alma hakları doğar. Bu ayetler, Mekkelilerin bu konuları bildiklerini ve uyguladıklarını da gösterir.",
+      "roots": [
+        "أيي",
+        "أمن",
+        "جيأ",
+        "هجر",
+        "محن",
+        "أله",
+        "علم",
+        "رجع",
+        "كفر",
+        "حلل",
+        "أتي",
+        "نفق",
+        "جنح",
+        "نكح",
+        "أجر",
+        "مسك",
+        "عصم",
+        "سأل",
+        "حكم",
+        "بين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*] Bu ifadeler, mümin olduklarını söyleyerek kafir eşlerinden ayrılmak için gelip müslümanlara sığınan kadınlarla ilgilidir. Burada eşlerin birbirine helal olmamasının sebebi, kocalarının kafir olmaları değil, bu kadınların onlarla evliliklerine son vermek istemeleridir. İddialarında haklı olduklarını anlamak için imanlarının sorgulanması gerekir. Burada yapılması istenen budur. Kadınların haklılıkları ortaya çıkınca boşanma gerçekleşmiş ve o kadınların kocalarının kendilerine verdiklerini geri verme sorumlulukları doğar. Bu ayet, kocalarının onlara verdikleriniı geri verme sorumluluğunu müslümanlara yüklemektedir. ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/228-229",
+          "targets": [
+            "2:228",
+            "2:229"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/19",
+          "targets": [
+            "4:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[2*] Burada, eşinden ayrılan, kadın olduğu için ondan aldıklarını geri vermesi gerekir ("
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/229",
+          "targets": [
+            "2:229"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/19",
+          "targets": [
+            "4:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[3*] Eşlerinin kendilerine ne kadar mal verdiğini söyleyenler, Mekke’den kaçıp gelen kadınlardır. Kocaları onlara daha fazla mal verdiklerini iddia edebilirler. Bu ayet onlara, eşlerine verdikleri malı geri isteme hakkı vermektedir. İddialarını ispatlarlarsa onları alma hakları doğar. Bu ayetler, Mekkelilerin bu konuları bildiklerini ve uyguladıklarını da gösterir."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:10",
+        "connections": [
+          {
+            "target_coordinate": "2:228",
+            "context": "Bakara 2/228-229"
+          },
+          {
+            "target_coordinate": "2:229",
+            "context": "Bakara 2/228-229"
+          },
+          {
+            "target_coordinate": "4:19",
+            "context": "Nisa 4/19"
+          },
+          {
+            "target_coordinate": "2:229",
+            "context": "Bakara 2/229"
+          },
+          {
+            "target_coordinate": "4:19",
+            "context": "Nisa 4/19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 10. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُٓوا اِذَا جَٓاءَكُمُ الْمُؤْمِنَاتُ مُهَاجِرَاتٍ فَامْتَحِنُوهُنَّۜ اَللّٰهُ اَعْلَمُ بِا۪يمَانِهِنَّۚ فَاِنْ عَلِمْتُمُوهُنَّ مُؤْمِنَاتٍ فَلَا تَرْجِعُوهُنَّ اِلَى الْكُفَّارِۜ لَا هُنَّ حِلٌّ لَهُمْ وَلَا هُمْ يَحِلُّونَ لَهُنَّۜ وَاٰتُوهُمْ مَٓا اَنْفَقُواۜ وَلَا جُنَاحَ عَلَيْكُمْ اَنْ تَنْكِحُوهُنَّ اِذَٓا اٰتَيْتُمُوهُنَّ اُجُورَهُنَّۜ وَلَا تُمْسِكُوا بِعِصَمِ الْكَوَافِرِ وَسْـَٔلُوا مَٓا اَنْفَقْتُمْ وَلْيَسْـَٔلُوا مَٓا اَنْفَقُواۜ ذٰلِكُمْ حُكْمُ اللّٰهِۜ يَحْكُمُ بَيْنَكُمْۜ وَاللّٰهُ عَل۪يمٌ حَك۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:12",
+      "text": "وَاِنْ فَاتَكُمْ شَيْءٌ مِنْ اَزْوَاجِكُمْ اِلَى الْكُفَّارِ فَعَاقَبْتُمْ فَاٰتُوا الَّذ۪ينَ ذَهَبَتْ اَزْوَاجُهُمْ مِثْلَ مَٓا اَنْفَقُواۜ وَاتَّقُوا اللّٰهَ الَّذ۪ٓي اَنْتُمْ بِه۪ مُؤْمِنُونَ",
+      "translation": "Eşlerinizden biri kâfirlere kaçar, sonra o kafirleri cezalandırırsanız /savaşta yenerseniz (alacağınız ganimetten) eşleri gitmiş olanların, onlara verdikleri kadarını verin. İnanıp güvendiğiniz Allah’a karşı yanlış yapmaktan sakının.",
+      "dipnot": "",
+      "roots": [
+        "أيي",
+        "نبأ",
+        "جيأ",
+        "أمن",
+        "بيع",
+        "شرك",
+        "أله",
+        "شيأ",
+        "سرق",
+        "زني",
+        "قتل",
+        "ولد",
+        "أتي",
+        "بهت",
+        "فري",
+        "بين",
+        "يدي",
+        "رجل",
+        "عصي",
+        "عرف",
+        "غفر",
+        "رحم"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "60:12",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 12. Ayetin Tefsiri\nيَٓا اَيُّهَا النَّبِيُّ اِذَا جَٓاءَكَ الْمُؤْمِنَاتُ يُبَايِعْنَكَ عَلٰٓى اَنْ لَا يُشْرِكْنَ بِاللّٰهِ شَيْـًٔا وَلَا يَسْرِقْنَ وَلَا يَزْن۪ينَ وَلَا يَقْتُلْنَ اَوْلَادَهُنَّ وَلَا يَأْت۪ينَ بِبُهْتَانٍ يَفْتَر۪ينَهُ بَيْنَ اَيْد۪يهِنَّ وَاَرْجُلِهِنَّ وَلَا يَعْص۪ينَكَ ف۪ي مَعْرُوفٍ فَبَايِعْهُنَّ وَاسْتَغْفِرْ لَهُنَّ اللّٰهَۜ اِنَّ اللّٰهَ غَفُورٌ رَح۪يمٌ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:13",
+      "text": "يَٓا اَيُّهَا النَّبِيُّ اِذَا جَٓاءَكَ الْمُؤْمِنَاتُ يُبَايِعْنَكَ عَلٰٓى اَنْ لَا يُشْرِكْنَ بِاللّٰهِ شَيْـًٔا وَلَا يَسْرِقْنَ وَلَا يَزْن۪ينَ وَلَا يَقْتُلْنَ اَوْلَادَهُنَّ وَلَا يَأْت۪ينَ بِبُهْتَانٍ يَفْتَر۪ينَهُ بَيْنَ اَيْد۪يهِنَّ وَاَرْجُلِهِنَّ وَلَا يَعْص۪ينَكَ ف۪ي مَعْرُوفٍ فَبَايِعْهُنَّ وَاسْتَغْفِرْ لَهُنَّ اللّٰهَۜ اِنَّ اللّٰهَ غَفُورٌ رَح۪يمٌ",
+      "translation": "Ey Nebi! (Hicret eden) O mü’min kadınlar, sana biat etmek /bağlılık sözleşmesi yapmak için geldiklerinde, hiçbir şeyi Allah'a ortak koşmamaları, hırsızlık yapmamaları, zina etmemeleri, çocuklarını öldürmemeleri[1*], kolları ve bacakları arası ile (namuslarıyla) ilgili bir iftira uydurup getirmemeleri[2*] ve ma’rufta[3*] sana karşı gelmemeleri şartı ile onların biatlarını kabul et[4*] ve Allah'tan onların bağışlanmalarını dile[5*]. Çünkü Allah, çok bağışlayan ve ikramı bol olandır.",
+      "dipnot": "[1*]\nEn’am 6/151,\nİsra 17/31.\n[2*]\nBu iftiranın kapsamına tecavüz veya zina suçlaması, biriyle ilişkisinden doğan çocuğu bir başkasına mal etme gibi birçok şey girer. Bunun bir örneği, Züleyha’nın Yusuf aleyhisselama attığı iftiradır (\nYusuf 12/23\n-\n29\n).\n[3*]\nMa’ruf, aklın veya dinin doğru saydığı her şeydir. Zıddı ‘münker’dir (Müfredat). Ma’ruf, Kur’an’da belirtilen ölçüler veya evrensel doğrular sayesinde öğrenilir. Muhammed aleyhisselam, Kur’an ayetlerini tebliğ ederken hata edemez (\nHakka 69/44\n-\n47\n). Onun, Allah’ın elçisi olarak yaptığı tebliğlere kayıtsız şartsız uymak gerekir (\nAhzab 33/36\n). Ama Nebi sıfatıyla verdiği emirler sorgulanabilir. Yanlış yaptığı bir durumda onu uyarmayıp yanlışına ortak olanlar, Nebi ile birlikte kınanmıştır (\nEnfal 8/67\n-\n68\n). Ama verdiği emir, bir ayet gereği değilse onu kabul etmemek ona isyan sayılmaz (\nAhzab 33/37\n). Yine de ona saygı göstermek ve onun yanında sesi yükseltmemek gerekir (\nHucurat 49/2\n).\n[4*]\nFetih 48/10.\n[5*]\nMuhammed 47/19.",
+      "roots": [
+        "أيي",
+        "أمن",
+        "ولي",
+        "قوم",
+        "غضب",
+        "أله",
+        "يأس",
+        "أخر",
+        "كفر",
+        "صحب",
+        "قبر"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\nEn’"
+        },
+        {
+          "type": "link",
+          "content": "am 6/151",
+          "targets": [
+            "6:151"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "İsra 17/31",
+          "targets": [
+            "17:31"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[2*]\nBu iftiranın kapsamına tecavüz veya zina suçlaması, biriyle ilişkisinden doğan çocuğu bir başkasına mal etme gibi birçok şey girer. Bunun bir örneği, Züleyha’nın Yusuf aleyhisselama attığı iftiradır (\n"
+        },
+        {
+          "type": "link",
+          "content": "Yusuf 12/23-29",
+          "targets": [
+            "12:23",
+            "12:24",
+            "12:25",
+            "12:26",
+            "12:27",
+            "12:28",
+            "12:29"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[3*]\nMa’ruf, aklın veya dinin doğru saydığı her şeydir. Zıddı ‘münker’dir (Müfredat). Ma’ruf, Kur’an’da belirtilen ölçüler veya evrensel doğrular sayesinde öğrenilir. Muhammed aleyhisselam, Kur’an ayetlerini tebliğ ederken hata edemez (\n"
+        },
+        {
+          "type": "link",
+          "content": "Hakka 69/44-47",
+          "targets": [
+            "69:44",
+            "69:45",
+            "69:46",
+            "69:47"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Onun, Allah’ın elçisi olarak yaptığı tebliğlere kayıtsız şartsız uymak gerekir (\n"
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/36",
+          "targets": [
+            "33:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ama Nebi sıfatıyla verdiği emirler sorgulanabilir. Yanlış yaptığı bir durumda onu uyarmayıp yanlışına ortak olanlar, Nebi ile birlikte kınanmıştır (\n"
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/67-68",
+          "targets": [
+            "8:67",
+            "8:68"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Ama verdiği emir, bir ayet gereği değilse onu kabul etmemek ona isyan sayılmaz (\n"
+        },
+        {
+          "type": "link",
+          "content": "Ahzab 33/37",
+          "targets": [
+            "33:37"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "). Yine de ona saygı göstermek ve onun yanında sesi yükseltmemek gerekir (\n"
+        },
+        {
+          "type": "link",
+          "content": "Hucurat 49/2",
+          "targets": [
+            "49:2"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ").\n[4*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Fetih 48/10",
+          "targets": [
+            "48:10"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[5*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Muhammed 47/19",
+          "targets": [
+            "47:19"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:13",
+        "connections": [
+          {
+            "target_coordinate": "6:151",
+            "context": "am 6/151"
+          },
+          {
+            "target_coordinate": "17:31",
+            "context": "İsra 17/31"
+          },
+          {
+            "target_coordinate": "12:23",
+            "context": "Yusuf 12/23-29"
+          },
+          {
+            "target_coordinate": "12:24",
+            "context": "Yusuf 12/23-29"
+          },
+          {
+            "target_coordinate": "12:25",
+            "context": "Yusuf 12/23-29"
+          },
+          {
+            "target_coordinate": "12:26",
+            "context": "Yusuf 12/23-29"
+          },
+          {
+            "target_coordinate": "12:27",
+            "context": "Yusuf 12/23-29"
+          },
+          {
+            "target_coordinate": "12:28",
+            "context": "Yusuf 12/23-29"
+          },
+          {
+            "target_coordinate": "12:29",
+            "context": "Yusuf 12/23-29"
+          },
+          {
+            "target_coordinate": "69:44",
+            "context": "Hakka 69/44-47"
+          },
+          {
+            "target_coordinate": "69:45",
+            "context": "Hakka 69/44-47"
+          },
+          {
+            "target_coordinate": "69:46",
+            "context": "Hakka 69/44-47"
+          },
+          {
+            "target_coordinate": "69:47",
+            "context": "Hakka 69/44-47"
+          },
+          {
+            "target_coordinate": "33:36",
+            "context": "Ahzab 33/36"
+          },
+          {
+            "target_coordinate": "8:67",
+            "context": "Enfal 8/67-68"
+          },
+          {
+            "target_coordinate": "8:68",
+            "context": "Enfal 8/67-68"
+          },
+          {
+            "target_coordinate": "33:37",
+            "context": "Ahzab 33/37"
+          },
+          {
+            "target_coordinate": "49:2",
+            "context": "Hucurat 49/2"
+          },
+          {
+            "target_coordinate": "48:10",
+            "context": "Fetih 48/10"
+          },
+          {
+            "target_coordinate": "47:19",
+            "context": "Muhammed 47/19"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Mümtehine Suresi 13. Ayetin Tefsiri\nيَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا لَا تَتَوَلَّوْا قَوْمًا غَضِبَ اللّٰهُ عَلَيْهِمْ قَدْ يَئِسُوا مِنَ الْاٰخِرَةِ كَمَا يَئِسَ الْكُفَّارُ مِنْ اَصْحَابِ الْقُبُورِ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    },
+    {
+      "id": "60:14",
+      "text": "يَٓا اَيُّهَا الَّذ۪ينَ اٰمَنُوا لَا تَتَوَلَّوْا قَوْمًا غَضِبَ اللّٰهُ عَلَيْهِمْ قَدْ يَئِسُوا مِنَ الْاٰخِرَةِ كَمَا يَئِسَ الْكُفَّارُ مِنْ اَصْحَابِ الْقُبُورِ",
+      "translation": "Ey inanıp güvenenler! Allah’ın gazabına uğrayan bir topluluğu[1*] dost edinmeyin. Kabirlerde olan kafirlerin (ahiretten) umut kesmeleri gibi onlar da ahiretten umutlarını kesmişlerdir[2*].",
+      "dipnot": "[1*]\nMücadele 58/14.\n[2*]",
+      "roots": null,
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "[1*]\n"
+        },
+        {
+          "type": "link",
+          "content": "Mücadele 58/14",
+          "targets": [
+            "58:14"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ".\n[2*]"
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "60:14",
+        "connections": [
+          {
+            "target_coordinate": "58:14",
+            "context": "Mücadele 58/14"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Saff Suresi 1. Ayetin Tefsiri\nسَبَّحَ لِلّٰهِ مَا فِي السَّمٰوَاتِ وَمَا فِي الْاَرْضِۚ وَهُوَ الْعَز۪يزُ الْحَك۪يمُ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/60.mp3"
+    }
+  ]
+}

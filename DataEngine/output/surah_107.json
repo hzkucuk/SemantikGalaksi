@@ -1,0 +1,455 @@
+{
+  "nodes": [
+    {
+      "id": "107:1",
+      "text": "اَرَاَيْتَ الَّذ۪ي يُكَذِّبُ بِالدّ۪ينِۜ",
+      "translation": "Bu din hakkında yalan söyleyip duranı gördün mü?",
+      "dipnot": "İnfitar 82/9, Tin 95/7.",
+      "roots": [
+        "رأي",
+        "كذب",
+        "دين"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "İnfitar 82/9",
+          "targets": [
+            "82:9"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tin 95/7",
+          "targets": [
+            "95:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "107:1",
+        "connections": [
+          {
+            "target_coordinate": "82:9",
+            "context": "İnfitar 82/9"
+          },
+          {
+            "target_coordinate": "95:7",
+            "context": "Tin 95/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Maûn Suresi 1. Ayetin Tefsiri\nاَرَاَيْتَ الَّذ۪ي يُكَذِّبُ بِالدّ۪ينِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/107.mp3"
+    },
+    {
+      "id": "107:2",
+      "text": "فَذٰلِكَ الَّذ۪ي يَدُعُّ الْيَت۪يمَۙ",
+      "translation": "İşte o; yetimi itip kakan,",
+      "dipnot": "Birçok ayette yetimlere iyi davranmak ve ikramda bulunmak emredilmişken ( Bakara 2/83, 177, 215, 220; Nisa 4/8, 36; İnsan 76/8; Beled 90/14 - 15 ), onlara kötü davranmak yerilmiştir ( Fecr 89/17 ).",
+      "roots": [
+        "دعع",
+        "يتم"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "text",
+          "content": "Birçok ayette yetimlere iyi davranmak ve ikramda bulunmak emredilmişken ( "
+        },
+        {
+          "type": "link",
+          "content": "Bakara 2/83,177,215,220",
+          "targets": [
+            "2:83",
+            "2:177",
+            "2:215",
+            "2:220"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/8,36",
+          "targets": [
+            "4:8",
+            "4:36"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "İnsan 76/8",
+          "targets": [
+            "76:8"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "; "
+        },
+        {
+          "type": "link",
+          "content": "Beled 90/14-15",
+          "targets": [
+            "90:14",
+            "90:15"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "), onlara kötü davranmak yerilmiştir ( "
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/17",
+          "targets": [
+            "89:17"
+          ]
+        },
+        {
+          "type": "text",
+          "content": ")."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "107:2",
+        "connections": [
+          {
+            "target_coordinate": "2:83",
+            "context": "Bakara 2/83,177,215,220"
+          },
+          {
+            "target_coordinate": "2:177",
+            "context": "Bakara 2/83,177,215,220"
+          },
+          {
+            "target_coordinate": "2:215",
+            "context": "Bakara 2/83,177,215,220"
+          },
+          {
+            "target_coordinate": "2:220",
+            "context": "Bakara 2/83,177,215,220"
+          },
+          {
+            "target_coordinate": "4:8",
+            "context": "Nisa 4/8,36"
+          },
+          {
+            "target_coordinate": "4:36",
+            "context": "Nisa 4/8,36"
+          },
+          {
+            "target_coordinate": "76:8",
+            "context": "İnsan 76/8"
+          },
+          {
+            "target_coordinate": "90:14",
+            "context": "Beled 90/14-15"
+          },
+          {
+            "target_coordinate": "90:15",
+            "context": "Beled 90/14-15"
+          },
+          {
+            "target_coordinate": "89:17",
+            "context": "Fecr 89/17"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Maûn Suresi 2. Ayetin Tefsiri\nفَذٰلِكَ الَّذ۪ي يَدُعُّ الْيَت۪يمَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/107.mp3"
+    },
+    {
+      "id": "107:3",
+      "text": "وَلَا يَحُضُّ عَلٰى طَعَامِ الْمِسْك۪ينِۜ",
+      "translation": "çaresizlerin yiyeceği için teşvikte bile bulunmayandır.",
+      "dipnot": "Hâkka 69/34, Müddessir 74/42 - 47, Fecr 89/18.",
+      "roots": [
+        "حضض",
+        "طعم",
+        "سكن"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Hâkka 69/34",
+          "targets": [
+            "69:34"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Müddessir 74/42-47",
+          "targets": [
+            "74:42",
+            "74:43",
+            "74:44",
+            "74:45",
+            "74:46",
+            "74:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Fecr 89/18",
+          "targets": [
+            "89:18"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "107:3",
+        "connections": [
+          {
+            "target_coordinate": "69:34",
+            "context": "Hâkka 69/34"
+          },
+          {
+            "target_coordinate": "74:42",
+            "context": "Müddessir 74/42-47"
+          },
+          {
+            "target_coordinate": "74:43",
+            "context": "Müddessir 74/42-47"
+          },
+          {
+            "target_coordinate": "74:44",
+            "context": "Müddessir 74/42-47"
+          },
+          {
+            "target_coordinate": "74:45",
+            "context": "Müddessir 74/42-47"
+          },
+          {
+            "target_coordinate": "74:46",
+            "context": "Müddessir 74/42-47"
+          },
+          {
+            "target_coordinate": "74:47",
+            "context": "Müddessir 74/42-47"
+          },
+          {
+            "target_coordinate": "89:18",
+            "context": "Fecr 89/18"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Maûn Suresi 3. Ayetin Tefsiri\nوَلَا يَحُضُّ عَلٰى طَعَامِ الْمِسْك۪ينِۜ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/107.mp3"
+    },
+    {
+      "id": "107:4",
+      "text": "فَوَيْلٌ لِلْمُصَلّ۪ينَۙ",
+      "translation": "(Müslüman görünmek için) kulluk görevlerini de yapan o kimselerin vay haline ki",
+      "dipnot": "",
+      "roots": [
+        "صلو"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "107:4",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Maûn Suresi 4. Ayetin Tefsiri\nفَوَيْلٌ لِلْمُصَلّ۪ينَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/107.mp3"
+    },
+    {
+      "id": "107:5",
+      "text": "اَلَّذ۪ينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَۙ",
+      "translation": "onlar kulluk görevlerini önemsemeyenlerdir.",
+      "dipnot": "",
+      "roots": [
+        "صلو",
+        "سهو"
+      ],
+      "dipnot_parsed": null,
+      "mapping_data": {
+        "coordinate": "107:5",
+        "connections": []
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Maûn Suresi 5. Ayetin Tefsiri\nاَلَّذ۪ينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/107.mp3"
+    },
+    {
+      "id": "107:6",
+      "text": "اَلَّذ۪ينَ هُمْ يُرَٓاؤُ۫نَۙ",
+      "translation": "Onlar gösteriş yaparlar.",
+      "dipnot": "Bakara 2/264, Nisa 4/38, 142, Enfal 8/47, Tevbe 9/54.",
+      "roots": [
+        "رأي"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Bakara 2/264",
+          "targets": [
+            "2:264"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Nisa 4/38,142",
+          "targets": [
+            "4:38",
+            "4:142"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Enfal 8/47",
+          "targets": [
+            "8:47"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/54",
+          "targets": [
+            "9:54"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "107:6",
+        "connections": [
+          {
+            "target_coordinate": "2:264",
+            "context": "Bakara 2/264"
+          },
+          {
+            "target_coordinate": "4:38",
+            "context": "Nisa 4/38,142"
+          },
+          {
+            "target_coordinate": "4:142",
+            "context": "Nisa 4/38,142"
+          },
+          {
+            "target_coordinate": "8:47",
+            "context": "Enfal 8/47"
+          },
+          {
+            "target_coordinate": "9:54",
+            "context": "Tevbe 9/54"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Maûn Suresi 6. Ayetin Tefsiri\nاَلَّذ۪ينَ هُمْ يُرَٓاؤُ۫نَۙ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/107.mp3"
+    },
+    {
+      "id": "107:7",
+      "text": "وَيَمْنَعُونَ الْمَاعُونَ",
+      "translation": "Onlar, ufak tefek şeyleri bile (başkalarından) esirgerler.",
+      "dipnot": "Nisa 4/36 - 37, Tevbe 9/67, Münafikun 63/7.",
+      "roots": [
+        "منع",
+        "عون"
+      ],
+      "dipnot_parsed": [
+        {
+          "type": "link",
+          "content": "Nisa 4/36-37",
+          "targets": [
+            "4:36",
+            "4:37"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Tevbe 9/67",
+          "targets": [
+            "9:67"
+          ]
+        },
+        {
+          "type": "link",
+          "content": "Münafikun 63/7",
+          "targets": [
+            "63:7"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "."
+        }
+      ],
+      "mapping_data": {
+        "coordinate": "107:7",
+        "connections": [
+          {
+            "target_coordinate": "4:36",
+            "context": "Nisa 4/36-37"
+          },
+          {
+            "target_coordinate": "4:37",
+            "context": "Nisa 4/36-37"
+          },
+          {
+            "target_coordinate": "9:67",
+            "context": "Tevbe 9/67"
+          },
+          {
+            "target_coordinate": "63:7",
+            "context": "Münafikun 63/7"
+          }
+        ]
+      },
+      "tefsir_popup": [
+        {
+          "type": "text",
+          "content": "Maûn Suresi 7. Ayetin Tefsiri\nوَيَمْنَعُونَ الْمَاعُونَ"
+        }
+      ],
+      "audio": "https://www.suleymaniyevakfimeali.com/Content/Voices/107.mp3"
+    }
+  ]
+}
