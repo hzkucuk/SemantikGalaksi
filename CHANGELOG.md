@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.35.0] - 2025-07-28
+### Release
+- **v0.35.0 Release**: TTS düzeltmesi + Otomatik güncelleme sistemi içeren kararlı sürüm
+- **Otomatik Güncelleme**: GitHub Release kontrolü, ZIP yedekleme (uygulama klasörü/backups/), sessiz MSI kurulumu
+- **TTS Fix**: `temperature:0` kaldırıldı (HTTP 500 hatasına neden oluyordu)
+- **Etkilenen dosyalar:** `DataEngine/updater.py`, `DataEngine/desktop_app.py`, `setup.py`, `Frontend/js/audio.js`, `Frontend/besmele.wav`
+
 ## [0.34.4] - 2025-07-28
 ### Düzeltme
 - **TTS Düzeltme**: `temperature: 0` parametresi Gemini TTS API'da HTTP 500 hatasına neden oluyordu — kaldırıldı, TTS yeniden çalışır durumda

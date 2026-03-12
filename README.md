@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  S%C3%BCr%C3%BCm-0.34.4-34d399
+  S%C3%BCr%C3%BCm-0.35.0-34d399
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -677,6 +677,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.35.0** | 2025-07-28 | 🚀 Release — Otomatik güncelleme sistemi + TTS düzeltmesi |
 | **0.34.4** | 2025-07-28 | TTS düzeltme (temperature:0 kaldırıldı), Otomatik güncelleme sistemi (GitHub Release + ZIP yedek + sessiz MSI) |
 | **0.33.0** | 2025-07-28 | MSI Server/Client modu, Besmele Süleymaniye meali, 16 ayrık kök renk paleti |
 | **0.32.2** | 2025-07-28 | Zayıf harf eşdeğerlik kontrolü — indirgenmiş kök sahte eşleşme engelleme |
