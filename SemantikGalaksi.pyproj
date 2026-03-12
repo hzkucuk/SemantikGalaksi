@@ -42,6 +42,7 @@
     <Content Include="DataEngine\quran-morphology.txt" />
     <Content Include="DataEngine\README.md" />
     <Content Include="FEATURES.md" />
+    <Content Include="Frontend\full_quran_rich_map.json" />
     <Content Include="Frontend\index.html" />
     <Content Include="Frontend\js\audio.js" />
     <Content Include="Frontend\js\auth.js" />

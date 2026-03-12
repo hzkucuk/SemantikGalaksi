@@ -20,10 +20,10 @@ var highlightArabicText = (text, roots) => {
         }
         return r;
     };
-    const subseqMatch = (word, root) => {
+    const subseqMatch = (word, root, noWeakEquiv) => {
         let ri = 0, firstMatch = -1, lastMatch = -1;
         for (let wi = 0; wi < word.length && ri < root.length; wi++) {
-            if (word[wi] === root[ri] || (isWeak(root[ri]) && isWeak(word[wi]))) {
+            if (word[wi] === root[ri] || (!noWeakEquiv && isWeak(root[ri]) && isWeak(word[wi]))) {
                 if (firstMatch < 0) firstMatch = wi;
                 lastMatch = wi;
                 ri++;
@@ -38,7 +38,7 @@ var highlightArabicText = (text, roots) => {
         for (let i = 0; i < root.length; i++) {
             if (isWeak(root[i])) {
                 const reduced = root.slice(0, i) + root.slice(i + 1);
-                if (reduced.length >= 2 && subseqMatch(word, reduced)) return true;
+                if (reduced.length >= 2 && subseqMatch(word, reduced, true)) return true;
             }
         }
         return false;

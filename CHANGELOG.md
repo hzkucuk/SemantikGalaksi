@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.32.2] - 2025-07-28
+### Düzeltme
+- **Zayıf Harf Eşdeğerlik Kontrolü**: İndirgenmiş kök eşleşmesinde (weak letter drop) ا/و/ي eşdeğerliği devre dışı bırakıldı — `سحروا`→`وحي` gibi sahte eşleşmeler engellendi
+- **Etkilenen dosya:** `Frontend/js/highlight.js`
+
 ## [0.32.1] - 2025-07-28
 ### Düzeltme
 - **Arapça Kök Vurgulama**: Şedde (ّ) harfi artık doğru işleniyor — tekrarlı kök harfleri (ربب, حيي) eşleşebiliyor
