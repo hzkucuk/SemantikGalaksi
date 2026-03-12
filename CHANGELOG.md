@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.34.1] - 2025-07-28
+### Düzeltme
+- **TTS Ses Kalitesi**: Besmele ile birebir aynı ses pipeline'ı — PCM normalizasyon (peak→28000) eklendi, prompt "duayı" tonuyla eşlendi, cılız ses sorunu giderildi
+- **Etkilenen dosya:** `Frontend/js/audio.js`
+
 ## [0.34.0] - 2025-07-28
 ### Özellik
 - **Son Konum Hafızası**: Kullanıcının son ziyaret ettiği ayet `localStorage`'a kaydedilir — uygulama yeniden açıldığında Fatiha yerine kaldığı yerden devam eder (EXE + Web)

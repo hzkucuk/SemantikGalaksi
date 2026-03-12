@@ -12,6 +12,23 @@ var pcmToWav = (pcm, rate) => {
     for (let i = 0; i < pcm.length; i++) v.setUint8(44 + i, pcm[i]); return b;
 };
 
+var normalizePcm = (raw) => {
+    var n = raw.length >> 1;
+    var samples = new Int16Array(n);
+    for (var i = 0; i < n; i++) samples[i] = raw.charCodeAt(i * 2) | (raw.charCodeAt(i * 2 + 1) << 8);
+    var peak = 0;
+    for (var i = 0; i < n; i++) { var a = Math.abs(samples[i]); if (a > peak) peak = a; }
+    if (peak === 0) peak = 1;
+    var ratio = 28000 / peak;
+    var out = new Uint8Array(n * 2);
+    for (var i = 0; i < n; i++) {
+        var s = Math.max(-32767, Math.min(32767, Math.round(samples[i] * ratio)));
+        out[i * 2] = s & 0xFF;
+        out[i * 2 + 1] = (s >> 8) & 0xFF;
+    }
+    return out;
+};
+
 var speakAyah = async (text) => {
     if (!apiKey) { apiKey = await KeyManager.getWorkingKey(); }
     if (!apiKey) return false;
@@ -23,7 +40,7 @@ var speakAyah = async (text) => {
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`, {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                contents: [{ parts: [{ text: `Bu Türkçe metni güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ${text}` }] }],
+                contents: [{ parts: [{ text: `Bu Türkçe duayı güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ${text}` }] }],
                 generationConfig: { responseModalities: ["AUDIO"], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: "Orus" } } } },
                 model: "gemini-2.5-flash-preview-tts"
             })
@@ -37,8 +54,7 @@ var speakAyah = async (text) => {
         const part = result.candidates?.[0]?.content?.parts?.[0];
         if (part?.inlineData?.data) {
             const raw = window.atob(part.inlineData.data);
-            const pcm = new Uint8Array(raw.length);
-            for (let i = 0; i < raw.length; i++) pcm[i] = raw.charCodeAt(i);
+            const pcm = normalizePcm(raw);
             const url = URL.createObjectURL(new Blob([pcmToWav(pcm, 24000)], { type: 'audio/wav' }));
             audioCache.set(text, url);
             playAudio(url);
