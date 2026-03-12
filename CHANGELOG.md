@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [0.31.1] - 2025-07-28
+### Düzeltme
+- **Referans Düzeltmeleri**: 3 hatalı ayet referansı düzeltildi
+  - `2:173`: `16:145` → `16:115` (Nahl 16/115)
+  - `74:56`: `81:30` → `81:29` (Tekvir 29 ayet)
+  - `76:30`: `81:30` → `81:29` (Tekvir 29 ayet)
+- Hadis, sayfa ve oran referanslarına dokunulmadı (referans bütünlüğü korundu)
+- **Etkilenen dosya:** `Frontend/quran_data.json`
+
 ## [0.31.0] - 2025-07-28
 ### Özellik
 - **Zengin Veri Entegrasyonu**: `full_quran_rich_map.json` verileri `quran_data.json` ile birleştirildi (6236 node korundu)
