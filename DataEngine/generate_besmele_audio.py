@@ -49,14 +49,14 @@ def generate(api_key: str) -> bool:
             }]
         }],
         "generationConfig": {
+            "temperature": 0,
             "responseModalities": ["AUDIO"],
             "speechConfig": {
                 "voiceConfig": {
                     "prebuiltVoiceConfig": {"voiceName": VOICE_NAME}
                 }
             }
-        },
-        "model": "gemini-2.5-flash-preview-tts"
+        }
     }).encode("utf-8")
 
     url = f"{TTS_URL}?key={api_key}"

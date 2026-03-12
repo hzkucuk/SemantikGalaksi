@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.34.3] - 2025-07-28
+### İyileştirme
+- **TTS Ses Tutarlılığı**: `temperature: 0` eklendi — Gemini TTS artık deterministik ses üretiyor, her çağrıda aynı kararlı ses tonu
+- **API Temizliği**: İstek gövdesinden gereksiz `model` alanı kaldırıldı (URL'de zaten mevcut)
+- **Etkilenen dosyalar:** `Frontend/js/audio.js`, `DataEngine/generate_besmele_audio.py`
+
 ## [0.34.2] - 2025-07-28
 ### Düzeltme
 - **HUD Kök Detay Paneli**: Üstteki köklere tıklandığında türemiş kelimeler paneli artık köklerin hemen altında açılıyor (en alta düşme sorunu giderildi)
