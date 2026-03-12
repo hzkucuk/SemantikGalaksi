@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.34.0] - 2025-07-28
+### Özellik
+- **Son Konum Hafızası**: Kullanıcının son ziyaret ettiği ayet `localStorage`'a kaydedilir — uygulama yeniden açıldığında Fatiha yerine kaldığı yerden devam eder (EXE + Web)
+- **Etkilenen dosyalar:** `Frontend/js/warp.js`, `Frontend/js/data-loader.js`
+
 ## [0.33.3] - 2025-07-28
 ### İyileştirme
 - **GitHub Release Dual MSI**: `release.yml` artık hem Server hem Client MSI üretip release'e ekliyor — tek MSI yerine iki paket yayınlanıyor

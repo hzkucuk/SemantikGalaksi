@@ -5,6 +5,7 @@ var warpTo = (node) => {
     warpStart.copy(camera.position); warpTarget.set(node.x, node.y, node.z);
     warpEnd.set(node.x + 4000, node.y + 8000, node.z + 12000);
     showHUD(node);
+    try { localStorage.setItem('sgx_last_node', node.id); } catch(e) {}
 };
 window.warpToId = (id) => { var t = nodes.find(n => n.id === id); if(t) warpTo(t); };
 

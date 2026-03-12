@@ -368,12 +368,19 @@ var processData = (data) => {
     rootMap.forEach(function(ids) { if (ids.length >= 2) connectedRoots++; });
     sceneStats.surahCount = surahIds.length;
     sceneStats.ayahCount = nodes.length;
-    sceneStats.totalNodes = surahGroups.length + ayahNodes.length + (starField ? 1 : 0) + nebulaMeshes.length + cosmicDustLanes.length + (spaceDust ? 1 : 0);
+    sceneStats.totalNodes = surahGroups.length + ayahNodes.length + nebulaMeshes.length + cosmicDustLanes.length + (spaceDust ? 1 : 0);
     sceneStats.uniqueRoots = rootMap.size;
     sceneStats.connectedRoots = connectedRoots;
     sceneStats.lineSegmentCount = lineNodePairs.length;
     sceneStats.layout = currentLayout;
     updateStatsPanel();
 
-    setTimeout(() => { if(nodes.length > 0) warpTo(nodes[0]); }, 100);
+    setTimeout(() => {
+        if(nodes.length > 0) {
+            var lastId = null;
+            try { lastId = localStorage.getItem('sgx_last_node'); } catch(e) {}
+            var target = lastId ? nodes.find(n => n.id === lastId) : null;
+            warpTo(target || nodes[0]);
+        }
+    }, 100);
 };
