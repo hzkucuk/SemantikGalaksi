@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.32.0] - 2025-07-28
+### Özellik
+- **Sure Seslendirme**: HUD paneline mor 📖 buton eklendi — Süleymaniye Vakfı MP3 ile tam sure dinleme
+- **Ayet TTS Ayrımı**: Mevcut ▶ butonu eski davranışa döndürüldü (Gemini TTS → Tarayıcı TTS), MP3 ayrı butona taşındı
+- **Eksik Dipnot Bildirimi**: Dipnotu bulunmayan ayetlerde bilgilendirme mesajı gösterilir
+- **Etkilenen dosyalar:** `Frontend/js/hud.js`, `Frontend/index.html`
+
 ## [0.31.1] - 2025-07-28
 ### Düzeltme
 - **Referans Düzeltmeleri**: 3 hatalı ayet referansı düzeltildi

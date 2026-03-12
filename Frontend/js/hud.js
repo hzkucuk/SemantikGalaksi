@@ -67,8 +67,11 @@ var showHUD = (n) => {
     stopAudio();
     isAudioLoading = false;
     activeSpeakBtn = null;
+    if (surahAudioPlayer) { surahAudioPlayer.pause(); surahAudioPlayer = null; }
     var hudSpeakBtn = document.getElementById('hud-speak-btn');
     if (hudSpeakBtn) hudSpeakBtn.textContent = '▶';
+    var hudSurahBtn = document.getElementById('hud-surah-btn');
+    if (hudSurahBtn) hudSurahBtn.textContent = '📖';
     updateHighlightLines(n);
     var panel = document.getElementById('hud-panel');
     panel.classList.remove('hidden');
@@ -256,19 +259,7 @@ window.speakThis = async (btn, nodeId) => {
     activeSpeakBtn = btn;
     btn.textContent = '⏳';
 
-    // Öncelik 1: Veri setindeki audio URL'si (doğrudan MP3)
-    if (node.audio) {
-        try {
-            currentAudio = new Audio(node.audio);
-            currentAudio.play();
-            btn.textContent = '⏹';
-            currentAudio.onended = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
-            currentAudio.onerror = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
-            return;
-        } catch(e) { currentAudio = null; }
-    }
-
-    // Öncelik 2: Gemini TTS
+    // Öncelik 1: Gemini TTS
     if (!apiKey) { apiKey = await KeyManager.getWorkingKey(); }
     var success = apiKey ? await speakAyah(text) : false;
     if (success && currentAudio) {
@@ -276,7 +267,7 @@ window.speakThis = async (btn, nodeId) => {
         currentAudio.onended = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
         currentAudio.onerror = () => { btn.textContent = '▶'; currentAudio = null; activeSpeakBtn = null; };
     } else {
-        // Öncelik 3: Tarayıcı TTS
+        // Öncelik 2: Tarayıcı TTS
         var utter = speakWithBrowser(text);
         if (utter) {
             btn.textContent = '⏹';
@@ -294,3 +285,30 @@ window.speakThis = async (btn, nodeId) => {
                 if (!currentHudNode) return;
                 await window.speakThis(btn, currentHudNode.id);
             };
+
+var surahAudioPlayer = null;
+
+window.speakSurah = (btn) => {
+    if (!currentHudNode) return;
+    // Durdurma kontrolü
+    if (surahAudioPlayer) {
+        surahAudioPlayer.pause();
+        surahAudioPlayer = null;
+        btn.textContent = '📖';
+        return;
+    }
+    // Sure numarasından MP3 URL oluştur
+    var surahNum = currentHudNode.id.split(':')[0];
+    var audioUrl = 'https://www.suleymaniyevakfimeali.com/Content/Voices/' + surahNum + '.mp3';
+    btn.textContent = '⏳';
+    surahAudioPlayer = new Audio(audioUrl);
+    surahAudioPlayer.play().then(function() {
+        btn.textContent = '⏹';
+    }).catch(function() {
+        btn.textContent = '❌';
+        setTimeout(function() { btn.textContent = '📖'; }, 2000);
+        surahAudioPlayer = null;
+    });
+    surahAudioPlayer.onended = function() { btn.textContent = '📖'; surahAudioPlayer = null; };
+    surahAudioPlayer.onerror = function() { btn.textContent = '❌'; setTimeout(function() { btn.textContent = '📖'; }, 2000); surahAudioPlayer = null; };
+};
