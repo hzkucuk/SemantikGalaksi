@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.35.1] - 2025-07-28
+### İyileştirme
+- **Mobil Landscape Zorlama**: Mobil cihazlarda uygulama yalnızca yatay modda çalışır — dikey modda “Cihazınızı Yatay Çevirin” uyarısı gösterilir
+- **Web Mod Buton Kısıtlaması**: Web modda "Veri Oku", "Veri Setleri" ve "JSON Editör" butonları soluklaştırılıp devre dışı bırakılır, üstüne gelindiğinde "Lokal çalışma versiyonunda kullanılabilir" tooltip gösterilir
+- **Etkilenen dosyalar:** `Frontend/index.html`, `Frontend/js/loading.js`
+
 ## [0.35.0] - 2025-07-28
 ### Release
 - **v0.35.0 Release**: TTS düzeltmesi + Otomatik güncelleme sistemi içeren kararlı sürüm

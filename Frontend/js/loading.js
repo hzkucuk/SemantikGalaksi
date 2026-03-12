@@ -107,6 +107,12 @@ var hideLoadingScreen = () => {
 window.onload = async () => {
     isDesktopMode = await DatasetStore._checkServer();
     playBesmeleAudio();
+
+    // Web modda veri yazma butonlarını devre dışı bırak
+    if (!isDesktopMode) {
+        _disableWebOnlyButtons();
+    }
+
     var authValid = false;
 
     if (isDesktopMode && authToken) {
@@ -146,3 +152,28 @@ window.onload = async () => {
         init();
     }
 };
+
+function _disableWebOnlyButtons() {
+    var ids = ['file-input-label', null, 'editor-btn-header'];
+    var selectors = [
+        document.getElementById('file-input-label'),
+        document.querySelector('button[onclick="openDatasets()"]'),
+        document.getElementById('editor-btn-header')
+    ];
+    var tip = 'Lokal çalışma versiyonunda kullanılabilir';
+    selectors.forEach(function(btn) {
+        if (!btn) return;
+        btn.classList.add('hdr-btn-web-disabled');
+        btn.removeAttribute('onclick');
+        btn.style.pointerEvents = 'none';
+        var wrap = document.createElement('div');
+        wrap.className = 'hdr-btn-web-disabled-wrap';
+        wrap.style.display = 'inline-flex';
+        btn.parentNode.insertBefore(wrap, btn);
+        wrap.appendChild(btn);
+        var tt = document.createElement('div');
+        tt.className = 'web-disabled-tooltip';
+        tt.textContent = tip;
+        wrap.appendChild(tt);
+    });
+}
