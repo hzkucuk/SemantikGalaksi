@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [0.34.4] - 2025-07-28
+### Düzeltme
+- **TTS Düzeltme**: `temperature: 0` parametresi Gemini TTS API'da HTTP 500 hatasına neden oluyordu — kaldırıldı, TTS yeniden çalışır durumda
+- **Besmele Yenileme**: `besmele.wav` yeni API anahtarı ile yeniden oluşturuldu
+### Özellik
+- **Otomatik Güncelleme Sistemi**: Masaüstü EXE açılışta GitHub Release API üzerinden yeni sürüm kontrolü yapar. Güncelleme varsa bildirim gösterir, kullanıcı onaylarsa mevcut verileri (webview_data, notes, config.json, datasets, DB) ZIP olarak yedekler ve yeni MSI'yı indirip kurar. Veri kaybı olmaz.
+- **Etkilenen dosyalar:** `Frontend/js/audio.js`, `DataEngine/generate_besmele_audio.py`, `Frontend/besmele.wav`, `DataEngine/updater.py` (yeni), `DataEngine/desktop_app.py`, `setup.py`
+
 ## [0.34.3] - 2025-07-28
 ### İyileştirme
 - **TTS Ses Tutarlılığı**: `temperature: 0` eklendi — Gemini TTS artık deterministik ses üretiyor, her çağrıda aynı kararlı ses tonu

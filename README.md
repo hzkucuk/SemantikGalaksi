@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  S%C3%BCr%C3%BCm-0.34.3-34d399
+  S%C3%BCr%C3%BCm-0.34.4-34d399
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -183,6 +183,13 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - Neon cyan glow, halka animasyonu, flicker efekti, mor radyal aksan
 - Besmele bitene kadar loading ekranı kalır (minimum süre guard)
 
+### 🔄 Otomatik Güncelleme (v0.34.4)
+- Uygulama açılışta **GitHub Release API** üzerinden yeni sürüm kontrolü yapar
+- Yeşil toast bildirimi ile kullanıcıya yeni sürüm sunulur (“Güncelle” / “Kapat”)
+- Güncelleme öncesi tüm kullanıcı verileri (notlar, config, datasets, DB) **ZIP olarak yedeklenir**
+- MSI sessiz kurulum (`msiexec /passive /norestart`)
+- Maksimum 5 yedek tutulur, eski yedekler otomatik silinir
+
 ### 🔐 Kimlik Doğrulama ve Yetkilendirme
 - Token tabanlı oturum, SHA-256 + salt şifreleme
 - 3 rol: **admin** (tam yetki), **editor** (CRUD), **viewer** (salt okunur)
@@ -191,6 +198,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.34.4 | **TTS Düzeltme**: `temperature:0` Gemini TTS'i bozuyordu (HTTP 500) — kaldırıldı. **Otomatik Güncelleme**: GitHub Release kontrolü, ZIP yedekleme, sessiz MSI kurulumu |
 | v0.33.0 | **MSI Server/Client**: Kurulum tipi seçimi, **Besmele**: Süleymaniye Vakfı meali, **Kök Renk**: 16 ayrık renk index bazlı atama |
 | v0.32.2 | **Zayıf Harf Eşdeğerlik Kontrolü**: İndirgenmiş kök eşleşmesinde ا/و/ي eşdeğerliği devre dışı — sahte renklendirme engellendi |
 | v0.32.1 | **Kok Vurgulama Duzeltmesi**: Sedde destegi eklendi, yanlis pozitif eslesmeler engellendi — tum kokler dogru renkleniyor |
@@ -237,6 +245,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 │   ├── Auth Module — token, session, RBAC                │
 │   ├── Dataset Manager — JSON dosya CRUD                 │
 │   ├── Notes Manager — kullanıcı bazlı not depolama      │
+│   ├── Updater — GitHub Release kontrol + ZIP yedek + MSI │
 │   └── API Key Bridge — pywebview JS↔Python köprüsü     │
 │                                                         │
 ├─────────────────────────────────────────────────────────┤
@@ -283,6 +292,7 @@ SemantikGalaksi/
 │   └── datasets/                 # Kullanıcı veri setleri
 ├── SemantikGalaksi.spec          # PyInstaller build tanımı
 ├── build_exe.bat                 # EXE build script'i
+├── VERSION                       # Tek kaynak sürüm dosyası
 ├── README.md                     # Bu dosya
 ├── INSTALL.md                    # Detaylı kurulum kılavuzu
 ├── FEATURES.md                   # Özellik detayları
@@ -667,6 +677,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.34.4** | 2025-07-28 | TTS düzeltme (temperature:0 kaldırıldı), Otomatik güncelleme sistemi (GitHub Release + ZIP yedek + sessiz MSI) |
 | **0.33.0** | 2025-07-28 | MSI Server/Client modu, Besmele Süleymaniye meali, 16 ayrık kök renk paleti |
 | **0.32.2** | 2025-07-28 | Zayıf harf eşdeğerlik kontrolü — indirgenmiş kök sahte eşleşme engelleme |
 | **0.32.1** | 2025-07-28 | Şedde desteği, yanlış pozitif kök eşleşme engelleme |

@@ -72,6 +72,11 @@ config_src = os.path.join(DATAENGINE_DIR, "config.json")
 if os.path.exists(config_src):
     include_files.append((config_src, "config.json"))
 
+# VERSION dosyası (auto-update sürüm karşılaştırması için)
+version_src = os.path.join(ROOT_DIR, "VERSION")
+if os.path.exists(version_src):
+    include_files.append((version_src, "VERSION"))
+
 # ── Build seçenekleri ─────────────────────────────────────────────────
 build_exe_options = {
     "packages": [
@@ -84,6 +89,7 @@ build_exe_options = {
     ],
     "includes": [
         "webview",
+        "updater",
     ],
     "excludes": [
         "tkinter", "unittest", "email", "xml.etree",

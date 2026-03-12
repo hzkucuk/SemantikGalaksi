@@ -49,7 +49,6 @@ def generate(api_key: str) -> bool:
             }]
         }],
         "generationConfig": {
-            "temperature": 0,
             "responseModalities": ["AUDIO"],
             "speechConfig": {
                 "voiceConfig": {
@@ -69,7 +68,7 @@ def generate(api_key: str) -> bool:
 
     print("⏳ Gemini TTS API çağrılıyor...")
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=90) as resp:
             result = json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")

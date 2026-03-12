@@ -14,6 +14,11 @@ import secrets
 import struct
 import datetime
 
+try:
+    import updater
+except ImportError:
+    updater = None
+
 # --- AYARLAR ---
 def _get_base_dir():
     """PyInstaller veya cx_Freeze ile paketlenmiş ya da normal çalışmaya göre kök dizini belirler."""
@@ -182,6 +187,32 @@ class ApiKeyBridge:
             winsound.PlaySound(None, winsound.SND_PURGE)
         except Exception:
             pass
+
+    def check_update(self):
+        """GitHub'dan güncelleme kontrolü"""
+        if not updater:
+            return {'available': False, 'error': 'Updater not available'}
+        return updater.check_for_update()
+
+    def do_update(self, msi_url, msi_name):
+        """Yedek al → MSI indir → yükleyici başlat → uygulamayı kapat"""
+        if not updater:
+            return {'error': 'Updater not available'}
+        try:
+            updater.download_and_install(msi_url, msi_name)
+            os._exit(0)
+        except Exception as e:
+            return {'error': str(e)}
+
+    def create_backup(self):
+        """Manuel yedekleme"""
+        if not updater:
+            return {'error': 'Updater not available'}
+        try:
+            path = updater.create_backup()
+            return {'path': path}
+        except Exception as e:
+            return {'error': str(e)}
 
 
 def get_local_ip():
@@ -908,6 +939,62 @@ class _ThreadingServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
     daemon_threads = True
 
 
+def _build_update_toast_js(info):
+    """Güncelleme bildirimi için JS kodu oluştur"""
+    data = json.dumps({
+        'url': info['msi_url'],
+        'name': info.get('msi_name', 'update.msi'),
+        'current': info['current'],
+        'latest': info['latest'],
+        'size': info.get('msi_size', 0)
+    })
+    return """(function() {
+    var d = """ + data + """;
+    window._sgxUpdate = d;
+    var c = document.getElementById('toast-container');
+    if (!c || document.getElementById('update-toast')) return;
+    var t = document.createElement('div');
+    t.id = 'update-toast';
+    t.style.cssText = 'pointer-events:auto;background:rgba(0,15,30,0.97);border:1px solid #22c55e;border-radius:16px;padding:18px 22px;min-width:300px;backdrop-filter:blur(20px);box-shadow:0 20px 60px rgba(0,0,0,0.7);';
+    var sizeMB = d.size > 0 ? ' \u00b7 ' + (d.size / 1024 / 1024).toFixed(1) + ' MB' : '';
+    var h = document.createElement('div');
+    h.style.cssText = 'display:flex;align-items:center;gap:10px;margin-bottom:12px;';
+    h.innerHTML = '<span style="font-size:22px">\ud83d\ude80</span><div><div style="font-size:11px;font-weight:900;color:#22c55e;text-transform:uppercase;letter-spacing:0.12em">G\u00fcncelleme Mevcut</div><div style="font-size:10px;color:#64748b;margin-top:2px">v' + d.current + ' \u2192 v' + d.latest + sizeMB + '</div></div>';
+    t.appendChild(h);
+    var btns = document.createElement('div');
+    btns.style.cssText = 'display:flex;gap:8px;';
+    var ubtn = document.createElement('button');
+    ubtn.textContent = 'G\u00fcncelle';
+    ubtn.style.cssText = 'flex:1;padding:8px 12px;border-radius:10px;border:1px solid #22c55e;background:rgba(34,197,94,0.15);color:#22c55e;font-size:11px;font-weight:700;cursor:pointer;';
+    ubtn.onclick = function() { ubtn.textContent = '\u23f3 \u0130ndiriliyor...'; ubtn.disabled = true; window.pywebview.api.do_update(d.url, d.name); };
+    btns.appendChild(ubtn);
+    var dbtn = document.createElement('button');
+    dbtn.textContent = 'Sonra';
+    dbtn.style.cssText = 'padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05);color:#64748b;font-size:11px;cursor:pointer;';
+    dbtn.onclick = function() { t.remove(); };
+    btns.appendChild(dbtn);
+    t.appendChild(btns);
+    c.appendChild(t);
+})();"""
+
+
+def _start_update_check(win):
+    """Arka planda güncelleme kontrolü yap ve varsa toast göster"""
+    if not updater or not getattr(sys, 'frozen', False):
+        return
+
+    def _check():
+        time.sleep(5)
+        try:
+            info = updater.check_for_update()
+            if info.get('available') and info.get('msi_url'):
+                win.evaluate_js(_build_update_toast_js(info))
+        except Exception:
+            pass
+
+    threading.Thread(target=_check, daemon=True).start()
+
+
 def sunucuyu_baslat():
     """Arka planda sessiz bir sunucu başlatır"""
     global PORT, WS_PORT
@@ -970,6 +1057,7 @@ if __name__ == '__main__':
                         )
                     except Exception:
                         pass
+                _start_update_check(window)
 
             window.events.loaded += on_loaded
             webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
@@ -1018,6 +1106,7 @@ if __name__ == '__main__':
                         )
                     except Exception:
                         pass
+                _start_update_check(window)
 
             window.events.loaded += on_loaded
             webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)

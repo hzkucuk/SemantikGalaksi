@@ -108,6 +108,30 @@ HUD panelindeki ayet detay kartında ve ilişkili ayet listesinde bulunan seslen
 | HUD ayet detay kartı | `speakCurrentHudAyah()` | Aktif ayetin mealini seslendirir |
 | İlişkili ayet listesi | `speakThis(btn, nodeId)` | Her ilişkili ayetin yanındaki ▶ butonu |
 
+## Otomatik Güncelleme Sistemi (v0.34.4)
+Masaüstü EXE açılışta GitHub Release API üzerinden yeni sürüm kontrolü yapar. Güncelleme varsa kullanıcıya bildirim gösterir.
+
+| Bileşen | Açıklama |
+|---------|----------|
+| Sürüm Kontrolü | GitHub Release API'den en son sürüm etiketi çekilir, yerel VERSION ile karşılaştırılır |
+| Bildirim | Yeşil toast bildirimi ile kullanıcıya yeni sürüm sunulur ("Güncelle" / "Kapat") |
+| Yedekleme | Güncelleme öncesi `%APPDATA%/SemantikGalaksi/backups/` altına ZIP yedek alınır |
+| MSI İndirme | GitHub Release'den Server MSI paketi `%TEMP%` dizinine indirilir |
+| Sessiz Kurulum | `msiexec /passive /norestart` ile arka planda kurulum yapılır |
+
+### Yedekleme Kapsamı
+| Veri | Dizin/Dosya |
+|------|-------------|
+| WebView verileri | `webview_data/` |
+| Kullanıcı notları | `notes/` |
+| Yapılandırma | `config.json` |
+| Veri setleri | `Frontend/datasets/` |
+| Sürüm bilgisi | `VERSION` |
+
+- **Maks Yedek**: En fazla 5 ZIP tutulur, eskiler otomatik silinir
+- **Veri Kaybı Koruması**: Kullanıcının düzenlediği JSON verileri, notlar ve ayarlar güncelleme sırasında korunur
+- **Başlatma Gecikmesi**: Uygulama yüklendikten 5 saniye sonra arka planda kontrol başlar
+
 ## Arapça Arama Desteği
 Hem üst arama çubuğu hem HUD panelindeki semantik bağlantı araması Arapça girişi destekler.
 
