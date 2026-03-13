@@ -77,6 +77,11 @@ version_src = os.path.join(ROOT_DIR, "VERSION")
 if os.path.exists(version_src):
     include_files.append((version_src, "VERSION"))
 
+# Uygulama ikonu
+icon_src = os.path.join(ROOT_DIR, "app_icon.ico")
+if os.path.exists(icon_src):
+    include_files.append((icon_src, "app_icon.ico"))
+
 # ── Build seçenekleri ─────────────────────────────────────────────────
 # cx_Freeze'in updater modülünü bulabilmesi için DataEngine'i path'e ekle
 sys.path.insert(0, DATAENGINE_DIR)
@@ -162,7 +167,7 @@ bdist_msi_options = {
     "data": msi_data,
     "environment_variables": [],
     "upgrade_code": _upgrade_code,
-    "install_icon": None,
+    "install_icon": os.path.join(ROOT_DIR, "app_icon.ico"),
     "all_users": True,
     "initial_target_dir": r"C:\SemantikGalaksi",
     "summary_data": {
@@ -180,6 +185,7 @@ executables = [
         target_name="SemantikGalaksi.exe",
         shortcut_name="SemantikGalaksi",
         shortcut_dir="StartMenuFolder",
+        icon=os.path.join(ROOT_DIR, "app_icon.ico"),
     ),
 ]
 

@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.37.1] - 2025-07-28
+### İyileştirme
+- **Uygulama İkonu**: Ay-yıldız tasarımlı uzay temalı ikon eklendi — EXE, MSI installer, masaüstü ve başlat menüsü kısayollarında görünür
+- **Etkilenen dosyalar:** `app_icon.ico`, `setup.py`
+
 ## [0.37.0] - 2025-07-28
 ### Release
 - **v0.37.0 Release**: Kullanıcı verileri artık %APPDATA% altında korunuyor — MSI kaldırılsa bile notlar, veri setleri ve API anahtarları güvende
