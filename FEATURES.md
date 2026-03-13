@@ -115,7 +115,7 @@ Masaüstü EXE açılışta GitHub Release API üzerinden yeni sürüm kontrolü
 |---------|----------|
 | Sürüm Kontrolü | GitHub Release API'den en son sürüm etiketi çekilir, yerel VERSION ile karşılaştırılır |
 | Bildirim | Yeşil toast bildirimi ile kullanıcıya yeni sürüm sunulur ("Güncelle" / "Kapat") |
-| Yedekleme | Güncelleme öncesi uygulama klasörü/backups/ altına ZIP yedek alınır |
+| Yedekleme | Güncelleme öncesi `%APPDATA%/SemantikGalaksi/backups/` altına ZIP yedek alınır |
 | MSI İndirme | GitHub Release'den Server MSI paketi `%TEMP%` dizinine indirilir |
 | Sessiz Kurulum | `msiexec /passive /norestart` ile arka planda kurulum yapılır |
 
@@ -158,6 +158,21 @@ Hem üst arama çubuğu hem HUD panelindeki semantik bağlantı araması Arapça
 - **RTL modu**: Klavye aktifken input yönü sağdan sola döner, Amiri fontu aktif olur
 - **4 satır düzen**: Harfler (3 satır) + Harekeler & kontrol tuşları (1 satır)
 - **Sonuç gösterimi**: Arapça aramada sonuçlarda ayet metni ve eşleşen kökler (🔤) gösterilir
+
+## HUD Slider Panel (v0.39.2+)
+Modern soldan kayan bilgi paneli — glassmorphism arka plan, seçilen ayetin tüm detaylarını görüntüler.
+
+| Bileşen | Detay |
+|---------|-------|
+| Panel | Sol kenar, 420px genişlik, `translateX(-100%)` gizli, `top:57px` (header altı) |
+| Animasyon | `cubic-bezier(0.4, 0, 0.2, 1)` 500ms geçiş |
+| Accent Bar | Sol→sağ gradient (cyan → mor), animasyonlu parlama |
+| 4 Sekme | Ayet / Kökler / Bağlantılar / İstatistik — tıklama ile içerik geçişi |
+| Floating Toggle | Panelden bağımsız, sol kenarda sabit — node seçilince görünür |
+| Header Butonu | 📋 toolbar butonu ile tek tıkla aç/kapat |
+| Mobil Swipe | `touchstart/touchend`, sola 80px kaydırma ile kapama |
+| Blur-free | Panel: `backdrop-filter:none`, backdrop: `transparent` |
+| Pinned Tooltip | Hover ile ayet kartı bilgisi panelin sağında sabit konumda |
 
 ## WebGL Hyperspace Warp Efekti (v0.25.1 — Millennium Falcon GIF Referans)
 Sureler arası geçişlerde GPU-hızlandırmalı hyperspace warp efekti. Millennium Falcon lightspeed GIF'ine sadık: **arka plan karanlık kalır, efektin %90'ı yıldız çizgileridir**.

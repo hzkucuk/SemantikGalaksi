@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.40.0] - 2025-07-28
+### Release
+- **v0.40.0 Release**: HUD Slider Panel (soldan kayan modern slider, 4 sekmeli navigasyon, floating toggle butonu) + yedekleme sistemi %APPDATA% uyumu içeren kararlı sürüm
+- **Etkilenen dosyalar:** `Frontend/index.html`, `Frontend/js/hud.js`, `Frontend/js/settings.js`, `Frontend/js/tooltip.js`, `DataEngine/updater.py`, `README.md`
+
 ## [0.39.6] - 2025-07-28
 ### Düzeltme
 - **Floating HUD Toggle Butonu**: Panelden bağımsız, sol kenarda sabit duran aç/kapat butonu eklendi — bir ayet seçildikten sonra her zaman görünür, panel açıkken panelle birlikte kayar

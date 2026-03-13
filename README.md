@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  S%C3%BCr%C3%BCm-0.39.6-34d399
+  S%C3%BCr%C3%BCm-0.40.0-34d399
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -165,11 +165,15 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **ع butonu** ile Arapça sanal klavye (3 konumda: arama, HUD, editör)
 - RTL mod: Klavye aktifken input yönü sağdan sola + Amiri fontu
 
-### 📌 HUD Pinned Tooltip (v0.21.2)
-- Ayet kartlarına hover yapılınca tooltip HUD'un yanında **sabit konumda** açılır
-- Fare başka karta geçince içerik otomatik güncellenir
-- ✕ kapatma butonu, HUD kapanınca tooltip de otomatik kapanır
-- `buildTooltipContent()` helper ile DRY tooltip HTML üretimi
+### 📌 HUD Slider Panel (v0.39.2+)
+- **Soldan kayan modern slider**: Glassmorphism arka plan, animasyonlu accent bar (cyan→mor gradient), drag handle
+- **4 sekmeli navigasyon**: Ayet / Kökler / Bağlantılar / İstatistik — sekme geçişinde scroll sıfırlanır
+- **Floating toggle butonu**: Panelden bağımsız, sol kenarda sabit — bir ayet seçildiğinde görünür, panel açıkken panelle birlikte kayar
+- **Header 📋 butonu**: Toolbar'dan tek tıkla HUD açma/kapama
+- **Mobil swipe desteği**: Sola kaydırarak panel kapatma (80px eşik)
+- **Blur-free tasarım**: Arka plandaki 3D uzay net kalır, panel opak koyu arka plan
+- **Pinned Tooltip**: Ayet kartlarına hover yapılınca tooltip panelin sağında sabit konumda açılır
+- `cubic-bezier(0.4, 0, 0.2, 1)` animasyon, `buildTooltipContent()` helper ile DRY HTML üretimi
 
 ### 📚 Arapça Kök Sözlüğü (v0.21.3)
 - **2139 Arapça kök** — Gemini AI ile anlam, Arapça anlam, telaffuz ve türemiş kelimeler
@@ -186,7 +190,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔄 Otomatik Güncelleme (v0.34.4)
 - Uygulama açılışta **GitHub Release API** üzerinden yeni sürüm kontrolü yapar
 - Yeşil toast bildirimi ile kullanıcıya yeni sürüm sunulur (“Güncelle” / “Kapat”)
-- Güncelleme öncesi tüm kullanıcı verileri (notlar, config, datasets, DB) uygulama klasörü altında **ZIP olarak yedeklenir**
+- Güncelleme öncesi tüm kullanıcı verileri (notlar, config, datasets, DB) **`%APPDATA%/SemantikGalaksi/backups/`** altında **ZIP olarak yedeklenir**
 - MSI sessiz kurulum (`msiexec /passive /norestart`)
 - Maksimum 5 yedek tutulur, eski yedekler otomatik silinir
 
@@ -214,6 +218,13 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.40.0 | 🚀 **Release**: HUD Slider Panel + Floating Toggle + Yedekleme %APPDATA% uyumu |
+| v0.39.6 | **Floating HUD Toggle**: Panelden bağımsız sol kenarda sabit aç/kapat butonu |
+| v0.39.5 | **Header HUD Butonu + Blur Kaldırma**: 📋 toggle butonu, panel/backdrop blur tamamen kaldırıldı |
+| v0.39.4 | **HUD Header Çakışması**: Panel `top:57px` ile header altından başlıyor |
+| v0.39.3 | **HUD Sol Tarafa Taşındı**: Slider sağdan sola, backdrop blur kaldırıldı |
+| v0.39.2 | **HUD Slider Modu**: Glassmorphism, accent bar, 4 sekmeli navigasyon, mobil swipe |
+| v0.39.1 | **Yedekleme %APPDATA% Uyumu**: updater.py yedekleme yolları `%APPDATA%` altına güncellendi |
 | v0.38.0 | **Release**: Ay-yıldız uygulama ikonu + `%APPDATA%` veri koruması içeren kararlı sürüm |
 | v0.37.1 | **Uygulama İkonu**: Ay-yıldız tasarımlı uzay temalı ikon — EXE, MSI, masaüstü ve başlat menüsü kısayollarında görünür |
 | v0.37.0 | **Veri Koruması Release**: Kullanıcı verileri `%APPDATA%` altında, otomatik migrasyon |
@@ -610,6 +621,7 @@ pyinstaller>=6.0        # EXE paketleme (opsiyonel)
 |-------|-------|
 | 🌌 | Yerleşim modeli değiştir (Galaksi / Bulutsu / Küp / Küre) |
 | 📓 | Not editörü aç/kapat |
+| 📋 | HUD slider panel aç/kapat |
 | 📂 | Veri seti yöneticisi |
 | ⚙️ | Ayarlar (kullanıcı yönetimi, API anahtarları) |
 | 🔑 | API anahtar yönetimi |
@@ -714,6 +726,14 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.40.0** | 2025-07-28 | 🚀 Release — HUD Slider Panel + Floating Toggle + Yedekleme %APPDATA% uyumu |
+| **0.39.6** | 2025-07-28 | Floating HUD toggle butonu (panelden bağımsız) |
+| **0.39.5** | 2025-07-28 | Header 📋 HUD butonu, panel/backdrop blur tamamen kaldırıldı |
+| **0.39.4** | 2025-07-28 | HUD panel header çakışması düzeltmesi |
+| **0.39.3** | 2025-07-28 | HUD sol tarafa taşındı, backdrop blur kaldırıldı |
+| **0.39.2** | 2025-07-28 | HUD Slider modu — glassmorphism, sekmeli navigasyon, swipe |
+| **0.39.1** | 2025-07-28 | Yedekleme sistemi %APPDATA% uyumu |
+| **0.39.0** | 2025-07-28 | 🚀 Release — README güncelleme + ikon + APPDATA |
 | **0.38.0** | 2025-07-28 | 🚀 Release — Ay-yıldız ikonu + APPDATA veri koruması |
 | **0.37.1** | 2025-07-28 | Uygulama ikonu eklendi (EXE + MSI + kısayollar) |
 | **0.37.0** | 2025-07-28 | 🚀 Release — Kullanıcı verileri %APPDATA% koruması |
