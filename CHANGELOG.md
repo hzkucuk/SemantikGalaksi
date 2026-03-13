@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.39.4] - 2025-07-28
+### Düzeltme
+- **HUD Header Çakışması**: Slider panel artık header'ın altından başlıyor (`top: 57px`), header'ın arkasında kalmıyor
+- **Etkilenen dosya:** `Frontend/index.html`
+
 ## [0.39.3] - 2025-07-28
 ### İyileştirme
 - **HUD Sol Tarafa Taşındı**: Slider panel sağdan sola taşındı, drag handle ve accent bar sağ kenara, swipe yönü sola uyarlandı
