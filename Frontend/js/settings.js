@@ -48,7 +48,7 @@ Türkçe yaz, kısa ve öz tut.`;
         btn.innerHTML = '<span class="text-lg">🤖</span> Yapay Zekâ Analizi';
     }
 };
-document.getElementById('close-hud').onclick = () => { document.getElementById('hud-panel').classList.add('hidden'); stopAudio(); closeHudTooltip(); };
+document.getElementById('close-hud').onclick = () => { closeHUD(); };
 window.onresize = () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();

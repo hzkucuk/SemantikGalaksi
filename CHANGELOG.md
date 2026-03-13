@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.39.2] - 2025-07-28
+### İyileştirme
+- **HUD Slider Modu**: Bilgi paneli sağdan kayan modern slider tasarımına dönüştürüldü — glassmorphism arka plan, animasyonlu accent bar, drag handle, sekmeli navigasyon (Ayet/Kökler/Bağlantılar/İstatistik), backdrop overlay, mobil swipe desteği
+- **Etkilenen dosyalar:** `Frontend/index.html`, `Frontend/js/hud.js`, `Frontend/js/settings.js`, `Frontend/js/tooltip.js`
+
 ## [0.39.1] - 2025-07-28
 ### Düzeltme
 - **Yedekleme Sistemi %APPDATA% Uyumu**: `updater.py` yedekleme fonksiyonları eski kurulum dizini yerine `%APPDATA%/SemantikGalaksi` altından veri okuyor ve yedek ZIP'leri artık `%APPDATA%/SemantikGalaksi/backups/` altında saklanıyor — MSI kaldırılsa bile yedekler korunur

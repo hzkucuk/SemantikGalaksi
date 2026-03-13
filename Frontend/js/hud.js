@@ -73,8 +73,18 @@ var showHUD = (n) => {
     var hudSurahBtn = document.getElementById('hud-surah-btn');
     if (hudSurahBtn) hudSurahBtn.textContent = '📖';
     updateHighlightLines(n);
+
+    // Panel + backdrop aç
     var panel = document.getElementById('hud-panel');
+    var backdrop = document.getElementById('hud-backdrop');
     panel.classList.remove('hidden');
+    // Force reflow for animation
+    void panel.offsetWidth;
+    panel.classList.add('hud-open');
+    if (backdrop) backdrop.classList.add('active');
+
+    // İlk sekmeyi aktif yap
+    switchHudSection('ayet');
     var arabicHighlighted = highlightArabicText(n.text, n.roots);
     document.getElementById('hud-title').innerText = getSurahTR(n.id);
     document.getElementById('hud-coord').innerText = `KOORDİNAT: ${n.id}`;
@@ -312,3 +322,62 @@ window.speakSurah = (btn) => {
     surahAudioPlayer.onended = function() { btn.textContent = '📖'; surahAudioPlayer = null; };
     surahAudioPlayer.onerror = function() { btn.textContent = '❌'; setTimeout(function() { btn.textContent = '📖'; }, 2000); surahAudioPlayer = null; };
 };
+
+// ── Slider Yönetim Fonksiyonları ─────────────────────────────
+
+var closeHUD = () => {
+    var panel = document.getElementById('hud-panel');
+    var backdrop = document.getElementById('hud-backdrop');
+    panel.classList.remove('hud-open');
+    if (backdrop) backdrop.classList.remove('active');
+    stopAudio();
+    closeHudTooltip();
+    // Animasyon bitince gizle
+    setTimeout(() => { if (!panel.classList.contains('hud-open')) panel.classList.add('hidden'); }, 500);
+};
+window.closeHUD = closeHUD;
+
+var toggleHudSlider = () => {
+    var panel = document.getElementById('hud-panel');
+    if (panel.classList.contains('hud-open')) {
+        closeHUD();
+    } else {
+        panel.classList.remove('hidden');
+        void panel.offsetWidth;
+        panel.classList.add('hud-open');
+        var backdrop = document.getElementById('hud-backdrop');
+        if (backdrop) backdrop.classList.add('active');
+    }
+};
+window.toggleHudSlider = toggleHudSlider;
+
+var switchHudSection = (sectionId) => {
+    // Tab'ları güncelle
+    document.querySelectorAll('.hud-section-tab').forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.section === sectionId);
+    });
+    // Section'ları güncelle
+    document.querySelectorAll('.hud-section').forEach(sec => {
+        sec.classList.remove('active');
+    });
+    var target = document.getElementById('hud-sec-' + sectionId);
+    if (target) target.classList.add('active');
+    // Scroll'u başa al
+    var scrollArea = document.querySelector('.hud-scroll-area');
+    if (scrollArea) scrollArea.scrollTop = 0;
+};
+window.switchHudSection = switchHudSection;
+
+// Mobil swipe desteği
+(function() {
+    var startX = 0;
+    var panel = document.getElementById('hud-panel');
+    if (!panel) return;
+    panel.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+    }, { passive: true });
+    panel.addEventListener('touchend', function(e) {
+        var diffX = e.changedTouches[0].clientX - startX;
+        if (diffX > 80) closeHUD();
+    }, { passive: true });
+})();
