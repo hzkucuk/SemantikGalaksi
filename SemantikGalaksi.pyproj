@@ -25,6 +25,7 @@
     <Compile Include="DataEngine\fix_empty_roots.py" />
     <Compile Include="DataEngine\gemini_client.py" />
     <Compile Include="DataEngine\generate_besmele_audio.py" />
+    <Compile Include="DataEngine\generate_besmele_i18n.py" />
     <Compile Include="DataEngine\quran_extractor_v3.py" />
     <Compile Include="DataEngine\run_pipeline.py" />
     <Compile Include="DataEngine\step1_fetch_quran.py" />
@@ -53,6 +54,7 @@
     <Content Include="Frontend\js\datasets.js" />
     <Content Include="Frontend\js\highlight.js" />
     <Content Include="Frontend\js\hud.js" />
+    <Content Include="Frontend\js\i18n.js" />
     <Content Include="Frontend\js\interaction.js" />
     <Content Include="Frontend\js\key-manager.js" />
     <Content Include="Frontend\js\loading.js" />
@@ -66,6 +68,10 @@
     <Content Include="Frontend\js\tooltip.js" />
     <Content Include="Frontend\js\warp.js" />
     <Content Include="Frontend\js\websocket.js" />
+    <Content Include="Frontend\locales\EN-en.json" />
+    <Content Include="Frontend\locales\ES-es.json" />
+    <Content Include="Frontend\locales\IT-it.json" />
+    <Content Include="Frontend\locales\RU-ru.json" />
     <Content Include="Frontend\quran_data.json" />
     <Content Include="DataEngine\requirements.txt" />
     <Content Include="DataEngine\.env" />
@@ -85,6 +91,7 @@
     <Folder Include="DataEngine\" />
     <Folder Include="Frontend\" />
     <Folder Include="Frontend\js\" />
+    <Folder Include="Frontend\locales\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

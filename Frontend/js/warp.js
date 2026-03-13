@@ -277,7 +277,7 @@ var animate = (now) => {
         var fpsEl = document.getElementById('stat-fps');
         if (fpsEl) fpsEl.textContent = sceneStats.fps;
         var perfEl = document.getElementById('stat-perf');
-        if (perfEl) perfEl.textContent = perfMode === 'low' ? '🔋 Düşük' : '⚡ Yüksek';
+        if (perfEl) perfEl.textContent = perfMode === 'low' ? t('stats.qualityLow') : t('stats.qualityHigh');
     }
     if (composer) {
         // Warp mesh'lerini bloom'dan hariç tut

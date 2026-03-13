@@ -181,6 +181,50 @@ var I18n = (function () {
         'analyzer.exportJSON': '📥 JSON Rapor İndir',
         'analyzer.exportCSV': '📥 CSV Frekans Tablosu',
 
+        // Header Brand
+        'header.appTitle': 'Kur\'an-ı Kerim Kelime Kök Uzayı',
+        'header.appSubtitle': '3D Semantik Analiz',
+        'header.searchPlaceholder': 'Sure, koordinat, meal veya Arapça ara...',
+        'header.arabicKeyboard': 'Arapça Klavye',
+
+        // Stats Panel
+        'stats.title': 'Sahne İstatistikleri',
+        'stats.layout': 'Yerleşim',
+        'stats.surahs': 'Sureler',
+        'stats.ayahs': 'Ayetler',
+        'stats.objects': '3D Nesne',
+        'stats.uniqueRoots': 'Benzersiz Kökler',
+        'stats.connectedRoots': 'Bağlı Kökler',
+        'stats.lineCount': 'Çizgi Sayısı',
+        'stats.fps': 'FPS',
+        'stats.quality': 'Kalite',
+        'stats.qualityHigh': '⚡ Yüksek',
+        'stats.qualityLow': '🔋 Düşük',
+        'stats.tipLayout': 'Aktif 3D uzay yerleşim modeli — Galaksi, Bulutsu, Küp, Küre veya الله kaligrafi',
+        'stats.tipSurahs': 'Kur\'an-ı Kerim\'deki toplam sure sayısı',
+        'stats.tipAyahs': 'Yüklenen veri setindeki toplam ayet sayısı',
+        'stats.tipObjects': 'Sahnedeki toplam 3D nesne sayısı (sure merkezleri + ayetler)',
+        'stats.tipRoots': 'Veri setinde bulunan farklı Arapça sülasi kök sayısı',
+        'stats.tipConnected': 'En az iki ayette ortak geçen ve 3D çizgiyle bağlanan kök sayısı',
+        'stats.tipLines': 'Ortak kökleri birbirine bağlayan 3D çizgi segmenti sayısı',
+        'stats.tipFps': 'Saniyedeki kare sayısı — 60 ideal, 30 altı performans sorunu',
+        'stats.tipQuality': 'Aktif render kalitesi — Yüksek: bloom efekti açık, Düşük: bloom kapalı (daha az GPU)',
+
+        // Tooltip
+        'tooltip.rootConnection': 'Kök Bağlantısı',
+        'tooltip.inQuran': 'Kur\'anda {count} yerde',
+
+        // Search
+        'search.resultVerse': '{count} AYET',
+        'search.resultSurah': '{count} SURE',
+        'search.verse': 'AYET',
+        'search.surah': 'SURE',
+        'search.invalidJson': 'Geçersiz JSON',
+
+        // TTS
+        'tts.promptTR': 'Bu Türkçe duayı güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ',
+        'tts.promptTranslate': 'Translate the following Turkish prayer text into {lang} and read it aloud in {lang} with a strong, deep, assertive male voice. Pronounce every word at the same volume, clearly and powerfully. Do not lower your voice at the end of sentences: ',
+
         // Language
         'lang.title': 'Dil',
         'lang.templateExport': '📋 Çeviri Şablonu İndir',

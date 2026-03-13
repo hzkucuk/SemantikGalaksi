@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.41.1] - 2025-07-28
+### Düzeltme
+- **i18n Eksik Çeviriler**: Başlık (Kur'an-ı Kerim Kelime Kök Uzayı), arama placeholderı, sahne istatistikleri (9 etiket + 9 tooltip), HUD butonları (Seslendir, Sure, Yapay Zekâ Analizi), tooltip (Kök Bağlantısı), arama sonuçları (AYET/SURE) artık dil değişimine uyuyor
+- **TTS Dil Desteği**: Gemini TTS ve tarayıcı TTS seçili dile göre çalışıyor — TR dışında çevir+oku promptı, browser speech lang haritası
+- **Layout/Perf Etiketleri**: Galaksi/Bulutsu/Küp/Küre ve Yüksek/Düşük etiketleri çevriliyor
+- **~40 yeni çeviri anahtarı** tüm locale dosyalarına eklendi (EN/RU/IT/ES)
+
 ## [0.41.0] - 2025-07-28
 ### Yeni Özellik
 - **Çoklu Dil Desteği (i18n)**: Tüm UI metinleri 5 dile çevrildi (Türkçe, İngilizce, Rusça, İtalyanca, İspanyolca)

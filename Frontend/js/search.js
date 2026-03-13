@@ -98,8 +98,8 @@ document.getElementById('search-input').oninput = (e) => {
                 if (searchAyah) {
                     var fullId = `${id}:${searchAyah}`;
                     var ayahNode = nodes.find(n => n.id === fullId);
-                    if (ayahNode) { finalResults.push({ id: fullId, label: `${surahNamesTR[id]} ${searchAyah}`, sub: "AYET", type: 'ayah' }); matchCounts.total++; matchCounts.surahs.add(id); }
-                } else finalResults.push({ id: id, label: `${surahNamesTR[id]}`, sub: "SURE", type: 'surah' });
+                    if (ayahNode) { finalResults.push({ id: fullId, label: `${surahNamesTR[id]} ${searchAyah}`, sub: t('search.verse'), type: 'ayah' }); matchCounts.total++; matchCounts.surahs.add(id); }
+                } else finalResults.push({ id: id, label: `${surahNamesTR[id]}`, sub: t('search.surah'), type: 'surah' });
             }
         });
         nodes.filter(n => normalize(n.translation).includes(qNorm)).forEach(n => {
@@ -108,7 +108,7 @@ document.getElementById('search-input').oninput = (e) => {
         });
     }
     if (finalResults.length > 0) {
-        var statsHtml = `<div class="search-stats-bar"><span>🔍 ${matchCounts.total} AYET</span><span>📍 ${matchCounts.surahs.size} SURE</span></div>`;
+        var statsHtml = `<div class="search-stats-bar"><span>🔍 ${t('search.resultVerse', {count: matchCounts.total})}</span><span>📍 ${t('search.resultSurah', {count: matchCounts.surahs.size})}</span></div>`;
         results.innerHTML = statsHtml + finalResults.slice(0, 200).map(r => `
             <div class="search-item" onmousedown="selectSearch('${r.id}', '${r.type}')">
                 <div class="flex flex-col">
@@ -137,7 +137,7 @@ document.getElementById('file-input').onchange = (e) => {
             activeDatasetName = fname;
             processData(data);
             hasCustomData = true;
-        } catch(err) { alert('Geçersiz JSON: ' + err.message); }
+        } catch(err) { alert(t('search.invalidJson') + ': ' + err.message); }
     };
     r.readAsText(file);
     e.target.value = '';

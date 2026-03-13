@@ -97,12 +97,12 @@ var showLineTooltip = (pair, x, y) => {
     var rootInfo = getRootInfo(pair.root);
     var rootMeaning = rootInfo ? rootInfo.meaning : '';
     tooltip.innerHTML = `
-        <div style="font-size:11px;font-weight:900;color:#00f2ff;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px;">Kök Bağlantısı</div>
+        <div style="font-size:11px;font-weight:900;color:#00f2ff;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px;">${t('tooltip.rootConnection')}</div>
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
             <span style="color:${rootColor};font-size:20px;font-weight:bold;">${pair.root}</span>
             <span style="color:${rootColor};font-size:12px;opacity:0.7;">${rootPron}</span>
         </div>
-        ${rootMeaning ? `<div style="font-size:11px;color:#94a3b8;margin-bottom:10px;font-style:italic;">${rootMeaning}${rootInfo.count ? ' · Kur\'anda ' + rootInfo.count + ' yerde' : ''}</div>` : ''}
+        ${rootMeaning ? `<div style="font-size:11px;color:#94a3b8;margin-bottom:10px;font-style:italic;">${rootMeaning}${rootInfo.count ? ' · ' + t('tooltip.inQuran', {count: rootInfo.count}) : ''}</div>` : ''}
         <div style="font-size:10px;color:#64748b;margin-bottom:6px;">📍 ${nearName}</div>
         <div onclick="hideTooltip();warpToId('${farId}')" style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:rgba(0,242,255,0.08);border:1px solid rgba(0,242,255,0.2);border-radius:8px;cursor:pointer;transition:background 0.2s;" onmouseenter="this.style.background='rgba(0,242,255,0.2)'" onmouseleave="this.style.background='rgba(0,242,255,0.08)'"><span style="color:#00f2ff;font-size:8px;">⬤</span><span style="color:#e2e8f0;font-size:13px;font-weight:600;">→ ${farName}</span></div>`;
     tooltip.style.display = 'block';

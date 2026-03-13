@@ -209,13 +209,13 @@ var switchLayout = (type) => {
     else if (nodes.length > 0) processData({ nodes });
 };
 
-var layoutLabels = { galaxy: '🌌 Galaksi', nebula: '🌫️ Bulutsu', cube: '📦 Küp', sphere: '🔮 Küre', allah: '🕋 الله' };
+var getLayoutLabel = (type) => { var icons = { galaxy: '🌌', nebula: '🌫️', cube: '📦', sphere: '🔮', allah: '🕋' }; return (icons[type] || '') + ' ' + (type === 'allah' ? 'الله' : t('layout.' + type)); };
 
 var updateStatsPanel = () => {
     var p = document.getElementById('stats-panel');
     if (!p) return;
     var s = sceneStats;
-    var layoutName = layoutLabels[s.layout] || s.layout;
+    var layoutName = getLayoutLabel(s.layout);
     p.querySelector('#stat-layout').textContent = layoutName;
     p.querySelector('#stat-surahs').textContent = s.surahCount.toLocaleString('tr-TR');
     p.querySelector('#stat-ayahs').textContent = s.ayahCount.toLocaleString('tr-TR');

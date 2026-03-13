@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.41.0-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.41.1-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -237,6 +237,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.41.1 | **i18n Eksik Çeviriler Düzeltmesi**: Başlık, stats, tooltip, HUD butonları, arama, TTS dil desteği, ~40 yeni anahtar |
 | v0.41.0 | 🌍 **Çoklu Dil Desteği (i18n)**: 5 dil (TR/EN/RU/IT/ES), otomatik algılama, header seçici, JSON locale, dil bazlı besmele, auto-discover |
 | v0.40.2 | **Tüm Kitap Özeti**: HUD Analiz sekmesinde kitap geneli büyük resim (2139 kök, Zipf, top 5 kök, köprü kökler) |
 | v0.40.1 | **Kök Analiz Motoru**: Zipf, co-occurrence, yoğunluk haritası, ağ metrikleri, kümeleme, Canvas grafikler, JSON/CSV export |

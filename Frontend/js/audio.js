@@ -33,14 +33,17 @@ var speakAyah = async (text) => {
     if (!apiKey) { apiKey = await KeyManager.getWorkingKey(); }
     if (!apiKey) return false;
     stopAudio();
-    if (audioCache.has(text)) { playAudio(audioCache.get(text)); return true; }
+    var lang = I18n.getLanguage();
+    var cacheKey = lang + ':' + text;
+    if (audioCache.has(cacheKey)) { playAudio(audioCache.get(cacheKey)); return true; }
     if (isAudioLoading) return false;
     isAudioLoading = true;
     try {
+        var ttsPrompt = (lang === 'TR-tr') ? t('tts.promptTR') + text : t('tts.promptTranslate') + text;
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`, {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                contents: [{ parts: [{ text: `Bu Türkçe duayı güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ${text}` }] }],
+                contents: [{ parts: [{ text: ttsPrompt }] }],
                 generationConfig: { responseModalities: ["AUDIO"], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: "Orus" } } } }
             })
         });
@@ -55,7 +58,7 @@ var speakAyah = async (text) => {
             const raw = window.atob(part.inlineData.data);
             const pcm = normalizePcm(raw);
             const url = URL.createObjectURL(new Blob([pcmToWav(pcm, 24000)], { type: 'audio/wav' }));
-            audioCache.set(text, url);
+            audioCache.set(cacheKey, url);
             playAudio(url);
             return true;
         }
@@ -68,7 +71,8 @@ var speakWithBrowser = (text) => {
     if (!window.speechSynthesis) return false;
     window.speechSynthesis.cancel();
     const utter = new SpeechSynthesisUtterance(text);
-    utter.lang = 'tr-TR';
+    var langMap = { 'TR-tr': 'tr-TR', 'EN-en': 'en-US', 'RU-ru': 'ru-RU', 'IT-it': 'it-IT', 'ES-es': 'es-ES' };
+    utter.lang = langMap[I18n.getLanguage()] || 'tr-TR';
     utter.rate = 0.9;
     window.speechSynthesis.speak(utter);
     return utter;
