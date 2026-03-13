@@ -291,7 +291,7 @@ var RootAnalyzer = (function () {
         ctx.fillStyle = '#a78bfa';
         ctx.font = 'bold 12px Inter';
         ctx.textAlign = 'center';
-        ctx.fillText(options.title || 'Yoğunluk Haritası', W / 2, 16);
+        ctx.fillText(options.title || t('analyzer.densityTitle'), W / 2, 16);
         // Max value for color scaling
         var maxVal = 0;
         roots.forEach(r => { surahIds.forEach(sid => { maxVal = Math.max(maxVal, density[sid][r] || 0); }); });
@@ -359,7 +359,7 @@ var RootAnalyzer = (function () {
         ctx.fillStyle = '#34d399';
         ctx.font = 'bold 12px Inter';
         ctx.textAlign = 'center';
-        ctx.fillText('Kök Köprü Gücü (Sure Yayılımı)', W / 2, 18);
+        ctx.fillText(t('analyzer.networkTitle'), W / 2, 18);
         var pad = { top: 32, left: 55, right: 20 };
         var barH = Math.min(22, (H - pad.top - 10) / topBridges.length);
         var maxSpan = Math.max(...topBridges.map(([_, m]) => m.surahSpan));
@@ -381,7 +381,7 @@ var RootAnalyzer = (function () {
             ctx.fillStyle = '#34d399';
             ctx.font = 'bold 10px Inter';
             ctx.textAlign = 'left';
-            ctx.fillText(m.surahSpan + ' sure / ' + m.ayahCount + ' ayet', pad.left + w + 4, y + barH / 2 + 4);
+            ctx.fillText(m.surahSpan + ' ' + t('analyzer.surahCount', {count: m.surahSpan}).split(' ').pop() + ' / ' + m.ayahCount + ' ' + t('analyzer.verseCountNum', {count: m.ayahCount}).split(' ').pop(), pad.left + w + 4, y + barH / 2 + 4);
         });
     };
 
@@ -394,7 +394,7 @@ var RootAnalyzer = (function () {
         ctx.fillStyle = '#f59e0b';
         ctx.font = 'bold 12px Inter';
         ctx.textAlign = 'center';
-        ctx.fillText('Kök Ailesi Kümeleri (Co-occurrence)', W / 2, 18);
+        ctx.fillText(t('analyzer.clusterTitle'), W / 2, 18);
         // Her kümeyi bir düğüm çemberi olarak çiz
         var maxClusters = Math.min(clusters.length, 12);
         var cols = Math.ceil(Math.sqrt(maxClusters));
@@ -468,33 +468,33 @@ var RootAnalyzer = (function () {
         container.innerHTML = `
             <!-- Genel Bakış -->
             <div class="analyzer-card">
-                <h3 class="analyzer-section-title">📊 Genel Bakış</h3>
+                <h3 class="analyzer-section-title">📊 ${t('analyzer.overview')}</h3>
                 <div class="analyzer-grid-4">
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#00f2ff;">${ov.totalRoots}</div><div class="metric-label">Benzersiz Kök</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#a78bfa;">${ov.totalAyahs}</div><div class="metric-label">Toplam Ayet</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#34d399;">${ov.avgRoots}</div><div class="metric-label">Ort. Kök/Ayet</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#f59e0b;">${ov.maxRoots}</div><div class="metric-label">Maks. Kök/Ayet</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#ef4444;">${ov.hapax}</div><div class="metric-label">Hapax Legomena</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#ef4444;">${ov.hapaxPercent}%</div><div class="metric-label">Tekil Kök Oranı</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#06b6d4;">${ov.avgConns}</div><div class="metric-label">Ort. Bağlantı/Ayet</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#06b6d4;">${ov.maxConns}</div><div class="metric-label">Maks. Bağlantı</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#00f2ff;">${ov.totalRoots}</div><div class="metric-label">${t('analyzer.totalRoots')}</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#a78bfa;">${ov.totalAyahs}</div><div class="metric-label">${t('analyzer.totalVerses')}</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#34d399;">${ov.avgRoots}</div><div class="metric-label">${t('analyzer.avgRootsPerVerse')}</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#f59e0b;">${ov.maxRoots}</div><div class="metric-label">${t('analyzer.maxRootsInVerse')}</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#ef4444;">${ov.hapax}</div><div class="metric-label">${t('analyzer.hapax')}</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#ef4444;">${ov.hapaxPercent}%</div><div class="metric-label">${t('analyzer.hapaxDesc')}</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#06b6d4;">${ov.avgConns}</div><div class="metric-label">${t('analyzer.avgConns')}</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#06b6d4;">${ov.maxConns}</div><div class="metric-label">${t('analyzer.maxConns')}</div></div>
                 </div>
             </div>
 
             <!-- Zipf Analizi -->
             <div class="analyzer-card">
-                <h3 class="analyzer-section-title">📈 Frekans Dağılımı (Zipf Yasası)</h3>
+                <h3 class="analyzer-section-title">📈 ${t('analyzer.zipfTitle')}</h3>
                 <div class="analyzer-grid-3">
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#00f2ff;">α = ${freq.alpha}</div><div class="metric-label">Zipf Üssü</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#34d399;">R² = ${freq.rSquared}</div><div class="metric-label">Uyum Skoru</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#a78bfa;">${freq.sorted.length}</div><div class="metric-label">Toplam Kök</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#00f2ff;">α = ${freq.alpha}</div><div class="metric-label">${t('analyzer.zipfAlpha')}</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#34d399;">R² = ${freq.rSquared}</div><div class="metric-label">${t('analyzer.zipfR2')}</div></div>
+                    <div class="analyzer-metric"><div class="metric-value" style="color:#a78bfa;">${freq.sorted.length}</div><div class="metric-label">${t('analyzer.totalRoots')}</div></div>
                 </div>
                 <p class="analyzer-note">${parseFloat(freq.rSquared) > 0.9 ? '✅ Kök frekansları güçlü Zipf yasası uyumu gösteriyor — doğal dil dağılımıyla örtüşüyor.' :
                     parseFloat(freq.rSquared) > 0.7 ? '⚠️ Orta düzey Zipf uyumu — kısmen doğal dil dağılımı, kısmen yapısal düzenlilik.' :
                     '🔬 Düşük Zipf uyumu — kök dağılımı doğal dilden sapma gösteriyor, yapısal bir düzen mevcut olabilir.'}</p>
                 <canvas id="chart-zipf" width="760" height="280" style="width:100%;border-radius:8px;"></canvas>
                 <div class="analyzer-top-list">
-                    <span class="analyzer-top-title">En Sık 10 Kök</span>
+                    <span class="analyzer-top-title">${t('analyzer.top5').replace('5', '10')}</span>
                     <div class="analyzer-flex-wrap">
                         ${freq.sorted.slice(0, 10).map(([r, f], i) => {
                             var info = rootDictionary[r];
@@ -502,7 +502,7 @@ var RootAnalyzer = (function () {
                             return `<div class="analyzer-root-chip">
                                 <span class="chip-rank">${i + 1}</span>
                                 <span class="chip-root" dir="rtl">${r}</span>
-                                <span class="chip-count">${f} ayet</span>
+                                <span class="chip-count">${f} ${t('hud.verse').toLowerCase()}</span>
                                 ${meaning ? `<span class="chip-meaning">${meaning.split(',')[0]}</span>` : ''}
                             </div>`;
                         }).join('')}
@@ -512,36 +512,36 @@ var RootAnalyzer = (function () {
 
             <!-- Co-occurrence -->
             <div class="analyzer-card">
-                <h3 class="analyzer-section-title">🔗 Kök Co-occurrence Matrisi</h3>
+                <h3 class="analyzer-section-title">🔗 ${t('analyzer.coOccTitle')}</h3>
                 <p class="analyzer-note">En sık 20 kökün birlikte geçme sıklığı. Yoğun hücre = sık birlikte geçen kök çifti.</p>
                 <canvas id="chart-cooccurrence" width="760" height="450" style="width:100%;border-radius:8px;"></canvas>
             </div>
 
             <!-- Sure-Kök Yoğunluk -->
             <div class="analyzer-card">
-                <h3 class="analyzer-section-title">🗺️ Sure-Kök Yoğunluk Haritası</h3>
+                <h3 class="analyzer-section-title">🗺️ ${t('analyzer.densityTitle')}</h3>
                 <p class="analyzer-note">114 sure × en sık 20 kök. Koyu hücre = o surede o kök yoğun.</p>
                 <canvas id="chart-density" width="760" height="400" style="width:100%;border-radius:8px;"></canvas>
             </div>
 
             <!-- Ağ Metrikleri -->
             <div class="analyzer-card">
-                <h3 class="analyzer-section-title">🕸️ Ağ Metrikleri</h3>
+                <h3 class="analyzer-section-title">🕸️ ${t('analyzer.networkTitle')}</h3>
                 <div id="network-metrics-summary"></div>
                 <canvas id="chart-network" width="760" height="370" style="width:100%;border-radius:8px;"></canvas>
             </div>
 
             <!-- Kök Kümeleri -->
             <div class="analyzer-card">
-                <h3 class="analyzer-section-title">🧬 Kök Ailesi Kümeleri</h3>
+                <h3 class="analyzer-section-title">🧬 ${t('analyzer.clusterTitle')}</h3>
                 <p class="analyzer-note">Aynı ayetlerde birlikte geçen kökler gruplandı. Merkez = çekirdek kök, çevre = en sık eşlik eden kökler.</p>
                 <canvas id="chart-clusters" width="760" height="500" style="width:100%;border-radius:8px;"></canvas>
             </div>
 
             <!-- Export -->
             <div class="analyzer-card" style="text-align:center;">
-                <button onclick="RootAnalyzer.exportJSON()" class="analyzer-export-btn">📥 JSON Olarak Dışa Aktar</button>
-                <button onclick="RootAnalyzer.exportCSV()" class="analyzer-export-btn" style="margin-left:8px;">📊 CSV Olarak Dışa Aktar</button>
+                <button onclick="RootAnalyzer.exportJSON()" class="analyzer-export-btn">${t('analyzer.exportJSON')}</button>
+                <button onclick="RootAnalyzer.exportCSV()" class="analyzer-export-btn" style="margin-left:8px;">${t('analyzer.exportCSV')}</button>
             </div>
         `;
 
@@ -551,7 +551,7 @@ var RootAnalyzer = (function () {
             var zipfCanvas = document.getElementById('chart-zipf');
             if (zipfCanvas) {
                 var barData = freq.sorted.slice(0, 80).map(([r, f]) => ({ label: r, value: f }));
-                renderBarChart(zipfCanvas, barData, { title: 'Kök Frekansı (İlk 80 Kök — Rank Sırası)', barColor: '#00f2ff', barColorEnd: 'rgba(0,242,255,0.1)', pad: { top: 30, right: 20, bottom: 60, left: 50 } });
+                renderBarChart(zipfCanvas, barData, { title: t('analyzer.zipfChartTitle'), barColor: '#00f2ff', barColorEnd: 'rgba(0,242,255,0.1)', pad: { top: 30, right: 20, bottom: 60, left: 50 } });
             }
             // Co-occurrence heatmap
             var coOccCanvas = document.getElementById('chart-cooccurrence');
@@ -559,14 +559,14 @@ var RootAnalyzer = (function () {
                 var coOcc = calcCoOccurrence(20);
                 renderHeatmap(coOccCanvas, coOcc.roots, coOcc.roots, 
                     coOcc.roots.reduce((acc, r) => { acc[r] = coOcc.matrix[r]; return acc; }, {}),
-                    { title: 'Kök Co-occurrence Matrisi (Top 20)' });
+                    { title: t('analyzer.coOccChartTitle') });
             }
             // Density heatmap
             var densCanvas = document.getElementById('chart-density');
             if (densCanvas) {
                 var dens = calcSurahDensity(20);
                 renderHeatmap(densCanvas, dens.roots, dens.surahIds, dens.density,
-                    { title: 'Sure × Kök Yoğunluk Haritası (114 Sure × Top 20 Kök)' });
+                    { title: t('analyzer.densityChartTitle') });
             }
             // Network
             var netCanvas = document.getElementById('chart-network');
@@ -577,12 +577,12 @@ var RootAnalyzer = (function () {
                 if (sumDiv) {
                     sumDiv.innerHTML = `
                         <div class="analyzer-grid-3">
-                            <div class="analyzer-metric"><div class="metric-value" style="color:#34d399;">${net.avgDegree}</div><div class="metric-label">Ort. Derece</div></div>
-                            <div class="analyzer-metric"><div class="metric-value" style="color:#ef4444;">${net.maxDegree}</div><div class="metric-label">Maks. Derece</div></div>
-                            <div class="analyzer-metric"><div class="metric-value" style="color:#f59e0b;">${net.topHubs.length}</div><div class="metric-label">Hub Sayısı</div></div>
+                            <div class="analyzer-metric"><div class="metric-value" style="color:#34d399;">${net.avgDegree}</div><div class="metric-label">${t('analyzer.avgDegree')}</div></div>
+                            <div class="analyzer-metric"><div class="metric-value" style="color:#ef4444;">${net.maxDegree}</div><div class="metric-label">${t('analyzer.maxDegree')}</div></div>
+                            <div class="analyzer-metric"><div class="metric-value" style="color:#f59e0b;">${net.topHubs.length}</div><div class="metric-label">${t('analyzer.hubCount')}</div></div>
                         </div>
                         <div class="analyzer-top-list" style="margin-top:8px;">
-                            <span class="analyzer-top-title">En Merkezi 10 Ayet (Degree Centrality)</span>
+                            <span class="analyzer-top-title">${t('analyzer.centralVerses')}</span>
                             <div class="analyzer-flex-wrap">
                                 ${net.topHubs.slice(0, 10).map(([id, deg]) => `<div class="analyzer-hub-chip" onclick="warpToId('${id}')"><span>${getSurahTR(id)} ${id.split(':')[1]}</span><span style="color:#34d399;font-weight:700;">${deg}</span></div>`).join('')}
                             </div>
@@ -630,13 +630,13 @@ var RootAnalyzer = (function () {
             <div class="book-overview-card">
                 <div class="book-overview-header">
                     <span class="book-overview-icon">📖</span>
-                    <span class="book-overview-title">Tüm Kitap — Büyük Resim</span>
+                    <span class="book-overview-title">${t('analyzer.bookTitle')}</span>
                 </div>
                 <div class="book-overview-grid">
-                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#00f2ff;">${ov.totalRoots}</span><span class="book-ov-lbl">Kök</span></div>
-                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#a78bfa;">${ov.totalAyahs}</span><span class="book-ov-lbl">Ayet</span></div>
-                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#34d399;">${ov.avgRoots}</span><span class="book-ov-lbl">Ort/Ayet</span></div>
-                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#ef4444;">${ov.hapax}</span><span class="book-ov-lbl">Tekil</span></div>
+                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#00f2ff;">${ov.totalRoots}</span><span class="book-ov-lbl">${t('analyzer.root')}</span></div>
+                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#a78bfa;">${ov.totalAyahs}</span><span class="book-ov-lbl">${t('analyzer.verse')}</span></div>
+                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#34d399;">${ov.avgRoots}</span><span class="book-ov-lbl">${t('analyzer.avgPerVerse')}</span></div>
+                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#ef4444;">${ov.hapax}</span><span class="book-ov-lbl">${t('analyzer.unique')}</span></div>
                 </div>
                 <div class="book-overview-row">
                     <span class="book-ov-tag">Zipf α=${freq.alpha}</span>
@@ -645,7 +645,7 @@ var RootAnalyzer = (function () {
                     <span class="book-ov-tag">Maks ${ov.maxConns} bağ</span>
                 </div>
                 <div class="book-overview-section">
-                    <span class="book-ov-section-title">🏆 En Yaygın 5 Kök</span>
+                    <span class="book-ov-section-title">${t('analyzer.top5')}</span>
                     <div class="book-ov-root-list">
                         ${freq.sorted.slice(0, 5).map(([r, f], i) => {
                             var info = rootDictionary[r];
@@ -660,15 +660,15 @@ var RootAnalyzer = (function () {
                     </div>
                 </div>
                 <div class="book-overview-section">
-                    <span class="book-ov-section-title">🌉 En Güçlü 3 Köprü Kök</span>
+                    <span class="book-ov-section-title">${t('analyzer.top3Bridges')}</span>
                     <div class="book-ov-root-list">
                         ${net.topBridges.slice(0, 3).map(([r, m]) => {
                             var info = rootDictionary[r];
                             var meaning = info ? info.meaning.split(',')[0] : '';
                             return `<div class="book-ov-root-item">
                                 <span class="book-ov-root" dir="rtl" style="color:#34d399;">${r}</span>
-                                <span class="book-ov-freq">${m.surahSpan} sure</span>
-                                <span class="book-ov-freq">${m.ayahCount} ayet</span>
+                                <span class="book-ov-freq">${t('analyzer.surahCount', {count: m.surahSpan})}</span>
+                                <span class="book-ov-freq">${t('analyzer.verseCountNum', {count: m.ayahCount})}</span>
                                 ${meaning ? `<span class="book-ov-meaning">${meaning}</span>` : ''}
                             </div>`;
                         }).join('')}
@@ -677,7 +677,7 @@ var RootAnalyzer = (function () {
             </div>
 
             <div class="book-overview-divider">
-                <span>▾ Bu Ayet</span>
+                <span>${t('analyzer.thisVerse')}</span>
             </div>`;
 
         // ── 2) Bu Ayetin Analizi (mevcut per-verse kısım)
@@ -703,9 +703,9 @@ var RootAnalyzer = (function () {
 
         html += `
             <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;">
-                <div class="analyzer-metric" style="flex:1;min-width:60px;"><div class="metric-value" style="color:#00f2ff;font-size:18px;">${totalRoots}</div><div class="metric-label">Kök Sayısı</div></div>
-                <div class="analyzer-metric" style="flex:1;min-width:60px;"><div class="metric-value" style="color:#a78bfa;font-size:18px;">${totalConns}</div><div class="metric-label">Bağlantı</div></div>
-                <div class="analyzer-metric" style="flex:1;min-width:60px;"><div class="metric-value" style="color:#34d399;font-size:18px;">${crossSurah.size}</div><div class="metric-label">Çapraz Sure</div></div>
+                <div class="analyzer-metric" style="flex:1;min-width:60px;"><div class="metric-value" style="color:#00f2ff;font-size:18px;">${totalRoots}</div><div class="metric-label">${t('analyzer.rootCount')}</div></div>
+                <div class="analyzer-metric" style="flex:1;min-width:60px;"><div class="metric-value" style="color:#a78bfa;font-size:18px;">${totalConns}</div><div class="metric-label">${t('analyzer.connection')}</div></div>
+                <div class="analyzer-metric" style="flex:1;min-width:60px;"><div class="metric-value" style="color:#34d399;font-size:18px;">${crossSurah.size}</div><div class="metric-label">${t('analyzer.crossSurah')}</div></div>
             </div>`;
         rootDetails.sort((a, b) => b.freq - a.freq);
         rootDetails.forEach(rd => {
@@ -716,12 +716,12 @@ var RootAnalyzer = (function () {
             <div style="padding:8px 10px;margin-bottom:6px;background:rgba(255,255,255,0.02);border:1px solid ${c.replace('hsl', 'hsla').replace(')', ',0.15)')};border-radius:10px;">
                 <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
                     <span dir="rtl" style="color:${c};font-size:16px;font-weight:bold;">${rd.root}</span>
-                    <span style="font-size:10px;color:#64748b;">Rank #${rank} / ${sortedAll.length}</span>
-                    <span style="font-size:9px;color:#34d399;margin-left:auto;">üst %${percentile}</span>
+                    <span style="font-size:10px;color:#64748b;">${t('common.rank')} #${rank} / ${sortedAll.length}</span>
+                    <span style="font-size:9px;color:#34d399;margin-left:auto;">${t('common.top')} %${percentile}</span>
                 </div>
                 <div style="display:flex;gap:12px;font-size:11px;">
-                    <span style="color:#94a3b8;">${rd.freq} ayette</span>
-                    <span style="color:#94a3b8;">${rd.surahSpan} surede</span>
+                    <span style="color:#94a3b8;">${t('analyzer.inVerses', {count: rd.freq})}</span>
+                    <span style="color:#94a3b8;">${t('analyzer.inSurahs', {count: rd.surahSpan})}</span>
                     ${rd.meaning ? `<span style="color:#64748b;font-style:italic;">${rd.meaning.split(',').slice(0, 2).join(',')}</span>` : ''}
                 </div>
             </div>`;

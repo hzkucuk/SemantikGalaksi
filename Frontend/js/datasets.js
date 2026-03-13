@@ -10,7 +10,7 @@ window.showDipnotPopup = (btn, nodeId) => {
     // Diğer açık dipnotları kapat
     document.querySelectorAll('.dipnot-inline').forEach(el => el.remove());
     var node = nodes.find(n => n.id === nodeId);
-    var text = node?.dipnot || 'Bu ayet için dipnot bulunmuyor.';
+    var text = node?.dipnot || t('hud.noDipnot');
     var div = document.createElement('div');
     div.className = 'dipnot-inline';
     div.style.cssText = 'margin-top:8px;padding:10px 14px;background:rgba(120,53,15,0.3);border:1px solid rgba(245,158,11,0.2);border-radius:10px;font-size:12px;color:rgba(253,230,138,0.8);font-style:italic;line-height:1.6;';
@@ -68,7 +68,7 @@ window.switchDataset = async (name) => {
     await renderDatasetList();
 };
 window.deleteDataset = async (name) => {
-    if (!confirm('"' + name + '" silinsin mi?')) return;
+    if (!confirm('"' + name + '" ' + t('common.close') + '?')) return;
     await DatasetStore.remove(name);
     if (activeDatasetName === name) resetToOriginal();
     await renderDatasetList();
@@ -189,12 +189,12 @@ window.editorValidate = () => {
             var nc = data.nodes ? data.nodes.length : 0;
             bar.className = 'editor-status valid';
             msg.textContent = '✓ Geçerli JSON';
-            info.textContent = nc + ' ayet · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+            info.textContent = nc + ' ' + t('hud.verse').toLowerCase() + ' · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
         } else {
             var rc = typeof data === 'object' ? Object.keys(data).length : 0;
             bar.className = 'editor-status valid';
             msg.textContent = '✓ Geçerli JSON';
-            info.textContent = rc + ' kök · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+            info.textContent = rc + ' ' + t('analyzer.root').toLowerCase() + ' · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
         }
         return true;
     } catch(e) {

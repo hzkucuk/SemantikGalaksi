@@ -89,7 +89,7 @@ var showHUD = (n) => {
     switchHudSection('ayet');
     var arabicHighlighted = highlightArabicText(n.text, n.roots);
     document.getElementById('hud-title').innerText = getSurahTR(n.id);
-    document.getElementById('hud-coord').innerText = `KOORDİNAT: ${n.id}`;
+    document.getElementById('hud-coord').innerText = `${t('hud.coordinate')}: ${n.id}`;
     document.getElementById('hud-translation').innerText = n.translation;
     document.getElementById('hud-arabic').innerHTML = arabicHighlighted;
 
@@ -105,13 +105,13 @@ var showHUD = (n) => {
             return `<span>${part.content.replace(/\n/g, '<br>')}</span>`;
         }).join('');
         dipnotDiv.innerHTML = dipnotHtml;
-        dipnotLabel.textContent = 'Dipnot';
+        dipnotLabel.textContent = t('hud.dipnot');
     } else if (n.dipnot) {
         dipnotDiv.textContent = n.dipnot;
-        dipnotLabel.textContent = 'Dipnot';
+        dipnotLabel.textContent = t('hud.dipnot');
     } else {
-        dipnotDiv.textContent = 'Bu ayet için dipnot bulunmuyor.';
-        dipnotLabel.textContent = 'Dipnot';
+        dipnotDiv.textContent = t('hud.noDipnot');
+        dipnotLabel.textContent = t('hud.dipnot');
     }
 
     // Önceki AI sonucunu temizle
@@ -151,23 +151,23 @@ var showHUD = (n) => {
                 <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
                     <span dir="rtl" style="color:${c};font-size:18px;font-weight:bold;">${r}</span>
                     <span style="color:${c};font-size:11px;opacity:0.7;">${getRootPron(r)}</span>
-                    <span style="margin-left:auto;font-size:11px;color:#64748b;">Kur'an geneli</span>
+                    <span style="margin-left:auto;font-size:11px;color:#64748b;">${t('hud.quranOverall')}</span>
                 </div>
                 <div style="display:flex;gap:16px;margin-bottom:8px;">
                     <div style="text-align:center;">
                         <div style="font-size:20px;font-weight:900;color:${c};">${totalAyah}</div>
-                        <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Ayet</div>
+                        <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">${t('hud.verse')}</div>
                     </div>
                     <div style="text-align:center;">
                         <div style="font-size:20px;font-weight:900;color:${c};">${totalSurah}</div>
-                        <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Sure</div>
+                        <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">${t('hud.surah')}</div>
                     </div>
                     <div style="text-align:center;">
                         <div style="font-size:20px;font-weight:900;color:${c};">${(totalAyah / 6236 * 100).toFixed(1)}%</div>
-                        <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">Oran</div>
+                        <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.1em;">${t('hud.ratio')}</div>
                     </div>
                 </div>
-                <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:4px;">En Çok Geçtiği Sureler</div>
+                <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:4px;">${t('hud.topSurahs')}</div>
                 ${topSurahs.map(([sid, cnt]) => `
                     <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
                         <span style="font-size:11px;color:#94a3b8;min-width:80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${surahNamesTR[sid]}</span>
@@ -204,16 +204,16 @@ var showHUD = (n) => {
     var html = '';
     var grouped = related.reduce((acc, rn) => { var t = getSurahTR(rn.id); if (!acc[t]) acc[t] = []; acc[t].push(rn); return acc; }, {});
     for (var sName in grouped) {
-        html += `<div class="surah-group-header"><span>${sName}</span><span>${grouped[sName].length} Ayet</span></div>`;
+        html += `<div class="surah-group-header"><span>${sName}</span><span>${t('hud.verseCount', {count: grouped[sName].length})}</span></div>`;
         grouped[sName].forEach(rn => {
             var shared = (rn.roots || []).filter(r => (n.roots || []).includes(r));
             html += `
                 <div class="ayah-list-item ref-hover" data-id="${rn.id}" onclick="event.stopPropagation(); warpToId('${rn.id}')">
                     <div class="flex justify-between items-center mb-1">
-                        <span class="text-[11px] font-bold text-slate-100 uppercase tracking-tight">${getSurahTR(rn.id)} ${rn.id.split(':')[1]}. Ayet</span>
+                        <span class="text-[11px] font-bold text-slate-100 uppercase tracking-tight">${getSurahTR(rn.id)} ${rn.id.split(':')[1]}. ${t('hud.verse')}</span>
                         <div style="display:flex;align-items:center;gap:6px;">
-                            <button onclick="event.stopPropagation(); window.showDipnotPopup(this, '${rn.id}')" style="width:28px;height:28px;border-radius:50%;border:1px solid #f59e0b;background:rgba(245,158,11,0.1);color:#f59e0b;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;" title="Dipnot">📌</button>
-                            <button onclick="event.stopPropagation(); window.speakThis(this, '${rn.id}')" style="width:28px;height:28px;border-radius:50%;border:1px solid #00f2ff;background:rgba(0,242,255,0.1);color:#00f2ff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;" title="Seslendir">▶</button>
+                            <button onclick="event.stopPropagation(); window.showDipnotPopup(this, '${rn.id}')" style="width:28px;height:28px;border-radius:50%;border:1px solid #f59e0b;background:rgba(245,158,11,0.1);color:#f59e0b;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;" title="${t('hud.dipnot')}">📌</button>
+                            <button onclick="event.stopPropagation(); window.speakThis(this, '${rn.id}')" style="width:28px;height:28px;border-radius:50%;border:1px solid #00f2ff;background:rgba(0,242,255,0.1);color:#00f2ff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;" title="${t('hud.speak')}">▶</button>
                             <span class="text-[10px] text-cyan-500 font-mono">${rn.id}</span>
                         </div>
                     </div>
@@ -233,7 +233,7 @@ var showHUD = (n) => {
                 </div>`;
         });
     }
-    list.innerHTML = html || '<p class="text-xs text-slate-600 italic text-center">Bağlantı bulunamadı.</p>';
+    list.innerHTML = html || `<p class="text-xs text-slate-600 italic text-center">${t('hud.noConnections')}</p>`;
 
     // HUD arama filtreleme (Arapça destekli)
     var hudSearch = document.getElementById('hud-search');

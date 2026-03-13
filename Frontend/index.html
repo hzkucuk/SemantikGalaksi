@@ -824,6 +824,34 @@
             font-size: 11px; font-weight: 700; color: #475569;
             padding: 0 12px; text-transform: uppercase; letter-spacing: 0.15em;
         }
+
+        /* ── Language Selector ── */
+        .lang-selector-wrap { position: relative; display: inline-flex; }
+        .lang-btn {
+            display: flex; align-items: center; gap: 5px;
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px; padding: 5px 10px; cursor: pointer;
+            font-size: 12px; color: #e2e8f0; font-weight: 700;
+            transition: all 0.2s; letter-spacing: 0.05em;
+        }
+        .lang-btn:hover { background: rgba(0,242,255,0.08); border-color: rgba(0,242,255,0.25); }
+        .lang-btn-code { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; color: #94a3b8; }
+        .lang-menu {
+            position: absolute; right: 0; top: calc(100% + 8px);
+            background: rgba(0,5,15,0.97); backdrop-filter: blur(20px);
+            border: 1px solid rgba(0,242,255,0.12); border-radius: 14px;
+            padding: 6px; min-width: 180px; z-index: 200;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+        }
+        .lang-option {
+            display: flex; align-items: center; gap: 8px; width: 100%;
+            background: transparent; border: none; border-radius: 10px;
+            padding: 8px 12px; cursor: pointer; font-size: 12px;
+            color: #cbd5e1; font-weight: 600; text-align: left;
+            transition: all 0.15s;
+        }
+        .lang-option:hover { background: rgba(0,242,255,0.08); color: #e2e8f0; }
+        .lang-option.active { background: rgba(0,242,255,0.12); color: #00f2ff; }
     </style>
 </head>
 <body>
@@ -862,15 +890,15 @@
         </div>
 
         <!-- Türkçe meal (Süleymaniye Vakfı) -->
-        <p style="font-size:clamp(14px,3vw,22px);color:rgba(255,255,255,0.85);font-weight:400;font-style:italic;letter-spacing:0.08em;margin-bottom:6px;text-align:center;padding:0 24px;text-shadow:0 0 12px rgba(0,242,255,0.4), 0 0 30px rgba(0,242,255,0.15);animation:loadFadeUp 1.2s ease 1.3s both;">
+        <p data-i18n="loading.euzu" style="font-size:clamp(14px,3vw,22px);color:rgba(255,255,255,0.85);font-weight:400;font-style:italic;letter-spacing:0.08em;margin-bottom:6px;text-align:center;padding:0 24px;text-shadow:0 0 12px rgba(0,242,255,0.4), 0 0 30px rgba(0,242,255,0.15);animation:loadFadeUp 1.2s ease 1.3s both;">
             Kovulmuş şeytandan Allah'a sığınırım
         </p>
-        <p style="font-size:clamp(16px,3.5vw,26px);color:rgba(255,255,255,0.9);font-weight:500;font-style:italic;letter-spacing:0.08em;margin-bottom:16px;text-align:center;padding:0 24px;text-shadow:0 0 15px rgba(0,242,255,0.5), 0 0 40px rgba(0,242,255,0.2);animation:loadFadeUp 1.2s ease 1.5s both;">
+        <p data-i18n="loading.besmele" style="font-size:clamp(16px,3.5vw,26px);color:rgba(255,255,255,0.9);font-weight:500;font-style:italic;letter-spacing:0.08em;margin-bottom:16px;text-align:center;padding:0 24px;text-shadow:0 0 15px rgba(0,242,255,0.5), 0 0 40px rgba(0,242,255,0.2);animation:loadFadeUp 1.2s ease 1.5s both;">
             İyiliği sonsuz, ikramı bol Allah'ın adıyla
         </p>
 
         <!-- Latin transliterasyon -->
-        <p style="font-size:clamp(10px,2vw,15px);color:rgba(0,242,255,0.6);font-family:'Inter',monospace;letter-spacing:0.3em;text-transform:uppercase;margin-bottom:56px;text-align:center;text-shadow:0 0 8px rgba(0,242,255,0.3), 0 0 20px rgba(0,242,255,0.1);animation:loadFadeUp 1.2s ease 1.7s both, loadNeonFlicker 8s ease-in-out 3s infinite;">
+        <p data-i18n="loading.transliteration" style="font-size:clamp(10px,2vw,15px);color:rgba(0,242,255,0.6);font-family:'Inter',monospace;letter-spacing:0.3em;text-transform:uppercase;margin-bottom:56px;text-align:center;text-shadow:0 0 8px rgba(0,242,255,0.3), 0 0 20px rgba(0,242,255,0.1);animation:loadFadeUp 1.2s ease 1.7s both, loadNeonFlicker 8s ease-in-out 3s infinite;">
             Eûzü billâhi mineş-şeytânir-racîm · Bismillâhirrahmânirrahîm
         </p>
 
@@ -878,10 +906,10 @@
         <div id="loading-spinner" style="width:36px;height:36px;border:2px solid rgba(0,242,255,0.1);border-top-color:rgba(0,242,255,0.7);border-radius:50%;box-shadow:0 0 12px rgba(0,242,255,0.2);animation:loadSpin 1.2s linear infinite, loadFadeUp 1s ease 2.0s both;margin-bottom:18px;"></div>
 
         <!-- Dokunarak başlat (web modu) -->
-        <p id="loading-tap-hint" style="display:none;font-size:11px;color:rgba(0,242,255,0.6);font-family:'Inter',sans-serif;letter-spacing:0.3em;text-transform:uppercase;animation:loadPulse 2s ease-in-out infinite, loadFadeUp 1s ease 2.0s both;cursor:pointer;">▶ Dokunarak Başlat</p>
+        <p id="loading-tap-hint" data-i18n="loading.tapToStart" style="display:none;font-size:11px;color:rgba(0,242,255,0.6);font-family:'Inter',sans-serif;letter-spacing:0.3em;text-transform:uppercase;animation:loadPulse 2s ease-in-out infinite, loadFadeUp 1s ease 2.0s both;cursor:pointer;">▶ Dokunarak Başlat</p>
 
         <!-- Yükleniyor -->
-        <p id="loading-text" style="font-size:9px;color:rgba(0,242,255,0.35);font-family:'Inter',monospace;letter-spacing:0.6em;text-transform:uppercase;animation:loadPulse 2.5s ease-in-out infinite, loadFadeUp 1s ease 2.0s both;">Yükleniyor</p>
+        <p id="loading-text" data-i18n="loading.loading" style="font-size:9px;color:rgba(0,242,255,0.35);font-family:'Inter',monospace;letter-spacing:0.6em;text-transform:uppercase;animation:loadPulse 2.5s ease-in-out infinite, loadFadeUp 1s ease 2.0s both;">Yükleniyor</p>
     </div>
 
     <div id="tooltip"></div>
@@ -889,8 +917,8 @@
     <!-- Mobil: Dikey mod uyarısı — yatay çevirin -->
     <div id="portrait-warning">
         <div class="pw-icon">📱</div>
-        <div class="pw-title">Cihazınızı Yatay Çevirin</div>
-        <div class="pw-desc">Kur'an-ı Kerim Kelime Kök Uzayı yalnızca yatay (landscape) modda çalışır. Lütfen cihazınızı yan çevirin.</div>
+        <div class="pw-title" data-i18n="portrait.title">Cihazınızı Yatay Çevirin</div>
+        <div class="pw-desc" data-i18n="portrait.desc">Kur'an-ı Kerim Kelime Kök Uzayı yalnızca yatay (landscape) modda çalışır. Lütfen cihazınızı yan çevirin.</div>
     </div>
 
     <!-- Giriş Ekranı -->
@@ -898,13 +926,13 @@
         <div style="max-width:380px;width:90%;padding:40px;background:rgba(0,5,12,0.98);border:1px solid rgba(0,242,255,0.2);border-radius:24px;box-shadow:0 0 80px rgba(0,242,255,0.1);">
             <div style="text-align:center;margin-bottom:24px;">
                 <div style="font-size:32px;margin-bottom:12px;">🔐</div>
-                <h2 style="color:#00f2ff;font-size:16px;font-weight:900;letter-spacing:6px;text-transform:uppercase;">Giriş Yap</h2>
+                <h2 data-i18n="login.title" style="color:#00f2ff;font-size:16px;font-weight:900;letter-spacing:6px;text-transform:uppercase;">Giriş Yap</h2>
             </div>
             <div id="login-error" style="display:none;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:10px;color:#ef4444;font-size:12px;text-align:center;margin-bottom:16px;"></div>
-            <input type="text" id="login-username" placeholder="Kullanıcı adı" style="width:100%;background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 16px;outline:none;color:white;font-size:13px;margin-bottom:12px;box-sizing:border-box;font-family:Inter,sans-serif;" onkeydown="if(event.key==='Enter')document.getElementById('login-password').focus()">
-            <input type="password" id="login-password" placeholder="Şifre" style="width:100%;background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 16px;outline:none;color:white;font-size:13px;margin-bottom:20px;box-sizing:border-box;font-family:Inter,sans-serif;" onkeydown="if(event.key==='Enter')doLogin()">
-            <button onclick="doLogin()" style="width:100%;background:linear-gradient(135deg,#0e7490,#06b6d4);border:none;border-radius:12px;padding:12px;color:white;font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase;cursor:pointer;font-family:Inter,sans-serif;">Giriş</button>
-            <p style="text-align:center;color:rgba(148,163,184,0.4);font-size:10px;margin-top:16px;">İlk kurulum: admin / admin123</p>
+            <input type="text" id="login-username" data-i18n="login.username" placeholder="Kullanıcı adı"
+            <input type="password" id="login-password" data-i18n="login.password" placeholder="Şifre"
+            <button onclick="doLogin()" data-i18n="login.submit" style="width:100%;background:linear-gradient(135deg,#0e7490,#06b6d4);border:none;border-radius:12px;padding:12px;color:white;font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase;cursor:pointer;font-family:Inter,sans-serif;">Giriş</button>
+            <p data-i18n="login.firstSetup" style="text-align:center;color:rgba(148,163,184,0.4);font-size:10px;margin-top:16px;">İlk kurulum: admin / admin123</p>
         </div>
     </div>
 
@@ -912,32 +940,32 @@
     <div id="settings-overlay" class="settings-overlay" style="display:none" onclick="if(event.target===this)closeSettings()">
         <div class="settings-modal">
             <div class="flex justify-between items-center mb-6">
-                <h2 class="text-xl font-black text-cyan-400 uppercase tracking-widest">⚙️ Ayarlar</h2>
+                <h2 class="text-xl font-black text-cyan-400 uppercase tracking-widest" data-i18n="settings.title">⚙️ Ayarlar</h2>
                 <button onclick="closeSettings()" class="w-9 h-9 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all">✕</button>
             </div>
             <div class="mb-6" id="auth-info-section">
-                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3">👤 Kullanıcı Bilgileri</h3>
+                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3" data-i18n="settings.userInfo">👤 Kullanıcı Bilgileri</h3>
                 <div id="auth-user-info"></div>
                 <div id="server-status" class="mt-3 text-[10px] text-slate-600"></div>
             </div>
             <div class="mb-6" id="change-pw-section" style="display:none">
-                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3">🔑 Şifre Değiştir</h3>
+                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3" data-i18n="settings.changePassword">🔑 Şifre Değiştir</h3>
                 <div class="flex flex-col gap-2">
-                    <input type="password" id="old-pw-input" placeholder="Mevcut şifre" class="bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-700">
-                    <input type="password" id="new-pw-input" placeholder="Yeni şifre" class="bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-700">
-                    <button onclick="changePassword()" class="bg-cyan-950 hover:bg-cyan-800 border border-cyan-400/30 px-5 py-2.5 rounded-xl font-black text-[10px] text-white uppercase tracking-widest transition-all">Şifreyi Güncelle</button>
+                    <input type="password" id="old-pw-input" data-i18n="settings.currentPassword" placeholder="Mevcut şifre"
+                    <input type="password" id="new-pw-input" data-i18n="settings.newPassword" placeholder="Yeni şifre"
+                    <button onclick="changePassword()" class="bg-cyan-950 hover:bg-cyan-800 border border-cyan-400/30 px-5 py-2.5 rounded-xl font-black text-[10px] text-white uppercase tracking-widest transition-all" data-i18n="settings.updatePassword">Şifreyi Güncelle</button>
                 </div>
                 <div id="pw-change-msg" class="mt-2 text-[10px]"></div>
             </div>
             <div class="mb-6">
-                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3">Gemini API Anahtarları</h3>
-                <p class="text-[11px] text-slate-600 mb-4">Birden fazla anahtar ekleyebilirsiniz. Çalışan ilk anahtar otomatik kullanılır.</p>
+                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3" data-i18n="settings.apiKeys">Gemini API Anahtarları</h3>
+                <p class="text-[11px] text-slate-600 mb-4" data-i18n="settings.apiKeysDesc">Birden fazla anahtar ekleyebilirsiniz. Çalışan ilk anahtar otomatik kullanılır.</p>
                 <div id="api-key-list"></div>
                 <div class="flex gap-2 mt-3">
                     <input type="password" id="new-key-input" placeholder="AIza..." class="flex-1 bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white font-mono placeholder-slate-700">
-                    <button onclick="addApiKey()" class="bg-cyan-950 hover:bg-cyan-800 border border-cyan-400/30 px-5 py-2.5 rounded-xl font-black text-[10px] text-white uppercase tracking-widest transition-all">Ekle</button>
+                    <button onclick="addApiKey()" class="bg-cyan-950 hover:bg-cyan-800 border border-cyan-400/30 px-5 py-2.5 rounded-xl font-black text-[10px] text-white uppercase tracking-widest transition-all" data-i18n="settings.add">Ekle</button>
                 </div>
-                <button onclick="testAllKeys()" class="w-full mt-3 bg-purple-950/50 hover:bg-purple-900/50 border border-purple-400/20 px-4 py-2.5 rounded-xl font-black text-[10px] text-purple-300 uppercase tracking-widest transition-all">🔍 Tüm Anahtarları Test Et</button>
+                <button onclick="testAllKeys()" class="w-full mt-3 bg-purple-950/50 hover:bg-purple-900/50 border border-purple-400/20 px-4 py-2.5 rounded-xl font-black text-[10px] text-purple-300 uppercase tracking-widest transition-all" data-i18n="settings.testAll">🔍 Tüm Anahtarları Test Et</button>
             </div>
             <div id="api-key-guide" class="hidden mb-4 bg-amber-950/30 border border-amber-400/20 rounded-2xl p-5">
                 <h4 class="text-amber-400 font-black text-xs uppercase tracking-widest mb-3">🔑 API Anahtarı Nasıl Alınır?</h4>
@@ -951,7 +979,7 @@
                 <p class="text-[10px] text-amber-600 mt-3">💡 Ücretsiz plan günlük kullanım için yeterlidir. Birden fazla anahtar ekleyebilirsiniz.</p>
             </div>
             <div class="border-t border-white/5 pt-4">
-                <p class="text-[10px] text-slate-700 leading-relaxed">🔒 Anahtarlarınız tarayıcınızda şifrelenmiş olarak saklanır. Sunucuya gönderilmez.</p>
+                <p class="text-[10px] text-slate-700 leading-relaxed" data-i18n="settings.privacy">🔒 Anahtarlarınız tarayıcınızda şifrelenmiş olarak saklanır. Sunucuya gönderilmez.</p>
             </div>
         </div>
     </div>
@@ -960,12 +988,12 @@
     <div id="admin-overlay" class="settings-overlay" style="display:none" onclick="if(event.target===this)closeAdmin()">
         <div class="settings-modal" style="max-width:500px;">
             <div class="flex justify-between items-center mb-6">
-                <h2 class="text-xl font-black text-cyan-400 uppercase tracking-widest">👥 Kullanıcılar</h2>
+                <h2 class="text-xl font-black text-cyan-400 uppercase tracking-widest" data-i18n="admin.title">👥 Kullanıcılar</h2>
                 <button onclick="closeAdmin()" class="w-9 h-9 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all">✕</button>
             </div>
             <div id="admin-user-list" class="mb-6"></div>
             <div class="border-t border-white/5 pt-4">
-                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3">Yeni Kullanıcı</h3>
+                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3" data-i18n="admin.newUser">Yeni Kullanıcı</h3>
                 <div class="flex flex-col gap-2">
                     <input type="text" id="new-user-name" placeholder="Kullanıcı adı" class="bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-700">
                     <input type="password" id="new-user-pass" placeholder="Şifre" class="bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 outline-none focus:border-cyan-400 text-xs text-white placeholder-slate-700">
@@ -1114,13 +1142,13 @@
                 <div id="search-results" class="search-results"></div>
             </div>
             <div class="header-actions">
-                <label id="file-input-label" class="hdr-btn with-label" title="Veri Oku" style="cursor:pointer">
-                    <span>📄</span><span class="hdr-btn-label">VERİ OKU</span>
+                <label id="file-input-label" class="hdr-btn with-label" title="Veri Oku" data-i18n="header.readData" data-i18n-attr="title" style="cursor:pointer">
+                    <span>📄</span><span class="hdr-btn-label" data-i18n="header.readData">VERİ OKU</span>
                     <input type="file" id="file-input" class="hidden" accept=".json">
                 </label>
-                <button onclick="openDatasets()" class="hdr-btn" title="Veri Setleri">📂</button>
-                <button id="editor-btn-header" onclick="openEditor()" class="hdr-btn" title="JSON Editör">📝</button>
-                <button onclick="openNotes()" class="hdr-btn" title="Notlarım">📓</button>
+                <button onclick="openDatasets()" class="hdr-btn" title="Veri Setleri" data-i18n="header.datasets" data-i18n-attr="title">📂</button>
+                <button id="editor-btn-header" onclick="openEditor()" class="hdr-btn" title="JSON Editör" data-i18n="header.editor" data-i18n-attr="title">📝</button>
+                <button onclick="openNotes()" class="hdr-btn" title="Notlarım" data-i18n="header.notes" data-i18n-attr="title">📓</button>
                 <div class="hdr-divider"></div>
                 <button id="admin-btn" onclick="openAdmin()" class="hdr-btn" title="Kullanıcı Yönetimi" style="display:none">👥</button>
                 <div class="relative" id="layout-menu-wrap">
@@ -1133,11 +1161,16 @@
                         <button onclick="switchLayout('allah')" class="layout-option" data-layout="allah">🕋 الله <span class="layout-desc">Arapça kaligrafi — Allah lafzı şekli</span></button>
                     </div>
                 </div>
-                <button onclick="toggleHudSlider()" class="hdr-btn" id="hud-toggle-btn" title="Bilgi Paneli (HUD)">📋</button>
-                <button onclick="openSettings()" class="hdr-btn" title="Ayarlar">⚙️</button>
-                <button onclick="togglePerformance()" class="hdr-btn with-label" title="Performans Modu" id="perf-btn"><span>⚡</span><span class="hdr-btn-label">YÜKSEK</span></button>
-                <button onclick="toggleStats()" class="hdr-btn" title="İstatistikler">📊</button>
-                <button onclick="RootAnalyzer.togglePanel()" class="hdr-btn" title="Kök Analiz Motoru">🔬</button>
+                <button onclick="toggleHudSlider()" class="hdr-btn" id="hud-toggle-btn" title="Bilgi Paneli (HUD)" data-i18n="header.hud" data-i18n-attr="title">📋</button>
+                <button onclick="openSettings()" class="hdr-btn" title="Ayarlar" data-i18n="header.settings" data-i18n-attr="title">⚙️</button>
+                <button onclick="togglePerformance()" class="hdr-btn with-label" title="Performans Modu" data-i18n="header.perf" data-i18n-attr="title" id="perf-btn"><span>⚡</span><span class="hdr-btn-label" data-i18n="header.perfHigh">YÜKSEK</span></button>
+                <button onclick="toggleStats()" class="hdr-btn" title="İstatistikler" data-i18n="header.stats" data-i18n-attr="title">📊</button>
+                <button onclick="RootAnalyzer.togglePanel()" class="hdr-btn" title="Kök Analiz Motoru" data-i18n="header.analyzer" data-i18n-attr="title">🔬</button>
+                <div class="hdr-divider"></div>
+                <div class="lang-selector-wrap" id="lang-selector-wrap">
+                    <button class="lang-btn" id="lang-btn" onclick="I18n.toggleSelector()" title="Dil / Language">🇹🇷 <span class="lang-btn-code">TR</span></button>
+                    <div id="lang-menu" class="lang-menu hidden"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -1211,19 +1244,19 @@
         <!-- Section tabs -->
         <div class="hud-section-tabs">
             <button class="hud-section-tab active" data-section="ayet" onclick="switchHudSection('ayet')">
-                <span class="tab-emoji">📖</span>Ayet
+                <span class="tab-emoji">📖</span><span data-i18n="hud.tabAyet">Ayet</span>
             </button>
             <button class="hud-section-tab" data-section="kokler" onclick="switchHudSection('kokler')">
-                <span class="tab-emoji">🌿</span>Kökler
+                <span class="tab-emoji">🌿</span><span data-i18n="hud.tabRoots">Kökler</span>
             </button>
             <button class="hud-section-tab" data-section="baglantilar" onclick="switchHudSection('baglantilar')">
-                <span class="tab-emoji">🔗</span>Bağlantılar
+                <span class="tab-emoji">🔗</span><span data-i18n="hud.tabConnections">Bağlantılar</span>
             </button>
             <button class="hud-section-tab" data-section="istatistik" onclick="switchHudSection('istatistik')">
-                <span class="tab-emoji">📊</span>İstatistik
+                <span class="tab-emoji">📊</span><span data-i18n="hud.tabStats">İstatistik</span>
             </button>
             <button class="hud-section-tab" data-section="analiz" onclick="switchHudSection('analiz')">
-                <span class="tab-emoji">🔬</span>Analiz
+                <span class="tab-emoji">🔬</span><span data-i18n="hud.tabAnalysis">Analiz</span>
             </button>
         </div>
 
@@ -1409,10 +1442,11 @@
     <!-- Çevrimiçi Kullanıcılar -->
     <div id="online-indicator" style="position:fixed;bottom:16px;left:16px;z-index:50;display:none;background:rgba(0,0,0,0.7);backdrop-filter:blur(12px);border:1px solid rgba(52,211,153,0.2);border-radius:20px;padding:6px 14px;font-size:10px;color:#34d399;font-weight:700;letter-spacing:0.1em;cursor:pointer;" onclick="showOnlineList()" title="Çevrimiçi kullanıcılar">
         <span id="online-dot" style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#34d399;margin-right:6px;animation:pulse 2s infinite;"></span>
-        <span id="online-count">0</span> çevrimiçi
+        <span id="online-count">0</span> <span data-i18n="common.online">çevrimiçi</span>
     </div>
 
     <!-- Modüler JS Dosyaları -->
+    <script src="js/i18n.js"></script>
     <script src="js/state.js"></script>
     <script>document.getElementById('app-version-badge').textContent='v'+APP_VERSION;</script>
     <script src="js/shaders.js"></script>

@@ -141,7 +141,7 @@ def create_backup():
     zip_path = os.path.join(backup_dir, f'SGX_v{ver}_{ts}.zip')
 
     # Kullanıcı verileri %APPDATA%/SemantikGalaksi altında
-    user_items = ['webview_data', 'notes', 'config.json', 'datasets']
+    user_items = ['webview_data', 'notes', 'config.json', 'datasets', 'locales']
     # VERSION uygulama kök dizininde kalır
     app_items = ['VERSION']
 

@@ -106,6 +106,7 @@ var hideLoadingScreen = () => {
 
 window.onload = async () => {
     isDesktopMode = await DatasetStore._checkServer();
+    await I18n.init();
     playBesmeleAudio();
 
     // Web modda veri yazma butonlarını devre dışı bırak

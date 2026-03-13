@@ -67,6 +67,16 @@ if os.path.isdir(datasets_dir):
                 (src, os.path.join("Frontend", "datasets", f))
             )
 
+# Frontend/locales/ dizini (i18n dil dosyaları)
+locales_dir = os.path.join(FRONTEND_DIR, "locales")
+if os.path.isdir(locales_dir):
+    for f in os.listdir(locales_dir):
+        src = os.path.join(locales_dir, f)
+        if os.path.isfile(src):
+            include_files.append(
+                (src, os.path.join("Frontend", "locales", f))
+            )
+
 # Config dosyası
 config_src = os.path.join(DATAENGINE_DIR, "config.json")
 if os.path.exists(config_src):

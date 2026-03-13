@@ -5,9 +5,9 @@ window.analyzeWithAI = async () => {
     var btn = document.getElementById('ai-analyze-btn');
     var result = document.getElementById('ai-result');
     btn.disabled = true;
-    btn.innerHTML = '<span class="animate-pulse">⏳</span> Analiz ediliyor...';
+    btn.innerHTML = '<span class="animate-pulse">⏳</span> ' + t('ai.analyzing');
     result.classList.remove('hidden');
-    result.innerHTML = '<p class="text-purple-400 animate-pulse text-center">Yapay zekâ düşünüyor...</p>';
+    result.innerHTML = '<p class="text-purple-400 animate-pulse text-center">' + t('ai.thinking') + '</p>';
     var n = currentHudNode;
     var roots = (n.roots || []).map(r => `${r} (${getRootPron(r)})`).join(', ');
     var prompt = `Sen bir Kur'an-ı Kerim semantik analiz uzmanısın. Aşağıdaki ayeti analiz et.
@@ -39,13 +39,13 @@ Türkçe yaz, kısa ve öz tut.`;
                 .replace(/\n/g, '<br>')
                 .replace(/^(\d+\.)/gm, '<span class="text-cyan-400 font-bold">$1</span>');
         } else {
-            result.innerHTML = '<p class="text-red-400">Analiz sonucu alınamadı.</p>';
+            result.innerHTML = '<p class="text-red-400">' + t('ai.noResult') + '</p>';
         }
     } catch (err) {
-        result.innerHTML = `<p class="text-red-400">Hata: ${err.message}</p>`;
+        result.innerHTML = `<p class="text-red-400">${t('ai.error', {message: err.message})}</p>`;
     } finally {
         btn.disabled = false;
-        btn.innerHTML = '<span class="text-lg">🤖</span> Yapay Zekâ Analizi';
+        btn.innerHTML = '<span class="text-lg">🤖</span> ' + t('ai.analyze');
     }
 };
 document.getElementById('close-hud').onclick = () => { closeHUD(); };
@@ -75,7 +75,7 @@ window.openSettings = async () => {
             <div style="display:flex;align-items:center;gap:12px;padding:10px 14px;background:rgba(0,242,255,0.05);border:1px solid rgba(0,242,255,0.15);border-radius:12px;margin-bottom:8px;">
                 <span style="font-size:24px;">👤</span>
                 <div style="flex:1;"><div class="text-sm font-bold text-white">${authUser}</div><div class="text-[10px] text-cyan-500">${roleLabels[authRole] || authRole}</div></div>
-                <button onclick="doLogout()" class="bg-red-950/50 hover:bg-red-900/50 border border-red-400/20 px-4 py-2 rounded-xl font-black text-[10px] text-red-400 uppercase tracking-widest transition-all">Çıkış</button>
+                <button onclick="doLogout()" class="bg-red-950/50 hover:bg-red-900/50 border border-red-400/20 px-4 py-2 rounded-xl font-black text-[10px] text-red-400 uppercase tracking-widest transition-all">${t('settings.logout')}</button>
             </div>`;
         pwSection.style.display = '';
     } else {
@@ -125,8 +125,8 @@ var applyPerformanceMode = () => {
     var btn = document.getElementById('perf-btn');
     if (btn) {
         btn.innerHTML = isLow
-            ? '<span>🔋</span><span class="hdr-btn-label">DÜŞÜK</span>'
-            : '<span>⚡</span><span class="hdr-btn-label">YÜKSEK</span>';
+            ? '<span>🔋</span><span class="hdr-btn-label">' + t('header.perfLow') + '</span>'
+            : '<span>⚡</span><span class="hdr-btn-label">' + t('header.perfHigh') + '</span>';
         btn.title = isLow ? 'Performans Modu (Düşük Kalite) — Tıkla: Yüksek' : 'Yüksek Kalite — Tıkla: Düşük';
     }
 };

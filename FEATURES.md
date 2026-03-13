@@ -1,5 +1,18 @@
 # FEATURES - Kur'an-ı Kerim Kelime Kök Uzayı
 
+## Çoklu Dil Desteği (i18n)
+Tüm UI metinleri JSON tabanlı locale dosyaları ile çoklu dile çevrilebilir.
+
+| Özellik | Açıklama |
+|---------|----------|
+| Gömülü Türkçe | Fallback — ağ bağlantısı gerekmez |
+| JSON Locale | `Frontend/locales/{LANG-region}.json` formatında |
+| Desteklenen Diller | TR, EN, RU, IT, ES |
+| Otomatik Algılama | Tarayıcı/OS diline göre, localStorage hatırlama |
+| Auto-Discover | Yeni JSON dosyası locales/ klasörüne bırakılırsa otomatik keşfedilir |
+| Besmele Sesleri | Dil bazlı besmele_code.wav dosyaları |
+| Çeviri Şablonu | Topluluk çevirisi için boş şablon indirme |
+
 ## EXE Olarak Dağıtım (PyInstaller)
 Uygulama PyInstaller ile tek klasör (one-folder) EXE olarak paketlenebilir.
 

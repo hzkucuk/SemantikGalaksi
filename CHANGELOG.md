@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## [0.41.0] - 2025-07-28
+### Yeni Özellik
+- **Çoklu Dil Desteği (i18n)**: Tüm UI metinleri 5 dile çevrildi (Türkçe, İngilizce, Rusça, İtalyanca, İspanyolca)
+- **i18n Motoru**: Gömülü Türkçe fallback, JSON locale dosyaları, `t(key, params)` fonksiyonu, `data-i18n` DOM attribute desteği
+- **Otomatik Dil Algılama**: Tarayıcı/OS diline göre otomatik seçim, localStorage hatırlama
+- **Header Dil Seçici**: Bayraklı dropdown menü ile anlık dil değiştirme
+- **Dil Bazlı Besmele**: Her dilde besmele ses dosyası desteği (`besmele_en.wav` vb.), Gemini TTS üretici script
+- **Auto-Discover**: Kullanıcı `FR-fr.json` gibi yeni dil dosyası eklerse otomatik keşfedilir
+- **Çeviri Şablonu**: Boş şablon indirme ile topluluk çevirisi desteği
+- **Yedek + MSI**: Locale dosyaları yedeğe ve MSI build’e dahil
+- **Etkilenen dosyalar:** `Frontend/js/i18n.js` (yeni), `Frontend/locales/*.json` (yeni), `DataEngine/generate_besmele_i18n.py` (yeni), `Frontend/index.html`, `Frontend/js/hud.js`, `Frontend/js/settings.js`, `Frontend/js/root-analyzer.js`, `Frontend/js/datasets.js`, `Frontend/js/loading.js`, `DataEngine/desktop_app.py`, `setup.py`, `DataEngine/updater.py`
+
 ## [0.40.2] - 2025-07-28
 ### İyileştirme
 - **Tüm Kitap Özeti (Big Picture)**: HUD Analiz sekmesine "Büyük Resim" bölümü eklendi — her ayet görüntülenirken kitap geneli bağlamı (2139 kök, 6236 ayet, Zipf α/R², en yaygın 5 kök, en güçlü 3 köprü kök) üstte kompakt kart olarak sunulur

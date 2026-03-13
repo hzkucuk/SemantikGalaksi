@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  S%C3%BCr%C3%BCm-0.40.2-34d399
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.41.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -175,6 +175,15 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **Pinned Tooltip**: Ayet kartlarına hover yapılınca tooltip panelin sağında sabit konumda açılır
 - `cubic-bezier(0.4, 0, 0.2, 1)` animasyon, `buildTooltipContent()` helper ile DRY HTML üretimi
 
+### 🌍 Çoklu Dil Desteği — i18n (v0.41.0)
+- **5 dil**: Türkçe (gömülü fallback), İngilizce, Rusça, İtalyanca, İspanyolca
+- **Otomatik algılama**: Tarayıcı/OS diline göre dil seçimi, `localStorage` ile hatırlama
+- **Header seçici**: Bayrak ikonlu dropdown menü ile anlık dil değişimi
+- **JSON locale dosyaları**: `Frontend/locales/{LANG-region}.json` formatında, topluluk çevirisi şablonu
+- **Otomatik keşif**: Yeni locale dosyası `locales/` klasörüne bırakılırsa dropdown'a otomatik eklenir
+- **Dil bazlı Besmele**: Her dil için ayrı `besmele_{code}.wav` ses dosyası desteği
+- **~170 çeviri anahtarı**: Yükleme ekranı, HUD, ayarlar, analiz paneli, toolbar dahil tüm UI metinleri
+
 ### 🔬 Kök Analiz Motoru (v0.40.1)
 - **Zipf Frekans Dağılımı**: Kök sıklık analizi, Zipf üssü (α) ve R² uyum skoru
 - **Co-occurrence Matrisi**: En sık 20 kökün birlikte geçme ısı haritası
@@ -228,6 +237,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.41.0 | 🌍 **Çoklu Dil Desteği (i18n)**: 5 dil (TR/EN/RU/IT/ES), otomatik algılama, header seçici, JSON locale, dil bazlı besmele, auto-discover |
 | v0.40.2 | **Tüm Kitap Özeti**: HUD Analiz sekmesinde kitap geneli büyük resim (2139 kök, Zipf, top 5 kök, köprü kökler) |
 | v0.40.1 | **Kök Analiz Motoru**: Zipf, co-occurrence, yoğunluk haritası, ağ metrikleri, kümeleme, Canvas grafikler, JSON/CSV export |
 | v0.40.0 | 🚀 **Release**: HUD Slider Panel + Floating Toggle + Yedekleme %APPDATA% uyumu |
@@ -321,10 +331,11 @@ SemantikGalaksi/
 │   ├── requirements.txt          # Python bağımlılıkları
 │   ├── .env                      # API anahtarları (Gemini)
 │   ├── generate_besmele_audio.py # Besmele TTS ses üretici
+│   ├── generate_besmele_i18n.py # Çoklu dil besmele TTS üretici
 │   └── quran_api_enricher.py     # Kur'an veri zenginleştirici
 ├── Frontend/
 │   ├── index.html                # Ana arayüz (HTML + CSS + script ref, ~861 satır)
-│   ├── js/                       # 21 modüler JavaScript dosyası
+│   ├── js/                       # 22 modüler JavaScript dosyası
 │   │   ├── state.js              # Paylaşımlı global state
 │   │   ├── shaders.js            # GLSL shader'lar (güneş, Türk bayrağı SDF)
 │   │   ├── constants.js          # Sabitler, sure adları, renk haritaları
@@ -332,6 +343,7 @@ SemantikGalaksi/
 │   │   ├── data-loader.js        # Veri işleme, küre oluşturma
 │   │   ├── warp.js               # Hyperspace warp + animate loop
 │   │   ├── datasets.js           # Veri seti yöneticisi + iki sekmeli editör
+│   │   ├── i18n.js               # Çoklu dil motoru (5 dil, auto-detect)
 │   │   └── ... (13 modül daha)   # interaction, tooltip, hud, search, vb.
 │   ├── quran_data.json           # Kur'an verileri (sureler, ayetler, kökler)
 │   ├── quran_roots.json          # Arapça kök sözlüğü (2139 kök)
@@ -339,7 +351,8 @@ SemantikGalaksi/
 │   ├── three.min.js              # Three.js r128
 │   ├── OrbitControls.js          # 3D kamera kontrolü
 │   ├── tailwind.min.js           # Tailwind CSS
-│   └── besmele.wav               # Besmele ses dosyası
+│   ├── besmele.wav               # Besmele ses dosyası (Türkçe)
+│   └── locales/                  # Dil dosyaları (EN-en.json, RU-ru.json, ...)
 ├── app_icon.ico                  # Uygulama ikonu (ay-yıldız, 6 boyut)
 ├── setup.py                      # cx_Freeze MSI build tanımı
 ├── build_msi.bat                 # MSI build script'i (server + client)

@@ -226,6 +226,16 @@ class ApiKeyBridge:
         except Exception:
             pass
 
+    def list_locales(self):
+        """locales/ klasöründeki JSON dil dosyalarını listele (i18n auto-discover için)"""
+        try:
+            locales_dir = os.path.join(ROOT_DIR, 'locales')
+            if not os.path.isdir(locales_dir):
+                return []
+            return [f for f in os.listdir(locales_dir) if f.endswith('.json')]
+        except Exception:
+            return []
+
     def check_update(self):
         """GitHub'dan güncelleme kontrolü"""
         if not updater:
@@ -1057,6 +1067,28 @@ def sunucuyu_baslat():
         print(f"Uyarı: {PORT} portu zaten kullanımda olabilir.")
 
 if __name__ == '__main__':
+    def _get_besmele_path():
+        """Kullanıcının seçili diline göre besmele WAV dosyasını belirle"""
+        try:
+            config_path = os.path.join(WEBVIEW_DATA_DIR, 'Local Storage', 'leveldb')
+            # localStorage'dan dil tercihini oku (basit fallback)
+            import glob
+            for f in glob.glob(os.path.join(config_path, '*.log')):
+                try:
+                    with open(f, 'rb') as fh:
+                        content = fh.read().decode('utf-8', errors='ignore')
+                        if 'sg_language' in content:
+                            for code in ['EN-en', 'RU-ru', 'IT-it', 'ES-es']:
+                                if code in content:
+                                    lang_file = os.path.join(ROOT_DIR, 'locales', f'besmele_{code.split("-")[0].lower()}.wav')
+                                    if os.path.exists(lang_file):
+                                        return lang_file
+                except Exception:
+                    pass
+        except Exception:
+            pass
+        return os.path.join(ROOT_DIR, 'besmele.wav')
+
     if RUN_MODE == 'client':
         # --- CLIENT MODU: Sunucu başlatılmaz, uzak sunucuya bağlanılır ---
         _target_url = f'http://{SERVER_IP}:{SERVER_PORT}/index.html'
@@ -1079,7 +1111,7 @@ if __name__ == '__main__':
             api_bridge._window = window
             window.events.closing += on_closing
 
-            _besmele_wav = os.path.join(ROOT_DIR, 'besmele.wav')
+            _besmele_wav = _get_besmele_path()
             _besmele_state = {'played': False}
 
             def on_loaded():
@@ -1127,7 +1159,7 @@ if __name__ == '__main__':
             api_bridge._window = window
             window.events.closing += on_closing
 
-            _besmele_wav = os.path.join(ROOT_DIR, 'besmele.wav')
+            _besmele_wav = _get_besmele_path()
             _besmele_state = {'played': False}
 
             def on_loaded():
