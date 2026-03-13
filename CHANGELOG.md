@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.35.2] - 2025-07-28
+### Düzeltme
+- **Mobil Touch Desteği**: Mobilde çizgilere ve kürelere dokunma artık çalışıyor — `touchend` (tıklama) ve `touchmove` (hover/tooltip) event'leri eklendi
+- **Etkilenen dosya:** `Frontend/js/scene-init.js`
+
 ## [0.35.1] - 2025-07-28
 ### İyileştirme
 - **Mobil Landscape Zorlama**: Mobil cihazlarda uygulama yalnızca yatay modda çalışır — dikey modda “Cihazınızı Yatay Çevirin” uyarısı gösterilir
