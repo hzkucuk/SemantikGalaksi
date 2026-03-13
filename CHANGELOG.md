@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.38.1] - 2025-07-28
+### Dökümantasyon
+- **README Kapsamlı Güncelleme**: Öne Çıkan Özellikler'e 4 yeni bölüm (APPDATA koruması, mobil destek, uygulama ikonu, kullanıcı verileri), Mimari diyagramında %APPDATA% veri katmanı ayrımı, Proje Yapısı'na yeni dosyalar, MSI bölümü çift build + ikon + APPDATA, Sürüm Geçmişi v0.35–0.38, Teknoloji Yığını'na cx_Freeze
+- **Etkilenen dosya:** `README.md`
+
 ## [0.38.0] - 2025-07-28
 ### Release
 - **v0.38.0 Release**: Uygulama ikonu (ay-yıldız) + kullanıcı verileri %APPDATA% koruması içeren kararlı sürüm

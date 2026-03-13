@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  S%C3%BCr%C3%BCm-0.38.0-34d399
+  S%C3%BCr%C3%BCm-0.38.1-34d399
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -190,6 +190,22 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - MSI sessiz kurulum (`msiexec /passive /norestart`)
 - Maksimum 5 yedek tutulur, eski yedekler otomatik silinir
 
+### 🛡️ Kullanıcı Verileri Koruması (v0.36.1)
+- Notlar, veri setleri, API anahtarları ve config **`%APPDATA%/SemantikGalaksi`** altında saklanır
+- MSI kaldırılsa, yeniden kurulsa veya sürüm değişse bile **kullanıcı verileri korunur**
+- İlk çalıştırmada eski kurulum dizinindeki veriler otomatik olarak yeni konuma **migrate** edilir
+- Mevcut veri varsa ezilmez — güvenli kopyalama
+
+### 📱 Mobil Destek (v0.35.1)
+- **Landscape zorlama**: Mobil cihazlarda uygulama yalnızca yatay modda çalışır — dikey modda "Cihazınızı Yatay Çevirin" uyarısı
+- **Touch desteği**: Mobilde çizgilere ve kürelere dokunma (`touchend` + `touchmove` event'leri)
+- **Responsive header**: Mobil yatay modda buton label'ları gizlenir, padding küçültülür
+- **Web mod kısıtlama**: Web modda lokal-only butonlar soluklaştırılıp devre dışı bırakılır
+
+### 🌙 Uygulama İkonu (v0.37.1)
+- Uzay temalı **ay-yıldız** tasarımı — cyan/teal hilal + 5 köşeli yıldız
+- 6 boyut: 256×256 → 16×16 (EXE, MSI, masaüstü kısayolu, başlat menüsü)
+
 ### 🔐 Kimlik Doğrulama ve Yetkilendirme
 - Token tabanlı oturum, SHA-256 + salt şifreleme
 - 3 rol: **admin** (tam yetki), **editor** (CRUD), **viewer** (salt okunur)
@@ -198,6 +214,13 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.38.0 | **Release**: Ay-yıldız uygulama ikonu + `%APPDATA%` veri koruması içeren kararlı sürüm |
+| v0.37.1 | **Uygulama İkonu**: Ay-yıldız tasarımlı uzay temalı ikon — EXE, MSI, masaüstü ve başlat menüsü kısayollarında görünür |
+| v0.37.0 | **Veri Koruması Release**: Kullanıcı verileri `%APPDATA%` altında, otomatik migrasyon |
+| v0.36.1 | **APPDATA Taşıma**: Notlar, datasets, API anahtarları, config artık MSI-bağımsız `%APPDATA%/SemantikGalaksi` altında |
+| v0.35.3 | **Mobil Landscape Header**: Butonlar yatay modda ekrana sığıyor, label gizleme + padding küçültme |
+| v0.35.2 | **Mobil Touch**: Çizgi ve kürelere dokunma desteği (`touchend` + `touchmove`) |
+| v0.35.1 | **Mobil Landscape Zorlama**: Dikey modda uyarı, Web mod buton kısıtlaması |
 | v0.34.4 | **TTS Düzeltme**: `temperature:0` Gemini TTS'i bozuyordu (HTTP 500) — kaldırıldı. **Otomatik Güncelleme**: GitHub Release kontrolü, ZIP yedekleme, sessiz MSI kurulumu |
 | v0.33.0 | **MSI Server/Client**: Kurulum tipi seçimi, **Besmele**: Süleymaniye Vakfı meali, **Kök Renk**: 16 ayrık renk index bazlı atama |
 | v0.32.2 | **Zayıf Harf Eşdeğerlik Kontrolü**: İndirgenmiş kök eşleşmesinde ا/و/ي eşdeğerliği devre dışı — sahte renklendirme engellendi |
@@ -251,9 +274,13 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ├─────────────────────────────────────────────────────────┤
 │   Veri Katmanı                                          │
 │   ├── quran_data.json — Kur'an verileri (sure/ayet/kök) │
+│   └── quran_roots.json — Arapça kök sözlüğü             │
+│                                                         │
+├─────────────────── %APPDATA% ───────────────────────────┤
+│   Kullanıcı Verileri (MSI-bağımsız, kalıcı)             │
 │   ├── datasets/ — kullanıcı veri setleri                │
 │   ├── notes/ — kullanıcı notları                        │
-│   ├── .api_keys — şifreli API anahtarları               │
+│   ├── webview_data/.api_keys — şifreli API anahtarları  │
 │   └── config.json — sunucu yapılandırması               │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -266,6 +293,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 SemantikGalaksi/
 ├── DataEngine/
 │   ├── desktop_app.py            # Ana uygulama (sunucu + masaüstü)
+│   ├── updater.py                # Otomatik güncelleme modülü (GitHub Release)
 │   ├── config.json               # Sunucu yapılandırması
 │   ├── requirements.txt          # Python bağımlılıkları
 │   ├── .env                      # API anahtarları (Gemini)
@@ -288,8 +316,10 @@ SemantikGalaksi/
 │   ├── three.min.js              # Three.js r128
 │   ├── OrbitControls.js          # 3D kamera kontrolü
 │   ├── tailwind.min.js           # Tailwind CSS
-│   ├── besmele.wav               # Besmele ses dosyası
-│   └── datasets/                 # Kullanıcı veri setleri
+│   └── besmele.wav               # Besmele ses dosyası
+├── app_icon.ico                  # Uygulama ikonu (ay-yıldız, 6 boyut)
+├── setup.py                      # cx_Freeze MSI build tanımı
+├── build_msi.bat                 # MSI build script'i (server + client)
 ├── SemantikGalaksi.spec          # PyInstaller build tanımı
 ├── build_exe.bat                 # EXE build script'i
 ├── VERSION                       # Tek kaynak sürüm dosyası
@@ -375,21 +405,27 @@ Script otomatik olarak:
 1. ✅ Python varlığını kontrol eder
 2. ✅ `cx_Freeze` yoksa kurar
 3. ✅ Proje bağımlılıklarını yükler
-4. ✅ MSI installer paketini oluşturur
+4. ✅ `Frontend/js/state.js` versiyonunu senkronize eder
+5. ✅ **Server MSI** oluşturur (tüm dosyalar dahil)
+6. ✅ **Client MSI** oluşturur (JSON veriler hariç — sunucudan alınır)
 
-Çıktı: `dist\SemantikGalaksi-0.24.0-win64.msi`
+Çıktı:
+- `dist/SemantikGalaksi-X.Y.Z-server-win64.msi`
+- `dist/SemantikGalaksi-X.Y.Z-client-win64.msi`
 
 ### MSI Paketi İçeriği
 
 | Bileşen | Dahil mi? |
-|---------|-----------|
+|---------|----------|
 | Python runtime | ✅ Gömülü (ayrı kurulum gerektirmez) |
 | Tüm Python bağımlılıkları | ✅ (pywebview, requests, aiohttp, vb.) |
 | Frontend dosyaları | ✅ (HTML, JS modülleri, JSON, ses, panorama) |
+| Uygulama ikonu (ay-yıldız) | ✅ EXE + kısayollar |
 | WebView2 runtime | ⚠️ Windows 10+ ile birlikte gelir |
 | Masaüstü kısayolu | ✅ Otomatik oluşturulur |
 | Başlat Menüsü kısayolu | ✅ Otomatik oluşturulur |
 | Kaldırma desteği | ✅ Denetim Masası → Program Kaldır |
+| Kullanıcı verisi koruması | ✅ `%APPDATA%` — kaldırmada silinmez |
 
 > 💡 **Not:** MSI paketi Python'u içine gömer — hedef makinede Python kurulu olmasına gerek yoktur.
 
@@ -538,6 +574,7 @@ Tüm endpoint'ler `Authorization: Bearer <token>` header'ı gerektirir (login ha
 | **Python** `http.server` | HTTP sunucusu (stdlib, ek bağımlılık yok) |
 | **Python** `socket` + `struct` | Raw WebSocket sunucusu (RFC 6455) |
 | **pywebview** | Native masaüstü penceresi (WebView2) |
+| **cx_Freeze** | MSI paketleme (server + client) |
 | **PyInstaller** | EXE paketleme |
 | **hashlib** (SHA-256) | Şifre karma + salt |
 | **Google Gemini** | AI metin analizi |
@@ -677,6 +714,14 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.38.0** | 2025-07-28 | 🚀 Release — Ay-yıldız ikonu + APPDATA veri koruması |
+| **0.37.1** | 2025-07-28 | Uygulama ikonu eklendi (EXE + MSI + kısayollar) |
+| **0.37.0** | 2025-07-28 | 🚀 Release — Kullanıcı verileri %APPDATA% koruması |
+| **0.36.1** | 2025-07-28 | Kullanıcı verileri %APPDATA% altına taşındı, otomatik migrasyon |
+| **0.36.0** | 2025-07-28 | 🚀 Release — Mobil iyileştirmeler |
+| **0.35.3** | 2025-07-28 | Mobil landscape header düzeltmesi |
+| **0.35.2** | 2025-07-28 | Mobil touch desteği (çizgi + küre dokunma) |
+| **0.35.1** | 2025-07-28 | Mobil landscape zorlama, web mod buton kısıtlama |
 | **0.35.0** | 2025-07-28 | 🚀 Release — Otomatik güncelleme sistemi + TTS düzeltmesi |
 | **0.34.4** | 2025-07-28 | TTS düzeltme (temperature:0 kaldırıldı), Otomatik güncelleme sistemi (GitHub Release + ZIP yedek + sessiz MSI) |
 | **0.33.0** | 2025-07-28 | MSI Server/Client modu, Besmele Süleymaniye meali, 16 ayrık kök renk paleti |
