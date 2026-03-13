@@ -57,6 +57,7 @@
     <Content Include="Frontend\js\key-manager.js" />
     <Content Include="Frontend\js\loading.js" />
     <Content Include="Frontend\js\notes.js" />
+    <Content Include="Frontend\js\root-analyzer.js" />
     <Content Include="Frontend\js\scene-init.js" />
     <Content Include="Frontend\js\search.js" />
     <Content Include="Frontend\js\settings.js" />

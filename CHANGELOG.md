@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.40.2] - 2025-07-28
+### İyileştirme
+- **Tüm Kitap Özeti (Big Picture)**: HUD Analiz sekmesine "Büyük Resim" bölümü eklendi — her ayet görüntülenirken kitap geneli bağlamı (2139 kök, 6236 ayet, Zipf α/R², en yaygın 5 kök, en güçlü 3 köprü kök) üstte kompakt kart olarak sunulur
+- **Performans cache**: Kitap geneli metrikleri cache'lenir, her HUD açılışında yeniden hesaplanmaz
+- **Etkilenen dosyalar:** `Frontend/js/root-analyzer.js`, `Frontend/index.html`
+
 ## [0.40.1] - 2025-07-28
 ### Yeni Özellik
 - **Kök Analiz Motoru**: 6 analiz katmanlı kapsamlı kök analiz modülü — Zipf frekans dağılımı, co-occurrence matrisi, sure-kök yoğunluk haritası, ağ metrikleri (derece, merkezilik, köprü gücü), kök ailesi kümeleme, Canvas 2D grafikler, JSON/CSV dışa aktarım

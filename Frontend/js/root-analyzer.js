@@ -603,8 +603,84 @@ var RootAnalyzer = (function () {
     // HUD SEKMESİ İÇİN MİNİ ANALİZ
     // ════════════════════════════════════════════════════════════
 
+    // ── Tüm Kitap Özeti (cache — her HUD açılışında yeniden hesaplamayı önler)
+    var _bookCache = null;
+    var _bookCacheKey = 0;
+
+    var getBookOverview = () => {
+        if (_bookCache && _bookCacheKey === nodes.length) return _bookCache;
+        var ov = calcOverview();
+        var freq = calcFrequency();
+        var net = calcNetworkMetrics();
+        _bookCache = { ov, freq, net };
+        _bookCacheKey = nodes.length;
+        return _bookCache;
+    };
+
     var renderHudAnalysis = (node) => {
         if (!node || !node.roots) return '';
+
+        // ── 1) Tüm Kitap Özeti (Big Picture)
+        var bk = getBookOverview();
+        var ov = bk.ov;
+        var freq = bk.freq;
+        var net = bk.net;
+
+        var html = `
+            <div class="book-overview-card">
+                <div class="book-overview-header">
+                    <span class="book-overview-icon">📖</span>
+                    <span class="book-overview-title">Tüm Kitap — Büyük Resim</span>
+                </div>
+                <div class="book-overview-grid">
+                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#00f2ff;">${ov.totalRoots}</span><span class="book-ov-lbl">Kök</span></div>
+                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#a78bfa;">${ov.totalAyahs}</span><span class="book-ov-lbl">Ayet</span></div>
+                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#34d399;">${ov.avgRoots}</span><span class="book-ov-lbl">Ort/Ayet</span></div>
+                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#ef4444;">${ov.hapax}</span><span class="book-ov-lbl">Tekil</span></div>
+                </div>
+                <div class="book-overview-row">
+                    <span class="book-ov-tag">Zipf α=${freq.alpha}</span>
+                    <span class="book-ov-tag">R²=${freq.rSquared}</span>
+                    <span class="book-ov-tag">Tekil %${ov.hapaxPercent}</span>
+                    <span class="book-ov-tag">Maks ${ov.maxConns} bağ</span>
+                </div>
+                <div class="book-overview-section">
+                    <span class="book-ov-section-title">🏆 En Yaygın 5 Kök</span>
+                    <div class="book-ov-root-list">
+                        ${freq.sorted.slice(0, 5).map(([r, f], i) => {
+                            var info = rootDictionary[r];
+                            var meaning = info ? info.meaning.split(',')[0] : '';
+                            return `<div class="book-ov-root-item">
+                                <span class="book-ov-rank">${i + 1}</span>
+                                <span class="book-ov-root" dir="rtl">${r}</span>
+                                <span class="book-ov-freq">${f}</span>
+                                ${meaning ? `<span class="book-ov-meaning">${meaning}</span>` : ''}
+                            </div>`;
+                        }).join('')}
+                    </div>
+                </div>
+                <div class="book-overview-section">
+                    <span class="book-ov-section-title">🌉 En Güçlü 3 Köprü Kök</span>
+                    <div class="book-ov-root-list">
+                        ${net.topBridges.slice(0, 3).map(([r, m]) => {
+                            var info = rootDictionary[r];
+                            var meaning = info ? info.meaning.split(',')[0] : '';
+                            return `<div class="book-ov-root-item">
+                                <span class="book-ov-root" dir="rtl" style="color:#34d399;">${r}</span>
+                                <span class="book-ov-freq">${m.surahSpan} sure</span>
+                                <span class="book-ov-freq">${m.ayahCount} ayet</span>
+                                ${meaning ? `<span class="book-ov-meaning">${meaning}</span>` : ''}
+                            </div>`;
+                        }).join('')}
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-overview-divider">
+                <span>▾ Bu Ayet</span>
+            </div>`;
+
+        // ── 2) Bu Ayetin Analizi (mevcut per-verse kısım)
         var totalRoots = node.roots.length;
         var totalConns = 0;
         var crossSurah = new Set();
@@ -613,21 +689,19 @@ var RootAnalyzer = (function () {
             var ids = rootMap.get(r) || [];
             totalConns += ids.length - 1;
             ids.forEach(i => { crossSurah.add(nodes[i].id.split(':')[0]); });
-            // Kök bilgisi
             var info = rootDictionary[r];
             var freq2 = ids.length;
             var surahSet = new Set(ids.map(i => nodes[i].id.split(':')[0]));
             rootDetails.push({ root: r, freq: freq2, surahSpan: surahSet.size, meaning: info ? info.meaning : '' });
         });
         crossSurah.delete(node.id.split(':')[0]);
-        // Kökün Kur'an genelindeki rank'ı
         var allFreq = {};
         rootMap.forEach((ids, r) => { allFreq[r] = ids.length; });
         var sortedAll = Object.entries(allFreq).sort((a, b) => b[1] - a[1]);
         var rankMap = {};
         sortedAll.forEach(([r, _], i) => { rankMap[r] = i + 1; });
 
-        var html = `
+        html += `
             <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;">
                 <div class="analyzer-metric" style="flex:1;min-width:60px;"><div class="metric-value" style="color:#00f2ff;font-size:18px;">${totalRoots}</div><div class="metric-label">Kök Sayısı</div></div>
                 <div class="analyzer-metric" style="flex:1;min-width:60px;"><div class="metric-value" style="color:#a78bfa;font-size:18px;">${totalConns}</div><div class="metric-label">Bağlantı</div></div>

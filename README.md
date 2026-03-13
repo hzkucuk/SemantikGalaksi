@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  S%C3%BCr%C3%BCm-0.40.1-34d399
+  S%C3%BCr%C3%BCm-0.40.2-34d399
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -228,6 +228,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.40.2 | **Tüm Kitap Özeti**: HUD Analiz sekmesinde kitap geneli büyük resim (2139 kök, Zipf, top 5 kök, köprü kökler) |
 | v0.40.1 | **Kök Analiz Motoru**: Zipf, co-occurrence, yoğunluk haritası, ağ metrikleri, kümeleme, Canvas grafikler, JSON/CSV export |
 | v0.40.0 | 🚀 **Release**: HUD Slider Panel + Floating Toggle + Yedekleme %APPDATA% uyumu |
 | v0.39.6 | **Floating HUD Toggle**: Panelden bağımsız sol kenarda sabit aç/kapat butonu |
@@ -739,6 +740,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.40.2** | 2025-07-28 | Tüm Kitap Özeti — HUD’da kitap geneli büyük resim bağlamı |
 | **0.40.1** | 2025-07-28 | Kök Analiz Motoru — Zipf, co-occurrence, yoğunluk, ağ metrikleri, kümeleme |
 | **0.40.0** | 2025-07-28 | 🚀 Release — HUD Slider Panel + Floating Toggle + Yedekleme %APPDATA% uyumu |
 | **0.39.6** | 2025-07-28 | Floating HUD toggle butonu (panelden bağımsız) |

@@ -175,7 +175,7 @@ Kur'an kelime köklerinin kapsamlı istatistiksel analizi — 3D uzay modellerin
 | Yol | Açıklama |
 |-----|----------|
 | 🔬 Toolbar butonu | Tam ekran analiz paneli (tüm grafikler + export) |
-| HUD → Analiz sekmesi | Seçili ayet için kök rank, yüzdelik dilim, çapraz sure özeti |
+| HUD → Analiz sekmesi | 📖 Tüm Kitap Özeti (big picture) + seçili ayet kök rank/yüzdelik/çapraz sure |
 | JSON/CSV export | Analiz raporu dosya olarak indirme |
 
 ## HUD Slider Panel (v0.39.2+)
