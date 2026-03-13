@@ -59,10 +59,10 @@ var showHudItemTooltip = (n) => {
     var vw = window.innerWidth;
     var vh = window.innerHeight;
     var tx, ty;
-    if (hr.left > 440) {
-        tx = hr.left - tooltip.offsetWidth - 12;
-    } else if (hr.right + 440 < vw) {
+    if (hr.right + 440 < vw) {
         tx = hr.right + 12;
+    } else if (hr.left > 440) {
+        tx = hr.left - tooltip.offsetWidth - 12;
     } else {
         tx = Math.max(16, (vw - 420) / 2);
     }

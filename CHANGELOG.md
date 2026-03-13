@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.39.3] - 2025-07-28
+### İyileştirme
+- **HUD Sol Tarafa Taşındı**: Slider panel sağdan sola taşındı, drag handle ve accent bar sağ kenara, swipe yönü sola uyarlandı
+- **Backdrop Blur Kaldırıldı**: HUD açıldığında arka planda blur efekti yok, sadece hafif karartma
+- **Etkilenen dosyalar:** `Frontend/index.html`, `Frontend/js/hud.js`, `Frontend/js/tooltip.js`
+
 ## [0.39.2] - 2025-07-28
 ### İyileştirme
 - **HUD Slider Modu**: Bilgi paneli sağdan kayan modern slider tasarımına dönüştürüldü — glassmorphism arka plan, animasyonlu accent bar, drag handle, sekmeli navigasyon (Ayet/Kökler/Bağlantılar/İstatistik), backdrop overlay, mobil swipe desteği

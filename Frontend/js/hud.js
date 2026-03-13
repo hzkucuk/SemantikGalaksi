@@ -378,6 +378,6 @@ window.switchHudSection = switchHudSection;
     }, { passive: true });
     panel.addEventListener('touchend', function(e) {
         var diffX = e.changedTouches[0].clientX - startX;
-        if (diffX > 80) closeHUD();
+        if (diffX < -80) closeHUD();
     }, { passive: true });
 })();
