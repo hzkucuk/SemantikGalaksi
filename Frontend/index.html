@@ -929,8 +929,8 @@
                 <h2 data-i18n="login.title" style="color:#00f2ff;font-size:16px;font-weight:900;letter-spacing:6px;text-transform:uppercase;">Giriş Yap</h2>
             </div>
             <div id="login-error" style="display:none;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:10px;color:#ef4444;font-size:12px;text-align:center;margin-bottom:16px;"></div>
-            <input type="text" id="login-username" data-i18n="login.username" placeholder="Kullanıcı adı"
-            <input type="password" id="login-password" data-i18n="login.password" placeholder="Şifre"
+            <input type="text" id="login-username" data-i18n="login.username" placeholder="Kullanıcı adı" style="width:100%;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:12px 16px;color:white;font-size:12px;outline:none;font-family:Inter,sans-serif;margin-bottom:12px;">
+            <input type="password" id="login-password" data-i18n="login.password" placeholder="Şifre" style="width:100%;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:12px 16px;color:white;font-size:12px;outline:none;font-family:Inter,sans-serif;margin-bottom:16px;">
             <button onclick="doLogin()" data-i18n="login.submit" style="width:100%;background:linear-gradient(135deg,#0e7490,#06b6d4);border:none;border-radius:12px;padding:12px;color:white;font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase;cursor:pointer;font-family:Inter,sans-serif;">Giriş</button>
             <p data-i18n="login.firstSetup" style="text-align:center;color:rgba(148,163,184,0.4);font-size:10px;margin-top:16px;">İlk kurulum: admin / admin123</p>
         </div>
@@ -951,8 +951,8 @@
             <div class="mb-6" id="change-pw-section" style="display:none">
                 <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3" data-i18n="settings.changePassword">🔑 Şifre Değiştir</h3>
                 <div class="flex flex-col gap-2">
-                    <input type="password" id="old-pw-input" data-i18n="settings.currentPassword" placeholder="Mevcut şifre"
-                    <input type="password" id="new-pw-input" data-i18n="settings.newPassword" placeholder="Yeni şifre"
+                    <input type="password" id="old-pw-input" data-i18n="settings.currentPassword" placeholder="Mevcut şifre" class="bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-white text-xs outline-none">
+                    <input type="password" id="new-pw-input" data-i18n="settings.newPassword" placeholder="Yeni şifre" class="bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-white text-xs outline-none">
                     <button onclick="changePassword()" class="bg-cyan-950 hover:bg-cyan-800 border border-cyan-400/30 px-5 py-2.5 rounded-xl font-black text-[10px] text-white uppercase tracking-widest transition-all" data-i18n="settings.updatePassword">Şifreyi Güncelle</button>
                 </div>
                 <div id="pw-change-msg" class="mt-2 text-[10px]"></div>
