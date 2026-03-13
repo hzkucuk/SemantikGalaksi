@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.39.0] - 2025-07-28
+### Release
+- **v0.39.0 Release**: README kapsamlı güncelleme + ay-yıldız ikon + APPDATA veri koruması + mobil destek içeren kararlı sürüm
+- **Etkilenen dosyalar:** Tüm proje
+
 ## [0.38.1] - 2025-07-28
 ### Dökümantasyon
 - **README Kapsamlı Güncelleme**: Öne Çıkan Özellikler'e 4 yeni bölüm (APPDATA koruması, mobil destek, uygulama ikonu, kullanıcı verileri), Mimari diyagramında %APPDATA% veri katmanı ayrımı, Proje Yapısı'na yeni dosyalar, MSI bölümü çift build + ikon + APPDATA, Sürüm Geçmişi v0.35–0.38, Teknoloji Yığını'na cx_Freeze
