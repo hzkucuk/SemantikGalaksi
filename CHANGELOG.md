@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.35.3] - 2025-07-28
+### Düzeltme
+- **Mobil Landscape Header**: Header butonları artık mobil yatay modda ekrana sığıyor — label'lar gizlenir, butonlar ve padding küçültülür (`max-height: 500px` media query)
+- **Etkilenen dosya:** `Frontend/index.html`
+
 ## [0.35.2] - 2025-07-28
 ### Düzeltme
 - **Mobil Touch Desteği**: Mobilde çizgilere ve kürelere dokunma artık çalışıyor — `touchend` (tıklama) ve `touchmove` (hover/tooltip) event'leri eklendi
