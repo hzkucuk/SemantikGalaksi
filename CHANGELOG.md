@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.39.6] - 2025-07-28
+### Düzeltme
+- **Floating HUD Toggle Butonu**: Panelden bağımsız, sol kenarda sabit duran aç/kapat butonu eklendi — bir ayet seçildikten sonra her zaman görünür, panel açıkken panelle birlikte kayar
+- **Etkilenen dosyalar:** `Frontend/index.html`, `Frontend/js/hud.js`
+
 ## [0.39.5] - 2025-07-28
 ### İyileştirme
 - **HUD Açma Düğmesi**: Header'ın sağ tarafına 📋 HUD toggle butonu eklendi

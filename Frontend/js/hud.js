@@ -77,11 +77,13 @@ var showHUD = (n) => {
     // Panel + backdrop aç
     var panel = document.getElementById('hud-panel');
     var backdrop = document.getElementById('hud-backdrop');
+    var floatBtn = document.getElementById('hud-float-toggle');
     panel.classList.remove('hidden');
     // Force reflow for animation
     void panel.offsetWidth;
     panel.classList.add('hud-open');
     if (backdrop) backdrop.classList.add('active');
+    if (floatBtn) { floatBtn.classList.add('visible'); floatBtn.classList.add('open'); }
 
     // İlk sekmeyi aktif yap
     switchHudSection('ayet');
@@ -328,8 +330,10 @@ window.speakSurah = (btn) => {
 var closeHUD = () => {
     var panel = document.getElementById('hud-panel');
     var backdrop = document.getElementById('hud-backdrop');
+    var floatBtn = document.getElementById('hud-float-toggle');
     panel.classList.remove('hud-open');
     if (backdrop) backdrop.classList.remove('active');
+    if (floatBtn) floatBtn.classList.remove('open');
     stopAudio();
     closeHudTooltip();
     // Animasyon bitince gizle
@@ -339,6 +343,7 @@ window.closeHUD = closeHUD;
 
 var toggleHudSlider = () => {
     var panel = document.getElementById('hud-panel');
+    var floatBtn = document.getElementById('hud-float-toggle');
     if (panel.classList.contains('hud-open')) {
         closeHUD();
     } else if (currentHudNode) {
@@ -347,6 +352,7 @@ var toggleHudSlider = () => {
         panel.classList.add('hud-open');
         var backdrop = document.getElementById('hud-backdrop');
         if (backdrop) backdrop.classList.add('active');
+        if (floatBtn) floatBtn.classList.add('open');
     }
 };
 window.toggleHudSlider = toggleHudSlider;

@@ -99,6 +99,45 @@
         .hud-panel.hud-open .hud-drag-handle .handle-icon { transform: rotate(180deg); }
         .hud-drag-handle:hover .handle-icon { opacity: 1; }
 
+        /* Floating HUD toggle — panelden bağımsız, her zaman görünür */
+        .hud-float-toggle {
+            position: fixed;
+            left: 0; top: 50%; transform: translateY(-50%);
+            z-index: 45;
+            width: 40px; height: 80px;
+            background: rgba(0,5,12,0.92);
+            border: 1px solid rgba(0,242,255,0.2);
+            border-left: 3px solid #00f2ff;
+            border-radius: 0 16px 16px 0;
+            cursor: pointer;
+            display: none;
+            flex-direction: column;
+            align-items: center; justify-content: center; gap: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 4px 0 20px rgba(0,0,0,0.5);
+        }
+        .hud-float-toggle.visible { display: flex; }
+        .hud-float-toggle:hover {
+            width: 44px;
+            background: rgba(0,242,255,0.08);
+            border-color: rgba(0,242,255,0.4);
+            box-shadow: 4px 0 30px rgba(0,242,255,0.15);
+        }
+        .hud-float-toggle .ft-icon {
+            font-size: 16px; color: #00f2ff;
+            transition: transform 0.35s ease;
+        }
+        .hud-float-toggle.open .ft-icon { transform: rotate(180deg); }
+        .hud-float-toggle .ft-dot {
+            width: 4px; height: 4px; border-radius: 50%;
+            background: #00f2ff; opacity: 0.4;
+        }
+        .hud-float-toggle:hover .ft-dot { opacity: 1; }
+        .hud-panel.hud-open ~ .hud-float-toggle { left: 420px; }
+        @media (max-width: 767px) {
+            .hud-panel.hud-open ~ .hud-float-toggle { left: 100vw; display: none; }
+        }
+
         /* Section nav tabs */
         .hud-section-tabs {
             display: flex; gap: 0; padding: 0; margin: 0;
@@ -1130,6 +1169,14 @@
                 <div id="hud-root-stats"></div>
             </div>
         </div>
+    </div>
+
+    <!-- Floating HUD Toggle Button (panelden bağımsız) -->
+    <div id="hud-float-toggle" class="hud-float-toggle" onclick="toggleHudSlider()" title="Bilgi Paneli">
+        <span class="ft-icon">▶</span>
+        <span class="ft-dot"></span>
+        <span class="ft-dot"></span>
+        <span class="ft-dot"></span>
     </div>
 
     <!-- Toast Bildirimleri -->
