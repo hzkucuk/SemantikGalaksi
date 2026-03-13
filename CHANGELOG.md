@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.36.0] - 2025-07-28
+### Release
+- **v0.36.0 Release**: Mobil iyileştirmeler ve düzeltmeler içeren kararlı sürüm
+- **Etkilenen dosyalar:** Tüm proje
+
 ## [0.35.3] - 2025-07-28
 ### Düzeltme
 - **Mobil Landscape Header**: Header butonları artık mobil yatay modda ekrana sığıyor — label'lar gizlenir, butonlar ve padding küçültülür (`max-height: 500px` media query)
