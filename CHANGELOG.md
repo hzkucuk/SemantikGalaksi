@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.37.0] - 2025-07-28
+### Release
+- **v0.37.0 Release**: Kullanıcı verileri artık %APPDATA% altında korunuyor — MSI kaldırılsa bile notlar, veri setleri ve API anahtarları güvende
+- **Otomatik Migrasyon**: Eski kurulum dizinindeki veriler ilk çalıştırmada yeni konuma kopyalanır
+- **Etkilenen dosya:** `DataEngine/desktop_app.py`
+
 ## [0.36.1] - 2025-07-28
 ### İyileştirme
 - **Kullanıcı Verileri Koruması**: Notlar, veri setleri, API anahtarları ve config artık `%APPDATA%/SemantikGalaksi` altında saklanıyor — MSI kaldırılsa bile veriler korunur
