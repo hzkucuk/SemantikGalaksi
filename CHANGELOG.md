@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.38.0] - 2025-07-28
+### Release
+- **v0.38.0 Release**: Uygulama ikonu (ay-yıldız) + kullanıcı verileri %APPDATA% koruması içeren kararlı sürüm
+- **Etkilenen dosyalar:** `setup.py`, `app_icon.ico`, `DataEngine/desktop_app.py`
+
 ## [0.37.1] - 2025-07-28
 ### İyileştirme
 - **Uygulama İkonu**: Ay-yıldız tasarımlı uzay temalı ikon eklendi — EXE, MSI installer, masaüstü ve başlat menüsü kısayollarında görünür
