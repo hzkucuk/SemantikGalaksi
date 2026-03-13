@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.40.1] - 2025-07-28
+### Yeni Özellik
+- **Kök Analiz Motoru**: 6 analiz katmanlı kapsamlı kök analiz modülü — Zipf frekans dağılımı, co-occurrence matrisi, sure-kök yoğunluk haritası, ağ metrikleri (derece, merkezilik, köprü gücü), kök ailesi kümeleme, Canvas 2D grafikler, JSON/CSV dışa aktarım
+- **HUD 5. Sekme (Analiz)**: Her ayet için kök rank, yüzdelik dilim, çapraz sure bağlantı özeti
+- **🔬 Toolbar Butonu**: Tam ekran analiz paneli açma
+- **Etkilenen dosyalar:** `Frontend/js/root-analyzer.js` (yeni), `Frontend/index.html`, `Frontend/js/hud.js`
+
 ## [0.40.0] - 2025-07-28
 ### Release
 - **v0.40.0 Release**: HUD Slider Panel (soldan kayan modern slider, 4 sekmeli navigasyon, floating toggle butonu) + yedekleme sistemi %APPDATA% uyumu içeren kararlı sürüm

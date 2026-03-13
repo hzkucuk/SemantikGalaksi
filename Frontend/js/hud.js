@@ -180,6 +180,12 @@ var showHUD = (n) => {
     });
     statsDiv.innerHTML = statsHtml;
 
+    // Kök Analiz sekmesi
+    var analysisDiv = document.getElementById('hud-root-analysis');
+    if (analysisDiv && typeof RootAnalyzer !== 'undefined') {
+        analysisDiv.innerHTML = RootAnalyzer.renderHudAnalysis(n);
+    }
+
     var list = document.getElementById('related-list'); list.innerHTML = '';
     var related = []; var seen = new Set([n.id]);
     var nIdx = nodes.findIndex(nd => nd.id === n.id);

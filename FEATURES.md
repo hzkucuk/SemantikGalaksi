@@ -159,6 +159,25 @@ Hem üst arama çubuğu hem HUD panelindeki semantik bağlantı araması Arapça
 - **4 satır düzen**: Harfler (3 satır) + Harekeler & kontrol tuşları (1 satır)
 - **Sonuç gösterimi**: Arapça aramada sonuçlarda ayet metni ve eşleşen kökler (🔤) gösterilir
 
+## Kök Analiz Motoru (v0.40.1)
+Kur'an kelime köklerinin kapsamlı istatistiksel analizi — 3D uzay modellerinden bağımsız, saf veri odaklı.
+
+| Analiz | Açıklama |
+|--------|----------|
+| Zipf Frekans | Kök sıklık dağılımı, Zipf üssü (α), R² uyum skoru — doğal dil karşılaştırması |
+| Co-occurrence | En sık 20 kökün birlikte geçme ısı haritası (Canvas heatmap) |
+| Sure-Kök Yoğunluk | 114 sure × top 20 kök yoğunluk ısı haritası |
+| Ağ Metrikleri | Derece dağılımı, merkezi ayetler (hub), kök köprü gücü (sure yayılımı) |
+| Kök Ailesi Kümeleme | Aynı ayetlerde birlikte geçen köklerin semantik gruplandırması |
+| Genel Bakış | Hapax legomena, ort/maks kök sayısı, bağlantı yoğunluğu |
+
+### Erişim
+| Yol | Açıklama |
+|-----|----------|
+| 🔬 Toolbar butonu | Tam ekran analiz paneli (tüm grafikler + export) |
+| HUD → Analiz sekmesi | Seçili ayet için kök rank, yüzdelik dilim, çapraz sure özeti |
+| JSON/CSV export | Analiz raporu dosya olarak indirme |
+
 ## HUD Slider Panel (v0.39.2+)
 Modern soldan kayan bilgi paneli — glassmorphism arka plan, seçilen ayetin tüm detaylarını görüntüler.
 

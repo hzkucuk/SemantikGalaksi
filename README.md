@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  S%C3%BCr%C3%BCm-0.40.0-34d399
+  S%C3%BCr%C3%BCm-0.40.1-34d399
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -136,10 +136,10 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - "Dipnot Ekle" butonu yalnızca data sekmesinde görünür
 
 ### 🧩 Modüler Mimari (v0.22.0+)
-- Monolitik `index.html` (~3774 satır) → **20 bağımsız JS modülü** (`Frontend/js/`)
+- Monolitik `index.html` (~3774 satır) → **21 bağımsız JS modülü** (`Frontend/js/`)
 - Bağımlılık sırasına göre `<script>` etiketleriyle yükleme
 - `index.html` artık sadece **~861 satır** (HTML + CSS + script referansları)
-- **Modüller**: state, shaders, constants, key-manager, auth, data-store, highlight, audio, scene-init, data-loader, interaction, tooltip, hud, warp, search, settings, datasets, websocket, notes, loading
+- **Modüller**: state, shaders, constants, key-manager, auth, data-store, highlight, audio, scene-init, data-loader, interaction, tooltip, hud, root-analyzer, warp, search, settings, datasets, websocket, notes, loading
 
 ### 👥 Çok Kullanıcılı Gerçek Zamanlı Çalışma
 - **Raw WebSocket** sunucusu (ek bağımlılık gerektirmez)
@@ -174,6 +174,16 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **Blur-free tasarım**: Arka plandaki 3D uzay net kalır, panel opak koyu arka plan
 - **Pinned Tooltip**: Ayet kartlarına hover yapılınca tooltip panelin sağında sabit konumda açılır
 - `cubic-bezier(0.4, 0, 0.2, 1)` animasyon, `buildTooltipContent()` helper ile DRY HTML üretimi
+
+### 🔬 Kök Analiz Motoru (v0.40.1)
+- **Zipf Frekans Dağılımı**: Kök sıklık analizi, Zipf üssü (α) ve R² uyum skoru
+- **Co-occurrence Matrisi**: En sık 20 kökün birlikte geçme ısı haritası
+- **Sure-Kök Yoğunluk Haritası**: 114 sure × top 20 kök yoğunluk ısı haritası
+- **Ağ Metrikleri**: Derece dağılımı, merkezi ayetler (hub), kök köprü gücü (sure yayılımı)
+- **Kök Ailesi Kümeleme**: Co-occurrence tabanlı semantik kök grupları
+- **HUD Analiz Sekmesi**: Her ayet için kök rank, yüzdelik dilim, çapraz sure özeti
+- **Canvas 2D Grafikler**: Bar chart, heatmap, ağ grafiği, kümeleme diyagramı
+- **Dışa Aktarım**: JSON + CSV formatında tam analiz raporu
 
 ### 📚 Arapça Kök Sözlüğü (v0.21.3)
 - **2139 Arapça kök** — Gemini AI ile anlam, Arapça anlam, telaffuz ve türemiş kelimeler
@@ -218,6 +228,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.40.1 | **Kök Analiz Motoru**: Zipf, co-occurrence, yoğunluk haritası, ağ metrikleri, kümeleme, Canvas grafikler, JSON/CSV export |
 | v0.40.0 | 🚀 **Release**: HUD Slider Panel + Floating Toggle + Yedekleme %APPDATA% uyumu |
 | v0.39.6 | **Floating HUD Toggle**: Panelden bağımsız sol kenarda sabit aç/kapat butonu |
 | v0.39.5 | **Header HUD Butonu + Blur Kaldırma**: 📋 toggle butonu, panel/backdrop blur tamamen kaldırıldı |
@@ -312,7 +323,7 @@ SemantikGalaksi/
 │   └── quran_api_enricher.py     # Kur'an veri zenginleştirici
 ├── Frontend/
 │   ├── index.html                # Ana arayüz (HTML + CSS + script ref, ~861 satır)
-│   ├── js/                       # 20 modüler JavaScript dosyası
+│   ├── js/                       # 21 modüler JavaScript dosyası
 │   │   ├── state.js              # Paylaşımlı global state
 │   │   ├── shaders.js            # GLSL shader'lar (güneş, Türk bayrağı SDF)
 │   │   ├── constants.js          # Sabitler, sure adları, renk haritaları
@@ -625,6 +636,8 @@ pyinstaller>=6.0        # EXE paketleme (opsiyonel)
 | 📂 | Veri seti yöneticisi |
 | ⚙️ | Ayarlar (kullanıcı yönetimi, API anahtarları) |
 | 🔑 | API anahtar yönetimi |
+| 📊 | İstatistikler |
+| 🔬 | Kök Analiz Motoru |
 | 🚪 | Çıkış |
 
 ### Varsayılan Giriş
@@ -726,6 +739,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.40.1** | 2025-07-28 | Kök Analiz Motoru — Zipf, co-occurrence, yoğunluk, ağ metrikleri, kümeleme |
 | **0.40.0** | 2025-07-28 | 🚀 Release — HUD Slider Panel + Floating Toggle + Yedekleme %APPDATA% uyumu |
 | **0.39.6** | 2025-07-28 | Floating HUD toggle butonu (panelden bağımsız) |
 | **0.39.5** | 2025-07-28 | Header 📋 HUD butonu, panel/backdrop blur tamamen kaldırıldı |
