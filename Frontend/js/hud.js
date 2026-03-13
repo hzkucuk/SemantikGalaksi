@@ -341,7 +341,7 @@ var toggleHudSlider = () => {
     var panel = document.getElementById('hud-panel');
     if (panel.classList.contains('hud-open')) {
         closeHUD();
-    } else {
+    } else if (currentHudNode) {
         panel.classList.remove('hidden');
         void panel.offsetWidth;
         panel.classList.add('hud-open');

@@ -26,8 +26,8 @@
 
         /* ── HUD Slider Panel ──────────────────────────────── */
         .hud-panel {
-            background: rgba(0, 5, 12, 0.96);
-            backdrop-filter: blur(60px) saturate(1.4);
+            background: rgba(0, 5, 12, 0.98);
+            backdrop-filter: none;
             pointer-events: auto;
             -webkit-overflow-scrolling: touch;
             contain: paint;
@@ -164,10 +164,10 @@
             margin-bottom: 12px;
         }
 
-        /* Backdrop overlay */
+        /* Backdrop overlay — sadece click-to-close, görsel efekt yok */
         .hud-backdrop {
             position: fixed; inset: 0; z-index: 39;
-            background: rgba(0,0,0,0.3);
+            background: transparent;
             backdrop-filter: none;
             opacity: 0; pointer-events: none;
             transition: opacity 0.35s ease;
@@ -942,6 +942,7 @@
                         <button onclick="switchLayout('allah')" class="layout-option" data-layout="allah">🕋 الله <span class="layout-desc">Arapça kaligrafi — Allah lafzı şekli</span></button>
                     </div>
                 </div>
+                <button onclick="toggleHudSlider()" class="hdr-btn" id="hud-toggle-btn" title="Bilgi Paneli (HUD)">📋</button>
                 <button onclick="openSettings()" class="hdr-btn" title="Ayarlar">⚙️</button>
                 <button onclick="togglePerformance()" class="hdr-btn with-label" title="Performans Modu" id="perf-btn"><span>⚡</span><span class="hdr-btn-label">YÜKSEK</span></button>
                 <button onclick="toggleStats()" class="hdr-btn" title="İstatistikler">📊</button>

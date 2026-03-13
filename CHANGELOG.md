@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.39.5] - 2025-07-28
+### İyileştirme
+- **HUD Açma Düğmesi**: Header'ın sağ tarafına 📋 HUD toggle butonu eklendi
+- **Blur Tamamen Kaldırıldı**: Panel ve backdrop üzerindeki tüm `backdrop-filter: blur` efektleri kaldırıldı, uzay net görünüyor
+- **Etkilenen dosyalar:** `Frontend/index.html`, `Frontend/js/hud.js`
+
 ## [0.39.4] - 2025-07-28
 ### Düzeltme
 - **HUD Header Çakışması**: Slider panel artık header'ın altından başlıyor (`top: 57px`), header'ın arkasında kalmıyor
