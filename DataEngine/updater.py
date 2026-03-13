@@ -8,7 +8,7 @@ Akış:
     1. Uygulama açılışında arka planda GitHub'dan son sürüm kontrol edilir
     2. Güncelleme varsa kullanıcıya toast bildirimi gösterilir
     3. Kullanıcı "Güncelle" derse:
-        a) Uygulama klasörü/backups/ altına ZIP yedek alınır
+        a) %APPDATA%/SemantikGalaksi/backups/ altına ZIP yedek alınır
         b) MSI temp'e indirilir
         c) Batch script ile yükleyici başlatılır
         d) Uygulama kapanır, MSI yeni sürümü kurar
@@ -28,15 +28,27 @@ GITHUB_API_URL = f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest"
 
 
 def _get_app_dir():
-    """Uygulama kök dizini"""
+    """Uygulama kök dizini (kurulum dizini)"""
     if getattr(sys, 'frozen', False):
         return os.path.dirname(os.path.abspath(sys.executable))
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+def _get_user_data_dir():
+    """Kullanıcı veri dizini: frozen modda %APPDATA%/SemantikGalaksi,
+    geliştirme modunda proje kökü."""
+    if getattr(sys, 'frozen', False):
+        appdata = os.environ.get('APPDATA', os.path.expanduser('~'))
+        ud = os.path.join(appdata, 'SemantikGalaksi')
+        os.makedirs(ud, exist_ok=True)
+        return ud
+    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
 def _get_backup_dir():
-    """Yedekleme dizini: <uygulama_kök>/backups"""
-    d = os.path.join(_get_app_dir(), 'backups')
+    """Yedekleme dizini: %APPDATA%/SemantikGalaksi/backups
+    (MSI kaldırılsa bile yedekler korunur)"""
+    d = os.path.join(_get_user_data_dir(), 'backups')
     os.makedirs(d, exist_ok=True)
     return d
 
@@ -112,40 +124,43 @@ def create_backup():
     """Kullanıcı verilerini ZIP olarak yedekle.
 
     Yedeklenen öğeler:
-        - webview_data/  (API keys, localStorage, auth)
-        - notes/         (kullanıcı notları)
-        - config.json    (yapılandırma)
-        - Frontend/datasets/  (kullanıcı düzenlenmiş JSON'lar)
-        - VERSION        (referans)
+        - webview_data/  (API keys, localStorage, auth)  [%APPDATA%]
+        - notes/         (kullanıcı notları)              [%APPDATA%]
+        - datasets/      (kullanıcı düzenlenmiş JSON'lar) [%APPDATA%]
+        - config.json    (yapılandırma)                   [%APPDATA%]
+        - VERSION        (referans)                       [kurulum dizini]
 
     En fazla 5 yedek tutulur, eskiler silinir.
     Returns: ZIP dosya yolu
     """
     app_dir = _get_app_dir()
+    user_data_dir = _get_user_data_dir()
     backup_dir = _get_backup_dir()
     ts = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
     ver = get_current_version()
     zip_path = os.path.join(backup_dir, f'SGX_v{ver}_{ts}.zip')
 
-    items = ['webview_data', 'notes', 'config.json', 'VERSION']
-    datasets_dir = os.path.join(app_dir, 'Frontend', 'datasets')
+    # Kullanıcı verileri %APPDATA%/SemantikGalaksi altında
+    user_items = ['webview_data', 'notes', 'config.json', 'datasets']
+    # VERSION uygulama kök dizininde kalır
+    app_items = ['VERSION']
 
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zf:
-        for item in items:
-            fp = os.path.join(app_dir, item)
+        # Kullanıcı verileri (%APPDATA%)
+        for item in user_items:
+            fp = os.path.join(user_data_dir, item)
             if os.path.isfile(fp):
                 zf.write(fp, item)
             elif os.path.isdir(fp):
                 for root, _, files in os.walk(fp):
                     for f in files:
                         full = os.path.join(root, f)
-                        zf.write(full, os.path.relpath(full, app_dir))
-        # Datasets
-        if os.path.isdir(datasets_dir):
-            for root, _, files in os.walk(datasets_dir):
-                for f in files:
-                    full = os.path.join(root, f)
-                    zf.write(full, os.path.relpath(full, app_dir))
+                        zf.write(full, os.path.relpath(full, user_data_dir))
+        # Uygulama dosyaları (kurulum dizini)
+        for item in app_items:
+            fp = os.path.join(app_dir, item)
+            if os.path.isfile(fp):
+                zf.write(fp, item)
 
     # Eski yedekleri temizle (en fazla 5)
     backups = sorted(

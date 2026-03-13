@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [0.39.1] - 2025-07-28
+### Düzeltme
+- **Yedekleme Sistemi %APPDATA% Uyumu**: `updater.py` yedekleme fonksiyonları eski kurulum dizini yerine `%APPDATA%/SemantikGalaksi` altından veri okuyor ve yedek ZIP'leri artık `%APPDATA%/SemantikGalaksi/backups/` altında saklanıyor — MSI kaldırılsa bile yedekler korunur
+- **Etkilenen dosya:** `DataEngine/updater.py`
+
 ## [0.39.0] - 2025-07-28
 ### Release
 - **v0.39.0 Release**: README kapsamlı güncelleme + ay-yıldız ikon + APPDATA veri koruması + mobil destek içeren kararlı sürüm
