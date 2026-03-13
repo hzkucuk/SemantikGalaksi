@@ -33,9 +33,13 @@ def _get_base_dir():
 
 
 def _get_user_data_dir():
-    """Kullanıcı verilerinin (notes, keys, config) saklanacağı yazılabilir dizin."""
+    """Kullanıcı verilerinin (notes, datasets, keys, config) saklanacağı yazılabilir dizin.
+    Frozen modda %APPDATA%/SemantikGalaksi kullanılır — MSI kaldırılsa bile veriler korunur."""
     if getattr(sys, 'frozen', False):
-        return os.path.dirname(os.path.abspath(sys.executable))
+        appdata = os.environ.get('APPDATA', os.path.expanduser('~'))
+        ud = os.path.join(appdata, 'SemantikGalaksi')
+        os.makedirs(ud, exist_ok=True)
+        return ud
     return os.path.dirname(os.path.abspath(__file__))
 
 
@@ -46,9 +50,43 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__)) if not getattr(sys, 'fr
 ROOT_DIR = os.path.join(BASE_DIR, 'Frontend')
 WEBVIEW_DATA_DIR = os.path.join(USER_DATA_DIR, 'webview_data')
 KEYS_FILE = os.path.join(USER_DATA_DIR, 'webview_data', '.api_keys')
-DATASETS_DIR = os.path.join(ROOT_DIR, 'datasets')
+DATASETS_DIR = os.path.join(USER_DATA_DIR, 'datasets')
 NOTES_DIR = os.path.join(USER_DATA_DIR, 'notes')
 CONFIG_FILE = os.path.join(USER_DATA_DIR, 'config.json')
+
+
+def _migrate_old_data():
+    """Eski kurulum dizinindeki (C:\\SemantikGalaksi) kullanıcı verilerini
+    %APPDATA%/SemantikGalaksi altına taşır. Sadece frozen modda ve
+    hedefte dosya yoksa kopyalar — mevcut veriyi ezmez."""
+    if not getattr(sys, 'frozen', False):
+        return
+    import shutil
+    old_base = os.path.dirname(os.path.abspath(sys.executable))
+    if os.path.normcase(old_base) == os.path.normcase(USER_DATA_DIR):
+        return
+    migrations = [
+        (os.path.join(old_base, 'notes'), NOTES_DIR),
+        (os.path.join(old_base, 'webview_data'), WEBVIEW_DATA_DIR),
+        (os.path.join(old_base, 'Frontend', 'datasets'), DATASETS_DIR),
+        (os.path.join(old_base, 'config.json'), CONFIG_FILE),
+    ]
+    for src, dst in migrations:
+        if not os.path.exists(src):
+            continue
+        if os.path.isdir(src):
+            os.makedirs(dst, exist_ok=True)
+            for fname in os.listdir(src):
+                s = os.path.join(src, fname)
+                d = os.path.join(dst, fname)
+                if os.path.isfile(s) and not os.path.exists(d):
+                    shutil.copy2(s, d)
+        elif os.path.isfile(src) and not os.path.exists(dst):
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            shutil.copy2(src, dst)
+
+
+_migrate_old_data()
 
 
 def _load_config():
