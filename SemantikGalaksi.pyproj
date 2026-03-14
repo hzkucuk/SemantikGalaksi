@@ -36,6 +36,7 @@
     <Compile Include="DataEngine\step1_fetch_quran.py" />
     <Compile Include="DataEngine\step2_extract_roots.py" />
     <Compile Include="DataEngine\step3_build_root_dict.py" />
+    <Compile Include="DataEngine\test_api.py" />
     <Compile Include="DataEngine\updater.py" />
     <Compile Include="setup.py" />
   </ItemGroup>

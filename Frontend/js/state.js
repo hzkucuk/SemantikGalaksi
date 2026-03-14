@@ -1,7 +1,7 @@
 /** SemantikGalaksi — Paylaşılan Durum Değişkenleri */
 
 // Uygulama versiyonu (tek kaynak: VERSION dosyası → build sırasında buraya yansır)
-var APP_VERSION = '1.1.0';
+var APP_VERSION = '1.1.1';
 
 // Three.js sahne nesneleri
 var scene, camera, renderer, composer, ayahMesh, lineSegments, controls, highlightLines, skyMesh;
@@ -72,7 +72,7 @@ var authUser = '', authRole = '', isDesktopMode = false;
 var currentUser = localStorage.getItem('sgx_username') || '';
 
 // Veri seti durumu
-var activeDatasetName = 'quran_data.json';
+var activeDatasetName = '';
 
 // HUD durumu
 var currentHudNode = null;

@@ -144,7 +144,7 @@ document.getElementById('file-input').onchange = (e) => {
 };
 window.resetToOriginal = () => {
     if (!originalData) return;
-    activeDatasetName = 'quran_data.json';
+    activeDatasetName = '';
     processData(originalData);
     hasCustomData = false;
 };

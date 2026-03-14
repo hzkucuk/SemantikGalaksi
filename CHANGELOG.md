@@ -1,5 +1,13 @@
 bu# CHANGELOG
 
+## [1.1.1] - 2025-07-28 -- JSON Temizligi
+### Kaldirilan
+- `Frontend/quran_data.json` (18MB) ve `Frontend/quran_roots.json` (1.5MB) silindi — artik kullanilmiyor.
+- `data-loader.js` web modu JSON fallback kaldirildi — her zaman API'den yukler.
+- `desktop_app.py` quran_data.json SQLite senkronizasyon mantigi kaldirildi.
+- `desktop_app.py` PROTECTED_DATASETS bosaltildi, eski roots endpoint JSON fallback'i kaldirildi.
+- `state.js` ve `search.js` activeDatasetName quran_data.json referanslari temizlendi.
+
 ## [1.1.0] - 2025-07-28 -- Pure SQLite + DB Grid Editor
 ### Eklenen
 - **Pure SQLite Veri Akisi**: Frontend artik JSON dosyalari yerine `/api/db/data` ve `/api/db/roots-dict` API endpoint'lerinden veri yukler. Web modunda JSON fallback korundu.

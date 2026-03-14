@@ -348,9 +348,9 @@ def get_local_ip():
 USERS_FILE = os.path.join(CURRENT_DIR, 'webview_data', 'users.json')
 _sessions = {}
 
-# Korumalı dosyalar — sadece admin düzenleyebilir
-PROTECTED_DATASETS = {'quran_data.json', 'quran_roots.json'}
-PROTECTED_LOCALES = set()  # Gerekirse locale dosyaları da korumaya alınabilir
+# Korumali dosyalar — sadece admin duzenleyebilir
+PROTECTED_DATASETS = set()
+PROTECTED_LOCALES = set()
 
 # Değişiklik geçmişi limiti (dosya başına)
 MAX_HISTORY_ENTRIES = 50
@@ -904,9 +904,9 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
 
-    # --- Roots Endpoint (quran_roots.json) ---
+    # --- Roots Endpoint (bulk) ---
     def _save_roots(self):
-        """quran_roots.json kaydetme — sadece admin."""
+        """Kok sozlugu toplu kaydetme — sadece admin."""
         session = _get_session(self.headers)
         if not session:
             self._json_response({'error': 'Yetkisiz'}, 401)
@@ -919,21 +919,14 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response({'error': 'Gecersiz JSON'}, 400)
             return
         username = session['username']
-        if _HAS_DB:
-            try:
-                added, updated, removed = quran_db.save_roots_bulk(data, user=username)
-                log_crud.info('Kok sozlugu kaydedildi (SQLite)',
-                              user=username, added=added, updated=updated, removed=removed)
-                self._json_response({'ok': True, 'added': added, 'updated': updated, 'removed': removed})
-            except Exception as e:
-                log_crud.error('Kok sozlugu kaydetme hatasi', user=username, error=str(e))
-                self._json_response({'error': str(e)}, 500)
-        else:
-            roots_path = os.path.join(ROOT_DIR, 'quran_roots.json')
-            with open(roots_path, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-            log_crud.info('Kok sozlugu kaydedildi (JSON)', user=username)
-            self._json_response({'ok': True})
+        try:
+            added, updated, removed = quran_db.save_roots_bulk(data, user=username)
+            log_crud.info('Kok sozlugu kaydedildi (SQLite)',
+                          user=username, added=added, updated=updated, removed=removed)
+            self._json_response({'ok': True, 'added': added, 'updated': updated, 'removed': removed})
+        except Exception as e:
+            log_crud.error('Kok sozlugu kaydetme hatasi', user=username, error=str(e))
+            self._json_response({'error': str(e)}, 500)
 
     # --- Locale Endpoints ---
     def _list_locales_api(self):
@@ -1116,21 +1109,6 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         data['_meta']['modifiedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S')
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        # SQLite senkronizasyonu (quran_data.json icin)
-        if _HAS_DB and name == 'quran_data.json':
-            try:
-                nodes = data.get('nodes', [])
-                sync_count = 0
-                for node in nodes:
-                    nid = node.get('id')
-                    roots = node.get('roots', [])
-                    if nid and roots:
-                        quran_db.set_verse_roots(nid, roots)
-                        sync_count += 1
-                log_crud.info('quran_data.json SQLite senkronize edildi',
-                              user=session['username'], sync_count=sync_count)
-            except Exception as e:
-                log_system.error('quran_data.json SQLite senkronizasyon hatasi', error=str(e))
         log_crud.info('Dataset kaydedildi', user=session['username'], target=name)
         self._json_response({'ok': True, 'name': name})
         ws_server.broadcast(json.dumps({
@@ -1170,10 +1148,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response({'error': 'Yetkisiz'}, 401)
             return
         name = urllib.parse.unquote(parsed.path[len('/api/download/'):])
-        if name == 'quran_data.json':
-            filepath = os.path.join(ROOT_DIR, 'quran_data.json')
-        else:
-            filepath = os.path.join(DATASETS_DIR, name)
+        filepath = os.path.join(DATASETS_DIR, name)
         if not os.path.exists(filepath):
             self._json_response({'error': 'Bulunamadı'}, 404)
             return
