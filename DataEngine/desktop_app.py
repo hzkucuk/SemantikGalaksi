@@ -227,14 +227,24 @@ class ApiKeyBridge:
             pass
 
     def list_locales(self):
-        """locales/ klasöründeki JSON dil dosyalarını listele (i18n auto-discover için)"""
+        """locales/ klasoründeki JSON dil dosyalarini listele (i18n auto-discover icin)"""
         try:
             locales_dir = os.path.join(ROOT_DIR, 'locales')
             if not os.path.isdir(locales_dir):
                 return []
-            return [f for f in os.listdir(locales_dir) if f.endswith('.json')]
+            return [f for f in os.listdir(locales_dir) if f.endswith('.json') and not f.startswith('roots_')]
         except Exception:
             return []
+
+    def save_lang_pref(self, code):
+        """Secili dil kodunu dosyaya yaz (besmele icin)"""
+        try:
+            pref_path = os.path.join(ROOT_DIR, 'locales', '.last_lang')
+            os.makedirs(os.path.dirname(pref_path), exist_ok=True)
+            with open(pref_path, 'w', encoding='utf-8') as f:
+                f.write(code)
+        except Exception:
+            pass
 
     def check_update(self):
         """GitHub'dan güncelleme kontrolü"""
@@ -790,7 +800,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         result = []
         if os.path.isdir(locales_dir):
             for f in sorted(os.listdir(locales_dir)):
-                if not f.endswith('.json'):
+                if not f.endswith('.json') or f.startswith('roots_'):
                     continue
                 path = os.path.join(locales_dir, f)
                 try:
@@ -1131,23 +1141,17 @@ def sunucuyu_baslat():
 
 if __name__ == '__main__':
     def _get_besmele_path():
-        """Kullanıcının seçili diline göre besmele WAV dosyasını belirle"""
+        """Kullanicinin secili diline gore besmele WAV dosyasini belirle"""
         try:
-            config_path = os.path.join(WEBVIEW_DATA_DIR, 'Local Storage', 'leveldb')
-            # localStorage'dan dil tercihini oku (basit fallback)
-            import glob
-            for f in glob.glob(os.path.join(config_path, '*.log')):
-                try:
-                    with open(f, 'rb') as fh:
-                        content = fh.read().decode('utf-8', errors='ignore')
-                        if 'sg_language' in content:
-                            for code in ['EN-en', 'RU-ru', 'IT-it', 'ES-es']:
-                                if code in content:
-                                    lang_file = os.path.join(ROOT_DIR, 'locales', f'besmele_{code.split("-")[0].lower()}.wav')
-                                    if os.path.exists(lang_file):
-                                        return lang_file
-                except Exception:
-                    pass
+            pref_path = os.path.join(ROOT_DIR, 'locales', '.last_lang')
+            if os.path.exists(pref_path):
+                with open(pref_path, 'r', encoding='utf-8') as f:
+                    code = f.read().strip()
+                if code and code != 'TR-tr':
+                    lang = code.split('-')[0].lower()
+                    lang_file = os.path.join(ROOT_DIR, 'locales', f'besmele_{lang}.wav')
+                    if os.path.exists(lang_file):
+                        return lang_file
         except Exception:
             pass
         return os.path.join(ROOT_DIR, 'besmele.wav')

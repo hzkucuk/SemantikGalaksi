@@ -26,6 +26,7 @@
     <Compile Include="DataEngine\gemini_client.py" />
     <Compile Include="DataEngine\generate_besmele_audio.py" />
     <Compile Include="DataEngine\generate_besmele_i18n.py" />
+    <Compile Include="DataEngine\generate_root_translations.py" />
     <Compile Include="DataEngine\quran_extractor_v3.py" />
     <Compile Include="DataEngine\run_pipeline.py" />
     <Compile Include="DataEngine\step1_fetch_quran.py" />
@@ -43,6 +44,7 @@
     <Content Include="DataEngine\config.json" />
     <Content Include="DataEngine\quran-morphology.txt" />
     <Content Include="DataEngine\README.md" />
+    <Content Include="DataEngine\run_all_translations.bat" />
     <Content Include="FEATURES.md" />
     <Content Include="Frontend\full_quran_rich_map.json" />
     <Content Include="Frontend\index.html" />
@@ -52,6 +54,7 @@
     <Content Include="Frontend\js\data-loader.js" />
     <Content Include="Frontend\js\data-store.js" />
     <Content Include="Frontend\js\datasets.js" />
+    <Content Include="Frontend\js\flags.js" />
     <Content Include="Frontend\js\highlight.js" />
     <Content Include="Frontend\js\hud.js" />
     <Content Include="Frontend\js\i18n.js" />

@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [0.42.2] - 2025-07-28
+### Düzeltme
+- **Besmele Ses Dosyası Dil Uyumu**: Desktop modda başlangıçta seçili dilin besmele sesi çalınıyor (leveldb hack → `.last_lang` dosyası)
+- **Editör roots_*.json Filtresi**: Kök çeviri dosyaları locale editör tablarında görünmüyor
+- **Hardcoded Türkçe Düzeltmesi**: "Kök Analiz Raporu", "Tam Analiz Paneli", "Kök Analiz Motoru" → `data-i18n` attribute
+
 ## [0.42.1] - 2025-07-28
 ### Yeni Özellik
 - **Kapsamlı Bayrak Altyapısı**: `flags.js` ile ~42 ülke bayrağı SVG olarak hazır — yeni dil eklenince dropdown'da otomatik bayrak görünür

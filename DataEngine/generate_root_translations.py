@@ -32,7 +32,7 @@ LANGUAGES = {
     'es': {'name': 'Spanish', 'output': 'roots_es.json'},
 }
 
-BATCH_SIZE = 50  # Her API çağrısında kaç kök gönderilecek
+BATCH_SIZE = 75  # Her API çağrısında kaç kök gönderilecek
 
 
 def load_roots():
@@ -75,7 +75,7 @@ def call_gemini(api_key, prompt):
         method="POST"
     )
 
-    with urllib.request.urlopen(req, timeout=120) as resp:
+    with urllib.request.urlopen(req, timeout=300) as resp:
         result = json.loads(resp.read().decode('utf-8'))
 
     candidates = result.get('candidates', [{}])
