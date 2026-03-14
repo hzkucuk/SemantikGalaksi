@@ -452,16 +452,8 @@ var I18n = (function () {
 
     var _selectorOpen = false;
 
-    // SVG bayraklar — Windows'ta emoji bayraklar düzgün render olmaz
-    var _flagSVGs = {
-        'TR-tr': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="30" height="20" fill="#E30A17"/><circle cx="11" cy="10" r="6" fill="#fff"/><circle cx="12.8" cy="10" r="4.8" fill="#E30A17"/><polygon points="17,10 14.5,8.2 15.7,11 13.2,9 16.3,9" fill="#fff"/></svg>',
-        'EN-en': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.5"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3"/></svg>',
-        'RU-ru': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="30" height="6.67" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#0039A6"/><rect y="13.33" width="30" height="6.67" fill="#D52B1E"/></svg>',
-        'IT-it': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#CE2B37"/></svg>',
-        'ES-es': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/></svg>'
-    };
-
-    var _getFlag = (code) => { return _flagSVGs[code] || '🌐'; };
+    // SVG bayraklar — CountryFlags modülünden alınır (flags.js)
+    var _getFlag = (code) => { return typeof CountryFlags !== 'undefined' ? CountryFlags.get(code) : code.split('-')[0]; };
 
     var _renderSelector = () => {
         var wrap = document.getElementById('lang-selector-wrap');

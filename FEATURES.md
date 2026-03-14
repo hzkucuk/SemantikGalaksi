@@ -14,7 +14,7 @@ Tüm UI metinleri JSON tabanlı locale dosyaları ile çoklu dile çevrilebilir.
 | Çeviri Şablonu | Topluluk çevirisi için boş şablon indirme |
 | Kök Anlamları Çevirisi | 2139 kök anlamı EN/RU/IT/ES'ye Gemini API ile toplu çeviri |
 | JSON Editör Locale | Dil dosyaları JSON editörde düzenlenebilir, CRUD API ile kayıt |
-| SVG Bayraklar | Dil dropdown'da inline SVG bayraklar (Windows WebView2 uyumu) |
+| SVG Bayraklar | ~42 ülke SVG bayrak (`flags.js`), bilinmeyen kodlar için renkli placeholder |
 | Bayrak SDF Shader | 5 ülke bayrağı GLSL SDF fonksiyonu — gezegen kaplamalarında dil bazlı |
 | Fatiha İstisnası | Fatiha suresi daima Türk bayrağı gösterir |
 

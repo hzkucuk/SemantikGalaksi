@@ -1,4 +1,4 @@
-﻿# Copilot Direktifi — .NET 10
+﻿# Copilot Direktifi — SemantikGalaksi
 
 **Öncelik:** Güvenlik > Mimari bütünlük > Stabilite > Performans
 
@@ -10,23 +10,79 @@
 - Büyük değişiklikleri parçala, her adımda onay iste.
 
 ## Mimari
-- Mevcut mimariyi (MVC / Razor Pages / Clean Architecture) koru.
+- Mevcut mimariyi koru: Frontend (vanilla JS, Three.js, GLSL), Backend (Python, pywebview).
 - Katman ihlali yasak. Yeni pattern eklemeden önce gerekçe sun.
+- Script yükleme sırası (`index.html`): `flags.js` → `i18n.js` → `state.js` → diğerleri. Bu sırayı bozma.
 
-## .NET 10 Standartları
-- `Task.Result` ve `.Wait()` kesinlikle yasak; her zaman `await` kullan.
-- `CancellationToken` varsa tüm alt çağrılara ilet.
-- Gereksiz `ToList()` / `ToArray()` kullanma.
+## Kodlama Standartları
 - Magic number yasak; sabit veya enum kullan.
-- Nullable Reference Types: her public method girişinde `ArgumentNullException.ThrowIfNull()` ekle.
-
-## Veritabanı
-Açık talimat olmadan: EF Migration oluşturma, kolon silme/rename/tip değiştirme.
-
-## Güvenlik & Hata Yönetimi
+- Exception yutma; handle et veya rethrow et.
 - Log'larda şifre/token/PII maskele.
-- Kullanıcıya stack trace gösterme; correlation ID döndür.
-- Exception yutma; handle et veya `throw` ile ilet.
+- Python scriptlerinde **emoji kullanma** — Windows cp1254 console redirect'te crash yapar. ASCII eşdeğer kullan.
+
+## i18n (Çoklu Dil) Kuralları — ÖNEMLİ
+
+### UI Metinleri
+- **Hiçbir JS dosyasında hardcoded Türkçe string KOYMA.** Her kullanıcıya görünen metin `t('key.name')` ile çağrılmalı.
+- Yeni metin eklediğinde:
+  1. `i18n.js` gömülü TR objesine Türkçe key ekle
+  2. Tüm locale JSON dosyalarına (`Frontend/locales/*.json`) karşılık gelen çevirilerini ekle
+  3. Kodda `t('yeni.key')` kullan
+- Locale dosya sayısı dinamik — sadece mevcut olanları güncelle, yeni ülke dosyası oluşturma (kullanıcı ekler).
+
+### Locale Dosya Standartları
+- **Format:** `{DİL}-{bölge}.json` — Örnek: `TR-tr`, `EN-en`, `DE-de`, `FR-fr`, `AR-sa`, `JA-jp`
+- **Konum:** `Frontend/locales/`
+- **Yapı:** Düz JSON, `meta` objesi + çeviri key'leri. Meta zorunlu alanlar:
+  ```json
+  {
+    "meta": {
+      "code": "DE-de",
+      "name": "German",
+      "nativeName": "Deutsch",
+      "flag": "🇩🇪",
+      "direction": "ltr",
+      "besmeleAudio": "besmele_de.wav"
+    }
+  }
+  ```
+- Sistem `locales/` klasöründeki JSON dosyalarını otomatik keşfeder (auto-discover). Yeni dosya bırakılırsa dropdown'a eklenir.
+
+### Bayrak Sistemi
+- Tüm ülke bayrakları `Frontend/js/flags.js` dosyasında SVG olarak tanımlı (~42 ülke).
+- `CountryFlags.get('XX-xx')` → inline SVG döndürür. Bilinmeyen kodlar için otomatik renkli placeholder üretir.
+- Yeni dil eklendiğinde bayrak `flags.js`'e SVG olarak eklenmeli.
+- `i18n.js` doğrudan `CountryFlags.get()` kullanır — bayrak verisi **asla** i18n.js'e yazılmaz.
+
+### Kök Anlamları Çevirisi
+- Her dil için `Frontend/locales/roots_{lang}.json` dosyası gerekir (ör: `roots_en.json`).
+- Çeviri scripti: `DataEngine/generate_root_translations.py <API_KEY> <lang_code>`
+- Batch boyutu 50 kök/çağrı, Gemini API, retry 3x, rate limit backoff.
+
+### Besmele Sesleri
+- Her dil için `Frontend/locales/besmele_{lang}.wav` dosyası (ör: `besmele_en.wav`).
+- TTS scripti: `DataEngine/generate_besmele_i18n.py <API_KEY> [lang_code]`
+
+### Bayrak SDF Shader
+- Gezegen kaplamalarında dil bazlı bayrak gösterimi.
+- `shaders.js`: `getFlag(viewNorm, flagType)` dispatcher — flagType int uniform.
+- `data-loader.js`: `_getLangFlagType()` → 0-4 map, `uFlagType` uniform.
+- **Fatiha (Sure 1) DAİMA flagType=0 (Türk bayrağı)** — dil değişse bile.
+- Yeni dil = yeni SDF fonksiyonu gerekir → `shaders.js`'e ekle + `getFlag()` dispatcher'ı güncelle + `_getLangFlagType()` map'ini güncelle.
+
+### Locale Editor
+- JSON editörde dil dosyaları düzenlenebilir (datasets.js).
+- CRUD API: `GET/POST /api/locale/{name}` (desktop_app.py).
+
+### Yeni Dil Ekleme Kontrol Listesi
+Yeni bir dil eklendiğinde sırasıyla yapılması gerekenler:
+1. `Frontend/locales/{LANG}-{bölge}.json` — locale dosyası (meta + tüm çeviri key'leri)
+2. `Frontend/locales/roots_{lang}.json` — kök anlamları çevirisi (generate_root_translations.py)
+3. `Frontend/locales/besmele_{lang}.wav` — besmele TTS sesi (generate_besmele_i18n.py)
+4. `Frontend/js/flags.js` — ülke bayrağı SVG (CountryFlags map'ine ekle)
+5. `Frontend/js/shaders.js` — bayrak SDF fonksiyonu + getFlag() dispatcher güncelle
+6. `Frontend/js/data-loader.js` — `_langFlagMap` + `_getLangFlagType()` güncelle
+7. Tüm mevcut JS'lerdeki yeni t() key'lerinin locale dosyalarında karşılığı var mı kontrol et
 
 ## Otodökümantasyon (otomatik — hatırlatma bekleme)
 Her değişiklik sonrası:

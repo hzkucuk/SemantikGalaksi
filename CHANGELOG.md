@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.42.1] - 2025-07-28
+### Yeni Özellik
+- **Kapsamlı Bayrak Altyapısı**: `flags.js` ile ~42 ülke bayrağı SVG olarak hazır — yeni dil eklenince dropdown'da otomatik bayrak görünür
+- **Bilinmeyen Dil Fallback**: Tanımlanmamış ülke kodları için hash renk + dil kodu placeholder SVG üretir
+- **Copilot Direktifleri Güncellemesi**: i18n kuralları, bayrak sistemi, yeni dil ekleme kontrol listesi, cp1254 uyarısı, script yükleme sırası dokümante edildi
+
+### Değişiklik
+- `i18n.js` dahili `_flagSVGs` kaldırıldı → `CountryFlags.get()` delegasyonu
+- `.github/copilot-instructions.md` tamamen yeniden yazıldı (SemantikGalaksi özel)
+
 ## [0.42.0] - 2025-07-28
 ### Yeni Özellik
 - **Kök Anlamları Çoklu Dil Çevirisi**: 2139 kök anlamı Gemini API ile EN/RU/IT/ES dillerine toplu çeviri (50 kök/batch, otomatik retry)
