@@ -39,7 +39,7 @@ var speakAyah = async (text) => {
     if (isAudioLoading) return false;
     isAudioLoading = true;
     try {
-        var ttsPrompt = t('tts.promptTR') + text;
+        var ttsPrompt = t('tts.prompt') + text;
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`, {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

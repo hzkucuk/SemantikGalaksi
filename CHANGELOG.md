@@ -1,5 +1,9 @@
 bu# CHANGELOG
 
+## [0.43.1] - 2025-07-28
+### Düzeltme
+- **TTS Çok Dilli Prompt**: Her locale kendi dilinde TTS prompt'u taşıyor (`tts.prompt`). Eski `tts.promptTR` + `tts.promptTranslate` kaldırıldı. İleride meal dili değiştiğinde TTS doğru dilde okuyacak.
+
 ## [0.43.0] - 2025-07-28
 ### Yeni Özellik
 - **Ayet+Kök Birleşik Panel**: Ayet ve Kökler sekmeleri birleştirildi — kök badge'leri ayetin altında, renklendirme bağlamıyla birlikte görünüyor

@@ -227,8 +227,7 @@ var I18n = (function () {
         'search.invalidJson': 'Geçersiz JSON',
 
         // TTS
-        'tts.promptTR': 'Bu Türkçe duayı güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ',
-        'tts.promptTranslate': 'Translate the following Turkish prayer text into {lang} and read it aloud in {lang} with a strong, deep, assertive male voice. Pronounce every word at the same volume, clearly and powerfully. Do not lower your voice at the end of sentences: ',
+        'tts.prompt': 'Bu Türkçe duayı güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ',
 
         // Language
         'lang.title': 'Dil',
