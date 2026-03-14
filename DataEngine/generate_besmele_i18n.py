@@ -100,16 +100,16 @@ def generate_one(api_key: str, lang_code: str) -> bool:
         method="POST"
     )
 
-    print(f"⏳ [{lang_code.upper()}] Gemini TTS API çağrılıyor...")
+    print(f"[{lang_code.upper()}] Gemini TTS API calling...")
     try:
         with urllib.request.urlopen(req, timeout=90) as resp:
             result = json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
-        print(f"❌ [{lang_code.upper()}] API hatası ({e.code}): {body[:300]}")
+        print(f"FAIL [{lang_code.upper()}] API error ({e.code}): {body[:300]}")
         return False
     except Exception as e:
-        print(f"❌ [{lang_code.upper()}] Bağlantı hatası: {e}")
+        print(f"FAIL [{lang_code.upper()}] Connection error: {e}")
         return False
 
     part = (result.get("candidates") or [{}])[0]
@@ -117,7 +117,7 @@ def generate_one(api_key: str, lang_code: str) -> bool:
     inline = part.get("inlineData", {})
 
     if not inline.get("data"):
-        print(f"❌ [{lang_code.upper()}] API'den ses verisi alınamadı.")
+        print(f"FAIL [{lang_code.upper()}] No audio data from API.")
         return False
 
     pcm_bytes = base64.b64decode(inline["data"])
@@ -132,8 +132,8 @@ def generate_one(api_key: str, lang_code: str) -> bool:
 
     size_kb = os.path.getsize(output_path) / 1024
     duration = len(pcm_bytes) / (SAMPLE_RATE * 2)
-    print(f"✅ [{lang_code.upper()}] Kaydedildi: {output_path}")
-    print(f"   Boyut: {size_kb:.1f} KB | Süre: ~{duration:.1f}s")
+    print(f"OK [{lang_code.upper()}] Saved: {output_path}")
+    print(f"   Size: {size_kb:.1f} KB | Duration: ~{duration:.1f}s")
     return True
 
 
@@ -141,7 +141,7 @@ def generate_all(api_key: str) -> dict:
     results = {}
     for i, code in enumerate(LANGUAGES):
         if i > 0:
-            print("   ⏸ 3 saniye bekleniyor (rate limit)...")
+            print("   WAIT 3s (rate limit)...")
             time.sleep(3)
         results[code] = generate_one(api_key, code)
     return results
@@ -151,27 +151,27 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         key = sys.argv[1]
     else:
-        key = input("🔑 Gemini API Key: ").strip()
+        key = input("Gemini API Key: ").strip()
 
     if not key:
-        print("❌ API key boş olamaz.")
+        print("ERROR: API key cannot be empty.")
         sys.exit(1)
 
     if len(sys.argv) > 2:
         lang = sys.argv[2].lower()
         ok = generate_one(key, lang)
     else:
-        print("🌐 Tüm diller için besmele üretiliyor...")
-        print(f"   Diller: {', '.join(c.upper() for c in LANGUAGES)}")
-        print(f"   Çıktı: {LOCALES_DIR}/")
+        print("Generating besmele for all languages...")
+        print(f"   Languages: {', '.join(c.upper() for c in LANGUAGES)}")
+        print(f"   Output: {LOCALES_DIR}/")
         print()
         results = generate_all(key)
         ok = all(results.values())
         print()
-        print("═" * 50)
+        print("=" * 50)
         for code, success in results.items():
-            status = "✅" if success else "❌"
-            print(f"  {status} {code.upper()} — {LANGUAGES[code]['output']}")
-        print("═" * 50)
+            status = "OK" if success else "FAIL"
+            print(f"  {status} {code.upper()} - {LANGUAGES[code]['output']}")
+        print("=" * 50)
 
     sys.exit(0 if ok else 1)

@@ -64,7 +64,25 @@ var getRootPron = (root) => {
 
 var getRootInfo = (root) => {
     if (!root) return null;
-    return rootDictionary[root] || rootDictionary[root.replace(/\s/g, '')] || null;
+    var info = rootDictionary[root] || rootDictionary[root.replace(/\s/g, '')] || null;
+    if (!info) return null;
+    // Dil bazlı çeviri varsa meaning/derived üzerine yaz
+    var key = root.replace(/\s/g, '');
+    var tr = (typeof rootTranslations !== 'undefined' && rootTranslations) ?
+             (rootTranslations[root] || rootTranslations[key]) : null;
+    if (tr) {
+        var merged = Object.assign({}, info);
+        if (tr.meaning) merged.meaning = tr.meaning;
+        if (tr.derived && info.derived) {
+            merged.derived = info.derived.map(function(d, i) {
+                var td = tr.derived && tr.derived[i];
+                if (td && td.meaning) return Object.assign({}, d, { meaning: td.meaning });
+                return d;
+            });
+        }
+        return merged;
+    }
+    return info;
 };
 
 // Arapça metin normalizasyonu (harekeler kaldır, elif varyantları birleştir)

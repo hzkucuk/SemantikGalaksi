@@ -1,21 +1,24 @@
 {
-  "meta": { "code": "RU-ru", "name": "Russian", "nativeName": "Русский", "flag": "🇷🇺", "direction": "ltr", "besmeleAudio": "besmele_ru.wav" },
-
+  "meta": {
+    "code": "RU-ru",
+    "name": "Russian",
+    "nativeName": "Русский",
+    "flag": "🇷🇺",
+    "direction": "ltr",
+    "besmeleAudio": "besmele_ru.wav"
+  },
   "loading.euzu": "Прибегаю к Аллаху от проклятого шайтана",
   "loading.besmele": "Во имя Аллаха, Милостивого, Милосердного",
   "loading.transliteration": "Аʼузу билляхи мин аш-шайтани р-раджим · Бисмилляхи р-Рахмани р-Рахим",
   "loading.tapToStart": "▶ Нажмите для начала",
   "loading.loading": "Загрузка",
-
   "portrait.title": "Поверните устройство",
   "portrait.desc": "Пространство корней слов Корана работает только в альбомном режиме. Пожалуйста, поверните устройство.",
-
   "login.title": "Вход",
   "login.username": "Имя пользователя",
   "login.password": "Пароль",
   "login.submit": "Войти",
   "login.firstSetup": "Первая настройка: admin / admin123",
-
   "header.readData": "ЗАГРУЗИТЬ",
   "header.datasets": "Наборы данных",
   "header.editor": "JSON Редактор",
@@ -29,7 +32,6 @@
   "header.perfLow": "НИЗКИЙ",
   "header.stats": "Статистика",
   "header.analyzer": "Анализатор корней",
-
   "layout.galaxy": "Галактика",
   "layout.galaxyDesc": "Спираль Архимеда — модель Млечного Пути",
   "layout.nebula": "Туманность",
@@ -40,7 +42,6 @@
   "layout.sphereDesc": "Сфера Фибоначчи — золотое сечение",
   "layout.allah": "الله",
   "layout.allahDesc": "Арабская каллиграфия — форма слова Аллах",
-
   "settings.title": "Настройки",
   "settings.userInfo": "Информация о пользователе",
   "settings.changePassword": "Изменить пароль",
@@ -61,13 +62,10 @@
   "settings.apiTip": "💡 Бесплатного плана достаточно для ежедневного использования.",
   "settings.privacy": "🔒 Ваши ключи хранятся в зашифрованном виде в браузере. Они не отправляются на сервер.",
   "settings.logout": "Выход",
-
   "admin.title": "Пользователи",
   "admin.newUser": "Новый пользователь",
-
   "datasets.title": "📂 Наборы данных",
   "datasets.copyPrompt": "Имя файла копии:",
-
   "editor.title": "📝 JSON Редактор",
   "editor.save": "💾 Сохранить",
   "editor.export": "⬇ Экспорт",
@@ -77,19 +75,16 @@
   "editor.arabic": "⌨ Арабский",
   "editor.close": "✕ Закрыть",
   "editor.space": "Пробел",
-
   "notes.title": "📓 Мои заметки",
   "notes.newNote": "Новая заметка",
   "notes.deleteNote": "Удалить заметку",
   "notes.close": "Закрыть",
   "notes.placeholder": "Заголовок заметки...",
-
   "hud.tabAyet": "Аят",
   "hud.tabRoots": "Корни",
   "hud.tabConnections": "Связи",
   "hud.tabStats": "Статистика",
   "hud.tabAnalysis": "Анализ",
-
   "hud.coordinate": "КООРДИНАТА",
   "hud.dipnot": "Сноска",
   "hud.noDipnot": "Для этого аята сноска отсутствует.",
@@ -107,13 +102,11 @@
   "hud.quranOverall": "По всему Корану",
   "hud.topSurahs": "Самые частые суры",
   "hud.ratio": "Доля",
-
   "ai.analyze": "ИИ Анализ",
   "ai.analyzing": "Анализ...",
   "ai.thinking": "ИИ думает...",
   "ai.noResult": "Не удалось получить результат анализа.",
   "ai.error": "Ошибка: {message}",
-
   "analyzer.bookTitle": "Вся Книга — Общая картина",
   "analyzer.root": "Корень",
   "analyzer.verse": "Аят",
@@ -155,12 +148,10 @@
   "analyzer.clusterTitle": "Кластеризация семейств корней",
   "analyzer.exportJSON": "📥 Скачать JSON отчёт",
   "analyzer.exportCSV": "📥 CSV таблица частот",
-
   "header.appTitle": "Пространство Корней Слов Корана",
   "header.appSubtitle": "3D Семантический Анализ",
   "header.searchPlaceholder": "Поиск суры, координат, перевода или арабского...",
   "header.arabicKeyboard": "Арабская Клавиатура",
-
   "stats.title": "Статистика Сцены",
   "stats.layout": "Расположение",
   "stats.surahs": "Суры",
@@ -182,23 +173,18 @@
   "stats.tipLines": "Количество 3D линейных сегментов, соединяющих общие корни",
   "stats.tipFps": "Кадров в секунду — 60 идеал, ниже 30 проблемы с производительностью",
   "stats.tipQuality": "Качество рендеринга — Высокое: bloom вкл, Низкое: bloom выкл (меньше GPU)",
-
   "tooltip.rootConnection": "Связь Корней",
   "tooltip.inQuran": "в {count} местах Корана",
-
   "search.resultVerse": "{count} АЯТОВ",
   "search.resultSurah": "{count} СУР",
   "search.verse": "АЯТ",
   "search.surah": "СУРА",
   "search.invalidJson": "Некорректный JSON",
-
   "tts.promptTR": "Bu Türkçe duayı güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ",
   "tts.promptTranslate": "Translate the following Turkish prayer text into Russian and read it aloud in Russian with a strong, deep, assertive male voice. Pronounce every word at the same volume, clearly and powerfully. Do not lower your voice at the end of sentences: ",
-
   "lang.title": "Язык",
   "lang.templateExport": "📋 Скачать шаблон перевода",
   "lang.besmeleHint": "Чтобы добавить бесмеле на вашем языке: поместите besmele_{code}.wav в папку locales/.",
-
   "common.close": "Закрыть",
   "common.save": "Сохранить",
   "common.cancel": "Отмена",
@@ -206,5 +192,16 @@
   "common.success": "Успешно",
   "common.rank": "Ранг",
   "common.top": "топ",
-  "common.online": "онлайн"
+  "common.online": "онлайн",
+  "tooltip.noRootInfo": "Информация о корне ещё не загружена.",
+  "tooltip.inQuranCount": "Встречается в {count} местах Корана",
+  "tooltip.derivedWords": "ПРОИЗВОДНЫЕ СЛОВА",
+  "apikey.active": "Aktiven",
+  "apikey.error": "Oshibka",
+  "apikey.pending": "Ozhidanie",
+  "auth.connectionError": "Ne udalos podklyuchitsya k serveru",
+  "notes.untitled": "Bez nazvaniya",
+  "analyzer.zipfStrong": "Chastoty korney demonstriruyut silnoe sootvetstvie zakonu Zipfa — sovpadaet s estestvennymi yazykovymi raspredeleniyami.",
+  "analyzer.zipfModerate": "Umerennoe sootvetstvie Zipfa — chastichno estestvennoye yazykovoye raspredeleniye, chastichno strukturnaya regulyarnost.",
+  "analyzer.zipfLow": "Nizkoye sootvetstviye Zipfa — raspredeleniye korney otklonaetsya ot estestvennogo yazyka, vozmozhen strukturnyy poryadok."
 }

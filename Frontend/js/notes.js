@@ -36,8 +36,8 @@ var renderNotesList = () => {
     if (!sb) return;
     sb.innerHTML = _notes.map(n => `
         <div class="note-item ${n.id === _activeNoteId ? 'active' : ''}" onclick="selectNote('${n.id}')">
-            <div class="note-title-text">${n.title || 'Başlıksız Not'}</div>
-            <div class="note-date">${new Date(n.updated).toLocaleDateString('tr-TR')}</div>
+            <div class="note-title-text">${n.title || t('notes.untitled')}</div>
+            <div class="note-date">${new Date(n.updated).toLocaleDateString(I18n.getLanguage() === 'TR-tr' ? 'tr-TR' : I18n.getLanguage().split('-')[0])}</div>
         </div>
     `).join('') || '<div style="padding:16px;font-size:10px;color:#475569;text-align:center;">Henüz not yok.<br>✚ ile yeni ekleyin.</div>';
 };

@@ -489,9 +489,9 @@ var RootAnalyzer = (function () {
                     <div class="analyzer-metric"><div class="metric-value" style="color:#34d399;">R² = ${freq.rSquared}</div><div class="metric-label">${t('analyzer.zipfR2')}</div></div>
                     <div class="analyzer-metric"><div class="metric-value" style="color:#a78bfa;">${freq.sorted.length}</div><div class="metric-label">${t('analyzer.totalRoots')}</div></div>
                 </div>
-                <p class="analyzer-note">${parseFloat(freq.rSquared) > 0.9 ? '✅ Kök frekansları güçlü Zipf yasası uyumu gösteriyor — doğal dil dağılımıyla örtüşüyor.' :
-                    parseFloat(freq.rSquared) > 0.7 ? '⚠️ Orta düzey Zipf uyumu — kısmen doğal dil dağılımı, kısmen yapısal düzenlilik.' :
-                    '🔬 Düşük Zipf uyumu — kök dağılımı doğal dilden sapma gösteriyor, yapısal bir düzen mevcut olabilir.'}</p>
+                <p class="analyzer-note">${parseFloat(freq.rSquared) > 0.9 ? t('analyzer.zipfStrong') :
+                    parseFloat(freq.rSquared) > 0.7 ? t('analyzer.zipfModerate') :
+                    t('analyzer.zipfLow')}</p>
                 <canvas id="chart-zipf" width="760" height="280" style="width:100%;border-radius:8px;"></canvas>
                 <div class="analyzer-top-list">
                     <span class="analyzer-top-title">${t('analyzer.top5').replace('5', '10')}</span>

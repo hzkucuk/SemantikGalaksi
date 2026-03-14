@@ -1,21 +1,24 @@
 {
-  "meta": { "code": "IT-it", "name": "Italian", "nativeName": "Italiano", "flag": "🇮🇹", "direction": "ltr", "besmeleAudio": "besmele_it.wav" },
-
+  "meta": {
+    "code": "IT-it",
+    "name": "Italian",
+    "nativeName": "Italiano",
+    "flag": "🇮🇹",
+    "direction": "ltr",
+    "besmeleAudio": "besmele_it.wav"
+  },
   "loading.euzu": "Mi rifugio in Allah dal maledetto Satana",
   "loading.besmele": "Nel nome di Allah, il Compassionevole, il Misericordioso",
   "loading.transliteration": "A'ūdhu billāhi min ash-shayṭān ir-rajīm · Bismillāh ir-Raḥmān ir-Raḥīm",
   "loading.tapToStart": "▶ Tocca per iniziare",
   "loading.loading": "Caricamento",
-
   "portrait.title": "Ruota il dispositivo",
   "portrait.desc": "Lo Spazio delle Radici del Corano funziona solo in modalità orizzontale. Si prega di ruotare il dispositivo.",
-
   "login.title": "Accedi",
   "login.username": "Nome utente",
   "login.password": "Password",
   "login.submit": "Accedi",
   "login.firstSetup": "Prima configurazione: admin / admin123",
-
   "header.readData": "CARICA DATI",
   "header.datasets": "Set di dati",
   "header.editor": "Editor JSON",
@@ -29,7 +32,6 @@
   "header.perfLow": "BASSA",
   "header.stats": "Statistiche",
   "header.analyzer": "Motore analisi radici",
-
   "layout.galaxy": "Galassia",
   "layout.galaxyDesc": "Spirale di Archimede — modello Via Lattea",
   "layout.nebula": "Nebulosa",
@@ -40,7 +42,6 @@
   "layout.sphereDesc": "Sfera di Fibonacci — rapporto aureo",
   "layout.allah": "الله",
   "layout.allahDesc": "Calligrafia araba — forma della parola Allah",
-
   "settings.title": "Impostazioni",
   "settings.userInfo": "Informazioni utente",
   "settings.changePassword": "Cambia password",
@@ -61,13 +62,10 @@
   "settings.apiTip": "💡 Il piano gratuito è sufficiente per l'uso quotidiano.",
   "settings.privacy": "🔒 Le tue chiavi sono archiviate crittografate nel browser. Non vengono inviate a nessun server.",
   "settings.logout": "Esci",
-
   "admin.title": "Utenti",
   "admin.newUser": "Nuovo utente",
-
   "datasets.title": "📂 Set di dati",
   "datasets.copyPrompt": "Nome file copia:",
-
   "editor.title": "📝 Editor JSON",
   "editor.save": "💾 Salva",
   "editor.export": "⬇ Esporta",
@@ -77,19 +75,16 @@
   "editor.arabic": "⌨ Arabo",
   "editor.close": "✕ Chiudi",
   "editor.space": "Spazio",
-
   "notes.title": "📓 Le mie note",
   "notes.newNote": "Nuova nota",
   "notes.deleteNote": "Elimina nota",
   "notes.close": "Chiudi",
   "notes.placeholder": "Titolo della nota...",
-
   "hud.tabAyet": "Versetto",
   "hud.tabRoots": "Radici",
   "hud.tabConnections": "Connessioni",
   "hud.tabStats": "Statistiche",
   "hud.tabAnalysis": "Analisi",
-
   "hud.coordinate": "COORDINATA",
   "hud.dipnot": "Nota a piè di pagina",
   "hud.noDipnot": "Nessuna nota disponibile per questo versetto.",
@@ -107,13 +102,11 @@
   "hud.quranOverall": "Intero Corano",
   "hud.topSurahs": "Sure più frequenti",
   "hud.ratio": "Rapporto",
-
   "ai.analyze": "Analisi IA",
   "ai.analyzing": "Analisi in corso...",
   "ai.thinking": "L'IA sta pensando...",
   "ai.noResult": "Impossibile ottenere il risultato dell'analisi.",
   "ai.error": "Errore: {message}",
-
   "analyzer.bookTitle": "Libro Intero — Quadro Generale",
   "analyzer.root": "Radice",
   "analyzer.verse": "Versetto",
@@ -155,12 +148,10 @@
   "analyzer.clusterTitle": "Clustering famiglie di radici",
   "analyzer.exportJSON": "📥 Scarica rapporto JSON",
   "analyzer.exportCSV": "📥 Tabella frequenze CSV",
-
   "header.appTitle": "Spazio Radici Parole del Corano",
   "header.appSubtitle": "Analisi Semantica 3D",
   "header.searchPlaceholder": "Cerca sura, coordinate, traduzione o arabo...",
   "header.arabicKeyboard": "Tastiera Araba",
-
   "stats.title": "Statistiche Scena",
   "stats.layout": "Layout",
   "stats.surahs": "Sure",
@@ -182,23 +173,18 @@
   "stats.tipLines": "Numero di segmenti di linea 3D che collegano radici condivise",
   "stats.tipFps": "Fotogrammi al secondo — 60 ideale, sotto 30 problemi di prestazione",
   "stats.tipQuality": "Qualità di rendering attiva — Alta: bloom on, Bassa: bloom off (meno GPU)",
-
   "tooltip.rootConnection": "Connessione Radice",
   "tooltip.inQuran": "in {count} posizioni nel Corano",
-
   "search.resultVerse": "{count} VERSETTI",
   "search.resultSurah": "{count} SURE",
   "search.verse": "VERSETTO",
   "search.surah": "SURA",
   "search.invalidJson": "JSON non valido",
-
   "tts.promptTR": "Bu Türkçe duayı güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ",
   "tts.promptTranslate": "Translate the following Turkish prayer text into Italian and read it aloud in Italian with a strong, deep, assertive male voice. Pronounce every word at the same volume, clearly and powerfully. Do not lower your voice at the end of sentences: ",
-
   "lang.title": "Lingua",
   "lang.templateExport": "📋 Scarica modello di traduzione",
   "lang.besmeleHint": "Per aggiungere l'audio della besmele nella tua lingua: metti besmele_{code}.wav nella cartella locales/.",
-
   "common.close": "Chiudi",
   "common.save": "Salva",
   "common.cancel": "Annulla",
@@ -206,5 +192,16 @@
   "common.success": "Successo",
   "common.rank": "Rango",
   "common.top": "top",
-  "common.online": "online"
+  "common.online": "online",
+  "tooltip.noRootInfo": "Le informazioni sulla radice non sono ancora caricate.",
+  "tooltip.inQuranCount": "Appare in {count} punti del Corano",
+  "tooltip.derivedWords": "PAROLE DERIVATE",
+  "apikey.active": "Attivo",
+  "apikey.error": "Errore",
+  "apikey.pending": "In attesa",
+  "auth.connectionError": "Impossibile connettersi al server",
+  "notes.untitled": "Nota senza titolo",
+  "analyzer.zipfStrong": "Le frequenze delle radici mostrano una forte conformita alla legge di Zipf — coerente con la distribuzione del linguaggio naturale.",
+  "analyzer.zipfModerate": "Conformita moderata di Zipf — in parte distribuzione del linguaggio naturale, in parte regolarita strutturale.",
+  "analyzer.zipfLow": "Bassa conformita di Zipf — la distribuzione delle radici devia dal linguaggio naturale, potrebbe esistere un modello strutturale."
 }

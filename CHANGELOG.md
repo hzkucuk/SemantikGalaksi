@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## [0.42.0] - 2025-07-28
+### Yeni Özellik
+- **Kök Anlamları Çoklu Dil Çevirisi**: 2139 kök anlamı Gemini API ile EN/RU/IT/ES dillerine toplu çeviri (50 kök/batch, otomatik retry)
+- **JSON Editör Locale Sekmeleri**: Dil dosyaları JSON editörde düzenlenebilir, CRUD API (`/api/locale/`) ile kayıt
+- **SVG Ülke Bayrakları**: Dil dropdown'da inline SVG bayraklar (Windows WebView2 emoji uyumu)
+- **Bayrak SDF Shader**: 5 ülke bayrağı GLSL SDF fonksiyonu (TR hilal-yıldız, EN Union Jack, RU üç bant, IT dikey şerit, ES arma) — gezegen kaplama olarak dil bazlı
+- **Dil Bazlı Bayrak Texture**: Seçili dile göre tüm gezegen kaplamalarında ilgili bayrak sembolü (Fatiha hariç — daima Türk bayrağı)
+- **Besmele TTS Sesleri**: 4 dilde Gemini TTS ile besmele WAV dosyaları oluşturuldu (EN/RU/IT/ES)
+- **i18n Tamamlama**: API key durum metinleri, auth hatası, not başlığı, Zipf analiz notları i18n sistemine taşındı (~8 yeni key)
+
+### Düzeltme
+- **Windows cp1254 Encoding**: Python TTS/çeviri scriptlerinde emoji → ASCII değişimi (arka plan süreç uyumu)
+- **Locale Dosya Tutarlılığı**: 4 locale dosyasında 198 çeviri anahtarı senkronize
+
 ## [0.41.1] - 2025-07-28
 ### Düzeltme
 - **i18n Eksik Çeviriler**: Başlık (Kur'an-ı Kerim Kelime Kök Uzayı), arama placeholderı, sahne istatistikleri (9 etiket + 9 tooltip), HUD butonları (Seslendir, Sure, Yapay Zekâ Analizi), tooltip (Kök Bağlantısı), arama sonuçları (AYET/SURE) artık dil değişimine uyuyor

@@ -90,6 +90,71 @@ var turkishFlagCode = `
         float shape = 1.0 - smoothstep(-0.01, 0.035, d);
         return shape * facing;
     }
+    // İngiliz Bayrağı — Union Jack çapraz + haç
+    float britishFlag(vec3 viewNorm) {
+        vec2 uv = viewNorm.xy * 0.55;
+        float facing = smoothstep(0.0, 0.25, viewNorm.z);
+        // Merkez haç
+        float cross = min(abs(uv.x), abs(uv.y));
+        float crossShape = 1.0 - smoothstep(0.02, 0.06, cross);
+        // Çapraz haç (X)
+        float d1 = abs(uv.x - uv.y) / 1.414;
+        float d2 = abs(uv.x + uv.y) / 1.414;
+        float diag = min(d1, d2);
+        float diagShape = 1.0 - smoothstep(0.01, 0.04, diag);
+        // Daire maskeleme
+        float mask = 1.0 - smoothstep(0.28, 0.32, length(uv));
+        float shape = max(crossShape * 0.9, diagShape * 0.5) * mask;
+        return shape * facing;
+    }
+    // Rus Bayrağı — yatay üç şerit
+    float russianFlag(vec3 viewNorm) {
+        vec2 uv = viewNorm.xy * 0.55;
+        float facing = smoothstep(0.0, 0.25, viewNorm.z);
+        float mask = 1.0 - smoothstep(0.28, 0.32, length(uv));
+        // Üst şerit (beyaz) ve alt şerit (kırmızı) parlak, orta (mavi) koyu
+        float stripe = smoothstep(-0.01, 0.01, abs(uv.y - 0.10)) * smoothstep(-0.01, 0.01, abs(uv.y + 0.10));
+        float bands = 1.0 - stripe;
+        // Yıldız merkeze
+        float star = sdStar5(uv, 0.08, 0.42);
+        float starShape = 1.0 - smoothstep(-0.01, 0.03, star);
+        float shape = max(bands * 0.3, starShape * 0.7) * mask;
+        return shape * facing;
+    }
+    // İtalyan Bayrağı — dikey üç şerit
+    float italianFlag(vec3 viewNorm) {
+        vec2 uv = viewNorm.xy * 0.55;
+        float facing = smoothstep(0.0, 0.25, viewNorm.z);
+        float mask = 1.0 - smoothstep(0.28, 0.32, length(uv));
+        // Dikey şeritler — sol yeşil, orta beyaz, sağ kırmızı
+        float stripe = smoothstep(-0.01, 0.01, abs(uv.x - 0.10)) * smoothstep(-0.01, 0.01, abs(uv.x + 0.10));
+        float bands = 1.0 - stripe;
+        float shape = bands * 0.5 * mask;
+        return shape * facing;
+    }
+    // İspanyol Bayrağı — yatay şeritler + merkez sembol
+    float spanishFlag(vec3 viewNorm) {
+        vec2 uv = viewNorm.xy * 0.55;
+        float facing = smoothstep(0.0, 0.25, viewNorm.z);
+        float mask = 1.0 - smoothstep(0.28, 0.32, length(uv));
+        // Üst ve alt kırmızı şeritler
+        float topBand = 1.0 - smoothstep(0.10, 0.12, uv.y);
+        float bottomBand = 1.0 - smoothstep(0.10, 0.12, -uv.y);
+        float redBands = max(1.0 - smoothstep(0.08, 0.12, abs(abs(uv.y) - 0.18)), 0.0);
+        // Merkez amblem — küçük daire
+        float emblem = sdCircle2D(uv + vec2(0.05, 0.0), 0.06);
+        float emblemShape = 1.0 - smoothstep(-0.01, 0.02, emblem);
+        float shape = max(redBands * 0.4, emblemShape * 0.6) * mask;
+        return shape * facing;
+    }
+    // Bayrak seçici — uFlagType: 0=TR, 1=EN, 2=RU, 3=IT, 4=ES
+    float getFlag(vec3 viewNorm, int flagType) {
+        if (flagType == 1) return britishFlag(viewNorm);
+        if (flagType == 2) return russianFlag(viewNorm);
+        if (flagType == 3) return italianFlag(viewNorm);
+        if (flagType == 4) return spanishFlag(viewNorm);
+        return turkishFlag(viewNorm);
+    }
 `;
 
 // --- Neon Beam Shader (Kök Bağlantı Işınları) ---
@@ -147,6 +212,7 @@ var sunBodyVS = `
 var sunBodyFS = `
     uniform float time;
     uniform vec3 uColor;
+    uniform int uFlagType;
     varying vec3 vNormal;
     varying vec3 vPosition;
     varying vec3 vViewDir;
@@ -164,7 +230,7 @@ var sunBodyFS = `
         float dotNV = max(dot(vNormal, vViewDir), 0.0);
         float rim = pow(1.0 - dotNV, 2.5);
         color += uColor * rim * 2.2;
-        float flag = turkishFlag(vNormal);
+        float flag = getFlag(vNormal, uFlagType);
         float pulse = 0.9 + 0.1 * sin(time * 0.4);
         vec3 flagGlow = mix(uColor * 1.5, vec3(1.0, 0.98, 0.95), 0.5);
         color = mix(color, flagGlow, flag * 0.55 * pulse);
@@ -291,6 +357,7 @@ var ayahSunVS = `
 `;
 var ayahSunFS = `
     uniform float time;
+    uniform int uFlagType;
     varying vec3 vNormal;
     varying vec3 vPosition;
     varying vec3 vViewDir;
@@ -309,7 +376,7 @@ var ayahSunFS = `
         float dotNV = max(dot(vNormal, vViewDir), 0.0);
         float rim = pow(1.0 - dotNV, 2.5);
         color += vColor * rim * 2.2;
-        float flag = turkishFlag(vNormal);
+        float flag = getFlag(vNormal, uFlagType);
         float pulse = 0.9 + 0.1 * sin(time * 0.4);
         vec3 flagGlow = mix(vColor * 1.5, vec3(1.0, 0.98, 0.95), 0.5);
         color = mix(color, flagGlow, flag * 0.55 * pulse);

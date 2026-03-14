@@ -1,21 +1,24 @@
 {
-  "meta": { "code": "ES-es", "name": "Spanish", "nativeName": "Español", "flag": "🇪🇸", "direction": "ltr", "besmeleAudio": "besmele_es.wav" },
-
+  "meta": {
+    "code": "ES-es",
+    "name": "Spanish",
+    "nativeName": "Español",
+    "flag": "🇪🇸",
+    "direction": "ltr",
+    "besmeleAudio": "besmele_es.wav"
+  },
   "loading.euzu": "Me refugio en Allah del maldito Satanás",
   "loading.besmele": "En el nombre de Allah, el Compasivo, el Misericordioso",
   "loading.transliteration": "A'ūdhu billāhi min ash-shayṭān ir-rajīm · Bismillāh ir-Raḥmān ir-Raḥīm",
   "loading.tapToStart": "▶ Toca para comenzar",
   "loading.loading": "Cargando",
-
   "portrait.title": "Gira tu dispositivo",
   "portrait.desc": "El Espacio de Raíces del Corán solo funciona en modo horizontal. Por favor, gira tu dispositivo.",
-
   "login.title": "Iniciar sesión",
   "login.username": "Nombre de usuario",
   "login.password": "Contraseña",
   "login.submit": "Entrar",
   "login.firstSetup": "Primera configuración: admin / admin123",
-
   "header.readData": "CARGAR DATOS",
   "header.datasets": "Conjuntos de datos",
   "header.editor": "Editor JSON",
@@ -29,7 +32,6 @@
   "header.perfLow": "BAJO",
   "header.stats": "Estadísticas",
   "header.analyzer": "Motor de análisis de raíces",
-
   "layout.galaxy": "Galaxia",
   "layout.galaxyDesc": "Espiral de Arquímedes — modelo Vía Láctea",
   "layout.nebula": "Nebulosa",
@@ -40,7 +42,6 @@
   "layout.sphereDesc": "Esfera de Fibonacci — proporción áurea",
   "layout.allah": "الله",
   "layout.allahDesc": "Caligrafía árabe — forma de la palabra Alá",
-
   "settings.title": "Configuración",
   "settings.userInfo": "Información del usuario",
   "settings.changePassword": "Cambiar contraseña",
@@ -61,13 +62,10 @@
   "settings.apiTip": "💡 El plan gratuito es suficiente para uso diario.",
   "settings.privacy": "🔒 Tus claves se almacenan cifradas en tu navegador. No se envían a ningún servidor.",
   "settings.logout": "Cerrar sesión",
-
   "admin.title": "Usuarios",
   "admin.newUser": "Nuevo usuario",
-
   "datasets.title": "📂 Conjuntos de datos",
   "datasets.copyPrompt": "Nombre del archivo copia:",
-
   "editor.title": "📝 Editor JSON",
   "editor.save": "💾 Guardar",
   "editor.export": "⬇ Exportar",
@@ -77,19 +75,16 @@
   "editor.arabic": "⌨ Árabe",
   "editor.close": "✕ Cerrar",
   "editor.space": "Espacio",
-
   "notes.title": "📓 Mis notas",
   "notes.newNote": "Nueva nota",
   "notes.deleteNote": "Eliminar nota",
   "notes.close": "Cerrar",
   "notes.placeholder": "Título de la nota...",
-
   "hud.tabAyet": "Versículo",
   "hud.tabRoots": "Raíces",
   "hud.tabConnections": "Conexiones",
   "hud.tabStats": "Estadísticas",
   "hud.tabAnalysis": "Análisis",
-
   "hud.coordinate": "COORDENADA",
   "hud.dipnot": "Nota al pie",
   "hud.noDipnot": "No hay nota disponible para este versículo.",
@@ -107,13 +102,11 @@
   "hud.quranOverall": "Todo el Corán",
   "hud.topSurahs": "Suras más frecuentes",
   "hud.ratio": "Proporción",
-
   "ai.analyze": "Análisis con IA",
   "ai.analyzing": "Analizando...",
   "ai.thinking": "La IA está pensando...",
   "ai.noResult": "No se pudo obtener el resultado del análisis.",
   "ai.error": "Error: {message}",
-
   "analyzer.bookTitle": "Libro Completo — Visión General",
   "analyzer.root": "Raíz",
   "analyzer.verse": "Versículo",
@@ -155,12 +148,10 @@
   "analyzer.clusterTitle": "Agrupación de familias de raíces",
   "analyzer.exportJSON": "📥 Descargar informe JSON",
   "analyzer.exportCSV": "📥 Tabla de frecuencias CSV",
-
   "header.appTitle": "Espacio de Raíces de Palabras del Corán",
   "header.appSubtitle": "Análisis Semántico 3D",
   "header.searchPlaceholder": "Buscar sura, coordenada, traducción o árabe...",
   "header.arabicKeyboard": "Teclado Árabe",
-
   "stats.title": "Estadísticas de Escena",
   "stats.layout": "Diseño",
   "stats.surahs": "Suras",
@@ -182,23 +173,18 @@
   "stats.tipLines": "Número de segmentos de línea 3D que conectan raíces compartidas",
   "stats.tipFps": "Fotogramas por segundo — 60 ideal, por debajo de 30 problemas de rendimiento",
   "stats.tipQuality": "Calidad de renderizado activa — Alta: bloom encendido, Baja: bloom apagado (menos GPU)",
-
   "tooltip.rootConnection": "Conexión de Raíz",
   "tooltip.inQuran": "en {count} lugares del Corán",
-
   "search.resultVerse": "{count} VERSÍCULOS",
   "search.resultSurah": "{count} SURAS",
   "search.verse": "VERSÍCULO",
   "search.surah": "SURA",
   "search.invalidJson": "JSON no válido",
-
   "tts.promptTR": "Bu Türkçe duayı güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ",
   "tts.promptTranslate": "Translate the following Turkish prayer text into Spanish and read it aloud in Spanish with a strong, deep, assertive male voice. Pronounce every word at the same volume, clearly and powerfully. Do not lower your voice at the end of sentences: ",
-
   "lang.title": "Idioma",
   "lang.templateExport": "📋 Descargar plantilla de traducción",
   "lang.besmeleHint": "Para agregar audio de besmele en tu idioma: coloca besmele_{code}.wav en la carpeta locales/.",
-
   "common.close": "Cerrar",
   "common.save": "Guardar",
   "common.cancel": "Cancelar",
@@ -206,5 +192,16 @@
   "common.success": "Éxito",
   "common.rank": "Rango",
   "common.top": "top",
-  "common.online": "en línea"
+  "common.online": "en línea",
+  "tooltip.noRootInfo": "Información de la raíz aún no cargada.",
+  "tooltip.inQuranCount": "Aparece en {count} lugares del Corán",
+  "tooltip.derivedWords": "PALABRAS DERIVADAS",
+  "apikey.active": "Activo",
+  "apikey.error": "Error",
+  "apikey.pending": "Pendiente",
+  "auth.connectionError": "No se pudo conectar al servidor",
+  "notes.untitled": "Nota sin titulo",
+  "analyzer.zipfStrong": "Las frecuencias de las raices muestran un fuerte cumplimiento de la ley de Zipf — consistente con la distribucion del lenguaje natural.",
+  "analyzer.zipfModerate": "Cumplimiento moderado de Zipf — parcialmente distribucion del lenguaje natural, parcialmente regularidad estructural.",
+  "analyzer.zipfLow": "Bajo cumplimiento de Zipf — la distribucion de raices se desvia del lenguaje natural, puede existir un patron estructural."
 }

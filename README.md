@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.41.1-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.42.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -78,11 +78,13 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 - **Sinematik Hyperspace Warp** (v0.25.1): Millennium Falcon GIF referansına sadık — karanlık arka plan, uzun parlak beyaz çizgiler, punch ivme, çıkış flash
 - **Fatiha Suresi** (v0.22.2): Kırmızı renk vurgusu (`0xff0000`) — ilk sure özel olarak işaretli
 
-### 🇹🇷 Türk Bayrağı SDF Shader
+### 🇹🇷 Bayrak SDF Shader (5 Ülke)
 - **Hilal + 5 köşeli yıldız**: Tüm küre shader'larına SDF (Signed Distance Field) olarak gömülü
+- **5 ülke bayrağı**: TR (hilal-yıldız), EN (Union Jack), RU (üç bant+yıldız), IT (dikey şerit), ES (yatay bant+arma)
 - Hilal: İki ofsetli daire farkı, Yıldız: Inigo Quilez `sdStar5` algoritması
 - **Kameraya dönük projeksiyon**: View-space `vNormal` ile her açıdan görünür
 - Plazma üzerine sıcak beyaz parıltı olarak `mix()` ile harmanlama, hafif `pulse` animasyonu
+- **Dil bazlı**: Seçili dile göre otomatik bayrak değişimi (Fatiha daima Türk bayrağı)
 
 ### 🌠 Milky Way Panorama Skybox
 - **Gerçek Samanyolu panoraması**: `milkyway.jpg` equirectangular projeksiyon
@@ -237,6 +239,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.42.0 | 🌐 **Derin i18n**: Kök anlamları çoklu dil çevirisi, SVG bayraklar, bayrak SDF shader (5 ülke), JSON editör locale sekmeleri, besmele TTS (4 dil), hardcoded string temizliği |
 | v0.41.1 | **i18n Eksik Çeviriler Düzeltmesi**: Başlık, stats, tooltip, HUD butonları, arama, TTS dil desteği, ~40 yeni anahtar |
 | v0.41.0 | 🌍 **Çoklu Dil Desteği (i18n)**: 5 dil (TR/EN/RU/IT/ES), otomatik algılama, header seçici, JSON locale, dil bazlı besmele, auto-discover |
 | v0.40.2 | **Tüm Kitap Özeti**: HUD Analiz sekmesinde kitap geneli büyük resim (2139 kök, Zipf, top 5 kök, köprü kökler) |

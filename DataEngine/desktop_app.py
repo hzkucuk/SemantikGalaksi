@@ -525,6 +525,10 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._list_users()
         elif path == '/api/datasets':
             self._list_datasets()
+        elif path == '/api/locales':
+            self._list_locales_api()
+        elif path.startswith('/api/locale/'):
+            self._get_locale()
         elif path.startswith('/api/download/'):
             self._download_file()
         elif path.startswith('/api/dataset/'):
@@ -547,6 +551,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._create_user()
         elif self.path == '/api/auth/change-password':
             self._change_password()
+        elif self.path.startswith('/api/locale/'):
+            self._save_locale()
         elif self.path == '/api/dataset-rename':
             self._rename_dataset()
         elif self.path == '/api/dataset-duplicate':
@@ -773,6 +779,63 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response({'ok': True})
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
+
+    # --- Locale Endpoints ---
+    def _list_locales_api(self):
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        locales_dir = os.path.join(ROOT_DIR, 'locales')
+        result = []
+        if os.path.isdir(locales_dir):
+            for f in sorted(os.listdir(locales_dir)):
+                if not f.endswith('.json'):
+                    continue
+                path = os.path.join(locales_dir, f)
+                try:
+                    stat = os.stat(path)
+                    result.append({
+                        'name': f,
+                        'sizeKB': round(stat.st_size / 1024, 1),
+                        'date': time.strftime('%d.%m.%Y %H:%M', time.localtime(stat.st_mtime))
+                    })
+                except Exception:
+                    pass
+        self._json_response(result)
+
+    def _get_locale(self):
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        name = urllib.parse.unquote(self.path[len('/api/locale/'):])
+        path = os.path.join(ROOT_DIR, 'locales', name)
+        if not os.path.exists(path):
+            self._json_response({'error': 'Bulunamadi'}, 404)
+            return
+        with open(path, 'r', encoding='utf-8') as f:
+            self._json_response(json.load(f))
+
+    def _save_locale(self):
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] == 'viewer':
+            self._json_response({'error': 'Duzenleme yetkiniz yok'}, 403)
+            return
+        name = urllib.parse.unquote(self.path[len('/api/locale/'):])
+        data = self._read_body()
+        if data is None:
+            self._json_response({'error': 'Gecersiz JSON'}, 400)
+            return
+        locales_dir = os.path.join(ROOT_DIR, 'locales')
+        os.makedirs(locales_dir, exist_ok=True)
+        path = os.path.join(locales_dir, name)
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        self._json_response({'ok': True, 'name': name})
 
     # --- Dataset Endpoints ---
     def _list_datasets(self):

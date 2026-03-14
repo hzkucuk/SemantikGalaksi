@@ -1,21 +1,24 @@
 {
-  "meta": { "code": "EN-en", "name": "English", "nativeName": "English", "flag": "🇬🇧", "direction": "ltr", "besmeleAudio": "besmele_en.wav" },
-
+  "meta": {
+    "code": "EN-en",
+    "name": "English",
+    "nativeName": "English",
+    "flag": "🇬🇧",
+    "direction": "ltr",
+    "besmeleAudio": "besmele_en.wav"
+  },
   "loading.euzu": "I seek refuge in Allah from the accursed Satan",
   "loading.besmele": "In the name of Allah, the Most Gracious, the Most Merciful",
   "loading.transliteration": "A'ūdhu billāhi min ash-shayṭān ir-rajīm · Bismillāh ir-Raḥmān ir-Raḥīm",
   "loading.tapToStart": "▶ Tap to Start",
   "loading.loading": "Loading",
-
   "portrait.title": "Rotate Your Device",
   "portrait.desc": "Quran Word Root Space works only in landscape mode. Please rotate your device.",
-
   "login.title": "Sign In",
   "login.username": "Username",
   "login.password": "Password",
   "login.submit": "Sign In",
   "login.firstSetup": "First setup: admin / admin123",
-
   "header.readData": "LOAD DATA",
   "header.datasets": "Datasets",
   "header.editor": "JSON Editor",
@@ -29,7 +32,6 @@
   "header.perfLow": "LOW",
   "header.stats": "Statistics",
   "header.analyzer": "Root Analysis Engine",
-
   "layout.galaxy": "Galaxy",
   "layout.galaxyDesc": "Archimedean spiral — Milky Way model",
   "layout.nebula": "Nebula",
@@ -40,7 +42,6 @@
   "layout.sphereDesc": "Fibonacci sphere — Golden ratio distribution",
   "layout.allah": "الله",
   "layout.allahDesc": "Arabic calligraphy — Allah word shape",
-
   "settings.title": "Settings",
   "settings.userInfo": "User Information",
   "settings.changePassword": "Change Password",
@@ -61,13 +62,10 @@
   "settings.apiTip": "💡 The free plan is sufficient for daily use. You can add multiple keys.",
   "settings.privacy": "🔒 Your keys are stored encrypted in your browser. They are not sent to any server.",
   "settings.logout": "Logout",
-
   "admin.title": "Users",
   "admin.newUser": "New User",
-
   "datasets.title": "📂 Datasets",
   "datasets.copyPrompt": "Copy file name:",
-
   "editor.title": "📝 JSON Editor",
   "editor.save": "💾 Save",
   "editor.export": "⬇ Export",
@@ -77,19 +75,16 @@
   "editor.arabic": "⌨ Arabic",
   "editor.close": "✕ Close",
   "editor.space": "Space",
-
   "notes.title": "📓 My Notes",
   "notes.newNote": "New Note",
   "notes.deleteNote": "Delete Note",
   "notes.close": "Close",
   "notes.placeholder": "Note title...",
-
   "hud.tabAyet": "Verse",
   "hud.tabRoots": "Roots",
   "hud.tabConnections": "Connections",
   "hud.tabStats": "Statistics",
   "hud.tabAnalysis": "Analysis",
-
   "hud.coordinate": "COORDINATE",
   "hud.dipnot": "Footnote",
   "hud.noDipnot": "No footnote available for this verse.",
@@ -107,13 +102,11 @@
   "hud.quranOverall": "Quran overall",
   "hud.topSurahs": "Most Frequent Surahs",
   "hud.ratio": "Ratio",
-
   "ai.analyze": "AI Analysis",
   "ai.analyzing": "Analyzing...",
   "ai.thinking": "AI is thinking...",
   "ai.noResult": "Analysis result could not be obtained.",
   "ai.error": "Error: {message}",
-
   "analyzer.bookTitle": "Full Book — Big Picture",
   "analyzer.root": "Root",
   "analyzer.verse": "Verse",
@@ -155,12 +148,10 @@
   "analyzer.clusterTitle": "Root Family Clustering",
   "analyzer.exportJSON": "📥 Download JSON Report",
   "analyzer.exportCSV": "📥 CSV Frequency Table",
-
   "header.appTitle": "Quran Word Root Space",
   "header.appSubtitle": "3D Semantic Analysis",
   "header.searchPlaceholder": "Search surah, coordinate, translation or Arabic...",
   "header.arabicKeyboard": "Arabic Keyboard",
-
   "stats.title": "Scene Statistics",
   "stats.layout": "Layout",
   "stats.surahs": "Surahs",
@@ -182,23 +173,18 @@
   "stats.tipLines": "Number of 3D line segments connecting shared roots",
   "stats.tipFps": "Frames per second — 60 is ideal, below 30 indicates performance issues",
   "stats.tipQuality": "Active render quality — High: bloom on, Low: bloom off (less GPU)",
-
   "tooltip.rootConnection": "Root Connection",
   "tooltip.inQuran": "in {count} places in the Quran",
-
   "search.resultVerse": "{count} VERSES",
   "search.resultSurah": "{count} SURAHS",
   "search.verse": "VERSE",
   "search.surah": "SURAH",
   "search.invalidJson": "Invalid JSON",
-
   "tts.promptTR": "Bu Türkçe duayı güçlü, tok ve kararlı bir erkek sesiyle oku. Her kelimeyi aynı ses yüksekliğinde, net ve güçlü söyle. Cümle sonlarında sesi kısma, son kelimeleri de güçlü bitir: ",
   "tts.promptTranslate": "Translate the following Turkish prayer text into English and read it aloud in English with a strong, deep, assertive male voice. Pronounce every word at the same volume, clearly and powerfully. Do not lower your voice at the end of sentences: ",
-
   "lang.title": "Language",
   "lang.templateExport": "📋 Download Translation Template",
   "lang.besmeleHint": "To add besmele audio in your language: place besmele_{code}.wav in the locales/ folder.",
-
   "common.close": "Close",
   "common.save": "Save",
   "common.cancel": "Cancel",
@@ -206,5 +192,16 @@
   "common.success": "Success",
   "common.rank": "Rank",
   "common.top": "top",
-  "common.online": "online"
+  "common.online": "online",
+  "tooltip.noRootInfo": "Root detail information not loaded yet.",
+  "tooltip.inQuranCount": "Appears in {count} places in the Quran",
+  "tooltip.derivedWords": "DERIVED WORDS",
+  "apikey.active": "Active",
+  "apikey.error": "Error",
+  "apikey.pending": "Pending",
+  "auth.connectionError": "Could not connect to server",
+  "notes.untitled": "Untitled Note",
+  "analyzer.zipfStrong": "Root frequencies show strong Zipf law compliance — consistent with natural language distribution.",
+  "analyzer.zipfModerate": "Moderate Zipf compliance — partly natural language distribution, partly structural regularity.",
+  "analyzer.zipfLow": "Low Zipf compliance — root distribution deviates from natural language, a structural pattern may exist."
 }

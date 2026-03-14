@@ -40,7 +40,7 @@ window.doLogin = async () => {
         init();
         connectWS();
     } catch (e) {
-        err.textContent = 'Sunucuya bağlanılamadı';
+        err.textContent = t('auth.connectionError');
         err.style.display = 'block';
     }
 };

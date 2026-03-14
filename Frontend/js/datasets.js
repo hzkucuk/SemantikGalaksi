@@ -118,6 +118,7 @@ window.duplicateDataset = async (sourceName) => {
 var editorActiveTab = 'data';
 var editorDataContent = '';
 var editorRootsContent = '';
+var editorLocaleContents = {}; // { 'EN-en': '...json string...', ... }
 
 window.openEditor = async () => {
     var data;
@@ -131,13 +132,31 @@ window.openEditor = async () => {
     editorActiveTab = 'data';
     editorDataContent = JSON.stringify(data, null, 2);
     editorRootsContent = JSON.stringify(rootDictionary || {}, null, 2);
+    // Locale dosyalarını yükle
+    editorLocaleContents = {};
+    var tabsContainer = document.getElementById('editor-tabs');
+    var localeTabsHtml = '';
+    if (typeof I18n !== 'undefined' && I18n.getAvailable) {
+        var langs = I18n.getAvailable();
+        for (var i = 0; i < langs.length; i++) {
+            var lang = langs[i];
+            if (lang.code === 'TR-tr') continue;
+            try {
+                var resp = await fetch('locales/' + lang.code + '.json');
+                if (resp.ok) {
+                    var txt = await resp.text();
+                    editorLocaleContents[lang.code] = txt;
+                    localeTabsHtml += '<button class="editor-tab" id="editor-tab-locale-' + lang.code + '" onclick="editorSwitchTab(\'locale-' + lang.code + '\')"><span class="tab-dot"></span>' + lang.flag + ' ' + lang.code + '.json</button>';
+                }
+            } catch(e) {}
+        }
+    }
+    tabsContainer.innerHTML = '<button class="editor-tab active" id="editor-tab-data" onclick="editorSwitchTab(\'data\')"><span class="tab-dot"></span>' + activeDatasetName + '</button>' +
+        '<button class="editor-tab" id="editor-tab-roots" onclick="editorSwitchTab(\'roots\')"><span class="tab-dot"></span>quran_roots.json</button>' +
+        localeTabsHtml;
     var ta = document.getElementById('editor-textarea');
     ta.value = editorDataContent;
     document.getElementById('editor-title').textContent = '📝 ' + activeDatasetName;
-    document.getElementById('editor-tab-data').textContent = '';
-    document.getElementById('editor-tab-data').innerHTML = '<span class="tab-dot"></span>' + activeDatasetName;
-    document.getElementById('editor-tab-data').classList.add('active');
-    document.getElementById('editor-tab-roots').classList.remove('active');
     document.getElementById('json-editor').style.display = 'flex';
     editorUpdateTabUI();
     updateEditorLines();
@@ -150,13 +169,19 @@ window.editorSwitchTab = (tab) => {
     if (tab === editorActiveTab) return;
     var ta = document.getElementById('editor-textarea');
     if (editorActiveTab === 'data') editorDataContent = ta.value;
-    else editorRootsContent = ta.value;
+    else if (editorActiveTab === 'roots') editorRootsContent = ta.value;
+    else if (editorActiveTab.startsWith('locale-')) editorLocaleContents[editorActiveTab.replace('locale-', '')] = ta.value;
     editorActiveTab = tab;
-    ta.value = tab === 'data' ? editorDataContent : editorRootsContent;
-    var titleText = tab === 'data' ? activeDatasetName : 'quran_roots.json';
+    if (tab === 'data') ta.value = editorDataContent;
+    else if (tab === 'roots') ta.value = editorRootsContent;
+    else if (tab.startsWith('locale-')) ta.value = editorLocaleContents[tab.replace('locale-', '')] || '{}';
+    var titleText = tab === 'data' ? activeDatasetName : tab === 'roots' ? 'quran_roots.json' : tab.replace('locale-', '') + '.json';
     document.getElementById('editor-title').textContent = '📝 ' + titleText;
-    document.getElementById('editor-tab-data').classList.toggle('active', tab === 'data');
-    document.getElementById('editor-tab-roots').classList.toggle('active', tab === 'roots');
+    document.querySelectorAll('#editor-tabs .editor-tab').forEach(function(btn) { btn.classList.remove('active'); });
+    var activeBtn = tab === 'data' ? document.getElementById('editor-tab-data') :
+                    tab === 'roots' ? document.getElementById('editor-tab-roots') :
+                    document.getElementById('editor-tab-locale-' + tab.replace('locale-', ''));
+    if (activeBtn) activeBtn.classList.add('active');
     editorUpdateTabUI();
     updateEditorLines();
     editorValidate();
@@ -190,11 +215,16 @@ window.editorValidate = () => {
             bar.className = 'editor-status valid';
             msg.textContent = '✓ Geçerli JSON';
             info.textContent = nc + ' ' + t('hud.verse').toLowerCase() + ' · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
-        } else {
+        } else if (editorActiveTab === 'roots') {
             var rc = typeof data === 'object' ? Object.keys(data).length : 0;
             bar.className = 'editor-status valid';
             msg.textContent = '✓ Geçerli JSON';
             info.textContent = rc + ' ' + t('analyzer.root').toLowerCase() + ' · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+        } else {
+            var kc = typeof data === 'object' ? Object.keys(data).length : 0;
+            bar.className = 'editor-status valid';
+            msg.textContent = '✓ Geçerli JSON';
+            info.textContent = kc + ' key · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
         }
         return true;
     } catch(e) {
@@ -229,12 +259,34 @@ window.editorSave = async () => {
         setTimeout(() => { btn.textContent = '💾 Kaydet'; }, 1500);
         return;
     }
+    if (editorActiveTab.startsWith('locale-')) {
+        var localeCode = editorActiveTab.replace('locale-', '');
+        var localeFile = localeCode + '.json';
+        editorLocaleContents[localeCode] = ta.value;
+        if (isDesktopMode) {
+            try {
+                var r = await authFetch('/api/locale/' + encodeURIComponent(localeFile), {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: ta.value
+                });
+                if (!r.ok) { var err = await r.json(); alert(err.error || 'Hata'); return; }
+            } catch(e) { alert('Kaydetme hatasi: ' + e.message); return; }
+        }
+        if (typeof I18n !== 'undefined' && I18n.updateTranslation) {
+            I18n.updateTranslation(localeCode, data);
+        }
+        var btn = document.querySelector('.editor-btn.save');
+        btn.textContent = '✓ ' + localeFile + ' Güncellendi';
+        setTimeout(() => { btn.textContent = '💾 Kaydet'; }, 1500);
+        return;
+    }
     var saveName = activeDatasetName;
     if (activeDatasetName === 'quran_data.json') {
         saveName = 'quran_data_düzenlenmiş.json';
         activeDatasetName = saveName;
         document.getElementById('editor-title').textContent = '📝 ' + saveName;
-        document.getElementById('editor-tab-data').innerHTML = '<span class="tab-dot"></span>' + saveName;
+        var dataTab = document.getElementById('editor-tab-data');
+        if (dataTab) dataTab.innerHTML = '<span class="tab-dot"></span>' + saveName;
     }
     await DatasetStore.save(saveName, data);
     processData(data);
@@ -281,7 +333,9 @@ window.editorExport = async () => {
     var ta = document.getElementById('editor-textarea');
     try {
         var data = JSON.parse(ta.value);
-        var filename = editorActiveTab === 'data' ? activeDatasetName : 'quran_roots.json';
+        var filename = editorActiveTab === 'data' ? activeDatasetName :
+                       editorActiveTab === 'roots' ? 'quran_roots.json' :
+                       editorActiveTab.replace('locale-', '') + '.json';
         await downloadJSON(data, filename);
     } catch(e) { editorValidate(); }
 };
@@ -335,7 +389,7 @@ var renderKeyList = () => {
     list.innerHTML = keys.map(k => {
         var masked = k.key.substring(0, 8) + '••••••••' + k.key.slice(-4);
         var statusCls = k.status === 'ok' ? 'ok' : k.status === 'fail' ? 'fail' : 'pending';
-        var statusText = k.status === 'ok' ? '✓ Aktif' : k.status === 'fail' ? '✗ Hata' : '? Bekliyor';
+        var statusText = k.status === 'ok' ? t('apikey.active') : k.status === 'fail' ? t('apikey.error') : t('apikey.pending');
         var errorHint = k.status === 'fail' && k.error ? `<div style="font-size:9px;color:#f87171;margin-top:2px;word-break:break-all">${k.error}</div>` : '';
         return `
             <div class="key-item ${k.status === 'ok' ? 'active' : ''}">

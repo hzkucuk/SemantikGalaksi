@@ -122,7 +122,7 @@ var toggleRootDetail = (root, el) => {
     if (container.dataset.activeRoot === root) { container.innerHTML = ''; container.dataset.activeRoot = ''; return; }
     container.dataset.activeRoot = root;
     var info = getRootInfo(root);
-    if (!info) { container.innerHTML = `<div class="root-detail-panel"><span style="color:#64748b;font-size:11px;">Bu kök için detay bilgisi henüz yüklenmedi.</span></div>`; return; }
+    if (!info) { container.innerHTML = `<div class="root-detail-panel"><span style="color:#64748b;font-size:11px;">${t('tooltip.noRootInfo')}</span></div>`; return; }
     var color = el ? el.style.color || getRootCSSColor(root) : getRootCSSColor(root);
     var derivedHtml = (info.derived || []).map(d => `
         <div class="root-derived-item">
@@ -133,8 +133,8 @@ var toggleRootDetail = (root, el) => {
         <div class="root-detail-panel" style="border-color:${color.replace('hsl','hsla').replace(')',', 0.15)')}">
             <div class="root-detail-title" style="color:${color}">${root} · ${info.meaning || ''}</div>
             ${info.meaning_ar ? `<div style="font-size:13px;color:#e2e8f0;direction:rtl;margin-bottom:6px;">${info.meaning_ar}</div>` : ''}
-            ${info.count ? `<div style="font-size:10px;color:#64748b;margin-bottom:8px;">Kur'anda ${info.count} yerde geçiyor</div>` : ''}
-            ${derivedHtml ? `<div style="font-size:10px;font-weight:700;color:#00f2ff;margin-bottom:4px;letter-spacing:0.08em;">TÜREMİŞ KELİMELER</div>${derivedHtml}` : ''}
+            ${info.count ? `<div style="font-size:10px;color:#64748b;margin-bottom:8px;">${t('tooltip.inQuranCount', {count: info.count})}</div>` : ''}
+            ${derivedHtml ? `<div style="font-size:10px;font-weight:700;color:#00f2ff;margin-bottom:4px;letter-spacing:0.08em;">${t('tooltip.derivedWords')}</div>${derivedHtml}` : ''}
         </div>`;
 };
 window.toggleRootDetail = toggleRootDetail;
@@ -157,7 +157,7 @@ var toggleHudRootDetail = (root, el) => {
     panel.style.borderColor = color.replace('hsl','hsla').replace(')',', 0.2)');
 
     if (!info) {
-        panel.innerHTML = `<span style="color:#64748b;font-size:11px;">Bu kök için detay bilgisi henüz yüklenmedi.</span>`;
+        panel.innerHTML = `<span style="color:#64748b;font-size:11px;">${t('tooltip.noRootInfo')}</span>`;
     } else {
         var derivedHtml = (info.derived || []).map(d => `
             <div class="root-derived-item">
@@ -167,8 +167,8 @@ var toggleHudRootDetail = (root, el) => {
         panel.innerHTML = `
             <div class="root-detail-title" style="color:${color}">${root} · ${info.meaning || ''}</div>
             ${info.meaning_ar ? `<div style="font-size:14px;color:#e2e8f0;direction:rtl;margin-bottom:6px;">${info.meaning_ar}</div>` : ''}
-            ${info.count ? `<div style="font-size:10px;color:#64748b;margin-bottom:8px;">Kur'anda ${info.count} yerde geçiyor</div>` : ''}
-            ${derivedHtml ? `<div style="font-size:10px;font-weight:700;color:#00f2ff;margin-bottom:4px;letter-spacing:0.08em;">TÜREMİŞ KELİMELER</div>${derivedHtml}` : ''}`;
+            ${info.count ? `<div style="font-size:10px;color:#64748b;margin-bottom:8px;">${t('tooltip.inQuranCount', {count: info.count})}</div>` : ''}
+            ${derivedHtml ? `<div style="font-size:10px;font-weight:700;color:#00f2ff;margin-bottom:4px;letter-spacing:0.08em;">${t('tooltip.derivedWords')}</div>${derivedHtml}` : ''}`;
     }
 
     // Kartın içine ekle (liste) veya köklerin hemen altına (ana badge)

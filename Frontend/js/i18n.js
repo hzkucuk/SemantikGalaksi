@@ -213,6 +213,9 @@ var I18n = (function () {
         // Tooltip
         'tooltip.rootConnection': 'Kök Bağlantısı',
         'tooltip.inQuran': 'Kur\'anda {count} yerde',
+        'tooltip.noRootInfo': 'Bu kök için detay bilgisi henüz yüklenmedi.',
+        'tooltip.inQuranCount': 'Kur\'anda {count} yerde geçiyor',
+        'tooltip.derivedWords': 'TÜREMİŞ KELİMELER',
 
         // Search
         'search.resultVerse': '{count} AYET',
@@ -238,7 +241,23 @@ var I18n = (function () {
         'common.success': 'Başarılı',
         'common.rank': 'Rank',
         'common.top': 'üst',
-        'common.online': 'çevrimiçi'
+        'common.online': 'çevrimiçi',
+
+        // API Key
+        'apikey.active': '✓ Aktif',
+        'apikey.error': '✗ Hata',
+        'apikey.pending': '? Bekliyor',
+
+        // Auth
+        'auth.connectionError': 'Sunucuya bağlanılamadı',
+
+        // Notes
+        'notes.untitled': 'Başlıksız Not',
+
+        // Zipf Analysis
+        'analyzer.zipfStrong': '✅ Kök frekansları güçlü Zipf yasası uyumu gösteriyor — doğal dil dağılımıyla örtüşüyor.',
+        'analyzer.zipfModerate': '⚠️ Orta düzey Zipf uyumu — kısmen doğal dil dağılımı, kısmen yapısal düzenlilik.',
+        'analyzer.zipfLow': '🔬 Düşük Zipf uyumu — kök dağılımı doğal dilden sapma gösteriyor, yapısal bir düzen mevcut olabilir.'
     };
 
     // ════════════════════════════════════════════════════════════
@@ -359,10 +378,22 @@ var I18n = (function () {
         applyTranslations();
         _updateBesmeleAudio();
         _renderSelector();
+        _loadRootTranslations(code);
         // Event
         _listeners.forEach(function (fn) { try { fn(code); } catch (e) { } });
         document.dispatchEvent(new CustomEvent('languageChanged', { detail: { code: code } }));
         return true;
+    };
+
+    var _loadRootTranslations = async (code) => {
+        if (typeof rootTranslations === 'undefined') return;
+        if (code === 'TR-tr') { rootTranslations = {}; return; }
+        var lang = code.split('-')[0].toLowerCase();
+        try {
+            var resp = await fetch('locales/roots_' + lang + '.json');
+            if (resp.ok) { rootTranslations = await resp.json(); }
+            else { rootTranslations = {}; }
+        } catch(e) { rootTranslations = {}; }
     };
 
     // ════════════════════════════════════════════════════════════
@@ -421,13 +452,24 @@ var I18n = (function () {
 
     var _selectorOpen = false;
 
+    // SVG bayraklar — Windows'ta emoji bayraklar düzgün render olmaz
+    var _flagSVGs = {
+        'TR-tr': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="30" height="20" fill="#E30A17"/><circle cx="11" cy="10" r="6" fill="#fff"/><circle cx="12.8" cy="10" r="4.8" fill="#E30A17"/><polygon points="17,10 14.5,8.2 15.7,11 13.2,9 16.3,9" fill="#fff"/></svg>',
+        'EN-en': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.5"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3"/></svg>',
+        'RU-ru': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="30" height="6.67" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#0039A6"/><rect y="13.33" width="30" height="6.67" fill="#D52B1E"/></svg>',
+        'IT-it': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#CE2B37"/></svg>',
+        'ES-es': '<svg viewBox="0 0 30 20" width="20" height="14" style="vertical-align:middle;border-radius:2px;"><rect width="30" height="5" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/><rect y="15" width="30" height="5" fill="#AA151B"/></svg>'
+    };
+
+    var _getFlag = (code) => { return _flagSVGs[code] || '🌐'; };
+
     var _renderSelector = () => {
         var wrap = document.getElementById('lang-selector-wrap');
         if (!wrap) return;
         var cur = _available.find(function (a) { return a.code === _current; }) || _available[0];
         var btn = document.getElementById('lang-btn');
         if (btn) {
-            btn.innerHTML = cur.flag + ' <span class="lang-btn-code">' + _current.split('-')[0] + '</span>';
+            btn.innerHTML = _getFlag(_current) + ' <span class="lang-btn-code">' + _current.split('-')[0] + '</span>';
             btn.title = cur.nativeName;
         }
     };
@@ -440,7 +482,7 @@ var I18n = (function () {
             menu.innerHTML = _available.map(function (a) {
                 return '<button class="lang-option' + (a.code === _current ? ' active' : '') +
                     '" onclick="I18n.selectLang(\'' + a.code + '\')">' +
-                    a.flag + ' ' + a.nativeName + '</button>';
+                    _getFlag(a.code) + ' ' + a.nativeName + '</button>';
             }).join('');
             menu.classList.remove('hidden');
         } else {
@@ -494,6 +536,11 @@ var I18n = (function () {
 
     var onChange = (fn) => { _listeners.push(fn); };
 
+    var updateTranslation = (code, data) => {
+        _translations[code] = data;
+        if (code === _current) applyTranslations();
+    };
+
     // ════════════════════════════════════════════════════════════
     // PUBLIC API
     // ════════════════════════════════════════════════════════════
@@ -509,6 +556,7 @@ var I18n = (function () {
         selectLang: selectLang,
         exportTemplate: exportTemplate,
         onChange: onChange,
+        updateTranslation: updateTranslation,
         getTR: function () { return TR; },
         getBesmeleAudio: function () {
             var lang = _translations[_current];

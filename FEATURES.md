@@ -10,8 +10,13 @@ Tüm UI metinleri JSON tabanlı locale dosyaları ile çoklu dile çevrilebilir.
 | Desteklenen Diller | TR, EN, RU, IT, ES |
 | Otomatik Algılama | Tarayıcı/OS diline göre, localStorage hatırlama |
 | Auto-Discover | Yeni JSON dosyası locales/ klasörüne bırakılırsa otomatik keşfedilir |
-| Besmele Sesleri | Dil bazlı besmele_code.wav dosyaları |
+| Besmele Sesleri | Dil bazlı besmele_code.wav dosyaları (Gemini TTS ile üretilmiş) |
 | Çeviri Şablonu | Topluluk çevirisi için boş şablon indirme |
+| Kök Anlamları Çevirisi | 2139 kök anlamı EN/RU/IT/ES'ye Gemini API ile toplu çeviri |
+| JSON Editör Locale | Dil dosyaları JSON editörde düzenlenebilir, CRUD API ile kayıt |
+| SVG Bayraklar | Dil dropdown'da inline SVG bayraklar (Windows WebView2 uyumu) |
+| Bayrak SDF Shader | 5 ülke bayrağı GLSL SDF fonksiyonu — gezegen kaplamalarında dil bazlı |
+| Fatiha İstisnası | Fatiha suresi daima Türk bayrağı gösterir |
 
 ## EXE Olarak Dağıtım (PyInstaller)
 Uygulama PyInstaller ile tek klasör (one-folder) EXE olarak paketlenebilir.

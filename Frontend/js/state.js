@@ -1,7 +1,7 @@
 /** SemantikGalaksi — Paylaşılan Durum Değişkenleri */
 
 // Uygulama versiyonu (tek kaynak: VERSION dosyası → build sırasında buraya yansır)
-var APP_VERSION = '0.41.1';
+var APP_VERSION = '0.42.0';
 
 // Three.js sahne nesneleri
 var scene, camera, renderer, composer, ayahMesh, lineSegments, controls, highlightLines, skyMesh;
@@ -30,6 +30,7 @@ var originalData = null;
 var hasCustomData = false;
 var currentLayout = 'galaxy';
 var rootDictionary = {};
+var rootTranslations = {}; // Dil bazlı kök çevirileri { meaning, derived[].meaning }
 
 // Etkileşim durumu
 var raycaster = new THREE.Raycaster();

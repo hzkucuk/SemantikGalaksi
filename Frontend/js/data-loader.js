@@ -269,8 +269,9 @@ var processData = (data) => {
             var c = surahNum === '1' ? new THREE.Color(0xff0000) : new THREE.Color(getRootCSSColor(surahNum));
 
             // İç çekirdek küre (güneş gövdesi shader)
+            var flagVal = surahNum === '1' ? 0 : _getLangFlagType();
             var coreMat = new THREE.ShaderMaterial({
-                uniforms: { time: { value: 0.0 }, uColor: { value: c.clone() } },
+                uniforms: { time: { value: 0.0 }, uColor: { value: c.clone() }, uFlagType: { value: flagVal } },
                 vertexShader: sunBodyVS,
                 fragmentShader: sunBodyFS
             });
@@ -337,7 +338,7 @@ var processData = (data) => {
     // Ayet küreleri (surah rengine göre renk + GLSL animasyon)
     var ayahGeo = new THREE.SphereGeometry(400, 24, 24);
     var ayahMat = new THREE.ShaderMaterial({
-        uniforms: { time: { value: 0.0 } },
+        uniforms: { time: { value: 0.0 }, uFlagType: { value: _getLangFlagType() } },
         vertexShader: ayahSunVS,
         fragmentShader: ayahSunFS
     });
@@ -384,3 +385,28 @@ var processData = (data) => {
         }
     }, 100);
 };
+
+// Dil → bayrak tipi eşleme (shader uFlagType: 0=TR, 1=EN, 2=RU, 3=IT, 4=ES)
+var _langFlagMap = { 'TR-tr': 0, 'EN-en': 1, 'RU-ru': 2, 'IT-it': 3, 'ES-es': 4 };
+var _getLangFlagType = () => {
+    var lang = typeof I18n !== 'undefined' ? I18n.getLanguage() : 'TR-tr';
+    return _langFlagMap[lang] || 0;
+};
+
+// Dil değişince tüm shader'ların bayrak uniform'unu güncelle (Fatiha hariç)
+document.addEventListener('languageChanged', function () {
+    var ft = _getLangFlagType();
+    // Ayet mesh uniform
+    if (ayahMesh && ayahMesh.material && ayahMesh.material.uniforms && ayahMesh.material.uniforms.uFlagType) {
+        ayahMesh.material.uniforms.uFlagType.value = ft;
+    }
+    // Sure merkez güneşleri (Fatiha = surah 1 hariç)
+    surahGroups.forEach(function (g, i) {
+        var isFatiha = g.userData && g.userData.nodeData && g.userData.nodeData.id && g.userData.nodeData.id.startsWith('1:');
+        g.traverse(function (child) {
+            if (child.isMesh && child.material && child.material.uniforms && child.material.uniforms.uFlagType) {
+                child.material.uniforms.uFlagType.value = isFatiha ? 0 : ft;
+            }
+        });
+    });
+});
