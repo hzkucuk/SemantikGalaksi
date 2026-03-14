@@ -1,6 +1,34 @@
 # FEATURES - Kur'an-ı Kerim Kelime Kök Uzayı
 
-## Çoklu Dil Desteği (i18n)
+## SQLite Veritabani (v1.0.0+)
+Tum Kur'an verisi artik SQLite veritabaninda tek kaynak (single source of truth) olarak saklanir. Frontend icin otomatik JSON export yapilir.
+
+| Ozellik | Aciklama |
+|---------|----------|
+| **7 Tablo** | `verses` (6236), `roots` (1651), `verse_roots` (44718), `derived_words` (5329), `root_translations` (6604), `derived_translations` (20869), `change_log` |
+| **FK Kisitlamalari** | Referans butunlugu otomatik korunur — yetim veri olusturulamaz |
+| **WAL Modu** | Yazma ve okuma esanlik (concurrent read/write) destegi |
+| **Audit Trail** | 5 trigger ile otomatik degisiklik kaydi (`change_log` tablosu) |
+| **Hibrit Mimari** | SQLite → JSON export → Frontend degisikliksiz okur |
+| **Butunluk Kontrolu** | `/api/db/integrity` — FK ihlalleri, yetim kokler, eksik ceviriler |
+| **Istatistikler** | `/api/db/stats` — tablo bazli satir sayilari, dil listesi |
+| **Degisiklik Gecmisi** | `/api/db/changelog` — tablo/limit filtreli audit log |
+| **Migrasyon** | `json_to_sqlite.py` — JSON dosyalarindan tek seferlik migrasyon |
+| **Fallback** | SQLite yuklenemezse JSON modu ile calismaya devam eder |
+
+### Veritabani Semasi
+```
+verses (6236)  ──┐
+                 ├── verse_roots (44718) ──┐
+roots (1651)   ──┘                        │
+  ├── derived_words (5329)                │
+  ├── root_translations (6604)            │
+  └── derived_translations (20869)        │
+                                          │
+change_log ←── 5 trigger (INSERT/UPDATE/DELETE)
+```
+
+## Coklu Dil Destegi (i18n)
 Tüm UI metinleri JSON tabanlı locale dosyaları ile çoklu dile çevrilebilir.
 
 | Özellik | Açıklama |
@@ -12,7 +40,7 @@ Tüm UI metinleri JSON tabanlı locale dosyaları ile çoklu dile çevrilebilir.
 | Auto-Discover | Yeni JSON dosyası locales/ klasörüne bırakılırsa otomatik keşfedilir |
 | Besmele Sesleri | Dil bazlı besmele_code.wav dosyaları (Gemini TTS ile üretilmiş) |
 | Çeviri Şablonu | Topluluk çevirisi için boş şablon indirme |
-| Kök Anlamları Çevirisi | 2139 kök anlamı EN/RU/IT/ES'ye Gemini API ile toplu çeviri |
+| Kök Anlamları Çevirisi | 1651 kök anlamı EN/RU/IT/ES'ye Gemini API ile toplu çeviri |
 | JSON Editör Locale | Dil dosyaları JSON editörde düzenlenebilir, CRUD API ile kayıt |
 | SVG Bayraklar | ~42 ülke SVG bayrak (`flags.js`), bilinmeyen kodlar için renkli placeholder |
 | Bayrak SDF Shader | 5 ülke bayrağı GLSL SDF fonksiyonu — gezegen kaplamalarında dil bazlı |

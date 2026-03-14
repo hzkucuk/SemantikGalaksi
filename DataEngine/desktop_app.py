@@ -33,6 +33,13 @@ except ImportError:
     read_logs = lambda **kw: []
     LOG_DIR = ''
 
+try:
+    import db as quran_db
+    _HAS_DB = True
+except ImportError:
+    quran_db = None
+    _HAS_DB = False
+
 # --- AYARLAR ---
 def _get_base_dir():
     """PyInstaller veya cx_Freeze ile paketlenmiş ya da normal çalışmaya göre kök dizini belirler."""
@@ -612,6 +619,12 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._server_info()
         elif path == '/api/logs':
             self._get_logs()
+        elif path == '/api/db/integrity':
+            self._check_integrity()
+        elif path == '/api/db/stats':
+            self._db_stats()
+        elif path == '/api/db/changelog':
+            self._db_changelog()
         else:
             super().do_GET()
 
@@ -880,37 +893,22 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         if data is None or not isinstance(data, dict):
             self._json_response({'error': 'Gecersiz JSON'}, 400)
             return
-        roots_path = os.path.join(ROOT_DIR, 'quran_roots.json')
-        # --- Degisiklik gecmisi ---
-        old_count = None
-        if os.path.exists(roots_path):
+        username = session['username']
+        if _HAS_DB:
             try:
-                with open(roots_path, 'r', encoding='utf-8') as f:
-                    old_data = json.load(f)
-                old_count = len(old_data)
-            except Exception:
-                pass
-        # _meta blogu ekle
-        if '_meta' not in data:
-            data['_meta'] = {}
-        history_entry = {
-            'user': session['username'],
-            'timestamp': time.strftime('%Y-%m-%dT%H:%M:%S'),
-            'action': 'update' if old_count is not None else 'create',
-        }
-        if old_count is not None:
-            history_entry['before'] = {'rootCount': old_count}
-            history_entry['after'] = {'rootCount': len([k for k in data if k != '_meta'])}
-        if '_history' not in data['_meta']:
-            data['_meta']['_history'] = []
-        data['_meta']['_history'].insert(0, history_entry)
-        data['_meta']['_history'] = data['_meta']['_history'][:MAX_HISTORY_ENTRIES]
-        data['_meta']['modifiedBy'] = session['username']
-        data['_meta']['modifiedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S')
-        with open(roots_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        log_crud.info('Kok sozlugu kaydedildi', user=session['username'], rootCount=len(data) - 1)
-        self._json_response({'ok': True})
+                added, updated, removed = quran_db.save_roots_bulk(data, user=username)
+                log_crud.info('Kok sozlugu kaydedildi (SQLite)',
+                              user=username, added=added, updated=updated, removed=removed)
+                self._json_response({'ok': True, 'added': added, 'updated': updated, 'removed': removed})
+            except Exception as e:
+                log_crud.error('Kok sozlugu kaydetme hatasi', user=username, error=str(e))
+                self._json_response({'error': str(e)}, 500)
+        else:
+            roots_path = os.path.join(ROOT_DIR, 'quran_roots.json')
+            with open(roots_path, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            log_crud.info('Kok sozlugu kaydedildi (JSON)', user=username)
+            self._json_response({'ok': True})
 
     # --- Locale Endpoints ---
     def _list_locales_api(self):
@@ -965,38 +963,26 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         if data is None:
             self._json_response({'error': 'Gecersiz JSON'}, 400)
             return
+        username = session['username']
+        # roots_{lang}.json ise SQLite'a yonlendir
+        if name.startswith('roots_') and name.endswith('.json') and _HAS_DB:
+            lang = name.replace('roots_', '').replace('.json', '')
+            try:
+                added, updated = quran_db.save_root_translations(lang, data, user=username)
+                log_crud.info('Locale kok cevirisi kaydedildi (SQLite)',
+                              user=username, lang=lang, added=added, updated=updated)
+                self._json_response({'ok': True, 'name': name, 'added': added, 'updated': updated})
+            except Exception as e:
+                log_crud.error('Locale kok cevirisi kaydetme hatasi', user=username, error=str(e))
+                self._json_response({'error': str(e)}, 500)
+            return
+        # Normal locale dosyasi (TR-tr.json, EN-en.json vb.)
         locales_dir = os.path.join(ROOT_DIR, 'locales')
         os.makedirs(locales_dir, exist_ok=True)
         path = os.path.join(locales_dir, name)
-        # --- Degisiklik gecmisi ---
-        old_key_count = None
-        if os.path.exists(path):
-            try:
-                with open(path, 'r', encoding='utf-8') as f:
-                    old_data = json.load(f)
-                old_key_count = len(old_data)
-            except Exception:
-                pass
-        if isinstance(data, dict):
-            if '_meta' not in data:
-                data['_meta'] = {}
-            history_entry = {
-                'user': session['username'],
-                'timestamp': time.strftime('%Y-%m-%dT%H:%M:%S'),
-                'action': 'update' if old_key_count is not None else 'create'
-            }
-            if old_key_count is not None:
-                history_entry['before'] = {'keyCount': old_key_count}
-                history_entry['after'] = {'keyCount': len(data)}
-            if '_history' not in data['_meta']:
-                data['_meta']['_history'] = []
-            data['_meta']['_history'].insert(0, history_entry)
-            data['_meta']['_history'] = data['_meta']['_history'][:MAX_HISTORY_ENTRIES]
-            data['_meta']['modifiedBy'] = session['username']
-            data['_meta']['modifiedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S')
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        log_crud.info('Locale kaydedildi', user=session['username'], target=name)
+        log_crud.info('Locale kaydedildi', user=username, target=name)
         self._json_response({'ok': True, 'name': name})
 
     # --- Dataset Endpoints ---
@@ -1098,6 +1084,21 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         data['_meta']['modifiedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S')
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
+        # SQLite senkronizasyonu (quran_data.json icin)
+        if _HAS_DB and name == 'quran_data.json':
+            try:
+                nodes = data.get('nodes', [])
+                sync_count = 0
+                for node in nodes:
+                    nid = node.get('id')
+                    roots = node.get('roots', [])
+                    if nid and roots:
+                        quran_db.set_verse_roots(nid, roots)
+                        sync_count += 1
+                log_crud.info('quran_data.json SQLite senkronize edildi',
+                              user=session['username'], sync_count=sync_count)
+            except Exception as e:
+                log_system.error('quran_data.json SQLite senkronizasyon hatasi', error=str(e))
         log_crud.info('Dataset kaydedildi', user=session['username'], target=name)
         self._json_response({'ok': True, 'name': name})
         ws_server.broadcast(json.dumps({
@@ -1269,6 +1270,62 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         entries = read_logs(category=category, limit=limit, level=level)
         self._json_response({'entries': entries, 'total': len(entries), 'logDir': LOG_DIR})
 
+    # --- Database Integrity & Stats Endpoints ---
+    def _check_integrity(self):
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] != 'admin':
+            self._json_response({'error': 'Sadece admin butunluk kontrolu yapabilir'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            report = quran_db.check_integrity()
+            log_system.info('Butunluk kontrolu yapildi', user=session['username'],
+                            healthy=report.get('healthy', False))
+            self._json_response(report)
+        except Exception as e:
+            log_system.error('Butunluk kontrolu hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_stats(self):
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            stats = quran_db.get_stats()
+            self._json_response(stats)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_changelog(self):
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] != 'admin':
+            self._json_response({'error': 'Sadece admin degisiklik gecmisini gorebilir'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            parsed = urllib.parse.urlparse(self.path)
+            params = urllib.parse.parse_qs(parsed.query)
+            table_name = params.get('table', [None])[0]
+            limit = int(params.get('limit', [100])[0])
+            entries = quran_db.get_change_log(table_name=table_name, limit=limit)
+            self._json_response({'entries': entries, 'total': len(entries)})
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
     def log_message(self, format, *args):
         log_system.debug('HTTP', request=format % args if args else format)
 
@@ -1335,6 +1392,13 @@ def _start_update_check(win):
 def sunucuyu_baslat():
     """Arka planda sessiz bir sunucu başlatır"""
     global PORT, WS_PORT
+    # SQLite veritabanini baslat
+    if _HAS_DB:
+        try:
+            quran_db.get_db()
+            log_system.info('SQLite veritabani baslatildi')
+        except Exception as e:
+            log_system.error('SQLite baslatilamadi, JSON fallback aktif', error=str(e))
     _ThreadingServer.allow_reuse_address = True
     if AUTO_PORT:
         PORT = _find_free_port(HOST, PORT)

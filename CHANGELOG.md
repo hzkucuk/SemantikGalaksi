@@ -1,5 +1,23 @@
 bu# CHANGELOG
 
+## [1.0.0] - 2025-07-28 — MAJOR RELEASE: SQLite Veritabani Migrasyonu
+### Eklenen
+- **SQLite Veritabani**: Tum Kur'an verisi artik SQLite veritabaninda saklanir (tek kaynak, single source of truth). 7 tablo: `verses` (6236), `roots` (1651), `verse_roots` (44718), `derived_words` (5329), `root_translations` (6604), `derived_translations` (20869), `change_log`.
+- **Otomatik Butunluk**: FOREIGN KEY kisitlamalari, 5 trigger ile otomatik degisiklik kaydı (audit trail).
+- **Hibrit Mimari**: SQLite backend → otomatik JSON export → Frontend degisikliksiz okur.
+- **DataEngine/db_schema.py**: Sema tanimlari, baglanti yonetimi, butunluk raporlama.
+- **DataEngine/db.py**: CRUD islemleri (get_root, update_root, save_roots_bulk, set_verse_roots, save_root_translations), JSON export (export_quran_data, export_quran_roots, export_locale_roots, export_all), butunluk kontrolu (check_integrity), degisiklik gecmisi (get_change_log), istatistikler (get_stats).
+- **DataEngine/json_to_sqlite.py**: JSON → SQLite migrasyon scripti. Tek seferlik calistirma, sifir FK ihlali ile tamamlandi.
+- **API Endpoints**: `GET /api/db/integrity` (admin — butunluk kontrolu), `GET /api/db/stats` (istatistikler), `GET /api/db/changelog` (degisiklik gecmisi).
+- **Sunucu Baslangic**: SQLite veritabani sunucu baslatildiginda otomatik inisialize edilir.
+- **Dataset-DB Senkronizasyonu**: `quran_data.json` kaydedildiginde ayet-kok iliskileri otomatik SQLite'a senkronize edilir.
+
+### Degisiklik
+- `_save_roots`: SQLite (`quran_db.save_roots_bulk`) uzerinden calisir, JSON'a fallback.
+- `_save_locale`: `roots_{lang}.json` kayitlari SQLite (`quran_db.save_root_translations`) uzerinden yapilir.
+- `.gitignore`: `quran.db`, `quran.db-wal`, `quran.db-shm` eklendi (kullanici tarafinda uretilir).
+- Versiyon numaralama: v0.x → v1.x gecisi (MAJOR seri).
+
 ## [0.43.7] - 2025-07-28
 ### Düzeltme
 - **Kök Renklendirme**: Fatiha 1:1 'بسم' kelimesi kökü `سمو` ile eşleşmiyordu (tek harfli ön ek sıyırma eşiği > 3 iken >= 3'e, zayıf harf indirgeme >= 3 iken >= 2'ye düşürüldü).

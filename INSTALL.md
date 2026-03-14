@@ -1,6 +1,6 @@
 # 🕋 Kur'an-ı Kerim Kelime Kök Uzayı — Kurulum ve Kullanım Kılavuzu
 
-> **Sürüm:** 0.15.0 · **Son Güncelleme:** 2025-07-23
+> **Sürüm:** 1.0.0 · **Son Güncelleme:** 2025-07-28
 >
 > Kur'an-ı Kerim surelerini ve ayetlerini 3D uzay görselleştirmesi ile keşfetmenizi sağlayan masaüstü ve web uygulaması.
 
@@ -19,6 +19,7 @@
 9. [Sık Karşılaşılan Hatalar ve Çözümleri](#9--sık-karşılaşılan-hatalar-ve-çözümleri)
 10. [Güncelleme Talimatları](#10--güncelleme-talimatları)
 11. [Kaldırma Talimatları](#11--kaldırma-talimatları)
+12. [SQLite Veritabanı Migrasyonu](#12--sqlite-veritabanı-migrasyonu)
 
 ---
 
@@ -444,6 +445,14 @@ Tüm API endpoint'leri `Authorization: Bearer <token>` header'ı gerektirir (log
 | `GET` | `/api/online-users` | Çevrimiçi kullanıcılar |
 | `GET` | `/api/info` | Sunucu bilgileri (IP, port, WS portu) |
 
+### Veritabanı (v1.0.0+)
+
+| Method | Endpoint | Açıklama |
+|--------|----------|----------|
+| `GET` | `/api/db/integrity` | Bütünlük kontrolü (admin) |
+| `GET` | `/api/db/stats` | Tablo istatistikleri |
+| `GET` | `/api/db/changelog?table=&limit=` | Değişiklik geçmişi (admin) |
+
 ---
 
 ## 9 · Sık Karşılaşılan Hatalar ve Çözümleri
@@ -576,6 +585,36 @@ Remove-Item -Recurse -Force KuranKokUzayi  # PowerShell
 - **CHANGELOG.md** — Sürüm geçmişi ve değişiklik detayları
 - **FEATURES.md** — Tüm özelliklerin teknik dokümantasyonu
 - **DataEngine/config.json** — Sunucu yapılandırma şablonu
+
+---
+
+## 12 · SQLite Veritabanı Migrasyonu
+
+v1.0.0 ile birlikte tüm Kur'an verisi SQLite veritabanında tek kaynak olarak saklanır. Frontend için otomatik JSON export yapılır.
+
+### 12.1 — Migrasyon Çalıştırma
+
+```bash
+cd DataEngine
+python json_to_sqlite.py
+```
+
+Bu komut `Frontend/quran_data.json`, `Frontend/quran_roots.json` ve `Frontend/locales/roots_*.json` dosyalarını okuyarak `DataEngine/quran.db` oluşturur.
+
+### 12.2 — Doğrulama
+
+Sunucu çalışırken admin oturumu ile:
+
+```
+GET /api/db/integrity    # FK ihlalleri, yetim kökler, eksik çeviriler
+GET /api/db/stats         # Tablo satır sayıları, dil listesi
+```
+
+### 12.3 — Notlar
+
+- `quran.db` `.gitignore`'dadır — her kullanıcı kendi migrasyonunu çalıştırır
+- SQLite yüklenemezse uygulama JSON modunda çalışmaya devam eder
+- Sunucu başlatıldığında veritabanı otomatik initialize edilir
 
 ---
 

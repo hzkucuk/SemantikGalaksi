@@ -3,7 +3,8 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.43.7-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/SQLite-3.x-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-1.0.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -239,7 +240,10 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
-| v0.42.2 | 🔧 Besmele ses dil uyumu, editör roots filtresi, hardcoded Türkçe düzeltmeleri (Analiz Motoru, Tam Analiz Paneli) |
+| **v1.0.0** | 🗄️ **SQLite Veritabanı Migrasyonu**: Tüm Kur'an verisi SQLite'a taşındı (7 tablo, FK kısıtlamaları, audit trail). Hibrit mimari: SQLite → JSON export → Frontend. 3 yeni API endpoint. |
+| v0.43.7 | 🔧 Fatiha 1:1 kök renklendirme düzeltmesi, JSON DB yetkilendirme, değişiklik geçmişi |
+| v0.43.6 | 📋 Merkezi loglama sistemi (SYSTEM/AUTH/CRUD), log API endpoint |
+| v0.42.2 |
 | v0.42.1 | 🏳️ **Kapsamlı Bayrak Altyapısı**: ~42 ülke SVG bayrak + bilinmeyen kod için renkli placeholder, direktifler güncellemesi |
 | v0.42.0 | 🌐 **Derin i18n**: Kök anlamları çoklu dil çevirisi, SVG bayraklar, bayrak SDF shader (5 ülke), JSON editör locale sekmeleri, besmele TTS (4 dil), hardcoded string temizliği |
 | v0.41.1 | **i18n Eksik Çeviriler Düzeltmesi**: Başlık, stats, tooltip, HUD butonları, arama, TTS dil desteği, ~40 yeni anahtar |
@@ -307,13 +311,21 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 │   ├── Auth Module — token, session, RBAC                │
 │   ├── Dataset Manager — JSON dosya CRUD                 │
 │   ├── Notes Manager — kullanıcı bazlı not depolama      │
+│   ├── Logger — SYSTEM/AUTH/CRUD merkezi loglama         │
 │   ├── Updater — GitHub Release kontrol + ZIP yedek + MSI │
 │   └── API Key Bridge — pywebview JS↔Python köprüsü     │
 │                                                         │
 ├─────────────────────────────────────────────────────────┤
-│   Veri Katmanı                                          │
+│   Veritabanı Katmanı (v1.0.0+)                          │
+│   ├── SQLite (quran.db) — tek kaynak, WAL modu, FK      │
+│   ├── db.py — CRUD + export + bütünlük kontrolü         │
+│   ├── db_schema.py — 7 tablo, 5 trigger, 7 indeks       │
+│   └── Otomatik JSON Export → Frontend okur              │
+│                                                         │
+├─────────────────────────────────────────────────────────┤
+│   Frontend Veri Katmanı (JSON — otomatik üretilir)      │
 │   ├── quran_data.json — Kur'an verileri (sure/ayet/kök) │
-│   └── quran_roots.json — Arapça kök sözlüğü             │
+│   └── quran_roots.json — Arapça kök sözlüğü (1651 kök) │
 │                                                         │
 ├─────────────────── %APPDATA% ───────────────────────────┤
 │   Kullanıcı Verileri (MSI-bağımsız, kalıcı)             │
@@ -332,13 +344,16 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 SemantikGalaksi/
 ├── DataEngine/
 │   ├── desktop_app.py            # Ana uygulama (sunucu + masaüstü)
+│   ├── db_schema.py              # SQLite şema tanımları (7 tablo, 5 trigger)
+│   ├── db.py                     # Veritabanı CRUD + JSON export + bütünlük
+│   ├── json_to_sqlite.py         # JSON → SQLite migrasyon scripti
 │   ├── logger.py                 # Merkezi loglama modülü (SYSTEM/AUTH/CRUD)
 │   ├── updater.py                # Otomatik güncelleme modülü (GitHub Release)
 │   ├── config.json               # Sunucu yapılandırması
 │   ├── requirements.txt          # Python bağımlılıkları
 │   ├── .env                      # API anahtarları (Gemini)
 │   ├── generate_besmele_audio.py # Besmele TTS ses üretici
-│   ├── generate_besmele_i18n.py # Çoklu dil besmele TTS üretici
+│   ├── generate_besmele_i18n.py  # Çoklu dil besmele TTS üretici
 │   └── quran_api_enricher.py     # Kur'an veri zenginleştirici
 ├── Frontend/
 │   ├── index.html                # Ana arayüz (HTML + CSS + script ref, ~861 satır)
@@ -353,7 +368,7 @@ SemantikGalaksi/
 │   │   ├── i18n.js               # Çoklu dil motoru (5 dil, auto-detect)
 │   │   └── ... (13 modül daha)   # interaction, tooltip, hud, search, vb.
 │   ├── quran_data.json           # Kur'an verileri (sureler, ayetler, kökler)
-│   ├── quran_roots.json          # Arapça kök sözlüğü (2139 kök)
+│   ├── quran_roots.json          # Arapça kök sözlüğü (1651 kök)
 │   ├── milkyway.jpg              # Milky Way panorama (705 KB equirectangular)
 │   ├── three.min.js              # Three.js r128
 │   ├── OrbitControls.js          # 3D kamera kontrolü
@@ -597,6 +612,15 @@ Tüm endpoint'ler `Authorization: Bearer <token>` header'ı gerektirir (login ha
 | `GET` | `/api/online-users` | Çevrimiçi kullanıcılar (detaylı) |
 | `GET` | `/api/info` | Sunucu bilgisi |
 
+### Veritabanı (v1.0.0+)
+
+| Method | Endpoint | Açıklama |
+|--------|----------|----------|
+| `GET` | `/api/db/integrity` | Bütünlük kontrolü (admin) — FK ihlalleri, yetim kökler, eksik çeviriler |
+| `GET` | `/api/db/stats` | Tablo istatistikleri — satır sayıları, dil listesi |
+| `GET` | `/api/db/changelog?table=&limit=` | Değişiklik geçmişi (admin) — tablo/limit filtresi |
+| `POST` | `/api/roots` | Kök sözlüğü kaydet (admin) — SQLite + JSON export |
+
 ---
 
 ## 🛠️ Teknoloji Yığını
@@ -616,6 +640,7 @@ Tüm endpoint'ler `Authorization: Bearer <token>` header'ı gerektirir (login ha
 |-----------|----------|
 | **Python** `http.server` | HTTP sunucusu (stdlib, ek bağımlılık yok) |
 | **Python** `socket` + `struct` | Raw WebSocket sunucusu (RFC 6455) |
+| **SQLite 3** | Tek kaynak veritabanı (6236 ayet, 1651 kök, FK kısıtlamaları, WAL modu, otomatik audit trail) |
 | **pywebview** | Native masaüstü penceresi (WebView2) |
 | **cx_Freeze** | MSI paketleme (server + client) |
 | **PyInstaller** | EXE paketleme |
