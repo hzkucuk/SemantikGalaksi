@@ -31,6 +31,7 @@ var _dbSearch = '';
 var _dbData = null;
 var _dbTimer = null;
 var _dbTransLang = null;
+var _dbLogTable = '';
 var _kbTarget = null;
 
 // =====================================================
@@ -61,17 +62,20 @@ window.dbSwitchTab = async (tab) => {
     _dbPage = 1;
     _dbSearch = '';
     _dbTransLang = null;
+    _dbLogTable = '';
     _dbRenderTabs();
     await _dbLoad();
 };
 
 var _dbRenderTabs = () => {
     var tabs = document.getElementById('editor-tabs');
+    var isAdmin = (typeof authRole !== 'undefined' && authRole === 'admin');
     var items = [
         { id: 'verses', label: t('editor.tabVerses'), icon: '\uD83D\uDCDC' },
         { id: 'roots', label: t('editor.tabRoots'), icon: '\uD83C\uDF31' },
         { id: 'translations', label: t('editor.tabTranslations'), icon: '\uD83C\uDF10' },
     ];
+    if (isAdmin) items.push({ id: 'logs', label: t('editor.tabLogs'), icon: '\uD83D\uDCCB' });
     tabs.innerHTML = items.map(function(i) {
         return '<button class="editor-tab ' + (_dbTab === i.id ? 'active' : '') +
             '" onclick="dbSwitchTab(\'' + i.id + '\')">' +
@@ -90,10 +94,12 @@ var _dbLoad = async () => {
         var url;
         if (_dbTab === 'verses') url = '/api/db/verses';
         else if (_dbTab === 'roots') url = '/api/db/roots-list';
+        else if (_dbTab === 'logs') url = '/api/db/changelog';
         else url = '/api/db/translations';
         var params = ['page=' + _dbPage, 'limit=' + _dbLimit];
         if (_dbSearch) params.push('search=' + encodeURIComponent(_dbSearch));
         if (_dbTab === 'translations' && _dbTransLang) params.push('lang=' + encodeURIComponent(_dbTransLang));
+        if (_dbTab === 'logs' && _dbLogTable) params.push('table=' + encodeURIComponent(_dbLogTable));
         url += '?' + params.join('&');
         var res = await authFetch(url);
         if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -129,6 +135,17 @@ var _dbGetCols = () => {
             { key: 'root', label: t('editor.colRoot'), w: '80px', rtl: true },
             { key: 'lang', label: t('editor.colLang'), w: '60px' },
             { key: 'meaning', label: t('editor.colMeaning'), w: '70%' },
+        ],
+        logs: [
+            { key: 'id', label: 'ID', w: '50px' },
+            { key: 'table_name', label: t('editor.logTable'), w: '10%' },
+            { key: 'record_id', label: t('editor.logRecord'), w: '10%' },
+            { key: 'action', label: t('editor.logAction'), w: '7%' },
+            { key: 'field_name', label: t('editor.logField'), w: '10%' },
+            { key: 'old_value', label: t('editor.logOldVal'), w: '18%' },
+            { key: 'new_value', label: t('editor.logNewVal'), w: '18%' },
+            { key: 'changed_by', label: t('editor.logUser'), w: '7%' },
+            { key: 'changed_at', label: t('editor.logDate'), w: '12%' },
         ]
     };
     return defs[_dbTab] || [];
@@ -160,6 +177,14 @@ var _dbRenderMain = () => {
         });
         h += '</select>';
     }
+    if (_dbTab === 'logs' && _dbData.tables) {
+        h += '<select class="db-lang-select" onchange="dbFilterLogTable(this.value)">';
+        h += '<option value="">' + t('editor.allTables') + '</option>';
+        _dbData.tables.forEach(function(tbl) {
+            h += '<option value="' + tbl + '"' + (_dbLogTable === tbl ? ' selected' : '') + '>' + tbl + '</option>';
+        });
+        h += '</select>';
+    }
     h += '</div><div class="db-toolbar-right">';
     if (_dbTab === 'roots' && isAdmin) {
         h += '<button class="db-btn db-btn-add" onclick="dbAddRoot()">+ ' + t('editor.addRoot') + '</button>';
@@ -175,6 +200,7 @@ var _dbRenderMain = () => {
 
     // --- Table ---
     var cols = _dbGetCols();
+    var isLogs = (_dbTab === 'logs');
     var extraCol = (_dbTab === 'roots' && isAdmin) ? 1 : 0;
     h += '<div class="db-grid-scroll"><table class="db-grid"><thead><tr>';
     cols.forEach(function(c) {
@@ -190,9 +216,9 @@ var _dbRenderMain = () => {
             h += '<tr>';
             cols.forEach(function(c) {
                 var val = c.type === 'roots' ? (row[c.key] || []).join(', ') : (row[c.key] != null ? row[c.key] : '');
-                var editable = c.edit && ((c.edit === 'admin' && isAdmin) || (c.edit === 'editor' && canEdit));
+                var editable = !isLogs && c.edit && ((c.edit === 'admin' && isAdmin) || (c.edit === 'editor' && canEdit));
                 var cellCls = 'db-cell' + (c.rtl ? ' rtl' : '') + (editable ? ' editable' : '');
-                var rowId = _dbTab === 'verses' ? row.id : (_dbTab === 'roots' ? row.root : (row.root + ':' + row.lang));
+                var rowId = _dbTab === 'verses' ? row.id : (_dbTab === 'roots' ? row.root : (isLogs ? row.id : (row.root + ':' + row.lang)));
                 if (editable) {
                     h += '<td class="' + cellCls + '" ondblclick="dbStartEdit(this,\'' + _escAttr(rowId) + '\',\'' + c.key + '\',\'' + (c.type || '') + '\')" title="' + t('editor.dblClickEdit') + '">';
                 } else {
@@ -202,6 +228,9 @@ var _dbRenderMain = () => {
                     (row[c.key] || []).forEach(function(r) {
                         h += '<span class="db-root-tag">' + _escHtml(r) + '</span>';
                     });
+                } else if (isLogs && c.key === 'action') {
+                    var acCls = val === 'INSERT' ? 'log-insert' : (val === 'DELETE' ? 'log-delete' : 'log-update');
+                    h += '<span class="db-log-badge ' + acCls + '">' + _escHtml(val) + '</span>';
                 } else {
                     h += '<span class="db-cell-text">' + _escHtml(val) + '</span>';
                 }
@@ -247,6 +276,11 @@ window.dbSearchInput = (val) => {
 };
 window.dbFilterLang = async (lang) => {
     _dbTransLang = lang || null;
+    _dbPage = 1;
+    await _dbLoad();
+};
+window.dbFilterLogTable = async (tbl) => {
+    _dbLogTable = tbl || '';
     _dbPage = 1;
     await _dbLoad();
 };

@@ -127,6 +127,16 @@ var I18n = (function () {
         'editor.exportDone': 'JSON dosyalari aktarildi',
         'editor.saveError': 'Kaydetme hatasi',
         'editor.desktopOnly': 'Bu ozellik sadece masaustu modunda kullanilabilir.',
+        'editor.tabLogs': 'Loglar',
+        'editor.logTable': 'Tablo',
+        'editor.logRecord': 'Kayit ID',
+        'editor.logAction': 'Islem',
+        'editor.logField': 'Alan',
+        'editor.logOldVal': 'Eski Deger',
+        'editor.logNewVal': 'Yeni Deger',
+        'editor.logUser': 'Kullanici',
+        'editor.logDate': 'Tarih',
+        'editor.allTables': 'Tum Tablolar',
         'editor.kbSpace': 'Bosluk',
         'editor.kbBackspace': '⌫ Sil',
         'apikey.noKeys': 'Henuz API anahtari eklenmedi.',
@@ -321,77 +331,45 @@ var I18n = (function () {
     };
 
     // ════════════════════════════════════════════════════════════
-    // LOADER — JSON dil dosyaları
+    // LOADER — SQLite API'den dil yukle
     // ════════════════════════════════════════════════════════════
 
     var _loadJSON = async (code) => {
         if (_translations[code]) return true;
         try {
-            var resp = await fetch('locales/' + code + '.json');
+            var resp = await fetch('/api/db/locale/' + code);
             if (!resp.ok) return false;
             var data = await resp.json();
             _translations[code] = data;
             return true;
         } catch (e) {
-            console.warn('i18n: ' + code + ' yüklenemedi:', e);
+            console.warn('i18n: ' + code + ' yuklenemedi:', e);
             return false;
         }
     };
 
     // ════════════════════════════════════════════════════════════
-    // DISCOVER — Mevcut dil dosyalarını tarama
+    // DISCOVER — Mevcut dilleri SQLite'tan tarama
     // ════════════════════════════════════════════════════════════
 
-    var _knownCodes = ['EN-en', 'RU-ru', 'IT-it', 'ES-es'];
-
     var discover = async () => {
-        // Bilinen dilleri tara
-        for (var i = 0; i < _knownCodes.length; i++) {
-            var code = _knownCodes[i];
-            try {
-                var resp = await fetch('locales/' + code + '.json');
-                if (resp.ok) {
-                    var data = await resp.json();
-                    _translations[code] = data;
-                    if (!_available.find(function (a) { return a.code === code; })) {
-                        _available.push({
-                            code: code,
-                            name: data.meta ? data.meta.name : code,
-                            nativeName: data.meta ? data.meta.nativeName : code,
-                            flag: data.meta ? data.meta.flag : '🌐'
-                        });
-                    }
+        try {
+            var resp = await fetch('/api/db/locales');
+            if (!resp.ok) return;
+            var langs = await resp.json();
+            for (var i = 0; i < langs.length; i++) {
+                var meta = langs[i];
+                var code = meta.lang;
+                if (!_available.find(function (a) { return a.code === code; })) {
+                    _available.push({
+                        code: code,
+                        name: meta.name || code,
+                        nativeName: meta.native_name || code,
+                        flag: meta.flag || ''
+                    });
                 }
-            } catch (e) { /* sessiz geç */ }
-        }
-
-        // Desktop: pywebview API ile ek dilleri keşfet
-        if (typeof isDesktopMode !== 'undefined' && isDesktopMode &&
-            window.pywebview && window.pywebview.api && window.pywebview.api.list_locales) {
-            try {
-                var files = await window.pywebview.api.list_locales();
-                for (var j = 0; j < files.length; j++) {
-                    var file = files[j];
-                    if (file.startsWith('roots_')) continue;
-                    var fc = file.replace('.json', '');
-                    if (!_translations[fc]) {
-                        try {
-                            var r2 = await fetch('locales/' + file);
-                            if (r2.ok) {
-                                var d2 = await r2.json();
-                                _translations[fc] = d2;
-                                _available.push({
-                                    code: fc,
-                                    name: d2.meta ? d2.meta.name : fc,
-                                    nativeName: d2.meta ? d2.meta.nativeName : fc,
-                                    flag: d2.meta ? d2.meta.flag : '🌐'
-                                });
-                            }
-                        } catch (e) { /* sessiz geç */ }
-                    }
-                }
-            } catch (e) { /* pywebview API yok */ }
-        }
+            }
+        } catch (e) { /* API ulasilamaz */ }
     };
 
     // ════════════════════════════════════════════════════════════

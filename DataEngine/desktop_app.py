@@ -640,6 +640,10 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._db_list_translations()
         elif path.startswith('/api/db/root-translations/'):
             self._db_root_translations()
+        elif path == '/api/db/locales':
+            self._db_list_locales()
+        elif path.startswith('/api/db/locale/'):
+            self._db_get_locale()
         elif path.startswith('/api/db/root/'):
             self._db_get_root_detail()
         else:
@@ -678,6 +682,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._db_update_verse()
         elif self.path.startswith('/api/db/root/'):
             self._db_update_root()
+        elif self.path.startswith('/api/db/locale/'):
+            self._db_save_locale()
 
     def do_DELETE(self):
         if self.path.startswith('/api/auth/user/'):
@@ -1329,9 +1335,13 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             parsed = urllib.parse.urlparse(self.path)
             params = urllib.parse.parse_qs(parsed.query)
             table_name = params.get('table', [None])[0]
-            limit = int(params.get('limit', [100])[0])
-            entries = quran_db.get_change_log(table_name=table_name, limit=limit)
-            self._json_response({'entries': entries, 'total': len(entries)})
+            if table_name == '':
+                table_name = None
+            page = int(params.get('page', [1])[0])
+            limit = int(params.get('limit', [50])[0])
+            search = params.get('search', [''])[0]
+            result = quran_db.get_change_log(table_name=table_name, limit=limit, page=page, search=search)
+            self._json_response(result)
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
 
@@ -1393,6 +1403,55 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
                 return
             data = quran_db.get_root_translations(lang)
             self._json_response(data)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_list_locales(self):
+        """Mevcut UI dil listesini dondurur."""
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            data = quran_db.list_ui_languages()
+            self._json_response(data)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_get_locale(self):
+        """Belirli bir dil icin UI cevirilerini dondurur."""
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            lang = urllib.parse.unquote(self.path.split('/api/db/locale/')[-1])
+            data = quran_db.get_ui_locale(lang)
+            if data is None:
+                self._json_response({'error': 'Dil bulunamadi'}, 404)
+                return
+            self._json_response(data)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_save_locale(self):
+        """UI cevirilerini kaydeder — sadece admin."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] != 'admin':
+            self._json_response({'error': 'Sadece admin duzenleyebilir'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            lang = urllib.parse.unquote(self.path.split('/api/db/locale/')[-1])
+            data = self._read_body()
+            if not data or not isinstance(data, dict):
+                self._json_response({'error': 'Gecersiz JSON'}, 400)
+                return
+            count = quran_db.save_ui_locale(lang, data, user=session['username'])
+            self._json_response({'ok': True, 'lang': lang, 'count': count})
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
 

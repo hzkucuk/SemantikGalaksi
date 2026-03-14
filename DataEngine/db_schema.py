@@ -8,6 +8,8 @@ Tablolar:
     derived_words   — Turetilmis kelimeler (FK: roots)
     root_translations — Cok dilli kok cevirileri (FK: roots)
     change_log      — Degisiklik gecmisi (trigger + manuel)
+    ui_translations — UI ceviri key-value ciftleri (lang, key, value)
+    locale_meta     — Dil meta bilgileri (ad, bayrak, yon, besmele ses)
 
 Referansiyel Butunluk:
     - verse_roots.root REFERENCES roots(root)
@@ -110,6 +112,24 @@ CREATE TABLE IF NOT EXISTS change_log (
     changed_at TEXT NOT NULL DEFAULT (datetime('now','localtime'))
 );
 
+-- UI cevirileri (locale dosyalari yerine)
+CREATE TABLE IF NOT EXISTS ui_translations (
+    lang TEXT NOT NULL,
+    key TEXT NOT NULL,
+    value TEXT NOT NULL DEFAULT '',
+    PRIMARY KEY (lang, key)
+);
+
+-- Locale meta bilgileri
+CREATE TABLE IF NOT EXISTS locale_meta (
+    lang TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    native_name TEXT NOT NULL,
+    flag TEXT NOT NULL DEFAULT '',
+    direction TEXT NOT NULL DEFAULT 'ltr',
+    besmele_audio TEXT NOT NULL DEFAULT ''
+);
+
 -- Indeksler
 CREATE INDEX IF NOT EXISTS idx_verse_roots_root ON verse_roots(root);
 CREATE INDEX IF NOT EXISTS idx_verse_roots_verse ON verse_roots(verse_id);
@@ -184,6 +204,8 @@ def get_integrity_report(conn):
         'derived_words': conn.execute("SELECT COUNT(*) FROM derived_words").fetchone()[0],
         'root_translations': conn.execute("SELECT COUNT(*) FROM root_translations").fetchone()[0],
         'change_log': conn.execute("SELECT COUNT(*) FROM change_log").fetchone()[0],
+        'ui_translations': conn.execute("SELECT COUNT(*) FROM ui_translations").fetchone()[0],
+        'locale_meta': conn.execute("SELECT COUNT(*) FROM locale_meta").fetchone()[0],
         'fk_violations': [],
         'orphan_roots': [],
         'missing_meanings': [],

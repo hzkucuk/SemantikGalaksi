@@ -1,5 +1,24 @@
 ﻿bu# CHANGELOG
 
+## [1.1.3] - 2026-03-15 -- Locale SQLite + Admin Log Viewer
+### Eklenen
+- `ui_translations` ve `locale_meta` tablolari eklendi (db_schema.py).
+- `migrate_locales_to_db.py` scripti (4 dil, 924 kayit migrate edildi).
+- db.py: `list_ui_languages()`, `get_ui_locale()`, `save_ui_locale()` fonksiyonlari.
+- desktop_app.py: `GET /api/db/locales`, `GET/PUT /api/db/locale/{lang}` endpoint'leri.
+- DB Grid Editor'e admin-only Log Viewer tabi eklendi (tablo filtresi, sayfalama, arama, badge).
+- `get_change_log()` fonksiyonuna sayfalama ve arama destegi eklendi.
+- 10 yeni i18n key'i eklendi (TR gomulu + 4 dil SQLite).
+- Log badge CSS stilleri eklendi (log-insert, log-update, log-delete).
+
+### Kaldirilan
+- `Frontend/locales/EN-en.json`, `ES-es.json`, `IT-it.json`, `RU-ru.json` silindi.
+- i18n.js JSON dosya yukleme mantigi API'ye cevrildi.
+
+### Degisiklik
+- i18n.js: _loadJSON() ve discover() artik /api/db/locale ve /api/db/locales API'lerinden yukler.
+- /api/db/changelog sayfalamali formata guncellendi ({items, total, page, limit, pages, tables}).
+
 ## [1.1.2] - 2025-07-28 -- Kok Ceviri Dosyalari Temizligi
 ### Kaldirilan
 - `Frontend/locales/roots_en.json`, `roots_es.json`, `roots_it.json`, `roots_ru.json` silindi (~464 KB).

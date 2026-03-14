@@ -433,18 +433,34 @@ def check_integrity(conn=None):
 #  DEGISIKLIK GECMISI
 # ===================================================================
 
-def get_change_log(table_name=None, limit=100, conn=None):
-    """Degisiklik gecmisini dondurur."""
+def get_change_log(table_name=None, limit=100, page=1, search='', conn=None):
+    """Degisiklik gecmisini sayfalamali dondurur."""
     db = conn or get_db()
-    query = "SELECT * FROM change_log"
+    where_parts = []
     params = []
     if table_name:
-        query += " WHERE table_name=?"
+        where_parts.append("table_name=?")
         params.append(table_name)
-    query += " ORDER BY changed_at DESC LIMIT ?"
-    params.append(limit)
-    rows = db.execute(query, params).fetchall()
-    return [dict(r) for r in rows]
+    if search:
+        where_parts.append("(record_id LIKE ? OR field_name LIKE ? OR old_value LIKE ? OR new_value LIKE ? OR changed_by LIKE ?)")
+        s = f'%{search}%'
+        params.extend([s, s, s, s, s])
+    where_sql = (" WHERE " + " AND ".join(where_parts)) if where_parts else ""
+    total = db.execute(f"SELECT COUNT(*) FROM change_log{where_sql}", params).fetchone()[0]
+    offset = (page - 1) * limit
+    rows = db.execute(
+        f"SELECT * FROM change_log{where_sql} ORDER BY changed_at DESC LIMIT ? OFFSET ?",
+        params + [limit, offset]
+    ).fetchall()
+    tables = [r[0] for r in db.execute("SELECT DISTINCT table_name FROM change_log ORDER BY table_name").fetchall()]
+    return {
+        'items': [dict(r) for r in rows],
+        'total': total,
+        'page': page,
+        'limit': limit,
+        'pages': (total + limit - 1) // limit if total > 0 else 1,
+        'tables': tables,
+    }
 
 
 # ===================================================================
@@ -566,6 +582,78 @@ def get_root_translations(lang, conn=None):
             ]
         result[t['root']] = entry
     return result
+
+
+# ===================================================================
+#  UI LOCALE (Dil dosyalari SQLite'tan)
+# ===================================================================
+
+def list_ui_languages(conn=None):
+    """Mevcut UI dil listesini meta bilgileriyle dondurur."""
+    db = conn or get_db()
+    rows = db.execute("SELECT * FROM locale_meta ORDER BY lang").fetchall()
+    return [dict(r) for r in rows]
+
+
+def get_ui_locale(lang, conn=None):
+    """Belirli bir dil icin UI cevirilerini + meta dondurur."""
+    db = conn or get_db()
+    meta_row = db.execute("SELECT * FROM locale_meta WHERE lang=?", (lang,)).fetchone()
+    if not meta_row:
+        return None
+    result = {
+        'meta': {
+            'code': meta_row['lang'],
+            'name': meta_row['name'],
+            'nativeName': meta_row['native_name'],
+            'flag': meta_row['flag'],
+            'direction': meta_row['direction'],
+            'besmeleAudio': meta_row['besmele_audio']
+        }
+    }
+    rows = db.execute(
+        "SELECT key, value FROM ui_translations WHERE lang=? ORDER BY key",
+        (lang,)
+    ).fetchall()
+    for r in rows:
+        result[r['key']] = r['value']
+    return result
+
+
+def save_ui_locale(lang, data, user='system', conn=None):
+    """UI cevirilerini kaydeder/gunceller. data = {meta: {...}, key: value, ...}"""
+    db = conn or get_db()
+    meta = data.get('meta', {})
+    if meta:
+        db.execute("""
+            INSERT OR REPLACE INTO locale_meta (lang, name, native_name, flag, direction, besmele_audio)
+            VALUES (?, ?, ?, ?, ?, ?)
+        """, (
+            lang,
+            meta.get('name', ''),
+            meta.get('nativeName', ''),
+            meta.get('flag', ''),
+            meta.get('direction', 'ltr'),
+            meta.get('besmeleAudio', '')
+        ))
+    # Mevcut key'leri sil ve yeniden ekle
+    db.execute("DELETE FROM ui_translations WHERE lang=?", (lang,))
+    count = 0
+    for key, value in data.items():
+        if key == 'meta' or not isinstance(value, str):
+            continue
+        db.execute(
+            "INSERT INTO ui_translations (lang, key, value) VALUES (?, ?, ?)",
+            (lang, key, value)
+        )
+        count += 1
+    # Changelog
+    db.execute("""
+        INSERT INTO change_log (table_name, record_id, action, field_name, new_value, changed_by)
+        VALUES ('ui_translations', ?, 'UPDATE', 'count', ?, ?)
+    """, (lang, str(count), user))
+    db.commit()
+    return count
 
 
 # ===================================================================
