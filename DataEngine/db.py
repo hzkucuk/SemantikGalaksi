@@ -11,9 +11,12 @@ import os
 import sys
 import sqlite3
 import time
+import threading
 
 from db_schema import get_connection, init_db, get_integrity_report, DB_PATH
 
+# Thread-safe erisim icin kilit
+_db_lock = threading.Lock()
 
 # --- JSON Export Yollari ---
 def _base_dir():
@@ -36,18 +39,20 @@ LOCALES_DIR = os.path.join(FRONTEND_DIR, 'locales')
 _conn = None
 
 def get_db():
-    """Thread-safe olmayan tekil baglanti (sunucu icinde kullanilir)."""
+    """Thread-safe tekil baglanti (check_same_thread=False ile)."""
     global _conn
-    if _conn is None:
-        _conn = init_db()
-    return _conn
+    with _db_lock:
+        if _conn is None:
+            _conn = init_db()
+        return _conn
 
 
 def close_db():
     global _conn
-    if _conn:
-        _conn.close()
-        _conn = None
+    with _db_lock:
+        if _conn:
+            _conn.close()
+            _conn = None
 
 
 # ===================================================================

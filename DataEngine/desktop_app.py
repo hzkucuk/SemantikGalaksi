@@ -91,6 +91,7 @@ def _migrate_old_data():
         (os.path.join(old_base, 'webview_data'), WEBVIEW_DATA_DIR),
         (os.path.join(old_base, 'Frontend', 'datasets'), DATASETS_DIR),
         (os.path.join(old_base, 'config.json'), CONFIG_FILE),
+        (os.path.join(old_base, 'quran.db'), os.path.join(USER_DATA_DIR, 'quran.db')),
     ]
     for src, dst in migrations:
         if not os.path.exists(src):
@@ -625,6 +626,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._db_stats()
         elif path == '/api/db/changelog':
             self._db_changelog()
+        elif path == '/api/db/export':
+            self._db_export()
         else:
             super().do_GET()
 
@@ -1020,9 +1023,13 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response({'error': 'Yetkisiz'}, 401)
             return
         name = urllib.parse.unquote(self.path[len('/api/dataset/'):])
-        path = os.path.join(DATASETS_DIR, name)
+        # Korumali dosyalar ROOT_DIR'de, diger datasetler DATASETS_DIR'de
+        if name in PROTECTED_DATASETS:
+            path = os.path.join(ROOT_DIR, name)
+        else:
+            path = os.path.join(DATASETS_DIR, name)
         if not os.path.exists(path):
-            self._json_response({'error': 'Bulunamadı'}, 404)
+            self._json_response({'error': 'Bulunamadi'}, 404)
             return
         with open(path, 'r', encoding='utf-8') as f:
             self._json_response(json.load(f))
@@ -1046,8 +1053,11 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         if '_meta' not in data:
             data['_meta'] = {}
         # --- Degisiklik gecmisi ---
-        os.makedirs(DATASETS_DIR, exist_ok=True)
-        path = os.path.join(DATASETS_DIR, name)
+        if name in PROTECTED_DATASETS:
+            path = os.path.join(ROOT_DIR, name)
+        else:
+            os.makedirs(DATASETS_DIR, exist_ok=True)
+            path = os.path.join(DATASETS_DIR, name)
         old_summary = None
         if os.path.exists(path):
             try:
@@ -1326,6 +1336,28 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
 
+    def _db_export(self):
+        """SQLite'tan tum JSON dosyalarini yeniden olusturur (admin)."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] != 'admin':
+            self._json_response({'error': 'Sadece admin JSON export yapabilir'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            results = quran_db.export_all()
+            log_system.info('JSON export tamamlandi', user=session['username'],
+                            quran_data=results.get('quran_data', 0),
+                            quran_roots=results.get('quran_roots', 0))
+            self._json_response({'ok': True, 'exported': results})
+        except Exception as e:
+            log_system.error('JSON export hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
     def log_message(self, format, *args):
         log_system.debug('HTTP', request=format % args if args else format)
 
@@ -1415,6 +1447,13 @@ def sunucuyu_baslat():
             httpd.serve_forever()
     except OSError:
         log_system.error('HTTP port kullanimda', port=PORT)
+    finally:
+        if _HAS_DB:
+            try:
+                quran_db.close_db()
+                log_system.info('SQLite veritabani kapatildi')
+            except Exception:
+                pass
 
 if __name__ == '__main__':
     def _get_besmele_path():

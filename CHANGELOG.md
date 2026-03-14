@@ -1,5 +1,15 @@
 bu# CHANGELOG
 
+## [1.0.1] - 2025-07-28
+### Duzeltme
+- **Thread-Safety**: SQLite baglantisi `check_same_thread=False` + `threading.Lock` ile thread-safe hale getirildi. ThreadingMixIn HTTP handler'lari artik DB endpoint'lerine erisebiliyor.
+- **Dataset Yolu**: `quran_data.json` ve `quran_roots.json` icin `_get_dataset`/`_save_dataset` artik `ROOT_DIR` (Frontend/) kullanir, `DATASETS_DIR` degil.
+
+### Eklenen
+- **`/api/db/export`**: Admin tarafindan SQLite'tan tum JSON dosyalarini yeniden olusturma endpoint'i.
+- **Graceful Shutdown**: Sunucu kapanirken `close_db()` cagrilarak SQLite baglantisi duzgun kapatilir.
+- **API Test Suite**: `DataEngine/test_api.py` — 30 test: auth, DB stats/integrity/changelog/export, roots save, auth guards.
+
 ## [1.0.0] - 2025-07-28 — MAJOR RELEASE: SQLite Veritabani Migrasyonu
 ### Eklenen
 - **SQLite Veritabani**: Tum Kur'an verisi artik SQLite veritabaninda saklanir (tek kaynak, single source of truth). 7 tablo: `verses` (6236), `roots` (1651), `verse_roots` (44718), `derived_words` (5329), `root_translations` (6604), `derived_translations` (20869), `change_log`.

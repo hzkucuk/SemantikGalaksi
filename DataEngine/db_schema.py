@@ -157,10 +157,10 @@ END;
 
 
 def get_connection(db_path=None):
-    """Veritabani baglantisi olusturur."""
+    """Veritabani baglantisi olusturur (thread-safe: check_same_thread=False)."""
     path = db_path or DB_PATH
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    conn = sqlite3.connect(path)
+    conn = sqlite3.connect(path, check_same_thread=False)
     conn.execute("PRAGMA foreign_keys=ON")
     conn.execute("PRAGMA journal_mode=WAL")
     conn.row_factory = sqlite3.Row

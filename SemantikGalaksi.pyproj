@@ -21,12 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DataEngine\db.py" />
+    <Compile Include="DataEngine\db_schema.py" />
     <Compile Include="DataEngine\desktop_app.py" />
     <Compile Include="DataEngine\fix_empty_roots.py" />
     <Compile Include="DataEngine\gemini_client.py" />
     <Compile Include="DataEngine\generate_besmele_audio.py" />
     <Compile Include="DataEngine\generate_besmele_i18n.py" />
     <Compile Include="DataEngine\generate_root_translations.py" />
+    <Compile Include="DataEngine\json_to_sqlite.py" />
+    <Compile Include="DataEngine\logger.py" />
     <Compile Include="DataEngine\quran_extractor_v3.py" />
     <Compile Include="DataEngine\run_pipeline.py" />
     <Compile Include="DataEngine\step1_fetch_quran.py" />
