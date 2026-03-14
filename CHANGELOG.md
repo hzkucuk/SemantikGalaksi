@@ -1,5 +1,10 @@
 bu# CHANGELOG
 
+## [0.43.4] - 2025-07-28
+### Düzeltme
+- **Kök Veri Senkronizasyonu**: `quran_data.json` ve `quran_roots.json` dosyaları `quran-morphology.txt` referans alınarak tam senkronize edildi. 96 ayette kök düzeltmesi yapıldı (hemze/elif normalizasyonu, boşluklu format düzeltmesi). Sözlüğe 85 eksik kök eklendi, 573 kullanılmayan giriş temizlendi. Üç kaynak artık tam eşleşiyor: 1651 benzersiz kök.
+- **Reconciliation Script**: `DataEngine/root_reconciliation.js` — morphology tabanlı otomatik kök senkronizasyon aracı eklendi.
+
 ## [0.43.3] - 2025-07-28
 ### Düzeltme
 - **Kök Renklendirme Algoritması**: Yanlış pozitifler düzeltildi (2 harfli indirgenmiş kökler çok geniş eşleşiyordu → minimum 3 harf sınırı). Fiil önekleri (يـ/تـ/نـ + سـ/سيـ) ve zamir/fiil sonekleri (هم/ها/ون/ين/وا vb.) desteği eklendi.
