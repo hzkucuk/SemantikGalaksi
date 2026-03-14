@@ -540,6 +540,35 @@ def get_full_roots(conn=None):
 
 
 # ===================================================================
+#  KOK CEVIRILERI (Frontend i18n icin)
+# ===================================================================
+
+def get_root_translations(lang, conn=None):
+    """Belirli bir dil icin kok cevirilerini dondurur. roots_{lang}.json yerine."""
+    db = conn or get_db()
+    result = {}
+    translations = db.execute(
+        "SELECT rt.root, rt.meaning FROM root_translations rt WHERE rt.lang=?",
+        (lang,)
+    ).fetchall()
+    for t in translations:
+        entry = {'meaning': t['meaning']}
+        derived = db.execute("""
+            SELECT dw.word, dt.meaning
+            FROM derived_words dw
+            JOIN derived_translations dt ON dw.id = dt.derived_id
+            WHERE dw.root = ? AND dt.lang = ?
+        """, (t['root'], lang)).fetchall()
+        if derived:
+            entry['derived'] = [
+                {'word': d['word'], 'meaning': d['meaning']}
+                for d in derived
+            ]
+        result[t['root']] = entry
+    return result
+
+
+# ===================================================================
 #  SAYFALAMALI SORGULAR (Editor Grid icin)
 # ===================================================================
 

@@ -1,4 +1,16 @@
-bu# CHANGELOG
+﻿bu# CHANGELOG
+
+## [1.1.2] - 2025-07-28 -- Kok Ceviri Dosyalari Temizligi
+### Kaldirilan
+- `Frontend/locales/roots_en.json`, `roots_es.json`, `roots_it.json`, `roots_ru.json` silindi (~464 KB).
+- Kok cevirileri artik `GET /api/db/root-translations/{lang}` API'sinden SQLite uzerinden yuklenir.
+
+### Eklenen
+- `db.py`: `get_root_translations(lang)` fonksiyonu.
+- `desktop_app.py`: `GET /api/db/root-translations/{lang}` endpoint'i.
+
+### Degisiklik
+- `i18n.js`: `_loadRootTranslations()` artik JSON dosyasi yerine API'den yukler.
 
 ## [1.1.1] - 2025-07-28 -- JSON Temizligi
 ### Kaldirilan

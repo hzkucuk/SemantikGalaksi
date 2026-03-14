@@ -638,6 +638,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._db_list_roots()
         elif path == '/api/db/translations':
             self._db_list_translations()
+        elif path.startswith('/api/db/root-translations/'):
+            self._db_root_translations()
         elif path.startswith('/api/db/root/'):
             self._db_get_root_detail()
         else:
@@ -1375,6 +1377,21 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             return
         try:
             data = quran_db.get_full_roots()
+            self._json_response(data)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_root_translations(self):
+        """Belirli bir dil icin kok cevirilerini dondurur (roots_{lang}.json yerine)."""
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            lang = urllib.parse.unquote(self.path.split('/api/db/root-translations/')[-1])
+            if not lang:
+                self._json_response({'error': 'Dil kodu gerekli'}, 400)
+                return
+            data = quran_db.get_root_translations(lang)
             self._json_response(data)
         except Exception as e:
             self._json_response({'error': str(e)}, 500)

@@ -427,7 +427,7 @@ var I18n = (function () {
         if (code === 'TR-tr') { rootTranslations = {}; return; }
         var lang = code.split('-')[0].toLowerCase();
         try {
-            var resp = await fetch('locales/roots_' + lang + '.json');
+            var resp = await fetch('/api/db/root-translations/' + lang);
             if (resp.ok) { rootTranslations = await resp.json(); }
             else { rootTranslations = {}; }
         } catch(e) { rootTranslations = {}; }
