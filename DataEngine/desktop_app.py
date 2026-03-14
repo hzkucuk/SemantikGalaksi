@@ -340,6 +340,13 @@ def get_local_ip():
 USERS_FILE = os.path.join(CURRENT_DIR, 'webview_data', 'users.json')
 _sessions = {}
 
+# Korumalı dosyalar — sadece admin düzenleyebilir
+PROTECTED_DATASETS = {'quran_data.json', 'quran_roots.json'}
+PROTECTED_LOCALES = set()  # Gerekirse locale dosyaları da korumaya alınabilir
+
+# Değişiklik geçmişi limiti (dosya başına)
+MAX_HISTORY_ENTRIES = 50
+
 
 def _hash_pw(pw, salt=None):
     if not salt:
@@ -619,6 +626,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._change_password()
         elif self.path.startswith('/api/locale/'):
             self._save_locale()
+        elif self.path == '/api/roots':
+            self._save_roots()
         elif self.path == '/api/dataset-rename':
             self._rename_dataset()
         elif self.path == '/api/dataset-duplicate':
@@ -857,6 +866,52 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
 
+    # --- Roots Endpoint (quran_roots.json) ---
+    def _save_roots(self):
+        """quran_roots.json kaydetme — sadece admin."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] != 'admin':
+            self._json_response({'error': 'Kok sozlugu sadece admin tarafindan duzenlenebilir'}, 403)
+            return
+        data = self._read_body()
+        if data is None or not isinstance(data, dict):
+            self._json_response({'error': 'Gecersiz JSON'}, 400)
+            return
+        roots_path = os.path.join(ROOT_DIR, 'quran_roots.json')
+        # --- Degisiklik gecmisi ---
+        old_count = None
+        if os.path.exists(roots_path):
+            try:
+                with open(roots_path, 'r', encoding='utf-8') as f:
+                    old_data = json.load(f)
+                old_count = len(old_data)
+            except Exception:
+                pass
+        # _meta blogu ekle
+        if '_meta' not in data:
+            data['_meta'] = {}
+        history_entry = {
+            'user': session['username'],
+            'timestamp': time.strftime('%Y-%m-%dT%H:%M:%S'),
+            'action': 'update' if old_count is not None else 'create',
+        }
+        if old_count is not None:
+            history_entry['before'] = {'rootCount': old_count}
+            history_entry['after'] = {'rootCount': len([k for k in data if k != '_meta'])}
+        if '_history' not in data['_meta']:
+            data['_meta']['_history'] = []
+        data['_meta']['_history'].insert(0, history_entry)
+        data['_meta']['_history'] = data['_meta']['_history'][:MAX_HISTORY_ENTRIES]
+        data['_meta']['modifiedBy'] = session['username']
+        data['_meta']['modifiedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S')
+        with open(roots_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        log_crud.info('Kok sozlugu kaydedildi', user=session['username'], rootCount=len(data) - 1)
+        self._json_response({'ok': True})
+
     # --- Locale Endpoints ---
     def _list_locales_api(self):
         session = _get_session(self.headers)
@@ -903,6 +958,9 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response({'error': 'Duzenleme yetkiniz yok'}, 403)
             return
         name = urllib.parse.unquote(self.path[len('/api/locale/'):])
+        if name in PROTECTED_LOCALES and session['role'] != 'admin':
+            self._json_response({'error': 'Bu locale dosyasi korumali'}, 403)
+            return
         data = self._read_body()
         if data is None:
             self._json_response({'error': 'Gecersiz JSON'}, 400)
@@ -910,6 +968,32 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         locales_dir = os.path.join(ROOT_DIR, 'locales')
         os.makedirs(locales_dir, exist_ok=True)
         path = os.path.join(locales_dir, name)
+        # --- Degisiklik gecmisi ---
+        old_key_count = None
+        if os.path.exists(path):
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    old_data = json.load(f)
+                old_key_count = len(old_data)
+            except Exception:
+                pass
+        if isinstance(data, dict):
+            if '_meta' not in data:
+                data['_meta'] = {}
+            history_entry = {
+                'user': session['username'],
+                'timestamp': time.strftime('%Y-%m-%dT%H:%M:%S'),
+                'action': 'update' if old_key_count is not None else 'create'
+            }
+            if old_key_count is not None:
+                history_entry['before'] = {'keyCount': old_key_count}
+                history_entry['after'] = {'keyCount': len(data)}
+            if '_history' not in data['_meta']:
+                data['_meta']['_history'] = []
+            data['_meta']['_history'].insert(0, history_entry)
+            data['_meta']['_history'] = data['_meta']['_history'][:MAX_HISTORY_ENTRIES]
+            data['_meta']['modifiedBy'] = session['username']
+            data['_meta']['modifiedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S')
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         log_crud.info('Locale kaydedildi', user=session['username'], target=name)
@@ -966,16 +1050,52 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response({'error': 'Düzenleme yetkiniz yok'}, 403)
             return
         name = urllib.parse.unquote(self.path[len('/api/dataset/'):])
+        if name in PROTECTED_DATASETS and session['role'] != 'admin':
+            self._json_response({'error': 'Bu dosya korumali, sadece admin duzenleyebilir'}, 403)
+            return
         data = self._read_body()
         if data is None:
             self._json_response({'error': 'Geçersiz JSON'}, 400)
             return
         if '_meta' not in data:
             data['_meta'] = {}
-        data['_meta']['modifiedBy'] = session['username']
-        data['_meta']['modifiedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S')
+        # --- Degisiklik gecmisi ---
         os.makedirs(DATASETS_DIR, exist_ok=True)
         path = os.path.join(DATASETS_DIR, name)
+        old_summary = None
+        if os.path.exists(path):
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    old_data = json.load(f)
+                old_nodes = len(old_data.get('nodes', [])) if isinstance(old_data, dict) else 0
+                new_nodes = len(data.get('nodes', [])) if isinstance(data, dict) else 0
+                old_keys = len(old_data) if isinstance(old_data, dict) else 0
+                new_keys = len(data) if isinstance(data, dict) else 0
+                old_summary = {
+                    'nodeCount': old_nodes,
+                    'keyCount': old_keys,
+                    'sizeBytes': os.path.getsize(path)
+                }
+                new_summary = {
+                    'nodeCount': new_nodes,
+                    'keyCount': new_keys
+                }
+            except Exception:
+                old_summary = None
+        history_entry = {
+            'user': session['username'],
+            'timestamp': time.strftime('%Y-%m-%dT%H:%M:%S'),
+            'action': 'update' if old_summary else 'create'
+        }
+        if old_summary:
+            history_entry['before'] = old_summary
+            history_entry['after'] = new_summary
+        if '_history' not in data['_meta']:
+            data['_meta']['_history'] = []
+        data['_meta']['_history'].insert(0, history_entry)
+        data['_meta']['_history'] = data['_meta']['_history'][:MAX_HISTORY_ENTRIES]
+        data['_meta']['modifiedBy'] = session['username']
+        data['_meta']['modifiedAt'] = time.strftime('%Y-%m-%dT%H:%M:%S')
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         log_crud.info('Dataset kaydedildi', user=session['username'], target=name)
@@ -994,6 +1114,9 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response({'error': 'Silme yetkiniz yok'}, 403)
             return
         name = urllib.parse.unquote(self.path[len('/api/dataset/'):])
+        if name in PROTECTED_DATASETS:
+            self._json_response({'error': 'Bu dosya korumali, silinemez'}, 403)
+            return
         path = os.path.join(DATASETS_DIR, name)
         if os.path.exists(path):
             os.remove(path)
@@ -1042,6 +1165,9 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             return
         old_name = body.get('oldName', '')
         new_name = body.get('newName', '')
+        if old_name in PROTECTED_DATASETS:
+            self._json_response({'error': 'Bu dosya korumali, yeniden adlandirilamaz'}, 403)
+            return
         if not old_name or not new_name:
             self._json_response({'error': 'İsim gerekli'}, 400)
             return
@@ -1074,6 +1200,9 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             return
         source = body.get('sourceName', '')
         new_name = body.get('newName', '')
+        if new_name and new_name.rstrip('.json') + '.json' in PROTECTED_DATASETS:
+            self._json_response({'error': 'Korumali dosya adi kullanilamaz'}, 403)
+            return
         if not source or not new_name:
             self._json_response({'error': 'İsim gerekli'}, 400)
             return

@@ -190,7 +190,22 @@ window.editorSwitchTab = (tab) => {
     document.getElementById('editor-lines').scrollTop = 0;
 };
 
-var editorUpdateTabUI = () => {};
+var editorUpdateTabUI = () => {
+    var saveBtn = document.querySelector('.editor-btn.save');
+    if (!saveBtn) return;
+    var isViewer = (typeof authRole !== 'undefined' && authRole === 'viewer');
+    var isAdmin = (typeof authRole !== 'undefined' && authRole === 'admin');
+    var isProtectedTab = (editorActiveTab === 'roots') || (editorActiveTab === 'data' && activeDatasetName === 'quran_data.json');
+    if (isViewer || (isProtectedTab && !isAdmin)) {
+        saveBtn.disabled = true;
+        saveBtn.style.opacity = '0.4';
+        saveBtn.title = isViewer ? 'Viewer rolunde duzenleme yapilamaz' : 'Bu dosya korumali, sadece admin duzenleyebilir';
+    } else {
+        saveBtn.disabled = false;
+        saveBtn.style.opacity = '1';
+        saveBtn.title = '';
+    }
+};
 window.closeEditor = () => { document.getElementById('json-editor').style.display = 'none'; };
 var updateEditorLines = () => {
     var ta = document.getElementById('editor-textarea');
@@ -251,10 +266,19 @@ window.editorSave = async () => {
     var ta = document.getElementById('editor-textarea');
     var data = JSON.parse(ta.value);
     if (editorActiveTab === 'roots') {
+        if (isDesktopMode) {
+            try {
+                var r = await authFetch('/api/roots', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: ta.value
+                });
+                if (!r.ok) { var err = await r.json(); alert(err.error || 'Hata'); return; }
+            } catch(e) { alert('Kaydetme hatasi: ' + e.message); return; }
+        }
         rootDictionary = data;
         var btn = document.querySelector('.editor-btn.save');
-        btn.textContent = '✓ Kökler Güncellendi';
-        setTimeout(() => { btn.textContent = '💾 Kaydet'; }, 1500);
+        btn.textContent = '\u2713 K\u00f6kler G\u00fcncellendi';
+        setTimeout(() => { btn.textContent = '\uD83D\uDCBE Kaydet'; }, 1500);
         return;
     }
     if (editorActiveTab.startsWith('locale-')) {

@@ -1,5 +1,15 @@
 bu# CHANGELOG
 
+## [0.43.7] - 2025-07-28
+### Düzeltme
+- **Kök Renklendirme**: Fatiha 1:1 'بسم' kelimesi kökü `سمو` ile eşleşmiyordu (tek harfli ön ek sıyırma eşiği > 3 iken >= 3'e, zayıf harf indirgeme >= 3 iken >= 2'ye düşürüldü).
+
+### Eklenen
+- **JSON DB Yetkilendirme**: `quran_data.json` ve `quran_roots.json` korumali dosya olarak işaretlendi — sadece admin düzenleyebilir/silebilir/yeniden adlandırabilir.
+- **POST /api/roots**: Kök sözlüğü sunucu tarafında kaydetme endpoint'i (sadece admin).
+- **Değişiklik Geçmişi**: Dataset, locale ve roots kaydetme işlemlerinde `_meta._history[]` dizisine otomatik diff kaydı (kullanıcı, zaman, önceki/sonraki özet). Maksimum 50 giriş.
+- **Editör Yetkilendirme UI**: Viewer rolünde ve korumali dosyalarda (admin değilse) kaydet butonu devre dışı.
+
 ## [0.43.6] - 2025-07-28
 ### Eklenen
 - **Loglama Sistemi**: `DataEngine/logger.py` — SYSTEM, AUTH, CRUD kategorilerinde merkezi loglama modulu. RotatingFileHandler (5MB x 5 yedek), yapılandırılmış key=value formatı.

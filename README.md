@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.43.6-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.43.7-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -760,6 +760,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.43.7** | 2025-07-28 | Kok renk duzeltmesi + JSON DB yetkilendirme + degisiklik gecmisi |
 | **0.43.6** | 2025-07-28 | Merkezi loglama sistemi (SYSTEM/AUTH/CRUD) + /api/logs endpoint |
 | **0.43.2** | 2025-07-28 | HUD Arapca metin kok renklendirme duzeltmesi |
 | **0.40.2** | 2025-07-28 | Tüm Kitap Özeti — HUD’da kitap geneli büyük resim bağlamı |

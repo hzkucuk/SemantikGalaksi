@@ -24,7 +24,7 @@ var highlightArabicText = (text, roots) => {
     const stripPrefixes = w => {
         var forms = [w];
         if (w.length > 3 && w.startsWith('\u0627\u0644')) forms.push(w.slice(2));
-        if (w.length > 3 && (w[0] === '\u0648' || w[0] === '\u0641' || w[0] === '\u0628' || w[0] === '\u0644' || w[0] === '\u0643')) {
+        if (w.length >= 3 && (w[0] === '\u0648' || w[0] === '\u0641' || w[0] === '\u0628' || w[0] === '\u0644' || w[0] === '\u0643')) {
             var rest = w.slice(1);
             forms.push(rest);
             if (rest.length > 3 && rest.startsWith('\u0627\u0644')) forms.push(rest.slice(2));
@@ -76,7 +76,7 @@ var highlightArabicText = (text, roots) => {
             for (let i = 0; i < root.length; i++) {
                 if (isWeak(root[i])) {
                     const reduced = root.slice(0, i) + root.slice(i + 1);
-                    if (reduced.length >= 3 && subseqMatch(cand, reduced, true)) return true;
+                    if (reduced.length >= 2 && subseqMatch(cand, reduced, true)) return true;
                 }
             }
         }

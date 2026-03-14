@@ -341,11 +341,23 @@ Birden fazla makineyle çalışma desteği (örn. 1 sunucu + N terminal):
 - Viewer rolü yalnızca indirme yapabilir; düzenleme/silme/rename gizlenir.
 
 ## Kimlik Doğrulama ve Rol Sistemi
-- **admin**: Tam yetki (kullanıcı CRUD, dataset CRUD)
-- **editor**: Dataset okuma/yazma/silme
+- **admin**: Tam yetki (kullanıcı CRUD, dataset CRUD, korumalı dosya düzenleme)
+- **editor**: Dataset okuma/yazma/silme (korumalı dosyalar hariç)
 - **viewer**: Sadece okuma ve indirme
 - Token tabanlı oturum, SHA-256 + salt şifreleme
 - Varsayılan giriş: `admin / admin123`
+
+### Korumalı Dosyalar (v0.43.7)
+- `quran_data.json` ve `quran_roots.json` korumalı — sadece admin düzenleyebilir
+- Korumalı dosyalar silinemez ve yeniden adlandırılamaz
+- JSON editörde korumalı sekmede admin olmayanlar için kaydet butonu devre dışı
+
+### Değişiklik Geçmişi (v0.43.7)
+Her dataset, locale ve kök sözlüğü kaydetme işleminde otomatik diff kaydı:
+- `_meta._history[]` dizisine eklenir (LIFO sıra)
+- Her kayıt: `user`, `timestamp`, `action` (create/update), `before`/`after` özet
+- Maksimum 50 giriş (eski kayıtlar otomatik silinir)
+- Örnek: `{"user":"admin","timestamp":"2025-07-28T14:30:00","action":"update","before":{"nodeCount":6236},"after":{"nodeCount":6236}}`
 
 ## Merkezi Loglama Sistemi (v0.43.6)
 Üç kategoride yapılandırılmış loglama — `DataEngine/logger.py`:
