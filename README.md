@@ -759,6 +759,7 @@ Kur'an API ────▶ step1_fetch_quran.py ────▶ quran_data.json 
 
 | Sürüm | Tarih | Öne Çıkan |
 |-------|-------|-----------|
+| **0.43.2** | 2025-07-28 | HUD Arapca metin kok renklendirme duzeltmesi |
 | **0.40.2** | 2025-07-28 | Tüm Kitap Özeti — HUD’da kitap geneli büyük resim bağlamı |
 | **0.40.1** | 2025-07-28 | Kök Analiz Motoru — Zipf, co-occurrence, yoğunluk, ağ metrikleri, kümeleme |
 | **0.40.0** | 2025-07-28 | 🚀 Release — HUD Slider Panel + Floating Toggle + Yedekleme %APPDATA% uyumu |

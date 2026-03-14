@@ -71,7 +71,7 @@ var highlightArabicText = (text, roots) => {
                 if (cw.length >= 2) {
                     for (const rd of rootData) {
                         if (rootMatchesWord(cw, rd.clean)) {
-                            result += `<span class="root-highlight" style="color: ${rd.color}">${buf}</span>`;
+                            result += `<span class="root-highlight" style="color: ${rd.color} !important">${buf}</span>`;
                             matched = true;
                             break;
                         }

@@ -1,5 +1,9 @@
 bu# CHANGELOG
 
+## [0.43.2] - 2025-07-28
+### Düzeltme
+- **HUD Kök Renklendirme**: HUD panelindeki Arapça metin kök renklendirmesi düzeltildi — inline renklere `!important` eklenerek CSS çakışması önlendi (tooltip doğru çalışıyordu, HUD tüm beyaz gösteriyordu)
+
 ## [0.43.1] - 2025-07-28
 ### Düzeltme
 - **TTS Çok Dilli Prompt**: Her locale kendi dilinde TTS prompt'u taşıyor (`tts.prompt`). Eski `tts.promptTR` + `tts.promptTranslate` kaldırıldı. İleride meal dili değiştiğinde TTS doğru dilde okuyacak.
