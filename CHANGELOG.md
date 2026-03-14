@@ -1,5 +1,10 @@
 bu# CHANGELOG
 
+## [0.43.5] - 2025-07-28
+### Düzeltme
+- **Çok Dilli Kök Senkronizasyonu**: 4 dildeki kök çeviri dosyaları (`roots_en/es/it/ru.json`) `quran_roots.json` ile tam hizalandı. Her dilde 573 kullanılmayan giriş temizlendi, 85 yeni kökün 4 dilde çevirisi eklendi, 8 denormalize varyant çevirisi kurtarıldı. Tüm diller artık 1651 giriş.
+- **Locale Sync Script**: `DataEngine/sync_locale_roots.js` — tüm dil kök dosyalarını otomatik senkronize eden araç eklendi.
+
 ## [0.43.4] - 2025-07-28
 ### Düzeltme
 - **Kök Veri Senkronizasyonu**: `quran_data.json` ve `quran_roots.json` dosyaları `quran-morphology.txt` referans alınarak tam senkronize edildi. 96 ayette kök düzeltmesi yapıldı (hemze/elif normalizasyonu, boşluklu format düzeltmesi). Sözlüğe 85 eksik kök eklendi, 573 kullanılmayan giriş temizlendi. Üç kaynak artık tam eşleşiyor: 1651 benzersiz kök.
