@@ -1,5 +1,14 @@
 bu# CHANGELOG
 
+## [0.43.6] - 2025-07-28
+### Eklenen
+- **Loglama Sistemi**: `DataEngine/logger.py` — SYSTEM, AUTH, CRUD kategorilerinde merkezi loglama modulu. RotatingFileHandler (5MB x 5 yedek), yapılandırılmış key=value formatı.
+- **SYSTEM Logları**: Sunucu başlatma/durdurma, WebSocket yaşam döngüsü, config yükleme, pencere hataları, HTTP istek logları.
+- **AUTH Logları**: Giriş başarılı/başarısız (IP ile), çıkış, kullanıcı CRUD, rol değişikliği, şifre değişikliği.
+- **CRUD Logları**: Dataset kaydetme/silme/yeniden adlandırma/çoğaltma, locale kaydetme, not kaydetme/silme, API anahtarı ekleme/kaldırma.
+- **Log API**: `GET /api/logs?category=&limit=&level=` — admin log görüntüleme endpoint'i.
+- Tüm `print()` ifadeleri `log_system` çağrılarıyla değiştirildi.
+
 ## [0.43.5] - 2025-07-28
 ### Düzeltme
 - **Çok Dilli Kök Senkronizasyonu**: 4 dildeki kök çeviri dosyaları (`roots_en/es/it/ru.json`) `quran_roots.json` ile tam hizalandı. Her dilde 573 kullanılmayan giriş temizlendi, 85 yeni kökün 4 dilde çevirisi eklendi, 8 denormalize varyant çevirisi kurtarıldı. Tüm diller artık 1651 giriş.

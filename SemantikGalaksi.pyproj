@@ -42,9 +42,12 @@
     <Content Include="build_msi.bat" />
     <Content Include="CHANGELOG.md" />
     <Content Include="DataEngine\config.json" />
+    <Content Include="DataEngine\populate_missing_meanings.js" />
     <Content Include="DataEngine\quran-morphology.txt" />
     <Content Include="DataEngine\README.md" />
+    <Content Include="DataEngine\root_reconciliation.js" />
     <Content Include="DataEngine\run_all_translations.bat" />
+    <Content Include="DataEngine\sync_locale_roots.js" />
     <Content Include="FEATURES.md" />
     <Content Include="Frontend\full_quran_rich_map.json" />
     <Content Include="Frontend\index.html" />

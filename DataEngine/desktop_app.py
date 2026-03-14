@@ -19,6 +19,20 @@ try:
 except ImportError:
     updater = None
 
+try:
+    from logger import log_system, log_auth, log_crud, read_logs, LOG_DIR
+except ImportError:
+    # Fallback: logger yoksa sessiz kal
+    class _NullLog:
+        def info(self, *a, **kw): pass
+        def warning(self, *a, **kw): pass
+        def error(self, *a, **kw): pass
+        def debug(self, *a, **kw): pass
+        def critical(self, *a, **kw): pass
+    log_system = log_auth = log_crud = _NullLog()
+    read_logs = lambda **kw: []
+    LOG_DIR = ''
+
 # --- AYARLAR ---
 def _get_base_dir():
     """PyInstaller veya cx_Freeze ile paketlenmiş ya da normal çalışmaya göre kök dizini belirler."""
@@ -148,6 +162,8 @@ SERVER_IP = _config.get('server_ip', '127.0.0.1')
 SERVER_PORT = _config.get('server_port', 8080)
 SERVER_WS_PORT = _config.get('server_ws_port', 8081)
 
+log_system.info('Yapilandirma yuklendi', mode=RUN_MODE, port=PORT, host=HOST, ws_port=WS_PORT)
+
 
 def _ensure_dir():
     os.makedirs(os.path.dirname(KEYS_FILE), exist_ok=True)
@@ -218,11 +234,13 @@ class ApiKeyBridge:
             return False
         keys.append({"key": key, "status": "pending"})
         _save_keys(keys)
+        log_crud.info('API key eklendi', key_prefix=key[:8])
         return True
 
     def remove_key(self, key):
         keys = [k for k in _load_keys() if k["key"] != key]
         _save_keys(keys)
+        log_crud.info('API key silindi', key_prefix=key[:8])
 
     def update_status(self, key, status):
         keys = _load_keys()
@@ -372,12 +390,12 @@ class WebSocketServer:
             srv.bind((host, port))
             srv.listen(20)
             self._running = True
-            print(f"WebSocket sunucusu: ws://{host}:{port}")
+            log_system.info('WebSocket sunucusu baslatildi', address=f'ws://{host}:{port}')
             while True:
                 conn, addr = srv.accept()
                 threading.Thread(target=self._handle, args=(conn, addr), daemon=True).start()
         except OSError:
-            print(f"Uyar\u0131: WebSocket portu {port} kullan\u0131lamad\u0131.")
+            log_system.error('WebSocket portu kullanilamadi', port=port)
 
     def _recv_all(self, sock, n):
         buf = b''
@@ -437,6 +455,7 @@ class WebSocketServer:
                     'hostname': hostname,
                     'connected_at': datetime.datetime.now().isoformat()
                 })
+            log_system.info('WebSocket baglantisi', user=session['username'], ip=client_ip, hostname=hostname)
             self.broadcast(json.dumps({
                 'type': 'user_joined',
                 'username': session['username'],
@@ -452,6 +471,7 @@ class WebSocketServer:
             with self._lock:
                 self._clients = [c for c in self._clients if c['sock'] != conn]
             if session:
+                log_system.info('WebSocket baglanti kesildi', user=session['username'])
                 self.broadcast(json.dumps({
                     'type': 'user_left',
                     'username': session['username'],
@@ -583,6 +603,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._get_notes()
         elif path == '/api/info':
             self._server_info()
+        elif path == '/api/logs':
+            self._get_logs()
         else:
             super().do_GET()
 
@@ -645,20 +667,25 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         users = _load_users()
         user = next((u for u in users if u['username'] == username), None)
         if not user:
+            log_auth.warning('Basarisiz giris - kullanici bulunamadi', user=username, ip=self.client_address[0])
             self._json_response({'error': 'Kullanıcı bulunamadı'}, 401)
             return
         _, hashed = _hash_pw(password, user['salt'])
         if hashed != user['password']:
+            log_auth.warning('Basarisiz giris - hatali sifre', user=username, ip=self.client_address[0])
             self._json_response({'error': 'Hatalı şifre'}, 401)
             return
         token = secrets.token_hex(32)
         _sessions[token] = {'username': username, 'role': user['role']}
+        log_auth.info('Giris basarili', user=username, role=user['role'], ip=self.client_address[0])
         self._json_response({'token': token, 'username': username, 'role': user['role']})
 
     def _logout(self):
         auth = self.headers.get('Authorization', '')
         if auth.startswith('Bearer '):
-            _sessions.pop(auth[7:], None)
+            session = _sessions.pop(auth[7:], None)
+            if session:
+                log_auth.info('Cikis yapildi', user=session.get('username', '?'))
         self._json_response({'ok': True})
 
     def _auth_me(self):
@@ -699,6 +726,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         s, h = _hash_pw(password)
         users.append({'username': username, 'password': h, 'salt': s, 'role': role})
         _save_users(users)
+        log_auth.info('Kullanici olusturuldu', user=username, role=role, by=session['username'])
         self._json_response({'ok': True, 'username': username, 'role': role})
 
     def _delete_user(self):
@@ -714,6 +742,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         _save_users(users)
         for t in [t for t, s in _sessions.items() if s['username'] == username]:
             del _sessions[t]
+        log_auth.info('Kullanici silindi', user=username, by=session['username'])
         self._json_response({'ok': True})
 
     def _update_user_role(self):
@@ -734,6 +763,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         for s in _sessions.values():
             if s['username'] == username:
                 s['role'] = role
+        log_auth.info('Rol degistirildi', user=username, role=role, by=session['username'])
         self._json_response({'ok': True})
 
     def _change_password(self):
@@ -763,6 +793,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         user['salt'] = s
         user['password'] = h
         _save_users(users)
+        log_auth.info('Sifre degistirildi', user=session['username'])
         self._json_response({'ok': True})
 
     # --- Notes Endpoints ---
@@ -799,6 +830,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         try:
             with open(notes_file, 'w', encoding='utf-8') as f:
                 json.dump(body, f, ensure_ascii=False, indent=2)
+            log_crud.info('Notlar kaydedildi', user=username)
             self._json_response({'ok': True})
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
@@ -820,6 +852,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             notes = [n for n in notes if n.get('id') != note_id]
             with open(notes_file, 'w', encoding='utf-8') as f:
                 json.dump(notes, f, ensure_ascii=False, indent=2)
+            log_crud.info('Not silindi', user=username, note_id=note_id)
             self._json_response({'ok': True})
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
@@ -879,6 +912,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         path = os.path.join(locales_dir, name)
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
+        log_crud.info('Locale kaydedildi', user=session['username'], target=name)
         self._json_response({'ok': True, 'name': name})
 
     # --- Dataset Endpoints ---
@@ -944,6 +978,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         path = os.path.join(DATASETS_DIR, name)
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
+        log_crud.info('Dataset kaydedildi', user=session['username'], target=name)
         self._json_response({'ok': True, 'name': name})
         ws_server.broadcast(json.dumps({
             'type': 'dataset_saved', 'name': name,
@@ -962,6 +997,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         path = os.path.join(DATASETS_DIR, name)
         if os.path.exists(path):
             os.remove(path)
+        log_crud.info('Dataset silindi', user=session['username'], target=name)
         self._json_response({'ok': True})
         ws_server.broadcast(json.dumps({
             'type': 'dataset_deleted', 'name': name,
@@ -1020,6 +1056,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response({'error': 'Bu isimde dosya zaten var'}, 409)
             return
         os.rename(old_path, new_path)
+        log_crud.info('Dataset yeniden adlandirildi', user=session['username'], old=old_name, new=new_name)
         self._json_response({'ok': True, 'name': new_name})
         ws_server.broadcast(json.dumps({
             'type': 'dataset_renamed', 'oldName': old_name,
@@ -1052,6 +1089,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             return
         import shutil
         shutil.copy2(src_path, dst_path)
+        log_crud.info('Dataset kopyalandi', user=session['username'], source=source, target=new_name)
         self._json_response({'ok': True, 'name': new_name})
         ws_server.broadcast(json.dumps({
             'type': 'dataset_duplicated', 'sourceName': source,
@@ -1087,8 +1125,23 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             'url': f'http://{get_local_ip()}:{PORT}'
         })
 
+    def _get_logs(self):
+        """Admin icin log okuma endpoint'i.
+        Query params: category=system|auth|crud|all, limit=200, level=INFO|WARNING|ERROR"""
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        parsed = urllib.parse.urlparse(self.path)
+        params = urllib.parse.parse_qs(parsed.query)
+        category = params.get('category', ['all'])[0]
+        limit = int(params.get('limit', ['200'])[0])
+        level = params.get('level', [None])[0]
+        entries = read_logs(category=category, limit=limit, level=level)
+        self._json_response({'entries': entries, 'total': len(entries), 'logDir': LOG_DIR})
+
     def log_message(self, format, *args):
-        pass
+        log_system.debug('HTTP', request=format % args if args else format)
 
 class _ThreadingServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
     daemon_threads = True
@@ -1165,13 +1218,10 @@ def sunucuyu_baslat():
         with _ThreadingServer((HOST, PORT), ProjeHandler) as httpd:
             ip = get_local_ip()
             _load_users()
-            print(f"Sunucu başlatıldı: http://127.0.0.1:{PORT}")
-            print(f"WebSocket:         ws://127.0.0.1:{WS_PORT}")
-            print(f"Ağ erişimi:        http://{ip}:{PORT}")
-            print(f"Varsayılan giriş:  admin / admin123")
+            log_system.info('HTTP sunucu baslatildi', url=f'http://127.0.0.1:{PORT}', network=f'http://{ip}:{PORT}')
             httpd.serve_forever()
     except OSError:
-        print(f"Uyarı: {PORT} portu zaten kullanımda olabilir.")
+        log_system.error('HTTP port kullanimda', port=PORT)
 
 if __name__ == '__main__':
     def _get_besmele_path():
@@ -1217,7 +1267,7 @@ if __name__ == '__main__':
     if RUN_MODE == 'client':
         # --- CLIENT MODU: Sunucu başlatılmaz, uzak sunucuya bağlanılır ---
         _target_url = f'http://{SERVER_IP}:{SERVER_PORT}/index.html'
-        print(f"Client modu: {_target_url} adresine bağlanılıyor...")
+        log_system.info('Client modu baslatildi', url=_target_url)
 
         def on_closing():
             return True
@@ -1259,7 +1309,7 @@ if __name__ == '__main__':
             window.events.loaded += on_loaded
             webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
         except Exception as e:
-            print(f"Pencere açılırken hata oluştu: {e}")
+            log_system.error('Client pencere hatasi', error=str(e))
     else:
         # --- SERVER MODU: Sunucuyu başlat ve yerel pencereyi aç ---
         t = threading.Thread(target=sunucuyu_baslat)
@@ -1310,4 +1360,4 @@ if __name__ == '__main__':
             window.events.loaded += on_loaded
             webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
         except Exception as e:
-            print(f"Pencere açılırken hata oluştu: {e}")
+            log_system.error('Server pencere hatasi', error=str(e))

@@ -347,6 +347,21 @@ Birden fazla makineyle çalışma desteği (örn. 1 sunucu + N terminal):
 - Token tabanlı oturum, SHA-256 + salt şifreleme
 - Varsayılan giriş: `admin / admin123`
 
+## Merkezi Loglama Sistemi (v0.43.6)
+Üç kategoride yapılandırılmış loglama — `DataEngine/logger.py`:
+
+| Kategori | Dosya | İçerik |
+|----------|-------|--------|
+| **SYSTEM** | `system.log` | Sunucu başlatma/durdurma, WebSocket yaşam döngüsü, config yükleme, HTTP istekleri, pencere hataları |
+| **AUTH** | `auth.log` | Giriş başarılı/başarısız (IP ile), çıkış, kullanıcı CRUD, rol değişikliği, şifre değişikliği |
+| **CRUD** | `crud.log` | Dataset kaydetme/silme/yeniden adlandırma/çoğaltma, locale kaydetme, not CRUD, API anahtarı ekleme/kaldırma |
+
+- **RotatingFileHandler**: 5 MB × 5 yedek dosya
+- **Format**: `timestamp | CATEGORY | LEVEL | message | key=value`
+- **Depolama**: Geliştirme modunda `DataEngine/logs/`, paketlenmiş modda `%APPDATA%/SemantikGalaksi/logs/`
+- **Admin API**: `GET /api/logs?category=system&limit=100&level=ERROR` — log görüntüleme endpoint'i
+- **Fallback**: `logger.py` bulunamazsa sessiz `_NullLog` nesneleri devreye girer
+
 ## Zengin Veri Entegrasyonu (v0.31.0)
 `full_quran_rich_map.json` verileri `quran_data.json` ile birleştirildi. Her ayet artık ek zengin veri alanları içerir:
 
