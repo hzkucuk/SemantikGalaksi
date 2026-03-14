@@ -141,6 +141,7 @@ window.openEditor = async () => {
         for (var i = 0; i < langs.length; i++) {
             var lang = langs[i];
             if (lang.code === 'TR-tr') continue;
+            if (lang.code.toLowerCase().indexOf('roots') !== -1) continue;
             try {
                 var resp = await fetch('locales/' + lang.code + '.json');
                 if (resp.ok) {
@@ -213,18 +214,18 @@ window.editorValidate = () => {
         if (editorActiveTab === 'data') {
             var nc = data.nodes ? data.nodes.length : 0;
             bar.className = 'editor-status valid';
-            msg.textContent = '✓ Geçerli JSON';
-            info.textContent = nc + ' ' + t('hud.verse').toLowerCase() + ' · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+            msg.textContent = t('editor.validJson');
+            info.textContent = nc + ' ' + t('hud.verse').toLowerCase() + ' · ' + ta.value.length.toLocaleString() + ' ' + t('editor.chars');
         } else if (editorActiveTab === 'roots') {
             var rc = typeof data === 'object' ? Object.keys(data).length : 0;
             bar.className = 'editor-status valid';
-            msg.textContent = '✓ Geçerli JSON';
-            info.textContent = rc + ' ' + t('analyzer.root').toLowerCase() + ' · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+            msg.textContent = t('editor.validJson');
+            info.textContent = rc + ' ' + t('analyzer.root').toLowerCase() + ' · ' + ta.value.length.toLocaleString() + ' ' + t('editor.chars');
         } else {
             var kc = typeof data === 'object' ? Object.keys(data).length : 0;
             bar.className = 'editor-status valid';
-            msg.textContent = '✓ Geçerli JSON';
-            info.textContent = kc + ' key · ' + ta.value.length.toLocaleString('tr-TR') + ' karakter';
+            msg.textContent = t('editor.validJson');
+            info.textContent = kc + ' key · ' + ta.value.length.toLocaleString() + ' ' + t('editor.chars');
         }
         return true;
     } catch(e) {
@@ -232,7 +233,7 @@ window.editorValidate = () => {
         var m = e.message.match(/position (\d+)/);
         if (m) {
             var line = ta.value.substring(0, parseInt(m[1])).split('\n').length;
-            msg.textContent = '✗ Hata satır ' + line + ': ' + e.message;
+            msg.textContent = t('editor.errorLine').replace('{line}', line) + ': ' + e.message;
         } else {
             msg.textContent = '✗ ' + e.message;
         }

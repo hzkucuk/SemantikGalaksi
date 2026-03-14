@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Three.js-r128-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
-  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.42.1-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-0.42.2-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -239,6 +239,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| v0.42.2 | 🔧 Besmele ses dil uyumu, editör roots filtresi, hardcoded Türkçe düzeltmeleri (Analiz Motoru, Tam Analiz Paneli) |
 | v0.42.1 | 🏳️ **Kapsamlı Bayrak Altyapısı**: ~42 ülke SVG bayrak + bilinmeyen kod için renkli placeholder, direktifler güncellemesi |
 | v0.42.0 | 🌐 **Derin i18n**: Kök anlamları çoklu dil çevirisi, SVG bayraklar, bayrak SDF shader (5 ülke), JSON editör locale sekmeleri, besmele TTS (4 dil), hardcoded string temizliği |
 | v0.41.1 | **i18n Eksik Çeviriler Düzeltmesi**: Başlık, stats, tooltip, HUD butonları, arama, TTS dil desteği, ~40 yeni anahtar |

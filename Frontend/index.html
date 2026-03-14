@@ -1024,14 +1024,14 @@
     <!-- JSON Editör -->
     <div id="json-editor" class="editor-overlay">
         <div class="editor-toolbar">
-            <span class="text-cyan-400 font-black text-xs uppercase tracking-widest mr-auto" id="editor-title">📝 JSON Editör</span>
-            <button class="editor-btn save" onclick="editorSave()">💾 Kaydet</button>
-            <button class="editor-btn" onclick="editorExport()" style="color:#38bdf8;">⬇ Dışa Aktar</button>
-            <button class="editor-btn" onclick="editorFormat()">{ } Format</button>
-            <button class="editor-btn" onclick="editorValidate()">✓ Doğrula</button>
-            <button class="editor-btn" onclick="editorAddDipnot()">📌 Dipnot Ekle</button>
-            <button class="editor-btn" id="kb-toggle" onclick="toggleArabicKb()">⌨ Arapça</button>
-            <button class="editor-btn danger" onclick="closeEditor()">✕ Kapat</button>
+            <span class="text-cyan-400 font-black text-xs uppercase tracking-widest mr-auto" id="editor-title" data-i18n="editor.title">📝 JSON Editör</span>
+            <button class="editor-btn save" onclick="editorSave()" data-i18n="editor.save">💾 KAYDET</button>
+            <button class="editor-btn" onclick="editorExport()" style="color:#38bdf8;" data-i18n="editor.export">⬇ DIŞA AKTAR</button>
+            <button class="editor-btn" onclick="editorFormat()" data-i18n="editor.format">{ } FORMAT</button>
+            <button class="editor-btn" onclick="editorValidate()" data-i18n="editor.validate">✓ DOĞRULA</button>
+            <button class="editor-btn" onclick="editorAddDipnot()" data-i18n="editor.addDipnot">📌 DİPNOT EKLE</button>
+            <button class="editor-btn" id="kb-toggle" onclick="toggleArabicKb()" data-i18n="editor.arabic">⌨ ARAPÇA</button>
+            <button class="editor-btn danger" onclick="closeEditor()" data-i18n="editor.close">✕ KAPAT</button>
         </div>
         <div class="editor-tabs" id="editor-tabs">
             <button class="editor-tab active" id="editor-tab-data" onclick="editorSwitchTab('data')"><span class="tab-dot"></span>quran_data.json</button>
@@ -1360,10 +1360,10 @@
 
             <!-- Section: Analiz -->
             <div id="hud-sec-analiz" class="hud-section">
-                <h3 class="text-[10px] font-black text-cyan-700 uppercase tracking-[0.3em] mb-4 italic text-center">Kök Analiz Raporu</h3>
+                <h3 class="text-[10px] font-black text-cyan-700 uppercase tracking-[0.3em] mb-4 italic text-center" data-i18n="hud.analysisTitle">Kök Analiz Raporu</h3>
                 <div id="hud-root-analysis"></div>
                 <div style="text-align:center;margin-top:12px;">
-                    <button onclick="RootAnalyzer.togglePanel()" style="padding:8px 16px;border-radius:10px;background:rgba(0,242,255,0.08);border:1px solid rgba(0,242,255,0.2);color:#00f2ff;font-size:11px;font-weight:700;cursor:pointer;letter-spacing:0.05em;">🔬 Tam Analiz Paneli</button>
+                    <button onclick="RootAnalyzer.togglePanel()" style="padding:8px 16px;border-radius:10px;background:rgba(0,242,255,0.08);border:1px solid rgba(0,242,255,0.2);color:#00f2ff;font-size:11px;font-weight:700;cursor:pointer;letter-spacing:0.05em;" data-i18n="hud.fullPanel">🔬 Tam Analiz Paneli</button>
                 </div>
             </div>
         </div>
@@ -1373,7 +1373,7 @@
     <div class="analyzer-overlay hidden" id="analyzer-panel">
         <div class="analyzer-panel">
             <div class="analyzer-header">
-                <h3>🔬 Kök Analiz Motoru</h3>
+                <h3 data-i18n="analyzer.engineTitle">🔬 Kök Analiz Motoru</h3>
                 <button onclick="RootAnalyzer.closePanel()" class="hud-close-btn">✕</button>
             </div>
             <div class="analyzer-body" id="analyzer-content"></div>

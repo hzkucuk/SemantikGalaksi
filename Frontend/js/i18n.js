@@ -96,6 +96,9 @@ var I18n = (function () {
         'editor.addDipnot': '📌 Dipnot Ekle',
         'editor.arabic': '⌨ Arapça',
         'editor.close': '✕ Kapat',
+        'editor.validJson': '✓ Geçerli JSON',
+        'editor.chars': 'karakter',
+        'editor.errorLine': '✗ Hata satır {line}',
         'editor.space': 'Boşluk',
 
         // Notes
@@ -340,6 +343,7 @@ var I18n = (function () {
                 var files = await window.pywebview.api.list_locales();
                 for (var j = 0; j < files.length; j++) {
                     var file = files[j];
+                    if (file.startsWith('roots_')) continue;
                     var fc = file.replace('.json', '');
                     if (!_translations[fc]) {
                         try {
@@ -375,6 +379,10 @@ var I18n = (function () {
         }
         _current = code;
         localStorage.setItem('sg_language', code);
+        // Desktop: dil tercihini dosyaya yaz (besmele ses dosyası seçimi için)
+        if (window.pywebview && window.pywebview.api && window.pywebview.api.save_lang_pref) {
+            try { window.pywebview.api.save_lang_pref(code); } catch(e) {}
+        }
         applyTranslations();
         _updateBesmeleAudio();
         _renderSelector();
