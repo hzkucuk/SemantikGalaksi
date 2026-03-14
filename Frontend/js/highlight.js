@@ -29,6 +29,26 @@ var highlightArabicText = (text, roots) => {
             forms.push(rest);
             if (rest.length > 3 && rest.startsWith('\u0627\u0644')) forms.push(rest.slice(2));
         }
+        var extra = [];
+        for (var f of forms) {
+            if (f.length > 3 && '\u064A\u062A\u0646'.includes(f[0])) extra.push(f.slice(1));
+            if (f.length > 4 && f[0] === '\u0633' && '\u064A\u062A\u0646'.includes(f[1])) extra.push(f.slice(2));
+            if (f.length > 4 && f.startsWith('\u0633')) extra.push(f.slice(1));
+        }
+        for (var e of extra) forms.push(e);
+        return forms;
+    };
+    const stripSuffixes = w => {
+        var forms = [w];
+        if (w.length > 4) {
+            for (var s of ['\u0648\u0646\u0647\u0627', '\u0648\u0646\u0647\u0645']) { if (w.endsWith(s)) forms.push(w.slice(0, -4)); }
+        }
+        if (w.length > 3) {
+            for (var s of ['\u0647\u0645', '\u0647\u0627', '\u0647\u0646', '\u0643\u0645', '\u0643\u0646', '\u0648\u0646', '\u064A\u0646', '\u0648\u0627', '\u0627\u062A', '\u062A\u0645', '\u062A\u0646', '\u0646\u0627']) { if (w.endsWith(s)) forms.push(w.slice(0, -2)); }
+        }
+        if (w.length > 3) {
+            for (var s of ['\u0647', '\u0643', '\u0627', '\u0646', '\u062A']) { if (w.endsWith(s)) forms.push(w.slice(0, -1)); }
+        }
         return forms;
     };
     const subseqMatch = (word, root, noWeakEquiv) => {
@@ -44,14 +64,19 @@ var highlightArabicText = (text, roots) => {
         return (lastMatch - firstMatch + 1) <= root.length + 2;
     };
     const rootMatchesWord = (word, root) => {
-        var candidates = stripPrefixes(word);
+        var prefixed = stripPrefixes(word);
+        var candidates = [];
+        for (var p of prefixed) { for (var s of stripSuffixes(p)) candidates.push(s); }
+        var seen = new Set();
         for (var cand of candidates) {
+            if (seen.has(cand)) continue;
+            seen.add(cand);
             if (cand.length > root.length + 5) continue;
             if (subseqMatch(cand, root)) return true;
             for (let i = 0; i < root.length; i++) {
                 if (isWeak(root[i])) {
                     const reduced = root.slice(0, i) + root.slice(i + 1);
-                    if (reduced.length >= 2 && subseqMatch(cand, reduced, true)) return true;
+                    if (reduced.length >= 3 && subseqMatch(cand, reduced, true)) return true;
                 }
             }
         }

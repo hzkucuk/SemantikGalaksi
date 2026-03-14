@@ -43,6 +43,34 @@ Uygulama üç farklı modda çalışır — her mod farklı kısıtlara sahiptir
 - Log'larda şifre/token/PII maskele.
 - Python scriptlerinde **emoji kullanma** — Windows cp1254 console redirect'te crash yapar. ASCII eşdeğer kullan.
 
+## Veri Kaynakları — İKİLİ KÖK VERİTABANI (KRİTİK)
+
+Projede kök verisi **iki ayrı dosyada** tutulur. Bu iki kaynak her zaman **senkron** olmalıdır:
+
+| Dosya | İçerik | Yükleyen | Kullanan |
+|-------|--------|----------|----------|
+| `Frontend/quran_data.json` | 6236 node — her birinde `roots[]` dizisi (ayet-kök eşlemesi) | `data-loader.js` → `nodes` | highlight.js, hud.js, tooltip.js, interaction.js |
+| `Frontend/quran_roots.json` | Kök sözlüğü — her kök için anlam, telaffuz, türetilmiş kelimeler | `data-loader.js` → `rootDictionary` | constants.js, root-analyzer.js |
+
+**Kritik Kurallar:**
+- Bir köke dokunulduğunda (ekleme/silme/değiştirme) **HER İKİ dosya** kontrol edilmeli.
+- `quran_data.json`'daki `roots[]` içinde olan her kök, `quran_roots.json`'da da tanımlı olmalı (anlam/telaffuz).
+- `quran_roots.json`'a yeni kök eklendiğinde, ilgili ayetlerin `roots[]` dizisine de eklenmeli.
+- Kök formatı: boşluksuz Arapça (`أله`, `رحم`, vb.) — boşluklu format (`أ ل ه`) kullanılmaz.
+- **Veri üretim zinciri:** `DataEngine/` scriptleri → `quran_data.json` + `quran_roots.json` → Frontend okur.
+- **Editor özelliği:** `datasets.js` üzerinden her iki dosya da düzenlenebilir (CRUD API: `GET/POST /api/data`, `GET/POST /api/roots`).
+
+### Arşivlenen / Kullanılmayan Veri Dosyaları
+- `archive/data/` — Eski yedek ve ara üretim dosyaları. `.gitignore`'da.
+- `Frontend/datasets/quran_data_düzenlenmiş.json` — Editor çıktısı, runtime'da yüklenmez. `.gitignore`'da.
+- Yeni ara veri dosyası üretildiğinde `archive/data/` altına koy, `Frontend/` kök dizinine bırakma.
+
+### Duplike Ayet Verisi (Uthmani/Diyanet)
+- `quran_data.json`'da bazı ayetler hem Uthmani hem Diyanet hat stiliyle iki kez bulunur (~94 çift).
+- Uthmani girdiler doğru kök atamasına sahiptir; Diyanet girdilerin kökleri kaymış olabilir.
+- `data-loader.js` yükleme sırasında bu duplikeleri otomatik tespit eder ve kökleri düzeltir.
+- Uthmani/Diyanet ayrımı: Uthmani metinlerde `ٱ` (U+0671) veya `۟` (U+06DF) bulunur.
+
 ## i18n (Çoklu Dil) Kuralları — ÖNEMLİ
 
 ### UI Metinleri

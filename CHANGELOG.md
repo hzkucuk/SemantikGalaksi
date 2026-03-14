@@ -1,5 +1,13 @@
 bu# CHANGELOG
 
+## [0.43.3] - 2025-07-28
+### Düzeltme
+- **Kök Renklendirme Algoritması**: Yanlış pozitifler düzeltildi (2 harfli indirgenmiş kökler çok geniş eşleşiyordu → minimum 3 harf sınırı). Fiil önekleri (يـ/تـ/نـ + سـ/سيـ) ve zamir/fiil sonekleri (هم/ها/ون/ين/وا vb.) desteği eklendi.
+- **Duplike Ayet Kök Hizalama**: Uthmani/Diyanet hat farkıyla iki kez bulunan ~94 ayetin kök ataması düzeltildi — yükleme sırasında Uthmani girişin kökleri Diyanet girişe kopyalanıyor.
+### Temizlik
+- **JSON Veri Arşivleme**: Kullanılmayan `quran_data_backup.json` ve `full_quran_rich_map.json` dosyaları `archive/data/` altına taşındı, `.gitignore`'a eklendi.
+- **Copilot Direktifi**: İkili kök veritabanı (quran_data + quran_roots) senkronizasyon kuralları eklendi.
+
 ## [0.43.2] - 2025-07-28
 ### Düzeltme
 - **HUD Kök Renklendirme**: HUD panelindeki Arapça metin kök renklendirmesi düzeltildi — inline renklere `!important` eklenerek CSS çakışması önlendi (tooltip doğru çalışıyordu, HUD tüm beyaz gösteriyordu)

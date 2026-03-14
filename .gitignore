@@ -57,5 +57,9 @@ Desktop.ini
 [Ll]og/
 [Ll]ogs/
 
+# ─── Arşiv & Üretilen Veri Dosyaları ─────────────────────────
+archive/
+Frontend/datasets/quran_data_düzenlenmiş.json
+
 # Hassas/ozel scriptler
 DataEngine/quran_extractor_v3.py

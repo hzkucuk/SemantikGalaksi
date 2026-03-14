@@ -239,6 +239,20 @@ var processData = (data) => {
      if (highlightLines) { highlightLines.forEach(l => { scene.remove(l); l.geometry?.dispose(); l.material?.dispose(); }); highlightLines = []; }
      surahGroups = []; ayahNodes = []; rootMap.clear(); labelSprites = []; lineNodePairs = [];
     nodes = data.nodes.map(n => ({ ...n, roots: Array.isArray(n.roots) ? n.roots : [], dipnot: n.dipnot || '' }));
+    // Duplike metin düğümlerinde kök hizalamasını düzelt (Uthmani/Diyanet hat farkı)
+    var _diac = /[\u064B-\u0650\u0652-\u0670\u065F\u06D6-\u06ED\u0640\u0651]/g;
+    var _norm = t => t.replace(_diac, '').replace(/[\u0623\u0625\u0622\u0627\u0621\u0671]/g, '\u0627').replace(/[\u064A\u0649\u0626]/g, '\u064A').replace(/\u0624/g, '\u0648').replace(/\u0629/g, '\u062A').replace(/\s+/g, ' ').trim();
+    var _hasUthmani = t => t.includes('\u0671') || t.includes('\u06DF');
+    for (var di = 0; di < nodes.length - 1; di++) {
+        if (!nodes[di].text || !nodes[di+1].text) continue;
+        if (nodes[di].id.split(':')[0] !== nodes[di+1].id.split(':')[0]) continue;
+        if (_hasUthmani(nodes[di].text) === _hasUthmani(nodes[di+1].text)) continue;
+        var dw1 = _norm(nodes[di].text).split(' '), dw2 = _norm(nodes[di+1].text).split(' ');
+        if (dw1.length < 5 || dw2.length < 5) continue;
+        var dwm = Math.min(dw1.length, dw2.length), dwc = 0;
+        for (var dj = 0; dj < dwm; dj++) { if (dw1[dj] === dw2[dj]) dwc++; }
+        if (dwc / dwm > 0.7) nodes[di+1].roots = [...nodes[di].roots];
+    }
     var surahIds = [...new Set(nodes.map(n => n.id.split(':')[0]))].sort((a,b) => parseInt(a)-parseInt(b));
 
     // Surah başına ayet sayısı
