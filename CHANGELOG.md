@@ -1,4 +1,11 @@
-# CHANGELOG
+bu# CHANGELOG
+
+## [0.42.4] - 2025-07-28
+### Düzeltme
+- **Besmele Ses Kesilmesi**: Desktop modda besmele sesi yarım kalıyordu — `fadeBesmeleAudio()` artık desktop modda `stop_besmele()` çağırmıyor, ses doğal sonuna kadar çalıyor
+- **Uygulama İkonu**: pywebview 6.1 `icon` parametresi desteklemediği için Win32 ctypes API (`LoadImageW` + `SendMessageW` + `WM_SETICON`) ile pencere ikonu ayarlanıyor
+- **TTS API Anahtarı Otomatik Yükleme**: `.env` dosyasındaki `API_KEY` otomatik olarak hem `.api_keys` dosyasına hem JS `KeyManager` localStorage'ına ekleniyor
+- **Ölü Kod Temizliği**: `editorAddDipnot` referansları datasets.js'den kaldırıldı
 
 ## [0.42.2] - 2025-07-28
 ### Düzeltme

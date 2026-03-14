@@ -190,10 +190,7 @@ window.editorSwitchTab = (tab) => {
     document.getElementById('editor-lines').scrollTop = 0;
 };
 
-var editorUpdateTabUI = () => {
-    var dipnotBtn = document.querySelector('[onclick="editorAddDipnot()"]');
-    if (dipnotBtn) dipnotBtn.style.display = editorActiveTab === 'data' ? '' : 'none';
-};
+var editorUpdateTabUI = () => {};
 window.closeEditor = () => { document.getElementById('json-editor').style.display = 'none'; };
 var updateEditorLines = () => {
     var ta = document.getElementById('editor-textarea');

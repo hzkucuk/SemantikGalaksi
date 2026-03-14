@@ -170,6 +170,40 @@ def _save_keys(keys):
         f.write(base64.b64encode(json.dumps(keys).encode('utf-8')).decode('utf-8'))
 
 
+def _load_env_api_key():
+    """DataEngine/.env dosyasindan API_KEY degerini okur."""
+    env_path = os.path.join(CURRENT_DIR, '.env')
+    if not os.path.exists(env_path):
+        return None
+    try:
+        with open(env_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith('API_KEY=') and not line.startswith('#'):
+                    return line.split('=', 1)[1].strip()
+    except Exception:
+        pass
+    return None
+
+
+def _sync_env_key_to_stores(window):
+    """Eger .env'de API_KEY varsa hem .api_keys dosyasina hem JS KeyManager'a ekler."""
+    env_key = _load_env_api_key()
+    if not env_key:
+        return
+    keys = _load_keys()
+    if not any(k['key'] == env_key for k in keys):
+        keys.append({'key': env_key, 'status': 'pending'})
+        _save_keys(keys)
+    try:
+        safe_key = env_key.replace("'", "\\'")
+        window.evaluate_js(
+            f"if(typeof KeyManager!=='undefined')KeyManager.addKey('{safe_key}');"
+        )
+    except Exception:
+        pass
+
+
 class ApiKeyBridge:
     """pywebview JS-Python köprüsü: API anahtarlarını güvenli dosyada saklar."""
 
@@ -1156,6 +1190,30 @@ if __name__ == '__main__':
             pass
         return os.path.join(ROOT_DIR, 'besmele.wav')
 
+    def _set_window_icon(win):
+        """Win32 API ile pencere ikonunu ayarla"""
+        try:
+            import ctypes
+            from ctypes import wintypes
+            ico_path = os.path.join(BASE_DIR, 'app_icon.ico')
+            if not os.path.exists(ico_path):
+                return
+            user32 = ctypes.windll.user32
+            WM_SETICON = 0x0080
+            ICON_SMALL = 0
+            ICON_BIG = 1
+            IMAGE_ICON = 1
+            LR_LOADFROMFILE = 0x0010
+            LR_DEFAULTSIZE = 0x0040
+            hicon_big = user32.LoadImageW(0, ico_path, IMAGE_ICON, 0, 0, LR_LOADFROMFILE | LR_DEFAULTSIZE)
+            hicon_small = user32.LoadImageW(0, ico_path, IMAGE_ICON, 16, 16, LR_LOADFROMFILE)
+            hwnd = user32.FindWindowW(None, win.title)
+            if hwnd:
+                user32.SendMessageW(hwnd, WM_SETICON, ICON_BIG, hicon_big)
+                user32.SendMessageW(hwnd, WM_SETICON, ICON_SMALL, hicon_small)
+        except Exception:
+            pass
+
     if RUN_MODE == 'client':
         # --- CLIENT MODU: Sunucu başlatılmaz, uzak sunucuya bağlanılır ---
         _target_url = f'http://{SERVER_IP}:{SERVER_PORT}/index.html'
@@ -1185,6 +1243,7 @@ if __name__ == '__main__':
                 if _besmele_state['played']:
                     return
                 _besmele_state['played'] = True
+                _set_window_icon(window)
                 if os.path.exists(_besmele_wav):
                     try:
                         import winsound
@@ -1195,6 +1254,7 @@ if __name__ == '__main__':
                     except Exception:
                         pass
                 _start_update_check(window)
+                _sync_env_key_to_stores(window)
 
             window.events.loaded += on_loaded
             webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)
@@ -1234,6 +1294,7 @@ if __name__ == '__main__':
                 if _besmele_state['played']:
                     return
                 _besmele_state['played'] = True
+                _set_window_icon(window)
                 if os.path.exists(_besmele_wav):
                     try:
                         import winsound
@@ -1244,6 +1305,7 @@ if __name__ == '__main__':
                     except Exception:
                         pass
                 _start_update_check(window)
+                _sync_env_key_to_stores(window)
 
             window.events.loaded += on_loaded
             webview.start(debug=False, storage_path=WEBVIEW_DATA_DIR, private_mode=False)

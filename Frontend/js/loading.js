@@ -86,9 +86,8 @@ var playBesmeleAudio = () => {
 
 var fadeBesmeleAudio = () => {
     _besmelePlaying = true;
-    if (window.pywebview && window.pywebview.api) {
-        try { window.pywebview.api.stop_besmele(); } catch(e) {}
-    }
+    // Desktop: Python winsound'u kesme, doğal bitsin
+    if (isDesktopMode) return;
     var audio = document.getElementById('besmele-audio');
     if (!audio || audio.paused) return;
     var vol = audio.volume;
