@@ -1,5 +1,12 @@
 bu# CHANGELOG
 
+## [0.42.5] - 2025-07-28
+### Dokümantasyon & Güvenlik
+- **Mimari Dokümantasyon**: Copilot direktiflerine 3 katmanlı çalışma modları tablosu eklendi (Server / Client-Terminal / Web)
+- **API Key Güvenlik Kuralları**: `.env` commit yasağı, hardcoded key yasağı, `AIzaSy` tarama kuralı direktiflere eklendi
+- **Web Modu TTS Kuralı**: Web modunda `KeyManager` (localStorage) tek API key kaynağı olduğu belgelendi
+- **Desktop .env Senkronizasyon**: `_sync_env_key_to_stores` fonksiyonunun çalışma mantığı belgelendi
+
 ## [0.42.4] - 2025-07-28
 ### Düzeltme
 - **Besmele Ses Kesilmesi**: Desktop modda besmele sesi yarım kalıyordu — `fadeBesmeleAudio()` artık desktop modda `stop_besmele()` çağırmıyor, ses doğal sonuna kadar çalıyor

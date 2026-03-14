@@ -14,6 +14,28 @@
 - Katman ihlali yasak. Yeni pattern eklemeden önce gerekçe sun.
 - Script yükleme sırası (`index.html`): `flags.js` → `i18n.js` → `state.js` → diğerleri. Bu sırayı bozma.
 
+### Çalışma Modları (3 Katman)
+Uygulama üç farklı modda çalışır — her mod farklı kısıtlara sahiptir:
+
+| Mod | Açıklama | Python Bridge | localStorage | .env erişimi |
+|-----|----------|--------------|-------------|-------------|
+| **Server** | `desktop_app.py` HTTP sunucu + pywebview pencere (varsayılan) | ✅ `window.pywebview.api.*` | ✅ | ✅ (Python okur) |
+| **Client (Terminal)** | pywebview uzak sunucuya bağlanır (`server_ip:server_port`) | ✅ `window.pywebview.api.*` | ✅ | ✅ (Python okur) |
+| **Web** | Sadece tarayıcı — Python backend yok | ❌ | ✅ | ❌ |
+
+**Kritik Kurallar:**
+- `window.pywebview` erişimi **her zaman** `if(window.pywebview)` koruması ile yapılmalı.
+- **Web modunda** API key yönetimi yalnızca `KeyManager` (localStorage) üzerinden çalışır — `.env` dosyasına erişim yoktur.
+- **Desktop modlarda** (Server/Client) `.env`'deki `API_KEY` otomatik olarak hem `.api_keys` dosyasına hem JS `KeyManager`'a senkronize edilir (`_sync_env_key_to_stores`).
+- Yeni bir Python bridge metodu eklendiğinde, web modunda fallback davranışı da tanımlanmalı.
+
+### Güvenlik — API Anahtarları
+- **`.env` dosyası git'e ASLA commit edilmez** (`.gitignore`'da tanımlı).
+- `.api_keys` dosyası Base64 encode ile `webview_data/` altında saklanır (`.gitignore`'da).
+- Kod içinde hardcoded API key yasak. Placeholder kullan: `BURAYA_API_ANAHTARINIZI_YAZIN`.
+- `run_all_translations.bat` ve Python scriptleri `.env`'den `API_KEY` okur.
+- Yeni dosya oluştururken veya commit öncesi `AIzaSy` pattern'i ile tarama yap.
+
 ## Kodlama Standartları
 - Magic number yasak; sabit veya enum kullan.
 - Exception yutma; handle et veya rethrow et.
