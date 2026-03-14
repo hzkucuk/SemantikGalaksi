@@ -1,7 +1,7 @@
-# FEATURES - Kur'an-ı Kerim Kelime Kök Uzayı
+﻿# FEATURES - Kur'an-ı Kerim Kelime Kök Uzayı
 
 ## SQLite Veritabani (v1.0.0+)
-Tum Kur'an verisi artik SQLite veritabaninda tek kaynak (single source of truth) olarak saklanir. Frontend icin otomatik JSON export yapilir.
+Tum Kur'an verisi artik SQLite veritabaninda tek kaynak (single source of truth) olarak saklanir. v1.1.0 ile Frontend dogrudan API uzerinden SQLite'tan veri yukler (pure SQLite).
 
 | Ozellik | Aciklama |
 |---------|----------|
@@ -9,12 +9,12 @@ Tum Kur'an verisi artik SQLite veritabaninda tek kaynak (single source of truth)
 | **FK Kisitlamalari** | Referans butunlugu otomatik korunur — yetim veri olusturulamaz |
 | **WAL Modu** | Yazma ve okuma esanlik (concurrent read/write) destegi |
 | **Audit Trail** | 5 trigger ile otomatik degisiklik kaydi (`change_log` tablosu) |
-| **Hibrit Mimari** | SQLite → JSON export → Frontend degisikliksiz okur |
-| **Butunluk Kontrolu** | `/api/db/integrity` — FK ihlalleri, yetim kokler, eksik ceviriler |
+| **Pure SQLite** | Desktop modda `/api/db/data` + `/api/db/roots-dict` API'lerinden veri yuklenir. Web modda JSON fallback. |
+| **Butunluk Kontrolu** | `/api/db/integrity` -- FK ihlalleri, yetim kokler, eksik ceviriler |
 | **Istatistikler** | `/api/db/stats` — tablo bazli satir sayilari, dil listesi |
 | **Degisiklik Gecmisi** | `/api/db/changelog` — tablo/limit filtreli audit log |
 | **Migrasyon** | `json_to_sqlite.py` — JSON dosyalarindan tek seferlik migrasyon |
-| **Fallback** | SQLite yuklenemezse JSON modu ile calismaya devam eder |
+| **JSON Export** | `/api/db/export` -- admin tarafindan manuel JSON dosyasi olusturma |
 
 ### Veritabani Semasi
 ```
@@ -27,6 +27,20 @@ roots (1651)   ──┘                        │
                                           │
 change_log ←── 5 trigger (INSERT/UPDATE/DELETE)
 ```
+
+### DB Grid Editor (v1.1.0+)
+Veritabani uzerinde dogrudan CRUD islemleri yapilabilir.
+
+| Ozellik | Aciklama |
+|---------|----------|
+| **3 Sekme** | Ayetler, Kokler, Ceviriler |
+| **Sayfalama** | 50 kayit/sayfa, sayfa navigasyonu |
+| **Arama** | Canli arama (400ms debounce) |
+| **Satir Ici Duzenleme** | Cift tiklama ile meal, dipnot, anlam alanlari |
+| **Kok CRUD** | Kok ekleme/silme (admin), FK butunluk kontrolu |
+| **Arapca Klavye** | Entegre sanal Arapca klavye |
+| **Rol Tabanli** | admin=tam CRUD, editor=meal+dipnot, viewer=salt okunur |
+| **JSON Export** | Manuel `/api/db/export` ile JSON dosyalari olusturma |
 
 ## Coklu Dil Destegi (i18n)
 Tüm UI metinleri JSON tabanlı locale dosyaları ile çoklu dile çevrilebilir.

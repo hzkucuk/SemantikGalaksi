@@ -628,6 +628,18 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._db_changelog()
         elif path == '/api/db/export':
             self._db_export()
+        elif path == '/api/db/data':
+            self._db_full_data()
+        elif path == '/api/db/roots-dict':
+            self._db_full_roots()
+        elif path == '/api/db/verses':
+            self._db_list_verses()
+        elif path == '/api/db/roots-list':
+            self._db_list_roots()
+        elif path == '/api/db/translations':
+            self._db_list_translations()
+        elif path.startswith('/api/db/root/'):
+            self._db_get_root_detail()
         else:
             super().do_GET()
 
@@ -652,10 +664,18 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._save_dataset()
         elif self.path == '/api/notes':
             self._save_notes()
+        elif self.path == '/api/db/root':
+            self._db_add_root()
 
     def do_PUT(self):
         if self.path.startswith('/api/auth/user/'):
             self._update_user_role()
+        elif self.path.startswith('/api/db/verse/') and self.path.endswith('/roots'):
+            self._db_update_verse_roots()
+        elif self.path.startswith('/api/db/verse/'):
+            self._db_update_verse()
+        elif self.path.startswith('/api/db/root/'):
+            self._db_update_root()
 
     def do_DELETE(self):
         if self.path.startswith('/api/auth/user/'):
@@ -664,6 +684,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._delete_note()
         elif self.path.startswith('/api/dataset/'):
             self._delete_dataset()
+        elif self.path.startswith('/api/db/root/'):
+            self._db_delete_root()
 
     def _read_body(self):
         length = int(self.headers.get('Content-Length', 0))
@@ -1356,6 +1378,257 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response({'ok': True, 'exported': results})
         except Exception as e:
             log_system.error('JSON export hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
+    # --- Database Grid API Endpoints ---
+
+    def _db_full_data(self):
+        """Frontend 3D viz icin tam veri (quran_data.json yerine)."""
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            data = quran_db.get_full_data()
+            self._json_response(data)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_full_roots(self):
+        """Frontend rootDictionary icin tam veri (quran_roots.json yerine)."""
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            data = quran_db.get_full_roots()
+            self._json_response(data)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_list_verses(self):
+        """Sayfalamali ayet listesi (editor grid)."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            parsed = urllib.parse.urlparse(self.path)
+            params = urllib.parse.parse_qs(parsed.query)
+            page = int(params.get('page', [1])[0])
+            limit = int(params.get('limit', [50])[0])
+            search = params.get('search', [''])[0]
+            result = quran_db.list_verses(page=page, limit=limit, search=search)
+            self._json_response(result)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_list_roots(self):
+        """Sayfalamali kok listesi (editor grid)."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            parsed = urllib.parse.urlparse(self.path)
+            params = urllib.parse.parse_qs(parsed.query)
+            page = int(params.get('page', [1])[0])
+            limit = int(params.get('limit', [50])[0])
+            search = params.get('search', [''])[0]
+            result = quran_db.list_roots(page=page, limit=limit, search=search)
+            self._json_response(result)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_list_translations(self):
+        """Sayfalamali ceviri listesi (editor grid)."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            parsed = urllib.parse.urlparse(self.path)
+            params = urllib.parse.parse_qs(parsed.query)
+            page = int(params.get('page', [1])[0])
+            limit = int(params.get('limit', [50])[0])
+            search = params.get('search', [''])[0]
+            lang = params.get('lang', [None])[0]
+            result = quran_db.list_translations(lang=lang, page=page, limit=limit, search=search)
+            self._json_response(result)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_get_root_detail(self):
+        """Tek bir kokun detayi."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            root_key = urllib.parse.unquote(self.path.split('/api/db/root/')[-1])
+            result = quran_db.get_root_detail(root_key)
+            if result is None:
+                self._json_response({'error': 'Kok bulunamadi'}, 404)
+                return
+            self._json_response(result)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_update_verse(self):
+        """Ayet meal/dipnot guncelleme (admin/editor)."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] == 'viewer':
+            self._json_response({'error': 'Viewer rolunde duzenleme yapilamaz'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        body = self._read_body()
+        if not body:
+            self._json_response({'error': 'Gecersiz istek'}, 400)
+            return
+        try:
+            verse_id = urllib.parse.unquote(self.path.split('/api/db/verse/')[-1])
+            ok = quran_db.update_verse(
+                verse_id,
+                meal=body.get('meal'),
+                dipnot=body.get('dipnot'),
+                user=session['username']
+            )
+            if not ok:
+                self._json_response({'error': 'Ayet bulunamadi veya degisiklik yok'}, 404)
+                return
+            log_crud.info('Ayet guncellendi', verse_id=verse_id, user=session['username'])
+            self._json_response({'ok': True, 'verse_id': verse_id})
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_update_verse_roots(self):
+        """Ayet koklerini guncelleme (admin only)."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] != 'admin':
+            self._json_response({'error': 'Sadece admin ayet koklerini duzenleyebilir'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        body = self._read_body()
+        if not body or 'roots' not in body:
+            self._json_response({'error': 'roots alani gerekli'}, 400)
+            return
+        try:
+            # /api/db/verse/1:1/roots -> verse_id = 1:1
+            path_part = self.path.replace('/api/db/verse/', '').replace('/roots', '')
+            verse_id = urllib.parse.unquote(path_part)
+            quran_db.update_verse_roots(verse_id, body['roots'], user=session['username'])
+            log_crud.info('Ayet kokleri guncellendi', verse_id=verse_id, user=session['username'],
+                          root_count=len(body['roots']))
+            self._json_response({'ok': True, 'verse_id': verse_id})
+        except ValueError as e:
+            self._json_response({'error': str(e)}, 400)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_update_root(self):
+        """Kok bilgisi guncelleme (admin only)."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] != 'admin':
+            self._json_response({'error': 'Sadece admin kok duzenleyebilir'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        body = self._read_body()
+        if not body:
+            self._json_response({'error': 'Gecersiz istek'}, 400)
+            return
+        try:
+            root_key = urllib.parse.unquote(self.path.split('/api/db/root/')[-1])
+            ok = quran_db.update_root(
+                root_key,
+                meaning_tr=body.get('meaning_tr'),
+                meaning_ar=body.get('meaning_ar'),
+                pronunciation=body.get('pronunciation'),
+                user=session['username']
+            )
+            if not ok:
+                self._json_response({'error': 'Kok bulunamadi veya degisiklik yok'}, 404)
+                return
+            log_crud.info('Kok guncellendi', root=root_key, user=session['username'])
+            self._json_response({'ok': True, 'root': root_key})
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_add_root(self):
+        """Yeni kok ekleme (admin only)."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] != 'admin':
+            self._json_response({'error': 'Sadece admin kok ekleyebilir'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        body = self._read_body()
+        if not body or 'root' not in body:
+            self._json_response({'error': 'root alani gerekli'}, 400)
+            return
+        try:
+            quran_db.add_root(
+                body['root'],
+                meaning_tr=body.get('meaning_tr', ''),
+                meaning_ar=body.get('meaning_ar', ''),
+                pronunciation=body.get('pronunciation', ''),
+                user=session['username']
+            )
+            log_crud.info('Yeni kok eklendi', root=body['root'], user=session['username'])
+            self._json_response({'ok': True, 'root': body['root']}, 201)
+        except ValueError as e:
+            self._json_response({'error': str(e)}, 409)
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_delete_root(self):
+        """Kok silme (admin only, FK kontrollu)."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if session['role'] != 'admin':
+            self._json_response({'error': 'Sadece admin kok silebilir'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            root_key = urllib.parse.unquote(self.path.split('/api/db/root/')[-1])
+            quran_db.delete_root(root_key, user=session['username'])
+            log_crud.info('Kok silindi', root=root_key, user=session['username'])
+            self._json_response({'ok': True, 'root': root_key})
+        except ValueError as e:
+            self._json_response({'error': str(e)}, 400)
+        except Exception as e:
             self._json_response({'error': str(e)}, 500)
 
     def log_message(self, format, *args):

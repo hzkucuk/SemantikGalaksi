@@ -1,5 +1,27 @@
 bu# CHANGELOG
 
+## [1.1.0] - 2025-07-28 -- Pure SQLite + DB Grid Editor
+### Eklenen
+- **Pure SQLite Veri Akisi**: Frontend artik JSON dosyalari yerine `/api/db/data` ve `/api/db/roots-dict` API endpoint'lerinden veri yukler. Web modunda JSON fallback korundu.
+- **DB Grid Editor**: JSON textarea editor tamamen kaldirildi, yerine profesyonel veritabani grid editor'u eklendi. 3 sekme (Ayetler, Kokler, Ceviriler), sayfalama (50/sayfa), arama, Arapca klavye, satir ici duzenleme, kok CRUD, FK butunluk kontrolu.
+- **Sayfalamali API**: `GET /api/db/verses`, `/api/db/roots-list`, `/api/db/translations` -- page/limit/search parametreleri.
+- **CRUD API**: `PUT /api/db/verse/{id}`, `PUT /api/db/verse/{id}/roots`, `PUT /api/db/root/{key}`, `POST /api/db/root`, `DELETE /api/db/root/{key}` -- changelog kaydi ile.
+- **Rol Tabanli Erisim**: admin=tam CRUD, editor=meal+dipnot, viewer=salt okunur.
+- **40+ i18n Anahtari**: DB Grid editor icin tum UI metinleri 5 dilde (TR, EN, ES, IT, RU).
+
+### Degisiklik
+- `data-loader.js`: Desktop modda API'den veri yukler, web modda JSON fallback.
+- `datasets.js`: Tamamen yeniden yazildi (~310 satir). JSON editor -> DB Grid Editor.
+- `index.html`: Editor HTML yapisi ve ~80 yeni CSS kurali.
+- `i18n.js`: Eski JSON editor key'leri kaldirildi, yeni DB Grid key'leri eklendi.
+- `db.py`: 10 yeni fonksiyon. save_roots_bulk ve save_root_translations'dan otomatik JSON export kaldirildi.
+- `desktop_app.py`: 12 yeni route handler eklendi.
+- 4 locale dosyasi (EN, ES, IT, RU) guncellendi.
+
+### Kaldirilan
+- JSON textarea editor (datasets.js eski icerik)
+- Otomatik JSON export (CRUD islemlerinde) -- sadece `/api/db/export` ile manuel.
+
 ## [1.0.1] - 2025-07-28
 ### Duzeltme
 - **Thread-Safety**: SQLite baglantisi `check_same_thread=False` + `threading.Lock` ile thread-safe hale getirildi. ThreadingMixIn HTTP handler'lari artik DB endpoint'lerine erisebiliyor.

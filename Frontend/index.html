@@ -460,12 +460,8 @@
         .editor-toolbar { display: flex; align-items: center; gap: 8px; padding: 10px 16px; background: #0d1117; border-bottom: 1px solid rgba(0,242,255,0.15); flex-wrap: wrap; }
         .editor-btn { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); color: #e2e8f0; padding: 7px 14px; border-radius: 8px; font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.08em; }
         .editor-btn:hover { background: rgba(0,242,255,0.12); border-color: #00f2ff; color: #00f2ff; }
-        .editor-btn.save { background: rgba(34,197,94,0.15); border-color: rgba(34,197,94,0.4); color: #22c55e; }
-        .editor-btn.save:hover { background: rgba(34,197,94,0.3); }
         .editor-btn.danger { background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.3); color: #ef4444; }
-        .editor-main { display: flex; flex: 1; overflow: hidden; position: relative; }
-        .editor-lines { width: 54px; background: #0d1117; border-right: 1px solid rgba(255,255,255,0.06); padding: 12px 0; overflow: hidden; user-select: none; text-align: right; font-family: 'Consolas','Monaco',monospace; font-size: 13px; line-height: 1.6; color: #3b4252; flex-shrink: 0; }
-        .editor-textarea { flex: 1; background: transparent; color: #e2e8f0; border: none; outline: none; resize: none; padding: 12px 16px; font-family: 'Consolas','Monaco',monospace; font-size: 13px; line-height: 1.6; tab-size: 2; white-space: pre; overflow: auto; }
+        .editor-main { display: flex; flex-direction: column; flex: 1; overflow: hidden; position: relative; }
         .editor-status { display: flex; align-items: center; justify-content: space-between; padding: 6px 16px; background: #0d1117; border-top: 1px solid rgba(255,255,255,0.06); font-size: 11px; }
         .editor-status.valid { color: #22c55e; }
         .editor-status.invalid { color: #ef4444; }
@@ -474,6 +470,42 @@
         .editor-tab:hover { color: #94a3b8; background: rgba(255,255,255,0.03); }
         .editor-tab.active { color: #00f2ff; border-bottom-color: #00f2ff; background: rgba(0,242,255,0.05); }
         .editor-tab .tab-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.5; }
+        /* DB Grid */
+        .db-toolbar { display: flex; align-items: center; justify-content: space-between; padding: 8px 14px; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06); gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
+        .db-toolbar-left { display: flex; align-items: center; gap: 8px; }
+        .db-toolbar-right { display: flex; align-items: center; gap: 8px; }
+        .db-search-input { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #e2e8f0; padding: 6px 12px; border-radius: 8px; font-size: 12px; width: 220px; outline: none; font-family: 'Amiri','Inter',sans-serif; }
+        .db-search-input:focus { border-color: #00f2ff; box-shadow: 0 0 0 2px rgba(0,242,255,0.1); }
+        .db-lang-select { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #e2e8f0; padding: 6px 10px; border-radius: 8px; font-size: 11px; outline: none; cursor: pointer; }
+        .db-btn { padding: 6px 14px; border-radius: 8px; font-size: 10px; font-weight: 700; cursor: pointer; border: 1px solid; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em; }
+        .db-btn-add { background: rgba(34,197,94,0.12); border-color: rgba(34,197,94,0.3); color: #22c55e; }
+        .db-btn-add:hover { background: rgba(34,197,94,0.25); }
+        .db-btn-export { background: rgba(56,189,248,0.1); border-color: rgba(56,189,248,0.3); color: #38bdf8; }
+        .db-btn-export:hover { background: rgba(56,189,248,0.2); }
+        .db-pagination { display: flex; align-items: center; gap: 6px; }
+        .db-page-btn { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #94a3b8; width: 28px; height: 28px; border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 10px; transition: all 0.15s; }
+        .db-page-btn:hover:not(:disabled) { background: rgba(0,242,255,0.12); border-color: #00f2ff; color: #00f2ff; }
+        .db-page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+        .db-page-info { font-size: 11px; color: #64748b; font-weight: 700; min-width: 50px; text-align: center; }
+        .db-grid-scroll { flex: 1; overflow: auto; }
+        .db-grid { width: 100%; border-collapse: collapse; font-size: 12px; }
+        .db-grid thead { position: sticky; top: 0; z-index: 2; }
+        .db-grid th { background: #0d1117; color: #00f2ff; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 8px 10px; text-align: left; border-bottom: 2px solid rgba(0,242,255,0.2); white-space: nowrap; }
+        .db-grid tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
+        .db-grid tbody tr:hover { background: rgba(0,242,255,0.04); }
+        .db-cell { padding: 6px 10px; color: #cbd5e1; font-size: 12px; line-height: 1.5; max-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: top; }
+        .db-cell.rtl { direction: rtl; text-align: right; font-family: 'Amiri','Traditional Arabic',serif; font-size: 14px; }
+        .db-cell.editable { cursor: pointer; position: relative; }
+        .db-cell.editable:hover { background: rgba(0,242,255,0.06); }
+        .db-cell.editable::after { content: '\270E'; position: absolute; top: 4px; right: 4px; font-size: 10px; color: rgba(0,242,255,0.3); opacity: 0; transition: opacity 0.15s; }
+        .db-cell.editable:hover::after { opacity: 1; }
+        .db-cell-text { display: block; overflow: hidden; text-overflow: ellipsis; }
+        .db-root-tag { display: inline-block; background: rgba(0,242,255,0.08); border: 1px solid rgba(0,242,255,0.15); color: #67e8f9; padding: 1px 6px; border-radius: 4px; font-size: 12px; margin: 1px 2px; font-family: 'Amiri',serif; direction: rtl; }
+        .db-edit-input { width: 100%; background: rgba(0,0,0,0.4); border: 1px solid #00f2ff; color: #e2e8f0; padding: 4px 8px; border-radius: 4px; font-size: 12px; outline: none; font-family: inherit; box-sizing: border-box; resize: vertical; }
+        .db-act-btn { background: none; border: 1px solid rgba(239,68,68,0.2); color: #94a3b8; width: 26px; height: 26px; border-radius: 6px; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+        .db-act-btn:hover { border-color: #ef4444; color: #ef4444; background: rgba(239,68,68,0.1); }
+        .db-actions { text-align: center; white-space: nowrap; }
+        .db-status { display: flex; align-items: center; justify-content: space-between; padding: 6px 14px; background: rgba(0,0,0,0.3); border-top: 1px solid rgba(255,255,255,0.04); font-size: 10px; color: #64748b; flex-shrink: 0; }
         .arabic-kb { display: none; background: #0d1117; border-top: 1px solid rgba(255,255,255,0.1); padding: 10px; flex-shrink: 0; }
         .arabic-kb.show { display: block; }
         .kb-row { display: flex; gap: 4px; justify-content: center; margin-bottom: 4px; }
@@ -1010,37 +1042,22 @@
         </div>
     </div>
 
-    <!-- Veri Seti Yöneticisi -->
-    <div id="dataset-overlay" class="ds-modal" onclick="if(event.target===this)closeDatasets()">
+    <!-- Veri Seti Yöneticisi (artık DB Editor'e yönlendirir) -->
+    <div id="dataset-overlay" class="ds-modal" onclick="if(event.target===this)closeDatasets()" style="display:none">
         <div class="ds-panel">
-            <div class="flex justify-between items-center mb-5">
-                <h2 class="text-lg font-black text-cyan-400 uppercase tracking-widest">📂 Veri Setleri</h2>
-                <button onclick="closeDatasets()" class="w-9 h-9 flex items-center justify-center bg-white/5 rounded-full text-slate-500 hover:text-white transition-all">✕</button>
-            </div>
             <div id="dataset-list"></div>
         </div>
     </div>
 
-    <!-- JSON Editör -->
+    <!-- Veritabanı Editörü -->
     <div id="json-editor" class="editor-overlay">
         <div class="editor-toolbar">
-            <span class="text-cyan-400 font-black text-xs uppercase tracking-widest mr-auto" id="editor-title" data-i18n="editor.title">📝 JSON Editör</span>
-            <button class="editor-btn save" onclick="editorSave()" data-i18n="editor.save">💾 KAYDET</button>
-            <button class="editor-btn" onclick="editorExport()" style="color:#38bdf8;" data-i18n="editor.export">⬇ DIŞA AKTAR</button>
-            <button class="editor-btn" onclick="editorFormat()" data-i18n="editor.format">{ } FORMAT</button>
-            <button class="editor-btn" onclick="editorValidate()" data-i18n="editor.validate">✓ DOĞRULA</button>
-            <button class="editor-btn" onclick="editorAddDipnot()" data-i18n="editor.addDipnot">📌 DİPNOT EKLE</button>
+            <span class="text-cyan-400 font-black text-xs uppercase tracking-widest mr-auto" id="editor-title" data-i18n="editor.dbTitle">🗄 Veritabanı Editörü</span>
             <button class="editor-btn" id="kb-toggle" onclick="toggleArabicKb()" data-i18n="editor.arabic">⌨ ARAPÇA</button>
             <button class="editor-btn danger" onclick="closeEditor()" data-i18n="editor.close">✕ KAPAT</button>
         </div>
-        <div class="editor-tabs" id="editor-tabs">
-            <button class="editor-tab active" id="editor-tab-data" onclick="editorSwitchTab('data')"><span class="tab-dot"></span>quran_data.json</button>
-            <button class="editor-tab" id="editor-tab-roots" onclick="editorSwitchTab('roots')"><span class="tab-dot"></span>quran_roots.json</button>
-        </div>
-        <div class="editor-main">
-            <div class="editor-lines" id="editor-lines"></div>
-            <textarea class="editor-textarea" id="editor-textarea" spellcheck="false"></textarea>
-        </div>
+        <div class="editor-tabs" id="editor-tabs"></div>
+        <div class="editor-main" id="editor-main"></div>
         <div class="arabic-kb" id="arabic-kb">
             <div class="kb-row">
                 <button class="kb-key" onclick="kbInsert('ض')">ض</button><button class="kb-key" onclick="kbInsert('ص')">ص</button>
@@ -1077,12 +1094,12 @@
                 <button class="kb-key haraka" onclick="kbInsert('\u0651')">&#x651;</button>
                 <button class="kb-key haraka" onclick="kbInsert('\u0652')">&#x652;</button>
                 <button class="kb-key haraka" onclick="kbInsert('\u0670')">&#x670;</button>
-                <button class="kb-key special" onclick="kbInsert(' ')">Boşluk</button>
-                <button class="kb-key special" onclick="kbBackspace()">⌫ Sil</button>
+                <button class="kb-key special" onclick="kbInsert(' ')" data-i18n="editor.kbSpace">Boşluk</button>
+                <button class="kb-key special" onclick="kbBackspace()" data-i18n="editor.kbBackspace">⌫ Sil</button>
             </div>
         </div>
         <div class="editor-status valid" id="editor-status">
-            <span id="editor-msg">✓ Geçerli JSON</span>
+            <span id="editor-msg"></span>
             <span id="editor-info"></span>
         </div>
     </div>

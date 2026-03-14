@@ -322,9 +322,6 @@ def save_roots_bulk(roots_data, user='system', conn=None):
     )
     db.commit()
 
-    # JSON export
-    export_quran_roots(db)
-
     return added, updated, removed
 
 
@@ -419,9 +416,6 @@ def save_root_translations(lang, translations_data, user='system', conn=None):
     )
     db.commit()
 
-    # JSON export
-    export_locale_roots(lang, db)
-
     return added, updated
 
 
@@ -469,3 +463,362 @@ def get_stats(conn=None):
         'languages': [r[0] for r in db.execute("SELECT DISTINCT lang FROM root_translations").fetchall()],
         'change_log_entries': db.execute("SELECT COUNT(*) FROM change_log").fetchone()[0],
     }
+
+
+# ===================================================================
+#  TAM VERI YUKLEMESI (Frontend 3D viz icin — JSON yerine)
+# ===================================================================
+
+def get_full_data(conn=None):
+    """Frontend processData() icin tam veri. quran_data.json yerine."""
+    db = conn or get_db()
+    nodes = []
+    verses = db.execute(
+        "SELECT * FROM verses ORDER BY sure_no, ayet_no"
+    ).fetchall()
+    for v in verses:
+        node = {
+            'id': v['id'],
+            'surah': v['surah'] or '',
+            'text': v['ayet'],
+            'translation': v['meal'] or '',
+        }
+        roots = db.execute(
+            "SELECT root FROM verse_roots WHERE verse_id=? ORDER BY position",
+            (v['id'],)
+        ).fetchall()
+        node['roots'] = [r['root'] for r in roots] if roots else None
+        if v['dipnot']:
+            node['dipnot'] = v['dipnot']
+        if v['dipnot_parsed']:
+            try:
+                node['dipnot_parsed'] = json.loads(v['dipnot_parsed'])
+            except Exception:
+                pass
+        if v['mapping_data']:
+            try:
+                node['mapping_data'] = json.loads(v['mapping_data'])
+            except Exception:
+                pass
+        if v['tefsir_popup']:
+            try:
+                node['tefsir_popup'] = json.loads(v['tefsir_popup'])
+            except Exception:
+                pass
+        if v['audio']:
+            node['audio'] = v['audio']
+        nodes.append(node)
+    return {'nodes': nodes}
+
+
+def get_full_roots(conn=None):
+    """Frontend rootDictionary icin tam veri. quran_roots.json yerine."""
+    db = conn or get_db()
+    result = {}
+    roots = db.execute("SELECT * FROM roots ORDER BY root").fetchall()
+    for r in roots:
+        entry = {
+            'meaning': r['meaning_tr'],
+            'meaning_ar': r['meaning_ar'] or '',
+            'pronunciation': r['pronunciation'] or '',
+        }
+        derived = db.execute(
+            "SELECT word, meaning_tr FROM derived_words WHERE root=?",
+            (r['root'],)
+        ).fetchall()
+        entry['derived'] = [
+            {'word': d['word'], 'meaning': d['meaning_tr']} for d in derived
+        ] if derived else []
+        ayahs = db.execute(
+            "SELECT verse_id FROM verse_roots WHERE root=? ORDER BY verse_id",
+            (r['root'],)
+        ).fetchall()
+        entry['ayahs'] = [a['verse_id'] for a in ayahs]
+        entry['count'] = len(ayahs)
+        result[r['root']] = entry
+    return result
+
+
+# ===================================================================
+#  SAYFALAMALI SORGULAR (Editor Grid icin)
+# ===================================================================
+
+def list_verses(page=1, limit=50, search='', conn=None):
+    """Sayfalamali ayet listesi. Arama: sure no, ayet no, metin, meal."""
+    db = conn or get_db()
+    offset = (page - 1) * limit
+    base_where = ""
+    params = []
+    if search:
+        base_where = "WHERE v.id LIKE ? OR v.ayet LIKE ? OR v.meal LIKE ? OR v.surah LIKE ?"
+        s = f'%{search}%'
+        params = [s, s, s, s]
+
+    total = db.execute(
+        f"SELECT COUNT(*) FROM verses v {base_where}", params
+    ).fetchone()[0]
+
+    rows = db.execute(
+        f"SELECT v.* FROM verses v {base_where} ORDER BY v.sure_no, v.ayet_no LIMIT ? OFFSET ?",
+        params + [limit, offset]
+    ).fetchall()
+
+    items = []
+    for v in rows:
+        roots = db.execute(
+            "SELECT root FROM verse_roots WHERE verse_id=? ORDER BY position",
+            (v['id'],)
+        ).fetchall()
+        items.append({
+            'id': v['id'],
+            'sure_no': v['sure_no'],
+            'ayet_no': v['ayet_no'],
+            'surah': v['surah'] or '',
+            'ayet': v['ayet'],
+            'meal': v['meal'] or '',
+            'dipnot': v['dipnot'] or '',
+            'roots': [r['root'] for r in roots],
+        })
+
+    return {
+        'items': items,
+        'total': total,
+        'page': page,
+        'limit': limit,
+        'pages': (total + limit - 1) // limit,
+    }
+
+
+def list_roots(page=1, limit=50, search='', conn=None):
+    """Sayfalamali kok listesi. Arama: kok, anlam, telaffuz."""
+    db = conn or get_db()
+    offset = (page - 1) * limit
+    base_where = ""
+    params = []
+    if search:
+        base_where = "WHERE r.root LIKE ? OR r.meaning_tr LIKE ? OR r.pronunciation LIKE ?"
+        s = f'%{search}%'
+        params = [s, s, s]
+
+    total = db.execute(
+        f"SELECT COUNT(*) FROM roots r {base_where}", params
+    ).fetchone()[0]
+
+    rows = db.execute(
+        f"SELECT r.* FROM roots r {base_where} ORDER BY r.root LIMIT ? OFFSET ?",
+        params + [limit, offset]
+    ).fetchall()
+
+    items = []
+    for r in rows:
+        verse_count = db.execute(
+            "SELECT COUNT(*) FROM verse_roots WHERE root=?", (r['root'],)
+        ).fetchone()[0]
+        derived_count = db.execute(
+            "SELECT COUNT(*) FROM derived_words WHERE root=?", (r['root'],)
+        ).fetchone()[0]
+        items.append({
+            'root': r['root'],
+            'meaning_tr': r['meaning_tr'],
+            'meaning_ar': r['meaning_ar'] or '',
+            'pronunciation': r['pronunciation'] or '',
+            'verse_count': verse_count,
+            'derived_count': derived_count,
+        })
+
+    return {
+        'items': items,
+        'total': total,
+        'page': page,
+        'limit': limit,
+        'pages': (total + limit - 1) // limit,
+    }
+
+
+def list_translations(lang=None, page=1, limit=50, search='', conn=None):
+    """Sayfalamali ceviri listesi."""
+    db = conn or get_db()
+    offset = (page - 1) * limit
+    conditions = []
+    params = []
+    if lang:
+        conditions.append("rt.lang=?")
+        params.append(lang)
+    if search:
+        conditions.append("(rt.root LIKE ? OR rt.meaning LIKE ?)")
+        s = f'%{search}%'
+        params.extend([s, s])
+
+    where = ("WHERE " + " AND ".join(conditions)) if conditions else ""
+
+    total = db.execute(
+        f"SELECT COUNT(*) FROM root_translations rt {where}", params
+    ).fetchone()[0]
+
+    rows = db.execute(
+        f"SELECT rt.* FROM root_translations rt {where} ORDER BY rt.lang, rt.root LIMIT ? OFFSET ?",
+        params + [limit, offset]
+    ).fetchall()
+
+    items = [dict(r) for r in rows]
+    langs = [r[0] for r in db.execute("SELECT DISTINCT lang FROM root_translations ORDER BY lang").fetchall()]
+
+    return {
+        'items': items,
+        'total': total,
+        'page': page,
+        'limit': limit,
+        'pages': (total + limit - 1) // limit,
+        'languages': langs,
+    }
+
+
+# ===================================================================
+#  TEKIL CRUD (Editor icin)
+# ===================================================================
+
+def update_verse(verse_id, meal=None, dipnot=None, user='system', conn=None):
+    """Tek bir ayetin meal/dipnot alanlarini gunceller."""
+    db = conn or get_db()
+    existing = db.execute("SELECT * FROM verses WHERE id=?", (verse_id,)).fetchone()
+    if not existing:
+        return False
+
+    fields = []
+    values = []
+    if meal is not None:
+        fields.append("meal=?")
+        values.append(meal)
+        db.execute(
+            "INSERT INTO change_log(table_name, record_id, action, field_name, old_value, new_value, changed_by) "
+            "VALUES ('verses', ?, 'UPDATE', 'meal', ?, ?, ?)",
+            (verse_id, existing['meal'] or '', meal, user)
+        )
+    if dipnot is not None:
+        fields.append("dipnot=?")
+        values.append(dipnot)
+        db.execute(
+            "INSERT INTO change_log(table_name, record_id, action, field_name, old_value, new_value, changed_by) "
+            "VALUES ('verses', ?, 'UPDATE', 'dipnot', ?, ?, ?)",
+            (verse_id, existing['dipnot'] or '', dipnot, user)
+        )
+
+    if not fields:
+        return False
+
+    values.append(verse_id)
+    db.execute(f"UPDATE verses SET {','.join(fields)} WHERE id=?", values)
+    db.commit()
+    return True
+
+
+def update_verse_roots(verse_id, roots, user='system', conn=None):
+    """Bir ayetin koklerini gunceller (butunluk kontrollu)."""
+    db = conn or get_db()
+    existing = db.execute("SELECT 1 FROM verses WHERE id=?", (verse_id,)).fetchone()
+    if not existing:
+        raise ValueError(f"Ayet '{verse_id}' bulunamadi.")
+
+    # Tum koklerin sozlukte var olduğunu dogrula
+    for root in roots:
+        if not root:
+            continue
+        r = db.execute("SELECT 1 FROM roots WHERE root=?", (root,)).fetchone()
+        if not r:
+            raise ValueError(f"Kok '{root}' sozlukte bulunamadi. Once sozluge ekleyin.")
+
+    old_roots = [r['root'] for r in db.execute(
+        "SELECT root FROM verse_roots WHERE verse_id=? ORDER BY position",
+        (verse_id,)
+    ).fetchall()]
+
+    db.execute("DELETE FROM verse_roots WHERE verse_id=?", (verse_id,))
+    for idx, root in enumerate(roots):
+        if not root:
+            continue
+        db.execute(
+            "INSERT INTO verse_roots (verse_id, root, position) VALUES (?, ?, ?)",
+            (verse_id, root, idx)
+        )
+
+    db.execute(
+        "INSERT INTO change_log(table_name, record_id, action, field_name, old_value, new_value, changed_by) "
+        "VALUES ('verse_roots', ?, 'UPDATE', 'roots', ?, ?, ?)",
+        (verse_id, ','.join(old_roots), ','.join(roots), user)
+    )
+    db.commit()
+    return True
+
+
+def add_root(root_key, meaning_tr='', meaning_ar='', pronunciation='',
+             user='system', conn=None):
+    """Yeni kok ekler."""
+    db = conn or get_db()
+    existing = db.execute("SELECT 1 FROM roots WHERE root=?", (root_key,)).fetchone()
+    if existing:
+        raise ValueError(f"Kok '{root_key}' zaten mevcut.")
+
+    db.execute(
+        "INSERT INTO roots (root, meaning_tr, meaning_ar, pronunciation) VALUES (?, ?, ?, ?)",
+        (root_key, meaning_tr, meaning_ar, pronunciation)
+    )
+    db.execute(
+        "INSERT INTO change_log(table_name, record_id, action, field_name, new_value, changed_by) "
+        "VALUES ('roots', ?, 'INSERT', 'root', ?, ?)",
+        (root_key, root_key, user)
+    )
+    db.commit()
+    return True
+
+
+def delete_root(root_key, user='system', conn=None):
+    """Kok siler. FK kontrolu yapar."""
+    db = conn or get_db()
+    existing = db.execute("SELECT 1 FROM roots WHERE root=?", (root_key,)).fetchone()
+    if not existing:
+        raise ValueError(f"Kok '{root_key}' bulunamadi.")
+
+    # FK kontrolu: bu kok herhangi bir ayette kullaniliyor mu?
+    usage = db.execute(
+        "SELECT COUNT(*) FROM verse_roots WHERE root=?", (root_key,)
+    ).fetchone()[0]
+    if usage > 0:
+        raise ValueError(f"Kok '{root_key}' {usage} ayette kullaniliyor. Once ayet koklerinden kaldirin.")
+
+    db.execute("DELETE FROM derived_words WHERE root=?", (root_key,))
+    db.execute("DELETE FROM root_translations WHERE root=?", (root_key,))
+    db.execute("DELETE FROM roots WHERE root=?", (root_key,))
+    db.execute(
+        "INSERT INTO change_log(table_name, record_id, action, field_name, old_value, changed_by) "
+        "VALUES ('roots', ?, 'DELETE', 'root', ?, ?)",
+        (root_key, root_key, user)
+    )
+    db.commit()
+    return True
+
+
+def get_root_detail(root_key, conn=None):
+    """Tek bir kokun tam detayini dondurur (editor icin)."""
+    db = conn or get_db()
+    row = db.execute("SELECT * FROM roots WHERE root=?", (root_key,)).fetchone()
+    if not row:
+        return None
+    result = {
+        'root': row['root'],
+        'meaning_tr': row['meaning_tr'],
+        'meaning_ar': row['meaning_ar'] or '',
+        'pronunciation': row['pronunciation'] or '',
+    }
+    result['derived'] = [
+        {'id': d['id'], 'word': d['word'], 'meaning_tr': d['meaning_tr']}
+        for d in db.execute("SELECT * FROM derived_words WHERE root=?", (root_key,)).fetchall()
+    ]
+    result['verses'] = [
+        r['verse_id'] for r in
+        db.execute("SELECT verse_id FROM verse_roots WHERE root=? ORDER BY verse_id", (root_key,)).fetchall()
+    ]
+    # Ceviriler
+    result['translations'] = {}
+    for t_row in db.execute("SELECT lang, meaning FROM root_translations WHERE root=?", (root_key,)).fetchall():
+        result['translations'][t_row['lang']] = t_row['meaning']
+    return result

@@ -1,19 +1,36 @@
 var fetchDataAutomatically = async () => {
     try {
-        var [dataRes, rootsRes] = await Promise.all([
-            fetch('quran_data.json'),
-            fetch('quran_roots.json').catch(() => null)
-        ]);
-        if (dataRes.ok) {
-            var data = await dataRes.json();
-            originalData = data;
-            processData(data);
-        }
-        if (rootsRes && rootsRes.ok) {
-            rootDictionary = await rootsRes.json();
+        // Desktop modda SQLite API'den yukle, web modda JSON fallback
+        if (typeof isDesktopMode !== 'undefined' && isDesktopMode) {
+            var [dataRes, rootsRes] = await Promise.all([
+                fetch('/api/db/data').catch(() => null),
+                fetch('/api/db/roots-dict').catch(() => null)
+            ]);
+            if (dataRes && dataRes.ok) {
+                var data = await dataRes.json();
+                originalData = data;
+                processData(data);
+            }
+            if (rootsRes && rootsRes.ok) {
+                rootDictionary = await rootsRes.json();
+            }
+        } else {
+            // Web modu: statik JSON dosyalarindan yukle
+            var [dataRes, rootsRes] = await Promise.all([
+                fetch('quran_data.json'),
+                fetch('quran_roots.json').catch(() => null)
+            ]);
+            if (dataRes.ok) {
+                var data = await dataRes.json();
+                originalData = data;
+                processData(data);
+            }
+            if (rootsRes && rootsRes.ok) {
+                rootDictionary = await rootsRes.json();
+            }
         }
     } catch (e) {
-        console.log("JSON bulunamadı, manuel yükleme bekleniyor.");
+        console.log("Veri yuklenemedi, manuel yukleme bekleniyor.");
     } finally {
         hideLoadingScreen();
     }

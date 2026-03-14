@@ -1,4 +1,8 @@
-// --- Veri Seti Yöneticisi ---
+// --- datasets.js — Veritabani Editor & Yardimci Fonksiyonlar ---
+
+// =====================================================
+//  DIPNOT
+// =====================================================
 window.toggleDipnot = () => {
     var div = document.getElementById('hud-dipnot');
     div.classList.toggle('hidden');
@@ -7,7 +11,6 @@ window.showDipnotPopup = (btn, nodeId) => {
     var item = btn.closest('.ayah-list-item');
     var existing = item.querySelector('.dipnot-inline');
     if (existing) { existing.remove(); return; }
-    // Diğer açık dipnotları kapat
     document.querySelectorAll('.dipnot-inline').forEach(el => el.remove());
     var node = nodes.find(n => n.id === nodeId);
     var text = node?.dipnot || t('hud.noDipnot');
@@ -17,323 +20,418 @@ window.showDipnotPopup = (btn, nodeId) => {
     div.textContent = text;
     item.appendChild(div);
 };
-window.openDatasets = async () => {
-    document.getElementById('dataset-overlay').style.display = 'flex';
-    await renderDatasetList();
-};
-window.closeDatasets = () => { document.getElementById('dataset-overlay').style.display = 'none'; };
-var renderDatasetList = async () => {
-    var list = document.getElementById('dataset-list');
-    var datasets = await DatasetStore.getAll();
-    var isViewer = authRole === 'viewer';
-    var html = `<div class="ds-item ${activeDatasetName === 'quran_data.json' ? 'active' : ''}" onclick="switchDataset('__original__')">
-        <span style="font-size:20px">📄</span>
-        <div class="flex-1">
-            <div class="text-sm font-bold text-white">quran_data.json</div>
-            <div class="text-[10px] text-slate-500">Orijinal veri seti</div>
-        </div>
-        ${activeDatasetName === 'quran_data.json' ? '<span class="text-[10px] text-cyan-400 font-bold uppercase tracking-widest">● Aktif</span>' : ''}
-        <button onclick="event.stopPropagation();downloadJSON(originalData,'quran_data.json')" class="key-btn" title="İndir" style="color:#38bdf8;border-color:rgba(56,189,248,0.3);">⬇</button>
-    </div>`;
-    datasets.forEach(d => {
-        var esc = d.name.replace(/'/g, "\\'");
-        var nc = d.nodeCount || d.data?.nodes?.length || 0;
-        var who = d.modifiedBy ? ` · ✏️ ${d.modifiedBy}` : '';
-        var sizeStr = d.sizeKB ? ` · ${d.sizeKB >= 1024 ? (d.sizeKB / 1024).toFixed(1) + ' MB' : d.sizeKB + ' KB'}` : '';
-        html += `<div class="ds-item ${activeDatasetName === d.name ? 'active' : ''}" onclick="switchDataset('${esc}')">
-            <span style="font-size:20px">📁</span>
-            <div class="flex-1">
-                <div class="text-sm font-bold text-white">${d.name}</div>
-                <div class="text-[10px] text-slate-500">${d.date || ''} · ${nc} ayet${sizeStr}${who}</div>
-            </div>
-            <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
-                ${activeDatasetName === d.name ? '<span class="text-[10px] text-cyan-400 font-bold uppercase tracking-widest">● Aktif</span>' : ''}
-                <button onclick="event.stopPropagation();downloadDataset('${esc}')" class="key-btn" title="İndir" style="color:#38bdf8;border-color:rgba(56,189,248,0.3);font-size:11px;padding:4px 7px;">⬇</button>
-                ${!isViewer ? `<button onclick="event.stopPropagation();renameDataset('${esc}')" class="key-btn" title="Yeniden Adlandır" style="color:#a78bfa;border-color:rgba(167,139,250,0.3);font-size:11px;padding:4px 7px;">✏️</button>` : ''}
-                ${!isViewer ? `<button onclick="event.stopPropagation();duplicateDataset('${esc}')" class="key-btn" title="Çoğalt" style="color:#34d399;border-color:rgba(52,211,153,0.3);font-size:11px;padding:4px 7px;">📋</button>` : ''}
-                ${!isViewer ? `<button onclick="event.stopPropagation();deleteDataset('${esc}')" class="key-btn" title="Sil" style="font-size:11px;padding:4px 7px;">🗑</button>` : ''}
-            </div>
-        </div>`;
-    });
-    if (datasets.length === 0) html += '<p class="text-xs text-slate-600 italic text-center py-4 mt-2">Henüz harici veri seti yüklenmedi.<br>Üst menüden "VERİ OKU" ile JSON yükleyin.</p>';
-    list.innerHTML = html;
-};
-window.switchDataset = async (name) => {
-    if (name === '__original__') {
-        resetToOriginal();
-    } else {
-        var ds = await DatasetStore.get(name);
-        if (ds) { activeDatasetName = name; processData(ds.data); hasCustomData = true; }
-    }
-    await renderDatasetList();
-};
-window.deleteDataset = async (name) => {
-    if (!confirm('"' + name + '" ' + t('common.close') + '?')) return;
-    await DatasetStore.remove(name);
-    if (activeDatasetName === name) resetToOriginal();
-    await renderDatasetList();
-};
-window.renameDataset = async (oldName) => {
-    var newName = prompt('Yeni dosya adı:', oldName.replace('.json', ''));
-    if (!newName || newName.trim() === '' || newName.trim() + '.json' === oldName) return;
-    var finalName = newName.trim().endsWith('.json') ? newName.trim() : newName.trim() + '.json';
-    if (isDesktopMode) {
-        var r = await authFetch('/api/dataset-rename', {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ oldName, newName: finalName })
-        });
-        var data = await r.json();
-        if (!r.ok) { alert(data.error || 'Hata'); return; }
-        if (activeDatasetName === oldName) activeDatasetName = finalName;
-    } else {
-        var ds = await DatasetStore.get(oldName);
-        if (ds) {
-            await DatasetStore.save(finalName, ds.data);
-            await DatasetStore.remove(oldName);
-            if (activeDatasetName === oldName) activeDatasetName = finalName;
-        }
-    }
-    await renderDatasetList();
-};
-window.duplicateDataset = async (sourceName) => {
-    var base = sourceName.replace('.json', '');
-    var newName = prompt('Kopya dosya adı:', base + '_kopya');
-    if (!newName || newName.trim() === '') return;
-    var finalName = newName.trim().endsWith('.json') ? newName.trim() : newName.trim() + '.json';
-    if (isDesktopMode) {
-        var r = await authFetch('/api/dataset-duplicate', {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ sourceName, newName: finalName })
-        });
-        var data = await r.json();
-        if (!r.ok) { alert(data.error || 'Hata'); return; }
-    } else {
-        var ds = await DatasetStore.get(sourceName);
-        if (ds) await DatasetStore.save(finalName, ds.data);
-    }
-    await renderDatasetList();
-};
 
-// --- JSON Editör ---
-var editorActiveTab = 'data';
-var editorDataContent = '';
-var editorRootsContent = '';
-var editorLocaleContents = {}; // { 'EN-en': '...json string...', ... }
+// =====================================================
+//  DB GRID EDITOR — State
+// =====================================================
+var _dbTab = 'verses';
+var _dbPage = 1;
+var _dbLimit = 50;
+var _dbSearch = '';
+var _dbData = null;
+var _dbTimer = null;
+var _dbTransLang = null;
+var _kbTarget = null;
 
+// =====================================================
+//  DB GRID EDITOR — Open / Close / Tabs
+// =====================================================
 window.openEditor = async () => {
-    var data;
-    if (activeDatasetName === 'quran_data.json') {
-        data = originalData;
-    } else {
-        var ds = await DatasetStore.get(activeDatasetName);
-        data = ds ? ds.data : originalData;
+    if (typeof isDesktopMode !== 'undefined' && !isDesktopMode) {
+        alert(t('editor.desktopOnly'));
+        return;
     }
-    if (!data) return;
-    editorActiveTab = 'data';
-    editorDataContent = JSON.stringify(data, null, 2);
-    editorRootsContent = JSON.stringify(rootDictionary || {}, null, 2);
-    // Locale dosyalarını yükle
-    editorLocaleContents = {};
-    var tabsContainer = document.getElementById('editor-tabs');
-    var localeTabsHtml = '';
-    if (typeof I18n !== 'undefined' && I18n.getAvailable) {
-        var langs = I18n.getAvailable();
-        for (var i = 0; i < langs.length; i++) {
-            var lang = langs[i];
-            if (lang.code === 'TR-tr') continue;
-            if (lang.code.toLowerCase().indexOf('roots') !== -1) continue;
-            try {
-                var resp = await fetch('locales/' + lang.code + '.json');
-                if (resp.ok) {
-                    var txt = await resp.text();
-                    editorLocaleContents[lang.code] = txt;
-                    localeTabsHtml += '<button class="editor-tab" id="editor-tab-locale-' + lang.code + '" onclick="editorSwitchTab(\'locale-' + lang.code + '\')"><span class="tab-dot"></span>' + lang.flag + ' ' + lang.code + '.json</button>';
-                }
-            } catch(e) {}
-        }
-    }
-    tabsContainer.innerHTML = '<button class="editor-tab active" id="editor-tab-data" onclick="editorSwitchTab(\'data\')"><span class="tab-dot"></span>' + activeDatasetName + '</button>' +
-        '<button class="editor-tab" id="editor-tab-roots" onclick="editorSwitchTab(\'roots\')"><span class="tab-dot"></span>quran_roots.json</button>' +
-        localeTabsHtml;
-    var ta = document.getElementById('editor-textarea');
-    ta.value = editorDataContent;
-    document.getElementById('editor-title').textContent = '📝 ' + activeDatasetName;
     document.getElementById('json-editor').style.display = 'flex';
-    editorUpdateTabUI();
-    updateEditorLines();
-    editorValidate();
-    ta.oninput = () => { updateEditorLines(); editorValidate(); };
-    ta.onscroll = () => { document.getElementById('editor-lines').scrollTop = ta.scrollTop; };
+    document.getElementById('editor-title').textContent = '\uD83D\uDDC4 ' + t('editor.dbTitle');
+    _dbTab = 'verses';
+    _dbPage = 1;
+    _dbSearch = '';
+    _dbTransLang = null;
+    _dbRenderTabs();
+    await _dbLoad();
+};
+window.openDatasets = () => { openEditor(); };
+window.closeEditor = () => {
+    document.getElementById('json-editor').style.display = 'none';
 };
 
-window.editorSwitchTab = (tab) => {
-    if (tab === editorActiveTab) return;
-    var ta = document.getElementById('editor-textarea');
-    if (editorActiveTab === 'data') editorDataContent = ta.value;
-    else if (editorActiveTab === 'roots') editorRootsContent = ta.value;
-    else if (editorActiveTab.startsWith('locale-')) editorLocaleContents[editorActiveTab.replace('locale-', '')] = ta.value;
-    editorActiveTab = tab;
-    if (tab === 'data') ta.value = editorDataContent;
-    else if (tab === 'roots') ta.value = editorRootsContent;
-    else if (tab.startsWith('locale-')) ta.value = editorLocaleContents[tab.replace('locale-', '')] || '{}';
-    var titleText = tab === 'data' ? activeDatasetName : tab === 'roots' ? 'quran_roots.json' : tab.replace('locale-', '') + '.json';
-    document.getElementById('editor-title').textContent = '📝 ' + titleText;
-    document.querySelectorAll('#editor-tabs .editor-tab').forEach(function(btn) { btn.classList.remove('active'); });
-    var activeBtn = tab === 'data' ? document.getElementById('editor-tab-data') :
-                    tab === 'roots' ? document.getElementById('editor-tab-roots') :
-                    document.getElementById('editor-tab-locale-' + tab.replace('locale-', ''));
-    if (activeBtn) activeBtn.classList.add('active');
-    editorUpdateTabUI();
-    updateEditorLines();
-    editorValidate();
-    ta.scrollTop = 0;
-    document.getElementById('editor-lines').scrollTop = 0;
+window.dbSwitchTab = async (tab) => {
+    if (tab === _dbTab) return;
+    _dbTab = tab;
+    _dbPage = 1;
+    _dbSearch = '';
+    _dbTransLang = null;
+    _dbRenderTabs();
+    await _dbLoad();
 };
 
-var editorUpdateTabUI = () => {
-    var saveBtn = document.querySelector('.editor-btn.save');
-    if (!saveBtn) return;
-    var isViewer = (typeof authRole !== 'undefined' && authRole === 'viewer');
-    var isAdmin = (typeof authRole !== 'undefined' && authRole === 'admin');
-    var isProtectedTab = (editorActiveTab === 'roots') || (editorActiveTab === 'data' && activeDatasetName === 'quran_data.json');
-    if (isViewer || (isProtectedTab && !isAdmin)) {
-        saveBtn.disabled = true;
-        saveBtn.style.opacity = '0.4';
-        saveBtn.title = isViewer ? 'Viewer rolunde duzenleme yapilamaz' : 'Bu dosya korumali, sadece admin duzenleyebilir';
-    } else {
-        saveBtn.disabled = false;
-        saveBtn.style.opacity = '1';
-        saveBtn.title = '';
-    }
+var _dbRenderTabs = () => {
+    var tabs = document.getElementById('editor-tabs');
+    var items = [
+        { id: 'verses', label: t('editor.tabVerses'), icon: '\uD83D\uDCDC' },
+        { id: 'roots', label: t('editor.tabRoots'), icon: '\uD83C\uDF31' },
+        { id: 'translations', label: t('editor.tabTranslations'), icon: '\uD83C\uDF10' },
+    ];
+    tabs.innerHTML = items.map(function(i) {
+        return '<button class="editor-tab ' + (_dbTab === i.id ? 'active' : '') +
+            '" onclick="dbSwitchTab(\'' + i.id + '\')">' +
+            '<span class="tab-dot"></span>' + i.icon + ' ' + i.label + '</button>';
+    }).join('');
 };
-window.closeEditor = () => { document.getElementById('json-editor').style.display = 'none'; };
-var updateEditorLines = () => {
-    var ta = document.getElementById('editor-textarea');
-    var count = ta.value.split('\n').length;
-    var div = document.getElementById('editor-lines');
-    var h = '';
-    for (var i = 1; i <= count; i++) h += '<div style="padding:0 8px;">' + i + '</div>';
-    div.innerHTML = h;
-    div.scrollTop = ta.scrollTop;
-};
-window.editorValidate = () => {
-    var ta = document.getElementById('editor-textarea');
-    var bar = document.getElementById('editor-status');
-    var msg = document.getElementById('editor-msg');
-    var info = document.getElementById('editor-info');
+
+// =====================================================
+//  DB GRID EDITOR — Data Loading
+// =====================================================
+var _dbLoad = async () => {
+    var main = document.getElementById('editor-main');
+    if (!main) return;
+    main.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#64748b;font-size:14px;">' + t('editor.loading') + '...</div>';
     try {
-        var data = JSON.parse(ta.value);
-        if (editorActiveTab === 'data') {
-            var nc = data.nodes ? data.nodes.length : 0;
-            bar.className = 'editor-status valid';
-            msg.textContent = t('editor.validJson');
-            info.textContent = nc + ' ' + t('hud.verse').toLowerCase() + ' · ' + ta.value.length.toLocaleString() + ' ' + t('editor.chars');
-        } else if (editorActiveTab === 'roots') {
-            var rc = typeof data === 'object' ? Object.keys(data).length : 0;
-            bar.className = 'editor-status valid';
-            msg.textContent = t('editor.validJson');
-            info.textContent = rc + ' ' + t('analyzer.root').toLowerCase() + ' · ' + ta.value.length.toLocaleString() + ' ' + t('editor.chars');
-        } else {
-            var kc = typeof data === 'object' ? Object.keys(data).length : 0;
-            bar.className = 'editor-status valid';
-            msg.textContent = t('editor.validJson');
-            info.textContent = kc + ' key · ' + ta.value.length.toLocaleString() + ' ' + t('editor.chars');
-        }
-        return true;
+        var url;
+        if (_dbTab === 'verses') url = '/api/db/verses';
+        else if (_dbTab === 'roots') url = '/api/db/roots-list';
+        else url = '/api/db/translations';
+        var params = ['page=' + _dbPage, 'limit=' + _dbLimit];
+        if (_dbSearch) params.push('search=' + encodeURIComponent(_dbSearch));
+        if (_dbTab === 'translations' && _dbTransLang) params.push('lang=' + encodeURIComponent(_dbTransLang));
+        url += '?' + params.join('&');
+        var res = await authFetch(url);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        _dbData = await res.json();
+        _dbRenderMain();
     } catch(e) {
-        bar.className = 'editor-status invalid';
-        var m = e.message.match(/position (\d+)/);
-        if (m) {
-            var line = ta.value.substring(0, parseInt(m[1])).split('\n').length;
-            msg.textContent = t('editor.errorLine').replace('{line}', line) + ': ' + e.message;
-        } else {
-            msg.textContent = '✗ ' + e.message;
-        }
-        info.textContent = '';
-        return false;
+        main.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#ef4444;">' + t('editor.loadError') + ': ' + e.message + '</div>';
     }
-};
-window.editorFormat = () => {
-    var ta = document.getElementById('editor-textarea');
-    try {
-        ta.value = JSON.stringify(JSON.parse(ta.value), null, 2);
-        updateEditorLines();
-        editorValidate();
-    } catch(e) { editorValidate(); }
-};
-window.editorSave = async () => {
-    if (!editorValidate()) return;
-    var ta = document.getElementById('editor-textarea');
-    var data = JSON.parse(ta.value);
-    if (editorActiveTab === 'roots') {
-        if (isDesktopMode) {
-            try {
-                var r = await authFetch('/api/roots', {
-                    method: 'POST', headers: { 'Content-Type': 'application/json' },
-                    body: ta.value
-                });
-                if (!r.ok) { var err = await r.json(); alert(err.error || 'Hata'); return; }
-            } catch(e) { alert('Kaydetme hatasi: ' + e.message); return; }
-        }
-        rootDictionary = data;
-        var btn = document.querySelector('.editor-btn.save');
-        btn.textContent = '\u2713 K\u00f6kler G\u00fcncellendi';
-        setTimeout(() => { btn.textContent = '\uD83D\uDCBE Kaydet'; }, 1500);
-        return;
-    }
-    if (editorActiveTab.startsWith('locale-')) {
-        var localeCode = editorActiveTab.replace('locale-', '');
-        var localeFile = localeCode + '.json';
-        editorLocaleContents[localeCode] = ta.value;
-        if (isDesktopMode) {
-            try {
-                var r = await authFetch('/api/locale/' + encodeURIComponent(localeFile), {
-                    method: 'POST', headers: { 'Content-Type': 'application/json' },
-                    body: ta.value
-                });
-                if (!r.ok) { var err = await r.json(); alert(err.error || 'Hata'); return; }
-            } catch(e) { alert('Kaydetme hatasi: ' + e.message); return; }
-        }
-        if (typeof I18n !== 'undefined' && I18n.updateTranslation) {
-            I18n.updateTranslation(localeCode, data);
-        }
-        var btn = document.querySelector('.editor-btn.save');
-        btn.textContent = '✓ ' + localeFile + ' Güncellendi';
-        setTimeout(() => { btn.textContent = '💾 Kaydet'; }, 1500);
-        return;
-    }
-    var saveName = activeDatasetName;
-    if (activeDatasetName === 'quran_data.json') {
-        saveName = 'quran_data_düzenlenmiş.json';
-        activeDatasetName = saveName;
-        document.getElementById('editor-title').textContent = '📝 ' + saveName;
-        var dataTab = document.getElementById('editor-tab-data');
-        if (dataTab) dataTab.innerHTML = '<span class="tab-dot"></span>' + saveName;
-    }
-    await DatasetStore.save(saveName, data);
-    processData(data);
-    hasCustomData = true;
-    var btn = document.querySelector('.editor-btn.save');
-    btn.textContent = '✓ Kaydedildi';
-    setTimeout(() => { btn.textContent = '💾 Kaydet'; }, 1500);
-};
-window.editorAddDipnot = () => {
-    var ta = document.getElementById('editor-textarea');
-    try {
-        var data = JSON.parse(ta.value);
-        if (!data.nodes) return;
-        var count = 0;
-        data.nodes.forEach(n => { if (!n.hasOwnProperty('dipnot')) { n.dipnot = ''; count++; } });
-        ta.value = JSON.stringify(data, null, 2);
-        updateEditorLines();
-        editorValidate();
-        var btn = document.querySelector('[onclick="editorAddDipnot()"]');
-        btn.textContent = '✓ ' + count + ' ayete eklendi';
-        setTimeout(() => { btn.textContent = '📌 Dipnot Ekle'; }, 2000);
-    } catch(e) { editorValidate(); }
 };
 
-// --- Dışa Aktarma ---
+// =====================================================
+//  DB GRID EDITOR — Column Definitions
+// =====================================================
+var _dbGetCols = () => {
+    var defs = {
+        verses: [
+            { key: 'id', label: t('editor.colId'), w: '70px' },
+            { key: 'surah', label: t('editor.colSurah'), w: '90px' },
+            { key: 'ayet', label: t('editor.colText'), w: '28%', rtl: true },
+            { key: 'meal', label: t('editor.colMeal'), w: '28%', edit: 'editor' },
+            { key: 'roots', label: t('editor.colRoots'), w: '14%', rtl: true, edit: 'admin', type: 'roots' },
+            { key: 'dipnot', label: t('editor.colDipnot'), w: '10%', edit: 'editor' },
+        ],
+        roots: [
+            { key: 'root', label: t('editor.colRoot'), w: '80px', rtl: true },
+            { key: 'meaning_tr', label: t('editor.colMeaningTr'), w: '24%', edit: 'admin' },
+            { key: 'meaning_ar', label: t('editor.colMeaningAr'), w: '18%', rtl: true, edit: 'admin' },
+            { key: 'pronunciation', label: t('editor.colPronunciation'), w: '14%', edit: 'admin' },
+            { key: 'verse_count', label: t('editor.colVerseCount'), w: '70px' },
+            { key: 'derived_count', label: t('editor.colDerived'), w: '80px' },
+        ],
+        translations: [
+            { key: 'root', label: t('editor.colRoot'), w: '80px', rtl: true },
+            { key: 'lang', label: t('editor.colLang'), w: '60px' },
+            { key: 'meaning', label: t('editor.colMeaning'), w: '70%' },
+        ]
+    };
+    return defs[_dbTab] || [];
+};
+
+// =====================================================
+//  DB GRID EDITOR — Main Render
+// =====================================================
+var _escHtml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+var _escAttr = (s) => String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+
+var _dbRenderMain = () => {
+    var main = document.getElementById('editor-main');
+    if (!_dbData) return;
+    var isAdmin = (typeof authRole !== 'undefined' && authRole === 'admin');
+    var isViewer = (typeof authRole !== 'undefined' && authRole === 'viewer');
+    var canEdit = !isViewer;
+    var h = '';
+
+    // --- Toolbar ---
+    h += '<div class="db-toolbar">';
+    h += '<div class="db-toolbar-left">';
+    h += '<input type="text" id="db-search" class="db-search-input" placeholder="' + t('editor.searchPlaceholder') + '" value="' + _escHtml(_dbSearch) + '" oninput="dbSearchInput(this.value)" onfocus="_kbTarget=this">';
+    if (_dbTab === 'translations' && _dbData.languages) {
+        h += '<select class="db-lang-select" onchange="dbFilterLang(this.value)">';
+        h += '<option value="">' + t('editor.allLanguages') + '</option>';
+        _dbData.languages.forEach(function(l) {
+            h += '<option value="' + l + '"' + (_dbTransLang === l ? ' selected' : '') + '>' + l.toUpperCase() + '</option>';
+        });
+        h += '</select>';
+    }
+    h += '</div><div class="db-toolbar-right">';
+    if (_dbTab === 'roots' && isAdmin) {
+        h += '<button class="db-btn db-btn-add" onclick="dbAddRoot()">+ ' + t('editor.addRoot') + '</button>';
+    }
+    if (isAdmin) {
+        h += '<button class="db-btn db-btn-export" onclick="dbExportAll()">\u2B07 ' + t('editor.exportJson') + '</button>';
+    }
+    h += '<div class="db-pagination">';
+    h += '<button class="db-page-btn" onclick="dbPrevPage()"' + (_dbPage <= 1 ? ' disabled' : '') + '>\u25C0</button>';
+    h += '<span class="db-page-info">' + _dbPage + ' / ' + (_dbData.pages || 1) + '</span>';
+    h += '<button class="db-page-btn" onclick="dbNextPage()"' + (_dbPage >= (_dbData.pages || 1) ? ' disabled' : '') + '>\u25B6</button>';
+    h += '</div></div></div>';
+
+    // --- Table ---
+    var cols = _dbGetCols();
+    var extraCol = (_dbTab === 'roots' && isAdmin) ? 1 : 0;
+    h += '<div class="db-grid-scroll"><table class="db-grid"><thead><tr>';
+    cols.forEach(function(c) {
+        h += '<th style="width:' + c.w + (c.rtl ? ';direction:rtl;text-align:right' : '') + '">' + c.label + '</th>';
+    });
+    if (extraCol) h += '<th style="width:50px">' + t('editor.colActions') + '</th>';
+    h += '</tr></thead><tbody>';
+
+    if (!_dbData.items || _dbData.items.length === 0) {
+        h += '<tr><td colspan="' + (cols.length + extraCol) + '" style="text-align:center;padding:30px;color:#64748b">' + t('editor.noResults') + '</td></tr>';
+    } else {
+        _dbData.items.forEach(function(row) {
+            h += '<tr>';
+            cols.forEach(function(c) {
+                var val = c.type === 'roots' ? (row[c.key] || []).join(', ') : (row[c.key] != null ? row[c.key] : '');
+                var editable = c.edit && ((c.edit === 'admin' && isAdmin) || (c.edit === 'editor' && canEdit));
+                var cellCls = 'db-cell' + (c.rtl ? ' rtl' : '') + (editable ? ' editable' : '');
+                var rowId = _dbTab === 'verses' ? row.id : (_dbTab === 'roots' ? row.root : (row.root + ':' + row.lang));
+                if (editable) {
+                    h += '<td class="' + cellCls + '" ondblclick="dbStartEdit(this,\'' + _escAttr(rowId) + '\',\'' + c.key + '\',\'' + (c.type || '') + '\')" title="' + t('editor.dblClickEdit') + '">';
+                } else {
+                    h += '<td class="' + cellCls + '">';
+                }
+                if (c.type === 'roots') {
+                    (row[c.key] || []).forEach(function(r) {
+                        h += '<span class="db-root-tag">' + _escHtml(r) + '</span>';
+                    });
+                } else {
+                    h += '<span class="db-cell-text">' + _escHtml(val) + '</span>';
+                }
+                h += '</td>';
+            });
+            if (extraCol) {
+                h += '<td class="db-cell db-actions"><button class="db-act-btn" onclick="dbDeleteRoot(\'' + _escAttr(row.root) + '\')" title="' + t('editor.deleteRoot') + '">\uD83D\uDDD1</button></td>';
+            }
+            h += '</tr>';
+        });
+    }
+    h += '</tbody></table></div>';
+
+    // --- Status ---
+    h += '<div class="db-status">';
+    h += '<span>\u2713 ' + (_dbData.total || 0) + ' ' + t('editor.records') + '</span>';
+    h += '<span>' + t('editor.page') + ' ' + _dbPage + '/' + (_dbData.pages || 1) + ' \u00B7 ' + (_dbData.items ? _dbData.items.length : 0) + ' ' + t('editor.showing') + '</span>';
+    h += '</div>';
+
+    main.innerHTML = h;
+};
+
+// =====================================================
+//  PAGINATION
+// =====================================================
+window.dbNextPage = async () => {
+    if (_dbData && _dbPage < _dbData.pages) { _dbPage++; await _dbLoad(); }
+};
+window.dbPrevPage = async () => {
+    if (_dbPage > 1) { _dbPage--; await _dbLoad(); }
+};
+
+// =====================================================
+//  SEARCH
+// =====================================================
+window.dbSearchInput = (val) => {
+    if (_dbTimer) clearTimeout(_dbTimer);
+    _dbTimer = setTimeout(function() {
+        _dbSearch = val.trim();
+        _dbPage = 1;
+        _dbLoad();
+    }, 400);
+};
+window.dbFilterLang = async (lang) => {
+    _dbTransLang = lang || null;
+    _dbPage = 1;
+    await _dbLoad();
+};
+
+// =====================================================
+//  INLINE EDITING
+// =====================================================
+window.dbStartEdit = (td, rowId, field, type) => {
+    if (td.querySelector('input, textarea')) return;
+    var currentVal;
+    if (type === 'roots') {
+        currentVal = Array.from(td.querySelectorAll('.db-root-tag')).map(function(t) { return t.textContent; }).join(', ');
+    } else {
+        var span = td.querySelector('.db-cell-text');
+        currentVal = span ? span.textContent : '';
+    }
+    td.dataset.originalVal = currentVal;
+    td.dataset.rowId = rowId;
+    td.dataset.field = field;
+    td.dataset.type = type || '';
+    var isLongText = (field === 'meal' || field === 'dipnot');
+    var input;
+    if (isLongText) {
+        input = document.createElement('textarea');
+        input.className = 'db-edit-input';
+        input.rows = 3;
+    } else {
+        input = document.createElement('input');
+        input.type = 'text';
+        input.className = 'db-edit-input';
+    }
+    input.value = currentVal;
+    if (td.classList.contains('rtl')) input.style.direction = 'rtl';
+    input.onkeydown = function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); dbSaveEdit(td); }
+        if (e.key === 'Escape') dbCancelEdit(td);
+    };
+    input.onblur = function() {
+        setTimeout(function() { if (td.querySelector('input, textarea')) dbSaveEdit(td); }, 200);
+    };
+    input.onfocus = function() { _kbTarget = input; };
+    td.innerHTML = '';
+    td.appendChild(input);
+    input.focus();
+    input.select();
+};
+
+window.dbSaveEdit = async (td) => {
+    var input = td.querySelector('input, textarea');
+    if (!input) return;
+    var newVal = input.value.trim();
+    var origVal = td.dataset.originalVal;
+    var rowId = td.dataset.rowId;
+    var field = td.dataset.field;
+    var type = td.dataset.type;
+    if (newVal === origVal) { dbCancelEdit(td); return; }
+    input.disabled = true;
+    input.style.opacity = '0.5';
+    try {
+        var url, body, method = 'PUT';
+        if (_dbTab === 'verses') {
+            if (type === 'roots') {
+                url = '/api/db/verse/' + encodeURIComponent(rowId) + '/roots';
+                var rootsList = newVal.split(/[,\u060C]\s*/).map(function(r) { return r.trim(); }).filter(function(r) { return r; });
+                body = { roots: rootsList };
+            } else {
+                url = '/api/db/verse/' + encodeURIComponent(rowId);
+                body = {};
+                body[field] = newVal;
+            }
+        } else if (_dbTab === 'roots') {
+            url = '/api/db/root/' + encodeURIComponent(rowId);
+            body = {};
+            body[field] = newVal;
+        }
+        var res = await authFetch(url, {
+            method: method,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body)
+        });
+        if (!res.ok) {
+            var err = await res.json();
+            throw new Error(err.error || 'HTTP ' + res.status);
+        }
+        td.innerHTML = '';
+        if (type === 'roots') {
+            var roots = newVal.split(/[,\u060C]\s*/).map(function(r) { return r.trim(); }).filter(function(r) { return r; });
+            roots.forEach(function(r) {
+                var tag = document.createElement('span');
+                tag.className = 'db-root-tag';
+                tag.textContent = r;
+                td.appendChild(tag);
+            });
+        } else {
+            var s = document.createElement('span');
+            s.className = 'db-cell-text';
+            s.textContent = newVal;
+            td.appendChild(s);
+        }
+        _dbShowStatus('\u2713 ' + t('editor.saved'), 'valid');
+    } catch(e) {
+        _dbShowStatus('\u2717 ' + e.message, 'invalid');
+        dbCancelEdit(td);
+    }
+};
+
+window.dbCancelEdit = (td) => {
+    var origVal = td.dataset.originalVal || '';
+    var type = td.dataset.type;
+    td.innerHTML = '';
+    if (type === 'roots') {
+        origVal.split(',').map(function(r) { return r.trim(); }).filter(function(r) { return r; }).forEach(function(r) {
+            var tag = document.createElement('span');
+            tag.className = 'db-root-tag';
+            tag.textContent = r;
+            td.appendChild(tag);
+        });
+    } else {
+        var s = document.createElement('span');
+        s.className = 'db-cell-text';
+        s.textContent = origVal;
+        td.appendChild(s);
+    }
+};
+
+// =====================================================
+//  CRUD
+// =====================================================
+window.dbAddRoot = async () => {
+    var rootKey = prompt(t('editor.enterRoot'));
+    if (!rootKey || !rootKey.trim()) return;
+    rootKey = rootKey.trim();
+    var meaning = prompt(t('editor.enterMeaning'));
+    try {
+        var res = await authFetch('/api/db/root', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ root: rootKey, meaning_tr: meaning || '' })
+        });
+        if (!res.ok) {
+            var err = await res.json();
+            alert(err.error || t('editor.saveError'));
+            return;
+        }
+        _dbShowStatus('\u2713 ' + t('editor.rootAdded'), 'valid');
+        await _dbLoad();
+    } catch(e) { alert(e.message); }
+};
+
+window.dbDeleteRoot = async (rootKey) => {
+    if (!confirm(t('editor.confirmDelete').replace('{root}', rootKey))) return;
+    try {
+        var res = await authFetch('/api/db/root/' + encodeURIComponent(rootKey), { method: 'DELETE' });
+        if (!res.ok) {
+            var err = await res.json();
+            alert(err.error || t('editor.deleteError'));
+            return;
+        }
+        _dbShowStatus('\u2713 ' + t('editor.rootDeleted'), 'valid');
+        await _dbLoad();
+    } catch(e) { alert(e.message); }
+};
+
+window.dbExportAll = async () => {
+    try {
+        var res = await authFetch('/api/db/export');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        _dbShowStatus('\u2713 ' + t('editor.exportDone'), 'valid');
+    } catch(e) {
+        _dbShowStatus('\u2717 ' + e.message, 'invalid');
+    }
+};
+
+var _dbShowStatus = (msg, cls) => {
+    var bar = document.getElementById('editor-status');
+    var msgEl = document.getElementById('editor-msg');
+    if (bar && msgEl) {
+        bar.className = 'editor-status ' + (cls || 'valid');
+        msgEl.textContent = msg;
+    }
+};
+
+// =====================================================
+//  DISA AKTARMA
+// =====================================================
 var downloadJSON = async (data, filename) => {
     var content = JSON.stringify(data, null, 2);
     if (isDesktopMode && window.pywebview && window.pywebview.api && window.pywebview.api.save_file) {
@@ -351,51 +449,43 @@ var downloadJSON = async (data, filename) => {
     document.body.removeChild(a);
     URL.revokeObjectURL(a.href);
 };
-window.editorExport = async () => {
-    var ta = document.getElementById('editor-textarea');
-    try {
-        var data = JSON.parse(ta.value);
-        var filename = editorActiveTab === 'data' ? activeDatasetName :
-                       editorActiveTab === 'roots' ? 'quran_roots.json' :
-                       editorActiveTab.replace('locale-', '') + '.json';
-        await downloadJSON(data, filename);
-    } catch(e) { editorValidate(); }
-};
-window.downloadDataset = async (name) => {
-    var ds = await DatasetStore.get(name);
-    if (ds) await downloadJSON(ds.data, name);
-};
 
-// --- Arapça Sanal Klavye ---
+// =====================================================
+//  ARAPCA SANAL KLAVYE
+// =====================================================
 window.toggleArabicKb = () => {
     var kb = document.getElementById('arabic-kb');
     kb.classList.toggle('show');
-    document.getElementById('kb-toggle').style.borderColor = kb.classList.contains('show') ? '#00f2ff' : '';
+    var toggle = document.getElementById('kb-toggle');
+    if (toggle) toggle.style.borderColor = kb.classList.contains('show') ? '#00f2ff' : '';
 };
 window.kbInsert = (ch) => {
-    var ta = document.getElementById('editor-textarea');
-    var s = ta.selectionStart, e = ta.selectionEnd;
-    ta.value = ta.value.substring(0, s) + ch + ta.value.substring(e);
-    ta.selectionStart = ta.selectionEnd = s + ch.length;
-    ta.focus();
-    updateEditorLines();
-    editorValidate();
+    var el = _kbTarget || document.getElementById('db-search');
+    if (!el) return;
+    var s = el.selectionStart, e = el.selectionEnd;
+    el.value = el.value.substring(0, s) + ch + el.value.substring(e);
+    el.selectionStart = el.selectionEnd = s + ch.length;
+    el.focus();
+    if (el.id === 'db-search') el.dispatchEvent(new Event('input'));
 };
 window.kbBackspace = () => {
-    var ta = document.getElementById('editor-textarea');
-    var s = ta.selectionStart, e = ta.selectionEnd;
+    var el = _kbTarget || document.getElementById('db-search');
+    if (!el) return;
+    var s = el.selectionStart, e = el.selectionEnd;
     if (s !== e) {
-        ta.value = ta.value.substring(0, s) + ta.value.substring(e);
-        ta.selectionStart = ta.selectionEnd = s;
+        el.value = el.value.substring(0, s) + el.value.substring(e);
+        el.selectionStart = el.selectionEnd = s;
     } else if (s > 0) {
-        ta.value = ta.value.substring(0, s - 1) + ta.value.substring(s);
-        ta.selectionStart = ta.selectionEnd = s - 1;
+        el.value = el.value.substring(0, s - 1) + el.value.substring(s);
+        el.selectionStart = el.selectionEnd = s - 1;
     }
-    ta.focus();
-    updateEditorLines();
-    editorValidate();
+    el.focus();
+    if (el.id === 'db-search') el.dispatchEvent(new Event('input'));
 };
 
+// =====================================================
+//  API KEY YONETIMI
+// =====================================================
 window.showApiKeyGuide = () => {
     document.getElementById('settings-overlay').style.display = 'flex';
     document.getElementById('api-key-guide').classList.remove('hidden');
@@ -405,21 +495,19 @@ var renderKeyList = () => {
     var list = document.getElementById('api-key-list');
     var keys = KeyManager.getKeys();
     if (keys.length === 0) {
-        list.innerHTML = '<p class="text-[11px] text-slate-700 italic text-center py-4">Henüz API anahtarı eklenmedi.</p>';
+        list.innerHTML = '<p class="text-[11px] text-slate-700 italic text-center py-4">' + t('apikey.noKeys') + '</p>';
         return;
     }
     list.innerHTML = keys.map(k => {
-        var masked = k.key.substring(0, 8) + '••••••••' + k.key.slice(-4);
+        var masked = k.key.substring(0, 8) + '\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022' + k.key.slice(-4);
         var statusCls = k.status === 'ok' ? 'ok' : k.status === 'fail' ? 'fail' : 'pending';
         var statusText = k.status === 'ok' ? t('apikey.active') : k.status === 'fail' ? t('apikey.error') : t('apikey.pending');
-        var errorHint = k.status === 'fail' && k.error ? `<div style="font-size:9px;color:#f87171;margin-top:2px;word-break:break-all">${k.error}</div>` : '';
-        return `
-            <div class="key-item ${k.status === 'ok' ? 'active' : ''}">
-                <span class="key-text">${masked}</span>
-                <span class="key-status ${statusCls}">${statusText}</span>
-                <button class="key-btn" onclick="removeApiKey('${k.key}')" title="Sil">🗑</button>
-                ${errorHint}
-            </div>`;
+        var errorHint = k.status === 'fail' && k.error ? '<div style="font-size:9px;color:#f87171;margin-top:2px;word-break:break-all">' + k.error + '</div>' : '';
+        return '<div class="key-item ' + (k.status === 'ok' ? 'active' : '') + '">' +
+            '<span class="key-text">' + masked + '</span>' +
+            '<span class="key-status ' + statusCls + '">' + statusText + '</span>' +
+            '<button class="key-btn" onclick="removeApiKey(\'' + k.key + '\')" title="' + t('common.delete') + '">\uD83D\uDDD1</button>' +
+            errorHint + '</div>';
     }).join('');
 };
 window.addApiKey = () => {
