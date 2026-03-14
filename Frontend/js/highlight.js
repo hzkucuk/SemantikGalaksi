@@ -7,6 +7,7 @@ var highlightArabicText = (text, roots) => {
         if ('\u0623\u0625\u0622\u0627\u0621\u0671'.includes(c)) return '\u0627';
         if ('\u064A\u0649\u0626'.includes(c)) return '\u064A';
         if (c === '\u0624') return '\u0648';
+        if (c === '\u0629') return '\u062A';
         return c;
     };
     const isWeak = c => '\u0627\u0648\u064A'.includes(c);
@@ -19,6 +20,16 @@ var highlightArabicText = (text, roots) => {
             if (!c.match(diacritics)) r += normChar(c);
         }
         return r;
+    };
+    const stripPrefixes = w => {
+        var forms = [w];
+        if (w.length > 3 && w.startsWith('\u0627\u0644')) forms.push(w.slice(2));
+        if (w.length > 3 && (w[0] === '\u0648' || w[0] === '\u0641' || w[0] === '\u0628' || w[0] === '\u0644' || w[0] === '\u0643')) {
+            var rest = w.slice(1);
+            forms.push(rest);
+            if (rest.length > 3 && rest.startsWith('\u0627\u0644')) forms.push(rest.slice(2));
+        }
+        return forms;
     };
     const subseqMatch = (word, root, noWeakEquiv) => {
         let ri = 0, firstMatch = -1, lastMatch = -1;
@@ -33,12 +44,15 @@ var highlightArabicText = (text, roots) => {
         return (lastMatch - firstMatch + 1) <= root.length + 2;
     };
     const rootMatchesWord = (word, root) => {
-        if (subseqMatch(word, root)) return true;
-        if (word.length > root.length + 3) return false;
-        for (let i = 0; i < root.length; i++) {
-            if (isWeak(root[i])) {
-                const reduced = root.slice(0, i) + root.slice(i + 1);
-                if (reduced.length >= 2 && subseqMatch(word, reduced, true)) return true;
+        var candidates = stripPrefixes(word);
+        for (var cand of candidates) {
+            if (cand.length > root.length + 5) continue;
+            if (subseqMatch(cand, root)) return true;
+            for (let i = 0; i < root.length; i++) {
+                if (isWeak(root[i])) {
+                    const reduced = root.slice(0, i) + root.slice(i + 1);
+                    if (reduced.length >= 2 && subseqMatch(cand, reduced, true)) return true;
+                }
             }
         }
         return false;

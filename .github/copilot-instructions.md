@@ -8,6 +8,7 @@
 - Talep dışı refactor yapma.
 - Belirsizlikte işlemi başlatma, soru sor.
 - Büyük değişiklikleri parçala, her adımda onay iste.
+- **Kod Çelişmezlik İlkesi:** Bir yapının (modül, fonksiyon, stil, olay dinleyici) kodları, diğer yapıların kodlarıyla **çelişmemeli**. Değişiklik yapmadan önce etkilenen tüm dosyaları tara — aynı DOM elemanını, global değişkeni veya event'i kullanan diğer kodları bul ve uyumluluğu doğrula. Bir yerde yapılan değişiklik başka bir yerdeki mantığı bozuyorsa, her iki tarafı da güncelle.
 
 ## Mimari
 - Mevcut mimariyi koru: Frontend (vanilla JS, Three.js, GLSL), Backend (Python, pywebview).

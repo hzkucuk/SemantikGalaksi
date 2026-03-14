@@ -1246,9 +1246,6 @@
             <button class="hud-section-tab active" data-section="ayet" onclick="switchHudSection('ayet')">
                 <span class="tab-emoji">📖</span><span data-i18n="hud.tabAyet">Ayet</span>
             </button>
-            <button class="hud-section-tab" data-section="kokler" onclick="switchHudSection('kokler')">
-                <span class="tab-emoji">🌿</span><span data-i18n="hud.tabRoots">Kökler</span>
-            </button>
             <button class="hud-section-tab" data-section="baglantilar" onclick="switchHudSection('baglantilar')">
                 <span class="tab-emoji">🔗</span><span data-i18n="hud.tabConnections">Bağlantılar</span>
             </button>
@@ -1268,6 +1265,8 @@
                     <p id="hud-arabic" class="text-right text-xl md:text-2xl arabic-text text-white leading-relaxed" dir="rtl" style="overflow-wrap:break-word;"></p>
                     <div class="h-px w-full bg-cyan-400/20 my-4"></div>
                     <p id="hud-translation" class="text-sm md:text-base text-slate-200 italic font-light leading-relaxed" style="overflow-wrap:break-word;"></p>
+                    <!-- Kök badge'leri — ayet içinde -->
+                    <div id="hud-roots" class="flex flex-wrap justify-center gap-2 md:gap-3 mt-4 pt-3" style="border-top:1px solid rgba(0,242,255,0.1);"></div>
                     <div class="flex items-center gap-2 mt-4 flex-wrap">
                         <button id="dipnot-toggle" onclick="toggleDipnot()" style="width:30px;height:30px;border-radius:10px;border:1px solid #f59e0b;background:rgba(245,158,11,0.08);color:#f59e0b;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;transition:all 0.2s;" title="Dipnot" data-i18n="hud.dipnot" data-i18n-attr="title">📌</button>
                         <span id="dipnot-label" class="text-[10px] text-amber-600 font-bold uppercase tracking-widest" data-i18n="hud.dipnot">Dipnot</span>
@@ -1286,12 +1285,6 @@
                     <span class="text-base">🤖</span> <span data-i18n="ai.analyze">Yapay Zekâ Analizi</span>
                 </button>
                 <div id="ai-result" class="hidden mt-4 bg-purple-950/30 border border-purple-400/20 rounded-xl p-4 text-sm text-slate-200 leading-relaxed"></div>
-            </div>
-
-            <!-- Section: Kökler -->
-            <div id="hud-sec-kokler" class="hud-section">
-                <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-4 italic text-center" data-i18n="hud.rootAnalysisTitle">Sülâsi Kök Analizi</h3>
-                <div id="hud-roots" class="flex flex-wrap justify-center gap-2 md:gap-3" style="padding:8px 0;"></div>
             </div>
 
             <!-- Section: Bağlantılar -->

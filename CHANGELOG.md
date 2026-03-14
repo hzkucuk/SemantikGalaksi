@@ -1,5 +1,14 @@
 bu# CHANGELOG
 
+## [0.43.0] - 2025-07-28
+### Yeni Özellik
+- **Ayet+Kök Birleşik Panel**: Ayet ve Kökler sekmeleri birleştirildi — kök badge'leri ayetin altında, renklendirme bağlamıyla birlikte görünüyor
+- **TTS Çok Dil Desteği**: Gemini TTS artık tüm dillerde çalışıyor (meal metni her zaman Türkçe olduğu için çeviri isteği kaldırıldı)
+- **Gelişmiş Kök Renklendirme**: Taa marbuta (ة→ت) normalizasyonu, Arapça ön ek soyma (و/ف/ب/ل/ك/ال), kelime uzunluk toleransı artırıldı
+
+### Düzeltme
+- **Kod Çelişmezlik Direktifi**: Copilot kurallarına yapılar arası kod çelişmezlik ilkesi eklendi
+
 ## [0.42.5] - 2025-07-28
 ### Dokümantasyon & Güvenlik
 - **Mimari Dokümantasyon**: Copilot direktiflerine 3 katmanlı çalışma modları tablosu eklendi (Server / Client-Terminal / Web)

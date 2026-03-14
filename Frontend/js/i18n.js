@@ -110,7 +110,6 @@ var I18n = (function () {
 
         // HUD Tabs
         'hud.tabAyet': 'Ayet',
-        'hud.tabRoots': 'Kökler',
         'hud.tabConnections': 'Bağlantılar',
         'hud.tabStats': 'İstatistik',
         'hud.tabAnalysis': 'Analiz',
