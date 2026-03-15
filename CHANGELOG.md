@@ -1,5 +1,18 @@
 ﻿bu# CHANGELOG
 
+## [1.2.5] - 2025-07-16 -- Kok-Anlam-Turev Kapsamli Guncelleme
+### Eklenen
+- Morphology'den 4213 yeni turetilmis kelime derived_words'e eklendi (toplam: 9542).
+- 4309 turev icin Turkce anlam uretildi (override sozluk + morphology kalip).
+- derived_translations: 38168 kayit (9542 x 4 dil: en/es/it/ru) olusturuldu.
+- generate_meanings.py: Offline anlam ureticisi (500+ ozel sozluk, gramer kalip motoru).
+### Teknik
+- Kok kapsami: 1651/1651 (%100), her kokun en az 1 turevi var.
+- Morphology gramer etiketleri (ACT_PCPL, PASS_PCPL, VN, PERF, IMPF) + kok anlamlari birlestirilerek anlam uretildi.
+- DB tutarlilik: 7 kontrol gecti (referential integrity, bos alan, kapsam).
+### Etkilenen Dosyalar
+- DataEngine/generate_meanings.py (yeni), DataEngine/quran.db
+
 ## [1.2.4] - 2025-07-16 -- Tam DB-Site Senkronizasyonu
 ### Duzeltilen
 - 114 sure / 6236 ayet Sueleymaniye Vakfi sitesiyle tam senkronize edildi.
