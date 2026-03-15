@@ -80,6 +80,7 @@
     <Content Include="Frontend\js\state.js" />
     <Content Include="Frontend\js\tooltip.js" />
     <Content Include="Frontend\js\warp.js" />
+    <Content Include="Frontend\js\web-db.js" />
     <Content Include="Frontend\js\websocket.js" />
     <Content Include="Frontend\locales\EN-en.json" />
     <Content Include="Frontend\locales\ES-es.json" />

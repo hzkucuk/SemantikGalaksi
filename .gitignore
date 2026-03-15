@@ -61,8 +61,7 @@ Desktop.ini
 archive/
 Frontend/datasets/quran_data_düzenlenmiş.json
 
-# ─── SQLite Veritabanı (kullanıcı tarafında üretilir) ────────
-DataEngine/quran.db
+# ─── SQLite Veritabanı (WAL/SHM kullanıcı tarafında üretilir) ─
 DataEngine/quran.db-wal
 DataEngine/quran.db-shm
 
