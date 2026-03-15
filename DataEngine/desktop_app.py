@@ -48,6 +48,13 @@ except ImportError:
     _sync_mod = None
     _HAS_SYNC = False
 
+try:
+    from ai_parser import AIParser, get_parser_status as _ai_parser_status
+    _HAS_AI_PARSER = True
+except ImportError:
+    _HAS_AI_PARSER = False
+    _ai_parser_status = None
+
 # --- AYARLAR ---
 def _get_base_dir():
     """PyInstaller veya cx_Freeze ile paketlenmiş ya da normal çalışmaya göre kök dizini belirler."""

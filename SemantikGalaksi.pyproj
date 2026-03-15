@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DataEngine\ai_parser.py" />
     <Compile Include="DataEngine\db.py" />
     <Compile Include="DataEngine\db_schema.py" />
     <Compile Include="DataEngine\desktop_app.py" />
@@ -48,6 +49,7 @@
     <Compile Include="DataEngine\_db_status.py" />
     <Compile Include="DataEngine\_final_check.py" />
     <Compile Include="DataEngine\_gen_translations.py" />
+    <Compile Include="DataEngine\_inject_ai.py" />
     <Compile Include="DataEngine\_quality.py" />
     <Compile Include="DataEngine\_refine.py" />
     <Compile Include="DataEngine\_root_status.py" />
@@ -66,6 +68,7 @@
     <Content Include="DataEngine\README.md" />
     <Content Include="DataEngine\root_reconciliation.js" />
     <Content Include="DataEngine\run_all_translations.bat" />
+    <Content Include="DataEngine\site_config.json" />
     <Content Include="DataEngine\sync_locale_roots.js" />
     <Content Include="FEATURES.md" />
     <Content Include="Frontend\full_quran_rich_map.json" />
