@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
   <img src="https://img.shields.io/badge/SQLite-3.x-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
-  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-1.1.6-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-1.2.0-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -240,6 +240,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| **v1.2.0** | **HUD Data Explorer + Toolbar i18n**: HUD navigasyon butonlari (ilk/onceki/sonraki/son ayet), web modda coklu dil destegi (WebDB fallback), toolbar tooltip i18n duzeltmesi, layout menu cevirileri, perf butonu i18n uyumu. |
 | **v1.1.6** | **Web SQLite + UI Temizlik**: Web modda sql.js (WASM) ile quran.db dogrudan tarayicida okunuyor. VERİ OKU + Veri Setleri butonlari ve tum backing kodlari kaldirildi. Modern modal dialog sistemi (v1.1.4). |
 | **v1.1.0** | **Pure SQLite + DB Grid Editor**: Hibrit mimari kaldirildi, Frontend dogrudan API'den SQLite verisi yukler. DB Grid (3 sekme, sayfalama, arama, CRUD, rol tabanli). 12 yeni API endpoint, 40+ i18n anahtari. |
 | **v1.0.0** | 🗄️ **SQLite Veritabanı Migrasyonu**: Tüm Kur'an verisi SQLite'a taşındı (7 tablo, FK kısıtlamaları, audit trail). Hibrit mimari: SQLite → JSON export → Frontend. 3 yeni API endpoint. |

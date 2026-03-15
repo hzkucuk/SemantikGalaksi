@@ -1,5 +1,15 @@
 ﻿bu# CHANGELOG
 
+## [1.2.0] - 2025-07-15 -- Release Build (v1.1.5 → v1.2.0)
+### Ozet
+- HUD Data Explorer navigasyon butonlari (ilk/onceki/sonraki/son ayet, sure gecisi)
+- Web modda coklu dil destegi (sql.js WebDB fallback)
+- Toolbar tooltip i18n duzeltmesi (admin, layout, perf butonlari)
+- Layout menu i18n (galaksi, bulutsu, kup, kure, allah secenekleri)
+- Hapax Legomena → Tek Gecen Kok + tooltip
+- Editor dil dropdown iyilestirmesi
+- MSI installer release build
+
 ## [1.1.7] - 2025-07-15 -- Web Dil Desteği + HUD Data Explorer + İyileştirmeler
 ### Eklenen
 - HUD Data Explorer navigasyon butonları: ⏮ İlk Ayet, ◀ Önceki, ▶ Sonraki, ⏭ Son Ayet (sure sınırlarını geçebilir).
