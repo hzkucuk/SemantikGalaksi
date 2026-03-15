@@ -262,12 +262,18 @@ class ApiKeyBridge:
         return [k["key"] for k in _load_keys()]
 
     def save_file(self, content, filename):
-        """Native OS 'Farklı Kaydet' diyaloğu ile dosya indirme"""
+        """Native OS 'Farkli Kaydet' diyalogu ile dosya indirme"""
         try:
+            if filename.endswith('.csv'):
+                file_types = ('CSV Dosyalari (*.csv)',)
+            elif filename.endswith('.json'):
+                file_types = ('JSON Dosyalari (*.json)',)
+            else:
+                file_types = ('Tum Dosyalar (*.*)',)
             result = self._window.create_file_dialog(
                 webview.SAVE_DIALOG,
                 save_filename=filename,
-                file_types=('JSON Dosyaları (*.json)',)
+                file_types=file_types
             )
             if result:
                 filepath = result if isinstance(result, str) else result[0]

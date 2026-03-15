@@ -88,7 +88,7 @@ var I18n = (function () {
         'editor.tabVerses': 'Ayetler',
         'editor.tabRoots': 'Kokler',
         'editor.tabTranslations': 'Ceviriler',
-        'editor.arabic': '⌨ Arapca',
+        'editor.arabic': '⌨ Arapca Klavye',
         'editor.close': '✕ Kapat',
         'editor.loading': 'Yukleniyor',
         'editor.loadError': 'Yukleme hatasi',
@@ -234,6 +234,7 @@ var I18n = (function () {
         'analyzer.clusterTitle': 'Kök Ailesi Kümeleme',
         'analyzer.exportJSON': '📥 JSON Rapor İndir',
         'analyzer.exportCSV': '📥 CSV Frekans Tablosu',
+        'analyzer.exportSuccess': 'Dosya basariyla kaydedildi.',
 
         // Header Brand
         'header.appTitle': 'Kur\'an-ı Kerim Kelime Kök Uzayı',

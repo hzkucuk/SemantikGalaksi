@@ -733,7 +733,7 @@ var RootAnalyzer = (function () {
     // EXPORT
     // ════════════════════════════════════════════════════════════
 
-    var exportJSON = () => {
+    var exportJSON = async () => {
         var data = {
             overview: calcOverview(),
             frequency: calcFrequency().sorted.map(([r, f]) => ({ root: r, count: f })),
@@ -743,14 +743,25 @@ var RootAnalyzer = (function () {
             networkTopHubs: calcNetworkMetrics().topHubs,
             networkTopBridges: calcNetworkMetrics().topBridges
         };
-        var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        var content = JSON.stringify(data, null, 2);
+        var filename = 'kuran_kok_analiz_' + new Date().toISOString().slice(0, 10) + '.json';
+        if (typeof isDesktopMode !== 'undefined' && isDesktopMode && window.pywebview && window.pywebview.api && window.pywebview.api.save_file) {
+            try {
+                var ok = await window.pywebview.api.save_file(content, filename);
+                if (ok) { await showAlert(t('analyzer.exportSuccess'), t('modal.info')); return; }
+            } catch(e) {}
+        }
+        var blob = new Blob([content], { type: 'application/json' });
         var a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
-        a.download = 'kuran_kok_analiz_' + new Date().toISOString().slice(0, 10) + '.json';
+        a.download = filename;
+        document.body.appendChild(a);
         a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(a.href);
     };
 
-    var exportCSV = () => {
+    var exportCSV = async () => {
         var freq = calcFrequency();
         var lines = ['Rank,Kök,Frekans,Sure_Yayılımı,Anlam'];
         freq.sorted.forEach(([r, f], i) => {
@@ -760,11 +771,22 @@ var RootAnalyzer = (function () {
             var meaning = info ? '"' + (info.meaning || '').replace(/"/g, '""') + '"' : '';
             lines.push(`${i + 1},${r},${f},${surahSpan},${meaning}`);
         });
-        var blob = new Blob(['\uFEFF' + lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+        var content = '\uFEFF' + lines.join('\n');
+        var filename = 'kuran_kok_frekans_' + new Date().toISOString().slice(0, 10) + '.csv';
+        if (typeof isDesktopMode !== 'undefined' && isDesktopMode && window.pywebview && window.pywebview.api && window.pywebview.api.save_file) {
+            try {
+                var ok = await window.pywebview.api.save_file(content, filename);
+                if (ok) { await showAlert(t('analyzer.exportSuccess'), t('modal.info')); return; }
+            } catch(e) {}
+        }
+        var blob = new Blob([content], { type: 'text/csv;charset=utf-8;' });
         var a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
-        a.download = 'kuran_kok_frekans_' + new Date().toISOString().slice(0, 10) + '.csv';
+        a.download = filename;
+        document.body.appendChild(a);
         a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(a.href);
     };
 
     // ════════════════════════════════════════════════════════════

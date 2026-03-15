@@ -1,5 +1,12 @@
 ﻿bu# CHANGELOG
 
+## [1.1.5] - 2026-03-15 -- Arapca Klavye + Indirme Diyalogu
+### Degisiklik
+- editor.arabic: 'ARAPCA' -> 'ARAPCA KLAVYE' olarak yeniden adlandirildi.
+- root-analyzer.js: exportJSON ve exportCSV artik pywebview save_file API ile native OS kaydet diyalogu kullaniyor.
+- desktop_app.py: save_file CSV dosya tipini de destekliyor.
+- 1 yeni i18n key (analyzer.exportSuccess) + 4 dil SQLite.
+
 ## [1.1.4] - 2026-03-15 -- Modern Modal Dialog System
 ### Eklenen
 - modalDialog.js: showAlert, showConfirm, showPrompt fonksiyonlari (Promise tabanli).
