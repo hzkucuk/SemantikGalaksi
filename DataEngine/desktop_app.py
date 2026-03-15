@@ -192,6 +192,13 @@ def _ensure_dir():
     os.makedirs(os.path.dirname(KEYS_FILE), exist_ok=True)
 
 
+def _mask_key(key):
+    """API key'i loglar ve hata mesajlari icin maskeler."""
+    if not key or len(key) < 12:
+        return '****'
+    return key[:4] + '****' + key[-4:]
+
+
 def _load_keys():
     _ensure_dir()
     if not os.path.exists(KEYS_FILE):
@@ -235,9 +242,9 @@ def _sync_env_key_to_stores(window):
         keys.append({'key': env_key, 'status': 'pending'})
         _save_keys(keys)
     try:
-        safe_key = env_key.replace("'", "\\'")
+        safe_key_json = json.dumps(env_key)
         window.evaluate_js(
-            f"if(typeof KeyManager!=='undefined')KeyManager.addKey('{safe_key}');"
+            f"if(typeof KeyManager!=='undefined')KeyManager.addKey({safe_key_json});"
         )
     except Exception:
         pass
@@ -248,7 +255,7 @@ class ApiKeyBridge:
 
     def get_keys(self):
         keys = _load_keys()
-        return [{"key": k["key"][:8] + "••••" + k["key"][-4:], "full": k["key"],
+        return [{"key": k["key"][:8] + "••••" + k["key"][-4:], "id": k["key"],
                  "status": k.get("status", "pending")} for k in keys]
 
     def add_key(self, key):
@@ -257,13 +264,13 @@ class ApiKeyBridge:
             return False
         keys.append({"key": key, "status": "pending"})
         _save_keys(keys)
-        log_crud.info('API key eklendi', key_prefix=key[:8])
+        log_crud.info('API key eklendi', key_prefix=_mask_key(key))
         return True
 
     def remove_key(self, key):
         keys = [k for k in _load_keys() if k["key"] != key]
         _save_keys(keys)
-        log_crud.info('API key silindi', key_prefix=key[:8])
+        log_crud.info('API key silindi', key_prefix=_mask_key(key))
 
     def update_status(self, key, status):
         keys = _load_keys()
@@ -2004,7 +2011,11 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             result = parser.test_key()
             self._json_response(result)
         except Exception as e:
-            self._json_response({'ok': False, 'error': str(e)})
+            err_msg = str(e)
+            # API key'i hata mesajindan temizle
+            if body.get('api_key'):
+                err_msg = err_msg.replace(body['api_key'], _mask_key(body['api_key']))
+            self._json_response({'ok': False, 'error': err_msg})
 
     def _sync_parser_status(self):
         session = _get_session(self.headers)

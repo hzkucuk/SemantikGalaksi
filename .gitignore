@@ -30,6 +30,9 @@ DataEngine/.env
 *.env
 .api_keys
 DataEngine/webview_data/
+DataEngine/generated_parser.py
+DataEngine/.generated_parser.sha256
+DataEngine/parser_history/
 
 # ─── Visual Studio ────────────────────────────────────────────
 .vs/

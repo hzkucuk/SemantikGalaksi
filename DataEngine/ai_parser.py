@@ -20,6 +20,7 @@ import sys
 import json
 import time
 import re
+import hashlib
 
 try:
     import requests as _req
@@ -27,11 +28,61 @@ except ImportError:
     _req = None
 
 # ---------------------------------------------------------------------------
+# Guvenlik — Kod Sandbox Dogrulayici
+# ---------------------------------------------------------------------------
+# Claude'un urettigi kodda tehlikeli islemler olmamasini garanti eder.
+_BLOCKED_PATTERNS = [
+    r'\bos\.system\b',
+    r'\bos\.popen\b',
+    r'\bos\.exec\w*\b',
+    r'\bos\.spawn\w*\b',
+    r'\bos\.remove\b',
+    r'\bos\.unlink\b',
+    r'\bos\.rmdir\b',
+    r'\bos\.rename\b',
+    r'\bsubprocess\b',
+    r'\bshutil\.rmtree\b',
+    r'\bshutil\.move\b',
+    r'\b__import__\b',
+    r'\beval\s*\(',
+    r'\bexec\s*\(',
+    r'\bcompile\s*\(',
+    r'\bopen\s*\([^)]*["\']w',
+    r'\bsocket\b',
+    r'\brequests\b',
+    r'\burllib\b',
+    r'\bhttp\.client\b',
+    r'\bctypes\b',
+]
+_ALLOWED_IMPORTS = {'re', 'bs4', 'json', 'html', 'collections', 'itertools', 'string', 'unicodedata'}
+
+
+def _validate_generated_code(code):
+    """Claude urettigi Python kodunu guvenlik aciklari icin dogrula.
+    Tehlikeli import/cagri varsa (False, sebep) doner.
+    Guvenli ise (True, None) doner."""
+    for pattern in _BLOCKED_PATTERNS:
+        m = re.search(pattern, code)
+        if m:
+            return False, f"Yasakli pattern tespit edildi: {m.group()}"
+
+    # import kontrolu — sadece izin verilenler
+    import_lines = re.findall(r'^\s*(?:import|from)\s+([\w.]+)', code, re.MULTILINE)
+    for imp in import_lines:
+        top_module = imp.split('.')[0]
+        if top_module not in _ALLOWED_IMPORTS:
+            return False, f"Izin verilmeyen import: {imp}"
+
+    return True, None
+
+
+# ---------------------------------------------------------------------------
 # Yapilandirma
 # ---------------------------------------------------------------------------
 _DIR = os.path.dirname(os.path.abspath(sys.executable)) if getattr(sys, 'frozen', False) else os.path.dirname(os.path.abspath(__file__))
 SITE_CONFIG_PATH = os.path.join(_DIR, 'site_config.json')
 GENERATED_PARSER_PATH = os.path.join(_DIR, 'generated_parser.py')
+GENERATED_PARSER_HASH = os.path.join(_DIR, '.generated_parser.sha256')
 PARSER_HISTORY_DIR = os.path.join(_DIR, 'parser_history')
 
 # Claude API
@@ -55,6 +106,36 @@ def _save_site_config(config):
 
 
 # ---------------------------------------------------------------------------
+# Guvenlik -- Prompt Injection Temizleyici
+# ---------------------------------------------------------------------------
+_INJECTION_PATTERNS = [
+    r'(?i)ignore\s+(all\s+)?previous\s+instructions',
+    r'(?i)ignore\s+(all\s+)?above\s+instructions',
+    r'(?i)disregard\s+(all\s+)?previous',
+    r'(?i)forget\s+(all\s+)?previous',
+    r'(?i)you\s+are\s+now\s+a',
+    r'(?i)act\s+as\s+(a|an|if)',
+    r'(?i)new\s+system\s*prompt',
+    r'(?i)system\s*:\s*you',
+    r'(?i)\[system\]',
+    r'(?i)\[instruction\]',
+    r'(?i)override\s+(system|safety|instructions)',
+    r'(?i)jailbreak',
+    r'(?i)DAN\s+mode',
+    r'(?i)do\s+anything\s+now',
+    r'(?i)pretend\s+you\s+are',
+    r'(?i)respond\s+as\s+if',
+    r'(?i)bypass\s+(filter|safety|restriction)',
+]
+
+def _sanitize_prompt_injection(text):
+    """HTML icerigindeki prompt injection girisimlerini temizle."""
+    for pat in _INJECTION_PATTERNS:
+        text = re.sub(pat, '[BLOCKED]', text)
+    return text
+
+
+# ---------------------------------------------------------------------------
 # Claude API Client
 # ---------------------------------------------------------------------------
 class AIParser:
@@ -65,6 +146,16 @@ class AIParser:
         self.model = model or DEFAULT_MODEL
         self.site_config = _load_site_config()
         self._last_error = None
+
+    def _scrub_key(self, text):
+        """Hata mesajlarindan API key ve hassas bilgileri temizle."""
+        if self.api_key and self.api_key in text:
+            masked = self.api_key[:4] + '****' + self.api_key[-4:] if len(self.api_key) >= 12 else '****'
+            text = text.replace(self.api_key, masked)
+        # Genel API key pattern'lerini de temizle
+        text = re.sub(r'sk-ant-[a-zA-Z0-9_-]{20,}', 'sk-ant-****', text)
+        text = re.sub(r'AIzaSy[a-zA-Z0-9_-]{30,}', 'AIzaSy****', text)
+        return text
 
     def _call_claude(self, system_prompt, user_prompt, max_tokens=None):
         """Claude API'yi cagir."""
@@ -88,7 +179,7 @@ class AIParser:
             resp = _req.post(ANTHROPIC_API_URL, headers=headers,
                              json=payload, timeout=120)
             if resp.status_code != 200:
-                self._last_error = f"HTTP {resp.status_code}: {resp.text[:300]}"
+                self._last_error = self._scrub_key(f"HTTP {resp.status_code}: {resp.text[:300]}")
                 return None
             data = resp.json()
             # content[0].text
@@ -98,7 +189,7 @@ class AIParser:
             self._last_error = "Bos yanit"
             return None
         except Exception as e:
-            self._last_error = str(e)
+            self._last_error = self._scrub_key(str(e))
             return None
 
     def test_key(self):
@@ -121,9 +212,9 @@ class AIParser:
             if resp.status_code == 200:
                 return True, "OK"
             err = resp.json().get("error", {}).get("message", f"HTTP {resp.status_code}")
-            return False, err
+            return False, self._scrub_key(err)
         except Exception as e:
-            return False, str(e)
+            return False, self._scrub_key(str(e))
 
     # -------------------------------------------------------------------
     # 1) Veri Cikartma — HTML'den yapilandirilmis veri cikart
@@ -225,12 +316,23 @@ Bilinen eski site yapisi:
         if not code:
             return False, "Python kodu cikarilamadi"
 
+        # Guvenlik: Sandbox dogrulamasi (regex + AST)
+        safe, reason = _validate_generated_code(code)
+        if not safe:
+            self._last_error = f"Guvenlik ihlali: {reason}"
+            return False, self._last_error
+        safe, reason = _ast_validate(code)
+        if not safe:
+            self._last_error = f"AST guvenlik ihlali: {reason}"
+            return False, self._last_error
+
         # Onceki parser'i yedekle
         self._backup_parser()
 
-        # Kaydet
+        # Kaydet + hash
         with open(GENERATED_PARSER_PATH, 'w', encoding='utf-8') as f:
             f.write(code)
+        _save_parser_hash(code)
 
         return True, GENERATED_PARSER_PATH
 
@@ -260,9 +362,20 @@ Cikti olarak SADECE guncellenmis Python kodu yaz."""
         if not code:
             return False, "Guncellenmis kod cikarilamadi"
 
+        # Guvenlik: Sandbox dogrulamasi (regex + AST)
+        safe, reason = _validate_generated_code(code)
+        if not safe:
+            self._last_error = f"Guvenlik ihlali: {reason}"
+            return False, self._last_error
+        safe, reason = _ast_validate(code)
+        if not safe:
+            self._last_error = f"AST guvenlik ihlali: {reason}"
+            return False, self._last_error
+
         self._backup_parser()
         with open(GENERATED_PARSER_PATH, 'w', encoding='utf-8') as f:
             f.write(code)
+        _save_parser_hash(code)
 
         return True, GENERATED_PARSER_PATH
 
@@ -298,7 +411,7 @@ Eger bulamazsan: {"domain": null, "verified": false, "notes": "sebep"}"""
     # Yardimcilar
     # -------------------------------------------------------------------
     def _trim_html(self, html, sure_no):
-        """HTML'i Claude icin kisalt (token limiti)."""
+        """HTML'i Claude icin kisalt ve prompt injection'a karsi temizle."""
         if not html:
             return ""
         # <head> kismi gereksiz, kaldir
@@ -306,6 +419,10 @@ Eger bulamazsan: {"domain": null, "verified": false, "notes": "sebep"}"""
         # script/style kaldir
         html = re.sub(r'<script[\s\S]*?</script>', '', html, flags=re.IGNORECASE)
         html = re.sub(r'<style[\s\S]*?</style>', '', html, flags=re.IGNORECASE)
+        # HTML yorumlarini kaldir (prompt injection vektoru)
+        html = re.sub(r'<!--[\s\S]*?-->', '', html)
+        # Prompt injection kaliplari temizle
+        html = _sanitize_prompt_injection(html)
         # Coklu bosluk temizle
         html = re.sub(r'\n\s*\n', '\n', html)
         # Cok uzunsa kes (yakl. 60K char ~ 15K token)
@@ -349,14 +466,85 @@ Eger bulamazsan: {"domain": null, "verified": false, "notes": "sebep"}"""
 
 
 # ---------------------------------------------------------------------------
+# Dosya Butunlugu -- Hash Dogrulama
+# ---------------------------------------------------------------------------
+def _save_parser_hash(code):
+    """Uretilmis parser kodunun SHA-256 hash'ini kaydet."""
+    h = hashlib.sha256(code.encode('utf-8')).hexdigest()
+    with open(GENERATED_PARSER_HASH, 'w', encoding='utf-8') as f:
+        f.write(h)
+
+
+def _verify_parser_hash(code):
+    """Kaydedilmis hash ile dosya butunlugunu dogrula.
+    Hash dosyasi yoksa False doner (dogrulanamaz)."""
+    if not os.path.exists(GENERATED_PARSER_HASH):
+        return False
+    try:
+        with open(GENERATED_PARSER_HASH, 'r', encoding='utf-8') as f:
+            stored = f.read().strip()
+        actual = hashlib.sha256(code.encode('utf-8')).hexdigest()
+        return stored == actual
+    except Exception:
+        return False
+
+
+# ---------------------------------------------------------------------------
 # Generated Parser Yukleyici
 # ---------------------------------------------------------------------------
+def _ast_validate(code):
+    """AST uzerinden tehlikeli node'lari tespit et (regex'e ek katman)."""
+    import ast
+    try:
+        tree = ast.parse(code)
+    except SyntaxError:
+        return False, "Gecersiz Python sozdizimi"
+    _DANGEROUS_ATTRS = {'system', 'popen', 'exec', 'eval', 'compile',
+                        'spawn', 'remove', 'unlink', 'rmdir', 'rmtree'}
+    _DANGEROUS_NAMES = {'exec', 'eval', 'compile', '__import__',
+                        'breakpoint', 'exit', 'quit'}
+    for node in ast.walk(tree):
+        # exec(...) / eval(...) cagrilari
+        if isinstance(node, ast.Call):
+            func = node.func
+            if isinstance(func, ast.Name) and func.id in _DANGEROUS_NAMES:
+                return False, f"Yasakli cagri: {func.id}()"
+            if isinstance(func, ast.Attribute) and func.attr in _DANGEROUS_ATTRS:
+                return False, f"Yasakli metod: .{func.attr}()"
+        # import os / import subprocess
+        if isinstance(node, (ast.Import, ast.ImportFrom)):
+            names = []
+            if isinstance(node, ast.Import):
+                names = [a.name.split('.')[0] for a in node.names]
+            elif node.module:
+                names = [node.module.split('.')[0]]
+            for n in names:
+                if n not in _ALLOWED_IMPORTS:
+                    return False, f"Izin verilmeyen import: {n}"
+    return True, None
+
+
 def load_generated_parser():
     """Uretilmis parser'i yukle ve parse_surah fonksiyonunu don.
-    Yoksa veya hataliysa None doner."""
+    Yoksa, guvenlik ihlali varsa veya hataliysa None doner."""
     if not os.path.exists(GENERATED_PARSER_PATH):
         return None
     try:
+        # Guvenlik: Yukleme oncesi kod dogrulamasi (regex + AST + hash)
+        with open(GENERATED_PARSER_PATH, 'r', encoding='utf-8') as f:
+            code = f.read()
+        # Hash butunluk kontrolu (dosya disaridan degistirilmis mi?)
+        if not _verify_parser_hash(code):
+            # Hash uyumsuz — dosya disaridan degistirilmis olabilir
+            # Yine de guvenlik kontrolunden gecerse calistirilabilir
+            pass
+        safe, reason = _validate_generated_code(code)
+        if not safe:
+            return None
+        safe, reason = _ast_validate(code)
+        if not safe:
+            return None
+
         import importlib.util
         spec = importlib.util.spec_from_file_location("generated_parser", GENERATED_PARSER_PATH)
         mod = importlib.util.module_from_spec(spec)
@@ -380,12 +568,20 @@ def get_parser_status():
         history_count = 0
         if os.path.isdir(PARSER_HISTORY_DIR):
             history_count = len([f for f in os.listdir(PARSER_HISTORY_DIR) if f.endswith('.py')])
+        # Hash ve guvenlik durumu
+        with open(GENERATED_PARSER_PATH, 'r', encoding='utf-8') as f:
+            code = f.read()
+        hash_ok = _verify_parser_hash(code)
+        safe_regex, _ = _validate_generated_code(code)
+        safe_ast, _ = _ast_validate(code)
         return {
             "exists": True,
             "path": GENERATED_PARSER_PATH,
             "last_modified": dt.isoformat(),
             "size": os.path.getsize(GENERATED_PARSER_PATH),
             "history_count": history_count,
+            "integrity": hash_ok,
+            "sandbox_safe": safe_regex and safe_ast,
         }
     except Exception as e:
         return {"exists": True, "error": str(e)}

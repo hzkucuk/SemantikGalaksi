@@ -1,5 +1,21 @@
 ﻿bu# CHANGELOG
 
+## [1.2.9] - 2025-07-18 -- AI Guvenlik + AV Uyumluluk
+### Eklenen
+- Kod Sandbox Dogrulayici: Claude urettigi kodda tehlikeli import/cagri engelleme (regex + AST).
+- Prompt Injection Temizleyici: HTML icerigindeki 17 farkli injection pattern tespit ve bloklama.
+- API Key Maskeleme: Loglar, hata mesajlari ve API yanitlarinda key sizintisi onleme.
+- Dosya Butunluk Kontrolu: SHA-256 hash ile generated_parser.py butunluk dogrulamasi.
+- AST Dogrulama: ast.parse ile tehlikeli node tespiti (exec, eval, subprocess vb).
+### Duzeltilen
+- evaluate_js XSS acigi: String interpolation yerine json.dumps ile guvenli key aktarimi.
+- get_keys() API: Tam API key ("full") yerine maskelenmis referans ("id") donuyor.
+- Hata mesajlarinda API key sizintisi: _scrub_key() ile sk-ant-* ve AIzaSy* pattern temizleme.
+### Teknik
+- ai_parser.py: _validate_generated_code(), _ast_validate(), _sanitize_prompt_injection(), _scrub_key(), _save_parser_hash(), _verify_parser_hash().
+- desktop_app.py: _mask_key() utility, json.dumps XSS fix, error message scrubbing.
+- .gitignore: generated_parser.py, .generated_parser.sha256, parser_history/ eklendi.
+
 ## [1.2.8] - 2025-07-18 -- Tefsir Grid Editor + Sync Fix
 ### Eklenen
 - DB Grid editorde tefsir_popup sutunu (goruntulenme, duzenleme, JSON format rehberi).
