@@ -508,7 +508,12 @@
         .db-page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
         .db-page-info { font-size: 11px; color: #64748b; font-weight: 700; min-width: 50px; text-align: center; }
         .db-grid-scroll { flex: 1; overflow: auto; }
-        .db-grid { width: 100%; border-collapse: collapse; font-size: 12px; }
+        .db-grid-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+        .db-grid-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.03); border-radius: 4px; }
+        .db-grid-scroll::-webkit-scrollbar-thumb { background: rgba(0,242,255,0.2); border-radius: 4px; }
+        .db-grid-scroll::-webkit-scrollbar-thumb:hover { background: rgba(0,242,255,0.4); }
+        .db-grid-scroll::-webkit-scrollbar-corner { background: transparent; }
+        .db-grid { min-width: 100%; border-collapse: collapse; font-size: 12px; width: max-content; }
         .db-grid thead { position: sticky; top: 0; z-index: 2; }
         .db-grid th { background: #0d1117; color: #00f2ff; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 8px 10px; text-align: left; border-bottom: 2px solid rgba(0,242,255,0.2); white-space: nowrap; position: relative; }
         .db-grid th.db-sortable { cursor: pointer; user-select: none; }
