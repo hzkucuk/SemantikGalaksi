@@ -33,7 +33,11 @@ from bs4 import BeautifulSoup
 # ---------------------------------------------------------------------------
 DOMAIN = "https://www.suleymaniyevakfimeali.com"
 BASE_URL = DOMAIN + "/Meal/"
-DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "quran.db")
+if getattr(sys, 'frozen', False):
+    _app_data = os.path.join(os.environ.get('APPDATA', os.path.expanduser('~')), 'SemantikGalaksi')
+    DB_PATH = os.path.join(_app_data, "quran.db")
+else:
+    DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "quran.db")
 
 # AI Fallback
 try:

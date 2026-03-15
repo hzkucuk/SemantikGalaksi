@@ -29,7 +29,7 @@ except ImportError:
 # ---------------------------------------------------------------------------
 # Yapilandirma
 # ---------------------------------------------------------------------------
-_DIR = os.path.dirname(os.path.abspath(__file__))
+_DIR = os.path.dirname(os.path.abspath(sys.executable)) if getattr(sys, 'frozen', False) else os.path.dirname(os.path.abspath(__file__))
 SITE_CONFIG_PATH = os.path.join(_DIR, 'site_config.json')
 GENERATED_PARSER_PATH = os.path.join(_DIR, 'generated_parser.py')
 PARSER_HISTORY_DIR = os.path.join(_DIR, 'parser_history')

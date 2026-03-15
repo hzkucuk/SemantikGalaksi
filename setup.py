@@ -98,6 +98,13 @@ icon_src = os.path.join(ROOT_DIR, "app_icon.ico")
 if os.path.exists(icon_src):
     include_files.append((icon_src, "app_icon.ico"))
 
+# AI Parser yardimci dosyalari (self-healing sync icin)
+_ai_data_files = ["site_config.json", "quran-morphology.txt"]
+for f in _ai_data_files:
+    src = os.path.join(DATAENGINE_DIR, f)
+    if os.path.exists(src):
+        include_files.append((src, f))
+
 # ── Build seçenekleri ─────────────────────────────────────────────────
 # cx_Freeze'in updater modülünü bulabilmesi için DataEngine'i path'e ekle
 sys.path.insert(0, DATAENGINE_DIR)
@@ -114,6 +121,9 @@ build_exe_options = {
     "includes": [
         "webview",
         "updater",
+        "sync_check",
+        "ai_parser",
+        "importlib.util",
     ],
     "excludes": [
         "tkinter", "unittest", "email", "xml.etree",
