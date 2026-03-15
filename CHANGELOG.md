@@ -1,5 +1,9 @@
 ﻿bu# CHANGELOG
 
+## [1.4.0] - 2025-07-18 -- Release: DB Grid UX + Local Override + Besmele Fix
+### Ozet
+- v1.3.0-v1.3.2 arasindaki tum ozellikler dahil. MSI release build.
+
 ## [1.3.2] - 2025-07-18 -- DB Grid UX: Siralama, Kolon Boyutlandirma, Tefsir Onizleme
 ### Eklenen
 - Kolon siralama: Tiklanabilir basliklar ile ASC/DESC siralama (verses: id, sure_no, ayet_no, surah, meal / roots: root, meaning_tr, pronunciation).
