@@ -1,5 +1,20 @@
 ﻿bu# CHANGELOG
 
+## [1.2.3] - 2025-07-15 -- Kapsamli Veri Doldurma (Arapca+Dipnot+Koordinat)
+### Eklenen
+- `fill_verse_data.py`: Arapca metin, meal, dipnot, dipnot_parsed, mapping_data doldurma.
+- 67 bos Arapca metin dolduruldu (ayet doluluk %100).
+- 347 bos dipnot dolduruldu (865 -> 518, kalan gercekten dipnotsuz ayetler).
+- 626 dipnot_parsed alani parse edildi (koordinat sistemi korundu).
+- parse_rich_text entegre: dipnot referanslari link/text parcalarina ayrildi.
+- mapping_data connections birlestirme: mevcut baglantilari bozmadan yeni eklendi.
+### Teknik
+- div.qrText (Arapca) + div.trText (meal+dipnot) + span.qrHeader (ayet no).
+- Dipnot/meal ayirma: [*] ve [n*] pattern'leri ile otomatik ayristirma.
+- --field parametresi ile hedefli alan doldurma (ayet, meal, dipnot, all).
+### Etkilenen Dosyalar
+- DataEngine/fill_verse_data.py (yeni), DataEngine/quran.db
+
 ## [1.2.2] - 2025-07-15 -- Eksik Meallerin Doldurulmasi
 ### Eklenen
 - `fill_missing_meals.py` scripti: Sueleymaniye Vakfi sitesinden eksik mealleri otomatik doldurucu.
