@@ -182,6 +182,10 @@ var I18n = (function () {
         'hud.quranOverall': 'Kur\'an geneli',
         'hud.topSurahs': 'En Çok Geçtiği Sureler',
         'hud.ratio': 'Oran',
+        'hud.navFirst': 'İlk Ayet',
+        'hud.navPrev': 'Önceki Ayet',
+        'hud.navNext': 'Sonraki Ayet',
+        'hud.navLast': 'Son Ayet',
 
         // AI Analysis
         'ai.analyze': 'Yapay Zekâ Analizi',

@@ -90,6 +90,7 @@ var showHUD = (n) => {
     var arabicHighlighted = highlightArabicText(n.text, n.roots);
     document.getElementById('hud-title').innerText = getSurahTR(n.id);
     document.getElementById('hud-coord').innerText = `${t('hud.coordinate')}: ${n.id}`;
+    _updateHudNav(n);
     document.getElementById('hud-translation').innerText = n.translation;
     document.getElementById('hud-arabic').innerHTML = arabicHighlighted;
 
@@ -393,3 +394,68 @@ window.switchHudSection = switchHudSection;
         if (diffX < -80) closeHUD();
     }, { passive: true });
 })();
+
+// ═══════════════════════════════════════════════════════════════
+//  DATA EXPLORER — HUD Navigasyon
+// ═══════════════════════════════════════════════════════════════
+
+var _updateHudNav = (n) => {
+    var info = document.getElementById('hud-nav-info');
+    if (!info) return;
+    var parts = n.id.split(':');
+    var sureNo = parseInt(parts[0]);
+    var ayetNo = parseInt(parts[1]);
+    var surahNodes = nodes.filter(nd => parseInt(nd.id.split(':')[0]) === sureNo);
+    var total = surahNodes.length;
+    info.textContent = ayetNo + ' / ' + total;
+};
+
+var _hudNavigate = (targetId) => {
+    var target = nodes.find(nd => nd.id === targetId);
+    if (target) { warpTo(target); showHUD(target); }
+};
+
+window.hudNavFirst = () => {
+    if (!currentHudNode) return;
+    var sureNo = currentHudNode.id.split(':')[0];
+    _hudNavigate(sureNo + ':1');
+};
+
+window.hudNavLast = () => {
+    if (!currentHudNode) return;
+    var sureNo = parseInt(currentHudNode.id.split(':')[0]);
+    var surahNodes = nodes.filter(nd => parseInt(nd.id.split(':')[0]) === sureNo);
+    var lastAyet = Math.max.apply(null, surahNodes.map(nd => parseInt(nd.id.split(':')[1])));
+    _hudNavigate(sureNo + ':' + lastAyet);
+};
+
+window.hudNavPrev = () => {
+    if (!currentHudNode) return;
+    var parts = currentHudNode.id.split(':');
+    var sureNo = parseInt(parts[0]);
+    var ayetNo = parseInt(parts[1]);
+    if (ayetNo > 1) {
+        _hudNavigate(sureNo + ':' + (ayetNo - 1));
+    } else if (sureNo > 1) {
+        // Önceki surenin son ayetine git
+        var prevSure = sureNo - 1;
+        var prevNodes = nodes.filter(nd => parseInt(nd.id.split(':')[0]) === prevSure);
+        var lastAyet = Math.max.apply(null, prevNodes.map(nd => parseInt(nd.id.split(':')[1])));
+        _hudNavigate(prevSure + ':' + lastAyet);
+    }
+};
+
+window.hudNavNext = () => {
+    if (!currentHudNode) return;
+    var parts = currentHudNode.id.split(':');
+    var sureNo = parseInt(parts[0]);
+    var ayetNo = parseInt(parts[1]);
+    var surahNodes = nodes.filter(nd => parseInt(nd.id.split(':')[0]) === sureNo);
+    var maxAyet = Math.max.apply(null, surahNodes.map(nd => parseInt(nd.id.split(':')[1])));
+    if (ayetNo < maxAyet) {
+        _hudNavigate(sureNo + ':' + (ayetNo + 1));
+    } else if (sureNo < 114) {
+        // Sonraki surenin ilk ayetine git
+        _hudNavigate((sureNo + 1) + ':1');
+    }
+};

@@ -203,6 +203,24 @@
             margin-bottom: 12px;
         }
 
+        /* Data Explorer nav bar */
+        .hud-nav-bar {
+            display: flex; align-items: center; gap: 4px; margin-top: 8px;
+        }
+        .hud-nav-btn {
+            width: 28px; height: 28px; border-radius: 8px;
+            border: 1px solid rgba(0,242,255,0.15); background: rgba(0,242,255,0.05);
+            color: #00f2ff; cursor: pointer; font-size: 11px;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.15s;
+        }
+        .hud-nav-btn:hover { background: rgba(0,242,255,0.15); border-color: rgba(0,242,255,0.4); }
+        .hud-nav-btn:active { transform: scale(0.92); }
+        .hud-nav-info {
+            font-size: 10px; color: #64748b; font-weight: 600;
+            letter-spacing: 0.05em; padding: 0 6px; min-width: 60px; text-align: center;
+        }
+
         /* Backdrop overlay — sadece click-to-close, görsel efekt yok */
         .hud-backdrop {
             position: fixed; inset: 0; z-index: 39;
@@ -1275,6 +1293,14 @@
                 <div style="flex:1;min-width:0;">
                     <h2 id="hud-title" class="text-2xl md:text-3xl neon-title" style="margin:0;line-height:1.2;">SURE</h2>
                     <p id="hud-coord" class="text-[10px] text-slate-500 font-mono tracking-[0.3em] mt-1 uppercase opacity-70" style="margin:0;">KOORDİNAT: 0:0</p>
+                    <!-- Data Explorer navigasyon butonları -->
+                    <div id="hud-nav" class="hud-nav-bar">
+                        <button class="hud-nav-btn" onclick="hudNavFirst()" title="İlk Ayet" data-i18n="hud.navFirst" data-i18n-attr="title">⏮</button>
+                        <button class="hud-nav-btn" onclick="hudNavPrev()" title="Önceki Ayet" data-i18n="hud.navPrev" data-i18n-attr="title">◀</button>
+                        <span id="hud-nav-info" class="hud-nav-info"></span>
+                        <button class="hud-nav-btn" onclick="hudNavNext()" title="Sonraki Ayet" data-i18n="hud.navNext" data-i18n-attr="title">▶</button>
+                        <button class="hud-nav-btn" onclick="hudNavLast()" title="Son Ayet" data-i18n="hud.navLast" data-i18n-attr="title">⏭</button>
+                    </div>
                 </div>
                 <button id="close-hud" class="hud-close-btn" onclick="closeHUD()">✕</button>
             </div>

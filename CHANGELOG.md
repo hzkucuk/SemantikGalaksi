@@ -1,5 +1,18 @@
 ﻿bu# CHANGELOG
 
+## [1.1.7] - 2025-07-15 -- Web Dil Desteği + HUD Data Explorer + İyileştirmeler
+### Eklenen
+- HUD Data Explorer navigasyon butonları: ⏮ İlk Ayet, ◀ Önceki, ▶ Sonraki, ⏭ Son Ayet (sure sınırlarını geçebilir).
+- Web modda çoklu dil desteği: i18n.js discover/loadJSON WebDB fallback eklendi.
+- loading.js: Web modda WebDB.init() erken çağrılıyor (I18n.init() öncesi).
+- web-db.js: getLocales() ve getLocale(langCode) metodları eklendi.
+### Değişiklik
+- "Hapax Legomena" → "Tek Geçen Kök" olarak değiştirildi + tooltip açıklaması eklendi.
+- Editor dil dropdown iyileştirildi: dil adları + bayrak kodları + koyu CSS.
+- 4 yeni i18n key (hud.navFirst/navPrev/navNext/navLast) + 16 SQLite çeviri satırı.
+### Etkilenen Dosyalar
+- hud.js, index.html, i18n.js, loading.js, web-db.js, root-analyzer.js, datasets.js, quran.db, state.js
+
 ## [1.1.6] - 2025-07-15 -- VERİ OKU + Veri Setleri Kaldırıldı & Web SQLite
 ### Kaldırılan
 - "VERİ OKU" (📄) dosya yükleme butonu ve file-input handler kaldırıldı (search.js).
