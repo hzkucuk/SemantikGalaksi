@@ -804,6 +804,7 @@ def list_verses(page=1, limit=50, search='', conn=None):
             'ayet': v['ayet'],
             'meal': v['meal'] or '',
             'dipnot': v['dipnot'] or '',
+            'tefsir_popup': v['tefsir_popup'] or '',
             'roots': [r['root'] for r in roots],
         })
 
@@ -904,8 +905,8 @@ def list_translations(lang=None, page=1, limit=50, search='', conn=None):
 #  TEKIL CRUD (Editor icin)
 # ===================================================================
 
-def update_verse(verse_id, meal=None, dipnot=None, user='system', conn=None):
-    """Tek bir ayetin meal/dipnot alanlarini gunceller."""
+def update_verse(verse_id, meal=None, dipnot=None, tefsir_popup=None, user='system', conn=None):
+    """Tek bir ayetin meal/dipnot/tefsir_popup alanlarini gunceller."""
     db = conn or get_db()
     existing = db.execute("SELECT * FROM verses WHERE id=?", (verse_id,)).fetchone()
     if not existing:
@@ -928,6 +929,14 @@ def update_verse(verse_id, meal=None, dipnot=None, user='system', conn=None):
             "INSERT INTO change_log(table_name, record_id, action, field_name, old_value, new_value, changed_by) "
             "VALUES ('verses', ?, 'UPDATE', 'dipnot', ?, ?, ?)",
             (verse_id, existing['dipnot'] or '', dipnot, user)
+        )
+    if tefsir_popup is not None:
+        fields.append("tefsir_popup=?")
+        values.append(tefsir_popup)
+        db.execute(
+            "INSERT INTO change_log(table_name, record_id, action, field_name, old_value, new_value, changed_by) "
+            "VALUES ('verses', ?, 'UPDATE', 'tefsir_popup', ?, ?, ?)",
+            (verse_id, existing['tefsir_popup'] or '', tefsir_popup, user)
         )
 
     if not fields:

@@ -141,6 +141,7 @@ var _dbGetCols = () => {
             { key: 'meal', label: t('editor.colMeal'), w: '28%', edit: 'editor' },
             { key: 'roots', label: t('editor.colRoots'), w: '14%', rtl: true, edit: 'admin', type: 'roots' },
             { key: 'dipnot', label: t('editor.colDipnot'), w: '10%', edit: 'editor' },
+            { key: 'tefsir_popup', label: t('editor.colTefsir'), w: '10%', edit: 'admin', type: 'tefsir' },
         ],
         roots: [
             { key: 'root', label: t('editor.colRoot'), w: '80px', rtl: true },
@@ -250,9 +251,22 @@ var _dbRenderMain = () => {
                 }
                 if (c.type === 'roots') {
                     (row[c.key] || []).forEach(function(r) {
-                        h += '<span class="db-root-tag">' + _escHtml(r) + '</span>';
-                    });
-                } else if (isLogs && c.key === 'action') {
+                            h += '<span class="db-root-tag">' + _escHtml(r) + '</span>';
+                            });
+                        } else if (c.type === 'tefsir') {
+                            var tv = row[c.key] || '';
+                            if (tv && tv.trim()) {
+                                try {
+                                    var segs = JSON.parse(tv);
+                                    var segCnt = Array.isArray(segs) ? segs.length : 0;
+                                    h += '<span class="db-root-tag" style="background:rgba(167,139,250,0.15);color:#a78bfa;" title="' + _escHtml(tv.substring(0, 200)) + '">' + segCnt + ' seg</span>';
+                                } catch(e) {
+                                    h += '<span class="db-cell-text" style="color:#94a3b8;">' + _escHtml(tv.substring(0, 40)) + '</span>';
+                                }
+                            } else {
+                                h += '<span style="color:#475569;font-size:10px;">\u2014</span>';
+                            }
+                        } else if (isLogs && c.key === 'action') {
                     var acCls = val === 'INSERT' ? 'log-insert' : (val === 'DELETE' ? 'log-delete' : 'log-update');
                     h += '<span class="db-log-badge ' + acCls + '">' + _escHtml(val) + '</span>';
                 } else {
@@ -317,6 +331,9 @@ window.dbStartEdit = (td, rowId, field, type) => {
     var currentVal;
     if (type === 'roots') {
         currentVal = Array.from(td.querySelectorAll('.db-root-tag')).map(function(t) { return t.textContent; }).join(', ');
+    } else if (type === 'tefsir') {
+        var rowData = (_dbData && _dbData.items) ? _dbData.items.find(function(r) { return (_dbTab === 'verses' ? r.id : r.root) === rowId; }) : null;
+        currentVal = rowData ? (rowData.tefsir_popup || '') : '';
     } else {
         var span = td.querySelector('.db-cell-text');
         currentVal = span ? span.textContent : '';
@@ -325,12 +342,13 @@ window.dbStartEdit = (td, rowId, field, type) => {
     td.dataset.rowId = rowId;
     td.dataset.field = field;
     td.dataset.type = type || '';
-    var isLongText = (field === 'meal' || field === 'dipnot');
+    var isLongText = (field === 'meal' || field === 'dipnot' || field === 'tefsir_popup');
     var input;
     if (isLongText) {
         input = document.createElement('textarea');
         input.className = 'db-edit-input';
-        input.rows = 3;
+        input.rows = field === 'tefsir_popup' ? 5 : 3;
+        if (field === 'tefsir_popup') input.placeholder = t('editor.tefsirPlaceholder');
     } else {
         input = document.createElement('input');
         input.type = 'text';

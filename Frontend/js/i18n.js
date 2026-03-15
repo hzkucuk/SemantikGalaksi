@@ -98,6 +98,8 @@ var I18n = (function () {
         'editor.colMeal': 'Meal',
         'editor.colRoots': 'Kokler',
         'editor.colDipnot': 'Dipnot',
+        'editor.colTefsir': 'Tefsir',
+        'editor.tefsirPlaceholder': 'JSON format: [{"type":"text","content":"..."}] — Koordinat: sure:ayet (orn: 2:255)',
         'editor.colRoot': 'Kok',
         'editor.colMeaningTr': 'Anlam (TR)',
         'editor.colMeaningAr': 'Anlam (AR)',

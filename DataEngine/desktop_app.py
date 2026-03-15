@@ -1614,6 +1614,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
                 verse_id,
                 meal=body.get('meal'),
                 dipnot=body.get('dipnot'),
+                tefsir_popup=body.get('tefsir_popup'),
                 user=session['username']
             )
             if not ok:

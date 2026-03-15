@@ -1,5 +1,20 @@
 ﻿bu# CHANGELOG
 
+## [1.2.8] - 2025-07-18 -- Tefsir Grid Editor + Sync Fix
+### Eklenen
+- DB Grid editorde tefsir_popup sutunu (goruntulenme, duzenleme, JSON format rehberi).
+- Tefsir hucre render: segment sayisi badge, JSON tooltip onizleme.
+- update_verse() fonksiyonuna tefsir_popup yazma destegi + change_log kaydi.
+- i18n: editor.colTefsir, editor.tefsirPlaceholder anahtarlari.
+### Duzeltilen
+- Sync panelinde 5753 sahte fark (TEFSIR_EKSTRA) gosterimi kaldirildi — bu farklar beklenen/normal veri.
+- TEFSIR_EKSTRA diff tipi artik raporlanmiyor (yalnizca TEFSIR_BOS raporlanir).
+### Teknik
+- db.py update_verse(): tefsir_popup=None parametresi, change_log INSERT, SET clause.
+- desktop_app.py _db_update_verse(): tefsir_popup=body.get('tefsir_popup') eklendi.
+- datasets.js: tefsir_popup column def (type:'tefsir'), custom render, dbStartEdit JSON okuma.
+- sync_check.py: TEFSIR_EKSTRA diff blogu kaldirildi.
+
 ## [1.2.7] - 2025-07-17 -- AI Self-Healing Sync Engine + Tefsir Sync
 ### Eklenen
 - ai_parser.py: Claude API entegrasyonu (AIParser class, verse extraction, parser code generation, URL discovery).

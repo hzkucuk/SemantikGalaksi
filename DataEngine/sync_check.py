@@ -585,12 +585,8 @@ def compare_surah(db, sure_no, site_verses, do_fix=False):
                         "site": "Sitede tefsir mevcut"
                     })
                     has_fix = True
-        elif not site_has_tefsir and db_has_tefsir:
-            # DB'de tefsir var ama sitede yok — bu normal olabilir, rapor et ama duzeltme
-            diffs.append({
-                "type": "TEFSIR_EKSTRA", "id": vid, "field": "tefsir_popup",
-                "detail": "DB de tefsir var ama sitede isaret yok (korunur)"
-            })
+        # NOT: TEFSIR_EKSTRA (DB'de tefsir var, sitede isaret yok) normal durumdur.
+        # DB'deki tefsir verisi korunur, fark olarak raporlanmaz.
 
         if has_fix:
             fixes.append(fix_entry)
