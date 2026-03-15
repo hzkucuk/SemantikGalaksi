@@ -1190,6 +1190,7 @@
                     <input type="file" id="file-input" class="hidden" accept=".json">
                 </label>
                 <button onclick="openDatasets()" class="hdr-btn" title="Veri Setleri" data-i18n="header.datasets" data-i18n-attr="title">📂</button>
+                <button id="editor-btn-header" onclick="openEditor()" class="hdr-btn" title="JSON Editör" data-i18n="header.editor" data-i18n-attr="title">📝</button>
                 <button onclick="openNotes()" class="hdr-btn" title="Notlarım" data-i18n="header.notes" data-i18n-attr="title">📓</button>
                 <div class="hdr-divider"></div>
                 <button id="admin-btn" onclick="openAdmin()" class="hdr-btn" title="Kullanıcı Yönetimi" style="display:none">👥</button>
@@ -1203,7 +1204,6 @@
                         <button onclick="switchLayout('allah')" class="layout-option" data-layout="allah">🕋 الله <span class="layout-desc">Arapça kaligrafi — Allah lafzı şekli</span></button>
                     </div>
                 </div>
-                <button onclick="toggleHudSlider()" class="hdr-btn" id="hud-toggle-btn" title="Bilgi Paneli (HUD)" data-i18n="header.hud" data-i18n-attr="title">📋</button>
                 <button onclick="openSettings()" class="hdr-btn" title="Ayarlar" data-i18n="header.settings" data-i18n-attr="title">⚙️</button>
                 <button onclick="togglePerformance()" class="hdr-btn with-label" title="Performans Modu" data-i18n="header.perf" data-i18n-attr="title" id="perf-btn"><span>⚡</span><span class="hdr-btn-label" data-i18n="header.perfHigh">YÜKSEK</span></button>
                 <button onclick="toggleStats()" class="hdr-btn" title="İstatistikler" data-i18n="header.stats" data-i18n-attr="title">📊</button>
