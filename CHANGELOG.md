@@ -1,5 +1,18 @@
 ﻿bu# CHANGELOG
 
+## [1.2.2] - 2025-07-15 -- Eksik Meallerin Doldurulmasi
+### Eklenen
+- `fill_missing_meals.py` scripti: Sueleymaniye Vakfi sitesinden eksik mealleri otomatik doldurucu.
+- 299 bos meal alani dolduruldu (meal doluluk: %100.0).
+- 279 bos dipnot alani dolduruldu (dipnot bos: 1144 -> 865).
+- Komsu ayet cross-check (onceki/sonraki meal karsilastirmasi).
+### Teknik
+- HTML parse (BeautifulSoup): div.qrText + div.trText + span.qrHeader eslestirildi.
+- Turk karakterli slug'lar URL-encode ile cozuldu (ASCII slug bos template donuyordu).
+- AI kullanilmadi — direkt HTML yapisal parse ile 82 sure islem yapildi.
+### Etkilenen Dosyalar
+- DataEngine/fill_missing_meals.py (yeni), DataEngine/quran.db
+
 ## [1.2.1] - 2025-07-15 -- Client MSI DB Haric + Veri Denetim Paneli
 ### Eklenen
 - Veri Denetim (Audit) tabı: editor'de kalite skoru, metrik kartları, sure bazlı özet tablosu, detay listeleri.
