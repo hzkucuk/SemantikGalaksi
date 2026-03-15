@@ -1,6 +1,6 @@
 var fetchDataAutomatically = async () => {
     try {
-        // SQLite API'den yukle
+        // SQLite API'den yukle (desktop mod)
         var [dataRes, rootsRes] = await Promise.all([
             fetch('/api/db/data').catch(() => null),
             fetch('/api/db/roots-dict').catch(() => null)
@@ -13,8 +13,18 @@ var fetchDataAutomatically = async () => {
         if (rootsRes && rootsRes.ok) {
             rootDictionary = await rootsRes.json();
         }
+        // API basarisiz — web modda sql.js ile DB'den oku
+        if (!dataRes || !dataRes.ok) {
+            var db = await WebDB.init();
+            if (db) {
+                var data = WebDB.getFullData();
+                originalData = data;
+                processData(data);
+                rootDictionary = WebDB.getFullRoots();
+            }
+        }
     } catch (e) {
-        console.log("Veri yuklenemedi, manuel yukleme bekleniyor.");
+        console.log("Veri yuklenemedi:", e);
     } finally {
         hideLoadingScreen();
     }
