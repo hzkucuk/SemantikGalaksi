@@ -1,4 +1,4 @@
-/** SemantikGalaksi — Kimlik Doğrulama */
+﻿/** SemantikGalaksi — Kimlik Doğrulama */
 
 var authFetch = (url, opts = {}) => {
     if (!opts.headers) opts.headers = {};
@@ -98,12 +98,13 @@ window.createUser = async () => {
         await renderUserList();
     } else {
         const data = await r.json();
-        alert(data.error || 'Hata');
+        showAlert(data.error || 'Hata');
     }
 };
 
 window.deleteUser = async (username) => {
-    if (!confirm(username + ' silinsin mi?')) return;
+    var ok = await showConfirm(username + ' silinsin mi?', t('modal.confirm'), { danger: true });
+    if (!ok) return;
     await authFetch('/api/auth/user/' + encodeURIComponent(username), { method: 'DELETE' });
     await renderUserList();
 };

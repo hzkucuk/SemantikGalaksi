@@ -1,4 +1,4 @@
-// ======== WYSIWYG Notes System ========
+﻿// ======== WYSIWYG Notes System ========
 var _notes = [];
 var _activeNoteId = null;
 var _noteSaveTimer = null;
@@ -63,7 +63,8 @@ var addNewNote = () => {
 
 var deleteCurrentNote = async () => {
     if (!_activeNoteId) return;
-    if (!confirm('Bu notu silmek istediğinize emin misiniz?')) return;
+    var ok = await showConfirm(t('notes.deleteConfirm'), t('modal.confirm'), { danger: true });
+    if (!ok) return;
     var delId = _activeNoteId;
     _notes = _notes.filter(n => n.id !== delId);
     if (isDesktopMode && authToken) {
@@ -118,8 +119,8 @@ var nCmd = (cmd, val) => {
 };
 window.nCmd = nCmd;
 
-var insertNoteLink = () => {
-    var url = prompt('Bağlantı URL\'si:');
+var insertNoteLink = async () => {
+    var url = await showPrompt(t('notes.linkUrlPrompt'), '', t('notes.insertLink'));
     if (url) document.execCommand('createLink', false, url);
     autoSaveNote();
 };

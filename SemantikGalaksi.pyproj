@@ -31,6 +31,7 @@
     <Compile Include="DataEngine\generate_root_translations.py" />
     <Compile Include="DataEngine\json_to_sqlite.py" />
     <Compile Include="DataEngine\logger.py" />
+    <Compile Include="DataEngine\migrate_locales_to_db.py" />
     <Compile Include="DataEngine\quran_extractor_v3.py" />
     <Compile Include="DataEngine\run_pipeline.py" />
     <Compile Include="DataEngine\step1_fetch_quran.py" />

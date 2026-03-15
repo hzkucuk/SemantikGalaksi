@@ -888,6 +888,28 @@
         }
         .lang-option:hover { background: rgba(0,242,255,0.08); color: #e2e8f0; }
         .lang-option.active { background: rgba(0,242,255,0.12); color: #00f2ff; }
+
+        /* Modern Modal Dialog */
+        .mdl-overlay { display: none; position: fixed; inset: 0; z-index: 99999; background: rgba(0,0,0,0); backdrop-filter: blur(0px); align-items: center; justify-content: center; transition: background 0.25s, backdrop-filter 0.25s; }
+        .mdl-overlay.mdl-show { background: rgba(0,0,0,0.55); backdrop-filter: blur(6px); }
+        .mdl-box { background: linear-gradient(145deg, #131a25 0%, #0d1117 100%); border: 1px solid rgba(0,242,255,0.12); border-radius: 16px; min-width: 340px; max-width: 480px; width: 90vw; box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px rgba(0,242,255,0.06); transform: scale(0.92) translateY(12px); opacity: 0; transition: transform 0.25s cubic-bezier(.4,0,.2,1), opacity 0.25s; }
+        .mdl-show .mdl-box { transform: scale(1) translateY(0); opacity: 1; }
+        .mdl-header { display: flex; align-items: center; gap: 10px; padding: 18px 22px 0; }
+        .mdl-icon { font-size: 22px; line-height: 1; }
+        .mdl-title { font-size: 15px; font-weight: 700; color: #e2e8f0; letter-spacing: 0.01em; }
+        .mdl-body { padding: 16px 22px 8px; }
+        .mdl-message { font-size: 13px; color: #94a3b8; line-height: 1.6; word-break: break-word; }
+        .mdl-input { width: 100%; margin-top: 14px; padding: 10px 14px; background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; color: #e2e8f0; font-size: 13px; outline: none; transition: border-color 0.2s; box-sizing: border-box; font-family: inherit; }
+        .mdl-input:focus { border-color: #00f2ff; box-shadow: 0 0 0 2px rgba(0,242,255,0.12); }
+        .mdl-footer { display: flex; justify-content: flex-end; gap: 10px; padding: 12px 22px 18px; }
+        .mdl-btn { padding: 9px 22px; border-radius: 10px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; transition: all 0.18s; outline: none; }
+        .mdl-btn:focus-visible { box-shadow: 0 0 0 2px #00f2ff; }
+        .mdl-btn-cancel { background: rgba(255,255,255,0.06); color: #94a3b8; border: 1px solid rgba(255,255,255,0.08); }
+        .mdl-btn-cancel:hover { background: rgba(255,255,255,0.1); color: #e2e8f0; }
+        .mdl-btn-ok { background: linear-gradient(135deg, #0ea5e9, #06b6d4); color: #fff; }
+        .mdl-btn-ok:hover { background: linear-gradient(135deg, #0284c7, #0891b2); box-shadow: 0 4px 16px rgba(6,182,212,0.25); }
+        .mdl-btn-danger { background: linear-gradient(135deg, #ef4444, #dc2626); }
+        .mdl-btn-danger:hover { background: linear-gradient(135deg, #dc2626, #b91c1c); box-shadow: 0 4px 16px rgba(239,68,68,0.25); }
     </style>
 </head>
 <body>
@@ -1463,6 +1485,7 @@
     <script src="js/flags.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/state.js"></script>
+    <script src="js/modalDialog.js"></script>
     <script>document.getElementById('app-version-badge').textContent='v'+APP_VERSION;</script>
     <script src="js/shaders.js"></script>
     <script src="js/constants.js"></script>

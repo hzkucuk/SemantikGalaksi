@@ -1,4 +1,4 @@
-/** SemantikGalaksi — i18n (Çoklu Dil Desteği) Motoru
+﻿/** SemantikGalaksi — i18n (Çoklu Dil Desteği) Motoru
  *  Türkçe gömülü fallback, JSON locale dosyaları, otomatik algılama, localStorage hatırlama.
  *  Bağımlılıklar: Yok (ilk yüklenmeli)
  */
@@ -149,6 +149,17 @@ var I18n = (function () {
         'notes.close': 'Kapat',
         'notes.placeholder': 'Not başlığı...',
 
+        'notes.deleteConfirm': 'Bu notu silmek istediginize emin misiniz?',
+        'notes.linkUrlPrompt': 'Baglanti URLsi:',
+        'notes.insertLink': 'Baglanti Ekle',
+
+        // Modal Dialog
+        'modal.ok': 'Tamam',
+        'modal.cancel': 'Iptal',
+        'modal.confirm': 'Onay',
+        'modal.info': 'Bilgi',
+        'modal.input': 'Giris',
+        'modal.deleteUserConfirm': 'silinsin mi?',
         // HUD Tabs
         'hud.tabAyet': 'Ayet',
         'hud.tabConnections': 'Bağlantılar',

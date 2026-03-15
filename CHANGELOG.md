@@ -1,5 +1,18 @@
 ﻿bu# CHANGELOG
 
+## [1.1.4] - 2026-03-15 -- Modern Modal Dialog System
+### Eklenen
+- modalDialog.js: showAlert, showConfirm, showPrompt fonksiyonlari (Promise tabanli).
+- Modern modal CSS (animasyonlu, blur backdrop, dark tema).
+- 11 yeni i18n key'i (modal.ok/cancel/confirm/info/input, notes.deleteConfirm/linkUrlPrompt/insertLink).
+
+### Degisiklik
+- datasets.js: 7 alert/confirm/prompt cagrisi modern modal'a cevrildi.
+- auth.js: alert + confirm cagrisi modern modal'a cevrildi.
+- notes.js: confirm + prompt cagrisi modern modal'a cevrildi, insertNoteLink async yapildi.
+- search.js: alert cagrisi modern modal'a cevrildi.
+- Tum browser diyaloglari projenin dark temasina uyumlu hale getirildi.
+
 ## [1.1.3] - 2026-03-15 -- Locale SQLite + Admin Log Viewer
 ### Eklenen
 - `ui_translations` ve `locale_meta` tablolari eklendi (db_schema.py).

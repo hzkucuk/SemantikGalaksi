@@ -39,7 +39,7 @@ var _kbTarget = null;
 // =====================================================
 window.openEditor = async () => {
     if (typeof isDesktopMode !== 'undefined' && !isDesktopMode) {
-        alert(t('editor.desktopOnly'));
+        await showAlert(t('editor.desktopOnly'));
         return;
     }
     document.getElementById('json-editor').style.display = 'flex';
@@ -410,10 +410,10 @@ window.dbCancelEdit = (td) => {
 //  CRUD
 // =====================================================
 window.dbAddRoot = async () => {
-    var rootKey = prompt(t('editor.enterRoot'));
+    var rootKey = await showPrompt(t('editor.enterRoot'), '', t('editor.addRoot'));
     if (!rootKey || !rootKey.trim()) return;
     rootKey = rootKey.trim();
-    var meaning = prompt(t('editor.enterMeaning'));
+    var meaning = await showPrompt(t('editor.enterMeaning'), '', t('editor.addRoot'));
     try {
         var res = await authFetch('/api/db/root', {
             method: 'POST',
@@ -422,26 +422,27 @@ window.dbAddRoot = async () => {
         });
         if (!res.ok) {
             var err = await res.json();
-            alert(err.error || t('editor.saveError'));
+            await showAlert(err.error || t('editor.saveError'));
             return;
         }
         _dbShowStatus('\u2713 ' + t('editor.rootAdded'), 'valid');
         await _dbLoad();
-    } catch(e) { alert(e.message); }
+    } catch(e) { await showAlert(e.message); }
 };
 
 window.dbDeleteRoot = async (rootKey) => {
-    if (!confirm(t('editor.confirmDelete').replace('{root}', rootKey))) return;
+    var ok = await showConfirm(t('editor.confirmDelete').replace('{root}', rootKey), t('editor.deleteRoot'), { danger: true });
+    if (!ok) return;
     try {
         var res = await authFetch('/api/db/root/' + encodeURIComponent(rootKey), { method: 'DELETE' });
         if (!res.ok) {
             var err = await res.json();
-            alert(err.error || t('editor.deleteError'));
+            await showAlert(err.error || t('editor.deleteError'));
             return;
         }
         _dbShowStatus('\u2713 ' + t('editor.rootDeleted'), 'valid');
         await _dbLoad();
-    } catch(e) { alert(e.message); }
+    } catch(e) { await showAlert(e.message); }
 };
 
 window.dbExportAll = async () => {

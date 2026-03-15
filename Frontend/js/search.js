@@ -1,4 +1,4 @@
-// Arapça klavye fonksiyonları (arama çubuğu)
+﻿// Arapça klavye fonksiyonları (arama çubuğu)
 window.toggleSearchKb = () => {
     var kb = document.getElementById('search-arabic-kb');
     var btn = document.getElementById('search-kb-btn');
@@ -137,7 +137,7 @@ document.getElementById('file-input').onchange = (e) => {
             activeDatasetName = fname;
             processData(data);
             hasCustomData = true;
-        } catch(err) { alert(t('search.invalidJson') + ': ' + err.message); }
+        } catch(err) { showAlert(t('search.invalidJson') + ': ' + err.message); }
     };
     r.readAsText(file);
     e.target.value = '';
