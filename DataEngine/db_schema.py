@@ -48,6 +48,7 @@ CREATE TABLE IF NOT EXISTS verses (
     dipnot_parsed TEXT,
     mapping_data TEXT,
     tefsir_popup TEXT,
+    local_overrides TEXT DEFAULT NULL,
     audio TEXT,
     surah TEXT,
     UNIQUE(sure_no, ayet_no)
@@ -191,6 +192,10 @@ def init_db(db_path=None):
     """Semayi olusturur (tablolar, indeksler, triggerlar)."""
     conn = get_connection(db_path)
     conn.executescript(SCHEMA_SQL)
+    # Migration: local_overrides sutunu yoksa ekle
+    cols = [r[1] for r in conn.execute("PRAGMA table_info(verses)").fetchall()]
+    if 'local_overrides' not in cols:
+        conn.execute("ALTER TABLE verses ADD COLUMN local_overrides TEXT DEFAULT NULL")
     conn.commit()
     return conn
 

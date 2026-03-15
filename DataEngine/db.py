@@ -817,6 +817,7 @@ def list_verses(page=1, limit=50, search='', conn=None):
             'dipnot': v['dipnot'] or '',
             'tefsir_popup': v['tefsir_popup'] or '',
             'roots': [r['root'] for r in roots],
+            'local_overrides': v['local_overrides'] or '',
         })
 
     return {
@@ -953,10 +954,113 @@ def update_verse(verse_id, meal=None, dipnot=None, tefsir_popup=None, user='syst
     if not fields:
         return False
 
+    # Admin duzenlediginde local_overrides bayragi otomatik eklenir
+    if user != 'system' and user != 'sync':
+        overrides = _get_overrides_dict(existing)
+        changed_fields = []
+        if meal is not None:
+            changed_fields.append('meal')
+        if dipnot is not None:
+            changed_fields.append('dipnot')
+        if tefsir_popup is not None:
+            changed_fields.append('tefsir_popup')
+        for cf in changed_fields:
+            overrides[cf] = True
+        fields.append("local_overrides=?")
+        values.append(json.dumps(overrides, ensure_ascii=False))
+
     values.append(verse_id)
     db.execute(f"UPDATE verses SET {','.join(fields)} WHERE id=?", values)
     db.commit()
     return True
+
+
+# ===================================================================
+#  LOCAL OVERRIDE YONETIMI
+# ===================================================================
+
+def _get_overrides_dict(verse_row):
+    """Bir ayet satirindan override dict'ini oku."""
+    raw = verse_row['local_overrides'] if verse_row['local_overrides'] else None
+    if raw:
+        try:
+            return json.loads(raw)
+        except (json.JSONDecodeError, TypeError):
+            pass
+    return {}
+
+
+def get_local_overrides(verse_id, conn=None):
+    """Bir ayetin local_overrides bilgisini don."""
+    db = conn or get_db()
+    row = db.execute("SELECT local_overrides FROM verses WHERE id=?", (verse_id,)).fetchone()
+    if not row or not row['local_overrides']:
+        return {}
+    try:
+        return json.loads(row['local_overrides'])
+    except (json.JSONDecodeError, TypeError):
+        return {}
+
+
+def set_local_override(verse_id, field, user='system', conn=None):
+    """Belirtilen alana local override ekle."""
+    db = conn or get_db()
+    row = db.execute("SELECT * FROM verses WHERE id=?", (verse_id,)).fetchone()
+    if not row:
+        return False
+    overrides = _get_overrides_dict(row)
+    overrides[field] = True
+    db.execute("UPDATE verses SET local_overrides=? WHERE id=?",
+               (json.dumps(overrides, ensure_ascii=False), verse_id))
+    db.execute(
+        "INSERT INTO change_log(table_name, record_id, action, field_name, new_value, changed_by) "
+        "VALUES ('verses', ?, 'OVERRIDE', ?, 'protected', ?)",
+        (verse_id, field, user)
+    )
+    db.commit()
+    return True
+
+
+def clear_local_override(verse_id, field, user='system', conn=None):
+    """Belirtilen alandan local override kaldir."""
+    db = conn or get_db()
+    row = db.execute("SELECT * FROM verses WHERE id=?", (verse_id,)).fetchone()
+    if not row:
+        return False
+    overrides = _get_overrides_dict(row)
+    if field in overrides:
+        del overrides[field]
+    val = json.dumps(overrides, ensure_ascii=False) if overrides else None
+    db.execute("UPDATE verses SET local_overrides=? WHERE id=?", (val, verse_id))
+    db.execute(
+        "INSERT INTO change_log(table_name, record_id, action, field_name, new_value, changed_by) "
+        "VALUES ('verses', ?, 'OVERRIDE_CLEAR', ?, 'unprotected', ?)",
+        (verse_id, field, user)
+    )
+    db.commit()
+    return True
+
+
+def get_all_overrides(conn=None):
+    """Tum local override'lari listele."""
+    db = conn or get_db()
+    rows = db.execute(
+        "SELECT id, surah, ayet_no, local_overrides FROM verses WHERE local_overrides IS NOT NULL AND TRIM(local_overrides) != ''"
+    ).fetchall()
+    result = []
+    for r in rows:
+        try:
+            ov = json.loads(r['local_overrides'])
+            if ov:
+                result.append({
+                    'id': r['id'],
+                    'surah': r['surah'],
+                    'ayet_no': r['ayet_no'],
+                    'overrides': ov,
+                })
+        except (json.JSONDecodeError, TypeError):
+            pass
+    return result
 
 
 def update_verse_roots(verse_id, roots, user='system', conn=None):

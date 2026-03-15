@@ -422,16 +422,24 @@ def get_db():
 def get_surah_from_db(db, sure_no):
     """Sure ayetlerini DB'den ceker."""
     rows = db.execute("""
-        SELECT id, ayet_no, ayet, meal, dipnot, dipnot_parsed, mapping_data, tefsir_popup
+        SELECT id, ayet_no, ayet, meal, dipnot, dipnot_parsed, mapping_data, tefsir_popup, local_overrides
         FROM verses WHERE sure_no = ? ORDER BY ayet_no
     """, (sure_no,)).fetchall()
     verses = {}
     for r in rows:
+        # local_overrides JSON parse
+        overrides = {}
+        if r[8]:
+            try:
+                overrides = json.loads(r[8])
+            except (json.JSONDecodeError, TypeError):
+                pass
         verses[r[1]] = {
             "id": r[0], "ayet_no": r[1],
             "ayet": r[2] or "", "meal": r[3] or "",
             "dipnot": r[4] or "", "dipnot_parsed": r[5] or "",
             "mapping_data": r[6] or "", "tefsir_popup": r[7] or "",
+            "_overrides": overrides,
         }
     return verses
 
@@ -446,6 +454,7 @@ def compare_surah(db, sure_no, site_verses, do_fix=False):
 
     diffs = []
     fixes = []
+    skipped = []  # local_override nedeniyle atlanan farklar
 
     # Ayet sayisi kontrolu
     if len(site_verses) != expected_count:
@@ -467,81 +476,67 @@ def compare_surah(db, sure_no, site_verses, do_fix=False):
             diffs.append({"type": "SITE_EKSIK", "id": vid, "detail": "Ayet sitede yok"})
             continue
 
+        overrides = db_v.get("_overrides", {})
+
         fix_entry = {"id": vid}
         has_fix = False
 
         # --- ARAPCA METIN ---
         db_ayet = normalize_text(db_v.get("ayet", ""))
         site_ayet = normalize_text(site_v.get("ayet", ""))
+        _ayet_diff = False
         if not db_ayet and site_ayet:
-            diffs.append({
-                "type": "AYET_BOS", "id": vid, "field": "ayet",
-                "site": site_ayet[:60]
-            })
-            fix_entry["ayet"] = site_v["ayet"]
-            has_fix = True
+            _ayet_diff = True
         elif db_ayet and site_ayet and not texts_match(db_ayet, site_ayet):
-            diffs.append({
-                "type": "AYET_FARKLI", "id": vid, "field": "ayet",
-                "db": db_ayet[:60], "site": site_ayet[:60]
-            })
-            # Arapca metin farki: siteyi tercih et (daha guncel)
-            fix_entry["ayet"] = site_v["ayet"]
-            has_fix = True
+            _ayet_diff = True
+        if _ayet_diff:
+            if overrides.get('ayet'):
+                skipped.append({"id": vid, "field": "ayet", "type": "OVERRIDE",
+                                "db": db_ayet[:60], "site": site_ayet[:60]})
+            else:
+                diff_type = "AYET_BOS" if not db_ayet else "AYET_FARKLI"
+                diffs.append({"type": diff_type, "id": vid, "field": "ayet",
+                              "db": db_ayet[:60], "site": site_ayet[:60]})
+                fix_entry["ayet"] = site_v["ayet"]
+                has_fix = True
 
         # --- MEAL ---
         db_meal = normalize_text(db_v.get("meal", ""))
         site_meal = normalize_text(site_v.get("meal", ""))
+        _meal_diff = False
         if not db_meal and site_meal:
-            diffs.append({
-                "type": "MEAL_BOS", "id": vid, "field": "meal",
-                "site": site_meal[:60]
-            })
-            fix_entry["meal"] = site_v["meal"]
-            has_fix = True
+            _meal_diff = True
         elif db_meal and site_meal and not texts_match(db_meal, site_meal):
-            diffs.append({
-                "type": "MEAL_FARKLI", "id": vid, "field": "meal",
-                "db": db_meal[:60], "site": site_meal[:60]
-            })
-            # Meal farki: siteyi tercih et
-            fix_entry["meal"] = site_v["meal"]
-            has_fix = True
+            _meal_diff = True
+        if _meal_diff:
+            if overrides.get('meal'):
+                skipped.append({"id": vid, "field": "meal", "type": "OVERRIDE",
+                                "db": db_meal[:60], "site": site_meal[:60]})
+            else:
+                diff_type = "MEAL_BOS" if not db_meal else "MEAL_FARKLI"
+                diffs.append({"type": diff_type, "id": vid, "field": "meal",
+                              "db": db_meal[:60], "site": site_meal[:60]})
+                fix_entry["meal"] = site_v["meal"]
+                has_fix = True
 
         # --- DIPNOT ---
         db_dipnot = normalize_text(db_v.get("dipnot", ""))
         site_dipnot = normalize_text(site_v.get("dipnot", ""))
+        _dipnot_diff = False
         if not db_dipnot and site_dipnot:
-            diffs.append({
-                "type": "DIPNOT_BOS", "id": vid, "field": "dipnot",
-                "site": site_dipnot[:60]
-            })
-            fix_entry["dipnot"] = site_v["dipnot"]
-            # dipnot_parsed ve mapping_data olustur
-            segments, connections = parse_rich_text(site_v["dipnot"])
-            if segments:
-                fix_entry["dipnot_parsed"] = json.dumps(segments, ensure_ascii=False)
-            mapping = {"coordinate": vid, "connections": connections}
-            # Mevcut mapping_data connections birlestir
-            if db_v.get("mapping_data"):
-                try:
-                    existing = json.loads(db_v["mapping_data"])
-                    existing_targets = {c["target_coordinate"]
-                                        for c in existing.get("connections", [])}
-                    for conn in connections:
-                        if conn["target_coordinate"] not in existing_targets:
-                            existing["connections"].append(conn)
-                    mapping = existing
-                except Exception:
-                    pass
-            fix_entry["mapping_data"] = json.dumps(mapping, ensure_ascii=False)
-            has_fix = True
+            _dipnot_diff = True
         elif db_dipnot and site_dipnot and not texts_match(db_dipnot, site_dipnot):
-            diffs.append({
-                "type": "DIPNOT_FARKLI", "id": vid, "field": "dipnot",
-                "db": db_dipnot[:60], "site": site_dipnot[:60]
-            })
-            # Dipnot farki: siteyi tercih et, koordinatlari yeniden parse et
+            _dipnot_diff = True
+        if _dipnot_diff and overrides.get('dipnot'):
+            skipped.append({"id": vid, "field": "dipnot", "type": "OVERRIDE",
+                            "db": db_dipnot[:60], "site": site_dipnot[:60]})
+        elif _dipnot_diff:
+            if not db_dipnot and site_dipnot:
+                diffs.append({"type": "DIPNOT_BOS", "id": vid, "field": "dipnot",
+                              "site": site_dipnot[:60]})
+            else:
+                diffs.append({"type": "DIPNOT_FARKLI", "id": vid, "field": "dipnot",
+                              "db": db_dipnot[:60], "site": site_dipnot[:60]})
             fix_entry["dipnot"] = site_v["dipnot"]
             segments, connections = parse_rich_text(site_v["dipnot"])
             if segments:
@@ -550,10 +545,17 @@ def compare_surah(db, sure_no, site_verses, do_fix=False):
             if db_v.get("mapping_data"):
                 try:
                     existing = json.loads(db_v["mapping_data"])
-                    # Tefsir popup connections'lari koru
-                    tefsir_conns = [c for c in existing.get("connections", [])
-                                    if c not in connections]
-                    mapping["connections"] = connections + tefsir_conns
+                    if not db_dipnot:  # DIPNOT_BOS
+                        existing_targets = {c["target_coordinate"]
+                                            for c in existing.get("connections", [])}
+                        for conn in connections:
+                            if conn["target_coordinate"] not in existing_targets:
+                                existing["connections"].append(conn)
+                        mapping = existing
+                    else:  # DIPNOT_FARKLI
+                        tefsir_conns = [c for c in existing.get("connections", [])
+                                        if c not in connections]
+                        mapping["connections"] = connections + tefsir_conns
                 except Exception:
                     pass
             fix_entry["mapping_data"] = json.dumps(mapping, ensure_ascii=False)
@@ -573,25 +575,28 @@ def compare_surah(db, sure_no, site_verses, do_fix=False):
         site_has_tefsir = site_v.get("has_tefsir", False)
         db_has_tefsir = bool(db_v.get("tefsir_popup", "").strip())
         if site_has_tefsir and not db_has_tefsir:
-            # Sitede tefsir var ama DB'de yok — dipnot iceriginden tefsir olustur
-            dp_text = fix_entry.get("dipnot", db_v.get("dipnot", "")).strip()
-            if dp_text:
-                segments, connections = parse_rich_text(dp_text)
-                tefsir_data = json.dumps(segments, ensure_ascii=False) if segments else ""
-                if tefsir_data:
-                    fix_entry["tefsir_popup"] = tefsir_data
-                    diffs.append({
-                        "type": "TEFSIR_BOS", "id": vid, "field": "tefsir_popup",
-                        "site": "Sitede tefsir mevcut"
-                    })
-                    has_fix = True
+            if overrides.get('tefsir_popup'):
+                skipped.append({"id": vid, "field": "tefsir_popup", "type": "OVERRIDE"})
+            else:
+                # Sitede tefsir var ama DB'de yok — dipnot iceriginden tefsir olustur
+                dp_text = fix_entry.get("dipnot", db_v.get("dipnot", "")).strip()
+                if dp_text:
+                    segments, connections = parse_rich_text(dp_text)
+                    tefsir_data = json.dumps(segments, ensure_ascii=False) if segments else ""
+                    if tefsir_data:
+                        fix_entry["tefsir_popup"] = tefsir_data
+                        diffs.append({
+                            "type": "TEFSIR_BOS", "id": vid, "field": "tefsir_popup",
+                            "site": "Sitede tefsir mevcut"
+                        })
+                        has_fix = True
         # NOT: TEFSIR_EKSTRA (DB'de tefsir var, sitede isaret yok) normal durumdur.
         # DB'deki tefsir verisi korunur, fark olarak raporlanmaz.
 
         if has_fix:
             fixes.append(fix_entry)
 
-    return diffs, fixes
+    return diffs, fixes, skipped
 
 
 def apply_fixes(db, fixes):
@@ -652,6 +657,7 @@ def main():
     db = get_db()
     all_diffs = []
     all_fixes = []
+    all_skipped = []
     surah_stats = {}
 
     for sure_no in sure_range:
@@ -676,7 +682,7 @@ def main():
             })
             continue
 
-        diffs, fixes = compare_surah(db, sure_no, site_verses, do_fix)
+        diffs, fixes, skipped = compare_surah(db, sure_no, site_verses, do_fix)
 
         if diffs:
             # Fark turlerine gore say
@@ -693,10 +699,12 @@ def main():
             "site_count": len(site_verses),
             "diff_count": len(diffs),
             "fix_count": len(fixes),
+            "skipped_count": len(skipped),
         }
 
         all_diffs.extend(diffs)
         all_fixes.extend(fixes)
+        all_skipped.extend(skipped)
 
         time.sleep(0.5)
 
@@ -713,6 +721,8 @@ def main():
     print(f"  Kontrol edilen sure : {len(surah_stats)}")
     print(f"  Toplam fark         : {len(all_diffs)}")
     print(f"  Duzeltilecek kayit  : {len(all_fixes)}")
+    if all_skipped:
+        print(f"  Atlanan (override)  : {len(all_skipped)}")
     print()
     print("  Fark turleri:")
     for t, c in sorted(type_totals.items()):
@@ -730,6 +740,7 @@ def main():
             "diffs": all_diffs,
             "fixes": [{"id": f["id"], "fields": [k for k in f if k != "id"]}
                       for f in all_fixes],
+            "skipped": all_skipped,
         }
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(report, f, ensure_ascii=False, indent=2)

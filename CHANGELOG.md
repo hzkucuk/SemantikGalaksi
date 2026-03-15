@@ -1,5 +1,21 @@
 ﻿bu# CHANGELOG
 
+## [1.3.1] - 2025-07-18 -- Local Override + Diff Review Sistemi
+### Eklenen
+- Local Override sistemi: Admin duzenlediginde alan sync sirasinda korunur (atlanir).
+- verses tablosuna local_overrides TEXT kolonu (JSON format: {"meal": true, "dipnot": true}).
+- Override CRUD API: GET /api/db/overrides, POST /api/db/override (set/clear).
+- DB Grid: Override badge (kilit ikonu), sag tik context menu ile koruma kaldirma.
+- Sync paneli: Atlanan alan sayisi kolonu, skipped ozet badge, adim 3-4 override bilgisi.
+- compare_surah 3-tuple: (diffs, fixes, skipped) — override'li alanlar skipped listesinde.
+### Teknik
+- db_schema.py: local_overrides kolonu + ALTER TABLE migration.
+- db.py: _get_overrides_dict, get_local_overrides, set_local_override, clear_local_override, get_all_overrides. update_verse auto-override.
+- sync_check.py: compare_surah override skip mantigi (ayet, meal, dipnot, tefsir_popup). 3-tuple return.
+- desktop_app.py: _db_list_overrides, _db_set_override endpoint'leri. Sync scan/fix 3-tuple guncelleme.
+- datasets.js: _dbParseOverrides, dbOverrideMenu, dbOverrideAction. Sync panel skipped UI.
+- i18n.js: override.* 7 yeni anahtar.
+
 ## [1.3.0] - 2025-07-18 -- Denetim Paneli Tefsir + Eksiklik Kontrolu
 ### Eklenen
 - Denetim paneline Tefsir metrigi: bos tefsir sayisi, sure bazli tefsir sutunu, detay listesi.

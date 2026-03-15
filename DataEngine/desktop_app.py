@@ -682,6 +682,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._sync_list_backups()
         elif path == '/api/sync/parser-status':
             self._sync_parser_status()
+        elif path == '/api/db/overrides':
+            self._db_list_overrides()
         else:
             super().do_GET()
 
@@ -720,6 +722,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._sync_set_ai_key()
         elif self.path == '/api/sync/ai-key-test':
             self._sync_ai_key_test()
+        elif self.path == '/api/db/override':
+            self._db_set_override()
 
     def do_PUT(self):
         if self.path.startswith('/api/auth/user/'):
@@ -1878,7 +1882,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
                 })
                 return
             db = _sync_mod.get_db()
-            diffs, fixes = _sync_mod.compare_surah(db, sure_no, site_verses)
+            diffs, fixes, skipped = _sync_mod.compare_surah(db, sure_no, site_verses)
             db.close()
             # Fark turlerine gore grupla
             type_counts = {}
@@ -1893,11 +1897,13 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
                 'status': 'ok',
                 'diff_count': len(diffs),
                 'fix_count': len(fixes),
+                'skipped_count': len(skipped),
                 'type_counts': type_counts,
                 'parse_method': parse_method,
                 'diffs': diffs[:50],
                 'fixes': [{'id': f['id'], 'fields': [k for k in f if k != 'id']}
                           for f in fixes],
+                'skipped': skipped[:20],
             })
         except Exception as e:
             log_system.error('Sync scan hatasi', error=str(e))
@@ -1933,23 +1939,73 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
                 self._json_response({'error': f'Sure {sure_no} parse hatasi'}, 502)
                 return
             db = _sync_mod.get_db()
-            diffs, fixes = _sync_mod.compare_surah(db, sure_no, site_verses)
+            diffs, fixes, skipped = _sync_mod.compare_surah(db, sure_no, site_verses)
             if not fixes:
                 db.close()
                 self._json_response({'ok': True, 'sure_no': sure_no, 'updated': 0,
+                                      'skipped_count': len(skipped),
                                       'message': 'Duzeltilecek fark yok'})
                 return
             updated = _sync_mod.apply_fixes(db, fixes)
             db.close()
             log_system.info('Sync fix uygulandi', user=session['username'],
                             sure_no=sure_no, slug=slug, updated=updated,
-                            diffs=len(diffs))
+                            diffs=len(diffs), skipped=len(skipped))
             self._json_response({
                 'ok': True, 'sure_no': sure_no, 'slug': slug,
-                'updated': updated, 'diff_count': len(diffs)
+                'updated': updated, 'diff_count': len(diffs),
+                'skipped_count': len(skipped)
             })
         except Exception as e:
             log_system.error('Sync fix hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_list_overrides(self):
+        """Tum local override'lari listele. GET /api/db/overrides"""
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        try:
+            result = _db.get_all_overrides()
+            self._json_response({'ok': True, 'overrides': result, 'total': len(result)})
+        except Exception as e:
+            log_system.error('Override listeleme hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_set_override(self):
+        """Override set/clear. POST /api/db/override
+        Body: {verse_id: str, field: str, action: 'set'|'clear'}"""
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        body = self._read_body()
+        if not body:
+            self._json_response({'error': 'Gecersiz istek'}, 400)
+            return
+        verse_id = body.get('verse_id', '')
+        field = body.get('field', '')
+        action = body.get('action', 'set')
+        if not verse_id or not field:
+            self._json_response({'error': 'verse_id ve field gerekli'}, 400)
+            return
+        if field not in ('ayet', 'meal', 'dipnot', 'tefsir_popup'):
+            self._json_response({'error': 'Gecersiz alan: ' + field}, 400)
+            return
+        try:
+            if action == 'clear':
+                ok = _db.clear_local_override(verse_id, field, user=session['username'])
+            else:
+                ok = _db.set_local_override(verse_id, field, user=session['username'])
+            if ok:
+                log_system.info('Override ' + action, user=session['username'],
+                                verse_id=verse_id, field=field)
+                self._json_response({'ok': True, 'verse_id': verse_id, 'field': field, 'action': action})
+            else:
+                self._json_response({'error': 'Ayet bulunamadi'}, 404)
+        except Exception as e:
+            log_system.error('Override hatasi', error=str(e))
             self._json_response({'error': str(e)}, 500)
 
     def _sync_notify(self):

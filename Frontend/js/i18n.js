@@ -215,6 +215,14 @@ var I18n = (function () {
         'sync.claudeKeyAdd': 'Ekle',
         'sync.claudeKeyOk': 'Claude API anahtari aktif',
         'sync.claudeKeyFail': 'Claude API anahtari gecersiz',
+        // Override
+        'override.protected': 'Korunuyor (sync atlar)',
+        'override.clear': 'Korumayı Kaldır',
+        'override.cleared': 'Koruma kaldirildi',
+        'override.set': 'Alan korumaya alindi',
+        'override.skipped': 'Atlanan',
+        'override.skippedTitle': 'Korunan Alanlar (Override)',
+        'override.skippedDesc': '{count} alan admin tarafindan duzenlenmis, sync sirasinda atlanacak.',
         'apikey.noKeys': 'Henuz API anahtari eklenmedi.',
         'common.delete': 'Sil',
 

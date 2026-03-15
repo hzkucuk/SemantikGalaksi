@@ -34,6 +34,12 @@ var _dbTransLang = null;
 var _dbLogTable = '';
 var _kbTarget = null;
 
+// Override helper
+var _dbParseOverrides = (val) => {
+    if (!val) return {};
+    try { return JSON.parse(val); } catch(e) { return {}; }
+};
+
 // =====================================================
 //  DB GRID EDITOR — Open / Close / Tabs
 // =====================================================
@@ -238,16 +244,25 @@ var _dbRenderMain = () => {
         h += '<tr><td colspan="' + (cols.length + extraCol) + '" style="text-align:center;padding:30px;color:#64748b">' + t('editor.noResults') + '</td></tr>';
     } else {
         _dbData.items.forEach(function(row) {
+            var ov = _dbParseOverrides(row.local_overrides);
             h += '<tr>';
             cols.forEach(function(c) {
                 var val = c.type === 'roots' ? (row[c.key] || []).join(', ') : (row[c.key] != null ? row[c.key] : '');
                 var editable = !isLogs && c.edit && ((c.edit === 'admin' && isAdmin) || (c.edit === 'editor' && canEdit));
-                var cellCls = 'db-cell' + (c.rtl ? ' rtl' : '') + (editable ? ' editable' : '');
+                var isOverridden = (_dbTab === 'verses' && ov[c.key]);
+                var cellCls = 'db-cell' + (c.rtl ? ' rtl' : '') + (editable ? ' editable' : '') + (isOverridden ? ' db-cell-override' : '');
                 var rowId = _dbTab === 'verses' ? row.id : (_dbTab === 'roots' ? row.root : (isLogs ? row.id : (row.root + ':' + row.lang)));
                 if (editable) {
-                    h += '<td class="' + cellCls + '" ondblclick="dbStartEdit(this,\'' + _escAttr(rowId) + '\',\'' + c.key + '\',\'' + (c.type || '') + '\')" title="' + t('editor.dblClickEdit') + '">';
+                    h += '<td class="' + cellCls + '" ondblclick="dbStartEdit(this,\'' + _escAttr(rowId) + '\',\'' + c.key + '\',\'' + (c.type || '') + '\')"';
+                    if (isOverridden && isAdmin) {
+                        h += ' oncontextmenu="dbOverrideMenu(event,\'' + _escAttr(rowId) + '\',\'' + c.key + '\')"';
+                    }
+                    h += ' title="' + (isOverridden ? t('override.protected') + ' \u2014 ' : '') + t('editor.dblClickEdit') + '">';
                 } else {
                     h += '<td class="' + cellCls + '">';
+                }
+                if (isOverridden) {
+                    h += '<span class="db-override-badge" title="' + t('override.protected') + '">🔒</span>';
                 }
                 if (c.type === 'roots') {
                     (row[c.key] || []).forEach(function(r) {
@@ -730,7 +745,7 @@ var _dbRenderAudit = () => {
 // =====================================================
 //  SYNC MANAGEMENT PANEL (Admin Only)
 // =====================================================
-var _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, scanning: false, fixing: false, aiStatus: null };
+var _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, totalSkipped: 0, scanning: false, fixing: false, aiStatus: null };
 
 var _dbRenderSync = () => {
     var main = document.getElementById('editor-main');
@@ -833,6 +848,12 @@ var _dbRenderSync = () => {
         h += '<div class="sync-step-panel">';
         h += '<div style="font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:8px;">\uD83D\uDCCB ' + t('sync.step3') + '</div>';
         h += _syncRenderScanResults();
+        if (st.totalSkipped > 0) {
+            h += '<div style="background:rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.2);border-radius:10px;padding:12px;margin-bottom:12px;">';
+            h += '<div style="font-size:12px;font-weight:700;color:#a78bfa;margin-bottom:4px;">🔒 ' + t('override.skippedTitle') + '</div>';
+            h += '<div style="font-size:11px;color:#94a3b8;">' + t('override.skippedDesc').replace('{count}', st.totalSkipped) + '</div>';
+            h += '</div>';
+        }
         if (st.totalDiffs === 0) {
             h += '<div style="text-align:center;padding:32px;color:#34d399;font-size:14px;font-weight:700;">\u2714 ' + t('sync.noDiffs') + '</div>';
             h += '<button onclick="_syncState.step=5;_dbRenderSync();" class="sync-action-btn" style="background:#34d399;">Bildirim Adimina Gec \u2192</button>';
@@ -846,7 +867,7 @@ var _dbRenderSync = () => {
     if (st.step === 4) {
         h += '<div class="sync-step-panel">';
         h += '<div style="font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:8px;">\uD83D\uDD27 ' + t('sync.step4') + '</div>';
-        h += '<div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">' + t('sync.totalDiffs') + ': <strong style="color:#f59e0b;">' + st.totalDiffs + '</strong> | ' + t('sync.totalFixes') + ': <strong style="color:#06b6d4;">' + st.totalFixes + '</strong></div>';
+        h += '<div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">' + t('sync.totalDiffs') + ': <strong style="color:#f59e0b;">' + st.totalDiffs + '</strong> | ' + t('sync.totalFixes') + ': <strong style="color:#06b6d4;">' + st.totalFixes + '</strong>' + (st.totalSkipped > 0 ? ' | 🔒 ' + t('override.skipped') + ': <strong style="color:#a78bfa;">' + st.totalSkipped + '</strong>' : '') + '</div>';
         if (!st.fixing) {
             h += '<div style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);border-radius:10px;padding:12px;margin-bottom:16px;font-size:11px;color:#fbbf24;">\u26A0 ' + t('sync.fixConfirm') + '</div>';
             h += '<button onclick="_syncDoFix()" class="sync-action-btn" style="background:#ef4444;">\uD83D\uDD27 ' + t('sync.fixBtn') + '</button>';
@@ -879,6 +900,8 @@ var _dbRenderSync = () => {
     h += '.sync-badge-ok{background:rgba(52,211,153,0.15);color:#34d399;}';
     h += '.sync-badge-diff{background:rgba(245,158,11,0.15);color:#fbbf24;}';
     h += '.sync-badge-err{background:rgba(239,68,68,0.15);color:#ef4444;}';
+    h += '.db-cell-override{border-left:2px solid #a78bfa !important;background:rgba(139,92,246,0.04) !important;}';
+    h += '.db-override-badge{font-size:9px;margin-right:3px;opacity:0.7;}';
     h += '</style>';
     main.innerHTML = h;
 };
@@ -905,6 +928,7 @@ var _syncRenderScanResults = () => {
     h += '<div class="sync-badge sync-badge-ok">\u2714 Eslesme: ' + totalOk + '</div>';
     h += '<div class="sync-badge sync-badge-diff">\u26A0 Farkli: ' + totalDiff + '</div>';
     if (totalErr > 0) h += '<div class="sync-badge sync-badge-err">\u2716 Hata: ' + totalErr + '</div>';
+    if (st.totalSkipped > 0) h += '<div class="sync-badge" style="background:rgba(139,92,246,0.15);color:#a78bfa;">🔒 ' + t('override.skipped') + ': ' + st.totalSkipped + '</div>';
     h += '<div style="font-size:10px;color:#94a3b8;display:flex;align-items:center;">' + t('sync.totalDiffs') + ': <strong style="color:#fbbf24;margin-left:4px;">' + st.totalDiffs + '</strong></div>';
     h += '</div>';
     // Tablo
@@ -919,6 +943,7 @@ var _syncRenderScanResults = () => {
     h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.fieldTefsir') + '</th>';
     h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.parseMethod') + '</th>';
     h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.diffCount') + '</th>';
+    h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">🔒</th>';
     h += '</tr></thead><tbody>';
     st.scanResults.forEach(function(r) {
         var bgc = r.status === 'error' ? 'rgba(239,68,68,0.05)' : (r.diff_count > 0 ? 'rgba(245,158,11,0.05)' : '');
@@ -935,6 +960,8 @@ var _syncRenderScanResults = () => {
         h += '<td style="padding:6px 8px;text-align:center;">' + _syncDiffBadge(tc, 'TEFSIR') + '</td>';
         h += '<td style="padding:6px 8px;text-align:center;"><span class="sync-badge" style="background:' + pmClr + '20;color:' + pmClr + ';">' + pmLabel + '</span></td>';
         h += '<td style="padding:6px 8px;text-align:center;font-weight:700;color:' + (r.diff_count > 0 ? '#fbbf24' : '#34d399') + ';">' + (r.status === 'error' ? '<span style="color:#ef4444;">HATA</span>' : r.diff_count) + '</td>';
+        var sk = r.skipped_count || 0;
+        h += '<td style="padding:6px 8px;text-align:center;">' + (sk > 0 ? '<span class="sync-badge" style="background:rgba(139,92,246,0.15);color:#a78bfa;">' + sk + '</span>' : '') + '</td>';
         h += '</tr>';
     });
     h += '</tbody></table></div>';
@@ -968,6 +995,7 @@ window._syncDoScan = async () => {
     _syncState.scanResults = [];
     _syncState.totalDiffs = 0;
     _syncState.totalFixes = 0;
+    _syncState.totalSkipped = 0;
     // Claude key'i backend'e gonder (varsa)
     var claudeKey = KeyManager.getKeys('claude').find(function(k) { return k.status === 'ok' || k.status === 'pending'; });
     if (claudeKey) {
@@ -988,6 +1016,7 @@ window._syncDoScan = async () => {
             _syncState.scanResults.push(r);
             _syncState.totalDiffs += (r.diff_count || 0);
             _syncState.totalFixes += (r.fix_count || 0);
+            _syncState.totalSkipped += (r.skipped_count || 0);
         } catch(e) {
             _syncState.scanResults.push({ sure_no: sn, slug: '?', status: 'error', error: e.message, diff_count: 0, fix_count: 0, type_counts: {} });
         }
@@ -1035,7 +1064,7 @@ window._syncDoNotify = async () => {
 };
 
 window._syncReset = () => {
-    _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, scanning: false, fixing: false, aiStatus: null };
+    _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, totalSkipped: 0, scanning: false, fixing: false, aiStatus: null };
     _dbLoad();
 };
 
@@ -1065,4 +1094,43 @@ window._syncAddClaudeKey = async () => {
     }
     input.disabled = false;
     input.value = '';
+};
+
+// =====================================================
+//  OVERRIDE CONTEXT MENU
+// =====================================================
+window.dbOverrideMenu = (e, verseId, field) => {
+    e.preventDefault();
+    var old = document.getElementById('db-override-ctx');
+    if (old) old.remove();
+    var menu = document.createElement('div');
+    menu.id = 'db-override-ctx';
+    menu.style.cssText = 'position:fixed;z-index:10000;background:#1e293b;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:6px 0;min-width:180px;box-shadow:0 8px 32px rgba(0,0,0,0.5);';
+    menu.style.left = e.clientX + 'px';
+    menu.style.top = e.clientY + 'px';
+    menu.innerHTML = '<div style="padding:6px 14px;font-size:10px;color:#64748b;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.06);">' + verseId + ' / ' + field + '</div>' +
+        '<div style="padding:8px 14px;font-size:11px;color:#f87171;cursor:pointer;" onclick="dbOverrideAction(\'' + verseId + '\',\'' + field + '\',\'clear\')">' +
+        '🔓 ' + t('override.clear') + '</div>';
+    document.body.appendChild(menu);
+    var closer = function(ev) { if (!menu.contains(ev.target)) { menu.remove(); document.removeEventListener('click', closer); } };
+    setTimeout(function() { document.addEventListener('click', closer); }, 50);
+};
+
+window.dbOverrideAction = async (verseId, field, action) => {
+    var old = document.getElementById('db-override-ctx');
+    if (old) old.remove();
+    try {
+        var res = await authFetch('/api/db/override', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ verse_id: verseId, field: field, action: action })
+        });
+        var data = await res.json();
+        if (data.ok) {
+            showToast(action === 'clear' ? '🔓 ' + t('override.cleared') : '🔒 ' + t('override.set'), 'success');
+            _dbLoad();
+        } else {
+            showToast('\u274C ' + (data.error || 'Hata'), 'warn');
+        }
+    } catch(e) { showToast('\u274C ' + e.message, 'warn'); }
 };
