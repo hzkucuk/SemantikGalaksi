@@ -1,5 +1,21 @@
 ﻿bu# CHANGELOG
 
+## [1.2.4] - 2025-07-16 -- Tam DB-Site Senkronizasyonu
+### Duzeltilen
+- 114 sure / 6236 ayet Sueleymaniye Vakfi sitesiyle tam senkronize edildi.
+- 3840 kayit guncellendi (1478 Arapca metin, 2151 meal, 3208 dipnot farki).
+- dipnot_parsed ve mapping_data koordinat sistemi korunarak yeniden olusturuldu.
+- Dogrulama: 114/114 sure 0 fark ile onaylandi.
+### Eklenen
+- `sync_check.py`: Tam DB-Site senkronizasyon araci (--fix, --sure, --report).
+- deep_normalize(): Bosluk, dipnot referans formati, tirnak normalizasyonu.
+- texts_match(): %90 toleransli akilli karsilastirma.
+### Teknik
+- Kok analizi: 6214/6236 ayet koklu. 22 koksuz ayet (20 huruf-u mukattaa + 2 ozel isim).
+- 1651 benzersiz kok, 44718 kok-ayet eslesmesi.
+### Etkilenen Dosyalar
+- DataEngine/sync_check.py (yeni), DataEngine/quran.db
+
 ## [1.2.3] - 2025-07-15 -- Kapsamli Veri Doldurma (Arapca+Dipnot+Koordinat)
 ### Eklenen
 - `fill_verse_data.py`: Arapca metin, meal, dipnot, dipnot_parsed, mapping_data doldurma.
