@@ -104,6 +104,22 @@ var WebDB = {
             [langCode]
         );
         var result = {};
+        // meta bilgisi (besmeleAudio dahil)
+        var meta = this._query(
+            "SELECT * FROM locale_meta WHERE lang=?",
+            [langCode]
+        );
+        if (meta.length > 0) {
+            var m = meta[0];
+            result.meta = {
+                code: m.lang,
+                name: m.name,
+                nativeName: m.native_name,
+                flag: m.flag,
+                direction: m.direction,
+                besmeleAudio: m.besmele_audio
+            };
+        }
         for (var i = 0; i < rows.length; i++) {
             result[rows[i].key] = rows[i].value;
         }

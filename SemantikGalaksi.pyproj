@@ -50,14 +50,23 @@
     <Compile Include="DataEngine\_final_check.py" />
     <Compile Include="DataEngine\_gen_translations.py" />
     <Compile Include="DataEngine\_inject_ai.py" />
+    <Compile Include="DataEngine\_patch_datasets_all.py" />
+    <Compile Include="DataEngine\_patch_ds1.py" />
+    <Compile Include="DataEngine\_patch_ds2.py" />
+    <Compile Include="DataEngine\_patch_ds3.py" />
+    <Compile Include="DataEngine\_patch_ds4.py" />
+    <Compile Include="DataEngine\_patch_override_endpoints.py" />
     <Compile Include="DataEngine\_quality.py" />
     <Compile Include="DataEngine\_refine.py" />
     <Compile Include="DataEngine\_root_status.py" />
     <Compile Include="DataEngine\_root_verify.py" />
     <Compile Include="setup.py" />
     <Compile Include="_fix_cl.py" />
+    <Compile Include="_fix_cl2.py" />
+    <Compile Include="_fix_details.py" />
     <Compile Include="_fix_keys.py" />
     <Compile Include="_fix_status.py" />
+    <Compile Include="_fix_ver.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".github\workflows\deploy.yml" />
