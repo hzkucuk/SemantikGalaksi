@@ -13,6 +13,7 @@ import hashlib
 import secrets
 import struct
 import datetime
+import shutil
 
 try:
     import updater
@@ -39,6 +40,13 @@ try:
 except ImportError:
     quran_db = None
     _HAS_DB = False
+
+try:
+    import sync_check as _sync_mod
+    _HAS_SYNC = True
+except ImportError:
+    _sync_mod = None
+    _HAS_SYNC = False
 
 # --- AYARLAR ---
 def _get_base_dir():
@@ -654,6 +662,10 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._db_get_locale()
         elif path.startswith('/api/db/root/'):
             self._db_get_root_detail()
+        elif path == '/api/sync/status':
+            self._sync_status()
+        elif path == '/api/sync/backups':
+            self._sync_list_backups()
         else:
             super().do_GET()
 
@@ -680,6 +692,14 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._save_notes()
         elif self.path == '/api/db/root':
             self._db_add_root()
+        elif self.path == '/api/sync/backup':
+            self._sync_backup()
+        elif self.path == '/api/sync/scan':
+            self._sync_scan()
+        elif self.path == '/api/sync/fix':
+            self._sync_fix()
+        elif self.path == '/api/sync/notify':
+            self._sync_notify()
 
     def do_PUT(self):
         if self.path.startswith('/api/auth/user/'):
@@ -1704,6 +1724,232 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         except ValueError as e:
             self._json_response({'error': str(e)}, 400)
         except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    # --- Sync Management API Endpoints ---
+
+    def _sync_status(self):
+        """Sync durumu: DB boyutu, son yedek, son sync zamani."""
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            from db_schema import DB_PATH as _dbp
+            db_size = os.path.getsize(_dbp) if os.path.exists(_dbp) else 0
+            # Yedek dizini
+            backup_dir = os.path.join(os.path.dirname(_dbp), 'backups')
+            backups = []
+            if os.path.isdir(backup_dir):
+                for f in sorted(os.listdir(backup_dir), reverse=True):
+                    if f.endswith('.db'):
+                        fp = os.path.join(backup_dir, f)
+                        backups.append({
+                            'name': f,
+                            'size': os.path.getsize(fp),
+                            'date': datetime.datetime.fromtimestamp(
+                                os.path.getmtime(fp)).isoformat()
+                        })
+            # DB istatistikleri
+            stats = quran_db.get_stats() if hasattr(quran_db, 'get_stats') else {}
+            self._json_response({
+                'db_path': _dbp,
+                'db_size': db_size,
+                'backups': backups[:10],
+                'stats': stats,
+                'has_sync': _HAS_SYNC,
+                'surah_count': 114,
+            })
+        except Exception as e:
+            log_system.error('Sync status hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
+    def _sync_list_backups(self):
+        """Tum yedekleri listele."""
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        try:
+            from db_schema import DB_PATH as _dbp
+            backup_dir = os.path.join(os.path.dirname(_dbp), 'backups')
+            backups = []
+            if os.path.isdir(backup_dir):
+                for f in sorted(os.listdir(backup_dir), reverse=True):
+                    if f.endswith('.db'):
+                        fp = os.path.join(backup_dir, f)
+                        backups.append({
+                            'name': f,
+                            'size': os.path.getsize(fp),
+                            'date': datetime.datetime.fromtimestamp(
+                                os.path.getmtime(fp)).isoformat()
+                        })
+            self._json_response({'backups': backups})
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _sync_backup(self):
+        """DB yedegi olustur."""
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        try:
+            from db_schema import DB_PATH as _dbp
+            backup_dir = os.path.join(os.path.dirname(_dbp), 'backups')
+            os.makedirs(backup_dir, exist_ok=True)
+            ts = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+            backup_name = f'quran_backup_{ts}.db'
+            backup_path = os.path.join(backup_dir, backup_name)
+            shutil.copy2(_dbp, backup_path)
+            size = os.path.getsize(backup_path)
+            log_system.info('DB yedegi olusturuldu', user=session['username'],
+                            backup=backup_name, size=size)
+            self._json_response({
+                'ok': True,
+                'backup': backup_name,
+                'size': size,
+                'date': datetime.datetime.now().isoformat()
+            })
+        except Exception as e:
+            log_system.error('DB yedek hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
+    def _sync_scan(self):
+        """Tek sure veya sure araligi icin site ile DB karsilastirmasi.
+        POST body: {sure_no: int} veya {start: int, end: int}"""
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        if not _HAS_SYNC:
+            self._json_response({'error': 'sync_check modulu yuklu degil'}, 503)
+            return
+        body = self._read_body()
+        if not body:
+            self._json_response({'error': 'sure_no gerekli'}, 400)
+            return
+        try:
+            sure_no = int(body.get('sure_no', 0))
+            if sure_no < 1 or sure_no > 114:
+                self._json_response({'error': 'Gecersiz sure numarasi'}, 400)
+                return
+            slug = _sync_mod.SURAH_SLUGS.get(sure_no, '?')
+            expected = _sync_mod.SURAH_VERSE_COUNTS.get(sure_no, 0)
+            # Sayfayi siteden cek
+            html = _sync_mod.fetch_surah_page(sure_no)
+            if not html:
+                self._json_response({
+                    'sure_no': sure_no, 'slug': slug, 'expected': expected,
+                    'status': 'error', 'error': 'Sayfa alinamadi',
+                    'diffs': [], 'fixes': []
+                })
+                return
+            site_verses = _sync_mod.parse_surah_page(html, sure_no)
+            if site_verses is None:
+                self._json_response({
+                    'sure_no': sure_no, 'slug': slug, 'expected': expected,
+                    'status': 'error', 'error': 'HTML parse hatasi',
+                    'diffs': [], 'fixes': []
+                })
+                return
+            db = _sync_mod.get_db()
+            diffs, fixes = _sync_mod.compare_surah(db, sure_no, site_verses)
+            db.close()
+            # Fark turlerine gore grupla
+            type_counts = {}
+            for d in diffs:
+                tp = d.get('type', 'DIGER')
+                type_counts[tp] = type_counts.get(tp, 0) + 1
+            self._json_response({
+                'sure_no': sure_no, 'slug': slug, 'expected': expected,
+                'site_count': len(site_verses),
+                'status': 'ok',
+                'diff_count': len(diffs),
+                'fix_count': len(fixes),
+                'type_counts': type_counts,
+                'diffs': diffs[:50],
+                'fixes': [{'id': f['id'], 'fields': [k for k in f if k != 'id']}
+                          for f in fixes],
+            })
+        except Exception as e:
+            log_system.error('Sync scan hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
+    def _sync_fix(self):
+        """Bulunan farkliliklari DB'ye uygula.
+        POST body: {sure_no: int} — tek sure icin fix uygular."""
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        if not _HAS_SYNC:
+            self._json_response({'error': 'sync_check modulu yuklu degil'}, 503)
+            return
+        body = self._read_body()
+        if not body:
+            self._json_response({'error': 'sure_no gerekli'}, 400)
+            return
+        try:
+            sure_no = int(body.get('sure_no', 0))
+            if sure_no < 1 or sure_no > 114:
+                self._json_response({'error': 'Gecersiz sure numarasi'}, 400)
+                return
+            slug = _sync_mod.SURAH_SLUGS.get(sure_no, '?')
+            # Sayfayi siteden cek ve karsilastir
+            html = _sync_mod.fetch_surah_page(sure_no)
+            if not html:
+                self._json_response({'error': f'Sure {sure_no} sayfasi alinamadi'}, 502)
+                return
+            site_verses = _sync_mod.parse_surah_page(html, sure_no)
+            if site_verses is None:
+                self._json_response({'error': f'Sure {sure_no} parse hatasi'}, 502)
+                return
+            db = _sync_mod.get_db()
+            diffs, fixes = _sync_mod.compare_surah(db, sure_no, site_verses)
+            if not fixes:
+                db.close()
+                self._json_response({'ok': True, 'sure_no': sure_no, 'updated': 0,
+                                      'message': 'Duzeltilecek fark yok'})
+                return
+            updated = _sync_mod.apply_fixes(db, fixes)
+            db.close()
+            log_system.info('Sync fix uygulandi', user=session['username'],
+                            sure_no=sure_no, slug=slug, updated=updated,
+                            diffs=len(diffs))
+            self._json_response({
+                'ok': True, 'sure_no': sure_no, 'slug': slug,
+                'updated': updated, 'diff_count': len(diffs)
+            })
+        except Exception as e:
+            log_system.error('Sync fix hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
+    def _sync_notify(self):
+        """Sync tamamlandi bildirimini tum client'lara gonder."""
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        body = self._read_body() or {}
+        message = body.get('message', 'Veritabani guncellendi')
+        total_fixes = body.get('total_fixes', 0)
+        try:
+            ws_server.broadcast(json.dumps({
+                'type': 'db_sync',
+                'username': session['username'],
+                'message': message,
+                'total_fixes': total_fixes,
+                'timestamp': datetime.datetime.now().isoformat()
+            }))
+            log_system.info('Sync bildirimi gonderildi', user=session['username'],
+                            total_fixes=total_fixes)
+            self._json_response({'ok': True, 'notified': len(ws_server.online_users())})
+        except Exception as e:
+            log_system.error('Sync bildirim hatasi', error=str(e))
             self._json_response({'error': str(e)}, 500)
 
     def log_message(self, format, *args):

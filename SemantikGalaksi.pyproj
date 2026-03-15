@@ -24,10 +24,13 @@
     <Compile Include="DataEngine\db.py" />
     <Compile Include="DataEngine\db_schema.py" />
     <Compile Include="DataEngine\desktop_app.py" />
+    <Compile Include="DataEngine\fill_missing_meals.py" />
+    <Compile Include="DataEngine\fill_verse_data.py" />
     <Compile Include="DataEngine\fix_empty_roots.py" />
     <Compile Include="DataEngine\gemini_client.py" />
     <Compile Include="DataEngine\generate_besmele_audio.py" />
     <Compile Include="DataEngine\generate_besmele_i18n.py" />
+    <Compile Include="DataEngine\generate_meanings.py" />
     <Compile Include="DataEngine\generate_root_translations.py" />
     <Compile Include="DataEngine\json_to_sqlite.py" />
     <Compile Include="DataEngine\logger.py" />
@@ -37,8 +40,18 @@
     <Compile Include="DataEngine\step1_fetch_quran.py" />
     <Compile Include="DataEngine\step2_extract_roots.py" />
     <Compile Include="DataEngine\step3_build_root_dict.py" />
+    <Compile Include="DataEngine\sync_check.py" />
     <Compile Include="DataEngine\test_api.py" />
     <Compile Include="DataEngine\updater.py" />
+    <Compile Include="DataEngine\update_roots.py" />
+    <Compile Include="DataEngine\_consistency.py" />
+    <Compile Include="DataEngine\_db_status.py" />
+    <Compile Include="DataEngine\_final_check.py" />
+    <Compile Include="DataEngine\_gen_translations.py" />
+    <Compile Include="DataEngine\_quality.py" />
+    <Compile Include="DataEngine\_refine.py" />
+    <Compile Include="DataEngine\_root_status.py" />
+    <Compile Include="DataEngine\_root_verify.py" />
     <Compile Include="setup.py" />
   </ItemGroup>
   <ItemGroup>

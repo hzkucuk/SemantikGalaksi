@@ -76,6 +76,7 @@ var _dbRenderTabs = () => {
     ];
     if (isAdmin) items.push({ id: 'logs', label: t('editor.tabLogs'), icon: '\uD83D\uDCCB' });
     items.push({ id: 'audit', label: t('editor.tabAudit'), icon: '\uD83D\uDEE1' });
+    if (isAdmin) items.push({ id: 'sync', label: t('editor.tabSync'), icon: '\uD83D\uDD04' });
     tabs.innerHTML = items.map(function(i) {
         return '<button class="editor-tab ' + (_dbTab === i.id ? 'active' : '') +
             '" onclick="dbSwitchTab(\'' + i.id + '\')">' +
@@ -97,6 +98,14 @@ var _dbLoad = async () => {
             if (!res.ok) throw new Error('HTTP ' + res.status);
             _dbData = await res.json();
             _dbRenderAudit();
+            return;
+        }
+        // Sync tab ozel yukleme
+        if (_dbTab === 'sync') {
+            var res = await authFetch('/api/sync/status');
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            _dbData = await res.json();
+            _dbRenderSync();
             return;
         }
         var url;
@@ -693,4 +702,286 @@ var _dbRenderAudit = () => {
 
     h += '</div>';
     main.innerHTML = h;
+};
+
+// =====================================================
+//  SYNC MANAGEMENT PANEL (Admin Only)
+// =====================================================
+var _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, scanning: false, fixing: false };
+
+var _dbRenderSync = () => {
+    var main = document.getElementById('editor-main');
+    if (!main) return;
+    var data = _dbData || {};
+    var stats = data.stats || {};
+    var backups = data.backups || [];
+    var st = _syncState;
+    var h = '<div class="audit-dashboard" style="padding:24px;max-width:1100px;margin:0 auto;">';
+    // Baslik
+    h += '<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">';
+    h += '<span style="font-size:28px;">\uD83D\uDD04</span>';
+    h += '<div><div style="font-size:18px;font-weight:800;color:#f1f5f9;">' + t('sync.title') + '</div>';
+    h += '<div style="font-size:11px;color:#64748b;margin-top:2px;">' + t('sync.source') + '</div></div></div>';
+
+    // DB Bilgi Kartlari
+    var dbSize = data.db_size ? (data.db_size / 1024 / 1024).toFixed(1) + ' MB' : '—';
+    var lastBk = backups.length > 0 ? backups[0].name.replace('quran_backup_', '').replace('.db', '').replace(/_/g, ' ') : t('sync.noBackup');
+    h += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:24px;">';
+    h += _syncInfoCard('\uD83D\uDDC3', t('sync.dbSize'), dbSize, '#06b6d4');
+    h += _syncInfoCard('\uD83D\uDCBE', t('sync.lastBackup'), lastBk, '#8b5cf6');
+    h += _syncInfoCard('\uD83D\uDCDC', t('audit.verses'), (stats.verses || 6236).toLocaleString(), '#34d399');
+    h += _syncInfoCard('\uD83C\uDF10', t('audit.surahs'), '114', '#f59e0b');
+    h += '</div>';
+
+    // Adim gostergesi
+    h += '<div style="display:flex;gap:4px;margin-bottom:28px;">';
+    for (var si = 1; si <= 5; si++) {
+        var active = si === st.step;
+        var done = si < st.step;
+        var clr = done ? '#34d399' : (active ? '#06b6d4' : '#334155');
+        var icon = done ? '\u2714' : si;
+        h += '<div style="flex:1;text-align:center;">';
+        h += '<div style="width:32px;height:32px;border-radius:50%;background:' + clr + (active ? '' : '30') + ';color:' + (done || active ? '#fff' : '#64748b') + ';display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;border:2px solid ' + clr + ';">' + icon + '</div>';
+        h += '<div style="font-size:9px;color:' + (active ? '#e2e8f0' : '#64748b') + ';margin-top:4px;font-weight:' + (active ? '700' : '500') + ';">' + t('sync.step' + si) + '</div>';
+        h += '</div>';
+        if (si < 5) h += '<div style="flex:0.3;display:flex;align-items:center;padding-bottom:18px;"><div style="width:100%;height:2px;background:' + (si < st.step ? '#34d399' : '#1e293b') + ';border-radius:1px;"></div></div>';
+    }
+    h += '</div>';
+
+    // ADIM 1: Yedek
+    if (st.step === 1) {
+        h += '<div class="sync-step-panel">';
+        h += '<div style="font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:8px;">\uD83D\uDCBE ' + t('sync.step1') + '</div>';
+        h += '<div style="font-size:12px;color:#94a3b8;margin-bottom:16px;">' + t('sync.backupRequired') + '</div>';
+        h += '<button onclick="_syncDoBackup()" class="sync-action-btn" style="background:#8b5cf6;">\uD83D\uDCBE ' + t('sync.backupBtn') + '</button>';
+        // Yedek listesi
+        if (backups.length > 0) {
+            h += '<div style="margin-top:16px;"><details><summary style="color:#94a3b8;font-size:11px;cursor:pointer;">' + t('sync.backups') + ' (' + backups.length + ')</summary>';
+            h += '<div style="margin-top:8px;max-height:150px;overflow-y:auto;">';
+            backups.forEach(function(b) {
+                h += '<div style="display:flex;justify-content:space-between;align-items:center;padding:4px 8px;font-size:10px;color:#94a3b8;border-bottom:1px solid rgba(255,255,255,0.04);">';
+                h += '<span>' + b.name + '</span><span>' + (b.size / 1024 / 1024).toFixed(1) + ' MB</span>';
+                h += '</div>';
+            });
+            h += '</div></details></div>';
+        }
+        h += '</div>';
+    }
+
+    // ADIM 2: Tarama
+    if (st.step === 2) {
+        h += '<div class="sync-step-panel">';
+        h += '<div style="font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:8px;">\uD83D\uDD0D ' + t('sync.step2') + '</div>';
+        h += '<div style="font-size:12px;color:#94a3b8;margin-bottom:16px;">114 sure siteden cekilip DB ile karsilastirilacak.</div>';
+        if (!st.scanning) {
+            h += '<button onclick="_syncDoScan()" class="sync-action-btn" style="background:#06b6d4;">\uD83D\uDD0D ' + t('sync.scanBtn') + '</button>';
+        } else {
+            h += '<div id="sync-scan-progress" style="margin-top:12px;"></div>';
+        }
+        // Onceki tarama sonuclari
+        if (st.scanResults.length > 0) {
+            h += '<div id="sync-scan-results" style="margin-top:16px;">';
+            h += _syncRenderScanResults();
+            h += '</div>';
+        }
+        h += '</div>';
+    }
+
+    // ADIM 3: Inceleme
+    if (st.step === 3) {
+        h += '<div class="sync-step-panel">';
+        h += '<div style="font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:8px;">\uD83D\uDCCB ' + t('sync.step3') + '</div>';
+        h += _syncRenderScanResults();
+        if (st.totalDiffs === 0) {
+            h += '<div style="text-align:center;padding:32px;color:#34d399;font-size:14px;font-weight:700;">\u2714 ' + t('sync.noDiffs') + '</div>';
+            h += '<button onclick="_syncState.step=5;_dbRenderSync();" class="sync-action-btn" style="background:#34d399;">Bildirim Adimina Gec \u2192</button>';
+        } else {
+            h += '<button onclick="_syncState.step=4;_dbRenderSync();" class="sync-action-btn" style="background:#f59e0b;margin-top:12px;">Duzeltme Adimina Gec \u2192</button>';
+        }
+        h += '</div>';
+    }
+
+    // ADIM 4: Duzeltme
+    if (st.step === 4) {
+        h += '<div class="sync-step-panel">';
+        h += '<div style="font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:8px;">\uD83D\uDD27 ' + t('sync.step4') + '</div>';
+        h += '<div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">' + t('sync.totalDiffs') + ': <strong style="color:#f59e0b;">' + st.totalDiffs + '</strong> | ' + t('sync.totalFixes') + ': <strong style="color:#06b6d4;">' + st.totalFixes + '</strong></div>';
+        if (!st.fixing) {
+            h += '<div style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);border-radius:10px;padding:12px;margin-bottom:16px;font-size:11px;color:#fbbf24;">\u26A0 ' + t('sync.fixConfirm') + '</div>';
+            h += '<button onclick="_syncDoFix()" class="sync-action-btn" style="background:#ef4444;">\uD83D\uDD27 ' + t('sync.fixBtn') + '</button>';
+        } else {
+            h += '<div id="sync-fix-progress" style="margin-top:12px;"></div>';
+        }
+        h += '</div>';
+    }
+
+    // ADIM 5: Bildirim
+    if (st.step === 5) {
+        h += '<div class="sync-step-panel">';
+        h += '<div style="font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:8px;">\uD83D\uDCE2 ' + t('sync.step5') + '</div>';
+        h += '<div style="font-size:12px;color:#94a3b8;margin-bottom:16px;">Islem tamamlandi. Bagli kullanicilara bildirim gondermek ister misiniz?</div>';
+        h += '<div style="display:flex;gap:12px;">';
+        h += '<button onclick="_syncDoNotify()" class="sync-action-btn" style="background:#34d399;">\uD83D\uDCE2 ' + t('sync.notifyBtn') + '</button>';
+        h += '<button onclick="_syncReset()" class="sync-action-btn" style="background:#475569;">Bastan Basla</button>';
+        h += '</div>';
+        h += '</div>';
+    }
+
+    h += '</div>';
+    // CSS
+    h += '<style>';
+    h += '.sync-step-panel{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:20px;margin-bottom:16px;}';
+    h += '.sync-action-btn{border:none;border-radius:10px;padding:10px 24px;color:#fff;font-weight:700;font-size:12px;cursor:pointer;transition:all 0.2s;letter-spacing:0.02em;}';
+    h += '.sync-action-btn:hover{filter:brightness(1.2);transform:translateY(-1px);}';
+    h += '.sync-diff-row{display:flex;align-items:center;gap:8px;padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.04);font-size:11px;color:#cbd5e1;}';
+    h += '.sync-badge{padding:2px 8px;border-radius:6px;font-size:9px;font-weight:700;letter-spacing:0.03em;}';
+    h += '.sync-badge-ok{background:rgba(52,211,153,0.15);color:#34d399;}';
+    h += '.sync-badge-diff{background:rgba(245,158,11,0.15);color:#fbbf24;}';
+    h += '.sync-badge-err{background:rgba(239,68,68,0.15);color:#ef4444;}';
+    h += '</style>';
+    main.innerHTML = h;
+};
+
+var _syncInfoCard = (icon, label, value, color) => {
+    return '<div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;display:flex;align-items:center;gap:10px;">' +
+        '<div style="width:36px;height:36px;border-radius:10px;background:' + color + '15;display:flex;align-items:center;justify-content:center;font-size:18px;">' + icon + '</div>' +
+        '<div><div style="font-size:10px;color:#64748b;font-weight:600;">' + label + '</div>' +
+        '<div style="font-size:14px;font-weight:800;color:#f1f5f9;">' + value + '</div></div></div>';
+};
+
+var _syncRenderScanResults = () => {
+    var st = _syncState;
+    var h = '';
+    if (st.scanResults.length === 0) return h;
+    // Ozet
+    var totalOk = 0, totalDiff = 0, totalErr = 0;
+    st.scanResults.forEach(function(r) {
+        if (r.status === 'error') totalErr++;
+        else if (r.diff_count > 0) totalDiff++;
+        else totalOk++;
+    });
+    h += '<div style="display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;">';
+    h += '<div class="sync-badge sync-badge-ok">\u2714 Eslesme: ' + totalOk + '</div>';
+    h += '<div class="sync-badge sync-badge-diff">\u26A0 Farkli: ' + totalDiff + '</div>';
+    if (totalErr > 0) h += '<div class="sync-badge sync-badge-err">\u2716 Hata: ' + totalErr + '</div>';
+    h += '<div style="font-size:10px;color:#94a3b8;display:flex;align-items:center;">' + t('sync.totalDiffs') + ': <strong style="color:#fbbf24;margin-left:4px;">' + st.totalDiffs + '</strong></div>';
+    h += '</div>';
+    // Tablo
+    h += '<div style="max-height:400px;overflow-y:auto;border:1px solid rgba(255,255,255,0.06);border-radius:10px;">';
+    h += '<table style="width:100%;border-collapse:collapse;font-size:11px;">';
+    h += '<thead><tr style="background:rgba(255,255,255,0.03);position:sticky;top:0;">';
+    h += '<th style="padding:8px;text-align:left;color:#94a3b8;font-weight:600;">#</th>';
+    h += '<th style="padding:8px;text-align:left;color:#94a3b8;font-weight:600;">' + t('sync.surah') + '</th>';
+    h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.fieldAyet') + '</th>';
+    h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.fieldMeal') + '</th>';
+    h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.fieldDipnot') + '</th>';
+    h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.diffCount') + '</th>';
+    h += '</tr></thead><tbody>';
+    st.scanResults.forEach(function(r) {
+        var bgc = r.status === 'error' ? 'rgba(239,68,68,0.05)' : (r.diff_count > 0 ? 'rgba(245,158,11,0.05)' : '');
+        var tc = r.diff_count > 0 ? r.type_counts || {} : {};
+        h += '<tr style="background:' + bgc + ';border-bottom:1px solid rgba(255,255,255,0.03);">';
+        h += '<td style="padding:6px 8px;color:#64748b;">' + r.sure_no + '</td>';
+        h += '<td style="padding:6px 8px;color:#e2e8f0;font-weight:600;">' + (r.slug || '') + '</td>';
+        h += '<td style="padding:6px 8px;text-align:center;">' + _syncDiffBadge(tc, 'AYET') + '</td>';
+        h += '<td style="padding:6px 8px;text-align:center;">' + _syncDiffBadge(tc, 'MEAL') + '</td>';
+        h += '<td style="padding:6px 8px;text-align:center;">' + _syncDiffBadge(tc, 'DIPNOT') + '</td>';
+        h += '<td style="padding:6px 8px;text-align:center;font-weight:700;color:' + (r.diff_count > 0 ? '#fbbf24' : '#34d399') + ';">' + (r.status === 'error' ? '<span style="color:#ef4444;">HATA</span>' : r.diff_count) + '</td>';
+        h += '</tr>';
+    });
+    h += '</tbody></table></div>';
+    return h;
+};
+
+var _syncDiffBadge = (tc, field) => {
+    var cnt = (tc[field + '_FARKLI'] || 0) + (tc[field + '_BOS'] || 0);
+    if (cnt > 0) return '<span class="sync-badge sync-badge-diff">' + cnt + '</span>';
+    return '<span style="color:#34d399;font-size:10px;">\u2714</span>';
+};
+
+// --- Sync Islemleri ---
+window._syncDoBackup = async () => {
+    try {
+        var res = await authFetch('/api/sync/backup', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+        var data = await res.json();
+        if (data.ok) {
+            _syncState.backupDone = true;
+            _syncState.step = 2;
+            showToast('\uD83D\uDCBE ' + t('sync.backupSuccess') + ': ' + data.backup, 'success');
+            _dbLoad();
+        } else {
+            showToast('\u274C ' + (data.error || 'Yedek hatasi'), 'warn');
+        }
+    } catch(e) { showToast('\u274C ' + e.message, 'warn'); }
+};
+
+window._syncDoScan = async () => {
+    _syncState.scanning = true;
+    _syncState.scanResults = [];
+    _syncState.totalDiffs = 0;
+    _syncState.totalFixes = 0;
+    _dbRenderSync();
+    var progEl = document.getElementById('sync-scan-progress');
+    for (var sn = 1; sn <= 114; sn++) {
+        if (progEl) {
+            var pct = Math.round(sn / 114 * 100);
+            progEl.innerHTML = '<div style="margin-bottom:6px;font-size:11px;color:#94a3b8;">' + t('sync.scanning') + '... ' + t('sync.progress').replace('{current}', sn).replace('{total}', '114') + '</div>' +
+                '<div style="width:100%;height:6px;background:#1e293b;border-radius:3px;overflow:hidden;">' +
+                '<div style="width:' + pct + '%;height:100%;background:linear-gradient(90deg,#06b6d4,#34d399);border-radius:3px;transition:width 0.3s;"></div></div>';
+        }
+        try {
+            var res = await authFetch('/api/sync/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sure_no: sn }) });
+            var r = await res.json();
+            _syncState.scanResults.push(r);
+            _syncState.totalDiffs += (r.diff_count || 0);
+            _syncState.totalFixes += (r.fix_count || 0);
+        } catch(e) {
+            _syncState.scanResults.push({ sure_no: sn, slug: '?', status: 'error', error: e.message, diff_count: 0, fix_count: 0, type_counts: {} });
+        }
+    }
+    _syncState.scanning = false;
+    _syncState.step = 3;
+    showToast('\uD83D\uDD0D ' + t('sync.scanComplete') + ' — ' + t('sync.diffsFound').replace('{count}', _syncState.totalDiffs), _syncState.totalDiffs > 0 ? 'warn' : 'success');
+    _dbRenderSync();
+};
+
+window._syncDoFix = async () => {
+    _syncState.fixing = true;
+    _dbRenderSync();
+    var progEl = document.getElementById('sync-fix-progress');
+    var suresWithDiffs = _syncState.scanResults.filter(function(r) { return r.fix_count > 0; });
+    var totalUpdated = 0;
+    for (var i = 0; i < suresWithDiffs.length; i++) {
+        var sr = suresWithDiffs[i];
+        if (progEl) {
+            var pct = Math.round((i + 1) / suresWithDiffs.length * 100);
+            progEl.innerHTML = '<div style="margin-bottom:6px;font-size:11px;color:#94a3b8;">' + t('sync.fixingAll') + ' ' + (i + 1) + '/' + suresWithDiffs.length + ' — ' + sr.slug + '</div>' +
+                '<div style="width:100%;height:6px;background:#1e293b;border-radius:3px;overflow:hidden;">' +
+                '<div style="width:' + pct + '%;height:100%;background:linear-gradient(90deg,#f59e0b,#ef4444);border-radius:3px;transition:width 0.3s;"></div></div>';
+        }
+        try {
+            var res = await authFetch('/api/sync/fix', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sure_no: sr.sure_no }) });
+            var data = await res.json();
+            totalUpdated += (data.updated || 0);
+        } catch(e) { /* devam */ }
+    }
+    _syncState.fixing = false;
+    _syncState.step = 5;
+    showToast('\u2714 ' + t('sync.fixSuccess').replace('{count}', totalUpdated), 'success');
+    _dbRenderSync();
+};
+
+window._syncDoNotify = async () => {
+    try {
+        var res = await authFetch('/api/sync/notify', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: 'Veritabani guncellendi, lütfen sayfayi yenileyiniz.', total_fixes: _syncState.totalFixes }) });
+        var data = await res.json();
+        if (data.ok) {
+            showToast('\uD83D\uDCE2 ' + t('sync.notifySuccess').replace('{count}', data.notified), 'success');
+        }
+    } catch(e) { showToast('\u274C ' + e.message, 'warn'); }
+};
+
+window._syncReset = () => {
+    _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, scanning: false, fixing: false };
+    _dbLoad();
 };

@@ -36,6 +36,9 @@ var handleWSMessage = (msg) => {
             _onlineUsers = msg.online || [];
             updateOnlineIndicator();
             break;
+        case 'db_sync':
+            showToast(`🔄 ${msg.username}: ${msg.message} (${msg.total_fixes} güncelleme)`, 'warn');
+            break;
     }
 };
 var showToast = (text, type) => {

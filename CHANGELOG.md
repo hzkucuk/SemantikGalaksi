@@ -1,5 +1,21 @@
 ﻿bu# CHANGELOG
 
+## [1.2.6] - 2025-07-17 -- Senkronizasyon Yonetim Paneli
+### Eklenen
+- Editor'e admin-only "Senkronizasyon" tab'i eklendi (5 adimli wizard).
+- Adim 1: DB yedegi olusturma (backups/ dizinine otomatik kayit).
+- Adim 2: 114 sure icin site taramasi (progress bar ile canli takip).
+- Adim 3: Fark inceleme tablosu (Arapca/Meal/Dipnot bazinda).
+- Adim 4: Duzeltme uygulama (sure bazli otomatik fix).
+- Adim 5: WebSocket uzerinden tum client'lara bildirim gondeme.
+- Backend API: /api/sync/status, /api/sync/backup, /api/sync/scan, /api/sync/fix, /api/sync/notify.
+- WebSocket 'db_sync' mesaj tipi ile canli bildirim destegi.
+- 38 yeni i18n anahtari (sync.* namespace).
+### Teknik
+- sync_check.py modulu desktop_app.py'ye import edildi.
+- Yedekler DataEngine/backups/ altinda tarih damgali .db dosyalari olarak saklanir.
+- Tarama sure bazli yapilir (114 ayri HTTP istegi, rate-limit uyumlu).
+
 ## [1.2.5] - 2025-07-16 -- Kok-Anlam-Turev Kapsamli Guncelleme
 ### Eklenen
 - Morphology'den 4213 yeni turetilmis kelime derived_words'e eklendi (toplam: 9542).
