@@ -35,6 +35,27 @@ DOMAIN = "https://www.suleymaniyevakfimeali.com"
 BASE_URL = DOMAIN + "/Meal/"
 DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "quran.db")
 
+# AI Fallback
+try:
+    from ai_parser import AIParser, load_generated_parser, get_parser_status
+    _HAS_AI = True
+except ImportError:
+    _HAS_AI = False
+
+# AI parser instance (api_key disaridan set edilir)
+_ai_parser = None
+_ai_api_key = None
+
+
+def set_ai_key(api_key, model=None):
+    """AI parser icin API key ayarla."""
+    global _ai_parser, _ai_api_key
+    _ai_api_key = api_key
+    if api_key and _HAS_AI:
+        _ai_parser = AIParser(api_key=api_key, model=model)
+    else:
+        _ai_parser = None
+
 SURAH_SLUGS = {
     1: "Fatiha", 2: "Bakara", 3: "Al-i_\u0130mran", 4: "Nisa", 5: "Maide",
     6: "Enam", 7: "Araf", 8: "Enfal", 9: "Tevbe", 10: "Yunus",
@@ -268,7 +289,7 @@ def _split_meal_dipnot(text):
 # Sayfa cekme ve parse
 # ---------------------------------------------------------------------------
 def fetch_surah_page(sure_no):
-    """Sure sayfasini siteden ceker."""
+    """Sure sayfasini siteden ceker. Basarisiz olursa AI ile URL kesfeder."""
     slug = SURAH_SLUGS.get(sure_no)
     if not slug:
         return None
@@ -280,11 +301,27 @@ def fetch_surah_page(sure_no):
             return r.text
     except Exception as e:
         print(f"  ! Sure {sure_no} hata: {e}")
+
+    # Sayfa alinamadi -- AI ile yeni URL kesfet
+    if _ai_parser:
+        try:
+            discovery = _ai_parser.discover_new_url(DOMAIN, sure_no, slug)
+            if discovery and discovery.get("domain"):
+                pattern = discovery.get("url_pattern", "")
+                new_url = pattern.replace("{domain}", discovery["domain"])
+                new_url = new_url.replace("{slug}", url_quote(slug, safe='_-'))
+                if new_url and new_url != url:
+                    r2 = requests.get(new_url, timeout=30)
+                    r2.encoding = 'utf-8'
+                    if r2.status_code == 200 and len(r2.text) > 15000:
+                        return r2.text
+        except Exception:
+            pass
     return None
 
 
-def parse_surah_page(html, sure_no):
-    """HTML'den {ayet_no: {ayet, meal, dipnot}} haritasi cikarir."""
+def _builtin_parse(html, sure_no):
+    """Yerlesik HTML parser — bilinen site yapisi icin."""
     soup = BeautifulSoup(html, 'html.parser')
     headers = soup.find_all('span', class_='qrHeader')
     tr_texts = soup.find_all('div', class_='trText')
@@ -309,12 +346,63 @@ def parse_surah_page(html, sure_no):
         raw_tr = tr.get_text().replace('\xa0', ' ').strip()
         meal_text, dipnot_text = _split_meal_dipnot(raw_tr)
 
+        # Tefsir tespiti: header'da TEFSiR kelimesi varsa
+        has_tefsir = 'TEF' in ht.upper() and '/' in ht
+
         verses[pa] = {
             "ayet": ayet_text,
             "meal": meal_text,
             "dipnot": dipnot_text,
+            "has_tefsir": has_tefsir,
         }
     return verses
+
+
+# Son kullanilan parse yontemi (raporlama icin)
+_last_parse_method = "builtin"
+
+
+def parse_surah_page(html, sure_no):
+    """3 katmanli parse: 1) Yerlesik  2) Uretilmis parser  3) AI cikartma.
+    Doner: {ayet_no: {ayet, meal, dipnot, has_tefsir}} veya None"""
+    global _last_parse_method
+    expected = SURAH_VERSE_COUNTS.get(sure_no, 0)
+
+    # --- Katman 1: Yerlesik parser ---
+    result = _builtin_parse(html, sure_no)
+    if result and len(result) >= expected * 0.9:
+        _last_parse_method = "builtin"
+        return result
+
+    # --- Katman 2: AI-uretilmis parser (varsa) ---
+    if _HAS_AI:
+        gen_parser = load_generated_parser()
+        if gen_parser:
+            try:
+                result = gen_parser(html, sure_no)
+                if result and len(result) >= expected * 0.9:
+                    _last_parse_method = "generated"
+                    return result
+            except Exception:
+                pass
+
+    # --- Katman 3: Claude AI dogrudan cikartma ---
+    if _ai_parser:
+        try:
+            result = _ai_parser.extract_verses(html, sure_no)
+            if result and len(result) >= expected * 0.5:
+                _last_parse_method = "ai_extract"
+                # Basarili AI cikartma — yeni parser uret ve kaydet
+                try:
+                    _ai_parser.generate_and_save_parser(html, sure_no)
+                except Exception:
+                    pass
+                return result
+        except Exception:
+            pass
+
+    _last_parse_method = "failed"
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -330,7 +418,7 @@ def get_db():
 def get_surah_from_db(db, sure_no):
     """Sure ayetlerini DB'den ceker."""
     rows = db.execute("""
-        SELECT id, ayet_no, ayet, meal, dipnot, dipnot_parsed, mapping_data
+        SELECT id, ayet_no, ayet, meal, dipnot, dipnot_parsed, mapping_data, tefsir_popup
         FROM verses WHERE sure_no = ? ORDER BY ayet_no
     """, (sure_no,)).fetchall()
     verses = {}
@@ -339,7 +427,7 @@ def get_surah_from_db(db, sure_no):
             "id": r[0], "ayet_no": r[1],
             "ayet": r[2] or "", "meal": r[3] or "",
             "dipnot": r[4] or "", "dipnot_parsed": r[5] or "",
-            "mapping_data": r[6] or "",
+            "mapping_data": r[6] or "", "tefsir_popup": r[7] or "",
         }
     return verses
 
@@ -477,6 +565,29 @@ def compare_surah(db, sure_no, site_verses, do_fix=False):
                     fix_entry["dipnot_parsed"] = json.dumps(segments, ensure_ascii=False)
                     has_fix = True
 
+        # --- TEFSIR ---
+        site_has_tefsir = site_v.get("has_tefsir", False)
+        db_has_tefsir = bool(db_v.get("tefsir_popup", "").strip())
+        if site_has_tefsir and not db_has_tefsir:
+            # Sitede tefsir var ama DB'de yok — dipnot iceriginden tefsir olustur
+            dp_text = fix_entry.get("dipnot", db_v.get("dipnot", "")).strip()
+            if dp_text:
+                segments, connections = parse_rich_text(dp_text)
+                tefsir_data = json.dumps(segments, ensure_ascii=False) if segments else ""
+                if tefsir_data:
+                    fix_entry["tefsir_popup"] = tefsir_data
+                    diffs.append({
+                        "type": "TEFSIR_BOS", "id": vid, "field": "tefsir_popup",
+                        "site": "Sitede tefsir mevcut"
+                    })
+                    has_fix = True
+        elif not site_has_tefsir and db_has_tefsir:
+            # DB'de tefsir var ama sitede yok — bu normal olabilir, rapor et ama duzeltme
+            diffs.append({
+                "type": "TEFSIR_EKSTRA", "id": vid, "field": "tefsir_popup",
+                "detail": "DB de tefsir var ama sitede isaret yok (korunur)"
+            })
+
         if has_fix:
             fixes.append(fix_entry)
 
@@ -490,7 +601,7 @@ def apply_fixes(db, fixes):
     for fix in fixes:
         set_parts = []
         params = []
-        for col in ["ayet", "meal", "dipnot", "dipnot_parsed", "mapping_data"]:
+        for col in ["ayet", "meal", "dipnot", "dipnot_parsed", "mapping_data", "tefsir_popup"]:
             if col in fix:
                 set_parts.append(f"{col} = ?")
                 params.append(fix[col])

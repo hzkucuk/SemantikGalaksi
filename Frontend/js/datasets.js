@@ -106,6 +106,8 @@ var _dbLoad = async () => {
             if (!res.ok) throw new Error('HTTP ' + res.status);
             _dbData = await res.json();
             _dbRenderSync();
+            // AI parser durumunu arka planda yukle
+            _syncLoadAIStatus();
             return;
         }
         var url;
@@ -707,7 +709,7 @@ var _dbRenderAudit = () => {
 // =====================================================
 //  SYNC MANAGEMENT PANEL (Admin Only)
 // =====================================================
-var _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, scanning: false, fixing: false };
+var _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, scanning: false, fixing: false, aiStatus: null };
 
 var _dbRenderSync = () => {
     var main = document.getElementById('editor-main');
@@ -730,7 +732,10 @@ var _dbRenderSync = () => {
     h += _syncInfoCard('\uD83D\uDDC3', t('sync.dbSize'), dbSize, '#06b6d4');
     h += _syncInfoCard('\uD83D\uDCBE', t('sync.lastBackup'), lastBk, '#8b5cf6');
     h += _syncInfoCard('\uD83D\uDCDC', t('audit.verses'), (stats.verses || 6236).toLocaleString(), '#34d399');
-    h += _syncInfoCard('\uD83C\uDF10', t('audit.surahs'), '114', '#f59e0b');
+    var aiSt = st.aiStatus || {};
+    var aiLabel = aiSt.exists ? t('sync.parserGenerated') : t('sync.parserBuiltin');
+    var aiClr = aiSt.exists ? '#a78bfa' : '#64748b';
+    h += _syncInfoCard('\uD83E\uDD16', t('sync.aiStatus'), aiLabel, aiClr);
     h += '</div>';
 
     // Adim gostergesi
@@ -773,6 +778,21 @@ var _dbRenderSync = () => {
         h += '<div class="sync-step-panel">';
         h += '<div style="font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:8px;">\uD83D\uDD0D ' + t('sync.step2') + '</div>';
         h += '<div style="font-size:12px;color:#94a3b8;margin-bottom:16px;">114 sure siteden cekilip DB ile karsilastirilacak.</div>';
+        // Claude key yapilandirmasi
+        var cKeys = KeyManager.getKeys('claude');
+        var hasClaude = cKeys.some(function(k) { return k.status === 'ok'; });
+        h += '<div style="background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.2);border-radius:10px;padding:12px;margin-bottom:16px;">';
+        h += '<div style="font-size:11px;font-weight:700;color:#a78bfa;margin-bottom:6px;">\uD83E\uDD16 ' + t('sync.claudeConfig') + '</div>';
+        if (hasClaude) {
+            h += '<div style="font-size:11px;color:#34d399;">\u2714 ' + t('sync.claudeKeyOk') + '</div>';
+        } else {
+            h += '<div style="font-size:10px;color:#94a3b8;margin-bottom:8px;">' + t('sync.claudeKeyDesc') + '</div>';
+            h += '<div style="display:flex;gap:8px;">';
+            h += '<input id="sync-claude-key-input" type="password" placeholder="sk-ant-..." style="flex:1;background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:6px 10px;color:#e2e8f0;font-size:11px;font-family:monospace;" />';
+            h += '<button onclick="_syncAddClaudeKey()" class="sync-action-btn" style="background:#a78bfa;padding:6px 14px;font-size:11px;">' + t('sync.claudeKeyAdd') + '</button>';
+            h += '</div>';
+        }
+        h += '</div>';
         if (!st.scanning) {
             h += '<button onclick="_syncDoScan()" class="sync-action-btn" style="background:#06b6d4;">\uD83D\uDD0D ' + t('sync.scanBtn') + '</button>';
         } else {
@@ -875,17 +895,24 @@ var _syncRenderScanResults = () => {
     h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.fieldAyet') + '</th>';
     h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.fieldMeal') + '</th>';
     h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.fieldDipnot') + '</th>';
+    h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.fieldTefsir') + '</th>';
+    h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.parseMethod') + '</th>';
     h += '<th style="padding:8px;text-align:center;color:#94a3b8;font-weight:600;">' + t('sync.diffCount') + '</th>';
     h += '</tr></thead><tbody>';
     st.scanResults.forEach(function(r) {
         var bgc = r.status === 'error' ? 'rgba(239,68,68,0.05)' : (r.diff_count > 0 ? 'rgba(245,158,11,0.05)' : '');
         var tc = r.diff_count > 0 ? r.type_counts || {} : {};
+        var pm = r.parse_method || 'builtin';
+        var pmClr = pm === 'ai_extract' ? '#a78bfa' : (pm === 'generated' ? '#06b6d4' : '#64748b');
+        var pmLabel = pm === 'ai_extract' ? 'AI' : (pm === 'generated' ? 'Gen' : 'Std');
         h += '<tr style="background:' + bgc + ';border-bottom:1px solid rgba(255,255,255,0.03);">';
         h += '<td style="padding:6px 8px;color:#64748b;">' + r.sure_no + '</td>';
         h += '<td style="padding:6px 8px;color:#e2e8f0;font-weight:600;">' + (r.slug || '') + '</td>';
         h += '<td style="padding:6px 8px;text-align:center;">' + _syncDiffBadge(tc, 'AYET') + '</td>';
         h += '<td style="padding:6px 8px;text-align:center;">' + _syncDiffBadge(tc, 'MEAL') + '</td>';
         h += '<td style="padding:6px 8px;text-align:center;">' + _syncDiffBadge(tc, 'DIPNOT') + '</td>';
+        h += '<td style="padding:6px 8px;text-align:center;">' + _syncDiffBadge(tc, 'TEFSIR') + '</td>';
+        h += '<td style="padding:6px 8px;text-align:center;"><span class="sync-badge" style="background:' + pmClr + '20;color:' + pmClr + ';">' + pmLabel + '</span></td>';
         h += '<td style="padding:6px 8px;text-align:center;font-weight:700;color:' + (r.diff_count > 0 ? '#fbbf24' : '#34d399') + ';">' + (r.status === 'error' ? '<span style="color:#ef4444;">HATA</span>' : r.diff_count) + '</td>';
         h += '</tr>';
     });
@@ -894,7 +921,7 @@ var _syncRenderScanResults = () => {
 };
 
 var _syncDiffBadge = (tc, field) => {
-    var cnt = (tc[field + '_FARKLI'] || 0) + (tc[field + '_BOS'] || 0);
+    var cnt = (tc[field + '_FARKLI'] || 0) + (tc[field + '_BOS'] || 0) + (tc[field + '_EKSTRA'] || 0);
     if (cnt > 0) return '<span class="sync-badge sync-badge-diff">' + cnt + '</span>';
     return '<span style="color:#34d399;font-size:10px;">\u2714</span>';
 };
@@ -920,6 +947,11 @@ window._syncDoScan = async () => {
     _syncState.scanResults = [];
     _syncState.totalDiffs = 0;
     _syncState.totalFixes = 0;
+    // Claude key'i backend'e gonder (varsa)
+    var claudeKey = KeyManager.getKeys('claude').find(function(k) { return k.status === 'ok' || k.status === 'pending'; });
+    if (claudeKey) {
+        try { await authFetch('/api/sync/ai-key', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ api_key: claudeKey.key }) }); } catch(e) {}
+    }
     _dbRenderSync();
     var progEl = document.getElementById('sync-scan-progress');
     for (var sn = 1; sn <= 114; sn++) {
@@ -982,6 +1014,34 @@ window._syncDoNotify = async () => {
 };
 
 window._syncReset = () => {
-    _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, scanning: false, fixing: false };
+    _syncState = { step: 1, backupDone: false, scanResults: [], totalDiffs: 0, totalFixes: 0, scanning: false, fixing: false, aiStatus: null };
     _dbLoad();
+};
+
+// --- AI Parser Durumu ---
+window._syncLoadAIStatus = async () => {
+    try {
+        var res = await authFetch('/api/sync/parser-status');
+        if (res.ok) { _syncState.aiStatus = await res.json(); _dbRenderSync(); }
+    } catch(e) {}
+};
+
+// --- Claude Key Ekleme ---
+window._syncAddClaudeKey = async () => {
+    var input = document.getElementById('sync-claude-key-input');
+    if (!input) return;
+    var key = input.value.trim();
+    if (!key) return;
+    input.disabled = true;
+    var result = await KeyManager.testKey(key, 'claude');
+    if (result.ok) {
+        KeyManager.addKey(key, 'claude');
+        KeyManager.updateStatus(key, 'ok');
+        showToast('\u2714 ' + t('sync.claudeKeyOk'), 'success');
+        _syncLoadAIStatus();
+    } else {
+        showToast('\u274C ' + t('sync.claudeKeyFail') + ': ' + (result.error || ''), 'warn');
+    }
+    input.disabled = false;
+    input.value = '';
 };

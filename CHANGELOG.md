@@ -1,5 +1,22 @@
 ﻿bu# CHANGELOG
 
+## [1.2.7] - 2025-07-17 -- AI Self-Healing Sync Engine + Tefsir Sync
+### Eklenen
+- ai_parser.py: Claude API entegrasyonu (AIParser class, verse extraction, parser code generation, URL discovery).
+- 3 katmanli parse mimarisi: builtin -> AI-uretimi (generated_parser.py) -> canli Claude extraction.
+- Tefsir alani senkronizasyona eklendi (TEFSIR_BOS / TEFSIR_EKSTRA diff tipleri).
+- site_config.json: Bilinen site yapisi bilgi deposu (Claude konteksti icin).
+- KeyManager'a Claude API key destegi (provider alani, testClaudeKey, otomatik tespit).
+- Sync paneline AI durum karti, Tefsir sutunu, Parse Method sutunu, Claude key yapilandirma alani.
+- Backend: /api/sync/ai-key, /api/sync/ai-key-test, /api/sync/parser-status endpointleri.
+- 13 yeni i18n anahtari (sync.fieldTefsir, sync.aiStatus, sync.claude* vb).
+### Teknik
+- sync_check.py: _builtin_parse() ayrildi, 3-layer fallback, _last_parse_method takibi, AI URL discovery.
+- fetch_surah_page: domain degisirse Claude ile yeni URL kesfeder.
+- generated_parser.py: Claude tarafindan uretilen parse kodu, parser_history/ ile yedeklenir.
+- KeyManager backward-compatible: eski key'ler otomatik olarak provider='gemini' alir.
+- Claude API CORS nedeniyle backend uzerinden test edilir (web modunda format kontrolu).
+
 ## [1.2.6] - 2025-07-17 -- Senkronizasyon Yonetim Paneli
 ### Eklenen
 - Editor'e admin-only "Senkronizasyon" tab'i eklendi (5 adimli wizard).

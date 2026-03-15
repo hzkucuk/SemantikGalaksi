@@ -666,6 +666,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._sync_status()
         elif path == '/api/sync/backups':
             self._sync_list_backups()
+        elif path == '/api/sync/parser-status':
+            self._sync_parser_status()
         else:
             super().do_GET()
 
@@ -700,6 +702,10 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._sync_fix()
         elif self.path == '/api/sync/notify':
             self._sync_notify()
+        elif self.path == '/api/sync/ai-key':
+            self._sync_set_ai_key()
+        elif self.path == '/api/sync/ai-key-test':
+            self._sync_ai_key_test()
 
     def do_PUT(self):
         if self.path.startswith('/api/auth/user/'):
@@ -1864,6 +1870,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             for d in diffs:
                 tp = d.get('type', 'DIGER')
                 type_counts[tp] = type_counts.get(tp, 0) + 1
+            # Parse metodu bilgisi
+            parse_method = getattr(_sync_mod, '_last_parse_method', 'builtin')
             self._json_response({
                 'sure_no': sure_no, 'slug': slug, 'expected': expected,
                 'site_count': len(site_verses),
@@ -1871,6 +1879,7 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
                 'diff_count': len(diffs),
                 'fix_count': len(fixes),
                 'type_counts': type_counts,
+                'parse_method': parse_method,
                 'diffs': diffs[:50],
                 'fixes': [{'id': f['id'], 'fields': [k for k in f if k != 'id']}
                           for f in fixes],
@@ -1951,6 +1960,53 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
         except Exception as e:
             log_system.error('Sync bildirim hatasi', error=str(e))
             self._json_response({'error': str(e)}, 500)
+
+    def _sync_set_ai_key(self):
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        body = self._read_body()
+        if not body or not body.get('api_key'):
+            self._json_response({'error': 'api_key gerekli'}, 400)
+            return
+        api_key = body['api_key']
+        model = body.get('model', None)
+        if _HAS_SYNC and hasattr(_sync_mod, 'set_ai_key'):
+            _sync_mod.set_ai_key(api_key, model)
+            log_system.info('Sync AI key ayarlandi', user=session['username'])
+            self._json_response({'ok': True})
+        else:
+            self._json_response({'error': 'AI modulu yuklu degil'}, 503)
+
+    def _sync_ai_key_test(self):
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        body = self._read_body()
+        if not body or not body.get('api_key'):
+            self._json_response({'error': 'api_key gerekli'}, 400)
+            return
+        if not _HAS_AI_PARSER:
+            self._json_response({'error': 'ai_parser modulu yuklu degil'}, 503)
+            return
+        try:
+            parser = AIParser(body['api_key'])
+            result = parser.test_key()
+            self._json_response(result)
+        except Exception as e:
+            self._json_response({'ok': False, 'error': str(e)})
+
+    def _sync_parser_status(self):
+        session = _get_session(self.headers)
+        if not session or session['role'] != 'admin':
+            self._json_response({'error': 'Yetkisiz'}, 403)
+            return
+        if _HAS_AI_PARSER and _ai_parser_status:
+            self._json_response(_ai_parser_status())
+        else:
+            self._json_response({'exists': False, 'ai_available': False})
 
     def log_message(self, format, *args):
         log_system.debug('HTTP', request=format % args if args else format)

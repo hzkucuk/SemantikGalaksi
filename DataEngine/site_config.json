@@ -1,0 +1,39 @@
+{
+    "version": "1.0",
+    "last_verified": "2025-07-17",
+    "site": {
+        "domain": "https://www.suleymaniyevakfimeali.com",
+        "base_url": "https://www.suleymaniyevakfimeali.com/Meal/",
+        "url_pattern": "{base_url}{slug}.htm",
+        "encoding": "utf-8",
+        "type": "static_html"
+    },
+    "selectors": {
+        "verse_header": {"tag": "span", "class": "qrHeader", "description": "Sure/ayet numarasi (orn: Bakara 2/1 TEFSiR)"},
+        "arabic_text": {"tag": "div", "class": "qrText", "description": "Arapca ayet metni"},
+        "turkish_text": {"tag": "div", "class": "trText", "description": "Turkce meal + dipnot (birlesik)"},
+        "tefsir_marker": {"location": "qrHeader text", "pattern": "TEFSiR", "description": "Header'da TEFSiR yazisi varsa o ayet icin tefsir mevcut"}
+    },
+    "parsing_rules": {
+        "header_pattern": "(\\d{1,3})\\s*/\\s*(\\d{1,3})",
+        "header_notes": "Ilk grup=sure_no, ikinci grup=ayet_no. TEFSiR kelimesi header'da olabilir.",
+        "besmele_rule": "Ilk header 'TEF' icerip '/' icermiyorsa besmele satirdir, atlanir.",
+        "meal_dipnot_split": "\\n\\s*\\n\\s*\\n?\\s*[\\[\\d]*\\*\\] ile baslar, ondan once meal, sonrasi dipnot",
+        "tefsir_detection": "qrHeader text icerisinde 'TEFSiR' kelimesi varsa tefsirli ayet",
+        "tefsir_content": "trText icerisindeki dipnot kismi ([*] sonrasi) tefsir bilgisi icerir"
+    },
+    "data_structure": {
+        "per_verse": {
+            "ayet": "qrText get_text()",
+            "meal": "trText'ten dipnot oncesi kisim",
+            "dipnot": "trText'ten [*] isareti sonrasi kisim",
+            "has_tefsir": "qrHeader'da TEFSiR kelimesi var mi"
+        },
+        "alignment": "headers, qrText, trText dizileri 1:1:1 eslesmeli"
+    },
+    "known_issues": {
+        "duplicate_verses": "Bazi ayetler Uthmani+Diyanet olarak 2 kez mevcut (~94 cift)",
+        "uthmani_markers": "U+0671 (ALEF WASLA) veya U+06DF isareti Uthmani metinlerinde bulunur",
+        "encoding": "Site UTF-8, ama non-breaking space (\\xa0) sik kullanilir"
+    }
+}
