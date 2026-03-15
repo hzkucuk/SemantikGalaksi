@@ -154,11 +154,10 @@ window.onload = async () => {
 };
 
 function _disableWebOnlyButtons() {
-    var ids = ['file-input-label', null, 'editor-btn-header'];
+    var ids = ['file-input-label'];
     var selectors = [
         document.getElementById('file-input-label'),
-        document.querySelector('button[onclick="openDatasets()"]'),
-        document.getElementById('editor-btn-header')
+        document.querySelector('button[onclick="openDatasets()"]')
     ];
     var tip = 'Lokal çalışma versiyonunda kullanılabilir';
     selectors.forEach(function(btn) {
