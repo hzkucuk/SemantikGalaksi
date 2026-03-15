@@ -100,6 +100,8 @@ var I18n = (function () {
         'editor.colDipnot': 'Dipnot',
         'editor.colTefsir': 'Tefsir',
         'editor.tefsirPlaceholder': 'JSON format: [{"type":"text","content":"..."}] — Koordinat: sure:ayet (orn: 2:255)',
+        'editor.tefsirSegment': 'bolum',
+        'editor.tefsirLink': 'baglanti',
         'editor.colRoot': 'Kok',
         'editor.colMeaningTr': 'Anlam (TR)',
         'editor.colMeaningAr': 'Anlam (AR)',

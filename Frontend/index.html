@@ -510,7 +510,12 @@
         .db-grid-scroll { flex: 1; overflow: auto; }
         .db-grid { width: 100%; border-collapse: collapse; font-size: 12px; }
         .db-grid thead { position: sticky; top: 0; z-index: 2; }
-        .db-grid th { background: #0d1117; color: #00f2ff; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 8px 10px; text-align: left; border-bottom: 2px solid rgba(0,242,255,0.2); white-space: nowrap; }
+        .db-grid th { background: #0d1117; color: #00f2ff; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 8px 10px; text-align: left; border-bottom: 2px solid rgba(0,242,255,0.2); white-space: nowrap; position: relative; }
+        .db-grid th.db-sortable { cursor: pointer; user-select: none; }
+        .db-grid th.db-sortable:hover { background: rgba(0,242,255,0.08); }
+        .db-grid th.db-sorted { color: #67e8f9; border-bottom-color: #00f2ff; }
+        .db-resize-handle { position: absolute; top: 0; right: 0; width: 5px; height: 100%; cursor: col-resize; background: transparent; z-index: 3; }
+        .db-resize-handle:hover, .db-resize-handle:active { background: rgba(0,242,255,0.4); }
         .db-grid tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
         .db-grid tbody tr:hover { background: rgba(0,242,255,0.04); }
         .db-cell { padding: 6px 10px; color: #cbd5e1; font-size: 12px; line-height: 1.5; max-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: top; }

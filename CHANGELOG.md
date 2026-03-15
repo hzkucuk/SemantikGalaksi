@@ -1,5 +1,19 @@
 ﻿bu# CHANGELOG
 
+## [1.3.2] - 2025-07-18 -- DB Grid UX: Siralama, Kolon Boyutlandirma, Tefsir Onizleme
+### Eklenen
+- Kolon siralama: Tiklanabilir basliklar ile ASC/DESC siralama (verses: id, sure_no, ayet_no, surah, meal / roots: root, meaning_tr, pronunciation).
+- Siralama ok isareti: Aktif kolonda yukari/asagi ok gosterimi.
+- Kolon genisletme: Sag kenardan surukle-birak ile kolon genisligi ayarlama. localStorage ile kalicilik.
+- Tefsir onizleme: seg X badge yerine ilk text segmentinin icerik onizlemesi (max 60 karakter). Segment ve baglanti sayisi tooltip olarak.
+- Backend sort destegi: list_verses/list_roots sort_by/sort_dir parametreleri, whitelist ile SQL injection korunmasi.
+- i18n: editor.tefsirSegment, editor.tefsirLink keyleri.
+### Degistirilen
+- db.py: list_verses, list_roots imzalari sort_by/sort_dir parametreleri eklendi.
+- desktop_app.py: _db_list_verses, _db_list_roots sort param parsing.
+- datasets.js: Sort state, URL params, sortable headers, resize handlers, tefsir preview.
+- index.html: db-sortable, db-sorted, db-resize-handle CSS.
+
 ## [1.3.1] - 2025-07-18 -- Local Override + Diff Review Sistemi
 ### Eklenen
 - Local Override sistemi: Admin duzenlediginde alan sync sirasinda korunur (atlanir).

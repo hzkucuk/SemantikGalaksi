@@ -781,7 +781,7 @@ def save_ui_locale(lang, data, user='system', conn=None):
 #  SAYFALAMALI SORGULAR (Editor Grid icin)
 # ===================================================================
 
-def list_verses(page=1, limit=50, search='', conn=None):
+def list_verses(page=1, limit=50, search='', sort_by='', sort_dir='asc', conn=None):
     """Sayfalamali ayet listesi. Arama: sure no, ayet no, metin, meal."""
     db = conn or get_db()
     offset = (page - 1) * limit
@@ -796,8 +796,15 @@ def list_verses(page=1, limit=50, search='', conn=None):
         f"SELECT COUNT(*) FROM verses v {base_where}", params
     ).fetchone()[0]
 
+    _ALLOWED_VERSE_SORT = {'id', 'sure_no', 'ayet_no', 'surah', 'meal'}
+    _dir = 'DESC' if sort_dir == 'desc' else 'ASC'
+    if sort_by in _ALLOWED_VERSE_SORT:
+        order_clause = f"ORDER BY v.{sort_by} {_dir}"
+    else:
+        order_clause = "ORDER BY v.sure_no ASC, v.ayet_no ASC"
+
     rows = db.execute(
-        f"SELECT v.* FROM verses v {base_where} ORDER BY v.sure_no, v.ayet_no LIMIT ? OFFSET ?",
+        f"SELECT v.* FROM verses v {base_where} {order_clause} LIMIT ? OFFSET ?",
         params + [limit, offset]
     ).fetchall()
 
@@ -829,7 +836,7 @@ def list_verses(page=1, limit=50, search='', conn=None):
     }
 
 
-def list_roots(page=1, limit=50, search='', conn=None):
+def list_roots(page=1, limit=50, search='', sort_by='', sort_dir='asc', conn=None):
     """Sayfalamali kok listesi. Arama: kok, anlam, telaffuz."""
     db = conn or get_db()
     offset = (page - 1) * limit
@@ -844,8 +851,15 @@ def list_roots(page=1, limit=50, search='', conn=None):
         f"SELECT COUNT(*) FROM roots r {base_where}", params
     ).fetchone()[0]
 
+    _ALLOWED_ROOT_SORT = {'root', 'meaning_tr', 'pronunciation'}
+    _dir = 'DESC' if sort_dir == 'desc' else 'ASC'
+    if sort_by in _ALLOWED_ROOT_SORT:
+        order_clause = f"ORDER BY r.{sort_by} {_dir}"
+    else:
+        order_clause = "ORDER BY r.root ASC"
+
     rows = db.execute(
-        f"SELECT r.* FROM roots r {base_where} ORDER BY r.root LIMIT ? OFFSET ?",
+        f"SELECT r.* FROM roots r {base_where} {order_clause} LIMIT ? OFFSET ?",
         params + [limit, offset]
     ).fetchall()
 

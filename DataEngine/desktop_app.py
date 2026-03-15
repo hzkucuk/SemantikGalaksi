@@ -1538,7 +1538,9 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             page = int(params.get('page', [1])[0])
             limit = int(params.get('limit', [50])[0])
             search = params.get('search', [''])[0]
-            result = quran_db.list_verses(page=page, limit=limit, search=search)
+            sort_by = params.get('sort_by', [''])[0]
+            sort_dir = params.get('sort_dir', ['asc'])[0]
+            result = quran_db.list_verses(page=page, limit=limit, search=search, sort_by=sort_by, sort_dir=sort_dir)
             self._json_response(result)
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
@@ -1558,7 +1560,9 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             page = int(params.get('page', [1])[0])
             limit = int(params.get('limit', [50])[0])
             search = params.get('search', [''])[0]
-            result = quran_db.list_roots(page=page, limit=limit, search=search)
+            sort_by = params.get('sort_by', [''])[0]
+            sort_dir = params.get('sort_dir', ['asc'])[0]
+            result = quran_db.list_roots(page=page, limit=limit, search=search, sort_by=sort_by, sort_dir=sort_dir)
             self._json_response(result)
         except Exception as e:
             self._json_response({'error': str(e)}, 500)

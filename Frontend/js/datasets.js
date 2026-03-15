@@ -33,6 +33,9 @@ var _dbTimer = null;
 var _dbTransLang = null;
 var _dbLogTable = '';
 var _kbTarget = null;
+var _dbSortBy = '';
+var _dbSortDir = 'asc';
+var _dbColWidths = {};
 
 // Override helper
 var _dbParseOverrides = (val) => {
@@ -123,6 +126,7 @@ var _dbLoad = async () => {
         else url = '/api/db/translations';
         var params = ['page=' + _dbPage, 'limit=' + _dbLimit];
         if (_dbSearch) params.push('search=' + encodeURIComponent(_dbSearch));
+        if (_dbSortBy) { params.push('sort_by=' + encodeURIComponent(_dbSortBy)); params.push('sort_dir=' + encodeURIComponent(_dbSortDir)); }
         if (_dbTab === 'translations' && _dbTransLang) params.push('lang=' + encodeURIComponent(_dbTransLang));
         if (_dbTab === 'logs' && _dbLogTable) params.push('table=' + encodeURIComponent(_dbLogTable));
         url += '?' + params.join('&');
@@ -234,8 +238,17 @@ var _dbRenderMain = () => {
     var isLogs = (_dbTab === 'logs');
     var extraCol = (_dbTab === 'roots' && isAdmin) ? 1 : 0;
     h += '<div class="db-grid-scroll"><table class="db-grid"><thead><tr>';
+    var _sortableCols = {verses: ['id','sure_no','ayet_no','surah','meal'], roots: ['root','meaning_tr','pronunciation']};
+    var _sortables = _sortableCols[_dbTab] || [];
     cols.forEach(function(c) {
-        h += '<th style="width:' + c.w + (c.rtl ? ';direction:rtl;text-align:right' : '') + '">' + c.label + '</th>';
+        var isSortable = _sortables.indexOf(c.key) >= 0;
+        var arrow = '';
+        if (isSortable && _dbSortBy === c.key) {
+            arrow = _dbSortDir === 'asc' ? ' \u25B2' : ' \u25BC';
+        }
+        var savedW = _dbColWidths[_dbTab + '_' + c.key];
+        var colW = savedW ? savedW : c.w;
+        h += '<th class="' + (isSortable ? 'db-sortable' : '') + (_dbSortBy === c.key ? ' db-sorted' : '') + '" data-col="' + c.key + '" style="width:' + colW + (c.rtl ? ';direction:rtl;text-align:right' : '') + '"' + (isSortable ? ' onclick="dbSortCol(\'' + c.key + '\')"' : '') + '>' + c.label + arrow + '</th>';
     });
     if (extraCol) h += '<th style="width:50px">' + t('editor.colActions') + '</th>';
     h += '</tr></thead><tbody>';
@@ -273,10 +286,26 @@ var _dbRenderMain = () => {
                             if (tv && tv.trim()) {
                                 try {
                                     var segs = JSON.parse(tv);
-                                    var segCnt = Array.isArray(segs) ? segs.length : 0;
-                                    h += '<span class="db-root-tag" style="background:rgba(167,139,250,0.15);color:#a78bfa;" title="' + _escHtml(tv.substring(0, 200)) + '">' + segCnt + ' seg</span>';
+                                    if (Array.isArray(segs) && segs.length > 0) {
+                                        var firstText = '';
+                                        for (var si = 0; si < segs.length; si++) {
+                                            if (segs[si].type === 'text' && segs[si].content && segs[si].content.trim()) {
+                                                firstText = segs[si].content.trim();
+                                                break;
+                                            }
+                                        }
+                                        if (!firstText && segs[0].content) firstText = segs[0].content.trim();
+                                        var linkCnt = segs.filter(function(sg) { return sg.type === 'link'; }).length;
+                                        var preview = firstText.length > 60 ? firstText.substring(0, 60) + '...' : firstText;
+                                        var tipParts = [];
+                                        tipParts.push(segs.length + ' ' + t('editor.tefsirSegment'));
+                                        if (linkCnt > 0) tipParts.push(linkCnt + ' ' + t('editor.tefsirLink'));
+                                        h += '<span class="db-cell-text" title="' + _escHtml(tipParts.join(' / ')) + '">' + _escHtml(preview) + '</span>';
+                                    } else {
+                                        h += '<span style="color:#475569;font-size:10px;">\u2014</span>';
+                                    }
                                 } catch(e) {
-                                    h += '<span class="db-cell-text" style="color:#94a3b8;">' + _escHtml(tv.substring(0, 40)) + '</span>';
+                                    h += '<span class="db-cell-text" style="color:#94a3b8;">' + _escHtml(tv.substring(0, 60)) + '</span>';
                                 }
                             } else {
                                 h += '<span style="color:#475569;font-size:10px;">\u2014</span>';
@@ -304,7 +333,48 @@ var _dbRenderMain = () => {
     h += '</div>';
 
     main.innerHTML = h;
+    _dbInitResize();
 };
+
+var _dbInitResize = () => {
+    var ths = document.querySelectorAll('.db-grid th');
+    ths.forEach(function(th) {
+        var handle = document.createElement('div');
+        handle.className = 'db-resize-handle';
+        th.appendChild(handle);
+        handle.addEventListener('mousedown', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var startX = e.clientX;
+            var startW = th.offsetWidth;
+            var colKey = th.getAttribute('data-col');
+            var onMove = function(ev) {
+                var newW = Math.max(40, startW + (ev.clientX - startX));
+                th.style.width = newW + 'px';
+            };
+            var onUp = function() {
+                document.removeEventListener('mousemove', onMove);
+                document.removeEventListener('mouseup', onUp);
+                document.body.style.cursor = '';
+                document.body.style.userSelect = '';
+                if (colKey) {
+                    _dbColWidths[_dbTab + '_' + colKey] = th.style.width;
+                    try { localStorage.setItem('dbColWidths', JSON.stringify(_dbColWidths)); } catch(ex) {}
+                }
+            };
+            document.body.style.cursor = 'col-resize';
+            document.body.style.userSelect = 'none';
+            document.addEventListener('mousemove', onMove);
+            document.addEventListener('mouseup', onUp);
+        });
+    });
+};
+
+// Restore saved column widths from localStorage
+try {
+    var _saved = localStorage.getItem('dbColWidths');
+    if (_saved) _dbColWidths = JSON.parse(_saved);
+} catch(e) {}
 
 // =====================================================
 //  PAGINATION
@@ -326,6 +396,16 @@ window.dbSearchInput = (val) => {
         _dbPage = 1;
         _dbLoad();
     }, 400);
+};
+window.dbSortCol = async (col) => {
+    if (_dbSortBy === col) {
+        _dbSortDir = _dbSortDir === 'asc' ? 'desc' : 'asc';
+    } else {
+        _dbSortBy = col;
+        _dbSortDir = 'asc';
+    }
+    _dbPage = 1;
+    await _dbLoad();
 };
 window.dbFilterLang = async (lang) => {
     _dbTransLang = lang || null;
