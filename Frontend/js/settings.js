@@ -124,10 +124,11 @@ var applyPerformanceMode = () => {
     if (spaceDust) spaceDust.visible = !isLow;
     var btn = document.getElementById('perf-btn');
     if (btn) {
+        var labelKey = isLow ? 'header.perfLow' : 'header.perfHigh';
         btn.innerHTML = isLow
-            ? '<span>🔋</span><span class="hdr-btn-label">' + t('header.perfLow') + '</span>'
-            : '<span>⚡</span><span class="hdr-btn-label">' + t('header.perfHigh') + '</span>';
-        btn.title = isLow ? 'Performans Modu (Düşük Kalite) — Tıkla: Yüksek' : 'Yüksek Kalite — Tıkla: Düşük';
+            ? '<span>\ud83d\udd0b</span><span class="hdr-btn-label" data-i18n="header.perfLow">' + t('header.perfLow') + '</span>'
+            : '<span>\u26a1</span><span class="hdr-btn-label" data-i18n="header.perfHigh">' + t('header.perfHigh') + '</span>';
+        btn.title = t('header.perf');
     }
 };
 
@@ -136,3 +137,6 @@ var togglePerformance = () => {
     localStorage.setItem('sgx_perf', perfMode);
     applyPerformanceMode();
 };
+
+// Dil değiştiğinde performans buton etiketini güncelle
+document.addEventListener('languageChanged', function() { applyPerformanceMode(); });

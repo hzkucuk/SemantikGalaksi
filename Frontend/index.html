@@ -1208,15 +1208,15 @@
                 <button id="editor-btn-header" onclick="openEditor()" class="hdr-btn" title="JSON Editör" data-i18n="header.editor" data-i18n-attr="title">📝</button>
                 <button onclick="openNotes()" class="hdr-btn" title="Notlarım" data-i18n="header.notes" data-i18n-attr="title">📓</button>
                 <div class="hdr-divider"></div>
-                <button id="admin-btn" onclick="openAdmin()" class="hdr-btn" title="Kullanıcı Yönetimi" style="display:none">👥</button>
+                <button id="admin-btn" onclick="openAdmin()" class="hdr-btn" title="Kullanıcı Yönetimi" data-i18n="header.admin" data-i18n-attr="title" style="display:none">👥</button>
                 <div class="relative" id="layout-menu-wrap">
-                    <button onclick="toggleLayoutMenu()" class="hdr-btn" title="Uzay Yerleşim Modeli" id="layout-btn">🌌</button>
+                    <button onclick="toggleLayoutMenu()" class="hdr-btn" title="Uzay Yerleşim Modeli" data-i18n="header.layout" data-i18n-attr="title" id="layout-btn">🌌</button>
                     <div id="layout-menu" class="hidden absolute right-0 top-full mt-2 bg-black/95 backdrop-blur-xl border border-white/10 rounded-2xl p-2 min-w-[220px] shadow-2xl z-[100]">
-                        <button onclick="switchLayout('galaxy')" class="layout-option active" data-layout="galaxy">🌌 Galaksi <span class="layout-desc">Arşimed spirali — Samanyolu modeli</span></button>
-                        <button onclick="switchLayout('nebula')" class="layout-option" data-layout="nebula">🌫️ Bulutsu <span class="layout-desc">Gauss bulut kümeleri — Organik dağılım</span></button>
-                        <button onclick="switchLayout('cube')" class="layout-option" data-layout="cube">📦 Küp <span class="layout-desc">3B ızgara — Kristal yapı</span></button>
-                        <button onclick="switchLayout('sphere')" class="layout-option" data-layout="sphere">🔮 Küre <span class="layout-desc">Fibonacci küre — Altın oran dağılımı</span></button>
-                        <button onclick="switchLayout('allah')" class="layout-option" data-layout="allah">🕋 الله <span class="layout-desc">Arapça kaligrafi — Allah lafzı şekli</span></button>
+                        <button onclick="switchLayout('galaxy')" class="layout-option active" data-layout="galaxy">🌌 <span data-i18n="layout.galaxy">Galaksi</span> <span class="layout-desc" data-i18n="layout.galaxyDesc">Arşimed spirali — Samanyolu modeli</span></button>
+                        <button onclick="switchLayout('nebula')" class="layout-option" data-layout="nebula">🌫️ <span data-i18n="layout.nebula">Bulutsu</span> <span class="layout-desc" data-i18n="layout.nebulaDesc">Gauss bulut kümeleri — Organik dağılım</span></button>
+                        <button onclick="switchLayout('cube')" class="layout-option" data-layout="cube">📦 <span data-i18n="layout.cube">Küp</span> <span class="layout-desc" data-i18n="layout.cubeDesc">3B ızgara — Kristal yapı</span></button>
+                        <button onclick="switchLayout('sphere')" class="layout-option" data-layout="sphere">🔮 <span data-i18n="layout.sphere">Küre</span> <span class="layout-desc" data-i18n="layout.sphereDesc">Fibonacci küre — Altın oran dağılımı</span></button>
+                        <button onclick="switchLayout('allah')" class="layout-option" data-layout="allah">🕋 <span data-i18n="layout.allah">الله</span> <span class="layout-desc" data-i18n="layout.allahDesc">Arapça kaligrafi — Allah lafzı şekli</span></button>
                     </div>
                 </div>
                 <button onclick="openSettings()" class="hdr-btn" title="Ayarlar" data-i18n="header.settings" data-i18n-attr="title">⚙️</button>

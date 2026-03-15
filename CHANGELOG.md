@@ -10,8 +10,10 @@
 - "Hapax Legomena" → "Tek Geçen Kök" olarak değiştirildi + tooltip açıklaması eklendi.
 - Editor dil dropdown iyileştirildi: dil adları + bayrak kodları + koyu CSS.
 - 4 yeni i18n key (hud.navFirst/navPrev/navNext/navLast) + 16 SQLite çeviri satırı.
+- Toolbar tooltip i18n düzeltmesi: admin-btn, layout-btn, layout menü seçenekleri, perf butonu artık dil değiştirince çevriliyor.
+- applyPerformanceMode() i18n uyumlu: title artık t() ile, label span'da data-i18n, languageChanged event'i dinliyor.
 ### Etkilenen Dosyalar
-- hud.js, index.html, i18n.js, loading.js, web-db.js, root-analyzer.js, datasets.js, quran.db, state.js
+- hud.js, index.html, i18n.js, loading.js, web-db.js, root-analyzer.js, datasets.js, settings.js, quran.db, state.js
 
 ## [1.1.6] - 2025-07-15 -- VERİ OKU + Veri Setleri Kaldırıldı & Web SQLite
 ### Kaldırılan
