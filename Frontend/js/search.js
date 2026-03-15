@@ -124,27 +124,3 @@ window.selectSearch = (targetId, type) => {
     var t = (type === 'ayah') ? nodes.find(n => n.id === targetId) : nodes.find(n => n.id.split(':')[0] === targetId);
     if (t) { warpTo(t); document.getElementById('search-results').style.display = 'none'; }
 };
-
-document.getElementById('file-input').onchange = (e) => {
-    var file = e.target.files[0];
-    if (!file) return;
-    var fname = file.name;
-    var r = new FileReader();
-    r.onload = async (ev) => {
-        try {
-            var data = JSON.parse(ev.target.result);
-            await DatasetStore.save(fname, data);
-            activeDatasetName = fname;
-            processData(data);
-            hasCustomData = true;
-        } catch(err) { showAlert(t('search.invalidJson') + ': ' + err.message); }
-    };
-    r.readAsText(file);
-    e.target.value = '';
-};
-window.resetToOriginal = () => {
-    if (!originalData) return;
-    activeDatasetName = '';
-    processData(originalData);
-    hasCustomData = false;
-};

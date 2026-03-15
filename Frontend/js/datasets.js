@@ -51,7 +51,6 @@ window.openEditor = async () => {
     _dbRenderTabs();
     await _dbLoad();
 };
-window.openDatasets = () => { openEditor(); };
 window.closeEditor = () => {
     document.getElementById('json-editor').style.display = 'none';
 };

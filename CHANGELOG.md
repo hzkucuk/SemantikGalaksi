@@ -1,5 +1,16 @@
 ﻿bu# CHANGELOG
 
+## [1.1.6] - 2025-07-15 -- VERİ OKU + Veri Setleri Butonları Kaldırıldı
+### Kaldırılan
+- "VERİ OKU" (📄) dosya yükleme butonu ve file-input handler kaldırıldı (search.js).
+- "📂 Veri Setleri" butonu ve openDatasets redirect kaldırıldı (datasets.js).
+- hasCustomData, activeDatasetName, resetToOriginal ölü kodları temizlendi (state.js, search.js).
+- auth.js, loading.js: file-input-label referansları temizlendi.
+- websocket.js: dataset_saved/deleted/renamed/duplicated ölü WS handler'ları kaldırıldı.
+- i18n: header.readData, header.datasets key'leri + 8 SQLite çeviri satırı silindi.
+### Etkilenen Dosyalar
+- index.html, search.js, datasets.js, state.js, auth.js, loading.js, websocket.js, i18n.js, quran.db
+
 ## [1.1.5] - 2026-03-15 -- Arapca Klavye + Indirme Diyalogu
 ### Degisiklik
 - editor.arabic: 'ARAPCA' -> 'ARAPCA KLAVYE' olarak yeniden adlandirildi.

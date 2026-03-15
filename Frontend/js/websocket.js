@@ -25,26 +25,7 @@ var connectWS = () => {
     } catch(ex) {}
 };
 var handleWSMessage = (msg) => {
-    var isDatasetPanel = document.getElementById('dataset-overlay')?.style.display === 'flex';
     switch (msg.type) {
-        case 'dataset_saved':
-            showToast(`💾 ${msg.username} "${msg.name}" kaydetti`, 'info');
-            if (isDatasetPanel) renderDatasetList();
-            break;
-        case 'dataset_deleted':
-            showToast(`🗑 ${msg.username} "${msg.name}" sildi`, 'warn');
-            if (isDatasetPanel) renderDatasetList();
-            if (activeDatasetName === msg.name) { resetToOriginal(); showToast('Aktif veri seti silindi, orijinale dönüldü', 'warn'); }
-            break;
-        case 'dataset_renamed':
-            showToast(`✏️ ${msg.username} "${msg.oldName}" → "${msg.newName}"`, 'info');
-            if (isDatasetPanel) renderDatasetList();
-            if (activeDatasetName === msg.oldName) activeDatasetName = msg.newName;
-            break;
-        case 'dataset_duplicated':
-            showToast(`📋 ${msg.username} "${msg.sourceName}" çoğalttı`, 'info');
-            if (isDatasetPanel) renderDatasetList();
-            break;
         case 'user_joined':
             showToast(`🟢 ${msg.username} bağlandı`, 'success');
             _onlineUsers = msg.online || [];

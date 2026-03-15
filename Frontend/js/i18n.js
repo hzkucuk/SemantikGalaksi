@@ -31,8 +31,6 @@ var I18n = (function () {
         'login.firstSetup': 'İlk kurulum: admin / admin123',
 
         // Header
-        'header.readData': 'VERİ OKU',
-        'header.datasets': 'Veri Setleri',
         'header.editor': 'JSON Editör',
         'header.notes': 'Notlarım',
         'header.admin': 'Kullanıcı Yönetimi',

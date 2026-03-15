@@ -10,9 +10,7 @@ var applyRoleUI = () => {
     const adminBtn = document.getElementById('admin-btn');
     if (adminBtn) adminBtn.style.display = authRole === 'admin' ? '' : 'none';
     const isViewer = authRole === 'viewer';
-    const fileLabel = document.getElementById('file-input-label');
     const editorBtn = document.getElementById('editor-btn-header');
-    if (isDesktopMode && fileLabel) fileLabel.style.display = isViewer ? 'none' : '';
     if (isDesktopMode && editorBtn) editorBtn.style.display = isViewer ? 'none' : '';
 };
 

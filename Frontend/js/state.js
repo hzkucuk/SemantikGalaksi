@@ -1,7 +1,7 @@
 ﻿/** SemantikGalaksi — Paylaşılan Durum Değişkenleri */
 
 // Uygulama versiyonu (tek kaynak: VERSION dosyası → build sırasında buraya yansır)
-var APP_VERSION = '1.1.5';
+var APP_VERSION = '1.1.6';
 
 // Three.js sahne nesneleri
 var scene, camera, renderer, composer, ayahMesh, lineSegments, controls, highlightLines, skyMesh;
@@ -27,7 +27,6 @@ var rootMap = new Map();
 var labelSprites = [];
 var lineNodePairs = [];
 var originalData = null;
-var hasCustomData = false;
 var currentLayout = 'galaxy';
 var rootDictionary = {};
 var rootTranslations = {}; // Dil bazlı kök çevirileri { meaning, derived[].meaning }
@@ -70,9 +69,6 @@ var apiKey = null;
 var authToken = localStorage.getItem('sgx_auth_token') || '';
 var authUser = '', authRole = '', isDesktopMode = false;
 var currentUser = localStorage.getItem('sgx_username') || '';
-
-// Veri seti durumu
-var activeDatasetName = '';
 
 // HUD durumu
 var currentHudNode = null;

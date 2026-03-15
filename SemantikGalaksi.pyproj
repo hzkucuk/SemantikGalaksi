@@ -70,6 +70,7 @@
     <Content Include="Frontend\js\interaction.js" />
     <Content Include="Frontend\js\key-manager.js" />
     <Content Include="Frontend\js\loading.js" />
+    <Content Include="Frontend\js\modalDialog.js" />
     <Content Include="Frontend\js\notes.js" />
     <Content Include="Frontend\js\root-analyzer.js" />
     <Content Include="Frontend\js\scene-init.js" />
