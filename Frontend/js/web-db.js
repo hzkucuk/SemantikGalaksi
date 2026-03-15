@@ -92,5 +92,21 @@ var WebDB = {
             result[r.root] = entry;
         }
         return result;
+    },
+
+    getLocales() {
+        return this._query("SELECT * FROM locale_meta ORDER BY lang");
+    },
+
+    getLocale(langCode) {
+        var rows = this._query(
+            "SELECT key, value FROM ui_translations WHERE lang=?",
+            [langCode]
+        );
+        var result = {};
+        for (var i = 0; i < rows.length; i++) {
+            result[rows[i].key] = rows[i].value;
+        }
+        return result;
     }
 };

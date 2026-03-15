@@ -214,7 +214,7 @@ var I18n = (function () {
         'analyzer.maxRootsInVerse': 'Maks. Kök (Tek Ayet)',
         'analyzer.avgConns': 'Ort. Bağlantı / Ayet',
         'analyzer.maxConns': 'Maks. Bağlantı',
-        'analyzer.hapax': 'Hapax Legomena',
+        'analyzer.hapax': 'Tek Geçen Kök',
         'analyzer.hapaxDesc': 'Sadece 1 ayette geçen kökler',
         'analyzer.zipfTitle': 'Zipf Frekans Dağılımı',
         'analyzer.zipfAlpha': 'Zipf Üssü (α)',
@@ -348,11 +348,19 @@ var I18n = (function () {
         if (_translations[code]) return true;
         try {
             var resp = await fetch('/api/db/locale/' + code);
-            if (!resp.ok) return false;
+            if (!resp.ok) throw new Error('API fail');
             var data = await resp.json();
             _translations[code] = data;
             return true;
         } catch (e) {
+            // Web mod fallback — sql.js
+            if (typeof WebDB !== 'undefined' && WebDB._ready) {
+                var data = WebDB.getLocale(code);
+                if (data && Object.keys(data).length > 0) {
+                    _translations[code] = data;
+                    return true;
+                }
+            }
             console.warn('i18n: ' + code + ' yuklenemedi:', e);
             return false;
         }
@@ -365,7 +373,7 @@ var I18n = (function () {
     var discover = async () => {
         try {
             var resp = await fetch('/api/db/locales');
-            if (!resp.ok) return;
+            if (!resp.ok) throw new Error('API fail');
             var langs = await resp.json();
             for (var i = 0; i < langs.length; i++) {
                 var meta = langs[i];
@@ -379,7 +387,24 @@ var I18n = (function () {
                     });
                 }
             }
-        } catch (e) { /* API ulasilamaz */ }
+        } catch (e) {
+            // Web mod fallback — sql.js
+            if (typeof WebDB !== 'undefined' && WebDB._ready) {
+                var langs = WebDB.getLocales();
+                for (var i = 0; i < langs.length; i++) {
+                    var meta = langs[i];
+                    var code = meta.lang;
+                    if (!_available.find(function (a) { return a.code === code; })) {
+                        _available.push({
+                            code: code,
+                            name: meta.name || code,
+                            nativeName: meta.native_name || code,
+                            flag: meta.flag || ''
+                        });
+                    }
+                }
+            }
+        }
     };
 
     // ════════════════════════════════════════════════════════════

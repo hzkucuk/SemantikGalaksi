@@ -105,6 +105,12 @@ var hideLoadingScreen = () => {
 
 window.onload = async () => {
     isDesktopMode = await DatasetStore._checkServer();
+
+    // Web modda sql.js ile DB'yi erken yukle (i18n + veri icin)
+    if (!isDesktopMode && typeof WebDB !== 'undefined') {
+        await WebDB.init();
+    }
+
     await I18n.init();
     playBesmeleAudio();
 

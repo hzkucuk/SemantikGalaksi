@@ -474,7 +474,7 @@ var RootAnalyzer = (function () {
                     <div class="analyzer-metric"><div class="metric-value" style="color:#a78bfa;">${ov.totalAyahs}</div><div class="metric-label">${t('analyzer.totalVerses')}</div></div>
                     <div class="analyzer-metric"><div class="metric-value" style="color:#34d399;">${ov.avgRoots}</div><div class="metric-label">${t('analyzer.avgRootsPerVerse')}</div></div>
                     <div class="analyzer-metric"><div class="metric-value" style="color:#f59e0b;">${ov.maxRoots}</div><div class="metric-label">${t('analyzer.maxRootsInVerse')}</div></div>
-                    <div class="analyzer-metric"><div class="metric-value" style="color:#ef4444;">${ov.hapax}</div><div class="metric-label">${t('analyzer.hapax')}</div></div>
+                    <div class="analyzer-metric" title="Hapax Legomena — Kur'an'da yalnızca tek bir ayette geçen kökler"><div class="metric-value" style="color:#ef4444;">${ov.hapax}</div><div class="metric-label">${t('analyzer.hapax')}</div></div>
                     <div class="analyzer-metric"><div class="metric-value" style="color:#ef4444;">${ov.hapaxPercent}%</div><div class="metric-label">${t('analyzer.hapaxDesc')}</div></div>
                     <div class="analyzer-metric"><div class="metric-value" style="color:#06b6d4;">${ov.avgConns}</div><div class="metric-label">${t('analyzer.avgConns')}</div></div>
                     <div class="analyzer-metric"><div class="metric-value" style="color:#06b6d4;">${ov.maxConns}</div><div class="metric-label">${t('analyzer.maxConns')}</div></div>
@@ -636,7 +636,7 @@ var RootAnalyzer = (function () {
                     <div class="book-ov-metric"><span class="book-ov-val" style="color:#00f2ff;">${ov.totalRoots}</span><span class="book-ov-lbl">${t('analyzer.root')}</span></div>
                     <div class="book-ov-metric"><span class="book-ov-val" style="color:#a78bfa;">${ov.totalAyahs}</span><span class="book-ov-lbl">${t('analyzer.verse')}</span></div>
                     <div class="book-ov-metric"><span class="book-ov-val" style="color:#34d399;">${ov.avgRoots}</span><span class="book-ov-lbl">${t('analyzer.avgPerVerse')}</span></div>
-                    <div class="book-ov-metric"><span class="book-ov-val" style="color:#ef4444;">${ov.hapax}</span><span class="book-ov-lbl">${t('analyzer.unique')}</span></div>
+                    <div class="book-ov-metric" title="Hapax Legomena — Tek ayette geçen kökler"><span class="book-ov-val" style="color:#ef4444;">${ov.hapax}</span><span class="book-ov-lbl">${t('analyzer.unique')}</span></div>
                 </div>
                 <div class="book-overview-row">
                     <span class="book-ov-tag">Zipf α=${freq.alpha}</span>

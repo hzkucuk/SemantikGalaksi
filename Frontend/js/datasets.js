@@ -169,10 +169,15 @@ var _dbRenderMain = () => {
     h += '<div class="db-toolbar-left">';
     h += '<input type="text" id="db-search" class="db-search-input" placeholder="' + t('editor.searchPlaceholder') + '" value="' + _escHtml(_dbSearch) + '" oninput="dbSearchInput(this.value)" onfocus="_kbTarget=this">';
     if (_dbTab === 'translations' && _dbData.languages) {
+        var _langNames = {en:'English',es:'Español',it:'Italiano',ru:'Русский',de:'Deutsch',fr:'Français',ar:'العربية',ja:'日本語',zh:'中文',pt:'Português',ko:'한국어',nl:'Nederlands'};
+        var _langFlags = {en:'EN-en',es:'ES-es',it:'IT-it',ru:'RU-ru',de:'DE-de',fr:'FR-fr',ar:'AR-sa',ja:'JA-jp',zh:'ZH-cn',pt:'PT-pt',ko:'KO-kr',nl:'NL-nl'};
         h += '<select class="db-lang-select" onchange="dbFilterLang(this.value)">';
         h += '<option value="">' + t('editor.allLanguages') + '</option>';
         _dbData.languages.forEach(function(l) {
-            h += '<option value="' + l + '"' + (_dbTransLang === l ? ' selected' : '') + '>' + l.toUpperCase() + '</option>';
+            var flagCode = _langFlags[l] || l.toUpperCase() + '-' + l;
+            var flag = (typeof CountryFlags !== 'undefined') ? CountryFlags.get(flagCode) : '';
+            var name = _langNames[l] || l.toUpperCase();
+            h += '<option value="' + l + '"' + (_dbTransLang === l ? ' selected' : '') + '>' + l.toUpperCase() + ' — ' + name + '</option>';
         });
         h += '</select>';
     }
