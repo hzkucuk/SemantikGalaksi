@@ -155,6 +155,8 @@ var I18n = (function () {
         'audit.orphanRoots': 'Yetim Kokler',
         'audit.undefinedRoots': 'Tanimsiz Kokler',
         'audit.fkViolations': 'FK Ihlali',
+        'audit.emptyTefsir': 'Tefsiri Bos',
+        'audit.emptyTefsirList': 'Tefsiri Bos Ayetler',
         'audit.missingTranslations': 'Eksik Kok Cevirileri',
         'audit.missingCount': 'eksik',
         'audit.emptyMealList': 'Meali Bos Ayetler',

@@ -1,5 +1,14 @@
 ﻿bu# CHANGELOG
 
+## [1.3.0] - 2025-07-18 -- Denetim Paneli Tefsir + Eksiklik Kontrolu
+### Eklenen
+- Denetim paneline Tefsir metrigi: bos tefsir sayisi, sure bazli tefsir sutunu, detay listesi.
+- Skor hesaplamasi 3 eksenli: meal + roots + tefsir doluluk orani.
+### Teknik
+- db.py data_audit(): empty_tefsir sorgusu, surah_summary no_tefsir, skor 3-eksenli.
+- datasets.js: tefsir metric karti, sure tablosuna tefsir sutunu, detay listesine tefsir eklendi.
+- i18n.js: audit.emptyTefsir, audit.emptyTefsirList anahtarlari.
+
 ## [1.2.9] - 2025-07-18 -- AI Guvenlik + AV Uyumluluk
 ### Eklenen
 - Kod Sandbox Dogrulayici: Claude urettigi kodda tehlikeli import/cagri engelleme (regex + AST).

@@ -513,6 +513,13 @@ def data_audit(conn=None):
         ORDER BY sure_no, ayet_no
     """).fetchall()
 
+    # 3b. Tefsiri bos ayetler
+    empty_tefsir = db.execute("""
+        SELECT id, surah FROM verses
+        WHERE tefsir_popup IS NULL OR TRIM(tefsir_popup) = '' OR TRIM(tefsir_popup) = '[]'
+        ORDER BY sure_no, ayet_no
+    """).fetchall()
+
     # 4. Anlami bos kokler
     empty_meaning = db.execute("""
         SELECT root FROM roots
@@ -560,7 +567,8 @@ def data_audit(conn=None):
             COUNT(*) as total,
             SUM(CASE WHEN vr_cnt IS NULL OR vr_cnt = 0 THEN 1 ELSE 0 END) as no_roots,
             SUM(CASE WHEN v.meal IS NULL OR TRIM(v.meal) = '' THEN 1 ELSE 0 END) as no_meal,
-            SUM(CASE WHEN v.dipnot IS NULL OR TRIM(v.dipnot) = '' THEN 1 ELSE 0 END) as no_dipnot
+            SUM(CASE WHEN v.dipnot IS NULL OR TRIM(v.dipnot) = '' THEN 1 ELSE 0 END) as no_dipnot,
+            SUM(CASE WHEN v.tefsir_popup IS NULL OR TRIM(v.tefsir_popup) = '' OR TRIM(v.tefsir_popup) = '[]' THEN 1 ELSE 0 END) as no_tefsir
         FROM verses v
         LEFT JOIN (
             SELECT verse_id, COUNT(*) as vr_cnt FROM verse_roots GROUP BY verse_id
@@ -569,10 +577,11 @@ def data_audit(conn=None):
         ORDER BY v.sure_no
     """).fetchall()
 
-    # Skor hesapla (yuzdelik)
+    # Skor hesapla (yuzdelik) — meal + roots + tefsir
     filled_meal = total_verses - len(empty_meal)
     filled_roots = total_verses - len(no_roots)
-    score = round(((filled_meal + filled_roots) / (total_verses * 2)) * 100, 1) if total_verses > 0 else 0
+    filled_tefsir = total_verses - len(empty_tefsir)
+    score = round(((filled_meal + filled_roots + filled_tefsir) / (total_verses * 3)) * 100, 1) if total_verses > 0 else 0
 
     return {
         'score': score,
@@ -581,6 +590,8 @@ def data_audit(conn=None):
         'no_roots': [{'id': r['id'], 'surah': r['surah']} for r in no_roots],
         'empty_meal': [{'id': r['id'], 'surah': r['surah']} for r in empty_meal],
         'empty_dipnot_count': len(empty_dipnot),
+        'empty_tefsir': [{'id': r['id'], 'surah': r['surah']} for r in empty_tefsir],
+        'empty_tefsir_count': len(empty_tefsir),
         'empty_meaning': [r['root'] for r in empty_meaning],
         'empty_pronunciation': [r['root'] for r in empty_pronunciation],
         'orphan_roots': [r['root'] for r in orphan_roots],

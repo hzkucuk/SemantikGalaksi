@@ -55,6 +55,9 @@
     <Compile Include="DataEngine\_root_status.py" />
     <Compile Include="DataEngine\_root_verify.py" />
     <Compile Include="setup.py" />
+    <Compile Include="_fix_cl.py" />
+    <Compile Include="_fix_keys.py" />
+    <Compile Include="_fix_status.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".github\workflows\deploy.yml" />

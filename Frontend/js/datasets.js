@@ -644,6 +644,7 @@ var _dbRenderAudit = () => {
         { icon: '\uD83D\uDCDC', label: t('audit.emptyMeal'), count: d.empty_meal.length, total: d.total_verses, type: 'warn' },
         { icon: '\uD83C\uDF31', label: t('audit.noRoots'), count: d.no_roots.length, total: d.total_verses, type: d.no_roots.length > 0 ? 'info' : 'ok' },
         { icon: '\uD83D\uDCD6', label: t('audit.emptyDipnot'), count: d.empty_dipnot_count, total: d.total_verses, type: 'info' },
+        { icon: '\uD83D\uDCDD', label: t('audit.emptyTefsir'), count: d.empty_tefsir_count || 0, total: d.total_verses, type: (d.empty_tefsir_count || 0) > 0 ? 'info' : 'ok' },
         { icon: '\u26A0', label: t('audit.emptyMeaning'), count: d.empty_meaning.length, total: d.total_roots, type: d.empty_meaning.length > 0 ? 'warn' : 'ok' },
         { icon: '\uD83D\uDD0A', label: t('audit.emptyPronunciation'), count: d.empty_pronunciation.length, total: d.total_roots, type: d.empty_pronunciation.length > 0 ? 'info' : 'ok' },
         { icon: '\uD83D\uDC7B', label: t('audit.orphanRoots'), count: d.orphan_roots.length, total: d.total_roots, type: d.orphan_roots.length > 0 ? 'warn' : 'ok' },
@@ -680,6 +681,7 @@ var _dbRenderAudit = () => {
     var details = [
         { key: 'empty_meal', title: t('audit.emptyMealList'), items: d.empty_meal, render: function(v) { return v.id + ' — ' + v.surah; } },
         { key: 'no_roots', title: t('audit.noRootsList'), items: d.no_roots, render: function(v) { return v.id + ' — ' + v.surah; } },
+        { key: 'empty_tefsir', title: t('audit.emptyTefsirList'), items: d.empty_tefsir || [], render: function(v) { return v.id + ' — ' + v.surah; } },
         { key: 'empty_meaning', title: t('audit.emptyMeaningList'), items: d.empty_meaning, render: function(v) { return v; } },
         { key: 'orphan_roots', title: t('audit.orphanRootsList'), items: d.orphan_roots, render: function(v) { return v; } },
         { key: 'undefined_roots', title: t('audit.undefinedRootsList'), items: d.undefined_roots, render: function(v) { return v; } },
@@ -703,7 +705,7 @@ var _dbRenderAudit = () => {
         h += '<table class="audit-table"><thead><tr>';
         h += '<th>' + t('audit.surah') + '</th><th>' + t('audit.total') + '</th>';
         h += '<th>' + t('audit.noRoots') + '</th><th>' + t('audit.emptyMeal') + '</th>';
-        h += '<th>' + t('audit.emptyDipnot') + '</th><th>' + t('audit.completeness') + '</th>';
+        h += '<th>' + t('audit.emptyDipnot') + '</th><th>' + t('audit.emptyTefsir') + '</th><th>' + t('audit.completeness') + '</th>';
         h += '</tr></thead><tbody>';
         d.surah_summary.forEach(function(s) {
             var comp = s.total > 0 ? Math.round(((s.total - s.no_meal) / s.total) * 100) : 100;
@@ -714,6 +716,7 @@ var _dbRenderAudit = () => {
             h += '<td>' + (s.no_roots > 0 ? '<span class="audit-badge-warn">' + s.no_roots + '</span>' : '\u2714') + '</td>';
             h += '<td>' + (s.no_meal > 0 ? '<span class="audit-badge-warn">' + s.no_meal + '</span>' : '\u2714') + '</td>';
             h += '<td>' + (s.no_dipnot > 0 ? s.no_dipnot : '\u2714') + '</td>';
+            h += '<td>' + (s.no_tefsir > 0 ? '<span class="audit-badge-warn">' + s.no_tefsir + '</span>' : '\u2714') + '</td>';
             h += '<td><div class="audit-bar-sm"><div class="audit-bar-fill" style="width:' + comp + '%;background:' + (comp >= 95 ? '#34d399' : comp >= 70 ? '#fbbf24' : '#ef4444') + '"></div></div> ' + comp + '%</td>';
             h += '</tr>';
         });
