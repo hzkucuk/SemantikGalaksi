@@ -65,6 +65,7 @@
     <Compile Include="_fix_cl2.py" />
     <Compile Include="_fix_details.py" />
     <Compile Include="_fix_keys.py" />
+    <Compile Include="_fix_scroll.py" />
     <Compile Include="_fix_sort.py" />
     <Compile Include="_fix_status.py" />
     <Compile Include="_fix_tefsir.py" />

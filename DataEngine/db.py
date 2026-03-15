@@ -798,7 +798,9 @@ def list_verses(page=1, limit=50, search='', sort_by='', sort_dir='asc', conn=No
 
     _ALLOWED_VERSE_SORT = {'id', 'sure_no', 'ayet_no', 'surah', 'meal'}
     _dir = 'DESC' if sort_dir == 'desc' else 'ASC'
-    if sort_by in _ALLOWED_VERSE_SORT:
+    if sort_by == 'id':
+        order_clause = f"ORDER BY v.sure_no {_dir}, v.ayet_no {_dir}"
+    elif sort_by in _ALLOWED_VERSE_SORT:
         order_clause = f"ORDER BY v.{sort_by} {_dir}"
     else:
         order_clause = "ORDER BY v.sure_no ASC, v.ayet_no ASC"
