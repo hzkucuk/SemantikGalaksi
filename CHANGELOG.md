@@ -1,5 +1,17 @@
 ﻿bu# CHANGELOG
 
+## [1.2.1] - 2025-07-15 -- Client MSI DB Haric + Veri Denetim Paneli
+### Eklenen
+- Veri Denetim (Audit) tabı: editor'de kalite skoru, metrik kartları, sure bazlı özet tablosu, detay listeleri.
+- `/api/db/audit` endpoint: 10 kategori kontrol (boş meal, köksüz ayet, yetim kök, tanımsız kök, FK, çeviri eksikleri).
+- `data_audit()` fonksiyonu (db.py): kapsamlı veri bütünlük raporu + yüzdelik skor.
+- 26 yeni i18n key (editor.tabAudit + audit.*) + 96 SQLite çeviri satırı (EN/ES/IT/RU).
+### Değişiklik
+- Client MSI artık quran.db içermiyor (sunucudan alır). Server MSI quran.db dahil.
+- setup.py: Server modunda quran.db include_files'a eklendi, client modunda hariç tutuldu.
+### Etkilenen Dosyalar
+- setup.py, desktop_app.py, db.py, datasets.js, index.html, i18n.js, quran.db
+
 ## [1.2.0] - 2025-07-15 -- Release Build (v1.1.5 → v1.2.0)
 ### Ozet
 - HUD Data Explorer navigasyon butonlari (ilk/onceki/sonraki/son ayet, sure gecisi)

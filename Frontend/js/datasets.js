@@ -75,6 +75,7 @@ var _dbRenderTabs = () => {
         { id: 'translations', label: t('editor.tabTranslations'), icon: '\uD83C\uDF10' },
     ];
     if (isAdmin) items.push({ id: 'logs', label: t('editor.tabLogs'), icon: '\uD83D\uDCCB' });
+    items.push({ id: 'audit', label: t('editor.tabAudit'), icon: '\uD83D\uDEE1' });
     tabs.innerHTML = items.map(function(i) {
         return '<button class="editor-tab ' + (_dbTab === i.id ? 'active' : '') +
             '" onclick="dbSwitchTab(\'' + i.id + '\')">' +
@@ -90,6 +91,14 @@ var _dbLoad = async () => {
     if (!main) return;
     main.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#64748b;font-size:14px;">' + t('editor.loading') + '...</div>';
     try {
+        // Audit tabı özel yükleme
+        if (_dbTab === 'audit') {
+            var res = await authFetch('/api/db/audit');
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            _dbData = await res.json();
+            _dbRenderAudit();
+            return;
+        }
         var url;
         if (_dbTab === 'verses') url = '/api/db/verses';
         else if (_dbTab === 'roots') url = '/api/db/roots-list';
@@ -577,4 +586,111 @@ window.testAllKeys = async () => {
         if (result.ok && !apiKey) apiKey = k.key;
         renderKeyList();
     }
+};
+
+// =====================================================
+//  VERI DENETIM PANELI (Audit Dashboard)
+// =====================================================
+
+var _dbRenderAudit = () => {
+    var main = document.getElementById('editor-main');
+    if (!main || !_dbData) return;
+    var d = _dbData;
+    var scoreColor = d.score >= 90 ? '#34d399' : d.score >= 70 ? '#fbbf24' : '#ef4444';
+    var h = '';
+
+    // Skor ve Ozet Karti
+    h += '<div class="audit-dashboard">';
+    h += '<div class="audit-score-card">';
+    h += '<div class="audit-score-ring" style="--score:' + d.score + ';--color:' + scoreColor + '">';
+    h += '<span class="audit-score-val">' + d.score + '%</span>';
+    h += '</div>';
+    h += '<div class="audit-score-label">' + t('audit.dataScore') + '</div>';
+    h += '<div class="audit-score-sub">' + d.total_verses + ' ' + t('audit.verses') + ' &middot; ' + d.total_roots + ' ' + t('audit.roots') + '</div>';
+    h += '</div>';
+
+    // Metrik Kartlari
+    h += '<div class="audit-metrics">';
+    var metrics = [
+        { icon: '\uD83D\uDCDC', label: t('audit.emptyMeal'), count: d.empty_meal.length, total: d.total_verses, type: 'warn' },
+        { icon: '\uD83C\uDF31', label: t('audit.noRoots'), count: d.no_roots.length, total: d.total_verses, type: d.no_roots.length > 0 ? 'info' : 'ok' },
+        { icon: '\uD83D\uDCD6', label: t('audit.emptyDipnot'), count: d.empty_dipnot_count, total: d.total_verses, type: 'info' },
+        { icon: '\u26A0', label: t('audit.emptyMeaning'), count: d.empty_meaning.length, total: d.total_roots, type: d.empty_meaning.length > 0 ? 'warn' : 'ok' },
+        { icon: '\uD83D\uDD0A', label: t('audit.emptyPronunciation'), count: d.empty_pronunciation.length, total: d.total_roots, type: d.empty_pronunciation.length > 0 ? 'info' : 'ok' },
+        { icon: '\uD83D\uDC7B', label: t('audit.orphanRoots'), count: d.orphan_roots.length, total: d.total_roots, type: d.orphan_roots.length > 0 ? 'warn' : 'ok' },
+        { icon: '\u2753', label: t('audit.undefinedRoots'), count: d.undefined_roots.length, total: 0, type: d.undefined_roots.length > 0 ? 'error' : 'ok' },
+        { icon: '\uD83D\uDD17', label: t('audit.fkViolations'), count: d.fk_violations, total: 0, type: d.fk_violations > 0 ? 'error' : 'ok' },
+    ];
+    metrics.forEach(function(m) {
+        var pct = m.total > 0 ? Math.round(((m.total - m.count) / m.total) * 100) : (m.count === 0 ? 100 : 0);
+        var cls = m.type === 'error' ? 'audit-metric-error' : m.type === 'warn' ? 'audit-metric-warn' : m.type === 'info' ? 'audit-metric-info' : 'audit-metric-ok';
+        h += '<div class="audit-metric ' + cls + '">';
+        h += '<div class="audit-metric-icon">' + m.icon + '</div>';
+        h += '<div class="audit-metric-body">';
+        h += '<div class="audit-metric-val">' + m.count + (m.total > 0 ? ' / ' + m.total : '') + '</div>';
+        h += '<div class="audit-metric-label">' + m.label + '</div>';
+        if (m.total > 0) {
+            h += '<div class="audit-bar"><div class="audit-bar-fill" style="width:' + pct + '%;background:' + (pct >= 90 ? '#34d399' : pct >= 70 ? '#fbbf24' : '#ef4444') + '"></div></div>';
+        }
+        h += '</div></div>';
+    });
+    h += '</div>';
+
+    // Eksik Ceviri Dilleri
+    if (d.missing_translations && Object.keys(d.missing_translations).length > 0) {
+        h += '<div class="audit-section">';
+        h += '<h3 class="audit-section-title">\uD83C\uDF10 ' + t('audit.missingTranslations') + '</h3>';
+        h += '<div class="audit-tags">';
+        Object.keys(d.missing_translations).forEach(function(lang) {
+            h += '<span class="audit-tag-warn">' + lang.toUpperCase() + ': ' + d.missing_translations[lang] + ' ' + t('audit.missingCount') + '</span>';
+        });
+        h += '</div></div>';
+    }
+
+    // Detay Listeleri (collapse)
+    var details = [
+        { key: 'empty_meal', title: t('audit.emptyMealList'), items: d.empty_meal, render: function(v) { return v.id + ' — ' + v.surah; } },
+        { key: 'no_roots', title: t('audit.noRootsList'), items: d.no_roots, render: function(v) { return v.id + ' — ' + v.surah; } },
+        { key: 'empty_meaning', title: t('audit.emptyMeaningList'), items: d.empty_meaning, render: function(v) { return v; } },
+        { key: 'orphan_roots', title: t('audit.orphanRootsList'), items: d.orphan_roots, render: function(v) { return v; } },
+        { key: 'undefined_roots', title: t('audit.undefinedRootsList'), items: d.undefined_roots, render: function(v) { return v; } },
+    ];
+    details.forEach(function(sec) {
+        if (!sec.items || sec.items.length === 0) return;
+        h += '<details class="audit-detail">';
+        h += '<summary class="audit-detail-sum">' + sec.title + ' (' + sec.items.length + ')</summary>';
+        h += '<div class="audit-detail-body">';
+        sec.items.forEach(function(item) {
+            h += '<span class="audit-item">' + _escHtml(sec.render(item)) + '</span>';
+        });
+        h += '</div></details>';
+    });
+
+    // Sure Bazli Ozet Tablosu
+    if (d.surah_summary && d.surah_summary.length > 0) {
+        h += '<details class="audit-detail">';
+        h += '<summary class="audit-detail-sum">\uD83D\uDCCA ' + t('audit.surahSummary') + ' (' + d.surah_summary.length + ' ' + t('audit.surahs') + ')</summary>';
+        h += '<div class="audit-detail-body">';
+        h += '<table class="audit-table"><thead><tr>';
+        h += '<th>' + t('audit.surah') + '</th><th>' + t('audit.total') + '</th>';
+        h += '<th>' + t('audit.noRoots') + '</th><th>' + t('audit.emptyMeal') + '</th>';
+        h += '<th>' + t('audit.emptyDipnot') + '</th><th>' + t('audit.completeness') + '</th>';
+        h += '</tr></thead><tbody>';
+        d.surah_summary.forEach(function(s) {
+            var comp = s.total > 0 ? Math.round(((s.total - s.no_meal) / s.total) * 100) : 100;
+            var cls = comp >= 95 ? 'audit-row-ok' : comp >= 70 ? 'audit-row-warn' : 'audit-row-error';
+            h += '<tr class="' + cls + '">';
+            h += '<td>' + _escHtml(s.surah) + '</td>';
+            h += '<td>' + s.total + '</td>';
+            h += '<td>' + (s.no_roots > 0 ? '<span class="audit-badge-warn">' + s.no_roots + '</span>' : '\u2714') + '</td>';
+            h += '<td>' + (s.no_meal > 0 ? '<span class="audit-badge-warn">' + s.no_meal + '</span>' : '\u2714') + '</td>';
+            h += '<td>' + (s.no_dipnot > 0 ? s.no_dipnot : '\u2714') + '</td>';
+            h += '<td><div class="audit-bar-sm"><div class="audit-bar-fill" style="width:' + comp + '%;background:' + (comp >= 95 ? '#34d399' : comp >= 70 ? '#fbbf24' : '#ef4444') + '"></div></div> ' + comp + '%</td>';
+            h += '</tr>';
+        });
+        h += '</tbody></table></div></details>';
+    }
+
+    h += '</div>';
+    main.innerHTML = h;
 };

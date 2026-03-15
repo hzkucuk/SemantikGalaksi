@@ -87,6 +87,12 @@ version_src = os.path.join(ROOT_DIR, "VERSION")
 if os.path.exists(version_src):
     include_files.append((version_src, "VERSION"))
 
+# Veritabanı dosyası — sadece server modunda dahil et
+if not IS_CLIENT:
+    db_src = os.path.join(DATAENGINE_DIR, "quran.db")
+    if os.path.exists(db_src):
+        include_files.append((db_src, "quran.db"))
+
 # Uygulama ikonu
 icon_src = os.path.join(ROOT_DIR, "app_icon.ico")
 if os.path.exists(icon_src):

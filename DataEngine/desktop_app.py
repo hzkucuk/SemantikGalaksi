@@ -628,6 +628,8 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._get_logs()
         elif path == '/api/db/integrity':
             self._check_integrity()
+        elif path == '/api/db/audit':
+            self._db_audit()
         elif path == '/api/db/stats':
             self._db_stats()
         elif path == '/api/db/changelog':
@@ -1310,6 +1312,22 @@ class ProjeHandler(http.server.SimpleHTTPRequestHandler):
             self._json_response(report)
         except Exception as e:
             log_system.error('Butunluk kontrolu hatasi', error=str(e))
+            self._json_response({'error': str(e)}, 500)
+
+    def _db_audit(self):
+        """Kapsamli veri denetim raporu."""
+        session = _get_session(self.headers)
+        if not session:
+            self._json_response({'error': 'Yetkisiz'}, 401)
+            return
+        if not _HAS_DB:
+            self._json_response({'error': 'SQLite modulu yuklu degil'}, 503)
+            return
+        try:
+            report = quran_db.data_audit()
+            self._json_response(report)
+        except Exception as e:
+            log_system.error('Veri denetim hatasi', error=str(e))
             self._json_response({'error': str(e)}, 500)
 
     def _db_stats(self):

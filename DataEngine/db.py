@@ -482,6 +482,116 @@ def get_stats(conn=None):
 
 
 # ===================================================================
+#  VERI DENETIMI (Data Audit)
+# ===================================================================
+
+def data_audit(conn=None):
+    """Kapsamli veri butunluk ve eksiklik raporu uretir."""
+    db = conn or get_db()
+    total_verses = db.execute("SELECT COUNT(*) FROM verses").fetchone()[0]
+    total_roots = db.execute("SELECT COUNT(*) FROM roots").fetchone()[0]
+
+    # 1. Koku olmayan ayetler
+    no_roots = db.execute("""
+        SELECT v.id, v.surah, v.ayet FROM verses v
+        LEFT JOIN verse_roots vr ON v.id = vr.verse_id
+        WHERE vr.verse_id IS NULL
+        ORDER BY v.sure_no, v.ayet_no
+    """).fetchall()
+
+    # 2. Meali bos ayetler
+    empty_meal = db.execute("""
+        SELECT id, surah, ayet FROM verses
+        WHERE meal IS NULL OR TRIM(meal) = ''
+        ORDER BY sure_no, ayet_no
+    """).fetchall()
+
+    # 3. Dipnotu bos ayetler
+    empty_dipnot = db.execute("""
+        SELECT id, surah FROM verses
+        WHERE dipnot IS NULL OR TRIM(dipnot) = ''
+        ORDER BY sure_no, ayet_no
+    """).fetchall()
+
+    # 4. Anlami bos kokler
+    empty_meaning = db.execute("""
+        SELECT root FROM roots
+        WHERE meaning_tr IS NULL OR TRIM(meaning_tr) = ''
+    """).fetchall()
+
+    # 5. Telaffuzu bos kokler
+    empty_pronunciation = db.execute("""
+        SELECT root FROM roots
+        WHERE pronunciation IS NULL OR TRIM(pronunciation) = ''
+    """).fetchall()
+
+    # 6. Sozlukte olup hicbir ayette kullanilmayan kokler (yetim)
+    orphan_roots = db.execute("""
+        SELECT r.root FROM roots r
+        LEFT JOIN verse_roots vr ON r.root = vr.root
+        WHERE vr.root IS NULL
+    """).fetchall()
+
+    # 7. Ayette kullanilip sozlukte olmayan kokler (tanımsiz)
+    undefined_roots = db.execute("""
+        SELECT DISTINCT vr.root FROM verse_roots vr
+        LEFT JOIN roots r ON vr.root = r.root
+        WHERE r.root IS NULL
+    """).fetchall()
+
+    # 8. Dil bazli eksik kok cevirileri
+    langs = [r[0] for r in db.execute(
+        "SELECT DISTINCT lang FROM root_translations"
+    ).fetchall()]
+    missing_translations = {}
+    for lang in langs:
+        count = db.execute(
+            "SELECT COUNT(DISTINCT root) FROM root_translations WHERE lang=?", (lang,)
+        ).fetchone()[0]
+        if count < total_roots:
+            missing_translations[lang] = total_roots - count
+
+    # 9. FK ihlalleri
+    fk_violations = db.execute("PRAGMA foreign_key_check").fetchall()
+
+    # 10. Sure bazli eksiklik ozeti
+    surah_summary = db.execute("""
+        SELECT v.surah,
+            COUNT(*) as total,
+            SUM(CASE WHEN vr_cnt IS NULL OR vr_cnt = 0 THEN 1 ELSE 0 END) as no_roots,
+            SUM(CASE WHEN v.meal IS NULL OR TRIM(v.meal) = '' THEN 1 ELSE 0 END) as no_meal,
+            SUM(CASE WHEN v.dipnot IS NULL OR TRIM(v.dipnot) = '' THEN 1 ELSE 0 END) as no_dipnot
+        FROM verses v
+        LEFT JOIN (
+            SELECT verse_id, COUNT(*) as vr_cnt FROM verse_roots GROUP BY verse_id
+        ) vrc ON v.id = vrc.verse_id
+        GROUP BY v.sure_no
+        ORDER BY v.sure_no
+    """).fetchall()
+
+    # Skor hesapla (yuzdelik)
+    filled_meal = total_verses - len(empty_meal)
+    filled_roots = total_verses - len(no_roots)
+    score = round(((filled_meal + filled_roots) / (total_verses * 2)) * 100, 1) if total_verses > 0 else 0
+
+    return {
+        'score': score,
+        'total_verses': total_verses,
+        'total_roots': total_roots,
+        'no_roots': [{'id': r['id'], 'surah': r['surah']} for r in no_roots],
+        'empty_meal': [{'id': r['id'], 'surah': r['surah']} for r in empty_meal],
+        'empty_dipnot_count': len(empty_dipnot),
+        'empty_meaning': [r['root'] for r in empty_meaning],
+        'empty_pronunciation': [r['root'] for r in empty_pronunciation],
+        'orphan_roots': [r['root'] for r in orphan_roots],
+        'undefined_roots': [r['root'] for r in undefined_roots],
+        'missing_translations': missing_translations,
+        'fk_violations': len(fk_violations),
+        'surah_summary': [dict(r) for r in surah_summary],
+    }
+
+
+# ===================================================================
 #  TAM VERI YUKLEMESI (Frontend 3D viz icin — JSON yerine)
 # ===================================================================
 
