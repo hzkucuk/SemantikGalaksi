@@ -1,6 +1,6 @@
 ﻿bu# CHANGELOG
 
-## [1.1.6] - 2025-07-15 -- VERİ OKU + Veri Setleri Butonları Kaldırıldı
+## [1.1.6] - 2025-07-15 -- VERİ OKU + Veri Setleri Kaldırıldı & Web SQLite
 ### Kaldırılan
 - "VERİ OKU" (📄) dosya yükleme butonu ve file-input handler kaldırıldı (search.js).
 - "📂 Veri Setleri" butonu ve openDatasets redirect kaldırıldı (datasets.js).
@@ -8,8 +8,12 @@
 - auth.js, loading.js: file-input-label referansları temizlendi.
 - websocket.js: dataset_saved/deleted/renamed/duplicated ölü WS handler'ları kaldırıldı.
 - i18n: header.readData, header.datasets key'leri + 8 SQLite çeviri satırı silindi.
+### Eklenen
+- web-db.js: Web modda sql.js (WASM) ile quran.db doğrudan tarayıcıda okunuyor.
+- data-loader.js: API başarısız olduğunda WebDB fallback eklendi.
+- sql.js CDN (v1.11.0) index.html'e eklendi.
 ### Etkilenen Dosyalar
-- index.html, search.js, datasets.js, state.js, auth.js, loading.js, websocket.js, i18n.js, quran.db
+- index.html, search.js, datasets.js, state.js, auth.js, loading.js, websocket.js, i18n.js, quran.db, data-loader.js, web-db.js (yeni)
 
 ## [1.1.5] - 2026-03-15 -- Arapca Klavye + Indirme Diyalogu
 ### Degisiklik

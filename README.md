@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/WebSocket-RFC_6455-4353FF?style=for-the-badge" alt="WebSocket">
   <img src="https://img.shields.io/badge/SQLite-3.x-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
-  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-1.1.0-34d399?style=for-the-badge" alt="Sürüm">
+  <img src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-1.1.6-34d399?style=for-the-badge" alt="Sürüm">
   <img src="https://img.shields.io/badge/Lisans-MIT-34d399?style=for-the-badge" alt="Lisans">
   <br>
   <a href="https://github.com/hzkucuk/SemantikGalaksi/actions/workflows/release.yml">
@@ -240,6 +240,7 @@ Uygulama, **uzay gemisi kokpiti** estetiğiyle tasarlanmış olup arka planda J2
 ### 🔧 Son Düzeltmeler ve İyileştirmeler
 | Sürüm | Düzeltme |
 |-------|----------|
+| **v1.1.6** | **Web SQLite + UI Temizlik**: Web modda sql.js (WASM) ile quran.db dogrudan tarayicida okunuyor. VERİ OKU + Veri Setleri butonlari ve tum backing kodlari kaldirildi. Modern modal dialog sistemi (v1.1.4). |
 | **v1.1.0** | **Pure SQLite + DB Grid Editor**: Hibrit mimari kaldirildi, Frontend dogrudan API'den SQLite verisi yukler. DB Grid (3 sekme, sayfalama, arama, CRUD, rol tabanli). 12 yeni API endpoint, 40+ i18n anahtari. |
 | **v1.0.0** | 🗄️ **SQLite Veritabanı Migrasyonu**: Tüm Kur'an verisi SQLite'a taşındı (7 tablo, FK kısıtlamaları, audit trail). Hibrit mimari: SQLite → JSON export → Frontend. 3 yeni API endpoint. |
 | v0.43.7 | 🔧 Fatiha 1:1 kök renklendirme düzeltmesi, JSON DB yetkilendirme, değişiklik geçmişi |
@@ -365,11 +366,10 @@ SemantikGalaksi/
 │   │   ├── scene-init.js         # Three.js sahne, bloom, skybox, yıldızlar
 │   │   ├── data-loader.js        # Veri işleme, küre oluşturma
 │   │   ├── warp.js               # Hyperspace warp + animate loop
-│   │   ├── datasets.js           # Veri seti yöneticisi + iki sekmeli editör
+│   │   ├── datasets.js           # DB Grid Editör + Arapça klavye + API key yönetimi
+│   │   ├── web-db.js             # Web modu: sql.js ile quran.db tarayıcıda okuma
 │   │   ├── i18n.js               # Çoklu dil motoru (5 dil, auto-detect)
 │   │   └── ... (13 modül daha)   # interaction, tooltip, hud, search, vb.
-│   ├── quran_data.json           # Kur'an verileri (sureler, ayetler, kökler)
-│   ├── quran_roots.json          # Arapça kök sözlüğü (1651 kök)
 │   ├── milkyway.jpg              # Milky Way panorama (705 KB equirectangular)
 │   ├── three.min.js              # Three.js r128
 │   ├── OrbitControls.js          # 3D kamera kontrolü
@@ -679,8 +679,7 @@ pyinstaller>=6.0        # EXE paketleme (opsiyonel)
 |-------|-------|
 | 🌌 | Yerleşim modeli değiştir (Galaksi / Bulutsu / Küp / Küre) |
 | 📓 | Not editörü aç/kapat |
-| 📋 | HUD slider panel aç/kapat |
-| 📂 | Veri seti yöneticisi |
+| 📝 | DB Grid Editör |
 | ⚙️ | Ayarlar (kullanıcı yönetimi, API anahtarları) |
 | 🔑 | API anahtar yönetimi |
 | 📊 | İstatistikler |

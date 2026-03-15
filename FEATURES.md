@@ -9,7 +9,7 @@ Tum Kur'an verisi artik SQLite veritabaninda tek kaynak (single source of truth)
 | **FK Kisitlamalari** | Referans butunlugu otomatik korunur — yetim veri olusturulamaz |
 | **WAL Modu** | Yazma ve okuma esanlik (concurrent read/write) destegi |
 | **Audit Trail** | 5 trigger ile otomatik degisiklik kaydi (`change_log` tablosu) |
-| **Pure SQLite** | Desktop modda `/api/db/data` + `/api/db/roots-dict` API'lerinden veri yuklenir. Web modda JSON fallback. |
+| **Pure SQLite** | Desktop modda `/api/db/data` + `/api/db/roots-dict` API'lerinden veri yuklenir. Web modda sql.js (WASM) ile quran.db dogrudan tarayicida okunur. |
 | **Butunluk Kontrolu** | `/api/db/integrity` -- FK ihlalleri, yetim kokler, eksik ceviriler |
 | **Istatistikler** | `/api/db/stats` — tablo bazli satir sayilari, dil listesi |
 | **Degisiklik Gecmisi** | `/api/db/changelog` — tablo/limit filtreli audit log |
