@@ -1,5 +1,11 @@
 ﻿bu# CHANGELOG
 
+## [1.5.0] - 2025-07-18 -- Release: Baglantilar Dipnot Linkleri + Grid Scroll Fix
+### Ozet
+- Baglantilar sekmesi dipnot linkleri tiklanabilir (dipnot_parsed destegi).
+- DB Grid scrollbar stili, ID siralama fix, v1.4.0 sonrasi duzeltmeler dahil.
+- MSI release build.
+
 ## [1.4.0] - 2025-07-18 -- Release: DB Grid UX + Local Override + Besmele Fix
 ### Ozet
 - v1.3.0-v1.3.2 arasindaki tum ozellikler dahil. MSI release build.
