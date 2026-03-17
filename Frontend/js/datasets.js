@@ -13,11 +13,19 @@ window.showDipnotPopup = (btn, nodeId) => {
     if (existing) { existing.remove(); return; }
     document.querySelectorAll('.dipnot-inline').forEach(el => el.remove());
     var node = nodes.find(n => n.id === nodeId);
-    var text = node?.dipnot || t('hud.noDipnot');
     var div = document.createElement('div');
     div.className = 'dipnot-inline';
     div.style.cssText = 'margin-top:8px;padding:10px 14px;background:rgba(120,53,15,0.3);border:1px solid rgba(245,158,11,0.2);border-radius:10px;font-size:12px;color:rgba(253,230,138,0.8);font-style:italic;line-height:1.6;';
-    div.textContent = text;
+    if (node && node.dipnot_parsed && node.dipnot_parsed.length > 0) {
+        div.innerHTML = node.dipnot_parsed.map(function(part) {
+            if (part.type === 'link' && part.targets && part.targets.length > 0) {
+                return '<a href="#" onclick="event.preventDefault();event.stopPropagation();warpToId(\'' + part.targets[0] + '\')" style="color:#f59e0b;text-decoration:underline;cursor:pointer;font-weight:600;">' + part.content + '</a>';
+            }
+            return '<span>' + (part.content || '').replace(/\n/g, '<br>') + '</span>';
+        }).join('');
+    } else {
+        div.textContent = (node && node.dipnot) ? node.dipnot : t('hud.noDipnot');
+    }
     item.appendChild(div);
 };
 
